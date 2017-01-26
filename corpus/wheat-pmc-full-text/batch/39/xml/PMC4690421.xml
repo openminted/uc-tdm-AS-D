@@ -1,0 +1,1096 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Plant Biol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Plant Biol</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Plant Biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2229</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4690421</article-id>
+      <article-id pub-id-type="publisher-id">692</article-id>
+      <article-id pub-id-type="doi">10.1186/s12870-015-0692-1</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Database</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>WheatExp: an RNA-seq expression database for polyploid wheat</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Pearce</surname>
+            <given-names>Stephen</given-names>
+          </name>
+          <address>
+            <email>sppearce@ucdavis.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Vazquez-Gross</surname>
+            <given-names>Hans</given-names>
+          </name>
+          <address>
+            <email>havazquezgross@ucdavis.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Herin</surname>
+            <given-names>Sayer Y.</given-names>
+          </name>
+          <address>
+            <email>herin@ucdavis.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hane</surname>
+            <given-names>David</given-names>
+          </name>
+          <address>
+            <email>davidhane@gmail.com</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Yi</given-names>
+          </name>
+          <address>
+            <email>yi.wang@ars.usda.gov</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gu</surname>
+            <given-names>Yong Q.</given-names>
+          </name>
+          <address>
+            <email>yong.gu@ars.usda.gov</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Dubcovsky</surname>
+            <given-names>Jorge</given-names>
+          </name>
+          <address>
+            <email>jdubcovsky@ucdavis.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff3"/>
+        </contrib>
+        <aff id="Aff1"><label/>Department of Plant Sciences, University of California, Davis, CA 95616 USA </aff>
+        <aff id="Aff2"><label/>USDA-Agriculture Research Service, Western Regional Research Center, Albany, CA 94710 USA </aff>
+        <aff id="Aff3"><label/>Howard Hughes Medical Institute, Chevy Chase, MD 20815 USA </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>24</day>
+        <month>12</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>24</day>
+        <month>12</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>15</volume>
+      <elocation-id>299</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>23</day>
+          <month>8</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>17</day>
+          <month>12</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; Pearce et al. 2015</copyright-statement>
+        <license license-type="OpenAccess">
+          <license-p><bold>Open Access</bold>This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>For functional genomics studies, it is important to understand the dynamic expression profiles of transcribed genes in different tissues, stages of development and in response to environmental stimuli. The proliferation in the use of next-generation sequencing technologies by the plant research community has led to the accumulation of large volumes of expression data. However, analysis of these datasets is complicated by the frequent occurrence of polyploidy among economically-important crop species. In addition, processing and analyzing such large volumes of sequence data is a technical and time-consuming task, limiting their application in functional genomics studies, particularly for smaller laboratories which lack access to high-powered computing infrastructure. Wheat is a good example of a young polyploid species with three similar genomes (97 % identical among homoeologous genes), rapidly accumulating RNA-seq datasets and a large research community.</p>
+        </sec>
+        <sec>
+          <title>Description</title>
+          <p>We present WheatExp, an expression database and visualization tool to analyze and compare homoeologue-specific transcript profiles across a broad range of tissues from different developmental stages in polyploid wheat. Beginning with publicly-available RNA-seq datasets, we developed a pipeline to distinguish between homoeologous transcripts from annotated genes in tetraploid and hexaploid wheat. Data from multiple studies is processed and compiled into a database which can be queried either by BLAST or by searching for a known gene of interest by name or functional domain. Expression data of multiple genes can be displayed side-by-side across all expression datasets providing immediate access to a comprehensive panel of expression data for specific subsets of wheat genes.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>The development of a publicly accessible expression database hosted on the GrainGenes website - <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/WheatExp/">http://wheat.pw.usda.gov/WheatExp/</ext-link> - coupled with a simple and readily-comparable visualization tool will empower the wheat research community to use RNA-seq data and to perform functional analyses of target genes. The presented expression data is homoeologue-specific allowing for the analysis of relative contributions from each genome to the overall expression of a gene, a critical consideration for breeding applications. Our approach can be expanded to other polyploid species by adjusting sequence mapping parameters according to the specific divergence of their genomes.</p>
+        </sec>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Expression</kwd>
+        <kwd>Wheat</kwd>
+        <kwd>RNA-seq</kwd>
+        <kwd>Polyploidy</kwd>
+        <kwd>Homoeologue-specific</kwd>
+        <kwd>WheatExp</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/100005825</institution-id>
+              <institution>National Institute of Food and Agriculture (US)</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>2011-67013-30077</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>Jorge</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/100005825</institution-id>
+              <institution>National Institute of Food and Agriculture (US)</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>2011-68002-30029</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>Jorge</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/100000011</institution-id>
+              <institution>Howard Hughes Medical Institute (US)</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>GBMF3031</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>Jorge</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+      </funding-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2015</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1">
+      <title>Background</title>
+      <p>Cereal crops provide a significant proportion of the calories consumed by humanity (<ext-link ext-link-type="uri" xlink:href="http://faostat3.fao.org/">http://faostat3.fao.org/</ext-link>) so maintaining and improving upon current production levels will be critical to provide food security for a growing world population. To meet this demand, continued and dedicated research efforts will be required to engineer solutions for the most pressing problems restricting agricultural production [<xref ref-type="bibr" rid="CR1">1</xref>]. One important aspect of this research will be the identification and functional characterization of genes regulating the developmental stages most critical for determining yield and of genes which aid plant adaptation to a changing environment. Analyzing the dynamic expression profiles of each gene to describe their transcriptional regulation during the course of development, in different tissues and in response to specific environmental stimuli will be central to functional genetic studies.</p>
+      <p>In many economically-important crop species, such studies are complicated by polyploidy, the presence of two or more homoeologous genomes within a single nucleus. Polyploidy is widespread among plant species and is thought to aid the plant&#x2019;s adaptation to diverse environmental conditions [<xref ref-type="bibr" rid="CR2">2</xref>]. This increased adaptability is favored by the possibility of increased diversity in multimeric protein complexes and by global gene redundancy, which in some instances may be followed by gene divergence and sub- or neo-functionalization [<xref ref-type="bibr" rid="CR2">2</xref>].</p>
+      <p>Wheat is one example of a recent allopolyploid species. The diploid species of the <italic>Triticum</italic>-<italic>Aegilops</italic> complex diverged from one another 3&#x2013;5 Ma million years ago and are, on average, 97 % identical within the protein coding regions [<xref ref-type="bibr" rid="CR3">3</xref>]. The hybridization of diploids <italic>T. urartu</italic> (AA genome) and a species of the <italic>Sitopsis</italic> group (BB genome) less than 500,000 years ago generated the tetraploid wheat species (AABB genomes) currently used predominantly for pasta. The hybridization of tetraploid wheat with <italic>Aegilops tauschii</italic> less than 10,000 years ago resulted in the hexaploid wheats (AABBDD genomes) currently used to make breads and pastries [<xref ref-type="bibr" rid="CR4">4</xref>].</p>
+      <p>The complexity of the wheat genome, together with its economic importance and the existence of a large public research and breeding community make wheat an ideal target for the development of an expression database and the tools required to analyze and distinguish between homoeologues. This is now possible, owing to the recent release of a homoeologue-specific draft assembly of the wheat genome by the International Wheat Genome Sequencing Consortium (IWGSC) [<xref ref-type="bibr" rid="CR3">3</xref>] and the publication of several RNA-seq expression datasets [<xref ref-type="bibr" rid="CR5">5</xref>&#x2013;<xref ref-type="bibr" rid="CR10">10</xref>].</p>
+      <p>To assemble the wheat draft genome, individual chromosome arms were first separated according to size using flow cytometry. This allowed for the sequencing and subsequent assembly of each homoeologous chromosome arm separately. This was coupled with a broad effort to annotate gene-coding regions, using species-specific transcripts and prediction algorithms, as well as manual annotation. Annotated gene sets are regularly updated and released through the <italic>Ensembl</italic> genomics platform [<xref ref-type="bibr" rid="CR11">11</xref>]. Thus, for the first time, comprehensive transcript profiling can be applied directly in hexaploid wheat to support functional genomics studies, including accurate separation of distinct homoeologous genes.</p>
+      <p>The recent, rapid advances in next generation sequencing technologies have proved transformative for wheat as for multiple other species, by providing the ability to sequence the entire transcriptomes of multiple biological samples at great depth, an approach known as RNA-seq [<xref ref-type="bibr" rid="CR12">12</xref>]. Falling sequencing costs and streamlined library construction protocols have resulted in the proliferation of RNA-seq studies in diverse plant species [<xref ref-type="bibr" rid="CR13">13</xref>]. Increasingly, large volumes of raw sequencing data generated from these studies are deposited in online repositories (e.g. Sequence Read Archive [<xref ref-type="bibr" rid="CR14">14</xref>], Gene Expression Omnibus [<xref ref-type="bibr" rid="CR15">15</xref>] or European Nucleotide Archive [<xref ref-type="bibr" rid="CR16">16</xref>]). In addition to the specific research questions addressed by the authors of these studies, these datasets also represent a rich source of information for the wider research community. However, processing and analyzing such large volumes of data is a technically difficult, time-consuming task which requires bioinformatics expertize and access to computing clusters with high-performance infrastructure. This has limited the ability of small research laboratories and individual researchers to benefit from the wealth of information available in RNA-seq studies. To address this limitation and provide simple, free access to this data, we developed a pipeline to analyze transcriptomic data in polyploid genomes using wheat as a test case. Here we present WheatExp (<ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/WheatExp/">http://wheat.pw.usda.gov/WheatExp/</ext-link>), an RNA-seq expression database and visualization tool that facilitates the analysis and comparison of homoeologous transcript profiles across a wide range of developmental and tissue samples in polyploid wheat.</p>
+    </sec>
+    <sec id="Sec2">
+      <title>Construction and content</title>
+      <sec id="Sec3">
+        <title>Data sources and generation</title>
+        <p>All data contained within WheatExp is derived from RNA-seq reads deposited in online sequence repositories [<xref ref-type="bibr" rid="CR14">14</xref>&#x2013;<xref ref-type="bibr" rid="CR16">16</xref>]. Currently, six complementary studies are included; a broad study of five different tissues across multiple timepoints [<xref ref-type="bibr" rid="CR5">5</xref>], a study of seedling photomorphogenesis [<xref ref-type="bibr" rid="CR6">6</xref>], a study of drought and heat stress in wheat seedlings [<xref ref-type="bibr" rid="CR7">7</xref>], a study of wheat grain layers at a single timepoint [<xref ref-type="bibr" rid="CR8">8</xref>], a senescing leaf timecourse [<xref ref-type="bibr" rid="CR9">9</xref>] and a timecourse of different grain tissue layers during development [<xref ref-type="bibr" rid="CR10">10</xref>] (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). In combination, these datasets represent a diverse set of wheat expression data across multiple tissues, developmental stages and environmental treatments.<table-wrap id="Tab1"><label>Table 1</label><caption><p>RNA-seq datasets contained within WheatExp</p></caption><table frame="hsides" rules="groups"><thead><tr><th>Dataset</th><th>Wheat species</th><th>Tissues</th><th>Developmental stage/treatment</th><th>RNA-seq reads</th><th>% uniquely mapped reads</th><th>Data source</th><th>Reference</th></tr></thead><tbody><tr><td>Wheat development timecourse</td><td><italic>T. aestivum</italic> cv. Chinese Spring</td><td>Shoot, root, grain, spike and stem.</td><td>Three stages for each tissue</td><td>101bp Paired End (PE)</td><td>61.7 %</td><td>ENA: ERP004714</td><td>[<xref ref-type="bibr" rid="CR5">5</xref>]</td></tr><tr><td rowspan="2">Photomorphogenesis</td><td><italic>T. monococcum</italic> ssp. <italic>monococcum</italic> Acc. DV92</td><td>Whole seedlings</td><td>Etiolated and light-exposed seedlings.</td><td>50bp Single end (SE)</td><td>53.4 %</td><td>SRA: SRX283514</td><td rowspan="2">[<xref ref-type="bibr" rid="CR6">6</xref>]</td></tr><tr><td><italic>T. monococcum</italic> ssp. <italic>aegilopoides</italic> Acc. G3116</td><td>Whole seedlings</td><td>Etiolated and light-exposed seedlings.</td><td>101bp PE</td><td>68.0 %</td><td>SRA: SRX257915</td></tr><tr><td>Drought and heat stress</td><td><italic>T. aestivum</italic> cv. TAM 107</td><td>Whole seedlings</td><td>Drought, heat and combined stress.</td><td>101bp PE</td><td>45.9 %</td><td>SRA: SRP045409</td><td>[<xref ref-type="bibr" rid="CR7">7</xref>]</td></tr><tr><td>Grain layers</td><td><italic>T. aestivum</italic> cv. Holdfast</td><td>Endosperm, inner pericarp, outer pericarp.</td><td>12 days after anthesis</td><td>50bp SE</td><td>31.4 %</td><td>ENA: ERP008767</td><td>[<xref ref-type="bibr" rid="CR8">8</xref>]</td></tr><tr><td>Senescing leaf timecourse</td><td><italic>T. turgidum</italic> ssp. <italic>durum</italic> L. cv. Kronos</td><td>Flag leaves</td><td>Heading date, 12 and 22 days after anthesis</td><td>50bp SE</td><td>33.9 %</td><td>GEO: GSE60635</td><td>[<xref ref-type="bibr" rid="CR9">9</xref>]</td></tr><tr><td>Grain development timecourse</td><td><italic>T. aestivum</italic> cv. Chinese Spring</td><td>Grain layers</td><td>10, 20 and 30 days after anthesis</td><td>101bp PE</td><td>56.1 %</td><td>ENA: ERP004505</td><td>[<xref ref-type="bibr" rid="CR10">10</xref>]</td></tr></tbody></table><table-wrap-foot><p><italic>SRA</italic> Short Read Archive, NCBI [<xref ref-type="bibr" rid="CR14">14</xref>], <italic>GEO</italic> Gene Expression Omnibus, NCBI [<xref ref-type="bibr" rid="CR15">15</xref>], <italic>ENA</italic> European Nucleotide Archive [<xref ref-type="bibr" rid="CR16">16</xref>]</p></table-wrap-foot></table-wrap></p>
+        <p>We designed a pipeline specific for polyploid wheat sequence data to analyze previously published RNA-seq datasets using a uniform set of tools and quality controls. The output of our pipeline is a set of expression values for all annotated wheat genes from the IWGSC project. Briefly, raw RNA-seq reads are first trimmed for quality and adapter contamination using two open-source packages, &#x201C;<italic>Sickle</italic>&#x201D; (<ext-link ext-link-type="uri" xlink:href="https://github.com/ucdavis-bioinformatics/sickle">https://github.com/ucdavis-bioinformatics/sickle</ext-link>) and &#x201C;<italic>Scythe</italic>&#x201D; (<ext-link ext-link-type="uri" xlink:href="https://github.com/vsbuffalo/scythe">https://github.com/vsbuffalo/scythe</ext-link>), respectively, ensuring that only high-quality reads are considered when generating expression profiles. Trimmed reads are mapped to the full set of annotated homoeologue-specific wheat transcripts from the <italic>Ensembl</italic> genomics platform using BWA [<xref ref-type="bibr" rid="CR17">17</xref>]. Uniquely-mapped reads are counted using &#x201C;<italic>Htseq-count</italic>&#x201D; [<xref ref-type="bibr" rid="CR18">18</xref>] and then adjusted to derive RPKM/FPKM (Reads/Fragments per kilobase of transcript per million mapped reads) values for each gene based upon mapping rate, transcript length and library size. This normalization means that within a dataset, expression values are directly comparable across different tissues and developmental time points. Although the same reference was used for each dataset, comparisons across different datasets are less reliable because of differences in the number and length of sequencing reads between different datasets. Our mapping parameters are selected to report only those reads with a mapping quality (MAPQ) score of 40 from the Sequence Alignment/Map (SAM) file, a value which signifies that the read was mapped uniquely. Reads which map ambiguously, either to multiple homoeologues or to other identical sequences, have a lower associated MAPQ score, and are excluded in this step. Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref> reports the % of reads mapped from each dataset after the application of this selection criterion. Across all six datasets, an average of 50.1 % of reads were mapped uniquely, resulting in homoeologue-specific expression data for each gene. In general, datasets with longer reads (e.g. 101 bp PE reads) resulted in a higher proportion of uniquely mapped reads than those comprised of shorter reads (e.g. 50 bp SE reads).</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Web implementation</title>
+        <p>The web interface was constructed using several different programming packages. The code base for the majority of the project is PHP (<ext-link ext-link-type="uri" xlink:href="https://secure.php.net/">https://secure.php.net/</ext-link>) and JavaScript (<ext-link ext-link-type="uri" xlink:href="https://www.javascript.com/">https://www.javascript.com/</ext-link>). Relational database queries to the backend are performed with the PHP Data Object (PDO) module, allowing for secure queries. An additional advantage of using the PDO module is that the code is compatible with standard database engines such as MySQL, PostGreSQL and SQLite. In order to display dynamic graphs of the data, we implemented the HighCharts JavaScript library (<ext-link ext-link-type="uri" xlink:href="https://github.com/highslide-software/highcharts.com">https://github.com/highslide-software/highcharts.com</ext-link>). Specifically, this project uses a PHP module, which implements the HighCharts JavaScript library freely available on github (<ext-link ext-link-type="uri" xlink:href="https://github.com/ghunti/HighchartsPHP">https://github.com/ghunti/HighchartsPHP</ext-link>). For dynamic text searches in portions of the website, the project implements Asynchronous JavaScript and XML (AJAX) technology using the package JQuery 1.11.3 (<ext-link ext-link-type="uri" xlink:href="https://jquery.com/">https://jquery.com/</ext-link>). Custom PHP and JavaScript code was written to develop a frontend website to enable BLAST [<xref ref-type="bibr" rid="CR19">19</xref>] searches and to select multiple results for expression display. The site&#x2019;s frontend was written in HTML and JavaScript with BLAST search [<xref ref-type="bibr" rid="CR19">19</xref>] and AJAX gene identifier search forms allowing the user to select multiple results for expression display.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Database implementation</title>
+        <p>The database implementation uses a flexible storage schema to house the data. The storage table has the following MySQL (<ext-link ext-link-type="uri" xlink:href="https://www.mysql.com/">https://www.mysql.com/</ext-link>) storage datatypes: study_id (varchar), seq_id (varchar), tissue (varchar), mean (float), se (float), se_low (float) and se_high (float). Binary search tree indices (BTREE) were implemented to increase the speed of queries using the study_id and seq_id columns.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>System architecture</title>
+        <p>The WheatExp tool is housed on the GrainGenes server at the following URL <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/WheatExp/">http://wheat.pw.usda.gov/WheatExp/</ext-link>. GrainGenes is an internationally recognized database for genomic and genetic resources in <italic>Triticeae</italic> and <italic>Avena</italic> species. The web and database is running on a ThinkMate ThinkTank IQ4 system with four Intel Xeon E7-4820 at 2.00 GHz with 52 GB of RAM. It is currently running Linux Kernel 3.13 distribution Ubuntu 14.04 long term support with PHP version 5.5.9 and MySQL version 5.5.43.</p>
+      </sec>
+    </sec>
+    <sec id="Sec7">
+      <title>Utility and Discussion</title>
+      <sec id="Sec8">
+        <title>Web interface</title>
+        <p>The WheatExp homepage includes a brief description of the database and project design as well as details of all currently available datasets (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1a</xref>). Our data processing pipeline allows for the rapid incorporation of complementary RNA-seq expression datasets as they are published and we invite suggestions for the addition of new datasets from the user community. We anticipate regular expansions of the database to broaden the range of developmental and temporal expression profiles included. This approach will maximize the utility of the database for researchers studying diverse aspects of wheat development and ensures access to the most relevant high-quality expression datasets.<fig id="Fig1"><label>Fig. 1</label><caption><p><bold>a</bold> Web interface of the WheatExp homepage. <bold>b</bold> BLAST results output page. <bold>c</bold> Screenshot of expression data visualization</p></caption><graphic xlink:href="12870_2015_692_Fig1_HTML" id="MO1"/></fig></p>
+        <p>From this main hub (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1a</xref>), the database can be queried in one of two ways; either by entering the DNA or protein sequence of a gene of interest as a BLAST query, or by a text search for a known gene ID from the <italic>Ensembl</italic> genomics annotation platform [<xref ref-type="bibr" rid="CR5">5</xref>] (e.g. Traes_6AS_9E38A95CB.1) or for an annotated functional term associated with the gene&#x2019;s encoded protein (e.g. &#x201C;bHLH&#x201D; or &#x201C;Cytochrome P450&#x201D;). For BLAST searches, results are displayed on a new page and include details of each BLAST alignment, sequence and a link to the corresponding gene ID page on the external <italic>Ensembl</italic> genomics hub for simple cross-referencing (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1b</xref>). A maximum of six matched results may be selected for side-by-side display within the same graph to allow simple comparisons between multiple genes. While this feature was originally implemented to enable comparisons among wheat homoeologues, any set of up to six genes may be selected for comparison, regardless of their relationship.</p>
+        <p>Likewise, when browsing using the text search function, up to six genes can be selected for addition to the results list, which can subsequently be viewed side-by-side in the results window. For larger-scale analyses, tabular expression data for any number of genes can be downloaded by providing a list of <italic>Ensembl</italic> gene IDs of interest. The functional terms associated with each gene are obtained through standard gene annotation files in GFF3 format from the IWGSC which are stored within the database for text search function. We chose to adhere to the widely-used standard gene nomenclature format employed by the IWGSC and <italic>Ensembl</italic> genomics platform [<xref ref-type="bibr" rid="CR5">5</xref>] and selected the set of annotated cDNA sequences from this platform as our mapping reference. External links to the annotated sequences for each gene are included in the results. This nomenclature format is increasingly becoming the standard for gene annotations within the plant research community, so our use of this reference will allow for the simple translation between projects and will maintain complementarity with the IWGSC project. This will facilitate comparative genomics studies with model plant species and other economically-important crops, such as rice, barley and maize, as the genomic resources contained within the <italic>Ensembl</italic> platform in each of these species improves. Additionally, comparisons can be made with more distantly related species to analyze functional gene divergence during the course of evolution.</p>
+        <p>Graphical expression profiles from all datasets are presented on a single results page, displaying mean RPKM/FPKM values +/&#x2212; Standard Error Mean (SEM) (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1c</xref>). Graphs can be downloaded in one of four image formats and data is also presented in an accompanying table, which can be exported in &#x2018;.csv&#x2019; format (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1c</xref>). Gene-level expression data can be downloaded separately, or in bulk as a single tabular file containing all data.</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Expression data</title>
+        <p>All expression profiles in WheatExp are generated from RNA-seq datasets. This approach has several advantages over existing expression studies derived from microarray data, which until recently, was the standard technology used for large-scale expression analysis (e.g. &#x201C;Plant Expression database (PLEXdb)&#x201D;, a database of microarray-based expression profiles in different plant species [<xref ref-type="bibr" rid="CR20">20</xref>]). One of the advantages of RNA-seq is that it is an open platform that does not rely on predetermined sets of probes printed on a gene chip. In addition, this technology provides more reliable expression profiling across a broader dynamic range than is possible with microarrays.</p>
+        <p>An important advantage of the application of RNA-seq data in polyploid species is that it facilitates the distinction among homoeologues and recently-diverged paralogous genes by allowing the application of stringent read mapping thresholds. Our selection of only uniquely-mapped reads has the dual benefit that the expression data are not only robust, but also homoeologue-specific, since the differences between these genomes (average 97 % identical) are distinguished by the selected mapping parameters. This is illustrated in Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2</xref> by two examples: <italic>CIRCADIAN CLOCK ASSOCIATED1</italic>, where the expression of the three homoeologous genes is approximately equal (Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2a</xref>) and <italic>CONSTANS1</italic> where the D-genome homoeologue contributes the majority of transcripts to the overall expression (Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2b</xref>).<fig id="Fig2"><label>Fig. 2</label><caption><p><bold>a</bold><italic>CIRCADIAN CLOCK ASSOCIATED1</italic> expression evenly distributed between all three homoeologues. <bold>b</bold>
+<italic>CONSTANS1</italic> expression dominated by the <italic>CO-D1</italic> homeoologue during spike and stem development in hexaploid wheat</p></caption><graphic xlink:href="12870_2015_692_Fig2_HTML" id="MO2"/></fig></p>
+      </sec>
+      <sec id="Sec10">
+        <title>Simulated RNA-seq data</title>
+        <p>One drawback of using uniquely-mapped RNA-seq reads for expression analysis is that any read which maps equally well to identical regions in different genes is discarded, potentially resulting in an underestimation of the expression levels of highly similar genes [<xref ref-type="bibr" rid="CR21">21</xref>]. To determine the extent of this effect in our database, we performed a simulated RNA-seq experiment. We generated 29.4 M synthetic 100bp paired-end reads with random expression levels and Illumina HiSeq2000 error profiles (&#x2018;ART&#x2019;, mode art-illumina, default parameters except -m 500, &#x2212;s 100 &#x2013;ss HS20 [<xref ref-type="bibr" rid="CR22">22</xref>]). All reads were processed using the same pipeline as for all biological RNA-seq data. By comparing the known number of simulated reads with the number of mapped reads, we can determine for each contig the proportion of reads discarded during mapping. Using a set of 3,476 homoeologous triplets (=10,428 genes) identified from a previous study [<xref ref-type="bibr" rid="CR7">7</xref>], we mapped the subset of reads originating from each homoeologue to a reference comprised only of their genome of origin (i.e. A-genome reads were mapped to A-genome transcripts etc.). For the A, B and D genomes, an average of 98.6, 98.4, and 98.4 % of reads mapped uniquely to their transcripts of origin, respectively, demonstrating that only a small proportion of reads are discarded during mapping when their homoeologous genes are absent from the reference. When we repeated the mapping of all generated reads to the full reference, unique mapping rates were reduced to 82.4, 83.6 and 80.6 % for the A, B and D homoeologous triplets. In each case, this was a slightly lower unique mapping rate than for all remaining transcripts in our dataset (84.4 %). Despite this reduction in the mapping rate, we observed a high level of correlation between the number of generated reads and the observed mapped reads (r&#x2009;=&#x2009;0.95, 0.96, 0.95 for A, B and D homoeologous triplets, Fig.&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). Therefore, while the estimated expression levels of homoeologous genes in our database are, on average, slightly reduced due to their sequence similarity, the reported expression remains closely correlated with the true expression level. Furthermore, this effect is approximately equal for transcripts originating from the three homoeologous wheat genomes (Fig.&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>), demonstrating the absence of bias when comparing homoeologue-specific expression profiles for a gene of interest.<fig id="Fig3"><label>Fig. 3</label><caption><p>Scatter plot of synthetic read counts and observed mapping rates for each contig in the reference from a simulated RNA-seq experiment. Homoeologous triplets are highlighted in red (A-genome), green (B-genome) and blue (D-genome). All remaining contigs in the reference not classified as a homoeologous triplet are highlighted in grey</p></caption><graphic xlink:href="12870_2015_692_Fig3_HTML" id="MO3"/></fig></p>
+      </sec>
+      <sec id="Sec11">
+        <title>Limitations</title>
+        <p>The main application of WheatExp is to compare the relative expression levels of the different homoeologues of a single gene across different tissues, developmental stages, environmental conditions and genetic backgrounds. For users interested in comparing the expression of different genes, we have included a statement on the website indicating that comparisons among genes are valid only when the genes being compared have the same number of homoeologues in the reference genome. Based upon results from our simulated RNA-seq experiment, genes where one homoeologue is absent from the reference will exhibit a higher proportion of uniquely-mapped reads and the expression levels of the two remaining homoeologues may also be inflated by the incorrect mapping of reads from the absent homoeologue. Additionally, no expression data will be reported for any genes which lack annotation within the current IWGSC release and any contig assemblies which are duplicated in the reference assembly will exhibit a reduced number of uniquely mapped reads. However, our project design allows for regular updates and refining of the mapping reference as this is expanded through the IWGSC project. As the mapping reference is improved we will re-map and re-process each dataset to generate updated expression sets using new versions of the reference, reducing the incidence and impact of such bias.</p>
+        <p>Our approach and data analysis pipeline can be applied to other polyploid species for which a homoeologue-specific genomic assembly is available to use as a reference. A critical parameter that must be considered in this application is the average level of identity among homoeologues, since this will affect the selection of the threshold for mapping uniquely mapped reads and thus the ability to discriminate between homoeologues.</p>
+      </sec>
+    </sec>
+    <sec id="Sec12">
+      <title>Conclusions</title>
+      <p>The increasing volume of expression data from RNA-seq studies represents a valuable source of information for the plant research community. We developed a pipeline tailored to polyploid wheat to rapidly process and analyze this data, and describe WheatExp, a database allowing the simple comparison of wheat homoeologue-specific sequences across a diverse set of temporal and spatial transcriptional profiles. Our database management is flexible, allowing for the incorporation of improvements in both the coverage of the wheat genomic reference and in the addition of complementary RNA-seq datasets released by third-party research groups. WheatExp provides simple, free access to a comprehensive array of expression data, empowering small labs and individual researchers to mine complex and valuable expression datasets.</p>
+    </sec>
+    <sec id="Sec13">
+      <title>Availability and requirements</title>
+      <p>WheatExp is a free database and visualization tool open to all users with no login requirements and can be accessed at the following URL: <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/WheatExp/">http://wheat.pw.usda.gov/WheatExp/</ext-link>. The web tool is functional on all modern web browsing environments including Google Chrome, Mozilla Firefox and Safari.</p>
+    </sec>
+    <sec id="Sec14">
+      <title>Availability of supporting data</title>
+      <p>All raw sequence data used to generate processed expression data for WheatExp is accessible from public sequence databases as described in Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>. Processed counts and reference files are available for download through the WheatExp website.</p>
+    </sec>
+  </body>
+  <back>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>AJAX</term>
+          <def>
+            <p>asynchronous javascript and xml</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>BTREE</term>
+          <def>
+            <p>binary search tree indices</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>ENA</term>
+          <def>
+            <p>European Nucleotide Archive</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FPKM</term>
+          <def>
+            <p>fragments per kilobase of transcript per million reads mapped</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>GEO</term>
+          <def>
+            <p>gene expression omnibus</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>IWGSC</term>
+          <def>
+            <p>International wheat genome sequencing consortium</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MAPQ</term>
+          <def>
+            <p>mapping quality</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PDO</term>
+          <def>
+            <p>PHP Data Object</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>RPKM</term>
+          <def>
+            <p>reads per kilobase of transcript per million reads mapped</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SAM</term>
+          <def>
+            <p>sequence alignment/map</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SEM</term>
+          <def>
+            <p>standard error mean</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SRA</term>
+          <def>
+            <p>sequence read archive</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TILLING</term>
+          <def>
+            <p>targeted induced local lesions in genomes</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <fn-group>
+      <fn>
+        <p>Stephen Pearce and Hans Vazquez-Gross contributed equally to this work.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Competing interests</bold>
+        </p>
+        <p>The authors declare they have no competing interests.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Authors&#x2019; contributions</bold>
+        </p>
+        <p>SP, HVG and JD conceived the study. SP performed sequence processing and mapping to generate expression data. SH, DH, YW, YG and HVG implemented the online database and web visualization tool on Graingenes. SP and JD generated a first draft of the manuscript. All authors read and approved the final manuscript.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>This project was supported by the National Research Initiative Competitive Grants 2011-67013-30077 and 2011-68002-30029 (Triticeae-CAP) from the USDA National Institute of Food and Agriculture, and by the Howard Hughes Medical Institute and the Gordon and Betty Moore Foundation grant GBMF3031. We are grateful to Andy Phillips and Robert King for helpful advice and suggestions during the course of this project.</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Godfray</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Beddington</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Crute</surname>
+              <given-names>IR</given-names>
+            </name>
+            <name>
+              <surname>Haddad</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lawrence</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Muir</surname>
+              <given-names>JF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Food security: the challenge of feeding 9 billion people</article-title>
+          <source>Science</source>
+          <year>2010</year>
+          <volume>327</volume>
+          <fpage>812</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1185383</pub-id>
+          <?supplied-pmid 20110467?>
+          <pub-id pub-id-type="pmid">20110467</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Comai</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>The advantages and disadvantages of being polyploid</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2005</year>
+          <volume>6</volume>
+          <fpage>836</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg1711</pub-id>
+          <?supplied-pmid 16304599?>
+          <pub-id pub-id-type="pmid">16304599</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>IWGSC</collab>
+          </person-group>
+          <article-title>A chromosome-based draft sequence of the hexaploid bread wheat (<italic>Triticum aestivum</italic>) genome</article-title>
+          <source>Science</source>
+          <year>2014</year>
+          <volume>345</volume>
+          <fpage>1251788</fpage>
+          <pub-id pub-id-type="doi">10.1126/science.1251788</pub-id>
+          <pub-id pub-id-type="pmid">25035500</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome plasticity a key factor in the success of polyploid wheat under domestication</article-title>
+          <source>Science</source>
+          <year>2007</year>
+          <volume>316</volume>
+          <fpage>1862</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1143986</pub-id>
+          <?supplied-pmid 17600208?>
+          <pub-id pub-id-type="pmid">17600208</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Choulet</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Alberti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Theil</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Glover</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Barbe</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Daron</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Structural and functional partitioning of bread wheat chromosome 3B</article-title>
+          <source>Science</source>
+          <year>2014</year>
+          <volume>345</volume>
+          <fpage>1249721</fpage>
+          <pub-id pub-id-type="doi">10.1126/science.1249721</pub-id>
+          <?supplied-pmid 25035497?>
+          <pub-id pub-id-type="pmid">25035497</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fox</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Geniza</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hanumappa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Naithani</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Sullivan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Preece</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>De novo transcriptome assembly and analyses of gene expression during photomorphogenesis in diploid wheat <italic>Triticum monococcum</italic></article-title>
+          <source>PLoS One</source>
+          <year>2014</year>
+          <volume>9</volume>
+          <fpage>e96855</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0096855</pub-id>
+          <?supplied-pmid 24821410?>
+          <pub-id pub-id-type="pmid">24821410</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Xin</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ni</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Temporal transcriptome profiling reveals expression partitioning of homeologous genes contributing to heat and drought acclimation in wheat (Triticum aestivum L.)</article-title>
+          <source>BMC Plant Biol</source>
+          <year>2015</year>
+          <volume>15</volume>
+          <fpage>152</fpage>
+          <pub-id pub-id-type="doi">10.1186/s12870-015-0511-8</pub-id>
+          <?supplied-pmid 26092253?>
+          <pub-id pub-id-type="pmid">26092253</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pearce</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Huttly</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Prosser</surname>
+              <given-names>IM</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>YD</given-names>
+            </name>
+            <name>
+              <surname>Vaughan</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Gallova</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Heterologous expression and transcript analysis of gibberellin biosynthetic genes of grasses reveals novel functionality in the <italic>GA3ox</italic> family</article-title>
+          <source>BMC Plant Biol</source>
+          <year>2015</year>
+          <volume>15</volume>
+          <fpage>130</fpage>
+          <pub-id pub-id-type="doi">10.1186/s12870-015-0520-7</pub-id>
+          <?supplied-pmid 26044828?>
+          <pub-id pub-id-type="pmid">26044828</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pearce</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tabbita</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Cantu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Buffalo</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Avni</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Vazquez-Gross</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Regulation of Zn and Fe transporters by the <italic>GPC1</italic> gene during early wheat monocarpic senescence</article-title>
+          <source>BMC Plant Biol</source>
+          <year>2014</year>
+          <volume>14</volume>
+          <fpage>368</fpage>
+          <pub-id pub-id-type="doi">10.1186/s12870-014-0368-2</pub-id>
+          <?supplied-pmid 25524236?>
+          <pub-id pub-id-type="pmid">25524236</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pfeifer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kugler</surname>
+              <given-names>KG</given-names>
+            </name>
+            <name>
+              <surname>Sandve</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Zhan</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Rudi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hvidsten</surname>
+              <given-names>TR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome interplay in the grain transcriptome of hexaploid bread wheat</article-title>
+          <source>Science</source>
+          <year>2014</year>
+          <volume>345</volume>
+          <fpage>1250091</fpage>
+          <pub-id pub-id-type="doi">10.1126/science.1250091</pub-id>
+          <?supplied-pmid 25035498?>
+          <pub-id pub-id-type="pmid">25035498</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cunningham</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Amode</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Barrell</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Beal</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Billis</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Brent</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ensembl 2015</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2015</year>
+          <volume>43</volume>
+          <fpage>D662</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gku1010</pub-id>
+          <?supplied-pmid 25352552?>
+          <pub-id pub-id-type="pmid">25352552</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Gerstein</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>RNA-Seq: a revolutionary tool for transcriptomics</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>57</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg2484</pub-id>
+          <?supplied-pmid 19015660?>
+          <pub-id pub-id-type="pmid">19015660</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martin</surname>
+              <given-names>LB</given-names>
+            </name>
+            <name>
+              <surname>Fei</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Giovannoni</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Rose</surname>
+              <given-names>JK</given-names>
+            </name>
+          </person-group>
+          <article-title>Catalyzing plant science research with RNA-seq</article-title>
+          <source>Front Plant Sci</source>
+          <year>2013</year>
+          <volume>4</volume>
+          <fpage>66</fpage>
+          <pub-id pub-id-type="doi">10.3389/fpls.2013.00066</pub-id>
+          <?supplied-pmid 23554602?>
+          <pub-id pub-id-type="pmid">23554602</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leinonen</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sugawara</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Shumway</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>The sequence read archive</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <fpage>D19</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkq1019</pub-id>
+          <?supplied-pmid 21062823?>
+          <pub-id pub-id-type="pmid">21062823</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Edgar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Domrachev</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lash</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Gene Expression Omnibus: NCBI gene expression and hybridization array data repository</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2002</year>
+          <volume>30</volume>
+          <fpage>207</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/30.1.207</pub-id>
+          <?supplied-pmid 11752295?>
+          <pub-id pub-id-type="pmid">11752295</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leinonen</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Akhtar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Birney</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Bower</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Cerdeno-Tarraga</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The European Nucleotide Archive</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <fpage>D28</fpage>
+          <lpage>31</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkq967</pub-id>
+          <?supplied-pmid 20972220?>
+          <pub-id pub-id-type="pmid">20972220</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Durbin</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Fast and accurate short read alignment with Burrows-Wheeler transform</article-title>
+          <source>Bioinformatics</source>
+          <year>2009</year>
+          <volume>25</volume>
+          <fpage>1754</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btp324</pub-id>
+          <?supplied-pmid 19451168?>
+          <pub-id pub-id-type="pmid">19451168</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anders</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pyl</surname>
+              <given-names>PT</given-names>
+            </name>
+            <name>
+              <surname>Huber</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>HTSeq - a Python framework to work with high-throughput sequencing data</article-title>
+          <source>Bioinformatics</source>
+          <year>2015</year>
+          <volume>31</volume>
+          <fpage>166</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btu638</pub-id>
+          <?supplied-pmid 25260700?>
+          <pub-id pub-id-type="pmid">25260700</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altschul</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Gish</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Lipman</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>J Mol Biol</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <fpage>403</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0022-2836(05)80360-2</pub-id>
+          <?supplied-pmid 2231712?>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dash</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Van Hemert</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Wise</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Dickerson</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>PLEXdb: gene expression resources for plants and plant pathogens</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2012</year>
+          <volume>40</volume>
+          <fpage>D1194</fpage>
+          <lpage>201</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkr938</pub-id>
+          <?supplied-pmid 22084198?>
+          <pub-id pub-id-type="pmid">22084198</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <mixed-citation publication-type="other">Hirsch CD, Springer NM, Hirsch CN. Genomic limitations to RNA sequencing expression profiling. Plant J. 84:491&#x2013;503</mixed-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Marth</surname>
+              <given-names>GT</given-names>
+            </name>
+          </person-group>
+          <article-title>ART: a next-generation sequencing read simulator</article-title>
+          <source>Bioinformatics</source>
+          <year>2012</year>
+          <volume>28</volume>
+          <fpage>593</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btr708</pub-id>
+          <?supplied-pmid 22199392?>
+          <pub-id pub-id-type="pmid">22199392</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

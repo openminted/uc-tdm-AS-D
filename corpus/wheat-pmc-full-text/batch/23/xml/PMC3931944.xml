@@ -1,0 +1,2370 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Theor Appl Genet</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Theor. Appl. Genet</journal-id>
+      <journal-title-group>
+        <journal-title>TAG. Theoretical and Applied Genetics. Theoretische Und Angewandte Genetik</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0040-5752</issn>
+      <issn pub-type="epub">1432-2242</issn>
+      <publisher>
+        <publisher-name>Springer Berlin Heidelberg</publisher-name>
+        <publisher-loc>Berlin/Heidelberg</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3931944</article-id>
+      <article-id pub-id-type="pmid">24337101</article-id>
+      <article-id pub-id-type="publisher-id">2243</article-id>
+      <article-id pub-id-type="doi">10.1007/s00122-013-2243-1</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Original Paper</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A reaction norm model for genomic selection using high-dimensional genomic and environmental data</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jarqu&#xED;n</surname>
+            <given-names>Diego</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Crossa</surname>
+            <given-names>Jos&#xE9;</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff3"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lacaze</surname>
+            <given-names>Xavier</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff4"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Du Cheyron</surname>
+            <given-names>Philippe</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff6"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Daucourt</surname>
+            <given-names>Jo&#xEB;lle</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff6"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lorgeou</surname>
+            <given-names>Josiane</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff7"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Piraux</surname>
+            <given-names>Fran&#xE7;ois</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff7"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Guerreiro</surname>
+            <given-names>Laurent</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff8"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>P&#xE9;rez</surname>
+            <given-names>Paulino</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff5"/>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Calus</surname>
+            <given-names>Mario</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff9"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Burgue&#xF1;o</surname>
+            <given-names>Juan</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff3"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>de los Campos</surname>
+            <given-names>Gustavo</given-names>
+          </name>
+          <address>
+            <phone>+1-205-9759248</phone>
+            <fax>+1-205-9752540</fax>
+            <email>gcampos@uab.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <aff id="Aff1"><label/>Department of Biostatistics, University of Alabama at Birmingham, 1665 University Boulevard, 327L Ryals Public Health Building, Birmingham, AL 35216 USA </aff>
+        <aff id="Aff2"><label/>Agronomy and Horticulture Department, University of Nebraska, 321 Keim Hall, Lincoln, NE USA 68583-0915 </aff>
+        <aff id="Aff3"><label/>Biometrics and Statistics Unit, International Maize and Wheat Improvement Center (CIMMYT), Apdo. Postal 6-641, 06600 Mexico, D.F., M&#xE9;xico </aff>
+        <aff id="Aff4"><label/>Arvalis Institut du v&#xE9;g&#xE9;tal, Station Inter-institut, 6 chemin de la c&#xF4;te vieille, 31450 Bazi&#xE8;ge, France </aff>
+        <aff id="Aff5"><label/>Colegio de Postgraduados, Montecillo, Edo. de M&#xE9;xico, Mexico, M&#xE9;xico </aff>
+        <aff id="Aff6"><label/>Arvalis Institut du v&#xE9;g&#xE9;tal, IBP Universit&#xE9; Paris Sud, Rue de Noetzlin, B&#xE2;t. 630, 91405 Orsay, France </aff>
+        <aff id="Aff7"><label/>Arvalis Institut du vegetal, Station exp&#xE9;rimentale, 91720 Boigneville, France </aff>
+        <aff id="Aff8"><label/>Arvalis Institut du v&#xE9;g&#xE9;tal, 3 rue Joseph et Marie Hackin, 75116 Paris, France </aff>
+        <aff id="Aff9"><label/>Animal Breeding and Genomics Centre, Wageningen UR Livestock Research, P.O. Box 135, 6700 AC Wageningen, The Netherlands </aff>
+      </contrib-group>
+      <author-notes>
+        <fn fn-type="com">
+          <p>Communicated by F. van Eeuwijk.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>12</day>
+        <month>12</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>12</day>
+        <month>12</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <year>2014</year>
+      </pub-date>
+      <volume>127</volume>
+      <issue>3</issue>
+      <fpage>595</fpage>
+      <lpage>607</lpage>
+      <history>
+        <date date-type="received">
+          <day>11</day>
+          <month>4</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>20</day>
+          <month>11</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; The Author(s) 2013</copyright-statement>
+        <license license-type="OpenAccess">
+          <license-p><bold>Open Access</bold>This article is distributed under the terms of the Creative Commons Attribution License which permits any use, distribution, and reproduction in any medium, provided the original author(s) and the source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>
+            <bold>
+              <italic>Key message</italic>
+            </bold>
+          </title>
+          <p><bold>New methods that incorporate the main and interaction effects of high-dimensional markers and of high-dimensional environmental covariates gave increased prediction accuracy of grain yield in wheat across and within environments</bold>.</p>
+        </sec>
+        <sec>
+          <title>Abstract</title>
+          <p>In most agricultural crops the effects of genes on traits are modulated by environmental conditions, leading to genetic by environmental interaction (G&#xA0;&#xD7;&#xA0;E). Modern genotyping technologies allow characterizing genomes in great detail and modern information systems can generate large volumes of environmental data. In principle, G&#xA0;&#xD7;&#xA0;E can be accounted for using interactions between markers and environmental covariates (ECs). However, when genotypic and environmental information is high dimensional, modeling all possible interactions explicitly becomes infeasible. In this article we show how to model interactions between high-dimensional sets of markers and ECs using covariance functions. The model presented here consists of (random) reaction norm where the genetic and environmental gradients are described as linear functions of markers and of ECs, respectively. We assessed the proposed method using data from Arvalis, consisting of 139 wheat lines genotyped with 2,395 SNPs and evaluated for grain yield over 8&#xA0;years and various locations within northern France. A total of 68 ECs, defined based on five phases of the phenology of the crop, were used in the analysis. Interaction terms accounted for a sizable proportion (16&#xA0;%) of the within-environment yield variance, and the prediction accuracy of models including interaction terms was substantially higher (17&#x2013;34&#xA0;%) than that of models based on main effects only. Breeding for target environmental conditions has become a central priority of most breeding programs. Methods, like the one presented here, that can capitalize upon the wealth of genomic and environmental information available, will become increasingly important.</p>
+        </sec>
+      </abstract>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; Springer-Verlag Berlin Heidelberg 2014</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="intro">
+      <title>Introduction</title>
+      <p>In the analysis of agricultural data and plant breeding experiments, the development of methods for modeling the interaction between genotypes and environments (G&#xA0;&#xD7;&#xA0;E) precedes the development of analysis of variance. For instance, Fisher and Mackenzie (<xref ref-type="bibr" rid="CR22">1923</xref>) suggested modeling the differential responses of genotypes (G) to environments (E) using a multiplicative (product) operator rather than additive models. Yates and Cochran (<xref ref-type="bibr" rid="CR46">1938</xref>) proposed using a multiplicative operator consisting of a simple regression of a line&#x2019;s performance on the environmental mean (joint-regression analysis). Years later, other multiplicative operators based on singular value decomposition were proposed and used by Gollob (<xref ref-type="bibr" rid="CR24">1968</xref>), Mandel (<xref ref-type="bibr" rid="CR31">1969</xref>), Gauch (<xref ref-type="bibr" rid="CR23">1988</xref>), Cornelius et al. (<xref ref-type="bibr" rid="CR10">1996</xref>) and Crossa and Cornelius (<xref ref-type="bibr" rid="CR12">1997</xref>). Later, Piepho (<xref ref-type="bibr" rid="CR35">1998</xref>) and Smith et al. (<xref ref-type="bibr" rid="CR36">2001</xref>, <xref ref-type="bibr" rid="CR37">2005</xref>) used this multiplicative operator for modeling G&#xA0;&#xD7;&#xA0;E but in the context of linear mixed-effect models, and Crossa et al. (<xref ref-type="bibr" rid="CR14">2004</xref>, <xref ref-type="bibr" rid="CR15">2006</xref>) and Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR4">2008</xref>, <xref ref-type="bibr" rid="CR5">2011</xref>) considered the use of structured covariance matrices to model G&#xA0;&#xD7;&#xA0;E in the context of pedigree-based mixed models.</p>
+      <p>The main effects of genes and of environmental conditions could be modeled by regressing phenotypes on genetic markers and on environmental covariates (ECs; e.g., temperature, soil moisture, solar radiation) concurrently; and G&#xA0;&#xD7;&#xA0;E can in principle be modeled using interactions between genetic markers and ECs. An example of such an approach is the factorial regression (FR) model (Denis <xref ref-type="bibr" rid="CR20">1988</xref>; van Eeuwijk et al. <xref ref-type="bibr" rid="CR40">1996</xref>; Vargas et al. <xref ref-type="bibr" rid="CR42">1999</xref>, <xref ref-type="bibr" rid="CR43">2001</xref>). Models for QTL&#xA0;&#xD7;&#xA0;environment interaction (Q&#xA0;&#xD7;&#xA0;E) have been applied both in the context of fixed-effects regression, such as the FR, and using Partial Least Squares (Crossa et al. <xref ref-type="bibr" rid="CR13">1999</xref>; Vargas et al. <xref ref-type="bibr" rid="CR44">2006</xref>). More recently, these methods were used in a mixed model context (Boer et al. <xref ref-type="bibr" rid="CR3">2007</xref>; Malosetti et al. <xref ref-type="bibr" rid="CR29">2004</xref>) and later extended to multi-environment multi-trait model settings (Malosetti et al. <xref ref-type="bibr" rid="CR30">2008</xref>; Alimi et al. <xref ref-type="bibr" rid="CR1">2013</xref>).</p>
+      <p>With the development of modern genotyping and sequencing technologies, molecular marker information has become high dimensional, with the number of markers (<italic>p</italic>) potentially exceeding by large the number of phenotypic records (<italic>n</italic>) available for model fitting. Similarly, as climatic and agronomic information systems develop, environmental information also becomes high dimensional. The Q&#xA0;&#xD7;&#xA0;E models discussed above cannot cope with the high-dimensional nature of genomic and EC information. A simple approach would be to introduce a first step where a few &#x2018;significant&#x2019; ECs and genomic regions are selected, with only a small subset of markers and ECs used in the final model. However, with variable selection procedures important volumes of information can be lost in the process of selecting markers (Bernardo <xref ref-type="bibr" rid="CR2">2010</xref>; Crossa <xref ref-type="bibr" rid="CR11">2012</xref>) or ECs, with the undesirable result that large proportions of genetic or environmental signals may be unaccounted for.</p>
+      <p>To circumvent the limitations of QTL-based models, Meuwissen et al. (<xref ref-type="bibr" rid="CR32">2001</xref>) proposed using whole genome regression (WGR) methods (also known as models for genomic selection, GS) where information about potentially hundreds of thousands of markers is jointly considered. Such models allow capturing not only major-effect genes but also the contribution of genomic regions with small effects. Implementing these large-<italic>p</italic> with small-<italic>n</italic> regressions is possible using modern shrinkage estimation procedures, and empirical evidence obtained with plant breeding data shows that GS can outperform the predictive power of pedigree-based methods by a sizable amount (de los Campos et al. <xref ref-type="bibr" rid="CR18">2009</xref>; Crossa et al. <xref ref-type="bibr" rid="CR16">2010</xref>, <xref ref-type="bibr" rid="CR17">2011</xref>; Heslot et al. <xref ref-type="bibr" rid="CR27">2012</xref>; P&#xE9;rez et al. <xref ref-type="bibr" rid="CR34">2010</xref>). Recently, GS models were extended to multi-trait multi-environment settings. For instance, Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>) used a multi-environment version of the genomic best linear unbiased predictor (G-BLUP) where G&#xA0;&#xD7;&#xA0;E was modeled using genetic correlations, and found that the multi-environment G-BLUP had a much higher prediction accuracy than the single-trait G-BLUP. However, the study of Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>) did not incorporate environmental variables to model G&#xA0;&#xD7;&#xA0;E.</p>
+      <p>The principles used in GS to model the effects of genetic markers could also be exploited for modeling the main effects of large numbers of ECs, and, in theory, one could also include in the model explicitly all possible contrasts between markers and ECs. However, such an approach would be extremely demanding because the number of contrasts to be considered (and consequently the number of effects to be estimated) grows proportionally to the product of the number of markers and the number of ECs, leading to important statistical and computational challenges.</p>
+      <p>In this article, we propose a class of random effects models where the main and interaction effects of markers and ECs are introduced using covariance structures that are functions of marker genotypes and ECs. The proposed approach represents an extension of the G-BLUP and can be interpreted as reaction norm model (e.g., Woltereck <xref ref-type="bibr" rid="CR45">1909</xref>; Gregorius and Namkoong <xref ref-type="bibr" rid="CR25">1986</xref>; Falconer and Mackay <xref ref-type="bibr" rid="CR21">1996</xref>; Calus et al. <xref ref-type="bibr" rid="CR8">2002</xref>; Calus and Veerkamp <xref ref-type="bibr" rid="CR7">2003</xref>; Su et al. <xref ref-type="bibr" rid="CR38">2006</xref>) where genetic and environmental gradients are described using a linear regression on genetic markers and on ECs. We evaluated the proposed methods using a data set from Arvalis, consisting of 139 wheat lines evaluated for grain yield in 340&#xA0;year&#xA0;&#xD7;&#xA0;location combinations. Genetic and ECs information consisted of 2,395 SNPs and 68 ECs. The prediction accuracy of the proposed models was assessed for two prediction problems: one (CV1) in which models are used to predict the performance of lines that have never been evaluated in field trials (newly developed lines) and a second design (CV2) in which all lines have at least one field evaluation available and the prediction problem was that of predicting performance across environments (i.e., in an incomplete field trial). Predictive correlations were in line with previous reports on grain yield but varied considerably depending on the prediction problem (CV1 or CV2) and the model used. Relative to a model that accounted only for the main effects of markers, environments and ECs, the introduction of interactions between these terms increased the predictive correlation by roughly 35&#xA0;%, from 0.175 to 0.236 in CV1 and 17&#xA0;% from 0.439 to 0.514 in CV2. Therefore, we concluded that sizable gains in prediction accuracy can be attained by combining molecular marker information with EC data.</p>
+    </sec>
+    <sec id="Sec2" sec-type="materials|methods">
+      <title>Materials and methods</title>
+      <sec id="Sec3">
+        <title>Experimental data set</title>
+        <p>Data were provided by Arvalis and consisted of a total of 7,876 field records of grain yield collected on 139 commercial lines tested in eight different years (from 2003&#x2013;10) and 134 locations within northern France, yielding a total of 340 location&#xA0;&#xD7;&#xA0;year combinations. No further information about the experimental design was available. All trials received fungicide and seed treatments, all locations had a meteorological station within a distance of less than 10&#xA0;km, and soil characteristics at each location were analyzed. The lines were screened for grain yield (15&#xA0;% moisture content) and yield components in plots harvested at maturity. Care was taken for the data to have connections across locations and years, with 55, 20, 11, 3, 2 lines being evaluated in at least 50, 100, 150, 200 and 330 location&#xA0;&#xD7;&#xA0;year combinations.</p>
+        <p>Lines were genotyped for 3,548 SNPs using an insertion site-based polymorphism technique (Paux et al. <xref ref-type="bibr" rid="CR33">2010</xref>). After removing SNPs with minor allele frequency smaller than 3&#xA0;% and SNPs with more than 10&#xA0;% of missing values, a total of 2,395 SNPs were still available for analysis. The remaining missing genotypes were imputed using <inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$2\theta_{m}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq1.gif"/></alternatives></inline-formula> where <inline-formula id="IEq2"><alternatives><tex-math id="M2">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\theta_{m}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq2.gif"/></alternatives></inline-formula> is the estimated frequency of the allele coded as one at the <italic>m</italic>th marker. A total of 130 ECs that described environmental conditions were collected. These environmental conditions were related to abiotic factors such as temperature, soil type, humidity, radiation and precipitation. Environmental covariates were calculated based on climatic records and soil characteristics, allowing the estimation of water balance.</p>
+        <p>The phenology of the crop was divided into five phases (ear 1&#xA0;cm, ear 1&#xA0;cm to spiking, spiking to flowering, flowering to milk stage and milk stage to harvesting), and environmental descriptors linked to water deficit, the effects of minimum and maximum temperatures, evapotranspiration rate and radiation were defined for each of these phases yielding a total of 130 distinct ECs. Covariates that had more than 30&#xA0;% of repeated values or more than 0.2&#xA0;% of values outside the range defined by the mean&#xA0;&#xB1;&#xA0;4&#xA0;SD were removed. After applying this quality control, a total of 68 ECs were used in the analysis. Both markers and ECs were centered by subtracting the mean of each marker or EC, and standardized to a unit variance by dividing the centered values by the standard deviation of the marker or EC.</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Statistical methods</title>
+        <p>We begin by describing a set of models that define the building blocks that are later combined to arrive at the sequence of models used for data analysis.</p>
+        <sec id="Sec5">
+          <title>Baseline model</title>
+          <p>The starting point is a model where phenotypes (<inline-formula id="IEq3"><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y_{ijk}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq3.gif"/></alternatives></inline-formula>) are described as the sum of an overall mean (<inline-formula id="IEq4"><alternatives><tex-math id="M4">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mu$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq4.gif"/></alternatives></inline-formula>) plus random deviations due to the environment (<inline-formula id="IEq5"><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_{i}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq5.gif"/></alternatives></inline-formula>; <italic>i</italic>&#xA0;=&#xA0;<italic>1</italic>,&#x2026;,<italic>I</italic>), defined hereinafter as the location&#xA0;&#xD7;&#xA0;year combination, and the line (<inline-formula id="IEq6"><alternatives><tex-math id="M6">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$L_{j}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq6.gif"/></alternatives></inline-formula>; <italic>j</italic>&#xA0;=&#xA0;<italic>1</italic>,&#x2026;,<italic>J</italic>), plus an error term (<inline-formula id="IEq7"><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varepsilon_{ijk}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq7.gif"/></alternatives></inline-formula>; <italic>k</italic>&#xA0;=&#xA0;<italic>1</italic>,&#x2026;<inline-formula id="IEq8"><alternatives><tex-math id="M8">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$r_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq8.gif"/></alternatives></inline-formula>). For the random components, we adopted the standard assumption of mixed effects models; therefore:<disp-formula id="Equ1"><label>1</label><alternatives><tex-math id="M9">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y_{ijk} = \mu + E{}_{i} + L_{j} + \varepsilon_{ijk}$$\end{document}</tex-math><graphic xlink:href="122_2013_2243_Article_Equ1.gif" position="anchor"/></alternatives></disp-formula>where <inline-formula id="IEq9"><alternatives><tex-math id="M10">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_{i} \mathop \sim \limits^{\text{IID}} {\text{N}}\left( {0,\sigma_{E}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq9.gif"/></alternatives></inline-formula>, <inline-formula id="IEq10"><alternatives><tex-math id="M11">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$L_{j} \mathop \sim \limits^{\text{IID}} {\text{N}}\left( {0,\sigma_{L}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq10.gif"/></alternatives></inline-formula> and <inline-formula id="IEq11"><alternatives><tex-math id="M12">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varepsilon_{ijk} \mathop \sim \limits^{\text{IID}} {\text{N}}\left( {0,\sigma_{\varepsilon }^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq11.gif"/></alternatives></inline-formula>,and N(.,.) denotes a normal density and IID stands for independent and identically distributed. In the baseline model, the effects of the different levels of each random effect are independent; therefore, in the model described above there is no borrowing of information across lines or across environments.</p>
+        </sec>
+        <sec id="Sec6">
+          <title>Introducing genetic markers in the baseline model using G-BLUP</title>
+          <p>When markers are available, one can consider replacing in (<xref rid="Equ1" ref-type="">1</xref>) the random effect of the line with a regression on marker covariates of the form: <inline-formula id="IEq12"><alternatives><tex-math id="M13">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$g_{j} = \sum\nolimits_{m = 1}^{p} {x_{jm} b_{m} }$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq12.gif"/></alternatives></inline-formula>, where <inline-formula id="IEq13"><alternatives><tex-math id="M14">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$g_{j}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq13.gif"/></alternatives></inline-formula> represents an approximation of the true genetic value of the <italic>j</italic>th line, <inline-formula id="IEq14"><alternatives><tex-math id="M15">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$x_{jm}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq14.gif"/></alternatives></inline-formula> is the genotype of the <italic>j</italic>th line at the <italic>m</italic>th marker, and <inline-formula id="IEq15"><alternatives><tex-math id="M16">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$b_{m}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq15.gif"/></alternatives></inline-formula> is the effect of the <italic>m</italic>th marker. Following the standard assumptions of the Ridge-Regression-BLUP model (Habier et al. <xref ref-type="bibr" rid="CR26">2007</xref>; VanRaden <xref ref-type="bibr" rid="CR41">2008</xref>), we regarded marker effects as IID draws from normal distributions of the form <inline-formula id="IEq16"><alternatives><tex-math id="M17">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$b_{m} \mathop \sim \limits^{\text{IID}} {\text{N}}\left( {0,\sigma_{b}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq16.gif"/></alternatives></inline-formula>, <italic>m</italic>&#xA0;=&#xA0;<italic>1</italic>,&#x2026;,<italic>p</italic>.</p>
+          <p>From properties of the multivariate normal density we have that the vector <inline-formula id="IEq17"><alternatives><tex-math id="M18">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{g}} = {\mathbf{Xb}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq17.gif"/></alternatives></inline-formula> containing the genomic values of all the lines follows a multivariate normal density with null mean and covariance-matrix <inline-formula id="IEq18"><alternatives><tex-math id="M19">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\text{Cov}}\left( {\mathbf{g}} \right) = {\mathbf{G}}\sigma_{g}^{2},$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq18.gif"/></alternatives></inline-formula> where <bold>G</bold> is a genomic relationship matrix whose entries are given by <inline-formula id="IEq19"><alternatives><tex-math id="M20">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{{jj^{\prime}}} = p^{-1}{\sum\nolimits_{m = 1}^{p} \frac{{\left( {x_{jm} - 2\theta_{m} } \right)\left( {x_{{j^{\prime}m}} - 2\theta_{m} } \right)} }{2\theta_m(1-\theta_m)}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq19.gif"/></alternatives></inline-formula>. Here, <inline-formula id="IEq20"><alternatives><tex-math id="M21">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\theta_{m}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq20.gif"/></alternatives></inline-formula> is the estimated frequency of the allele whose number of copies at the <italic>j</italic>th individual is counted in <inline-formula id="IEq21"><alternatives><tex-math id="M22">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$x_{jm}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq21.gif"/></alternatives></inline-formula>. Centering (i.e., subtracting <inline-formula id="IEq22"><alternatives><tex-math id="M23">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$2\theta_{m}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq22.gif"/></alternatives></inline-formula> from the genotype codes) or standardization (i.e., dividing&#xA0;each marker covariate by <inline-formula id="IEq23"><alternatives><tex-math id="M24">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\sqrt{2\theta_{m} \left( {1 - \theta_{m} } \right)}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq23.gif"/></alternatives></inline-formula>) are not strictly needed; however standardization allows interpreting <inline-formula id="IEq24"><alternatives><tex-math id="M25">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\sigma_{g}^{2}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq24.gif"/></alternatives></inline-formula> as a genomic variance. The matrix <bold>G</bold> is a marker-derived genomic relationship matrix, and its entries converge (as the number of independently segregating loci increases) to twice the kinship coefficient between lines. Collecting the above-mentioned assumptions, we have the standard G-BLUP model plus a random environmental effect (E) yielding the EG model:<disp-formula id="Equ2"><label>2</label><alternatives><tex-math id="M26">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y_{ijk} = \mu + E{}_{i} + g_{j} + \varepsilon_{ijk}$$\end{document}</tex-math><graphic xlink:href="122_2013_2243_Article_Equ2.gif" position="anchor"/></alternatives></disp-formula>with <inline-formula id="IEq25"><alternatives><tex-math id="M27">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_{i} \mathop \sim \limits^{\text{IID}} {\text{N}}\left( {0,\sigma_{E}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq25.gif"/></alternatives></inline-formula>, <inline-formula id="IEq26"><alternatives><tex-math id="M28">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{g}}\sim {\text{N}}\left( {{\mathbf{0,G}}\sigma_{g}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq26.gif"/></alternatives></inline-formula> and <inline-formula id="IEq27"><alternatives><tex-math id="M29">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varepsilon_{ijk} \mathop \sim \limits^{\text{IID}} {\text{N}}\left( {0,\sigma_{\varepsilon }^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq27.gif"/></alternatives></inline-formula>.</p>
+          <p>Note that unlike (<xref rid="Equ1" ref-type="">1</xref>), the effects of the level of the random effects <inline-formula id="IEq28"><alternatives><tex-math id="M30">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{g}} = \left( {g_{1} , \ldots ,g_{J} } \right)^{\prime }$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq28.gif"/></alternatives></inline-formula> are now correlated according to the off-diagonal values of <bold>G</bold>; therefore, in the model in expression&#xA0;(<xref rid="Equ2" ref-type="">2</xref>), there is potentially borrowing of information across lines. This allows, for example, predicting the performance of lines that have not been evaluated in any field trial.</p>
+        </sec>
+        <sec id="Sec7">
+          <title>Extending G-BLUP with addition of environmental covariates</title>
+          <p>Using the same principles used in G-BLUP, we can now replace in (<xref rid="Equ2" ref-type="">2</xref>) the environmental effects (<inline-formula id="IEq29"><alternatives><tex-math id="M31">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E{}_{i}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq29.gif"/></alternatives></inline-formula>) with a random regression on the ECs (<bold>W</bold>) that describes the environmental conditions faced by each line in each environment, that is: <inline-formula id="IEq30"><alternatives><tex-math id="M32">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$w_{ij} = \sum\nolimits_{q = 1}^{Q} {W_{ijq} \gamma_{q} }$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq30.gif"/></alternatives></inline-formula>, where <inline-formula id="IEq31"><alternatives><tex-math id="M33">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$W_{ijq}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq31.gif"/></alternatives></inline-formula> is the value of the <italic>q</italic>th EC evaluated in the <italic>ij</italic>th environment&#xA0;&#xD7;&#xA0;line combination, <inline-formula id="IEq32"><alternatives><tex-math id="M34">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\gamma_{q}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq32.gif"/></alternatives></inline-formula>is the main effect of the corresponding EC, and <italic>Q</italic> is the total number of ECs. As before, we regarded the effects of the ECs as IID draws from normal densities, that is, <inline-formula id="IEq33"><alternatives><tex-math id="M35">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\gamma_{q} \mathop \sim \limits^{\text{IID}} {\text{N}}\left( {0,\sigma_{\gamma }^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq33.gif"/></alternatives></inline-formula>. Consequently, the vector <inline-formula id="IEq34"><alternatives><tex-math id="M36">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{w}} = {\mathbf{W\gamma }}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq34.gif"/></alternatives></inline-formula> follows a multivariate normal density with null mean and a covariance matrix proportional to <inline-formula id="IEq35"><alternatives><tex-math id="M37">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\varvec{\Omega}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq35.gif"/></alternatives></inline-formula> whose entries are computed as those of the G-matrix but using ECs instead of markers. This covariance structure describes the similarity between environmental conditions in a similar way that <bold>G</bold> describes genetic similarity between lines. Therefore, when the effects of the environments in (<xref rid="Equ2" ref-type="">2</xref>) are replaced with <inline-formula id="IEq36"><alternatives><tex-math id="M38">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{w}} = {\mathbf{W\gamma }}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq36.gif"/></alternatives></inline-formula>, the model becomes<disp-formula id="Equ3"><label>3</label><alternatives><tex-math id="M39">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y_{ijk} = \mu + w{}_{ij} + g_{j} + \varepsilon_{ijk}$$\end{document}</tex-math><graphic xlink:href="122_2013_2243_Article_Equ3.gif" position="anchor"/></alternatives></disp-formula>where <inline-formula id="IEq37"><alternatives><tex-math id="M40">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{w}}\sim {\text{N}}\left( {{\mathbf{0}},{\varvec{\Omega}}\sigma_{w}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq37.gif"/></alternatives></inline-formula>, <inline-formula id="IEq38"><alternatives><tex-math id="M41">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{g}}\mathop \sim \limits^{{}} N\left( {{\mathbf{0,G}}\sigma_{g}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq38.gif"/></alternatives></inline-formula> and <inline-formula id="IEq39"><alternatives><tex-math id="M42">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varepsilon_{ijk} \mathop \sim \limits^{\text{IID}} N\left( {0,\sigma_{\varepsilon }^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq39.gif"/></alternatives></inline-formula>.</p>
+          <p>In the model of expression&#xA0;(<xref rid="Equ3" ref-type="">3</xref>) the covariance matrices <bold>&#x3A9;</bold> and <bold>G</bold> permit the borrowing of information between environments and between lines, respectively.</p>
+          <p>The ECs may not fully describe differences across environments, perhaps because some relevant ECs were not measured or because of model miss-specification (e.g., non-linear effects of ECs on the trait of interest). Similarly, because of imperfect linkage disequilibrium (LD) between markers and genes at causal loci or because of model miss-specification (e.g., interactions between alleles that are unaccounted for), the regression on markers may not fully describe genetic differences among lines. One possibility is to combine models (<xref rid="Equ1" ref-type="">1</xref>) and (<xref rid="Equ3" ref-type="">3</xref>) into a single model of the following form:<disp-formula id="Equ4"><label>4</label><alternatives><tex-math id="M43">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y_{ijk} = \mu + E_{i} + w{}_{ij} + L_{j} + g_{j} + \varepsilon_{ijk}$$\end{document}</tex-math><graphic xlink:href="122_2013_2243_Article_Equ4.gif" position="anchor"/></alternatives></disp-formula>where <inline-formula id="IEq40"><alternatives><tex-math id="M44">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_{i} \mathop \sim \limits^{\text{IID}} N\left( {0,\sigma_{E}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq40.gif"/></alternatives></inline-formula>, <inline-formula id="IEq41"><alternatives><tex-math id="M45">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{w}}\mathop \sim \limits^{{}} N\left( {{\mathbf{0}},{\varvec{\Omega}}\sigma_{w}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq41.gif"/></alternatives></inline-formula>, <inline-formula id="IEq42"><alternatives><tex-math id="M46">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$L_{j} \mathop \sim \limits^{IID} N\left( {0,\sigma_{L}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq42.gif"/></alternatives></inline-formula>, <inline-formula id="IEq43"><alternatives><tex-math id="M47">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{g}}\mathop \sim \limits^{{}} N\left( {{\mathbf{0,G}}\sigma_{g}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq43.gif"/></alternatives></inline-formula> and <inline-formula id="IEq44"><alternatives><tex-math id="M48">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varepsilon_{ijk}^{{}} \mathop \sim \limits^{IID} N\left( {0,\sigma_{\varepsilon }^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq44.gif"/></alternatives></inline-formula>. In the model in Eq. (<xref rid="Equ4" ref-type="">4</xref>), both environmental and line effects are partitioned into two components, one that is explained by regression on covariates (either markers, <inline-formula id="IEq45"><alternatives><tex-math id="M49">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$g_{j}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq45.gif"/></alternatives></inline-formula>, or ECs, <inline-formula id="IEq46"><alternatives><tex-math id="M50">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$w{}_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq46.gif"/></alternatives></inline-formula>) and deviations that represent variation attributable to lines or environments and cannot be explained by regression on markers (<inline-formula id="IEq47"><alternatives><tex-math id="M51">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$L_{j}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq47.gif"/></alternatives></inline-formula>) or ECs (<inline-formula id="IEq48"><alternatives><tex-math id="M52">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_{i}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq48.gif"/></alternatives></inline-formula>).</p>
+          <sec id="Sec8">
+            <title>Incorporating interactions between markers and environmental covariates</title>
+            <p>So far we have presented models that account for the main effects of markers (G) and the main effects of ECs (W) without accounting for possible interactions between markers and ECs. In principle, first order interactions between markers and ECs can be incorporated by first constructing all possible contrasts (for <italic>p</italic> markers and <italic>Q</italic> ECs there will be <italic>p</italic>&#xA0;&#xD7;&#xA0;<italic>Q</italic> contrasts) and then including these contrasts as predictors in the model. However, when this approach is used, the number of effects to be estimated can be extremely large. For instance, in our case a total of 162,860 terms are required to model first order interactions between 68 ECs and 2,395 SNPs. Modeling interactions in such an explicit way becomes unfeasible when either <italic>p</italic> or <italic>Q</italic> are large. To circumvent this problem, we propose incorporating interactions using covariance structures.</p>
+            <p>The covariance function generated by the interaction terms will depend on the mode of interaction (which markers interact with which covariates, degree of interactions, etc.). Here we consider the case of a first order multiplicative model where the interaction is the product of two random linear scores: a genetic score, <inline-formula id="IEq49"><alternatives><tex-math id="M53">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{g}_{j} = \sum\nolimits_{m = 1}^{p} {x_{jm} \tilde{b}_{m} }$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq49.gif"/></alternatives></inline-formula>, and an environmental score, <inline-formula id="IEq50"><alternatives><tex-math id="M54">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{w}_{ij} = \sum\nolimits_{q = 1}^{Q} {W_{ijq} \tilde{\gamma }_{q} }$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq50.gif"/></alternatives></inline-formula>. To be consistent with our previous assumptions, we assume that both the <inline-formula id="IEq51"><alternatives><tex-math id="M55">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{b}_{m}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq51.gif"/></alternatives></inline-formula>&#x2019;s and the <inline-formula id="IEq52"><alternatives><tex-math id="M56">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{\gamma }_{q}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq52.gif"/></alternatives></inline-formula> are IID, zero-mean, random variables. We further assume that the <inline-formula id="IEq53"><alternatives><tex-math id="M57">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{b}_{m}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq53.gif"/></alternatives></inline-formula>&#x2019;s and the <inline-formula id="IEq54"><alternatives><tex-math id="M58">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{\gamma }_{q}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq54.gif"/></alternatives></inline-formula>&#x2019;s are independent. With these assumptions we have: <inline-formula id="IEq57"><alternatives><tex-math id="M59">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E\left[ {\tilde{g}_{j} } \right] = E\left[ {\tilde{w}_{ij} } \right] = 0$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq57.gif"/></alternatives></inline-formula>, <inline-formula id="IEq58"><alternatives><tex-math id="M60">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\text{Cov}}\left( {\tilde{g}_{j} ,\tilde{g}_{{j^{\prime}}} } \right) \propto G_{{jj^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq58.gif"/></alternatives></inline-formula><inline-formula id="IEq59"><alternatives><tex-math id="M61">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\text{Cov}}\left( {\tilde{w}_{ij} ,\tilde{w}_{{i^{\prime}j^{\prime}}} } \right) \propto \varOmega_{{ij,i^{\prime}j^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq59.gif"/></alternatives></inline-formula> and <inline-formula id="IEq60"><alternatives><tex-math id="M62">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\text{Cov}}\left( {\tilde{g}_{j} ,\tilde{w}_{ij} } \right) = 0$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq60.gif"/></alternatives></inline-formula> where <inline-formula id="IEq61"><alternatives><tex-math id="M63">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{{jj^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq61.gif"/></alternatives></inline-formula>and <inline-formula id="IEq62"><alternatives><tex-math id="M64">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varOmega_{{ij,i^{\prime}j^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq62.gif"/></alternatives></inline-formula> are entries of <bold>G</bold> and of <inline-formula id="IEq63"><alternatives><tex-math id="M65">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\varvec{\Omega}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq63.gif"/></alternatives></inline-formula>, respectively.</p>
+            <p>Now consider the random process obtained by multiplying both random scores: <inline-formula id="IEq64"><alternatives><tex-math id="M66">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$gw_{ij} = \tilde{g}_{j} \times \tilde{w}_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq64.gif"/></alternatives></inline-formula>. The expected value of this process is <inline-formula id="IEq65"><alternatives><tex-math id="M67">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E\left[ {gw_{ij} } \right] = E\left[ {\tilde{g}_{j} \times \tilde{w}_{ij} } \right] = E\left[ {\tilde{g}_{j} } \right] \times E\left[ {\tilde{w}_{ij} } \right] = 0$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq65.gif"/></alternatives></inline-formula> and the covariance function is:<disp-formula id="Equa"><alternatives><tex-math id="M68">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{gathered} {\text{Cov}}\left[ {gw_{ij} ,gw_{{i^{\prime}j^{\prime}}} } \right] = E\left[ {gw_{ij} \times gw_{{i^{\prime}j^{\prime}}} } \right] - E\left[ {gw_{ij} } \right]E\left[ {gw_{{i^{\prime}j^{\prime}}} } \right] \hfill \\ \, = E\left[ {gw_{ij} \times gw_{{i^{\prime}j^{\prime}}} } \right] \hfill \\ \, = E\left[ { \tilde{g}_{j} \times \tilde{w}_{ij} \times \tilde{g}_{{j^{\prime}}} \times \tilde{w}_{{i^{\prime}j^{\prime}}} } \right] \hfill \\ \, = E\left[ {\tilde{g}_{j} \times \tilde{g}_{{j^{\prime}}} } \right]E\left[ {\tilde{w}_{ij} \times \tilde{w}_{{i^{\prime}j^{\prime}}} } \right] \hfill \\ \, = {\text{Cov}}\left[ {\tilde{g}_{j} ,\tilde{g}_{{j^{\prime}}} } \right]Cov\left[ {\tilde{w}_{ij} ,\tilde{w}_{{i^{\prime}j^{\prime}}} } \right] \hfill \\ \, \propto G_{{jj^{\prime}}} \varOmega_{{iji^{\prime}j^{\prime}}} \hfill \\ \end{gathered}$$\end{document}</tex-math><graphic xlink:href="122_2013_2243_Article_Equa.gif" position="anchor"/></alternatives></disp-formula></p>
+            <p>Therefore, the covariance function of <inline-formula id="IEq66"><alternatives><tex-math id="M69">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$gw_{ij} = \tilde{g}_{j} \times \tilde{w}_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq66.gif"/></alternatives></inline-formula> is simply the cell by cell product (known as the Hadamard or Schur product) of <inline-formula id="IEq67"><alternatives><tex-math id="M70">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{{jj^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq67.gif"/></alternatives></inline-formula> and <inline-formula id="IEq68"><alternatives><tex-math id="M71">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varOmega_{{iji^{\prime}j^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq68.gif"/></alternatives></inline-formula>, the entries of <bold>G</bold> and <inline-formula id="IEq69"><alternatives><tex-math id="M72">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\varvec{\Omega}}.$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq69.gif"/></alternatives></inline-formula> The terms <inline-formula id="IEq70"><alternatives><tex-math id="M73">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{{jj^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq70.gif"/></alternatives></inline-formula> measure the degree of genetic similarity between lines, and <inline-formula id="IEq71"><alternatives><tex-math id="M74">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varOmega_{{iji^{\prime}j^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq71.gif"/></alternatives></inline-formula> measures the degree of similarity among environmental conditions. Whenever <inline-formula id="IEq72"><alternatives><tex-math id="M75">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varOmega_{{iji^{\prime}j^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq72.gif"/></alternatives></inline-formula> or <inline-formula id="IEq73"><alternatives><tex-math id="M76">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$G_{{jj^{\prime}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq73.gif"/></alternatives></inline-formula> are close to zero, the product of the two will be close to zero; therefore, resemblance between records due to interaction term requires resemblance both at the genetic and EC level. These types of covariance functions are not new to quantitative genetic methods; indeed, Cockerham (<xref ref-type="bibr" rid="CR9">1954</xref>) and Kempthorne (<xref ref-type="bibr" rid="CR28">1954</xref>) arrived at these type of covariance functions when studying the degree of resemblance between relatives generated by epistatic interactions (e.g., additive by additive and additive by dominance). Also, as stated, the multiplicative approach above-described can be viewed as a reaction norm where the genetic (<inline-formula id="IEq74"><alternatives><tex-math id="M77">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{g}_{j}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq74.gif"/></alternatives></inline-formula>) and environmental (<inline-formula id="IEq75"><alternatives><tex-math id="M78">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{w}_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq75.gif"/></alternatives></inline-formula>) values, or gradients, are replaced with regressions on markers and on ECs, respectively.</p>
+            <p>When data involve multiple phenotypic records per line, the genetic covariance structure of additive effects is <inline-formula id="IEq76"><alternatives><tex-math id="M79">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{Z}}_{g} {\mathbf{GZ^{\prime}}}_{g}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq76.gif"/></alternatives></inline-formula>, where <inline-formula id="IEq77"><alternatives><tex-math id="M80">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{Z}}_{g}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq77.gif"/></alternatives></inline-formula> is an incidence matrix for the vector of additive genetic effects. In this case, the covariance structure of the vector of interaction terms <inline-formula id="IEq78"><alternatives><tex-math id="M81">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{gw}} = \left\{ {gw_{ij} } \right\}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq78.gif"/></alternatives></inline-formula> is the Hadamard product of <inline-formula id="IEq79"><alternatives><tex-math id="M82">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{Z}}_{g} {\mathbf{GZ^{\prime}}}_{g}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq79.gif"/></alternatives></inline-formula> and <inline-formula id="IEq80"><alternatives><tex-math id="M83">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\varvec{\Omega}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq80.gif"/></alternatives></inline-formula>, denoted here as <inline-formula id="IEq81"><alternatives><tex-math id="M84">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\left[ {{\mathbf{Z}}_{g} {\mathbf{GZ^{\prime}}}_{g} } \right] \circ {\varvec{\Omega}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq81.gif"/></alternatives></inline-formula>.</p>
+            <p>Using the results presented above, we then extended the models above-described by adding a term representing interactions between markers and ECs. For instance, we can extend the model in expression&#xA0;(<xref rid="Equ3" ref-type="">3</xref>) as follows:<disp-formula id="Equ5"><label>5</label><alternatives><tex-math id="M85">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y_{ijk} = \mu + w{}_{ij} + g_{j} + gw_{ij} + \varepsilon_{ijk}$$\end{document}</tex-math><graphic xlink:href="122_2013_2243_Article_Equ5.gif" position="anchor"/></alternatives></disp-formula>with <inline-formula id="IEq82"><alternatives><tex-math id="M86">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{w}}\mathop \sim \limits^{{}} N\left( {{\mathbf{0}},{\varvec{\Omega}}\sigma_{w}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq82.gif"/></alternatives></inline-formula>, <inline-formula id="IEq83"><alternatives><tex-math id="M87">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{g}}\mathop \sim \limits^{{}} N\left( {{\mathbf{0,G}}\sigma_{g}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq83.gif"/></alternatives></inline-formula>, <inline-formula id="IEq84"><alternatives><tex-math id="M88">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{gw}}\sim N\left( {{\mathbf{0,}}\left[ {{\mathbf{Z}}_{g} {\mathbf{GZ^{\prime}}}_{g} } \right] \circ {\varvec{\Omega}}\sigma_{gw}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq84.gif"/></alternatives></inline-formula>, <inline-formula id="IEq85"><alternatives><tex-math id="M89">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varepsilon_{ijk} \mathop \sim \limits^{\text{IID}} N\left( {0,\sigma_{\varepsilon }^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq85.gif"/></alternatives></inline-formula>.</p>
+          </sec>
+        </sec>
+        <sec id="Sec9">
+          <title>Incorporating interactions between markers and environments</title>
+          <p>Because of imperfect LD between alleles at markers and alleles at causal loci, markers may not fully account for genetic differences between lines. Similarly, ECs may not fully account for differences due to environmental conditions. Therefore, some proportion of the G&#xA0;&#xD7;&#xA0;E may not be fully captured by the interaction term <inline-formula id="IEq86"><alternatives><tex-math id="M90">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$gw_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq86.gif"/></alternatives></inline-formula>. To account for this, one possibility is to expand any of the previously presented models by including an interaction term between environments (<italic>E</italic><sub><italic>i</italic></sub>) and the random effect of the markers (<italic>g</italic><sub><italic>j</italic></sub>). This model is obtained by including the interaction term <inline-formula id="IEq87"><alternatives><tex-math id="M91">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$gE_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq87.gif"/></alternatives></inline-formula> in either (<xref rid="Equ2" ref-type="">2</xref>) or (<xref rid="Equ5" ref-type="">5</xref>). Following a procedure similar to that used to obtain (<xref rid="Equ5" ref-type="">5</xref>), we have that the covariance structure generated by <inline-formula id="IEq88"><alternatives><tex-math id="M92">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$gE_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq88.gif"/></alternatives></inline-formula> is proportional to the Hadamard product <inline-formula id="IEq89"><alternatives><tex-math id="M93">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\left[ {{\mathbf{Z}}_{g} {\mathbf{GZ^{\prime}}}_{g} } \right] \circ \left[ {{\mathbf{Z}}_{E} {\mathbf{Z^{\prime}}}_{E} } \right]$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq89.gif"/></alternatives></inline-formula>, where <inline-formula id="IEq90"><alternatives><tex-math id="M94">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{Z}}_{E}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq90.gif"/></alternatives></inline-formula> represents the incidence matrix for the effects of environments (i.e., the matrix that connects the phenotypes with environments). For instance, adding to the model described in (<xref rid="Equ2" ref-type="">2</xref>), we have a model that accounts for main effects of markers, main effects of environments and the interactions between markers and environments:<disp-formula id="Equ6"><label>6</label><alternatives><tex-math id="M95">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y_{ijk} = \mu + E{}_{i} + g_{j} + gE_{ij} + \varepsilon_{ijk}$$\end{document}</tex-math><graphic xlink:href="122_2013_2243_Article_Equ6.gif" position="anchor"/></alternatives></disp-formula>with <inline-formula id="IEq91"><alternatives><tex-math id="M96">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_{i} \mathop \sim \limits^{\text{IID}} N\left( {0,\sigma_{E}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq91.gif"/></alternatives></inline-formula>, <inline-formula id="IEq92"><alternatives><tex-math id="M97">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{g}}\sim N\left( {{\mathbf{0,G}}\sigma_{g}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq92.gif"/></alternatives></inline-formula>, <inline-formula id="IEq93"><alternatives><tex-math id="M98">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathbf{gE}}\sim N\left( {{\mathbf{0,}}\left[ {{\mathbf{Z}}_{g} {\mathbf{GZ^{\prime}}}_{g} } \right] \circ \left[ {{\mathbf{Z}}_{E} {\mathbf{Z^{\prime}}}_{E} } \right]\sigma_{gE}^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq93.gif"/></alternatives></inline-formula>, <inline-formula id="IEq94"><alternatives><tex-math id="M99">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varepsilon_{ijk} \mathop \sim \limits^{\text{IID}} N\left( {0,\sigma_{\varepsilon }^{2} } \right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq94.gif"/></alternatives></inline-formula>.</p>
+          <sec id="Sec10">
+            <title>Phenotypic and genetic correlations</title>
+            <p>The models above-described, and others that could be constructed by combining the random effects of each of the models listed before, impose specific forms on the phenotypic and genetic correlation functions. In these models, correlation depends on the variance parameters of the model as well as on the degree of environmental and genetic similarity. To illustrate, we present the derivation of the phenotypic and genetic correlations for the model defined by Eq. (<xref rid="Equ5" ref-type="">5</xref>), similar steps can be followed to derive the covariance and correlation functions implied by any of the above-described models. For the model defined by Eq. (<xref rid="Equ5" ref-type="">5</xref>) the covariance between phenotypic records of line <italic>j</italic> measured under environmental conditions <italic>ik</italic> and <italic>i</italic>&#x2032;<italic>k</italic>&#x2032; is,<disp-formula id="Equb"><alternatives><tex-math id="M100">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{gathered} {\text{Cov}}\left( {y_{ijk} ,y_{{i^{\prime}jk^{\prime}}} } \right) = {\text{Cov}}(\mu + w{}_{ij} + g_{j} + gw_{ij} + \varepsilon_{ijk} ,\mu + w{}_{{i^{\prime}j}} + g_{j} + gw_{{i^{\prime}j}} + \varepsilon_{{i^{\prime}jk^{\prime}}} ) \hfill \\ \, = \varOmega_{{ij,i^{\prime}j}} \sigma_{w}^{2} + {\text{G}}_{jj} \sigma_{g}^{2} + \varOmega_{{ij,i^{\prime}j}} {\text{G}}_{jj} \sigma_{gw}^{2}, \hfill \\ \end{gathered}$$\end{document}</tex-math><graphic xlink:href="122_2013_2243_Article_Equb.gif" position="anchor"/></alternatives></disp-formula>and the phenotypic and genetic correlation functions are then given by:<disp-formula id="Equc"><alternatives><tex-math id="M101">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\rho_{y(ijk,i'jk')} = \frac{{\varOmega_{{ij,i^{\prime}j}} \sigma_{w}^{2} + {\text{G}}_{jj} \sigma_{g}^{2} + \varOmega_{{ij,i^{\prime}j}} {\text{G}}_{jj} \sigma_{gw}^{2} }}{{\sqrt {\varOmega_{ij,ij} \sigma_{w}^{2} + {\text{G}}_{jj} \sigma_{g}^{2} + \varOmega_{ij,ij} {\text{G}}_{jj} \sigma_{gw}^{2} + \sigma_{\varepsilon }^{2} } \sqrt {\varOmega_{{i^{\prime}j,i^{\prime}j}} \sigma_{W}^{2} + {\text{G}}_{jj} \sigma_{g}^{2} + \varOmega_{{i^{\prime}j,i^{\prime}j}} {\text{G}}_{jj} \sigma_{gw}^{2} + \sigma_{\varepsilon }^{2} } }}$$\end{document}</tex-math><graphic xlink:href="122_2013_2243_Article_Equc.gif" position="anchor"/></alternatives></disp-formula>and<inline-formula id="IEq95"><alternatives><tex-math id="M102">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\rho_{g(ijk,i'jk')} = \frac{{{\text{G}}_{jj} \sigma_{g}^{2} + \varOmega_{{ij,i^{\prime}j}} {\text{G}}_{jj} \sigma_{gw}^{2} }}{{\sqrt {{\text{G}}_{jj} \sigma_{g}^{2} + \varOmega_{ij,ij} {\text{G}}_{jj} \sigma_{gw}^{2} } \sqrt {{\text{G}}_{jj} \sigma_{g}^{2} + \varOmega_{{i^{\prime}j,i^{\prime}j}} {\text{G}}_{jj} \sigma_{gw}^{2} } }}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq95.gif"/></alternatives></inline-formula>, respectively.</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec id="Sec11">
+        <title>Data analysis</title>
+        <sec id="Sec12">
+          <title>Models</title>
+          <p>Using the random effects included in models (<xref rid="Equ1" ref-type="">1</xref>)&#x2013;(<xref rid="Equ6" ref-type="">6</xref>) as building blocks, we defined a sequence of models that were used for empirical data analysis. The effects included in each of the seven models in our sequence are described in Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>. The columns in Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref> give the random effects considered, for main effects (E, L, G and W) and for interactions (G&#xA0;&#xD7;&#xA0;E and G&#xA0;&#xD7;&#xA0;W).<table-wrap id="Tab1"><label>Table&#xA0;1</label><caption><p>Main effect and interaction of the seven models used to fit the data set</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" rowspan="3">Model abbreviation</th><th align="left" colspan="6">Factors included</th></tr><tr><th align="left" colspan="4">Main effect</th><th align="left" colspan="2">Interaction</th></tr><tr><th align="left">E</th><th align="left">L</th><th align="left">G</th><th align="left">W</th><th align="left">G&#xA0;&#xD7;&#xA0;E</th><th align="left">G&#xA0;&#xD7;&#xA0;W</th></tr></thead><tbody><tr><td align="left">EL</td><td align="left">X</td><td align="left">X</td><td align="left"/><td align="left"/><td align="left"/><td align="left"/></tr><tr><td align="left">EG</td><td align="left">X</td><td align="left"/><td align="left">X</td><td align="left"/><td align="left"/><td align="left"/></tr><tr><td align="left">ELW</td><td align="left">X</td><td align="left">X</td><td align="left"/><td align="left">X</td><td align="left"/><td align="left"/></tr><tr><td align="left">EGW</td><td align="left">X</td><td align="left"/><td align="left">X</td><td align="left">X</td><td align="left"/><td align="left"/></tr><tr><td align="left">EGW-G&#xA0;&#xD7;&#xA0;E</td><td align="left">X</td><td align="left"/><td align="left">X</td><td align="left">X</td><td align="left">X</td><td align="left"/></tr><tr><td align="left">EGW-G&#xA0;&#xD7;&#xA0;W</td><td align="left">X</td><td align="left"/><td align="left">X</td><td align="left">X</td><td align="left"/><td align="left">X</td></tr><tr><td align="left">EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E</td><td align="left">X</td><td align="left"/><td align="left">X</td><td align="left">X</td><td align="left">X</td><td align="left">X</td></tr></tbody></table><table-wrap-foot><p><italic>E</italic> environment, <italic>L</italic> line, <italic>G</italic> marker covariates, <italic>W</italic> environmental covariates, <italic>G</italic>&#xA0;<italic>&#xD7;</italic>&#xA0;<italic>E</italic> interaction between environments and markers, <italic>G</italic>&#xA0;<italic>&#xD7;</italic>&#xA0;<italic>W</italic> interactions between markers and ECs</p></table-wrap-foot></table-wrap></p>
+          <p>Each of the models described in Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref> were fitted to the full data set using the computational methods described in de los Campos et al. (<xref ref-type="bibr" rid="CR19">2010</xref>) which were recently implemented in the R-package BGLR (de los Campos and Perez-Rodriguez <xref ref-type="bibr" rid="CR800">2013</xref>). All the statistical analyses were done using the R-software R Core Team (<xref ref-type="bibr" rid="CR39">2013</xref>).</p>
+        </sec>
+        <sec id="Sec13">
+          <title>Assessment of prediction accuracy</title>
+          <p>Following Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>), we considered two distinct predictions problems: in the first one (hereinafter denoted as CV1), we measured the ability of the model to predict the performance of lines that have not yet been evaluated in any field trial (newly released varieties). In the second design (CV2), we assessed the ability of models to predict the performance of lines using data collected in other environments. This design mimics the prediction problem encountered in incomplete field trials and was also used by Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>). In CV1 we randomly assigned lines to folds; this assures that all the records of a given line are assigned to the same fold. On the other hand, in CV2 we randomly assigned individual plot records to folds; with this setting individual records of a given line are potentially assigned to different folds. Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref> gives a graphical representation of the two prediction problems where, for example, CV1 aims to predict the performance of Line 3, (unobserved in all environments) in environments E1&#x2013;E5, using phenotypic records from Lines 1, 2, 4 and 5 (observed in all environments). On the other hand, in CV2, the aim is to predict the performance of Lines 1, 2, 3, 4 and 5 in environments E2, E3, E5, E4 and E1, respectively. Naturally, CV1 presents a much more difficult prediction problem because it is not possible to borrow information within lines (Line 3, in our case) from any other environment. We implemented CV1 and CV2 in a tenfold design.<table-wrap id="Tab2"><label>Table&#xA0;2</label><caption><p>Two hypothetical cross-validation schemes (CV1 and CV2) for five lines (Lines 1&#x2013;5) and five environments (E1&#x2013;E5)</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="6">CV1</th><th align="left" colspan="5">CV2</th></tr><tr><th align="left"/><th align="left">E1</th><th align="left">E2</th><th align="left">E3</th><th align="left">E4</th><th align="left">E5</th><th align="left">E1</th><th align="left">E2</th><th align="left">E3</th><th align="left">E4</th><th align="left">E5</th></tr></thead><tbody><tr><td align="left">Line 1</td><td align="left"><italic>Y</italic><sub>11</sub></td><td align="left"><italic>Y</italic><sub>12</sub></td><td align="left"><italic>Y</italic><sub>13</sub></td><td align="left"><italic>Y</italic><sub>14</sub></td><td align="left"><italic>Y</italic><sub>15</sub></td><td align="left"><italic>Y</italic><sub>11</sub></td><td align="left">NA</td><td align="left"><italic>Y</italic><sub>13</sub></td><td align="left"><italic>Y</italic><sub>14</sub></td><td align="left"><italic>Y</italic><sub>15</sub></td></tr><tr><td align="left">Line 2</td><td align="left"><italic>Y</italic><sub>21</sub></td><td align="left"><italic>Y</italic><sub>22</sub></td><td align="left"><italic>Y</italic><sub>23</sub></td><td align="left"><italic>Y</italic><sub>24</sub></td><td align="left"><italic>Y</italic><sub>25</sub></td><td align="left"><italic>Y</italic><sub>21</sub></td><td align="left"><italic>Y</italic><sub>22</sub></td><td align="left">NA</td><td align="left"><italic>Y</italic><sub>24</sub></td><td align="left"><italic>Y</italic><sub>25</sub></td></tr><tr><td align="left">Line 3</td><td align="left">NA</td><td align="left">NA</td><td align="left">NA</td><td align="left">NA</td><td align="left">NA</td><td align="left"><italic>Y</italic><sub>31</sub></td><td align="left"><italic>Y</italic><sub>32</sub></td><td align="left"><italic>Y</italic><sub>33</sub></td><td align="left"><italic>Y</italic><sub>34</sub></td><td align="left">NA</td></tr><tr><td align="left">Line 4</td><td align="left"><italic>Y</italic><sub>41</sub></td><td align="left"><italic>Y</italic><sub>42</sub></td><td align="left"><italic>Y</italic><sub>43</sub></td><td align="left"><italic>Y</italic><sub>44</sub></td><td align="left"><italic>Y</italic><sub>45</sub></td><td align="left"><italic>Y</italic><sub>41</sub></td><td align="left"><italic>Y</italic><sub>42</sub></td><td align="left"><italic>Y</italic><sub>43</sub></td><td align="left">NA</td><td align="left"><italic>Y</italic><sub>45</sub></td></tr><tr><td align="left">Line 5</td><td align="left"><italic>Y</italic><sub>51</sub></td><td align="left"><italic>Y</italic><sub>52</sub></td><td align="left"><italic>Y</italic><sub>53</sub></td><td align="left"><italic>Y</italic><sub>54</sub></td><td align="left"><italic>Y</italic><sub>55</sub></td><td align="left">NA</td><td align="left"><italic>Y</italic><sub>52</sub></td><td align="left"><italic>Y</italic><sub>53</sub></td><td align="left"><italic>Y</italic><sub>54</sub></td><td align="left"><italic>Y</italic><sub>55</sub></td></tr></tbody></table><table-wrap-foot><p>Lines with unobserved phenotypic data in the cross-validation scheme are indicated by NA (not available); lines with observed values in environments are denoted as <italic>Y</italic>
+<sub><italic>ji</italic></sub> for (<italic>i</italic>, <italic>j</italic>&#xA0;=&#xA0;1, 2, 3, 4, 5)</p></table-wrap-foot></table-wrap></p>
+        </sec>
+        <sec id="Sec14">
+          <title>Target of prediction</title>
+          <p>We focus on assessing the ability of the model to predict performance of lines within environments; therefore, prediction accuracy was assessed based on the ability of each model to predict phenotypic yields, after accounting for the main effects of the environment. To this end, both the observed phenotypic records and the CV-derived predicted performance were pre-corrected with (CV-derived) estimates of the main effects of the environments and of the ECs, that is, <inline-formula id="IEq96"><alternatives><tex-math id="M103">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\hat{\eta }_{ij} = \hat{E}_{j} + \hat{w}_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq96.gif"/></alternatives></inline-formula>, derived from the most comprehensive model (EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E; see Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>) and in the corresponding fold of the CV. The adjusted phenotype (<inline-formula id="IEq97"><alternatives><tex-math id="M104">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{y}_{ijk} = y_{ijk} - \hat{\eta }_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq97.gif"/></alternatives></inline-formula>) was then compared with the corrected CV-predictions derived from each of the models listed in Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref> (<inline-formula id="IEq98"><alternatives><tex-math id="M105">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\tilde{\hat{y}}_{ijk} = \hat{y}_{ijk} - \hat{\eta }_{ij}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq98.gif"/></alternatives></inline-formula>), where <inline-formula id="IEq99"><alternatives><tex-math id="M106">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\hat{y}_{ijk}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq99.gif"/></alternatives></inline-formula> is a CV-derived predicted yield. The correlation between adjusted phenotypes and adjusted predictions was computed using Pearson&#x2019;s product-moment correlation coefficient evaluated on the entire vector of adjusted predictions and adjusted phenotypes. As measures of uncertainty about estimates of correlations we present: (a) confidence intervals (CIs) based on a large-sample formula for the SE of the correlation coefficient, <inline-formula id="IEq100"><alternatives><tex-math id="M107">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\hat{\rho } \pm 1.96\sqrt {\frac{{1 - \hat{\rho }^{2} }}{n - 2}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq100.gif"/></alternatives></inline-formula> where <inline-formula id="IEq101"><alternatives><tex-math id="M108">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\hat{\rho }$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq101.gif"/></alternatives></inline-formula> is the estimated correlation coefficient, and (b) CIs derived using a bootstrap procedure implemented by re-sampling the entries of the vectors of adjusted phenotypes <inline-formula id="IEq102"><alternatives><tex-math id="M109">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\left({\tilde{\mathbf{y}}} = \left\{ {y_{ijk} - \hat{\eta }_{ij} } \right\}\right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq102.gif"/></alternatives></inline-formula> and of adjusted predictions <inline-formula id="IEq103"><alternatives><tex-math id="M110">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\left({\tilde{\hat{\mathbf{y}}}} = \left\{ {\tilde{\hat{y}}_{ijk} } \right\}\right)$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq103.gif"/></alternatives></inline-formula> 10,000 times. Finally, we present a rank-based measure of association obtained by categorizing <inline-formula id="IEq104"><alternatives><tex-math id="M111">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\tilde{\mathbf{y}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq104.gif"/></alternatives></inline-formula> and <inline-formula id="IEq105"><alternatives><tex-math id="M112">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\tilde{\hat{\mathbf{y}}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq105.gif"/></alternatives></inline-formula> into classes based on percentiles of the empirical distribution of each of these variables and report the conditional distribution of the categories defined by <inline-formula id="IEq106"><alternatives><tex-math id="M113">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\tilde{\mathbf{y}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq106.gif"/></alternatives></inline-formula> given the categories defined by <inline-formula id="IEq107"><alternatives><tex-math id="M114">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\tilde{\hat{\mathbf{y}}}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq107.gif"/></alternatives></inline-formula>.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="Sec15" sec-type="results">
+      <title>Results</title>
+      <p>Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref> gives a histogram of grain yield. The empirical yield distribution was close to normal, with an average of 92.5 quintals per hectare and a standard deviation of 15, corresponding a coefficient of variation of 16&#xA0;%.&#xA0;The distribution of the minor allele frequencies was close to uniform in the (0.03&#x2013;0.5) range.<fig id="Fig1"><label>Fig.&#xA0;1</label><caption><p>Histogram of grain yield in quintals per hectare</p></caption><graphic xlink:href="122_2013_2243_Fig1_HTML" id="MO10"/></fig></p>
+      <p>Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref> gives the scree plot of the eigenvalues (left panel) and the loadings of the first two eigenvectors (right panel) of the eigenvalue decomposition of the matrices <bold>G</bold> and <bold>&#x3A9;</bold> (top and lower panels, respectively). The first two eigenvectors of the marker-derived genomic relationship matrix showed some but not strong evidence of population stratification. The proportion of the variance of marker genotypes explained by the first two eigenvectors was 11.5&#xA0;%, and the top 60 eigenvectors (of a total 138 eigenvectors with non-zero eigenvalues) were needed to explain 80&#xA0;% of the variance of genotypes, suggesting that we are in the presence of a relatively diverse set of lines. This was expected because lines in this data set come from different breeding plans. The scree plot of the eigenvalues of <bold>&#x3A9;</bold> shows that at least 11 eigenvectors are needed to account for ~80&#xA0;% of the variance observed in environmental covariates. Two main clusters seem to be separated by the first eigenvector, but the separation is not very clear, suggesting that environmental variation is better characterized by a continuum of variability in environmental conditions rather than by clusters of environments.<fig id="Fig2"><label>Fig.&#xA0;2</label><caption><p>Scree plot (<italic>left panel</italic>) and loadings of the first two eigenvectors (<italic>right panel</italic>) of the covariance matrices derived from markers (<italic>top panel</italic>) and from environmental covariates (<italic>lower panel</italic>)</p></caption><graphic xlink:href="122_2013_2243_Fig2_HTML" id="MO11"/></fig></p>
+      <sec id="Sec16">
+        <title>Estimates of variance components</title>
+        <p>Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref> gives estimates of variance components derived from the full data analysis. The main effect of environments (E) was the random effect that explained the largest proportion of the yield variance, with estimated posterior means between 144 and 200, depending on the model. However, as noted earlier, from the point of view of predicting ranks within an environment, variability due to the mean of the environment becomes a nuisance; therefore, we also report (in Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref>) the proportional contribution of each random effect to within-environment variance, that is, relative to the total variance minus the variance due to the main effects of environment.<table-wrap id="Tab3"><label>Table&#xA0;3</label><caption><p>Estimated variance components</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" rowspan="3">Model</th><th align="left" colspan="13">Variance component</th></tr><tr><th align="left" colspan="7">Estimate</th><th align="left" colspan="6">Percentage of the within-environment variance<sup>a</sup>
+</th></tr><tr><th align="left">E</th><th align="left">L</th><th align="left">G</th><th align="left">W</th><th align="left">G&#xA0;&#xD7;&#xA0;E</th><th align="left">G&#xA0;&#xD7;&#xA0;W</th><th align="left">Res.</th><th align="left">L</th><th align="left">G</th><th align="left">W</th><th align="left">G&#xA0;&#xD7;&#xA0;E</th><th align="left">G&#xA0;&#xD7;&#xA0;W</th><th align="left">Res</th></tr></thead><tbody><tr><td align="left">EL</td><td char="." align="char">199.7</td><td char="." align="char">12.3</td><td align="left"/><td align="left"/><td align="left"/><td align="left"/><td char="." align="char">22.6</td><td char="." align="char">35.2</td><td align="left"/><td align="left"/><td align="left"/><td align="left"/><td char="." align="char">64.8</td></tr><tr><td align="left">EG</td><td char="." align="char">199.0</td><td align="left"/><td char="." align="char">14.9</td><td align="left"/><td align="left"/><td align="left"/><td char="." align="char">22.6</td><td align="left"/><td char="." align="char">39.7</td><td align="left"/><td align="left"/><td align="left"/><td char="." align="char">60.3</td></tr><tr><td align="left">EW</td><td char="." align="char">153.5</td><td align="left"/><td align="left"/><td char="." align="char">23.7</td><td align="left"/><td align="left"/><td char="." align="char">27.7</td><td align="left"/><td align="left"/><td char="." align="char">46.1</td><td align="left"/><td align="left"/><td char="." align="char">53.9</td></tr><tr><td align="left">ELW</td><td char="." align="char">143.7</td><td char="." align="char">12.9</td><td align="left"/><td char="." align="char">24.9</td><td align="left"/><td align="left"/><td char="." align="char">22.1</td><td char="." align="char">21.5</td><td align="left"/><td char="." align="char">41.6</td><td align="left"/><td align="left"/><td char="." align="char">36.9</td></tr><tr><td align="left">EGW</td><td char="." align="char">145.6</td><td align="left"/><td char="." align="char">14.6</td><td char="." align="char">23.3</td><td align="left"/><td align="left"/><td char="." align="char">22.1</td><td align="left"/><td char="." align="char">24.3</td><td char="." align="char">38.8</td><td align="left"/><td align="left"/><td char="." align="char">36.8</td></tr><tr><td align="left">EGW-G&#xA0;&#xD7;&#xA0;E</td><td char="." align="char">148.0</td><td align="left"/><td char="." align="char">14.4</td><td char="." align="char">20.2</td><td char="." align="char">5.9</td><td align="left"/><td char="." align="char">16.4</td><td align="left"/><td char="." align="char">25.3</td><td char="." align="char">35.5</td><td char="." align="char">10.4</td><td align="left"/><td char="." align="char">28.8</td></tr><tr><td align="left">EGW-G&#xA0;&#xD7;&#xA0;W</td><td char="." align="char">146.7</td><td align="left"/><td char="." align="char">12.8</td><td char="." align="char">22.3</td><td align="left"/><td char="." align="char">5.3</td><td char="." align="char">18.3</td><td align="left"/><td char="." align="char">21.8</td><td char="." align="char">38.0</td><td align="left"/><td char="." align="char">9.0</td><td char="." align="char">31.2</td></tr><tr><td align="left">EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E</td><td char="." align="char">148.6</td><td align="left"/><td char="." align="char">12.7</td><td char="." align="char">19.8</td><td char="." align="char">3.9</td><td char="." align="char">5.0</td><td char="." align="char">14.9</td><td align="left"/><td char="." align="char">22.6</td><td char="." align="char">35.2</td><td char="." align="char">6.9</td><td char="." align="char">8.9</td><td char="." align="char">26.5</td></tr></tbody></table><table-wrap-foot><p><italic>E</italic> environment, <italic>L</italic> line, <italic>G</italic> genomic [marker] information, <italic>W</italic> environmental covariate [EC] information, <italic>G</italic>&#xA0;<italic>&#xD7;</italic>&#xA0;<italic>E</italic> genotype&#xA0;&#xD7;&#xA0;environment and G&#xA0;&#xD7;&#xA0;W genotype&#xA0;&#xD7;&#xA0;EC interaction, and <italic>Res</italic> model residual</p><p><sup>a</sup>Relative to the total variance minus the variance due to main effect of the environment</p></table-wrap-foot></table-wrap></p>
+        <p>When information on ECs was incorporated into the model, the estimated variance due to environments (E) diminished from roughly 200 (either model EL or model EG) to values slightly smaller than 150 (e.g., 143.7, in model ELW and 145.6 in model EGW), indicating that the ECs (W) captured a sizable proportion of across environment variation. However, a large proportion of the total variance was attributable to environments (E), even after including all ECs in the model.</p>
+        <p>The estimated variance due to lines (L; e.g., 12.3 in model EL) and that associated with regression on SNPs (G; e.g., 14.9 in model EG) were very similar, but slightly larger for G, suggesting that markers are able to capture a sizable proportion, if not all, of the variability due to the main effects of genotypes.</p>
+        <p>The inclusion of interaction terms (G&#xA0;&#xD7;&#xA0;E, G&#xA0;&#xD7;&#xA0;W, and both G&#xA0;&#xD7;&#xA0;W and G&#xA0;&#xD7;&#xA0;E) induced a reduction in the estimated residual variance of about 33&#xA0;% (from an estimated residual variance of 22.1 in model EGW to 14.9 in model EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E) indicating that some components of differences across lines and environmental conditions cannot be fully captured by the main effects of markers, environments and ECs. Estimates from our most comprehensive model (EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E) suggest that, of the within-environment variability, roughly 23&#xA0;% can be explained by main effects of markers, 35&#xA0;% by main effects of ECs, 16&#xA0;% by interaction terms, and 26&#xA0;% by factors unaccounted for (residuals). The proportion of within-environment variation that is explained by interactions (16&#xA0;%) is not negligible and reflects the importance of considering such interactions in models for genome-enabled prediction. However, it is worth noting that the variance due to main effects of markers and of ECs increased when interactions were omitted, suggesting that some proportion of the variance due to interactions may be captured by main effects if interactions are omitted.</p>
+      </sec>
+      <sec id="Sec17">
+        <title>Assessment of prediction accuracy</title>
+        <p>The estimated correlations between corrected phenotypes and predictions obtained in CV1 and CV2 are shown in Table&#xA0;<xref rid="Tab4" ref-type="table">4</xref>. This table also provides an estimated 95&#xA0;% Confident Interval (CI) estimated using two different procedures. In CV1 the prediction problem consisted of predicting the performance of lines with no previous records (newly released lines) and the correlation ranged from very small values (0.09 for the model not including markers, EL) to 0.236 (most comprehensive model, EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E). A null correlation is expected for CV1 in the case of models that do not include markers or environmental covariates because in CV1 predictions are derived without using records of the lines being predicted. In such contexts, borrowing information from other lines in the same or other environments takes place through markers and environmental covariate information. When the main effects of markers and ECs were included (model EGW), the predictive correlation was 0.175. Further, when interactions were included, the correlation rose to 0.236; this is a 35&#xA0;% increase in correlation achieved by adding interaction terms.<table-wrap id="Tab4"><label>Table&#xA0;4</label><caption><p>Estimated correlations between adjusted phenotypes and cross-validation prediction for each of the seven models for cross-validation CV1 (prediction without using phenotypic records of the lines whose performance is predicted, i.e., prediction for un-tested lines) and CV2 (prediction in incomplete field trials)</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" rowspan="3">Models</th><th align="left" colspan="3">CV1</th><th align="left" colspan="3">CV2</th></tr><tr><th align="left" rowspan="2">Estimate</th><th align="left" colspan="2">95&#xA0;% CI</th><th align="left" rowspan="2">Estimate</th><th align="left" colspan="2">95&#xA0;% CI</th></tr><tr><th align="left">Par.<sup>a</sup>
+</th><th align="left">Non-P.<sup>b</sup>
+</th><th align="left">Par.<sup>a</sup>
+</th><th align="left">Non-P.<sup>b</sup>
+</th></tr></thead><tbody><tr><td align="left">EL</td><td char="." align="char">0.090</td><td align="left">[0.068; 0.112]</td><td align="left">[0.063; 0.117]</td><td char="." align="char">0.425</td><td align="left">[0.405; 0.445]</td><td align="left">[0.404; 0.447]</td></tr><tr><td align="left">EG</td><td char="." align="char">0.191</td><td align="left">[0.169; 0.213]</td><td align="left">[0.167; 0.215]</td><td char="." align="char">0.426</td><td align="left">[0.406; 0.446]</td><td align="left">[0.404; 0.448]</td></tr><tr><td align="left">ELW</td><td char="." align="char">&#x2212;0.027</td><td align="left">[&#x2212;0.049; &#x2212;0.005]</td><td align="left">[&#x2212;0.050; &#x2212;0.004]</td><td char="." align="char">0.438</td><td align="left">[0.418; 0.458]</td><td align="left">[0.416; 0.459]</td></tr><tr><td align="left">EGW</td><td char="." align="char">0.175</td><td align="left">[0.153; 0.197]</td><td align="left">[0.151; 0.198]</td><td char="." align="char">0.439</td><td align="left">[0.419; 0.459]</td><td align="left">[0.417; 0.460]</td></tr><tr><td align="left">EGW-G&#xA0;&#xD7;&#xA0;E</td><td char="." align="char">0.209</td><td align="left">[0.187; 0.231]</td><td align="left">[0.185; 0.232]</td><td char="." align="char">0.454</td><td align="left">[0.434; 0.474]</td><td align="left">[0.432; 0.476]</td></tr><tr><td align="left">EGW-G&#xA0;&#xD7;&#xA0;W</td><td char="." align="char">0.214</td><td align="left">[0.192; 0.236]</td><td align="left">[0.191; 0.237]</td><td char="." align="char">0.506</td><td align="left">[0.486; 0.525]</td><td align="left">[0.495; 0.525]</td></tr><tr><td align="left">EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E</td><td char="." align="char">0.236</td><td align="left">[0.215; 0.257]</td><td align="left">[0.213; 0.259]</td><td char="." align="char">0.514</td><td align="left">[0.495; 0.533]</td><td align="left">[0.494; 0.535]</td></tr></tbody></table><table-wrap-foot><p><sup>a</sup>Computed using <inline-formula id="IEq108"><alternatives><tex-math id="M115">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\hat{\rho } \pm 1.96\sqrt {\frac{{1 - \hat{\rho }^{2} }}{n - 2}}$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq108.gif"/></alternatives></inline-formula>, where <inline-formula id="IEq109"><alternatives><tex-math id="M116">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\hat{\rho }$$\end{document}</tex-math><inline-graphic xlink:href="122_2013_2243_Article_IEq109.gif"/></alternatives></inline-formula> is the estimated correlation and <italic>n</italic> is the number of records used to compute the correlation</p><p><sup>b</sup>Obtained by Bootstrapping 10,000 times the vectors of CV-adjusted predictions and CV-adjusted phenotypes</p></table-wrap-foot></table-wrap></p>
+        <p>The prediction correlations obtained in CV2 were much higher than those observed in CV1; this was to be expected because in CV2 predictions can benefit from records (collected in other environments) of the line whose performance we want to predict. The predictive correlation for the baseline model (EL) was 0.425. When ECs were added to the model, there was a 3&#x2013;4&#xA0;% increase in correlation (from about 0.425&#x2013;6 in either model EL or model EG to 0.438&#x2013;9 in model ELW and EGW, respectively). But the most notorious increase in correlation occurred when interactions (both G&#xA0;&#xD7;&#xA0;E and G&#xA0;&#xD7;&#xA0;W) were added to the model. Our most comprehensive model yielded a predictive correlation of 0.514, which is a 21&#xA0;% increase in correlation over the baseline model.</p>
+        <p>An alternative way of assessing the ability of a model to predict yet-to-be-observed phenotypes is to evaluate the agreement/disagreement of rankings based on observed and predicted performance. Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref> shows, for the most comprehensive model (EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E), CV-adjusted yields (vertical axis) versus CV-adjusted predictions (horizontal axis) for CV1 (right panel) and CV2 (left panel) designs. In each of the figures, we superimposed a grid defined based on the empirical percentiles of the variables in the horizontal and vertical axes (adjusted predictions and adjusted phenotypes). The numbers within each cell in the grid give the (estimated) conditional probability of the observed ranking (based on the corrected phenotypes, the variable in the vertical axis), given the predicted ranking (based on genomic prediction). For instance, in CV1, if one were to recommend, based on predicted performance, the top 20&#xA0;% lines for either breeding or agronomic purposes, we estimate that roughly 63&#xA0;% of these lines would have a performance above the median. For the prediction problem of CV2, 79&#xA0;% of the lines ranked in the top 20&#xA0;% (based on predictions) did have observed performance above the median.<fig id="Fig3"><label>Fig.&#xA0;3</label><caption><p>Adjusted phenotype versus&#xA0;adjusted cross-validation predictions, derived from the most comprehensive model (EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E) in two cross-validation designs (CV 1: prediction without using phenotypic records of the lines whose performance is predicted, i.e., prediction of un-tested lines; and CV 2: prediction in incomplete field trials). <italic>Horizontal</italic> and <italic>vertical dashed lines </italic> give the 20, 50 and 80&#xA0;% empirical percentiles of the variables in the vertical and horizontal axes, and the <italic>numbers</italic> inside the grid give the observed proportions of each of four groups defined by the percentiles displayed for observed adjusted yield, given the groups defined in the <italic>horizontal line</italic> (predictions)</p></caption><graphic xlink:href="122_2013_2243_Fig3_HTML" id="MO12"/></fig></p>
+      </sec>
+    </sec>
+    <sec id="Sec18" sec-type="discussion">
+      <title>Discussion</title>
+      <p>Genotype&#xA0;&#xD7;&#xA0;environment interaction is ubiquitous in agricultural crops. In genomic models G&#xA0;&#xD7;&#xA0;E can be modeled by including interactions between markers and environments or ECs (e.g., Denis <xref ref-type="bibr" rid="CR20">1988</xref>; van Eeuwijk et al. <xref ref-type="bibr" rid="CR40">1996</xref>; Vargas et al. <xref ref-type="bibr" rid="CR42">1999</xref>, <xref ref-type="bibr" rid="CR43">2001</xref>; Malosetti et al. <xref ref-type="bibr" rid="CR29">2004</xref>; Boer et al. <xref ref-type="bibr" rid="CR3">2007</xref>). However, when the number of markers and ECs is large, modeling explicitly all possible interactions between markers and ECs becomes infeasible because the number of contrasts to be considered increases proportional to the product of the number of markers and of ECs. To circumvent this problem, we propose a variance components approach that allows modeling the main and interaction effects of large numbers of markers and of ECs jointly using covariance structures. In our model, the main effects of markers and ECs are modeled using the same principles used in the standard G-BLUP, and the interaction terms are described using a multiplicative model, equivalent to a reaction norm model where the genetic and environmental gradients are described using regressions on markers and on ECs, respectively.</p>
+      <p>The multiplicative model used to describe interactions induces a covariance function that is the Hadamard product of two covariance structures: one defining similarity based on markers (the <bold>G</bold> matrix used in standard G-BLUP) and one describing similarity between records due to ECs (<bold>&#x3A9;</bold>). This type of covariance structures is not new to quantitative genetics; indeed, it has emerged before in the analysis of infinitesimal models for various forms of interactions between alleles at different loci (e.g., Cockerham <xref ref-type="bibr" rid="CR9">1954</xref>; Kempthorne <xref ref-type="bibr" rid="CR28">1954</xref>). Importantly, once the covariance functions for main and interaction effects are defined, the implementation of the proposed models is straightforward using Bayesian or other likelihood-based (e.g., REML) methods.</p>
+      <p>The proposed model was used to analyze data set consisting of 7,876 records of grain yield collected on 139 commercial lines tested in eight different years (from 2003&#x2013;10) and various locations within northern France. We found that in our data set roughly 16&#xA0;% of within-environment variation of wheat grain yield was explained by interactions either between markers and ECs (9&#xA0;%) or between markers and environments (7&#xA0;%). Moreover, when interaction terms were included in the model, we observed a 17&#x2013;34&#xA0;% (depending on the validation design) increase in prediction correlation in cross-validation. This suggests that introducing interactions between markers and environmental conditions can increase the proportion of variance accounted for&#xA0;by the model and, more importantly, it can increase prediction accuracy. The increase in prediction accuracy with the inclusion of environmental information represents a very promising result and has important implications both for breeding as well as for agronomic recommendations.</p>
+      <p>Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>) compared the prediction accuracy for wheat GY (defined as average of two replicates) of models, with and without G&#xA0;&#xD7;&#xA0;E. In a CV similar to our CV2, Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>) reported prediction correlations of 0.475 (for a model without G&#xA0;&#xD7;&#xA0;E) to 0.556 (for a model with G&#xA0;&#xD7;&#xA0;E). These values are similar to the values we obtained in CV2 for models with (0.439 for model EGW) and without G&#xA0;&#xD7;&#xA0;E (0.514 for model EGW-G&#xA0;&#xD7;&#xA0;E-G&#xA0;&#xD7;&#xA0;W). Our prediction correlations were only slightly smaller and this is expected because the trait analyzed in Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>) was the average yield of two replicates, while in our case we analyzed individual plot records.</p>
+      <p>In CV1, our prediction correlations are considerably lower than those of Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>) and the differences between the two studies are likely affected by two factors: (a) as mentioned the trait analyzed in Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>) is the average of two replicates and therefore it has a higher heritability than the single-plot record used in this study and (b) the strength of genetic relationships among the lines in our study is much weaker, because lines in our data set come from different commercial breeding programs, while in Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>) lines come from highly connected breeding programs. In CV1 no records from the own line are available for model fitting; therefore all the prediction accuracy of the models that do not account for G&#xA0;&#xD7;&#xA0;E comes from borrowing of information among lines, and this is highly affected by genetic relationships. Because the lines used in our study are not as tightly related as those used in Burgue&#xF1;o et al., our baseline correlation is lower (0.175); however, the gains in prediction accuracy obtained by modeling G&#xA0;&#xD7;&#xA0;E in our study and that of Burgue&#xF1;o et al. (<xref ref-type="bibr" rid="CR6">2012</xref>) are very similar.</p>
+      <p>Although ECs and their interactions with markers can explain a sizable proportion of GY variance, we found that the ECs we used in this study explained only a limited proportion of across-environment variation. We also found that even after including ECs and their interaction with markers, a substantial proportion of phenotypic differences were explained by the main effects of environment not accounted for by ECs. Consequently, our most comprehensive model includes&#x2014;in addition to the effects of markers and ECs and their interaction&#x2014;the effects of environments and the interactions between markers and environments, whose role in the model was to capture signals that are not captured by markers or ECs. This also suggests that there are opportunities for improving the methods presented here by either considering more ECs or by introducing the ECs in the model in ways that are different from the ones considered here.</p>
+      <p>We developed our models within the context of a multivariate normal distribution. These models are easy to implemented using existing software for mixed models with structured covariance matrices. However, although the complete model EGW-G&#xA0;&#xD7;&#xA0;WG&#xA0;&#xD7;&#xA0;E yielded sizable gains in predictive correlation for CV2 and CV1, our approach is not free of limitations. The Gaussian prior does not induce variable selection and the type of shrinkage induced by the Gaussian prior density may not be appropriate in the presence of large-effect QTLs or large-effect ECs. Therefore, an area of further research would be to extend the methods discussed here to models that induce either differential shrinkage of estimates of effects or a combination of variable selection and shrinkage.</p>
+      <p>Finally, the models we proposed here considered only one possible mode of interaction: the multiplicative reaction norm model. In practice, interactions between genes and environmental conditions may take many different forms, and the methods proposed here can be considered, at best, a good approximation. Further research on alternative ways of modeling interactions between markers and ECs is warranted.</p>
+    </sec>
+    <sec id="Sec19" sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>Complex traits are affected by large numbers of, possibly interacting, genetic and environmental factors. The continued development of genotyping and sequencing technologies as well as that of information systems that can capture very detailed environmental information opens enormous opportunities for modeling G&#xA0;&#xD7;&#xA0;E. However, when the number of genetic markers and of ECs is large, modeling all possible interactions between these two sets of variables becomes infeasible. To circumvent this problem we proposed a variance components approach where different covariance structures are used to account for and exploit signals generated by main and interaction effects. The G&#xA0;&#xD7;&#xA0;E component of the proposed model can be viewed as a reaction norm where the environmental and genetic gradients are modeled as regressions on markers and on ECs. Importantly, the implementation of the proposed model in a REML or Bayesian framework is straightforward.</p>
+      <p>When the model was used to analyze data from 139 lines evaluated in 340 environments we found that a sizable proportion of the phenotypic variance can be attributed to marker by EC interactions, and that the ability of the model to predict yet-to-be-observed phenotypes increased significantly. These results suggest that the proposed model can be useful for breeding as well as for providing agronomic recommendations tailored to specific environmental conditions. However, the proposed model is not free of limitations and we have outlined research areas that may be pursued to further improve our ability to extract the most out of the wealth of data that is at our disposal.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>GC, DJ, XL and LG acknowledge financial support from Arvalis. GC and JC acknowledge financial support from CIMMYT, and GC and PP acknowledges financial support from NIH grants R01GM099992 and R01GM101219. XL and LG acknowledge Arvalis technicians and regional staff members for field trial implementation and data collection. Anonymous reviewers and the Editor in charge of this manuscript provided insightful comments that helped improving our manuscript significantly.</p>
+      <sec id="d30e6857">
+        <title>Conflict of interest</title>
+        <p>DJ and GC received financial support from an Arvalis grant.</p>
+      </sec>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alimi</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Bink</surname>
+              <given-names>MCAM</given-names>
+            </name>
+            <name>
+              <surname>Dieleman</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Mag&#xE1;n</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Wubs</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Palloix</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>van Eeuwijk</surname>
+              <given-names>FA</given-names>
+            </name>
+          </person-group>
+          <article-title>Multi-trait and multi-environment QTL analyses of yield and a set of physiological traits in pepper</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2013</year>
+          <volume>126</volume>
+          <issue>10</issue>
+          <fpage>2597</fpage>
+          <lpage>2625</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-013-2160-3</pub-id>
+          <?supplied-pmid 23903631?>
+          <pub-id pub-id-type="pmid">23903631</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bernardo</surname>
+              <given-names>RN</given-names>
+            </name>
+          </person-group>
+          <source>Breeding for quantitative traits in plants</source>
+          <year>2010</year>
+          <edition>2</edition>
+          <publisher-loc>Woodbury</publisher-loc>
+          <publisher-name>Stemma Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boer</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Wright</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A mixed-model quantitative trait loci (QTL) analysis for multiple-environment trial data using environmental covariables for QTL-by-environment interactions, with an example in maize</article-title>
+          <source>Genetics</source>
+          <year>2007</year>
+          <volume>177</volume>
+          <fpage>1801</fpage>
+          <lpage>1813</lpage>
+          <pub-id pub-id-type="doi">10.1534/genetics.107.071068</pub-id>
+          <?supplied-pmid 17947443?>
+          <pub-id pub-id-type="pmid">17947443</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burgue&#xF1;o</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cornelius</surname>
+              <given-names>PL</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>R-C</given-names>
+            </name>
+          </person-group>
+          <article-title>Using factor analytic models for joining environments and genotypes without crossover genotype&#xA0;&#xD7;&#xA0;environment interaction</article-title>
+          <source>Crop Sci</source>
+          <year>2008</year>
+          <volume>48</volume>
+          <fpage>1291</fpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2007.11.0632</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burgue&#xF1;o</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cotes</surname>
+              <given-names>JM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prediction assessment of linear mixed models for multienvironment trials</article-title>
+          <source>Crop Sci</source>
+          <year>2011</year>
+          <volume>51</volume>
+          <fpage>944</fpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2010.07.0403</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burgue&#xF1;o</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Weigel</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic prediction of breeding values when modeling genotype&#xA0;&#xD7;&#xA0;environment interaction using pedigree and dense molecular markers</article-title>
+          <source>Crop Sci</source>
+          <year>2012</year>
+          <volume>52</volume>
+          <fpage>707</fpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2011.06.0299</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Calus</surname>
+              <given-names>MPL</given-names>
+            </name>
+            <name>
+              <surname>Veerkamp</surname>
+              <given-names>RF</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimation of environmental sensitivity of genetic merit for milk production traits using a random regression model</article-title>
+          <source>J Dairy Sci</source>
+          <year>2003</year>
+          <volume>86</volume>
+          <fpage>3756</fpage>
+          <lpage>3764</lpage>
+          <pub-id pub-id-type="doi">10.3168/jds.S0022-0302(03)73982-4</pub-id>
+          <?supplied-pmid 14672207?>
+          <pub-id pub-id-type="pmid">14672207</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Calus</surname>
+              <given-names>MPL</given-names>
+            </name>
+            <name>
+              <surname>Groen</surname>
+              <given-names>AF</given-names>
+            </name>
+            <name>
+              <surname>De Jong</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Genotype&#xA0;&#xD7;&#xA0;environment interaction for protein yield in Dutch dairy cattle as quantified by different models</article-title>
+          <source>J Dairy Sci</source>
+          <year>2002</year>
+          <volume>85</volume>
+          <fpage>3115</fpage>
+          <lpage>3123</lpage>
+          <pub-id pub-id-type="doi">10.3168/jds.S0022-0302(02)74399-3</pub-id>
+          <?supplied-pmid 12487479?>
+          <pub-id pub-id-type="pmid">12487479</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cockerham</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <article-title>An extension of the concept of partitioning hereditary variance for analysis of covariances among relatives when epistasis is present</article-title>
+          <source>Genetics</source>
+          <year>1954</year>
+          <volume>39</volume>
+          <fpage>859</fpage>
+          <lpage>882</lpage>
+          <?supplied-pmid 17247525?>
+          <pub-id pub-id-type="pmid">17247525</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <mixed-citation publication-type="other">Cornelius P, Crossa J, Seyedsadr M (1996) Statistical tests and estimators of multiplicative models for genotype-by-environment interaction. In: Gauch HG, Kang M (eds) Genotype-by-environment interaction. CRC Press, Baco Raton, pp 199&#x2013;234</mixed-citation>
+      </ref>
+      <ref id="CR11">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>From genotype&#xA0;&#xD7;&#xA0;environment interaction to gene&#xA0;&#xD7;&#xA0;environment interaction</article-title>
+          <source>Curr Genomics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>225</fpage>
+          <lpage>244</lpage>
+          <pub-id pub-id-type="doi">10.2174/138920212800543066</pub-id>
+          <?supplied-pmid 23115524?>
+          <pub-id pub-id-type="pmid">23115524</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cornelius</surname>
+              <given-names>PL</given-names>
+            </name>
+          </person-group>
+          <article-title>Sites regression and shifted multiplicative model clustering of cultivar trial sites under heterogeneity of error variances</article-title>
+          <source>Crop Sci</source>
+          <year>1997</year>
+          <volume>37</volume>
+          <fpage>406</fpage>
+          <lpage>415</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci1997.0011183X003700020017x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vargas</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>van Eeuwijk</surname>
+              <given-names>FA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Interpreting genotype&#xA0;&#xD7;&#xA0;environment interaction in tropical maize using linked molecular markers and environmental covariables</article-title>
+          <source>Theor Appl Genet</source>
+          <year>1999</year>
+          <volume>99</volume>
+          <fpage>611</fpage>
+          <lpage>625</lpage>
+          <pub-id pub-id-type="doi">10.1007/s001220051276</pub-id>
+          <?supplied-pmid 22665197?>
+          <pub-id pub-id-type="pmid">22665197</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>R-C</given-names>
+            </name>
+            <name>
+              <surname>Cornelius</surname>
+              <given-names>PL</given-names>
+            </name>
+          </person-group>
+          <article-title>Studying crossover genotype&#xA0;&#xD7;&#xA0;environment interaction using linear-bilinear models and mixed models</article-title>
+          <source>J Agric Biol Environ Stat</source>
+          <year>2004</year>
+          <volume>9</volume>
+          <fpage>362</fpage>
+          <lpage>380</lpage>
+          <pub-id pub-id-type="doi">10.1198/108571104X4423</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Burgue&#xF1;o</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cornelius</surname>
+              <given-names>PL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Modeling genotype&#xA0;&#xD7;&#xA0;environment interaction using additive genetic covariances of relatives for predicting breeding values of wheat genotypes</article-title>
+          <source>Crop Sci</source>
+          <year>2006</year>
+          <volume>46</volume>
+          <fpage>1722</fpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2005.11-0427</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>P&#xE9;rez</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prediction of genetic values of quantitative traits in plant breeding using pedigree and molecular markers</article-title>
+          <source>Genetics</source>
+          <year>2010</year>
+          <volume>186</volume>
+          <fpage>713</fpage>
+          <lpage>724</lpage>
+          <pub-id pub-id-type="doi">10.1534/genetics.110.118521</pub-id>
+          <?supplied-pmid 20813882?>
+          <pub-id pub-id-type="pmid">20813882</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>P&#xE9;rez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genomic selection and prediction in plant breeding</article-title>
+          <source>J Crop Improv</source>
+          <year>2011</year>
+          <volume>25</volume>
+          <fpage>239</fpage>
+          <lpage>261</lpage>
+          <pub-id pub-id-type="doi">10.1080/15427528.2011.558767</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR800">
+        <mixed-citation publication-type="other">de los Campos G, Perez-Rodriguez P (2013) BGLR: Bayesian generalized linear regression. R package version. <ext-link ext-link-type="uri" xlink:href="http://R-Forge.R-project.org/projects/bglr/">http://R-Forge.R-project.org/projects/bglr/</ext-link></mixed-citation>
+      </ref>
+      <ref id="CR18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Naya</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Predicting quantitative traits with regression models for dense molecular markers and pedigree</article-title>
+          <source>Genetics</source>
+          <year>2009</year>
+          <volume>182</volume>
+          <fpage>375</fpage>
+          <lpage>385</lpage>
+          <pub-id pub-id-type="doi">10.1534/genetics.109.101501</pub-id>
+          <pub-id pub-id-type="pmid">19293140</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Rosa</surname>
+              <given-names>GJM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Semi-parametric genomic-enabled prediction of genetic values using reproducing kernel Hilbert spaces methods</article-title>
+          <source>Genet Res</source>
+          <year>2010</year>
+          <volume>92</volume>
+          <fpage>295</fpage>
+          <lpage>308</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0016672310000285</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Denis</surname>
+              <given-names>JB</given-names>
+            </name>
+          </person-group>
+          <article-title>Two way analysis using covariates</article-title>
+          <source>Statistics</source>
+          <year>1988</year>
+          <volume>19</volume>
+          <fpage>123</fpage>
+          <lpage>132</lpage>
+          <pub-id pub-id-type="doi">10.1080/02331888808802080</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Falconer</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>TFC</given-names>
+            </name>
+          </person-group>
+          <source>Introduction to quantitative genetics</source>
+          <year>1996</year>
+          <edition>4</edition>
+          <publisher-loc>Upper Saddle River</publisher-loc>
+          <publisher-name>Benjamin Cummings</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fisher</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Mackenzie</surname>
+              <given-names>WA</given-names>
+            </name>
+          </person-group>
+          <article-title>Studies in crop variation. II. The manurial response of different potato varieties</article-title>
+          <source>J Agric Sci</source>
+          <year>1923</year>
+          <volume>13</volume>
+          <fpage>311</fpage>
+          <lpage>320</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0021859600003592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gauch</surname>
+              <given-names>HG</given-names>
+            </name>
+          </person-group>
+          <article-title>Model selection and validation for yield trials with interaction</article-title>
+          <source>Biometrics</source>
+          <year>1988</year>
+          <volume>44</volume>
+          <fpage>705</fpage>
+          <lpage>715</lpage>
+          <pub-id pub-id-type="doi">10.2307/2531585</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gollob</surname>
+              <given-names>HF</given-names>
+            </name>
+          </person-group>
+          <article-title>A statistical model which combines features of factor analytic and analysis of variance techniques</article-title>
+          <source>Psychometrika</source>
+          <year>1968</year>
+          <volume>33</volume>
+          <fpage>73</fpage>
+          <lpage>115</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF02289676</pub-id>
+          <?supplied-pmid 5239571?>
+          <pub-id pub-id-type="pmid">5239571</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gregorius</surname>
+              <given-names>H-R</given-names>
+            </name>
+            <name>
+              <surname>Namkoong</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Joint analysis of genotypic and environmental effects</article-title>
+          <source>Theor Appl Genet</source>
+          <year>1986</year>
+          <volume>12</volume>
+          <fpage>413</fpage>
+          <lpage>422</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00288581</pub-id>
+          <pub-id pub-id-type="pmid">24247951</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Habier</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Fernando</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Dekkers</surname>
+              <given-names>JCM</given-names>
+            </name>
+          </person-group>
+          <article-title>The impact of genetic relationship information on genome-assisted breeding values</article-title>
+          <source>Genetics</source>
+          <year>2007</year>
+          <volume>177</volume>
+          <fpage>2389</fpage>
+          <lpage>2397</lpage>
+          <?supplied-pmid 18073436?>
+          <pub-id pub-id-type="pmid">18073436</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heslot</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>H-P</given-names>
+            </name>
+            <name>
+              <surname>Sorrells</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Jannink</surname>
+              <given-names>J-L</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic selection in plant breeding: a comparison of models</article-title>
+          <source>Crop Sci</source>
+          <year>2012</year>
+          <volume>52</volume>
+          <fpage>146</fpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2011.06.0297</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kempthorne</surname>
+              <given-names>O</given-names>
+            </name>
+          </person-group>
+          <article-title>The correlation between relatives in a random mating population</article-title>
+          <source>Proc R Soc Lond B Biol Sci</source>
+          <year>1954</year>
+          <volume>143</volume>
+          <fpage>102</fpage>
+          <lpage>113</lpage>
+          <pub-id pub-id-type="doi">10.1098/rspb.1954.0056</pub-id>
+          <?supplied-pmid 13224653?>
+          <pub-id pub-id-type="pmid">13224653</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Malosetti</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Voltas</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Romagosa</surname>
+              <given-names>I</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mixed models including environmental covariables for studying QTL by environment interaction</article-title>
+          <source>Euphytica</source>
+          <year>2004</year>
+          <volume>137</volume>
+          <fpage>139</fpage>
+          <lpage>145</lpage>
+          <pub-id pub-id-type="doi">10.1023/B:EUPH.0000040511.46388.ef</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Malosetti</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ribaut</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Vargas</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A multi-trait multi-environment QTL mixed model with an application to drought and nitrogen stress trials in maize (<italic>Zea mays</italic> L.)</article-title>
+          <source>Euphytica</source>
+          <year>2008</year>
+          <volume>161</volume>
+          <fpage>241</fpage>
+          <lpage>257</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10681-007-9594-0</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mandel</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>The partitioning of interaction in analysis of variance</article-title>
+          <source>J Res Natl Bureau Stand B Math Sci</source>
+          <year>1969</year>
+          <volume>73B</volume>
+          <fpage>309</fpage>
+          <lpage>328</lpage>
+          <pub-id pub-id-type="doi">10.6028/jres.073B.031</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meuwissen</surname>
+              <given-names>THE</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Goddard</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>Prediction of total genetic value using genome-wide dense marker maps</article-title>
+          <source>Genetics</source>
+          <year>2001</year>
+          <volume>157</volume>
+          <fpage>1819</fpage>
+          <lpage>1829</lpage>
+          <?supplied-pmid 11290733?>
+          <pub-id pub-id-type="pmid">11290733</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Faure</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Choulet</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Insertion site-based polymorphism markers open new perspectives for genome saturation and marker-assisted selection in wheat</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2010</year>
+          <volume>8</volume>
+          <fpage>196</fpage>
+          <lpage>210</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1467-7652.2009.00477.x</pub-id>
+          <?supplied-pmid 20078842?>
+          <pub-id pub-id-type="pmid">20078842</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>P&#xE9;rez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic-enabled prediction based on molecular markers and pedigree using the Bayesian linear regression package in R</article-title>
+          <source>Plant Genome</source>
+          <year>2010</year>
+          <volume>3</volume>
+          <fpage>106</fpage>
+          <lpage>116</lpage>
+          <pub-id pub-id-type="doi">10.3835/plantgenome2010.04.0005</pub-id>
+          <?supplied-pmid 21566722?>
+          <pub-id pub-id-type="pmid">21566722</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Piepho</surname>
+              <given-names>H-P</given-names>
+            </name>
+          </person-group>
+          <article-title>Methods for comparing the yield stability of cropping systems</article-title>
+          <source>J Agron Crop Sci</source>
+          <year>1998</year>
+          <volume>180</volume>
+          <fpage>193</fpage>
+          <lpage>213</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1439-037X.1998.tb00526.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <mixed-citation publication-type="other">Smith A, Cullis B, Thompson R (2001) Exploring variety-environment data using random effects AMMI models with adjustments for spatial field trend: part 1: theory, pp 323&#x2013;335. doi: 10.1079/9780851996011.0323</mixed-citation>
+      </ref>
+      <ref id="CR37">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>AB</given-names>
+            </name>
+            <name>
+              <surname>Cullis</surname>
+              <given-names>BR</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>The analysis of crop cultivar breeding and evaluation trials: an overview of current mixed model approaches</article-title>
+          <source>J Agric Sci</source>
+          <year>2005</year>
+          <volume>143</volume>
+          <fpage>449</fpage>
+          <lpage>462</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0021859605005587</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <mixed-citation publication-type="other">Su G, Madsen P, Lund MS, Sorensen D, Korsgaard IR Jensen J (2006) Bayesian analysis of the linear reaction norm model with unknown covariates. J Anim Sci 84 (7)(July):1651&#x2013;1657. doi:10.2527/jas.2005-517</mixed-citation>
+      </ref>
+      <ref id="CR39">
+        <mixed-citation publication-type="other">R Core Team (2013) R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. <ext-link ext-link-type="uri" xlink:href="http://www.R-project.org/">http://www.R-project.org/</ext-link></mixed-citation>
+      </ref>
+      <ref id="CR40">
+        <mixed-citation publication-type="other">van Eeuwijk F, Kang M, Denis J (1996) Incorporating additional information on genotypes and environments in models for two-way genotype by environment tables. In: Gauch HG, Kang M (eds) Genotype-by-environment interaction. CRC Press, Boca Raton, pp 15&#x2013;49</mixed-citation>
+      </ref>
+      <ref id="CR41">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>VanRaden</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <article-title>Efficient methods to compute genomic predictions</article-title>
+          <source>J Dairy Sci</source>
+          <year>2008</year>
+          <volume>91</volume>
+          <fpage>4414</fpage>
+          <lpage>4423</lpage>
+          <pub-id pub-id-type="doi">10.3168/jds.2007-0980</pub-id>
+          <?supplied-pmid 18946147?>
+          <pub-id pub-id-type="pmid">18946147</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vargas</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Eeuwijk</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Using partial least squares regression, factorial regression, and AMMI models for interpreting genotype&#xA0;&#xD7;&#xA0;environment interaction</article-title>
+          <source>Crop Sci</source>
+          <year>1999</year>
+          <volume>39</volume>
+          <fpage>955</fpage>
+          <lpage>967</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci1999.0011183X003900040002x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vargas</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>van Eeuwijk</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Interpreting treatment&#xA0;&#xD7;&#xA0;environment interaction in agronomy trials</article-title>
+          <source>Agron J</source>
+          <year>2001</year>
+          <volume>93</volume>
+          <fpage>949</fpage>
+          <pub-id pub-id-type="doi">10.2134/agronj2001.934949x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vargas</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>van Eeuwijk</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ribaut</surname>
+              <given-names>J-M</given-names>
+            </name>
+          </person-group>
+          <article-title>Mapping QTLs and QTL&#xA0;&#xD7;&#xA0;environment interaction for CIMMYT maize drought stress program using factorial regression and partial least squares methods</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2006</year>
+          <volume>112</volume>
+          <fpage>1009</fpage>
+          <lpage>1023</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-005-0204-z</pub-id>
+          <?supplied-pmid 16538513?>
+          <pub-id pub-id-type="pmid">16538513</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Woltereck</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Weitere experimentelle Untersuchungen &#xFC;ber Artver&#xE4;nderung, speziell &#xFC;ber das Wesen quantitativer Artunterschiede bei Daphniden</article-title>
+          <source>Verh Dtsch Zool Ges</source>
+          <year>1909</year>
+          <volume>19</volume>
+          <fpage>110</fpage>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yates</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Cochran</surname>
+              <given-names>WG</given-names>
+            </name>
+          </person-group>
+          <article-title>The analysis of groups of experiments</article-title>
+          <source>J Agric Sci</source>
+          <year>1938</year>
+          <volume>28</volume>
+          <fpage>556</fpage>
+          <lpage>580</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0021859600050978</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

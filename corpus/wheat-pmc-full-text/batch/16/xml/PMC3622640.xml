@@ -1,0 +1,2254 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3622640</article-id>
+      <article-id pub-id-type="publisher-id">1471-2164-14-222</article-id>
+      <article-id pub-id-type="pmid">23557231</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2164-14-222</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Integration of mate pair sequences to improve shotgun assemblies of flow-sorted chromosome arms of hexaploid wheat</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="A1">
+          <name>
+            <surname>Belova</surname>
+            <given-names>Tatiana</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>tatiana.belova@umb.no</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Zhan</surname>
+            <given-names>Bujie</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>bujie.zhan@umb.no</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Wright</surname>
+            <given-names>Jonathan</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>Jon.Wright@tgac.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Caccamo</surname>
+            <given-names>Mario</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>Mario.Caccamo@tgac.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Asp</surname>
+            <given-names>Torben</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>Torben.Asp@agrsci.dk</email>
+        </contrib>
+        <contrib contrib-type="author" id="A6">
+          <name>
+            <surname>&#x160;imkov&#xE1;</surname>
+            <given-names>Hana</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>simkovah@ueb.cas.cz</email>
+        </contrib>
+        <contrib contrib-type="author" id="A7">
+          <name>
+            <surname>Kent</surname>
+            <given-names>Matthew</given-names>
+          </name>
+          <xref ref-type="aff" rid="I5">5</xref>
+          <email>matthew.peter.kent@umb.no</email>
+        </contrib>
+        <contrib contrib-type="author" id="A8">
+          <name>
+            <surname>Bendixen</surname>
+            <given-names>Christian</given-names>
+          </name>
+          <xref ref-type="aff" rid="I6">6</xref>
+          <email>christian.bendixen@agrsci.dk</email>
+        </contrib>
+        <contrib contrib-type="author" id="A9">
+          <name>
+            <surname>Panitz</surname>
+            <given-names>Frank</given-names>
+          </name>
+          <xref ref-type="aff" rid="I6">6</xref>
+          <email>frank.panitz@agrsci.dk</email>
+        </contrib>
+        <contrib contrib-type="author" id="A10">
+          <name>
+            <surname>Lien</surname>
+            <given-names>Sigbj&#xF8;rn</given-names>
+          </name>
+          <xref ref-type="aff" rid="I5">5</xref>
+          <email>sigbjorn.lien@umb.no</email>
+        </contrib>
+        <contrib contrib-type="author" id="A11">
+          <name>
+            <surname>Dole&#x17E;el</surname>
+            <given-names>Jaroslav</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>dolezel@ueb.cas.cz</email>
+        </contrib>
+        <contrib contrib-type="author" id="A12">
+          <name>
+            <surname>Olsen</surname>
+            <given-names>Odd-Arne</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>odd-arne.olsen@umb.no</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A13">
+          <name>
+            <surname>Sandve</surname>
+            <given-names>Simen R</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>simen.sandve@umb.no</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Department of Plant and Environmental Sciences, University of Life Sciences, &#xC5;s, Norway</aff>
+      <aff id="I2"><label>2</label>The Genome Analysis Centre (TGAC), Norwich Research Park, Norwich NR4 7UH, UK</aff>
+      <aff id="I3"><label>3</label>Department of Molecular Biology and Genetics, Aarhus University, Fors&#xF8;gsvej 1, 4200, Slagelse, Denmark</aff>
+      <aff id="I4"><label>4</label>Centre of the Region Han&#xE1;, Institute of Experimental Botany, 77200, Olomouc, Czech Republic</aff>
+      <aff id="I5"><label>5</label>Centre for Integrative Genetics (CIGENE) and Department of Animal and Aquacultural Sciences, Norwegian University of Life Sciences, &#xC5;s N-1432, Norway</aff>
+      <aff id="I6"><label>6</label>Department of Genetics and Biotechnology, Faculty of Agricultural Sciences, Aarhus University, Tjele 8830, Denmark</aff>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>4</day>
+        <month>4</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>14</volume>
+      <fpage>222</fpage>
+      <lpage>222</lpage>
+      <history>
+        <date date-type="received">
+          <day>26</day>
+          <month>7</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>22</day>
+          <month>3</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2013 Belova et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Belova et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1471-2164/14/222"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The assembly of the bread wheat genome sequence is challenging due to allohexaploidy and extreme repeat content (&gt;80%). Isolation of single chromosome arms by flow sorting can be used to overcome the polyploidy problem, but the repeat content cause extreme assembly fragmentation even at a single chromosome level. Long jump paired sequencing data (mate pairs) can help reduce assembly fragmentation by joining multiple contigs into single scaffolds. The aim of this work was to assess how mate pair data generated from multiple displacement amplified DNA of flow-sorted chromosomes affect assembly fragmentation of shotgun assemblies of the wheat chromosomes.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Three mate pair (MP) libraries (2 Kb, 3 Kb, and 5 Kb) were sequenced to a total coverage of 89x and 64x for the short and long arm of chromosome 7B, respectively. Scaffolding using SSPACE improved the 7B assembly contiguity and decreased gene space fragmentation, but the degree of improvement was greatly affected by scaffolding stringency applied. At the lowest stringency the assembly N50 increased by ~7 fold, while at the highest stringency N50 was only increased by ~1.5 fold. Furthermore, a strong positive correlation between estimated scaffold reliability and scaffold assembly stringency was observed. A 7BS scaffold assembly with reduced MP coverage proved that assembly contiguity was affected only to a small degree down to ~50% of the original coverage.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>The effect of MP data integration into pair end shotgun assemblies of wheat chromosome was moderate; possibly due to poor contig assembly contiguity, the extreme repeat content of wheat, and the use of amplified chromosomal DNA for MP library construction.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Wheat</kwd>
+        <kwd>Assembly</kwd>
+        <kwd>Scaffold</kwd>
+        <kwd>Mate-pair</kwd>
+        <kwd>MDA</kwd>
+        <kwd>Improvement</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Bread wheat is one of the most important food crops worldwide. However, present wheat production is far from the expected increased global demand in the near future [<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>]. Development of better yielding varieties with improved adaptation to the new climatic challenges is therefore important for global food security. A &#x2018;tool&#x2019; with a great potential to revolutionize wheat breeding and production is a publicly available reference genome sequence. Genome sequences enable cost-effective identification of genomic variation which subsequently can be used to improve agricultural traits of interest through marker-assisted selection (MAS) and genomic selection programs [<xref ref-type="bibr" rid="B3">3</xref>]. A rapidly increasing number of genomes from important food crops are becoming available. In 2011 potato and cacao [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B5">5</xref>], in 2010 soybean [<xref ref-type="bibr" rid="B6">6</xref>], and in 2009 maize, sorghum and cucumber genomes were published [<xref ref-type="bibr" rid="B7">7</xref>-<xref ref-type="bibr" rid="B9">9</xref>]. However, even though wheat is one of the top five food commodities in the world, a wheat genome sequence is not yet available.</p>
+      <p>The main reason why the wheat genome sequencing is lagging behind is related to technical challenges due to large size (17Gb) and the complexity of the hexaploid wheat genome. Bread wheat is allohexaploid and carries three distinct, but closely related homoelogous genomes (2<italic>n</italic>&#x2009;=&#x2009;6<italic>x</italic>&#x2009;=&#x2009;42, AABBDD) [<xref ref-type="bibr" rid="B10">10</xref>,<xref ref-type="bibr" rid="B11">11</xref>]. A distinction between homoeolog sequences in post sequencing processing of genomic sequence data is essentially impossible. Fortunately, the hexaploid wheat genome can be dissected to small parts by flow cytometric sorting of single chromosomes and chromosome arms [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B13">13</xref>]. This technological breakthrough has enabled production of wheat chromosome specific BAC-libraries [<xref ref-type="bibr" rid="B14">14</xref>] and facilitated construction of physical maps of hexaploid wheat chromosomes [<xref ref-type="bibr" rid="B15">15</xref>]. For some genomic applications, such as shotgun sequencing, large amount of DNA are required. In order to obtain sufficient DNA to sequence purified chromosome arms, millions of chromosomes must be sorted, a process, which is highly labor intensive [<xref ref-type="bibr" rid="B16">16</xref>]. Including an amplification step of flow-sorted DNA can significantly reduce the labor and consequently the cost of acquiring chromosome specific DNA for sequencing. Multiple displacement amplification (MDA) is the most common method for genome amplification for sequencing purposes as MDA generate relatively long amplification products (majority between 5-20&#xA0;kb) [<xref ref-type="bibr" rid="B17">17</xref>]. However, MDA is known to give rise to chimeras, which can bring down the utility of the amplified DNA [<xref ref-type="bibr" rid="B18">18</xref>].</p>
+      <p>Shotgun sequencing of MDA DNA from flow-sorted chromosome arms, especially in combination with genetic maps and synteny information, has proven to be a highly cost effective way of gene discovery and construction of syntenic chromosome assemblies [<xref ref-type="bibr" rid="B19">19</xref>-<xref ref-type="bibr" rid="B21">21</xref>]. Unfortunately, the fragmentation level of the shotgun assemblies has been very high, which limits the information value of the assemblies. <italic>De novo</italic> assemblies of 7DS and 7BS using Illumina paired-end (PE) sequences with a chromosome arm coverage of 30-34&#xD7;, resulted roughly in 600,000-1,000,000 contigs per chromosome arm, an N50 of ~500-1200&#xA0;bp, and maximum contig sizes of just over 30,000&#xA0;bp [<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B22">22</xref>]. Consequently, many contigs do not contain complete gene sequences, and the relative order of genes can only be identified for a small subset of genes found on contigs containing multiple genes (i.e. multigene contigs).</p>
+      <p>High levels of DNA sequence assembly fragmentation is closely associated with the repeat content of the genome [<xref ref-type="bibr" rid="B23">23</xref>], and the wheat genome is extreme with respect to repeat content, having more than 80% repetitive DNA [<xref ref-type="bibr" rid="B24">24</xref>]. One way of reducing assembly fragmentation is to include additional sequencing libraries with large insert sizes, referred to as mate pair (MP) libraries [<xref ref-type="bibr" rid="B23">23</xref>]. MP reads can vary in insert sizes between 1-20&#xA0;kb and the idea of these &#x2018;long jump&#x2019; paired sequences is to span repetitive regions that cause assembly fragmentation, and thereby link multiple contigs into longer scaffolds. This will improve the information value of an assembly by (1) improving the assembly contiguity (2) increasing the proportion of full length genes contained in single sequences (i.e. link exons from different contigs), and (3) increase the number of linearly ordered genes.</p>
+      <p>A number of recent publications describe the effect of MP data on assemblies of plant genomes [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B25">25</xref>]. One example is the potato genome assembly, which had on average an N50 increase of 37 Kb for every 1 Kb increase in MP insert size [<xref ref-type="bibr" rid="B25">25</xref>]. Although the potato genome (1C&#x2009;=&#x2009;865 Mbp) has a relatively high repeat content (total repeat content&#x2009;&#x2248;&#x2009;62%, TE-derived repeats&#x2009;&#x2248;&#x2009;32%), it does not compare to the hexaploid wheat genome (1C&#x2009;=&#x2009;17,000 Mbp) that has &gt;80% of TE-derived repetitive DNA [<xref ref-type="bibr" rid="B24">24</xref>]. It is thus not clear to what extent MP data may improve shotgun assemblies of genomes with extreme repeat content such as wheat. Additionally, the utility of MP data from MDA DNA from flow-sorted chromosomes is unknown. The aim of this paper is therefore to study the effects of MP from MDA DNA on assembly contiguousness and gene content in shotgun assemblies of a flow-sorted hexaploid wheat chromosome.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Preparation of DNA from chromosome arms 7BS and 7BL</title>
+        <p>A double ditelosomic line of wheat <italic>Triticum aestivum</italic> L. cv. Chinese Spring carrying both arms of chromosome 7B as telosomes (2n&#x2009;=&#x2009;40&#x2009;+&#x2009;2t7BS&#x2009;+&#x2009;2t7BL) was used to purify the 7BS and 7BL arms. The seeds were provided by Dr. Bikram Gill (Kansas State University, Manhattan, USA). The chromosome arms were purified by flow cytometry. 68,000 and 45,000 of 7BS and 7BL arms, respectively, corresponding to 50&#xA0;ng of DNA, were isolated in several batches. In order to estimate contamination with other chromosomes, 1000 chromosomes were sorted onto a microscope slide and used for fluorescence <italic>in situ</italic> hybridization (FISH) with probes for <italic>Afa</italic> family and telomeric repeats. Batches with the highest purity of the sorted fraction (93 and 88% for 7BS and 7BL, respectively) were used for further processing. DNA was purified and subsequently amplified using Illustra GenomiPhi V2 DNA Amplification Kit (GE Healthcare, Chalfont St. Giles, United Kingdom) as previously described [<xref ref-type="bibr" rid="B17">17</xref>]. Three independent amplifications were performed for each arm to reduce amplification bias. Totally, 15.9 and 14 micrograms were prepared for 7BS and 7BL, respectively.</p>
+      </sec>
+      <sec>
+        <title>Sequencing library construction</title>
+        <p>PE libraries with a mean insert size of ~350&#xA0;bp (Illumina protocol) and 2 Kb MP libraries (in-house modified Roche MP protocol) were constructed and sequenced at Fasteris SA (Geneva, Switzerland). The PE reads were 100&#xA0;bp, while the 2 Kb MP reads were 45&#xA0;bp. 3 Kb and 5 Kb MP libraries were prepared according to &#x201C;Mate Pair Library v2 Sample Preparation Guide&#x201D; [<xref ref-type="bibr" rid="B26">26</xref>] at Aarhus University (Denmark). The read length of the 3 and 5 Kb MP libraries were trimmed to 35&#xA0;bp. All MP libraries were sequenced using HiSeq2000 technology (Illumina) according to manufacturer&#x2019;s recommendations.</p>
+      </sec>
+      <sec>
+        <title>Contig assembly</title>
+        <p>Contigs were assembled with PE reads using ABySS [<xref ref-type="bibr" rid="B27">27</xref>] which is based on a <italic>de Bruijn</italic> graph approach. This method collects the information generated from fix-length words of <italic>k &#x2013;mers</italic> shared by overlapping reads [<xref ref-type="bibr" rid="B28">28</xref>]. Initially, multiple assemblies were generated using different values of <italic>k</italic> and assessed using assembly quality statistics such as N50, maximum contig length, number of contigs in the assembly and the total amount of bases in the assembly. A <italic>k-mer</italic> length of 71 was chosen as the optimal value. A seed value of 150 was used (s parameter) and a minimum of 10 pairs were required to join contigs (n parameter). After assembly, contigs shorter than 200&#xA0;bp were removed to generate a filtered dataset for scaffolding.</p>
+      </sec>
+      <sec>
+        <title>Scaffold assembly</title>
+        <p>To accurately determine the mean insert size and insert size variation of each MP library, we mapped all mate pair reads back to the 7B contigs using BWA v0.6.0 [<xref ref-type="bibr" rid="B29">29</xref>] with the parameters BWA aln &#x2013;t 10 -q 10. Based on the BWA results we identified the number of MP reads aligning to contigs, the proportion of MP read pairs mapping to the same or different contigs, and the orientation of the MP reads that mapped to the same contig. We also assessed if the genomic origin of MP reads were biased towards different fractions of the genome (i.e. repeat or conserved fraction). This was done by mapping reads to an in house repeat content database (TREP10 and the repeats identified in Choulet et al. 2011) and the NCBI nr database.</p>
+        <p>We initially tested three software packages for scaffolding of pre-assembled contigs: ABySS, SOAPdenovo and SSPACE. Unfortunately, we were not able to scaffold contigs using ABySS due to the large proportion of MP reads that mapped in forward-forward direction (see results and discussion for more details). SOAP and SSPACE both produced scaffolds, but as the N50 and gene space assembly statistics of SSPACE assemblies exceeded SOAPdenovo at all parameters tested, we chose to use SSPACE for further investigation of the effect of MP on shotgun assemblies. In SSPACE the key parameter that defines the stringency of the scaffolding is &#x2018;number of links&#x2019; (k), i.e. number of independent read pairs that uniquely support a connection between two contigs. We performed SSPACE scaffolding with k equal to 3, 5, 7, 10, 15 and 20.</p>
+      </sec>
+      <sec>
+        <title>Gene content</title>
+        <p>The protein annotation (v1.2) excluding splice variants of <italic>Brachypodium distachyon</italic> (referred to as Brachypodium) was used as query sequences in a TBLASTN search [<xref ref-type="bibr" rid="B30">30</xref>] to assess gene content in contigs and scaffold assemblies. Blast result filtering were carried out as follows: (1) Only query proteins having at least one exon hit with minimum 30 amino acid length and a minimum per cent identity of 70 were considered in the analyses. (2) Duplicated exon hits on one contig/scaffold were removed. Duplicate hits were defined as two or more query hits with identical query start and query end positions, identical mismatches, identical gap length, and identical hit identity. (3) For each query protein, the mean e-value of all hits were calculated and overlapping exon hits (overlapping &gt;5&#xA0;bp) from proteins with higher e-value were discarded. (4) Two types of gene coverage were calculated: &#x2018;total coverage&#x2019; and &#x2018;adjusted coverage&#x2019;. Total coverage was calculated as the total length of all the hits from a protein query relative to the query sequence length. Adjusted coverage was calculated as the number of unique query amino acid residues with a blast hit in the target sequence(s). To exclude gene hits from repetitive DNA (e.g. TE-associated coding regions) and spurious protein homology, genes with total coverage of &gt;5 and genes with &lt;10% adjusted coverage was not considered in any analyses.</p>
+        <p>A gene fragmentation index (GFI) was estimated to compare gene space fragmentation in different assemblies. The average blast hit coverage of Brachypodium gene homologs in the entire assembly, referred to as assembly coverage (AC) represents an approximation of the theoretically optimal situation, when each gene is contained within a single DNA sequence (i.e. no fragmentation). The AC estimate was then compared with the average Brachypodium gene coverage per contig or scaffolds, referred to as sequence coverage (SC), to calculate a gene fragmentation index (GFI) defined as (AC-SC)/AC. Hence, the GFI measures gene fragmentation as the difference in percent between SC and AC, and approaches 0 as SC and AC become similar.</p>
+      </sec>
+      <sec>
+        <title>Evaluation of scaffold reliability</title>
+        <p>As we cannot directly measure the level of scaffolding errors due to the lack of any reference assembly, we estimated the level of scaffold errors by (1) utilizing information from synteny with Brachypodium and (2) comparing the 7BL scaffold assemblies with the sequence content of 50 random BAC clones from 7BL. Because the number of chimeric contigs is assumed to be very low, the level of errors introduced by scaffolding can be estimated by comparing the synteny levels in contigs with synteny in scaffolds of similar sizes. If homologs of two Brachypodium genes are present in a single wheat contig, these homologs have a probability of representing closely linked loci (referred to as neighbouring genes) on the Brachypodium chromosome. This probability depends on the synteny level between wheat and Brachypodium in that exact region. If the scaffolding process does not introduce structural assembly errors, the proportion of neighbouring Brachypodium homologs should be similar in contigs and scaffolds of similar size. In our analyses we defined a neighbour gene pair as genes originating from Brachypodium loci with&#x2009;&lt;&#x2009;=50 genes distance from each other. A bootstrap test was performed to test if the difference in proportions of neighbouring loci in contigs and scaffolds were likely to occur as a consequence of random sampling error. One thousand contig datasets were re-sampled (with replacement) and the <italic>P</italic>-value was calculated as the proportion of bootstrapped contig datasets with equal or lower proportions of neighbour genes as found in scaffolds.</p>
+        <p>In addition to the synteny approach we also utilized the sequence content of 50 BAC clones originating from 7BL to evaluate scaffold reliability (See Additional file <xref ref-type="supplementary-material" rid="S1">1</xref> for assembly methods and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref> for sequence contigs). Raw sequencing reads from 7BL BACs are available upon request. We first identified scaffolds containing sequences derived from the BACs by BLASTN, using a threshold of &gt;99% identity across minimum 2.5 Kb. With the assumption that identified scaffolds truly are derived from one of these 50 BACs, an estimate of scaffold reliability can therefore be defined as the proportion of contigs within a scaffold that originate from a certain BAC. To assess if contigs in scaffolds originate from the BAC we used BLASTN and defined a significant contig-to-BAC hit as having &gt;99% identity across &gt;50% of the contig length. Because longer scaffolds are more likely contain sequences belonging to multiple BACs (i.e. lower proportion of contigs originating from a single BAC) and scaffolding stringency affect scaffold length distribution, we normalized the scaffold reliability by dividing on scaffold length (i.e. proportion of contigs in a scaffold with a BLASTN hit to BAC/scaffold length). Normalized scaffold reliability is hereafter referred to as scaffold reliability index (SRI).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <sec>
+        <title>Shotgun assembly of 7BS and 7BL</title>
+        <p>106 and 100 million 100&#xA0;bp PE reads with an average insert size of 346&#xA0;bp (7BS) and 362&#xA0;bp (7BL) (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>) were generated from the MDA DNA from flow-sorted 7BS and 7BL chromosome arms, respectively (short read archive accession number: ERP002001). Of the mapped read pairs &gt;99.8% were oriented in the assumed FR directions. This represents approximately 59x coverage of 7BS and 37&#xD7; coverage of 7BL. The assembly with ABySS produced a total of 1,349,563 contigs for 7BS and 4,527,901 contigs for 7BL (Table&#xA0;<xref ref-type="table" rid="T1">1</xref>) (contigs are available upon requests). After removing contigs of less than 200&#xA0;bp, the assemblies were reduced to 178,789 7BS contigs and 328,725 7BL contigs, with an N50 of 2,428 and 1,556&#xA0;bp, respectively (Table&#xA0;<xref ref-type="table" rid="T1">1</xref>). The filtered datasets constituted 13.3% of 7BS and 7.3% of 7BL contigs, representing 57% and 48% of the two chromosome arms assuming a molecular size of 360 Mbp for 7BS and 540 Mbp for 7BL [<xref ref-type="bibr" rid="B14">14</xref>], respectively.</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Contig assembly summary statistics</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="center">
+                  <bold>Arm</bold>
+                </th>
+                <th align="center">
+                  <bold>Contig number</bold>
+                </th>
+                <th align="center">
+                  <bold>N50 (bp)</bold>
+                </th>
+                <th align="center">
+                  <bold>Mean length (bp)</bold>
+                </th>
+                <th align="center">
+                  <bold>Max length (bp)</bold>
+                </th>
+                <th align="center">
+                  <bold>Total (Mbp)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td rowspan="2" align="center" valign="top">7BS<hr/></td>
+                <td align="center" valign="bottom">1,349,563<hr/></td>
+                <td align="center" valign="bottom">842<hr/></td>
+                <td align="center" valign="bottom">239<hr/></td>
+                <td align="center" valign="bottom">50,938<hr/></td>
+                <td align="center" valign="bottom">323<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">178,789<sup>*</sup><hr/></td>
+                <td align="center" valign="bottom">2428<hr/></td>
+                <td align="center" valign="bottom">1152<hr/></td>
+                <td align="center" valign="bottom">50,938<hr/></td>
+                <td align="center" valign="bottom">206<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">7BL</td>
+                <td align="center" valign="bottom">4,527,901<hr/></td>
+                <td align="center" valign="bottom">145<hr/></td>
+                <td align="center" valign="bottom">144<hr/></td>
+                <td align="center" valign="bottom">30,964<hr/></td>
+                <td align="center" valign="bottom">652<hr/></td>
+              </tr>
+              <tr>
+                <td align="center">328,725<sup>*</sup></td>
+                <td align="center">1556</td>
+                <td align="center">789</td>
+                <td align="center">30,964</td>
+                <td align="center">260</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><sup><bold>*</bold></sup>Contigs&#x2009;&gt;&#x2009;200&#xA0;bp.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Mate pair data</title>
+        <p>A total of 445 million 7BS and 478 million 7BL MP read pairs were generated (short read archive accession number: ERP002001), the coverage was estimated to be 88.9x and 63.9&#xD7; for the short and long arm, respectively (Table&#xA0;<xref ref-type="table" rid="T2">2</xref>). Seventy-one per cent of the MPs had both reads mapping to the assembly, 23% of the read pairs only had one read mapping to a contig (i.e. singleton), and about 5% of the MP data did not map to any of the 7B contigs. The between-library variation in the proportions of mapped reads were very low, however the 3 Kb and 5 Kb libraries had slightly smaller proportion of unmapped reads and singletons (2-5% less) compared to the 2 Kb library (data not shown).</p>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>Summary table of mate pair sequence data</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Arm</bold>
+                </th>
+                <th colspan="3" align="center">
+                  <bold>Mate pair library</bold>
+                </th>
+                <th align="center">
+                  <bold>Total pairs</bold>
+                </th>
+                <th colspan="3" align="center">
+                  <bold>Read class</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>2 Kb&#xB0;</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">
+                  <bold>3 Kb&#x2020;</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">
+                  <bold>5 Kb&#x2020;</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>Pairs</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">
+                  <bold>Singletons</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">
+                  <bold>Unaligned</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">2.60*107<hr/></td>
+                <td align="center" valign="bottom">2.23*108<hr/></td>
+                <td align="center" valign="bottom">1.97*108<hr/></td>
+                <td align="center" valign="bottom">4.46*108<hr/></td>
+                <td align="center" valign="bottom">71.8%<hr/></td>
+                <td align="center" valign="bottom">22.4%<hr/></td>
+                <td align="center" valign="bottom">5.9%<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">7BL</td>
+                <td align="center">3.13*107</td>
+                <td align="center">2.32*108</td>
+                <td align="center">2.16*108</td>
+                <td align="center">4.79*108</td>
+                <td align="center">71.2%</td>
+                <td align="center">23.7%</td>
+                <td align="center">5.1%</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>Total numbers of read pairs are given for each MP library. The read pair classification is based on mapping of MP data back to assembled contigs from PE data.</p>
+            <p>&#xB0;Roche library, &#x2020;Illumina library.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>MP reads, which map to the same contig, can be classified according to their orientation. In theory, MP should be oriented in a reverse/forward (RF) manner; however, of the MP reads that mapped to one contig, only 15% and 29% were classified as having a RF orientation on 7BS and 7BL, respectively. To better understand the nature of the non-MP oriented read pairs, we estimated insert size based on the mapping information. Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref> illustrates the variation and distribution of insert sizes for the RF, FR, and FF/RR oriented MP reads in the 3 Kb library of 7BS (Similar figures for all libraries can be found in Additional files <xref ref-type="supplementary-material" rid="S4">4</xref> and <xref ref-type="supplementary-material" rid="S5">5</xref>). It is evident that the insert size distribution of the properly oriented MP read pairs represents a mix of the expected size range (a normally distributed peak) in addition to a relatively high proportion of reads with smaller and variable insert sizes. The insert size distribution of the non-MP oriented FF/RR and FR reads does not show the expected normal distribution, but is more similar to a log-normal distribution with a large proportion of reads from short insert size fragments of &lt;1000&#xA0;bp.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>MP read classes and the estimated insert size distributions for the 3&#xA0;KB library of 7BS. A</bold>) distribution of insert sizes for the FF reads <bold>B</bold>) distribution of insert sizes for the FR reads <bold>C</bold>) distribution of insert sizes for the RF reads.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-14-222-1"/>
+        </fig>
+        <p>Mapping of MP reads classified as having RF, FR, and FF/RR orientation to the repeat database showed no apparent difference in repeat content (~36% mapped to repeat database, data not shown). It is not uncommon to have PE oriented reads (i.e. FR) in MP libraries (c.f. mate pair library sample preparation guide), but the occurrence of FF/RR reads is more difficult to explain. Hence, we specifically analysed the content of the FF/RR-mapped reads by BLASTN against the NCBI nr database to assess if the FF/RR reads originated from other sources than wheat DNA. All target hits with &gt;80% identity in the NCBI nr nucleotide database were collected and the species information of each hit was extracted. More than 96% of the reads had a best BLAST hit to other grasses (Additional file <xref ref-type="supplementary-material" rid="S6">6</xref>), implying that the FF/RR-mapping reads truly were derived from wheat DNA.</p>
+      </sec>
+      <sec>
+        <title>Effect of MP integration on 7B assemblies</title>
+        <p>In the process of producing scaffolds, SSPACE enforces stringent criteria for incorporating MP information; MP reads used in SSPACE must have a unique perfect hit in the contig assembly and satisfy the <italic>a priori</italic> defined insert size range. Across all SSPACE assemblies only 1&#x2013;1.8% of the MP read pairs satisfied the perfect match, read orientation, and insert size criteria (Table&#xA0;<xref ref-type="table" rid="T3">3</xref>). Most of the discarded MP reads (63-71%) were classified as having unsatisfied pairing orientation, i.e. either FF/RR or as a pair end read (FR).</p>
+        <table-wrap position="float" id="T3">
+          <label>Table 3</label>
+          <caption>
+            <p>Scaffold assembly summary statistics</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th rowspan="3" align="center" valign="top">
+                  <bold>k</bold>
+                </th>
+                <th rowspan="3" align="center" valign="top">
+                  <bold>Arm</bold>
+                </th>
+                <th rowspan="3" align="center" valign="top">
+                  <bold>MP used (%)</bold>
+                </th>
+                <th rowspan="3" align="center" valign="top">
+                  <bold>No. scaffolds</bold>
+                </th>
+                <th colspan="3" align="center" valign="top">
+                  <bold>Contigs in scaffolds</bold>
+                  <hr/>
+                </th>
+                <th align="center" valign="bottom">
+                  <bold>Mean length</bold>
+                  <hr/>
+                </th>
+                <th rowspan="3" align="center" valign="top">
+                  <bold>Sum scaffolds (Mbp)</bold>
+                </th>
+                <th rowspan="3" align="center" valign="top">
+                  <bold>Assembly N50* (Kb)</bold>
+                </th>
+              </tr>
+              <tr>
+                <th colspan="3" align="center" valign="bottom">&#xA0;<hr/></th>
+                <th align="center" valign="bottom">
+                  <bold>(min-max)</bold>
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th align="center">
+                  <bold>Mean</bold>
+                </th>
+                <th align="center">
+                  <bold>Max</bold>
+                </th>
+                <th align="center">
+                  <bold>%</bold>
+                </th>
+                <th align="center">
+                  <bold>(Kb)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td rowspan="2" align="center" valign="top">3<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">0.96<hr/></td>
+                <td align="center" valign="bottom">20,654<hr/></td>
+                <td align="center" valign="bottom">4.51<hr/></td>
+                <td align="center" valign="bottom">38<hr/></td>
+                <td align="center" valign="bottom">52<hr/></td>
+                <td align="center" valign="bottom">11.2 (1.7-143.1)<hr/></td>
+                <td align="center" valign="bottom">168<hr/></td>
+                <td align="center" valign="bottom">14.49<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1.56<hr/></td>
+                <td align="center" valign="bottom">31,582<hr/></td>
+                <td align="center" valign="bottom">4.33<hr/></td>
+                <td align="center" valign="bottom">43<hr/></td>
+                <td align="center" valign="bottom">42<hr/></td>
+                <td align="center" valign="bottom">9.6 (2.0-117.6)<hr/></td>
+                <td align="center" valign="bottom">192<hr/></td>
+                <td align="center" valign="bottom">11.15<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">5<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1.06<hr/></td>
+                <td align="center" valign="bottom">17,481<hr/></td>
+                <td align="center" valign="bottom">3.81<hr/></td>
+                <td align="center" valign="bottom">27<hr/></td>
+                <td align="center" valign="bottom">37<hr/></td>
+                <td align="center" valign="bottom">10.7 (1.7-129.4)<hr/></td>
+                <td align="center" valign="bottom">148<hr/></td>
+                <td align="center" valign="bottom">11.03<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1.41<hr/></td>
+                <td align="center" valign="bottom">23,365<hr/></td>
+                <td align="center" valign="bottom">3.91<hr/></td>
+                <td align="center" valign="bottom">32<hr/></td>
+                <td align="center" valign="bottom">28<hr/></td>
+                <td align="center" valign="bottom">9.5 (2.2-122.1)<hr/></td>
+                <td align="center" valign="bottom">166<hr/></td>
+                <td align="center" valign="bottom">8.31<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">7<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1.14<hr/></td>
+                <td align="center" valign="bottom">15,230<hr/></td>
+                <td align="center" valign="bottom">3.4<hr/></td>
+                <td align="center" valign="bottom">20<hr/></td>
+                <td align="center" valign="bottom">29<hr/></td>
+                <td align="center" valign="bottom">10.5 (1.72-109.6)<hr/></td>
+                <td align="center" valign="bottom">133<hr/></td>
+                <td align="center" valign="bottom">9<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1.48<hr/></td>
+                <td align="center" valign="bottom">19,610<hr/></td>
+                <td align="center" valign="bottom">3.56<hr/></td>
+                <td align="center" valign="bottom">25<hr/></td>
+                <td align="center" valign="bottom">21<hr/></td>
+                <td align="center" valign="bottom">9.3 (2.3-81.9)<hr/></td>
+                <td align="center" valign="bottom">148<hr/></td>
+                <td align="center" valign="bottom">6.33<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">10<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1.24<hr/></td>
+                <td align="center" valign="bottom">12,750<hr/></td>
+                <td align="center" valign="bottom">3.04<hr/></td>
+                <td align="center" valign="bottom">15<hr/></td>
+                <td align="center" valign="bottom">22<hr/></td>
+                <td align="center" valign="bottom">10.5 (1.8-108.9)<hr/></td>
+                <td align="center" valign="bottom">115<hr/></td>
+                <td align="center" valign="bottom">7.04<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1.58<hr/></td>
+                <td align="center" valign="bottom">15,896<hr/></td>
+                <td align="center" valign="bottom">3.22<hr/></td>
+                <td align="center" valign="bottom">20<hr/></td>
+                <td align="center" valign="bottom">16<hr/></td>
+                <td align="center" valign="bottom">9.3 (2.3-77.7)<hr/></td>
+                <td align="center" valign="bottom">128<hr/></td>
+                <td align="center" valign="bottom">4.49<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">15<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1.35<hr/></td>
+                <td align="center" valign="bottom">9,733<hr/></td>
+                <td align="center" valign="bottom">2,73<hr/></td>
+                <td align="center" valign="bottom">12<hr/></td>
+                <td align="center" valign="bottom">15<hr/></td>
+                <td align="center" valign="bottom">10.7 (2.0-102.4)<hr/></td>
+                <td align="center" valign="bottom">92<hr/></td>
+                <td align="center" valign="bottom">5.2<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1.7<hr/></td>
+                <td align="center" valign="bottom">12,052<hr/></td>
+                <td align="center" valign="bottom">2.89<hr/></td>
+                <td align="center" valign="bottom">17<hr/></td>
+                <td align="center" valign="bottom">11<hr/></td>
+                <td align="center" valign="bottom">9.4 (2.54-67.4)<hr/></td>
+                <td align="center" valign="bottom">103<hr/></td>
+                <td align="center" valign="bottom">2.84<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">20</td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1.42<hr/></td>
+                <td align="center" valign="bottom">7,618<hr/></td>
+                <td align="center" valign="bottom">2,55<hr/></td>
+                <td align="center" valign="bottom">10<hr/></td>
+                <td align="center" valign="bottom">11<hr/></td>
+                <td align="center" valign="bottom">10.9 (2.1-73.3)<hr/></td>
+                <td align="center" valign="bottom">76<hr/></td>
+                <td align="center" valign="bottom">4.2<hr/></td>
+              </tr>
+              <tr>
+                <td align="center">7BL</td>
+                <td align="center">1.79</td>
+                <td align="center">9,458</td>
+                <td align="center">2.68</td>
+                <td align="center">14</td>
+                <td align="center">8</td>
+                <td align="center">9.6 (2.8-69.2)</td>
+                <td align="center">84</td>
+                <td align="center">1.97</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>* Including all sequences (contigs&#x2009;+&#x2009;scaffolds).</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Even though only 1-2% of MP data was used for scaffolding the assembly N50 was improved substantially at low stringency levels; at k&#x2009;=&#x2009;3 assembly N50 increased by 6 and 7.2 fold for 7BS and 7BL, respectively (scaffolds are available upon requests). However, as expected, the reduction in assembly fragmentation was dramatically affected when k was increased (Table&#xA0;<xref ref-type="table" rid="T3">3</xref>). The number of contigs incorporated in scaffolds decreased from 42% to 8% and from 52% to 11% for 7BL and 7BS, respectively, and the total number of scaffolds decreased by ~70% when increasing k from 3 to 20. Furthermore the total number of residues included in scaffolds was reduced from ~40% to 18% of the total chromosome length (Table&#xA0;<xref ref-type="table" rid="T3">3</xref>). The mean scaffold length however, was not affected much when k was increased due to a change in the distribution of length of contigs included in scaffolds; as k increased, the proportion of long contigs included in scaffolds also increased. Scaffold content was strongly biased towards gene containing contigs. Although a maximum of 40-50% of 7BS and 7BL contigs were incorporated into scaffolds (Table&#xA0;<xref ref-type="table" rid="T3">3</xref>), as many as 75% (k&#x2009;=&#x2009;20) and 95% (k&#x2009;=&#x2009;3) of sequences containing full length genes (&gt;&#x2009;=&#x2009;70% Brachypodium homolog coverage) were included in scaffolds.</p>
+        <p>Next we assessed how MP data helped to join fragmented gene parts into more complete gene sequences by calculation of a gene fragmentation index (GFI) and counting full length genes contained in single sequences. After removing all BLAST hits with &lt;10% coverage of a Brachypodium protein the AC and GFI were 0.54/0.17 and 0.49/0.21 in the 7BS and 7BL contig assemblies, respectively, while the scaffold assembly GFI ranged between 0.09-0.14 (Table&#xA0;<xref ref-type="table" rid="T4">4</xref>). The MP integration also increased the number of full length genes in the range of 10&#x2013;16% and 20-30%, depending on how a full length gene was defined (Table&#xA0;<xref ref-type="table" rid="T4">4</xref>). In addition to aiding the joining of exons from fragmented gene sequences, MP information also helps to link genes belonging to different contigs together in multigene containing scaffolds (containing&#x2009;&gt;&#x2009;=2 full length genes), and thereby helps ordering genes relative to each other. A modest effect on gene linking was observed after the MP integration in the 7BS and 7BL assemblies (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>). The number of sequences containing 2 and 3 genes increased by 2&#x2013;3 fold when applying k&#x2009;=&#x2009;3 and by 1.5-2 fold when applying k&#x2009;=&#x2009;20, compared to the contig assembly. However, virtually no changes was observed for sequences containing &gt;3 genes. Moreover, the gene composition in scaffolds containing multiple genes were not random with respect to the length of the gene, but showed a clear bias towards shorter genes. For example, for the SSPACE k&#x2009;=&#x2009;5 assembly the mean gene length in scaffolds and contigs with 3 or more genes were much shorter (contigs 462&#xA0;bp/scaffolds 722&#xA0;bp) than the mean CDS in sequences with 2 genes (contigs&#x2009;=&#x2009;1,354&#xA0;bp/scaffolds&#x2009;=&#x2009;1,604&#xA0;bp).</p>
+        <table-wrap position="float" id="T4">
+          <label>Table 4</label>
+          <caption>
+            <p>Gene content in ABySS and SSPACE assemblies</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th rowspan="3" align="center">
+                  <bold>Assembly</bold>
+                </th>
+                <th rowspan="3" align="center">
+                  <bold>Arm</bold>
+                </th>
+                <th rowspan="2" align="center" valign="top">
+                  <bold>Brachypodium homologs</bold>
+                  <hr/>
+                </th>
+                <th rowspan="3" align="center" valign="top">
+                  <bold>Brachypodium homolog coverage</bold>
+                  <sup>
+                    <bold>1 </bold>
+                  </sup>
+                  <bold>(mean)</bold>
+                </th>
+                <th rowspan="3" align="center" valign="top">
+                  <bold>GFI</bold>
+                  <sup>
+                    <bold>2</bold>
+                  </sup>
+                </th>
+                <th colspan="2" align="center" valign="bottom">
+                  <bold>Full length genes</bold>
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th rowspan="2" align="center" valign="top">
+                  <bold>Coverage*</bold>
+                </th>
+                <th rowspan="2" align="center" valign="top">
+                  <bold>Start-stop&#x2020;</bold>
+                </th>
+              </tr>
+              <tr>
+                <th align="center">
+                  <bold>(&gt;30 aa, &gt;70 pident)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td rowspan="2" align="center" valign="top">SSPACE k3<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1029<hr/></td>
+                <td align="center" valign="bottom">0.49<hr/></td>
+                <td align="center" valign="bottom">0.09<hr/></td>
+                <td align="center" valign="bottom">449<hr/></td>
+                <td align="center" valign="bottom">193<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1539<hr/></td>
+                <td align="center" valign="bottom">0.44<hr/></td>
+                <td align="center" valign="bottom">0.10<hr/></td>
+                <td align="center" valign="bottom">551<hr/></td>
+                <td align="center" valign="bottom">224<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">SSPACE k5<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1038<hr/></td>
+                <td align="center" valign="bottom">0.49<hr/></td>
+                <td align="center" valign="bottom">0.09<hr/></td>
+                <td align="center" valign="bottom">445<hr/></td>
+                <td align="center" valign="bottom">193<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1545<hr/></td>
+                <td align="center" valign="bottom">0.43<hr/></td>
+                <td align="center" valign="bottom">0.12<hr/></td>
+                <td align="center" valign="bottom">547<hr/></td>
+                <td align="center" valign="bottom">227<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">SSPACE k7<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1032<hr/></td>
+                <td align="center" valign="bottom">0.49<hr/></td>
+                <td align="center" valign="bottom">0.09<hr/></td>
+                <td align="center" valign="bottom">449<hr/></td>
+                <td align="center" valign="bottom">196<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1551<hr/></td>
+                <td align="center" valign="bottom">0.43<hr/></td>
+                <td align="center" valign="bottom">0.12<hr/></td>
+                <td align="center" valign="bottom">535<hr/></td>
+                <td align="center" valign="bottom">221<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">SSPACE k10<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1038<hr/></td>
+                <td align="center" valign="bottom">0.49<hr/></td>
+                <td align="center" valign="bottom">0.09<hr/></td>
+                <td align="center" valign="bottom">447<hr/></td>
+                <td align="center" valign="bottom">195<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1555<hr/></td>
+                <td align="center" valign="bottom">0.43<hr/></td>
+                <td align="center" valign="bottom">0.12<hr/></td>
+                <td align="center" valign="bottom">533<hr/></td>
+                <td align="center" valign="bottom">215<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">SSPACE k15<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1040<hr/></td>
+                <td align="center" valign="bottom">0.48<hr/></td>
+                <td align="center" valign="bottom">0.12<hr/></td>
+                <td align="center" valign="bottom">436<hr/></td>
+                <td align="center" valign="bottom">186<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1576<hr/></td>
+                <td align="center" valign="bottom">0.42<hr/></td>
+                <td align="center" valign="bottom">0.14<hr/></td>
+                <td align="center" valign="bottom">529<hr/></td>
+                <td align="center" valign="bottom">217<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">SSPACE k20<hr/></td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1048<hr/></td>
+                <td align="center" valign="bottom">0.47<hr/></td>
+                <td align="center" valign="bottom">0.13<hr/></td>
+                <td align="center" valign="bottom">433<hr/></td>
+                <td align="center" valign="bottom">183<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">7BL<hr/></td>
+                <td align="center" valign="bottom">1574<hr/></td>
+                <td align="center" valign="bottom">0.42<hr/></td>
+                <td align="center" valign="bottom">0.14<hr/></td>
+                <td align="center" valign="bottom">516<hr/></td>
+                <td align="center" valign="bottom">205<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="2" align="center" valign="top">Contigs</td>
+                <td align="center" valign="bottom">7BS<hr/></td>
+                <td align="center" valign="bottom">1071<hr/></td>
+                <td align="center" valign="bottom">0.45<hr/></td>
+                <td align="center" valign="bottom">0.17<hr/></td>
+                <td align="center" valign="bottom">403<hr/></td>
+                <td align="center" valign="bottom">160<hr/></td>
+              </tr>
+              <tr>
+                <td align="center">7BL</td>
+                <td align="center">1621</td>
+                <td align="center">0.39</td>
+                <td align="center">0.21</td>
+                <td align="center">457</td>
+                <td align="center">162</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><sup>1</sup>Mean coverage per sequence (contig/scaffold) of Brachypodium homologs based on blast analyses (see methods).</p>
+            <p><sup>2</sup> Gene Fragmentation Index (GFI) is defined in the methods section.</p>
+            <p>* TBLASTN hits covering&#x2009;&gt;&#x2009;=70% of a homologous Brachypodium protein in a single contig/scaffold.</p>
+            <p>&#x2020; TBLASTN hits covering an entire Brachypodium protein (+&#x2009;&#x2212;&#x2009;10aa) in a single contig/scaffold.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p>MP effect on sequences containing multiple full length (FL) genes.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-14-222-2"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Scaffold content reliability</title>
+        <p>Integration of mate pair data can lead to misassemblies due to erroneous coupling of contigs. We took advantage of the Brachypodium model genome to estimate the scaffolding error levels based on synteny. Scaffolds and contigs containing 2 full length Brachypodium homologs were identified and the proportion of neighbour genes based on the location in the Brachypodium genome was calculated. The frequency of neighbouring genes in contigs were 0.48 and in scaffolds between 0.4 (k&#x2009;=&#x2009;3) and 0.49 (k&#x2009;=&#x2009;7) (Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>A). Furthermore, the bootstrap tests did not reject the null hypotheses that contigs have higher proportion of neighbouring genes at &#x3B1;&#x2009;=&#x2009;0.05, even for the scaffolds produced at the lowest stringency (k&#x2009;=&#x2009;3, <italic>P</italic>&#x2009;=&#x2009;0.15). Taken together, our synteny error rate estimates do not indicate high rates of random contig joining at any level of SSPACE stringency. Scaffold reliability estimation based on sequence content in BAC clones reflected a slightly different and more pronounced effect of changing scaffolding stringency. The median scaffold reliability index increased progressively from the k&#x2009;=&#x2009;3 (0.38) to k&#x2009;=&#x2009;20 (0.86) assemblies (Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>B), indicating a higher scaffold correctness in SSPACE assemblies with high k-values.</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Evaluation of scaffold reliability. A</bold>) Scaffold reliability evaluated by the proportion of conserved syntenic relationship to the Brachypodium genome. <bold>B</bold>) Scaffold reliability evaluated by comparisons of sequence content in BACs and scaffolds. SRI&#x2009;=&#x2009;scaffold reliability index (defined in method section).</p>
+          </caption>
+          <graphic xlink:href="1471-2164-14-222-3"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Effect of MP coverage</title>
+        <p>Increasing sequence coverage of MP data has impact on assembly statistics, but upon reaching certain coverage, added value of additional MP sequencing may not justify the cost of data generation. It is therefore important to evaluate the effect of MP coverage on our assembly metrics. To assess the relationship between MP coverage and assembly improvement, we generated randomly reduced datasets of our 7BS MP libraries with 1, 10, 25, 40, 50, 60 and 75% of original MP coverage and generated scaffolds with the number of links parameter k&#x2009;=&#x2009;5. Three random sub-sets of MP data were generated for each reduced level of coverage. Interestingly, little change was observed in assembly statistics until the coverage was reduced with 50% (Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref>), and a corresponding 22% reduction in N50 was observed. Even less effect of decreasing MP coverage was seen in statistics for gene content information in reduced MP coverage assemblies. For example, reducing the MP coverage by 90% only produced a 25% reduction in the number of full length genes (427) while the 50% reduced coverage assembly contained 7% fewer full length genes (435).</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>Effect of MP sequencing depth on assembly N50.</bold> Only 7BS was used to estimate the MP coverage effect.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-14-222-4"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <sec>
+        <title>Modest effect of MP integration in 7B shotgun assemblies</title>
+        <p><italic>De novo</italic> assembly of shotgun sequences from large plant genomes like wheat remains a challenging task, mainly due to prevalence of repetitive DNA [<xref ref-type="bibr" rid="B31">31</xref>]. Its presence can lead to complex, misassembled rearrangements and the collapse of reads coming from distinct copies of repetitive DNA into single assembled sequences [<xref ref-type="bibr" rid="B23">23</xref>] which results in contracted and fragmented assemblies. Ideally, genomes with high repeat content should therefore be assembled using reads longer then the length of the repeats. Wheat consists of &gt;80% TE-derived repetitive DNA with a mean length of ~4600&#xA0;bp [<xref ref-type="bibr" rid="B24">24</xref>], far longer than the read length of sequence reads from next generation sequencing data. One assembly strategy to reduce the fragmentation generated by repetitive DNA is therefore to link neighboring chromosome regions belonging to different sequence contigs with long insert size MP reads that bridge the repetitive segments.</p>
+        <p>Our results show that integration of MP data in shotgun assemblies of flow-sorted wheat chromosomes improves assembly contiguity and decrease gene space fragmentation, but that the degree of assembly statistics improvement is greatly affected by scaffolding stringency (Table&#xA0;<xref ref-type="table" rid="T1">1</xref>, Table&#xA0;<xref ref-type="table" rid="T3">3</xref>). For example, at low stringency the assembly N50 increased by 6&#x2013;7.5-fold, while at the highest stringency (k&#x2009;=&#x2009;20) N50 was only increased by 1.3-1.8 compared to contig assemblies. Although a negative correlation between stringency and assembly improvements also was observed for the gene space statistics, the MP effect on gene space were less affected by scaffold assembly stringency compared to the N50 statistic (Table&#xA0;<xref ref-type="table" rid="T4">4</xref>). This is likely explained by the fact that genes are more often found in longer contigs, hence even at high stringency a large proportion of the gene containing contigs were joined into scaffolds.</p>
+        <p>Even for the least stringent scaffold assembly, the assembly improvement for 7B does not seem to be in the same magnitude as reported for some recently sequenced plant genomes. For the cucumber (1C&#x2009;=&#x2009;367 Mbp) and cacao (1C&#x2009;=&#x2009;430 Mbp) genomes, addition of long insert libraries improved N50 by 14-fold (172 Kb) and 60-fold (473.8 Kb), respectively [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B9">9</xref>]. Assembly metrics from these shotgun assemblies is difficult to compare directly due to the use of different sequencing platforms, different PE and MP libraries, and different sequencing coverage. However, it is possible to estimate the MP-effectiveness based on the total gain in N50 per Kb of MP insert size length (N50 gain/max MP insert size). For cucumber and cacao these numbers are 14/2 Kb and 60/8 Kb compared to for example 5/5 Kb in wheat k&#x2009;=&#x2009;5.</p>
+        <p>Potato is another recently published plant genome [<xref ref-type="bibr" rid="B25">25</xref>] for which different MP libraries were added to improve assembly. Integration of a 2 Kb MP library produced a 3-fold increase in N50, while using both 2 Kb&#x2009;+&#x2009;5Kb MP libraries increased the N50 by 8-fold. Comparable metrics were obtained in 7B SSPACE assemblies using k&#x2009;=&#x2009;5; the 2 Kb MP libraries produced 1.9- and 2.6-fold changes in N50 for 7BS and 7BL, respectively, while the final N50 fold change was ~5 after addition of the 5 Kb MP data. Thus, even though the actual scaffold N50 was much higher in potato after adding 2&#x2009;+&#x2009;5 Kb MP libraries (173 Kb) compared to the 7B assemblies with 2&#x2009;+&#x2009;3&#x2009;+&#x2009;5 Kb MP data (7BS&#x2009;=&#x2009;11 Kb/7BL&#x2009;=&#x2009;8.3 Kb), the relative N50 gain was not that different.</p>
+        <p>The modest impact of MP data in the chromosome 7B assemblies compared to other plant genomes could be explained by the inherent repeat characteristics of the wheat genome. While the wheat genome consists of &gt;80% TE-derived repetitive DNA [<xref ref-type="bibr" rid="B24">24</xref>], potato, cacao and cucumber genomes are much smaller and all have &lt;35% TE-derived repetitive DNA [<xref ref-type="bibr" rid="B32">32</xref>]. This difference will undoubtedly cause large differences in the effect of MP data on assembly contiguity. Another reason for the relatively low impact of MP data on the scaffold N50 could be related to the quality of the MP data. Only a small fraction (~1%) of the MP reads from MDA chromosomal DNA satisfied requirements of SSPACE for being included in scaffold construction, mostly due to a very high portion of reads having a different orientation or discrepancy between expected and estimated insert size for MP reads (Table&#xA0;<xref ref-type="table" rid="T2">2</xref>). Lastly, the fragmentation level of the contig assembly is important for the MP effect. It is evident that small contigs have less chance of being put into scaffolds due to the fact that small sequences will have few MP reads originating from them. An improved contig assembly N50, for example by increasing PE sequencing coverage or adding additional PE libraries with different insert sizes, could therefore be a good strategy to be able to include a larger proportion of the contig assembly into scaffolds, and hence increase scaffold N50.</p>
+      </sec>
+      <sec>
+        <title>Scaffold reliability and assembly stringency</title>
+        <p>Assembly errors can be introduced at the scaffolding stage when the software has to choose between two similar solutions and falsely connects contigs from non-adjacent chromosome regions or links two adjacent contigs in the wrong orientation. Our synteny- and BAC-based scaffold reliability estimates provides measures of reliability at two types of different genomic landscapes. Our synteny approach did not detect signatures of erroneous contig joining in small scaffolds from gene dense regions in the assemblies; however when using sequence contents from 50 BACs to assess scaffold reliability a strong correlation between estimated scaffold reliability and scaffold assembly stringency was observed (Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>). We interpret these differences in test conclusions to reflect that scaffolds from non-genic genomic regions are more prone to contain errors (especially at low stringency parameters), likely due to higher content of repetitive DNA in the intragenic space.</p>
+      </sec>
+      <sec>
+        <title>The origin of erroneous MP orientation</title>
+        <p>The MP data contained a high percentage of forward-reverse reads (i.e. PE) as well as contamination of read pairs that map in the same direction (FF/RR) (Table&#xA0;<xref ref-type="table" rid="T2">2</xref>). The high proportion of FR reads in our MP data is most likely explained by contamination with PE reads, which represent non-biotinylated fragments that were not removed during the wash step in library preparation (c.f. mate pair library sample preparation guide). This is supported by the fact that these PE oriented reads have a smaller estimated insert size of around 500&#xA0;bp (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>, Additional files <xref ref-type="supplementary-material" rid="S4">4</xref> and <xref ref-type="supplementary-material" rid="S5">5</xref>). The origin of MP reads oriented in FF/RR direction, which make up ~38% of the total MP data, is less obvious. There is no evidence for FF/RR reads containing non-wheat DNA contamination, nor do the FF/RR reads have increased proportions of reads from TE-repetitive DNA. Moreover, since the 2 Kb and 3/5 Kb libraries were produced and sequenced by different labs using different protocols it is highly unlikely that systematic technical errors have been introduced. One possible explanation to the high FF/RR fraction is that they originate from rearranged DNA generated in the multiple displacement amplification (MDA) step, which was used to increase DNA amount after chromosome flow-sorting. It has been shown that MDA generates genomic rearrangement in the amplified DNA with a frequency of 1 rearrangement per 10 Kb, and majority of chimeras are inverted sequences [<xref ref-type="bibr" rid="B18">18</xref>]. In a <italic>de-novo</italic> assembly of a single bacteria cell MDA, &gt;50% of the MP pairs were chimeric pairs [<xref ref-type="bibr" rid="B33">33</xref>]. Hence, even though MDA has proven to be very useful to prepare DNA from flow sorted chromosomes for single-end and short insert size PE sequencing [<xref ref-type="bibr" rid="B20">20</xref>,<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B34">34</xref>], the use of MDA DNA in long insert size MP library construction and scaffolding might not be an optimal strategy for wheat genome scaffolding. Another limitation due to the high proportion of FF/RR pairs is that it restricted us from using any type of scaffold-assembler. For example, when trying to integrate MP data using ABySS, the software did not handle the large proportion of the MP reads with non-MP orientation.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusion</title>
+      <p>The wheat chromosome 7B was sequenced and assembled using PE reads with an insert size of ~350&#xA0;bp in combination with 2, 3 and 5 Kb MP libraries. MP integration improved both assembly contiguity and reduced fragmentation of the gene space, but only to a modest extent. Scaffold reliability increased with increasing assembly stringency, emphasizing the need to use high stringency scaffolding parameters to avoid scaffolding errors. Scaffold assemblies of 7BS with reduced MP coverage showed that MP sequence coverage of ~40-50&#xD7; would be sufficient to produce assemblies with slightly reduced N50 but comparable results for gene space improvement compared to the full coverage assembly (89&#xD7;). In conclusion, MP assembly improvements was lower than for other recently assembled plant genomes, possibly due to the extreme repeat content of wheat, high fragmentation of contig assemblies, and the use of MDA DNA to construct MP libraries.</p>
+    </sec>
+    <sec>
+      <title>Competing interest</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>TB carried out bioinformatics on scaffolding and participated in writing the manuscript. BZ estimated insert sizes of MP libraries, participated in data analyses and helped draft the manuscript. JW and MC performed assembly of PE reads, and participated in drafting the manuscript. TA, CB and FP coordinated and carried out the MP sequencing and helped to draft the manuscript. HS- carried out isolation and preparation of MDA DNA, and helped draft the manuscript. JD led the work on flow-sorting of 7B chromosome, and was involved in drafting the manuscript. MK was responsible for the sequencing of one MP library, carried out data analyses and helped draft the manuscript. SL and OAO helped coordinate the study, participated in data analyses, and helped draft the manuscript. SRS carried out bioinformatics analyses of gene content, helped to draft the manuscript, and was responsible for the final version of the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p>7BL_BAC_assemblies.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-222-S1.pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p>BAC_contigs_from_50_BACs.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-222-S2.zip">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p>PE_insert_size_distributions.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-222-S3.pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S4">
+        <caption>
+          <title>Additional file 4</title>
+          <p>7BS_libraries.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-222-S4.pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S5">
+        <caption>
+          <title>Additional file 5</title>
+          <p>7BL_libraries.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-222-S5.pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S6">
+        <caption>
+          <title>Additional file 6</title>
+          <p>Distribution_of_ff_reads_genus_hits.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-222-S6.pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>The project was funded by grants from the Norwegian Research Council (project no. 199387/I99) and Graminor A/S to Odd-Arne Olsen. Hana &#x160;imkov&#xE1; and Jaroslav Dole&#x17E;el were supported by the Czech Science Foundation (award no. P501/12/2554) and by Ministry of Education, Youth and Sports of the Czech Republic and the European Regional Development Fund (Operational Programme Research and Development for Innovations No. ED0007/01/01).</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="book">
+          <collab>Global Perspective Studies Unit - Food and Agriculture Organization of the United Nation</collab>
+          <source>World agriculturae: towards 2030/2050 - Interim report - Prospects for food, nutrition, agriculture and major commodity groups</source>
+          <year>2006</year>
+          <publisher-name>Rome: Food and Agriculture Organization of the United Nation</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="book">
+          <collab>The Government Office for Science</collab>
+          <source>Foresight: The Future of Food and Farming - Final Project Report</source>
+          <year>2011</year>
+          <publisher-name>London, United Kingdom: Government Office for Science</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jannink</surname>
+            <given-names>J-L</given-names>
+          </name>
+          <name>
+            <surname>Lorenz</surname>
+            <given-names>AJ</given-names>
+          </name>
+          <name>
+            <surname>Iwata</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Genomic selection in plant breeding: from theory to practice</article-title>
+          <source>Brief Funct Genomics</source>
+          <year>2010</year>
+          <volume>9</volume>
+          <issue>2</issue>
+          <fpage>166</fpage>
+          <lpage>177</lpage>
+          <pub-id pub-id-type="doi">10.1093/bfgp/elq001</pub-id>
+          <?supplied-pmid 20156985?>
+          <pub-id pub-id-type="pmid">20156985</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Argout</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Salse</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Aury</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Guiltinan</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <name>
+            <surname>Droc</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Gouzy</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Allegre</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Chaparro</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Legavre</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Maximova</surname>
+            <given-names>SN</given-names>
+          </name>
+          <article-title>The genome of Theobroma cacao</article-title>
+          <source>Nat Genet</source>
+          <year>2011</year>
+          <volume>43</volume>
+          <issue>2</issue>
+          <fpage>101</fpage>
+          <lpage>108</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng.736</pub-id>
+          <?supplied-pmid 21186351?>
+          <pub-id pub-id-type="pmid">21186351</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <collab>The Potato Sequencing Consortium</collab>
+          <article-title>Genome sequence and analysis of the tuber crop potato</article-title>
+          <source>Nature</source>
+          <year>2011</year>
+          <volume>475</volume>
+          <issue>7355</issue>
+          <fpage>189</fpage>
+          <lpage>195</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature10158</pub-id>
+          <?supplied-pmid 21743474?>
+          <pub-id pub-id-type="pmid">21743474</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schmutz</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Cannon</surname>
+            <given-names>SB</given-names>
+          </name>
+          <name>
+            <surname>Schlueter</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Ma</surname>
+            <given-names>JX</given-names>
+          </name>
+          <name>
+            <surname>Mitros</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Nelson</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Hyten</surname>
+            <given-names>DL</given-names>
+          </name>
+          <name>
+            <surname>Song</surname>
+            <given-names>QJ</given-names>
+          </name>
+          <name>
+            <surname>Thelen</surname>
+            <given-names>JJ</given-names>
+          </name>
+          <name>
+            <surname>Cheng</surname>
+            <given-names>JL</given-names>
+          </name>
+          <article-title>Genome sequence of the palaeopolyploid soybean (vol 463, pg 178, 2010)</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>465</volume>
+          <issue>7294</issue>
+          <fpage>120</fpage>
+          <pub-id pub-id-type="doi">10.1038/nature08957</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schnable</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Ware</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Fulton</surname>
+            <given-names>RS</given-names>
+          </name>
+          <name>
+            <surname>Stein</surname>
+            <given-names>JC</given-names>
+          </name>
+          <name>
+            <surname>Wei</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Pasternak</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Liang</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Fulton</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Graves</surname>
+            <given-names>TA</given-names>
+          </name>
+          <article-title>The B73 Maize Genome: Complexity, Diversity, and Dynamics</article-title>
+          <source>Science</source>
+          <year>2009</year>
+          <volume>326</volume>
+          <issue>5956</issue>
+          <fpage>1112</fpage>
+          <lpage>1115</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1178534</pub-id>
+          <?supplied-pmid 19965430?>
+          <pub-id pub-id-type="pmid">19965430</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Paterson</surname>
+            <given-names>AH</given-names>
+          </name>
+          <name>
+            <surname>Bowers</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Bruggmann</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Dubchak</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Grimwood</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Haberer</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Hellsten</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Mitros</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Poliakov</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>The Sorghum bicolor genome and the diversification of grasses</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <issue>7229</issue>
+          <fpage>551</fpage>
+          <lpage>556</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature07723</pub-id>
+          <?supplied-pmid 19189423?>
+          <pub-id pub-id-type="pmid">19189423</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Huang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Gu</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Fan</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Lucas</surname>
+            <given-names>WJ</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Xie</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Ni</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>The genome of the cucumber, Cucumis sativus L</article-title>
+          <source>Nat Genet</source>
+          <year>2009</year>
+          <volume>41</volume>
+          <issue>12</issue>
+          <fpage>1275</fpage>
+          <lpage>1281</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng.475</pub-id>
+          <?supplied-pmid 19881527?>
+          <pub-id pub-id-type="pmid">19881527</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dvorak</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Terlizzi</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>HB</given-names>
+          </name>
+          <name>
+            <surname>Resta</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>The evolution of polyploid wheats: identification of the A genome donor species</article-title>
+          <source>Genome</source>
+          <year>1993</year>
+          <volume>36</volume>
+          <issue>1</issue>
+          <fpage>21</fpage>
+          <lpage>31</lpage>
+          <pub-id pub-id-type="doi">10.1139/g93-004</pub-id>
+          <?supplied-pmid 18469969?>
+          <pub-id pub-id-type="pmid">18469969</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dvorak</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>HB</given-names>
+          </name>
+          <article-title>Variation in repeated nucleotide sequences sheds light on the phylogeny of the wheat B and G genomes</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>1990</year>
+          <volume>87</volume>
+          <issue>24</issue>
+          <fpage>9640</fpage>
+          <lpage>9644</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.87.24.9640</pub-id>
+          <?supplied-pmid 11607134?>
+          <pub-id pub-id-type="pmid">11607134</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dole&#x17E;el</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kubalakova</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Paux</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Bartos</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Feuillet</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Chromosome-based genomics in the cereals</article-title>
+          <source>Chromosome Res</source>
+          <year>2007</year>
+          <volume>15</volume>
+          <issue>1</issue>
+          <fpage>51</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10577-006-1106-x</pub-id>
+          <?supplied-pmid 17295126?>
+          <pub-id pub-id-type="pmid">17295126</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Vran&#xE1;</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kubalakova</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Cihalikova</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Lysak</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Dolezel</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Flow sorting of mitotic chromosomes in common wheat (Triticum aestivum L.)</article-title>
+          <source>Genetics</source>
+          <year>2000</year>
+          <volume>156</volume>
+          <issue>4</issue>
+          <fpage>2033</fpage>
+          <lpage>2041</lpage>
+          <?supplied-pmid 11102393?>
+          <pub-id pub-id-type="pmid">11102393</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>&#x160;af&#xE1;&#x159;</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Kubalakova</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Cihalikova</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Suchankova</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Bartos</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Dolezel</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Development of chromosome-specific BAC resources for genomics of bread wheat</article-title>
+          <source>Cytogenet Genome Res</source>
+          <year>2010</year>
+          <volume>129</volume>
+          <issue>1&#x2013;3</issue>
+          <fpage>211</fpage>
+          <lpage>223</lpage>
+          <?supplied-pmid 20501977?>
+          <pub-id pub-id-type="pmid">20501977</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Paux</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Sourdille</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Salse</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Saintenac</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Choulet</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Leroy</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Korol</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Michalak</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kianian</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Spielmeyer</surname>
+            <given-names>W</given-names>
+          </name>
+          <article-title>A physical map of the 1-gigabase bread wheat chromosome 3B</article-title>
+          <source>Science</source>
+          <year>2008</year>
+          <volume>322</volume>
+          <issue>5898</issue>
+          <fpage>101</fpage>
+          <lpage>104</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1161847</pub-id>
+          <?supplied-pmid 18832645?>
+          <pub-id pub-id-type="pmid">18832645</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Dole&#x17E;el</surname>
+            <given-names>J&#x160;H</given-names>
+          </name>
+          <name>
+            <surname>Kubal&#xE1;kov&#xE1;</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>&#x160;af&#xE1;&#x159;</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Such&#xE1;nkov&#xE1;</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>&#x10C;&#xED;hal&#xED;kov&#xE1;</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Barto&#x161;</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Val&#xE1;rik</surname>
+            <given-names>M</given-names>
+          </name>
+          <person-group person-group-type="editor">Feuillet C, Muehlbauer G</person-group>
+          <article-title>Chromosome genomics in the Triticeae</article-title>
+          <source>Genetics and Genomics of the Triticeae</source>
+          <year>2009</year>
+          <publisher-name>New York: Springer</publisher-name>
+          <fpage>285</fpage>
+          <lpage>316</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Simkov&#xE1;</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Svensson</surname>
+            <given-names>JT</given-names>
+          </name>
+          <name>
+            <surname>Condamine</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Hribova</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Suchankova</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Bhat</surname>
+            <given-names>PR</given-names>
+          </name>
+          <name>
+            <surname>Bartos</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Safar</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Close</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <name>
+            <surname>Dolezel</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Coupling amplified DNA from flow-sorted chromosomes to high-density SNP mapping in barley</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>294</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-9-294</pub-id>
+          <?supplied-pmid 18565235?>
+          <pub-id pub-id-type="pmid">18565235</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lasken</surname>
+            <given-names>RS</given-names>
+          </name>
+          <name>
+            <surname>Stockwell</surname>
+            <given-names>TB</given-names>
+          </name>
+          <article-title>Mechanism of chimera formation during the Multiple Displacement Amplification reaction</article-title>
+          <source>BMC Biotechnol</source>
+          <year>2007</year>
+          <volume>7</volume>
+          <fpage>19</fpage>
+          <pub-id pub-id-type="doi">10.1186/1472-6750-7-19</pub-id>
+          <?supplied-pmid 17430586?>
+          <pub-id pub-id-type="pmid">17430586</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mayer</surname>
+            <given-names>KF</given-names>
+          </name>
+          <name>
+            <surname>Martis</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Hedley</surname>
+            <given-names>PE</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Morris</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Steuernagel</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Taudien</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Roessner</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Unlocking the barley genome by chromosomal and comparative genomics</article-title>
+          <source>Plant Cell</source>
+          <year>2011</year>
+          <volume>23</volume>
+          <issue>4</issue>
+          <fpage>1249</fpage>
+          <lpage>1263</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.110.082537</pub-id>
+          <?supplied-pmid 21467582?>
+          <pub-id pub-id-type="pmid">21467582</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hernandez</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Martis</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Dorado</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Pfeifer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Galvez</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Schaaf</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Jouve</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Valarik</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Dolezel</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Next-generation sequencing and syntenic integration of flow-sorted arms of wheat chromosome 4A exposes the chromosome structure and gene content</article-title>
+          <source>Plant J</source>
+          <year>2012</year>
+          <volume>69</volume>
+          <issue>3</issue>
+          <fpage>377</fpage>
+          <lpage>386</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2011.04808.x</pub-id>
+          <?supplied-pmid 21974774?>
+          <pub-id pub-id-type="pmid">21974774</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Berkman</surname>
+            <given-names>PJ</given-names>
+          </name>
+          <name>
+            <surname>Skarshewski</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Lorenc</surname>
+            <given-names>MT</given-names>
+          </name>
+          <name>
+            <surname>Lai</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Duran</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Ling</surname>
+            <given-names>EY</given-names>
+          </name>
+          <name>
+            <surname>Stiller</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Smits</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Imelfort</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Manoli</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Sequencing and assembly of low copy and genic regions of isolated Triticum aestivum chromosome arm 7DS</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2011</year>
+          <volume>9</volume>
+          <issue>7</issue>
+          <fpage>768</fpage>
+          <lpage>775</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1467-7652.2010.00587.x</pub-id>
+          <?supplied-pmid 21356002?>
+          <pub-id pub-id-type="pmid">21356002</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Berkman</surname>
+            <given-names>PJ</given-names>
+          </name>
+          <name>
+            <surname>Skarshewski</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Manoli</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Lorenc</surname>
+            <given-names>MT</given-names>
+          </name>
+          <name>
+            <surname>Stiller</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Smits</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Lai</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Campbell</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Kubalakova</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Sequencing wheat chromosome arm 7BS delimits the 7BS/4AL translocation and reveals homoeologous gene conservation</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2012</year>
+          <volume>124</volume>
+          <issue>3</issue>
+          <fpage>423</fpage>
+          <lpage>432</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-011-1717-2</pub-id>
+          <?supplied-pmid 22001910?>
+          <pub-id pub-id-type="pmid">22001910</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Treangen</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <name>
+            <surname>Salzberg</surname>
+            <given-names>SL</given-names>
+          </name>
+          <article-title>Repetitive DNA and next-generation sequencing: computational challenges and solutions</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <issue>1</issue>
+          <fpage>36</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="pmid">22124482</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Choulet</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Rustenholz</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Paux</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Salse</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Leroy</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Schlub</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Le Paslier</surname>
+            <given-names>MC</given-names>
+          </name>
+          <name>
+            <surname>Magdelenat</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Gonthier</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Megabase level sequencing reveals contrasted organization and evolution patterns of the wheat gene and transposable element spaces</article-title>
+          <source>Plant Cell</source>
+          <year>2010</year>
+          <volume>22</volume>
+          <issue>6</issue>
+          <fpage>1686</fpage>
+          <lpage>1701</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.110.074187</pub-id>
+          <?supplied-pmid 20581307?>
+          <pub-id pub-id-type="pmid">20581307</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Xu</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Pan</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Cheng</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Mu</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Ni</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Yang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Genome sequence and analysis of the tuber crop potato</article-title>
+          <source>Nature</source>
+          <year>2011</year>
+          <volume>475</volume>
+          <issue>7355</issue>
+          <fpage>189</fpage>
+          <lpage>195</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature10158</pub-id>
+          <?supplied-pmid 21743474?>
+          <pub-id pub-id-type="pmid">21743474</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="other">
+          <source>Mate Pair Library v2 Sample Preparation Guide</source>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="https://shell.cgrb.oregonstate.edu/sites/default/files/Files/Docs/Illumina/prep/MatePair_v2_2-5kb_SamplePrep_Guide_15008135_A.pdf">https://shell.cgrb.oregonstate.edu/sites/default/files/Files/Docs/Illumina/prep/MatePair_v2_2-5kb_SamplePrep_Guide_15008135_A.pdf</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Simpson</surname>
+            <given-names>JT</given-names>
+          </name>
+          <name>
+            <surname>Wong</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Jackman</surname>
+            <given-names>SD</given-names>
+          </name>
+          <name>
+            <surname>Schein</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Jones</surname>
+            <given-names>SJ</given-names>
+          </name>
+          <name>
+            <surname>Birol</surname>
+            <given-names>I</given-names>
+          </name>
+          <article-title>ABySS: a parallel assembler for short read sequence data</article-title>
+          <source>Genome Res</source>
+          <year>2009</year>
+          <volume>19</volume>
+          <issue>6</issue>
+          <fpage>1117</fpage>
+          <lpage>1123</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.089532.108</pub-id>
+          <?supplied-pmid 19251739?>
+          <pub-id pub-id-type="pmid">19251739</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Compeau</surname>
+            <given-names>PE</given-names>
+          </name>
+          <name>
+            <surname>Pevzner</surname>
+            <given-names>PA</given-names>
+          </name>
+          <name>
+            <surname>Tesler</surname>
+            <given-names>G</given-names>
+          </name>
+          <article-title>How to apply de Bruijn graphs to genome assembly</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2011</year>
+          <volume>29</volume>
+          <issue>11</issue>
+          <fpage>987</fpage>
+          <lpage>991</lpage>
+          <pub-id pub-id-type="doi">10.1038/nbt.2023</pub-id>
+          <?supplied-pmid 22068540?>
+          <pub-id pub-id-type="pmid">22068540</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Durbin</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Fast and accurate short read alignment with Burrows-Wheeler transform</article-title>
+          <source>Bioinformatics</source>
+          <year>2009</year>
+          <volume>25</volume>
+          <issue>14</issue>
+          <fpage>1754</fpage>
+          <lpage>1760</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btp324</pub-id>
+          <?supplied-pmid 19451168?>
+          <pub-id pub-id-type="pmid">19451168</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Altschul</surname>
+            <given-names>SF</given-names>
+          </name>
+          <name>
+            <surname>Gish</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Miller</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Myers</surname>
+            <given-names>EW</given-names>
+          </name>
+          <name>
+            <surname>Lipman</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>J Mol Biol</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <issue>3</issue>
+          <fpage>403</fpage>
+          <lpage>410</lpage>
+          <?supplied-pmid 2231712?>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>WL</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Fellers</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Friebe</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Gill</surname>
+            <given-names>BS</given-names>
+          </name>
+          <article-title>Sequence composition, organization, and evolution of the core Triticeae genome</article-title>
+          <source>Plant J</source>
+          <year>2004</year>
+          <volume>40</volume>
+          <issue>4</issue>
+          <fpage>500</fpage>
+          <lpage>511</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2004.02228.x</pub-id>
+          <?supplied-pmid 15500466?>
+          <pub-id pub-id-type="pmid">15500466</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Ouyang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Iovene</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>O'Brien</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Vuong</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Jiang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Buell</surname>
+            <given-names>CR</given-names>
+          </name>
+          <article-title>Analysis of 90&#xA0;Mb of the potato genome reveals conservation of gene structures and order with tomato but divergence in repetitive sequence composition</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>286</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-9-286</pub-id>
+          <?supplied-pmid 18554403?>
+          <pub-id pub-id-type="pmid">18554403</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rodrigue</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Malmstrom</surname>
+            <given-names>RR</given-names>
+          </name>
+          <name>
+            <surname>Berlin</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Birren</surname>
+            <given-names>BW</given-names>
+          </name>
+          <name>
+            <surname>Henn</surname>
+            <given-names>MR</given-names>
+          </name>
+          <name>
+            <surname>Chisholm</surname>
+            <given-names>SW</given-names>
+          </name>
+          <article-title>Whole genome amplification and de novo assembly of single bacterial cells</article-title>
+          <source>PLoS One</source>
+          <year>2009</year>
+          <volume>4</volume>
+          <issue>9</issue>
+          <fpage>e6864</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0006864</pub-id>
+          <?supplied-pmid 19724646?>
+          <pub-id pub-id-type="pmid">19724646</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Vitulo</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Albiero</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Forcato</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Campagna</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Dal Pero</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Bagnaresi</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Colaiacovo</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Faccioli</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Lamontanara</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>First Survey of the Wheat Chromosome 5A Composition through a Next Generation Sequencing Approach</article-title>
+          <source>PLoS One</source>
+          <year>2011</year>
+          <volume>6</volume>
+          <issue>10</issue>
+          <fpage>e26421</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0026421</pub-id>
+          <?supplied-pmid 22028874?>
+          <pub-id pub-id-type="pmid">22028874</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

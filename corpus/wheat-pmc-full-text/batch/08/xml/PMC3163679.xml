@@ -1,0 +1,2908 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.0 20040830//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3163679</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-11680</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0024251</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Analysis Tools</subject>
+                <subj-group>
+                  <subject>Genome-Wide Association Studies</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Molecular Genetics</subject>
+              <subj-group>
+                <subject>Gene Expression</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Human Genetics</subject>
+              <subj-group>
+                <subject>Genome-Wide Association Studies</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Epigenetics</subject>
+              <subject>Gene Expression</subject>
+              <subject>Gene Splicing</subject>
+              <subject>Genome-Wide Association Studies</subject>
+              <subject>Plant Genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome Analysis Tools</subject>
+              <subj-group>
+                <subject>Genome-Wide Association Studies</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Functional Genomics</subject>
+              <subject>Genome Evolution</subject>
+              <subject>Genome Expression Analysis</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Model Organisms</subject>
+            <subj-group>
+              <subject>Plant and Algal Models</subject>
+              <subj-group>
+                <subject>Arabidopsis Thaliana</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Molecular Cell Biology</subject>
+            <subj-group>
+              <subject>Cellular Stress Responses</subject>
+              <subject>Gene Expression</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Plant Science</subject>
+            <subj-group>
+              <subject>Plant Genomics</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Unstable Transcripts in <italic>Arabidopsis</italic> Allotetraploids Are Associated with Nonadditive Gene Expression in Response to Abiotic and Biotic Stresses</article-title>
+        <alt-title alt-title-type="running-head">mRNA Instability in <italic>Arabidopsis</italic> Allopolyploids</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kim</surname>
+            <given-names>Eun-Deok</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Z. Jeffery</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1"/>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <addr-line>Section of Molecular Cell and Developmental Biology, Center for Computational Biology and Bioinformatics, and Institute for Cellular and Molecular Biology, The University of Texas at Austin, Austin, Texas, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Hazen</surname>
+            <given-names>Samuel P.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">University of Massachusetts Amherst, United States of America</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>zjchen@mail.utexas.edu</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: ZJC E-DK. Performed the experiments: E-DK. Analyzed the data: E-DK. Contributed reagents/materials/analysis tools: E-DK. Wrote the paper: ZJC E-DK.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>29</day>
+        <month>8</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>6</volume>
+      <issue>8</issue>
+      <elocation-id>e24251</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>24</day>
+          <month>6</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>5</day>
+          <month>8</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Kim, Chen. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2011</copyright-year>
+      </permissions>
+      <abstract>
+        <p>Genome-wide analysis has documented differential gene expression between closely related species in plants and animals and nonadditive gene expression in hybrids and allopolyploids compared to the parents. In <italic>Arabidopsis</italic>, 15&#x2013;43% of genes are expressed differently between the related species, <italic>Arabidopsis thaliana</italic> and <italic>Arabidopsis arenosa</italic>, the majority of which are nonadditively expressed (differently from mid-parent value) in allotetraploids. Nonadditive gene expression can be caused by transcriptional regulation through chromatin modifications, but the role of posttranscriptional regulation in nonadditive gene expression is largely unknown. Here we reported genome-wide analysis of mRNA decay in resynthesized <italic>Arabidopsis</italic> allotetraploids. Among &#x223C;26,000 annotated genes, over 1% of gene transcripts showed rapid decay with an estimated half-life of less than 60 minutes, and they are called allotetraploid genes with unstable transcripts (<italic>AlloGUTs</italic>). Remarkably, 30% of <italic>alloGUTs</italic> matched the nonadditively expressed genes, and their expression levels were negatively correlated with the decay rate. Compared to all genes, these nonadditively expressed <italic>alloGUTs</italic> were overrepresented 2-6-fold in the Gene Ontology (GOSlim) classifications in response to abiotic and biotic stresses, signal transduction, and transcription. Interestingly, the <italic>AlloGUTs</italic> include transcription factor genes that are highly inducible under stress conditions and circadian clock regulators that regulate growth in <italic>A. thaliana</italic>. These data suggest a role of mRNA stability in homoeologous gene expression in <italic>Arabidopsis</italic> allopolyploids. The enrichment of nonadditively expressed genes in stress-related pathways were commonly observed in <italic>Arabidopsis</italic> and other allopolyploids such as wheat and cotton, which may suggest a role for stress-mediated growth vigor in hybrids and allopolyploids.</p>
+      </abstract>
+      <counts>
+        <page-count count="11"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Polyploidy (whole genome duplication) is common in many plants and some animals <xref ref-type="bibr" rid="pone.0024251-Soltis1">[1]</xref>, <xref ref-type="bibr" rid="pone.0024251-Becak1">[2]</xref>, <xref ref-type="bibr" rid="pone.0024251-Leitch1">[3]</xref>. The polyploid plants may represent over 70% of angiosperms <xref ref-type="bibr" rid="pone.0024251-Masterson1">[4]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wood1">[5]</xref>, and &gt;75% of which are allopolyploids <xref ref-type="bibr" rid="pone.0024251-Soltis1">[1]</xref>, <xref ref-type="bibr" rid="pone.0024251-Grant1">[6]</xref>, <xref ref-type="bibr" rid="pone.0024251-Brochmann1">[7]</xref>. Most important crops have a polyploidy origin. Wheat, cotton and canola are allopolyploid that consist of two or more divergent genomes <xref ref-type="bibr" rid="pone.0024251-Leitch1">[3]</xref>, and some plants and animals exist as interspecific hybrids <xref ref-type="bibr" rid="pone.0024251-Mallet1">[8]</xref>, <xref ref-type="bibr" rid="pone.0024251-Rieseberg1">[9]</xref>. The common occurrence of plant polyploids indicates an advantage of being allopolyploids in response to selection and adaptation <xref ref-type="bibr" rid="pone.0024251-Grant1">[6]</xref>, <xref ref-type="bibr" rid="pone.0024251-Comai1">[10]</xref>, <xref ref-type="bibr" rid="pone.0024251-Chen1">[11]</xref>, <xref ref-type="bibr" rid="pone.0024251-Soltis2">[12]</xref>. Stable allopolyploids with meiotic transmission of homoeologous genomes lead to permanent fixation of heteozygosity and hybrid vigor.</p>
+      <p>Stable <italic>Arabidopsis</italic> allotetraploids (<italic>Arabidopsis suecica</italic>-like) are resynthesized by crossing tetraploid <italic>Arabidopsis thaliana</italic> with <italic>Arabidopsis arenosa</italic> <xref ref-type="bibr" rid="pone.0024251-Comai2">[13]</xref>. The resynthesized <italic>A. suecica</italic> allotetraploids show morphological and physiological differences from their progenitors <xref ref-type="bibr" rid="pone.0024251-Comai2">[13]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wang2">[15]</xref>. Microarray analysis of gene expression indicated that 5&#x2013;38% of the genes are nonadditively expressed (different from mid-parent value, MPV) in resynthesized allotetraploids <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>. Nonadditive expression suggests activation or repression of a gene through genetic and epigenetic mechanisms <xref ref-type="bibr" rid="pone.0024251-Jackson1">[16]</xref>, <xref ref-type="bibr" rid="pone.0024251-Osborn1">[17]</xref>, <xref ref-type="bibr" rid="pone.0024251-Chen2">[18]</xref>. Gene activation or silencing in allotetraploids can be caused by transcriptional regulation through changes in chromatin structure. However, many expression assays including microarrays and RNA sequencing measure the steady levels of mRNA transcripts. It is unknown whether mRNA stability affects nonadditive expression of genes between allotetraploids and their progenitors, <italic>A. thaliana</italic> and <italic>A. arenosa</italic>.</p>
+      <p>Posttranscriptional regulation of mRNA plays an important role in gene expression through modulation of mRNA stability and turnover. For example, <italic>c-myc</italic> and <italic>c-fos</italic> transcripts in mammalian cells and mating-type transcripts in yeast are unstable <xref ref-type="bibr" rid="pone.0024251-Peltz1">[19]</xref>, <xref ref-type="bibr" rid="pone.0024251-Chen3">[20]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wilson1">[21]</xref>. The decay rate of mRNA is correlated with biological functions of the genes and the length of cell cycles in mammals and yeast <xref ref-type="bibr" rid="pone.0024251-Grigull1">[22]</xref>, <xref ref-type="bibr" rid="pone.0024251-Yang1">[23]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wang3">[24]</xref>. There is a role for mRNA stability in shaping the kinetics of the transcriptome in response to environmental changes in yeast and mammals <xref ref-type="bibr" rid="pone.0024251-Shalem1">[25]</xref>, <xref ref-type="bibr" rid="pone.0024251-Elkon1">[26]</xref>. Approximately 50% of stress responsive genes in human cells are controlled at the level of mRNA decay <xref ref-type="bibr" rid="pone.0024251-Fan1">[27]</xref>. In yeast, mRNA turnover is a major mediator in the response to heat shock, nutrition deprivation, oxidative stress, and osmotic stress <xref ref-type="bibr" rid="pone.0024251-Grigull1">[22]</xref>, <xref ref-type="bibr" rid="pone.0024251-GarciaMartinez1">[28]</xref>, <xref ref-type="bibr" rid="pone.0024251-MolinaNavarro1">[29]</xref>.</p>
+      <p>Genome-wide analysis of mRNA decay was studied in <italic>Arabidopsis</italic> <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref>, <xref ref-type="bibr" rid="pone.0024251-Narsai1">[31]</xref>. It is shown approximately 1% of <italic>Arabidopsis thaliana</italic> genes with unstable transcripts (<italic>AtGUTs</italic>) <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref>. These <italic>AtGUTs</italic> include the genes that are induced by mechanical stimulation and circadian rhythms. Moreover, transcripts from intronless genes and microRNA target genes generally have short half-lives <xref ref-type="bibr" rid="pone.0024251-Narsai1">[31]</xref>. Unstable transcripts are also identified in photo-labile phytochrome genes <xref ref-type="bibr" rid="pone.0024251-Seeley1">[32]</xref> and auxin inducible genes <xref ref-type="bibr" rid="pone.0024251-McClure1">[33]</xref>, <xref ref-type="bibr" rid="pone.0024251-Koshiba1">[34]</xref>, which facilitates rapid turnover of mRNA, leading to tight and effective control of gene expression <xref ref-type="bibr" rid="pone.0024251-Treisman1">[35]</xref>. To test a role of mRNA stability in nonadditive gene expression in allotetraploids, we examined mRNA turnover rates in resynthesized <italic>A. suecica</italic> allotetraploids relative to the mid-parent value using oligo-gene microarrays <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>. The candidates of allotetraploid genes with unstable transcripts (<italic>AlloGUTs</italic>) were compared with the genes that are nonadditively expressed, as identified in a previous study <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>. We further analyzed Gene Ontology (GOSlim) classifications and compared <italic>alloGUTs</italic> with stress responsive genes in published microarray datasets. Finally, we validated expression for a subset of genes using qRT-PCR analysis. These comprehensive analyses revealed mRNA instability of the genes related to stresses and clock-mediated pathways, suggesting a role for rapid mRNA decay in regulating stress and circadian responses to growth vigor in allopolyploids.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Genome-wide analysis of unstable transcripts in allotetraploids using oligo-gene microarrays</title>
+        <p>Spotted oligo-gene microarrays were used to evaluate mRNA turnover in allotetraploids relative to the MPV (<xref ref-type="fig" rid="pone-0024251-g001">Figure 1A</xref>). The 70-mer oligos were designed from annotated genes and could cross-hybridize with <italic>A. thaliana</italic> and <italic>A. arenosa</italic> genes. This may underestimate changes in allotetraploids in which transcripts from one homoeologous locus display rapid decay, whereas the transcripts from the other locus are relatively stable. After data normalization and statistical tests (see <italic>Methods</italic>), the qualified values with reproducibly normalized intensity ratios of &#x2265;2 were used for comparative analysis of gene expression. Approximately &#x223C;1% (208) of genes in the <italic>Arabidopsis</italic> allotetraploid (Allo733) were identified as unstable transcripts with a half-life time of less than 60 min using the same criteria as previously defined for unstable transcripts <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref>. These are hereafter referred to as allotetraploid <underline>g</underline>enes with unstable transcripts (<italic>AlloGUTs</italic>) (<xref ref-type="supplementary-material" rid="pone.0024251.s003">Table S1</xref>). The percentage of <italic>AlloGUTs</italic> identified in allotetraploids is consistent with &#x223C;1% of <italic>AtGUTs</italic> identified in <italic>A. thaliana</italic> using cDNA microarrays <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref>. To confirm the microarray data, a subset of 10 genes was validated using quantitative RT-PCR (qRT-PCR) analysis, and expression patterns of four <italic>AlloGUTs</italic> were determined (<xref ref-type="fig" rid="pone-0024251-g001">Figure 1B, C</xref>). The four genes are: At5g26030 (<italic>ATFC1</italic>) encoding ferrochelatase 1, At4g17500 (<italic>ERF1</italic>) encoding ethylene responsive element binding factor 1, At1g27730 (<italic>ZAT10</italic>) encoding salt tolerance zinc finger, and At4g11280 (<italic>ACS6</italic>) encoding 1-aminocyclopropane-1-carboxylic acid (ACC) synthase 6. In qRT-PCR analysis, the gene encoding translation initiation factor 4A2 (<italic>eIF4A2</italic>, At1g54270) was used as a control because its transcripts were reasonably stable and did not depredate during the time course of chemical treatments <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref>. The estimated turnover rate was 24&#x2013;40 minutes by qRT-PCR (<xref ref-type="fig" rid="pone-0024251-g001">Figure 1C</xref>), which was comparable to 28&#x2013;47 minutes estimated from microarray data (<xref ref-type="fig" rid="pone-0024251-g001">Figure 1B</xref>).</p>
+        <fig id="pone-0024251-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0024251.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Identification of unstable transcripts with a half-life time of less than 60 min in <italic>Arabidopsis</italic> allotetraploids and validation of microarray data.</title>
+            <p>(<bold>A</bold>) Experimental procedure for monitoring mRNA decay rates in <italic>Arabidopsis</italic> allotetraploids using spotted 70-mer oligo-gene microarrays. (<bold>B</bold>) qRT-PCR analysis (open bar) of half-life time of four genes with unstable transcripts identified by microarrays (hatched bar). (<bold>C</bold>) Quantification of mRNA decay rates of four genes and estimation of their half-life time.</p>
+          </caption>
+          <graphic xlink:href="pone.0024251.g001"/>
+        </fig>
+        <p>A total of &#x223C;208 <italic>AlloGUTs</italic> and &#x223C;95 <italic>AtGUTs</italic> were classified into 20 GOSlim groups (<xref ref-type="fig" rid="pone-0024251-g002">Figure 2</xref>) using TAIR release 9 (November 2009) and PEDENT (<ext-link ext-link-type="uri" xlink:href="http://mips.gsf.de/proj/thal/db/index.html">http://mips.gsf.de/proj/thal/db/index.html</ext-link>). The proteins encoded by <italic>AlloGUTs</italic> were distributed among all GOSlim biological classifications. Compared with the proportion of the whole-genome annotated genes, <italic>AlloGUTs</italic> were overrepresented by a factor of two in the groups of cell cycle and DNA processing, transcription, regulation of metabolism and protein, and cellular communication and biogenesis of cellular component (<xref ref-type="fig" rid="pone-0024251-g002">Figure 2</xref>). In particular, the genes with unstable transcripts were enriched in four groups, namely, cell rescue, defense and virulence, interaction with environment, and systemic interaction with environment. They had significantly (2.6&#x2013;3.2-fold) higher proportions of <italic>GUTs</italic> than that of all genes (dashed lines) <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref> (<xref ref-type="fig" rid="pone-0024251-g002">Figure 2</xref>).</p>
+        <fig id="pone-0024251-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0024251.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Gene Ontology (GOslim) classification of allotetraploid genes with unstable transcripts (<italic>AlloGUTs</italic>, black bar) relative to <italic>Arabidopsis thaliana</italic> genes with unstable transcripts (<italic>AtGUTs</italic>, gray bar).</title>
+            <p>The two unstable gene sets were analyzed using TAIR release 9.0 and the PEDANT analysis system (<ext-link ext-link-type="uri" xlink:href="http://mips.gsf.de/proj/thal/db/index.html">http://mips.gsf.de/proj/thal/db/index.html</ext-link>). The proportion of the <italic>GUTs</italic> in each GOslim group was divided by the proportion of all genes in the genome (100%, dashed line).</p>
+          </caption>
+          <graphic xlink:href="pone.0024251.g002"/>
+        </fig>
+      </sec>
+      <sec id="s2b">
+        <title>Rapid mRNA turnover and nonadditive gene expression in allotetraploids</title>
+        <p>Unstable transcripts are associated with mRNA stability and possibly steady levels of transcripts in allotetraploids. To test this, we compared the gene list of nonadditive expression identified in a previous study <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref> with that of <italic>AtGUTs</italic> in <italic>A. thaliana</italic> diploid <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref> and <italic>AlloGUTs</italic> in this study. Sixty-one of 208 (&#x223C;30%) <italic>AlloGUTs</italic> matched the nonadditively expressed genes in both allotetraploids (Allo733 and Allo738) (<xref ref-type="table" rid="pone-0024251-t001">Table 1</xref>, <xref ref-type="fig" rid="pone-0024251-g003">Figure 3A</xref>). The correlation was statistically significant (degree of freedom &#x200A;=&#x200A;1, Chi-square &#x200A;=&#x200A;460.945, and p&#x2264;0.01) (<xref ref-type="supplementary-material" rid="pone.0024251.s004">Table S2</xref>). Hierarchical cluster analysis suggested a strong negative correlation between the expression levels of nonadditively expressed genes and mRNA decay rates of <italic>AlloGUTs</italic> (<xref ref-type="fig" rid="pone-0024251-g003">Figure 3B</xref>). The data suggest that these nonadditive expressions of the genes in the allotetraploids tested are related to rapid mRNA turnover. We also examined an enrichment of these genes in biological processes compared with the whole genome annotation. As in the nonadditively expressed genes <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>, <xref ref-type="bibr" rid="pone.0024251-Ha1">[36]</xref>, the nonadditively expressed <italic>AlloGUTs</italic> were enriched 2&#x2013;8 fold in GOSlim groups of stress response pathways, followed by response to abiotic or biotic stimulus, signal transduction, and transcription (<xref ref-type="supplementary-material" rid="pone.0024251.s001">Figure S1</xref>).</p>
+        <fig id="pone-0024251-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0024251.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>A relationship between <italic>AlloGUTs</italic> and nonadditively expressed genes in allotetraploids (Allo733 and Allo738).</title>
+            <p>(<bold>A</bold>) Venn diagrams showing overlapping genes between <italic>AlloGUTs</italic> with half-life time less than 60 min and the common set of nonadditively expressed genes in both Allo733 and Allo738. (<bold>B</bold>) Heat map constructed from mRNA decay rates of <italic>AlloGUTs</italic> (first column, mainly red) and expression levels of nonadditively expressed genes (second column, mainly green). The bar shows relative levels of log2-fold changes (from &#x2212;3 to +3).</p>
+          </caption>
+          <graphic xlink:href="pone.0024251.g003"/>
+        </fig>
+        <table-wrap id="pone-0024251-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0024251.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>List of nonadditively expressed <italic>AlloGUTs</italic>.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0024251-t001-1" xlink:href="pone.0024251.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Locus</td>
+                  <td align="left" rowspan="1" colspan="1">Description</td>
+                  <td align="left" rowspan="1" colspan="1">t1/2(min)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G62410</td>
+                  <td align="left" rowspan="1" colspan="1">SMC2 (STRUCTURAL MAINTENANCE OF CHROMOSOMES 2)</td>
+                  <td align="left" rowspan="1" colspan="1">16.86</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G44260</td>
+                  <td align="left" rowspan="1" colspan="1">CCR4-NOT transcription complex protein, putative</td>
+                  <td align="left" rowspan="1" colspan="1">18.81</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G02550</td>
+                  <td align="left" rowspan="1" colspan="1">LBD41 (LOB DOMAIN-CONTAINING PROTEIN 41)</td>
+                  <td align="left" rowspan="1" colspan="1">19.45</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G10040</td>
+                  <td align="left" rowspan="1" colspan="1">transcription factor</td>
+                  <td align="left" rowspan="1" colspan="1">20.54</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G15210</td>
+                  <td align="left" rowspan="1" colspan="1">ATERF-4 (ETHYLENE RESPONSIVE ELEMENT BINDING FACTOR 4)</td>
+                  <td align="left" rowspan="1" colspan="1">21.72</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G18740</td>
+                  <td align="left" rowspan="1" colspan="1">similar to unknown protein</td>
+                  <td align="left" rowspan="1" colspan="1">21.87</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G28200</td>
+                  <td align="left" rowspan="1" colspan="1">nucleic acid binding/transcription factor/zinc ion binding</td>
+                  <td align="left" rowspan="1" colspan="1">23.28</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G44500</td>
+                  <td align="left" rowspan="1" colspan="1">similar to unknown protein</td>
+                  <td align="left" rowspan="1" colspan="1">23.38</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G28370</td>
+                  <td align="left" rowspan="1" colspan="1">ATERF11/ERF11 (ERF domain protein 11)</td>
+                  <td align="left" rowspan="1" colspan="1">24.06</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT4G11280</td>
+                  <td align="left" rowspan="1" colspan="1">ACS6 (1-AMINOCYCLOPROPANE-1-CARBOXYLIC ACID (ACC) SYNTHASE 6)</td>
+                  <td align="left" rowspan="1" colspan="1">24.15</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT4G15760</td>
+                  <td align="left" rowspan="1" colspan="1">DL3920C, FCAALL.376, MO1, MONOOXYGENASE 1</td>
+                  <td align="left" rowspan="1" colspan="1">24.71</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G63160</td>
+                  <td align="left" rowspan="1" colspan="1">BTB and TAZ domain protein</td>
+                  <td align="left" rowspan="1" colspan="1">25.00</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G22880</td>
+                  <td align="left" rowspan="1" colspan="1">VQ motif-containing protein</td>
+                  <td align="left" rowspan="1" colspan="1">25.08</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G31880</td>
+                  <td align="left" rowspan="1" colspan="1">leucine-rich repeat transmembrane protein kinase, putative</td>
+                  <td align="left" rowspan="1" colspan="1">25.08</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G02400</td>
+                  <td align="left" rowspan="1" colspan="1">ATGA2OX6/DTA1 (GIBBERELLIN 2-OXIDASE 6)</td>
+                  <td align="left" rowspan="1" colspan="1">25.14</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT4G27280</td>
+                  <td align="left" rowspan="1" colspan="1">calcium-binding EF hand family protein</td>
+                  <td align="left" rowspan="1" colspan="1">25.36</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G72520</td>
+                  <td align="left" rowspan="1" colspan="1">lipoxygenase, putative</td>
+                  <td align="left" rowspan="1" colspan="1">25.51</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G18300</td>
+                  <td align="left" rowspan="1" colspan="1">ARABIDOPSIS THALIANA NUDIX HYDROLASE HOMOLOG 4, ATNUDT4,</td>
+                  <td align="left" rowspan="1" colspan="1">25.56</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G22250</td>
+                  <td align="left" rowspan="1" colspan="1">CCR4-NOT transcription complex protein, putative</td>
+                  <td align="left" rowspan="1" colspan="1">25.70</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G15210</td>
+                  <td align="left" rowspan="1" colspan="1">ATERF-4(ETHYLENE RESPONSIVE ELEMENT BINDING FACTOR 4)</td>
+                  <td align="left" rowspan="1" colspan="1">26.04</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G17950</td>
+                  <td align="left" rowspan="1" colspan="1">unknown protein</td>
+                  <td align="left" rowspan="1" colspan="1">26.05</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G01830</td>
+                  <td align="left" rowspan="1" colspan="1">calmodulin-related protein, putative</td>
+                  <td align="left" rowspan="1" colspan="1">26.98</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G68840</td>
+                  <td align="left" rowspan="1" colspan="1">RAV2 (REGULATOR OF THE ATPASE OF THE VACUOLAR MEMBRANE)</td>
+                  <td align="left" rowspan="1" colspan="1">27.68</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G72950</td>
+                  <td align="left" rowspan="1" colspan="1">disease resistance protein (TIR-NBS class), putative</td>
+                  <td align="left" rowspan="1" colspan="1">27.98</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G28400</td>
+                  <td align="left" rowspan="1" colspan="1">similar to unknown protein</td>
+                  <td align="left" rowspan="1" colspan="1">28.02</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G41640</td>
+                  <td align="left" rowspan="1" colspan="1">similar to unknown protein</td>
+                  <td align="left" rowspan="1" colspan="1">28.34</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G72430</td>
+                  <td align="left" rowspan="1" colspan="1">auxin-responsive protein-related</td>
+                  <td align="left" rowspan="1" colspan="1">28.60</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G52450</td>
+                  <td align="left" rowspan="1" colspan="1">U-box domain-containing protein</td>
+                  <td align="left" rowspan="1" colspan="1">28.71</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G56510</td>
+                  <td align="left" rowspan="1" colspan="1">disease resistance protein (TIR-NBS-LRR class), putative</td>
+                  <td align="left" rowspan="1" colspan="1">28.72</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G19580</td>
+                  <td align="left" rowspan="1" colspan="1">AZF2 (ARABIDOPSIS ZINC-FINGER PROTEIN 2)</td>
+                  <td align="left" rowspan="1" colspan="1">28.96</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G17380</td>
+                  <td align="left" rowspan="1" colspan="1">JAZ5/TIFY11A (JASMONATE-ZIM-DOMAIN PROTEIN 5)</td>
+                  <td align="left" rowspan="1" colspan="1">29.00</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G01670</td>
+                  <td align="left" rowspan="1" colspan="1">ATNUDT17 (Arabidopsis thaliana Nudix hydrolase homolog 17)</td>
+                  <td align="left" rowspan="1" colspan="1">29.47</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G63790</td>
+                  <td align="left" rowspan="1" colspan="1">ANAC102 (Arabidopsis NAC domain containing protein 102)</td>
+                  <td align="left" rowspan="1" colspan="1">30.14</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G27730</td>
+                  <td align="left" rowspan="1" colspan="1">STZ (SALT TOLERANCE ZINC FINGER)</td>
+                  <td align="left" rowspan="1" colspan="1">30.20</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G66160</td>
+                  <td align="left" rowspan="1" colspan="1">U-box domain-containing protein</td>
+                  <td align="left" rowspan="1" colspan="1">30.21</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT4G18950</td>
+                  <td align="left" rowspan="1" colspan="1">ankyrin protein kinase, putative</td>
+                  <td align="left" rowspan="1" colspan="1">30.72</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G63450</td>
+                  <td align="left" rowspan="1" colspan="1">CYP94B1 (cytochrome P450, family 94, subfamily B, polypeptide 1)</td>
+                  <td align="left" rowspan="1" colspan="1">30.85</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G42760</td>
+                  <td align="left" rowspan="1" colspan="1">similar to unnamed protein product [Vitis vinifera]</td>
+                  <td align="left" rowspan="1" colspan="1">30.94</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G38470</td>
+                  <td align="left" rowspan="1" colspan="1">WRKY33 (WRKY DNA-binding protein 33); transcription factor</td>
+                  <td align="left" rowspan="1" colspan="1">31.65</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G76600</td>
+                  <td align="left" rowspan="1" colspan="1">similar to unknown protein</td>
+                  <td align="left" rowspan="1" colspan="1">31.94</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT4G33050</td>
+                  <td align="left" rowspan="1" colspan="1">EDA39 (embryo sac development arrest 39); calmodulin binding</td>
+                  <td align="left" rowspan="1" colspan="1">32.48</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G20510</td>
+                  <td align="left" rowspan="1" colspan="1">OPCL1 (OPC-8:0 COA LIGASE1); 4-coumarate-CoA ligase</td>
+                  <td align="left" rowspan="1" colspan="1">33.50</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT4G17500</td>
+                  <td align="left" rowspan="1" colspan="1">ATERF-1 (ETHYLENE RESPONSIVE ELEMENT BINDING FACTOR 1)</td>
+                  <td align="left" rowspan="1" colspan="1">34.02</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G11650</td>
+                  <td align="left" rowspan="1" colspan="1">hydrolase, alpha/beta fold family protein</td>
+                  <td align="left" rowspan="1" colspan="1">34.06</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT4G08170</td>
+                  <td align="left" rowspan="1" colspan="1">inositol 1,3,4-trisphosphate 5/6-kinase family protein</td>
+                  <td align="left" rowspan="1" colspan="1">34.12</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G27100</td>
+                  <td align="left" rowspan="1" colspan="1">similar to unknown protein</td>
+                  <td align="left" rowspan="1" colspan="1">34.26</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G13220</td>
+                  <td align="left" rowspan="1" colspan="1">JAS1/JAZ10/TIFY9 (JASMONATE-ZIM-DOMAIN PROTEIN 10)</td>
+                  <td align="left" rowspan="1" colspan="1">34.77</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G41410</td>
+                  <td align="left" rowspan="1" colspan="1">calmodulin, putative</td>
+                  <td align="left" rowspan="1" colspan="1">35.20</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G44350</td>
+                  <td align="left" rowspan="1" colspan="1">ILL6 (IAA-leucine resistant (ILR)-like gene 6); metallopeptidase</td>
+                  <td align="left" rowspan="1" colspan="1">35.55</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT4G24380</td>
+                  <td align="left" rowspan="1" colspan="1">hydrolase, acting on ester bonds</td>
+                  <td align="left" rowspan="1" colspan="1">36.05</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G09940</td>
+                  <td align="left" rowspan="1" colspan="1">HEMA2; glutamyl-tRNA reductase</td>
+                  <td align="left" rowspan="1" colspan="1">36.53</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G01180</td>
+                  <td align="left" rowspan="1" colspan="1">ATPAP1 (PHOSPHATIDIC ACID PHOSPHATASE 1)</td>
+                  <td align="left" rowspan="1" colspan="1">37.57</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G10930</td>
+                  <td align="left" rowspan="1" colspan="1">similar to unknown protein [Arabidopsis thaliana] (TAIR:AT5G05300.1)</td>
+                  <td align="left" rowspan="1" colspan="1">37.98</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G25780</td>
+                  <td align="left" rowspan="1" colspan="1">AOC3 (ALLENE OXIDE CYCLASE 3)</td>
+                  <td align="left" rowspan="1" colspan="1">38.15</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT1G16370</td>
+                  <td align="left" rowspan="1" colspan="1">ATOCT6; carbohydrate transmembrane transporter</td>
+                  <td align="left" rowspan="1" colspan="1">38.17</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G54170</td>
+                  <td align="left" rowspan="1" colspan="1">similar to CP5 [Arabidopsis thaliana] (TAIR:AT1G64720.1)</td>
+                  <td align="left" rowspan="1" colspan="1">38.17</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G05600</td>
+                  <td align="left" rowspan="1" colspan="1">oxidoreductase, 2OG-Fe(II) oxygenase family protein</td>
+                  <td align="left" rowspan="1" colspan="1">39.72</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT2G35460</td>
+                  <td align="left" rowspan="1" colspan="1">harpin-induced family protein/HIN1 family protein</td>
+                  <td align="left" rowspan="1" colspan="1">40.12</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G50950</td>
+                  <td align="left" rowspan="1" colspan="1">disease resistance protein (CC-NBS-LRR class), putative</td>
+                  <td align="left" rowspan="1" colspan="1">40.73</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT3G15500</td>
+                  <td align="left" rowspan="1" colspan="1">ATNAC3 (ARABIDOPSIS NAC DOMAIN CONTAINING PROTEIN 55)</td>
+                  <td align="left" rowspan="1" colspan="1">40.75</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT5G26030</td>
+                  <td align="left" rowspan="1" colspan="1">FC1 (FERROCHELATASE 1); ferrochelatase</td>
+                  <td align="left" rowspan="1" colspan="1">40.95</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s2c">
+        <title>A relationship between nonadditively expressed <italic>AlloGUTs</italic> and abiotic stress and phytohormone responses</title>
+        <p>To test how nonadditively expressed <italic>AlloGUTs</italic> are affected by physiological and environmental conditions, we performed hierarchical cluster analysis with the Genevastor program <xref ref-type="bibr" rid="pone.0024251-Goda1">[37]</xref>, <xref ref-type="bibr" rid="pone.0024251-Kilian1">[38]</xref>, using the genes extracted from multiple expression datasets, including global stress <xref ref-type="bibr" rid="pone.0024251-Kilian1">[38]</xref> and response to hormones and hormone-like chemicals <xref ref-type="bibr" rid="pone.0024251-Goda1">[37]</xref>. The comparative data analysis indicated that nonadditively expressed <italic>AlloGUTs</italic> matched the genes whose expression was highly induced by cold, drought, osmotic, oxidative, salt and wounding (<xref ref-type="fig" rid="pone-0024251-g004">Figure 4</xref>). In addition, the nonadditively expressed <italic>AlloGUTs</italic> were also highly induced by ozone stress (<xref ref-type="fig" rid="pone-0024251-g005">Figure 5</xref>) and tend to alter expression levels in response to the treatments of phytohormones and plant hormone substances, ABA and Methyl Jasmonic acid, cyclohexamide and AgNO<sub>3</sub> (<xref ref-type="supplementary-material" rid="pone.0024251.s002">Figure S2</xref>).</p>
+        <fig id="pone-0024251-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0024251.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Hierarchical cluster analysis showing the expression levels of the genes induced by stress that matched <italic>AlloGUTs</italic> in allotetraploids.</title>
+            <p>The analysis was carried out using publicly available microarray database (<ext-link ext-link-type="uri" xlink:href="http://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp">http://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp</ext-link>) and Genevastor. Each row represents log2 expression values of the genes in a given microarray experiment, and each column represents a gene. The color represents relative expression levels of the genes (from &#x2212;3 green to +3 red).</p>
+          </caption>
+          <graphic xlink:href="pone.0024251.g004"/>
+        </fig>
+        <fig id="pone-0024251-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0024251.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Hierarchical cluster analysis showing the <italic>AlloGUTs</italic> that matched the genes whose expression is induced by ozone stress.</title>
+            <p>The analysis was carried out with publicly available microarray database (<ext-link ext-link-type="uri" xlink:href="http://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp">http://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp</ext-link> and Genevastor). Each row represents log2 expression values of the genes in a given microarray experiment, and each column represents a gene. The color represents relative expression levels of the genes (from &#x2212;3 green to +3 red).</p>
+          </caption>
+          <graphic xlink:href="pone.0024251.g005"/>
+        </fig>
+        <p>Interestingly, under normal growth conditions these stress responsive genes had a fast decay rate, and nonadditively expressed genes were down-regulated in the allotetraploids. This suggests stress-related genes are temporally repressed in allotetraploids under normal conditions and may be inducible under stress conditions.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Nonadditively expressed <italic>AlloGUTs</italic> also show a nonadditive mRNA decay rate</title>
+        <p>To test whether nonadditively expressed <italic>AlloGUTs</italic> are subjected to nonadditive mRNA decay in the allotetraploids, we measured the difference in mRNA decay rates between allotetraploids and their progenitors, <italic>A. thaliana</italic> and <italic>A. arenosa</italic>, using qRT-PCR (<xref ref-type="fig" rid="pone-0024251-g006">Figure 6</xref>). Among 61 genes tested, 14 (&#x223C;25%) of nonadditively expressed <italic>AlloGUTs</italic> were significantly more unstable than the MPV (<xref ref-type="fig" rid="pone-0024251-g006">Figure 6</xref>, Table1). The majority of 14 genes tested, except for At3g44260, had a shorter half-life time in the allotetraploid than MPV (<xref ref-type="fig" rid="pone-0024251-g006">Figure 6</xref>). According to functional classification by PEDENT, eight genes (&#x223C;57%) (At1g27730, At1g68840, At2g28200, At3g15210, At3g15500, At3g19580, At3g44260, and At4g17500) were predicted with a role in transcription. For example, <italic>AtNAC3</italic> (At3g15500) is one of the nonadditively expressed <italic>AlloGUTs</italic>, and its expression is sensitive in response to a wide range of stresses and phytohormones. This transcript had a much shorter half-life in the allotetraploid than in the progenitors. Furthermore, hierarchical cluster analysis indicated that nonadditively expressed <italic>AlloGUTs</italic> are highly correlated with the genes in response to abiotic stress and phytohormones. The data suggest that nonadditive gene expression in the allotetraploids is associated with the nonadditive rate of mRNA decay and stress and phytohormone responses.</p>
+        <fig id="pone-0024251-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0024251.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title><italic>AlloGUTs</italic> showing more rapid mRNA decay in an allotetraploid (Allo738) than in the progenitors (<italic>A. thaliana</italic> 4x, At4 and <italic>A. arenosa</italic>, Aa).</title>
+            <p>The half-life time was estimated by measuring the decrease rate of <italic>AlloGUT</italic> transcript abundance relative to that of <italic>eIF4A</italic>. Open, gray, and black bars represent values in At4, Aa, and Allo738, respectively.</p>
+          </caption>
+          <graphic xlink:href="pone.0024251.g006"/>
+        </fig>
+      </sec>
+      <sec id="s2e">
+        <title>Different decay rates of circadian clock gene transcripts in allotetraploids</title>
+        <p>Nonadditively expressed genes in allotetraploids include those encoding circadian clock regulators, including CIRCADIAN CLOCK ASSOCIATED 1 (CCA1), LATE ELONGATED HYPOCOTYL (LHY), TIMING OF CAB EXPRESSION 1 (TOC1), and GIGANTEA (GI) <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>, <xref ref-type="bibr" rid="pone.0024251-Ni1">[39]</xref>, <xref ref-type="bibr" rid="pone.0024251-Harmer1">[40]</xref>, <xref ref-type="bibr" rid="pone.0024251-McClung1">[41]</xref>, <xref ref-type="bibr" rid="pone.0024251-PrunedaPaz1">[42]</xref>. The regulation of <italic>CCA1</italic> transcripts by light and its mRNA instability play a role for accurately entraining the oscillator in response to environmental changes <xref ref-type="bibr" rid="pone.0024251-Yakir1">[43]</xref>. Indeed, we found CCA1 binding motifs and evening elements within 1000-bp upstream region of nonadditively expressed <italic>AlloGUTs.</italic> Among 14 <italic>AlloGUTs</italic>, 7 genes (50%) each contains at least one CCA1 binding site (CBS: AAAAATCT) or evening element [(AA)AATATCT] <xref ref-type="bibr" rid="pone.0024251-Ni1">[39]</xref>, <xref ref-type="bibr" rid="pone.0024251-Harmer2">[44]</xref>, suggesting that these genes are likely the targets of CCA1 and LHY. We measured the stability of <italic>CCA1</italic>, <italic>LHY</italic>, <italic>TOC1</italic>, and <italic>GI</italic> mRNA in allotetraploid and its progenitors (<xref ref-type="fig" rid="pone-0024251-g007">Figure 7</xref>). Transcripts of <italic>CCA1</italic> and <italic>LHY</italic> were relatively unstable, as previously reported <xref ref-type="bibr" rid="pone.0024251-Yakir1">[43]</xref>, whereas the transcripts of their reciprocal regulators, <italic>TOC1</italic> and <italic>GI</italic>, were relatively stable. The decay rate of <italic>CCA1</italic> mRNA in the allotetraploid is relatively faster than MPV, and <italic>LHY</italic> mRNA decreased faster in the allotetraploid than in one of the progenitors. These two nonadditively expressed clock regulator genes also showed a nonadditive rate of mRNA decay.</p>
+        <fig id="pone-0024251-g007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0024251.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title>mRNA decay rates of circadian clock genes in allotetraploids relative to their parents.</title>
+            <p>The mRNA decay rates of <italic>CCA1</italic>, <italic>LHY</italic>, <italic>TOC1</italic>, and <italic>GI</italic> were estimated by qRT-PCR. Transcript abundance was shown in At4 (filled triangle), Aa (filled square), and Allo (open circle) with fitted lines of At4 (big dashed line), Aa (thin dashed line), and Allo (solid line).</p>
+          </caption>
+          <graphic xlink:href="pone.0024251.g007"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <sec id="s3a">
+        <title>Posttranscriptional regulation of cell cycle and stress-related genes in <italic>Arabidopsis</italic> allotetraploids</title>
+        <p>Transcriptome divergence between allotetraploids and their parents are controlled by transcriptional and/or post-transcriptional regulation <xref ref-type="bibr" rid="pone.0024251-Jackson1">[16]</xref>, <xref ref-type="bibr" rid="pone.0024251-Chen2">[18]</xref>. At the transcriptional level, chromatin modifications and DNA methylation mediate activation and silencing of homoeologous genes in allotetraploids or interspecific hybrids <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wang2">[15]</xref>, <xref ref-type="bibr" rid="pone.0024251-Lee1">[45]</xref>, <xref ref-type="bibr" rid="pone.0024251-Chen4">[46]</xref>, <xref ref-type="bibr" rid="pone.0024251-Pikaard1">[47]</xref>. Changes in transcript abundance can also be regulated at the posttranscriptional level. In synthesized wheat allotetraploids, activation of retrotransposon affects the expression of neighboring genes <xref ref-type="bibr" rid="pone.0024251-Kashkush1">[48]</xref>. RNA-mediated gene expression may be associated with the equilibrium between mRNA accumulation and stability during growth, development, and physiological transitions <xref ref-type="bibr" rid="pone.0024251-GrantDownton1">[49]</xref>, <xref ref-type="bibr" rid="pone.0024251-Fire1">[50]</xref>, <xref ref-type="bibr" rid="pone.0024251-PalBhadra1">[51]</xref>, <xref ref-type="bibr" rid="pone.0024251-Jorgensen1">[52]</xref>, <xref ref-type="bibr" rid="pone.0024251-Kumpatla1">[53]</xref>. Here we provided the first evidence for mRNA instability study in nonadditive gene expression in <italic>Arabidopsis</italic> allotetraploids. Our data indicated that the genes with unstable transcripts are correlated with nonadditive levels of steady mRNAs in the allotetraploids. Therefore, a proportion of nonadditively expressed genes in the allotetraploids is caused by unstable transcripts.</p>
+        <p>The relatively small number of <italic>alloGUTs</italic> identified in the study can be due to several factors. One possibility is that unstable mRNAs have low steady state levels, which may not be detectable by microarrays. For example, circadian clock genes such as <italic>CCA1</italic> and <italic>LHY</italic> have unstable transcripts <xref ref-type="bibr" rid="pone.0024251-Yakir1">[43]</xref> but were not identified by microarrays. Alternatively, cross-hybridization of the probes between species could be another factor that have under-estimated the number of genes with unstable transcripts. One might expect that additional <italic>GUTs</italic> will be identified using high-resolution next-generation sequencing technology (RNA-seq) <xref ref-type="bibr" rid="pone.0024251-Mortazavi1">[54]</xref>. Alternatively, the noise associated with quantification of mRNA stability may also account for some differences observed.</p>
+        <p>GOSlim classifications show that like <italic>AtGUTs</italic>, <italic>AlloGUTs</italic> are found in all plant cellular processes. The proportion of <italic>AlloGUTs</italic> is enriched 2-fold or more than that of all genes in several GO groups, including transcription, cell cycle and DNA processing, cellular communication, and biogenesis of cellular components. The majority of these genes are involved in cell cycle regulation and DNA metabolism, a process that requires rapid and cyclic regulation. For example, in yeast, cell cycle and mating-type genes have unstable transcripts <xref ref-type="bibr" rid="pone.0024251-Grigull1">[22]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wang3">[24]</xref>, <xref ref-type="bibr" rid="pone.0024251-Foat1">[55]</xref>, <xref ref-type="bibr" rid="pone.0024251-Farina1">[56]</xref>. Significantly, <italic>AlloGUTs</italic> were enriched 3-fold more transcripts that are related to exogenous stimulus such as cell rescue, defense and virulence and interaction with the environments (<xref ref-type="fig" rid="pone-0024251-g002">Figure 2</xref>), suggesting that these genes are regulated by the rate of mRNA decay. Rapid decay of mRNA is a mechanism for fast response to environmental and external signals such as biotic and abiotic stresses <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref>, <xref ref-type="bibr" rid="pone.0024251-Narsai1">[31]</xref>. The data are consistent with high retention rates of duplicate genes and high expression divergence between duplicate genes than single-copy genes in the process of polyploidization <xref ref-type="bibr" rid="pone.0024251-Ha1">[36]</xref>, <xref ref-type="bibr" rid="pone.0024251-Casneuf1">[57]</xref>. Nonadditive expression of stress-related genes is also overrepresented in other allopolyploids such as wheat <xref ref-type="bibr" rid="pone.0024251-Pumphrey1">[58]</xref>, <xref ref-type="bibr" rid="pone.0024251-Chague1">[59]</xref> and cotton <xref ref-type="bibr" rid="pone.0024251-Flagel1">[60]</xref>, <xref ref-type="bibr" rid="pone.0024251-Hovav1">[61]</xref>, <xref ref-type="bibr" rid="pone.0024251-Liu1">[62]</xref>. This may also suggest that <italic>AlloGUTs</italic> are involved in these processes to facilitate faster mRNA adjustment in allotetraploids and hybrids than in diploids <xref ref-type="bibr" rid="pone.0024251-Wilson1">[21]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wang3">[24]</xref>, <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref>, <xref ref-type="bibr" rid="pone.0024251-Treisman1">[35]</xref>. During evolution, rapid mRNA turnover of the transcripts made from additional genes in allopolyploids is likely to facilitate selection and adaptation for environmental niches <xref ref-type="bibr" rid="pone.0024251-Grant1">[6]</xref>.</p>
+      </sec>
+      <sec id="s3b">
+        <title><italic>AlloGUTs</italic> are associated with nonadditive gene expression in allotetraploids in response to stresses and phytohormones</title>
+        <p>A significant finding is that &#x223C; 30% of <italic>AlloGUT</italic>s overlap with the nonadditively expressed genes in allotetraploids <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref> (<xref ref-type="fig" rid="pone-0024251-g003">Figure 3A</xref>). Moreover, there is a statistically significant negative correlation between the expression levels of <italic>AlloGUTs</italic> and nonadditively expressed genes in the allotetraploids. The unstable mRNA transcripts tend to be nonadditively repressed in allopolyploids, suggesting a role of mRNA instability in nonadditive gene expression in allopolyploids. In other words, different transcriptome profiles of nonadditively regulated genes can be generated by different sensitivities of the mRNA degradation rate during allopolyploidization.</p>
+        <p>The <italic>AlloGUTs</italic> that overlap with nonadditively expressed genes are enriched 2&#x2013;7-fold in GOSlim groups in response to stress, abiotic or biotic stimulus, signal transduction and transcription. There is also a 1.5-fold enrichment of the GO groups in transcription, developmental processes, other cellular processes and other metabolic processes. Compared to additively expressed <italic>AlloGUTs</italic>, nonadditively expressed <italic>AlloGUTs</italic> are significantly correlated with the genes in GOslim groups in response to cold, drought, osmotic, salt, and wounding stress. In response to environmental stimuli, an increase or decrease in mRNA abundance might be attained either by adjusting the rate of transcription or the rate of degradation, as demonstrated in many studies <xref ref-type="bibr" rid="pone.0024251-Shalem1">[25]</xref>. In addition, nonadditively expressed <italic>AlloGUTs</italic> are correlated with the genes induced by Methyl jasmonic acid and plant hormone substances, such as AgNo3, cycloheximide, and 2,3,5-triiodobenzoic acid. In cotton allopolyploids, expression ratios of <italic>AdhA</italic> homeologs vary considerably during seedling and fruit development <xref ref-type="bibr" rid="pone.0024251-Liu1">[62]</xref>. Homeologous gene expression is altered by abiotic stress treatments, including cold, dark, and water submersion. These data collectively suggest that nonadditive gene expression and unstable transcripts provide a general mechanism in response to external signals such as biotic and abiotic stress as well as to internal signals such as phytohormones and intergenomic interactions.</p>
+        <p>Nonadditively expressed <italic>AlloGUTs</italic> also show nonadditive rate of mRNA decay in both parents. Among them, 25% of <italic>AlloGUTs</italic> have a faster decay rate in the allotetraploid than in the parents, 57% of which encode transcription factors. One gene, <italic>AtNAC3</italic> (At3g15500), encodes one member of the NAC transcription factor family. The expression of <italic>AtNAC3</italic> is highly induced by drought, high salinity, and abscisic acid <xref ref-type="bibr" rid="pone.0024251-Tran1">[63]</xref>. Genome-wide analysis of <italic>AtNAC3</italic>-overexpressing transgenic plants showed a significant increase in drought tolerance, which was correlated with upregulation of several stress-inducible genes. The transgenic plants overexpressing <italic>AtNAC3</italic> also show significantly higher survival rate (100%) under drought stress <xref ref-type="bibr" rid="pone.0024251-Tran1">[63]</xref>. Another gene, <italic>AtERF1</italic> (At4g1750), encodes EHTYLENE RESPONSE FACTOR1, a transcription factor, which controls the expression of pathogen responsive genes and prevents disease progression. Overexpressing <italic>AtERF1</italic> in the transgenic plants increases resistance to pathogens <xref ref-type="bibr" rid="pone.0024251-BerrocalLobo1">[64]</xref>, as well as complements defense response defects of <italic>coronative insensitive 1</italic> (<italic>coi1</italic>) and <italic>ethylene insentive2</italic> (<italic>ein2</italic>) mutants <xref ref-type="bibr" rid="pone.0024251-Lorenzo1">[65]</xref>. Interestingly, the transgenic plants overexpressing <italic>AtERF1</italic> are significantly smaller than wild-type plants.</p>
+        <p>The above data are consistent with the observation that many stress responsive genes are generally repressed in the allotetraploids under normal conditions <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>. Allotetraploids might have developed a mechanism that requires low maintenance at the transcript level for these genes in response to environmental changes. Under stress conditions, adjusting the ratio of unstable and stable mRNA transcripts may help rapidly facilitate the proper mRNA levels in response to stress. Whether or not the regulation of stress responsive genes is correlated with increased growth vigor in allopolyploids remains to be investigated.</p>
+      </sec>
+      <sec id="s3c">
+        <title>Circadian clock genes produce unstable transcripts in allotetraploids and their progenitors</title>
+        <p>Plants are sessile and need to prepare for and respond to all environmental changes including biotic and abiotic stresses. Recent studies suggested that 10&#x2013;90% genes in <italic>Arabidopsis</italic> are governed by circadian clock regulation <xref ref-type="bibr" rid="pone.0024251-Harmer1">[40]</xref>, <xref ref-type="bibr" rid="pone.0024251-Harmer2">[44]</xref>, <xref ref-type="bibr" rid="pone.0024251-Michael1">[66]</xref>, <xref ref-type="bibr" rid="pone.0024251-Covington1">[67]</xref>. CCA1 and LHY are members of a small family of single Myb domain transcription factors and have redundant but non-overlapping functions. CCA1 and LHY bind to the promoter of <italic>TOC1</italic> and downstream genes in photosynthesis and starch metabolism <xref ref-type="bibr" rid="pone.0024251-Ni1">[39]</xref>, <xref ref-type="bibr" rid="pone.0024251-Harmer2">[44]</xref>. <italic>CCA1</italic> expression is negatively regulated by TOC1 and CHE <xref ref-type="bibr" rid="pone.0024251-PrunedaPaz1">[42]</xref>, <xref ref-type="bibr" rid="pone.0024251-PrunedaPaz2">[68]</xref>. Accurate entrainment of circadian rhythms is controlled by a combination of <italic>CCA1</italic> transcripts level and mRNA degradation by light <xref ref-type="bibr" rid="pone.0024251-Yakir1">[43]</xref>. We found that <italic>CCA1</italic> and <italic>LHY</italic> transcripts are unstable and show a relatively high rate of mRNA turnover. Compared to <italic>CCA1</italic> and <italic>LHY</italic>, <italic>TOC1</italic> and <italic>GI</italic> transcripts are relatively stable. Interestingly, these clock genes are nonadditively expressed in allotetraploids <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>, <xref ref-type="bibr" rid="pone.0024251-Ni1">[39]</xref>, and their expression levels are negatively correlated with their decay rates (this study). Specifically, <italic>CCA1</italic> and <italic>LHY</italic> mRNA has a relatively lower level of stability in the allotetraploid than in both parents. The data suggest in addition to transcriptional regulation, some circadian clock genes such as <italic>CCA1</italic> and <italic>LHY</italic> are regulated through mRNA decay at the posttranscriptional level. Together, the available data indicate that transcriptional and posttranscriptional regulation of circadian clock genes, stress responsive genes, and many other <italic>GUTs</italic> provides a general mechanism for rapid changes in gene expression induced by &#x201C;genome shock&#x201D; <xref ref-type="bibr" rid="pone.0024251-McClintock1">[69]</xref> in response to interspecific hybridization and allopolyploidization. Posttranscriptional regulation of mRNA transcripts offers a unique mechanism to discriminate the transcripts between homoeologous loci in the allopolyploids. It will be interesting to investigate how these homoeologous transcripts are discriminated and degraded.</p>
+      </sec>
+      <sec id="s3d">
+        <title>Conclusions</title>
+        <p>The current data support a role of mRNA instability in nonadditive expression of genes in <italic>Arabidopsis</italic> allopolyploids. We found &#x223C;1% of genes with allotetraploids unstable transcripts (<italic>AlloGUTs</italic>) in <italic>Arabidopsis</italic> and a half-life time of less than 60 minutes, &#x223C;30% of which matched the nonaddtively expressed genes that are repressed in the allotetraploids. All <italic>AlloGUTs</italic> and nonadditively repressed <italic>AlloGUTs</italic> are significantly enriched with GOSlim classifications of response to stress, environment, and phytohormones. These <italic>AlloGUTs</italic> overlap with the genes that are highly induced by abiotic stress, including cold, drought, osmotic, salt, and wounding, and plant hormones and substances, including Methyl jasmonic acid and cycloheximide. Expression of circadian clock genes such as <italic>CCA1</italic> and <italic>LHY</italic> is controlled by transcriptional regulation as well as posttranscriptional regulation through mRNA decay. The data collectively suggest that transcriptional and posttranscriptional regulation affects expression of homoeologous genes related to stress response, light signaling, and hormone interactions in allopolyploids, which may provide a flexible and rapid response to external and internal stimuli as a consequence of polyploidization.</p>
+      </sec>
+    </sec>
+    <sec sec-type="materials|methods" id="s4">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Plant Material and RNA sample preparation for half-life time calculation</title>
+        <p>All plants were grown under sterile conditions on plates containing 1x Murashige and Skoog salts, 1x Gamborg's vitamins and 1% sucrose for 2 weeks at 22&#xB0;C. Light regime was 16-hr light and 8-hr dark in a growth chamber. Plant materials included <italic>A. thaliana</italic> autotetraploid (At4, accession no. CS3900, 2<italic>n</italic> &#x200A;=&#x200A; 4<italic>x</italic> &#x200A;=&#x200A;20), tetraploid <italic>A. arenosa</italic> (Aa, accession no. CS3901, 2<italic>n</italic> &#x200A;=&#x200A; 4<italic>x</italic> &#x200A;=&#x200A;32), and resynthesized <italic>A. suecica</italic> allotetraploid lines in F<sub>8</sub> generation (Allo733 and 738, 2<italic>n</italic> &#x200A;=&#x200A; 4<italic>x</italic> &#x200A;=&#x200A;26, accession no. CS3895-3896) <xref ref-type="bibr" rid="pone.0024251-Comai2">[13]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>, <xref ref-type="bibr" rid="pone.0024251-Wang2">[15]</xref>. Two-week old seedlings were used for all analyses.</p>
+        <p>The plants were incubated in a beaker containing incubation buffer for 30 min <xref ref-type="bibr" rid="pone.0024251-Seeley1">[32]</xref>. After the incubation, 3&#x2032;-decoyadenosine (cordycepin) was added to a final concentration of 200 mg/ml for all seedlings. Cordycepin was used as a transcription inhibitor because it works better than other inhibitors such as Actinomycin D and it is more effectively to penetrate into leaf tissues <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref>, <xref ref-type="bibr" rid="pone.0024251-Seeley1">[32]</xref>, <xref ref-type="bibr" rid="pone.0024251-Johnson1">[70]</xref>. Treated leaves were harvested at each time point, 0, 60, and 120 min, after inhibitor treatment, and immediately frozen in liquid nitrogen. Total RNA was isolated using Plant RNA reagent (Invitrogen, Carlsbad, CA). Each RNA sample was quantified by measuring the 260/280 ratio using Nano drop and by agarose-formaldehyde gel electrophoresis. Quantified total RNA was subjected to mRNA isolation by Micro-fast Track 2.0 mRNA isolation kit (Invitrogen). Isolated mRNA was reverse-transcribed to synthesize cDNA using Cy3- or Cy5- labelled dCTPs (Amersham Biosciences, Piscataway, NJ) that was used as probes for microarray analysis, as previously described <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Quantitative RT-PCR</title>
+        <p>Approximately 5 mg of total RNA treated with DNase &#x399; was reverse-transcribed using SuperScriptII (Invitrogen), following the manufacturer's recommendation. The synthesized cDNA was diluted 1&#x2236;5 in DEPC water and subjected to quantitative RT-PCR (qRT-PCR) analysis using SYBR Green Supermix (ABI Biosystems, Foster City, CA) in an ABI 7500 instrument (ABI Biosystems). The qRT-PCR conditions were optimized to maximize the amplification efficiency as previously described <xref ref-type="bibr" rid="pone.0024251-Lee2">[71]</xref>. In this study, the gene <italic>eIF4A2</italic> was used as an internal control to estimate the relative transcript level of the gene tested. The primers were provided in <xref ref-type="supplementary-material" rid="pone.0024251.s005">Table S3</xref>.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Spotted oligo-gene microarrays and data analysis</title>
+        <p>Spotted oligo-gene microarrays with 26,090 annotated genes were used for monitoring mRNA stability in allotetraploids according to the published protocol <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref>, <xref ref-type="bibr" rid="pone.0024251-Lee2">[71]</xref>, <xref ref-type="bibr" rid="pone.0024251-Tian1">[72]</xref>. A total of 16 slides were used for two-time course comparisons (0 min vs. 120 min), including two biological and two technical replications. Each biological replicate consists of two dye-swaps (four slides) that were hybridized with reverse-labeled probes using one mRNA sample from the allotetraploid and another mRNA sample from a mix of RNAs from two parents (mid-parent value, MPV) (<xref ref-type="fig" rid="pone-0024251-g001">Figure 1A</xref>). For microarray hybridization, 500 ng of mRNA were used to synthesize cDNA in each labelling reaction using Cy3- or Cy5-dCTP (Amersham Biosciences, Piscataway, NJ). Probe labelling, slide hybridization, and washing were according to a published protocol <xref ref-type="bibr" rid="pone.0024251-Tian1">[72]</xref>. After the slides were scanned using Genepix 4000B, raw data were collected using Genepix Pro4.1. The replicated data from the dye-swap of each comparison were extracted and normalized using Acuity 4.0 software (Molecular Devices, <ext-link ext-link-type="uri" xlink:href="http://www.moleculardevices.com">http://www.moleculardevices.com</ext-link>). Quantified values in each dataset were analyzed by t-test using a statistical significance level of &#x3B1;&#x200A;=&#x200A;0.001. The common genes between the two datasets with reproducibly normalized intensity ratios of &#x2265;2 were used for further analysis. The difference of the transcript abundance between each time point can be used to calculate the half-life by the equation ln (Normalized Ratio) &#x200A;=&#x200A; -<italic>k</italic><sub>decay</sub>, with <italic>t<sub>1/2</sub></italic> &#x200A;=&#x200A;0.693/<italic>k</italic><sub>decay</sub>, since mRNA degradation generally obeys first-order kinetics, which is common in fast mRNA degradation <xref ref-type="bibr" rid="pone.0024251-Gutierrez1">[30]</xref>, <xref ref-type="bibr" rid="pone.0024251-Lam1">[73]</xref>. Gene Ontology (GOSlim) of <italic>AlloGUTs</italic> was classified using TAIR release (November 2009) (<ext-link ext-link-type="ftp" xlink:href="ftp://ftp.arabidopsis.org/home/tair/Ontologies/Gene_Ontology/ATH_GO_GOSLIM.txt">ftp://ftp.arabidopsis.org/home/tair/Ontologies/Gene_Ontology/ATH_GO_GOSLIM.txt</ext-link>) and PEDANT (<ext-link ext-link-type="uri" xlink:href="http://mips.gsf.de/proj/thal/db/index.html">http://mips.gsf.de/proj/thal/db/index.html</ext-link>). Clustering analysis of gene expression was performed using CLUSTER and TREEWIEW <xref ref-type="bibr" rid="pone.0024251-Eisen1">[74]</xref> (<ext-link ext-link-type="uri" xlink:href="http://rana.lbl.gov/EisenSoftware.htm">http://rana.lbl.gov/EisenSoftware.htm</ext-link>). Our microarray data were comparatively analyzed with the published data <xref ref-type="bibr" rid="pone.0024251-Wang1">[14]</xref> to determine if nonadditively expressed <italic>AlloGUTs</italic> were enriched in GOSlim groups in response to stress <xref ref-type="bibr" rid="pone.0024251-Kilian1">[38]</xref>, hormones <xref ref-type="bibr" rid="pone.0024251-Goda1">[37]</xref>, and circadian regulation <xref ref-type="bibr" rid="pone.0024251-Hazen1">[75]</xref>. The data were downloaded from <ext-link ext-link-type="uri" xlink:href="http://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp">http://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp</ext-link>. Visual display of expression profiles from multiple experiments was performed in Genevestigator <xref ref-type="bibr" rid="pone.0024251-Zimmermann1">[76]</xref> (<ext-link ext-link-type="uri" xlink:href="https://www.genevestigator.com/gv/index.jsp">https://www.genevestigator.com/gv/index.jsp</ext-link>).</p>
+        <p>All microarray data are MIAME compliant <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/geo/info/MIAME.html">http://www.ncbi.nlm.nih.gov/geo/info/MIAME.html</ext-link> and deposited in GEO <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/geo/with">http://www.ncbi.nlm.nih.gov/geo/with</ext-link> the accession GSE26065.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0024251.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>The percentages of the genes in GOSlim category that are nonadditively expressed </bold><bold><italic>AlloGUTs</italic></bold><bold> (61 genes), compared to all </bold><bold><italic>AlloGUTs</italic></bold><bold>.</bold> The ratios in the y-axis were calculated using the observed percentage of the nonadditively expressed <italic>AlloGUTs</italic> divided by the expected percentage of all annotated genes in the <italic>Arabidopsis</italic> genome. The dashed line shows the observed percentage of the genes that are <italic>AlloGUTs</italic> in a microarray experiment equal to that of the expected genes in the whole genome (100%).</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0024251.s001.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0024251.s002">
+        <label>Figure S2</label>
+        <caption>
+          <p><bold>Hierarchical cluster analysis showing </bold><bold><italic>AlloGUTs</italic></bold><bold> that matched the genes whose expression is induced by hormone and chemical treatments.</bold> The analysis was carried out with publicly available microarray database (<ext-link ext-link-type="uri" xlink:href="http://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp">http://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp</ext-link> and Genevastor). Each row represents a microarray experiment and each column represents a gene. The color represents the relative expression level of each experimental group (Red, up and green, down).</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0024251.s002.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0024251.s003">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>
+              <italic>Arabidopsis</italic>
+            </bold>
+            <bold> allotetraploid genes with unstable transcripts (</bold>
+            <bold>
+              <italic>AlloGUTs</italic>
+            </bold>
+            <bold>).</bold>
+          </p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0024251.s003.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0024251.s004">
+        <label>Table S2</label>
+        <caption>
+          <p>
+            <bold>Statistic tests for significance between microarray datasets.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+        <media xlink:href="pone.0024251.s004.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0024251.s005">
+        <label>Table S3</label>
+        <caption>
+          <p>
+            <bold>Primer sequences used in the analysis.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+        <media xlink:href="pone.0024251.s005.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Erica Lackey for assistance of microarray hybridization and data analysis and Changqing Zhang for submission of microarray data.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>The work is supported by the grant from the National Institutes of Health (GM067015). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0024251-Soltis1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Soltis</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Soltis</surname>
+              <given-names>DE</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>The role of hybridization in plant speciation.</article-title>
+          <source>Annu Rev Plant Biol</source>
+          <volume>60</volume>
+          <fpage>561</fpage>
+          <lpage>588</lpage>
+          <pub-id pub-id-type="pmid">19575590</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Becak1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Becak</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Becak</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Evolution by polyploidy in Amphibia: new insights.</article-title>
+          <source>Cytogenet Cell Genet</source>
+          <volume>80</volume>
+          <fpage>28</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="pmid">9678330</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Leitch1">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leitch</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Leitch</surname>
+              <given-names>IJ</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Genomic plasticity and the diversity of polyploid plants.</article-title>
+          <source>Science</source>
+          <volume>320</volume>
+          <fpage>481</fpage>
+          <lpage>483</lpage>
+          <pub-id pub-id-type="pmid">18436776</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Masterson1">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Masterson</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>1994</year>
+          <article-title>Stomatal size in fossil plants: evidence for polyploidy in majority of angiosperms.</article-title>
+          <source>Science</source>
+          <volume>264</volume>
+          <fpage>421</fpage>
+          <lpage>424</lpage>
+          <pub-id pub-id-type="pmid">17836906</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Wood1">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wood</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Takebayashi</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Mayrose</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Greenspoon</surname>
+              <given-names>PB</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>The frequency of polyploid speciation in vascular plants.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>106</volume>
+          <fpage>13875</fpage>
+          <lpage>13879</lpage>
+          <pub-id pub-id-type="pmid">19667210</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Grant1">
+        <label>6</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grant</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <year>1981</year>
+          <article-title>Plant Speciation.</article-title>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Columbia University Press</publisher-name>
+          <size units="page"/>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Brochmann1">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brochmann</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Brysting</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Alsos</surname>
+              <given-names>IG</given-names>
+            </name>
+            <name>
+              <surname>Borgen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Grundt</surname>
+              <given-names>HH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Polyploidy in arctic plants.</article-title>
+          <source>Biological Journal of the Linnean Society</source>
+          <volume>82</volume>
+          <fpage>521</fpage>
+          <lpage>536</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Mallet1">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mallet</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Hybridization as an invasion of the genome.</article-title>
+          <source>Trends Ecol Evol</source>
+          <volume>20</volume>
+          <fpage>229</fpage>
+          <lpage>237</lpage>
+          <pub-id pub-id-type="pmid">16701374</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Rieseberg1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rieseberg</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Raymond</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Rosenthal</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Lai</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Livingstone</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>Major ecological transitions in wild sunflowers facilitated by hybridization.</article-title>
+          <source>Science</source>
+          <volume>301</volume>
+          <fpage>1211</fpage>
+          <lpage>1216</lpage>
+          <pub-id pub-id-type="pmid">12907807</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Comai1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Comai</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>The advantages and disadvantages of being polyploid.</article-title>
+          <source>Nature Reviews Genetics</source>
+          <volume>6</volume>
+          <fpage>836</fpage>
+          <lpage>846</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Chen1">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>ZJ</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Molecular mechanisms of polyploidy and hybrid vigor.</article-title>
+          <source>Trends Plant Sci</source>
+          <volume>15</volume>
+          <fpage>57</fpage>
+          <lpage>71</lpage>
+          <pub-id pub-id-type="pmid">20080432</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Soltis2">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Soltis</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Soltis</surname>
+              <given-names>PS</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Polyploidy: recurrent formation and genome evolution.</article-title>
+          <source>Trends Ecol Evolu</source>
+          <volume>14</volume>
+          <fpage>348</fpage>
+          <lpage>352</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Comai2">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Comai</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Tyagi</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Winter</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Holmes-Davis</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Reynolds</surname>
+              <given-names>SH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2000</year>
+          <article-title>Phenotypic instability and rapid gene silencing in newly formed <italic>Arabidopsis</italic> allotetraploids.</article-title>
+          <source>Plant Cell</source>
+          <volume>12</volume>
+          <fpage>1551</fpage>
+          <lpage>1568</lpage>
+          <pub-id pub-id-type="pmid">11006331</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Wang1">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tian</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>NE</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Genomewide nonadditive gene regulation in <italic>Arabidopsis</italic> allotetraploids.</article-title>
+          <source>Genetics</source>
+          <volume>172</volume>
+          <fpage>507</fpage>
+          <lpage>517</lpage>
+          <pub-id pub-id-type="pmid">16172500</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Wang2">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tian</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Madlung</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Stochastic and epigenetic changes of gene expression in <italic>Arabidopsis</italic> polyploids.</article-title>
+          <source>Genetics</source>
+          <volume>167</volume>
+          <fpage>1961</fpage>
+          <lpage>1973</lpage>
+          <pub-id pub-id-type="pmid">15342533</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Jackson1">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jackson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>ZJ</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Genomic and expression plasticity of polyploidy.</article-title>
+          <source>Curr Opin Plant Biol</source>
+          <volume>13</volume>
+          <fpage>153</fpage>
+          <lpage>159</lpage>
+          <pub-id pub-id-type="pmid">20031477</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Osborn1">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Osborn</surname>
+              <given-names>TC</given-names>
+            </name>
+            <name>
+              <surname>Pires</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Birchler</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Auger</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>ZJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>Understanding mechanisms of novel gene expression in polyploids.</article-title>
+          <source>Trends Genet</source>
+          <volume>19</volume>
+          <fpage>141</fpage>
+          <lpage>147</lpage>
+          <pub-id pub-id-type="pmid">12615008</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Chen2">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>ZJ</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Genetic and epigenetic mechanisms for gene expression and phenotypic variation in plant polyploids.</article-title>
+          <source>Annu Rev Plant Biol</source>
+          <volume>58</volume>
+          <fpage>377</fpage>
+          <lpage>406</lpage>
+          <pub-id pub-id-type="pmid">17280525</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Peltz1">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Peltz</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name>
+              <surname>Jacobson</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>MRNA stability: An trans-it.</article-title>
+          <source>Current Opinion in Cell Biology</source>
+          <volume>4</volume>
+          <fpage>979</fpage>
+          <lpage>983</lpage>
+          <pub-id pub-id-type="pmid">1485969</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Chen3">
+        <label>20</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>CYA</given-names>
+            </name>
+            <name>
+              <surname>Ezzeddine</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Shyu</surname>
+              <given-names>AB</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>MESSENGER RNA HALF-LIFE MEASUREMENTS IN MAMMALIAN CELLS.</article-title>
+          <source>Rna Turnover in Eukaryotes: Nucleases, Pathways and Anaylsis of Mrna Decay</source>
+          <publisher-loc>San Diego</publisher-loc>
+          <publisher-name>Elsevier Academic Press Inc</publisher-name>
+          <fpage>335</fpage>
+          <lpage>357</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Wilson1">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilson</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Treisman</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>1988</year>
+          <article-title>Fos C-terminal mutations block down-regulation of c-fos transcription following serum stimulation.</article-title>
+          <source>EMBO J</source>
+          <volume>7</volume>
+          <fpage>4193</fpage>
+          <lpage>4202</lpage>
+          <pub-id pub-id-type="pmid">3149583</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Grigull1">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grigull</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Mnaimneh</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pootoolal</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Hughes</surname>
+              <given-names>TR</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Genome-Wide Analysis of mRNA Stability Using Transcription Inhibitors and Microarrays Reveals Posttranscriptional Control of Ribosome Biogenesis Factors Molecular and Cellular Biology</article-title>
+          <volume>24</volume>
+          <fpage>5534</fpage>
+          <lpage>5547</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Yang1">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>van Nimwegen</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Zavolan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rajewsky</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Schroeder</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>Decay rates of human mRNAs: Correlation with functional characteristics and sequence attributes.</article-title>
+          <source>Genome Research</source>
+          <volume>13</volume>
+          <fpage>1863</fpage>
+          <lpage>1872</lpage>
+          <pub-id pub-id-type="pmid">12902380</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Wang3">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>YL</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Storey</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Tibshirani</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Herschlag</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2002</year>
+          <article-title>Precision and functional specificity in mRNA decay.</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <volume>99</volume>
+          <fpage>5860</fpage>
+          <lpage>5865</lpage>
+          <pub-id pub-id-type="pmid">11972065</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Shalem1">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shalem</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Dahan</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Levo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Martinez</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Furman</surname>
+              <given-names>I</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Transient transcriptional responses to stress are generated by opposing effects of mRNA production and degradation.</article-title>
+          <source>Mol Syst Biol</source>
+          <volume>4</volume>
+          <fpage>223</fpage>
+          <pub-id pub-id-type="pmid">18854817</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Elkon1">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Elkon</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zlotorynski</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Zeller</surname>
+              <given-names>KI</given-names>
+            </name>
+            <name>
+              <surname>Agami</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Major role for mRNA stability in shaping the kinetics of gene induction.</article-title>
+          <source>BMC Genomics</source>
+          <volume>11</volume>
+          <fpage>259</fpage>
+          <pub-id pub-id-type="pmid">20409322</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Fan1">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fan</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>XL</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>WG</given-names>
+            </name>
+            <name>
+              <surname>Wood</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Becker</surname>
+              <given-names>KG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2002</year>
+          <article-title>Global analysis of stress-regulated mRNA turnover by using cDNA arrays.</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <volume>99</volume>
+          <fpage>10611</fpage>
+          <lpage>10616</lpage>
+          <pub-id pub-id-type="pmid">12149460</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-GarciaMartinez1">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garcia-Martinez</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Aranda</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Perez-Ortin</surname>
+              <given-names>JE</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Genomic run-on evaluates transcription rates for all yeast genes and identifies gene regulatory mechanisms.</article-title>
+          <source>Molecular Cell</source>
+          <volume>15</volume>
+          <fpage>303</fpage>
+          <lpage>313</lpage>
+          <pub-id pub-id-type="pmid">15260981</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-MolinaNavarro1">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Molina-Navarro</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Castells-Roca</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Belli</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Garcia-Martinez</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Marin-Navarro</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Comprehensive transcriptional analysis of the oxidative response in yeast.</article-title>
+          <source>Journal of Biological Chemistry</source>
+          <volume>283</volume>
+          <fpage>17908</fpage>
+          <lpage>17918</lpage>
+          <pub-id pub-id-type="pmid">18424442</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Gutierrez1">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gutierrez</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Ewing</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Cherry</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Green</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Identification of unstable transcripts in Arabidopsis by cDNA microarray analysis: rapid decay is associated with a group of touch- and specific clock-controlled genes.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>99</volume>
+          <fpage>11513</fpage>
+          <lpage>11518</lpage>
+          <pub-id pub-id-type="pmid">12167669</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Narsai1">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Narsai</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Howell</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Millar</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>O'Toole</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Small</surname>
+              <given-names>I</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>Genome-wide analysis of mRNA decay rates and their determinants in Arabidopsis thaliana.</article-title>
+          <source>Plant Cell</source>
+          <volume>19</volume>
+          <fpage>3418</fpage>
+          <lpage>3436</lpage>
+          <pub-id pub-id-type="pmid">18024567</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Seeley1">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seeley</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Byrne</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Colbert</surname>
+              <given-names>JT</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>RED LIGHT-INDEPENDENT INSTABILITY OF OAT PHYTOCHROME MESSENGER-RNA INVIVO.</article-title>
+          <source>Plant Cell</source>
+          <volume>4</volume>
+          <fpage>29</fpage>
+          <lpage>38</lpage>
+          <pub-id pub-id-type="pmid">12297628</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-McClure1">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McClure</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Guilfoyle</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>1989</year>
+          <article-title>RAPID REDISTRIBUTION OF AUXIN-REGULATED RNAS DURING GRAVITROPISM.</article-title>
+          <source>Science</source>
+          <volume>243</volume>
+          <fpage>91</fpage>
+          <lpage>93</lpage>
+          <pub-id pub-id-type="pmid">11540631</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Koshiba1">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koshiba</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ballas</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Theologis</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>TRANSCRIPTIONAL REGULATION OF PS-IAA4/5 AND PS-IAA6 EARLY GENE-EXPRESSION BY INDOLEACETIC-ACID AND PROTEIN-SYNTHESIS INHIBITORS IN PEA (PISUM-SATIVUM).</article-title>
+          <source>Journal of molecular biology</source>
+          <volume>253</volume>
+          <fpage>396</fpage>
+          <lpage>413</lpage>
+          <pub-id pub-id-type="pmid">7473723</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Treisman1">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Treisman</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>1985</year>
+          <article-title>TRANSIENT ACCUMULATION OF C-FOS RNA FOLLOWING SERUM STIMULATION REQUIRES A CONSERVED 5&#x2032; ELEMENT AND C-FOS 3&#x2032; SEQUENCES.</article-title>
+          <source>Cell</source>
+          <volume>42</volume>
+          <fpage>889</fpage>
+          <lpage>902</lpage>
+          <pub-id pub-id-type="pmid">2414012</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Ha1">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ha</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>ZJ</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Duplicate genes increase expression diversity in closely related species and allopolyploids.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>106</volume>
+          <fpage>2295</fpage>
+          <lpage>2300</lpage>
+          <pub-id pub-id-type="pmid">19168631</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Goda1">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goda</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Sasaki</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Akiyama</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Maruyama-Nakashita</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Nakabayashi</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>The AtGenExpress hormone and chemical treatment data set: experimental design, data evaluation, model data analysis and data access.</article-title>
+          <source>Plant Journal</source>
+          <volume>55</volume>
+          <fpage>526</fpage>
+          <lpage>542</lpage>
+          <pub-id pub-id-type="pmid">18419781</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Kilian1">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kilian</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Whitehead</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Horak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wanke</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Weinl</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>The AtGenExpress global stress expression data set: protocols, evaluation and model data analysis of UV-B light, drought and cold stress responses.</article-title>
+          <source>Plant Journal</source>
+          <volume>50</volume>
+          <fpage>347</fpage>
+          <lpage>363</lpage>
+          <pub-id pub-id-type="pmid">17376166</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Ni1">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ni</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Ha</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lackey</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Altered circadian rhythms regulate growth vigour in hybrids and allopolyploids.</article-title>
+          <source>Nature</source>
+          <volume>457</volume>
+          <fpage>327</fpage>
+          <lpage>331</lpage>
+          <pub-id pub-id-type="pmid">19029881</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Harmer1">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harmer</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>The circadian system in higher plants.</article-title>
+          <source>Annu Rev Plant Biol</source>
+          <volume>60</volume>
+          <fpage>357</fpage>
+          <lpage>377</lpage>
+          <pub-id pub-id-type="pmid">19575587</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-McClung1">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McClung</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Plant circadian rhythms.</article-title>
+          <source>Plant Cell</source>
+          <volume>18</volume>
+          <fpage>792</fpage>
+          <lpage>803</lpage>
+          <pub-id pub-id-type="pmid">16595397</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-PrunedaPaz1">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pruneda-Paz</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Kay</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>An expanding universe of circadian networks in higher plants.</article-title>
+          <source>Trends Plant Sci</source>
+          <volume>15</volume>
+          <fpage>259</fpage>
+          <lpage>265</lpage>
+          <pub-id pub-id-type="pmid">20382065</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Yakir1">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yakir</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Hilman</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Harir</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Green</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Regulation of output from the plant circadian clock.</article-title>
+          <source>Febs J</source>
+          <volume>274</volume>
+          <fpage>335</fpage>
+          <lpage>345</lpage>
+          <pub-id pub-id-type="pmid">17229141</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Harmer2">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harmer</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Hogenesch</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Straume</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2000</year>
+          <article-title>Orchestrated transcription of key pathways in Arabidopsis by the circadian clock.</article-title>
+          <source>Science</source>
+          <volume>290</volume>
+          <fpage>2110</fpage>
+          <lpage>2113</lpage>
+          <pub-id pub-id-type="pmid">11118138</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Lee1">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>ZJ</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Protein-coding genes are epigenetically regulated in Arabidopsis polyploids.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>98</volume>
+          <fpage>6753</fpage>
+          <lpage>6758</lpage>
+          <pub-id pub-id-type="pmid">11371624</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Chen4">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ha</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lackey</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>ZJ</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>RNAi of met1 reduces DNA methylation and induces genome-specific changes in gene expression and centromeric small RNA accumulation in Arabidopsis allopolyploids.</article-title>
+          <source>Genetics</source>
+          <volume>178</volume>
+          <fpage>1845</fpage>
+          <lpage>1858</lpage>
+          <pub-id pub-id-type="pmid">18430920</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Pikaard1">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pikaard</surname>
+              <given-names>CS</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>The epigenetics of nucleolar dominance.</article-title>
+          <source>Trends Genet</source>
+          <volume>16</volume>
+          <fpage>495</fpage>
+          <lpage>500</lpage>
+          <pub-id pub-id-type="pmid">11074291</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Kashkush1">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kashkush</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Feldman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Levy</surname>
+              <given-names>AA</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Transcriptional activation of retrotransposons alters the expression of adjacent genes in wheat.</article-title>
+          <source>Nat Genet</source>
+          <volume>33</volume>
+          <fpage>102</fpage>
+          <lpage>106</lpage>
+          <pub-id pub-id-type="pmid">12483211</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-GrantDownton1">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grant-Downton</surname>
+              <given-names>RT</given-names>
+            </name>
+            <name>
+              <surname>Dickinson</surname>
+              <given-names>HG</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Epigenetics and its implications for plant biology 2. The &#x2018;epigenetic epiphany&#x2019;: epigenetics, evolution and beyond.</article-title>
+          <source>Ann Bot (Lond)</source>
+          <volume>97</volume>
+          <fpage>11</fpage>
+          <lpage>27</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Fire1">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fire</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Montgomery</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Kostas</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Driver</surname>
+              <given-names>SE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1998</year>
+          <article-title>Potent and specific genetic interference by double-stranded RNA in Caenorhabditis elegans.</article-title>
+          <source>Nature</source>
+          <volume>391</volume>
+          <fpage>806</fpage>
+          <lpage>811</lpage>
+          <pub-id pub-id-type="pmid">9486653</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-PalBhadra1">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pal-Bhadra</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bhadra</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Birchler</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Cosuppression in <italic>Drosophila</italic>: gene silencing of alcohol dehydrogenase by white-<italic>Adh</italic> transgenes is Polycomb dependent.</article-title>
+          <source>Cell</source>
+          <volume>90</volume>
+          <fpage>479</fpage>
+          <lpage>490</lpage>
+          <pub-id pub-id-type="pmid">9267028</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Jorgensen1">
+        <label>52</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jorgensen</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>1990</year>
+          <article-title>Altered gene expression in plants due to trans interactions between homologous genes.</article-title>
+          <source>Trends Biotechnol</source>
+          <volume>8</volume>
+          <fpage>340</fpage>
+          <lpage>344</lpage>
+          <pub-id pub-id-type="pmid">1366894</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Kumpatla1">
+        <label>53</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kumpatla</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Teng</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Buchholz</surname>
+              <given-names>WG</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>TC</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Epigenetic transcriptional silencing and 5-azacytidine-mediated reactivation of a complex transgene in rice.</article-title>
+          <source>Plant Physiol</source>
+          <volume>115</volume>
+          <fpage>361</fpage>
+          <lpage>373</lpage>
+          <pub-id pub-id-type="pmid">9342860</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Mortazavi1">
+        <label>54</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mortazavi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>McCue</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Schaeffer</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Wold</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Mapping and quantifying mammalian transcriptomes by RNA-Seq.</article-title>
+          <source>Nat Methods</source>
+          <volume>5</volume>
+          <fpage>621</fpage>
+          <lpage>628</lpage>
+          <pub-id pub-id-type="pmid">18516045</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Foat1">
+        <label>55</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Foat</surname>
+              <given-names>BC</given-names>
+            </name>
+            <name>
+              <surname>Houshmandi</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Olivas</surname>
+              <given-names>WM</given-names>
+            </name>
+            <name>
+              <surname>Bussemaker</surname>
+              <given-names>HJ</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Profiling condition-specific, genome-wide regulation of mRNA stability in yeast.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>102</volume>
+          <fpage>17675</fpage>
+          <lpage>17680</lpage>
+          <pub-id pub-id-type="pmid">16317069</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Farina1">
+        <label>56</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Farina</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>De Santis</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Salvucci</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Morelli</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ruberti</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Embedding mRNA stability in correlation analysis of time-series gene expression data.</article-title>
+          <source>PLoS Comput Biol</source>
+          <volume>4</volume>
+          <fpage>e1000141</fpage>
+          <pub-id pub-id-type="pmid">18670596</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Casneuf1">
+        <label>57</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Casneuf</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>De Bodt</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Raes</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Maere</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Van de Peer</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Nonrandom divergence of gene expression following gene and genome duplications in the flowering plant Arabidopsis thaliana.</article-title>
+          <source>Genome Biol</source>
+          <volume>7</volume>
+          <fpage>R13</fpage>
+          <pub-id pub-id-type="pmid">16507168</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Pumphrey1">
+        <label>58</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pumphrey</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bai</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Laudencia-Chingcuanco</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>BS</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Nonadditive expression of homoeologous genes is established upon polyploidization in hexaploid wheat.</article-title>
+          <source>Genetics</source>
+          <volume>181</volume>
+          <fpage>1147</fpage>
+          <lpage>1157</lpage>
+          <pub-id pub-id-type="pmid">19104075</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Chague1">
+        <label>59</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chague</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Just</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Mestiri</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Balzergue</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tanguy</surname>
+              <given-names>AM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Genome-wide gene expression changes in genetically stable synthetic and natural wheat allohexaploids.</article-title>
+          <source>New Phytol</source>
+          <volume>187</volume>
+          <fpage>1181</fpage>
+          <lpage>1194</lpage>
+          <pub-id pub-id-type="pmid">20591055</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Flagel1">
+        <label>60</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flagel</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Udall</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Nettleton</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wendel</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Duplicate gene expression in allopolyploid Gossypium reveals two temporally distinct phases of expression evolution.</article-title>
+          <source>BMC Biol</source>
+          <volume>6</volume>
+          <fpage>16</fpage>
+          <pub-id pub-id-type="pmid">18416842</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Hovav1">
+        <label>61</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hovav</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Udall</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Chaudhary</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Rapp</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Flagel</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Partitioned expression of duplicated genes during development and evolution of a single cell in a polyploid plant.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>105</volume>
+          <fpage>6191</fpage>
+          <lpage>6195</lpage>
+          <pub-id pub-id-type="pmid">18420816</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Liu1">
+        <label>62</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Adams</surname>
+              <given-names>KL</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Expression partitioning between genes duplicated by polyploidy under abiotic stress and during organ development.</article-title>
+          <source>Curr Biol</source>
+          <volume>17</volume>
+          <fpage>1669</fpage>
+          <lpage>1674</lpage>
+          <pub-id pub-id-type="pmid">17825563</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Tran1">
+        <label>63</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tran</surname>
+              <given-names>LS</given-names>
+            </name>
+            <name>
+              <surname>Nakashima</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Sakuma</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Simpson</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Fujita</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Isolation and functional analysis of Arabidopsis stress-inducible NAC transcription factors that bind to a drought-responsive cis-element in the early responsive to dehydration stress 1 promoter.</article-title>
+          <source>Plant Cell</source>
+          <volume>16</volume>
+          <fpage>2481</fpage>
+          <lpage>2498</lpage>
+          <pub-id pub-id-type="pmid">15319476</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-BerrocalLobo1">
+        <label>64</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berrocal-Lobo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Segura</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Moreno</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lopez</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Garcia-Olmedo</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2002</year>
+          <article-title>Snakin-2, an antimicrobial peptide from potato whose gene is locally induced by wounding and responds to pathogen infection.</article-title>
+          <source>Plant Physiol</source>
+          <volume>128</volume>
+          <fpage>951</fpage>
+          <lpage>961</lpage>
+          <pub-id pub-id-type="pmid">11891250</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Lorenzo1">
+        <label>65</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lorenzo</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Piqueras</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sanchez-Serrano</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Solano</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>ETHYLENE RESPONSE FACTOR1 integrates signals from ethylene and jasmonate pathways in plant defense.</article-title>
+          <source>Plant Cell</source>
+          <volume>15</volume>
+          <fpage>165</fpage>
+          <lpage>178</lpage>
+          <pub-id pub-id-type="pmid">12509529</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Michael1">
+        <label>66</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Michael</surname>
+              <given-names>TP</given-names>
+            </name>
+            <name>
+              <surname>Mockler</surname>
+              <given-names>TC</given-names>
+            </name>
+            <name>
+              <surname>Breton</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>McEntee</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Byer</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Network discovery pipeline elucidates conserved time-of-day-specific cis-regulatory modules.</article-title>
+          <source>PLoS Genet</source>
+          <volume>4</volume>
+          <fpage>e14</fpage>
+          <pub-id pub-id-type="pmid">18248097</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Covington1">
+        <label>67</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Covington</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Maloof</surname>
+              <given-names>JN</given-names>
+            </name>
+            <name>
+              <surname>Straume</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kay</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Harmer</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Global transcriptome analysis reveals circadian regulation of key pathways in plant growth and development.</article-title>
+          <source>Genome Biol</source>
+          <volume>9</volume>
+          <fpage>R130</fpage>
+          <pub-id pub-id-type="pmid">18710561</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-PrunedaPaz2">
+        <label>68</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pruneda-Paz</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Breton</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Para</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kay</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>A functional genomics approach reveals CHE as a component of the Arabidopsis circadian clock.</article-title>
+          <source>Science</source>
+          <volume>323</volume>
+          <fpage>1481</fpage>
+          <lpage>1485</lpage>
+          <pub-id pub-id-type="pmid">19286557</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-McClintock1">
+        <label>69</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McClintock</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>1984</year>
+          <article-title>The significance of responses of the genome to challenge.</article-title>
+          <source>Science</source>
+          <volume>226</volume>
+          <fpage>792</fpage>
+          <lpage>801</lpage>
+          <pub-id pub-id-type="pmid">15739260</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Johnson1">
+        <label>70</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Johnson</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Perez-Amador</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Lidder</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Green</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Mutants of Arabidopsis defective in a sequence-specific mRNA degradation pathway.</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <volume>97</volume>
+          <fpage>13991</fpage>
+          <lpage>13996</lpage>
+          <pub-id pub-id-type="pmid">11087822</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Lee2">
+        <label>71</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Tian</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name>
+              <surname>Black</surname>
+              <given-names>MA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Sensitivity of 70-mer oligonucleotides and cDNAs for microarray analysis of gene expression in Arabidopsis and its related species.</article-title>
+          <source>Plant Biotechnology Journal</source>
+          <volume>2</volume>
+          <fpage>45</fpage>
+          <lpage>57</lpage>
+          <pub-id pub-id-type="pmid">17166142</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Tian1">
+        <label>72</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tian</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Fong</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>NE</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Reversible histone acetylation and deacetylation mediate genome-wide, promoter-dependent and locus-specific changes in gene expression during plant development.</article-title>
+          <source>Genetics</source>
+          <volume>169</volume>
+          <fpage>337</fpage>
+          <lpage>345</lpage>
+          <pub-id pub-id-type="pmid">15371352</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Lam1">
+        <label>73</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lam</surname>
+              <given-names>LT</given-names>
+            </name>
+            <name>
+              <surname>Pickeral</surname>
+              <given-names>OK</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Rosenwald</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hurt</surname>
+              <given-names>EM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2001</year>
+          <article-title>Genomic-scale measurement of mRNA turnover and the mechanisms of action of the anti-cancer drug flavopiridol.</article-title>
+          <source>Genome Biol</source>
+          <volume>2</volume>
+          <fpage>RESEARCH0041</fpage>
+          <pub-id pub-id-type="pmid">11597333</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Eisen1">
+        <label>74</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eisen</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Spellman</surname>
+              <given-names>PT</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>PO</given-names>
+            </name>
+            <name>
+              <surname>Botstein</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Cluster analysis and display of genome-wide expression patterns.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>95</volume>
+          <fpage>14863</fpage>
+          <lpage>14868</lpage>
+          <pub-id pub-id-type="pmid">9843981</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Hazen1">
+        <label>75</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hazen</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Naef</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Quisel</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Gendron</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>HM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Exploring the transcriptional landscape of plant circadian rhythms using genome tiling arrays.</article-title>
+          <source>Genome Biology</source>
+          <volume>10</volume>
+        </element-citation>
+      </ref>
+      <ref id="pone.0024251-Zimmermann1">
+        <label>76</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zimmermann</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Laule</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Schmitz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hruz</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Bleuler</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Genevestigator Transcriptome Meta-Analysis and Biomarker Search Using Rice and Barley Gene Expression Databases (vol 1,pg 856, 2008).</article-title>
+          <source>Molecular Plant</source>
+          <volume>1</volume>
+          <fpage>1088</fpage>
+          <lpage>1088</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

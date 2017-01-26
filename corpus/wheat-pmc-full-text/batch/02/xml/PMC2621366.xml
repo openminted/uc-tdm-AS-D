@@ -1,0 +1,1893 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Bioinformatics</journal-id>
+      <journal-title>BMC Bioinformatics</journal-title>
+      <issn pub-type="epub">1471-2105</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">2621366</article-id>
+      <article-id pub-id-type="publisher-id">1471-2105-9-478</article-id>
+      <article-id pub-id-type="pmid">19014496</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2105-9-478</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Methodology Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>RIPCAL: a tool for alignment-based analysis of repeat-induced point mutations in fungal genomic sequences</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib id="A1" contrib-type="author">
+          <name>
+            <surname>Hane</surname>
+            <given-names>James K</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>j.hane@murdoch.edu.au</email>
+        </contrib>
+        <contrib id="A2" corresp="yes" contrib-type="author">
+          <name>
+            <surname>Oliver</surname>
+            <given-names>Richard P</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>roliver@murdoch.edu.au</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Australian Centre for Necrotrophic Fungal Pathogens, Faculty of Health Sciences, Murdoch University, South Street, Murdoch, 6150, Australia</aff>
+      <pub-date pub-type="collection">
+        <year>2008</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>12</day>
+        <month>11</month>
+        <year>2008</year>
+      </pub-date>
+      <volume>9</volume>
+      <fpage>478</fpage>
+      <lpage>478</lpage>
+      <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1471-2105/9/478"/>
+      <history>
+        <date date-type="received">
+          <day>28</day>
+          <month>4</month>
+          <year>2008</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>11</month>
+          <year>2008</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2008 Hane and Oliver; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2008</copyright-year>
+        <copyright-holder>Hane and Oliver; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0"/>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</p>
+          <!--<rdf xmlns="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1" xmlns:dcterms="http://purl.org/dc/terms"><Work xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:about=""><license rdf:resource="http://creativecommons.org/licenses/by/2.0"/><dc:type rdf:resource="http://purl.org/dc/dcmitype/Text"/><dc:author>               Hane
+               K
+               James
+               
+               j.hane@murdoch.edu.au
+            </dc:author><dc:title>
+            RIPCAL: a tool for alignment-based analysis of repeat-induced point mutations in fungal genomic sequences
+         </dc:title><dc:date>2008</dc:date><dcterms:bibliographicCitation>BMC Bioinformatics 9(1): 478-. (2008)</dcterms:bibliographicCitation><dc:identifier type="sici">1471-2105(2008)9:1&#x0003c;478&#x0003e;</dc:identifier><dcterms:isPartOf>urn:ISSN:1471-2105</dcterms:isPartOf><License rdf:about="http://creativecommons.org/licenses/by/2.0"><permits rdf:resource="http://web.resource.org/cc/Reproduction" xmlns=""/><permits rdf:resource="http://web.resource.org/cc/Distribution" xmlns=""/><requires rdf:resource="http://web.resource.org/cc/Notice" xmlns=""/><requires rdf:resource="http://web.resource.org/cc/Attribution" xmlns=""/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" xmlns=""/></License></Work></rdf>-->
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Repeat-induced point mutation (RIP) is a fungal-specific genome defence mechanism that alters the sequences of repetitive DNA, thereby inactivating coding genes. Repeated DNA sequences align between mating and meiosis and both sequences undergo C:G to T:A transitions. In most fungi these transitions preferentially affect CpA di-nucleotides thus altering the frequency of certain di-nucleotides in the affected sequences. The majority of previously published <italic>in silico </italic>analyses were limited to the comparison of ratios of pre- and post-RIP di-nucleotides in putatively RIP-affected sequences &#x2013; so-called RIP indices. The analysis of RIP is significantly more informative when comparing sequence alignments of repeated sequences. There is, however, a dearth of bioinformatics tools available to the fungal research community for alignment-based RIP analysis of repeat families.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We present RIPCAL <ext-link ext-link-type="uri" xlink:href="http://www.sourceforge.net/projects/ripcal"/>, a software tool for the automated analysis of RIP in fungal genomic DNA repeats, which performs both RIP index and alignment-based analyses. We demonstrate the ability of RIPCAL to detect RIP within known RIP-affected sequences of <italic>Neurospora crassa </italic>and other fungi. We also predict and delineate the presence of RIP in the genome of <italic>Stagonospora nodorum </italic>&#x2013; a Dothideomycete pathogen of wheat. We show that RIP has affected different members of the <italic>S. nodorum </italic>rDNA tandem repeat to different extents depending on their genomic contexts.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>The RIPCAL alignment-based method has considerable advantages over RIP indices for the analysis of whole genomes. We demonstrate its application to the recently published genome assembly of <italic>S. nodorum</italic>.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Over 100 fungal genome sequences have been obtained or are in the pipeline [<xref ref-type="bibr" rid="B1">1</xref>] and next-generation sequencing technologies will further accelerate the accumulation of data over the next decade. This rapidly growing array of sequence information presents many new challenges for analysis. There is an urgent need to develop and implement efficient tools to describe features of new genomes. Repeat-induced point mutation (RIP) is one such area of fungal biology requiring efficient analytical tools. RIP is an irreversible genome defence mechanism first detected in <italic>Neurospora crassa </italic>[<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B3">3</xref>] and subsequently in <italic>Magnaporthe grisea </italic>[<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B5">5</xref>], <italic>Podospora anserina </italic>[<xref ref-type="bibr" rid="B6">6</xref>] and <italic>Leptosphaeria maculans </italic>[<xref ref-type="bibr" rid="B7">7</xref>]. RIP is believed to be a defence against transposons, rendering them inactive and protecting sexual progeny from the expression of transposon genes.</p>
+      <p>Direct experimental observation of RIP requires both that the fungal species can be crossed under laboratory conditions and that the strain can be transformed with multiple copies of a transgene. Very few fungal species are amenable to such analysis and these procedures are slow in all cases. RIP-like processes can also be detected by <italic>in-silico </italic>analysis of repeated elements in whole or partial genomic sequences. Prior examples include <italic>Aspergillus fumigatus </italic>[<xref ref-type="bibr" rid="B8">8</xref>], <italic>Fusarium oxysporum </italic>[<xref ref-type="bibr" rid="B9">9</xref>-<xref ref-type="bibr" rid="B11">11</xref>], <italic>Aspergillus nidulans </italic>[<xref ref-type="bibr" rid="B12">12</xref>], <italic>Microbotryum violaceum </italic>[<xref ref-type="bibr" rid="B13">13</xref>], <italic>Magnaporthe oryzae </italic>[<xref ref-type="bibr" rid="B14">14</xref>], <italic>Aspergillus niger </italic>[<xref ref-type="bibr" rid="B15">15</xref>] and <italic>Penicillium chysogenum </italic>[<xref ref-type="bibr" rid="B15">15</xref>]. We now have the opportunity to detect and measure RIP <italic>in silico </italic>from genomic sequences of diverse species.</p>
+      <p>RIP involves transitions from C:G to T:A nucleotides in pairs of duplicated sequences during the dikaryotic phase between mating and meiosis [<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B3">3</xref>]. RIP changes are scattered throughout both sequences where pairs share more than ~80% identity [<xref ref-type="bibr" rid="B16">16</xref>] and are over 400 bp in length [<xref ref-type="bibr" rid="B17">17</xref>]. C:G transitions are not random within affected sequences. Particular CpN dinucleotides are preferentially altered over others (Table <xref ref-type="table" rid="T1">1</xref>). In <italic>N. crassa</italic>, CpA di-nucleotides were preferentially altered [<xref ref-type="bibr" rid="B18">18</xref>]. Thus a strong bias towards CpA to TpA changes (or TpG to TpA in the complementary strand) was observed. This resulted in a relative decrease in CpA and TpG and a corresponding increase in TpA di-nucleotides within RIP-affected sequences. These changes in di-nucleotide frequencies can be used to identify RIP-affected repeats by measuring the ratios of pre-RIP and post-RIP di-nucleotides within a set of repeated sequences. This generates a single statistic called a "RIP index" (plural: RIP indices). High frequencies of post-RIP and low frequencies of pre-RIP di-nucleotides are straightforward to detect by this method and useful for identifying RIP-affected sequences. The RIP indices TpA/Apt and (CpA+TpG)/(ApC+GpT), originally developed by Margolin <italic>et al </italic>[<xref ref-type="bibr" rid="B19">19</xref>], are commonly used to detect RIP <italic>in silico </italic>[<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B20">20</xref>]. TpA/ApT is the simplest index and measures the frequency of TpA RIP products with correction for false positives due to A:T rich regions. Higher values of TpA/ApT indicate a stronger RIP response. The index (CpA+TpG)/(ApC+GpT) is similar in principle to TpA/ApT but measures the depletion of the RIP targets CpA and TpG. In this case lower values of (CpA+TpG)/(ApC+GpT) are indicative of stronger RIP.</p>
+      <table-wrap position="float" id="T1">
+        <label>Table 1</label>
+        <caption>
+          <p>The four possible CpN&#x2192;TpN di-nucleotide RIP mutations and their reverse complements which form the basis for comparisons to determine the dominant form of RIP mutation in both alignment-based and statistical analyses.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td align="center">RIP Mutation</td>
+              <td align="center">Reverse Complement*</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center">CpA&#x2192;TpA</td>
+              <td align="center">TpG&#x2192;TpA</td>
+            </tr>
+            <tr>
+              <td align="center">CpC&#x2192;TpC</td>
+              <td align="center">GpG&#x2192;GpA</td>
+            </tr>
+            <tr>
+              <td align="center">CpG&#x2192;TpG</td>
+              <td align="center">CpG&#x2192;CpA</td>
+            </tr>
+            <tr>
+              <td align="center">CpT&#x2192;TpT</td>
+              <td align="center">ApG&#x2192;ApA</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <p>(*The forward orientation is often referred to in the text, however should be understood to include the reverse complement unless specified otherwise.)</p>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>RIP-indices are simple to calculate and do not require complete knowledge of the genome sequence or repeat families. They are also applicable to heavily mutated repeat families for which an alignment is not possible or questionable. However, RIP indices are insensitive tools which obscure many interesting features of RIP. These include the direction of RIP changes (i.e. which sequence is closer to the ancestral precursor of the RIP-affected sequence), the degree of RIP along the length of repeat alignments and differences in RIP profiles between members of the repeat class.</p>
+      <p>As RIP operates on aligned sequences, these questions are better answered using an alignment-based approach. Alignment-based analysis of RIP involves the multiple alignment of a repeat family and counting RIP mutations along the alignment for all sequences. This method has been previously used to identify RIP within the Ty1 transposon family of <italic>Microbotryum violaceum </italic>using the software tool Sequencher. Such manual calculation of RIP as was used by Hood <italic>et al </italic>[<xref ref-type="bibr" rid="B13">13</xref>] does not lend itself to whole genome RIP analysis. To enable a thorough, facile and automated analysis of RIP in the plethora of new fungal genomes, we have developed the free software tool RIPCAL (available at <ext-link ext-link-type="uri" xlink:href="http://www.sourceforge.net/projects/ripcal"/>. RIPCAL incorporates both RIP index and alignment-based methods. Its capabilities are demonstrated with examples taken from <italic>de novo</italic>-defined repeat families of the recently published <italic>Stagonospora nodorum </italic>genome, a major fungal pathogen of wheat [<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B22">22</xref>].</p>
+    </sec>
+    <sec>
+      <title>Results</title>
+      <sec>
+        <title>Validation of RIP detection by the alignment-based method</title>
+        <p>The RIPCAL alignment-based method was applied to both the 5S rDNA repeat family of <italic>Neurospora crassa</italic>, which is reportedly free from RIP mutation due to its short sequence length [<xref ref-type="bibr" rid="B17">17</xref>], and to the Tad1 transposons of <italic>N. crassa</italic>, which are reported to be heavily prone to CpA&#x2192;TpA RIP mutation [<xref ref-type="bibr" rid="B23">23</xref>]. The 5S rDNA and Tad1 repeat families served as negative and positive controls for RIP respectively. Analysis showed low levels of RIP mutation among 5S rDNAs, whereas high levels of RIP mutation were detected amongst Tad1 transposons as expected (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>). Interestingly, while CpA&#x2194;TpA changes were highly increased in the Tad1 family, these were overshadowed by a major increase in CpT&#x2194;TpT mutation, which has not been previously detected [<xref ref-type="bibr" rid="B23">23</xref>]. This may be due to the fact that the former study compared Tad1 sequences between different strains of <italic>Neurospora crassa</italic>, whereas this comparison was restricted to all repeats within a single strain.</p>
+      </sec>
+      <sec>
+        <title>Identification of the dominant CpN to TpN di-nucleotide mutation in RIP-affected sequences</title>
+        <p><italic>De novo </italic>RIP analysis of a fungal repeat unit first requires the identification of the most affected CpN di-nucleotides. The MATE transposon repeat family of <italic>Aspergillus nidulans </italic>and the Ty1 Copia-like transposon family of the Basidiomycete <italic>Microbotryum violaceum </italic>were analysed by RIPCAL. <italic>A. nidulans </italic>MATE repeats are reported to exhibit a dual preference for CpG&#x2192;TpG and CpA&#x2192;TpA RIP mutation in descending order of magnitude [<xref ref-type="bibr" rid="B24">24</xref>]. The Ty1 repeats of <italic>M. violaceum </italic>were reported to exhibit a strong preference for CpG&#x2192;TpG di-nucleotide RIP mutation [<xref ref-type="bibr" rid="B13">13</xref>]. High levels of CpG&#x2192;TpG and CpA&#x2192;TpA RIP mutation were detected in the MATE transposons (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>). RIPCAL also detected the CpG&#x2192;TpG bias in the Ty1 repeats of <italic>M. violaceum </italic>(Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>). Hood <italic>et al </italic>have reported preferential mutation of the tri-nucleotide TpCpG to TpTpG in Ty1 [<xref ref-type="bibr" rid="B13">13</xref>], however RIPCAL is not currently designed to detect a tri-nucleotide RIP bias.</p>
+      </sec>
+      <sec>
+        <title>Di-nucleotide frequency and index analysis of RIP mutation in <italic>Stagonospora nodorum</italic></title>
+        <p>RIPCAL di-nucleotide frequency analyses of the previously identified de novo repeat families Molly, Pixie, Elsa, Y1 (rDNA repeat), R8, R9, R10, R22, R25, R31, R37, R38, R39, R51, X0, X3, X11, X12, X15, X23, X26, X28, X35, X36, X48 and X96 [<xref ref-type="bibr" rid="B21">21</xref>] of the <italic>S. nodorum </italic>genome were performed and indicated depletion of the CpA, CpC, CpG, GpG and TpG di-nucleotide targets of RIP-mutation (Figure <xref ref-type="fig" rid="F1">1</xref>, Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>). Of the RIP di-nucleotide products, only TpA showed a corresponding increase. This suggests that CpA to TpA is the dominant form of CpN&#x2192;TpN di-nucleotide mutation in repeats of <italic>S. nodorum</italic>, as observed in <italic>N. crassa </italic>and <italic>P. anserina </italic>[<xref ref-type="bibr" rid="B6">6</xref>,<xref ref-type="bibr" rid="B20">20</xref>]. This is corroborated by RIP index analysis. RIP indices for TpA/ApT were well in excess of <italic>S. nodorum </italic>non-repetitive control sequences indicating high frequencies of the TpA RIP product in the repeat families. The (CpA+TpG)/(ApC+GpT) index was below control levels indicating depletion of the CpA and TpG RIP targets in the repeats. Both dinucleotide frequency and RIP index analyses strongly indicated that the mutation of CpA to TpA was the dominant form of di-nucleotide RIP mutation in the repeat families of <italic>S. nodorum </italic>(Table <xref ref-type="table" rid="T2">2</xref>, Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>).</p>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>Analysis of <italic>Stagonospora nodorum</italic> repeat families for evidence of RIP ranked by CpA&#x2194;TpA dominance.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <td align="center">Repeat Family</td>
+                <td align="center">
+                  <inline-formula>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M1" name="1471-2105-9-478-i1" overflow="scroll">
+                      <mml:semantics>
+                        <mml:mrow>
+                          <mml:mfrac>
+                            <mml:mrow>
+                              <mml:mi>T</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>A</mml:mi>
+                            </mml:mrow>
+                            <mml:mrow>
+                              <mml:mi>A</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>T</mml:mi>
+                            </mml:mrow>
+                          </mml:mfrac>
+                        </mml:mrow>
+                      </mml:semantics>
+                    </mml:math>
+                  </inline-formula>
+                </td>
+                <td align="center">
+                  <inline-formula>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M2" name="1471-2105-9-478-i2" overflow="scroll">
+                      <mml:semantics>
+                        <mml:mrow>
+                          <mml:mfrac>
+                            <mml:mrow>
+                              <mml:mi>C</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>A</mml:mi>
+                              <mml:mo>+</mml:mo>
+                              <mml:mi>T</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>G</mml:mi>
+                            </mml:mrow>
+                            <mml:mrow>
+                              <mml:mi>A</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>C</mml:mi>
+                              <mml:mo>+</mml:mo>
+                              <mml:mi>G</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>T</mml:mi>
+                            </mml:mrow>
+                          </mml:mfrac>
+                        </mml:mrow>
+                      </mml:semantics>
+                    </mml:math>
+                  </inline-formula>
+                </td>
+                <td align="center">CpA&#x2194;TpA Dominance</td>
+                <td align="center">Alignment Length</td>
+                <td align="center">Description/Homology</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">R8</td>
+                <td align="center">1.70 &#xB1; 0.03</td>
+                <td align="center">0.74 &#xB1; 0.02</td>
+                <td align="center">2.96</td>
+                <td align="center">9548</td>
+                <td align="left">Ubiquitin conjugating enzyme</td>
+              </tr>
+              <tr>
+                <td align="center">X0</td>
+                <td align="center">1.75 &#xB1; 0.02</td>
+                <td align="center">0.49 &#xB1; 0.02</td>
+                <td align="center">2.13</td>
+                <td align="center">4103</td>
+                <td align="left">Non LTR transposon</td>
+              </tr>
+              <tr>
+                <td align="center">R10</td>
+                <td align="center">1.76 &#xB1; 0.06</td>
+                <td align="center">0.56 &#xB1; 0.05</td>
+                <td align="center">1.91</td>
+                <td align="center">1360</td>
+                <td align="left">Unknown</td>
+              </tr>
+              <tr>
+                <td align="center">R9</td>
+                <td align="center">1.99 &#xB1; 0.03</td>
+                <td align="center">0.48 &#xB1; 0.02</td>
+                <td align="center">1.88</td>
+                <td align="center">4483</td>
+                <td align="left">Non LTR transposon</td>
+              </tr>
+              <tr>
+                <td align="center">X48</td>
+                <td align="center">1.35 &#xB1; 0.11</td>
+                <td align="center">1.26 &#xB1; 0.13</td>
+                <td align="center">1.82</td>
+                <td align="center">275</td>
+                <td align="left">Sub-telomeric repeat</td>
+              </tr>
+              <tr>
+                <td align="center">rDNA Non-tandem</td>
+                <td align="center">2.68 &#xB1; 0.18</td>
+                <td align="center">0.69 &#xB1; 0.04</td>
+                <td align="center">1.50</td>
+                <td align="center">9938</td>
+                <td align="left">Non-array rDNA repeats &#x2265; 1 kb</td>
+              </tr>
+              <tr>
+                <td align="center">X35</td>
+                <td align="center">1.76 &#xB1; 0.07</td>
+                <td align="center">0.58 &#xB1; 0.07</td>
+                <td align="center">1.50</td>
+                <td align="center">1185</td>
+                <td align="left">Sub-telomeric repeat</td>
+              </tr>
+              <tr>
+                <td align="center">MOLLY</td>
+                <td align="center">1.90 &#xB1; 0.06</td>
+                <td align="center">0.40 &#xB1; 0.04</td>
+                <td align="center">1.21</td>
+                <td align="center">1946</td>
+                <td align="left">Mariner-like transposon</td>
+              </tr>
+              <tr>
+                <td align="center">R22</td>
+                <td align="center">1.73 &#xB1; 0.08</td>
+                <td align="center">0.27 &#xB1; 0.04</td>
+                <td align="center">1.20</td>
+                <td align="center">710</td>
+                <td align="left">Sub-telomeric repeat</td>
+              </tr>
+              <tr>
+                <td align="center">X26</td>
+                <td align="center">1.70 &#xB1; 0.03</td>
+                <td align="center">0.52 &#xB1; 0.02</td>
+                <td align="center">1.16</td>
+                <td align="center">5034</td>
+                <td align="left">Sub-telomeric repeat/Transposon remnant</td>
+              </tr>
+              <tr>
+                <td align="center">R31</td>
+                <td align="center">1.65 &#xB1; 0.04</td>
+                <td align="center">0.44 &#xB1; 0.04</td>
+                <td align="center">0.99</td>
+                <td align="center">3119</td>
+                <td align="left">Unknown</td>
+              </tr>
+              <tr>
+                <td align="center">X36</td>
+                <td align="center">1.97 &#xB1; 0.18</td>
+                <td align="center">0.44 &#xB1; 0.10</td>
+                <td align="center">0.89</td>
+                <td align="center">516</td>
+                <td align="left">Unknown</td>
+              </tr>
+              <tr>
+                <td align="center">X96</td>
+                <td align="center">1.87 &#xB1; 0.19</td>
+                <td align="center">0.56 &#xB1; 0.18</td>
+                <td align="center">0.87</td>
+                <td align="center">319</td>
+                <td align="left">Unknown</td>
+              </tr>
+              <tr>
+                <td align="center">ELSA</td>
+                <td align="center">1.67 &#xB1; 0.04</td>
+                <td align="center">0.46 &#xB1; 0.05</td>
+                <td align="center">0.86</td>
+                <td align="center">5273</td>
+                <td align="left">Copia-like transposon</td>
+              </tr>
+              <tr>
+                <td align="center">X11</td>
+                <td align="center">2.04 &#xB1; 0.03</td>
+                <td align="center">0.38 &#xB1; 0.02</td>
+                <td align="center">0.83</td>
+                <td align="center">7570</td>
+                <td align="left">Gypsy-like transposon</td>
+              </tr>
+              <tr>
+                <td align="center">X28</td>
+                <td align="center">2.22 &#xB1; 0.13</td>
+                <td align="center">0.39 &#xB1; 0.03</td>
+                <td align="center">0.83</td>
+                <td align="center">1975</td>
+                <td align="left">Unknown</td>
+              </tr>
+              <tr>
+                <td align="center">PIXIE</td>
+                <td align="center">1.84 &#xB1; 0.07</td>
+                <td align="center">0.36 &#xB1; 0.03</td>
+                <td align="center">0.77</td>
+                <td align="center">1918</td>
+                <td align="left">Mariner-like transposon</td>
+              </tr>
+              <tr>
+                <td align="center">X12</td>
+                <td align="center">2.06 &#xB1; 0.07</td>
+                <td align="center">0.33 &#xB1; 0.04</td>
+                <td align="center">0.67</td>
+                <td align="center">2059</td>
+                <td align="left">Gypsy-like transposon</td>
+              </tr>
+              <tr>
+                <td align="center">X3</td>
+                <td align="center">1.91 &#xB1; 0.03</td>
+                <td align="center">0.74 &#xB1; 0.01</td>
+                <td align="center">0.63</td>
+                <td align="center">10673</td>
+                <td align="left">Helicase</td>
+              </tr>
+              <tr>
+                <td align="center">X15</td>
+                <td align="center">1.87 &#xB1; 0.04</td>
+                <td align="center">0.33 &#xB1; 0.02</td>
+                <td align="center">0.61</td>
+                <td align="center">6437</td>
+                <td align="left">Sub-telomeric repeat/Gypsy-like transposon</td>
+              </tr>
+              <tr>
+                <td align="center">R39</td>
+                <td align="center">1.92 &#xB1; 0.08</td>
+                <td align="center">0.30 &#xB1; 0.03</td>
+                <td align="center">0.59</td>
+                <td align="center">2102</td>
+                <td align="left">Unknown</td>
+              </tr>
+              <tr>
+                <td align="center">rDNA Tandem</td>
+                <td align="center">2.08 &#xB1; 0.09</td>
+                <td align="center">0.94 &#xB1; 0.02</td>
+                <td align="center">0.53</td>
+                <td align="center">9938</td>
+                <td align="left">rDNA repeats in tandem array</td>
+              </tr>
+              <tr>
+                <td align="center">R37</td>
+                <td align="center">1.85 &#xB1; 0.03</td>
+                <td align="center">0.28 &#xB1; 0.02</td>
+                <td align="center">0.49</td>
+                <td align="center">2264</td>
+                <td align="left">Mariner-like transposon</td>
+              </tr>
+              <tr>
+                <td align="center">R51</td>
+                <td align="center">1.93 &#xB1; 0.07</td>
+                <td align="center">0.27 &#xB1; 0.03</td>
+                <td align="center">0.47</td>
+                <td align="center">870</td>
+                <td align="left">Unknown</td>
+              </tr>
+              <tr>
+                <td align="center">X23</td>
+                <td align="center">1.85 &#xB1; 0.09</td>
+                <td align="center">0.31 &#xB1; 0.03</td>
+                <td align="center">0.45</td>
+                <td align="center">613</td>
+                <td align="left">Unknown</td>
+              </tr>
+              <tr>
+                <td align="center">rDNA Short</td>
+                <td align="center">3.55 &#xB1; 0.39</td>
+                <td align="center">0.25 &#xB1; 0.03</td>
+                <td align="center">0.26</td>
+                <td align="center">280*</td>
+                <td align="left">Non-array rDNA repeats &lt; 1 kb</td>
+              </tr>
+              <tr>
+                <td align="center">R25</td>
+                <td align="center">2.16 &#xB1; 0.15</td>
+                <td align="center">0.31 &#xB1; 0.03</td>
+                <td align="center">0.25</td>
+                <td align="center">3407</td>
+                <td align="left">Transposon remnant</td>
+              </tr>
+              <tr>
+                <td align="center">R38</td>
+                <td align="center">2.10 &#xB1; 0.18</td>
+                <td align="center">0.24 &#xB1; 0.05</td>
+                <td align="center">0.20</td>
+                <td align="center">391</td>
+                <td align="left">Unknown</td>
+              </tr>
+              <tr>
+                <td align="center">Non-Repetitive Control</td>
+                <td align="center">0.83 &#xB1; 0.01</td>
+                <td align="center">1.25 &#xB1; 0.00</td>
+                <td align="center">N/A</td>
+                <td align="center">N/A</td>
+                <td align="left">Genomic regions not corresponding to repeat matches</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>Two RIP index scores are given within a 95% confidence interval. The alignment-based comparison of CpA&#x2194;TpA RIP-mutation is used to give dominance score. CpA&#x2194;TpA dominance is a numerical indicator of frequency of that mutation over other CpN&#x2194;TpN mutations as described in the methods. Values for the rDNA repeat are sub-classified according to physical location and length. The length of the alignment is also given. (*rDNA short alignments are a subset of the full-length rDNA alignment.)</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig position="float" id="F1">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Fold changes in di-nucleotide abundances for all repeat families of <italic>Stagonospora nodorum </italic>compared to non-repetitive control sequence on a Log<sub>10 </sub>scale</bold>. This conforms to the expected pattern associated with classical CpA&#x2192;TpA type RIP mutation: high TpA and low CpA and TpG abundances.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-9-478-1"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Alignment-based analysis of RIP mutation in <italic>Stagonospora nodorum</italic></title>
+        <p>Repeat families of <italic>S. nodorum </italic>were aligned and scanned for RIP-like di-nucleotide changes using RIPCAL. RIP mutation statistics for all repeat families of <italic>S. nodorum </italic>are summarised in Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>. Alignment-based analysis indicated that the dominant form of CpN-targeted RIP mutation in <italic>S. nodorum </italic>repeats was CpA to TpA as observed by index analysis. High levels of CpT to TpT mutation were also observed in some repeat classes (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>).</p>
+        <p>In this analysis we introduce a statistic called 'RIP dominance'. RIP dominance is the ratio of a particular CpN&#x2194;TpN RIP mutation over the sum of the other 3 alternative CpN&#x2194;TpN mutations within a multiple alignment (or sub-alignment). This was used to determine the relative strength of CpA to TpA type RIP mutations in <italic>S. nodorum </italic>(Table <xref ref-type="table" rid="T2">2</xref>).</p>
+        <p>RIPCAL analysis of the XO repeat family of predicted non-LTR transposons is shown in Figure <xref ref-type="fig" rid="F2">2</xref>. The alignment (Figure <xref ref-type="fig" rid="F2">2A</xref>) displays the range of repeat sizes, sequence coverages and locations of RIP mutation for individual repeats. The repeat with the highest total G:C content was chosen as the least RIP-mutated model for comparison to all aligned sequences. CpN&#x2194;TpN di-nucleotide changes are colour-coded and show that CpA to TpA changes far outweighed all other CpN to TpN di-nucleotide mutations. Figure <xref ref-type="fig" rid="F2">2B</xref> shows the same data summarised as a rolling frequency graph. The RIP dominance for CpA&#x2194;TpA mutation in XO was 2.13, meaning that the CpA&#x2194;TpA mutation was more than twice as frequent as the sum of CpC, CpG and CpT-targeted RIP mutations. Each repeat element in this family showed a relatively equal degree of RIP. A slight tendency towards higher RIP incidence was found towards the ends of the alignment. XO appears to be a simple repeat unit which is highly and evenly RIP-affected.</p>
+        <fig position="float" id="F2">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>RIPCAL analysis of the X0 repeat family of <italic>Stagonospora nodorum</italic>, representative of a repeat family exhibiting strongly dominant classical CpA&#x2192;TpA type RIP mutation</bold>. A) multiple alignment of the putative transposon repeat family X0 compared to highest G:C content model. Incomplete repeated regions are typical for repeat family alignments illustrated by the blocks in white in panel A. Black = match; grey = mismatch; white = gap. Mismatches corresponding to selected di-nucleotide changes are coloured as indicated. B) Overall RIP mutation frequency graph over a 50 bp scanning window, corresponding to the alignment above, demonstrating the overall dominance of the CpA&#x2194;TpA mutation over other CpN&#x2194;TpN mutations for the X0 repeat family.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-9-478-2"/>
+        </fig>
+        <p>The <italic>S. nodorum </italic>rDNA repeat family provided a more complex example. <italic>S. nodorum </italic>Y1/rDNA repeats are located within a large tandem array on scaffold 5 and as non-tandem remnants scattered elsewhere throughout the genome. The non-tandem remnants were sub-divided into those longer or shorter than 1 kb. rDNA sub-classes differed markedly from the non-repetitive control by changes in di-nucleotide frequency (Figure <xref ref-type="fig" rid="F3">3</xref>). Tandem rDNA repeats appeared to be the least RIP affected in terms of Cp(A/C/G) depletion and increases in TpA, followed by the non-tandem and short repeats. RIP index analysis showed a similar trend (Table <xref ref-type="table" rid="T2">2</xref>). Tandem, non-tandem and short rDNA repeats had TpA/ApT index scores of 2.08, 2.68 and 3.55 respectively. These values were among the highest TpA/ApT scores of all repeat classes suggesting extreme RIP mutation. The (CpA + TpG)/(ApC + GpT) index gave a similar result. Tandem, non-tandem and short rDNA repeats scored 0.94, 0.69 and 0.25 respectively. These values were among the lowest for all repeat classes, again suggesting extreme RIP mutation in the rDNA repeat sub-classes. In all cases, the short rDNA repeats had particularly extreme scores, suggesting that these were the most RIP-affected.</p>
+        <fig position="float" id="F3">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Fold changes in di-nucleotide abundances between <italic>Stagonospora nodorum </italic>rDNA repeat sub-categories</bold>. Tandem (black), non-tandem (light-grey) and short &lt; 1 kb (dark grey) on a Log<sub>10 </sub>scale. Tandem rDNA repeats exhibit lesser variations in TpA, CpA and TpG counts, therefore are less RIP-affected than non-tandem and short &lt; 1 kb rDNA repeats.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-9-478-3"/>
+        </fig>
+        <p>When analysed by alignment (Figure <xref ref-type="fig" rid="F4">4</xref>), a more comprehensive picture emerged. The frequencies of CpN to TpN mutations (Figure <xref ref-type="fig" rid="F4">4B</xref>) indicated that CpA to TpA mutation was the dominant form of RIP mutation for the rDNA repeat family. However the distribution of RIP mutation within the alignment (Figure <xref ref-type="fig" rid="F4">4A</xref>) shows distinct differences in RIP profiles between the three rDNA sub-classes. The tandem rDNA repeats were generally unaffected by CpN-targeted mutation. Interestingly, a single tandem repeat was identified that had undergone extensive CpA to TpA changes. This proved to be the 5' terminal repeat within the rDNA array. The long non-tandem repeats were heavily affected by CpA to TpA RIP mutation, especially in the central regions. The short repeats showed no evidence of CpA to TpA RIP but did exhibit a high level of CpT to TpT RIP mutation. The CpA&#x2194;TpA RIP dominance score for non-tandem rDNA repeats was 1.5, whereas the tandem and short sub-classes had low scores of 0.53 and 0.26 (Table <xref ref-type="table" rid="T2">2</xref>). This indicated heavy RIP mutation in non-tandem repeats and absence or low levels of RIP in tandem and short rDNA repeats.</p>
+        <fig position="float" id="F4">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>RIPCAL analysis of the rDNA tandem repeat of <italic>Stagonospora nodorum</italic></bold>. A) multiple alignment of the rDNA repeat family compared to highest G:C content model. Annotation is as for figure 3. Classical CpA&#x2194;TpA type RIP mutations are generally limited to full length rDNA-like repeats not located within the rDNA tandem array. One copy within the rDNA array exhibits RIP-like alterations. B) Overall RIP mutation frequency graph over a 50 bp scanning window, corresponding to the alignment above, demonstrating even dominance of CpA&#x2194;TpA changes in the non-array full-length repeats except near each end of the alignment.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-9-478-4"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec>
+      <title>Discussion</title>
+      <p>The alignment-based method employed by RIPCAL is an efficient, accurate and reliable method of RIP detection and characterisation. RIPCAL successfully detected the presence and absence of RIP in the positive and negative <italic>N. crassa </italic>control sequences. RIPCAL also accurately determined the preferential CpN mutation bias in RIP-affected sequences. The CpG bias in Ty1 repeats of <italic>M. violaceum </italic>and the dual CpG and CpA bias in MATE repeats of <italic>A. nidulans </italic>were also identified consistent with previously published results [<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B24">24</xref>].</p>
+      <p>Di-nucleotide frequency, RIP index and alignment-based analyses all indicated that CpA to TpA mutation was the dominant CpN-targeted mutation in the repeat families of <italic>S. nodorum</italic>. This preference is common to most known RIP-affected fungi. The high incidence of CpT to TpT mutation detected by alignment is less common, but has been observed in <italic>Magnaporthe grisea </italic>accompanying CpA-targeted mutation in RIP-affected sequences [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B5">5</xref>]. However high levels of CpT to TpT mutation within <italic>S. nodorum </italic>short rDNA repeats, which are presumably unaffected by RIP, suggest that CpT-targeted mutation may not related to RIP in <italic>S. nodorum</italic>. Further experimental evidence is required to confirm to relevance of CpT to TpT mutation to RIP in <italic>S. nodorum </italic>and other Fungi.</p>
+      <p>RIPCAL alignment-based analysis displays the physical distribution of RIP along an alignment as shown in for the X0 repeat family in Figure <xref ref-type="fig" rid="F2">2</xref> and the Y1/rDNA repeat family in Figure <xref ref-type="fig" rid="F4">4</xref>. This allows detection of individual repeats with anomalous changes, such as the single RIP-affected tandem rDNA repeat (Figure <xref ref-type="fig" rid="F4">4A</xref>). The lack of CpA to TpA mutation within the tandem rDNA repeats adds further supporting evidence for RIP-resistance within the rDNA nucleolus organiser region (NOR) [<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B25">25</xref>]. However, the RIP-affected tandem repeat, located at the terminus of the rDNA array suggests that protection from RIP within the NOR has a finite range.</p>
+      <p>The close examination of the <italic>S. nodorum </italic>rDNA repeat sub-classes by alignment highlighted the poor performance of the RIP index based analyses. Differences in the extent of RIP mutation between DNA sub-classes by both TpA/ApT and (CpA + TpG)/(ApC + GpT) RIP indices were not as expected. This was particularly true for the short rDNA repeats which were predicted to exhibit the highest levels of RIP. Furthermore, both RIP indices predicted extreme RIP mutation in all sub-classes, which was only expected for the non-tandem rDNA repeats. Repeat order ranked by CpA&#x2194;TpA dominance is clearly different from that produced by either RIP index method (Table <xref ref-type="table" rid="T2">2</xref>). The relationship between RIP index and CpA&#x2194;TpA dominance is shown in Figure <xref ref-type="fig" rid="F5">5A</xref>. There is no correlation (R<sup>2 </sup>= 0.135) between the TpA/ApT RIP index and the CpA&#x2194;TpA dominance of <italic>S. nodorum </italic>repeats. Furthermore there was no significant correlation (R<sup>2 </sup>= 0.090) between the two RIP indices (Figure <xref ref-type="fig" rid="F5">5B</xref>). We conclude that simple RIP indices are not reliable indicators of RIP mutation.</p>
+      <fig position="float" id="F5">
+        <label>Figure 5</label>
+        <caption>
+          <p><bold>Comparison of RIP indices with alignment-based RIPCAL comparisons for repeat families of <italic>Stagonospora nodorum</italic></bold>. A) Comparison of TpA/ApT RIP index with the alignment-based CpA&#x2194;TpA dominance. A positive correlation was expected however was not observed. B) Comparison of the TpA/ApT and (CpA+TpG)/(ApC+GpT) RIP indices. A negative correlation would be expected. Repeat families exhibiting low levels of RIP by alignment based analysis are represented by black dots (CpA&#x2194;TpA dominance &lt; 0.5); medium families are grey (0.5 &#x2264; CpA&#x2194;TpA dominance &#x2265; 1.2); and high are white (CpA&#x2194;TpA dominance &gt; 1.2).</p>
+        </caption>
+        <graphic xlink:href="1471-2105-9-478-5"/>
+      </fig>
+      <p>The length of a <italic>S. nodorum </italic>repeat class and the degree of RIP mutation did not appear to be related (Table <xref ref-type="table" rid="T2">2</xref>). This was highlighted by X48, a short sub-telomeric repeat, which had a high CpA&#x2194;TpA dominance score of 1.82. Its length of 275 bp was well below the 400 bp length considered the minimum for RIP in <italic>N. crassa </italic>[<xref ref-type="bibr" rid="B17">17</xref>] and the 280 bp length of the S. nodorum short rDNA repeats (which do not display CpA to TpA changes). Alignment-based analysis predicted that sub-telomeric repeats were among the most RIP-susceptible. This may explain the high CpA&#x2194;TpA dominance of X48 as chromosome ends may be physically more accessible to the molecular RIP machinery. Alternatively, the X48 repeat may be recognised in conjunction with adjacent repeats as a single unit. Unlike the NOR, fungal telomeres do not appear to be immune to RIP. RIP-like changes have also been reported in the sub-telomeric gene <italic>TLH </italic>of <italic>Magnaporthe oryzae </italic>[<xref ref-type="bibr" rid="B14">14</xref>].</p>
+    </sec>
+    <sec>
+      <title>Conclusion</title>
+      <p>We present RIPCAL as a versatile and efficient tool for the analysis of RIP which simplifies existing index-based analyses and adds alignment-based RIP analysis as a feasible alternative for whole genome analysis. These analyses highlight significant deficiencies in index-based methods of RIP detection. The alignment-based approach is biologically relevant and reveals novel features and predictions that can be tested experimentally in appropriate organisms. Sifting through the expected flood of fungal genome sequences for RIP-like phenomena may provide insights on fungal lifestyle, genomics and evolution.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <p>RIPCAL has multiple modes of operation involving different combinations of RIP index and alignment-based methods. RIPCAL can be run in either command-line or graphical modes and is Perl-based. It is also compiled as a Windows executable. Dependent on the analysis method, RIPCAL accepts sequence input in Fasta format, pre-aligned sequence input in Fasta or ClustalW format and repeat coordinate input in either version 2 or 3 GFF format. If pre-aligned input is not provided, RIPCAL can interface with a local installation of ClustalW [<xref ref-type="bibr" rid="B26">26</xref>]. Refer to Additional file <xref ref-type="supplementary-material" rid="S3">3</xref> for more detailed information.</p>
+      <sec>
+        <title>RIP index analysis</title>
+        <p>Index analysis can proceed from either direct Fasta input, or from both Fasta and GFF coordinate inputs. RIP index analyses count frequencies of single nucleotides and the 16 possible di-nucleotide combinations, which are used to calculate RIP indices. Sequences were divided into sub-sequences of &#x2264; 100 bp length and di-nucleotide counts were normalised for N content by:</p>
+        <p>
+          <disp-formula id="bmcM1">
+            <label>(1)</label>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M3" name="1471-2105-9-478-i3" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>C</mml:mi>
+                      <mml:mi>o</mml:mi>
+                      <mml:mi>u</mml:mi>
+                      <mml:mi>n</mml:mi>
+                      <mml:mi>t</mml:mi>
+                      <mml:mo>&#xD7;</mml:mo>
+                      <mml:mo stretchy="false">(</mml:mo>
+                      <mml:mi>L</mml:mi>
+                      <mml:mi>e</mml:mi>
+                      <mml:mi>n</mml:mi>
+                      <mml:mi>g</mml:mi>
+                      <mml:mi>t</mml:mi>
+                      <mml:mi>h</mml:mi>
+                      <mml:mo>&#x2212;</mml:mo>
+                      <mml:mi>N</mml:mi>
+                      <mml:mi>c</mml:mi>
+                      <mml:mi>o</mml:mi>
+                      <mml:mi>u</mml:mi>
+                      <mml:mi>n</mml:mi>
+                      <mml:mi>t</mml:mi>
+                      <mml:mo stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>L</mml:mi>
+                      <mml:mi>e</mml:mi>
+                      <mml:mi>n</mml:mi>
+                      <mml:mi>g</mml:mi>
+                      <mml:mi>t</mml:mi>
+                      <mml:mi>h</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>Where <italic>Count </italic>= di-nucleotide count, <italic>Length </italic>= length of sub-sequence and <italic>Ncount </italic>= count of unknown 'N' bases in sequence. Di-nucleotide counts were ignored where (<italic>Length </italic>- <italic>Ncount</italic>) &lt; 10. The following indices have been published previously [<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B27">27</xref>]:</p>
+        <p>
+          <disp-formula id="bmcM2">
+            <label>(2)</label>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M4" name="1471-2105-9-478-i4" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>A</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>A</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>T</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM3">
+            <label>(3)</label>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M5" name="1471-2105-9-478-i5" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>C</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>A</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>G</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>A</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>C</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>G</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>T</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>Additional RIP indices that can be defined are of the form (CpN+NpG)/(TpN+NpA), which represents a ratio of conversion of pre-RIP di-nucleotides to post-RIP di-nucleotides, for the characteristic di-nucleotide mutation CpN&#x2192;TpN and its reverse complement NpG&#x2192;NpA (Table <xref ref-type="table" rid="T1">1</xref>):</p>
+        <p>
+          <disp-formula id="bmcM4">
+            <label>(4)</label>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M6" name="1471-2105-9-478-i6" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>C</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>A</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>G</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>A</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM5">
+            <label>(5)</label>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M7" name="1471-2105-9-478-i7" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>C</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>C</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>G</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>G</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>C</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>G</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>A</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM6">
+            <label>(6)</label>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M8" name="1471-2105-9-478-i8" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>C</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>G</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>G</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>C</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>A</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM7">
+            <label>(7)</label>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M9" name="1471-2105-9-478-i9" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>C</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>T</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>A</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>G</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>T</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>A</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>A</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>When using GFF input, RIP index data for repeat features was compared to a non-repetitive control family. If repeat family information is contained within the GFF input (via the target attribute) then this process was also separated by family. Fold changes between repeat families and the control were determined by &#x394;NpN = (repeat NpN count)/(control NpN count), where NpN represents any di-nucleotide combination.</p>
+      </sec>
+      <sec>
+        <title>RIP index sequence scan</title>
+        <p>RIP indices are calculated over a user-defined window (default 200 bp). Using index thresholds as criteria for RIP, RIP-affected sub-regions were predicted and the output is given in GFF format. The default criteria for RIP within a sequence window were based on previously published data [<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B27">27</xref>].</p>
+        <p>
+          <disp-formula>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M10" name="1471-2105-9-478-i10" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>A</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>A</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>T</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mo>&#x2265;</mml:mo>
+                  <mml:mn>0.89</mml:mn>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M11" name="1471-2105-9-478-i11" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>C</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>T</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>A</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>T</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>A</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>C</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>G</mml:mi>
+                      <mml:mi>p</mml:mi>
+                      <mml:mi>T</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mo>&#x2264;</mml:mo>
+                  <mml:mn>1.03</mml:mn>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>Where two windows meeting the above criteria overlap, the predicted sub-region was extended (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). Sub-regions were subject to a minimum size threshold (default 300 bp) reflecting the existence of an experimentally observed size threshold for RIP [<xref ref-type="bibr" rid="B17">17</xref>]. Non-published indices were excluded by default, but can be employed as additional/replacement criteria using thresholds based on results obtained in this paper (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>). This method can be used to predict <italic>de novo </italic>ancient/non-repeated RIP-affected sequences. However, caution should be used with this method as the above threshold values are calibrated for RIP in <italic>N. crassa</italic>.</p>
+      </sec>
+      <sec>
+        <title>Alignment-based analysis</title>
+        <p>RIPCAL's alignment-based analysis indicates the presence, type and location of a putatively RIP-generated mutation within each copy of a repeat family. The input is accepted as Fasta or as both Fasta and GFF inputs. "Repeat_region" features in the GFF input were aligned by family via ClustalW (Additional file <xref ref-type="supplementary-material" rid="S4">4</xref>, Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>). The prevalence of internal direct repeats within repeat families can result in poor alignment. Therefore the ClustalW default parameters have been adjusted for fast alignment, pairwise window length = 50 and k-tuple word-size = 2 to improve repeat family alignment. In some cases custom alignment parameters or manual alignment curation was used and is recommended. Sequence-only inputs are also accepted as pre-aligned Fasta files. It is assumed for sequence-only inputs that all sequences belong to the same family.</p>
+        <p>Aligned sequences are compared to a model sequence which can be either a sequence with highest total G:C content in the alignment, the alignment consensus or a user-defined sequence. The default model selection method is highest total G:C content. As RIP mutations deplete the G:C content, this default is assumed to select the least RIP-affected sequence as the model. RIPCAL also provides alternative methods of model selection, one of which is to define a majority consensus of the aligned sequences. The degenerate nucleotide code is used if two or more nucleotides are present in equal frequency (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). The third option is for the model to be user-defined. This would be appropriate if the non-RIP-affected sequence was known, as in the case of experimentally transformed strains.</p>
+        <p>Following alignment and choice of model, the mutation frequencies are compared along the alignment for each sequence. Where the consensus sequence is degenerate, the probability of mutation at that location is added to the total count. The final output is a repeat family alignment and corresponding RIP frequency graph in GIF format. A summary of RIP mutation type versus total sequence divergence per sequence is also generated based on the alignment.</p>
+      </sec>
+      <sec>
+        <title>Validation of alignment-based RIP analysis</title>
+        <p>The alignment-based method was tested using the Tad1 transposon and 5S rDNA repeats from <italic>Neurospora crassa </italic>as positive and negative controls for detection of RIP mutation. These sequences [GenBank:<ext-link ext-link-type="gen" xlink:href="L25662">L25662</ext-link>, GenBank:<ext-link ext-link-type="gen" xlink:href="AF181821">AF181821</ext-link>] were mapped to the <italic>N. crassa </italic>genome (release 7) [<xref ref-type="bibr" rid="B20">20</xref>] via RepeatMasker [<xref ref-type="bibr" rid="B28">28</xref>]. The genomic matches were compared via RIPCAL for RIP mutation. <italic>Aspergillus nidulans </italic>MATE transposon sequences [<xref ref-type="bibr" rid="B24">24</xref>] [GenBank:.<ext-link ext-link-type="gen" xlink:href="BK001592">BK001592</ext-link>, GenBank:.<ext-link ext-link-type="gen" xlink:href="BK001593">BK001593</ext-link>, GenBank:.<ext-link ext-link-type="gen" xlink:href="BK0015924">BK0015924</ext-link>, GenBank:.<ext-link ext-link-type="gen" xlink:href="BK001595">BK001595</ext-link>, GenBank:.<ext-link ext-link-type="gen" xlink:href="BK001596">BK001596</ext-link>, GenBank:<ext-link ext-link-type="gen" xlink:href="X78051">X78051</ext-link>] were compared via RIPCAL using MATE-9 [GenBank:.<ext-link ext-link-type="gen" xlink:href="BK001592">BK001592</ext-link>] as the model for comparison to test for detection of non-classical (non Cpa&#x2192;TpA) RIP mutation. RIP mutation of Ty1 Copia-like transposons of <italic>Mycrobotryum violaceum </italic>[PopSet:55418573] was also analysed using the degenerate consensus model to observe RIP detection in sequences with a known tri-nucleotide mutation bias [<xref ref-type="bibr" rid="B13">13</xref>].</p>
+      </sec>
+      <sec>
+        <title>RIP Analysis of <italic>S. nodorum de novo </italic>repeat families</title>
+        <p>Results herein use data from a recent survey of the genome of <italic>S. nodorum </italic>[<xref ref-type="bibr" rid="B21">21</xref>] (Additional file <xref ref-type="supplementary-material" rid="S4">4</xref>, Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>). Repeat family genomic coordinates can be found in the supplementary data (Additional file <xref ref-type="supplementary-material" rid="S4">4</xref>). Repetitive sequences were identified <italic>de novo </italic>via RepeatScout [<xref ref-type="bibr" rid="B29">29</xref>], and filtered for &#x2265; 200 bp length; &#x2265; 10 &#xD7; genomic match coverage and &#x2265; 75% identity. <italic>De novo </italic>repeats were mapped to the <italic>S. nodorum </italic>genome via RepeatMasker [<xref ref-type="bibr" rid="B28">28</xref>]. A total of 26 repeat families were identified, corresponding to roughly 4.5% of the assembled genomic sequence. The repeat families were aligned via ClustalW (Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>). Some repeat families were predicted to be telomeric, where &#x2265; 85% of genomic matches resided on scaffold termini relative to overall localisation. The tandem rDNA repeats were defined by location within the rDNA tandem array on scaffold 5 [GenBank:<ext-link ext-link-type="gen" xlink:href="CH445329">CH445329</ext-link>] from base pair position 1310974 to 1594765. rDNA repeats at other locations were divided into non-tandem (&#x2265; 1 kb) and short-length (&lt; 1 kb) sub-families. The predicted repeat type was assigned based on BLAST versus NCBI and REPBASE [<xref ref-type="bibr" rid="B30">30</xref>]. RIP mutation 'dominance' represents the preponderance of a particular type of RIP di-nucleotide mutation relative to all other alternative forms of RIP mutation. CpA&#x2194;TpA dominance as referred to in Table <xref ref-type="table" rid="T2">2</xref> was determined by:</p>
+        <p>
+          <disp-formula id="bmcM8">
+            <label>(8)</label>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M12" name="1471-2105-9-478-i12" overflow="scroll">
+              <mml:semantics>
+                <mml:mrow>
+                  <mml:mover accent="true">
+                    <mml:mrow>
+                      <mml:mrow>
+                        <mml:mo>(</mml:mo>
+                        <mml:mrow>
+                          <mml:mfrac>
+                            <mml:mrow>
+                              <mml:mo stretchy="false">(</mml:mo>
+                              <mml:mi>C</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>A</mml:mi>
+                              <mml:mo>&#x2194;</mml:mo>
+                              <mml:mi>T</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>A</mml:mi>
+                              <mml:mo stretchy="false">)</mml:mo>
+                            </mml:mrow>
+                            <mml:mrow>
+                              <mml:mo stretchy="false">(</mml:mo>
+                              <mml:mi>C</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>C</mml:mi>
+                              <mml:mo>&#x2194;</mml:mo>
+                              <mml:mi>T</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>C</mml:mi>
+                              <mml:mo stretchy="false">)</mml:mo>
+                              <mml:mo>+</mml:mo>
+                              <mml:mo stretchy="false">(</mml:mo>
+                              <mml:mi>C</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>G</mml:mi>
+                              <mml:mo>&#x2194;</mml:mo>
+                              <mml:mi>T</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>G</mml:mi>
+                              <mml:mo stretchy="false">)</mml:mo>
+                              <mml:mo>+</mml:mo>
+                              <mml:mo stretchy="false">(</mml:mo>
+                              <mml:mi>C</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>T</mml:mi>
+                              <mml:mo>&#x2194;</mml:mo>
+                              <mml:mi>T</mml:mi>
+                              <mml:mi>p</mml:mi>
+                              <mml:mi>T</mml:mi>
+                              <mml:mo stretchy="false">)</mml:mo>
+                            </mml:mrow>
+                          </mml:mfrac>
+                        </mml:mrow>
+                        <mml:mo>)</mml:mo>
+                      </mml:mrow>
+                    </mml:mrow>
+                    <mml:mo stretchy="true">&#xAF;</mml:mo>
+                  </mml:mover>
+                </mml:mrow>
+              </mml:semantics>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>Other CpN&#x2194;TpN dominance equations (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>) were of a similar format to the one above (8).</p>
+      </sec>
+      <sec>
+        <title>Time of Operation</title>
+        <p>All data was generated on a 2.99 GHz Dual-core &#xD7;64 Intel PC with 2 GB RAM. The combined run-time of the di-nucleotide and alignment-based analyses for the <italic>S. nodorum </italic>whole genome assembly was approximately 4 hours. Pre-aligned inputs with few sequences (i.e. &lt; 20) can be expected to complete under a minute.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Authors' contributions</title>
+      <p>JKH developed the RIPCAL software. JKH and RPO wrote the manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>Control Data</bold>. Compressed (.zip) file containing data relevant to control tests with <italic>Neurospora crassa </italic>Tad1 and 5S rDNA repeats, containing RIPCAL graphical (.png), tabular text (.txt) and fasta (.fas) alignments of repeat family matches. Also contains files (.png, .txt and .fas) for the MATE repeats from <italic>Aspergillus nidulans </italic>and Ty1 transposons from <italic>Microbotryum violaceum</italic>.</p>
+        </caption>
+        <media xlink:href="1471-2105-9-478-S1.zip" mimetype="application" mime-subtype="x-zip-compressed">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p><bold>Supplementary Data Tables</bold>. Excel (.xls) file with tabular data relating to RIPCAL analyses of <italic>Stagonospora nodorum </italic>repeats.</p>
+        </caption>
+        <media xlink:href="1471-2105-9-478-S2.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p><bold>Supplementary Methods</bold>. Word (.doc) file explaining some of the methods in more detail.</p>
+        </caption>
+        <media xlink:href="1471-2105-9-478-S3.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S4">
+        <caption>
+          <title>Additional file 4</title>
+          <p><bold>Snodorum Repeats</bold>. GFF3 (.gff) file containing NCBI genomic accessions and coordinates of <italic>Stagonospora nodorum </italic>repeats used in this publication.</p>
+        </caption>
+        <media xlink:href="1471-2105-9-478-S4.gff" mimetype="text" mime-subtype="plain">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S5">
+        <caption>
+          <title>Additional file 5</title>
+          <p><bold>Snodorum Alignments</bold>. Compressed (.zip) file containing alignments for all <italic>Stagonospora nodorum </italic>repeat families in Fasta (.fas) format.</p>
+        </caption>
+        <media xlink:href="1471-2105-9-478-S5.zip" mimetype="application" mime-subtype="x-zip-compressed">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <sec>
+        <title>Acknowledgements</title>
+        <p>We thank Barbara Howlett and Thierry Rouxel for their expert advice and the Grains Research &amp; Development Corporation (Barton, ACT, 2600, Australia) for providing the PhD scholarship to JKH.</p>
+      </sec>
+    </ack>
+    <ref-list>
+      <ref id="B1">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Soanes</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Richards</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Talbot</surname>
+              <given-names>NJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Insights from sequencing fungal and oomycete genomes: what can we learn about plant disease and the evolution of pathogenicity?</article-title>
+          <source>Plant Cell</source>
+          <year>2007</year>
+          <volume>19</volume>
+          <fpage>3318</fpage>
+          <lpage>3326</lpage>
+          <pub-id pub-id-type="pmid">18024565</pub-id>
+          <pub-id pub-id-type="doi">10.1105/tpc.107.056663</pub-id>
+        </citation>
+      </ref>
+      <ref id="B2">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Selker</surname>
+              <given-names>EU</given-names>
+            </name>
+          </person-group>
+          <article-title>Premeiotic instability of repeated sequences in <italic>Neurospora crassa</italic></article-title>
+          <source>Annu Rev Genet</source>
+          <year>1990</year>
+          <volume>24</volume>
+          <fpage>579</fpage>
+          <lpage>613</lpage>
+          <pub-id pub-id-type="pmid">2150906</pub-id>
+          <pub-id pub-id-type="doi">10.1146/annurev.ge.24.120190.003051</pub-id>
+        </citation>
+      </ref>
+      <ref id="B3">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Selker</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Cambareri</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Jensen</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Haack</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Rearrangement of duplicated DNA in specialised cells of <italic>Neurospora</italic></article-title>
+          <source>Cell</source>
+          <year>1987</year>
+          <volume>51</volume>
+          <fpage>741</fpage>
+          <lpage>752</lpage>
+          <pub-id pub-id-type="pmid">2960455</pub-id>
+          <pub-id pub-id-type="doi">10.1016/0092-8674(87)90097-3</pub-id>
+        </citation>
+      </ref>
+      <ref id="B4">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ikeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Nakayashiki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kataoka</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tamba</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hashimoto</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tosa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Mayama</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Repeat-induced point mutation (RIP) in <italic>Magnaporthe grisea</italic>: implications for its sexual cycle in the natural field context</article-title>
+          <source>Mol Microbiol</source>
+          <year>2002</year>
+          <volume>45</volume>
+          <fpage>1355</fpage>
+          <lpage>1364</lpage>
+          <pub-id pub-id-type="pmid">12207702</pub-id>
+          <pub-id pub-id-type="doi">10.1046/j.1365-2958.2002.03101.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B5">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nakayashiki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Nishimoto</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Ikeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Tosa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Mayama</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Degenerate MAGGY elements in a subgroup of <italic>Pyricularia grisea</italic>: a possible example of successful capture of a genetic invader by a fungal genome</article-title>
+          <source>Mol Gen Genet</source>
+          <year>1999</year>
+          <volume>261</volume>
+          <fpage>958</fpage>
+          <lpage>966</lpage>
+          <pub-id pub-id-type="pmid">10485287</pub-id>
+          <pub-id pub-id-type="doi">10.1007/s004380051044</pub-id>
+        </citation>
+      </ref>
+      <ref id="B6">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Graia</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Lespinet</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Rimbault</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Dequard-Chablat</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Coppin</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Picard</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome quality control: RIP (repeat-induced point mutation) comes to <italic>Podospora</italic></article-title>
+          <source>Mol Microbiol</source>
+          <year>2001</year>
+          <volume>40</volume>
+          <fpage>586</fpage>
+          <lpage>595</lpage>
+          <pub-id pub-id-type="pmid">11359565</pub-id>
+          <pub-id pub-id-type="doi">10.1046/j.1365-2958.2001.02367.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B7">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Idnurm</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Howlett</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis of loss of pathogenicity mutants reveals that repeat-induced point mutations can occur in the Dothideomycete <italic>Leptosphaeria maculans</italic></article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2003</year>
+          <volume>39</volume>
+          <fpage>31</fpage>
+          <lpage>37</lpage>
+          <pub-id pub-id-type="pmid">12742061</pub-id>
+          <pub-id pub-id-type="doi">10.1016/S1087-1845(02)00588-1</pub-id>
+        </citation>
+      </ref>
+      <ref id="B8">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neuveglise</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sarfati</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Latge</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Paris</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Afut1, a retrotransposon-like element from <italic>Aspergillus fumigatus</italic></article-title>
+          <source>Nucleic Acids Res</source>
+          <year>1996</year>
+          <volume>24</volume>
+          <fpage>1428</fpage>
+          <lpage>1434</lpage>
+          <pub-id pub-id-type="pmid">8628674</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/24.8.1428</pub-id>
+        </citation>
+      </ref>
+      <ref id="B9">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hua-Van</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hericourt</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Capy</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Daboussi</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Langin</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Three highly divergent subfamilies of the impala transposable element coexist in the genome of the fungus <italic>Fusarium oxysporum</italic></article-title>
+          <source>Mol Gen Genet</source>
+          <year>1998</year>
+          <volume>259</volume>
+          <fpage>354</fpage>
+          <lpage>362</lpage>
+          <pub-id pub-id-type="pmid">9790589</pub-id>
+          <pub-id pub-id-type="doi">10.1007/s004380050822</pub-id>
+        </citation>
+      </ref>
+      <ref id="B10">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hua-Van</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Langin</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Daboussi</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolutionary history of the impala transposon in <italic>Fusarium oxysporum</italic></article-title>
+          <source>Mol Biol Evol</source>
+          <year>2001</year>
+          <volume>18</volume>
+          <fpage>1959</fpage>
+          <lpage>1969</lpage>
+          <pub-id pub-id-type="pmid">11557801</pub-id>
+        </citation>
+      </ref>
+      <ref id="B11">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Julien</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Poirier-Hamon</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Brygoo</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Foret1, a reverse transcriptase-like sequence in the filamentous fungus <italic>Fusarium oxysporum</italic></article-title>
+          <source>Nucleic Acids Res</source>
+          <year>1992</year>
+          <volume>20</volume>
+          <fpage>3933</fpage>
+          <lpage>3937</lpage>
+          <pub-id pub-id-type="pmid">1380691</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/20.15.3933</pub-id>
+        </citation>
+      </ref>
+      <ref id="B12">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nielsen</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Hermansen</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Aleksenko</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>A family of DNA repeats in <italic>Aspergillus nidulans </italic>has assimilated degenerated retrotransposons</article-title>
+          <source>Mol Genet Genomics</source>
+          <year>2001</year>
+          <volume>265</volume>
+          <fpage>883</fpage>
+          <lpage>887</lpage>
+          <pub-id pub-id-type="pmid">11523805</pub-id>
+          <pub-id pub-id-type="doi">10.1007/s004380100484</pub-id>
+        </citation>
+      </ref>
+      <ref id="B13">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hood</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Katawczik</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Giraud</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Repeat-induced point mutation and the population structure of transposable elements in <italic>Microbotryum violaceum</italic></article-title>
+          <source>Genetics</source>
+          <year>2005</year>
+          <volume>170</volume>
+          <fpage>1081</fpage>
+          <lpage>1089</lpage>
+          <pub-id pub-id-type="pmid">15911572</pub-id>
+          <pub-id pub-id-type="doi">10.1534/genetics.105.042564</pub-id>
+        </citation>
+      </ref>
+      <ref id="B14">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Farman</surname>
+              <given-names>ML</given-names>
+            </name>
+          </person-group>
+          <article-title>Telomeres in the rice blast fungus <italic>Magnaporthe oryzae</italic>: the world of the end as we know it</article-title>
+          <source>FEMS microbiology letters</source>
+          <year>2007</year>
+          <volume>273</volume>
+          <fpage>125</fpage>
+          <lpage>132</lpage>
+          <pub-id pub-id-type="pmid">17610516</pub-id>
+          <pub-id pub-id-type="doi">10.1111/j.1574-6968.2007.00812.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B15">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Braumann</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Berg</surname>
+              <given-names>M van den</given-names>
+            </name>
+            <name>
+              <surname>Kempken</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Repeat induced point mutation in two asexual fungi, <italic>Aspergillus niger </italic>and <italic>Penicillium chrysogenum</italic></article-title>
+          <source>Curr Genet</source>
+          <year>2008</year>
+          <pub-id pub-id-type="pmid">18347798</pub-id>
+        </citation>
+      </ref>
+      <ref id="B16">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cambareri</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Singer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Selker</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Recurrence of repeat-induced point mutation (RIP) in <italic>Neurospora crassa</italic></article-title>
+          <source>Genetics</source>
+          <year>1991</year>
+          <volume>1</volume>
+        </citation>
+      </ref>
+      <ref id="B17">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Watters</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Randall</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Margolin</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Selker</surname>
+              <given-names>EU</given-names>
+            </name>
+            <name>
+              <surname>Stadler</surname>
+              <given-names>DR</given-names>
+            </name>
+          </person-group>
+          <article-title>Action of repeat-induced point mutation on both strands of a duplex and on tandem duplications of various sizes in <italic>Neurospora</italic></article-title>
+          <source>Genetics</source>
+          <year>1999</year>
+          <volume>153</volume>
+          <fpage>705</fpage>
+          <lpage>714</lpage>
+          <pub-id pub-id-type="pmid">10511550</pub-id>
+        </citation>
+      </ref>
+      <ref id="B18">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cambareri</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Jensen</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Schabtach</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Selker</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Repeat-induced G-C to A-T mutations in <italic>Neurospora</italic></article-title>
+          <source>Science</source>
+          <year>1989</year>
+          <volume>244</volume>
+          <fpage>1571</fpage>
+          <lpage>1575</lpage>
+          <pub-id pub-id-type="pmid">2544994</pub-id>
+          <pub-id pub-id-type="doi">10.1126/science.2544994</pub-id>
+        </citation>
+      </ref>
+      <ref id="B19">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Margolin</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Garrett-Engele</surname>
+              <given-names>PW</given-names>
+            </name>
+            <name>
+              <surname>Stevens</surname>
+              <given-names>JN</given-names>
+            </name>
+            <name>
+              <surname>Fritz</surname>
+              <given-names>DY</given-names>
+            </name>
+            <name>
+              <surname>Garrett-Engele</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Metzenberg</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Selker</surname>
+              <given-names>EU</given-names>
+            </name>
+          </person-group>
+          <article-title>A methylated <italic>Neurospora </italic>5S rRNA pseudogene contains a transposable element inactivated by repeat-induced point mutation</article-title>
+          <source>Genetics</source>
+          <year>1998</year>
+          <volume>149</volume>
+          <fpage>1787</fpage>
+          <lpage>1797</lpage>
+          <pub-id pub-id-type="pmid">9691037</pub-id>
+        </citation>
+      </ref>
+      <ref id="B20">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Galagan</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Calvo</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Borkovich</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Selker</surname>
+              <given-names>EU</given-names>
+            </name>
+            <name>
+              <surname>Read</surname>
+              <given-names>ND</given-names>
+            </name>
+            <name>
+              <surname>Jaffe</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>FitzHugh</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Smirnov</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Purcell</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The genome sequence of the filamentous fungus <italic>Neurospora crassa</italic></article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>422</volume>
+          <fpage>859</fpage>
+          <lpage>868</lpage>
+          <pub-id pub-id-type="pmid">12712197</pub-id>
+          <pub-id pub-id-type="doi">10.1038/nature01554</pub-id>
+        </citation>
+      </ref>
+      <ref id="B21">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hane</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>Lowe</surname>
+              <given-names>RGT</given-names>
+            </name>
+            <name>
+              <surname>Solomon</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>KC</given-names>
+            </name>
+            <name>
+              <surname>Schoch</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Spatafora</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Crous</surname>
+              <given-names>PW</given-names>
+            </name>
+            <name>
+              <surname>Kodira</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Birren</surname>
+              <given-names>BW</given-names>
+            </name>
+            <name>
+              <surname>Galagan</surname>
+              <given-names>JE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dothideomycete-plant interactions illuminated by genome sequencing and EST analysis of the wheat pathogen <italic>Stagonospora nodorum</italic></article-title>
+          <source>Plant Cell</source>
+          <year>2007</year>
+          <volume>19</volume>
+          <fpage>3347</fpage>
+          <lpage>3368</lpage>
+          <pub-id pub-id-type="pmid">18024570</pub-id>
+          <pub-id pub-id-type="doi">10.1105/tpc.107.052829</pub-id>
+        </citation>
+      </ref>
+      <ref id="B22">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Solomon</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Lowe</surname>
+              <given-names>RGT</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>KC</given-names>
+            </name>
+            <name>
+              <surname>Waters</surname>
+              <given-names>ODC</given-names>
+            </name>
+            <name>
+              <surname>Oliver</surname>
+              <given-names>RP</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>Stagonospora nodorum</italic>: cause of <italic>Stagonospora nodorum </italic>blotch of wheat</article-title>
+          <source>Mol Plant Pathol</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <fpage>147</fpage>
+          <lpage>156</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1364-3703.2006.00326.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B23">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cambareri</surname>
+              <given-names>EB</given-names>
+            </name>
+            <name>
+              <surname>Helber</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kinsey</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>Tad1-1, an active LINE-like element of <italic>Neurospora crassa</italic></article-title>
+          <source>Mol Gen Genet</source>
+          <year>1994</year>
+          <volume>242</volume>
+          <fpage>658</fpage>
+          <lpage>665</lpage>
+          <pub-id pub-id-type="pmid">7512193</pub-id>
+          <pub-id pub-id-type="doi">10.1007/BF00283420</pub-id>
+        </citation>
+      </ref>
+      <ref id="B24">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clutterbuck</surname>
+              <given-names>AJ</given-names>
+            </name>
+          </person-group>
+          <article-title>MATE transposable elements in <italic>Aspergillus nidulans</italic>: evidence of repeat-induced point mutation</article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2004</year>
+          <volume>41</volume>
+          <fpage>308</fpage>
+          <lpage>316</lpage>
+          <pub-id pub-id-type="pmid">14761791</pub-id>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2003.11.004</pub-id>
+        </citation>
+      </ref>
+      <ref id="B25">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perkins</surname>
+              <given-names>DD</given-names>
+            </name>
+            <name>
+              <surname>Metzenberg</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Raju</surname>
+              <given-names>NB</given-names>
+            </name>
+            <name>
+              <surname>Selker</surname>
+              <given-names>EU</given-names>
+            </name>
+            <name>
+              <surname>Barry</surname>
+              <given-names>EG</given-names>
+            </name>
+          </person-group>
+          <article-title>Reversal of a <italic>Neurospora </italic>translocation by crossing over involving displaced rDNA, and methylation of the rDNA segments that result from recombination</article-title>
+          <source>Genetics</source>
+          <year>1986</year>
+          <volume>114</volume>
+          <fpage>791</fpage>
+          <lpage>817</lpage>
+          <pub-id pub-id-type="pmid">2947829</pub-id>
+        </citation>
+      </ref>
+      <ref id="B26">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Larkin</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Blackshields</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>NP</given-names>
+            </name>
+            <name>
+              <surname>Chenna</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>McGettigan</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>McWilliam</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Valentin</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Wallace</surname>
+              <given-names>IM</given-names>
+            </name>
+            <name>
+              <surname>Wilm</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lopez</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Clustal W and Clustal X version 2.0</article-title>
+          <source>Bioinformatics</source>
+          <year>2007</year>
+          <volume>23</volume>
+          <fpage>2947</fpage>
+          <lpage>2948</lpage>
+          <pub-id pub-id-type="pmid">17846036</pub-id>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btm404</pub-id>
+        </citation>
+      </ref>
+      <ref id="B27">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Selker</surname>
+              <given-names>EU</given-names>
+            </name>
+            <name>
+              <surname>Tountas</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Cross</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Margolin</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Murphy</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Bird</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Freitag</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>The methylated component of the <italic>Neurospora crassa </italic>genome</article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>422</volume>
+          <fpage>893</fpage>
+          <lpage>897</lpage>
+          <pub-id pub-id-type="pmid">12712205</pub-id>
+          <pub-id pub-id-type="doi">10.1038/nature01564</pub-id>
+        </citation>
+      </ref>
+      <ref id="B28">
+        <citation citation-type="other">
+          <article-title>RepeatMasker Open-3.0</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.repeatmasker.org"/>
+        </citation>
+      </ref>
+      <ref id="B29">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Price</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>NC</given-names>
+            </name>
+            <name>
+              <surname>Pevzner</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>De novo </italic>identification of repeat families in large genomes</article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <fpage>i351</fpage>
+          <lpage>358</lpage>
+          <pub-id pub-id-type="pmid">15961478</pub-id>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/bti1018</pub-id>
+        </citation>
+      </ref>
+      <ref id="B30">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jurka</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kapitonov</surname>
+              <given-names>VV</given-names>
+            </name>
+            <name>
+              <surname>Pavlicek</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Klonowski</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kohany</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Walichiewicz</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Repbase Update, a database of eukaryotic repetitive elements</article-title>
+          <source>Cytogenetic and genome research</source>
+          <year>2005</year>
+          <volume>110</volume>
+          <fpage>462</fpage>
+          <lpage>467</lpage>
+          <pub-id pub-id-type="pmid">16093699</pub-id>
+          <pub-id pub-id-type="doi">10.1159/000084979</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

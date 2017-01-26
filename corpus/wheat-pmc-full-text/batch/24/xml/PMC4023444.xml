@@ -1,0 +1,2754 @@
+<?xml version="1.0"?>
+<article article-type="research-article">
+  <?npg-journal-abbreviation?>
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NPGSJ//DTD full length article DTD version 7.0 XML//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName ajarticle_v7_x.dtd?>
+  <?SourceDTD.Version 7.0?>
+  <?ConverterInfo.XSLTName naturesa2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Heredity (Edinb)</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Heredity (Edinb)</journal-id>
+      <journal-title-group>
+        <journal-title>Heredity</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0018-067X</issn>
+      <issn pub-type="epub">1365-2540</issn>
+      <publisher>
+        <publisher-name>Nature Publishing Group</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4023444</article-id>
+      <article-id pub-id-type="pii">hdy2013144</article-id>
+      <article-id pub-id-type="doi">10.1038/hdy.2013.144</article-id>
+      <article-id pub-id-type="pmid">24424163</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Original Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Genomic-enabled prediction with classification algorithms</article-title>
+        <alt-title alt-title-type="running">Prediction with classification algorithms</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ornella</surname>
+            <given-names>L</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>P&#xE9;rez</surname>
+            <given-names>P</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tapia</surname>
+            <given-names>E</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gonz&#xE1;lez-Camacho</surname>
+            <given-names>J M</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Burgue&#xF1;o</surname>
+            <given-names>J</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>X</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Singh</surname>
+            <given-names>S</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Vicente</surname>
+            <given-names>F S</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bonnett</surname>
+            <given-names>D</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dreisigacker</surname>
+            <given-names>S</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Singh</surname>
+            <given-names>R</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Long</surname>
+            <given-names>N</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Crossa</surname>
+            <given-names>J</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+          <xref ref-type="corresp" rid="caf1">*</xref>
+        </contrib>
+        <aff id="aff1"><label>1</label><institution>French&#x2013;Argentine International Center for Information and Systems Sciences (CIFASIS)</institution>, Rosario, <country>Argentina</country></aff>
+        <aff id="aff2"><label>2</label><institution>Colegio de Postgraduados, Montecillo, Edo. de M&#xE9;xico</institution>, M&#xE9;xico DF, <country>Mexico</country></aff>
+        <aff id="aff3"><label>3</label><institution>Biometrics and Statistics Unit, International Maize and Wheat Improvement Center (CIMMYT)</institution>, M&#xE9;xico DF, <country>Mexico</country></aff>
+        <aff id="aff4"><label>4</label><institution>Center for Human Genome Variation, Duke University School of Medicine</institution>, Durham, NC, <country>USA</country></aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="caf1"><label>*</label><institution>Biometrics and Statistics Unit, International Maize and Wheat Improvement Center</institution>, M&#xE9;xico DF 06600, <country>Mexico</country>. E-mail: <email>j.crossa@cgiar.org</email></corresp>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <month>06</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>15</day>
+        <month>01</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>6</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>112</volume>
+      <issue>6</issue>
+      <fpage>616</fpage>
+      <lpage>626</lpage>
+      <history>
+        <date date-type="received">
+          <day>08</day>
+          <month>07</month>
+          <year>2013</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>05</day>
+          <month>12</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>09</day>
+          <month>12</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2014 The Genetics Society</copyright-statement>
+        <copyright-year>2014</copyright-year>
+        <copyright-holder>The Genetics Society</copyright-holder>
+        <license xmlns:xlink="http://www.w3.org/1999/xlink" license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+          <!--author-paid-->
+          <license-p>This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/3.0/">http://creativecommons.org/licenses/by-nc-nd/3.0/</ext-link></license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Pearson's correlation coefficient (<italic>&#x3C1;</italic>) is the most commonly reported metric of the success of prediction in genomic selection (GS). However, in real breeding <italic>&#x3C1;</italic> may not be very useful for assessing the quality of the regression in the tails of the distribution, where individuals are chosen for selection. This research used 14 maize and 16 wheat data sets with different trait&#x2013;environment combinations. Six different models were evaluated by means of a cross-validation scheme (50 random partitions each, with 90% of the individuals in the training set and 10% in the testing set). The predictive accuracy of these algorithms for selecting individuals belonging to the best <italic>&#x3B1;</italic>=10, 15, 20, 25, 30, 35, 40% of the distribution was estimated using Cohen's kappa coefficient (<italic>&#x3BA;</italic>) and an <italic>ad hoc</italic> measure, which we call relative efficiency (RE), which indicates the expected genetic gain due to selection when individuals are selected based on GS exclusively. We put special emphasis on the analysis for <italic>&#x3B1;</italic>=15%, because it is a percentile commonly used in plant breeding programmes (for example, at CIMMYT). We also used <italic>&#x3C1;</italic> as a criterion for overall success. The algorithms used were: Bayesian LASSO (BL), Ridge Regression (RR), Reproducing Kernel Hilbert Spaces (RHKS), Random Forest Regression (RFR), and Support Vector Regression (SVR) with linear (lin) and Gaussian kernels (rbf). The performance of regression methods for selecting the best individuals was compared with that of three supervised classification algorithms: Random Forest Classification (RFC) and Support Vector Classification (SVC) with linear (lin) and Gaussian (rbf) kernels. Classification methods were evaluated using the same cross-validation scheme but with the response vector of the original training sets dichotomised using a given threshold. For <italic>&#x3B1;</italic>=15%, SVC-lin presented the highest <italic>&#x3BA;</italic> coefficients in 13 of the 14 maize data sets, with best values ranging from 0.131 to 0.722 (statistically significant in 9 data sets) and the best RE in the same 13 data sets, with values ranging from 0.393 to 0.948 (statistically significant in 12 data sets). RR produced the best mean for both <italic>&#x3BA;</italic> and RE in one data set (0.148 and 0.381, respectively). Regarding the wheat data sets, SVC-lin presented the best <italic>&#x3BA;</italic> in 12 of the 16 data sets, with outcomes ranging from 0.280 to 0.580 (statistically significant in 4 data sets) and the best RE in 9 data sets ranging from 0.484 to 0.821 (statistically significant in 5 data sets). SVC-rbf (0.235), RR (0.265) and RHKS (0.422) gave the best <italic>&#x3BA;</italic> in one data set each, while RHKS and BL tied for the last one (0.234). Finally, BL presented the best RE in two data sets (0.738 and 0.750), RFR (0.636) and SVC-rbf (0.617) in one and RHKS in the remaining three (0.502, 0.458 and 0.586). The difference between the performance of SVC-lin and that of the rest of the models was not so pronounced at higher percentiles of the distribution. The behaviour of regression and classification algorithms varied markedly when selection was done at different thresholds, that is, <italic>&#x3BA;</italic> and RE for each algorithm depended strongly on the selection percentile. Based on the results, we propose classification method as a promising alternative for GS in plant breeding.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>genomic selection</kwd>
+        <kwd>maize</kwd>
+        <kwd>wheat</kwd>
+        <kwd>support vector machines</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro">
+      <title>Introduction</title>
+      <p>Genomic selection (GS) is a novel strategy that aims to improve the prediction of complex agronomic traits using information from high-throughput genotyping platforms and phenotypic information of a training population (<xref ref-type="bibr" rid="bib26">Meuwissen <italic>et al.</italic>, 2001</xref>). Several methods for GS have been proposed and evaluated (<xref ref-type="bibr" rid="bib5">Crossa <italic>et al.</italic>, 2013</xref>; <xref ref-type="bibr" rid="bib14">Gianola, 2013</xref>). The difference among them resides not only in their theoretical basis but also in their performance, which is variable and depends on the population and trait analysed (<xref ref-type="bibr" rid="bib20">Heslot <italic>et al.</italic>, 2012</xref>, <xref ref-type="bibr" rid="bib14">Gianola, 2013</xref>).</p>
+      <p>Pearson's correlation coefficient (<italic>&#x3C1;</italic>) is the most reported metric of the prediction ability of the regression models; however, it may not be the most appropriate measure in real breeding situations, because it is a global measure that does not evaluate the quality of the regression at the tails of the distribution where the breeder decides whether or not to keep the lines for further breeding. <xref ref-type="bibr" rid="bib16">Gonz&#xE1;lez-Recio and Forni (2011)</xref> compared Bayes A and Bayesian LASSO (BL) with two machine learning models (Boosting and Random Forest) for predicting disease occurrence in simulated and real data sets. They found that the algorithm with the best correlation does not always have the best selection rate.</p>
+      <p>Classification methods are a successful branch of supervised machine learning; they are fully applied in several areas of research, for example, text mining and bioinformatics (<xref ref-type="bibr" rid="bib18">Hastie <italic>et al.</italic>, 2011</xref>). Despite this success, we found very few studies on its application in GS (<xref ref-type="bibr" rid="bib25">Long <italic>et al.</italic>, 2007</xref>; <xref ref-type="bibr" rid="bib16">Gonz&#xE1;lez-Recio and Forni, 2011</xref>).</p>
+      <p>Instead of building a regression curve that fits all the training data, classification algorithms construct a decision boundary that is optimised usually for separating two classes, that is, best (which can be located at the upper or lower tail of the distribution) and worst lines; thus we expect that they might be an alternative approach to regression methods.</p>
+      <p>The objective of this study was to compare the performance of six well-known GS methods with that of three classification methods, Random Forest Classification (RFC) and Support Vector Classification (SVC) (the latter with two different kernels), for selecting the best <italic>&#x3B1;</italic>% of individuals in 14 maize and 16 wheat data sets, <italic>&#x3B1;</italic>=(10, 15, 20, 25, 30, 35, 40%). We emphasised the analysis at <italic>&#x3B1;</italic>=15%, which is a common select proportion used by CIMMYT programmes.</p>
+      <p>Two of the regression methods are benchmarks for parametric GS: Ridge Regression (RR) and BL, while Reproducing Kernel Hilbert Spaces (RKHS) is a successful semi-parametric approach to GS, and Random Forest Regression (RFR) and Support Vector Regression (SVR) are state-of-the-art algorithms for non-parametric regression (<xref ref-type="bibr" rid="bib18">Hastie <italic>et al.</italic>, 2011</xref>).</p>
+      <p>Overall performance was evaluated by means of a cross-validation scheme (50 random partitions with 90% of individuals in the training set and 10% in the testing set) and using <italic>&#x3C1;</italic> as a criterion for measuring predictive ability. The metrics used to evaluate the performance of classification methods were Cohen's kappa coefficient (<italic>&#x3BA;</italic>) and an <italic>ad hoc</italic> measure that we called relative efficiency (RE), which indicates the RE of selection when individuals are selected based on GS exclusively.</p>
+      <p>The <italic>&#x3B1;</italic>=15%, or other percentiles, can be positioned in the upper tail of the distribution if the trait considered is yield; in the lower tail, if the trait is disease resistance; or even in the middle of the distribution if the trait is, for example, the anthesis-silking interval (ASI), where the ideal situation is to have a value of the trait equal to zero.</p>
+      <p>The results of this study are promising. At a percentile value <italic>&#x3B1;</italic>=15%, SVC-lin achieved the best RE in 13 of the 14 maize data sets and in 9 of the 16 wheat data sets. We also compared the performance of regression and classification algorithms at other percentiles where differences between predictions were variable. As shown by <xref ref-type="bibr" rid="bib16">Gonz&#xE1;lez-Recio and Forni (2011)</xref>, classification algorithms are a valuable alternative to traditional GS methods.</p>
+    </sec>
+    <sec sec-type="materials|methods">
+      <title>Materials and methods</title>
+      <sec>
+        <title>Maize data sets</title>
+        <p>The maize data, including 14 trait&#x2013;environment combinations measured on 300 tropical lines genotyped with 55&#x2009;000 single-nucleotide polymorphisms, were previously used by <xref ref-type="bibr" rid="bib15">Gonz&#xE1;lez-Camacho <italic>et al.</italic> (2012)</xref>. Six data sets cover information on grey leaf spot (GLS) resistance evaluated in six CIMMYT international trials (GLS-1 to GLS-6); another six data sets include information on female flowering time (FFL), male flowering time (MFL) and the MFL to FFL interval (ASI) evaluated under severe drought stress (SS) or in well-watered (WW) environments. The remaining data sets contain information on grain yield evaluated under severe drought stress (GY-SS) and well-watered (GY-WW) environments. The number of individuals and the type and number of markers are presented in <xref rid="tbl1" ref-type="table">Table 1</xref>. For further details, see <xref ref-type="bibr" rid="bib15">Gonz&#xE1;lez-Camacho <italic>et al.</italic> (2012)</xref>.</p>
+      </sec>
+      <sec>
+        <title>Wheat data sets</title>
+        <p>The wheat data included six stem rust resistance data sets, six yellow rust resistance data sets and four grain yield data sets genotyped with 1400 DArT markers. All rust data sets were previously presented in <xref ref-type="bibr" rid="bib27">Ornella <italic>et al.</italic> (2012)</xref> and come from an experiment in which populations of recombinant inbred lines were evaluated for stem rust resistance in Kenya using two planting dates (the main season (Srm) and the off season (Sro)) and for yellow rust resistance under artificial inoculation in Mexico (Tol) or under natural infection in Njoro (Ken). The four grain yield data sets are included in the R package &#x2018;BLR' (<xref ref-type="bibr" rid="bib29">P&#xE9;rez <italic>et al.</italic>, 2010</xref>): 599 lines evaluated under different water and temperature conditions (<xref ref-type="bibr" rid="bib2">Burgue&#xF1;o <italic>et al.</italic>, 2012</xref>). Information regarding the number of individuals and the type and number of markers is presented in <xref rid="tbl1" ref-type="table">Table 1</xref>.</p>
+        <p>The response variables in the 30 data sets were centered at zero and standardised to unit variance (<xref ref-type="bibr" rid="bib15">Gonz&#xE1;lez-Camacho <italic>et al.</italic>, 2012</xref>; <xref ref-type="bibr" rid="bib27">Ornella <italic>et al.</italic>, 2012</xref>). For classification, these response variables were divided into binary classes; the procedure is described in detail at the end of Material and methods section.</p>
+      </sec>
+      <sec>
+        <title>Regression methods</title>
+        <p>For performing GS regression, we chose the following methods.</p>
+        <p>RR and BL are linear parametric models. The phenotype of the <italic>i-th</italic> individual (<italic>y</italic><sub><italic>i</italic></sub>) can be represented by <italic>y</italic><sub><italic>i</italic></sub><italic>=g</italic><sub><italic>i</italic></sub>+&#x25B;<sub><italic>i</italic></sub>, where <italic>g</italic><sub><italic>i</italic></sub> indicates the genetic factor specific to the <italic>i-th</italic> individual and <italic>&#x25B;</italic><sub><italic>i</italic></sub> the residual comprising all other non-genetic factors <italic>&#x25B;</italic><sub><italic>i</italic></sub>&#x223C;<italic>N</italic>(0,<inline-formula id="equ1"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e1.jpg"/></inline-formula>). <xref ref-type="bibr" rid="bib26">Meuwissen <italic>et al.</italic> (2001)</xref> proposed the linear model <italic>g</italic><sub><italic>i</italic></sub>=<inline-formula id="equ2"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e2.jpg"/></inline-formula>, where <italic>x</italic><sub><italic>ij</italic></sub> are the marker covariates and <italic>&#x3B2;</italic><sub><italic>j</italic></sub> is the effect of the <italic>j-th</italic> marker (<italic>j=1,</italic>...<italic>, p</italic>). In matrix notation:</p>
+        <p>
+          <disp-formula id="equ3">
+            <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e3.jpg"/>
+          </disp-formula>
+        </p>
+        <p>where <italic><bold>g</bold></italic>=<italic><bold>X&#x3B2;</bold></italic>. The genomic-BLUP (for example, <xref ref-type="bibr" rid="bib8">Endelman, 2011</xref>; <xref ref-type="bibr" rid="bib6">de los Campos <italic>et al.</italic>, 2012</xref>) is obtained assuming that <italic><bold>g</bold></italic>&#x223C;<italic>N</italic>(<bold>0</bold>,<inline-formula id="equ4"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e4.jpg"/></inline-formula><italic><bold>G</bold></italic>), where <inline-formula id="equ5"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e5.jpg"/></inline-formula> is the genetic variance and the matrix <italic><bold>G</bold></italic>&#x221D;<italic><bold>XX</bold></italic><bold>&#x2032;</bold>. In a Bayesian framework (<xref ref-type="bibr" rid="bib30">P&#xE9;rez <italic>et al.</italic>, 2012</xref>), the RR-BLUP is obtained assuming that the prior distribution for each marker effect is <italic>p</italic>(<italic>&#x3B2;</italic><sub><italic>j</italic></sub>|<inline-formula id="equ6"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e6.jpg"/></inline-formula>)=<italic>N</italic>(<italic>&#x3B2;</italic><sub><italic>j</italic></sub>|0,<inline-formula id="equ7"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e7.jpg"/></inline-formula>). Marker effects are assumed independent and identically distributed <italic>a priori</italic>, whereas the distribution assigned to <inline-formula id="equ8"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e8.jpg"/></inline-formula> (the prior variance of marker effects) and <inline-formula id="equ9"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e9.jpg"/></inline-formula> (the prior of residual variance) is <italic>&#x3C7;</italic><sup>&#x2212;2</sup>(<italic>df</italic>,<italic>s</italic>) (for example, <xref ref-type="bibr" rid="bib6">de los Campos <italic>et al.</italic>, 2012</xref>). The BL model assigns a double exponential (DE) distribution to all marker effects (conditionally on a regularisation parameter <italic>&#x3BB;</italic>), centered at zero (<xref ref-type="bibr" rid="bib28">Park and Casella, 2008</xref>), that is, <italic>p</italic>(<italic>&#x3B2;</italic><sub><italic>j</italic></sub>|<italic>&#x3BB;</italic>,<inline-formula id="equ10"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e10.jpg"/></inline-formula>)=<italic>DE</italic>(<italic>&#x3B2;</italic><sub><italic>j</italic></sub>|0,<italic>&#x3BB;</italic>/<inline-formula id="equ11"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e11.jpg"/></inline-formula>). We used the R package &#x2018;<italic>rrBLUP</italic>' (<xref ref-type="bibr" rid="bib8">Endelman, 2011</xref>) to fit the RR-BLUP model, and the &#x2018;<italic>BLR</italic>' package (<xref ref-type="bibr" rid="bib29">P&#xE9;rez <italic>et al.</italic>, 2010</xref>) to fit the BL mode using the settings described in <xref ref-type="bibr" rid="bib15">Gonz&#xE1;lez-Camacho <italic>et al.</italic> (2012)</xref>.</p>
+        <p>RKHS is a semi-parametric model in which the linear response takes the following form:</p>
+        <p>
+          <disp-formula id="equ12">
+            <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e12.jpg"/>
+          </disp-formula>
+        </p>
+        <p>where <italic><bold>x</bold></italic><sub><italic>i</italic></sub>=(<italic>x</italic><sub><italic>i</italic>1</sub>,&#x2026;,<italic>x</italic><sub><italic>ip</italic></sub>) and <italic><bold>x</bold></italic><sub><italic>i</italic>&#x2032;</sub>=(<italic>x</italic><sub><italic>i</italic>&#x2032;1</sub>,&#x2026;,<italic>x</italic><sub><italic>i</italic>&#x2032;<italic>p</italic></sub>) are vectors of marker genotypes of the <italic>i</italic> and <italic>&#xED;</italic>-<italic>th</italic> lines, and <italic>K</italic>(<bold>x</bold><sub><italic>i</italic></sub>,<bold>x</bold><sub><italic>i</italic>&#x2032;</sub>)=exp(&#x2212;<italic>&#x3B3;</italic>||<bold>x</bold><sub><italic>i</italic></sub>&#x2212;<bold>x</bold><sub><italic>i</italic>&#x2032;</sub>||<sup>2</sup>) is a Gaussian kernel (<xref ref-type="bibr" rid="bib12">Gianola <italic>et al.</italic>, 2006</xref>; <xref ref-type="bibr" rid="bib13">Gianola and van Kaam, 2008</xref>) where ||<bold>x</bold><sub><italic>i</italic></sub>&#x2212;<bold>x</bold><sub><italic>i</italic>&#x2032;</sub>|| is the Euclidean distance between pairs of marker genotypes and <italic>&#x3B3;</italic>&gt;<italic>0</italic> is a bandwidth parameter. The prediction ability of RKHS method is sensitive with respect to the value of <italic>&#x3B3;</italic>. We used a multi-kernel fitting strategy to estimate it as described in <xref ref-type="bibr" rid="bib15">Gonz&#xE1;lez-Camacho <italic>et al.</italic> (2012)</xref>. We assigned a scaled inverse chi-squared distribution to the variance components. In the implementation, we set <italic>df</italic>=5 for all prior distributions. The prior expectation of the residual variance was set to one half of the phenotypic variance, in which case <italic>S</italic><sub>&#x25B;</sub>=0.5<inline-formula id="equ13"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e13.jpg"/></inline-formula>(<italic>df</italic>&#x2212;2). The prior expectation of the variance for each of the three kernels used in our implementation was set to 1/6 of the sample variance of the standardised phenotypes, <italic>S</italic><sub><italic>k</italic></sub>=0.5<inline-formula id="equ14"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e14.jpg"/></inline-formula>(<italic>df</italic>&#x2212;2)/3. This setting leads to weakly proper priors. The inferences in all models were based on 30&#x2009;000 samples obtained after discarding 5000 that were taken as burn-in.</p>
+        <p>Finally, we selected RFR and SVR as representatives of non-parametric GS models. RFR is a combination of decision trees, each one generated from a subset of individuals selected by bootstrap (<xref ref-type="bibr" rid="bib1">Breiman, 2001</xref>). Using stochastic perturbation (bootstrap) and averaging the outputs of the decision trees can avoid over-fitting (<xref ref-type="bibr" rid="bib18">Hastie <italic>et al.</italic>, 2011</xref>).</p>
+        <p>In this study, default choices of the R package &#x2018;<italic>RandomForest</italic>' were used (<xref ref-type="bibr" rid="bib22">Liaw and Wiener, 2002</xref>), which uses the decrease in mean squared error as a criterion for selecting the best split (<xref ref-type="bibr" rid="bib23">Liaw, 2013</xref>). After a preliminary analysis for optimisation, we kept the default settings of the package, that is, number of variables tried at each split <italic>m</italic><sub><italic>try</italic></sub>=<italic>p</italic>/3, number of trees=500 and minimum node size=5.</p>
+        <p>SVR is based on the structural risk minimisation principle that aims to learn a function from finite training data. In this study, we used the &#x2018;&#x25B;-insensitive' SVM regression or &#x25B;-SVR as implemented in Workbench WEKA (<xref ref-type="bibr" rid="bib17">Hall <italic>et al.</italic>, 2009</xref>). &#x25B;-SVR performs a robust linear regression by ignoring residuals smaller in absolute value than some constant (&#x25B;) and assigning a linear loss function for larger residuals. To learn non-linearly functions, data are implicitly mapped to a higher dimensional space by means of Mercer kernels that can be expressed as an inner product (<xref ref-type="bibr" rid="bib18">Hastie <italic>et al.</italic>, 2011</xref>).</p>
+        <p>We evaluate the performance of &#x25B;-SVR with a linear kernel, <italic>K</italic>(<bold>x</bold><sub><italic>i</italic></sub>,<bold>x</bold><sub><italic>i</italic>&#x2032;</sub>)=<bold>x</bold><sub><italic>i</italic></sub>&#xB7;<bold>x</bold><sub><italic>i</italic>&#x2032;</sub> and a Gaussian kernel, <italic>K</italic>(<bold>x</bold><sub><italic>i</italic></sub>,<bold>x</bold><sub><italic>i</italic>&#x2032;</sub>)=exp(&#x2212;<italic>&#x3B3;</italic>||<italic>x</italic><sub><italic>i</italic></sub>&#x2212;<italic>x</italic><sub><italic>i</italic>&#x2032;</sub>||<sup>2</sup>), where <italic>&#x3B3;</italic>&gt;0 is the bandwidth parameter.</p>
+        <p>Optimisation of the <italic>C</italic> parameter (linear and Gaussian kernels) and <italic>&#x3B3;</italic> (Gaussian kernel) was performed by a logarithmic grid search of base 2 over an extensive range of values. The constant <italic>C</italic>&gt;0 determines the trade-off between the flatness of <italic>f</italic> and the amount up to which deviations larger than &#x25B; are tolerated. Each point on the grid was evaluated by internal five-fold cross-validation on the training set using <italic>&#x3C1;</italic> as a goodness-of-fit criterion. The &#x25B; parameter was used with the default values of WEKA (<xref ref-type="bibr" rid="bib27">Ornella <italic>et al.</italic>, 2012</xref>). For a more exhaustive presentation of &#x25B;-SVR, refer to SVR section <xref ref-type="bibr" rid="bib18">Hastie <italic>et al.</italic> (2011)</xref>.</p>
+      </sec>
+      <sec>
+        <title>Classification methods</title>
+        <sec>
+          <title>Random Forest Classification</title>
+          <p>The concept behind RFC is the same as that in regression (<xref ref-type="bibr" rid="bib22">Liaw and Wiener, 2002</xref>). Differences between them are: the splitting criteria, that is, the Gini Index instead of mean squared error, and the number of variables recommended for each split, (<italic>m</italic><sub><italic>try</italic></sub>=<inline-formula id="equ15"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e15.jpg"/></inline-formula>); also, the class of an unseen example is predicted by majority vote, that is, the algorithm counts the number of votes (one vote per decision tree) and assigns the class with the highest number of votes (<xref ref-type="bibr" rid="bib23">Liaw, 2013</xref>). A comprehensive explanation of RFC can be found in <xref ref-type="bibr" rid="bib16">Gonz&#xE1;lez-Recio and Forni (2011)</xref> or <xref ref-type="bibr" rid="bib18">Hastie <italic>et al.</italic> (2011)</xref>. As in regression, we evaluated different alternatives but finally kept the default settings of the package, that is, number of trees=500, node size=1 and <italic>m</italic><sub><italic>try</italic></sub>=215, 37 and 38 for all maize, rust and wheat-yield data sets, respectively.</p>
+        </sec>
+        <sec>
+          <title>Support Vector Classification</title>
+          <p>The goal of SVC is to calculate a maximal margin hyperplane separating the two classes; this hyperplane is fully specified by a subset of support vectors; classification was also performed using the Workbench WEKA (<xref ref-type="bibr" rid="bib17">Hall <italic>et al.</italic>, 2009</xref>). As in regression, optimisation of parameters was performed by a logarithmic grid search over an extensive range of values, that is, <italic>C</italic>=(2<sup>&#x2212;15</sup>,&#x2026;,2<sup>6</sup>) and <italic>&#x3B3;</italic>=(2<sup>&#x2212;20</sup>,&#x2026;,2<sup>15</sup>). Each point on the grid was evaluated by an internal fivefold cross-validation on the training set using <italic>&#x3BA;</italic> as a criterion for success. For further reading, refer to <xref ref-type="bibr" rid="bib4">Cortes and Vapnik (1995)</xref> or <xref ref-type="bibr" rid="bib18">Hastie <italic>et al.</italic> (2011)</xref>. For details about optimisation of SVR and SVC, refer to <xref ref-type="bibr" rid="bib37">Witten and Frank (2005)</xref>.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Improving the performance of classifiers by estimating the probability of the class</title>
+        <p>Classification in unbalanced data sets is a difficult problem from both the algorithmic and performance perspectives. Not choosing the right objective function while developing the classification model can introduce bias towards the majority, potentially uninteresting, class. Some algorithms circumvent this problem by using, for example, weighted loss functions or by giving different penalisations according to the misclassification group (<xref ref-type="bibr" rid="bib10">Fern&#xE1;ndez <italic>et al.</italic>, 2011</xref>). We explored the possibility of setting an appropriate threshold in order to balance the classes and select the <italic>&#x3B1;</italic>% best individuals according to the probability obtained by the classifiers, that is, lines with higher probability are ranked first. Classification methods can be divided into two main groups: soft and hard classifiers (<xref ref-type="bibr" rid="bib24">Liu <italic>et al.</italic>, 2011</xref>). Hard classifiers directly target the classification decision boundary without producing the probability estimation, whereas soft classifiers allow estimating class conditional probabilities and then performing classification based on the estimated probabilities. In Random Forest, this probability can be approximated by counting the number of votes of the decision trees (<xref ref-type="bibr" rid="bib22">Liaw and Wiener, 2002</xref>), whereas in the support vector machine implementation of WEKA, this value is obtained by mapping the output of each SVM with a sigmoid function (<xref ref-type="bibr" rid="bib31">Platt, 2000</xref>). This probability allows us to rank the candidates and select the best <italic>&#x3B1;</italic>% of individuals in the testing set at different percentiles.</p>
+        <p>In preliminary research, we explored the performance of both RFC and SVC for selecting the best 15% of individuals but with algorithms trained at different percentiles of the distribution, that is, setting the proportion of individuals in the best&#x2013;worst classes in the training sets to 15&#x2013;85, 20&#x2013;80, 30&#x2013;70, 40&#x2013;60 or 50&#x2013;50. Results presented here were obtained with algorithms trained with a best&#x2013;worst line ratio of 40&#x2013;60; this ratio showed the best performance among the different partitions evaluated. Results for the other percentiles were also obtained using this ratio in the training set.</p>
+      </sec>
+      <sec>
+        <title>Evaluating the methods (performance criteria)</title>
+        <p>Prediction assessment was performed by means of a cross-validation scheme. Fifty random partitions were generated using a predefined random binary matrix of order <italic>n</italic> &#xD7; 50 (where <italic>n</italic> is the sample size); each partition was divided into a training set (90% of the lines) and a testing set (10% of the lines). Statistical evaluation was performed using the paired samples Wilcoxon test (<xref ref-type="bibr" rid="bib36">Wilcoxon, 1945</xref>).</p>
+        <p>For prediction, regression models were evaluated using Pearson's correlation coefficient between observed and predicted values of the test sets, whereas for selecting the best individuals we used two measures: the <italic>&#x3BA;</italic> coefficient and an <italic>ad hoc</italic> measure that we called RE.</p>
+        <p>We used the <italic>&#x3BA;</italic> coefficient because our data were unbalanced, that is, the classes were not approximately equally represented, and <italic>&#x3BA;</italic> allows rectifying the fraction of cases correctly identified by the coincidence expected by chance (<xref ref-type="bibr" rid="bib11">Fielding and Bell, 1997</xref>). The estimator can be calculated using the formula (<xref ref-type="fig" rid="fig1">Figure 1</xref>):</p>
+        <p>
+          <disp-formula id="equ16">
+            <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e16.jpg"/>
+          </disp-formula>
+        </p>
+        <p>where <italic>P</italic><sub><italic>o</italic></sub>=<inline-formula id="equ17"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e17.jpg"/></inline-formula> is the observed fraction of concordances between the observed and predicted values; <italic>P</italic><sub><italic>e</italic></sub>=<inline-formula id="equ18"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e18.jpg"/></inline-formula> is the expected concordance as determined by the marginal distributions (for example, <inline-formula id="equ19"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e19.jpg"/></inline-formula>) obtained from the confusion matrix (<xref ref-type="fig" rid="fig1">Figure 1</xref>); <italic>n</italic><sub><italic>aa</italic></sub> and <italic>n</italic><sub><italic>bb</italic></sub> are the number of cases correctly predicted for classes A and B, respectively; <italic>m</italic><sub><italic>a</italic></sub> and <italic>m</italic><sub><italic>b</italic></sub> are the observed cases for classes A and B, respectively; <italic>n</italic><sub><italic>a</italic></sub> and <italic>n</italic><sub><italic>b</italic></sub> are the number of predicted values for classes A and B, respectively; and <italic>n</italic><sub><italic>tot</italic></sub>=<italic>n</italic><sub><italic>a</italic></sub>+<italic>n</italic><sub><italic>b</italic></sub>=<italic>m</italic><sub><italic>a</italic></sub>+<italic>m</italic><sub><italic>b</italic></sub> is the total number of cases in the experiment.</p>
+        <p>The second measure, RE, was based on the expected genetic gain when individuals are selected only by GS given by:</p>
+        <p>
+          <disp-formula id="equ20">
+            <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e20.jpg"/>
+          </disp-formula>
+        </p>
+        <p>where &#x3B1; and &#x3B1;&#x2032; are the groups of extreme individuals selected by the ranking of observed or predicted values, respectively; <italic>N</italic><sub>&#x3B1;</sub>=<italic>N</italic><sub>&#x3B1;&#x2032;</sub> are the numbers of individuals in each group; <italic>y</italic><sub><italic>i</italic></sub> is the observed value of each individual; and (&#x2211;<sub><italic>Test</italic></sub><italic>y</italic><sub><italic>i</italic></sub>)/<italic>N</italic><sub><italic>Test</italic></sub> represents the mean of the test group. In other words, the denominator is the differential selection of the individuals selected by traditional breeding (<xref ref-type="bibr" rid="bib9">Falconer and Mackay, 1996</xref>), whereas the numerator is the differential selection of the individuals selected by GS.</p>
+        <p>Regarding the ASI phenotype, the best individuals are those whose phenotypic values are closer to zero. Therefore, <xref ref-type="disp-formula" rid="equ20">equation (6)</xref> was modified as follows:</p>
+        <p>
+          <disp-formula id="equ21">
+            <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144e21.jpg"/>
+          </disp-formula>
+        </p>
+        <p>where |&#xB7;| is the absolute value.</p>
+        <p>To compute the values of these two estimators for GS methods, in each of the 50 random partitions we ranked the individuals in the test set according to their observed or predicted phenotypic values, high values first and lower values last. From both rankings, we selected the top <italic>&#x3B1;</italic>% of individuals (if the trait was yield), the bottom <italic>&#x3B1;</italic>% (flowering or disease resistance) or the <italic>&#x3B1;</italic>% located in the middle of the distribution (ASI). Coincidences between selected individuals in the two rankings were estimated by <italic>&#x3BA;</italic>, while the efficacy of GS selection in terms of genetic gain was calculated by RE. This operation was performed for <italic>&#x3B1;</italic>=10, 15, 20, 25, 30, 35 and 40%.</p>
+        <p>Regarding GS classification, for each of the 50 test sets, we also prepared the first ranking using the phenotypic (observed) value and the second ranking using the probability of the desired class as estimated by the classifier (that is, the probability of a high yielding or resistant line).</p>
+      </sec>
+      <sec>
+        <title>Software</title>
+        <p>Scripts for evaluation were implemented in Java code using Eclipse platform v3.7 (<xref ref-type="bibr" rid="bib7">Dexter, 2007</xref>) and R language (R <xref ref-type="bibr" rid="bib32">Core Team, 2013</xref>). R was used to perform the statistical analyses. The Lattice package (<xref ref-type="bibr" rid="bib33">Sarkar, 2008</xref>) was used to develop the <xref ref-type="supplementary-material" rid="sup1">Supplementary Figures</xref>.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <sec>
+        <title>Evaluation of the overall performance of regression methods by Pearson's correlation coefficient</title>
+        <p>Before evaluating GS for selecting the extreme individuals, we performed a classic analysis of regression as reported elsewhere (for example, <xref ref-type="bibr" rid="bib15">Gonz&#xE1;lez-Camacho <italic>et al.</italic>, 2012</xref>). Results are presented in <xref ref-type="supplementary-material" rid="sup1">Supplementary Tables S1 (maize) and S2 (wheat)</xref>.</p>
+        <p>It can be seen in <xref ref-type="supplementary-material" rid="sup1">Supplementary Table S1</xref> that RKHS nominally outperformed the other regression methods in four GLS data sets and three flowering data sets and tied with RR in one flowering data set. Wilcoxon's signed rank test showed that the superiority of RKHS was not statistically significant in any of these data sets. SVR-rbf performance succeeded in GLS-3, GLS-6 and MLF-SS data sets, although the difference was statistically significant only in MLF-SS. RR showed the best performance in the GY-WW data set, with a significance level of 0.05, whereas BL and RF outperformed the other models in ASI-WW and GY-SS, respectively (superiority of both was not statistically significant). As for the wheat data sets (<xref ref-type="supplementary-material" rid="sup1">Supplementary Table S2</xref>), RF achieved the best correlations in all six stem rust data sets, and the difference was statistically significant in five of them. In the yellow rust data sets, both KBIRD data sets and the KNYANGUMI-Tol data set, RF achieved the best results. The difference was statistically significant only in the last example. Finally, RKHS presented the best results in all yield data sets (GY-1 to GY-4), although this superiority was statistically significant only in GY-4.</p>
+      </sec>
+      <sec>
+        <title>Comparison of regression and classification for selecting the best 15% of individuals</title>
+        <p>We compared the performance of the six regression algorithms for selecting the best 15% of the individuals (using the same 50 random partitions). <xref rid="tbl2" ref-type="table">Table 2</xref> shows <italic>&#x3BA;</italic> coefficients for these algorithms plus two classification methods: RFC, SVC-lin, and SVC-rbf. Regarding <italic>&#x3BA;</italic>, SVC-lin outperformed the rest of the algorithms in all data sets but one, GLS-6, where RR achieved the best performance. The superiority of SVC-lin was statistically significant in five GLS data sets and in four flowering data sets: MLF-WW, MLF-SS, FLF-WW, and ASI-SS.</p>
+        <p><xref rid="tbl3" ref-type="table">Table 3</xref> shows the RE of the same models for selecting the best individuals at <italic>&#x3B1;</italic>=15%. SVC-lin also achieved the best performance in all the data sets except GLS-6, where RR had the best mean, although the difference was not statistically significant. The superiority of SVC-lin was statistically significant in all cases but GY-SS.</p>
+        <p><xref rid="tbl4" ref-type="table">Table 4</xref> shows the <italic>&#x3BA;</italic> values of the regression and classification models when selecting the best 15% of individuals in the 16 wheat data sets. SVC-lin produced the best results in all stem rust data sets, in five of the six yellow rust data sets and in one yield data set (GY-1). The differences were significant only in two SR data sets (F6PAVON-Srm and KNYANGUMI-Srm), one YR data set (F6PAVON-Ken) and one yield data set (GY-1). SVC-rbf gave rise to the best <italic>&#x3BA;</italic> in one YR data set (KBIRD-Ken), but the difference was not statistically significant. Finally, RR achieved the best <italic>&#x3BA;</italic> in GY-2, whereas RHKS tied with BL in GY-3 and showed the best value in GY-2. None of the differences were statistically significant.</p>
+        <p><xref rid="tbl5" ref-type="table">Table 5</xref> presents the RE of the different models for selecting the best 15% of individuals in the wheat data sets. SVC-lin produced the best results in four stem rust data sets (KBIRD, KNYANGUMI-Srm and F6PAVON-Srm). BL showed the best values in the other two data sets (KNYANGUMI-Sro and F6PAVON-Sro). As for the yellow rust data sets, SVC-lin gave the best results in all data sets but one, KBIRD-tol, where the best performance was obtained with RFR. RHKS achieved the best RE values in GY-2, GY-3 and GY-4, but they were significant only in GY-4. Finally, SVR-rbf presented the best mean in GY-1 (non-significant).</p>
+        <p>To test the widespread view that <italic>&#x3C1;</italic> is a good indicator of the performance of GS for selecting the best individuals, we made a scatter plot of <italic>&#x3C1;</italic> vs <italic>&#x3BA;</italic> (<xref ref-type="fig" rid="fig2">Figure 2a</xref>) and <italic>&#x3C1;</italic> vs RE (<xref ref-type="fig" rid="fig2">Figure 2b</xref>) of selection at <italic>&#x3B1;</italic>=15% for the maize data sets. The figure shows these statistics are closely related. The exception is the ASI data, where the best individuals were selected from the middle of the distribution instead of the extremes. The other flowering traits and GLS resistance were selected from the lower tail of the distribution, whereas yield was selected from the upper tail.</p>
+        <p>The same conclusions can be drawn from the wheat data set (<xref ref-type="fig" rid="fig3">Figures 3a and b</xref>), where individuals were selected from the lower tail (rust resistance) or the upper tail (yield) of the distribution.</p>
+      </sec>
+      <sec>
+        <title>Comparison of regression and classification for selecting the best individuals at different percentile values</title>
+        <p>Although the percentile <italic>&#x3B1;</italic>=15% is a proportion commonly used in plant breeding, some breeders may require other values, that is, <italic>&#x3B1;</italic>=20 or 40%, depending on budget or programme demands. We therefore evaluated the success of regression and classification methods using the same criteria (<italic>&#x3BA;</italic> and RE) at <italic>&#x3B1;</italic>=10, 15, 20, 25, 30, 35 and 40% of the distribution. For simplicity, the complete results of this evaluation are presented in <xref ref-type="supplementary-material" rid="sup1">Supplementary Figures S1&#x2013;S5</xref>, which show that <italic>&#x3BA;</italic> or RE of the different regression or classification algorithms is influenced by the data set or the percentile value. To summarise these different outputs, in <xref ref-type="fig" rid="fig4">Figures 4</xref> and <xref ref-type="fig" rid="fig5">5</xref> we give bar plots comparing the performance of <italic>&#x3BA;</italic> (A) and RE (B), for the best classification algorithm against the best regression algorithm for the maize and wheat data sets, respectively, at two percentiles: 15% and 30%. From our viewpoint (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figures S1&#x2013;S5</xref>), these two values summarise the behaviour of algorithms at low percentiles (&lt;25%) or high percentiles (&#x2A7E;25%), respectively. This behaviour is highly dependent on the trait and the crop evaluated. For example, when evaluating grain yield in wheat (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1</xref>), RE remained approximately constant, except for SVR-lin, which decreased in GY-4 as the percentile decreases. Something similar occurred in maize grain yield, except for SVC-lin, which increased as the percentile decreased (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1B</xref>). Regarding <italic>&#x3BA;</italic>, it decreased in most algorithms, except SVC-lin in GY-1, where it was high and constant (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1A</xref>). Regarding yield, many methods showed a <italic>&#x3BA;</italic> and RE response convex upwards, while in the flowering data sets (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S2</xref>), for most methods, both <italic>&#x3BA;</italic> and RE displayed straight horizontal lines or with a slight decrease at lower percentiles. RFC exhibited a particular behaviour in the RE of FLM or FLF data sets (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S2B</xref>) or <italic>&#x3BA;</italic> (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S2A</xref>), where values dropped abruptly as <italic>&#x3B1;</italic> became lower than 0.2. GLS data sets (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S3</xref>) showed similar behaviour to that detected in flowering, except that RFR showed the same performance as the remaining methods. With respect to the <italic>&#x3BA;</italic> values observed in GLS analysis in the maize data sets (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S3</xref>), all algorithms had approximately the same value (GLS-2, GLS-3 and GLS-4) as alpha decreased, except SVC with linear kernel, which exhibited continuous growth.</p>
+        <p>Finally, in the analysis of yellow and stem rust, <italic>&#x3BA;</italic> or RE variation proceeds in steps across the different percentiles, while in the other data sets these variables (<italic>&#x3BA;</italic> or RE) showed a continuous variation. This may be due to the fact that the original phenotypes were recorded on a 1&#x2013;6 scale (<xref ref-type="bibr" rid="bib27">Ornella <italic>et al.</italic>, 2012</xref>) and to an artifact generated by sampling a low number of individuals. GLS resistance was also recorded on a discrete scale but the number of individuals was higher (<xref ref-type="bibr" rid="bib15">Gonz&#xE1;lez-Camacho <italic>et al.</italic>, 2012</xref>). These steps were more pronounced in KBIRD data sets (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S4</xref>), where the population size was 90 individuals.</p>
+        <p>The summaries presented in <xref ref-type="fig" rid="fig4">Figures 4</xref> and <xref ref-type="fig" rid="fig5">5</xref> show that the relative performance between regression and classification at the two percentiles is highly dependent on the trait analysed. In the FLF and FLM data sets, both regression and classification reduced <italic>&#x3BA;</italic> and RE values when <italic>&#x3B1;</italic>=30%. In GLS, this reduction was less pronounced, and in most data sets, classification still outperformed regression. In the two ASI data sets, where individuals were selected from the middle of the distribution, RE of classification decreased in both cases, whereas RE of regression increased for ASI-SS and decreased for ASI-WW. The <italic>&#x3BA;</italic> of regression increased for both ASI-SS and ASI-WW, whereas the <italic>&#x3BA;</italic> of classification decreased for ASI-SS or remained roughly the same for ASI-WW. Finally, RE decreased for both classification and regression in GY-SS for the two yield data sets (<xref ref-type="fig" rid="fig4">Figure 4b</xref>), while <italic>&#x3BA;</italic> was roughly the same for regression and increased for classification. For GY-WW, <italic>&#x3BA;</italic> decreased for regression and remained in the same magnitude classification, while RE decreased for both classification and regression in GY-WW (<xref ref-type="fig" rid="fig4">Figure 4b</xref>).</p>
+        <p>For the wheat yield data, RE of regression and classification remained in the same order of magnitude (<xref ref-type="fig" rid="fig5">Figure 5b</xref>), whereas <italic>&#x3BA;</italic> increased when <italic>&#x3B1;</italic> was set at 30% the exception was GY-4, where <italic>&#x3BA;</italic> remained in approximately the same range (<xref ref-type="fig" rid="fig5">Figure 5a</xref>). Note that these observations are approximations used here to illustrate the tendency of the interaction between algorithms and traits. In all yellow rust data sets, the RE decreased markedly for classification, whereas for regression it increased or remained in the same order of magnitude. In stem rust, there is noticeable variation across data sets. When <italic>&#x3B1;</italic>=30%, RE of regression increased for all data sets, except those derived from the KNYANGUMI population, while RE of classification decreased or remained in the same order of magnitude. Lastly, <italic>&#x3BA;</italic> of regression increased in all stem and yellow rust data sets, whereas <italic>&#x3BA;</italic> of classification increased for data from off-season evaluation (-Sro) and decreased for data sets derived from main season evaluation (<bold>-</bold>Srm). Finally, <italic>&#x3BA;</italic> decreased for three yellow rust data sets (KBIRD-Tol, KNYANGUMI-Tol and F6PAVON-Ken) and increased for the other three (KBIRD-Ken, JUCHI-ken and F6PAVON-Tol).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <sec>
+        <title>Accuracy of GS algorithms for selecting the best individuals</title>
+        <p>GS aims to accurately predict breeding values with genome-wide marker data using a three-step process: (1) model training and validation, (2) predicting breeding values, and (3) selecting based on these predictions (<xref ref-type="bibr" rid="bib19">Heffner <italic>et al.</italic>, 2010</xref>).</p>
+        <p>Success of GS is mostly evaluated by Pearson's correlation coefficient between the observed and predicted values. However, <italic>&#x3C1;</italic> is a global measure that does not assess the goodness-of-fit of the regression in the critical zone, that is, the extreme values where the breeder decides whether or not to keep the lines for further breeding.</p>
+        <p>We evaluated the performance of 6 regression and 2 classification methods for selecting the best 15% of the individuals in 16 wheat data sets and 14 maize data sets (number of individuals ranging from 90 to 599) with variable marker coverage (<xref rid="tbl1" ref-type="table">Table 1</xref>) and variable population structure (<xref ref-type="bibr" rid="bib15">Gonz&#xE1;lez-Camacho <italic>et al.</italic>, 2012</xref>; <xref ref-type="bibr" rid="bib5">Crossa <italic>et al.</italic>, 2013</xref>). However, as population size influences the decision on selection intensity, we also evaluated the behaviour of algorithms for <italic>&#x3B1;</italic>=10, 15, 20, 25, 30, 35 and 40% of the distribution.</p>
+        <p>We chose two measures to evaluate the performance of algorithms for selecting the best individuals. One is the kappa (<italic>&#x3BA;</italic>) coefficient (<xref ref-type="bibr" rid="bib3">Cohen, 1960</xref>), which estimates the number of individuals correctly selected adjusted by the proportion of the class. The second is RE (<xref ref-type="disp-formula" rid="equ20">equations 6</xref> and <xref ref-type="disp-formula" rid="equ21">7</xref>), which was proposed <italic>ad hoc</italic> upon the model of directional selection by truncation (<xref ref-type="bibr" rid="bib9">Falconer and Mackay, 1996</xref>). Under this model, the genetic gain per generation is &#x394;<italic>G</italic>=<italic>ih&#x3C3;</italic><sub><italic>g</italic></sub> (<xref ref-type="bibr" rid="bib9">Falconer and Mackay, 1996</xref>), where <italic>i</italic> is the intensity of selection; <italic>h</italic> is the square root of heritability of the trait; and <italic>&#x3C3;</italic><sub><italic>g</italic></sub> is the additive genotypic standard deviation of the initial generation. As RE is the ratio of selection intensity based on marker data to phenotypic selection intensity (assuming the same genetic variance), it also gives the expected &#x394;<italic>G</italic> when GS is used. Other statistics remain to be explored: the AUC (area under the curve) statistic, for example, which is interpreted as the probability that a given classifier assigns a higher score to a positive example than to a negative one, when the positive and negative examples are randomly picked (<xref ref-type="bibr" rid="bib34">Vazquez <italic>et al.</italic>, 2012</xref>). The choice of the proper statistic will depend on the experimental design.</p>
+        <p>Our results (<xref ref-type="fig" rid="fig2">Figures 2b</xref> and <xref ref-type="fig" rid="fig3">3b</xref>) show that, except for the ASI data sets, <italic>&#x3C1;</italic> is a good indicator of the efficiency of GS in replacing phenotypic selection for <italic>&#x3B1;</italic>=15%. For both maize and wheat, the relation between <italic>&#x3C1;</italic> and <italic>&#x3BA;</italic> or between <italic>&#x3C1;</italic> and RE is very similar. For example, if <italic>&#x3C1;</italic>=0.6, RE is approximately 0.7 for maize (<xref ref-type="fig" rid="fig2">Figure 2b</xref>) and 0.6 for wheat (<xref ref-type="fig" rid="fig3">Figure 3b</xref>). The difference between slopes may be influenced mainly by the number of markers as the number of lines overlaps. Concerning the trait, the best individuals in the data sets were not always located in the upper tail of the distribution, as in yield; they were also located in the extreme lower tails of the distribution, as in disease resistance or flowering traits. For MFL and FFL, we decided to evaluate the selection of lines located in the lower tail of the distribution, as our group is involved in a drought breeding programme and a short life cycle is one of the alternatives for drought escape.</p>
+        <p>When using classification instead of regression for GS, we observed that SVC-lin outperforms regression approaches in almost all data sets when the proportion of selected individuals is small, that is, at the tails of the distribution (see <xref ref-type="supplementary-material" rid="sup1">Supplementary Figures</xref>). This can be explained by the generalisation capabilities of SVC-lin in circumstances that may be similar to those presented in our work, that is, the Gaussian kernel may over-fit the training set data to yield an SVM model that is not robust (<xref ref-type="bibr" rid="bib21">Jorissen and Gilson, 2005</xref>). Results of RFC were not so good, although other algorithmic alternatives remain to be explored (<xref ref-type="bibr" rid="bib16">Gonz&#xE1;lez-Recio and Forni, 2011</xref>).</p>
+        <p>The observed difference between classification and regression can sometimes exceed 50% (see, for example, GLS-5 results in <xref ref-type="fig" rid="fig4">Figure 4</xref>). When the percentile of the distribution is higher, that is, <italic>&#x3B1;</italic>&#x2A7E;25%, either this difference is not so important or regression performs better. It should be noted that dissimilarities between performances of algorithms depend on the trait analysed (see <xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S6</xref>). <xref ref-type="bibr" rid="bib16">Gonz&#xE1;lez-Recio and Forni (2011)</xref> obtained similar results when evaluating simulated and field data (disease resistance in pigs).</p>
+        <p>The superiority of binary classification over regression could be due to the skewness or asymmetry of the distribution <italic>per se</italic> (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1</xref>) or to the complexity of the relationship between genotypes and phenotypes. As discussed in <xref ref-type="bibr" rid="bib35">Wang <italic>et al.</italic> (2012)</xref>, it is still not clear how important epistasis in complex traits is in plant selection or what the effect of gene-by-environment interactions is. Machine learning algorithms, whether regression (SVR or RFR) or classification (SVC or RFC), can learn from finite training data sets taking into account the complexity of the hypothesis space without imposing any structure on the data (<xref ref-type="bibr" rid="bib18">Hastie <italic>et al.</italic>, 2011</xref>). Classification algorithms, in particular, optimise the function specifically to the region of selection; this may explain the differences observed at higher or lower percentiles.</p>
+        <p>Finally, there is a difference between the classification methods proposed by <xref ref-type="bibr" rid="bib16">Gonz&#xE1;lez-Recio and Forni (2011)</xref> and those used in this study. Whereas <xref ref-type="bibr" rid="bib16">Gonz&#xE1;lez-Recio and Forni (2011)</xref> chose hard classifiers, which directly target the classification decision boundary without producing probability estimation, we explored the behaviour of soft classifiers, which, besides emitting a probability of the class, allows using more balanced data sets as training.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>In this study, we compared the performance of six regression and three classification algorithms for selecting the best individuals in maize and wheat data sets using high-throughput molecular marker information. Instead of fitting all the data, classification algorithms optimise the approximating function to separate the best and worst individuals. This competency is noticeable, especially at extreme values of the distribution where classification seems able to capture more efficiently the underlying relations connecting genotypes to phenotypes.</p>
+      <sec>
+        <title>Data</title>
+        <p>The 30 data sets (14 maize trials and 16 wheat trials) and the R and Java scripts used in this work are deposited at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://repository.cimmyt.org/xmlui/handle/10883/2976">http://repository.cimmyt.org/xmlui/handle/10883/2976</ext-link>.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We acknowledge the funding provided by the Durable Rust Resistant Wheat Project led by Cornell University and supported by the Bill and Melinda Gates Foundation. We also thank HPC-Cluster CCT-Rosario for computing time and technical assistance. We are thankful to anonymous reviewers and to Dr Daniel Gianola and Dr O Gonz&#xE1;lez-Recio for their valuable comments, which helped to improve the quality of the manuscript.</p>
+    </ack>
+    <fn-group>
+      <fn>
+        <p><xref ref-type="supplementary-material" rid="sup1">Supplementary Information</xref> accompanies this paper on Heredity website (http://www.nature.com/hdy)</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Author contributions</bold>
+        </p>
+        <p>LO programmed and executed the algorithms and performed the statistical analysis. PP helped to prepare the data sets and sample scripts for the RKHS algorithm. ET contributed to optimising the support vector algorithms. All the authors participated in discussing and writing the manuscript.</p>
+      </fn>
+    </fn-group>
+    <notes>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <ref id="bib1">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breiman</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Random forests</article-title>
+          <source>Machine Learn</source>
+          <volume>45</volume>
+          <fpage>5</fpage>
+          <lpage>32</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib2">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burgue&#xF1;o</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Weigel</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Genomic prediction of breeding values when modeling genotype &#xD7; environment interaction using pedigree and dense molecular markers</article-title>
+          <source>Crop Sci</source>
+          <volume>52</volume>
+          <fpage>707</fpage>
+          <lpage>719</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib3">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cohen</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>1960</year>
+          <article-title>A coefficient of agreement for nominal scales</article-title>
+          <source>Educ Psychol Measurements</source>
+          <volume>20</volume>
+          <fpage>37</fpage>
+          <lpage>46</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib4">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cortes</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Vapnik</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Support-vector networks</article-title>
+          <source>Machine Learn</source>
+          <volume>20</volume>
+          <fpage>273</fpage>
+          <lpage>297</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib5">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>P&#xE9;rez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Hickey</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Burgue&#xF1;o</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ornella</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ceron-Rojas</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2013</year>
+          <article-title>Genomic prediction in CIMMYT maize and wheat breeding programs</article-title>
+          <source>Heredity</source>
+          <volume>112</volume>
+          <fpage>48</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="pmid">23572121</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib6">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hickey</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Pong-Wong</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Daetwyler</surname>
+              <given-names>HD</given-names>
+            </name>
+            <name>
+              <surname>Calus</surname>
+              <given-names>MPL</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Whole genome regression and prediction methods applied to plant and animal breeding</article-title>
+          <source>Genetics</source>
+          <volume>193</volume>
+          <fpage>327</fpage>
+          <lpage>345</lpage>
+          <pub-id pub-id-type="pmid">22745228</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib7">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Dexter</surname><given-names>M</given-names></name></person-group><year>2007</year><source>Eclipse and Java for Total Beginners Companion Tutorial Document</source><publisher-name>Eclipse: New York, NY, USA</publisher-name><x>
+</x><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://www.eclipsetutorial.sourceforge.net">http://www.eclipsetutorial.sourceforge.net</ext-link><x>
+</x>accessed 10 April 2013.</mixed-citation>
+      </ref>
+      <ref id="bib8">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Endelman</surname>
+              <given-names>JB</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Ridge regression and other kernels for genomic selection with R package rrBLUP</article-title>
+          <source>Plant Genome</source>
+          <volume>4</volume>
+          <fpage>250</fpage>
+          <lpage>255</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib9">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Falconer</surname><given-names>DS</given-names></name><name><surname>Mackay</surname><given-names>TFC</given-names></name></person-group><year>1996</year><source>Introduction to Quantitative Genetics</source>4 edn.<publisher-name>Longmans Green: Harlow, Essex, UK</publisher-name></mixed-citation>
+      </ref>
+      <ref id="bib10">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fern&#xE1;ndez</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Garc&#xED;a</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Herrera</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Addressing the classification with imbalanced data: Open problems and new challenges on class distribution. Hybrid Artificial Intelligent Systems</article-title>
+          <source>Lecture Notes Comput Sci</source>
+          <volume>6678</volume>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib11">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fielding</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>Bell</surname>
+              <given-names>JF</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>A review of methods for the assessment of prediction errors in conservation presence/absence models</article-title>
+          <source>Environ Conserv</source>
+          <volume>24</volume>
+          <fpage>38</fpage>
+          <lpage>49</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib12">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Fernando</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Stella</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Genomic-assisted prediction of genetic values with semiparametric procedures</article-title>
+          <source>Genetics</source>
+          <volume>173</volume>
+          <fpage>1761</fpage>
+          <lpage>1776</lpage>
+          <pub-id pub-id-type="pmid">16648593</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib13">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>van Kaam</surname>
+              <given-names>JBCHM</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Reproducing kernel Hilbert spaces regression methods for genomic assisted prediction of quantitative traits</article-title>
+          <source>Genetics</source>
+          <volume>178</volume>
+          <fpage>2289</fpage>
+          <lpage>2303</lpage>
+          <pub-id pub-id-type="pmid">18430950</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib14">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>2013</year>
+          <article-title>Priors in whole-genome regression: the Bayesian alphabet returns</article-title>
+          <source>Genet</source>
+          <volume>113</volume>
+          <fpage>151753</fpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib15">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gonz&#xE1;lez-Camacho</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>P&#xE9;rez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Cairns</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Mahuku</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2012</year>
+          <article-title>Genome-enabled prediction of genetic values using radial basis function neural networks</article-title>
+          <source>Theor Appl Genet</source>
+          <volume>125</volume>
+          <supplement>(4</supplement>
+          <fpage>759</fpage>
+          <lpage>771</lpage>
+          <pub-id pub-id-type="pmid">22566067</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib16">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gonz&#xE1;lez-Recio</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Forni</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Genome-wide prediction of discrete traits using Bayesian regressions and machine learning</article-title>
+          <source>Genet Sel Evol</source>
+          <volume>43</volume>
+          <fpage>7</fpage>
+          <pub-id pub-id-type="pmid">21329522</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib17">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hall</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Frank</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Holmes</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Pfahringer</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Reutemann</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Witten</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>The WEKA data mining software: an update</article-title>
+          <source>SIGKDD Explorations</source>
+          <volume>11</volume>
+          <fpage>10</fpage>
+          <lpage>18</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib18">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Hastie</surname><given-names>T</given-names></name><name><surname>Tibshirani</surname><given-names>R</given-names></name><name><surname>Friedman</surname><given-names>J</given-names></name></person-group><year>2011</year><source>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</source><publisher-name>Springer: New York, NY, USA</publisher-name>5th printing.</mixed-citation>
+      </ref>
+      <ref id="bib19">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heffner</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Lorenz</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Jannink</surname>
+              <given-names>J-L</given-names>
+            </name>
+            <name>
+              <surname>Sorrells</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Plant breeding with genomic selection: gain per unit time and cost</article-title>
+          <source>Crop Sci</source>
+          <volume>50</volume>
+          <fpage>1681</fpage>
+          <lpage>1690</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib20">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heslot</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>H-P</given-names>
+            </name>
+            <name>
+              <surname>Sorrells</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Jannink</surname>
+              <given-names>J-L</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Genomic selection in plant breeding: a comparison of models</article-title>
+          <source>Crop Sci</source>
+          <volume>52</volume>
+          <fpage>146</fpage>
+          <lpage>160</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib21">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jorissen</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Gilson</surname>
+              <given-names>MK</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Virtual screening of molecular databases using a support vector machine</article-title>
+          <source>J Chem Inf Model</source>
+          <volume>45</volume>
+          <fpage>549</fpage>
+          <lpage>561</lpage>
+          <pub-id pub-id-type="pmid">15921445</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib22">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liaw</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wiener</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Classification and regression by random forest</article-title>
+          <source>R News</source>
+          <volume>2</volume>
+          <fpage>18</fpage>
+          <lpage>22</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib23">
+        <mixed-citation publication-type="other"><person-group person-group-type="author"><name><surname>Liaw</surname><given-names>A</given-names></name></person-group><year>2013</year><article-title>Package &#x2018;randomForest'. Breiman and Cutler's random forests for classification and regression (R package manual)</article-title>Available at<x>
+</x><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://cran.r-project.org/web/packages/randomForest/index.html">http://cran.r-project.org/web/packages/randomForest/index.html</ext-link><x>
+</x>Last accessed 09 May 2013.</mixed-citation>
+      </ref>
+      <ref id="bib24">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>HH</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Hard or soft classification? Large-margin unified machines</article-title>
+          <source>J Am Stat Assoc</source>
+          <volume>106</volume>
+          <fpage>166</fpage>
+          <lpage>177</lpage>
+          <pub-id pub-id-type="pmid">22162896</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib25">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Long</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Rosa</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Weigel</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Avendano</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Machine learning classification procedure for selecting SNPs in genomic selection: application to early mortality in broilers</article-title>
+          <source>J Anim Breeding Genet</source>
+          <volume>124</volume>
+          <fpage>377</fpage>
+          <lpage>389</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib26">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meuwissen</surname>
+              <given-names>THE</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Goddard</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Prediction of total genetic value using genome-wide dense marker maps</article-title>
+          <source>Genetics</source>
+          <volume>157</volume>
+          <fpage>1819</fpage>
+          <lpage>1829</lpage>
+          <pub-id pub-id-type="pmid">11290733</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib27">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ornella</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>P&#xE9;rez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Burgue&#xF1;o</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Tapia</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2012</year>
+          <article-title>Genomic prediction of genetic values for resistance to wheat rusts</article-title>
+          <source>Plant Genome</source>
+          <volume>5</volume>
+          <fpage>136</fpage>
+          <lpage>148</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib28">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Park</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Casella</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>The Bayesian LASSO</article-title>
+          <source>J Am Stat Assoc</source>
+          <volume>103</volume>
+          <fpage>681</fpage>
+          <lpage>686</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib29">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>P&#xE9;rez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Genomic-enabled prediction based on molecular markers and pedigree using the Bayesian Linear Regression Package in R</article-title>
+          <source>Plant Genome</source>
+          <volume>3</volume>
+          <fpage>106</fpage>
+          <lpage>116</lpage>
+          <pub-id pub-id-type="pmid">21566722</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib30">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>P&#xE9;rez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Gonz&#xE1;lez-Camacho</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Man&#xE8;s</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Dreisigacker</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Comparison between linear and non-parametric regression models for genome-enabled prediction in wheat</article-title>
+          <source>G3</source>
+          <volume>2</volume>
+          <fpage>1595</fpage>
+          <lpage>1605</lpage>
+          <pub-id pub-id-type="pmid">23275882</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib31">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Platt</surname><given-names>JC</given-names></name></person-group><year>2000</year><article-title>Probabilistic outputs for support vector machines and comparisons to regularized likelihood methods</article-title>In: Smola A, <italic>et al</italic> (eds)<source>Advances in Large Margin Classiers</source><publisher-name>MIT Press: Cambridge, MA, USA</publisher-name></mixed-citation>
+      </ref>
+      <ref id="bib32">
+        <mixed-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>R Core Team</collab>
+          </person-group>
+          <year>2013</year>
+          <source>R: a Language and Environment for Statistical Computing</source>
+          <publisher-name>R Foundation for Statistical Computing: Vienna, Austria</publisher-name>
+          <x>
+</x>
+          <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://www.R-project.org/">http://www.R-project.org/</ext-link>
+          <x>
+.
+</x>
+        </mixed-citation>
+      </ref>
+      <ref id="bib33">
+        <mixed-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sarkar</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <source>Lattice: Multivariate Data Visualization with R</source>
+          <publisher-name>Springer: New York, NY, USA</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="bib34">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vazquez</surname>
+              <given-names>AI</given-names>
+            </name>
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Klimentidis</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Rosa</surname>
+              <given-names>GJM</given-names>
+            </name>
+            <name>
+              <surname>Gianola</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Yi</surname>
+              <given-names>N</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2012</year>
+          <article-title>A comprehensive genetic approach for improving prediction of skin cancer risk in humans</article-title>
+          <source>Genetics</source>
+          <volume>192</volume>
+          <fpage>1493</fpage>
+          <lpage>1502</lpage>
+          <pub-id pub-id-type="pmid">23051645</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib35">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>El-Basyoni</surname>
+              <given-names>IS</given-names>
+            </name>
+            <name>
+              <surname>Baenziger</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Eskridge</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Dweikat</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Prediction of genetic values of quantitative traits with epistatic effects in plant breeding populations</article-title>
+          <source>Heredity</source>
+          <volume>109</volume>
+          <fpage>313</fpage>
+          <lpage>319</lpage>
+          <pub-id pub-id-type="pmid">22892636</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="bib36">
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilcoxon</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>1945</year>
+          <article-title>Individual comparisons by ranking methods</article-title>
+          <source>Biometrics Bull</source>
+          <volume>1</volume>
+          <fpage>80</fpage>
+          <lpage>83</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="bib37">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Witten</surname><given-names>IH</given-names></name><name><surname>Frank</surname><given-names>E</given-names></name></person-group><year>2005</year><source>Data Mining: Practical Machine Learning Tools and Techniques</source>2nd edn.<publisher-name>Morgan Kaufmann: San Francisco, CA, USA</publisher-name></mixed-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="supplementary-material" id="sup1">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="xob1">
+        <label>Supplementary Figure 1</label>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144x1.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="xob2">
+        <label>Supplementary Figure 2</label>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144x2.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="xob3">
+        <label>Supplementary Figure 3</label>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144x3.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="xob4">
+        <label>Supplementary Figure 4</label>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144x4.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="xob5">
+        <label>Supplementary Figure 5</label>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144x5.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="xob6">
+        <label>Supplementary Figure 6</label>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144x6.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="xob7">
+        <label>Supplementary Table S1</label>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144x7.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="xob8">
+        <label>Supplementary Table S2</label>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144x8.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </back>
+  <floats-group>
+    <fig id="fig1">
+      <label>Figure 1</label>
+      <caption>
+        <p>Confusion matrix for a two-class problem. <italic>o</italic><sub><italic>a</italic></sub> and <italic>o</italic><sub><italic>b</italic></sub> are the number of observed cases for classes A and B, respectively; <italic>m</italic><sub><italic>a</italic></sub>=<italic>n</italic><sub><italic>aa</italic></sub>+<italic>n</italic><sub><italic>ba</italic></sub> and <italic>m</italic><sub><italic>b</italic></sub>=<italic>n</italic><sub><italic>ab</italic></sub>+<italic>n</italic><sub><italic>bb</italic></sub> are the number of predicted cases for classes A and B, respectively; <italic>n</italic><sub><italic>aa</italic></sub> and <italic>n</italic><sub><italic>bb</italic></sub> are the number of individuals correctly predicted for each class; <italic>n</italic><sub><italic>ab</italic></sub> is the number of individuals in class A predicted as B, whereas <italic>n</italic><sub><italic>ba</italic></sub> is the number of individuals in class B predicted as A. <italic>n</italic><sub><italic>tot</italic></sub> is the total number of cases in the experiment.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144f1"/>
+    </fig>
+    <fig id="fig2">
+      <label>Figure 2</label>
+      <caption>
+        <p>Scatter plot of Pearson's correlation coefficient vs Cohen's kappa coefficient (<bold>a</bold>) and Pearson's correlation vs RE (<bold>b</bold>) for the 6 regression methods evaluated on 14 maize data sets using a percentile value of 15%. ASI data sets were excluded from the regression analysis (ovals).</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144f2"/>
+    </fig>
+    <fig id="fig3">
+      <label>Figure 3</label>
+      <caption>
+        <p>Scatter plot of Pearson's correlation coefficient vs Cohen's kappa coefficient (<bold>a</bold>) and Pearson's correlation coefficient vs RE (<bold>b</bold>) for the 6 regression methods evaluated on 16 wheat data sets using a percentile value of 15%.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144f3"/>
+    </fig>
+    <fig id="fig4">
+      <label>Figure 4</label>
+      <caption>
+        <p>Bar plot of Cohen's kappa coefficient (<bold>a</bold>) and RE (<bold>b</bold>) for the best regression method (green) and the best classification method (grey) evaluated on 14 maize data sets using a percentile <italic>&#x3B1;</italic>=15% (light colour) and 30% (dark colour).</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144f4"/>
+    </fig>
+    <fig id="fig5">
+      <label>Figure 5</label>
+      <caption>
+        <p>Bar plot of Cohen's kappa coefficient (<bold>a</bold>) and RE (<bold>b</bold>) for the best regression method (green) and the best classification method (grey) evaluated on 16 wheat data sets using a percentile <italic>&#x3B1;</italic>=15% (light colour) and 30% (dark colour).</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="hdy2013144f5"/>
+    </fig>
+    <table-wrap id="tbl1">
+      <label>Table 1</label>
+      <caption>
+        <title>Information on the maize and wheat data sets used in this study</title>
+      </caption>
+      <table frame="hsides" rules="groups" border="1">
+        <colgroup>
+          <col align="left"/>
+          <col align="left"/>
+          <col align="left"/>
+          <col align="left"/>
+          <col align="left"/>
+        </colgroup>
+        <thead valign="bottom">
+          <tr>
+            <th align="left" valign="top" charoff="50">
+              <italic>Data set</italic>
+            </th>
+            <th align="left" valign="top" charoff="50">
+              <italic>Species</italic>
+            </th>
+            <th align="left" valign="top" charoff="50">
+              <italic>Trait&#x2013;environment combination</italic>
+            </th>
+            <th align="left" valign="top" charoff="50">
+              <italic>Number of individuals</italic>
+            </th>
+            <th align="left" valign="top" charoff="50">
+              <italic>Number of markers</italic>
+            </th>
+          </tr>
+        </thead>
+        <tbody valign="top">
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-WW</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Yield&#x2014;well watered</td>
+            <td align="left" valign="top" charoff="50">242</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-SS</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Yield&#x2014;drought stressed</td>
+            <td align="left" valign="top" charoff="50">242</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">MLF-WW</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Male flowering time&#x2014;well watered</td>
+            <td align="left" valign="top" charoff="50">258</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">MLF-SS</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Male flowering time&#x2014;drought stressed</td>
+            <td align="left" valign="top" charoff="50">258</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">FLF-WW</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Female flowering time&#x2014;well watered</td>
+            <td align="left" valign="top" charoff="50">258</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">FLF-SS</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Female flowering time&#x2014;drought stressed</td>
+            <td align="left" valign="top" charoff="50">258</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">ASI-WW</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Anthesis silking interval&#x2014;well watered</td>
+            <td align="left" valign="top" charoff="50">258</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">ASI-SS</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Anthesis silking interval&#x2014;drought stressed</td>
+            <td align="left" valign="top" charoff="50">258</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-1</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Grey leaf spot</td>
+            <td align="left" valign="top" charoff="50">272</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-2</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Grey leaf spot</td>
+            <td align="left" valign="top" charoff="50">280</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-3</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Grey leaf spot</td>
+            <td align="left" valign="top" charoff="50">278</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-4</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Grey leaf spot</td>
+            <td align="left" valign="top" charoff="50">261</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-5</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Grey leaf spot</td>
+            <td align="left" valign="top" charoff="50">279</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-6</td>
+            <td align="left" valign="top" charoff="50">Maize</td>
+            <td align="left" valign="top" charoff="50">Grey leaf spot</td>
+            <td align="left" valign="top" charoff="50">281</td>
+            <td align="left" valign="top" charoff="50">46&#x2009;374 SNPs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-Srm</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Stem rust&#x2014;main season</td>
+            <td align="left" valign="top" charoff="50">90</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-Sro</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Stem rust&#x2014;off season</td>
+            <td align="left" valign="top" charoff="50">90</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KNYANGUMI-Srm</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Stem rust&#x2014;main season</td>
+            <td align="left" valign="top" charoff="50">176</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KNYANGUMI-Sro</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Stem rust&#x2014;off season</td>
+            <td align="left" valign="top" charoff="50">191</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-Srm</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Stem rust&#x2014;main season</td>
+            <td align="left" valign="top" charoff="50">176</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-Sro</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Stem rust&#x2014;off season</td>
+            <td align="left" valign="top" charoff="50">180</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">JUCHI-Ken</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yellow rust&#x2014;Kenya</td>
+            <td align="left" valign="top" charoff="50">176</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-Ken</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yellow rust&#x2014;Kenya</td>
+            <td align="left" valign="top" charoff="50">191</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-tol</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yellow rust&#x2014;Mexico</td>
+            <td align="left" valign="top" charoff="50">176</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KNYANGUMI-tol</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yellow rust&#x2014;Mexico</td>
+            <td align="left" valign="top" charoff="50">180</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-Ken</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yellow rust&#x2014;Kenya</td>
+            <td align="left" valign="top" charoff="50">147</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-tol</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yellow rust&#x2014;Mexico</td>
+            <td align="left" valign="top" charoff="50">180</td>
+            <td align="left" valign="top" charoff="50">1355 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-1</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yield-E1, low rainfall and irrigated</td>
+            <td align="left" valign="top" charoff="50">599</td>
+            <td align="left" valign="top" charoff="50">1279 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-2</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yield&#x2014;high rainfall</td>
+            <td align="left" valign="top" charoff="50">599</td>
+            <td align="left" valign="top" charoff="50">1279 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-3</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yield&#x2014;low rainfall and high temperature</td>
+            <td align="left" valign="top" charoff="50">599</td>
+            <td align="left" valign="top" charoff="50">1279 DArT</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-4</td>
+            <td align="left" valign="top" charoff="50">Wheat</td>
+            <td align="left" valign="top" charoff="50">Yield&#x2014;low humidity and hot</td>
+            <td align="left" valign="top" charoff="50">599</td>
+            <td align="left" valign="top" charoff="50">1279 DArT</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="t1-fn1">
+          <p>Abbreviation: SNP, single-nucleotide polymorphism.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap id="tbl2">
+      <label>Table 2</label>
+      <caption>
+        <title>Cohen's kappa coefficient for 6 regression and 3 classification methods for genomic selection applied to 14 maize data sets and across trait&#x2013;environment combinations when selecting the best 15% of individuals</title>
+      </caption>
+      <table frame="hsides" rules="groups" border="1">
+        <colgroup>
+          <col align="left"/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+        </colgroup>
+        <thead valign="bottom">
+          <tr>
+            <th align="left" valign="top" charoff="50">
+              <italic>Data set</italic>
+            </th>
+            <th colspan="6" align="center" valign="top" char="." charoff="50">
+              <italic>Regression</italic>
+              <hr/>
+            </th>
+            <th colspan="3" align="center" valign="top" char="." charoff="50">
+              <italic>Classification</italic>
+              <hr/>
+            </th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" charoff="50">&#xA0;</th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RHKS</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>BL</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RR</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RFR</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVR rbf</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVR lin</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RFC</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVC rbf</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVC lin</italic>
+            </th>
+          </tr>
+        </thead>
+        <tbody valign="top">
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-1</td>
+            <td align="char" valign="top" char="." charoff="50">0.249</td>
+            <td align="char" valign="top" char="." charoff="50">0.190</td>
+            <td align="char" valign="top" char="." charoff="50">0.243</td>
+            <td align="char" valign="top" char="." charoff="50">0.249</td>
+            <td align="char" valign="top" char="." charoff="50">0.196</td>
+            <td align="char" valign="top" char="." charoff="50">0.196</td>
+            <td align="char" valign="top" char="." charoff="50">0.243</td>
+            <td align="char" valign="top" char="." charoff="50">0.272</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.337</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-2</td>
+            <td align="char" valign="top" char="." charoff="50">0.329</td>
+            <td align="char" valign="top" char="." charoff="50">0.329</td>
+            <td align="char" valign="top" char="." charoff="50">0.318</td>
+            <td align="char" valign="top" char="." charoff="50">0.323</td>
+            <td align="char" valign="top" char="." charoff="50">0.364</td>
+            <td align="char" valign="top" char="." charoff="50">0.376</td>
+            <td align="char" valign="top" char="." charoff="50">0.329</td>
+            <td align="char" valign="top" char="." charoff="50">0.318</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.545</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-3</td>
+            <td align="char" valign="top" char="." charoff="50">0.399</td>
+            <td align="char" valign="top" char="." charoff="50">0.446</td>
+            <td align="char" valign="top" char="." charoff="50">0.411</td>
+            <td align="char" valign="top" char="." charoff="50">0.393</td>
+            <td align="char" valign="top" char="." charoff="50">0.417</td>
+            <td align="char" valign="top" char="." charoff="50">0.434</td>
+            <td align="char" valign="top" char="." charoff="50">0.405</td>
+            <td align="char" valign="top" char="." charoff="50">0.323</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.586</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-4</td>
+            <td align="char" valign="top" char="." charoff="50">0.368</td>
+            <td align="char" valign="top" char="." charoff="50">0.338</td>
+            <td align="char" valign="top" char="." charoff="50">0.356</td>
+            <td align="char" valign="top" char="." charoff="50">0.344</td>
+            <td align="char" valign="top" char="." charoff="50">0.380</td>
+            <td align="char" valign="top" char="." charoff="50">0.338</td>
+            <td align="char" valign="top" char="." charoff="50">0.315</td>
+            <td align="char" valign="top" char="." charoff="50">0.250</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.480</underline>
+              <sup>*</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-5</td>
+            <td align="char" valign="top" char="." charoff="50">0.102</td>
+            <td align="char" valign="top" char="." charoff="50">0.084</td>
+            <td align="char" valign="top" char="." charoff="50">0.084</td>
+            <td align="char" valign="top" char="." charoff="50">0.143</td>
+            <td align="char" valign="top" char="." charoff="50">0.154</td>
+            <td align="char" valign="top" char="." charoff="50">0.154</td>
+            <td align="char" valign="top" char="." charoff="50">0.102</td>
+            <td align="char" valign="top" char="." charoff="50">0.084</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.382</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-6</td>
+            <td align="char" valign="top" char="." charoff="50">0.178</td>
+            <td align="char" valign="top" char="." charoff="50">0.154</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.183</underline>
+              <sup>**</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.166</td>
+            <td align="char" valign="top" char="." charoff="50">0.137</td>
+            <td align="char" valign="top" char="." charoff="50">0.148</td>
+            <td align="char" valign="top" char="." charoff="50">0.160</td>
+            <td align="char" valign="top" char="." charoff="50">0.125</td>
+            <td align="char" valign="top" char="." charoff="50">0.148</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-SS</td>
+            <td align="char" valign="top" char="." charoff="50">0.202</td>
+            <td align="char" valign="top" char="." charoff="50">0.208</td>
+            <td align="char" valign="top" char="." charoff="50">0.244</td>
+            <td align="char" valign="top" char="." charoff="50">0.232</td>
+            <td align="char" valign="top" char="." charoff="50">0.208</td>
+            <td align="char" valign="top" char="." charoff="50">0.256</td>
+            <td align="char" valign="top" char="." charoff="50">0.238</td>
+            <td align="char" valign="top" char="." charoff="50">0.190</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.316</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-WW</td>
+            <td align="char" valign="top" char="." charoff="50">0.370</td>
+            <td align="char" valign="top" char="." charoff="50">0.376</td>
+            <td align="char" valign="top" char="." charoff="50">0.382</td>
+            <td align="char" valign="top" char="." charoff="50">0.394</td>
+            <td align="char" valign="top" char="." charoff="50">0.364</td>
+            <td align="char" valign="top" char="." charoff="50">0.340</td>
+            <td align="char" valign="top" char="." charoff="50">0.334</td>
+            <td align="char" valign="top" char="." charoff="50">0.394</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.454</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">MLF-WW</td>
+            <td align="char" valign="top" char="." charoff="50">0.580</td>
+            <td align="char" valign="top" char="." charoff="50">0.592</td>
+            <td align="char" valign="top" char="." charoff="50">0.586</td>
+            <td align="char" valign="top" char="." charoff="50">0.557</td>
+            <td align="char" valign="top" char="." charoff="50">0.580</td>
+            <td align="char" valign="top" char="." charoff="50">0.586</td>
+            <td align="char" valign="top" char="." charoff="50">0.575</td>
+            <td align="char" valign="top" char="." charoff="50">0.468</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.699</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">MLF-SS</td>
+            <td align="char" valign="top" char="." charoff="50">0.580</td>
+            <td align="char" valign="top" char="." charoff="50">0.586</td>
+            <td align="char" valign="top" char="." charoff="50">0.610</td>
+            <td align="char" valign="top" char="." charoff="50">0.545</td>
+            <td align="char" valign="top" char="." charoff="50">0.580</td>
+            <td align="char" valign="top" char="." charoff="50">0.610</td>
+            <td align="char" valign="top" char="." charoff="50">0.569</td>
+            <td align="char" valign="top" char="." charoff="50">0.510</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.722</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">FLF-WW</td>
+            <td align="char" valign="top" char="." charoff="50">0.557</td>
+            <td align="char" valign="top" char="." charoff="50">0.586</td>
+            <td align="char" valign="top" char="." charoff="50">0.580</td>
+            <td align="char" valign="top" char="." charoff="50">0.539</td>
+            <td align="char" valign="top" char="." charoff="50">0.580</td>
+            <td align="char" valign="top" char="." charoff="50">0.586</td>
+            <td align="char" valign="top" char="." charoff="50">0.610</td>
+            <td align="char" valign="top" char="." charoff="50">0.445</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.693</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">FLF-SS</td>
+            <td align="char" valign="top" char="." charoff="50">0.569</td>
+            <td align="char" valign="top" char="." charoff="50">0.610</td>
+            <td align="char" valign="top" char="." charoff="50">0.616</td>
+            <td align="char" valign="top" char="." charoff="50">0.504</td>
+            <td align="char" valign="top" char="." charoff="50">0.610</td>
+            <td align="char" valign="top" char="." charoff="50">0.598</td>
+            <td align="char" valign="top" char="." charoff="50">0.480</td>
+            <td align="char" valign="top" char="." charoff="50">0.421</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.669</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">ASI-WW</td>
+            <td align="char" valign="top" char="." charoff="50">0.072</td>
+            <td align="char" valign="top" char="." charoff="50">0.066</td>
+            <td align="char" valign="top" char="." charoff="50">0.078</td>
+            <td align="char" valign="top" char="." charoff="50">0.001</td>
+            <td align="char" valign="top" char="." charoff="50">0.066</td>
+            <td align="char" valign="top" char="." charoff="50">0.078</td>
+            <td align="char" valign="top" char="." charoff="50">0.096</td>
+            <td align="char" valign="top" char="." charoff="50">0.078</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.131</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">ASI-SS</td>
+            <td align="char" valign="top" char="." charoff="50">0.049</td>
+            <td align="char" valign="top" char="." charoff="50">0.090</td>
+            <td align="char" valign="top" char="." charoff="50">0.073</td>
+            <td align="char" valign="top" char="." charoff="50">0.007</td>
+            <td align="char" valign="top" char="." charoff="50">0.060</td>
+            <td align="char" valign="top" char="." charoff="50">0.107</td>
+            <td align="char" valign="top" char="." charoff="50">0.120</td>
+            <td align="char" valign="top" char="." charoff="50">0.155</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.303</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="t2-fn1">
+          <p>Abbreviations: BL, Bayesian LASSO; NS, not significant; RFR, Random Forest Regression; RHKS, Reproducing Kernel Hilbert Spaces; RR, Ridge Regression; SVR, Support Vector Regression with radial basis function (rbf) or linear (lin) kernels; RFC, Random Forest Classification; SVC, Support Vector Classification with radial basis function (rbf) or linear (lin) kernels.</p>
+        </fn>
+        <fn id="t2-fn2">
+          <p>Results presented are the average of 50 random partitions (the proportion of individuals in the training-testing data sets is 9:1).</p>
+        </fn>
+        <fn id="t2-fn3">
+          <p>For each data set the highest value is underlined.</p>
+        </fn>
+        <fn id="t2-fn4">
+          <p>*, ** Differences are significant at the 0.05 and 0.01 probability levels, respectively.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap id="tbl3">
+      <label>Table 3</label>
+      <caption>
+        <title>Relative efficiency of 6 regression and 3 classification methods for genomic selection applied to 8 maize data sets and across trait&#x2013;environment combinations when selecting the best 15% of individuals</title>
+      </caption>
+      <table frame="hsides" rules="groups" border="1">
+        <colgroup>
+          <col align="left"/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+        </colgroup>
+        <thead valign="bottom">
+          <tr>
+            <th align="left" valign="top" charoff="50">
+              <italic>Data set</italic>
+            </th>
+            <th colspan="6" align="center" valign="top" char="." charoff="50">
+              <italic>Regression</italic>
+              <hr/>
+            </th>
+            <th colspan="3" align="center" valign="top" char="." charoff="50">
+              <italic>Classification</italic>
+              <hr/>
+            </th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" charoff="50">&#xA0;</th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RHKS</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>BL</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RR</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RFR</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVR rbf</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVR lin</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RFC</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVC rbf</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVC Lin</italic>
+            </th>
+          </tr>
+        </thead>
+        <tbody valign="top">
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-1</td>
+            <td align="char" valign="top" char="." charoff="50">0.358</td>
+            <td align="char" valign="top" char="." charoff="50">0.300</td>
+            <td align="char" valign="top" char="." charoff="50">0.341</td>
+            <td align="char" valign="top" char="." charoff="50">0.354</td>
+            <td align="char" valign="top" char="." charoff="50">0.278</td>
+            <td align="char" valign="top" char="." charoff="50">0.296</td>
+            <td align="char" valign="top" char="." charoff="50">0.331</td>
+            <td align="char" valign="top" char="." charoff="50">0.336</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.487</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-2</td>
+            <td align="char" valign="top" char="." charoff="50">0.589</td>
+            <td align="char" valign="top" char="." charoff="50">0.527</td>
+            <td align="char" valign="top" char="." charoff="50">0.551</td>
+            <td align="char" valign="top" char="." charoff="50">0.583</td>
+            <td align="char" valign="top" char="." charoff="50">0.601</td>
+            <td align="char" valign="top" char="." charoff="50">0.585</td>
+            <td align="char" valign="top" char="." charoff="50">0.539</td>
+            <td align="char" valign="top" char="." charoff="50">0.506</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.795</underline>
+              <sup>*</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-3</td>
+            <td align="char" valign="top" char="." charoff="50">0.702</td>
+            <td align="char" valign="top" char="." charoff="50">0.730</td>
+            <td align="char" valign="top" char="." charoff="50">0.706</td>
+            <td align="char" valign="top" char="." charoff="50">0.700</td>
+            <td align="char" valign="top" char="." charoff="50">0.707</td>
+            <td align="char" valign="top" char="." charoff="50">0.721</td>
+            <td align="char" valign="top" char="." charoff="50">0.693</td>
+            <td align="char" valign="top" char="." charoff="50">0.600</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.841</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-4</td>
+            <td align="char" valign="top" char="." charoff="50">0.611</td>
+            <td align="char" valign="top" char="." charoff="50">0.570</td>
+            <td align="char" valign="top" char="." charoff="50">0.600</td>
+            <td align="char" valign="top" char="." charoff="50">0.602</td>
+            <td align="char" valign="top" char="." charoff="50">0.580</td>
+            <td align="char" valign="top" char="." charoff="50">0.534</td>
+            <td align="char" valign="top" char="." charoff="50">0.473</td>
+            <td align="char" valign="top" char="." charoff="50">0.572</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.763</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-5</td>
+            <td align="char" valign="top" char="." charoff="50">0.283</td>
+            <td align="char" valign="top" char="." charoff="50">0.287</td>
+            <td align="char" valign="top" char="." charoff="50">0.260</td>
+            <td align="char" valign="top" char="." charoff="50">0.325</td>
+            <td align="char" valign="top" char="." charoff="50">0.331</td>
+            <td align="char" valign="top" char="." charoff="50">0.354</td>
+            <td align="char" valign="top" char="." charoff="50">0.264</td>
+            <td align="char" valign="top" char="." charoff="50">0.237</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.664</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GLS-6</td>
+            <td align="char" valign="top" char="." charoff="50">0.423</td>
+            <td align="char" valign="top" char="." charoff="50">0.376</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.432</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.424</td>
+            <td align="char" valign="top" char="." charoff="50">0.382</td>
+            <td align="char" valign="top" char="." charoff="50">0.393</td>
+            <td align="char" valign="top" char="." charoff="50">0.315</td>
+            <td align="char" valign="top" char="." charoff="50">0.367</td>
+            <td align="char" valign="top" char="." charoff="50">0.381</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-SS</td>
+            <td align="char" valign="top" char="." charoff="50">0.356</td>
+            <td align="char" valign="top" char="." charoff="50">0.286</td>
+            <td align="char" valign="top" char="." charoff="50">0.346</td>
+            <td align="char" valign="top" char="." charoff="50">0.432</td>
+            <td align="char" valign="top" char="." charoff="50">0.328</td>
+            <td align="char" valign="top" char="." charoff="50">0.348</td>
+            <td align="char" valign="top" char="." charoff="50">0.415</td>
+            <td align="char" valign="top" char="." charoff="50">0.332</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.508</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-WW</td>
+            <td align="char" valign="top" char="." charoff="50">0.591</td>
+            <td align="char" valign="top" char="." charoff="50">0.585</td>
+            <td align="char" valign="top" char="." charoff="50">0.603</td>
+            <td align="char" valign="top" char="." charoff="50">0.616</td>
+            <td align="char" valign="top" char="." charoff="50">0.585</td>
+            <td align="char" valign="top" char="." charoff="50">0.561</td>
+            <td align="char" valign="top" char="." charoff="50">0.534</td>
+            <td align="char" valign="top" char="." charoff="50">0.588</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.704</underline>
+              <sup>*</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">MLF-WW</td>
+            <td align="char" valign="top" char="." charoff="50">0.848</td>
+            <td align="char" valign="top" char="." charoff="50">0.888</td>
+            <td align="char" valign="top" char="." charoff="50">0.863</td>
+            <td align="char" valign="top" char="." charoff="50">0.800</td>
+            <td align="char" valign="top" char="." charoff="50">0.847</td>
+            <td align="char" valign="top" char="." charoff="50">0.886</td>
+            <td align="char" valign="top" char="." charoff="50">0.856</td>
+            <td align="char" valign="top" char="." charoff="50">0.687</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.914</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">MLF-SS</td>
+            <td align="char" valign="top" char="." charoff="50">0.847</td>
+            <td align="char" valign="top" char="." charoff="50">0.871</td>
+            <td align="char" valign="top" char="." charoff="50">0.890</td>
+            <td align="char" valign="top" char="." charoff="50">0.803</td>
+            <td align="char" valign="top" char="." charoff="50">0.856</td>
+            <td align="char" valign="top" char="." charoff="50">0.882</td>
+            <td align="char" valign="top" char="." charoff="50">0.803</td>
+            <td align="char" valign="top" char="." charoff="50">0.741</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.948</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">FLF-WW</td>
+            <td align="char" valign="top" char="." charoff="50">0.822</td>
+            <td align="char" valign="top" char="." charoff="50">0.877</td>
+            <td align="char" valign="top" char="." charoff="50">0.856</td>
+            <td align="char" valign="top" char="." charoff="50">0.775</td>
+            <td align="char" valign="top" char="." charoff="50">0.845</td>
+            <td align="char" valign="top" char="." charoff="50">0.878</td>
+            <td align="char" valign="top" char="." charoff="50">0.867</td>
+            <td align="char" valign="top" char="." charoff="50">0.692</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.932</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">FLF-SS</td>
+            <td align="char" valign="top" char="." charoff="50">0.832</td>
+            <td align="char" valign="top" char="." charoff="50">0.885</td>
+            <td align="char" valign="top" char="." charoff="50">0.874</td>
+            <td align="char" valign="top" char="." charoff="50">0.757</td>
+            <td align="char" valign="top" char="." charoff="50">0.866</td>
+            <td align="char" valign="top" char="." charoff="50">0.872</td>
+            <td align="char" valign="top" char="." charoff="50">0.738</td>
+            <td align="char" valign="top" char="." charoff="50">0.673</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.908</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">ASI-WW</td>
+            <td align="char" valign="top" char="." charoff="50">0.182</td>
+            <td align="char" valign="top" char="." charoff="50">0.173</td>
+            <td align="char" valign="top" char="." charoff="50">0.312</td>
+            <td align="char" valign="top" char="." charoff="50">0.103</td>
+            <td align="char" valign="top" char="." charoff="50">0.210</td>
+            <td align="char" valign="top" char="." charoff="50">0.263</td>
+            <td align="char" valign="top" char="." charoff="50">0.226</td>
+            <td align="char" valign="top" char="." charoff="50">0.238</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.393</underline>
+              <sup>*</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">ASI-SS</td>
+            <td align="char" valign="top" char="." charoff="50">0.134</td>
+            <td align="char" valign="top" char="." charoff="50">0.165</td>
+            <td align="char" valign="top" char="." charoff="50">0.124</td>
+            <td align="char" valign="top" char="." charoff="50">0.109</td>
+            <td align="char" valign="top" char="." charoff="50">0.143</td>
+            <td align="char" valign="top" char="." charoff="50">0.116</td>
+            <td align="char" valign="top" char="." charoff="50">0.262</td>
+            <td align="char" valign="top" char="." charoff="50">0.304</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.634</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="t3-fn1">
+          <p>Abbreviations: BL, Bayesian LASSO; NS, not significant; RFR, Random Forest Regression; RHKS, Reproducing Kernel Hilbert Spaces; RR, Ridge Regression; SVR, Support Vector Regression with radial basis function (rbf) or linear (lin) kernels; RFC, Random Forest Classification; SVC, Support Vector Classification with radial basis function (rbf) or linear (lin) kernels.</p>
+        </fn>
+        <fn id="t3-fn2">
+          <p>Results presented are the average of 50 random partitions (the proportion of individuals in the training-testing data sets is 9:1).</p>
+        </fn>
+        <fn id="t3-fn3">
+          <p>For each data set the highest value is underlined.</p>
+        </fn>
+        <fn id="t3-fn4">
+          <p>*, ** Differences are significant at the 0.05 and 0.01 probability levels, respectively.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap id="tbl4">
+      <label>Table 4</label>
+      <caption>
+        <title>Cohen's kappa coefficient of 6 regression and 3 classification methods for genomic selection applied to 16 wheat data sets and across trait&#x2013;environment combinations when selecting the best 15% of individuals</title>
+      </caption>
+      <table frame="hsides" rules="groups" border="1">
+        <colgroup>
+          <col align="left"/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+        </colgroup>
+        <thead valign="bottom">
+          <tr>
+            <th align="left" valign="top" charoff="50">
+              <italic>Data set</italic>
+            </th>
+            <th colspan="6" align="center" valign="top" char="." charoff="50">
+              <italic>Regression</italic>
+              <hr/>
+            </th>
+            <th colspan="3" align="center" valign="top" char="." charoff="50">
+              <italic>Classification</italic>
+              <hr/>
+            </th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" charoff="50">&#xA0;</th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RHKS</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>BL</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RR</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RFR</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVR rbf</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVR lin</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RFC</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVC rbf</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVC lin</italic>
+            </th>
+          </tr>
+        </thead>
+        <tbody valign="top">
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-Srm</td>
+            <td align="char" valign="top" char="." charoff="50">0.100</td>
+            <td align="char" valign="top" char="." charoff="50">0.303</td>
+            <td align="char" valign="top" char="." charoff="50">0.280</td>
+            <td align="char" valign="top" char="." charoff="50">0.145</td>
+            <td align="char" valign="top" char="." charoff="50">0.258</td>
+            <td align="char" valign="top" char="." charoff="50">0.213</td>
+            <td align="char" valign="top" char="." charoff="50">0.145</td>
+            <td align="char" valign="top" char="." charoff="50">0.235</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.438</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-Sro</td>
+            <td align="char" valign="top" char="." charoff="50">0.322</td>
+            <td align="char" valign="top" char="." charoff="50">0.392</td>
+            <td align="char" valign="top" char="." charoff="50">0.344</td>
+            <td align="char" valign="top" char="." charoff="50">0.425</td>
+            <td align="char" valign="top" char="." charoff="50">0.344</td>
+            <td align="char" valign="top" char="." charoff="50">0.322</td>
+            <td align="char" valign="top" char="." charoff="50">0.235</td>
+            <td align="char" valign="top" char="." charoff="50">0.168</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.528</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KNYANGUMI-Srm</td>
+            <td align="char" valign="top" char="." charoff="50">0.168</td>
+            <td align="char" valign="top" char="." charoff="50">0.184</td>
+            <td align="char" valign="top" char="." charoff="50">0.208</td>
+            <td align="char" valign="top" char="." charoff="50">0.160</td>
+            <td align="char" valign="top" char="." charoff="50">0.184</td>
+            <td align="char" valign="top" char="." charoff="50">0.224</td>
+            <td align="char" valign="top" char="." charoff="50">0.056</td>
+            <td align="char" valign="top" char="." charoff="50">0.232</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.424</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KNYANGUMI-Sro</td>
+            <td align="char" valign="top" char="." charoff="50">0.438</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.493</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.406</td>
+            <td align="char" valign="top" char="." charoff="50">0.485</td>
+            <td align="char" valign="top" char="." charoff="50">0.414</td>
+            <td align="char" valign="top" char="." charoff="50">0.398</td>
+            <td align="char" valign="top" char="." charoff="50">0.470</td>
+            <td align="char" valign="top" char="." charoff="50">0.327</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.493</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-Srm</td>
+            <td align="char" valign="top" char="." charoff="50">0.256</td>
+            <td align="char" valign="top" char="." charoff="50">0.264</td>
+            <td align="char" valign="top" char="." charoff="50">0.248</td>
+            <td align="char" valign="top" char="." charoff="50">0.296</td>
+            <td align="char" valign="top" char="." charoff="50">0.240</td>
+            <td align="char" valign="top" char="." charoff="50">0.176</td>
+            <td align="char" valign="top" char="." charoff="50">0.360</td>
+            <td align="char" valign="top" char="." charoff="50">0.360</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.464</underline>
+              <sup>*</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-Sro</td>
+            <td align="char" valign="top" char="." charoff="50">0.288</td>
+            <td align="char" valign="top" char="." charoff="50">0.384</td>
+            <td align="char" valign="top" char="." charoff="50">0.352</td>
+            <td align="char" valign="top" char="." charoff="50">0.320</td>
+            <td align="char" valign="top" char="." charoff="50">0.400</td>
+            <td align="char" valign="top" char="." charoff="50">0.312</td>
+            <td align="char" valign="top" char="." charoff="50">0.320</td>
+            <td align="char" valign="top" char="." charoff="50">0.264</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.464</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">JUCHI-Ken</td>
+            <td align="char" valign="top" char="." charoff="50">0.258</td>
+            <td align="char" valign="top" char="." charoff="50">0.258</td>
+            <td align="char" valign="top" char="." charoff="50">0.258</td>
+            <td align="char" valign="top" char="." charoff="50">0.078</td>
+            <td align="char" valign="top" char="." charoff="50">0.168</td>
+            <td align="char" valign="top" char="." charoff="50">0.213</td>
+            <td align="char" valign="top" char="." charoff="50">0.145</td>
+            <td align="char" valign="top" char="." charoff="50">0.235</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.280</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-Ken</td>
+            <td align="char" valign="top" char="." charoff="50">0.033</td>
+            <td align="char" valign="top" char="." charoff="50">0.078</td>
+            <td align="char" valign="top" char="." charoff="50">0.033</td>
+            <td align="char" valign="top" char="." charoff="50">0.078</td>
+            <td align="char" valign="top" char="." charoff="50">0.033</td>
+            <td align="char" valign="top" char="." charoff="50">0.010</td>
+            <td align="char" valign="top" char="." charoff="50">0.078</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.235</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.213</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-tol</td>
+            <td align="char" valign="top" char="." charoff="50">0.370</td>
+            <td align="char" valign="top" char="." charoff="50">0.348</td>
+            <td align="char" valign="top" char="." charoff="50">0.325</td>
+            <td align="char" valign="top" char="." charoff="50">0.303</td>
+            <td align="char" valign="top" char="." charoff="50">0.235</td>
+            <td align="char" valign="top" char="." charoff="50">0.258</td>
+            <td align="char" valign="top" char="." charoff="50">0.280</td>
+            <td align="char" valign="top" char="." charoff="50">0.303</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.415</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KNYANGUMI-tol</td>
+            <td align="char" valign="top" char="." charoff="50">0.034</td>
+            <td align="char" valign="top" char="." charoff="50">0.058</td>
+            <td align="char" valign="top" char="." charoff="50">0.058</td>
+            <td align="char" valign="top" char="." charoff="50">0.066</td>
+            <td align="char" valign="top" char="." charoff="50">0.050</td>
+            <td align="char" valign="top" char="." charoff="50">0.018</td>
+            <td align="char" valign="top" char="." charoff="50">0.074</td>
+            <td align="char" valign="top" char="." charoff="50">0.288</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.327</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-Ken</td>
+            <td align="char" valign="top" char="." charoff="50">0.158</td>
+            <td align="char" valign="top" char="." charoff="50">0.158</td>
+            <td align="char" valign="top" char="." charoff="50">0.112</td>
+            <td align="char" valign="top" char="." charoff="50">0.146</td>
+            <td align="char" valign="top" char="." charoff="50">0.181</td>
+            <td align="char" valign="top" char="." charoff="50">0.054</td>
+            <td align="char" valign="top" char="." charoff="50">0.181</td>
+            <td align="char" valign="top" char="." charoff="50">0.287</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.354</underline>
+              <sup>*</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-tol</td>
+            <td align="char" valign="top" char="." charoff="50">0.384</td>
+            <td align="char" valign="top" char="." charoff="50">0.320</td>
+            <td align="char" valign="top" char="." charoff="50">0.312</td>
+            <td align="char" valign="top" char="." charoff="50">0.368</td>
+            <td align="char" valign="top" char="." charoff="50">0.296</td>
+            <td align="char" valign="top" char="." charoff="50">0.240</td>
+            <td align="char" valign="top" char="." charoff="50">0.360</td>
+            <td align="char" valign="top" char="." charoff="50">0.392</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.416</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-1</td>
+            <td align="char" valign="top" char="." charoff="50">0.229</td>
+            <td align="char" valign="top" char="." charoff="50">0.142</td>
+            <td align="char" valign="top" char="." charoff="50">0.135</td>
+            <td align="char" valign="top" char="." charoff="50">0.234</td>
+            <td align="char" valign="top" char="." charoff="50">0.210</td>
+            <td align="char" valign="top" char="." charoff="50">0.119</td>
+            <td align="char" valign="top" char="." charoff="50">0.231</td>
+            <td align="char" valign="top" char="." charoff="50">0.271</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.401</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-2</td>
+            <td align="char" valign="top" char="." charoff="50">0.250</td>
+            <td align="char" valign="top" char="." charoff="50">0.239</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.265</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.205</td>
+            <td align="char" valign="top" char="." charoff="50">0.239</td>
+            <td align="char" valign="top" char="." charoff="50">0.142</td>
+            <td align="char" valign="top" char="." charoff="50">0.137</td>
+            <td align="char" valign="top" char="." charoff="50">0.244</td>
+            <td align="char" valign="top" char="." charoff="50">0.179</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-3</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.234</underline>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.234</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.229</td>
+            <td align="char" valign="top" char="." charoff="50">0.158</td>
+            <td align="char" valign="top" char="." charoff="50">0.224</td>
+            <td align="char" valign="top" char="." charoff="50">0.166</td>
+            <td align="char" valign="top" char="." charoff="50">0.161</td>
+            <td align="char" valign="top" char="." charoff="50">0.216</td>
+            <td align="char" valign="top" char="." charoff="50">0.150</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-4</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.422</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.346</td>
+            <td align="char" valign="top" char="." charoff="50">0.344</td>
+            <td align="char" valign="top" char="." charoff="50">0.401</td>
+            <td align="char" valign="top" char="." charoff="50">0.383</td>
+            <td align="char" valign="top" char="." charoff="50">0.208</td>
+            <td align="char" valign="top" char="." charoff="50">0.286</td>
+            <td align="char" valign="top" char="." charoff="50">0.346</td>
+            <td align="char" valign="top" char="." charoff="50">0.297</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="t4-fn1">
+          <p>Abbreviations: BL, Bayesian LASSO; NS, not significant; RFR, Random Forest Regression; RHKS, Reproducing Kernel Hilbert Spaces; RR, Ridge Regression; SVR, Support Vector Regression with radial basis function (rbf) or linear (lin) kernels; RFC, Random Forest Classification; SVC, Support Vector Classification with radial basis function (rbf) or linear (lin) kernels.</p>
+        </fn>
+        <fn id="t4-fn2">
+          <p>Results presented are the average of 50 random partitions (the proportion of individuals in the training-testing data sets is 9:1).</p>
+        </fn>
+        <fn id="t4-fn3">
+          <p>For each data set the highest value is underlined.</p>
+        </fn>
+        <fn id="t4-fn4">
+          <p>*, ** Differences are significant at the 0.05 and 0.01 probability levels, respectively.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap id="tbl5">
+      <label>Table 5</label>
+      <caption>
+        <title>Relative efficiency of 6 regression and 3 classification methods for genomic selection applied to 16 wheat data sets and across trait&#x2013;environment combinations when selecting the best 15% of individuals</title>
+      </caption>
+      <table frame="hsides" rules="groups" border="1">
+        <colgroup>
+          <col align="left"/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+          <col align="char" char="."/>
+        </colgroup>
+        <thead valign="bottom">
+          <tr>
+            <th align="left" valign="top" charoff="50">
+              <italic>Data set</italic>
+            </th>
+            <th colspan="6" align="center" valign="top" char="." charoff="50">
+              <italic>Regression</italic>
+              <hr/>
+            </th>
+            <th colspan="3" align="center" valign="top" char="." charoff="50">
+              <italic>Classification</italic>
+              <hr/>
+            </th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" charoff="50">&#xA0;</th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RHKS</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>BL</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RR</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RFR</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVR rbf</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVR lin</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>RFC</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVC rbf</italic>
+            </th>
+            <th align="center" valign="top" char="." charoff="50">
+              <italic>SVC lin</italic>
+            </th>
+          </tr>
+        </thead>
+        <tbody valign="top">
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-Srm</td>
+            <td align="char" valign="top" char="." charoff="50">0.284</td>
+            <td align="char" valign="top" char="." charoff="50">0.600</td>
+            <td align="char" valign="top" char="." charoff="50">0.549</td>
+            <td align="char" valign="top" char="." charoff="50">0.558</td>
+            <td align="char" valign="top" char="." charoff="50">0.517</td>
+            <td align="char" valign="top" char="." charoff="50">0.544</td>
+            <td align="char" valign="top" char="." charoff="50">0.326</td>
+            <td align="char" valign="top" char="." charoff="50">0.118</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.707</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-Sro</td>
+            <td align="char" valign="top" char="." charoff="50">0.623</td>
+            <td align="char" valign="top" char="." charoff="50">0.758</td>
+            <td align="char" valign="top" char="." charoff="50">0.740</td>
+            <td align="char" valign="top" char="." charoff="50">0.810</td>
+            <td align="char" valign="top" char="." charoff="50">0.690</td>
+            <td align="char" valign="top" char="." charoff="50">0.702</td>
+            <td align="char" valign="top" char="." charoff="50">0.702</td>
+            <td align="char" valign="top" char="." charoff="50">0.470</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.821</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KNYANGUMI-Srm</td>
+            <td align="char" valign="top" char="." charoff="50">0.506</td>
+            <td align="char" valign="top" char="." charoff="50">0.596</td>
+            <td align="char" valign="top" char="." charoff="50">0.588</td>
+            <td align="char" valign="top" char="." charoff="50">0.667</td>
+            <td align="char" valign="top" char="." charoff="50">0.601</td>
+            <td align="char" valign="top" char="." charoff="50">0.640</td>
+            <td align="char" valign="top" char="." charoff="50">0.305</td>
+            <td align="char" valign="top" char="." charoff="50">0.504</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.811</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KNYANGUMI-Sro</td>
+            <td align="char" valign="top" char="." charoff="50">0.654</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.738</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.632</td>
+            <td align="char" valign="top" char="." charoff="50">0.676</td>
+            <td align="char" valign="top" char="." charoff="50">0.652</td>
+            <td align="char" valign="top" char="." charoff="50">0.614</td>
+            <td align="char" valign="top" char="." charoff="50">0.672</td>
+            <td align="char" valign="top" char="." charoff="50">0.483</td>
+            <td align="char" valign="top" char="." charoff="50">0.732</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-Srm</td>
+            <td align="char" valign="top" char="." charoff="50">0.580</td>
+            <td align="char" valign="top" char="." charoff="50">0.607</td>
+            <td align="char" valign="top" char="." charoff="50">0.589</td>
+            <td align="char" valign="top" char="." charoff="50">0.636</td>
+            <td align="char" valign="top" char="." charoff="50">0.564</td>
+            <td align="char" valign="top" char="." charoff="50">0.498</td>
+            <td align="char" valign="top" char="." charoff="50">0.628</td>
+            <td align="char" valign="top" char="." charoff="50">0.570</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.783</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-Sro</td>
+            <td align="char" valign="top" char="." charoff="50">0.612</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.750</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.690</td>
+            <td align="char" valign="top" char="." charoff="50">0.685</td>
+            <td align="char" valign="top" char="." charoff="50">0.717</td>
+            <td align="char" valign="top" char="." charoff="50">0.637</td>
+            <td align="char" valign="top" char="." charoff="50">0.689</td>
+            <td align="char" valign="top" char="." charoff="50">0.488</td>
+            <td align="char" valign="top" char="." charoff="50">0.736</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">JUCHI-Ken</td>
+            <td align="char" valign="top" char="." charoff="50">0.496</td>
+            <td align="char" valign="top" char="." charoff="50">0.500</td>
+            <td align="char" valign="top" char="." charoff="50">0.497</td>
+            <td align="char" valign="top" char="." charoff="50">0.170</td>
+            <td align="char" valign="top" char="." charoff="50">0.426</td>
+            <td align="char" valign="top" char="." charoff="50">0.475</td>
+            <td align="char" valign="top" char="." charoff="50">0.244</td>
+            <td align="char" valign="top" char="." charoff="50">0.255</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.553</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-Ken</td>
+            <td align="char" valign="top" char="." charoff="50">0.078</td>
+            <td align="char" valign="top" char="." charoff="50">0.265</td>
+            <td align="char" valign="top" char="." charoff="50">0.226</td>
+            <td align="char" valign="top" char="." charoff="50">0.390</td>
+            <td align="char" valign="top" char="." charoff="50">0.357</td>
+            <td align="char" valign="top" char="." charoff="50">0.146</td>
+            <td align="char" valign="top" char="." charoff="50">0.158</td>
+            <td align="char" valign="top" char="." charoff="50">0.189</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.484</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KBIRD-tol</td>
+            <td align="char" valign="top" char="." charoff="50">0.463</td>
+            <td align="char" valign="top" char="." charoff="50">0.515</td>
+            <td align="char" valign="top" char="." charoff="50">0.483</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.636</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.440</td>
+            <td align="char" valign="top" char="." charoff="50">0.483</td>
+            <td align="char" valign="top" char="." charoff="50">0.507</td>
+            <td align="char" valign="top" char="." charoff="50">0.443</td>
+            <td align="char" valign="top" char="." charoff="50">0.619</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">KNYANGUMI-tol</td>
+            <td align="char" valign="top" char="." charoff="50">0.086</td>
+            <td align="char" valign="top" char="." charoff="50">0.204</td>
+            <td align="char" valign="top" char="." charoff="50">0.204</td>
+            <td align="char" valign="top" char="." charoff="50">0.315</td>
+            <td align="char" valign="top" char="." charoff="50">0.230</td>
+            <td align="char" valign="top" char="." charoff="50">0.119</td>
+            <td align="char" valign="top" char="." charoff="50">0.157</td>
+            <td align="char" valign="top" char="." charoff="50">0.343</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.551</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-Ken</td>
+            <td align="char" valign="top" char="." charoff="50">0.317</td>
+            <td align="char" valign="top" char="." charoff="50">0.209</td>
+            <td align="char" valign="top" char="." charoff="50">0.177</td>
+            <td align="char" valign="top" char="." charoff="50">0.267</td>
+            <td align="char" valign="top" char="." charoff="50">0.285</td>
+            <td align="char" valign="top" char="." charoff="50">0.175</td>
+            <td align="char" valign="top" char="." charoff="50">0.304</td>
+            <td align="char" valign="top" char="." charoff="50">0.264</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.565</underline>
+              <sup>**</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">F6PAVON-tol</td>
+            <td align="char" valign="top" char="." charoff="50">0.577</td>
+            <td align="char" valign="top" char="." charoff="50">0.566</td>
+            <td align="char" valign="top" char="." charoff="50">0.564</td>
+            <td align="char" valign="top" char="." charoff="50">0.547</td>
+            <td align="char" valign="top" char="." charoff="50">0.549</td>
+            <td align="char" valign="top" char="." charoff="50">0.499</td>
+            <td align="char" valign="top" char="." charoff="50">0.509</td>
+            <td align="char" valign="top" char="." charoff="50">0.477</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.640</underline>
+              <sup>NS</sup>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-1</td>
+            <td align="char" valign="top" char="." charoff="50">0.530</td>
+            <td align="char" valign="top" char="." charoff="50">0.380</td>
+            <td align="char" valign="top" char="." charoff="50">0.377</td>
+            <td align="char" valign="top" char="." charoff="50">0.519</td>
+            <td align="char" valign="top" char="." charoff="50">0.491</td>
+            <td align="char" valign="top" char="." charoff="50">0.215</td>
+            <td align="char" valign="top" char="." charoff="50">0.533</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.617</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.479</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-2</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.502</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.459</td>
+            <td align="char" valign="top" char="." charoff="50">0.497</td>
+            <td align="char" valign="top" char="." charoff="50">0.391</td>
+            <td align="char" valign="top" char="." charoff="50">0.482</td>
+            <td align="char" valign="top" char="." charoff="50">0.335</td>
+            <td align="char" valign="top" char="." charoff="50">0.401</td>
+            <td align="char" valign="top" char="." charoff="50">0.446</td>
+            <td align="char" valign="top" char="." charoff="50">0.324</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-3</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.458</underline>
+              <sup>NS</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.449</td>
+            <td align="char" valign="top" char="." charoff="50">0.441</td>
+            <td align="char" valign="top" char="." charoff="50">0.366</td>
+            <td align="char" valign="top" char="." charoff="50">0.448</td>
+            <td align="char" valign="top" char="." charoff="50">0.266</td>
+            <td align="char" valign="top" char="." charoff="50">0.367</td>
+            <td align="char" valign="top" char="." charoff="50">0.226</td>
+            <td align="char" valign="top" char="." charoff="50">0.338</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" charoff="50">GY-4</td>
+            <td align="char" valign="top" char="." charoff="50">
+              <underline>0.586</underline>
+              <sup>*</sup>
+            </td>
+            <td align="char" valign="top" char="." charoff="50">0.480</td>
+            <td align="char" valign="top" char="." charoff="50">0.472</td>
+            <td align="char" valign="top" char="." charoff="50">0.558</td>
+            <td align="char" valign="top" char="." charoff="50">0.540</td>
+            <td align="char" valign="top" char="." charoff="50">0.354</td>
+            <td align="char" valign="top" char="." charoff="50">0.451</td>
+            <td align="char" valign="top" char="." charoff="50">0.471</td>
+            <td align="char" valign="top" char="." charoff="50">0.363</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="t5-fn1">
+          <p>Abbreviations: BL, Bayesian LASSO; NS, not significant; RFR, Random Forest Regression; RHKS, Reproducing Kernel Hilbert Spaces; RR, Ridge Regression; SVR, Support Vector Regression with radial basis function (rbf) or linear (lin) kernels; RFC, Random Forest Classification; SVC, Support Vector Classification with radial basis function (rbf) or linear (lin) kernels.</p>
+        </fn>
+        <fn id="t5-fn2">
+          <p>Results presented are the arithmetic means of 50 random partitions (the proportion of individuals in the training-testing data sets is 9:1).</p>
+        </fn>
+        <fn id="t5-fn3">
+          <p>For each data set the highest value is underlined.</p>
+        </fn>
+        <fn id="t5-fn4">
+          <p>*, ** Differences are significant at the 0.05 and 0.01 probability levels, respectively.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

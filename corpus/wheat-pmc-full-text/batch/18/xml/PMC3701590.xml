@@ -1,0 +1,1371 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v3.0 20080202//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing3.dtd?>
+  <?SourceDTD.Version 3.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3701590</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-12-39106</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0067926</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Biotechnology</subject>
+            <subj-group>
+              <subject>Genetic Engineering</subject>
+              <subj-group>
+                <subject>Genetically Modified Organisms</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Analysis Tools</subject>
+                <subj-group>
+                  <subject>Gene Prediction</subject>
+                </subj-group>
+              </subj-group>
+              <subj-group>
+                <subject>Comparative Genomics</subject>
+                <subject>Functional Genomics</subject>
+                <subject>Genome Databases</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Molecular Genetics</subject>
+              <subj-group>
+                <subject>Gene Identification and Analysis</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Molecular Genetics</subject>
+              <subj-group>
+                <subject>Gene Identification and Analysis</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Gene Function</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Microbiology</subject>
+            <subj-group>
+              <subject>Mycology</subject>
+              <subj-group>
+                <subject>Fungi</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Host-Pathogen Interaction</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Model Organisms</subject>
+            <subj-group>
+              <subject>Yeast and Fungal Models</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Network-Based Data Integration for Selecting Candidate Virulence Associated Proteins in the Cereal Infecting Fungus <italic>Fusarium graminearum</italic></article-title>
+        <alt-title alt-title-type="running-head">Refined Network Analysis for <italic>Fusarium graminearum</italic></alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Lysenko</surname>
+            <given-names>Artem</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Urban</surname>
+            <given-names>Martin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bennett</surname>
+            <given-names>Laura</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tsoka</surname>
+            <given-names>Sophia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Janowska-Sejda</surname>
+            <given-names>Elzbieta</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rawlings</surname>
+            <given-names>Chris J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Hammond-Kosack</surname>
+            <given-names>Kim E.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Saqi</surname>
+            <given-names>Mansoor</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Computational and Systems Biology, Rothamsted Research, Harpenden, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Informatics, School of Natural and Mathematical Sciences, Kings College London, Strand, London, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Plant Biology and Crop Science, Rothamsted Research, Harpenden, United Kingdom</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Yin-Won</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Seoul National University, Republic of Korea</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>kim.hammond-kosack@rothamsted.ac.uk</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: MS KHK AL MU ST EJS. Analyzed the data: AL KHK MU MS LB. Wrote the paper: KHK MS AL MU LB CR.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>4</day>
+        <month>7</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>7</issue>
+      <elocation-id>e67926</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>7</day>
+          <month>12</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>5</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Lysenko et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>The identification of virulence genes in plant pathogenic fungi is important for understanding the infection process, host range and for developing control strategies. The analysis of already verified virulence genes in phytopathogenic fungi in the context of integrated functional networks can give clues about the underlying mechanisms and pathways directly or indirectly linked to fungal pathogenicity and can suggest new candidates for further experimental investigation, using a &#x2018;guilt by association&#x2019; approach. Here we study 133 genes in the globally important Ascomycete fungus <italic>Fusarium graminearum</italic> that have been experimentally tested for their involvement in virulence. An integrated network that combines information from gene co-expression, predicted protein-protein interactions and sequence similarity was employed and, using 100 genes known to be required for virulence, we found a total of 215 new proteins potentially associated with virulence of which 29 are annotated as hypothetical proteins. The majority of these potential virulence genes are located in chromosomal regions known to have a low recombination frequency. We have also explored the taxonomic diversity of these candidates and found 25 sequences, which are likely to be fungal specific. We discuss the biological relevance of a few of the potentially novel virulence associated genes in detail. The analysis of already verified virulence genes in phytopathogenic fungi in the context of integrated functional networks can give clues about the underlying mechanisms and pathways directly or indirectly linked to fungal pathogenicity and can suggest new candidates for further experimental investigation, using a &#x2018;guilt by association&#x2019; approach.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>MS, MU and KHK are supported by the BBSRC (<ext-link ext-link-type="uri" xlink:href="http://www.bbsrc.ac.uk">http://www.bbsrc.ac.uk</ext-link>) through the Institute Strategic Programme 20&#x2236;20 Wheat&#xAE; (grant BB/J/00426X/1). In addition the PHI-base project receives support from the BBSRC grant BB/I000488/1 and AL was supported by BBSRC grant BB/G015716/1. ST acknowledges support from the Leverhulme Trust (<ext-link ext-link-type="uri" xlink:href="http://www.leverhulme.ac.uk">http://www.leverhulme.ac.uk</ext-link>, grant RPG-2012-686). The PHI-base project also receives support as a BBSRC National Capability (BB/J/004383/1). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="14"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The Ascomycete fungus <italic>Fusarium graminearum</italic> (teleomorph <italic>Gibberella zeae</italic>) is a major pathogen of wheat causing <italic>Fusarium</italic> ear blight, Fusarium head blight or <italic>Fusarium</italic> head scab disease <xref ref-type="bibr" rid="pone.0067926-Goswami1">[1]</xref>, <xref ref-type="bibr" rid="pone.0067926-Dean1">[2]</xref> (<ext-link ext-link-type="uri" xlink:href="http://www.scabusa.org">www.scabusa.org</ext-link>). As wheat accounts for 32% of global cereal production and provides 20% of the world&#x2019;s calorific intake (<ext-link ext-link-type="uri" xlink:href="http://www.fao.org">www.fao.org</ext-link>), control strategies for <italic>Fusarium</italic> infection are important for food security. <italic>Fusarium graminearum</italic> can also infect the floral tissue of numerous other cereal species, including maize, barley, triticale, rice and oats <xref ref-type="bibr" rid="pone.0067926-Goswami1">[1]</xref>. Although affecting yield, <italic>Fusarium</italic> infection often leads to reduced grain quality and to contamination of the grain with various mycotoxins, in particular the &#xDF;-type trichothecene deoxynivalenol (DON) and its acetylated derivatives (15A-DON and 3A-DON), which may make the grain unsafe for human and/or animal consumption <xref ref-type="bibr" rid="pone.0067926-Yuen1">[3]</xref>.</p>
+      <p>The genome sequence of <italic>Fusarium graminearum</italic><xref ref-type="bibr" rid="pone.0067926-Cuomo1">[4]</xref> is predicted to code for 13,332 proteins and further revisions to the identification of open reading frames and annotation are in progress <xref ref-type="bibr" rid="pone.0067926-Guldener1">[5]</xref>, <xref ref-type="bibr" rid="pone.0067926-Wong1">[6]</xref>. As a result of the analysis of a genetic cross between the sequenced strain and another strain, the <italic>F. graminearum</italic> genome is recognised to contain regions of high recombination in both sub-telomeric and central chromosome regions interspersed with longer regions with low or no genetic recombination. Genes shared between different Fusarium species are primarily located in the low and no recombination regions <xref ref-type="bibr" rid="pone.0067926-Cuomo1">[4]</xref>. Particular genes in <italic>F. graminearum,</italic> other Fusarium species and other plant fungal pathogens have been investigated experimentally for their contribution to pathogenicity or virulence, i.e. their qualitative or quantitative effect of the disease causing ability of a microbe. Typically these experiments involve stable gene disruption/gene deletion in the pathogen and observation of the resulting infection phenotype in one or more host plant systems. Already a large number of <italic>F. graminearum</italic> genes have been tested and published, of which 100 were found to alter virulence and 33 had no effect on the interaction tested at the time of writing this article <xref ref-type="bibr" rid="pone.0067926-Urban1">[7]</xref> and <bold><xref ref-type="supplementary-material" rid="pone.0067926.s007">Table S1</xref></bold>)<bold>.</bold> Several of these <italic>F. graminearum</italic> virulence genes are unique to this species or restricted to closely related Fusarium species whilst others genes are also required for virulence in other plant and/or animal infecting microbes. To assist comparative studies, the functions in numerous other pathosystems of pathogenicity and virulence associated genes has been catalogued in the Pathogen-Host Interactions database called PHI-base <xref ref-type="bibr" rid="pone.0067926-Winnenburg1">[8]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0067926-Baldwin1">[10]</xref>, accessible at <ext-link ext-link-type="uri" xlink:href="http://www.phi-base.org">www.phi-base.org</ext-link>. This is an expertly curated database for &#x223C;1000 pathogen-host interactions. The plant, animal, fungal, oomycete and/or bacteria entries in PHI-base are extracted from the scientific literature by domain experts and therefore describe experimentally tested interactions, for example the effect of a given gene disruption experiment in a given pathogen, on a particular host. Importantly PHI-base also details those tested genes, which had no effect on pathogenicity.</p>
+      <p>In order to understand how particular genes and their gene products may contribute to the pathogenic process it is necessary to explore the biological context of these genes. Approaches that involve placing these genes within various relationship networks provide a useful starting point. The relationships can include, for example, gene co-expression, known or predicted protein-protein interactions, and sequence similarity (see for example <xref ref-type="bibr" rid="pone.0067926-Lee1">[11]</xref> ). Previously, a predicted protein-protein interaction (PPI) network has been used to predict pathogenicity genes in <italic>Fusarium graminearum</italic>
+<xref ref-type="bibr" rid="pone.0067926-Liu1">[12]</xref>. This &#x2018;guilt by association&#x2019; approach <xref ref-type="bibr" rid="pone.0067926-Wolfe1">[13]</xref> was used to examine those proteins in a predicted PPI network <xref ref-type="bibr" rid="pone.0067926-Zhao1">[14]</xref> that have at least two known pathogen associated genes as nearest neighbours with additional filtering of candidates using some of the available <italic>in planta</italic> and <italic>in vitro</italic> gene expression data available from a comprehensive data source called PLEXdb <xref ref-type="bibr" rid="pone.0067926-Wise1">[15]</xref>. The Liu et al. network analysis used an initial list of 49 <italic>F. graminearum</italic> gene sequences available in PHI-base. A total of 39 potential virulence associated proteins were identified, of which nine have now been connected to virulence through experimentation (reviewed in <xref ref-type="bibr" rid="pone.0067926-Urban1">[7]</xref>).</p>
+      <p>Here we extend the study of <xref ref-type="bibr" rid="pone.0067926-Liu1">[12]</xref> by using an integrated network that includes co-expression information and sequence similarity in addition to the core predicted PPI network <xref ref-type="bibr" rid="pone.0067926-Zhao1">[14]</xref> as well as a larger set of known <italic>Fusarium graminearum</italic> virulence associated genes. The aim of this study was two-fold: firstly to predict additional <italic>F. graminearum</italic> virulence associated genes that could then become targets for experimental analysis and secondly to enable the biological context of the predictions to be explored. As our starting point, we have used the set of verified virulence (VV) genes taken from the pathogen host interaction database PHI-base (version 3.3) as well as manual curation of the recent literature on <italic>Fusarium graminearum</italic> pathogenicity in order to include entries not yet in PHI-base 3.3. The data integration has been carried out using the Ondex data integration and visualisation system <xref ref-type="bibr" rid="pone.0067926-Kohler1">[16]</xref>, <xref ref-type="bibr" rid="pone.0067926-Lysenko1">[17]</xref> which allows the integrated network to be explored manually. The filtering tools in the Ondex system allow the effects of inclusion or exclusion of various evidence types on the predictions to be inspected. We discuss in detail the biological plausibility of some of the predictions. The predictions in the context of the entire network have been made available for use by the community. We acknowledge that the term virulence associated genes/proteins can be interpreted in a number of ways &#x2013; the candidates we have identified may be involved in some part of the virulence process but not necessarily be directly involved (for example, an effector protein) and could be seen as system components <xref ref-type="bibr" rid="pone.0067926-Schneider1">[18]</xref>.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Predictions Made with the Integrated Network</title>
+        <p>We constructed an integrated network for <italic>Fusarium graminearum</italic> using information from protein sequence similarity, gene co-expression and predicted protein interactions (PPI). The coexpression links were created between nodes representing proteins if the genes encoding them were found to be coexpressed. We have previously described the disjoint and overlapping community structure of the integrated network in <xref ref-type="bibr" rid="pone.0067926-Bennett1">[19]</xref>. Here we use the network for prediction of potential new virulence associated proteins.</p>
+        <p><xref ref-type="table" rid="pone-0067926-t001"><bold>Table 1</bold></xref> shows the graph topological properties, calculated with the NetworkX package <xref ref-type="bibr" rid="pone.0067926-HagbergAA1">[20]</xref>, of the three constituent networks, as well as an integrated network, which uses information from all three constituent networks. The sequence similarity network has a large number of connected components (subgraphs in which any two nodes are connected by a path of edges) and a high transitivity measure (suggesting more tightly connected structures, i.e a more &#x2018;clique-like&#x2019; structure). These properties most likely reflect the grouping of the proteins into sequence similar groups. The predicted protein interaction network from <xref ref-type="bibr" rid="pone.0067926-Zhao1">[14]</xref> also has a high transitivity suggesting a more &#x2018;clique like&#x2019; structure, which may be an indication of predicted protein complexes, although this structure may be affected by the way in which data from some experiments is interpreted and represented as binary interactions in different PPI data sources <xref ref-type="bibr" rid="pone.0067926-Lysenko1">[17]</xref>.</p>
+        <table-wrap id="pone-0067926-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Comparison of the global properties of the four predicted networks.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0067926-t001-1" xlink:href="pone.0067926.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Network type</td>
+                  <td align="left" rowspan="1" colspan="1">Nodes</td>
+                  <td align="left" rowspan="1" colspan="1">Edges</td>
+                  <td align="left" rowspan="1" colspan="1">VV seeds leading to predictions</td>
+                  <td align="left" rowspan="1" colspan="1">Connected components (CC)</td>
+                  <td align="left" rowspan="1" colspan="1">Size of largest CC</td>
+                  <td align="left" rowspan="1" colspan="1">Transitivity</td>
+                  <td align="left" rowspan="1" colspan="1">Predictions</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Sequence network</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">6349</td>
+                  <td align="left" rowspan="1" colspan="1">27807</td>
+                  <td align="left" rowspan="1" colspan="1">19 (12)</td>
+                  <td align="left" rowspan="1" colspan="1">1155</td>
+                  <td align="left" rowspan="1" colspan="1">625</td>
+                  <td align="left" rowspan="1" colspan="1">0.69</td>
+                  <td align="left" rowspan="1" colspan="1">100 (61)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Core PPI </bold>
+                    <xref ref-type="bibr" rid="pone.0067926-Zhao1">[<bold>14</bold>]</xref>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3459</td>
+                  <td align="left" rowspan="1" colspan="1">24348</td>
+                  <td align="left" rowspan="1" colspan="1">30 (21)</td>
+                  <td align="left" rowspan="1" colspan="1">111</td>
+                  <td align="left" rowspan="1" colspan="1">2995</td>
+                  <td align="left" rowspan="1" colspan="1">0.85</td>
+                  <td align="left" rowspan="1" colspan="1">79 (54)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Co-expression</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3654</td>
+                  <td align="left" rowspan="1" colspan="1">33272</td>
+                  <td align="left" rowspan="1" colspan="1">18 (13)</td>
+                  <td align="left" rowspan="1" colspan="1">159</td>
+                  <td align="left" rowspan="1" colspan="1">3239</td>
+                  <td align="left" rowspan="1" colspan="1">0.42</td>
+                  <td align="left" rowspan="1" colspan="1">47 (14)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Integrated</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">9521</td>
+                  <td align="left" rowspan="1" colspan="1">80997</td>
+                  <td align="left" rowspan="1" colspan="1">60 (50)</td>
+                  <td align="left" rowspan="1" colspan="1">439</td>
+                  <td align="left" rowspan="1" colspan="1">8364</td>
+                  <td align="left" rowspan="1" colspan="1">0.52</td>
+                  <td align="left" rowspan="1" colspan="1">215 (120)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>Global properties of the three constituent networks and the integrated network. The sequence similarity network excludes nodes with no edges (&#x2018;orphan&#x2019; proteins with no sequence similarity matches). Column 4 is the number of verified virulence (VV) seeds involved in the predictions, using the rule that a node must be connected to at least 2 seeds to be a prediction (in brackets are the corresponding numbers if we require connection to at least 3 seeds); Column 8 gives the number of predictions (in brackets are the corresponding prediction counts if we require a more stringent rule i. e. a node must be connected to at least 3 seeds to be a prediction).</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The prediction of virulence associated proteins was carried out in the Ondex software by the implementation of a new plug-in, as described in the Methods section. Following <xref ref-type="bibr" rid="pone.0067926-Liu1">[12]</xref> a node in the network was labelled as a predicted virulence associated protein if it was a nearest neighbour to at least two VV seeds. Fewer VV seeds were involved in predictions in the co-expression network than the PPI network (18 seeds as compared to 30). As expected, the integrated network was the largest and had the greatest number of VV seeds which were involved in predictions (60).</p>
+        <p>This approach resulted in 215 predictions in the integrated network, which was considerably more than could be predicted from any of the individual constituent networks: using only the sequence similarity based network leads to 100 predictions, the coexpression network yields 47 predictions and the predicted PPI network of Zhao et al (2009) 79 predictions. The 215 predictions (<bold><xref ref-type="supplementary-material" rid="pone.0067926.s008">Table S2</xref></bold>) contain 29 proteins annotated as hypothetical protein in the <italic>Fusarium graminearum</italic> database <xref ref-type="bibr" rid="pone.0067926-Wong1">[6]</xref>. The predictions made on the basis of PPI links to the VV seeds may reflect an ancient species conserved sub network, because the <italic>Fusarium</italic> PPI network originally described by <xref ref-type="bibr" rid="pone.0067926-Zhao1">[14]</xref> had been developed using information from six eukaryotic species and one prokaryotic species, which are all non-pathogenic, namely, budding and fission yeasts, human, mouse, fly, worm and <italic>E. coli</italic>. The predictions made on the basis of co-expression links could potentially represent, either a fungal taxon restricted, but conserved network, a <italic>Fusarium graminearum</italic> specific network or again be part of an ancient species conserved network. The complete list of all predictions and the seeds they are connected to is available as <bold><xref ref-type="supplementary-material" rid="pone.0067926.s009">Table S3</xref></bold>. We have also included what proportion of all edges for each of the predicted nodes are linked to seeds. Although, it would be reasonable to assume that a higher proportion would indicate a more certain prediction, the small numbers of available seeds did not allow us to explore this further as part of this study.</p>
+        <p>Some predictions were made on the basis of the node being a nearest neighbour to a larger number of VV seeds and these may represent more confident predictions. <xref ref-type="table" rid="pone-0067926-t002"><bold>Table 2</bold></xref> shows the distribution of the number of seeds to which each predicted virulence associated node is connected in the integrated network as well as in the three constituent networks.</p>
+        <table-wrap id="pone-0067926-t002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Predicting virulence nodes based on the seed numbers connected within the local neighbourhood.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0067926-t002-2" xlink:href="pone.0067926.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="4" align="left" rowspan="1">Number of nodes connected to a given number of seeds</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Number of seeds</td>
+                  <td align="left" rowspan="1" colspan="1">Integrated</td>
+                  <td align="left" rowspan="1" colspan="1">Protein-protein interaction</td>
+                  <td align="left" rowspan="1" colspan="1">Co-expression</td>
+                  <td align="left" rowspan="1" colspan="1">Sequence similarity</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>2</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">95</td>
+                  <td align="left" rowspan="1" colspan="1">25</td>
+                  <td align="left" rowspan="1" colspan="1">33</td>
+                  <td align="left" rowspan="1" colspan="1">39</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>3</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">58</td>
+                  <td align="left" rowspan="1" colspan="1">48</td>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                  <td align="left" rowspan="1" colspan="1">23</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>4</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">25</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>5</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">23</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>6</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>7</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>8</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>The number of seeds to which each predicted virulence node is connected, in the four networks is shown. A node linked to 2 or more seed nodes is termed a prediction. Some predictions have links to multiple seeds.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The method for selection of candidate virulence associated proteins based on the network neighbourhood of the proteins previously reported to be important for infection and disease formation was reported by the study of <xref ref-type="bibr" rid="pone.0067926-Liu1">[12]</xref>. However, the original study did not validate the underlying assumption that proteins important for virulence are in fact more likely to be connected to other proteins with similar properties. To test this assumption, the node labels were permuted 10000 times to give an estimate of how likely any protein annotated to be involved in virulence is to be connected with at least two others. As shown in <xref ref-type="table" rid="pone-0067926-t003"><bold>Table 3</bold></xref>, we have observed that the probability is significantly higher than would be expected by chance for sequence similarity and protein-protein interaction networks, but not so for the co-expression network. This result can be taken as an indication that the selection strategy used in this work can be used to reveal the most relevant candidate proteins.</p>
+        <table-wrap id="pone-0067926-t003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>The probability that a verified virulence (VV)seed is connected to at least 2 others by chance.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0067926-t003-3" xlink:href="pone.0067926.t003"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Network type</td>
+                  <td align="left" rowspan="1" colspan="1">Seeds connected to 2 or more other seeds</td>
+                  <td align="left" rowspan="1" colspan="1">p-value</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Integrated</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">0.0001</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Protein-protein interaction</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">0.0186</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Co-expression</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">0.1172</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Sequence similarity</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">7.00E-04</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>We have described the community structure of the largest connected component of the integrated network in another study <xref ref-type="bibr" rid="pone.0067926-Bennett1">[19]</xref>. First a series of disjoint (non-overlapping) communities of the network were detected using the Louvain method <xref ref-type="bibr" rid="pone.0067926-Blondel1">[21]</xref> (which optimises a measure known as modularity <xref ref-type="bibr" rid="pone.0067926-Newman1">[22]</xref>. Modularity optimisation is a widely accepted method for community structure detection and has proven its utility in many biological applications and in particular has found functionally coherent communities in PPI networks <xref ref-type="bibr" rid="pone.0067926-Chen1">[23]</xref>, <xref ref-type="bibr" rid="pone.0067926-Liu2">[24]</xref>. These disjoint communities were then transformed into overlapping communities through the application of a mathematical programming method, which allows nodes making connections across community borders to be multi-clustered according to the optimisation of another metric known as community strength <xref ref-type="bibr" rid="pone.0067926-Bennett1">[19]</xref>. In the transformation from disjoint to overlapping communities, the extent of overlapping, i.e. the number of proteins that belong to multiple communities, is controlled by a parameter r. In general, the multi-clustered proteins were found to have a higher connectivity and higher multi-functionality based on Gene Ontology (GO) annotations than proteins belonging to only one module. We found that overall the verified virulence proteins did not appear to show a tendency to belong to multiple communities although one case was noted (r&#x200A;=&#x200A;0.4), where nearly half (49.3%) of the VV proteins belonged to more than one community. We are aware that the small number of VV proteins makes it difficult to ascribe biological significance to these results. We explore here whether the 215 predictions also exhibit the same behaviour. We find that 164 out of the 215 are in the largest module (of size 1951 nodes), which also contains 33 seeds. This module was previously shown to be significantly enriched for VV proteins, and therefore, it makes sense that a large number of the predictions also belong to this community due the nature of guilt-by-association. We now consider the module membership of the predictions to determine whether they tend to belong to more than one module. We find that according to the Fisher&#x2019;s exact test, a significant proportion of the predicted proteins do belong to more than one module (in the range 0.4&#x2264; r &#x2264;0.9). This may be due to the fact that multi-clustered proteins tend to be more connected than proteins belonging to only one module and therefore have a higher chance of being connected to the VV proteins. However, it may also indicate that the proteins predicted to be virulence associated may have a tendancy to be multi-functional.</p>
+        <p>We also compared the length distributions of the set of 215 predicted virulence associated proteins with the length distribution of all the proteins in the <italic>F graminearum</italic> genome and find that average lengths of proteins in the predictions and the seeds subset are significantly greater than all the other <italic>F. graminearum</italic> predicted proteins (n&#x200A;=&#x200A;12,984) (Student&#x2019;s t-test, t&#x200A;=&#x200A;4.49, d.f.&#x200A;=&#x200A;79.30, p&lt;0.01 for seeds vs. other and t&#x200A;=&#x200A;4.03, d.f.&#x200A;=&#x200A;225.48, p&lt;0.01 for predictions vs. other). The larger mean size of the VV seeds compared to the &#x2018;others&#x2019; category has arisen purely as a result of the initial protein types selected by the global fusarium community for functional experimentation. The underlying reasons for the increased length of the predicted virulence associated proteins compared to all the other proteins predicted from the <italic>F. graminearum</italic> sequenced genome is currently unclear. However, this analysis clearly indicates that small protein sequences are under-represented in the predictions. The 29 hypothetical proteins predicted have the size range 69 to 1399 amino acids (aa) (mean 527 aa), with only 4 proteins having length under 200 aa (FGSG_01228 (186), FGSG_00536 (116), FGSG_01888 (69), FGSG_08359 (178). We also explored the overall predictive power of the four different networks (<bold><xref ref-type="supplementary-material" rid="pone.0067926.s010">Table S4</xref></bold>). This analysis revealed a marked improvement over the random model. However, the small number of positive and negative examples are insufficient to make an accurate estimate for either the sensitivity or specificity values.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Taxonomic Diversity of the Predictions</title>
+        <p>The taxonomic diversity of the 215 predicted virulence associated proteins was explored by matching the sequences against the non-redundant database at NCBI (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov">www.ncbi.nlm.nih.gov</ext-link>) so as to obtain an indication of which of the predictions is <italic>Fusarium</italic> or fungal specific. This distribution is represented as a heatmap (<xref ref-type="fig" rid="pone-0067926-g001"><bold>Figure 1</bold></xref>), and the details for each FGSG gene are shown in <bold><xref ref-type="supplementary-material" rid="pone.0067926.s011">Table S5</xref>.</bold></p>
+        <fig id="pone-0067926-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Heat map displaying the taxonomic distribution for each of the predicted virulence associated proteins.</title>
+            <p>Each row provides the information for one sequence. The left hand three columns (SEQ, PPI, COEX) indicate the network in which the prediction could be made (black). For the bottom 15 rows only the integrated network provides the prediction. The right hand heatmap shows the proportional distribution of all BLAST hits from the 215 predictions to the NCBI nr database (white &#x2013; lowest, red - highest) across the taxonomical levels. All hits were counted once, at the lowest possible level of taxonomical specificity. The grey colour shows cases where there were no hits at a particular taxonomic level. See <bold><xref ref-type="supplementary-material" rid="pone.0067926.s008">Table S2</xref></bold> for the detailed results for each individual FGSG protein.</p>
+          </caption>
+          <graphic xlink:href="pone.0067926.g001"/>
+        </fig>
+        <p>Twenty-five of the predictions are specific up to the level of fungi, whilst 15 are specific up to the level of <italic>Ascomycota</italic>. The FGSG_10808 (a conserved hypothetical protein) and FGSG_03534 (trichothecene 15-O-acetyltransferase) are highly specific to the level of <italic>Hypocreales</italic>. This analysis also highlights that there are 15 predictions unique to the integrated network. Of these six are found to have a taxonomic distribution beyond eukaryotes. Overall, this analysis confirms that the predictions present within each network are for sequences shared with many other eukaryotic species as well as in some case prokaryote species.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Exploring Predictions from Connections to Multiple Seeds</title>
+        <p>The requirement for a node in the network to be a candidate for virulence was connected to at least two seed VV nodes. As can be seen from <xref ref-type="table" rid="pone-0067926-t002"><bold>Table 2</bold></xref>, some nodes were connected to a greater number of seeds and these may be suggestive of stronger predictions. One prediction (FGSG_06878) was made on the basis of 8 links to seed proteins. The annotations of the seeds that contributed to the prediction of this protein are given in <xref ref-type="table" rid="pone-0067926-t004"><bold>Table 4</bold></xref><bold>.</bold></p>
+        <table-wrap id="pone-0067926-t004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>The prediction of FGSG_06878 as a virulence factor with links to 8 seeds.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0067926-t004-4" xlink:href="pone.0067926.t004"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">FGSG_06878 (probable CMK1 - Ca2+/calmodulin-dependent ser/thr protein kinase type I) is linked by</td>
+                  <td colspan="3" align="left" rowspan="1">Seeds on which the prediction is based with phenotype [], and MIPS annotation.Phenotype symbols are rv&#x200A;=&#x200A;reduced virulence, lp&#x200A;=&#x200A;loss of pathogenicity</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Predicted PPI to:</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>FGSG_09903</bold><italic>(ste7)</italic> [lp], Probable map kinase kinase</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>FGSG_10313</bold> [rv] <italic>(mgv1)</italic> (MGV1 map kinase)</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>FGSG_06385</bold><italic>(map1)</italic> [lp] (FMK1 pathogenicity map kinase 1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Co-expression to:</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>FGSG_08737</bold><italic>(GzOB031)</italic> [rv] Probable woronin body major protein precursor</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>FGSG_01964</bold><italic>(CHS5)</italic> [rv] Probable chitin synthase</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>FGSG_00385</bold><italic>(GzHMG002)</italic> [rv] probable NHP6B - nonhistone chromosomal protein</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Sequence similarity to:</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>FGSG_09897</bold><italic>(snf1)</italic> [rv] probable serine/threonine protein kinase</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>FGSG_06385</bold><italic>(map1)</italic> [lp] (FMK1 pathogenicity map kinase 1)</td>
+                  <td align="left" rowspan="1" colspan="1"><bold>FGSG_16491</bold><italic>(fst11)</italic> [lp]] related to NRC-1 MAPKK kinase</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt103">
+              <label/>
+              <p>This prediction FGSG_06878 was confirmed to be a virulence protein in the recent paper of [21-Wang et al.]. Note that prediction FGSG_06878 is linked to seed FGSG_06385 by both predicted PPI and sequence similarity information. In planta phenotypes are rv, reduced virulence, a quantitative reduction in disease causing ability and the more stringent lp, indicating loss of pathogenicity where disease establishment is aborted.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>To facilitate the detailed analysis of the network neighbourhood of the predicted virulence associated nodes of interest, the Ondex visualisation tool was used (<xref ref-type="fig" rid="pone-0067926-g002"><bold>Figure 2</bold></xref><bold>, <xref ref-type="supplementary-material" rid="pone.0067926.s001">Figure S1</xref></bold> for complete neighourhood). These Ondex displays permit the experimenter to explore simultaneously the details associated with each node as well as the origin of the different types of source information via inspection of the colour of each edge connecting the seed to the predicted node.</p>
+        <fig id="pone-0067926-g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>The local neighbourhood for the predicted virulence gene FGSG_06878.</title>
+            <p>The neighbourhood of FGSG_06878 (prediction -large white triangle) and these 8 seed proteins to which it is linked, visualised with Ondex <xref ref-type="bibr" rid="pone.0067926-Kohler1">[16]</xref>. The magenta coloured edges predicted PPI information, blue edges predicted co-expression information and the green coloured edges predict sequence similarity information.</p>
+          </caption>
+          <graphic xlink:href="pone.0067926.g002"/>
+        </fig>
+        <p>The prediction FGSG_06878 is linked to 5 seeds with associated phenotype &#x2018;reduced virulence&#x2019;, namely FGSG_10313 <italic>(MGV1)</italic>, FGSG_00385, FGSG_08737, FGSG_01964, FGSG_09897 <italic>(SNF1)</italic>, and 3 seeds (FGSG_09903 <italic>(PKAR)</italic> and FGSG_06385 <italic>(FMK1)</italic> and FGSG_16491 <italic>(FST11)</italic> with associated phenotype &#x2018;loss of pathogenicity&#x2019;. This predicted virulence associated protein, FGSG_06878 is annotated in GenRE database <xref ref-type="bibr" rid="pone.0067926-Wong1">[6]</xref> as a &#x201C;probable CMK1 - Ca2+/calmodulin-dependent ser/thr protein kinase type I&#x201D;. The prediction and the seeds from which this prediction was inferred are shown in <xref ref-type="fig" rid="pone-0067926-g002"><bold>Figure 2</bold></xref>. Evidence for crosstalk between Map kinase (MAPK) and calcium-calmodulin dependent signalling leading to the activation of transcripton factors was established earlier and was recently reviewed for several plant human pathogenic fungi. <xref ref-type="bibr" rid="pone.0067926-Rispail1">[25]</xref>. A recent gene deletion study by <xref ref-type="bibr" rid="pone.0067926-Wang1">[26]</xref> confirmed a reduced virulence phenotype for FGSG_06878.</p>
+        <p>The full details of three other predictions that have links to 7 seeds are given in <bold><xref ref-type="supplementary-material" rid="pone.0067926.s012">Table S6</xref></bold> and the immediate networks are displayed in <bold><xref ref-type="supplementary-material" rid="pone.0067926.s002">Figures S2</xref>, <xref ref-type="supplementary-material" rid="pone.0067926.s003">S3</xref> and <xref ref-type="supplementary-material" rid="pone.0067926.s004">S4</xref>.</bold> In each case, at least one of the seeds is annotated to be a transcription factor and the prediction is made from information obtained from only two of the constituent networks.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Other Examples of Specific Predictions</title>
+        <p>In total, this integrated network analysis has predicted 215 potential virulence associated proteins. For illustrative purposes three very different types of predictive example are discussed in detail. The first example was selected because it illustrates the effect of multiple complementary information types contributing to the prediction, the second because a protein unique to <italic>F. graminearum</italic> was predicted and the third example reveals that a network study can identify a specific class of proteins required for virulence, but is unable to pin-point the specific member of a multigene family.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Example 1: Prediction of FGSG_00559 with a Role in Intracellular Signalling Modulation</title>
+        <p>Within the integrated network, the protein coded for by the gene FGSG_00559 is predicted on the basis of links to four VV proteins. Two of these links come from the predicted PPI information (magenta edges in <xref ref-type="fig" rid="pone-0067926-g003"><bold>Figure 3</bold></xref>), namely links to FGSG_06948 (<italic>Gzscp</italic>, loss of pathogenicity, related to tetratricopeptide repeat protein tpr1) and FGSG_09197 (<italic>HMR1</italic>, reduced virulence, probable 3-hydroxy-3-methylglutaryl-coenzyme A reductase), whilst two links to other proteins are from co-expression information (blue edges), namely links to FGSG_09895 (<italic>NTH1</italic>, reduced virulence, probable a neutral trehalase (alpha,alpha-trehalose glucohydrolase)) and FGSG_09908 (<italic>PKAR</italic>, reduced virulence, probable cAMP-dependent protein kinase regulatory chain. FGSG_00559 is annotated in the MIPS GenRE database <xref ref-type="bibr" rid="pone.0067926-Wong1">[6]</xref> as a probable 26S proteasome regulatory subunit YTA3. Two of these seed proteins FGSG_09895 and FGSG_09908 reside within close physical proximity in the genome, in a micro-region of virulence genes recently identified using a genome landscape scanning &#x2013; reverse genetics approach <xref ref-type="bibr" rid="pone.0067926-Antoniw1">[27]</xref>, <xref ref-type="bibr" rid="pone.0067926-Beacham1">[28]</xref>. Other predictions included in this network neighbourhood, involving at least two of the same seed proteins include FGSG_06886 a probable 20S core proteasome subunit PRE2, FGSG_09689 a probable ubiquitin-protein ligase (E1-like ubiquitin-activating enzyme) and FGSG_08421 a conserved hypothetical protein. This neighbourhood is highly likely to be involved in co-ordinating two different types of intracellular signalling and possibly involves the degradation of specific signalling components within the proteasome. All the genes in this network neighbourhood were found to reside in regions of either very low or no genetic recombination within the genome <xref ref-type="bibr" rid="pone.0067926-Antoniw1">[27]</xref> and these sequences are found in many fungal and other eukaryotic species (<bold><xref ref-type="supplementary-material" rid="pone.0067926.s011">Table S5</xref></bold>).</p>
+        <fig id="pone-0067926-g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>The local neighbourhood for the predicted virulence gene FGSG_00559.</title>
+            <p>The immediate neighbourhood in the integrated network within which the predicted virulence associated protein FGSG_00559 resides (large white triangle). Shown are the types of links between the predictions and the seeds. Magenta coloured edges predicted PPI information and blue edges predicted co-expression information. The various node colours of the seeds as shown in the legend indicate the experimentally determined outcomes. There are 3 additional virulence predictions in this neighbourhood (small white triangles).</p>
+          </caption>
+          <graphic xlink:href="pone.0067926.g003"/>
+        </fig>
+      </sec>
+      <sec id="s2f">
+        <title>Example 2: Prediction of FGSG_00071 Includes Links to Seeds with Opposite Effects</title>
+        <p>The protein coded for by the gene FGSG_00071 <italic>(TRI1)</italic> is predicted on the basis of links to three VV proteins (<xref ref-type="fig" rid="pone-0067926-g004"><bold>Figure 4</bold></xref>), namely FGSG_16251 (reduced virulence, TRI6, transcription factor) <xref ref-type="bibr" rid="pone.0067926-Seong1">[29]</xref>, FGSG_03543 (reduced virulence, TRI14, putative trichothecene biosynthesis protein <xref ref-type="bibr" rid="pone.0067926-Dyer1">[30]</xref> and FGSG_10397 (increase in virulence, CLM1, longiborneol synthetase <xref ref-type="bibr" rid="pone.0067926-McCormick1">[31]</xref> and FGSG_17598 (recently renamed by MIPS). Previously this gene sequence had been functionally tested as gene FGSG_00007 (increased virulence, cytochrome P450 monooxygenase, DON biosynthesis) <xref ref-type="bibr" rid="pone.0067926-Gardiner1">[32]</xref>. The three other <italic>TRI</italic> genes in this network neighbourhood, namely <italic>TRI3</italic> (FGSG_03534), <italic>TRI4</italic> (FGSG_03535), TRI11 (FGSG_03540) genes are all located within the main trichothecene (<italic>TRI</italic>) biosynthetic cluster, which is in the middle of chromosome 2 in a region of moderately high genetic recombination. These three <italic>TRI</italic> genes are either suggested or have been shown experimentally in <italic>F. graminearum</italic> to code for key steps in the synthesis of various trichothecene mycotoxins, required for deoxyvalenol (DON) and its acetylated derivatives <xref ref-type="bibr" rid="pone.0067926-Desjardins1">[33]</xref>.</p>
+        <fig id="pone-0067926-g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>The local neighbourhood for the predicted virulence gene FGSG_00071 <italic>(TRI1)</italic>.</title>
+            <p>Gene IDs are: FGSG_03543 <italic>(TRI14)</italic>, FGSG_10397 <italic>(CLM1)</italic>, FGSG_17598 (related to O-methyl sterigmatocystin oxidoreductase), FGSG_03535 <italic>(TRI4)</italic>, FGSG_03534 <italic>(TRI3)</italic>, FGSG_16251 <italic>(TRI6)</italic>, FGSG_03540 <italic>(TRI11).</italic></p>
+          </caption>
+          <graphic xlink:href="pone.0067926.g004"/>
+        </fig>
+        <p>TRI1 and FGSG_00007/FGSG_17598 are located towards the left end of Chromosome 1, in the region of very high recombination. FGSG_00007/FGSG_17598 is highly expressed under DON inducing conditions. FGSG_17598 is annotated by GenRE as &#x2018;related to O-methylsterigmatocystin oxidoreductase&#x2019;, but its detailed function is currently unknown.</p>
+        <p>FGSG_10397 is located in a region of very low recombination at the other end of chromosome 1 and is required for the biosynthesis of a different secondary metabolite, namely Culmorin, when grown under in vitro conditions <xref ref-type="bibr" rid="pone.0067926-McCormick1">[31]</xref>. In a second study, (<xref ref-type="bibr" rid="pone.0067926-Liu2">[24]</xref>-Gardiner et al.) revealed that deletion of FGSG_10397 led to elevated DON mycotoxin production and hence enhanced virulence. However, the level of Culmorin was not reported in the second study.</p>
+        <p>The predicted virulence node FGSG_00071, is annotated by MIPS as &#x2018;TRI1 cytochrome P450 monooxygenase&#x2019;. A gene disruption mutant in <italic>F. graminearum</italic> was shown to accumulate calonectrin compounds, and no longer produced 15-acetyldeoxynivalenol <xref ref-type="bibr" rid="pone.0067926-McCormick2">[34]</xref>, however the <italic>in planta</italic> phenotype of this mutant strain has not been reported.</p>
+        <p>Various <italic>TRI</italic> genes are highly expressed during the symptomless phase of wheat ear colonisation when the fungal hyphae are exclusively extracellularly colonising and are in low abundance <xref ref-type="bibr" rid="pone.0067926-Brown1">[35]</xref>. This network neighbourhood which contains conflicting experimental results (both enhanced and reduced virulence phenotypes) appears to be involved in both positively and negatively regulating the production of the trichothecene mycotoxin deoyxnivalenol and its acetylated derivatives as well as one other unrelated secondary metabolite, Culmorin, in response to different external stimuli. Most of the <italic>TRI</italic> genes in <italic>F. graminearum</italic> are highly taxon specific<bold>.</bold> This virulence prediction was made on the basis of two co-expression links and one protein interaction link and suggests value in combining multiple data sources (<xref ref-type="fig" rid="pone-0067926-g004"><bold>Figure 4</bold></xref>). The predicted virulence node FGSG_00071 is specific up to the level of <italic>F. graminearum</italic> (<bold><xref ref-type="supplementary-material" rid="pone.0067926.s011">Table S5</xref>).</bold></p>
+      </sec>
+      <sec id="s2g">
+        <title>Example 3: Prediction of Two Non Pathogenicity Associated Seeds as Potential Candidates for Virulence</title>
+        <p>The two genes FGSG_05535 and FGSG_09988, annotated in GenRE as probable G protein alpha subunits, were shown to be dispensable for pathogenicity <xref ref-type="bibr" rid="pone.0067926-Yu1">[36]</xref>. However, both proteins are connected to two seed proteins required for pathogenicity (reduced virulence phenotype). The seed proteins are: FGSG_09614 (GPA2) encoding a guanine nucleotide-binding protein alpha-3 subunit and FGSG_04104 (GPB1) encoding a guanine nucleotide-binding protein beta subunit. Both these seeds are involved in intracellular signalling. The two non-pathogenicity associated proteins as well as 7 others (white triangles in <xref ref-type="fig" rid="pone-0067926-g005"><bold>Figure 5</bold></xref>) would all be predicted to be virulence associated proteins on the basis of having two links to pathogenicity associated seeds. This network neighbourhood contains mostly genes located in genomic regions with very low/no genetic recombination, which are also found in many other taxa. The only exception is FGSG_04618 which is located in a region of very high recombination towards the right hand end of chromosome 2, but which also has a wide taxon distribution. FGSG_09988 codes for the G protein alpha 3 subunit. This reveals the selective recruitment of the G protein alpha subunit to virulence signalling over the beta or gamma subunits in <italic>F. graminearum</italic>. Although this network analysis has revealed a multigene family to be associated with virulence, only through completion of the gene deletion experiments could the actual member recuited to virulence be revealed. None of other members of this cluster belong to multigene families. However the seven other predicted members of this G-protein cluster possess a WD repeat domain.</p>
+        <fig id="pone-0067926-g005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>The neighbourhood of FGSG_05535 and FGSG_09988.</title>
+            <p>Although connected to the two seed proteins FGSG_09614 <italic>(GPA2)</italic> and FGSG_04104 <italic>(GPB1),</italic> experimental evidence in barley suggests that the two predictions 05535 and 09988 are dispensable for pathogenicity <xref ref-type="bibr" rid="pone.0067926-Yu1">[36]</xref>. Genetic redundancy is suggested to explain this fact. (FGSG_05698: probable <italic>CPC2</italic> protein, FGSG_09870: probable <italic>CPC2</italic> protein; FGSG_09271: probable <italic>SEC13</italic> - protein transport protein; FGSG_10251: probable <italic>LST8</italic> protein; FGSG_04618: related to vegetatible incompatibility protein <italic>HET-E-1</italic>; FGSG_16028: probable U5 snRNP-specific 40 kD protein (novel WD-40 repeat protein); FGSG_05038: probable nuclear migration protein.</p>
+          </caption>
+          <graphic xlink:href="pone.0067926.g005"/>
+        </fig>
+      </sec>
+      <sec id="s2h">
+        <title>Example 4: Prediction of Three Non Pathogenicity Associated Seeds as Potential Candidates for Virulence</title>
+        <p>The gene FGSG_00472 is connected to 5 seeds (<bold><xref ref-type="supplementary-material" rid="pone.0067926.s005">Figure S5</xref></bold>) and is annotated in GenRE as a probable cAMP dependent protein kinase. This gene has recently been shown to be required for pathogenicity and DON production <italic>in planta</italic>
+<xref ref-type="bibr" rid="pone.0067926-Wang1">[26]</xref>. The 5 seed proteins in this cluster are all predicted to be protein kinases. In addition, in this cluster gene FGSG_00472 is connected to two additional potential candidates for virulence, namely genes FGSG_10095 and FGSG_01312. These genes are also annotated in GenRE as protein kinases and are themselves connected to either 3 or 4 protein kinase seeds. Both FGSG_10095 and FGSG_01312 have recently been shown to required for pathogenicity and DON production <italic>in planta</italic>
+<xref ref-type="bibr" rid="pone.0067926-Wang1">[26]</xref>. Interestingly, the three newly verified virulence genes when deleted individually have only a minimal affects on <italic>in vitro</italic> growth, whereas all the seed genes in this cluster when deleted individually have a far greater affect on <italic>in vitro</italic> growth <xref ref-type="bibr" rid="pone.0067926-Wang1">[26]</xref>.</p>
+      </sec>
+      <sec id="s2i">
+        <title>Mapping of Recently Identified Kinase Proteins in <italic>Fusarium graminearum</italic> to the Integrated Network</title>
+        <p>The recent comprehensive study of the contribution of the predicted <italic>F. graminearum</italic> kinome to pathogenicity towards wheat ears, mycotoxin production and an additional 15 growth and development traits assessed <italic>in vitro</italic>
+<xref ref-type="bibr" rid="pone.0067926-Wang1">[26]</xref> lead to the identification of 21 putative essential proteins, 44 proteins as having a proven role in disease formation (corresponding to reduced virulence) and 51 proteins with no apparent role in pathogenicity (refer to <bold><xref ref-type="supplementary-material" rid="pone.0067926.s013">Table S7</xref></bold>). We have used this data in an attempt to quantify the predictive accuracy of our combined network approach. Of these 44 new pathogenicity proteins, 23 correspond to predictions made within our integrated network (<xref ref-type="table" rid="pone-0067926-t005"><bold>Table 5</bold></xref>) and a further 4 are among our set of verified virulence seed proteins (FGSG_10313, FGSG_06385, FGSG_09903, FGSG_09897). In total, 11 of the essential for life proteins in <xref ref-type="bibr" rid="pone.0067926-Wang1">[26]</xref> were among our predicted pathogenicity proteins as well as 22, which have been shown to be unaffected in virulence towards wheat ears. This latter figure highlights the problem with false positives. However, some of these single gene negative results may have occured via genetic redundancy, i. e. a member of a multigene family, where the role of the deleted gene can be fully taken over by the function of another related gene(s) and therefore no change in the phenotypic outcome is observed. Only by exploring the effects of deleting specific combinations of sequence related genes can these negative phenotypic effects be confirmed. A further possibility is that some of the predicted virulence genes may only be required for the infection of non-wheat host species.</p>
+        <table-wrap id="pone-0067926-t005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.t005</object-id>
+          <label>Table 5</label>
+          <caption>
+            <title>Comparison of the distribution of known phenotypes of the seeds within the four predicted networks.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0067926-t005-5" xlink:href="pone.0067926.t005"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Phenotype</td>
+                  <td colspan="4" align="left" rowspan="1">Network type</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Protein-protein interactions</td>
+                  <td align="left" rowspan="1" colspan="1">Coexpression</td>
+                  <td align="left" rowspan="1" colspan="1">Sequence similarity</td>
+                  <td align="left" rowspan="1" colspan="1">Integrated</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="4" align="left" rowspan="1">Seeds</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Reduced</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="4" align="left" rowspan="1">
+                    <bold>Predictions</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Essential</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Reduced</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">20</td>
+                  <td align="left" rowspan="1" colspan="1">23</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Unaffected</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">22</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt104">
+              <label/>
+              <p>Counts of the different phenotypes according to the study by Wang and collegues <xref ref-type="bibr" rid="pone.0067926-Wang1">[26]</xref> that were found among the predictions derived using four different networks.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Selecting only those predictions, which were made on the basis of slightly more stringent criteria, namely requiring at least 3 instead of 2 neighbours as seeds (of which there are 71) has only a small effect with lowering the number of correctly predicted proteins with the phenotype &#x2018;reduced virulence&#x2019; to 21 and with phenotype &#x2018;unaffected&#x2019; to 17.</p>
+      </sec>
+      <sec id="s2j">
+        <title>Chromosomal Location of the Predicted Pathogenicity Associated Proteins</title>
+        <p>When the newly sequenced <italic>F. graminearum</italic> genome of strain PH-1 and partial sequence information for a second strain GZ3639 were aligned to the available genetic map involving both these strains, this revealed an unanticipated result. Cuomo et al., (2007) described a genome, where the four <italic>F. graminearum</italic> chromosomes were unevenly divided into two types of genomic landscape. The majority of the genome exhibited minimal DNA polymorphism and a low rate of recombination between the two sequenced strains and the gene sequences predicted were also shared with two other Fusarium species, <italic>F. oxysporum</italic> and <italic>F. verticillioides</italic>. Separating these large blocks of conserved DNA, were several smaller regions with high DNA polymorphism, a very high recombination frequency, and these contained many of the predicted gene sequences considered to be unique to <italic>F. graminearum</italic>. These small unique regions of the genome were located in both the sub-telomeric and interstitial regions of each chromosome and were proposed to be the fusion sites of ancestral smaller chromosomes.</p>
+        <p>Due to the unusual topology of the <italic>F. graminearum</italic> genome landscape, the chromosomal positioning of the predicted virulence genes accross the four <italic>Fusarium graminearum</italic> chromosomes was explored (<xref ref-type="fig" rid="pone-0067926-g006"><bold>Figure 6</bold></xref>). Visual inspection revealed that most of the virulence genes predictions lie in the lower recombination conserved part of the chromosomes (white and blue). However, four predicted virulence genes reside in chromosome regions with a high/very high recombination frequency (4 cM&#x2013;8 cM, red and &gt;8 cM crimson), namely &#x2013; FGSG_00071 (<xref ref-type="fig" rid="pone-0067926-g004"><bold>Figure 4</bold></xref>), FGSG_15983, FGSG_04618 (<xref ref-type="fig" rid="pone-0067926-g005"><bold>Figure 5</bold></xref>) and FGSG_16412. Therefore the rarer type of genome landscape is explored in this network analysis. These 4 predicted virulence genes are found in many other species.</p>
+        <fig id="pone-0067926-g006" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Position of the predictions in relation to the 4 chromosomes of <italic>Fusarium graminearum</italic>.</title>
+            <p>The predicted virulence genes are shown as black vertical bars in track 1 for each chromosome. The verified virulence seeds (red bars) are depicted in track 2. Recombination frequency across the chromosomes is depicted in track 3 using a colour gradient (white (0.0) lowest to crimson (&gt;8 cM highest). The various colours in track 3 for each chromosome indicate the frequence of recombination (cM/27 kb), i. e. # clBeige 1 clKhaki 2 clGold 3 clGoldenRod 4 clTomato 8 clCrimson. The numbers between the colours are boundary values in cM/27 kb. Beige represents the lowest and crimson the highest recombination frequency <xref ref-type="bibr" rid="pone.0067926-Gale1">[47]</xref>. (Image generated using OmniMapFree <xref ref-type="bibr" rid="pone.0067926-Antoniw1">[27]</xref>).</p>
+          </caption>
+          <graphic xlink:href="pone.0067926.g006"/>
+        </fig>
+      </sec>
+      <sec id="s2k">
+        <title>The Predicted Virulence Associated Protein Set Shows an Increased Abundance in the Functional Categories Defense/Virulence and Cellular Communication</title>
+        <p>The functional classification system developed by the Munich Information Centre for Protein Sequences (MIPS) allows the automatic annotation of protein sets into 20 high level functional categories (Funcat) <xref ref-type="bibr" rid="pone.0067926-Ruepp1">[37]</xref> (<ext-link ext-link-type="uri" xlink:href="http://mips.helmholtz-muenchen.de/genre/proj/FGDB/">http://mips.helmholtz-muenchen.de/genre/proj/FGDB/</ext-link>). We hypothesised that successful prediction of virulence associated protein candidates using networks should also increase the annotation frequency of proteins belonging to Funcat groups comprising proteins involved in virulence and protein-protein interactions. Both the protein sets for the seeds and the predicted virulence associated proteins were compared (<xref ref-type="table" rid="pone-0067926-t006"><bold>Table 6</bold></xref>). A chi-square test showed that both groups are significantly different (P&#x2265;0.001). The Funcat groups 14 (protein fate), 30 (cellular communication/signal transduction mechanism) and 32 (cell rescue, defense and virulence) were increased, while the number of proteins belonging to Funcat group 99 (unclassified proteins and others) was strongly reduced.</p>
+        <table-wrap id="pone-0067926-t006" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0067926.t006</object-id>
+          <label>Table 6</label>
+          <caption>
+            <title>Funcat analysis of the verified virulence seeds and candidate virulence associated proteins.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0067926-t006-6" xlink:href="pone.0067926.t006"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">The main functional categories</td>
+                  <td align="left" rowspan="1" colspan="1">Seeds (%)</td>
+                  <td align="left" rowspan="1" colspan="1">Candidates (%)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">metabolism</td>
+                  <td align="left" rowspan="1" colspan="1">9.9</td>
+                  <td align="left" rowspan="1" colspan="1">7.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">energy</td>
+                  <td align="left" rowspan="1" colspan="1">0.8</td>
+                  <td align="left" rowspan="1" colspan="1">1.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                  <td align="left" rowspan="1" colspan="1">cell cycle and dna processing</td>
+                  <td align="left" rowspan="1" colspan="1">4.3</td>
+                  <td align="left" rowspan="1" colspan="1">7.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                  <td align="left" rowspan="1" colspan="1">transcription</td>
+                  <td align="left" rowspan="1" colspan="1">9.1</td>
+                  <td align="left" rowspan="1" colspan="1">4.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">protein synthesis</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                  <td align="left" rowspan="1" colspan="1">0.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>14</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>protein fate (folding, modification, destination)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>4.0</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>11.2</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">protein with binding function or cofactor requirement</td>
+                  <td align="left" rowspan="1" colspan="1">10.3</td>
+                  <td align="left" rowspan="1" colspan="1">10.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">18</td>
+                  <td align="left" rowspan="1" colspan="1">regulation of metabolism and protein function</td>
+                  <td align="left" rowspan="1" colspan="1">4.0</td>
+                  <td align="left" rowspan="1" colspan="1">4.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">20</td>
+                  <td align="left" rowspan="1" colspan="1">cellular transport, transport facilities and transport routes</td>
+                  <td align="left" rowspan="1" colspan="1">1.6</td>
+                  <td align="left" rowspan="1" colspan="1">4.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>30</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>cellular communication/signal transduction mechanism</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>4.0</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>9.3</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>32</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>cell rescue, defense and virulence</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>1.6</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>4.5</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">34</td>
+                  <td align="left" rowspan="1" colspan="1">interaction with the environment</td>
+                  <td align="left" rowspan="1" colspan="1">3.2</td>
+                  <td align="left" rowspan="1" colspan="1">3.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">36</td>
+                  <td align="left" rowspan="1" colspan="1">systemic interaction with the environment</td>
+                  <td align="left" rowspan="1" colspan="1">0.8</td>
+                  <td align="left" rowspan="1" colspan="1">1.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">38</td>
+                  <td align="left" rowspan="1" colspan="1">transposable elements, viral and plasmid proteins</td>
+                  <td align="left" rowspan="1" colspan="1">0.0</td>
+                  <td align="left" rowspan="1" colspan="1">0.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">40</td>
+                  <td align="left" rowspan="1" colspan="1">cell fate</td>
+                  <td align="left" rowspan="1" colspan="1">4.3</td>
+                  <td align="left" rowspan="1" colspan="1">2.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">41</td>
+                  <td align="left" rowspan="1" colspan="1">development</td>
+                  <td align="left" rowspan="1" colspan="1">2.0</td>
+                  <td align="left" rowspan="1" colspan="1">1.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">42</td>
+                  <td align="left" rowspan="1" colspan="1">biogenesis of cellular components</td>
+                  <td align="left" rowspan="1" colspan="1">3.2</td>
+                  <td align="left" rowspan="1" colspan="1">4.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">43</td>
+                  <td align="left" rowspan="1" colspan="1">cell type differentiation</td>
+                  <td align="left" rowspan="1" colspan="1">6.7</td>
+                  <td align="left" rowspan="1" colspan="1">4.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">45</td>
+                  <td align="left" rowspan="1" colspan="1">tissue differentiation</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                  <td align="left" rowspan="1" colspan="1">0.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">47</td>
+                  <td align="left" rowspan="1" colspan="1">organ differentiation</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                  <td align="left" rowspan="1" colspan="1">0.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">70</td>
+                  <td align="left" rowspan="1" colspan="1">Subcellular localization</td>
+                  <td align="left" rowspan="1" colspan="1">9.5</td>
+                  <td align="left" rowspan="1" colspan="1">9.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>99</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>unclassified proteins and others</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>19.8</bold>
+                    <xref ref-type="table-fn" rid="nt105">&amp;</xref>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>6.9</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt105">
+              <label>&amp;</label>
+              <p>recovered from forward genetic screens.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>The integration of multiple types of data such as co-expression, protein-protein interaction and sequence relatedness can provide biological context to particular proteins by showing their relationship to other proteins. In some cases such an approach can provide enhanced annotation or indeed the first annotation for a sequence. For example a protein of unknown function may be strongly co-expressed or may interact with a number of proteins whose functions are known and this may help in narrowing down the possible roles of the previously unannotated protein. Here we used a similar &#x2018;guilt by association&#x2019; approach to examine the network neighbourhood of proteins known to be involved in pathogenicity or virulence for the fungal Ascomycete species <italic>Fusarium graminearium</italic>. There is a large amount of biological, genome and transcriptome information publically available for this species and other pathogenic <italic>Fusarium</italic> species <xref ref-type="bibr" rid="pone.0067926-Cuomo1">[4]</xref>, <xref ref-type="bibr" rid="pone.0067926-Coleman1">[38]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0067926-Rep1">[40]</xref> because of the ever rising economic global importance of Fusarium ear blight disease (<ext-link ext-link-type="uri" xlink:href="http://www.scabusa.org">www.scabusa.org</ext-link>, <xref ref-type="bibr" rid="pone.0067926-Dean1">[2]</xref>, <xref ref-type="bibr" rid="pone.0067926-Nunes1">[41]</xref>.</p>
+      <p>This study greatly extends the previous network study of (<xref ref-type="bibr" rid="pone.0067926-Liu1">[12]</xref> - Liu et al.). The integrated relationship network developed in this study leads to 215 predictions, of which 29 are hypothetical proteins (as annotated by the Fusarium Database (<xref ref-type="bibr" rid="pone.0067926-Wong1">[6]</xref> - Wong et al.) and 25 are fungal specific. The integrated network was particularly informative and predicted 15 proteins linked to virulence that were only revealed in this network. Of these, FGSG_06878 has now been linked to virulence via the shotgun functional analysis of the predicted kinome (<xref ref-type="bibr" rid="pone.0067926-Blondel1">[21]</xref>-Wang et al.), whilst FGSG_03535 (TRI4) is known to be highly upregulated <italic>in planta</italic> and is required for the synthesis of of the DON mycotoxin. The function of the other 13 predicted virulence associated proteins from the integrated network has not yet been established (1) and/or tested (12). In addition, this study generated four predictions, where the prediction was linked to either 7 or 8 seeds. Of these FGSG_00071 (TRI1), FGSG_07251 and FGSG_10066 have each recently been shown to be required for virulence, whilst the FGSG_09715 single gene deletion mutant was unaffected in pathogenicity towards wheat floral tissue. This level of correct prediction amongst the sequences most highly connected to the verified virulence seeds could be a way of further prioritising the list.</p>
+      <p>Amongst the 215 predictions, several proteins are considered to have a direct role in virulence because these are required for the production of the DON mycotoxin virulence factor, i.e. example 2. However, the rest of the predictions could play either a direct or indirect role in virulence. The analysis of the sequence type and protein size distribution of the predictions would indicate that this study has underexplored the possible effector component of <italic>Fusarium graminearum.</italic> At the present time we consider most of the predicted virulence associated proteins identified in this study to have an indirect role in virulence and could be seen as system components <xref ref-type="bibr" rid="pone.0067926-Schneider1">[18]</xref>.</p>
+      <p>One of the caveats with the approach we have taken is that predictions can be biased in favour of nodes with high degree centrality values. The degree centrality of a node in the network is a measure of the number of edges connected to that node, and the higher the value the more &#x2018;hub-like&#x2019; is the node. We used the Kolmogorov-Smirnov test (see, for example, <xref ref-type="bibr" rid="pone.0067926-Siegel1">[42]</xref>) to compare the (cumulative) distributions of each of the three possible pairs of degree centrality data sets, namely (i) the nodes corresponding to the verified virulence seeds vs. the nodes of the integrated network, (ii) the nodes corresponding to the predicted virulence associated proteins vs. the nodes of the integrated network and (iii) the nodes corresponding to the predicted virulence associated proteins vs. the nodes corresponding to the verified virulence seeds. The test revealed that there was no significant difference for (i) but that there was a highly significant difference for (ii) and (iii). This may reflect a bias in the predictions towards high degree centrality nodes, as such nodes are more likely to be connected to two or more seed proteins.</p>
+      <p>Another potential limitation of the approach is that for many pathogens (excluding well studied examples such as <italic>Fusarium graminearum</italic> (see for example <xref ref-type="bibr" rid="pone.0067926-Urban1">[7]</xref>), <italic>Magnaporthe oryzae</italic>, a rice pathogen and <italic>Ustilago maydis,</italic> a maize pathogen, there is typically very limited information on proteins that have been investigated experimentally for their contribution to virulence and that can act as seeds. Additionally the set of verified virulence seeds is most likely biased with certain types of protein being the subject of more intense biological investigations. For example, for <italic>F. graminearum</italic> although the analysis of the predicted transcription factors and protein kinases (the kinome) has been thoroughly explored (<xref ref-type="bibr" rid="pone.0067926-Son1">[43]</xref>
+<xref ref-type="bibr" rid="pone.0067926-Wang1">[26]</xref> so far the function of the predicted secretome has not <xref ref-type="bibr" rid="pone.0067926-Brown2">[44]</xref>. This means that currently the network space is not evenly sampled and may result in many potential targets being missed. Over the next few years this problem could either become worse if the community focusses on genes and gene families already known to essential for infection and/or disease formation in other pathogenic species, or the position may improve as the results from large forward genetic screens for pathogenicity factors and/or via the screening of hypothetical and conserved hypothetical sequences occurs.</p>
+      <p>Recently, a large scale targeted gene disruption study to search for novel secreted fungal virulence genes was reported for the rice blast pathogen <italic>Magnaporthe orzyae</italic>
+<xref ref-type="bibr" rid="pone.0067926-Saitoh1">[45]</xref>. In total, 78 putative secreted proteins, most with low sequences similarlity, but highly expressed during the early stages of plant infection, were tested for function. Only one <italic>M. oryzae</italic> gene was shown to be required for virulence in cereal plants. Deletion of the orthologous gene reduced the virulence of another fungal pathogen <italic>Colletotrichum orbiculaire</italic>, which causes anthracnose disease on non-cereal plants. This novel virulence gene has a very restricted fungal taxon distribution. Overall, this recent large experimental biology study reveals just how low a level of predictive success was achieved (1.28%) from an initial highly focussed bioinformatics analyses. Therefore at the present time, the sensitivity of our predictions for <italic>F. graminearum</italic> virulence associated proteins from using the integrated network (1.66%, <bold><xref ref-type="supplementary-material" rid="pone.0067926.s010">Table S4</xref></bold>) is comparable to that achieved using a partially bioinformatically guided, direct experimental approach.</p>
+      <p>Once genome sequence and gene function information is published on different strains of the same species, several closely related species, or <italic>formae specialis,</italic> then the power of this type of predictive technique is likely to greatly increase. For example, within the Fusaria the number of species under experimental investigation is gradually expanding and involves the use of a range of cereal, non-cereal and mammalian host infecting species. These studies include <italic>F. oxysporum</italic> f.sp <italic>lycopersici</italic> and various other <italic>formae specialis,</italic> which infect different dicotyledonous plant species, <italic>F. solani</italic> as well as <italic>F. verticillioides</italic>, <italic>F. culmorum</italic> and <italic>F. pseudograminearum,</italic> which infect a range of cereal hosts. Also, it is anticipated that in the next five years due to the increased efficiency of generating single gene deletion strains in specific plant pathogenic species, this type of integrated network could be used for comparative analyses involving evolutionarily closely related fungal species with subtly different infection routes and/or host ranges.</p>
+      <p>The protein interaction component of the integrated network representing predicted interactions <xref ref-type="bibr" rid="pone.0067926-Zhao1">[14]</xref> was built using known interaction data from 7 non-pathogenic, non-filamentous fungal organisms using information from interologs and domain-domain interactions. Therefore interactions between <italic>Fusarium</italic> specific proteins will not have been captured. The identification within the integrated network of a prediction involved in trichothecene mycotoxin production (<xref ref-type="fig" rid="pone-0067926-g002"><bold>Figure 2</bold></xref>), indicates the value of including co-expresssion data. With the increasing use of next generation sequencing technologies to explore the interaction transcriptome in greater detail, it is conceivable that co-expression information on different phases of the interaction could be used to further refine the virulence associated protein predictions.</p>
+      <p>Exploration of the network together with expert biological knowledge about the predicted proteins in the neighbourhoods of verified virulence proteins may lead to a further reduction in hypothesis space and prioritisation to a few genes that could be the target for experimental investigation. However, two separate <italic>F. graminearum</italic> large studies recently published, explored the function of the 709 predicted transcription factors (TAPs) <xref ref-type="bibr" rid="pone.0067926-Son1">[43]</xref> and the 116 predicted protein kinases <xref ref-type="bibr" rid="pone.0067926-Wang1">[26]</xref>, indicate that the testing of the entire 215 predictions in a focussed project would be feasible via a consortium research approach.</p>
+    </sec>
+    <sec sec-type="methods" id="s4">
+      <title>Methods</title>
+      <sec id="s4a">
+        <title>The Integrated Network</title>
+        <p>Starting with version 3.3 of PHI-base, <italic>Fusarium graminearum</italic> genes were selected whose contributions to virulence have been tested experimentally and were classified according to whether they have an effect or not. Further expert curation of more recent literature for this study added more <italic>Fusarium graminearum</italic> genes that experiments suggest are involved in virulence and that are currently not in PHI-base Vers. 3.3. <bold><xref ref-type="supplementary-material" rid="pone.0067926.s007">Table S1</xref></bold> shows the complete list of seed genes. In total, these 133 experimentally-tested genes are referred to as the verified virulence (VV) &#x2018;seed&#x2019; genes. The mapping of <italic>Fusarium graminearum</italic> entries in PHI-base to corresponding sequences taken from the latest annotation of the <italic>Fusarium graminearum</italic> genome at the Broad Institute (gene call FG3) was carried out using BLAST and manually reviewed. The total numbers of VV seeds is 100, and the &#x2018;virulence unaffected&#x2019; seeds is 33. The <italic>F. graminearum</italic> genome is predicted to code for 13,332 proteins.</p>
+        <p>We have described the construction of the integrated network for <italic>Fusarium graminearum</italic> and explored its community structure in <xref ref-type="bibr" rid="pone.0067926-Bennett1">[19]</xref>. The network was constructed using information from three component data sources, namely gene co-expression, protein sequence similarity and predicted protein-protein interactions. The co-expression component of the network was constructed from the complete publically-available set (12 experiments, 158 individual slides) of <italic>Fusarium</italic> expression studies form PLEXdb <xref ref-type="bibr" rid="pone.0067926-Wise1">[15]</xref> that used <italic>Fusarium</italic> Affymetrix GeneChip array <xref ref-type="bibr" rid="pone.0067926-Guldener1">[5]</xref>. This included 6 <italic>in planta</italic> experiments and 6 <italic>in vitro</italic> studies using the wild-type sequenced PH-1 strain and/or single gene deletion mutants generated in the PH-1 strain on which the GeneChip array was designed (<bold><xref ref-type="supplementary-material" rid="pone.0067926.s013">Table S7</xref></bold>). The data was downloaded in the form of.CEL files, pooled and normalised using the Robust Multichip Average (Irizarry et al., 2003), at which point a data matrix of size 18069 (genes) X 158 (samples) was constructed. The similarity of expression profiles was measured using weighted Pearson correlation coefficient, according to the method of <xref ref-type="bibr" rid="pone.0067926-Obayashi1">[46]</xref>. The sparse network was constructed from the correlation matrix by applying a threshold of 0.88. This value was determined to be optimal for this dataset using the method of Elo et al. (2007), which derives the optimal correlation cut-off value based on the topological properties of the network. The probe set IDs from the FG3 annotation of <italic>Fusarium</italic>
+<xref ref-type="bibr" rid="pone.0067926-Wong1">[6]</xref> were integrated using a mapping file obtained from MIPS (<ext-link ext-link-type="uri" xlink:href="http://mips.helmholtz-muenchen.de/genre/proj/FGDB/">http://mips.helmholtz-muenchen.de/genre/proj/FGDB/</ext-link>). The sequence similarity network was constructed from the results of an all-versus-all sequence matching of the proteins in version 3.2 of the Fusarium annotation at (<ext-link ext-link-type="uri" xlink:href="http://mips.helmholtz-muenchen.de/genre/proj/FGDB/">http://mips.helmholtz-muenchen.de/genre/proj/FGDB/</ext-link>) implemented on a TimeLogic&#xAE; Tera-BLAST&#x2122; (Active Motif Inc., Carlsbad, CA). The network was constructed by creating a &#x201C;similar sequence&#x201D; edge joining the two nodes (genes) when there was a pairwise similarity observed between their sequences (bidirectional hit) with expected value of less than 10<sup>&#x2212;6</sup>. The co-expression network, the predicted core PPI of Zhao et al <xref ref-type="bibr" rid="pone.0067926-Zhao1">[14]</xref>, the sequence similarity network and the mutant phenotype annotations (from PHI-base and the more recently curated literature) were imported into the Ondex data integration and visualisation system <xref ref-type="bibr" rid="pone.0067926-Kohler1">[16]</xref> (<ext-link ext-link-type="uri" xlink:href="http://www.ondex.org">www.ondex.org</ext-link>) and combined. Merging the nodes that had the same gene accession resulted in the union of the two networks. The coexpression values and scores derived from BLAST were included as weights on appropriate edges and are included in the final integrated network available with this paper. The explanation about how the BLAST scores were calculated and the distribution of these values for all edges used in predictions are included as a <bold><xref ref-type="supplementary-material" rid="pone.0067926.s006">Figure S6</xref></bold>. It is, therefore possible to adjust the threshold further in Ondex network visualisation software and explore what effects it would have on the network and the predictions.</p>
+        <p>In this study we were interested in the potential of the network for prediction. The prediction of virulence genes was achieved by implementing a new plug-in software module for the Ondex system. The plug-in works by creating a set of sub-graphs that include genes annotated to be of relevance to virulence (the verified virulence seeds) and their nearest neighbours with respect to co-expression, PPI and sequence similarity in the constituent and combined networks. The genes were predicted to be likely important for virulence if there were at least two known virulence-relevant genes found in their immediate network neighbourhood, in a similar manner to that of Liu et al <xref ref-type="bibr" rid="pone.0067926-Liu1">[12]</xref>. The seed nodes, the predictions and the edges connecting predictions to seeds were &#x201C;tagged&#x201D; to create gene lists, which could then be used to select relevant subsets of the network for visualisation in the graphical user interface of Ondex.</p>
+        <p>The Ondex software can be downloaded from <ext-link ext-link-type="uri" xlink:href="http://www.ondex.org">www.ondex.org</ext-link>. The integrated network, seed genes and predictions are made available in <bold><xref ref-type="supplementary-material" rid="pone.0067926.s015">File S1</xref></bold>.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0067926.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p>The entire integrated network containing the predicted virulence associated gene FGSG_06878 connected to 8 verified virulence seeds.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s001.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s002">
+        <label>Figure S2</label>
+        <caption>
+          <p>The local integrated network containing the predicted virulence associated gene 07251 connected to 7 verified virulence seeds.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s002.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s003">
+        <label>Figure S3</label>
+        <caption>
+          <p>The integrated network containing the predicted virulence associated gene FGSG_09715 connected to 7 verified virulence seeds.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s003.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s004">
+        <label>Figure S4</label>
+        <caption>
+          <p>The integrated network containing the predicted virulence associated gene FGSG_10066 connected to 7 verified virulence seeds.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s004.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s005">
+        <label>Figure S5</label>
+        <caption>
+          <p>The integrated network containing the predicted virulence associated gene FGSG_00472 connected to 5 verified virulence seeds.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s005.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s006">
+        <label>Figure S6</label>
+        <caption>
+          <p>The distribution of e-values for sequence similarity edges that were used for deriving predictions.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s006.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s007">
+        <label>Table S1</label>
+        <caption>
+          <p>List of 133 seed verified virulence (VV) genes.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s007.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s008">
+        <label>Table S2</label>
+        <caption>
+          <p>Selected annotation for the 215 predicted virulence associated proteins.</p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s008.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s009">
+        <label>Table S3</label>
+        <caption>
+          <p>The ratios of seed associated to all other edges for all of the proteins predicted to be associated with virulence.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s009.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s010">
+        <label>Table S4</label>
+        <caption>
+          <p>Estimating the predictive power of the four different networks.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s010.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s011">
+        <label>Table S5</label>
+        <caption>
+          <p>Heatmap showing the taxonomic diversity of the matches to the 215 predictions.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s011.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s012">
+        <label>Table S6</label>
+        <caption>
+          <p>Prediction of FGSG_09715, FGSG_07251 and FGSG_10066 as virulence associated proteins.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s012.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s013">
+        <label>Table S7</label>
+        <caption>
+          <p>Mapping the data from Wang et al to the integrated network.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s013.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s014">
+        <label>Table S8</label>
+        <caption>
+          <p>The publically available <italic>F. graminearum</italic> microarray gene expression datasets used in this study.</p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s014.docx" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0067926.s015">
+        <label>File S1</label>
+        <caption>
+          <p>ZIP archive file for Ondex containing the integrated network, seed genes and predictions in OXL format.</p>
+          <p>(ZIP)</p>
+        </caption>
+        <media xlink:href="pone.0067926.s015.zip" mimetype="application" mime-subtype="x-zip-compressed">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0067926-Goswami1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Goswami</surname><given-names>RS</given-names></name>, <name><surname>Kistler</surname><given-names>HC</given-names></name> (<year>2004</year>) <article-title>Heading for disaster: Fusarium graminearum on cereal crops</article-title>. <source>Mol Plant Pathol</source><volume>5</volume>: <fpage>515</fpage>&#x2013;<lpage>525</lpage><pub-id pub-id-type="pmid">20565626</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Dean1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Dean</surname><given-names>R</given-names></name>, <name><surname>Van Kan</surname><given-names>JA</given-names></name>, <name><surname>Pretorius</surname><given-names>ZA</given-names></name>, <name><surname>Hammond-Kosack</surname><given-names>KE</given-names></name>, <name><surname>Di Pietro</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>The Top 10 fungal pathogens in molecular plant pathology</article-title>. <source>Mol Plant Pathol</source><volume>13</volume>: <fpage>414</fpage>&#x2013;<lpage>430</lpage><pub-id pub-id-type="pmid">22471698</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Yuen1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Yuen</surname><given-names>GY</given-names></name>, <name><surname>Schoneweis</surname><given-names>SD</given-names></name> (<year>2007</year>) <article-title>Strategies for managing Fusarium head blight and deoxynivalenol accumulation in wheat</article-title>. <source>Int J Food Microbiol</source><volume>119</volume>: <fpage>126</fpage>&#x2013;<lpage>130</lpage><pub-id pub-id-type="pmid">17716767</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Cuomo1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Cuomo</surname><given-names>CA</given-names></name>, <name><surname>Guldener</surname><given-names>U</given-names></name>, <name><surname>Xu</surname><given-names>JR</given-names></name>, <name><surname>Trail</surname><given-names>F</given-names></name>, <name><surname>Turgeon</surname><given-names>BG</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>The <italic>Fusarium graminearum</italic> genome reveals a link between localized polymorphism and pathogen specialization</article-title>. <source>Science</source><volume>317</volume>: <fpage>1400</fpage>&#x2013;<lpage>1402</lpage><pub-id pub-id-type="pmid">17823352</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Guldener1">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Guldener</surname><given-names>U</given-names></name>, <name><surname>Mannhaupt</surname><given-names>G</given-names></name>, <name><surname>Munsterkotter</surname><given-names>M</given-names></name>, <name><surname>Haase</surname><given-names>D</given-names></name>, <name><surname>Oesterheld</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>FGDB: a comprehensive fungal genome resource on the plant pathogen <italic>Fusarium graminearum</italic></article-title>. <source>Nucleic Acids Res</source><volume>34</volume>: <fpage>D456</fpage>&#x2013;<lpage>458</lpage><pub-id pub-id-type="pmid">16381910</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Wong1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Wong</surname><given-names>P</given-names></name>, <name><surname>Walter</surname><given-names>M</given-names></name>, <name><surname>Lee</surname><given-names>W</given-names></name>, <name><surname>Mannhaupt</surname><given-names>G</given-names></name>, <name><surname>Munsterkotter</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>FGDB: revisiting the genome annotation of the plant pathogen Fusarium graminearum</article-title>. <source>Nucleic Acids Res</source><volume>39</volume>: <fpage>D637</fpage>&#x2013;<lpage>639</lpage><pub-id pub-id-type="pmid">21051345</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Urban1">
+        <label>7</label>
+        <mixed-citation publication-type="book">Urban M, Hammond-Kosack KE (2012) Molecular genetics and genomic approaches to explore Fusarium infection on wheat floral tissue. In: Brown D, Proctor RH, editors. Fusarium: genomics and molecular and cellular biology. Norwich: Horizon Scientific Press. 43&#x2013;79.</mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Winnenburg1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Winnenburg</surname><given-names>R</given-names></name>, <name><surname>Urban</surname><given-names>M</given-names></name>, <name><surname>Beacham</surname><given-names>A</given-names></name>, <name><surname>Baldwin</surname><given-names>TK</given-names></name>, <name><surname>Holland</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>PHI-base update: additions to the pathogen host interaction database</article-title>. <source>Nucleic Acids Res</source><volume>36</volume>: <fpage>D572</fpage>&#x2013;<lpage>576</lpage><pub-id pub-id-type="pmid">17942425</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Winnenburg2">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Winnenburg</surname><given-names>R</given-names></name>, <name><surname>Baldwin</surname><given-names>TK</given-names></name>, <name><surname>Urban</surname><given-names>M</given-names></name>, <name><surname>Rawlings</surname><given-names>C</given-names></name>, <name><surname>Kohler</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>PHI-base: a new database for pathogen host interactions</article-title>. <source>Nucleic Acids Res</source><volume>34</volume>: <fpage>D459</fpage>&#x2013;<lpage>464</lpage><pub-id pub-id-type="pmid">16381911</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Baldwin1">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Baldwin</surname><given-names>TK</given-names></name>, <name><surname>Winnenburg</surname><given-names>R</given-names></name>, <name><surname>Urban</surname><given-names>M</given-names></name>, <name><surname>Rawlings</surname><given-names>C</given-names></name>, <name><surname>Koehler</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>The pathogen-host interactions database (PHI-base) provides insights into generic and novel themes of pathogenicity</article-title>. <source>Mol Plant Microbe Interact</source><volume>19</volume>: <fpage>1451</fpage>&#x2013;<lpage>1462</lpage><pub-id pub-id-type="pmid">17153929</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Lee1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Lee</surname><given-names>I</given-names></name>, <name><surname>Date</surname><given-names>SV</given-names></name>, <name><surname>Adai</surname><given-names>AT</given-names></name>, <name><surname>Marcotte</surname><given-names>EM</given-names></name> (<year>2004</year>) <article-title>A probabilistic functional network of yeast genes</article-title>. <source>Science</source><volume>306</volume>: <fpage>1555</fpage>&#x2013;<lpage>1558</lpage><pub-id pub-id-type="pmid">15567862</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Liu1">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>X</given-names></name>, <name><surname>Tang</surname><given-names>WH</given-names></name>, <name><surname>Zhao</surname><given-names>XM</given-names></name>, <name><surname>Chen</surname><given-names>L</given-names></name> (<year>2010</year>) <article-title>A network approach to predict pathogenic genes for <italic>Fusarium graminearum.</italic></article-title>. <source>PLoS One</source><volume>5</volume>: <fpage>e13021</fpage><pub-id pub-id-type="pmid">20957229</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Wolfe1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Wolfe</surname><given-names>CJ</given-names></name>, <name><surname>Kohane</surname><given-names>IS</given-names></name>, <name><surname>Butte</surname><given-names>AJ</given-names></name> (<year>2005</year>) <article-title>Systematic survey reveals general applicability of &#x201C;guilt-by-association&#x201D; within gene coexpression networks</article-title>. <source>BMC Bioinformatics</source><volume>6</volume>: <fpage>227</fpage><pub-id pub-id-type="pmid">16162296</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Zhao1">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhao</surname><given-names>XM</given-names></name>, <name><surname>Zhang</surname><given-names>XW</given-names></name>, <name><surname>Tang</surname><given-names>WH</given-names></name>, <name><surname>Chen</surname><given-names>L</given-names></name> (<year>2009</year>) <article-title>FPPI: <italic>Fusarium graminearum</italic> protein-protein interaction database</article-title>. <source>J Proteome Res</source><volume>8</volume>: <fpage>4714</fpage>&#x2013;<lpage>4721</lpage><pub-id pub-id-type="pmid">19673500</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Wise1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Wise</surname><given-names>RP</given-names></name>, <name><surname>Caldo</surname><given-names>RA</given-names></name>, <name><surname>Hong</surname><given-names>L</given-names></name>, <name><surname>Shen</surname><given-names>L</given-names></name>, <name><surname>Cannon</surname><given-names>E</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>BarleyBase/PLEXdb</article-title>. <source>Methods Mol Biol</source><volume>406</volume>: <fpage>347</fpage>&#x2013;<lpage>363</lpage><pub-id pub-id-type="pmid">18287702</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Kohler1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Kohler</surname><given-names>J</given-names></name>, <name><surname>Baumbach</surname><given-names>J</given-names></name>, <name><surname>Taubert</surname><given-names>J</given-names></name>, <name><surname>Specht</surname><given-names>M</given-names></name>, <name><surname>Skusa</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Graph-based analysis and visualization of experimental results with ONDEX</article-title>. <source>Bioinformatics</source><volume>22</volume>: <fpage>1383</fpage>&#x2013;<lpage>1390</lpage><pub-id pub-id-type="pmid">16533819</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Lysenko1">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Lysenko</surname><given-names>A</given-names></name>, <name><surname>Hindle</surname><given-names>MM</given-names></name>, <name><surname>Taubert</surname><given-names>J</given-names></name>, <name><surname>Saqi</surname><given-names>M</given-names></name>, <name><surname>Rawlings</surname><given-names>CJ</given-names></name> (<year>2009</year>) <article-title>Data integration for plant genomics&#x2013;exemplars from the integration of <italic>Arabidopsis thaliana</italic> databases</article-title>. <source>Briefings in Bioinformatics</source><volume>10</volume>: <fpage>676</fpage>&#x2013;<lpage>693</lpage><pub-id pub-id-type="pmid">19933213</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Schneider1">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Schneider</surname><given-names>DJ</given-names></name>, <name><surname>Collmer</surname><given-names>A</given-names></name> (<year>2010</year>) <article-title>Studying Plant-Pathogen Interactions in the Genomics Era: Beyond Molecular Koch&#x2019;s Postulates to Systems Biology</article-title>. In: <source>Annual Review of Phytopathology, Vol</source><name><surname>VanAlfen</surname><given-names>NKBGLJE</given-names></name>, editor. <volume>48</volume>: <fpage>457</fpage>&#x2013;<lpage>479</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Bennett1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Bennett</surname><given-names>L</given-names></name>, <name><surname>Lysenko</surname><given-names>A</given-names></name>, <name><surname>Papageorgiou</surname><given-names>L</given-names></name>, <name><surname>Urban</surname><given-names>M</given-names></name>, <name><surname>Hammond-Kosack</surname><given-names>K</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Detection of multi-clustered genes and community structure for the plant pathogenic fungus <italic>Fusarium graminearum</italic></article-title>. <source>Lect Notes Comp Science</source><volume>7605</volume>: <fpage>69</fpage>&#x2013;<lpage>86</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-HagbergAA1">
+        <label>20</label>
+        <mixed-citation publication-type="book">Hagberg AA SD, Swart PJ. (2008) Exploring network structure, dynamics, and function using NetworkX. In: Varoquaux, G., Vaught, T., Millman, J. (eds.) Proceedings of the 7th Python in Science Conference (SciPy2008), Pasadena, CA USA, 11&#x2013;15.</mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Blondel1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Blondel</surname><given-names>VD</given-names></name>, <name><surname>Guillaume</surname><given-names>J-L</given-names></name>, <name><surname>Lambiotte</surname><given-names>R</given-names></name>, <name><surname>Lefebvre</surname><given-names>E</given-names></name> (<year>2008</year>) <article-title>Fast unfolding of communities in large networks. Journal of Statistical Mechanics: Theory and Experiment</article-title>. <source>Fast unfolding of communities in large networks Journal of Statistical Mechanics: Theory and Experiment</source><volume>2008</volume>: <fpage>100008</fpage></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Newman1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Newman</surname><given-names>ME</given-names></name>, <name><surname>Girvan</surname><given-names>M</given-names></name> (<year>2004</year>) <article-title>Finding and evaluating community structure in networks</article-title>. <source>Phys Rev E Stat Nonlin Soft Matter Phys</source><volume>69</volume>: <fpage>026113</fpage><pub-id pub-id-type="pmid">14995526</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Chen1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>J</given-names></name>, <name><surname>Yuan</surname><given-names>B</given-names></name> (<year>2006</year>) <article-title>Detecting functional modules in the yeast protein-protein interaction network</article-title>. <source>Bioinformatics</source><volume>22</volume>: <fpage>2283</fpage>&#x2013;<lpage>2290</lpage><pub-id pub-id-type="pmid">16837529</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Liu2">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>G</given-names></name>, <name><surname>Wong</surname><given-names>L</given-names></name>, <name><surname>Chua</surname><given-names>HN</given-names></name> (<year>2009</year>) <article-title>Complex discovery from weighted PPI networks</article-title>. <source>Bioinformatics</source><volume>25</volume>: <fpage>1891</fpage>&#x2013;<lpage>1897</lpage><pub-id pub-id-type="pmid">19435747</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Rispail1">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Rispail</surname><given-names>N</given-names></name>, <name><surname>Soanes</surname><given-names>DM</given-names></name>, <name><surname>Ant</surname><given-names>C</given-names></name>, <name><surname>Czajkowski</surname><given-names>R</given-names></name>, <name><surname>Grunler</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Comparative genomics of MAP kinase and calcium-calcineurin signalling components in plant and human pathogenic fungi</article-title>. <source>Fungal Genetics and Biology</source><volume>46</volume>: <fpage>287</fpage>&#x2013;<lpage>298</lpage><pub-id pub-id-type="pmid">19570501</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Wang1">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Wang</surname><given-names>C</given-names></name>, <name><surname>Zhang</surname><given-names>S</given-names></name>, <name><surname>Hou</surname><given-names>R</given-names></name>, <name><surname>Zhao</surname><given-names>Z</given-names></name>, <name><surname>Zheng</surname><given-names>Q</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Functional analysis of the kinome of the wheat scab fungus Fusarium graminearum</article-title>. <source>PLoS Pathogens</source><volume>7</volume>: <fpage>e1002460</fpage><pub-id pub-id-type="pmid">22216007</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Antoniw1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Antoniw</surname><given-names>J</given-names></name>, <name><surname>Beacham</surname><given-names>AM</given-names></name>, <name><surname>Baldwin</surname><given-names>TK</given-names></name>, <name><surname>Urban</surname><given-names>M</given-names></name>, <name><surname>Rudd</surname><given-names>JJ</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>OmniMapFree: a unified tool to visualise and explore sequenced genomes</article-title>. <source>BMC Bioinformatics</source><volume>12</volume>: <fpage>447</fpage><pub-id pub-id-type="pmid">22085540</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Beacham1">
+        <label>28</label>
+        <mixed-citation publication-type="book">Beacham A (2011) Pathogenicity of <italic>Fusarium graminearum</italic> and <italic>Fusarium culmorum</italic> on wheat ears. PhD thesis in Plant Pathogen and Microbiology (Exeter University, Exeter).</mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Seong1">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Seong</surname><given-names>KY</given-names></name>, <name><surname>Pasquali</surname><given-names>M</given-names></name>, <name><surname>Zhou</surname><given-names>X</given-names></name>, <name><surname>Song</surname><given-names>J</given-names></name>, <name><surname>Hilburn</surname><given-names>K</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Global gene regulation by <italic>Fusarium</italic> transcription factors Tri6 and Tri10 reveals adaptations for toxin biosynthesis</article-title>. <source>Mol Microbiol</source><volume>72</volume>: <fpage>354</fpage>&#x2013;<lpage>367</lpage><pub-id pub-id-type="pmid">19320833</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Dyer1">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Dyer</surname><given-names>RB</given-names></name>, <name><surname>Plattner</surname><given-names>RD</given-names></name>, <name><surname>Kendra</surname><given-names>DF</given-names></name>, <name><surname>Brown</surname><given-names>DW</given-names></name> (<year>2005</year>) <article-title><italic>Fusarium graminearum TRI14</italic> is required for high virulence and DON production on wheat but not for DON synthesis in vitro</article-title>. <source>J Agricult Food Chem</source><volume>53</volume>: <fpage>9281</fpage>&#x2013;<lpage>9287</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-McCormick1">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>McCormick</surname><given-names>SP</given-names></name>, <name><surname>Alexander</surname><given-names>NJ</given-names></name>, <name><surname>Harris</surname><given-names>LJ</given-names></name> (<year>2010</year>) <article-title><italic>CLM1</italic> of <italic>Fusarium graminearum</italic> encodes a longiborneol synthase required for culmorin production</article-title>. <source>Appl Environ Microbiol</source><volume>76</volume>: <fpage>136</fpage>&#x2013;<lpage>141</lpage><pub-id pub-id-type="pmid">19880637</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Gardiner1">
+        <label>32</label>
+        <mixed-citation publication-type="book">Gardiner DM, Kazan K, Manners JM (2009) Nutrient profiling reveals potent inducers of trichothecene biosynthesis in <italic>Fusarium graminearum</italic> Fungal Genet Biol: 604&#x2013;613.</mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Desjardins1">
+        <label>33</label>
+        <mixed-citation publication-type="book">Desjardins AE (2006) <italic>Fusarium</italic> Mycotoxins - Chemistry, Genetics and Biology. St. Paul, Minnesota U.S.A.: The American Phytopathological Society.</mixed-citation>
+      </ref>
+      <ref id="pone.0067926-McCormick2">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>McCormick</surname><given-names>SP</given-names></name>, <name><surname>Harris</surname><given-names>LJ</given-names></name>, <name><surname>Alexander</surname><given-names>NJ</given-names></name>, <name><surname>Ouellet</surname><given-names>T</given-names></name>, <name><surname>Saparno</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title>Tri1 in Fusarium graminearum encodes a P450 oxygenase</article-title>. <source>Appl Environ Microbiol</source><volume>70</volume>: <fpage>2044</fpage>&#x2013;<lpage>2051</lpage><pub-id pub-id-type="pmid">15066795</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Brown1">
+        <label>35</label>
+        <mixed-citation publication-type="book">Brown NA, Bass C, Baldwin TK, Chen H, Massot F, et al.. (2011) Characterisation of the <italic>Fusarium graminearum</italic>-wheat floral interaction. J Pathogens 2011.</mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Yu1">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Yu</surname><given-names>HY</given-names></name>, <name><surname>Seo</surname><given-names>JA</given-names></name>, <name><surname>Kim</surname><given-names>JE</given-names></name>, <name><surname>Han</surname><given-names>KH</given-names></name>, <name><surname>Shim</surname><given-names>WB</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Functional analyses of heterotrimeric G protein G alpha and G beta subunits in <italic>Gibberella zeae</italic></article-title>. <source>Microbiology</source><volume>154</volume>: <fpage>392</fpage>&#x2013;<lpage>401</lpage><pub-id pub-id-type="pmid">18227243</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Ruepp1">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Ruepp</surname><given-names>A</given-names></name>, <name><surname>Zollner</surname><given-names>A</given-names></name>, <name><surname>Maier</surname><given-names>D</given-names></name>, <name><surname>Albermann</surname><given-names>K</given-names></name>, <name><surname>Hani</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title>The FunCat, a functional annotation scheme for systematic classification of proteins from whole genomes</article-title>. <source>Nucleic Acids Res</source><volume>32</volume>: <fpage>5539</fpage>&#x2013;<lpage>5545</lpage><pub-id pub-id-type="pmid">15486203</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Coleman1">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Coleman</surname><given-names>JJ</given-names></name>, <name><surname>Rounsley</surname><given-names>SD</given-names></name>, <name><surname>Rodriguez-Carres</surname><given-names>M</given-names></name>, <name><surname>Kuo</surname><given-names>A</given-names></name>, <name><surname>Wasmann</surname><given-names>CC</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>The genome of Nectria haematococca: contribution of supernumerary chromosomes to gene expansion</article-title>. <source>PLoS Genetics</source><volume>5</volume>: <fpage>e1000618</fpage><pub-id pub-id-type="pmid">19714214</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Ma1">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Ma</surname><given-names>LJ</given-names></name>, <name><surname>van der Does</surname><given-names>HC</given-names></name>, <name><surname>Borkovich</surname><given-names>KA</given-names></name>, <name><surname>Coleman</surname><given-names>JJ</given-names></name>, <name><surname>Daboussi</surname><given-names>MJ</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Comparative genomics reveals mobile pathogenicity chromosomes in <italic>Fusarium</italic></article-title>. <source>Nature</source><volume>464</volume>: <fpage>367</fpage>&#x2013;<lpage>373</lpage><pub-id pub-id-type="pmid">20237561</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Rep1">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Rep</surname><given-names>M</given-names></name>, <name><surname>Kistler</surname><given-names>HC</given-names></name> (<year>2010</year>) <article-title>The genomic organization of plant pathogenicity in Fusarium species</article-title>. <source>Curr Opin Plant Biol</source><volume>13</volume>: <fpage>420</fpage>&#x2013;<lpage>426</lpage><pub-id pub-id-type="pmid">20471307</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Nunes1">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Nunes</surname><given-names>CC</given-names></name>, <name><surname>Dean</surname><given-names>RA</given-names></name> (<year>2011</year>) <article-title>Host-induced gene silencing: a tool for understanding fungal host interaction and for developing novel disease control strategies</article-title>. <source>Mol Plant Pathol</source><volume>13</volume>: <fpage>519</fpage>&#x2013;<lpage>529</lpage><pub-id pub-id-type="pmid">22111693</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Siegel1">
+        <label>42</label>
+        <mixed-citation publication-type="book">Siegel S (1956) Nonparametric Statistics for the behavioural Sciences: McGraw-Hill, New York, US.</mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Son1">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>Son</surname><given-names>H</given-names></name>, <name><surname>Seo</surname><given-names>YS</given-names></name>, <name><surname>Min</surname><given-names>K</given-names></name>, <name><surname>Park</surname><given-names>AR</given-names></name>, <name><surname>Lee</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>A phenome-based functional analysis of transcription factors in the cereal head blight fungus, <italic>Fusarium graminearum</italic></article-title>. <source>PLoS Pathog</source><volume>7</volume>: <fpage>e1002310</fpage><pub-id pub-id-type="pmid">22028654</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Brown2">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Brown</surname><given-names>NA</given-names></name>, <name><surname>Antoniw</surname><given-names>J</given-names></name>, <name><surname>Hammond-Kosack</surname><given-names>KE</given-names></name> (<year>2012</year>) <article-title>The predicted secretome of the plant pathogenic fungus Fusarium graminearum: a refined comparative analysis</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e33731</fpage><pub-id pub-id-type="pmid">22493673</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Saitoh1">
+        <label>45</label>
+        <mixed-citation publication-type="journal"><name><surname>Saitoh</surname><given-names>H</given-names></name>, <name><surname>Fujisawa</surname><given-names>S</given-names></name>, <name><surname>Mitsuoka</surname><given-names>C</given-names></name>, <name><surname>Ito</surname><given-names>A</given-names></name>, <name><surname>Hirabuchi</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Large-Scale Gene Disruption in Magnaporthe oryzae Identifies MC69, a Secreted Protein Required for Infection by Monocot and Dicot Fungal Pathogens</article-title>. <source>PLoS Pathog</source><volume>8</volume>: <fpage>e1002711</fpage><pub-id pub-id-type="pmid">22589729</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Obayashi1">
+        <label>46</label>
+        <mixed-citation publication-type="journal"><name><surname>Obayashi</surname><given-names>T</given-names></name>, <name><surname>Kinoshita</surname><given-names>K</given-names></name>, <name><surname>Nakai</surname><given-names>K</given-names></name>, <name><surname>Shibaoka</surname><given-names>M</given-names></name>, <name><surname>Hayashi</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>ATTED-II: a database of co-expressed genes and cis elements for identifying co-regulated gene groups in Arabidopsis</article-title>. <source>Nucleic Acids Res</source><volume>35</volume>: <fpage>D863</fpage>&#x2013;<lpage>869</lpage><pub-id pub-id-type="pmid">17130150</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0067926-Gale1">
+        <label>47</label>
+        <mixed-citation publication-type="journal"><name><surname>Gale</surname><given-names>LR</given-names></name>, <name><surname>Bryant</surname><given-names>JD</given-names></name>, <name><surname>Calvo</surname><given-names>S</given-names></name>, <name><surname>Giese</surname><given-names>H</given-names></name>, <name><surname>Katan</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>Chromosome complement of the fungal plant pathogen <italic>Fusarium graminearum</italic> based on genetic and physical mapping and cytological observations</article-title>. <source>Genetics</source><volume>171</volume>: <fpage>985</fpage>&#x2013;<lpage>1001</lpage><pub-id pub-id-type="pmid">16079234</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

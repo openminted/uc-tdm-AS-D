@@ -1,0 +1,2837 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.0 20040830//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3253089</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-21906</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0029847</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Agriculture</subject>
+          <subj-group>
+            <subject>Crops</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Microbiology</subject>
+            <subj-group>
+              <subject>Mycology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Plant Science</subject>
+            <subj-group>
+              <subject>Plant Pathology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Using Hierarchical Clustering of Secreted Protein Families to Classify and Rank Candidate Effectors of Rust Fungi</article-title>
+        <alt-title alt-title-type="running-head">Hierarchical Clustering to Identify Effectors</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Saunders</surname>
+            <given-names>Diane G. O.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Win</surname>
+            <given-names>Joe</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cano</surname>
+            <given-names>Liliana M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Szabo</surname>
+            <given-names>Les J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kamoun</surname>
+            <given-names>Sophien</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Raffaele</surname>
+            <given-names>Sylvain</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>The Sainsbury Laboratory, Norwich Research Park, Norwich, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Cereal Disease Laboratory, Agricultural Research Service, U.S. Department of Agriculture, St. Paul, Minnesota, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Stajich</surname>
+            <given-names>Jason E.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">University of California Riverside, United States of America</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>sophien.kamoun@tsl.ac.uk</email> (SK); <email>sylvain.raffaele@tsl.ac.uk</email> (SR)</corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: DGOS SK SR. Performed the experiments: DGOS JW LMC SR. Analyzed the data: DGOS JW LMC SR. Wrote the paper: DGOS JW SR SK. Provided gene expression data: LJS. Commented on the manuscript before submission: DGOS JW LMC LJS SK SR.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>6</day>
+        <month>1</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>1</issue>
+      <elocation-id>e29847</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>3</day>
+          <month>11</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>5</day>
+          <month>12</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+      </permissions>
+      <abstract>
+        <p>Rust fungi are obligate biotrophic pathogens that cause considerable damage on crop plants. <italic>Puccinia graminis</italic> f. sp. <italic>tritici</italic>, the causal agent of wheat stem rust, and <italic>Melampsora larici-populina</italic>, the poplar leaf rust pathogen, have strong deleterious impacts on wheat and poplar wood production, respectively. Filamentous pathogens such as rust fungi secrete molecules called disease effectors that act as modulators of host cell physiology and can suppress or trigger host immunity. Current knowledge on effectors from other filamentous plant pathogens can be exploited for the characterisation of effectors in the genome of recently sequenced rust fungi. We designed a comprehensive <italic>in silico</italic> analysis pipeline to identify the putative effector repertoire from the genome of two plant pathogenic rust fungi. The pipeline is based on the observation that known effector proteins from filamentous pathogens have at least one of the following properties: (i) contain a secretion signal, (ii) are encoded by <italic>in planta</italic> induced genes, (iii) have similarity to haustorial proteins, (iv) are small and cysteine rich, (v) contain a known effector motif or a nuclear localization signal, (vi) are encoded by genes with long intergenic regions, (vii) contain internal repeats, and (viii) do not contain PFAM domains, except those associated with pathogenicity. We used Markov clustering and hierarchical clustering to classify protein families of rust pathogens and rank them according to their likelihood of being effectors. Using this approach, we identified eight families of candidate effectors that we consider of high value for functional characterization. This study revealed a diverse set of candidate effectors, including families of haustorial expressed secreted proteins and small cysteine-rich proteins. This comprehensive classification of candidate effectors from these devastating rust pathogens is an initial step towards probing plant germplasm for novel resistance components.</p>
+      </abstract>
+      <counts>
+        <page-count count="14"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Rust fungi are a diverse monophyletic group of obligate plant pathogens that infect numerous economically important cereal crops and constitute a serious threat to global food security <xref ref-type="bibr" rid="pone.0029847-Kolmer1">[1]</xref>. Currently, wheat stem rust is of particular concern due to the emergence of a highly virulent race, Ug99, first detected in Uganda in 1998 and characterized in 1999 <xref ref-type="bibr" rid="pone.0029847-Singh1">[2]</xref>. The Ug99 race and its variants are estimated to be virulent on over 90% of the wheat grown globally, presenting a substantial threat to wheat production <xref ref-type="bibr" rid="pone.0029847-Singh1">[2]</xref>. Rust fungi also present a serious threat to the production of bioenergy and fundamental plant products derived from the poplar tree. Indeed, poplar plantations are particularly susceptible to widespread infestation by the leaf rust fungus, with the threat exacerbated by artificial cultivation methods such as dense planting and breeding for uniformity, which limits genetic diversity <xref ref-type="bibr" rid="pone.0029847-Pinon1">[3]</xref>. Although fungicides can be used to manage rust fungi, the costs are considerable and often outweigh the benefits, particularly for developing nations. Therefore, the integration of new resistance (<italic>R</italic>) genes through plant breeding programs remains the main sustainable solution to dealing with these notorious and destructive plant pathogens.</p>
+      <p>The plant R proteins form a sophisticated surveillance mechanism that recognizes pathogen molecules as signatures of invasion and activates immune responses to halt colonization in resistant cultivars. However, few R proteins have been characterized that are active against rust pathogens. For stem rust <italic>R</italic> (<italic>Sr</italic>) genes, the introduction of the <italic>Sr2</italic>-complex in high-yielding wheat cultivars in the 1970s led to the termination of many wheat breeding programs, limiting the search for new <italic>Sr</italic> genes <xref ref-type="bibr" rid="pone.0029847-Singh1">[2]</xref>. The Ug99 stem rust race group has overcome most of the key wheat resistance genes and some of the alien resistance genes that were previously incorporated, such as <italic>Sr31</italic> from rye, <italic>Sr38</italic> from <italic>Triticum ventricosum</italic> and <italic>Sr24</italic> from <italic>Agropyron ponticum</italic> <xref ref-type="bibr" rid="pone.0029847-Pretorius1">[4]</xref>, <xref ref-type="bibr" rid="pone.0029847-Hodson1">[5]</xref>, <xref ref-type="bibr" rid="pone.0029847-Singh2">[6]</xref>. Therefore, the identification of new resistance genes against these fungi has become a priority in crop research.</p>
+      <p>During infection, rust fungi, like many other plant pathogens, secrete effector proteins from specialized feeding structures known as haustoria <xref ref-type="bibr" rid="pone.0029847-Dodds1">[7]</xref>. These structures form invaginations of the plant plasma membrane, allowing an intimate contact with the plant. Once secreted, effectors can act either in the extrahaustorial matrix, the extracellular space or within the host cell cytoplasm to promote colonization and pathogenicity <xref ref-type="bibr" rid="pone.0029847-Hogenhout1">[8]</xref>. In cases where effector proteins are recognized by corresponding host R proteins, they induce an apoptotic cell death known as the hypersensitive response (HR), and they are considered to have an &#x201C;avirulence&#x201D; activity (AVRs).</p>
+      <p>Only a handful of effectors have been identified from rust fungi. Understanding the defining features of filamentous plant pathogen effectors should assist in the identification of additional effectors from rust fungi, particularly from economically important species. Effectors from oomycete pathogens that act within the host cell often contain a conserved host-translocation motif, which is essential for transport into the host cytoplasm <xref ref-type="bibr" rid="pone.0029847-Whisson1">[9]</xref>. Some fungal effectors, including effectors of flax rust fungi, are thought to be translocated into the host cytoplasm <xref ref-type="bibr" rid="pone.0029847-Rafiqi1">[10]</xref>, <xref ref-type="bibr" rid="pone.0029847-Kemen1">[11]</xref>, <xref ref-type="bibr" rid="pone.0029847-Khang1">[12]</xref>. However, to date no universal host-translocation motif has been identified in fungi. Effectors that remain in the extracellular interface between the pathogen and the plant, and some host-translocated effectors, are small cysteine rich proteins (SCRs). They contain intramolecular disulfide bridges that likely stabilize protein tertiary structure in the harsh environment such as the plant apoplast. For example, the <italic>Cladosporium fulvum</italic> SCR effector protein Avr2 inhibits proteases within the tomato apoplast to promote virulence on cultivars lacking the corresponding resistance gene Cf-2 <xref ref-type="bibr" rid="pone.0029847-Rooney1">[13]</xref>. Some filamentous pathogen effectors such as <italic>Magnaporthe oryzae</italic> Pwl effectors and many oomycete RXLR effectors are repeat-containing proteins (RCPs) <xref ref-type="bibr" rid="pone.0029847-Boutemy1">[14]</xref>, <xref ref-type="bibr" rid="pone.0029847-Kang1">[15]</xref>. RCPs have been proposed to be involved in the virulence of <italic>Legionella</italic> <xref ref-type="bibr" rid="pone.0029847-Newton1">[16]</xref>, <italic>Candida</italic> <xref ref-type="bibr" rid="pone.0029847-Liu1">[17]</xref>, <italic>Fusarium</italic> <xref ref-type="bibr" rid="pone.0029847-Shim1">[18]</xref> and <italic>Phytophthora</italic> <xref ref-type="bibr" rid="pone.0029847-Pieterse1">[19]</xref>. Effector genes are known to occupy unstable regions of genomes such as repeat-rich regions and centromeres <xref ref-type="bibr" rid="pone.0029847-Raffaele1">[20]</xref>. For instance, effector genes are located within repeat-rich regions of the genome in the blackleg fungus <italic>Leptosphaeria maculans</italic> <xref ref-type="bibr" rid="pone.0029847-Rouxel1">[21]</xref>.</p>
+      <p>Classical strategies for the identification of fungal effectors include map-based cloning, analysis of fungal secretomes during infection, identification of HR-inducing pathogen genes, mutagenesis and screening of expressed sequence tag (EST) libraries <xref ref-type="bibr" rid="pone.0029847-Stergiopoulos1">[22]</xref>. However, these methods are typically labor-intensive and can be problematic. The release of the genome sequences of several rust fungi provides the opportunity to develop a comprehensive high throughput computational method for cataloguing their effector repertoires. These effector proteins can then be used as molecular probes to understand the basic biology of the plant-pathogen interactions and identify new R proteins <xref ref-type="bibr" rid="pone.0029847-Vleeshouwers1">[23]</xref>, <xref ref-type="bibr" rid="pone.0029847-Vleeshouwers2">[24]</xref>.</p>
+      <p>To identify <italic>R</italic> genes by use of effector proteins as probes in resistant plant cultivars, the complement of effector proteins must first be characterized. In this study, we took a first step towards identifying effectors from important rust fungal pathogen species, by annotating and classifying the secretome of two species. Eight defining features of effectors were used to classify secreted protein families. Hierarchical clustering was employed to rank the list of candidate families revealing secreted protein families with the highest probability of being effectors. We also highlight eight candidate effector families that fulfill the most prominent features of known effectors and that are high priority candidates for follow-up experimental studies.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results and Discussion</title>
+      <sec id="s2a">
+        <title>Defining the effector repertoire of two rust fungi</title>
+        <p>To identify and classify candidate effectors of the poplar leaf rust fungus <italic>M. larici-populina</italic> and the wheat stem rust fungus <italic>P. graminis</italic> f. sp. <italic>tritici</italic>, we constructed a bioinformatic pipeline using current knowledge of the properties of validated filamentous plant pathogen effectors. Considering that effector proteins are often evolutionarily diverse and are rarely similar to characterized proteins <xref ref-type="bibr" rid="pone.0029847-Rep1">[25]</xref>, limiting the analysis to sequence similarity searches to known effectors is insufficient. Rather, we based the identification and classification of putative effector proteins on an array of features. The pipeline was organized into three major modules, (i) filtering, (ii) annotation and (iii) sorting (<xref ref-type="fig" rid="pone-0029847-g001"><bold>Figure 1</bold></xref>). Using this pipeline we predicted 1549 secreted proteins from the proteome of <italic>M. larici-populina</italic> and 1852 for <italic>P. graminis</italic> f. sp. <italic>tritici</italic>. The two secretomes were combined and used as a template to group sequences, including non-secreted proteins from the two examined rust fungal species, into tribes using Markov clustering <xref ref-type="bibr" rid="pone.0029847-Li1">[26]</xref>. Similarity searches were undertaken using the mature protein sequences, to prevent unspecific clustering due to the N-terminal signal peptide region. A total of 1222 tribes containing at least one secreted protein were produced by analysis of the combined proteomes of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic>. Of these, 435 tribes contained at least three proteins. Pairs and singletons may contain effector candidates as some displayed similarity to <italic>Melampsora lini</italic> haustoria expressed secreted proteins (HESPs), such as Mellp_37347 (similarity to <italic>M. lini</italic> AvrL567) and Mellp_124274 (similarity to <italic>M. lini</italic> AvrP4) and were therefore retained for further analysis. A total of 6663 proteins were analyzed, of which 2826 contained an identifiable secretion signal. This work therefore significantly expands the analyses of 1405 small secreted protein tribes reported previously <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref>.</p>
+        <fig id="pone-0029847-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0029847.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Bioinformatic pipeline for the clustering of secreted protein families and classification and ranking of effector candidates.</title>
+            <p>The pipeline is composed of six major steps delimited by boxes. Step 1 (Secretome prediction) identifies secreted proteins from the predicted proteomes. A total of 1549 and 1852 secreted proteins were predicted from <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> proteomes, respectively. Step 2 (Markov clustering) groups secreted and non-secreted proteins according to sequence similarities to secreted proteins. A total of 435 secreted protein families (tribes) of at least 3 proteins were defined from the proteomes of the two rust fungi. Step 3 (Functional annotation) implements tribe annotations based on sequence homology searches. Step 4 (<italic>De novo</italic> motif search) searches for conserved motifs. Step 5 (Effector features annotation) uses the current knowledge of effector features to annotate individual members of secreted protein families. Step 6 (Hierarchical tribe clustering) ranks and classifies the tribes based on their content in proteins with effector features to provide a priority list for functional validation studies. Tools (programs and databases) used are indicated in red. HESP, haustoria expressed secreted protein; AVR, effector protein with defined avirulence activity; NLS, nuclear localization signal; FIR, flanking intergenic region; RCPs, repeat containing proteins; SCRs, small cysteine rich proteins.</p>
+          </caption>
+          <graphic xlink:href="pone.0029847.g001"/>
+        </fig>
+      </sec>
+      <sec id="s2b">
+        <title><italic>De novo</italic> motif analysis reveals several conserved cysteine motifs in secreted proteins of rust fungi</title>
+        <p>To detect conserved motifs in the secretome of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> we used the program MEME <xref ref-type="bibr" rid="pone.0029847-Bailey1">[28]</xref>. We identified five positionally constrained motifs (motifs 03, 05, 06, 07 and 08) ranging in abundance from 59 to 107 sites (<xref ref-type="fig" rid="pone-0029847-g002"><bold>Figure 2</bold></xref>). None of the motifs of the secretome of rust fungi reached the frequency of the <italic>Phytophthora</italic> RXLR or powdery mildew Y/F/WXC motifs (34.8% and 19%, respectively). The presence of one or two highly conserved cysteines was a common feature of the five motifs found.</p>
+        <fig id="pone-0029847-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0029847.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title><italic>De novo</italic> motif searches in the secretome of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> reveal conserved cysteine rich motifs.</title>
+            <p>(A) Amino acid position of 25 motifs in the secretome tribes of rust fungi reported by MEME. Arrows highlight positionally constrained motifs that are abundant in the secreted protein tribes. Position is given after the signal peptide cleavage site when applicable. Grey shading indicates the expected position for putative host-translocation motifs (amino acids 50 to 150). Box plots show median position (bar) first and third quartiles (box), first values outside 1.5 the interquartile range (IQR) (whiskers) and outliers (dots), coloured according to the number of tribes containing at least two proteins harbouring the motif. Motifs are classified by decreasing IQR from top to bottom. (B) Sequence logos of motifs with the highest positional constraint, distribution over the largest number of tribes and greatest number of individual proteins (sites) containing the motif.</p>
+          </caption>
+          <graphic xlink:href="pone.0029847.g002"/>
+        </fig>
+        <p>Motif 03 contained W, M and C residues that were conserved and organized in a WXXMXXC pattern at median position 67 amino acids after the predicted cleavage site. This motif was identified in at least two proteins in each of four tribes (tribes 5, 227, 455 and 469) and in a total of 78 proteins. Motif 05 contained S, Q, C and Y residues in a SXQXCXXY pattern. Seven tribes (tribes 5, 158, 159, 208, 227, 366 and 455) contained at least 2 proteins with motif 05, which was identified in a total of 107 proteins at a median position of 84 amino acids after the cleavage site. This motif is also present in the largest tribe of small secreted protein of <italic>M. larici-populina</italic> reported in <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref>. Motif 05 was the most abundant motif identified, found in 3.2% of the combined secretome of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic>. Motif 06 and motif 07 contained two conserved cysteines separated by 4 and 2 residues, respectively. Motif 06 was shared among the highest number of tribes (9, tribes 5, 76, 158, 209, 237, 362, 369, 455 and 469) and found in 82 proteins at a median position of 56 amino acids after the cleavage site. Motif 07 was shared between 5 tribes (tribes 5, 158, 227, 455 and 482) and found in 59 proteins at a median position of 119 amino acids after the cleavage site. Finally, motif 08 contained a conserved YXC pattern that was preceded by a conserved N residue. This motif was found in 8 tribes (tribes 5, 125, 158, 159, 227, 353, 366 and 562) and a total of 83 proteins at a median position of 105 amino acids after the cleavage site.</p>
+        <p>All motifs identified contained one or two conserved cysteines that may function in protein stability in the extracellular space <xref ref-type="bibr" rid="pone.0029847-Stergiopoulos1">[22]</xref>, and several had conserved tyrosine residues, a feature reported in some host-translocated effectors <xref ref-type="bibr" rid="pone.0029847-Dou1">[29]</xref>. Motifs 06 and 08 contained the Y/F/WXC sequence which has been proposed as a signature for a new class of effectors from haustoria-forming fungi <xref ref-type="bibr" rid="pone.0029847-Godfrey1">[30]</xref> and has been reported as abundant in the secretome of <italic>M. larici populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref>. These observations are consistent with the view that some effectors of rust fungi might be secreted into the apoplast first, where they would be processed and folded, before uptake by the plant cell <xref ref-type="bibr" rid="pone.0029847-Stergiopoulos1">[22]</xref>, <xref ref-type="bibr" rid="pone.0029847-Ellis1">[31]</xref>. However, in spite of systematic unbiased search efforts such as reported here, clear translocation motif candidates are still lacking for effectors from haustoria-forming fungi. It is therefore tempting to speculate that a specific protein fold, matured in the extracellular space through the conserved cysteine motifs, might trigger uptake by the plant cell. As a consequence, conserved motifs seem of little help to identify effectors of rust fungi, prompting us to consider additional features of known filamentous plant pathogen effectors.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Lineage-specific orphan protein families are abundant in the secretome of rust fungi</title>
+        <p>The genomes of rust fungi contain numerous lineage-specific expanded protein families <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref>. To investigate the distribution of shared and unique secreted proteins in the secretome of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic>, we investigated the species composition of the 435 tribes with three or more proteins in relation to annotation and number of proteins per tribe. Forty percent of the tribes with three or more members (174 tribes) contained proteins from both species (<xref ref-type="fig" rid="pone-0029847-g003"><bold>Figure 3A</bold></xref>). These tribes constitute 941 secreted proteins that likely form the core secretome of rust pathogens. In contrast, 261 tribes were identified as lineage-specific, with 116 containing proteins specifically from <italic>M. larici-populina</italic> (a total of 544 secreted proteins) and 145 containing proteins only from <italic>P. graminis</italic> f. sp. <italic>tritici</italic> (a total of 431 secreted proteins).</p>
+        <fig id="pone-0029847-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0029847.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Comparison between core and lineage-specific secretome tribes of at least three proteins in rust fungi.</title>
+            <p>(A) Core tribes (containing proteins from both species of rust fungi) represent forty percent (174 out of 435) of the secretome tribes containing three or more proteins. (B) Core secretome tribes of at least three proteins are enriched in proteins annotated by homology searches whereas lineage-specific tribes often remained non-annotated. (C) Size distribution of core secretome tribes of at least three proteins was shifted towards larger tribes compared to lineage-specific tribes. The same conventions as in <xref ref-type="fig" rid="pone-0029847-g002">Figure 2</xref> were used in the boxplots.</p>
+          </caption>
+          <graphic xlink:href="pone.0029847.g003"/>
+        </fig>
+        <p>Most tribes shared between species (&#x223C;80%, 138 tribes) could be annotated by similarity to known proteins, whereas lineage-specific tribes could rarely be annotated. Only 19.5% of lineage-specific tribes were annotated, with 15 <italic>M. larici-populina</italic>-specific and 36 <italic>P. graminis</italic> f. sp. <italic>tritici</italic>-specific tribes (<xref ref-type="fig" rid="pone-0029847-g003"><bold>Figure 3B</bold></xref>). This is consistent with the distinction between a shared core secretome and lineage-specific protein innovations. The distribution of number of proteins in tribes was shifted towards higher number for core secretome tribes (<xref ref-type="fig" rid="pone-0029847-g003"><bold>Figure 3C</bold></xref>). Approximately one half of the secretome of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> constitute the putative core secreted protein set, grouped into shared annotated tribes. The remaining half contained tribes of non-annotated lineage-specific secreted proteins, which are likely to be enriched in effector candidates.</p>
+      </sec>
+      <sec id="s2d">
+        <title>The secretome of rust fungi is enriched in forty-seven PFAM domains</title>
+        <p>To document biological functions specifically enriched in the secretome of rust fungi, we mapped PFAM domains on the proteomes of the two species. We then applied the filtering module and tested for enrichment of each domain among secreted proteins versus non-secreted proteins. We identified 47 PFAM domains significantly enriched in the secretome of rust fungi, including 36 PFAM-A domains and 11 PFAM-B domains that lack annotation (<bold><xref ref-type="supplementary-material" rid="pone.0029847.s004">File S1</xref></bold>). The enriched PFAM-A domains were distributed among 45 protein tribes of rust fungi containing three or more members. Of these, 43 tribes (96%) contained proteins from both species (<bold><xref ref-type="supplementary-material" rid="pone.0029847.s004">File S1</xref></bold>). Tribe 234 was the only tribe specific to <italic>M. larici-populina</italic> and contained proteins with the PF01670 (xyloglucan-specific endo-beta-glucanase) PFAM domain. Tribe 422 containing the PF01161 (phosphatidylethanolamine binding protein) PFAM domain was specific to <italic>P. graminis</italic> f. sp. <italic>tritici</italic>. We hypothesize that proteins in tribes containing members from both species may perform core biological functions of secreted proteins and functions that may be unrelated to host specificity. In accordance, twenty-one PFAM domains (&#x223C;60% of the enriched PFAM-A) corresponded to typical secreted enzymes, such as proteases, plant cell wall degrading enzymes, phospholipases, and detoxification enzymes (<bold><xref ref-type="supplementary-material" rid="pone.0029847.s002">Table S1</xref></bold>).</p>
+        <p>Five domains (&#x223C;14% of the enriched PFAM-A) had previously been reported as involved in pathogenicity (<xref ref-type="table" rid="pone-0029847-t001"><bold>Table 1</bold></xref>). These include CFEM (PF05730, tribe 179), an eight-cysteine-containing domain unique to fungi <xref ref-type="bibr" rid="pone.0029847-Kulkarni1">[32]</xref>, also identified in the <italic>Melampsora</italic> secretome <xref ref-type="bibr" rid="pone.0029847-Joly1">[33]</xref>. The developmentally regulated MAPK interacting protein (DRMIP) domain (PF10342, tribe 132) found in fungal serine/threonine-rich membrane-anchored proteins homologous to HESP-379 from <italic>M. lini</italic> <xref ref-type="bibr" rid="pone.0029847-Catanzariti1">[34]</xref>. One member of the DRMIP family from the fungus <italic>Lentinula edodes</italic> that interacts with the kinase <italic>LeMAPK</italic> and is proposed to be involved in cell differentiation during the development of <italic>L. edodes</italic> <xref ref-type="bibr" rid="pone.0029847-Szeto1">[35]</xref>. The cysteine-rich secretory proteins, antigen 5, and pathogenesis-related 1 protein, CAP protein family (domain PF00188, tribe 83), are proposed to be calcium chelating serine proteases <xref ref-type="bibr" rid="pone.0029847-Milne1">[36]</xref>. These proteins can function as proteases or protease inhibitors, ion channel regulators, tumour suppressors or pro-oncogenic proteins, and in cell-cell adhesion <xref ref-type="bibr" rid="pone.0029847-Gibbs1">[37]</xref>. The thaumatin domain (PF00314, tribes 163 and 394) is found in pathogenesis-related (PR) proteins with antifungal activity. They are also involved in systematically acquired resistance and stress responses in plants, via unknown mechanisms <xref ref-type="bibr" rid="pone.0029847-Liu2">[38]</xref>. In plant TLP-Ks, a thaumatin-like protein (TLP) domain is associated with a protein kinase domain and TLP-Ks were proposed to act as receptor-like kinases during defence responses <xref ref-type="bibr" rid="pone.0029847-Wang1">[39]</xref>, in particular against <italic>M. larici-populina</italic> <xref ref-type="bibr" rid="pone.0029847-Petre1">[40]</xref>. Thaumatin-like secreted proteins of rust fungi may alter this plant-signalling pathway and have been reported in the <italic>Melampsora</italic> secretome <xref ref-type="bibr" rid="pone.0029847-Joly1">[33]</xref>. The rare lipoprotein A domain (PF03330, tribe 52) adopts a double-psi beta-barrel fold, which is also found in the cerrato-palatin (CP) fungal elicitor protein <xref ref-type="bibr" rid="pone.0029847-deOliveira1">[41]</xref>. CP induces a defence response in the plant and is therefore considered a pathogen-associated molecular pattern (PAMP) that has been proposed to be involved in polysaccharide recognition <xref ref-type="bibr" rid="pone.0029847-deOliveira1">[41]</xref>.</p>
+        <table-wrap id="pone-0029847-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0029847.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Non-enzymatic PFAM domains significantly enriched in the secretome of rust fungi.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0029847-t001-1" xlink:href="pone.0029847.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Pfam</td>
+                  <td align="left" rowspan="1" colspan="1">Description</td>
+                  <td align="left" rowspan="1" colspan="1">Enrich-ment<xref ref-type="table-fn" rid="nt101">1</xref></td>
+                  <td align="left" rowspan="1" colspan="1">p-value<xref ref-type="table-fn" rid="nt102">2</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Total</td>
+                  <td align="left" rowspan="1" colspan="1">Secreted<xref ref-type="table-fn" rid="nt103">3</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Haustoria<xref ref-type="table-fn" rid="nt104">4</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Tribes<xref ref-type="table-fn" rid="nt105">5</xref></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="8" align="left" rowspan="1">
+                    <bold>Proteins with documented or suggested role in plant-pathogen interactions</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>PF00188</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Cysteine-rich secretory protein family</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>5.4</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1.94E-03</td>
+                  <td align="left" rowspan="1" colspan="1">17</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">83 (x14)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>PF00314</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Thaumatin family</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>6.6</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1.06E-02</td>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">163 (x5), 394 (x3)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>PF03330</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Rare lipoprotein A (RlpA)-like double-psi beta-barrel</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>6.1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4.81E-10</td>
+                  <td align="left" rowspan="1" colspan="1">26</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">52 (x14)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>PF05730</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">CFEM fungal specific cysteine rich domain</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>10.1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">8.62E<sup>&#x2212;13</sup></td>
+                  <td align="left" rowspan="1" colspan="1">17</td>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">160, 179 (x4)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>PF10342</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Developmentally Regulated MAPK Interacting Protein</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>7.9</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2.26E-10</td>
+                  <td align="left" rowspan="1" colspan="1">15</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">132 (x2)</td>
+                </tr>
+                <tr>
+                  <td colspan="8" align="left" rowspan="1">
+                    <bold>Atypical secretome functions</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>PF01161</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Phosphatidylethanolamine-binding protein</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>6.6</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1.04E<sup>&#x2212;07</sup></td>
+                  <td align="left" rowspan="1" colspan="1">18</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">199 (x4), 248 (x4), 422 (x3)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>PF02221</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">ML domain - MD-2-related lipid recognition domain</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>11.0</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3.02E<sup>&#x2212;07</sup></td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">363, 415 (x2)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>PF10281</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Putative stress-responsive nuclear envelope protein</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>6.0</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4.43E<sup>&#x2212;02</sup></td>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">551 (x5)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>PF11327</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Protein of unknown function (DUF3129)</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>9.2</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">8.62E<sup>&#x2212;13</sup></td>
+                  <td align="left" rowspan="1" colspan="1">23</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">57 (x12)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label>1</label>
+              <p>Enrichment: Number of PFAM hits in secretome over number of hits in non secreted proteins;</p>
+            </fn>
+            <fn id="nt102">
+              <label>2</label>
+              <p>p-value for enrichment in secretome;</p>
+            </fn>
+            <fn id="nt103">
+              <label>3</label>
+              <p>number of domains in secretome;</p>
+            </fn>
+            <fn id="nt104">
+              <label>4</label>
+              <p>number of domains in haustorial proteins;</p>
+            </fn>
+            <fn id="nt105">
+              <label>5</label>
+              <p>tribes containing at least two instances of the domain with number of instances in parenthesis.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Finally, some of the secretome-enriched domains we identified are atypical for secreted proteins (<xref ref-type="table" rid="pone-0029847-t001"><bold>Table 1</bold></xref>). The putative stress-responsive nuclear envelope protein domain (PF10281, tribe 551) is related to hydrophilins such as LEA1 that prevent aggregation of structurally compromised proteins <xref ref-type="bibr" rid="pone.0029847-Tompa1">[42]</xref>. The phosphatidylethanolamine-binding protein domain (PF01161, tribes 199, 248 and 422) is involved in lipid binding, serine protease inhibition and the regulation of several signalling pathways such as the MAP kinase pathway. Immunoglobulin-like domains such as the domain of unknown function DUF3129 (PF11327, tribe 57) could be involved in cell-cell recognition or cell-surface receptor signalling. Proteins containing the ML domain (PF02221, tribes 363 and 415) have been implicated in lipid recognition, particularly in the recognition of pathogen related products such as lipopolysaccharide (LPS) binding and signalling. LPS and glycoproteins have been detected in the neck region of haustoria <xref ref-type="bibr" rid="pone.0029847-Larous1">[43]</xref>. These atypical PFAM domains enriched in secretome proteins might represent specific functions of the secreted proteins of rust fungi.</p>
+        <p>In general, known effector proteins rarely contain PFAM domains <xref ref-type="bibr" rid="pone.0029847-Stergiopoulos1">[22]</xref>, <xref ref-type="bibr" rid="pone.0029847-Kamoun1">[44]</xref>, <xref ref-type="bibr" rid="pone.0029847-Dodds2">[45]</xref>. We assessed nineteen AVR effectors for the presence of PFAM domains (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4A</bold></xref>). <italic>C. fulvum</italic> Avr4 had a significant hit to the Chitin Binding Module PFAM domain (PF03067) and Ecp6 to the LysM PFAM domain (PF01476), however these domains were not enriched in the secretome of rust fungi. The remaining validated AVR effectors considered in this study do not have significant similarities to known PFAM domains. Therefore, we considered that one effector property is the absence of a PFAM domain, with the exception of five domains that are associated with pathogenicity and enriched in the secretome of rust fungi (<xref ref-type="table" rid="pone-0029847-t001">Table 1</xref>). Using this criterion, nearly 80% (5294) of the proteins analyzed did not harbour a PFAM domain (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4B</bold></xref>). A total of 1108 tribes contained at least one protein with no PFAM domain, of which 141 contained proteins from both rust fungal species (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4C</bold></xref>).</p>
+        <fig id="pone-0029847-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0029847.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Distribution of effector features in the <italic>M. larici-populina and P. graminis</italic> f. sp. <italic>tritici</italic> secretome proteins and tribes.</title>
+            <p>(A) Percentage of known avirulence effectors (AVRs) from <italic>M. lini</italic>, <italic>P. infestans</italic>, <italic>L. maculans</italic> and <italic>C. fulvum</italic> showing each effector property. A red cross indicates no match; N.A., not available. (B) Number of proteins grouped in secretome tribes showing each one of eight effector properties. Numbers on charts refers to total number of proteins. (C) The distribution of eight effector features in core and lineage-specific secretome tribes of rust fungi. *Five PFAM domains associated with pathogenicity and enriched in secretome tribes of rust fungi (<xref ref-type="table" rid="pone-0029847-t001">Table 1</xref>) and PFAM-B domains were permitted.</p>
+          </caption>
+          <graphic xlink:href="pone.0029847.g004"/>
+        </fig>
+      </sec>
+      <sec id="s2e">
+        <title><italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici in planta</italic> induced genes</title>
+        <p>All known AVRs from <italic>M. lini</italic>, <italic>L. maculans</italic>, <italic>C. fulvum</italic>, and <italic>P. infestans</italic> are expressed <italic>in planta</italic> <xref ref-type="bibr" rid="pone.0029847-Stergiopoulos1">[22]</xref>, <xref ref-type="bibr" rid="pone.0029847-Haas1">[46]</xref>. We used published transcriptome data <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref> to identify proteins that are encoded by genes induced at least 2-fold <italic>in planta</italic> when compared to resting urediniospores. We identified a total of 1308 proteins (19.6% of proteins analyzed), encoded by genes induced <italic>in planta</italic> at 96 hours post-inoculation (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4B</bold></xref>). These proteins were distributed among 847 tribes, of which 137 contained proteins from both species of rust fungi (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4C</bold></xref>).</p>
+      </sec>
+      <sec id="s2f">
+        <title><italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> proteins with similarity to haustorial ESTs</title>
+        <p>All five characterized <italic>M. lini</italic> AVRs were originally identified from cDNA sequences prepared from purified haustoria (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4A</bold></xref>). We therefore searched for proteins of the secretome of rust fungi showing similarity to available rust fungi haustorial ESTs from <italic>P. triticina</italic>, <italic>P. striiformis</italic> f. sp. <italic>tritici</italic> <xref ref-type="bibr" rid="pone.0029847-Xu1">[47]</xref>, <italic>M. larici-populina</italic> <xref ref-type="bibr" rid="pone.0029847-Joly1">[33]</xref>, and <italic>M. lini</italic> <xref ref-type="bibr" rid="pone.0029847-Catanzariti1">[34]</xref>. We identified 2445 proteins with similarity to haustoria expressed secreted proteins (HESPs) or fungal AVRs (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4B</bold></xref>). These proteins were distributed across 905 tribes, of which 149 contained proteins from both species of rust fungi (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4C</bold></xref>). Notably, some putative haustorial proteins showed similarity to the known flax rust pathogen AVR proteins AvrL567, AvrP123, AvrM and AvrP4 (<bold><xref ref-type="supplementary-material" rid="pone.0029847.s005">File S2</xref></bold>).</p>
+      </sec>
+      <sec id="s2g">
+        <title>The secretome of rust fungi contains proteins with motifs common to filamentous plant pathogen effectors</title>
+        <p>We used nuclear localization signals (NLS) and effector signature motifs <xref ref-type="bibr" rid="pone.0029847-Liu3">[48]</xref>, <xref ref-type="bibr" rid="pone.0029847-Schornack1">[49]</xref>, <xref ref-type="bibr" rid="pone.0029847-Kanneganti1">[50]</xref>, <xref ref-type="bibr" rid="pone.0029847-Shen1">[51]</xref>, such as the Y/F/WxC motif found in <italic>M. lini</italic> AvrL567 and <italic>C. fulvum</italic> Avr2 and Avr4, as a criterion for mining effectors from the secretome of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic>. We identified 1769 proteins with either a reported effector motif or an NLS (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4B</bold></xref>). The most abundant motif was Y/F/WxC <xref ref-type="bibr" rid="pone.0029847-Godfrey1">[30]</xref> that was identified in 999 secreted proteins distributed across 340 tribes. In total, proteins with effector motifs or NLS were distributed across 483 tribes, of which 144 contained proteins from both species of rust fungi (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4C</bold></xref>).</p>
+      </sec>
+      <sec id="s2h">
+        <title>Some genes of the secretome of rust fungi show unusually long intergenic distances</title>
+        <p>To identify candidate effectors based on the length of their flanking intergenic regions (FIRs) we calculated 5&#x2032; and 3&#x2032; FIRs for every gene in the <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> genomes. We sorted genes into two-dimensional data bins for each genome, as described earlier <xref ref-type="bibr" rid="pone.0029847-Haas1">[46]</xref> (<bold><xref ref-type="supplementary-material" rid="pone.0029847.s001">Figure S1A</xref></bold>). This representation showed an overall expansion of <italic>M. larici-populina</italic> intergenic regions compared to <italic>P. graminis</italic> f. sp. <italic>tritici</italic>, with a significant proportion of genes having FIRs significantly longer than 10 Kb. However, the patterns produced by this method did not reveal groups of genes with dramatically extended FIRs compared to median values, in contrast to <italic>L. maculans</italic> <xref ref-type="bibr" rid="pone.0029847-Rouxel1">[21]</xref> or <italic>P. infestans</italic> <xref ref-type="bibr" rid="pone.0029847-Haas1">[46]</xref> where effector genes often have long FIRs.</p>
+        <p>To determine whether secretome genes showed a distinctive pattern in the distribution of the length of their FIRs we analyzed the enrichment of secretome genes along the bins, as a ratio of the frequency in a bin compared to the frequency in the whole genome (<bold><xref ref-type="supplementary-material" rid="pone.0029847.s001">Figure S1B</xref></bold>). We found that globally, genes with FIRs less than &#x223C;800 bp tended to be depleted for secretome genes whereas genes with at least one FIR longer than &#x223C;10 Kb were enriched (<bold><xref ref-type="supplementary-material" rid="pone.0029847.s001">Figure S1B</xref></bold>), particularly in the <italic>M. larici-populina</italic> genome. Therefore, we considered having a FIR longer than 10 Kb as a criterion for selecting candidate effector genes. Tribes containing a high proportion of genes with FIR&gt;10 Kb tended to be small, non-annotated and contained a high proportion of genes encoding secreted proteins (<bold><xref ref-type="supplementary-material" rid="pone.0029847.s001">Figure S1C</xref></bold>), which was expected for candidate effector tribes. We identified 772 secretome genes with FIR&gt;10 Kb (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4B</bold></xref>), distributed across 320 tribes (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4B</bold></xref>). One hundred and fourteen of these tribes contained proteins from both species rust of rust fungi. In the absence of genome sequences for the corresponding species, information on FIRs for <italic>M. lini</italic> and <italic>C. fulvum</italic> AVRs could not be calculated. However, all <italic>P. infestans</italic> and <italic>L. maculans</italic> AVR genes have at least one intergenic region longer than 10 Kb (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4A</bold></xref>). In contrast to what has been reported for <italic>P. infestans</italic>, <italic>B. graminis</italic> and <italic>L. maculans</italic>, long intergenic distances do not seem to be a common feature of effector genes of rust fungi. Nevertheless, some genes of the secretome of rust fungi showed unusually long intergenic distances and may, therefore, correspond to a specific subset of fast-evolving effector candidates of rust fungi.</p>
+      </sec>
+      <sec id="s2i">
+        <title>Families of small secreted cysteine-rich proteins in the secretome of rust fungi</title>
+        <p>Filamentous plant pathogen effectors are often small cysteine-rich (SCR) proteins <xref ref-type="bibr" rid="pone.0029847-Stergiopoulos1">[22]</xref>. Based on the published examples in <bold><xref ref-type="supplementary-material" rid="pone.0029847.s003">Table S2</xref></bold>, known SCR effectors are typically less than 150 amino acids long and have a cysteine content higher than 3%. To identify candidate SCR effector tribes in the secretome of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> we calculated the cysteine content and length of each protein. Tribes containing at least one secreted protein shorter than 150 amino acids and with a cysteine content higher than 3% were considered as SCR tribes. We found a total of 638 SCRs proteins in the secretome of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4B</bold></xref>), which contributed to 287 tribes (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4C</bold></xref>). Remarkably, only 22 tribes containing SCRs included proteins from both species of rust fungi (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4C</bold></xref>), suggesting a high divergence of cysteine patterns in these proteins. The presence of SCR tribes in these secretome is consistent with the results from <italic>de novo</italic> motif searches that identified conserved cysteine motifs shared across several tribes (<xref ref-type="fig" rid="pone-0029847-g002"><bold>Figure 2</bold></xref>).</p>
+      </sec>
+      <sec id="s2j">
+        <title>The secretome of <italic>M. larici-populina</italic> but not <italic>P. graminis</italic> f. sp. <italic>tritici</italic> includes repeat-containing proteins (RCPs)</title>
+        <p>To identify tribes containing RCPs in the secretome of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> we used the T-REKS algorithm <xref ref-type="bibr" rid="pone.0029847-Jorda1">[52]</xref> to systematically search for tandem repeats in proteins from secretome tribes. We found a total of 493 RCPs (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4B</bold></xref>), which contributed to 134 tribes (<xref ref-type="fig" rid="pone-0029847-g004"><bold>Figure 4C</bold></xref>). Surprisingly, all RCPs belonged to the <italic>M. larici-populina</italic> proteome. Although some <italic>M. larci-populina</italic> RCPs were grouped in tribes with proteins from both species, the <italic>P. graminis</italic> proteins in these tribes were not classified as RCPs. An <italic>M. larici-populina</italic> gene encoding a pentatricopeptide repeat-containing protein was identified previously as specifically induced in the sporogenous area of an infected poplar leaf <xref ref-type="bibr" rid="pone.0029847-Hacquard1">[53]</xref>, supporting the importance of RCPs during the infection process.</p>
+      </sec>
+      <sec id="s2k">
+        <title>Ranking candidate effectors by hierarchical clustering of tribes</title>
+        <p>We noted a variable and complex distribution of the effector properties we analyzed across proteins and tribes. A given effector property may match only a subset of proteins within a tribe, while multiple effector properties may match a single protein in a tribe. Therefore, tribe content in relation to matching effector properties can be considered as a set of quantitative data amenable to classification by methods such as hierarchical clustering, which in biology is typically used for classification of gene expression data. To reduce bias due to the variable size of tribes, we associated an e-value to each effector property for every tribe examined. The e-value corresponds to the likelihood of obtaining at least the same number of proteins with the given property by chance (see <xref ref-type="sec" rid="s3">methods</xref>). These e-values were log-converted into a score (<xref ref-type="fig" rid="pone-0029847-g005"><bold>Figure 5A</bold></xref>), and a combined score was calculated as the sum of scores associated to each effector property. The median combined score for tribes of three or more proteins was 6.342. A total of 213 tribes out of 1222 tribes examined had a combined score &#x2265;6.342 (<xref ref-type="fig" rid="pone-0029847-g005"><bold>Figure 5B</bold></xref>). Tribes that scored below this cut-off were omitted from further analysis, as they were frequently smaller tribes (pairs and singletons) more prone to harbouring effector properties by chance. In addition, considering that being secreted is a property that should be found in all effectors, we excluded 25 tribes (remaining was 188 tribes) with a secretion signal score of 0 out of the 213 that passed the combined score threshold. Next, we used hierarchical clustering to classify the 188 secretome tribes that passed the score threshold, based on the score associated to each of the eight effector properties (<bold><xref ref-type="supplementary-material" rid="pone.0029847.s005">File S2</xref></bold>). A hierarchical tree was built for the tribe variable, whereas the order of effector properties was not optimized by the algorithm but set manually by priority for enrichment in (i) presence of a secretion signal, (ii) <italic>in planta</italic> induced genes, (iii) similarity to haustorial proteins, (iv) presence of an effector motif or a NLS, (v) SCR proteins, (vi) RCPs, (vii) long FIR genes, (viii) proteins without PFAM domains (with the exception of the five PFAM domains associated with pathogenicity and PFAM-B domains that do not have functional annotations). The optimized hierarchical tree of tribes obtained after 1000 bootstrap rounds produced eight delimited clusters of tribes (<xref ref-type="fig" rid="pone-0029847-g006"><bold>Figure 6</bold></xref><bold>, <xref ref-type="supplementary-material" rid="pone.0029847.s006">File S3</xref></bold>).</p>
+        <fig id="pone-0029847-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0029847.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Distribution of scores for effector candidates in secretome tribes from <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic>.</title>
+            <p>(A) The distribution of scores (equivalent to -log of e-value) for individual effector properties among tribes given as a boxplot (same conventions as in <xref ref-type="fig" rid="pone-0029847-g002">Figures 2</xref> and <xref ref-type="fig" rid="pone-0029847-g003">3</xref>). The median value is indicated in red. (B) Distribution of combined scores (sum of scores for individual effector properties) among the 1222 tribes analyzed. A combined score threshold &#x2265;6.342 (median value for tribes of 3 or members) and secretion signal (sec.) score &gt;0 was used to select 188 tribes for hierarchical clustering. *Five PFAM domains associated with pathogenicity and enriched in secretome tribes of rust fungi (<xref ref-type="table" rid="pone-0029847-t001">Table 1</xref>) and PFAM-B domains were permitted.</p>
+          </caption>
+          <graphic xlink:href="pone.0029847.g005"/>
+        </fig>
+        <fig id="pone-0029847-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0029847.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Hierarchical clustering of the secretome reveals clusters of secreted protein families as high priority effector candidates.</title>
+            <p>A complete hierarchical cluster tree of the 188 secretome tribes with combined score &#x2265;6.342 and secretion signal score &gt;0. The tribe identifiers are indicated at the tip the branches of the boostrap support tree. For each tribe, the number of proteins is indicated on the left of the clustering image and the combined score on the right. When proteins in a tribe show similarity (10e<sup>&#x2212;5</sup> BlastP e-value threshold) to fungal AVRs and <italic>M. lini</italic> HESPs, these are indicated along the score bars. We distinguished eight clusters. The number of tribes in a cluster is indicated in parenthesis. AVR, avirulence protein; HESP, haustoria expressed secreted protein; FIR, flanking intergenic region; NLS, nuclear localization signal; RCP, repeat containing protein; SCR, small cysteine rich protein.</p>
+          </caption>
+          <graphic xlink:href="pone.0029847.g006"/>
+        </fig>
+        <p>The hierarchical clustering approach allowed us to classify and sort a complex data set. Ranking tribes based on the prevalence of effector features highlighted tribes in clusters I, III, IV and V as the most likely to contain effectors because they fulfil most of the high value criteria. Tribes in cluster II contained mostly annotated proteins expressed in haustoria and likely contain proteins involved in core haustoria biological processes. Generally, tribes in clusters VI, VII and VIII contain a low number of secreted proteins that grouped with a large proportion of non-secreted proteins and are less likely to be <italic>bona fide</italic> families of secreted proteins.</p>
+        <p>The 12 tribes in cluster I contain a high number of RCPs. Tribe 383 contains proteins with similarity to <italic>M. oryzae</italic> Pwl1 and tribe 46 contains proteins with similarity to Pep1, a secreted effector from <italic>Ustilago maydis</italic> <xref ref-type="bibr" rid="pone.0029847-Doehlemann1">[54]</xref>. Tribes 144 and 208 had the highest combined score in this cluster.</p>
+        <p>Cluster III contains 8 tribes rich in <italic>in planta</italic> induced genes. Most of these tribes also obtained good scores for the presence of a secretion signal. Tribe 432 contains homologs of <italic>M. lini</italic> AvrP4. Tribes 184 and 190 obtained the highest combined score in this cluster.</p>
+        <p>The 30 tribes in cluster IV contain a high percentage of secreted proteins that consist mostly of SCR proteins. Compared to proteins in Cluster V, they have a lower incidence of similarity to haustorial proteins, indicating that they may not be secreted from haustoria. Of the SCR-containing tribes, tribe 34 is similar to <italic>C. fulvum</italic> chitin-binding Avr4 effector, tribe 287 is similar to AvrP4 from <italic>M. lini</italic>, tribes 372 and 380 show similarity to uncharacterized <italic>M. lini</italic> HESPs, and tribe 5 corresponds to the largest SCR tribe from <italic>M. larici-populina</italic> reported in <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref>. Tribe 5 and 34 obtained the highest combined score in this cluster.</p>
+        <p>Cluster V consists of 29 tribes that contain a high proportion of predicted secreted proteins and proteins with similarity to haustorial proteins. They corresponded to the HESP tribes of the <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> proteomes. Tribe 110 in cluster II contains proteins similar to Pwl2, an Avr effector from <italic>M. oryzae</italic> <xref ref-type="bibr" rid="pone.0029847-Kang1">[15]</xref> and <italic>C. fulvum</italic> Ecp6 LysM domain virulence effector. Tribes 123 and 408 contain proteins similar to <italic>M. oryzae</italic> Pwl4 and Pwl3 respectively. Tribe 228 contains with similarity to <italic>C. fulvum</italic> Six1 (Avr3) and tribe 381 proteins similar to <italic>C. fulvum</italic> Ecp2. Some of these tribes also contain a large number of <italic>in planta</italic> induced genes suggesting they are good effector candidates. Tribes 63 and 110 had the highest combined score in this cluster.</p>
+        <p>Clusters II, VI, VII and VIII have a lower probability of including effector candidates. In addition to the 14 tribes in cluster II, likely involved in core haustoria biological processes, three clusters (VI, VII and VIII) contain tribes with generally low scores for the most important effector properties, in particular a low content in proteins predicted to be secreted. The 28 tribes in cluster VIII have high scores for proteins with similarity to haustorial proteins, and the absence of annotated proteins, but low scores for the number of proteins predicted to be secreted. Similarly, the 52 tribes in cluster VII have low scores for their content in secreted proteins, in proteins encoded by <italic>in planta</italic> induced genes and in proteins with similarity to haustorial proteins. Although they had high score for the presence of effector motifs or NLS, the 10 tribes of cluster VI have low scores for their content in proteins predicted to be secreted, encoded by <italic>in planta</italic> induced genes, and with few exceptions for proteins with similarity to haustorial proteins. For these reasons, we decided to rank clusters VI, VII and VIII with a lower priority. Nevertheless, five tribes in cluster VIII (tribes 78, 108, 71, 148 and 107), eight tribes in cluster VII (tribes 84, 125, 114, 200, 203, 202, 36 and 259) and three tribes in cluster VI (tribes 91, 249, and 307) contained proteins with similarity to fungal effectors or reported <italic>M. lini</italic> HESPs, and might therefore constitute interesting effector candidates. The unexpected clustering of these tribes might result from inaccurate gene models, preventing accurate signal peptide prediction, unspecific aggregation in a tribe, or spurious similarity to effectors.</p>
+      </sec>
+      <sec id="s2l">
+        <title>A selection of remarkable candidate effector tribes of rust fungi</title>
+        <p>To identify the tribes with the highest likelihood of containing effector proteins, we selected the two tribes with the highest combined score from the four most promising clusters identified above (Clusters I, III, IV and V) (<xref ref-type="table" rid="pone-0029847-t002"><bold>Table 2</bold></xref>). We propose these eight tribes as including high-priority candidate effectors and we examined them in more detail.</p>
+        <table-wrap id="pone-0029847-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0029847.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>A selection of 8 tribes of candidate effectors of rust fungi.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0029847-t002-2" xlink:href="pone.0029847.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">HCL cluster</td>
+                  <td align="left" rowspan="1" colspan="1">Tribe n&#xB0;</td>
+                  <td align="left" rowspan="1" colspan="1">Comb. Score<xref ref-type="table-fn" rid="nt106">1</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Size<xref ref-type="table-fn" rid="nt107">2</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Secreted<xref ref-type="table-fn" rid="nt108">3</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Haus-toria<xref ref-type="table-fn" rid="nt109">4</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Ind. in planta<xref ref-type="table-fn" rid="nt110">5</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Species distribution</td>
+                  <td align="left" rowspan="1" colspan="1">Annotation</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity</td>
+                  <td align="left" rowspan="1" colspan="1">Comments</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>I</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>144</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">23.4</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">8(2.7)</td>
+                  <td align="left" rowspan="1" colspan="1">8(2.7)</td>
+                  <td align="left" rowspan="1" colspan="1">1(0.1)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>M. larici</italic> only</td>
+                  <td align="left" rowspan="1" colspan="1">9 Gly-rich RCPs (10.3), 2 long FIRs (0.5)</td>
+                  <td align="left" rowspan="1" colspan="1">Uncharacterized <italic>P. triticina</italic> HESPs</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>I</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>208</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">15.5</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">3(0.4)</td>
+                  <td align="left" rowspan="1" colspan="1">6(4.4)</td>
+                  <td align="left" rowspan="1" colspan="1">3(0.4)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>M. larici</italic> only</td>
+                  <td align="left" rowspan="1" colspan="1">5 Gly-rich RCPs (4.9)</td>
+                  <td align="left" rowspan="1" colspan="1">Uncharacterized <italic>P. triticina</italic> HESPs</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>III</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>190</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">17.9</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">6(1.9)</td>
+                  <td align="left" rowspan="1" colspan="1">1(0)</td>
+                  <td align="left" rowspan="1" colspan="1">7(5.1)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>P. graminis</italic> only</td>
+                  <td align="left" rowspan="1" colspan="1">6 SCRs (5.3)</td>
+                  <td align="left" rowspan="1" colspan="1">NA</td>
+                  <td align="left" rowspan="1" colspan="1">. Genes clustered in <italic>P. graminis</italic> genome</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>III</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>184</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">17.4</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">5(1.2)</td>
+                  <td align="left" rowspan="1" colspan="1">0(0)</td>
+                  <td align="left" rowspan="1" colspan="1">6(3.5)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>M. larici</italic> only</td>
+                  <td align="left" rowspan="1" colspan="1">6 SCRs (5.3), 3 with long FIRs (1.4)</td>
+                  <td align="left" rowspan="1" colspan="1">NA</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>IV</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>5</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">210.3</td>
+                  <td align="left" rowspan="1" colspan="1">92</td>
+                  <td align="left" rowspan="1" colspan="1">62(8.7)</td>
+                  <td align="left" rowspan="1" colspan="1">7(0)</td>
+                  <td align="left" rowspan="1" colspan="1">13(0)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>M. larici</italic> only</td>
+                  <td align="left" rowspan="1" colspan="1">90 classified as SCRs (90.8), 12 with long FIRs (0.4)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>F. oxysporum</italic> Six2, Six3, <italic>M. oryzae</italic> Avr-Pita</td>
+                  <td align="left" rowspan="1" colspan="1">Described in Duplessis <italic>et al</italic>. 2011. 2 genes in Top100 induced in germinating urediniospores<xref ref-type="table-fn" rid="nt111">a</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>IV</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>34</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">58.8</td>
+                  <td align="left" rowspan="1" colspan="1">38</td>
+                  <td align="left" rowspan="1" colspan="1">20(1.4)</td>
+                  <td align="left" rowspan="1" colspan="1">4(0)</td>
+                  <td align="left" rowspan="1" colspan="1">3(0)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>M. larici</italic> only</td>
+                  <td align="left" rowspan="1" colspan="1">32 SCRs (26.7), 7 with long FIRs (0.8)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>C. fulvum</italic> Avr4</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>V</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>63</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">31.3</td>
+                  <td align="left" rowspan="1" colspan="1">21</td>
+                  <td align="left" rowspan="1" colspan="1">19(6.3)</td>
+                  <td align="left" rowspan="1" colspan="1">20(7.6)</td>
+                  <td align="left" rowspan="1" colspan="1">7(1.0)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>P. graminis</italic> only</td>
+                  <td align="left" rowspan="1" colspan="1">NA</td>
+                  <td align="left" rowspan="1" colspan="1">NA</td>
+                  <td align="left" rowspan="1" colspan="1">. 4 genes in Top100 induced in infected wheat<xref ref-type="table-fn" rid="nt112">b</xref>; 1 gene in Top100 induced in germinating urediniospores<xref ref-type="table-fn" rid="nt113">c</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>V</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>110</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">24.2</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">10(2.9)</td>
+                  <td align="left" rowspan="1" colspan="1">12(5.6)</td>
+                  <td align="left" rowspan="1" colspan="1">9(4.3)</td>
+                  <td align="left" rowspan="1" colspan="1">6 <italic>M. larici</italic>6 <italic>P. graminis</italic></td>
+                  <td align="left" rowspan="1" colspan="1">3 SCRs (1.0), 3 genes with long FIRs (0.8), 1 RCP (0.2)</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>M. lini</italic> HESP-C49, <italic>C. fulvum</italic> Ecp6, <italic>M. oryzae</italic> Pwl2</td>
+                  <td align="left" rowspan="1" colspan="1">. 2 <italic>M. larici</italic> genes in Top100 induced in infected poplar leaves<xref ref-type="table-fn" rid="nt114">d</xref>; 3 <italic>P. graminis</italic> genes in Top100 induced in infected wheat<xref ref-type="table-fn" rid="nt112">b</xref></td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt106">
+              <label>1</label>
+              <p>Combined score;</p>
+            </fn>
+            <fn id="nt107">
+              <label>2</label>
+              <p>Number of proteins in tribe;</p>
+            </fn>
+            <fn id="nt108">
+              <label>3</label>
+              <p>number of secreted proteins in tribe;</p>
+            </fn>
+            <fn id="nt109">
+              <label>4</label>
+              <p>number of haustorial proteins in tribe;</p>
+            </fn>
+            <fn id="nt110">
+              <label>5</label>
+              <p>number of proteins encoded by <italic>in planta</italic> induced genes. Values in parenthesis show scores obtained for each property. FIR, Flanking Intergenic Regions; NA; Not Applicable; RCP, Repeat-Containing Protein; SCR, Small Cysteine Rich protein. Tables from Duplessis <italic>et al.</italic> 2011 cited for gene expression:</p>
+            </fn>
+            <fn id="nt111">
+              <label>a</label>
+              <p>Table S11;</p>
+            </fn>
+            <fn id="nt112">
+              <label>b</label>
+              <p>Table S14;</p>
+            </fn>
+            <fn id="nt113">
+              <label>c</label>
+              <p>Table S15;</p>
+            </fn>
+            <fn id="nt114">
+              <label>d</label>
+              <p>Table S10.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Tribe 144 had the highest combined score (23.4) in cluster I. It contains 9 RCPs with Glycine-rich repeats, 8 proteins predicted to be secreted and 8 with similarity to haustorial proteins. Tribe 208 obtained the second highest combined score from cluster I (15.5), because it contains 6 proteins with similarity to haustorial proteins and 5 Glycine-rich RCPs. It only contains 3 secreted proteins, and 3 encoded by <italic>in planta</italic> induced genes, suggesting that few copies of genes from this family may be effectors. These two RCP tribes are specific to <italic>M. larici-populina</italic>.</p>
+        <p>Tribe 190 had the highest score in cluster III (17.9). It contains seven <italic>P. graminis</italic> f. sp. <italic>tritici</italic> proteins, all predicted to be secreted and induced <italic>in planta</italic>. Six of these have features of SCR proteins and genes encoding tribe 190 proteins are clustered within the <italic>P. graminis</italic> f. sp. <italic>tritici</italic> genome. Tribe 184 had the second highest score in cluster III (17.4), it contains seven <italic>M. larici-populina</italic> proteins, five of which were predicted to be secreted, six induced <italic>in planta</italic>, and six with SCR features.</p>
+        <p>The highest scoring tribe in cluster IV was tribe 5 (210.3), a large tribe (92 proteins) of <italic>M. larici-populina</italic>-specific SCR proteins. Among those, 67 were predicted to be secreted, 13 induced <italic>in planta</italic> at least 2-fold and 7 are similar to haustorial proteins. Tribe 5 proteins are also similar to <italic>F. oxysporum</italic> Six2 and Six3 cysteine-rich effectors. This tribe corresponds to the small secreted protein family described previously in Duplessis <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref>. Tribe 34 had the second highest score (58.8) in cluster IV. It contains 38 <italic>M. larici-populina</italic> proteins, 20 of which were predicted to be secreted and 32 have SCR features. Four proteins from tribe 34 are similar to <italic>C. fulvum</italic> Avr4 cysteine-rich effector.</p>
+        <p>Tribe 63 has the highest combined score in Cluster V (31.3). This tribe was specific to <italic>P. graminis</italic> f. sp. <italic>tritici</italic> and contains 21 proteins of which 19 have signal peptides and 20 have high similarity to uncharacterized HESPs. Seven members of this tribe were upregulated higher than 2-fold during infection suggesting that they may play a role at the plant-pathogen interface, potentially as effectors. Tribe 110 had the second highest combined score (24.2) in cluster II. Out of 12 proteins in this tribe, 10 have a secretion signal, 9 were induced <italic>in planta</italic>, and all have homology to haustorial proteins. In particular, homologs of <italic>M. lini</italic> HESP-C49, <italic>C. fulvum</italic> Ecp6 and <italic>M. oryzae</italic> Pwl2 were found in this tribe. Whereas most top-scoring tribes highlighted here are lineage-specific, tribe 110 contains 6 proteins from <italic>M. larici-populina</italic> and 6 from <italic>P. graminis</italic> f. sp. <italic>tritici</italic>.</p>
+      </sec>
+      <sec id="s2m">
+        <title>Conclusions</title>
+        <p>In this study, we report a bioinformatic pipeline aimed specifically at finding effector genes from two agriculturally important rust fungi whose genome sequences have recently been released. Our pipeline revealed a list of candidate effector genes that constitute a valuable resource for accelerating the discovery and deployment of genetic resistance to rust fungi. To date, only a few attempts have been made to comprehensively characterize the secretome of rust fungi. Joly <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0029847-Joly1">[33]</xref> analyzed the secretome of four <italic>Melampsora</italic> species and identified thirteen protein families showing evidence of positive selection <xref ref-type="bibr" rid="pone.0029847-Joly1">[33]</xref>. The Joly <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0029847-Joly1">[33]</xref> study provides an additional selection criterion for effector mining that complements our analysis. More recently, Duplessis <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref> probed the genome sequence of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> for small secreted proteins <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref>. Unlike the analyses by Duplessis <italic>et al</italic> <xref ref-type="bibr" rid="pone.0029847-Duplessis1">[27]</xref>, we processed secreted proteins of all sizes and based our protein clustering on the combined secretome of both species. We also omitted signal peptide sequences from our clustering analysis to classify the secretome based on the functional domains of the candidate effectors. We included non-secreted proteins in the Markov clustering approach in order to detect false positives and to use tribe enrichment in secreted proteins as a ranking criterion. Finally, we developed an original hierarchical clustering method to integrate multiple effector mining criteria to classify and rank tribes based on their likelihood of being genuine effectors. Hierarchical clustering of effector features resulted in a priority list that should prove valuable for follow-up wet lab experiments. These could include functional expression of the candidate genes in resistant plant genotypes to identify effectors with avirulence activity.</p>
+      </sec>
+    </sec>
+    <sec sec-type="methods" id="s3">
+      <title>Methods</title>
+      <sec id="s3a">
+        <title>Secretome prediction and annotation</title>
+        <p>Predicted proteomes of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> were obtained from <xref ref-type="bibr" rid="pone.0029847-The1">[55]</xref> and <xref ref-type="bibr" rid="pone.0029847-The2">[56]</xref> respectively. The secretomes were defined using PexFinder <xref ref-type="bibr" rid="pone.0029847-Torto1">[57]</xref>. Transmembrane domain containing proteins and proteins with mitochondrial signal peptides were removed using TMHMM and TargetP, respectively. Automated BlastP-based annotation was performed on proteins included in the secretome tribes of rust fungi using Blast2GO <xref ref-type="bibr" rid="pone.0029847-Blast2go1">[58]</xref> with default parameters. In addition, a database including <italic>P. striiformis</italic> f. sp. <italic>tritici</italic> haustoria ESTs <xref ref-type="bibr" rid="pone.0029847-Yin1">[59]</xref>, <italic>P. triticina</italic> haustoria ESTs <xref ref-type="bibr" rid="pone.0029847-Xu1">[47]</xref>, <italic>M. lini</italic> HESPs <xref ref-type="bibr" rid="pone.0029847-Catanzariti1">[34]</xref>, fungal AVRs <xref ref-type="bibr" rid="pone.0029847-Stergiopoulos1">[22]</xref>, and <italic>M. larici-populina</italic> haustoria ESTs <xref ref-type="bibr" rid="pone.0029847-Joly1">[33]</xref> was constructed. A BlastP analysis of proteins included in the secretome of rust fungi was conducted using this haustorial EST database, with an e-value cutoff of 10<sup>&#x2212;5</sup>. We searched each protein for the effector motifs [L/I]xAR <xref ref-type="bibr" rid="pone.0029847-Yoshida1">[60]</xref>, <xref ref-type="bibr" rid="pone.0029847-Li2">[61]</xref>, [R/K]CxxCx12H <xref ref-type="bibr" rid="pone.0029847-Yoshida1">[60]</xref>, RxLR <xref ref-type="bibr" rid="pone.0029847-Whisson1">[9]</xref>, [Y/F/W]xC <xref ref-type="bibr" rid="pone.0029847-Godfrey1">[30]</xref>, YxSL[R/K] <xref ref-type="bibr" rid="pone.0029847-Levesque1">[62]</xref> and G[I/F/Y][A/L/S/T]R <xref ref-type="bibr" rid="pone.0029847-Catanzariti1">[34]</xref> between amino acids 10 to 110 using Perl scripts. Nuclear localisation signals were predicted with PredictNLS <xref ref-type="bibr" rid="pone.0029847-Nair1">[63]</xref>. Protein internal repeats were predicted using T-Reks <xref ref-type="bibr" rid="pone.0029847-Jorda1">[52]</xref>. Disulfide bridges were predicted using Disulfind <xref ref-type="bibr" rid="pone.0029847-Ceroni1">[64]</xref>.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Markov clustering</title>
+        <p>Signal peptide regions were removed from all secreted proteins and then the truncated proteins used in a similarity search against a combined database of the two proteomes of rust fungi (e-value 10<sup>&#x2212;5</sup>). Proteins were clustered using TribeMCL <xref ref-type="bibr" rid="pone.0029847-Enright1">[65]</xref> following methods described in <xref ref-type="bibr" rid="pone.0029847-Haas1">[46]</xref>.</p>
+      </sec>
+      <sec id="s3c">
+        <title>PFAM enrichment analysis</title>
+        <p>PFAM domains were mapped on proteins of the secretome tribes using the PFAM batch search server <xref ref-type="bibr" rid="pone.0029847-Finn1">[66]</xref>. Domain hits with e-values higher than 10<sup>&#x2212;5</sup> were ignored. We considered domains as enriched when their frequency (number of domains per protein) in the secreted proteins was higher than their frequency among non-secreted proteins; domains were considered as depleted otherwise. Statistical significance of the enrichment ratios was assessed using a Chi-square test with Bonferroni correction. Enrichment and depletion were considered significant when p-value&lt;0.01.</p>
+      </sec>
+      <sec id="s3d">
+        <title><italic>De novo</italic> motif searches</title>
+        <p><italic>De novo</italic> protein motif search was performed on proteins in secretome tribes using MEME <xref ref-type="bibr" rid="pone.0029847-Bailey1">[28]</xref>. The program was set to report the 25 most robust motifs of 4 to 10 amino-acids, occurring zero or once per sequence, among the proteins belonging to tribes of three or more members. These motifs were classified based on the dispersion of their position along the protein sequence, and the number of tribes in which they were found. Motifs showing reduced dispersion (interquartile range for motif position &lt;10 amino acids) and found in at least two proteins in each of at least 3 different tribes were considered as conserved and reported.</p>
+      </sec>
+      <sec id="s3e">
+        <title>Scoring and tribes ranking</title>
+        <p>An e-value was associated to the tribes for each of the eight effector properties analyzed. This e-value was calculated based on the probability of randomly grouping the same number of proteins with a given effector property as a tribe, from the complete set of analyzed proteins. This probability was calculated as follows. Let k be the number of proteins matching a given effector property in a tribe; n be the size of that tribe; K be the total number of proteins matching a given effector property among grouped proteins and N be the total number of proteins grouped in a tribe. The number of tribes of size n with k proteins matching an effector property is the number of k-combinations from a set of n elements, given by the formula:<disp-formula><graphic xlink:href="pone.0029847.e001"/></disp-formula>equivalent to <inline-formula><inline-graphic xlink:href="pone.0029847.e002.jpg" mimetype="image"/></inline-formula><disp-formula><graphic xlink:href="pone.0029847.e003"/></disp-formula>and A&#x200A;=&#x200A;1 for k&#x200A;=&#x200A;0. The probability of having exactly k proteins matching a given effector property in a tribe of n proteins is BxC, where B is the probability of having k proteins matching a given effector property and C is the probability of having n&#x2212;k proteins not matching that property.</p>
+        <p>So <inline-formula><inline-graphic xlink:href="pone.0029847.e004.jpg" mimetype="image"/></inline-formula><disp-formula><graphic xlink:href="pone.0029847.e005"/></disp-formula>And B&#x200A;=&#x200A;1 for k&#x200A;=&#x200A;0</p>
+        <p>And <inline-formula><inline-graphic xlink:href="pone.0029847.e006.jpg" mimetype="image"/></inline-formula><disp-formula><graphic xlink:href="pone.0029847.e007"/></disp-formula>Therefore the likelihood of having a tribe of n proteins with k proteins matching a given effector property is P(k)&#x200A;=&#x200A;AxBxC. We defined the e-value associated with a given effector property and a given tribe as<disp-formula><graphic xlink:href="pone.0029847.e008"/></disp-formula>the corresponding score as &#x2212;log<sub>10</sub>(e(k)), and the combined score as the sum of scores obtained for each effector property by a given tribe. These scores were calculated using homemade scripts in R.</p>
+      </sec>
+      <sec id="s3f">
+        <title>Hierarchical clustering</title>
+        <p>The hierarchical clustering analysis was conducted using MEV4 <xref ref-type="bibr" rid="pone.0029847-Saeed1">[67]</xref>. The 177 secretome tribes with score &#x2265;6 were considered as &#x2018;genes&#x2019;, each of the eight effector properties (being secreted, induced <italic>in planta</italic>, having similarity to haustorial proteins, SCR properties, RCP properties and no PFAM annotation) were considered as &#x2018;samples&#x2019;. The score associated to each property for proteins in tribes were considered as &#x2018;intensity&#x2019; values. The tribe hierarchical tree was optimized using 1000 bootstrap runs with Pearson correlation coefficient as distance value, and average linkage between groups. The priority of effector properties used for clustering was set manually and ranked as described in the text.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s4">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0029847.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Analysis of genome architecture used to define the threshold for long FIR genes.</bold> (A) Distribution of <italic>P. graminis f. sp. tritici</italic> and <italic>M. larici-populina</italic> genes according to the length of their FIRs. Genes were sorted into two-dimensional data bins for each genome and number of genes is shown by a colour code. Crosses indicate median value for the two genomes combined; dotted circles are given as a reference to compare the two genomes; arrows point toward areas of the graph illustrating an overall expansion of <italic>M. larici-populina</italic> intergenic regions compared to <italic>P. graminis</italic> f. sp. <italic>tritici</italic>. (B) Same diagrams as in A showing the ratio of the frequency of secretome genes in a bin compared to frequency in the whole genome. Genes with FIRs less than &#x223C;800 bp tend to be depleted in secretome genes (green dotted line) whereas genes with at least one FIR longer than &#x223C;10 Kb tended to be enriched in secretome genes (purple dotted line). (C) Distribution of secretome tribes according to their content in secreted proteins (Y-axis) and in proteins encoded by genes with at least one FIR longer than 10 Kb (X-axis). Size of bubbles corresponds to size of the tribes.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0029847.s001.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0029847.s002">
+        <label>Table S1</label>
+        <caption>
+          <p><bold>Typical secreted enzyme PFAM domains enriched in the secretome of rust fungi.</bold> Table providing enrichment fold, p-value of a chi-squared test for enrichment in secretome, number of total and secreted proteins and list of tribes containing the PFAM domains.</p>
+          <p>(DOC)</p>
+        </caption>
+        <media xlink:href="pone.0029847.s002.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0029847.s003">
+        <label>Table S2</label>
+        <caption>
+          <p><bold>List of known small-secreted cysteine rich proteins (SCRs) used to define SCR features, with associated references.</bold> Microsoft Excel worksheet.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0029847.s003.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0029847.s004">
+        <label>File S1</label>
+        <caption>
+          <p><bold>Complete list of PFAM domains and Gene Ontology terms detected in the proteomes of rust fungi and secretome enrichment analysis.</bold> Microsoft Excel Workbook containing thirteen worksheets with the complete list of PFAM domain and Gene Ontology terms found in the secretome of rust fungi, enrichment values, P-value of chi-square test for enrichment with Bonferroni correction, and list of tribes containing the domains/ontologies. &#x201C;Combined&#x201D; secretome refers to analyses performed on the proteomes of <italic>M. larici-populina</italic> and <italic>P. graminis</italic> f. sp. <italic>tritici</italic> merged together. Analyses performed on separate proteomes from the two species are also provided.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0029847.s004.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0029847.s005">
+        <label>File S2</label>
+        <caption>
+          <p><bold>Complete list of tribes with full annotation data and features matching.</bold> Microsoft Excel workbook containing (i) the list of proteins included in the tribe analysis with full annotation including effector properties, and (ii) the list of tribes with the number of proteins matching effector properties they contain.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0029847.s005.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0029847.s006">
+        <label>File S3</label>
+        <caption>
+          <p>
+            <bold>Details of the complete hierarchical cluster tree presented in </bold>
+            <xref ref-type="fig" rid="pone-0029847-g004">
+              <bold>Figure 4</bold>
+            </xref>
+            <bold>.</bold>
+          </p>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0029847.s006.txt" mimetype="text" mime-subtype="plain">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Brande Wulff for critical reading of the manuscript, S&#xE9;bastien Duplessis for sharing valuable dataset, Cristobal Uauy and members of the Kamoun lab for discussions and useful suggestions.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>This project was funded by the Gatsby Charitable Foundation, a Leverhulme early career fellowship to D.G.O.S. and a Marie Curie IEF Fellowship to S.R. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0029847-Kolmer1">
+        <label>1</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kolmer</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Ordonez</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Groth</surname>
+              <given-names>JV</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <source>The Rust Fungi</source>
+          <publisher-loc>Chichester</publisher-loc>
+          <publisher-name>John Wiley &amp; Sons, Ltd</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Singh1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Singh</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Hodson</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Huerta-Espino</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Bhavani</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2011</year>
+          <article-title>The Emergence of Ug99 Races of the Stem Rust Fungus is a Threat to World Wheat Production.</article-title>
+          <source>Annual Review of Phytopathology</source>
+          <volume>49</volume>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Pinon1">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pinon</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Frey</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Structure of <italic>Melampsora larici-populina</italic> populations on wild and cultivated poplar.</article-title>
+          <source>European Journal of Plant Pathology</source>
+          <volume>103</volume>
+          <fpage>159</fpage>
+          <lpage>173</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Pretorius1">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pretorius</surname>
+              <given-names>ZA</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Wagoire</surname>
+              <given-names>TS</given-names>
+            </name>
+            <name>
+              <surname>Payne</surname>
+              <given-names>TS</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Detection of virulence of wheat stem rust resistance gene Sr31 in Puccinia graminis f. sp. tritici in Uganda.</article-title>
+          <source>Plant Disease</source>
+          <volume>84</volume>
+          <fpage>203</fpage>
+          <lpage>203</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Hodson1">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hodson</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Shifting boundaries: challenges for rust monitoring.</article-title>
+          <source>Euphytica</source>
+          <volume>179</volume>
+          <fpage>93</fpage>
+          <lpage>104</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Singh2">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Singh</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Hodson</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Huerta-Espino</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Njau</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Will stem rust destroy the world's wheat crop?</article-title>
+          <source>Advances in Agronomy</source>
+          <volume>98</volume>
+          <fpage>271</fpage>
+          <lpage>309</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Dodds1">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dodds</surname>
+              <given-names>PN</given-names>
+            </name>
+            <name>
+              <surname>Lawrence</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Catanzariti</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Ayliffe</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Ellis</surname>
+              <given-names>JG</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>The <italic>Melampsora lini</italic> AvrL567 avirulence genes are expressed in haustoria and their products are recognized inside plant cells.</article-title>
+          <source>Plant Cell</source>
+          <volume>16</volume>
+          <fpage>755</fpage>
+          <lpage>768</lpage>
+          <pub-id pub-id-type="pmid">14973158</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Hogenhout1">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hogenhout</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Van der Hoorn</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Terauchi</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kamoun</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Emerging concepts in effector biology of plant-associated organisms.</article-title>
+          <source>Mol Plant Microbe Interact</source>
+          <volume>22</volume>
+          <fpage>115</fpage>
+          <lpage>122</lpage>
+          <pub-id pub-id-type="pmid">19132864</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Whisson1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Whisson</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Boevink</surname>
+              <given-names>PC</given-names>
+            </name>
+            <name>
+              <surname>Moleleki</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Avrova</surname>
+              <given-names>AO</given-names>
+            </name>
+            <name>
+              <surname>Morales</surname>
+              <given-names>JG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>A translocation signal for delivery of oomycete effector proteins into host plant cells.</article-title>
+          <source>Nature</source>
+          <volume>450</volume>
+          <fpage>115</fpage>
+          <lpage>118</lpage>
+          <pub-id pub-id-type="pmid">17914356</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Rafiqi1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rafiqi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gan</surname>
+              <given-names>PH</given-names>
+            </name>
+            <name>
+              <surname>Ravensdale</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lawrence</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Ellis</surname>
+              <given-names>JG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Internalization of flax rust avirulence proteins into flax and tobacco cells can occur in the absence of the pathogen.</article-title>
+          <source>Plant Cell</source>
+          <volume>22</volume>
+          <fpage>2017</fpage>
+          <lpage>2032</lpage>
+          <pub-id pub-id-type="pmid">20525849</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Kemen1">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kemen</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Kemen</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Rafiqi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hempel</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Mendgen</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Identification of a protein from rust fungi transferred from haustoria into infected plant cells.</article-title>
+          <source>Mol Plant Microbe Interact</source>
+          <volume>18</volume>
+          <fpage>1130</fpage>
+          <lpage>1139</lpage>
+          <pub-id pub-id-type="pmid">16353548</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Khang1">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Khang</surname>
+              <given-names>CH</given-names>
+            </name>
+            <name>
+              <surname>Berruyer</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Giraldo</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Kankanala</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>SY</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Translocation of <italic>Magnaporthe oryzae</italic> effectors into rice cells and their subsequent cell-to-cell movement.</article-title>
+          <source>Plant Cell</source>
+          <volume>22</volume>
+          <fpage>1388</fpage>
+          <lpage>1403</lpage>
+          <pub-id pub-id-type="pmid">20435900</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Rooney1">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rooney</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Van't Klooster</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>van der Hoorn</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Joosten</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>JD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title><italic>Cladosporium</italic> Avr2 inhibits tomato Rcr3 protease required for Cf-2-dependent disease resistance.</article-title>
+          <source>Science</source>
+          <volume>308</volume>
+          <fpage>1783</fpage>
+          <lpage>1786</lpage>
+          <pub-id pub-id-type="pmid">15845874</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Boutemy1">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boutemy</surname>
+              <given-names>LS</given-names>
+            </name>
+            <name>
+              <surname>King</surname>
+              <given-names>SRF</given-names>
+            </name>
+            <name>
+              <surname>Win</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hughes</surname>
+              <given-names>RK</given-names>
+            </name>
+            <name>
+              <surname>Clarke</surname>
+              <given-names>TA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2011</year>
+          <article-title>Structures of Phytophthora RXLR effector proteins: a conserved but adaptable fold underpins functional diversity.</article-title>
+          <source>Journal of Biological Chemistry</source>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Kang1">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Sweigard</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Valent</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>The PWL host specificity gene family in the blast fungus <italic>Magnaporthe grisea</italic>.</article-title>
+          <source>Mol Plant Microbe Interact</source>
+          <volume>8</volume>
+          <fpage>939</fpage>
+          <lpage>948</lpage>
+          <pub-id pub-id-type="pmid">8664503</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Newton1">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Newton</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Sansom</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Dao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>McAlister</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name>
+              <surname>Sloan</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>Sel1 repeat protein LpnE is a <italic>Legionella pneumophila</italic> virulence determinant that influences vacuolar trafficking.</article-title>
+          <source>Infect Immun</source>
+          <volume>75</volume>
+          <fpage>5575</fpage>
+          <lpage>5585</lpage>
+          <pub-id pub-id-type="pmid">17893138</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Liu1">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Nie</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Asc1, a WD-repeat protein, is required for hyphal development and virulence in <italic>Candida albicans</italic>.</article-title>
+          <source>Acta Biochim Biophys Sin (Shanghai)</source>
+          <volume>42</volume>
+          <fpage>793</fpage>
+          <lpage>800</lpage>
+          <pub-id pub-id-type="pmid">20929924</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Shim1">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shim</surname>
+              <given-names>WB</given-names>
+            </name>
+            <name>
+              <surname>Sagaram</surname>
+              <given-names>US</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>YE</given-names>
+            </name>
+            <name>
+              <surname>So</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wilkinson</surname>
+              <given-names>HH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>FSR1 is essential for virulence and female fertility in <italic>Fusarium verticillioides</italic> and <italic>F. graminearum</italic>.</article-title>
+          <source>Mol Plant Microbe Interact</source>
+          <volume>19</volume>
+          <fpage>725</fpage>
+          <lpage>733</lpage>
+          <pub-id pub-id-type="pmid">16838785</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Pieterse1">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pieterse</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Derksen</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Folders</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Govers</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>1994</year>
+          <article-title>Expression of the <italic>Phytophthora infestans ipiB</italic> and <italic>ipiO</italic> genes <italic>in planta</italic> and <italic>in vitro</italic>.</article-title>
+          <source>Mol Gen Genet</source>
+          <volume>244</volume>
+          <fpage>269</fpage>
+          <lpage>277</lpage>
+          <pub-id pub-id-type="pmid">8058038</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Raffaele1">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raffaele</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Win</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cano</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Kamoun</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Analyses of genome architecture and gene expression reveal novel candidate virulence factors in the secretome of <italic>Phytophthora infestans</italic>.</article-title>
+          <source>BMC Genomics</source>
+          <volume>11</volume>
+          <fpage>637</fpage>
+          <pub-id pub-id-type="pmid">21080964</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Rouxel1">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rouxel</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Grandaubert</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hane</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>Hoede</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>van de Wouw</surname>
+              <given-names>AP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2011</year>
+          <article-title>Effector diversification within compartments of the <italic>Leptosphaeria maculans</italic> genome affected by Repeat-Induced Point mutations.</article-title>
+          <source>Nat Commun</source>
+          <volume>2</volume>
+          <fpage>202</fpage>
+          <pub-id pub-id-type="pmid">21326234</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Stergiopoulos1">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stergiopoulos</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>de Wit</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Fungal effector proteins.</article-title>
+          <source>Annu Rev Phytopathol</source>
+          <volume>47</volume>
+          <fpage>233</fpage>
+          <lpage>263</lpage>
+          <pub-id pub-id-type="pmid">19400631</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Vleeshouwers1">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vleeshouwers</surname>
+              <given-names>VG</given-names>
+            </name>
+            <name>
+              <surname>Rietman</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Krenek</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Champouret</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Young</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Effector genomics accelerates discovery and functional profiling of potato disease resistance and <italic>Phytophthora infestans</italic> avirulence genes.</article-title>
+          <source>PLoS One</source>
+          <volume>3</volume>
+          <fpage>e2875</fpage>
+          <pub-id pub-id-type="pmid">18682852</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Vleeshouwers2">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vleeshouwers</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Raffaele</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Vossen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Champouret</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Oliva</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2011</year>
+          <article-title>Understanding and exploiting late blight resistance in the age of effectors.</article-title>
+          <source>Annual Review of Phytopathology</source>
+          <volume>49</volume>
+          <fpage>25.21</fpage>
+          <lpage>25.25</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Rep1">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rep</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Small proteins of plant-pathogenic fungi secreted during host colonization.</article-title>
+          <source>FEMS Microbiol Lett</source>
+          <volume>253</volume>
+          <fpage>19</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="pmid">16216445</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Li1">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Stoeckert</surname>
+              <given-names>CJ</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <name>
+              <surname>Roos</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>OrthoMCL: identification of ortholog groups for eukaryotic genomes.</article-title>
+          <source>Genome Res</source>
+          <volume>13</volume>
+          <fpage>2178</fpage>
+          <lpage>2189</lpage>
+          <pub-id pub-id-type="pmid">12952885</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Duplessis1">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Duplessis</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cuomo</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Aerts</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tisserant</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2011</year>
+          <article-title>Obligate biotrophy features unraveled by the genomic analysis of rust fungi.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>108</volume>
+          <fpage>9166</fpage>
+          <lpage>9171</lpage>
+          <pub-id pub-id-type="pmid">21536894</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Bailey1">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bailey</surname>
+              <given-names>TL</given-names>
+            </name>
+            <name>
+              <surname>Boden</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Buske</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name>
+              <surname>Frith</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Grant</surname>
+              <given-names>CE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>MEME SUITE: tools for motif discovery and searching.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>37</volume>
+          <fpage>W202</fpage>
+          <lpage>208</lpage>
+          <pub-id pub-id-type="pmid">19458158</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Dou1">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dou</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kale</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Conserved C-terminal motifs required for avirulence and suppression of cell death by <italic>Phytophthora sojae</italic> effector Avr1b.</article-title>
+          <source>Plant Cell</source>
+          <volume>20</volume>
+          <fpage>1118</fpage>
+          <lpage>1133</lpage>
+          <pub-id pub-id-type="pmid">18390593</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Godfrey1">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Godfrey</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bohlenius</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Pedersen</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Emmersen</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Powdery mildew fungal effector candidates share N-terminal Y/F/WxC-motif.</article-title>
+          <source>BMC Genomics</source>
+          <volume>11</volume>
+          <fpage>317</fpage>
+          <pub-id pub-id-type="pmid">20487537</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Ellis1">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ellis</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Catanzariti</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Dodds</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>The problem of how fungal and oomycete avirulence proteins enter plant cells.</article-title>
+          <source>Trends Plant Sci</source>
+          <volume>11</volume>
+          <fpage>61</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="pmid">16406302</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Kulkarni1">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kulkarni</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Kelkar</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Dean</surname>
+              <given-names>RA</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>An eight-cysteine-containing CFEM domain unique to a group of fungal membrane proteins.</article-title>
+          <source>Trends Biochem Sci</source>
+          <volume>28</volume>
+          <fpage>118</fpage>
+          <lpage>121</lpage>
+          <pub-id pub-id-type="pmid">12633989</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Joly1">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Joly</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Feau</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Tanguay</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Hamelin</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Comparative analysis of secreted protein evolution using expressed sequence tags from four poplar leaf rusts (<italic>Melampsora spp.</italic>).</article-title>
+          <source>BMC Genomics</source>
+          <volume>11</volume>
+          <fpage>422</fpage>
+          <pub-id pub-id-type="pmid">20615251</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Catanzariti1">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Catanzariti</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Dodds</surname>
+              <given-names>PN</given-names>
+            </name>
+            <name>
+              <surname>Lawrence</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Ayliffe</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Ellis</surname>
+              <given-names>JG</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Haustorially expressed secreted proteins from flax rust are highly enriched for avirulence elicitors.</article-title>
+          <source>Plant Cell</source>
+          <volume>18</volume>
+          <fpage>243</fpage>
+          <lpage>256</lpage>
+          <pub-id pub-id-type="pmid">16326930</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Szeto1">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Szeto</surname>
+              <given-names>CY</given-names>
+            </name>
+            <name>
+              <surname>Leung</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Kwan</surname>
+              <given-names>HS</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Le.MAPK and its interacting partner, Le.DRMIP, in fruiting body development in <italic>Lentinula edodes</italic>.</article-title>
+          <source>Gene</source>
+          <volume>393</volume>
+          <fpage>87</fpage>
+          <lpage>93</lpage>
+          <pub-id pub-id-type="pmid">17383119</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Milne1">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Milne</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Abbenante</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Tyndall</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Halliday</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lewis</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Isolation and characterization of a cone snail protease with homology to CRISP proteins of the pathogenesis-related protein superfamily.</article-title>
+          <source>J Biol Chem</source>
+          <volume>278</volume>
+          <fpage>31105</fpage>
+          <lpage>31110</lpage>
+          <pub-id pub-id-type="pmid">12759345</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Gibbs1">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gibbs</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Roelants</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>O'Bryan</surname>
+              <given-names>MK</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>The CAP superfamily: cysteine-rich secretory proteins, antigen 5, and pathogenesis-related 1 proteins&#x2013;roles in reproduction, cancer, and immune defense.</article-title>
+          <source>Endocr Rev</source>
+          <volume>29</volume>
+          <fpage>865</fpage>
+          <lpage>897</lpage>
+          <pub-id pub-id-type="pmid">18824526</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Liu2">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Sturrock</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ekramoddoullah</surname>
+              <given-names>AK</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>The superfamily of thaumatin-like proteins: its origin, evolution, and expression towards biological function.</article-title>
+          <source>Plant Cell Rep</source>
+          <volume>29</volume>
+          <fpage>419</fpage>
+          <lpage>436</lpage>
+          <pub-id pub-id-type="pmid">20204373</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Wang1">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Zafian</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Choudhary</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lawton</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>The PR5K receptor protein kinase from <italic>Arabidopsis thaliana</italic> is structurally related to a family of plant defense proteins.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>93</volume>
+          <fpage>2598</fpage>
+          <lpage>2602</lpage>
+          <pub-id pub-id-type="pmid">8637920</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Petre1">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Petre</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Major</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Rouhier</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Duplessis</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Genome-wide analysis of eukaryote thaumatin-like proteins (TLPs) with an emphasis on poplar.</article-title>
+          <source>BMC Plant Biol</source>
+          <volume>11</volume>
+          <fpage>33</fpage>
+          <pub-id pub-id-type="pmid">21324123</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-deOliveira1">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>de Oliveira</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Gallo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pazzagli</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Benedetti</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Cappugi</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2011</year>
+          <article-title>The structure of the elicitor Cerato-platanin (CP), the first member of the CP fungal protein family, reveals a double psibeta-barrel fold and carbohydrate binding.</article-title>
+          <source>J Biol Chem</source>
+          <volume>286</volume>
+          <fpage>17560</fpage>
+          <lpage>17568</lpage>
+          <pub-id pub-id-type="pmid">21454637</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Tompa1">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tompa</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kovacs</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Intrinsically disordered chaperones in plants and animals.</article-title>
+          <source>Biochem Cell Biol</source>
+          <volume>88</volume>
+          <fpage>167</fpage>
+          <lpage>174</lpage>
+          <pub-id pub-id-type="pmid">20453919</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Larous1">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Larous</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kameli</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Losel</surname>
+              <given-names>DM</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Ultrastructural observations on <italic>Puccinia methae</italic> infections.</article-title>
+          <source>Journal of Plant Pathology</source>
+          <volume>90</volume>
+          <fpage>185</fpage>
+          <lpage>190</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Kamoun1">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kamoun</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Groovy times: filamentous pathogen effectors revealed.</article-title>
+          <source>Curr Opin Plant Biol</source>
+          <volume>10</volume>
+          <fpage>358</fpage>
+          <lpage>365</lpage>
+          <pub-id pub-id-type="pmid">17611143</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Dodds2">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dodds</surname>
+              <given-names>PN</given-names>
+            </name>
+            <name>
+              <surname>Rafiqi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gan</surname>
+              <given-names>PH</given-names>
+            </name>
+            <name>
+              <surname>Hardham</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>DA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Effectors of biotrophic fungi and oomycetes: pathogenicity factors and triggers of host resistance.</article-title>
+          <source>New Phytol</source>
+          <volume>183</volume>
+          <fpage>993</fpage>
+          <lpage>1000</lpage>
+          <pub-id pub-id-type="pmid">19558422</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Haas1">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haas</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Kamoun</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Zody</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Handsaker</surname>
+              <given-names>RE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Genome sequence and analysis of the Irish potato famine pathogen <italic>Phytophthora infestans</italic>.</article-title>
+          <source>Nature</source>
+          <volume>461</volume>
+          <fpage>393</fpage>
+          <lpage>398</lpage>
+          <pub-id pub-id-type="pmid">19741609</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Xu1">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Linning</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Fellers</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dickinson</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2011</year>
+          <article-title>Gene discovery in EST sequences from the wheat leaf rust fungus <italic>Puccinia triticina</italic> sexual spores, asexual spores and haustoria, compared to other rust and corn smut fungi.</article-title>
+          <source>BMC Genomics</source>
+          <volume>12</volume>
+          <fpage>161</fpage>
+          <pub-id pub-id-type="pmid">21435244</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Liu3">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Ru</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2011</year>
+          <article-title>Two host cytoplasmic effectors are required for pathogenesis of <italic>Phytophthora sojae</italic> by suppression of host defenses.</article-title>
+          <source>Plant Physiol</source>
+          <volume>155</volume>
+          <fpage>490</fpage>
+          <lpage>501</lpage>
+          <pub-id pub-id-type="pmid">21071601</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Schornack1">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schornack</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>van Damme</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bozkurt</surname>
+              <given-names>TO</given-names>
+            </name>
+            <name>
+              <surname>Cano</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Smoker</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Ancient class of translocated oomycete effectors targets the host nucleus.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>107</volume>
+          <fpage>17421</fpage>
+          <lpage>17426</lpage>
+          <pub-id pub-id-type="pmid">20847293</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Kanneganti1">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kanneganti</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Bai</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Tsai</surname>
+              <given-names>CW</given-names>
+            </name>
+            <name>
+              <surname>Win</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Meulia</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>A functional genetic assay for nuclear trafficking in plants.</article-title>
+          <source>Plant J</source>
+          <volume>50</volume>
+          <fpage>149</fpage>
+          <lpage>158</lpage>
+          <pub-id pub-id-type="pmid">17346267</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Shen1">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shen</surname>
+              <given-names>QH</given-names>
+            </name>
+            <name>
+              <surname>Saijo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Mauch</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Biskup</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bieri</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>Nuclear activity of MLA immune receptors links isolate-specific and basal disease-resistance responses.</article-title>
+          <source>Science</source>
+          <volume>315</volume>
+          <fpage>1098</fpage>
+          <lpage>1103</lpage>
+          <pub-id pub-id-type="pmid">17185563</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Jorda1">
+        <label>52</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jorda</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kajava</surname>
+              <given-names>AV</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>T-REKS: identification of Tandem REpeats in sequences with a K-meanS based algorithm.</article-title>
+          <source>Bioinformatics</source>
+          <volume>25</volume>
+          <fpage>2632</fpage>
+          <lpage>2638</lpage>
+          <pub-id pub-id-type="pmid">19671691</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Hacquard1">
+        <label>53</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hacquard</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Delaruelle</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Legue</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Tisserant</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Kohler</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Laser capture microdissection of uredinia formed by <italic>Melampsora larici-populina</italic> revealed a transcriptional switch between biotrophy and sporulation.</article-title>
+          <source>Mol Plant Microbe Interact</source>
+          <volume>23</volume>
+          <fpage>1275</fpage>
+          <lpage>1286</lpage>
+          <pub-id pub-id-type="pmid">20831407</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Doehlemann1">
+        <label>54</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doehlemann</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>van der Linde</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Assmann</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Schwammbach</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Hof</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Pep1, a secreted effector protein of <italic>Ustilago maydis</italic>, is required for successful invasion of plant cells.</article-title>
+          <source>PLoS Pathog</source>
+          <volume>5</volume>
+          <fpage>e1000290</fpage>
+          <pub-id pub-id-type="pmid">19197359</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-The1">
+        <label>55</label>
+        <element-citation publication-type="other">
+          <comment>The <italic>Melampsora laricis-populina</italic> genome database</comment>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-The2">
+        <label>56</label>
+        <element-citation publication-type="other">
+          <comment>The <italic>Puccinia</italic> group database</comment>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Torto1">
+        <label>57</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Torto</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Styer</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Huitema</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Testa</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>EST mining and functional expression assays identify extracellular effector proteins from the plant pathogen <italic>Phytophthora</italic>.</article-title>
+          <source>Genome Res</source>
+          <volume>13</volume>
+          <fpage>1675</fpage>
+          <lpage>1685</lpage>
+          <pub-id pub-id-type="pmid">12840044</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Blast2go1">
+        <label>58</label>
+        <element-citation publication-type="other">
+          <comment>Blast2go web server</comment>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Yin1">
+        <label>59</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Generation and analysis of expression sequence tags from haustoria of the wheat stripe rust fungus <italic>Puccinia striiformis</italic> f. sp. <italic>Tritici</italic>.</article-title>
+          <source>BMC Genomics</source>
+          <volume>10</volume>
+          <fpage>626</fpage>
+          <pub-id pub-id-type="pmid">20028560</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Yoshida1">
+        <label>60</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Saitoh</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Fujisawa</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kanzaki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Matsumura</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Association genetics reveals three novel avirulence genes from the rice blast fungal pathogen <italic>Magnaporthe oryzae</italic>.</article-title>
+          <source>Plant Cell</source>
+          <volume>21</volume>
+          <fpage>1573</fpage>
+          <lpage>1591</lpage>
+          <pub-id pub-id-type="pmid">19454732</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Li2">
+        <label>61</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>The <italic>Magnaporthe oryzae</italic> avirulence gene <italic>AvrPiz-t</italic> encodes a predicted secreted protein that triggers the immunity in rice mediated by the blast resistance gene <italic>Piz-t</italic>.</article-title>
+          <source>Mol Plant Microbe Interact</source>
+          <volume>22</volume>
+          <fpage>411</fpage>
+          <lpage>420</lpage>
+          <pub-id pub-id-type="pmid">19271956</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Levesque1">
+        <label>62</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Levesque</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Brouwer</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Cano</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hamilton</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Holt</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Genome sequence of the necrotrophic plant pathogen <italic>Pythium ultimum</italic> reveals original pathogenicity mechanisms and effector repertoire.</article-title>
+          <source>Genome Biol</source>
+          <volume>11</volume>
+          <fpage>R73</fpage>
+          <pub-id pub-id-type="pmid">20626842</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Nair1">
+        <label>63</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nair</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Rost</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Better prediction of sub-cellular localization by combining evolutionary and structural information.</article-title>
+          <source>Proteins</source>
+          <volume>53</volume>
+          <fpage>917</fpage>
+          <lpage>930</lpage>
+          <pub-id pub-id-type="pmid">14635133</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Ceroni1">
+        <label>64</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ceroni</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Passerini</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Vullo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Frasconi</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>DISULFIND: a disulfide bonding state and cysteine connectivity prediction server.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>34</volume>
+          <fpage>W177</fpage>
+          <lpage>181</lpage>
+          <pub-id pub-id-type="pmid">16844986</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Enright1">
+        <label>65</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Enright</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Van Dongen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ouzounis</surname>
+              <given-names>CA</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>An efficient algorithm for large-scale detection of protein families.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>30</volume>
+          <fpage>1575</fpage>
+          <lpage>1584</lpage>
+          <pub-id pub-id-type="pmid">11917018</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Finn1">
+        <label>66</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Finn</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Mistry</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tate</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Coggill</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Heger</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>The Pfam protein families database.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>38</volume>
+          <fpage>D211</fpage>
+          <lpage>222</lpage>
+          <pub-id pub-id-type="pmid">19920124</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0029847-Saeed1">
+        <label>67</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saeed</surname>
+              <given-names>AI</given-names>
+            </name>
+            <name>
+              <surname>Sharov</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>TM4: a free, open-source system for microarray data management and analysis.</article-title>
+          <source>Biotechniques</source>
+          <volume>34</volume>
+          <fpage>374</fpage>
+          <lpage>378</lpage>
+          <pub-id pub-id-type="pmid">12613259</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

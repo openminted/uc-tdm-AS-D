@@ -1,0 +1,3068 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Plant Biol</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Plant Biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2229</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3191334</article-id>
+      <article-id pub-id-type="publisher-id">1471-2229-11-131</article-id>
+      <article-id pub-id-type="pmid">21951788</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2229-11-131</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>From RNA-seq to large-scale genotyping - genomics resources for rye (<italic>Secale cereale </italic>L.)</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes" id="A1">
+          <name>
+            <surname>Haseneyer</surname>
+            <given-names>Grit</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>grit.haseneyer@wzw.tum.de</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A2">
+          <name>
+            <surname>Schmutzer</surname>
+            <given-names>Thomas</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>schmutzr@ipk-gatersleben.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Seidel</surname>
+            <given-names>Michael</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>michael.seidel@helmholtz-muenchen.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Zhou</surname>
+            <given-names>Ruonan</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>zhou@ipk-gatersleben.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Mascher</surname>
+            <given-names>Martin</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>mascher@ipk-gatersleben.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A6">
+          <name>
+            <surname>Sch&#xF6;n</surname>
+            <given-names>Chris-Carolin</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>chris.schoen@wzw.tum.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A7">
+          <name>
+            <surname>Taudien</surname>
+            <given-names>Stefan</given-names>
+          </name>
+          <xref ref-type="aff" rid="I5">5</xref>
+          <email>stau@fli-leibniz.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A8">
+          <name>
+            <surname>Scholz</surname>
+            <given-names>Uwe</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>scholz@ipk-gatersleben.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A9">
+          <name>
+            <surname>Stein</surname>
+            <given-names>Nils</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>stein@ipk-gatersleben.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A10">
+          <name>
+            <surname>Mayer</surname>
+            <given-names>Klaus FX</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>k.mayer@helmholtz-muenchen.de</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A11">
+          <name>
+            <surname>Bauer</surname>
+            <given-names>Eva</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>eva.bauer@wzw.tum.de</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Plant Breeding, Technische Universit&#xE4;t M&#xFC;nchen, Centre of Life and Food Sciences Weihenstephan, 85354 Freising, Germany</aff>
+      <aff id="I2"><label>2</label>Bioinformatics and Information Technology, Leibniz-Institute of Plant Genetics and Crop Plant Research (IPK), D-06466 Gatersleben, Germany</aff>
+      <aff id="I3"><label>3</label>MIPS/IBIS, Institute for Bioinformatics and Systems Biology, Helmholtz Centre Munich, German Research Centre for Environmental Health (GmbH), 85764 Neuherberg, Germany</aff>
+      <aff id="I4"><label>4</label>Genome Diversity, Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), 06466 Gatersleben, Germany</aff>
+      <aff id="I5"><label>5</label>Genome Analysis, Leibniz Institute for Age Research, Fritz-Lipmann-Institute (FLI), 07745 Jena, Germany</aff>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>28</day>
+        <month>9</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>11</volume>
+      <fpage>131</fpage>
+      <lpage>131</lpage>
+      <history>
+        <date date-type="received">
+          <day>16</day>
+          <month>2</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>28</day>
+          <month>9</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2011 Haseneyer et al; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2011</copyright-year>
+        <copyright-holder>Haseneyer et al; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1471-2229/11/131"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The improvement of agricultural crops with regard to yield, resistance and environmental adaptation is a perpetual challenge for both breeding and research. Exploration of the genetic potential and implementation of genome-based breeding strategies for efficient rye (<italic>Secale cereale </italic>L.) cultivar improvement have been hampered by the lack of genome sequence information. To overcome this limitation we sequenced the transcriptomes of five winter rye inbred lines using Roche/454 GS FLX technology.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>More than 2.5 million reads were assembled into 115,400 contigs representing a comprehensive rye expressed sequence tag (EST) resource. From sequence comparisons 5,234 single nucleotide polymorphisms (SNPs) were identified to develop the Rye5K high-throughput SNP genotyping array. Performance of the Rye5K SNP array was investigated by genotyping 59 rye inbred lines including the five lines used for sequencing, and five barley, three wheat, and two triticale accessions. A balanced distribution of allele frequencies ranging from 0.1 to 0.9 was observed. Residual heterozygosity of the rye inbred lines varied from 4.0 to 20.4% with higher average heterozygosity in the pollen compared to the seed parent pool.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>The established sequence and molecular marker resources will improve and promote genetic and genomic research as well as genome-based breeding in rye.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>EST resource</kwd>
+        <kwd>next generation sequencing</kwd>
+        <kwd><italic>Secale cereale </italic>L.</kwd>
+        <kwd>Rye5K SNP array</kwd>
+        <kwd>single nucleotide polymorphisms</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>The improvement of agricultural crops with regard to yield, resistance and environmental adaptation is a perpetual challenge for both breeding and research. With regard to prospected climate changes, improved tolerance against abiotic stresses like drought, low soil fertility, and extreme temperatures is required in crop improvement. The outcrossing species rye shows the highest freezing tolerance among small grain cereals [<xref ref-type="bibr" rid="B1">1</xref>] and exhibits excellent tolerance against many biotic and abiotic stresses. Understanding the functional genetic basis of stress tolerance in rye will facilitate the improvement of stress tolerance in wheat (<italic>Triticum aestivum </italic>L.) and barley (<italic>Hordeum vulgare </italic>L.). As a genetic research system, rye is intriguing due to its high genetic variability. In addition to being an economically important crop for Middle and Eastern Europe, rye provides valuable traits for other crops, as a parent of the amphiploid triticale, and as a donor of translocated chromosome segments in wheat [<xref ref-type="bibr" rid="B2">2</xref>]. Rye benefits from being diploid and closely related to the more extensively characterized species wheat and barley. While reference sequences of grass genomes have become available for rice [<xref ref-type="bibr" rid="B3">3</xref>,<xref ref-type="bibr" rid="B4">4</xref>], sorghum [<xref ref-type="bibr" rid="B5">5</xref>], <italic>Brachypodium </italic>[<xref ref-type="bibr" rid="B6">6</xref>] and maize [<xref ref-type="bibr" rid="B7">7</xref>], sequence information for rye is sparse which hampers the exploitation of its genetic potential.</p>
+      <p>The haploid genome size of rye is more than 8 Gbp [<xref ref-type="bibr" rid="B8">8</xref>] which is one of the largest among cereal crops. In addition, 92% of the genome is composed of repetitive sequences [<xref ref-type="bibr" rid="B9">9</xref>]. Genetic and genomic resources are limited compared to other <italic>Triticeae</italic>. Currently, 1,073,668 wheat and 501,620 barley ESTs are publicly available whereas only 9,298 rye ESTs are deposited in public databases <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/dbEST/dbEST_summary.html">http://www.ncbi.nlm.nih.gov/dbEST/dbEST_summary.html</ext-link> (release 070111). Publicly available genomic resources for rye are restricted to one BAC library [<xref ref-type="bibr" rid="B10">10</xref>], a limited number of genetic markers <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/GG2/index.shtml">http://wheat.pw.usda.gov/GG2/index.shtml</ext-link>, and genetic maps with low marker density [<xref ref-type="bibr" rid="B11">11</xref>-<xref ref-type="bibr" rid="B15">15</xref>].</p>
+      <p>Next-generation sequencing (NGS) technologies such as Illumina's Genome Analyzer and Roche's 454 sequencing platforms have opened the way to tackle sequencing of large genomes like those of barley and wheat which would be impossible to address by Sanger sequencing [<xref ref-type="bibr" rid="B16">16</xref>]. NGS platforms produce hundreds of thousands of sequences in a massively parallel manner, are cost and labour effective and were proven to be reliable and accurate. Several studies have highlighted the success and usefulness of NGS for extending available genomics resources by transcriptome [e.g. [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B18">18</xref>]] and whole-genome [<xref ref-type="bibr" rid="B19">19</xref>] sequencing. Furthermore, NGS has been used for gene expression profiling [<xref ref-type="bibr" rid="B20">20</xref>], analysis of genome organisation [<xref ref-type="bibr" rid="B21">21</xref>], DNA methylation studies [<xref ref-type="bibr" rid="B22">22</xref>], and molecular marker development [<xref ref-type="bibr" rid="B23">23</xref>], to name few.</p>
+      <p>Given the large genome size and the lack of sequence information and genomic resources in rye, identification and targeted isolation of genes underlying agronomic traits and understanding of gene function and trait variation is greatly hampered. The aim of the present study was to promote rye genome analysis through massive improvement of the public rye EST resource and development of the first high-throughput SNP genotyping array.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Plant material, RNA and sequencing</title>
+        <p>Five winter rye inbred lines Lo7, Lo152, Lo225, P87, and P105 were used for cDNA sequencing. Lo7, Lo152, and Lo225 were provided by KWS LOCHOW GMBH (Bergen, Germany) and represent lines from the seed parent and the pollen parent pool of the company's hybrid rye breeding program. P87 and P105 were developed at the Institute of Genetics and Cytology, Minsk, Belarus, and are parents of the mapping population P87 &#xD7; P105 [<xref ref-type="bibr" rid="B24">24</xref>]. Inbred lines Lo7, Lo152, and Lo225 were generated by six selfing generations, whereas P87 and P105 were selfed seven and eight times, respectively. In addition, 54 proprietary inbred lines from the breeding material of KWS LOCHOW GMBH, representing the two breeding pools were investigated. Lines from the pollen parent pool were generated by two to three selfing generations, whereas lines from the seed parent pool have undergone five selfing steps.</p>
+        <p>To capture a comprehensive part of the rye transcriptome 20 samples of total RNA per inbred line were obtained from a set of plant tissues harvested at five developmental stages and after three stress treatments, respectively (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>). Three plants per inbred line were pooled to obtain each of the 20 RNA samples. For all non-stress treatments tissue samples from leaves, stems and/or roots were harvested at three- to four-leaf stage, tillering, stem extension, heading and harvest ripe stage. Coleoptiles, florets, early and mature spikes were harvested. To enrich stress induced genes in the cDNA sample, cold stress, dehydration shock, and nutrient-starvation stress treatments were applied in the three- to four-leaf stage. Cold stress was induced by placing plants in a freezer at -15&#xB0;C. Root, stem and leaf tissues were harvested after 1, 3, and 6 hours of stress treatment and pooled. Dehydration shock experiments were conducted by removing well-watered plants from soil and leaving them on Whatman<sup>&#xAE; </sup>3 MM paper (Whatman GmbH, Dassel, Germany) at room temperature [<xref ref-type="bibr" rid="B25">25</xref>]. Root, stem, and leaf tissues were harvested after 3, 6, and 12 hours of stress and pooled. Three plants per inbred line were densely planted leading to nutrient-starvation stress. Root and leaf tissues were harvested and pooled. All tissue samples were frozen in liquid nitrogen and stored at -80&#xB0;C until use. Total RNA was isolated according to manufacturer's instructions using the NucleoSpin RNA Plant kit (#740949, Macherey-Nagel, D&#xFC;ren, Germany) and quantified with the SPECTRONIC GENESYS&#x2122; 10 BIO spectrometer (Thermo ELECTRON CORPORATION, Madison, USA).</p>
+        <p>Five micrograms of the 20 RNA samples of each inbred line were pooled and 100 &#x3BC;g total RNA per inbred line was sent for cDNA synthesis to vertis Biotechnology AG (Freising, Germany). Poly(A)+ RNA was prepared from total RNA. First-strand cDNA synthesis was primed with random hexanucleotide primers. Then 454 sequencing adapters A (5'-GCCTCCCTCGCGCCATCAG-3') and B (5'-CTGAGCGGGCTGGCAAGGC-3') were ligated to the 5' and 3' cDNA ends. Finally, cDNAs were amplified in 20 (Lo152) and 21 (Lo7, Lo225, P87, P105) PCR cycles using a proof reading enzyme. Normalization was carried out by one cycle of denaturation and reassociation of the cDNA. Reassociated ds-cDNA was separated from the ss-cDNA on hydroxylapatite columns to obtain the normalized cDNA samples. After hydroxylapatite chromatography, the ss-cDNA samples were amplified in 8 PCR cycles. The cDNA fraction in the size range of 600 to 800 bp was eluted from preparative agarose gels. As a control, aliquots of the fractionated cDNAs were analyzed on 1.5% agarose gels. Approximately 150 to 250 &#x3BC;g of the normalized, adapter-ligated, and size selected cDNA samples were used for GS FLX 454 sequencing. All 454 sequence raw data were submitted to the EBI sequence read archive (SRA) and are available under the study accession number ERP000274.</p>
+      </sec>
+      <sec>
+        <title>EST resource</title>
+        <sec>
+          <title>De novo sequence assembly</title>
+          <p>After 454 sequencing, raw sequence reads were passed through quality filtering where cDNA synthesis primer and sequencing adapter sequences were removed. After pre-processing, cleaned and trimmed reads were subjected to inbred line-specific assemblies. Therefore, we adapted the strategy of Kumar and Blaxter [<xref ref-type="bibr" rid="B26">26</xref>] for assembling transcriptome data using multiple assembly programs and combining the outcomes to create longer contigs that are less likely to be <italic>in-silico </italic>artefacts brought forth by a single algorithm. The strategy has been modified to be applicable for various lines (Figure <xref ref-type="fig" rid="F1">1</xref>). We used three independent assemblers to achieve most credible consensus contig sequences. Initially, all reads from each of the five lines were assembled separately into first-order contigs with the programs CLC assembly cell v3.20 <ext-link ext-link-type="uri" xlink:href="http://www.clcbio.com">http://www.clcbio.com</ext-link>, Mira v3.21 [<xref ref-type="bibr" rid="B27">27</xref>] and Newbler v2.5 [<xref ref-type="bibr" rid="B28">28</xref>]. While MIRA and Newbler follow the overlap-consensus-layout paradigm (OLC), CLC attempts to find paths in De Bruijn graphs. To obtain line-specific assemblies, all first-order contigs constructed by the three assemblers were merged using the OLC assembler CAP3 [<xref ref-type="bibr" rid="B29">29</xref>]. We considered only line-specific contigs whose constituents included first-order contigs from all three assemblers. For EST resource generation (Sce_Assembly03), we employed CAP3 a second time to co-assemble the high confidence line-specific contigs and denoted those supported by constituents from more than one line as multi-line contigs, while contigs with evidence from only one line were deemed single-line contigs. The assembly process of Sce_Assembly03 has been accomplished with a screening for potential DNA and foreign RNA contamination. We applied a BlastN against chloroplast genome sequences of barley (GenBank: <ext-link ext-link-type="gen" xlink:href="NC_008590">NC_008590</ext-link>) and wheat (GenBank: <ext-link ext-link-type="gen" xlink:href="NC_002762">NC_002762</ext-link>), mitochondrial genome sequences of rice (GenBank: <ext-link ext-link-type="gen" xlink:href="AP011077">AP011077</ext-link>), sorghum (GenBank: <ext-link ext-link-type="gen" xlink:href="DQ984518">DQ984518</ext-link>), and wheat (GenBank: <ext-link ext-link-type="gen" xlink:href="GU985444">GU985444</ext-link>), and plastids genome sequences of <italic>Brachypodium </italic>(GenBank:<ext-link ext-link-type="gen" xlink:href="EU325680">EU325680</ext-link>), rice (GenBank: <ext-link ext-link-type="gen" xlink:href="GU592207">GU592207</ext-link>), sorghum (GenBank: <ext-link ext-link-type="gen" xlink:href="NC_008602">NC_008602</ext-link>), and wheat (GenBank: <ext-link ext-link-type="gen" xlink:href="AB042240">AB042240</ext-link>). Further purity was gained by excluding hits against CDS sequences of <italic>Acyrthosiphon pisum </italic>(GenBank: <ext-link ext-link-type="gen" xlink:href="ACFK00000000">ACFK00000000</ext-link>), <italic>Buchnera aphidicola </italic>(GenBank: <ext-link ext-link-type="gen" xlink:href="AE013218">AE013218</ext-link>), <italic>Fusarium graminearum </italic>(GenBank: <ext-link ext-link-type="gen" xlink:href="AACM00000000">AACM00000000</ext-link>), and the draft sequence of <italic>Puccinia triticina </italic>available at the Broad Institute. We discarded contigs from the Sce_Assembly03 sequence set that showed E-values larger than E-20 and the proposed best hits representing at least 10% of the full contig size. The established EST resource Sce_Assembly03 is available from the GABI primary database [<xref ref-type="bibr" rid="B30">30</xref>], <ext-link ext-link-type="uri" xlink:href="http://www.gabipd.org">http://www.gabipd.org</ext-link>.</p>
+        </sec>
+        <sec>
+          <title>Sequence comparisons</title>
+          <p>Sequences between the five rye inbred lines potentially differ to a degree that prevents the <italic>de novo </italic>assembly of two lines. Blast [<xref ref-type="bibr" rid="B31">31</xref>] comparisons which do not require strict sequence identity were carried out to analyze for overlaps between the different assemblies. Line-specific assemblies generated by CAP3 were used together with the Sce_Assembly03 in an "all versus all" BlastN analysis. Each line-specific assembly as well as the multi-line and single-line contigs of the Sce_Assembly03 were used as both, subject and query sequences. The best query hit to a subject sequence was counted to identify homologs in the respective assemblies. Hits were considered significant when they exceeded a conservative cut-off value of &gt; = 70% identity and 30 bp coverage.</p>
+          <p>Comparisons of the Sce_Assembly03 against the four currently available protein databases of maize [ZmB73_v5b.60, <ext-link ext-link-type="uri" xlink:href="http://www.maizesequence.org">http://www.maizesequence.org</ext-link>], rice [RAP2, [<xref ref-type="bibr" rid="B32">32</xref>]], sorghum [<xref ref-type="bibr" rid="B5">5</xref>], and <italic>Brachypodium </italic>[<xref ref-type="bibr" rid="B6">6</xref>], two EST databases of barley and wheat (Barley assembly 35 and Wheat assembly WK, <ext-link ext-link-type="uri" xlink:href="http://harvest.ucr.edu">http://harvest.ucr.edu</ext-link>), and two full length cDNA (flcDNA) library databases of barley [<xref ref-type="bibr" rid="B33">33</xref>] and wheat [<xref ref-type="bibr" rid="B34">34</xref>] were performed using BlastX and tBlastX, respectively. Hits were only considered significant when they exceeded a conservative cut-off value of &gt; 70% identity and 30 bp coverage. To prevent hits found based on low-complexity sequences or repeats the Sce_Assembly03 was masked using RepeatMasker [<xref ref-type="bibr" rid="B35">35</xref>] and the internal MIPS repeat database [<xref ref-type="bibr" rid="B36">36</xref>].</p>
+          <p>Genome-wide distribution of the Sce_Assembly03 contig sequences was investigated by chromosome-wise BlastX analysis comparing multi-line and single-line contigs with <italic>Brachypodium </italic>protein sequences. Sce_Assembly03 sequences were mapped onto the <italic>Brachypodium </italic>genome by using a sliding window approach with a window size of 0.5 Mb and a shift of 0.1 Mb along the <italic>Brachypodium </italic>chromosomes. The number of BlastX hits and the percent bp coverage of the respective <italic>Brachypodium </italic>genes were determined. These density values were corrected for the number of Ns per window, if the N content exceeded 60% the value was set to zero. Density values were extrapolated to genes [<xref ref-type="bibr" rid="B6">6</xref>] or hits (rye) per Mb to facilitate comparisons. To visualize the mapping results heatmaps were created from the density values using the Python matplotlib module in combination with the jet colormap [<xref ref-type="bibr" rid="B37">37</xref>].</p>
+        </sec>
+        <sec>
+          <title>Functional gene annotation</title>
+          <p>The 115,400 sequences of the Sce_Assembly03 were functionally annotated performing a Blast search with Blast2GO default parameters against the non-redundant (nr) protein sequence database [<xref ref-type="bibr" rid="B38">38</xref>] after masking repetitive sequences and excluding the singletons. Gene ontology (GO) terms were assigned using B2G4PIPE <ext-link ext-link-type="uri" xlink:href="http://www.blast2go.org">http://www.blast2go.org</ext-link> and a locally installed Blast2GO database. The annotation file was extended by its respective GO category - biological process, cellular component, and molecular function - using a custom built Python script that is available upon request.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>SSR mining and SNP discovery</title>
+        <p>Simple sequence repeat (SSR) motifs within 338,536 contigs of the line-specific assemblies were identified by MISA [<xref ref-type="bibr" rid="B39">39</xref>] under standard settings. Out of the five inbred lines, Lo225 was selected as reference dataset as it provided the highest number of SSR containing contigs. The MISA output of the four remaining lines was cross-matched with the Lo225 dataset to detect redundant SSRs. A non-redundant SSR dataset was generated by combining "unique" SSR motifs detected in Lo7, Lo152, Lo225, P87, and P105. Mononucleotide repeat motifs were discarded since monomer runs are known to be the most frequent sequencing errors in Roche/454 data. For experimental validation of <italic>in silico </italic>detected SSRs, primers flanking the SSR motifs were designed using Primer3 [<xref ref-type="bibr" rid="B40">40</xref>]. Amplification of the fragments was performed in Lo7, Lo225, P87, and P105 as they are the parents of two mapping populations. Thus, polymorphisms detected between Lo7 and Lo225 and/or P87 and P105 enable the genetic mapping of discovered SSRs. PCR was conducted in a total volume of 20 &#x3BC;l, including 20 ng of genomic DNA, 1&#xD7; HotStar Taq PCR buffer (Qiagen, Hilden, Germany), 250 nM of each primer, 200 &#x3BC;M dNTPs, and 0.5 U HotStar Taq DNA polymerase (Qiagen, Hilden, Germany). Using a touch-down PCR profile, an initial denaturation step of 15 min at 95&#xB0;C was followed by 45 cycles of denaturation at 94&#xB0;C for 1 min, annealing for 1 min, and extension at 72&#xB0;C for 1 min. Annealing temperature was decreased by 1&#xB0;C per cycle from 65&#xB0;C to 55&#xB0;C and was kept constant for 35 subsequent cycles. A final extension step was performed at 72&#xB0;C for 10 min. Successful amplification was checked on 1.5% agarose gels.</p>
+        <p>For the discovery of SNPs in assembled sequences, a second assembly strategy was pursued. Reads assembled in line-specific contigs were selected from all reads and subjected to an overall assembly, merging the extracted reads of all five genotypes (Sce_Assembly02, Figure <xref ref-type="fig" rid="F1">1</xref>). With this strategy information about nucleotide coverage is maintained which is important for reliable SNP discovery. The Sce_Assembly02 is described in Additional file <xref ref-type="supplementary-material" rid="S2">2</xref> and is available from the GABI primary database <ext-link ext-link-type="uri" xlink:href="http://www.gabipd.org">http://www.gabipd.org</ext-link>. The workflow from <italic>in silico </italic>SNP discovery in the Sce_Assembly02 to selection of high confidence SNP candidates was a three-step procedure: First, the tool GigaBayes V0.4.1 [<xref ref-type="bibr" rid="B41">41</xref>] was applied with parameter settings given in Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>. Second, characteristics for discovered SNPs were extracted by in-house implementations to compute defined selection criteria for candidate SNPs. Candidate SNPs were filtered by these selection criteria to meet the following requirements: SNPs should be bi-allelic and polymorphic between parents of the two mapping populations Lo7 &#xD7; Lo225 and/or P87 &#xD7; P105. For successful probe design they should have a distance to homopolymeres &gt; 5 bp, to the next Indel &gt; 60 bp, and to the contig end &gt; 60 bp. Third, filtered SNPs were manually inspected in the assembled sequences using EagleView [<xref ref-type="bibr" rid="B42">42</xref>] to ensure high quality of the SNP genotyping array. We considered putative sequencing errors, SNP position in individual reads, and haplotype information. Oligo-probes for 5,234 SNP were designed and the Rye5K array was produced by Illumina Inc. (San Diego, USA) as Infinium iSelect HD Custom BeadChip. To demonstrate genome-wide coverage of the SNPs represented on the genotyping array SNP containing contig sequences were <italic>in silico </italic>mapped against the <italic>Brachypodium </italic>genome by BlastN analysis.</p>
+        <p>SNP array performance was assessed by analyzing 59 rye inbred lines including the five inbred lines used for sequencing as well as accessions from barley (Barke, Morex, OWB Dom, OWB Rec, Steptoe), wheat (Chinese Spring, Dream, Mulgara), and triticale (Modus, breeding line SaKa3006). A total of 300 ng genomic DNA per plant was used for genotyping on the Illumina iScan platform and the Infinium HD assay following manufacturer's protocol. The fluorescence images of an array matrix carrying Cy3- and Cy5-labeled beads were generated with the two-channel scanner. Raw hybridization intensity data processing, clustering and genotype calling (AA, AB, BB) were performed using the genotyping module in the GenomeStudio software V2009.1 (Illumina, San Diego, USA). Genotype data were cleaned through exclusion of all SNP assays with more than 5% missing data. Frequencies of the A and B allele for a given SNP were calculated directly by dividing the number of occurrences of one allele (AA + 1/2 AB or BB + 1/2 AB) by twice the number of assayed lines per SNP. Residual heterozygosity of 59 inbred lines was calculated by the relation of heterozygous SNPs (AB) to the number of assayed SNPs per inbred line. Significant deviation of the observed value from the expected value was tested with an exact binomial test using R [<xref ref-type="bibr" rid="B43">43</xref>]. Genotyping data of the 10 non-rye accessions were analyzed to investigate the applicability of the Rye5K SNP array to other small grain cereals.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Results</title>
+      <sec>
+        <title>Establishment and description of the rye EST resource</title>
+        <sec>
+          <title>Assembly</title>
+          <p>The five independent sequencing runs produced between 364,343 and 681,787 reads corresponding to ~87 and ~166 Mb of raw data per inbred line (Table <xref ref-type="table" rid="T1">1</xref>). Subsequent quality filtering and removal of sequencing adapters and cDNA synthesis primers resulted in ~75 to ~145 Mb of high quality sequences per inbred line with median read lengths between 213 and 222 bp. Overall, 2,573,590 high quality reads with a median length of 216 nucleotides were obtained, totalling 548 Mb. The quality filtered reads of the five line-specific cDNA libraries were assembled separately generating between 51,462 and 78,813 contig sequences per line-specific assembly, summing up to 338,536 contigs (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>). On average each nucleotide in the five line-specific assemblies was covered by 4.5 to 6.2 reads.</p>
+          <table-wrap id="T1" position="float">
+            <label>Table 1</label>
+            <caption>
+              <p>Descriptive statistics of five independent Roche/454 GS FLX sequencing runs.</p>
+            </caption>
+            <table frame="hsides" rules="groups">
+              <thead>
+                <tr>
+                  <th/>
+                  <th align="center" colspan="5">Inbred line</th>
+                </tr>
+                <tr>
+                  <th/>
+                  <th colspan="5">
+                    <hr/>
+                  </th>
+                </tr>
+                <tr>
+                  <th/>
+                  <th align="right">&#x2003;Lo7</th>
+                  <th align="right">&#x2003;Lo152</th>
+                  <th align="right">&#x2003;Lo225</th>
+                  <th align="right">&#x2003;P87</th>
+                  <th align="right">&#x2003;P105</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <bold>Raw sequence data</bold>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Number of sequences</td>
+                  <td align="right">&#x2003;364,343</td>
+                  <td align="right">&#x2003;469,345</td>
+                  <td align="right">&#x2003;572,518</td>
+                  <td align="right">&#x2003;488,829</td>
+                  <td align="right">&#x2003;681,787</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Average read length [bp]</td>
+                  <td align="right">&#x2003;239</td>
+                  <td align="right">&#x2003;248</td>
+                  <td align="right">&#x2003;242</td>
+                  <td align="right">&#x2003;240</td>
+                  <td align="right">&#x2003;244</td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <bold>After quality filtering</bold>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Number of sequences</td>
+                  <td align="right">&#x2003;363,681</td>
+                  <td align="right">&#x2003;469,208</td>
+                  <td align="right">&#x2003;571,433</td>
+                  <td align="right">&#x2003;488,132</td>
+                  <td align="right">&#x2003;681,136</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Average read length [bp]</td>
+                  <td align="right">&#x2003;207</td>
+                  <td align="right">&#x2003;220</td>
+                  <td align="right">&#x2003;213</td>
+                  <td align="right">&#x2003;208</td>
+                  <td align="right">&#x2003;214</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Total bp</td>
+                  <td align="right">&#x2003;75,281,967</td>
+                  <td align="right">&#x2003;103,225,760</td>
+                  <td align="right">&#x2003;121,715,229</td>
+                  <td align="right">&#x2003;101,531,456</td>
+                  <td align="right">&#x2003;145,763,104</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;25% quantile [bp]</td>
+                  <td align="right">&#x2003;203</td>
+                  <td align="right">&#x2003;210</td>
+                  <td align="right">&#x2003;208</td>
+                  <td align="right">&#x2003;203</td>
+                  <td align="right">&#x2003;207</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Median [bp]</td>
+                  <td align="right">&#x2003;213</td>
+                  <td align="right">&#x2003;222</td>
+                  <td align="right">&#x2003;218</td>
+                  <td align="right">&#x2003;213</td>
+                  <td align="right">&#x2003;217</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;75% quantile [bp]</td>
+                  <td align="right">&#x2003;223</td>
+                  <td align="right">&#x2003;236</td>
+                  <td align="right">&#x2003;229</td>
+                  <td align="right">&#x2003;223</td>
+                  <td align="right">&#x2003;228</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+          <p>Consensus sequences created by multiple assembly programs and merged by CAP3 were used to generate the Sce_Assembly03 (Figure <xref ref-type="fig" rid="F1">1</xref>, Table <xref ref-type="table" rid="T2">2</xref>). 89.0% of the reads were assembled into contigs originating from two, three, four, or five inbred lines (multi-line contigs) or from one single inbred line (single-line contigs), respectively. The Sce_Assembly03 resulted in 115,400 sequences including 33,352 multi-line contigs (77.8% of all reads) and 82,048 single-line contigs (11.1% of all reads). 11.0% of all reads failed the quality criteria and were removed from the assembly. The multi-line contig sequence length ranged from 201 bp to 8,636 bp with a L50 length of 1,070 bp. On average, each contig was built from sixty reads in the multi-line contigs and three reads in the single-line contigs.</p>
+          <fig id="F1" position="float">
+            <label>Figure 1</label>
+            <caption>
+              <p><bold>Pipeline for the assembly procedure of Roche/454 sequence reads</bold>. After data generation [A], sequence (fasta), quality (qual) and trace file information were extracted. Low quality regions, vector and adaptor sequences were removed from raw reads [B]. Preprocessing was finished by subjecting trimmed reads to the line-specific assembly. For establishment of the SNP resource Sce_Assembly02 [C] only reads assembled in contigs of line-specific assemblies were subjected to the merging process of the second assembly using Mira. For establishment of the EST resource Sce_Assembly03 [D] assemblies were computed for each of the five lines separately with CLC assembly cell, Mira, and Newbler and merged by CAP3 assembly. Consensus sequences of all lines were passed to a second CAP3 assembly combining sequences over multiple lines. The resulting sequence set comprises contigs that were confirmed by consensus sequences from two to five lines (multi-line contigs) or contigs that contain reads originating from one line (single-line contigs).</p>
+            </caption>
+            <graphic xlink:href="1471-2229-11-131-1"/>
+          </fig>
+          <table-wrap id="T2" position="float">
+            <label>Table 2</label>
+            <caption>
+              <p>Description of the Sce_Assembly03.</p>
+            </caption>
+            <table frame="hsides" rules="groups">
+              <thead>
+                <tr>
+                  <th/>
+                  <th align="right">Multi-line contigs</th>
+                  <th align="right">Single-line contigs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <bold>Number of reads</bold>
+                  </td>
+                  <td align="right">2,000,855</td>
+                  <td align="right">286,386</td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <bold>Number of reads/contig</bold>
+                  </td>
+                  <td align="right">60</td>
+                  <td align="right">3</td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <bold>L30 [bp]</bold>
+                  </td>
+                  <td align="right">1,527</td>
+                  <td align="right">505</td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <bold>L50 [bp]</bold>
+                  </td>
+                  <td align="right">1,070</td>
+                  <td align="right">333</td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <bold>L70 [bp]</bold>
+                  </td>
+                  <td align="right">727</td>
+                  <td align="right">247</td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <bold>Number of contigs</bold>
+                  </td>
+                  <td align="right">33,352</td>
+                  <td align="right">82,048</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;&lt; 500 bp</td>
+                  <td align="right">11,188</td>
+                  <td align="right">71,581</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;501-1000 bp</td>
+                  <td align="right">12,679</td>
+                  <td align="right">8,347</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;1001-2000 bp</td>
+                  <td align="right">7,693</td>
+                  <td align="right">1,952</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;2001-5000 bp</td>
+                  <td align="right">1,767</td>
+                  <td align="right">166</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;&gt; 5000 bp</td>
+                  <td align="right">25</td>
+                  <td align="right">2</td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <bold>Longest sequence [bp]</bold>
+                  </td>
+                  <td align="right">8,636</td>
+                  <td align="right">5,721</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </sec>
+        <sec>
+          <title>Sequence comparisons</title>
+          <p>We compared the five line-specific assemblies generated by CAP3 against each other and against the multi-line and single-line consensus sequences of the Sce_Assembly03 (Table <xref ref-type="table" rid="T3">3</xref>). This revealed 52.16% to 78.72% hits between the line-specific assemblies. BlastN analysis of the line-specific assemblies against the multi-line contigs reached up to 87.79% hits. Thus, as expected, a large overlap of represented genes between single-line assemblies can be concluded. However, the remaining 12.21% revealed either pronounced sequence differences (highly polymorphic genes/alleles) or genes that are represented (expressed) in only one of the five rye inbred line samples.</p>
+          <table-wrap id="T3" position="float">
+            <label>Table 3</label>
+            <caption>
+              <p>BlastN comparisons of the five line-specific assemblies generated with CAP3 and the Sce_Assembly03.</p>
+            </caption>
+            <table frame="hsides" rules="groups">
+              <thead>
+                <tr>
+                  <th/>
+                  <th align="left" colspan="7">Query</th>
+                </tr>
+                <tr>
+                  <th/>
+                  <th align="left" colspan="5">
+                    <underline>Line-specific assembly</underline>
+                  </th>
+                  <th align="left" colspan="2">
+                    <underline>Sce_Assembly03</underline>
+                  </th>
+                </tr>
+                <tr>
+                  <th align="left">Subject</th>
+                  <th align="left">Lo7</th>
+                  <th align="left">Lo152</th>
+                  <th align="left">Lo225</th>
+                  <th align="left">P87</th>
+                  <th align="left">P105</th>
+                  <th align="left">Multi-line contigs</th>
+                  <th align="left">Single-line contigs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <bold>
+                      <underline>Line-specific assembly</underline>
+                    </bold>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Lo7</td>
+                  <td/>
+                  <td align="left">52.2</td>
+                  <td align="left">56.1</td>
+                  <td align="left">61.8</td>
+                  <td align="left">56.9</td>
+                  <td align="left">76.1</td>
+                  <td align="left">35.5</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Lo152</td>
+                  <td align="left">67.7</td>
+                  <td/>
+                  <td align="left">54.3</td>
+                  <td align="left">59.6</td>
+                  <td align="left">56.0</td>
+                  <td align="left">77.1</td>
+                  <td align="left">49.5</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Lo225</td>
+                  <td align="left">77.6</td>
+                  <td align="left">58.3</td>
+                  <td/>
+                  <td align="left">68.7</td>
+                  <td align="left">63.8</td>
+                  <td align="left">84.2</td>
+                  <td align="left">53.5</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;P87</td>
+                  <td align="left">74.4</td>
+                  <td align="left">55.4</td>
+                  <td align="left">59.9</td>
+                  <td/>
+                  <td align="left">60.9</td>
+                  <td align="left">82.8</td>
+                  <td align="left">40.6</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;P105</td>
+                  <td align="left">78.7</td>
+                  <td align="left">59.5</td>
+                  <td align="left">63.8</td>
+                  <td align="left">70.2</td>
+                  <td/>
+                  <td align="left">87.8</td>
+                  <td align="left">47.5</td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <bold>Sce_Assembly03</bold>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Multi-line contigs</td>
+                  <td align="left">85.2</td>
+                  <td align="left">64.4</td>
+                  <td align="left">69.6</td>
+                  <td align="left">78.0</td>
+                  <td align="left">72.3</td>
+                  <td/>
+                  <td align="left">35.3</td>
+                </tr>
+                <tr>
+                  <td align="left">&#x2003;Single-line contigs</td>
+                  <td align="left">59.1</td>
+                  <td align="left">64.4</td>
+                  <td align="left">67.3</td>
+                  <td align="left">59.2</td>
+                  <td align="left">62.4</td>
+                  <td align="left">58.5</td>
+                  <td/>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <p>Values show percent hits of query sequences counting the first best hit in each comparison.</p>
+            </table-wrap-foot>
+          </table-wrap>
+          <p>The sequence homology between the line-specific assemblies and the Sce_Assembly03 with the reference genomes of <italic>Brachypodium</italic>, maize, rice, and sorghum, and available flcDNA and EST collections from wheat and barley, respectively, was investigated by (t)BlastX comparisons (Figure <xref ref-type="fig" rid="F2">2</xref>). Most homologs were identified in comparison to barley sequences, followed by <italic>Brachypodium</italic>, wheat, sorghum, maize and rice. Contig sequences of the line-specific assemblies and multi-line contigs of the Sce_Assembly03 showed a high homology to the public sequence databases. Low homology was detected for the single-line contigs of the Sce_Assembly03. This finding can be attributed to the sequence length which is about two thirds shorter than that of multi-line contigs (Table <xref ref-type="table" rid="T2">2</xref>). Multi-line contigs of the Sce_Assembly03 yielded more than 65% hits with either barley or wheat flcDNA and HarvEST assemblies (data not shown). Through tBlastX comparisons of the Sce_Assembly03 against the genome sequences of <italic>Brachypodium</italic>, maize, sorghum, and rice we were able to tag fragments from about 46.3%, 35.9%, 37.2% and 36.2% of the reference gene repertoires. From 33,352 multi-line and 82,048 single-line contigs 22,926 (68.7%) and 23,406 (28.5%) revealed a hit to at least one of the public grass sequence resources. The genes comprised in the rye cDNA libraries indicated no bias for or against a certain region of the rye genome when comparing the Sce_Assembly03 contig sequences to the <italic>Brachypodium </italic>genome (Additional file <xref ref-type="supplementary-material" rid="S4">4</xref>). The dense gene content in the distal regions of the <italic>Brachypodium </italic>chromosomes as well as the gene poor regions around the centromeres were well covered by Sce_Assembly03 contig sequences.</p>
+          <fig id="F2" position="float">
+            <label>Figure 2</label>
+            <caption>
+              <p><bold>Heatmap of (t)BlastX analysis results to public model grass genomes and <italic>Triticeae </italic>EST and full length cDNA (flcDNA) resources</bold>. Contig sequences from the line-specific assemblies generated by CAP3 and the Sce_Assembly03 were aligned to public barley and wheat EST and flcDNA sequences and to <italic>Brachypodium</italic>, maize, rice, and sorghum genomic sequences. Percent hits to individual databases were counted using a 70% similarity cutoff and visualized in colours (colour code shown on the right).</p>
+            </caption>
+            <graphic xlink:href="1471-2229-11-131-2"/>
+          </fig>
+        </sec>
+        <sec>
+          <title>Functional gene annotation</title>
+          <p>After masking repetitive sequences of the Sce_Assembly03 111,150 sequences (32,725 multi-line and 78,425 single-line contigs) remained for Blast2GO analysis. Out of these sequences 49,294 revealed a hit against the nr database and subsequently 35,356 (71.7%) unique rye contig sequences (16,970 multi-line and 18,386 single-line contigs) were assigned to one or more GO annotations. In total 35,186, 38,280 and 51,950 GO terms were obtained for biological processes, cellular components and molecular functions, respectively (Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>). Across the three GO categories, 4,997 unique GO terms were identified. More than 350 sequences in the Sce_Assembly03 were related to biotic and abiotic stress response (data not shown).</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Marker discovery, SNP array design and high-throughput genotyping</title>
+        <sec>
+          <title>SSR marker development</title>
+          <p>Within the 338,536 contigs of the line-specific assemblies a fraction of 12,317 (3.6%) contigs contained SSR motifs. Primer sequences could be designed for 5,230 of these contigs. Restriction to di-, tri-, tetra-, penta- or hexa-nucleotide motifs reduced the number of SSR candidates to 3,799. Cross-match analysis filtered a final SSR dataset comprising 1,385 unique, non-redundant SSRs (Additional file <xref ref-type="supplementary-material" rid="S6">6</xref>). A random subset of 155 SSRs was chosen for experimental validation by PCR amplification of the four parental genotypes Lo7, Lo225, P87, and P105. 146 primer pairs (94%) immediately amplified fragments of expected size without further optimization of PCR conditions. Twelve primer combinations produced fragments larger than expected indicating the presence of introns. These were excluded from further analyses. Finally, 61 (46%) out of 134 PCR products with expected fragment size revealed naked-eye polymorphisms on agarose gels between either P87 and P105 (29) or Lo7 and Lo225 (37).</p>
+        </sec>
+        <sec>
+          <title>SNP discovery</title>
+          <p>SNP discovery requires sufficient coverage with high quality sequence reads in order to allow for distinguishing true SNPs from sequencing errors. Therefore, the assembly Sce_Assembly02 was performed that excluded singletons from the line-specific assemblies when merging sequences of the five inbred lines. Overall 277,033 putative polymorphisms in 138,339 contigs cumulating 55 Mb consensus sequences were identified in a first data mining step using GigaBayes. The number of SNP candidates was reduced to 17,917 by filtering those SNPs that fulfilled the selection criteria and quality requirements such as bi-allelic and polymorphic between parents of the two mapping populations Lo7 &#xD7; Lo225 and/or P87 &#xD7; P105, distance to homopolymeres &gt; 5 bp, distance to the next Indel &gt; 60 bp, and distance to the contig end &gt; 60 bp. Subsequent manual inspection in the Sce_Assembly02 reduced the dataset to 5,211 SNP candidates from 3,961 contigs. This dataset together with additional 23 SNPs discovered in non-public rye sequences was used for the design and production of the Rye5K SNP genotyping array. Out of the 3,961 unique contigs, 2,835 contigs (71.6%) were <italic>in silico </italic>mapped to the <italic>Brachypodium </italic>genome. The contigs were evenly distributed with 826, 641, 688, 416, and 262 hits on chromosomes Bd1 to 5, respectively (Additional file <xref ref-type="supplementary-material" rid="S4">4</xref>). Blast2GO analysis of 3,961 contig sequences represented on the Rye5K array assigned 2,096 sequences with associated GO identifiers (Additional file <xref ref-type="supplementary-material" rid="S7">7</xref>).</p>
+        </sec>
+        <sec>
+          <title>Application of the Rye5K SNP array</title>
+          <p>The performance of the Rye5K SNP array was tested on the five inbred lines selected for RNA-<italic>seq</italic>, 54 additional rye inbred lines, and 10 non-rye accessions. Out of the 5,234 SNPs, 4,557 (87%) generated signals and between 2,970 (57%) and 3,148 (60%) were successfully called for the 59 rye inbred lines representing the hybrid rye seed parent and pollen parent pools (Table <xref ref-type="table" rid="T4">4</xref> Additional file <xref ref-type="supplementary-material" rid="S8">8</xref>). Based on genotyping results for the five inbred lines used for SNP discovery, 3% of the <italic>in silico </italic>detected SNPs turned out to be false positives. Allele frequencies in rye were evenly distributed from 0.1 to 0.9 (Figure <xref ref-type="fig" rid="F3">3</xref>). A small proportion of 12.3% called SNPs turned out to be monomorphic in the independent set of 54 inbred lines not used for SNP discovery with slightly increasing values when looking separately at the pollen parent (15.7%) and the seed parent (13.7%) pools.</p>
+          <table-wrap id="T4" position="float">
+            <label>Table 4</label>
+            <caption>
+              <p>Heterozygosity of five sequenced rye inbred lines after genotyping with the Rye5K array.</p>
+            </caption>
+            <table frame="hsides" rules="groups">
+              <thead>
+                <tr>
+                  <th/>
+                  <th align="center" colspan="5">Inbred line</th>
+                </tr>
+                <tr>
+                  <th/>
+                  <th colspan="5">
+                    <hr/>
+                  </th>
+                </tr>
+                <tr>
+                  <th/>
+                  <th align="right">Lo7</th>
+                  <th align="right">Lo152</th>
+                  <th align="right">Lo225</th>
+                  <th align="right">P87</th>
+                  <th align="right">P105</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left">Loci total</td>
+                  <td align="right">3,145</td>
+                  <td align="right">3,133</td>
+                  <td align="right">3,134</td>
+                  <td align="right">3,148</td>
+                  <td align="right">3,127</td>
+                </tr>
+                <tr>
+                  <td align="left">Homozygous loci</td>
+                  <td align="right">3,004</td>
+                  <td align="right">3,005</td>
+                  <td align="right">2,987</td>
+                  <td align="right">2,997</td>
+                  <td align="right">2,988</td>
+                </tr>
+                <tr>
+                  <td align="left">Heterozygous loci</td>
+                  <td align="right">141</td>
+                  <td align="right">128</td>
+                  <td align="right">147</td>
+                  <td align="right">151</td>
+                  <td align="right">139</td>
+                </tr>
+                <tr>
+                  <td align="left">Generation</td>
+                  <td align="right">F<sub>7</sub></td>
+                  <td align="right">F<sub>7</sub></td>
+                  <td align="right">F<sub>7</sub></td>
+                  <td align="right">F<sub>7:10</sub></td>
+                  <td align="right">F<sub>6:9</sub></td>
+                </tr>
+                <tr>
+                  <td align="left">Expected heterozygosity [%]</td>
+                  <td align="right">1.6</td>
+                  <td align="right">1.6</td>
+                  <td align="right">1.6</td>
+                  <td align="right">1.6</td>
+                  <td align="right">3.1</td>
+                </tr>
+                <tr>
+                  <td align="left">Observed heterozygosity [%]</td>
+                  <td align="right">4.5***</td>
+                  <td align="right">4.1***</td>
+                  <td align="right">4.7***</td>
+                  <td align="right">4.8***</td>
+                  <td align="right">4.4*</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <p>Significant (***: <italic>p</italic>-value &lt; 0.01, *: <italic>p</italic>-value &lt; 0.05) deviation from the expected level of heterozygosity is indicated.</p>
+            </table-wrap-foot>
+          </table-wrap>
+          <fig id="F3" position="float">
+            <label>Figure 3</label>
+            <caption>
+              <p><bold>Distribution of allele frequencies for evaluable SNPs on the Rye5K SNP array</bold>. Allele frequencies observed in total and separately in the rye breeding seed parent and pollen parent pools belong to one category if the value is &gt; the left category border and &#x2264; the right category border. Allele frequency values equal to 0 and 1 fall into the first and last category, respectively.</p>
+            </caption>
+            <graphic xlink:href="1471-2229-11-131-3"/>
+          </fig>
+          <p>Genotyping data were used to calculate the observed residual heterozygosity of the rye inbred lines. The observed percentage of heterozygous loci for each line varied between 4.1 and 4.8% in the five rye inbred lines used for 454 sequencing and between 4.0 to 20.4% in the 54 inbred lines from the two heterotic breeding pools. On average, a higher level of residual heterozygosity was observed for the pollen parent pool (11.5%) than for the seed parent pool (5.5%).</p>
+          <p>Applicability of the Rye5K SNP array to other small grain cereals was investigated. Out of the 4,557 SNP assays that generated a signal in rye, 63.0% (2,871), 75.8% (3,452), and 84.1% (3,831) could be scored in barley, wheat, and triticale, respectively. However, 86.7, 91.6, and 76.5% of the scored SNPs did not show a polymorphism between the investigated barley, wheat, and triticale accessions.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <title>Discussion</title>
+      <sec>
+        <title>Dual-purpose transcriptome sequencing</title>
+        <p>In this study we report the establishment of rye genomic resources comprising 115,400 EST sequences, 1,385 SSRs, more than 5,000 SNPs, and the Rye5K SNP array for large-scale genotyping. NGS was used to generate transcriptome sequences of the five rye inbred lines Lo7, Lo152, Lo225, P87, and P105. The number of reads per sequencing run of the present study was in line or even surpassed results obtained in other studies [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B44">44</xref>]. Due to the massive number of 2.5 Mio read sequences obtained by 454 sequencing the <italic>de novo </italic>assembly of such datasets remains a computational and bioinformatic challenge. Two purpose-oriented assembly strategies were followed in order to first provide a comprehensive EST resource and second enable discovery of polymorphisms between inbred lines. A second assembly on top of the five line-specific assemblies reduced the possibility of creating chimeric artefacts in the Sce_Assembly03. In addition, sequence redundancy introduced by variations between lines is removed. This was achieved by bringing together related sequences while accepting line specific nucleotide differences. In contrast this fact was essential for SNP detection, where only reads that were pre-assembled in line-specific contigs were subjected to the Sce_Assembly02. Thus, information about allele coverage at the SNP position was retained which increased the reliability of SNP candidates. A challenge in our study was the detection of SNPs without a reference sequence. Many SNP detection tools such as GMAP [<xref ref-type="bibr" rid="B45">45</xref>] or MAQ [<xref ref-type="bibr" rid="B46">46</xref>] are only applicable to <italic>de novo </italic>assemblies that are aligned to a reference sequence. This was a strong challenge in our approach and much effort was invested in the detection of high confidence SNPs. Manual inspection of SNP candidates in more than 10,000 contigs indicated that many sequencing errors occurred in the beginning of read sequences which, as a consequence, lead to false positives. Exclusion of SNP candidates detected in such regions of read sequences might reduce the false positive rate and improve automated tools that detect polymorphisms in <italic>de novo </italic>assembled sequence data without a reference sequence.</p>
+        <p>Genome sequencing has progressed rapidly in model plants. Given the increased sequencing throughput and the decreasing costs, NGS technologies pave the way for sequencing even large genomes [<xref ref-type="bibr" rid="B47">47</xref>-<xref ref-type="bibr" rid="B49">49</xref>]. Although of major importance for research and breeding, sequence resources for rye were sparse imposing serious limitations for trait mapping, association studies, and functional genomics in rye. Rye is of interest especially for Middle and Eastern European economic markets due to its high tolerance to abiotic stresses. As a first step towards deciphering the rye genome we aimed to sequence a large portion of the rye transcriptome. To achieve this we first sampled RNA from plants under various stress conditions, different plant tissues and developmental stages. Rye-specific sequences e.g. related to stress tolerance were generated in the present study which are indispensable for functional genomic studies in rye. Second, we reduced the complexity of the transcriptome by cDNA normalization prior to sequencing. cDNA normalization lead to a significant increase in transcriptome sequencing efficiency by equalizing the representation of high, medium and rarely expressed transcripts in the cDNA population [<xref ref-type="bibr" rid="B50">50</xref>-<xref ref-type="bibr" rid="B52">52</xref>]. Since many transcripts are temporally and/or spatially expressed during plant development, RNA pooled from different tissues at different developmental stages ensured the coverage of temporal- and spatial-specific transcripts.</p>
+      </sec>
+      <sec>
+        <title>Linking rye to grass genome sequence resources</title>
+        <p>To assess, how much of the rye transcriptome is represented by the established EST resource, we compared the Sce_Assembly03 sequences to currently available grass genome, flcDNA, and EST sequences. Generally, the number of sequences with significant BlastX hit in public databases was higher for multi-line contigs than for single-line contigs. This finding is in line with results of Schafleitner et al. [<xref ref-type="bibr" rid="B53">53</xref>] who compared EST sequences of sweet potato (<italic>Ipomea batatas</italic>) with sequences contained in the UniRef100 protein database.</p>
+        <p>The overall gene content across the grass subfamilies <italic>Ehrhartoideae </italic>(rice), <italic>Panicoideae </italic>(maize, sorghum), and <italic>Pooideae </italic>[<xref ref-type="bibr" rid="B6">6</xref>] is in a similar range. A total of 25,532 protein coding gene loci were found for <italic>Brachypodium </italic>[<xref ref-type="bibr" rid="B6">6</xref>] which is in line with rice [RAP2, 28,236 protein coding gene loci, [<xref ref-type="bibr" rid="B32">32</xref>]], maize [ZmB73_v5b.60, 39,656 protein coding loci, [<xref ref-type="bibr" rid="B7">7</xref>]], and sorghum [v1.4, 27,640 protein coding gene loci, [<xref ref-type="bibr" rid="B5">5</xref>]]. Due to a close evolutionary relationship with these model genomes a pronounced overlap with rye transcripts was expected. The comparison of the Sce_Assembly03 against flcDNA, EST, and genomic sequences revealed a higher homology to barley, <italic>Brachypodium</italic>, and wheat than to maize, rice, and sorghum which was expected, as rye is phylogenetically more closely related to other members of the <italic>Pooideae </italic>than to maize, rice, and sorghum [<xref ref-type="bibr" rid="B54">54</xref>,<xref ref-type="bibr" rid="B55">55</xref>]. The GO annotation analysis reveals that a broad spectrum of genes was sampled in our normalized cDNA pool from multiple tissues and developmental stages. The large number of reads generated by 454 sequencing entails a substantial gain at the level of gene discovery which provides a valuable resource for forward and reverse genetics approaches in rye as well as for comparative gene analyses. A significant fraction of multi-line contigs (31%) gave no hits with the public grass sequence resources. In part this finding can be attributed to species specific and tribe specific genes and gene families. The <italic>Pooideae </italic>contain 265 subfamily-specific gene families leading to subfamily-specific Blast hits [<xref ref-type="bibr" rid="B6">6</xref>]. Given our stringent BlastX/tBlastX cut-off value of &gt; 70% sequence identity, non-conserved and non-coding sequences such as 3'- or 5'- untranslated regions and non-coding RNAs are assumed to contribute to the fraction that lacks homology with other grass species. Around 2% of all rye 454 reads revealed hits to the MIPS Repeat Element database [<xref ref-type="bibr" rid="B36">36</xref>], suggesting that transcriptional activity of retrotransposons contributed to the sampled RNA pool. Transcriptome sequencing in two rice subspecies detected alternative splicing patterns in about half of the rice genes and more than 15,000 novel transcriptional active regions of which more than half had no homolog in public protein data [<xref ref-type="bibr" rid="B56">56</xref>]. This might suggest that the rye EST resource contains rare, tissue-specific and/or stress-related transcripts that are not represented in sequence resources of the closely related species wheat and barley despite their extensive EST resources. It is anticipated that rye transcriptome sequence analysis will greatly benefit from a reference genome sequence for a member of the <italic>Triticeae </italic>family. Whole genome sequencing is in progress for barley [<xref ref-type="bibr" rid="B49">49</xref>,<xref ref-type="bibr" rid="B57">57</xref>] and wheat [<xref ref-type="bibr" rid="B58">58</xref>] and exploratory BAC end sequencing of rye 1RS-specific BAC libraries [<xref ref-type="bibr" rid="B59">59</xref>] has been reported. <italic>In silico </italic>mapping of rye ESTs to the model genome of <italic>Brachypodium </italic>revealed an even distribution of rye transcripts when anchored to their <italic>Brachypodium </italic>homologs. The large extent of synteny between grass genomes will facilitate the construction of a virtual gene map of rye representing the ancestral gene scaffold. Genetic mapping of the SNPs represented on the Rye5K array and of SSRs developed from our rye ESTs is underway and will lead to fine-scale comparative maps between rye and other grasses. A fully annotated genome sequence for rye is still out of reach due to the complexity and highly repetitive nature of the rye genome. However, with the tools established in our study, rye catches up with other grass genome resources and a far more detailed glimpse into the rye genome and its evolution will be possible.</p>
+      </sec>
+      <sec>
+        <title>Molecular toolbox for rye</title>
+        <p>Sequence information of the five rye inbred lines was used to detect sequence variation that was transferred into more than 1,300 SSRs and about 5,000 SNPs. Molecular markers have been developed for a range of crop species and play an essential role in modern plant breeding. They have been used to monitor DNA sequence diversity within and among species, to identify genes responsible for desired traits, to disclose sources of genetic variation that allow for the production of new varieties by introducing favorable traits from landraces and related grass species, and to manage backcrossing programs [<xref ref-type="bibr" rid="B60">60</xref>]. Together with amplified fragment length polymorphisms (AFLPs), SSRs are currently the most popular marker system in cereals. They have been developed for major crop plants including cereals and when applied in breeding programs this marker system is predicted to lead to accelerated progress [<xref ref-type="bibr" rid="B61">61</xref>]. Currently, the availability of public rye SSRs is very limited. Our resource significantly increases this marker resource that might facilitate the assessment of genetic variability and the estimation of genetic distances between populations. Besides SSRs the marker system receiving the greatest attention nowadays are SNPs [<xref ref-type="bibr" rid="B62">62</xref>]. SNPs have shown huge potential in highly efficient fingerprinting, genetic map construction, marker assisted selection as well as population and evolutionary genetics. The Rye5K SNP array provides a powerful new resource for large-scale genotyping in molecular and genome-centric research in rye. Recently whole-genome genotyping arrays became available for crops and livestock and are used for genome-wide association studies and to investigate genetic variation [e.g. [<xref ref-type="bibr" rid="B63">63</xref>]]. In a pilot experiment, we analyzed 59 rye inbred lines including the five lines used for sequencing with the Rye5K SNP array to estimate the degree of residual heterozygosity. Theoretical expectation after two, three or six cycles of selfing is about 12.5%, 6.3%, and 1.6%, respectively. Genotyping of these 59 lines using the Rye5K array showed that the degree of heterozygosity significantly (<italic>p</italic>-value &lt; 0.05) exceeds this theoretical expectation. This might be in part explained by the allogamous behaviour of rye resulting in remaining heterozygosity [<xref ref-type="bibr" rid="B64">64</xref>]. Despite forced selfing during inbred line production some degree of cross-pollination cannot be excluded as the seed was produced as single-ear progenies in a commercial breeding program. The lower levels of residual heterozygosity observed for the seed parent pool is in agreement with the higher advanced selfing generations in rye seed parent lines (P. Wilde, personal communication). A detailed analysis of sequences that remained heterozygous indicated sequences belonging to large gene families, such as transferases and hydroxylases. Detection of SNPs in paralogs or members of gene families may mimic a substantial part of the detected heterozygosity, thus leading to an overestimation of the true remaining heterozygosity in the rye inbred lines.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Conclusions</title>
+      <p>In conclusion, the Sce_Assembly03 provides a new and comprehensive EST resource that integrates rye in the comparative analysis between small grain cereals. The Rye5K SNP array allows the analysis of large sets of individuals to obtain genotyping data for association studies, estimating linkage disequilibrium, and population genetic approaches. Our genomic resources comprise 115,400 EST sequences, 1,385 SSRs, more than 5,000 SNPs, and the Rye5K SNP array for large-scale genotyping that will improve and promote genetic and genomic research as well as genome-based breeding in rye.</p>
+    </sec>
+    <sec>
+      <title>Authors' contributions</title>
+      <p>GH prepared the sequencing samples, participated in the bioinformatic analyses, conducted the genotyping, and evaluated the genotyping data. TS, MM, and US carried out the processing and assembly of 454 reads and gave the descriptive statistics for them. KFXM and MS performed the BLAST analyses, functional annotations, and sequence comparisons along the <italic>Brachypodium </italic>chromosomes. NS and RZ developed and examined the SSR markers. EB, GH, and TS developed the Rye5k SNP array. CCS, EB, KFXM, NS, and US designed the study. EB, GH, MS, RZ, and TS drafted the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>Set of plant tissues for RNA extraction</bold>. RNA of each rye inbred line was extracted from plant tissues exposed to various stress treatments and harvested at different developmental stages.</p>
+        </caption>
+        <media xlink:href="1471-2229-11-131-S1.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p><bold>Establishment and description of the Sce_Assembly02 generated for <italic>in silico </italic>SNP mining</bold>. The Sce_Assembly02 was performed in three steps using the MIRA assembler V2.9 on integrated standard settings: Firstly, raw sequence reads surpassed a quality filtering process where 454 sequencing adapter and cDNA synthesis primer sequences as well as low quality reads were removed. Secondly, the cleaned and trimmed sequence reads were subjected to a line-specific assembly where reads of each inbred line were aligned in a separate assembly run. Non-aligned reads in the line-specific assemblies, i.e. singletons, were rejected. Thirdly, those reads that merged into contigs in the line-specific assemblies were moved further to the Sce_Assembly02 starting again with the cleaned and trimmed reads, but now from all five inbred lines. This strategy resulted in contig sequences that were used for SNP detection and subsequently for the design of the high-throughput genotyping SNP array. With regard to SNP discovery this assembly allowed the deduction of critical information about the SNP position like allele coverage.</p>
+        </caption>
+        <media xlink:href="1471-2229-11-131-S2.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p><bold>GigaBayes parameters</bold>. Only parameters different from GigaBayes program default settings are listed.</p>
+        </caption>
+        <media xlink:href="1471-2229-11-131-S3.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S4">
+        <caption>
+          <title>Additional file 4</title>
+          <p><bold>Association of multi-line and single-line contigs of the Sce_Assembly03 to the <italic>Brachypodium </italic>chromosomes Bd1 to Bd5</bold>. The four heatmaps per chromosome are depicting the density of <italic>Brachypodium </italic>genes, homologous rye sequences, contigs represented on the Rye5k SNP array, and SNPs that were heterozygous among 59 rye inbred lines (from top to bottom) by going along the <italic>Brachypodium </italic>chromosomes in a sliding window with 0.5 Mb window size and a 0.1 Mb shift and determining for each window the number and percent bp coverage of the respective tagged genes. The density values were corrected for the number of Ns per window, if the N content exceeded 60% the value was set to zero and drawn in white color. The number was extrapolated to number per Mb to facilitate comparisons. The heatmaps were created from density values using the Python pylab module in combination with the jet colormap (low to high values from blue to red). Minimum, maximum, and mean number of genes/Mb in <italic>Brachypodium </italic>and hits/Mb in rye, respectively, were given on the left of each map. The ruler on top gives the chromosome length in Mb.</p>
+        </caption>
+        <media xlink:href="1471-2229-11-131-S4.PNG" mimetype="image" mime-subtype="png">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S5">
+        <caption>
+          <title>Additional file 5</title>
+          <p><bold>GO categories found in the Sce_Assembly03 multi-line and single-line contig sequences on Blast2GO level 2</bold>. Categories with an occurrence less than 0.05% were summarized in "others".</p>
+        </caption>
+        <media xlink:href="1471-2229-11-131-S5.PNG" mimetype="image" mime-subtype="png">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S6">
+        <caption>
+          <title>Additional file 6</title>
+          <p><bold>SSR motifs detected in 338,536 contigs of the five line-specific assemblies</bold>. Mononucleotide repeat motifs were discarded. Mixed motifs describe two close SSR motifs which are separated by less than 100 bp.</p>
+        </caption>
+        <media xlink:href="1471-2229-11-131-S6.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S7">
+        <caption>
+          <title>Additional file 7</title>
+          <p><bold>Description of the Rye5K SNP array</bold>. SNP containing contigs represented on the Rye5K SNP array were listed including candidate SNP position, probe design sequences provided to Illumina Inc. (San Diego, USA), and GO annotations.</p>
+        </caption>
+        <media xlink:href="1471-2229-11-131-S7.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S8">
+        <caption>
+          <title>Additional file 8</title>
+          <p><bold>Observed residual heterozygosity of 54 rye inbred lines representing the two heterotic pools. Heterozygosity was calculated based on genotyping data obtained with the Rye5K SNP array</bold>. Lines from the pollen parent pool were in generations F<sub>3 </sub>to F<sub>4</sub>, lines from the seed parent pool were in generation F<sub>6</sub>.</p>
+        </caption>
+        <media xlink:href="1471-2229-11-131-S8.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgement</title>
+      <p>We thank Fritz Th&#xFC;mmler (vertis AG, Freising, Germany) for synthesizing and normalizing the cDNA samples, KWS LOCHOW GMBH for providing seed and DNA samples, and Christof Pietsch for his initial work on the SNP discovery pipeline. This work was supported by a grant [0315063A to E.B., 0315063B to N.S., 0315063C to K.M.] in the framework of the initiative 'GABI-Future' of the German Ministry of Education and Research (BMBF).</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Limin</surname>
+            <given-names>AE</given-names>
+          </name>
+          <name>
+            <surname>Fowler</surname>
+            <given-names>DB</given-names>
+          </name>
+          <article-title>Cold hardiness of forage grasses grown on the canadian prairies</article-title>
+          <source>Can J Plant Sci</source>
+          <year>1987</year>
+          <volume>67</volume>
+          <issue>4</issue>
+          <fpage>1111</fpage>
+          <lpage>1115</lpage>
+          <pub-id pub-id-type="doi">10.4141/cjps87-150</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ko</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Seo</surname>
+            <given-names>BB</given-names>
+          </name>
+          <name>
+            <surname>Suh</surname>
+            <given-names>DY</given-names>
+          </name>
+          <name>
+            <surname>Do</surname>
+            <given-names>GS</given-names>
+          </name>
+          <name>
+            <surname>Park</surname>
+            <given-names>DS</given-names>
+          </name>
+          <name>
+            <surname>Kwack</surname>
+            <given-names>YH</given-names>
+          </name>
+          <article-title>Production of a new wheat line possessing the 1BL.1RS wheat-rye translocation derived from Korean rye cultivar Paldanghomil</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2002</year>
+          <volume>104</volume>
+          <issue>2-3</issue>
+          <fpage>171</fpage>
+          <lpage>176</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-001-0783-2</pub-id>
+          <pub-id pub-id-type="pmid">12582683</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Goff</surname>
+            <given-names>SA</given-names>
+          </name>
+          <name>
+            <surname>Ricke</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Lan</surname>
+            <given-names>TH</given-names>
+          </name>
+          <name>
+            <surname>Presting</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Dunn</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Glazebrook</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Sessions</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Oeller</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Varma</surname>
+            <given-names>H</given-names>
+          </name>
+          <etal/>
+          <article-title>A draft sequence of the rice genome (<italic>Oryza sativa </italic>L. ssp. <italic>japonica</italic>)</article-title>
+          <source>Science</source>
+          <year>2002</year>
+          <volume>296</volume>
+          <issue>5565</issue>
+          <fpage>92</fpage>
+          <lpage>100</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1068275</pub-id>
+          <pub-id pub-id-type="pmid">11935018</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yu</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Hu</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Wong</surname>
+            <given-names>GK</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Deng</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Dai</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Zhou</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>X</given-names>
+          </name>
+          <etal/>
+          <article-title>A draft sequence of the rice genome (<italic>Oryza sativa </italic>L. ssp. <italic>indica</italic>)</article-title>
+          <source>Science</source>
+          <year>2002</year>
+          <volume>296</volume>
+          <issue>5565</issue>
+          <fpage>79</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1068037</pub-id>
+          <pub-id pub-id-type="pmid">11935017</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Paterson</surname>
+            <given-names>AH</given-names>
+          </name>
+          <name>
+            <surname>Bowers</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Bruggmann</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Dubchak</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Grimwood</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Haberer</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Hellsten</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Mitros</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Poliakov</surname>
+            <given-names>A</given-names>
+          </name>
+          <etal/>
+          <article-title>The <italic>Sorghum bicolor </italic>genome and the diversification of grasses</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <issue>7229</issue>
+          <fpage>551</fpage>
+          <lpage>556</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature07723</pub-id>
+          <pub-id pub-id-type="pmid">19189423</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <collab>The International <italic>Brachypodium </italic>Initiative</collab>
+          <article-title>Genome sequencing and analysis of the model grass <italic>Brachypodium distachyon</italic></article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <issue>7282</issue>
+          <fpage>763</fpage>
+          <lpage>768</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature08747</pub-id>
+          <pub-id pub-id-type="pmid">20148030</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schnable</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Ware</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Fulton</surname>
+            <given-names>RS</given-names>
+          </name>
+          <name>
+            <surname>Stein</surname>
+            <given-names>JC</given-names>
+          </name>
+          <name>
+            <surname>Wei</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Pasternak</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Liang</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Fulton</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Graves</surname>
+            <given-names>TA</given-names>
+          </name>
+          <etal/>
+          <article-title>The B73 maize genome: complexity, diversity, and dynamics</article-title>
+          <source>Science</source>
+          <year>2009</year>
+          <volume>326</volume>
+          <issue>5956</issue>
+          <fpage>1112</fpage>
+          <lpage>1115</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1178534</pub-id>
+          <pub-id pub-id-type="pmid">19965430</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dole&#x17E;el</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Greilhuber</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Lucretti</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Meister</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Lys&#xE1;k</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Nardi</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Obermayer</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Plant genome size estimation by flow cytometry: Inter-laboratory comparison</article-title>
+          <source>Ann Bot</source>
+          <year>1998</year>
+          <volume>82</volume>
+          <issue>suppl 1</issue>
+          <fpage>17</fpage>
+          <lpage>26</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Flavell</surname>
+            <given-names>RB</given-names>
+          </name>
+          <name>
+            <surname>Bennett</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>JB</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>DB</given-names>
+          </name>
+          <article-title>Genome size and the proportion of repeated nucleotide sequence DNA in plants</article-title>
+          <source>Biochemical Genetics</source>
+          <year>1974</year>
+          <volume>12</volume>
+          <issue>4</issue>
+          <fpage>257</fpage>
+          <lpage>269</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00485947</pub-id>
+          <pub-id pub-id-type="pmid">4441361</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Shi</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Collins</surname>
+            <given-names>N-C</given-names>
+          </name>
+          <name>
+            <surname>Langridge</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Gustafson</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Construction of a rye cv. Blanco BAC library, and progress towards cloning the rye Alt3 aluminium tolerance gene</article-title>
+          <source>Vortr Pflanzenzuchtg</source>
+          <year>2007</year>
+          <volume>71</volume>
+          <fpage>205</fpage>
+          <lpage>209</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hackauf</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Rudd</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>van der Voort</surname>
+            <given-names>JR</given-names>
+          </name>
+          <name>
+            <surname>Miedaner</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Wehling</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Comparative mapping of DNA sequences in rye (<italic>Secale cereale </italic>L.) in relation to the rice genome</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2009</year>
+          <volume>118</volume>
+          <issue>2</issue>
+          <fpage>371</fpage>
+          <lpage>384</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-008-0906-0</pub-id>
+          <pub-id pub-id-type="pmid">18953524</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Khlestkina</surname>
+            <given-names>EK</given-names>
+          </name>
+          <name>
+            <surname>Than</surname>
+            <given-names>MH</given-names>
+          </name>
+          <name>
+            <surname>Pestsova</surname>
+            <given-names>EG</given-names>
+          </name>
+          <name>
+            <surname>Roder</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Malyshev</surname>
+            <given-names>SV</given-names>
+          </name>
+          <name>
+            <surname>Korzun</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Borner</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Mapping of 99 new microsatellite-derived loci in rye (<italic>Secale cereale </italic>L.) including 39 expressed sequence tags</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2004</year>
+          <volume>109</volume>
+          <issue>4</issue>
+          <fpage>725</fpage>
+          <lpage>732</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-004-1659-z</pub-id>
+          <pub-id pub-id-type="pmid">15300380</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Korzun</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Malyshev</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Voylokov</surname>
+            <given-names>AV</given-names>
+          </name>
+          <name>
+            <surname>B&#xF6;rner</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>A genetic map of rye (<italic>Secale cereale </italic>L.) combining RFLP, isozyme, protein, microsatellite and gene loci</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2001</year>
+          <volume>102</volume>
+          <issue>5</issue>
+          <fpage>709</fpage>
+          <lpage>717</lpage>
+          <pub-id pub-id-type="doi">10.1007/s001220051701</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ma</surname>
+            <given-names>XF</given-names>
+          </name>
+          <name>
+            <surname>Wanous</surname>
+            <given-names>MK</given-names>
+          </name>
+          <name>
+            <surname>Houchins</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Milla</surname>
+            <given-names>MAR</given-names>
+          </name>
+          <name>
+            <surname>Goicoechea</surname>
+            <given-names>PG</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Xie</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Gustafson</surname>
+            <given-names>JP</given-names>
+          </name>
+          <article-title>Molecular linkage mapping in rye (<italic>Secale cereale </italic>L.)</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2001</year>
+          <volume>102</volume>
+          <issue>4</issue>
+          <fpage>517</fpage>
+          <lpage>523</lpage>
+          <pub-id pub-id-type="doi">10.1007/s001220051676</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Senft</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Wricke</surname>
+            <given-names>G</given-names>
+          </name>
+          <article-title>An extended genetic map of rye (<italic>Secale cereale </italic>L.)</article-title>
+          <source>Plant Breeding</source>
+          <year>1996</year>
+          <volume>115</volume>
+          <issue>6</issue>
+          <fpage>508</fpage>
+          <lpage>510</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1439-0523.1996.tb00966.x</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Metzker</surname>
+            <given-names>ML</given-names>
+          </name>
+          <article-title>Sequencing technologies - the next generation</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <issue>1</issue>
+          <fpage>31</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg2626</pub-id>
+          <pub-id pub-id-type="pmid">19997069</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Meyer</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Aglyamova</surname>
+            <given-names>GV</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Buchanan-Carter</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Abrego</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Colbourne</surname>
+            <given-names>JK</given-names>
+          </name>
+          <name>
+            <surname>Willis</surname>
+            <given-names>BL</given-names>
+          </name>
+          <name>
+            <surname>Matz</surname>
+            <given-names>MV</given-names>
+          </name>
+          <article-title>Sequencing and <italic>de novo </italic>analysis of a coral larval transcriptome using 454 GSFlx</article-title>
+          <source>BMC Genomics</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>219</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-10-219</pub-id>
+          <pub-id pub-id-type="pmid">19435504</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sun</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Luo</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Sun</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Song</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Lui</surname>
+            <given-names>EM</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title><italic>De novo </italic>sequencing and analysis of the American ginseng root transcriptome using a GS FLX Titanium platform to discover putative genes involved in ginsenoside biosynthesis</article-title>
+          <source>BMC Genomics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>262</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-11-262</pub-id>
+          <pub-id pub-id-type="pmid">20416102</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hillier</surname>
+            <given-names>LW</given-names>
+          </name>
+          <name>
+            <surname>Marth</surname>
+            <given-names>GT</given-names>
+          </name>
+          <name>
+            <surname>Quinlan</surname>
+            <given-names>AR</given-names>
+          </name>
+          <name>
+            <surname>Dooling</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Fewell</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Barnett</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Fox</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Glasscock</surname>
+            <given-names>JI</given-names>
+          </name>
+          <name>
+            <surname>Hickenbotham</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>W</given-names>
+          </name>
+          <etal/>
+          <article-title>Whole-genome sequencing and variant discovery in <italic>C. elegans</italic></article-title>
+          <source>Nat Methods</source>
+          <year>2008</year>
+          <volume>5</volume>
+          <issue>2</issue>
+          <fpage>183</fpage>
+          <lpage>188</lpage>
+          <pub-id pub-id-type="doi">10.1038/nmeth.1179</pub-id>
+          <pub-id pub-id-type="pmid">18204455</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Torres</surname>
+            <given-names>TT</given-names>
+          </name>
+          <name>
+            <surname>Metta</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ottenwalder</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Schlotterer</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Gene expression profiling by massively parallel sequencing</article-title>
+          <source>Genome Res</source>
+          <year>2008</year>
+          <volume>18</volume>
+          <issue>1</issue>
+          <fpage>172</fpage>
+          <lpage>177</lpage>
+          <pub-id pub-id-type="pmid">18032722</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Taudien</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Houben</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Keller</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Graner</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Platzer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Stein</surname>
+            <given-names>N</given-names>
+          </name>
+          <article-title>A whole-genome snapshot of 454 sequences exposes the composition of the barley genome and provides evidence for parallel evolution of genome size in wheat and barley</article-title>
+          <source>Plant J</source>
+          <year>2009</year>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lister</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Ecker</surname>
+            <given-names>JR</given-names>
+          </name>
+          <article-title>Finding the fifth base: genome-wide sequencing of cytosine methylation</article-title>
+          <source>Genome Res</source>
+          <year>2009</year>
+          <volume>19</volume>
+          <issue>6</issue>
+          <fpage>959</fpage>
+          <lpage>966</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.083451.108</pub-id>
+          <pub-id pub-id-type="pmid">19273618</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Novaes</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Drost</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Farmerie</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Pappas</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Grattapaglia</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Sederoff</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Kirst</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>High-throughput gene and SNP discovery in <italic>Eucalyptus grandis</italic>, an uncharacterized genome</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <issue>1</issue>
+          <fpage>312</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-9-312</pub-id>
+          <pub-id pub-id-type="pmid">18590545</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Korzun</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Malyshev</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Kartel</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Westermann</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Weber</surname>
+            <given-names>WE</given-names>
+          </name>
+          <name>
+            <surname>B&#xF6;rner</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>A genetic linkage map of rye (<italic>Secale cereale </italic>L.)</article-title>
+          <source>Theor Appl Genet</source>
+          <year>1998</year>
+          <volume>96</volume>
+          <issue>2</issue>
+          <fpage>203</fpage>
+          <lpage>208</lpage>
+          <pub-id pub-id-type="doi">10.1007/s001220050728</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Oztur</surname>
+            <given-names>ZN</given-names>
+          </name>
+          <name>
+            <surname>Talame</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Deyholos</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Michalowski</surname>
+            <given-names>CB</given-names>
+          </name>
+          <name>
+            <surname>Galbraith</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Gozukirmizi</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Tuberosa</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Bohnert</surname>
+            <given-names>HJ</given-names>
+          </name>
+          <article-title>Monitoring large-scale changes in transcript abundance in drought- and salt-stressed barley</article-title>
+          <source>Plant Mol Biol</source>
+          <year>2002</year>
+          <volume>48</volume>
+          <issue>5-6</issue>
+          <fpage>551</fpage>
+          <lpage>573</lpage>
+          <pub-id pub-id-type="pmid">11999834</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kumar</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Blaxter</surname>
+            <given-names>ML</given-names>
+          </name>
+          <article-title>Comparing <italic>de novo </italic>assemblers for 454 transcriptome data</article-title>
+          <source>BMC Genomics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>571</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-11-571</pub-id>
+          <pub-id pub-id-type="pmid">20950480</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Chevreux</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Pfisterer</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Drescher</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Driesel</surname>
+            <given-names>AJ</given-names>
+          </name>
+          <name>
+            <surname>Muller</surname>
+            <given-names>WE</given-names>
+          </name>
+          <name>
+            <surname>Wetter</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Suhai</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Using the miraEST assembler for reliable and automated mRNA transcript assembly and SNP detection in sequenced ESTs</article-title>
+          <source>Genome Res</source>
+          <year>2004</year>
+          <volume>14</volume>
+          <issue>6</issue>
+          <fpage>1147</fpage>
+          <lpage>1159</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.1917404</pub-id>
+          <pub-id pub-id-type="pmid">15140833</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Margulies</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Egholm</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Altman</surname>
+            <given-names>WE</given-names>
+          </name>
+          <name>
+            <surname>Attiya</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Bader</surname>
+            <given-names>JS</given-names>
+          </name>
+          <name>
+            <surname>Bemben</surname>
+            <given-names>LA</given-names>
+          </name>
+          <name>
+            <surname>Berka</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Braverman</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>YJ</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>Z</given-names>
+          </name>
+          <etal/>
+          <article-title>Genome sequencing in microfabricated high-density picolitre reactors</article-title>
+          <source>Nature</source>
+          <year>2005</year>
+          <volume>437</volume>
+          <issue>7057</issue>
+          <fpage>376</fpage>
+          <lpage>380</lpage>
+          <pub-id pub-id-type="pmid">16056220</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Huang</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Madan</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>CAP3: A DNA sequence assembly program</article-title>
+          <source>Genome Res</source>
+          <year>1999</year>
+          <volume>9</volume>
+          <issue>9</issue>
+          <fpage>868</fpage>
+          <lpage>877</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.9.9.868</pub-id>
+          <pub-id pub-id-type="pmid">10508846</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Riano-Pach&#xF3;n</surname>
+            <given-names>DM</given-names>
+          </name>
+          <name>
+            <surname>Nagel</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Neigenfind</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Wagner</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Basekow</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Weber</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Mueller-Roeber</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Diehl</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Kersten</surname>
+            <given-names>B</given-names>
+          </name>
+          <article-title>GabiPD: the GABI primary database - a plant integrative 'omics' database</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2009</year>
+          <issue>37 Database</issue>
+          <fpage>D954</fpage>
+          <lpage>959</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Altschul</surname>
+            <given-names>SF</given-names>
+          </name>
+          <name>
+            <surname>Gish</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Miller</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Myers</surname>
+            <given-names>EW</given-names>
+          </name>
+          <name>
+            <surname>Lipman</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>J Mol Biol</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <issue>3</issue>
+          <fpage>403</fpage>
+          <lpage>410</lpage>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <collab>Rice Annotation Project</collab>
+          <article-title>The Rice Annotation Project Database (RAP-DB): 2008 update</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <issue>suppl_1</issue>
+          <fpage>D1028</fpage>
+          <lpage>1033</lpage>
+          <pub-id pub-id-type="pmid">18089549</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Matsumoto</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Tanaka</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Sakai</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Amano</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Kanamori</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Kurita</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Kikuta</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Kamiya</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Yamamoto</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ikawa</surname>
+            <given-names>H</given-names>
+          </name>
+          <etal/>
+          <article-title>Comprehensive sequence analysis of 24,783 barley full-length cDNAs derived from 12 clone libraries</article-title>
+          <source>Plant Physiology</source>
+          <year>2011</year>
+          <volume>156</volume>
+          <issue>1</issue>
+          <fpage>20</fpage>
+          <lpage>28</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.110.171579</pub-id>
+          <pub-id pub-id-type="pmid">21415278</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mochida</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Yoshida</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Sakurai</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ogihara</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Shinozaki</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>TriFLDB: a database of clustered full-length coding sequences from Triticeae with applications to comparative grass genomics</article-title>
+          <source>Plant Physiology</source>
+          <year>2009</year>
+          <volume>150</volume>
+          <issue>3</issue>
+          <fpage>1135</fpage>
+          <lpage>1146</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.109.138214</pub-id>
+          <pub-id pub-id-type="pmid">19448038</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jurka</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Repeats in genomic DNA: mining and meaning</article-title>
+          <source>Curr Opin Struct Biol</source>
+          <year>1998</year>
+          <volume>8</volume>
+          <issue>3</issue>
+          <fpage>333</fpage>
+          <lpage>337</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0959-440X(98)80067-5</pub-id>
+          <pub-id pub-id-type="pmid">9666329</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Spannagl</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Noubibou</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Haase</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Yang</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Hindemitt</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Klee</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Haberer</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Schoof</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Mayer</surname>
+            <given-names>KF</given-names>
+          </name>
+          <article-title>MIPSPlantsDB--plant database resource for integrative and comparative plant genome research</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2007</year>
+          <issue>35 Database</issue>
+          <fpage>D834</fpage>
+          <lpage>840</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hunter</surname>
+            <given-names>JD</given-names>
+          </name>
+          <article-title>Matplotlib: A 2D Graphics Environment</article-title>
+          <source>Comput Sci Eng</source>
+          <year>2007</year>
+          <volume>9</volume>
+          <issue>3</issue>
+          <fpage>90</fpage>
+          <lpage>95</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Conesa</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Gotz</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Garcia-Gomez</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Terol</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Talon</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Robles</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Blast2GO: a universal tool for annotation, visualization and analysis in functional genomics research</article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <issue>18</issue>
+          <fpage>3674</fpage>
+          <lpage>3676</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/bti610</pub-id>
+          <pub-id pub-id-type="pmid">16081474</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Thiel</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Michalek</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Varshney</surname>
+            <given-names>RK</given-names>
+          </name>
+          <name>
+            <surname>Graner</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Exploiting EST databases for the development and characterization of gene-derived SSR-markers in barley (<italic>Hordeum vulgare </italic>L.)</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2003</year>
+          <volume>106</volume>
+          <issue>3</issue>
+          <fpage>411</fpage>
+          <lpage>422</lpage>
+          <pub-id pub-id-type="pmid">12589540</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rozen</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Skaletsky</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Primer3 on the WWW for general users and for biologist programmers</article-title>
+          <source>Methods Mol Biol</source>
+          <year>2000</year>
+          <volume>132</volume>
+          <fpage>365</fpage>
+          <lpage>386</lpage>
+          <pub-id pub-id-type="pmid">10547847</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Marth</surname>
+            <given-names>GT</given-names>
+          </name>
+          <name>
+            <surname>Korf</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Yandell</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Yeh</surname>
+            <given-names>RT</given-names>
+          </name>
+          <name>
+            <surname>Gu</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Zakeri</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Stitziel</surname>
+            <given-names>NO</given-names>
+          </name>
+          <name>
+            <surname>Hillier</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Kwok</surname>
+            <given-names>PY</given-names>
+          </name>
+          <name>
+            <surname>Gish</surname>
+            <given-names>WR</given-names>
+          </name>
+          <article-title>A general approach to single-nucleotide polymorphism discovery</article-title>
+          <source>Nat Genet</source>
+          <year>1999</year>
+          <volume>23</volume>
+          <issue>4</issue>
+          <fpage>452</fpage>
+          <lpage>456</lpage>
+          <pub-id pub-id-type="doi">10.1038/70570</pub-id>
+          <pub-id pub-id-type="pmid">10581034</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Huang</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Marth</surname>
+            <given-names>G</given-names>
+          </name>
+          <article-title>EagleView: a genome assembly viewer for next-generation sequencing technologies</article-title>
+          <source>Genome Res</source>
+          <year>2008</year>
+          <volume>18</volume>
+          <issue>9</issue>
+          <fpage>1538</fpage>
+          <lpage>1543</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.076067.108</pub-id>
+          <pub-id pub-id-type="pmid">18550804</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="other">
+          <collab>R Development Core Team</collab>
+          <article-title>R: A language and environment for statistical computing</article-title>
+          <source>R Foundation for Statistical Computing, Vienna, Austria</source>
+          <year>2004</year>
+          <ext-link ext-link-type="uri" xlink:href="http://www.R-project.org">http://www.R-project.org</ext-link>
+          <comment>ISBN 3-900051-07-0</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zagrobelny</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Scheibye-Alsing</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Jensen</surname>
+            <given-names>NB</given-names>
+          </name>
+          <name>
+            <surname>Moller</surname>
+            <given-names>BL</given-names>
+          </name>
+          <name>
+            <surname>Gorodkin</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Bak</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>454 pyrosequencing based transcriptome analysis of <italic>Zygaena filipendulae </italic>with focus on genes involved in biosynthesis of cyanogenic glucosides</article-title>
+          <source>BMC Genomics</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>574</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-10-574</pub-id>
+          <pub-id pub-id-type="pmid">19954531</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wu</surname>
+            <given-names>TD</given-names>
+          </name>
+          <name>
+            <surname>Watanabe</surname>
+            <given-names>CK</given-names>
+          </name>
+          <article-title>GMAP: a genomic mapping and alignment program for mRNA and EST sequences</article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <issue>9</issue>
+          <fpage>1859</fpage>
+          <lpage>1875</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/bti310</pub-id>
+          <pub-id pub-id-type="pmid">15728110</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Ruan</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Durbin</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Mapping short DNA sequencing reads and calling variants using mapping quality scores</article-title>
+          <source>Genome Res</source>
+          <year>2008</year>
+          <volume>18</volume>
+          <issue>11</issue>
+          <fpage>1851</fpage>
+          <lpage>1858</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.078212.108</pub-id>
+          <pub-id pub-id-type="pmid">18714091</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Huang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Gu</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Fan</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Lucas</surname>
+            <given-names>WJ</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Xie</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Ni</surname>
+            <given-names>P</given-names>
+          </name>
+          <etal/>
+          <article-title>The genome of the cucumber, <italic>Cucumis sativus </italic>L</article-title>
+          <source>Nat Genet</source>
+          <year>2009</year>
+          <volume>41</volume>
+          <issue>12</issue>
+          <fpage>1275</fpage>
+          <lpage>1281</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng.475</pub-id>
+          <pub-id pub-id-type="pmid">19881527</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Fan</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Tian</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Zhu</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>He</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Cai</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Cai</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Bai</surname>
+            <given-names>Y</given-names>
+          </name>
+          <etal/>
+          <article-title>The sequence and <italic>de novo </italic>assembly of the giant panda genome</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <issue>7279</issue>
+          <fpage>311</fpage>
+          <lpage>317</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature08696</pub-id>
+          <pub-id pub-id-type="pmid">20010809</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mayer</surname>
+            <given-names>KF</given-names>
+          </name>
+          <name>
+            <surname>Taudien</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Martis</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Suchankova</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Petzold</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Felder</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Steuernagel</surname>
+            <given-names>B</given-names>
+          </name>
+          <etal/>
+          <article-title>Gene content and virtual gene order of barley chromosome 1H</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>151</volume>
+          <issue>2</issue>
+          <fpage>496</fpage>
+          <lpage>505</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.109.142612</pub-id>
+          <pub-id pub-id-type="pmid">19692534</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Coche</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Dewez</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Reducing bias in cDNA sequence representation by molecular selection</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>1994</year>
+          <volume>22</volume>
+          <issue>21</issue>
+          <fpage>4545</fpage>
+          <lpage>4546</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/22.21.4545</pub-id>
+          <pub-id pub-id-type="pmid">7971286</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Emrich</surname>
+            <given-names>SJ</given-names>
+          </name>
+          <name>
+            <surname>Barbazuk</surname>
+            <given-names>WB</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Schnable</surname>
+            <given-names>PS</given-names>
+          </name>
+          <article-title>Gene discovery and annotation using LCM-454 transcriptome sequencing</article-title>
+          <source>Genome Res</source>
+          <year>2007</year>
+          <volume>17</volume>
+          <issue>1</issue>
+          <fpage>69</fpage>
+          <lpage>73</lpage>
+          <pub-id pub-id-type="pmid">17095711</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Patanjali</surname>
+            <given-names>SR</given-names>
+          </name>
+          <name>
+            <surname>Parimoo</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Weissman</surname>
+            <given-names>SM</given-names>
+          </name>
+          <article-title>Construction of a uniform-abundance (normalized) cDNA library</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>1991</year>
+          <volume>88</volume>
+          <issue>5</issue>
+          <fpage>1943</fpage>
+          <lpage>1947</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.88.5.1943</pub-id>
+          <pub-id pub-id-type="pmid">1705712</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B53">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schafleitner</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Tincopa</surname>
+            <given-names>LR</given-names>
+          </name>
+          <name>
+            <surname>Palomino</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Rossel</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Robles</surname>
+            <given-names>RF</given-names>
+          </name>
+          <name>
+            <surname>Alagon</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Rivera</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Quispe</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Rojas</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Pacheco</surname>
+            <given-names>JA</given-names>
+          </name>
+          <etal/>
+          <article-title>A sweet potato gene index established by de novo assembly of pyrosequencing and Sanger sequences and mining for gene-based microsatellite markers</article-title>
+          <source>BMC Genomics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>604</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-11-604</pub-id>
+          <pub-id pub-id-type="pmid">20977749</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B54">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bolot</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Abrouk</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Masood-Quraishi</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Stein</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Messing</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Feuillet</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Salse</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>The 'inner circle' of the cereal genomes</article-title>
+          <source>Curr Opin Plant Biol</source>
+          <year>2009</year>
+          <volume>12</volume>
+          <issue>2</issue>
+          <fpage>119</fpage>
+          <lpage>125</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.pbi.2008.10.011</pub-id>
+          <pub-id pub-id-type="pmid">19095493</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B55">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gaut</surname>
+            <given-names>BS</given-names>
+          </name>
+          <article-title>Evolutionary dynamics of grass genomes</article-title>
+          <source>New Phytologist</source>
+          <year>2002</year>
+          <volume>154</volume>
+          <issue>1</issue>
+          <fpage>15</fpage>
+          <lpage>28</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1469-8137.2002.00352.x</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B56">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lu</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Lu</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Fan</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Zhu</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Feng</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Guo</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>X</given-names>
+          </name>
+          <etal/>
+          <article-title>Function annotation of the rice transcriptome at single-nucleotide resolution by RNA-seq</article-title>
+          <source>Genome Res</source>
+          <year>2010</year>
+          <volume>20</volume>
+          <issue>9</issue>
+          <fpage>1238</fpage>
+          <lpage>1249</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.106120.110</pub-id>
+          <pub-id pub-id-type="pmid">20627892</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B57">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Steuernagel</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Taudien</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Seidel</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ariyadasa</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Schulte</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Petzold</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Felder</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Graner</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Scholz</surname>
+            <given-names>U</given-names>
+          </name>
+          <etal/>
+          <article-title><italic>De novo </italic>454 sequencing of barcoded BAC pools for comprehensive gene survey and genome analysis in the complex genome of barley</article-title>
+          <source>BMC Genomics</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>547</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-10-547</pub-id>
+          <pub-id pub-id-type="pmid">19930547</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B58">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Paux</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Sourdille</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Salse</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Saintenac</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Choulet</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Leroy</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Korol</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Michalak</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kianian</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Spielmeyer</surname>
+            <given-names>W</given-names>
+          </name>
+          <etal/>
+          <article-title>A physical map of the 1-gigabase bread wheat chromosome 3B</article-title>
+          <source>Science</source>
+          <year>2008</year>
+          <volume>322</volume>
+          <issue>5898</issue>
+          <fpage>101</fpage>
+          <lpage>104</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1161847</pub-id>
+          <pub-id pub-id-type="pmid">18832645</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B59">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bartos</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Paux</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Kofler</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Havrankova</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kopecky</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Suchankova</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Safar</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Town</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Lelley</surname>
+            <given-names>T</given-names>
+          </name>
+          <etal/>
+          <article-title>A first survey of the rye (<italic>Secale cereale</italic>) genome composition through BAC end sequencing of the short arm of chromosome 1R</article-title>
+          <source>BMC Plant Biol</source>
+          <year>2008</year>
+          <volume>8</volume>
+          <issue>1</issue>
+          <fpage>95</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2229-8-95</pub-id>
+          <pub-id pub-id-type="pmid">18803819</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B60">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Korzun</surname>
+            <given-names>V</given-names>
+          </name>
+          <person-group person-group-type="editor">Lanteri S</person-group>
+          <article-title>Molecular markers and their application in cereals breeding</article-title>
+          <source>Proceedings of the workshop "Marker assisted selection: A fast track to increase genetic gain in plant and animal breeding?": 17-18 October 2003; University of Turin, Italy</source>
+          <year>2003</year>
+          <fpage>18</fpage>
+          <lpage>22</lpage>
+          <comment>Electronic forum on biotechnology in food and agriculture</comment>
+          <pub-id pub-id-type="pmid">21958405</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B61">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gupta</surname>
+            <given-names>PK</given-names>
+          </name>
+          <name>
+            <surname>Varshney</surname>
+            <given-names>RK</given-names>
+          </name>
+          <name>
+            <surname>Sharma</surname>
+            <given-names>PC</given-names>
+          </name>
+          <name>
+            <surname>Ramesh</surname>
+            <given-names>B</given-names>
+          </name>
+          <article-title>Molecular markers and their applications in wheat breeding</article-title>
+          <source>Plant Breeding</source>
+          <year>1999</year>
+          <volume>118</volume>
+          <issue>5</issue>
+          <fpage>369</fpage>
+          <lpage>390</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1439-0523.1999.00401.x</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B62">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schulman</surname>
+            <given-names>AH</given-names>
+          </name>
+          <article-title>Molecular markers to assess genetic diversity</article-title>
+          <source>Euphytica</source>
+          <year>2007</year>
+          <volume>158</volume>
+          <issue>3</issue>
+          <fpage>313</fpage>
+          <lpage>321</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10681-006-9282-5</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B63">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Matukumalli</surname>
+            <given-names>LK</given-names>
+          </name>
+          <name>
+            <surname>Lawley</surname>
+            <given-names>CT</given-names>
+          </name>
+          <name>
+            <surname>Schnabel</surname>
+            <given-names>RD</given-names>
+          </name>
+          <name>
+            <surname>Taylor</surname>
+            <given-names>JF</given-names>
+          </name>
+          <name>
+            <surname>Allan</surname>
+            <given-names>MF</given-names>
+          </name>
+          <name>
+            <surname>Heaton</surname>
+            <given-names>MP</given-names>
+          </name>
+          <name>
+            <surname>O'Connell</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Moore</surname>
+            <given-names>SS</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>TPL</given-names>
+          </name>
+          <name>
+            <surname>Sonstegard</surname>
+            <given-names>TS</given-names>
+          </name>
+          <etal/>
+          <article-title>Development and Characterization of a High Density SNP Genotyping Assay for Cattle</article-title>
+          <source>PLoS ONE</source>
+          <year>2009</year>
+          <volume>4</volume>
+          <issue>4</issue>
+          <fpage>e5350</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0005350</pub-id>
+          <pub-id pub-id-type="pmid">19390634</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B64">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Adams</surname>
+            <given-names>MW</given-names>
+          </name>
+          <name>
+            <surname>Shank</surname>
+            <given-names>DB</given-names>
+          </name>
+          <article-title>The relationship of heterozygosity to homeostasis in maize hybrids</article-title>
+          <source>Genetics</source>
+          <year>1959</year>
+          <volume>44</volume>
+          <issue>5</issue>
+          <fpage>777</fpage>
+          <lpage>786</lpage>
+          <pub-id pub-id-type="pmid">17247856</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

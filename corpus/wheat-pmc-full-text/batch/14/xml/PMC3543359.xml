@@ -1,0 +1,995 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v3.0 20080202//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing3.dtd?>
+  <?SourceDTD.Version 3.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3543359</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-12-24042</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0054101</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Biotechnology</subject>
+            <subj-group>
+              <subject>Plant Biotechnology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Analysis Tools</subject>
+                <subj-group>
+                  <subject>Genetic Maps</subject>
+                </subj-group>
+              </subj-group>
+              <subj-group>
+                <subject>Comparative Genomics</subject>
+                <subject>Structural Genomics</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Evolutionary Biology</subject>
+            <subj-group>
+              <subject>Comparative Genomics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Plant Genetics</subject>
+              <subj-group>
+                <subject>Crop Genetics</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome Analysis Tools</subject>
+              <subj-group>
+                <subject>Genetic Maps</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Plant Science</subject>
+            <subj-group>
+              <subject>Plant Genetics</subject>
+              <subject>Plant Genomics</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Statistics</subject>
+            <subj-group>
+              <subject>Biostatistics</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Insular Organization of Gene Space in Grass Genomes</article-title>
+        <alt-title alt-title-type="running-head">Insular Organization of Gene Space</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Gottlieb</surname>
+            <given-names>Andrea</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>M&#xFC;ller</surname>
+            <given-names>Hans-Georg</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Massa</surname>
+            <given-names>Alicia N.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn1">
+            <sup>&#xA4;a</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wanjugi</surname>
+            <given-names>Humphrey</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn2">
+            <sup>&#xA4;b</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Deal</surname>
+            <given-names>Karin R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>You</surname>
+            <given-names>Frank M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn4">
+            <sup>&#xA4;d</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Xu</surname>
+            <given-names>Xiangyang</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn3">
+            <sup>&#xA4;c</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gu</surname>
+            <given-names>Yong Q.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Luo</surname>
+            <given-names>Ming-Cheng</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Anderson</surname>
+            <given-names>Olin D.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chan</surname>
+            <given-names>Agnes P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rabinowicz</surname>
+            <given-names>Pablo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn5">
+            <sup>&#xA4;e</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Devos</surname>
+            <given-names>Katrien M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Dvorak</surname>
+            <given-names>Jan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Statistics, University of California Davis, Davis, California, United States of America</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Institute of Plant Breeding, Genetics and Genomics (Department of Crop and Soil Sciences), Department of Plant Biology, University of Georgia, Athens, Georgia, United States of America</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>USDA/ARS Western Research Center, Albany, California, United States of America</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Plant Sciences, University of California Davis, Davis, California, United States of America</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>The J. Craig Venter Institute, Rockville, Maryland, United States of America</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Institute for Genome Sciences, and Department of Biochemistry and Molecular Biology, University of Maryland School of Medicine, Baltimore, Maryland, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Peddada</surname>
+            <given-names>Shyamal D.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>National Institute of Environmental and Health Sciences, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>jdvorak@ucdavis.edu</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: AG HGM KMD JD. Performed the experiments: ANM HW KRD XX YQG MCL ODA APC PR KMD JD. Analyzed the data: AG HGM KMD FMY JD. Contributed reagents/materials/analysis tools: KRD MCL. Wrote the paper: AG HGM KMD JD.</p>
+        </fn>
+        <fn id="fn1" fn-type="current-aff">
+          <label>&#xA4;a</label>
+          <p>Current address: Department of Plant Biology, Michigan State University, East Lansing, Michigan, United States of America</p>
+        </fn>
+        <fn id="fn2" fn-type="current-aff">
+          <label>&#xA4;b</label>
+          <p>Current address: Monsanto Company, Saint Louis, Missouri, United States of America</p>
+        </fn>
+        <fn id="fn3" fn-type="current-aff">
+          <label>&#xA4;c</label>
+          <p>Current address: Division of Plant Sciences, University of Missouri, Columbia, Missouri, United States of America</p>
+        </fn>
+        <fn id="fn4" fn-type="current-aff">
+          <label>&#xA4;d</label>
+          <p>Current address: Cereal Research Center, Agriculture and Agri-Food Canada, Winnipeg, Manitoba, Canada</p>
+        </fn>
+        <fn id="fn5" fn-type="current-aff">
+          <label>&#xA4;e</label>
+          <p>Current address: DOE Office of Biological and Environmental Research, Washington, D. C., United States of America</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>11</day>
+        <month>1</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>1</issue>
+      <elocation-id>e54101</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>7</day>
+          <month>8</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>6</day>
+          <month>12</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <license>
+          <license-p>This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Wheat and maize genes were hypothesized to be clustered into islands but the hypothesis was not statistically tested. The hypothesis is statistically tested here in four grass species differing in genome size, <italic>Brachypodium distachyon</italic>, <italic>Oryza sativa</italic>, <italic>Sorghum bicolor</italic>, and <italic>Aegilops tauschii</italic>. Density functions obtained under a model where gene locations follow a homogeneous Poisson process and thus are not clustered are compared with a model-free situation quantified through a non-parametric density estimate. A simple homogeneous Poisson model for gene locations is not rejected for the small <italic>O. sativa</italic> and <italic>B. distachyon</italic> genomes, indicating that genes are distributed largely uniformly in those species, but is rejected for the larger <italic>S. bicolor</italic> and <italic>Ae. tauschii</italic> genomes, providing evidence for clustering of genes into islands. It is proposed to call the gene islands &#x201C;gene insulae&#x201D; to distinguish them from other types of gene clustering that have been proposed. An average <italic>S. bicolor</italic> and <italic>Ae. tauschii</italic> insula is estimated to contain 3.7 and 3.9 genes with an average intergenic distance within an insula of 2.1 and 16.5 kb, respectively. Inter-insular distances are greater than 8 and 81 kb and average 15.1 and 205 kb, in <italic>S. bicolor</italic> and <italic>Ae. tauschii,</italic> respectively. A greater gene density observed in the distal regions of the <italic>Ae. tauschii</italic> chromosomes is shown to be primarily caused by shortening of inter-insular distances. The comparison of the four grass genomes suggests that gene locations are largely a function of a homogeneous Poisson process in small genomes. Nonrandom insertions of LTR retroelements during genome expansion creates gene insulae, which become less dense and further apart with the increase in genome size. High concordance in relative lengths of orthologous intergenic distances among the investigated genomes including the maize genome suggests functional constraints on gene distribution in the grass genomes.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported by the National Science Foundation Plant Genome Research Program Cooperative Agreements DBI-0077766 and DBI-0638558. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Genes in grass genomes are separated from each other by intergenic regions often containing transposable elements (TEs) <xref ref-type="bibr" rid="pone.0054101-SanMiguel1">[1]</xref>. The balance between the rate with which TEs are inserted into an intergenic region and the rate with which they are deleted determines whether the region is expanding or contracting <xref ref-type="bibr" rid="pone.0054101-SanMiguel1">[1]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0054101-Bennetzen2">[4]</xref>. Changes in this balance are almost certainly the primary cause of variation in genome size and gene density along chromosomes.</p>
+      <p>Gene density in many grass genomes increases overall from the proximal towards the distal regions of chromosome arms. This gradient is heterogeneous and regions of higher and lower gene density are superimposed on it. This pattern of gene distribution has been observed in all grass genomes sequenced to date <xref ref-type="bibr" rid="pone.0054101-Consortium1">[5]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0054101-Bennetzen3">[10]</xref> and was also inferred in wheat chromosomes by deletion mapping <xref ref-type="bibr" rid="pone.0054101-Gill1">[11]</xref>. Heterogeneity in gene distribution along wheat chromosomes has been used to hypothesize that wheat genes are clustered into a limited number of very large gene islands separated by vast expanses of gene-empty space <xref ref-type="bibr" rid="pone.0054101-Sandhu1">[12]</xref>, <xref ref-type="bibr" rid="pone.0054101-Erayman1">[13]</xref>. Gene distribution on BAC-based physical maps of wheat chromosome 3B and the seven chromosomes of <italic>Aegilops tauschii,</italic> the diploid source of the wheat D genome <xref ref-type="bibr" rid="pone.0054101-Kihara1">[14]</xref>, <xref ref-type="bibr" rid="pone.0054101-McFadden1">[15]</xref>, failed to support this hypothesis <xref ref-type="bibr" rid="pone.0054101-Rustenholz1">[16]</xref>, <xref ref-type="bibr" rid="pone.0054101-Luo1">[17]</xref>. Sequencing of single wheat BAC clones and BAC clone contigs suggested that gene clustering into many small islands is a more likely scenario <xref ref-type="bibr" rid="pone.0054101-Feuillet1">[18]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0054101-Choulet1">[20]</xref>. Sequencing and annotation of BAC contigs from wheat chromosome 3B totaling 18.2 Mb revealed a chromosome-wide average gene density of 1 gene per 96 kb but a frequency distribution of intergenic distances showed a peak of very short intergenic distances <xref ref-type="bibr" rid="pone.0054101-Choulet1">[20]</xref>. This peak was used as evidence for gene clustering into small gene islands <xref ref-type="bibr" rid="pone.0054101-Choulet1">[20]</xref>. A N50 (median) distance between genes of 43 kb was arbitrarily chosen as the upper limit for intergenic distances within gene islands. Using this criterion, 75% of genes and pseudogenes were contained within 42 gene islands in the 18.2 Mb region of chromosome 3B. The islands contained on average 3.2 genes.</p>
+      <p>A similar pattern has also been reported in the maize genome. Analysis of two proximal regions in maize chromosome 3 revealed gene islands containing from 1 to 4 genes separated by clusters of long-terminal repeat (LTR) retroelements <xref ref-type="bibr" rid="pone.0054101-Kronmiller1">[21]</xref>. These LTR retroelement clusters ranged from 23 to 155 kb <xref ref-type="bibr" rid="pone.0054101-Kronmiller1">[21]</xref>. While the overall gene density was estimated to be 1 gene per 111 kb, a gene density of 1 gene per 16 kb was observed within gene islands. Analyses of a larger portion of the maize genome showed that about half of the intergenic distances in maize were shorter than 20 kb <xref ref-type="bibr" rid="pone.0054101-Wei1">[22]</xref>.</p>
+      <p>All studies of gene clustering in grass genomes have been intuitive and lacked statistical inference. It cannot be excluded in the absence of a formal statistical analysis that the distribution of distances between genes, such as that described by Choulet et al. <xref ref-type="bibr" rid="pone.0054101-Choulet1">[20]</xref>, is typical for genes that are distributed uniformly along a chromosome.</p>
+      <p>In order to gain better understanding of the structure and evolution of gene space in grass genomes, we obtained statistical inference for the null hypothesis that gene locations in orthologous regions of the genomes of four grass (Poaceae) species, <italic>Sorghum bicolor</italic> (sorghum), <italic>Oryza sativa</italic> (rice), <italic>Brachypodium distachyon</italic> (false brome), and <italic>Ae. tauschii</italic> (goat grass), follow a homogeneous Poisson process. <italic>Aegilops tauschii</italic> belongs to the tribe Triticeae, and like all members of the tribe it has a large genome (4,020 Mb <xref ref-type="bibr" rid="pone.0054101-Arumuganathan1">[23]</xref>). The sorghum genome at 730 Mb <xref ref-type="bibr" rid="pone.0054101-Paterson1">[7]</xref> is about a one-sixth of the <italic>Ae. tauschii</italic> genome. The remaining two species, rice and <italic>B. distachyon,</italic> have genomes more than an order of magnitude smaller than the <italic>Ae. tauschii</italic> genome; the rice genome is 389 Mb <xref ref-type="bibr" rid="pone.0054101-Consortium1">[5]</xref> and that of <italic>B. distachyon</italic> is 271 Mb <xref ref-type="bibr" rid="pone.0054101-InternationalBrachypodiumGenome1">[9]</xref>. By comparing four genomes differing in size, we assess the effects of genome expansion on the evolution of gene space and gene distribution in grass genomes.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Genome Sequences</title>
+        <p>Since the <italic>Ae. tauschii</italic> genome has not been sequenced, sequences of nine randomly selected megabase-size contigs of BAC clones totaling 9,796 kb were generated for this study <xref ref-type="bibr" rid="pone.0054101-Massa1">[24]</xref>. The contigs were located in four of the seven <italic>Ae. tauschii</italic> chromosomes and originated from both distal and proximal chromosome regions. A total of 90 genes were manually annotated in the <italic>Ae. tauschii</italic> contigs suggesting an average gene density (excluding pseudogenes) of 1 gene/106 kb and predicting a total of 36,371 genes in the genome <xref ref-type="bibr" rid="pone.0054101-Massa1">[24]</xref>. These estimates are close to those inferred for the wheat B genome on the basis of chromosome 3B BAC contig sequencing <xref ref-type="bibr" rid="pone.0054101-Choulet1">[20]</xref>.</p>
+        <p>The orthologous regions in <italic>B. distachyon,</italic> rice and sorghum had been shown to harbor 62, 67 and 72 genes, respectively <xref ref-type="bibr" rid="pone.0054101-Massa1">[24]</xref>. In all species analyzed, intergenic distances were measured as the distance between the start/end of the coding region of neighboring genes.</p>
+        <p>Because the <italic>Ae. tauschii</italic> BAC sequence consisted of, on average, 4.5 scaffolds per BAC <xref ref-type="bibr" rid="pone.0054101-Massa1">[24]</xref> and the size of the gaps between scaffolds was unknown, we considered scaffolds as contiguous (that is, no extra bases were added to account for the sequence gaps) for the purpose of calculating the intergenic distances. This is unlikely to affect our analysis as the majority of small intergenic distances analyzed here (97% of intergenic distances &#x2264;20 kb) were derived from genes located on the same scaffold. Also, although 64% of sequence scaffolds within a BAC clone could be ordered based on the overlap with neighboring BAC clones <xref ref-type="bibr" rid="pone.0054101-Massa1">[24]</xref>, some genes were located on unordered scaffolds. For those genes, we determined both the smallest and largest distance to the nearest gene considering all possible contig orders, and used the average between the two distance measurements in our statistical analyses (<xref ref-type="supplementary-material" rid="pone.0054101.s001">Table S1</xref>). For genes that were located on different BAC clones, intergenic distances were calculated as described above, but taking into account the overlap between neighboring BAC clones. To analyze the distribution of intergenic distances, all genes annotated in the orthologous regions in <italic>Ae. tauschii</italic>, <italic>B. distachyon</italic>, rice, and sorghum were taken into account (<xref ref-type="supplementary-material" rid="pone.0054101.s002">Tables S2</xref>, <xref ref-type="supplementary-material" rid="pone.0054101.s003">S3</xref>, <xref ref-type="supplementary-material" rid="pone.0054101.s004">S4</xref>). To analyze the level of gene island conservation across species, we only considered orthologous gene pairs that were present in all four species analyzed (<xref ref-type="supplementary-material" rid="pone.0054101.s005">Table S5</xref>).</p>
+      </sec>
+      <sec id="s2b">
+        <title>Distribution of Intergenic Distances</title>
+        <p>An initial step in the analysis of gene density in the grass genomes is to formally test the pertinent null hypothesis that genes are randomly located along the chromosomes according to a uniform distribution. This distribution will arise if the locations of the genes along the chromosome follow a homogeneous Poisson process <xref ref-type="bibr" rid="pone.0054101-Cox1">[25]</xref>. Under this model, gene locations are independent of one another and the expected number of genes in any one region is simply proportional to the length of that region.</p>
+        <p>A consequence of the gene locations following a homogeneous Poisson process is that the density of intergenic distances will follow an exponential distribution. This implies that rather than directly testing for the Poisson process or the uniform distribution conditional on the total number of genes, we can test for the exponential distribution using the aggregated sample of intergenic distances from the 9 sequenced contigs, viewing the collection as a random sample from the population of all intergenic distances in the genome.</p>
+        <p>For each of the four species, denoting the density function of the distribution of intergenic distances by <inline-formula><inline-graphic xlink:href="pone.0054101.e001.jpg"/></inline-formula>, we tested the null hypothesis.<italic>H<sub>0</sub></italic>: The intergenic distances follow an exponential distribution, <italic>i.e.</italic><disp-formula id="pone.0054101.e002"><graphic xlink:href="pone.0054101.e002"/><label>(1)</label></disp-formula><italic>vs H<sub>A</sub></italic>: The intergenic distances do not follow an exponential distribution.</p>
+        <p><disp-formula id="pone.0054101.e003"><graphic xlink:href="pone.0054101.e003"/><label>(2)</label></disp-formula>This test can be implemented with a chi-square goodness of fit test using 10 cells with varying bin widths. This leads to expected frequencies ranging from 5 to 10 per cell, depending on the species. Under <italic>H<sub>0</sub></italic>, the rate parameter <italic>&#x3BB;</italic> was estimated using the maximum likelihood method. The applicable null distribution is a chi-square distribution with 8 degrees of freedom.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Intergenic Distances Density Estimation</title>
+        <p>An estimate of the true density of intergenic distances was achieved via non-parametric density estimation. We employed a binning approach, first binning the raw data then applying a local linear kernel smoother on the resulting histograms <xref ref-type="bibr" rid="pone.0054101-Zhang1">[26]</xref>. The initial histogram density estimate is defined in the following way: Given the random sample <inline-formula><inline-graphic xlink:href="pone.0054101.e004.jpg"/></inline-formula> from the density of interest <inline-formula><inline-graphic xlink:href="pone.0054101.e005.jpg"/></inline-formula>, define an equally spaced partition of <inline-formula><inline-graphic xlink:href="pone.0054101.e006.jpg"/></inline-formula> by <inline-formula><inline-graphic xlink:href="pone.0054101.e007.jpg"/></inline-formula> where <inline-formula><inline-graphic xlink:href="pone.0054101.e008.jpg"/></inline-formula>. The bin width <inline-formula><inline-graphic xlink:href="pone.0054101.e009.jpg"/></inline-formula> is determined by the number of bins so that <inline-formula><inline-graphic xlink:href="pone.0054101.e010.jpg"/></inline-formula>. We use <inline-formula><inline-graphic xlink:href="pone.0054101.e011.jpg"/></inline-formula> to denote the count of sample points falling within bin <inline-formula><inline-graphic xlink:href="pone.0054101.e012.jpg"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0054101.e013.jpg"/></inline-formula> to denote the midpoint of <inline-formula><inline-graphic xlink:href="pone.0054101.e014.jpg"/></inline-formula> for <inline-formula><inline-graphic xlink:href="pone.0054101.e015.jpg"/></inline-formula> so that <inline-formula><inline-graphic xlink:href="pone.0054101.e016.jpg"/></inline-formula> The histogram density estimate <inline-formula><inline-graphic xlink:href="pone.0054101.e017.jpg"/></inline-formula> of <inline-formula><inline-graphic xlink:href="pone.0054101.e018.jpg"/></inline-formula> is given by<disp-formula id="pone.0054101.e019"><graphic xlink:href="pone.0054101.e019"/><label>(3)</label></disp-formula></p>
+        <p>We obtain <inline-formula><inline-graphic xlink:href="pone.0054101.e020.jpg"/></inline-formula> from <inline-formula><inline-graphic xlink:href="pone.0054101.e021.jpg"/></inline-formula> via local linear smoothing methods <xref ref-type="bibr" rid="pone.0054101-Fan1">[27]</xref>. Formally, the estimate <inline-formula><inline-graphic xlink:href="pone.0054101.e022.jpg"/></inline-formula> is obtained by minimizing the local weighted sums of squares,<disp-formula id="pone.0054101.e023"><graphic xlink:href="pone.0054101.e023"/><label>(4)</label></disp-formula>for each <inline-formula><inline-graphic xlink:href="pone.0054101.e024.jpg"/></inline-formula> with respect to <inline-formula><inline-graphic xlink:href="pone.0054101.e025.jpg"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0054101.e026.jpg"/></inline-formula> from which we obtain <inline-formula><inline-graphic xlink:href="pone.0054101.e027.jpg"/></inline-formula> We used a Gaussian kernel <inline-formula><inline-graphic xlink:href="pone.0054101.e028.jpg"/></inline-formula> and chose the bandwidth <inline-formula><inline-graphic xlink:href="pone.0054101.e029.jpg"/></inline-formula> manually.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Conservation of Gene Islands Across Species</title>
+        <p>Gene pairs were used to evaluate the preservation of gene islands across species. For the purposes of this analysis we defined a gene pair as two genes that were neighbors in the ancestral grass genome <xref ref-type="bibr" rid="pone.0054101-Massa1">[24]</xref> and that were both present in the analyzed species <italic>Ae. tauschii, B. distachyon</italic>, rice and sorghum. For each pair, we obtained the distance between the neighbors in each of the four species. In addition to 28 gene pairs identified from the <italic>Ae. tauschii</italic> data set, we also identified 8 gene pairs from sequenced BAC clones of hexaploid wheat cultivar Chinese Spring (J.L. Bennetzen and K.M. Devos, unpublished data) with orthologs in <italic>B. distachyon,</italic> rice and sorghum. In order to evaluate the preservation of gene islands across species we calculated Kendall's coefficient of concordance W <xref ref-type="bibr" rid="pone.0054101-Kendall1">[28]</xref>, <xref ref-type="bibr" rid="pone.0054101-Kendall2">[29]</xref> using a correction for ties since the original data consists of raw distances rather than ranks. This statistic was then used to test significance of the coefficient of concordance by testing the null hypothesis <inline-formula><inline-graphic xlink:href="pone.0054101.e030.jpg"/></inline-formula>.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Correlation of Distances between Neighboring Genes and Location of Contig on the Centromere-telomere Axis</title>
+        <p>The relative location of each contig on the centromere-telomere axis, ranging from 0 (centromere) to 1.0 (telomere), was downloaded from the <italic>Ae. tauschii</italic> genetic maps reported by Massa et al. <xref ref-type="bibr" rid="pone.0054101-Massa1">[24]</xref>. Distances from the end of a gene to the beginning of the neighboring gene in nucleotides were determined for all nine contigs. Only distances between genes were measured; distances from the first and last gene to the respective contig edge were disregarded. For each contig, the empirical quantile function of intergenic distances was computed and distances within the first quartile were considered intra-insular distances and distances within the fourth quartile were considered inter-insular distances. In order to determine if a relationship exists between location on the centromere-telomere axis and gene island structure, we implemented the regression model:<disp-formula id="pone.0054101.e031"><graphic xlink:href="pone.0054101.e031"/><label>(5)</label></disp-formula>where <inline-formula><inline-graphic xlink:href="pone.0054101.e032.jpg"/></inline-formula> is the intergenic distance between the <italic>i</italic>th pair of genes, <inline-formula><inline-graphic xlink:href="pone.0054101.e033.jpg"/></inline-formula> is the location along the centromere-telomere axis of the <italic>i</italic>th gene pair and <inline-formula><inline-graphic xlink:href="pone.0054101.e034.jpg"/></inline-formula> if the pair is categorized as intra-insular and <inline-formula><inline-graphic xlink:href="pone.0054101.e035.jpg"/></inline-formula> if the pair is categorized as inter-insular by the above quantile approach. For intra-insular distances, <inline-formula><inline-graphic xlink:href="pone.0054101.e036.jpg"/></inline-formula>, and the model is<disp-formula id="pone.0054101.e037"><graphic xlink:href="pone.0054101.e037"/><label>(6)</label></disp-formula>where <inline-formula><inline-graphic xlink:href="pone.0054101.e038.jpg"/></inline-formula> represents the intercept and <inline-formula><inline-graphic xlink:href="pone.0054101.e039.jpg"/></inline-formula> is the slope describing the linear relationship between intra-insular distances and location. For inter-insular distances, <inline-formula><inline-graphic xlink:href="pone.0054101.e040.jpg"/></inline-formula>, and the model is<disp-formula id="pone.0054101.e041"><graphic xlink:href="pone.0054101.e041"/><label>(7)</label></disp-formula>where <inline-formula><inline-graphic xlink:href="pone.0054101.e042.jpg"/></inline-formula> represents the intercept and <inline-formula><inline-graphic xlink:href="pone.0054101.e043.jpg"/></inline-formula> is the slope describing the linear relationship between inter-insular distances and location. This model allows for formal testing of the following two null hypotheses:</p>
+        <sec id="s2e1">
+          <title>Hypothesis 1</title>
+          <p><inline-formula><inline-graphic xlink:href="pone.0054101.e044.jpg"/></inline-formula> Intra-insular distances within islands are homogeneous along the <italic>Ae. tauschii</italic> chromosomes irrespective of location along the centromere-telomere axis <inline-formula><inline-graphic xlink:href="pone.0054101.e045.jpg"/></inline-formula></p>
+        </sec>
+        <sec id="s2e2">
+          <title>Hypothesis 2</title>
+          <p><inline-formula><inline-graphic xlink:href="pone.0054101.e046.jpg"/></inline-formula> Inter-insular distances are homogeneous along the <italic>Ae. tauschii</italic> chromosomes irrespective of location along the centromere-telomere axis <inline-formula><inline-graphic xlink:href="pone.0054101.e047.jpg"/></inline-formula></p>
+        </sec>
+      </sec>
+      <sec id="s2f">
+        <title>Repeat Elements in Intergenic Regions</title>
+        <p>All intergenic regions in the nine <italic>Ae. tauschii</italic> contigs that were 100 kb or less in length were analyzed for the presence of LTR retrotransposons by BLASTN searches against the Triticeae Repeat (TREP) database (<ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/ITMI/Repeats/">http://wheat.pw.usda.gov/ITMI/Repeats/</ext-link>). We also conducted a BLASTN search of the intergenic regions against Triticeae sequences in the &#x2018;High Throughput Genomic Sequences&#x2019; (HTGS) section of GenBank, which contains several hundred sequenced wheat and <italic>Ae. tauschii</italic> BAC clones. Intergenic regions with multiple hits were annotated according to the annotation found in the BAC clones deposited in GenBank. Hits with a minimum length of 50 bp and an e-value &#x2264;1e<sup>&#x2212;10</sup> were considered significant (<xref ref-type="supplementary-material" rid="pone.0054101.s001">Table S1</xref>). LTR retrotransposons in rice intergenic regions were identified using the same criteria by BLASTN searches against the repeat database ISU Cereal Repeat DB 3.1 (<ext-link ext-link-type="uri" xlink:href="http://magi.plantgenomics.iastate.edu">http://magi.plantgenomics.iastate.edu</ext-link>) (<xref ref-type="supplementary-material" rid="pone.0054101.s002">Table S2</xref>).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Density Functions of Intergenic Distances</title>
+        <p>The graphs of the non-parametrically estimated density functions (dashed lines in <xref ref-type="fig" rid="pone-0054101-g001">Figure 1</xref>) show that short distances between neighboring genes are the most frequent distances in all four genomes. Short distances are also most frequent in the graphs of gene locations as captured by the null hypothesis of uniform locations of genes along chromosome arms given by <xref ref-type="disp-formula" rid="pone.0054101.e002">Equation (1</xref>) (solid lines in <xref ref-type="fig" rid="pone-0054101-g001">Figure 1</xref>). In <italic>B. distachyon</italic> and rice, the non-parametric density functions do not significantly differ from the fitted exponential density for those species (<xref ref-type="fig" rid="pone-0054101-g001">Figures 1A and 1B</xref> and <xref ref-type="table" rid="pone-0054101-t001">Table 1</xref>) and indicate that genes are not clustered in these species. In contrast, in sorghum and <italic>Ae. tauschii,</italic> non-parametric density functions significantly differ from the fitted exponential density and have several features in common (<xref ref-type="fig" rid="pone-0054101-g001">Figures 1C and 1D</xref> and <xref ref-type="table" rid="pone-0054101-t001">Table 1</xref>). In both genomes, the non-parametric density graph is above the fitted exponential density graph for short intergenic distances, indicating the presence of too many short distances, and then below it, indicating too few intermediate distances. This pattern suggests that gene clustering is present. We propose to call these clusters &#x201C;gene insulae&#x201D; and the pattern of gene distribution observed in the sorghum and <italic>Ae. tauschii</italic> genomes as &#x201C;insular gene distribution&#x201D;. We propose this new term because the English term &#x201C;gene islands&#x201D; has been used for other forms of gene clustering (see Introduction).</p>
+        <fig id="pone-0054101-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0054101.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Density functions for intergenic distances in <italic>B. distachyon</italic> (A), rice (B), sorghum (C), and <italic>Ae. tauschii</italic> (D).</title>
+            <p>Shown is the exponential density fitted by Maximum Likelihood (2) (solid) and the non-parametric density estimate (4) (dashed), with bandwidth <italic>h</italic>&#x200A;=&#x200A;1.25 (<bold>A</bold>), <italic>h</italic>&#x200A;=&#x200A;1.75 (<bold>B</bold>), <italic>h</italic>&#x200A;=&#x200A;1.50 (<bold>C</bold>), and <italic>h</italic>&#x200A;=&#x200A;15.00 (<bold>D</bold>).</p>
+          </caption>
+          <graphic xlink:href="pone.0054101.g001"/>
+        </fig>
+        <table-wrap id="pone-0054101-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0054101.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Summary of test results for the null hypothesis that gene locations are uniformly distributed in the four species.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0054101-t001-1" xlink:href="pone.0054101.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">No. intergenic distances</td>
+                  <td align="left" rowspan="1" colspan="1">Estimated rate parameter <inline-formula><inline-graphic xlink:href="pone.0054101.e048.jpg"/></inline-formula><xref ref-type="table-fn" rid="nt101">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Estimated standard error of <inline-formula><inline-graphic xlink:href="pone.0054101.e049.jpg"/></inline-formula></td>
+                  <td align="left" rowspan="1" colspan="1"><italic>P</italic>-value<xref ref-type="table-fn" rid="nt102">**</xref></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>B. distachyon</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">52</td>
+                  <td align="left" rowspan="1" colspan="1">0.174</td>
+                  <td align="left" rowspan="1" colspan="1">0.024</td>
+                  <td align="left" rowspan="1" colspan="1">0.330</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Rice</td>
+                  <td align="left" rowspan="1" colspan="1">57</td>
+                  <td align="left" rowspan="1" colspan="1">0.167</td>
+                  <td align="left" rowspan="1" colspan="1">0.022</td>
+                  <td align="left" rowspan="1" colspan="1">0.064</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Sorghum</td>
+                  <td align="left" rowspan="1" colspan="1">62</td>
+                  <td align="left" rowspan="1" colspan="1">0.170</td>
+                  <td align="left" rowspan="1" colspan="1">0.022</td>
+                  <td align="left" rowspan="1" colspan="1">0.007</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Ae. tauschii</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">81</td>
+                  <td align="left" rowspan="1" colspan="1">0.012</td>
+                  <td align="left" rowspan="1" colspan="1">0.001</td>
+                  <td align="left" rowspan="1" colspan="1">0.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label>*</label>
+              <p>The estimated exponential rate parameter <inline-formula><inline-graphic xlink:href="pone.0054101.e050.jpg"/></inline-formula> is the maximum likelihood estimator of <inline-formula><inline-graphic xlink:href="pone.0054101.e051.jpg"/></inline-formula> as given in <xref ref-type="disp-formula" rid="pone.0054101.e002">Equation (1</xref>).</p>
+            </fn>
+            <fn id="nt102">
+              <label>**</label>
+              <p>Based on a &#x3C7;<sup>2</sup>- goodness of fit test.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The sorghum and <italic>Ae. tauschii</italic> non-parametric density graphs display an initial interval of very short intergenic distances on which the estimated non-parametric density function is concave down (<xref ref-type="fig" rid="pone-0054101-g001">Figures 1C and 1D</xref>). This portion of the graphs intersects the density function based on the null hypothesis at 3 kb and 22 kb in sorghum and <italic>Ae. tauschii,</italic> respectively, passes through a local minimum at 8 and 81 kb, respectively, changes to concave up, again intersects the function based on the null hypothesis and reaches a local maximum, with one or more additional concavity changes as the intergenic distances increase (<xref ref-type="table" rid="pone-0054101-t002">Table 2</xref>). We propose using the first local minimum to separate the intra-insular intergenic distances on the left from inter-insular distances on the right. This choice is motivated by cluster analysis based on non-parametric density estimation <xref ref-type="bibr" rid="pone.0054101-Silverman1">[30]</xref>. The mean intergenic distance shorter than this minimum (<italic>i.e.</italic> the mean intra-insular distance) is 2.1 kb in sorghum and the average insula contains 3.7 genes. The mean intergenic distance shorter than this minimum is 16.7 kb in <italic>Ae. tauschii</italic> and the average insula contains 3.9 genes. The average intergenic distance longer than the first local minimum (<italic>i.e.</italic> the mean inter-insular distance) is 15.1 kb in the sorghum genome but is significantly larger at 205.2 kb in the <italic>Ae. tauschii</italic> genome (<italic>Mann-Whitney Test</italic>, <italic>P</italic>-value&#x200A;=&#x200A;0). The distances shorter than this critical point represent 70% and 63% of all intergenic distances in the sorghum and <italic>Ae. tauschii</italic> genomes, respectively.</p>
+        <table-wrap id="pone-0054101-t002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0054101.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Insular structure in sorghum and <italic>Ae. tauschii.</italic></title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0054101-t002-2" xlink:href="pone.0054101.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Statistic</td>
+                  <td align="left" rowspan="1" colspan="1">Unit</td>
+                  <td align="left" rowspan="1" colspan="1">Sorghum</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Ae. tauschii</italic>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">First local minimum</td>
+                  <td align="left" rowspan="1" colspan="1">kb</td>
+                  <td align="left" rowspan="1" colspan="1">8.0</td>
+                  <td align="left" rowspan="1" colspan="1">81.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Mean of distances shorter than the minimum</td>
+                  <td align="left" rowspan="1" colspan="1">kb</td>
+                  <td align="left" rowspan="1" colspan="1">2.1</td>
+                  <td align="left" rowspan="1" colspan="1">16.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Mean of distances longer than theminimum</td>
+                  <td align="left" rowspan="1" colspan="1">kb</td>
+                  <td align="left" rowspan="1" colspan="1">15.1</td>
+                  <td align="left" rowspan="1" colspan="1">205.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Shorter distances</td>
+                  <td align="left" rowspan="1" colspan="1">%</td>
+                  <td align="left" rowspan="1" colspan="1">70.0</td>
+                  <td align="left" rowspan="1" colspan="1">63.0</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s3b">
+        <title>Gene Density along the Centromere-telomere Axis</title>
+        <p>Gene density increases from the proximal, low-recombination regions towards the distal, high-recombination regions in the <italic>Ae. tauschii</italic> chromosomes <xref ref-type="bibr" rid="pone.0054101-Luo1">[17]</xref>. This gradient could be caused by a change in gene density within gene insulae, a change in the distances between gene insulae, or both. In order to determine which of these three possibilities is most consistent with the data, we fit the regression model in (5) to <italic>Ae. tauschii</italic> data after removing a single outlier due to its high influence on the parameter estimates. The fitted regression model (5) indicates no relationship between intra-insular distances and gene location along the centromere-telomere axis based on the high <italic>P</italic> values for parameters <inline-formula><inline-graphic xlink:href="pone.0054101.e052.jpg"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0054101.e053.jpg"/></inline-formula> (<xref ref-type="table" rid="pone-0054101-t003">Table 3</xref>). Since <inline-formula><inline-graphic xlink:href="pone.0054101.e054.jpg"/></inline-formula> cannot be distinguished from zero at the chosen significance level, the significance of <inline-formula><inline-graphic xlink:href="pone.0054101.e055.jpg"/></inline-formula> indicates that while there is no significant relationship between intra-insular distances and insula location along the centromere-telomere axis there is a significant relationship between inter-insular distances and location along the centromere-telomere axis (<xref ref-type="fig" rid="pone-0054101-g002">Figures 2A and 2B</xref>). This relationship between inter-insular distances and gene location is quantified in <xref ref-type="disp-formula" rid="pone.0054101.e041">equation (7</xref>) and results are shown in <xref ref-type="table" rid="pone-0054101-t004">Table 4</xref>. The fitted regression model (7) indicates that there is a strong negative relationship between inter-insular distances and insula location along the centromere-telomere axis (<xref ref-type="fig" rid="pone-0054101-g002">Figure 2A</xref>). We therefore conclude that increase in gene density towards the ends of <italic>Ae. tauschii</italic> chromosomes is caused primarily by a decrease in the distances between insulae.</p>
+        <fig id="pone-0054101-g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0054101.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Relationships between inter-insular distances (A), intra-insular distances (B) and the number of genes per insula (C) and gene location along the centromere-telomere axes of <italic>Ae. tauschii</italic> chromosome arms.</title>
+            <p>(<bold>A</bold>) shows a fitted regression line from Model (7) of the inter-insular distances and gene location on centromere-telomere axes of <italic>Ae. tauschii</italic> chromosome arms.</p>
+          </caption>
+          <graphic xlink:href="pone.0054101.g002"/>
+        </fig>
+        <table-wrap id="pone-0054101-t003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0054101.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>Fitting the full regression model specified in <xref ref-type="disp-formula" rid="pone.0054101.e031">equation (5</xref>) to the <italic>Ae. tauschii</italic> data.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0054101-t003-3" xlink:href="pone.0054101.t003"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Parameter</td>
+                  <td align="left" rowspan="1" colspan="1">Estimate</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>P</italic>-value</td>
+                  <td align="left" rowspan="1" colspan="1">95% confidence interval</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>
+                      <sub>&#x3B2;</sub>
+                    </italic>
+                    <sub>0</sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">8.3</td>
+                  <td align="left" rowspan="1" colspan="1">0.82</td>
+                  <td align="left" rowspan="1" colspan="1">(&#x2212;64.5, 81.1)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>
+                      <sub>&#x3B2;</sub>
+                    </italic>
+                    <sub>1</sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;5.5</td>
+                  <td align="left" rowspan="1" colspan="1">0.92</td>
+                  <td align="left" rowspan="1" colspan="1">(&#x2212;102.8, 91.9)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3B2;</italic>
+                    <sub>2</sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">387.8</td>
+                  <td align="left" rowspan="1" colspan="1">&#x223C;0.00</td>
+                  <td align="left" rowspan="1" colspan="1">(279.9, 495.7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>
+                      <sub>&#x3B2;</sub>
+                    </italic>
+                    <sub>3</sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;257.8</td>
+                  <td align="left" rowspan="1" colspan="1">&#x223C;0.00</td>
+                  <td align="left" rowspan="1" colspan="1">(&#x2212;403.0, &#x2212;112.5)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <table-wrap id="pone-0054101-t004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0054101.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>Fitting the regression model (7) to the <italic>Ae. tauschii</italic> data.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0054101-t004-4" xlink:href="pone.0054101.t004"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Parameter</td>
+                  <td align="left" rowspan="1" colspan="1">Estimate</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>P</italic>-value</td>
+                  <td align="left" rowspan="1" colspan="1">95% confidence interval</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>
+                      <sub>&#x3B2;</sub>
+                    </italic>
+                    <sub>0+<italic>&#x3B2;</italic>2</sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">427.2</td>
+                  <td align="left" rowspan="1" colspan="1">&#x223C;0.00</td>
+                  <td align="left" rowspan="1" colspan="1">(274.3, 580.1)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>
+                      <sub>&#x3B2;</sub>
+                    </italic>
+                    <sub>1+<italic>&#x3B2;</italic>3</sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;300.8</td>
+                  <td align="left" rowspan="1" colspan="1">0.01</td>
+                  <td align="left" rowspan="1" colspan="1">(&#x2212;502.9, &#x2212;98.6)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>It should be noted that as an alternative to the quantile approach to classify intergenic distances as intra-insular or inter-insular used here, we could have used the first local minimum at 81 kb as the boundary between intra-insular and inter-insular distances. In fact, we implemented this method as well and it yielded identical inferences. We report the results of the quantile approach because this method is particularly robust. Similarly, we tried several variance stabilizing transformations prior to fitting the regression model. In all cases, the inferences were identical. We therefore report here the most parsimonious model. Clearly there is a strong signal in the data indicating a negative relationship between inter-insular distances and insula location along the centromere-telomere axis.</p>
+        <p>To determine if there is a relationship between the insula size and its location on the centromere-telomere axis in <italic>Ae. tauschii</italic>, we plot the number of genes per insula and insula location on the centromere-telomere axis for 15 <italic>Ae. tauschii</italic> insulae (<xref ref-type="fig" rid="pone-0054101-g002">Figure 2C</xref>). There is no relationship between the number of genes per insula and insula location (<italic>r&#x200A;=&#x200A;</italic>0.19, <italic>P</italic>-value&#x200A;=&#x200A;0.42). The situation does not change after an obvious outlier (insula with 13 genes) is removed, (<italic>r&#x200A;=&#x200A;</italic>0.06, <italic>P</italic>-value&#x200A;=&#x200A;0.8). We conclude that the sizes of insulae do not appreciably change along the centromere-telomere axis in the <italic>Ae. tauschii</italic> genome.</p>
+      </sec>
+      <sec id="s3c">
+        <title>Conservation of gene Insulae</title>
+        <p>Kendall&#x2019;s coefficient of concordance W&#x200A;=&#x200A;0.49, which indicates that there is a high level of concordance of distances between orthologous gene pairs in the four genomes. This means that gene pairs that are relatively close to one another in one genome are likely to be also close to one another in other genomes. Analogously, gene pairs that are relatively distant from each other in one genome are likely to be also far apart in the other three genomes. The null hypothesis that the intergenic distances are independent across genomes is rejected with <italic>P</italic>&lt;0.001.</p>
+      </sec>
+      <sec id="s3d">
+        <title>Gene Insulae and LTR Retroelements</title>
+        <p>In the <italic>Ae. tauschii</italic> genome, all inter-insular intergenic distances (distances &gt;81 kb) contain LTR retrotransposons but only 27% of intra-insular intergenic distances contain LTR retrotransposons or their remnants. As shown in <xref ref-type="fig" rid="pone-0054101-g001">Figures 1C and 1D</xref>, most of the intra-insular distances are overrepresented relative to the uniform gene distribution. In the <italic>Ae. tauschii</italic> genome, only 9% these intergenic distance (distances &#x2264;22 kb, <xref ref-type="fig" rid="pone-0054101-g001">Figure 1D</xref>) contain LTR retrotransposon remnants (<xref ref-type="supplementary-material" rid="pone.0054101.s006">Table S6</xref>), which indicates that the absence of LTR retrotransposon insertions is the primary contributor to the overrepresentation of short intergenic distances and an important attribute of insulae in the <italic>Ae. tauschii</italic> genome.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>An important feature of the density functions based on the null hypothesis is a prominent peak of very short intergenic distances predicted for each of the four genomes. Thus, very short intergenic distances are expected to dominate density profiles of observed intergenic distances even if gene locations were distributed uniformly along chromosomes. This fact is exemplified by the <italic>B. distachyon</italic> and rice genomes in which short intergenic distances dominate the density profiles, yet genes are not clustered in those genomes. Observation of a prominent peak of short distances in an empirical density profile, such as that observed by Choulet et al. <xref ref-type="bibr" rid="pone.0054101-Choulet1">[20]</xref> is not in itself sufficient to draw a conclusion regarding the existence of gene clustering.</p>
+      <p>Comparisons of the density functions based on the null hypothesis with the non-parametric density functions estimated from observed distances between neighboring genes divided the four genomes into two contrasting pairs. The first pair consisted of the small <italic>B. distachyon</italic> and rice genomes. In those genomes the nonparametric and exponential density functions did not significantly differ from each other. The second pair consisted of the larger sorghum and <italic>Ae. tauschii</italic> genomes, for which the two density functions differed significantly.</p>
+      <p>Variation in genome size in grasses is principally caused by the accumulation or loss of TEs. Genome expansion takes place principally by the accumulation of LTR retroelements, which have the tendency to insert into LTR retroelements resident in the chromosomes <xref ref-type="bibr" rid="pone.0054101-SanMiguel1">[1]</xref>, <xref ref-type="bibr" rid="pone.0054101-Bennetzen1">[2]</xref>, <xref ref-type="bibr" rid="pone.0054101-Bennetzen2">[4]</xref>. Genome contraction takes place principally by DNA deletion caused by unequal homologous recombination between LTRs of the same or related LTR retrotransposons and by illegitimate recombination within TE and other non-essential DNA <xref ref-type="bibr" rid="pone.0054101-Devos1">[3]</xref>. Most of the observations that emerged here can be attributed to TE dynamics and the nonrandom insertion of LTR retroelements. In small, gene-dense genomes, such as those of <italic>B. distachyon</italic> and rice, the overall retroelement content is lower, 21.4% in <italic>B. distachyon</italic><xref ref-type="bibr" rid="pone.0054101-InternationalBrachypodiumGenome1">[9]</xref> and 26% in rice <xref ref-type="bibr" rid="pone.0054101-Consortium1">[5]</xref>, than in the larger genomes, 54% in sorghum and at least 51% in the <italic>Ae. tauschii</italic> genome <xref ref-type="bibr" rid="pone.0054101-Li1">[31]</xref>. Genes are distributed uniformly and there is very little gene clustering in the small genomes. In the nine studied regions, LTR retrotransposons or remnants of LTR retrotransposons were present in only 12% of rice gene pairs (<xref ref-type="supplementary-material" rid="pone.0054101.s002">Table S2</xref>) compared to 54% of <italic>Ae. tauschii</italic> gene pairs (<xref ref-type="supplementary-material" rid="pone.0054101.s001">Table S1</xref>). When comparing only orthologous gene pairs, 12% of the rice gene pairs but 61% of the <italic>Ae. tauschii</italic> gene pairs were separated by sequences with homology to LTR retrotransposons (<xref ref-type="supplementary-material" rid="pone.0054101.s006">Table S6</xref>). All of the <italic>Ae. tauschii</italic> inter-insular spaces contained retrotransposons. This is consistent with the hypothesis that expansion of grass genomes, which takes place predominantly by the accumulation of LTR retroelements <xref ref-type="bibr" rid="pone.0054101-Bennetzen1">[2]</xref>, occurs principally in regions already containing LTR retroelements. As a result of this nested insertion of retroelements, genes that are separated by LTR retroelements will be pushed further apart from each other during genome expansion, which will create large arrays of LTR retroelements characteristic of inter-insular space <xref ref-type="bibr" rid="pone.0054101-Choulet1">[20]</xref>, <xref ref-type="bibr" rid="pone.0054101-Kronmiller1">[21]</xref>. Genes that are not separated by LTR retroelements will tend to remain near each other and form insulae. Due to the LTR retroelement dynamics, gene distribution is largely homogeneous in small grass genomes but assumes insular organization as a consequence of genome expansion. As illustrated by the comparison of orthologous regions in the sorghum and <italic>Ae. tauschii</italic> genomes, insulae become less gene dense and separated by greater spans of nested TEs as a genome expands.</p>
+      <p>The distal chromosome regions are typically more gene-dense than the proximal chromosome regions in the Triticeae chromosomes. Regression analysis showed that gene number per insula and gene density within an insula were similar along <italic>Ae. tauschii</italic> chromosomes but that inter-insular distances were shorter in distal, high-recombination regions compared to proximal, low-recombination regions. Therefore, the increase in gene density toward the distal regions of <italic>Ae. tauschii</italic> chromosomes <xref ref-type="bibr" rid="pone.0054101-Luo1">[17]</xref> is largely due to shortening of inter-insular distances.</p>
+      <p>Insulae in the distal gene-rich regions of wheat chromosome 3B were reported to contain larger numbers of genes than insulae in the proximal, gene-poor chromosome regions <xref ref-type="bibr" rid="pone.0054101-Rustenholz1">[16]</xref>. This was not observed in the <italic>Ae. tauschii</italic> genome. The two-fold larger threshold assumed to delimit intra- and inter-insular spaces in this study (81 kb) compared to the 3B study (43 kb), and the exclusion of pseudogenes from our analysis could have caused this difference. Our observation that insulae contain similar numbers of genes in distal chromosome regions compared to the less gene-dense proximal chromosome regions is paralleled by similar numbers of genes per insula in the genome of sorghum (3.7 genes per insula) compared to the less gene-dense genome of <italic>Ae. tauschii</italic> (3.9 genes per insula).</p>
+      <p>The observation that the greater gene density in the distal regions of chromosome 3B is due to genes that are not syntenic with rice and <italic>B. distachyon</italic>
+<xref ref-type="bibr" rid="pone.0054101-Rustenholz1">[16]</xref> is probably unrelated to the insular dynamics. It is more likely a reflection of a high proportion of novel genes in those regions <xref ref-type="bibr" rid="pone.0054101-Luo1">[17]</xref>, <xref ref-type="bibr" rid="pone.0054101-Dvorak1">[32]</xref>, <xref ref-type="bibr" rid="pone.0054101-See1">[33]</xref> due to greater incidence of duplicated genes in the distal regions of wheat chromosomes and those of wheat diploid ancestors <xref ref-type="bibr" rid="pone.0054101-Luo1">[17]</xref>, <xref ref-type="bibr" rid="pone.0054101-Dvorak1">[32]</xref>.</p>
+      <p>If the evolution of gene insulae was driven entirely by insertions of LTR retroelements, it would be counter-intuitive to expect conservation of insulae over long periods of time. This is particularly true if the remarkably high rate of turnover of intergenic spaces in grass genomes is taken into account. In the Triticeae genomes, for example, virtually the entire intergenic space equivalent to nearly 90% of the genome, is replaced within four to five million years <xref ref-type="bibr" rid="pone.0054101-Dubcovsky1">[34]</xref>. The four species studied here belong to grass subfamilies Pooideae (<italic>Ae. tauschii</italic> and <italic>B. distachyon</italic>), Ehrhartoideae (rice) and Panicoideae (sorghum). The Panicoideae subfamily diverged about 52.5 million years ago (MYA) from the ancestor of the Pooideae and Ehrhartoideae subfamilies <xref ref-type="bibr" rid="pone.0054101-InternationalBrachypodiumGenome1">[9]</xref>. Within the subfamily Pooideae, <italic>Ae. tauschii</italic> and <italic>B. distachyon</italic> diverged 35.8 MYA and their common ancestor diverged from rice 47.3 MYA <xref ref-type="bibr" rid="pone.0054101-InternationalBrachypodiumGenome1">[9]</xref>. In spite of the antiquity of these divergence times, comparison of the four genomes suggested that heterogeneity in gene distribution is conserved to some degree. Neighboring genes that are close to each other in one genome tend to be close to each other in other genomes and, <italic>vice versa</italic>, neighboring genes that are far apart in one genome show a tendency to be far apart in other genomes. This observation remained true even when comparing intergenic distances in <italic>Ae. tauschii</italic> with those in maize (<xref ref-type="supplementary-material" rid="pone.0054101.s005">Table S5</xref>), a Panicoideae species with a haploid genome size of 2,500 Mb (<italic>P</italic>-value &lt;0.005).</p>
+      <p>The evolutionary conservation of gene distribution over long spans of time argues for a functional factor playing a role in the evolution of insulae, in addition to the process based on the dynamics of LTR retroelement insertions. It is possible that some gene pairs do not tolerate separation by LTR retroelements. Co-location of functionally related or co-expressed genes or genes encoding proteins in the same biochemical pathways was reported in a number of plants <xref ref-type="bibr" rid="pone.0054101-Rustenholz1">[16]</xref>, <xref ref-type="bibr" rid="pone.0054101-Lee1">[35]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0054101-Lou1">[39]</xref>. Such functional constrains may represent another factor playing a role in the formation and conservation of insulae.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0054101.s001">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Locations of genes in nine </bold>
+            <bold>
+              <italic>Ae. tauschii</italic>
+            </bold>
+            <bold> contigs, the distances between neighboring genes, and homology of intergenic regions to LTR retrotransposons.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0054101.s001.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0054101.s002">
+        <label>Table S2</label>
+        <caption>
+          <p>
+            <bold>Locations of genes in the rice regions orthologous to the </bold>
+            <bold>
+              <italic>Ae. tauschii</italic>
+            </bold>
+            <bold> contigs, the distances between neighboring rice genes, and homology of the intergenic regions to LTR retrotransposons.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0054101.s002.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0054101.s003">
+        <label>Table S3</label>
+        <caption>
+          <p>
+            <bold>Locations of genes in the </bold>
+            <bold>
+              <italic>B. distachyon</italic>
+            </bold>
+            <bold> regions orthologous to the </bold>
+            <bold>
+              <italic>Ae. tauschii</italic>
+            </bold>
+            <bold> contigs and the distances between neighboring </bold>
+            <bold>
+              <italic>B. distachyon</italic>
+            </bold>
+            <bold> genes.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0054101.s003.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0054101.s004">
+        <label>Table S4</label>
+        <caption>
+          <p>
+            <bold>Locations of genes in the </bold>
+            <bold>
+              <italic>S. bicolor</italic>
+            </bold>
+            <bold> regions orthologous to nine </bold>
+            <bold>
+              <italic>Ae. tauschii</italic>
+            </bold>
+            <bold> contigs and distances between neighboring </bold>
+            <bold>
+              <italic>S. bicolor</italic>
+            </bold>
+            <bold> genes.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0054101.s004.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0054101.s005">
+        <label>Table S5</label>
+        <caption>
+          <p>
+            <bold>Orthologous gene pairs and their intergenic distances in </bold>
+            <bold>
+              <italic>Ae. tauschii</italic>
+            </bold>
+            <bold>, rice, </bold>
+            <bold>
+              <italic>B. distachyon</italic>
+            </bold>
+            <bold>, sorghum, and maize.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0054101.s005.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0054101.s006">
+        <label>Table S6</label>
+        <caption>
+          <p>
+            <bold>Orthologous gene pairs in </bold>
+            <bold>
+              <italic>Ae. tauschii</italic>
+            </bold>
+            <bold> and rice, their intergenic distances and homology of the intergenic sequences to known retrotransposons.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0054101.s006.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0054101-SanMiguel1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>SanMiguel</surname><given-names>P</given-names></name>, <name><surname>Tikhonov</surname><given-names>A</given-names></name>, <name><surname>Jin</surname><given-names>Y-K</given-names></name>, <name><surname>Moutchoulskaia</surname><given-names>N</given-names></name>, <name><surname>Zakharov</surname><given-names>D</given-names></name>, <etal>et al</etal> (<year>1996</year>) <article-title>Nested retrotransposons in the intergenic regions of the maize genome</article-title>. <source>Science</source><volume>274</volume>: <fpage>765</fpage>&#x2013;<lpage>768</lpage><pub-id pub-id-type="pmid">8864112</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Bennetzen1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Bennetzen</surname><given-names>JL</given-names></name>, <name><surname>Kellogg</surname><given-names>EA</given-names></name> (<year>1997</year>) <article-title>Do plants have a one-way ticket to genomic obesity?</article-title><source>Plant Cell</source><volume>9</volume>: <fpage>1509</fpage>&#x2013;<lpage>1514</lpage><pub-id pub-id-type="pmid">12237393</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Devos1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Devos</surname><given-names>KM</given-names></name>, <name><surname>Brown</surname><given-names>JKM</given-names></name>, <name><surname>Bennetzen</surname><given-names>JL</given-names></name> (<year>2002</year>) <article-title>Genome size reduction through illegitimate recombination counteracts genome expansion in Arabidopsis</article-title>. <source>Genome Res</source><volume>12</volume>: <fpage>1075</fpage>&#x2013;<lpage>1079</lpage><pub-id pub-id-type="pmid">12097344</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Bennetzen2">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Bennetzen</surname><given-names>JL</given-names></name> (<year>2002</year>) <article-title>Mechanisms and rates of genome expansion and contraction in flowering plants</article-title>. <source>Genetica</source><volume>115</volume>: <fpage>29</fpage>&#x2013;<lpage>36</lpage><pub-id pub-id-type="pmid">12188046</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Consortium1">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><collab>Consortium</collab> (<year>2005</year>) <article-title>Sequence, annotation, and analysis of synteny between rice chromosome 3 and diverged grass species</article-title>. <source>Genome Res</source><volume>15</volume>: <fpage>1284</fpage>&#x2013;<lpage>1291</lpage><pub-id pub-id-type="pmid">16109971</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Yu1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Yu</surname><given-names>J</given-names></name>, <name><surname>Hu</surname><given-names>S</given-names></name>, <name><surname>Wang</surname><given-names>J</given-names></name>, <name><surname>Wong</surname><given-names>GK</given-names></name>, <name><surname>Li</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>A draft sequence of the rice genome (<italic>Oryza sativa</italic> L. ssp. <italic>indica</italic>)</article-title>. <source>Science</source><volume>296</volume>: <fpage>79</fpage>&#x2013;<lpage>92</lpage><pub-id pub-id-type="pmid">11935017</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Paterson1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Paterson</surname><given-names>AH</given-names></name>, <name><surname>Bowers</surname><given-names>JE</given-names></name>, <name><surname>Bruggmann</surname><given-names>R</given-names></name>, <name><surname>Dubchak</surname><given-names>I</given-names></name>, <name><surname>Grimwood</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>The <italic>Sorghum bicolor</italic> genome and the diversification of grasses</article-title>. <source>Nature</source><volume>457</volume>: <fpage>551</fpage>&#x2013;<lpage>556</lpage><pub-id pub-id-type="pmid">19189423</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Schnable1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Schnable</surname><given-names>PS</given-names></name>, <name><surname>Ware</surname><given-names>D</given-names></name>, <name><surname>Fulton</surname><given-names>RS</given-names></name>, <name><surname>Stein</surname><given-names>JC</given-names></name>, <name><surname>Wei</surname><given-names>FS</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>The B73 Maize Genome: Complexity, Diversity, and Dynamics</article-title>. <source>Science</source><volume>326</volume>: <fpage>1112</fpage>&#x2013;<lpage>1115</lpage><pub-id pub-id-type="pmid">19965430</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-InternationalBrachypodiumGenome1">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>International Brachypodium Genome</surname><given-names>Initiative</given-names></name> (<year>2010</year>) <article-title>Genome sequencing and analysis of the model grass <italic>Brachypodium distachyon</italic></article-title>. <source>Nature</source><volume>463</volume>: <fpage>763</fpage>&#x2013;<lpage>768</lpage><pub-id pub-id-type="pmid">20148030</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Bennetzen3">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Bennetzen</surname><given-names>JL</given-names></name>, <name><surname>Schmutz</surname><given-names>J</given-names></name>, <name><surname>Wang</surname><given-names>H</given-names></name>, <name><surname>Percifield</surname><given-names>R</given-names></name>, <name><surname>Hawkins</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Full genome sequence analysis of the model plant Setaria</article-title>. <source>Nature Biotech</source><volume>30</volume>: <fpage>555</fpage>&#x2013;<lpage>561</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Gill1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Gill</surname><given-names>KS</given-names></name>, <name><surname>Gill</surname><given-names>BS</given-names></name>, <name><surname>Endo</surname><given-names>TR</given-names></name> (<year>1993</year>) <article-title>A chromosome region-specific mapping strategy reveals gene-rich telomeric ends in wheat</article-title>. <source>Chromosoma</source><volume>102</volume>: <fpage>374</fpage>&#x2013;<lpage>381</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Sandhu1">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Sandhu</surname><given-names>D</given-names></name>, <name><surname>Gill</surname><given-names>KS</given-names></name> (<year>2002</year>) <article-title>Gene-containing regions of wheat and the other grass genomes</article-title>. <source>Plant Physiol</source><volume>128</volume>: <fpage>803</fpage>&#x2013;<lpage>811</lpage><pub-id pub-id-type="pmid">11891237</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Erayman1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Erayman</surname><given-names>M</given-names></name>, <name><surname>Sandhu</surname><given-names>D</given-names></name>, <name><surname>Sidhu</surname><given-names>D</given-names></name>, <name><surname>Dilbirligi</surname><given-names>M</given-names></name>, <name><surname>Baenziger</surname><given-names>PS</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title>Demarcating the gene-rich regions of the wheat genome</article-title>. <source>Nucleic Acids Res</source><volume>32</volume>: <fpage>3546</fpage>&#x2013;<lpage>3565</lpage><pub-id pub-id-type="pmid">15240829</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Kihara1">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Kihara</surname><given-names>H</given-names></name> (<year>1944</year>) <article-title>Discovery of the DD-analyser, one of the ancestors of <italic>Triticum vulgare</italic> (Japanese)</article-title>. <source>Agricult Hort (Tokyo)</source><volume>19</volume>: <fpage>13</fpage>&#x2013;<lpage>14</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-McFadden1">
+        <label>15</label>
+        <mixed-citation publication-type="other">McFadden ES, Sears ER (1946) The origin of <italic>Triticum spelta</italic> and its free-threshing hexaploid relatives. J Hered 37: 81&#x2013;89, 107&#x2013;116.</mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Rustenholz1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Rustenholz</surname><given-names>C</given-names></name>, <name><surname>Choulet</surname><given-names>F</given-names></name>, <name><surname>Laugier</surname><given-names>C</given-names></name>, <name><surname>Safar</surname><given-names>J</given-names></name>, <name><surname>Simkova</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>A 3,000-loci transcription map of chromosome 3B unravels the structural and functional features of gene islands in hexaploid wheat</article-title>. <source>Plant Physiol</source><volume>157</volume>: <fpage>1596</fpage>&#x2013;<lpage>1608</lpage><pub-id pub-id-type="pmid">22034626</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Luo1">
+        <label>17</label>
+        <mixed-citation publication-type="other">Luo MC, Gu YQ, You FM, Deal KR, Ma YQ, <etal>et al</etal>. (2012) A 4-gigabase physical map unlocks the structure and evolution of the complex genome of <italic>Aegilops tauschii,</italic> the wheat D-genome progenitor. Proc Natl Acad Sci USA, submitted.</mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Feuillet1">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Feuillet</surname><given-names>C</given-names></name>, <name><surname>Keller</surname><given-names>B</given-names></name> (<year>1999</year>) <article-title>High gene density is conserved at syntenic loci of small and large grass genomes</article-title>. <source>Proc Natl Acad Sci USA</source><volume>96</volume>: <fpage>8265</fpage>&#x2013;<lpage>8270</lpage><pub-id pub-id-type="pmid">10393983</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Wicker1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Wicker</surname><given-names>T</given-names></name>, <name><surname>Zimmermann</surname><given-names>W</given-names></name>, <name><surname>Perovic</surname><given-names>D</given-names></name>, <name><surname>Paterson</surname><given-names>AH</given-names></name>, <name><surname>Ganal</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>A detailed look at 7 million years of genome evolution in a 439 kb contiguous sequence at the barley <italic>Hv-eIF4E</italic> locus: recombination, rearrangements and repeats</article-title>. <source>Plant J</source><volume>41</volume>: <fpage>184</fpage>&#x2013;<lpage>194</lpage><pub-id pub-id-type="pmid">15634196</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Choulet1">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Choulet</surname><given-names>F</given-names></name>, <name><surname>Wicker</surname><given-names>T</given-names></name>, <name><surname>Rustenholz</surname><given-names>C</given-names></name>, <name><surname>Paux</surname><given-names>E</given-names></name>, <name><surname>Salse</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Megabase level sequencing reveals contrasted organization and evolution patterns of the wheat gene and transposable element spaces</article-title>. <source>Plant Cell</source><volume>22</volume>: <fpage>1686</fpage>&#x2013;<lpage>1701</lpage><pub-id pub-id-type="pmid">20581307</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Kronmiller1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Kronmiller</surname><given-names>BA</given-names></name>, <name><surname>Wise</surname><given-names>RP</given-names></name> (<year>2009</year>) <article-title>Computational finishing of large sequence contigs reveals interspersed nested repeats and gene islands in the <italic>rf1</italic>-associated region of maize</article-title>. <source>Plant Physiol</source><volume>151</volume>: <fpage>483</fpage>&#x2013;<lpage>495</lpage><pub-id pub-id-type="pmid">19675151</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Wei1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Wei</surname><given-names>FS</given-names></name>, <name><surname>Stein</surname><given-names>JC</given-names></name>, <name><surname>Liang</surname><given-names>CZ</given-names></name>, <name><surname>Zhang</surname><given-names>JW</given-names></name>, <name><surname>Fulton</surname><given-names>RS</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Detailed analysis of a contiguous 22-Mb region of the maize genome</article-title>. <source>PLOS Genet</source><volume>5(11)</volume>: <fpage>e1000728</fpage><comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1000728">10.1371/journal.pgen.1000728</ext-link></comment><pub-id pub-id-type="pmid">19936048</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Arumuganathan1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Arumuganathan</surname><given-names>K</given-names></name>, <name><surname>Earle</surname><given-names>ED</given-names></name> (<year>1991</year>) <article-title>Nuclear DNA content of some important plant species</article-title>. <source>Plant Mol Biol Reporter</source><volume>9</volume>: <fpage>208</fpage>&#x2013;<lpage>218</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Massa1">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Massa</surname><given-names>AN</given-names></name>, <name><surname>Wanjugi</surname><given-names>H</given-names></name>, <name><surname>Deal</surname><given-names>KR</given-names></name>, <name><surname>O'Brian</surname><given-names>K</given-names></name>, <name><surname>You</surname><given-names>FM</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Gene space dynamics during the evolution of <italic>Aegilops tauschii, Brachypodium distachyon, Oryza sativa,</italic> and <italic>Sorghum bicolor</italic> genomes</article-title>. <source>Mol Biol Evol</source><volume>28</volume>: <fpage>2537</fpage>&#x2013;<lpage>2547</lpage><pub-id pub-id-type="pmid">21470968</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Cox1">
+        <label>25</label>
+        <mixed-citation publication-type="other">Cox DR, Isham V (1980) Point processes. Chapman and Hall, London, England.</mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Zhang1">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhang</surname><given-names>Z</given-names></name>, <name><surname>M&#xFC;ller</surname><given-names>HG</given-names></name> (<year>2011</year>) <article-title>Functional density synchronization</article-title>. <source>Comput Stat &amp; Data</source><volume>Analysis</volume><issue>55</issue>: <fpage>2234</fpage>&#x2013;<lpage>2249</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Fan1">
+        <label>27</label>
+        <mixed-citation publication-type="other">Fan J, Gijbels I (1996) Local Polynomial Modelling and its Applications. Chapman and Hall, London, England.</mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Kendall1">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Kendall</surname><given-names>MG</given-names></name>, <name><surname>Smith</surname><given-names>BB</given-names></name> (<year>1939</year>) <article-title>The problem of m rankings</article-title>. <source>Annals Mathem Stat</source><volume>10</volume>: <fpage>275</fpage>&#x2013;<lpage>287</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Kendall2">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Kendall</surname><given-names>MG</given-names></name> (<year>1945</year>) <article-title>The treatment of ties in ranking problems</article-title>. <source>Biometrika</source><volume>33</volume>: <fpage>239</fpage>&#x2013;<lpage>251</lpage><pub-id pub-id-type="pmid">21006841</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Silverman1">
+        <label>30</label>
+        <mixed-citation publication-type="other">Silverman BW (1986) Density Estimation for Statistics and Data Analysis: Chapman and Hall, London, England.</mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Li1">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>W</given-names></name>, <name><surname>Zhang</surname><given-names>P</given-names></name>, <name><surname>Fellers</surname><given-names>JP</given-names></name>, <name><surname>Friebe</surname><given-names>B</given-names></name>, <name><surname>Gill</surname><given-names>BS</given-names></name> (<year>2004</year>) <article-title>Sequence composition, organization, and evolution of the core Triticeae genome</article-title>. <source>Plant J</source><volume>40</volume>: <fpage>500</fpage>&#x2013;<lpage>511</lpage><pub-id pub-id-type="pmid">15500466</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Dvorak1">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Dvorak</surname><given-names>J</given-names></name>, <name><surname>Akhunov</surname><given-names>ED</given-names></name> (<year>2005</year>) <article-title>Tempos of deletions and duplications of gene loci in relation to recombination rate during diploid and polyploid evolution in the Aegilops-Triticum alliance</article-title>. <source>Genetics</source><volume>171</volume>: <fpage>323</fpage>&#x2013;<lpage>332</lpage><pub-id pub-id-type="pmid">15996988</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-See1">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>See</surname><given-names>DR</given-names></name>, <name><surname>Brooks</surname><given-names>S</given-names></name>, <name><surname>Nelson</surname><given-names>JC</given-names></name>, <name><surname>Brown-Guedira</surname><given-names>G</given-names></name>, <name><surname>Friebe</surname><given-names>B</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Gene evolution at the ends of wheat chromosomes</article-title>. <source>Proc Natl Acad Sci USA</source><volume>103</volume>: <fpage>4162</fpage>&#x2013;<lpage>4167</lpage><pub-id pub-id-type="pmid">16537502</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Dubcovsky1">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Dubcovsky</surname><given-names>J</given-names></name>, <name><surname>Dvorak</surname><given-names>J</given-names></name> (<year>2007</year>) <article-title>Genome plasticity a key factor in the success of polyploid wheat under domestication</article-title>. <source>Science</source><volume>316</volume>: <fpage>1862</fpage>&#x2013;<lpage>1866</lpage><pub-id pub-id-type="pmid">17600208</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Lee1">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Lee</surname><given-names>JM</given-names></name>, <name><surname>Sonnhammer</surname><given-names>ELL</given-names></name> (<year>2003</year>) <article-title>Genomic gene clustering analysis of pathways in eukaryotes</article-title>. <source>Genome Res</source><volume>13</volume>: <fpage>875</fpage>&#x2013;<lpage>882</lpage><pub-id pub-id-type="pmid">12695325</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Williams1">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Williams</surname><given-names>EJB</given-names></name>, <name><surname>Bowles</surname><given-names>DJ</given-names></name> (<year>2004</year>) <article-title>Coexpression of neighboring genes in the genome of Arabidopsis thaliana</article-title>. <source>Genome Res</source><volume>14</volume>: <fpage>1060</fpage>&#x2013;<lpage>1067</lpage><pub-id pub-id-type="pmid">15173112</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Schmid1">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Schmid</surname><given-names>M</given-names></name>, <name><surname>Davison</surname><given-names>TS</given-names></name>, <name><surname>Henz</surname><given-names>SR</given-names></name>, <name><surname>Pape</surname><given-names>UJ</given-names></name>, <name><surname>Demar</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>A gene expression map of <italic>Arabidopsis thaliana</italic> development</article-title>. <source>Nature Genetics</source><volume>37</volume>: <fpage>501</fpage>&#x2013;<lpage>506</lpage><pub-id pub-id-type="pmid">15806101</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Xu1">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Xu</surname><given-names>ZY</given-names></name>, <name><surname>Kohel</surname><given-names>RJ</given-names></name>, <name><surname>Song</surname><given-names>GL</given-names></name>, <name><surname>Cho</surname><given-names>JM</given-names></name>, <name><surname>Alabady</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Gene-rich islands for fiber development in the cotton genome</article-title>. <source>Genomics</source><volume>92</volume>: <fpage>173</fpage>&#x2013;<lpage>183</lpage><pub-id pub-id-type="pmid">18619771</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0054101-Lou1">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Lou</surname><given-names>XL</given-names></name>, <name><surname>Han</surname><given-names>B</given-names></name> (<year>2009</year>) <article-title>Evolutionary conservation of neighbouring gene pairs in plants</article-title>. <source>Gene</source><volume>437</volume>: <fpage>71</fpage>&#x2013;<lpage>79</lpage><pub-id pub-id-type="pmid">19264115</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

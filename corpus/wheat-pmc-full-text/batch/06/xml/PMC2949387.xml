@@ -1,0 +1,1815 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.0 20040830//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">2949387</article-id>
+      <article-id pub-id-type="publisher-id">10-PONE-RA-15607R2</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0013021</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computational Biology</subject>
+          <subject>Computational Biology/Genomics</subject>
+          <subject>Computational Biology/Systems Biology</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A Network Approach to Predict Pathogenic Genes for <italic>Fusarium graminearum</italic></article-title>
+        <alt-title alt-title-type="running-head">Predicting Pathogenic Genes</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Xiaoping</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tang</surname>
+            <given-names>Wei-Hua</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Xing-Ming</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Luonan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Institute of Systems Biology, Shanghai University, Shanghai, China</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>School of Communication and Information Engineering, Shanghai University, Shanghai, China</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>National Key Laboratory of Plant Molecular Genetics, Institute of Plant Physiology and Ecology, Chinese Academy of Sciences, Shanghai, China</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Key Laboratory of Systems Biology, SIBS-Novo Nordisk Translational Research Centre for PreDiabetes, Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences, Shanghai, China</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Rogers</surname>
+            <given-names>Simon</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">University of Glasgow, United Kingdom</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>xm_zhao@shu.edu.cn</email> (X-MZ); <email>lnchen@sibs.ac.cn</email> (LC)</corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: XMZ LC. Performed the experiments: XL. Analyzed the data: XL WHT. Contributed reagents/materials/analysis tools: XMZ LC. Wrote the paper: XL.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>4</day>
+        <month>10</month>
+        <year>2010</year>
+      </pub-date>
+      <volume>5</volume>
+      <issue>10</issue>
+      <elocation-id>e13021</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>1</month>
+          <year>2010</year>
+        </date>
+        <date date-type="accepted">
+          <day>17</day>
+          <month>8</month>
+          <year>2010</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Liu et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+      </permissions>
+      <abstract>
+        <p><italic>Fusarium graminearum</italic> is the pathogenic agent of <italic>Fusarium</italic> head blight (FHB), which is a destructive disease on wheat and barley, thereby causing huge economic loss and health problems to human by contaminating foods. Identifying pathogenic genes can shed light on pathogenesis underlying the interaction between <italic>F. graminearum</italic> and its plant host. However, it is difficult to detect pathogenic genes for this destructive pathogen by time-consuming and expensive molecular biological experiments in lab. On the other hand, computational methods provide an alternative way to solve this problem. Since pathogenesis is a complicated procedure that involves complex regulations and interactions, the molecular interaction network of <italic>F. graminearum</italic> can give clues to potential pathogenic genes. Furthermore, the gene expression data of <italic>F. graminearum</italic> before and after its invasion into plant host can also provide useful information. In this paper, a novel systems biology approach is presented to predict pathogenic genes of <italic>F. graminearum</italic> based on molecular interaction network and gene expression data. With a small number of known pathogenic genes as seed genes, a subnetwork that consists of potential pathogenic genes is identified from the protein-protein interaction network (PPIN) of <italic>F. graminearum</italic>, where the genes in the subnetwork are further required to be differentially expressed before and after the invasion of the pathogenic fungus. Therefore, the candidate genes in the subnetwork are expected to be involved in the same biological processes as seed genes, which imply that they are potential pathogenic genes. The prediction results show that most of the pathogenic genes of <italic>F. graminearum</italic> are enriched in two important signal transduction pathways, including G protein coupled receptor pathway and MAPK signaling pathway, which are known related to pathogenesis in other fungi. In addition, several pathogenic genes predicted by our method are verified in other pathogenic fungi, which demonstrate the effectiveness of the proposed method. The results presented in this paper not only can provide guidelines for future experimental verification, but also shed light on the pathogenesis of the destructive fungus <italic>F. graminearum</italic>.</p>
+      </abstract>
+      <counts>
+        <page-count count="12"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The filamentous ascomycete <italic>Fusarium graminearum</italic> (teleomorph <italic>Gibberella zeae</italic>) is the major pathogenic agent of <italic>Fusarium</italic> head blight(FHB) <xref ref-type="bibr" rid="pone.0013021-Miedaner1">[1]</xref>, which can cause diseases for wheat, barley and other crops, and is becoming a serious disease in many countries over the world. In general, FHB causes diseases to crops within a few weeks <xref ref-type="bibr" rid="pone.0013021-McMullen1">[2]</xref>, and results in huge economic loss and causes health problems to human and animals by contaminating grains <xref ref-type="bibr" rid="pone.0013021-Pestka1">[3]</xref>. For example, in the United State and Europe, <italic>F. graminearum</italic> reduces crop yield significantly and contaminates the grains with trichothecene mycotoxins, such as deoxynivalenol and nivalenol toxin <xref ref-type="bibr" rid="pone.0013021-Garvey1">[4]</xref>. Therefore, it is necessary to understand the pathogenesis of <italic>F. graminearum</italic> by dissecting the components involved in the pathogenic procedure, <italic>i.e.</italic> pathogenic genes, thereby preventing the invasion of this destructive fungus into crops. In this paper, the definition of pathogenic genes is adopted from plant pathology, where pathogenic genes are those that result in a loss or reduction in disease symptoms when disrupted <xref ref-type="bibr" rid="pone.0013021-Idnurm1">[5]</xref>. The pathogenic genes can be identified in lab by techniques, such as gene knockout or silencing. By the writing of this paper, there are 49 pathogenic genes of <italic>F. graminearum</italic> that were verified by biological experiments and stored in PHI-base database (<ext-link ext-link-type="uri" xlink:href="http://www.phi-base.org/query.php">http://www.phi-base.org/query.php</ext-link>). However, the pathogenic gene list is far from complete and it will be a painful process to identify pathogenic genes in lab considering the genome size of <italic>F. graminearum</italic> and time-consuming experiments. On the other hand, computational methods can provide alternative ways for this problem, especially after the genome sequence of <italic>F. graminearum</italic> is released by Broad Institute (<ext-link ext-link-type="uri" xlink:href="http://www.broadinstitute.org">http://www.broadinstitute.org</ext-link>). In literature, comparative genomics method tries to predict pathogenic genes by comparing pathogenic and non-pathogenic fungi <xref ref-type="bibr" rid="pone.0013021-Zhao1">[6]</xref>. However, it is found that there are no specific genes that uniquely occur in pathogenic fungi but not in non-pathogenic fungi, which makes it difficult to identify pathogenic genes of <italic>F. graminearum</italic>.</p>
+      <p>Based on the observations of pathogenicity of model pathogens <xref ref-type="bibr" rid="pone.0013021-Gohre1">[7]</xref>, it is believed that the pathogenesis of <italic>F. graminearum</italic> involves a complex network of proteins and other molecules, including those that might be secreted into host cells. Therefore, the molecular interaction network of <italic>F. graminearum</italic> can provide insights into the pathogenesis of the destructive fungus. Recently, the protein-protein interaction map was delineated for <italic>F. graminearum</italic> in our previous work <xref ref-type="bibr" rid="pone.0013021-Zhao2">[8]</xref>, which can give hints to potential pathogenic genes that work in concert in the pathogenesis procedure. Furthermore, the pathogenic genes are generally differentially expressed before and after the pathogen invading its host so that the pathogen can successfully break through its host immune system and adopt its life inside the host. That is, the genes of <italic>F. graminearum</italic> that are differentially expressed before and after the invasion of this destructive pathogen may be pathogenic genes. However, differentially expressed genes alone may lead to false positives while identifying key genes involved in disease procedure because some genes are not involved in the pathway of pathogenic genes even though they show significant expression changes. In addition, in the literature, it was found that the integration of protein interaction and gene expression is useful to identify the biological processes induced by specific perturbations, <italic>e.g.</italic> drug <xref ref-type="bibr" rid="pone.0013021-Wu1">[9]</xref> or extracellular stimuli <xref ref-type="bibr" rid="pone.0013021-Zhao3">[10]</xref>.</p>
+      <p>In this paper, a novel systems biology approach is presented to predict pathogenic genes for <italic>F. graminearum</italic> by integrating protein interaction map and gene expression data. With the assumption that interacting proteins usually share similar functions due to &#x201C;Association rule&#x201D; <xref ref-type="bibr" rid="pone.0013021-Zhao4">[11]</xref> and are possibly involved in the same pathway <xref ref-type="bibr" rid="pone.0013021-Zhao3">[10]</xref>, a pathogenic subnetwork that consists of potential pathogenic genes is identified with a small number of known pathogenic genes as seed genes. The genes in the subnetwork are further required to be differentially expressed before and after the invasion of the pathogenic fungus. Therefore, the candidate genes in the subnetwork are expected to be involved in the same biological processes as seed genes, and thereby may be pathogenic genes. The prediction results show that most of pathogenic genes of <italic>F. graminearum</italic> are enriched in two important signal transduction pathways, including G protein coupled receptor pathway and MAPK signaling pathway, which are known related to pathogenesis in other fungi <xref ref-type="bibr" rid="pone.0013021-Idnurm1">[5]</xref>. In addition, the orthologs of several pathogenic genes predicted by our method are verified in other pathogenic fungi, which demonstrate the effectiveness of the proposed method. It is believed that our predictions can provide guidelines for future experimental verification, and shed light on the pathogenesis of the destructive fungus <italic>F. graminearum</italic>.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Detection of differentially expressed genes</title>
+        <p>In general, some genes are differentially expressed in the infection procedure of pathogenic fungus. For example, some enzymes are over-expressed and highly produced to destroy the host's defense system so that the <italic>F. graminearum</italic> can invade the host successfully. Therefore, the differentially expressed genes are possibly related to the interaction between the pathogen and its host, and thereby may be pathogenic genes. At present, there are no gene expression data of <italic>F. graminearum</italic> that are measured before and after its invasion in the same experiments. In this work, the microarray data obtained with <italic>F. graminearum</italic> Affymetrix GeneChip were downloaded from Plant Expression Database (PLEXdb, <ext-link ext-link-type="uri" xlink:href="http://www.plexdb.org/index.php">http://www.plexdb.org/index.php</ext-link>), which is a unified public resource for gene expression data of plants and plant pathogens. <xref ref-type="table" rid="pone-0013021-t001">Table 1</xref> lists the gene expression data sets and corresponding conditions under which the data were collected, including the expression data before and after the invasion of <italic>F. graminearum</italic>.</p>
+        <table-wrap id="pone-0013021-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0013021.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Gene expression data of <italic>F. graminearum</italic>.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0013021-t001-1" xlink:href="pone.0013021.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Accession No</td>
+                  <td align="left" rowspan="1" colspan="1">Condition</td>
+                  <td align="left" rowspan="1" colspan="1">Biological replicates</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">After invasion</td>
+                  <td align="left" rowspan="1" colspan="1">FG1</td>
+                  <td align="left" rowspan="1" colspan="1">24 hours after inoculated</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG1</td>
+                  <td align="left" rowspan="1" colspan="1">48 hour safter inoculated</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG1</td>
+                  <td align="left" rowspan="1" colspan="1">72 hours after inoculated</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG1</td>
+                  <td align="left" rowspan="1" colspan="1">96 hours after inoculated</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG1</td>
+                  <td align="left" rowspan="1" colspan="1">144 hours after inoculated</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG12</td>
+                  <td align="left" rowspan="1" colspan="1">2 dpi after inoculated</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG12</td>
+                  <td align="left" rowspan="1" colspan="1">14 dpi after inoculated</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG12</td>
+                  <td align="left" rowspan="1" colspan="1">35 dpi after inoculated</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Before invasion</td>
+                  <td align="left" rowspan="1" colspan="1">FG2</td>
+                  <td align="left" rowspan="1" colspan="1">Complete Media</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG2</td>
+                  <td align="left" rowspan="1" colspan="1">Carbon Starvation</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG2</td>
+                  <td align="left" rowspan="1" colspan="1">Nitrogen Starvation</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG4</td>
+                  <td align="left" rowspan="1" colspan="1">Complete Media</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG7</td>
+                  <td align="left" rowspan="1" colspan="1">2 hours after conidia germination</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG7</td>
+                  <td align="left" rowspan="1" colspan="1">8 hours after conidia germination</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG7</td>
+                  <td align="left" rowspan="1" colspan="1">24 hours after conidia germination</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG12</td>
+                  <td align="left" rowspan="1" colspan="1">mycelia culture condition</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">FG10</td>
+                  <td align="left" rowspan="1" colspan="1">Complete Media</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>The gene expression data were divided into two groups, <italic>i.e.</italic> before invasion and after invasion, based on the experimental conditions under which the expression data were generated. The detailed descriptions of experimental conditions can be found in PLEXdb (<ext-link ext-link-type="uri" xlink:href="http://www.plexdb.org/">http://www.plexdb.org/</ext-link>).</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>After the gene expression data were obtained, the Mann-Whitney Wilcoxon test was utilized to identify those genes that were differentially expressed before and after the invasion of <italic>F. graminearum</italic>. The Wilcoxon test is a non-parametric rank-based test and was used here because there is no prior information about the distribution underlying the microarray data. As a consequence, there are 7,267 genes in total that were chosen from 13,367 genes of <italic>F. graminearum</italic> with a <inline-formula><inline-graphic xlink:href="pone.0013021.e001.jpg" mimetype="image"/></inline-formula>-value threshold of 0.01.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Identification of pathogenic network</title>
+        <p>The differentially expressed genes can give hints on pathogenesis of the destructive pathogen. However, the differentially expressed genes alone may lead to false positives because some genes show significant expression difference due to some stimuli but are not related to the pathogenic procedure. In general, the pathogenesis of pathogenic fungus involves a complex network of proteins and other molecules, including those that might be secreted into host cells. In other words, a number of genes will be regulated to respond to the stimuli in the pathogenesis procedure, where these genes work in concert so that <italic>F. graminearum</italic> can successfully break through the immune system of the host. Therefore, the protein-protein interaction (PPI) information can provide insights into the pathogenesis of <italic>F. graminearum</italic>. Recently, the interactome map of <italic>F. graminearum</italic> <xref ref-type="bibr" rid="pone.0013021-Zhao2">[8]</xref> was delineated in our previous work and the PPI database, namely FPPI, is freely accessible (<ext-link ext-link-type="uri" xlink:href="http://csb.shu.edu.cn/fppi">http://csb.shu.edu.cn/fppi</ext-link>).The details about predicting protein interactions for <italic>F. graminearum</italic> can be found in <xref ref-type="bibr" rid="pone.0013021-Zhao2">[8]</xref>. In this work, the core PPI data set that consists of 27,102 high-confidence interactions among 3,745 proteins was used. In literature, a small number of genes have been identified as pathogenic genes, <italic>e.g.</italic> 49 <italic>F. graminearum</italic> genes from PHI-base (Version 3.1) were verified to be pathogenic genes. With the assumption that interacting proteins generally share similar functions and are involved in similar biological processes <xref ref-type="bibr" rid="pone.0013021-Zhao4">[11]</xref>, the genes that interact with known pathogenic genes are possibly pathogenic genes. With known pathogenic genes as seed genes, a subnetwork was extracted from the <italic>F. graminearum</italic> protein interaction network, where the genes in the subnetwork interact with at least one seed gene. In this work, the 49 pathogenic genes from PHI-base were used as seed genes, among which 20 genes can be mapped to <italic>F. graminearum</italic> interaction map. As a result, 479 interactions were identified to link to at least one seed gene, and these interactions involve 294 genes in total.</p>
+        <p>Although the genes interacting with seed genes are possibly pathogenic genes, they may also just interact with seed genes to maintain the essential biological processes for <italic>F. graminearum</italic>. Therefore, the integration of differentially expressed genes and the subnetwork identified above can help to reduce false positives because it is believed that the expression changes of differentially expressed genes are possibly caused by the interactions with seed genes. By mapping differentially expressed genes to the subnetwork described above, we finally obtained a subnetwork that consists of 127 genes except seed genes and 259 interactions. The subnetwork that consists of seed genes and those interacting with the seed genes is shown in <xref ref-type="fig" rid="pone-0013021-g001">Figure 1</xref>, where the genes are differentially expressed before and after the invasion of <italic>F. graminearum</italic>, and the the prefix &#x201C;FGSG_&#x201D; was omitted from gene names for clarity.</p>
+        <fig id="pone-0013021-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0013021.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>The pathogenic network.</title>
+            <p>The red vertices denote seed genes from PHI-base, <italic>i.e.</italic> the known pathogenic genes, the green vertices denote genes that interact with at least two seed genes, and the yellow vertices denote genes that interact with only one seed gene. For clarity, the prefix &#x201C;FGSG_&#x201D; was omitted from gene names. The subnetwork consists of 127 genes and 259 interactions. Furthermore, the genes in the subnetwork are differentially expressed before and after the invasion of <italic>F. graminearum</italic>. Note that vertices 01014 and 08811 actually connect two seed genes, and those seed genes with less significant expression changes were discarded.</p>
+          </caption>
+          <graphic xlink:href="pone.0013021.g001"/>
+        </fig>
+        <p>Furthermore, the genes that interact with at least two seed genes were identified because these genes are more likely to be pathogenic genes due to their tight interactions with the seed genes. <xref ref-type="fig" rid="pone-0013021-g002">Figure 2</xref> shows the subnetwork that consists of only genes with at least two interactions with seed genes, and this subnetwork is called pathogenic network hereafter. Interestingly, it is found that four seed genes, <italic>i.e.</italic> FGSG_09612, FGSG_09903, FGSG_06385 and FGSG_10313, interact with each other and form a clique. Therefore, these four seed genes may belong to the same complex or pathway that is involved in the pathogenic procedure. Accordingly, the genes that interact with these four seed pathogenic genes are more likely to be pathogenic genes. For example, FGSG_06878 is a calcium/calmodulin-dependent protein kinase, and this enzyme regulates ion homeostasis and cell wall construction and affects fungus virulence in many fungi <xref ref-type="bibr" rid="pone.0013021-Kraus1">[12]</xref>. FGSG_00786 belongs to Serine/Threonine-protein kinase family, and regulates many intracellular metabolic processes including the control of cell growth and division <xref ref-type="bibr" rid="pone.0013021-Wehenkel1">[13]</xref>.</p>
+        <fig id="pone-0013021-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0013021.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>The filtered pathogenic network.</title>
+            <p>The red vertices denote seed genes, <italic>i.e.</italic> the known pathogenic genes, the green vertices are genes that interact with at least two seed genes, and each vertex is assigned a weight. The color bar represents the relationship between color and weight, where the deeper the color is the larger the weight is. For clarity, the prefix &#x201C;FGSG_&#x201D; was omitted from gene names.</p>
+          </caption>
+          <graphic xlink:href="pone.0013021.g002"/>
+        </fig>
+        <p>In addition, two tightly interconnected modules can be found in the pathogenic network with maxClique, a tool of RBGL package <xref ref-type="bibr" rid="pone.0013021-Carey1">[14]</xref> of Bioconductor (<ext-link ext-link-type="uri" xlink:href="http://www.bioconductor.org/">http://www.bioconductor.org/</ext-link>), as shown in <xref ref-type="fig" rid="pone-0013021-g002">Figure 2</xref>, where one module means a subnetwork in which the vertexes are more closely and intensely linked to one another rather than to those outside of the subnetwork. The genes in each network module are possibly involved in the same regulatory or signaling pathway as seed genes, and are therefore more likely to be related to pathogenic procedure.  shows the two network modules that involve at least two seed pathogenic genes, where the annotations for these genes were downloaded from MIPS Fusarium graminearum Genome DataBase (FGDB, <ext-link ext-link-type="uri" xlink:href="http://mips.helmholtz-muenchen.de/genre/proj/fusarium/">http://mips.helmholtz-muenchen.de/genre/proj/fusarium/</ext-link>). In addition, the annotations of genes in the pathogenic network were investigated by looking at the descriptions of these genes from MIPS FGDB, and it was found that most of the genes are involved in two signaling pathways, including G-protein coupled receptor signaling pathway and mitogen-activated protein kinase (MAPK) cascades signaling pathways. In literature, it has been found that these two pathways are related to pathogenesis <xref ref-type="bibr" rid="pone.0013021-Idnurm1">[5]</xref>.</p>
+        <p>In module one, there are 10 genes that form a fully connected subnetwork and 3 seed genes are involved as shown in <xref ref-type="fig" rid="pone-0013021-g003">Figure 3</xref>. From <xref ref-type="supplementary-material" rid="pone.0013021.s002">Table S1</xref>, we can see that most of the genes in module one belong to the G protein-linked signal transduction pathway, including G protein family members FGSG_04104, FGSG_05535, FGSG_09614, and FGSG_09988. Especially, FGSG_04104 is the <inline-formula><inline-graphic xlink:href="pone.0013021.e002.jpg" mimetype="image"/></inline-formula> subunit of guanine nucleotide-binding, and interacts with three G protein <inline-formula><inline-graphic xlink:href="pone.0013021.e003.jpg" mimetype="image"/></inline-formula> subunits, FGSG_05535, FGSG_09614 and FGSG_09988. These <inline-formula><inline-graphic xlink:href="pone.0013021.e004.jpg" mimetype="image"/></inline-formula> subunits of G protein are able to activate three or more effectors which in turn transmit the signals to several transcription factors and initiate more than one transcription process. Furthermore, there are some important regulator proteins in module one, such as LST8(FGSG_10251) and CPC2(FGSG_09870), and protein transport proteins, such as SEC13(FGSG_09271). SEC13 protein is related to vesicle biogenesis from endoplasmic reticulum during the transportation of proteins <xref ref-type="bibr" rid="pone.0013021-Mammoto1">[15]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0013021-Nickel1">[17]</xref>, where vesicular trafficking is the main way for protein secretion and is also the main track for exoenzyme secretion by secretory vesicle. That is, SEC13 is probably involved in the process of transmembrane transport of extracellular hydrolytic enzyme. LST8(FGSG_10251) protein is a WD-repeat protein and also a negative regulator of some transcription factors <xref ref-type="bibr" rid="pone.0013021-Liu1">[18]</xref>, and acts as a scaffold in the signaling pathway to receive signals from upstream and regulate downstream gene expression. LST8 is also a component of TOR (the target of rapamycin) <xref ref-type="bibr" rid="pone.0013021-Loewith1">[19]</xref>, which is a phosphatidylinositol kinase-related protein kinase (PIKK) that controls cell growth in response to nutrients <xref ref-type="bibr" rid="pone.0013021-Loewith1">[19]</xref> and plays important roles in virulence-associated traits of several fungal pathogens <xref ref-type="bibr" rid="pone.0013021-Bastidas1">[20]</xref>. CPC2(FGSG_09870) is an adaptor to favor protein kinase C (PKC)-mediated phosphorylation and subsequent activation of c-Jun NH2-terminal kinase <xref ref-type="bibr" rid="pone.0013021-Nez1">[21]</xref>. CPC2 positively regulates the synthesis of the stress-responsive transcription factor ATF1 <xref ref-type="bibr" rid="pone.0013021-Nez1">[21]</xref>, whereas ATF1 and c-Jun are two important transcription factors that enable a number of crucial metabolism processes <xref ref-type="bibr" rid="pone.0013021-Lewin1">[22]</xref>. It was found that <italic>cpc2</italic> is a pathogenic gene involved in invasive growth in response to glucose limitation in <italic>Saccharomyces cerevisiae</italic> <xref ref-type="bibr" rid="pone.0013021-Zeller1">[23]</xref>, and is also involved in the control of G2/M transition and belongs to mitogen-activated protein kinase (MAPK) pathway <xref ref-type="bibr" rid="pone.0013021-Nez1">[21]</xref>. FGSG_04054 is related to VHS1, which is a cytoplasmic Serine/Threonine protein kinase that is involved in phospho-dephosphorylation processes in <italic>S. cerevisiae</italic> <xref ref-type="bibr" rid="pone.0013021-Muoz1">[24]</xref>. There are some proteins in G-protein coupled receptor signaling pathway that contain WD repeat structure, such as FGSG_09271, FGSG_05698, and FGSG_02648. The WD repeat proteins are involved in diverse cellular pathways, such as signal transduction, pre-mRNA splicing, transcriptional regulation, cytoskeletal assembly, and vesicular traffic <xref ref-type="bibr" rid="pone.0013021-GarciaHiguera1">[25]</xref>, <xref ref-type="bibr" rid="pone.0013021-Neer1">[26]</xref>. In summary, module one is related to signal transduction, transcription and protein transport, and these processes are possibly related to the invasion procedure. In addition, to investigate the predicted pathogenic genes in module one, the orthologs of our predicted pathogenic genes were identified in other pathogenic fungi by utilizing Inparanoid <xref ref-type="bibr" rid="pone.0013021-OBrien1">[27]</xref>. It was found that FGSG_09988 has one orthologous gene <italic>magC</italic> in <italic>Magnaporthe grisea</italic>, and one orthologous gene <italic>gpa2</italic> in <italic>Ustilago maydis</italic>, respectively. Both <italic>magC</italic> and <italic>gpa2</italic> have been verified to be related to pathogenic processes by biological experiments <xref ref-type="bibr" rid="pone.0013021-Stergiopoulos1">[28]</xref>, <xref ref-type="bibr" rid="pone.0013021-Regenfelder1">[29]</xref>. According to the annotations from PHI-base, it is found that both MAGC and GPA2 belong to G-protein coupled receptor protein signaling pathway, and are related to signal transducer activity. Specifically, GPA2 is involved in ascospore formation and transmitting the pheromone signal that is required for pathogenicity development <xref ref-type="bibr" rid="pone.0013021-Regenfelder1">[29]</xref>. Therefore, FGSG_09988 is believed to be a real pathogenic gene of <italic>F. graminearum</italic>.</p>
+        <fig id="pone-0013021-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0013021.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Module one.</title>
+            <p>The red vertices denote seed genes, <italic>i.e.</italic> the known pathogenic genes, and other vertices denote genes that interact with seed genes. Some genes are not annotated in MIPS, and the original name was used, such as FGSG_05038. All the genes in the module were colored according to their functions. For clarity, the prefix &#x201C;FGSG_&#x201D; was omitted from gene names in the figure.</p>
+          </caption>
+          <graphic xlink:href="pone.0013021.g003"/>
+        </fig>
+        <p><xref ref-type="fig" rid="pone-0013021-g004">Figure 4</xref> shows module two, where there are 36 genes that form an intensely connected subnetwork with 4 seed genes involved. From <xref ref-type="supplementary-material" rid="pone.0013021.s002">Table S1</xref>, it can be seen that most genes from module two are involved in MAPK signal transduction pathway, where the pathway includes MAP kinase kinase, MAP kinase, transcription factors, kinases, and regulator proteins for RNA splicing and specific protein expression. It is interesting to see that probable PHO85, cyclin-dependent kinase (FGSG_05393) is involved in regulating the cellular responses to nutrimental and environmental conditions, and the progression through cell cycle <xref ref-type="bibr" rid="pone.0013021-Lee1">[30]</xref>, thereby possibly participates in the interaction between <italic>F. graminearum</italic> and its host. After the fungus breaks through the plant cell wall, it should plunder nutrient from its host for living, and accelerates the cell cycle and starts the cellular responses to nutrimental levels. FGSG_11878 is a cutinase negative acting protein, where cutinase plays an important role in pathogenesis. In general, plant organs are protected by a cuticle composed of an insoluble polymeric structural compound, <italic>i.e.</italic> cutin, which is a polyester composed of hydroxy and hydroxyepoxy fatty acids <xref ref-type="bibr" rid="pone.0013021-Ettinger1">[31]</xref>. Plant pathogens produce extracellular degradative enzymes <xref ref-type="bibr" rid="pone.0013021-Sweigard1">[32]</xref> that play important roles in pathogenesis. Cutinase is one of such enzymes, which hydrolyses cutin and enables fungus penetrating through the cuticle. Cutin monomers released from the cuticle by a small amount of cutinase on fungal spore surfaces can in turn increase the amount of cutinase secreted by the spore <xref ref-type="bibr" rid="pone.0013021-Ettinger1">[31]</xref>, <xref ref-type="bibr" rid="pone.0013021-Sweigard1">[32]</xref>. That is, the cutinase regulated by FGSG_11878 is necessary for the invasion of pathogen. Both FGSG_08468 and FGSG_03132 are probable CDC28 cyclin-dependent protein kinase and control the persistent hyphal growth <xref ref-type="bibr" rid="pone.0013021-Sinha1">[33]</xref>, while the polarized growth of mycelia is necessary for fungi to invade its host <xref ref-type="bibr" rid="pone.0013021-Liu2">[34]</xref>. FGSG_08729 is related to cAMP-dependent protein kinase catalytic subunit family from which certain genes were found to be involved in pathogenesis in <italic>Aspergillus fumigates</italic> <xref ref-type="bibr" rid="pone.0013021-Liebmann1">[35]</xref> and related to pathogenicity of <italic>U. maydis</italic> and <italic>M. grisea</italic> <xref ref-type="bibr" rid="pone.0013021-BorgesWalmsley1">[36]</xref>. FGSG_06878 is probable CMK1 which is a <inline-formula><inline-graphic xlink:href="pone.0013021.e005.jpg" mimetype="image"/></inline-formula>/calmodulin-dependent Ser/Thr protein kinase, and was verified to be a pathogenic gene in <italic>Colletotrichum lagenarium</italic> and belongs to MAPK pathway <xref ref-type="bibr" rid="pone.0013021-Idnurm1">[5]</xref>, where the disruption of CMK1 results in <italic>C. lagenarium</italic> strains with impaired appressorium formation and reduced pathogenicity when inoculated into a wound <xref ref-type="bibr" rid="pone.0013021-Idnurm1">[5]</xref>. FGSG_07423 is probable KIN28, which is a member of KIN protein family and is the primary kinase that phosphorylates the RNA polymerase II (RNA pol II) C-terminal domain (CTD) within a transcription initiation complex <xref ref-type="bibr" rid="pone.0013021-Guidi1">[37]</xref>. In PHI-base, some genes from KIN protein family, such as KIN1 and KIN2, are identified to be pathogenic genes in <italic>U. maydis</italic>. Therefore, it is possible that FGSG_07423 is involved in pathogenesis. FGSG_04484 is related to SRB10, which is a complex that is evolutionarily conserved, and integrates signals from sequence-specific activators and repressors so that the SRB10 module may sterically block the mediator interactions with RNA polymerase II to inhibit transcription <xref ref-type="bibr" rid="pone.0013021-Lenssen1">[38]</xref>. FGSG_02488 is related to Dis1-suppressing protein kinase DSK1, which is an important regulator of SR proteins (Serine/Arginine-rich proteins), and SR proteins are a class of evolutionarily conserved factors important for alternative splicing, especially in pre-mRNA splicing and post-transcription regulation <xref ref-type="bibr" rid="pone.0013021-Tang1">[39]</xref>. In addition, the orthologs of genes in module two were identified in other pathogenic fungi. It was found that the orthologous protein BcPIC5 of FGSG_09690 has already been verified in pathogen <italic>Botrytis cinerea</italic>, where BcPIC5(PHI:548) belongs to protein folding process with molecular function of peptidyl-prolyl <italic>cis-trans</italic> isomerase activity, and BcPIC5 is found related to calcineurin regulation in pathogenesis <xref ref-type="bibr" rid="pone.0013021-Gioti1">[40]</xref>. Therefore, it is believed that FGSG_09690 is a potential pathogenic gene of <italic>F. graminearum</italic>.</p>
+        <fig id="pone-0013021-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0013021.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Module two.</title>
+            <p>The red vertices denote seed genes, <italic>i.e.</italic> known pathogenic genes, and other vertices denote genes that interact with seed genes. Some genes are not annotated in MIPS, and the original name was used, such as FGSG_00337. All the genes in the module were colored according to their functions. For clarity, the prefix &#x201C;FGSG_&#x201D; is omitted from gene names in the figure.</p>
+          </caption>
+          <graphic xlink:href="pone.0013021.g004"/>
+        </fig>
+        <p>From <xref ref-type="fig" rid="pone-0013021-g002">Figure 2</xref>, we can see that there are links between module one and module two, which indicates the flow of information from G protein-linked receptor to MAPK cascade reactions. Especially, FGSG_09778 connecting both module one and module two, is probable transforming protein RAS-1 by annotation from MIPS FGDB. In literature, there are extensive evidences about biologically significant cross-talks between G protein-coupled receptors and MAPK-mediated pathways <xref ref-type="bibr" rid="pone.0013021-Luttrell1">[41]</xref>. In <xref ref-type="fig" rid="pone-0013021-g002">Figure 2</xref>, FGSG_09870 interacts with FGSG_04054 which is a vertex in module two and interacts with MAPKK protein (FGSG_09903). It is known that MAPKK can be activated by G protein <xref ref-type="bibr" rid="pone.0013021-Lewin1">[22]</xref>. Therefore, the extracellular signals could be transmitted to MAPK pathway through FGSG_09870 and FGSG_04054 from G protein. The signal transduction from G protein-coupled receptors to MAP kinase involves <inline-formula><inline-graphic xlink:href="pone.0013021.e006.jpg" mimetype="image"/></inline-formula> subunits of heterotrimeric G proteins acting on a RAS-dependent pathway <xref ref-type="bibr" rid="pone.0013021-Zeller1">[23]</xref>, <xref ref-type="bibr" rid="pone.0013021-Gutkind1">[42]</xref>. The gene from module one that connects FGSG_09778 is FGSG_04104, which is a <inline-formula><inline-graphic xlink:href="pone.0013021.e007.jpg" mimetype="image"/></inline-formula> subunit of G protein, which is consistent with the results in literature <xref ref-type="bibr" rid="pone.0013021-Luttrell1">[41]</xref>. From the results listed above, we speculate that the pathogenic signal is transmitted from G protein-coupled receptor pathway to MAPK signaling pathway.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Properties of the pathogenic network</title>
+        <p>Since pathogenic genes are important for a pathogen to invade its host and assimilate nutrition from the host, the pathogenic genes should have some specific properties due to the physiological processes in which they are involved. In this work, several indices that are widely used in complex network <xref ref-type="bibr" rid="pone.0013021-Costa1">[43]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0013021-Newman1">[45]</xref> were utilized to investigate the properties of pathogenic genes, including degree distribution, clustering coefficient and betweenness. The details about how to calculate the indices can be found in <xref ref-type="sec" rid="s4">MATERIALS AND METHODS</xref>. With the <italic>F. graminearum</italic> PPI network as the background network, the three indices were respectively obtained for the pathogenic genes and all genes in PPIN. <xref ref-type="table" rid="pone-0013021-t002">Table 2</xref> respectively lists the statistics for seed pathogenic genes, our predicted genes and all genes in PPIN, where the statistical number represents the average over corresponding genes. From <xref ref-type="table" rid="pone-0013021-t002">Table 2</xref>, it can be seen that the degree and betweenness distributions of our predicted pathogenic genes are more similar to those of the seed pathogenic genes. From the degree and betweenness distributions, we can see that pathogenic genes generally connect more genes, thereby playing important roles in the biological processes. The distribution of clustering coefficients indicates that the pathogenic genes tend to be clustered together and act in concert. In other words, the pathogenic genes are more possibly involved in same pathways in which genes work together, and the pathogenesis is possibly regulated by these pathways without affecting the normal processes considering the modularity and robustness of the biological system.</p>
+        <table-wrap id="pone-0013021-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0013021.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Properties of pathogenic network.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0013021-t002-2" xlink:href="pone.0013021.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Genes</td>
+                  <td align="left" rowspan="1" colspan="1">Degree</td>
+                  <td align="left" rowspan="1" colspan="1">Clustering coefficient</td>
+                  <td align="left" rowspan="1" colspan="1">Betweenness</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">All genes in PPI</td>
+                  <td align="left" rowspan="1" colspan="1">14.2271</td>
+                  <td align="left" rowspan="1" colspan="1">0.4659979</td>
+                  <td align="left" rowspan="1" colspan="1">4531.312</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Seed genes</td>
+                  <td align="left" rowspan="1" colspan="1">23.2</td>
+                  <td align="left" rowspan="1" colspan="1">0.552301</td>
+                  <td align="left" rowspan="1" colspan="1">28771.23</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Predicted pathogenic genes</td>
+                  <td align="left" rowspan="1" colspan="1">25.83465</td>
+                  <td align="left" rowspan="1" colspan="1">0.7549737</td>
+                  <td align="left" rowspan="1" colspan="1">20277.26</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>The distribution of degree, clustering coefficient and betweenness were respectively investigated for pathogenic genes, seed genes, and all genes in PPI.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>In addition, with the assumption that pathogenic genes work in concert for the fungus to invade the host, the pathogenic genes should co-express significantly in the invasion procedure. The <italic>Pearson</italic> correlation coefficients were obtained using all gene expression data, including those measured before and after the pathogen invading its host. We compared the distribution of correlation coefficients between pathogenic network and background network, as shown in <xref ref-type="fig" rid="pone-0013021-g005">Figure 5</xref>. From <xref ref-type="fig" rid="pone-0013021-g005">Figure 5</xref>, we can see that the correlation coefficients of genes in pathogenic network are obviously higher than those of the background network. In other words, the genes in pathogenic network co-express more consistently. To facilitate the biologists to choose those pathogenic genes with high confidence, each pathogenic gene was assigned a weight based on its correlations and interactions with seed genes. The details about the assignment of weight for each gene can be found in <xref ref-type="sec" rid="s4">MATERIALS AND METHODS</xref>. All the genes were ranked according to the weights, where the larger the weight is, the more confident the corresponding gene is pathogenic gene. The genes were ranked in this way because one gene is more possibly a pathogenic gene if the gene interacts with more seed genes and co-expresses with seed genes. With the weights assigned, the pathogenic genes were ranked in a descending order as shown in <xref ref-type="supplementary-material" rid="pone.0013021.s003">Table S2</xref>. From <xref ref-type="supplementary-material" rid="pone.0013021.s003">Table S2</xref>, we can see that all pathogenic genes in the two modules identified above have high weights and are ranked top, thereby are more likely to be pathogenic genes because they have more interactions and higher correlations with known pathogenic genes.</p>
+        <fig id="pone-0013021-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0013021.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Comparison of correlation coefficients of pathogenic and background network.</title>
+            <p>The distributions of correlation coefficients of pathogenic network and background network. The pathogenic network includes all our predicted pathogenic genes. The background network represents the whole core PPIN.</p>
+          </caption>
+          <graphic xlink:href="pone.0013021.g005"/>
+        </fig>
+      </sec>
+      <sec id="s2d">
+        <title>Significance analysis of pathogenic modules</title>
+        <p>To see the significance of the modules identified above, a significance score (SS) was defined for each module, where SS is defined as the geometric mean of <inline-formula><inline-graphic xlink:href="pone.0013021.e008.jpg" mimetype="image"/></inline-formula>-values accompanying nodes in one module and the <inline-formula><inline-graphic xlink:href="pone.0013021.e009.jpg" mimetype="image"/></inline-formula>-value of each node is obtained by the Mann-Whitney Wilcoxon test based on gene expression data. The differential expression derived <inline-formula><inline-graphic xlink:href="pone.0013021.e010.jpg" mimetype="image"/></inline-formula>-value is used here because a set of genes are more possibly involved in pathogenesis if they are tightly connected in a network and more differentially expressed. Note that a highly interconnected subnetwork does not mean that the genes in the subnetwork are significantly differentially expressed. Therefore, the SS score can be used to investigate whether a module can be detected by chance. In this work, the SS of module one is <inline-formula><inline-graphic xlink:href="pone.0013021.e011.jpg" mimetype="image"/></inline-formula> and that of module two is <inline-formula><inline-graphic xlink:href="pone.0013021.e012.jpg" mimetype="image"/></inline-formula>.</p>
+        <p>To see the statistical significance of the two predicted modules, a <inline-formula><inline-graphic xlink:href="pone.0013021.e013.jpg" mimetype="image"/></inline-formula>-value was respectively obtained for each module by using an empirical randomization test procedure that preserves the interactions among genes, where the <inline-formula><inline-graphic xlink:href="pone.0013021.e014.jpg" mimetype="image"/></inline-formula>-value is defined to be the probability that a module can be found with smaller SS than that of our module. The details can be found in <xref ref-type="sec" rid="s4">Materials and Methods</xref>. The <inline-formula><inline-graphic xlink:href="pone.0013021.e015.jpg" mimetype="image"/></inline-formula>-values of the two modules that we identified are respectively <inline-formula><inline-graphic xlink:href="pone.0013021.e016.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0013021.e017.jpg" mimetype="image"/></inline-formula>, which demonstrates that the two modules are statistically significant and cannot be identified by chance.</p>
+        <p>In literature, there are a number of tools that were developed to detect modules in a complex network. To see the significance of the identified modules, a popular tool, namely MCODE <xref ref-type="bibr" rid="pone.0013021-Bader1">[46]</xref>, that is developed to detect modules in a protein interaction network was utilized to identify modules in the pathogenic network. As a result, only one module (See <xref ref-type="supplementary-material" rid="pone.0013021.s001">Figure S1</xref>) that contains at least two known pathogenic genes was found. The module that MCODE found contains the predicted module two but without any genes from the predicted module one. The SS of the module obtained by MCODE is <inline-formula><inline-graphic xlink:href="pone.0013021.e018.jpg" mimetype="image"/></inline-formula>, which is far larger than <inline-formula><inline-graphic xlink:href="pone.0013021.e019.jpg" mimetype="image"/></inline-formula> of the module two. The simple comparison of modules detected by us and MCODE demonstrates that the integration of gene expression and protein interaction indeed helps to detect modules related to pathogenesis, where MCODE only exploits protein interaction information. Note that our aim is not to develop a new module identification method. Actually, any popular methods for identifying modules can be used here as long as it can utilize the information of both gene expression and protein interaction.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Statistical analysis of predicted pathogenic genes</title>
+        <p>In our predictions, there are 39 genes that were predicted to be potential pathogenic genes. To validate our predictions, we checked the orthologous genes of these 39 genes in other phytopathogenic fungi. As a result, the orthologous genes of FGSG_09988 in <italic>M. grisea</italic> (magC) and <italic>U. maydis</italic> (gpa2), and the orthologous gene of FGSG_09690 in <italic>B.cinerea</italic> (BcPIC5) were identified to be pathogenic genes <xref ref-type="bibr" rid="pone.0013021-Stergiopoulos1">[28]</xref>, <xref ref-type="bibr" rid="pone.0013021-Regenfelder1">[29]</xref>, <xref ref-type="bibr" rid="pone.0013021-Gioti1">[40]</xref>. Therefore, these two genes are believed to be pathogenic genes in <italic>F. graminearum</italic>.</p>
+        <p>In addition, the two verified genes FGSG_09988 and FGSG_09690 were used to see the statistical significance of our predictions. Since we have 39 predictions, for FGSG_09988, we randomly chose 39 genes respectively from <italic>F. graminearum</italic>, <italic>M. grisea</italic>, and <italic>U. maydis</italic>, and calculated the probability that one randomly chosen gene has at least one orthologous gene that is also a pathogenic gene in both <italic>M. grisea</italic> and <italic>U. maydis</italic>. This procedure was repeated 100000 times and the <inline-formula><inline-graphic xlink:href="pone.0013021.e020.jpg" mimetype="image"/></inline-formula>-value is less than <inline-formula><inline-graphic xlink:href="pone.0013021.e021.jpg" mimetype="image"/></inline-formula>. Similarly, for FGSG_09690, we randomly chose 39 genes separately from <italic>F. graminearum</italic> and <italic>B. cinerea</italic>, and calculated the probability that one randomly chosen gene has at least one orthologous gene that is also pathogenic gene in <italic>B. cinerea</italic>. This procedure was repeated 100000 times and the <inline-formula><inline-graphic xlink:href="pone.0013021.e022.jpg" mimetype="image"/></inline-formula>-value is <inline-formula><inline-graphic xlink:href="pone.0013021.e023.jpg" mimetype="image"/></inline-formula>.</p>
+        <p>Although there are possible false positives in our predictions, the statistical analysis of the two verified genes proves the predictive power of the proposed network biology method. We believe that our predictions can provide guidelines for future biological experiments.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p><italic>Fusarium graminearum</italic> is the pathogenic agent of <italic>Fusarium</italic> head blight (FHB) which is a destructive disease on wheat and barley. Identifying pathogenic genes of <italic>F. graminearum</italic> can help to avoid economic loss and help to improve food quality. In this work, we presented a novel network approach to predict pathogenic genes with prior information of known pathogenic genes, where the genes that interact with the known pathogenic genes are candidate pathogenic genes with the assumption that interacting proteins generally share similar functions. Furthermore, the differentially expressed genes of <italic>F. graminearum</italic> before and after its infection were identified. A pathogenic subnetwork was then extracted by integrating differentially expressed genes and protein-protein interaction network, where the genes in the subnetwork are differentially expressed and interact with known pathogenic genes.</p>
+      <p>In addition, two intensely interconnected network modules were extracted from the network, where each module contains at least one known pathogenic gene. Further investigations into the two network modules disclosed that the network modules are respectively enriched in two signaling pathways, where module one is enriched in G-protein coupled receptor pathway and module two is enriched in MAPK signaling pathway. It is possible that the signal is transmitted from G protein coupled receptor to these two different pathways after <italic>F. graminearum</italic> touches its host and interacts with plant surface ligand to start the cellular signal transduction. For the G-protein coupled receptor pathway, the signal is transmitted by G protein <inline-formula><inline-graphic xlink:href="pone.0013021.e024.jpg" mimetype="image"/></inline-formula> subunit through middle regulator proteins, <italic>e.g.</italic> protein kinases, to transcription factors which enable downstream gene transcription, or initiates particular cellular responses. For MAPK signaling pathway, the signal is transmitted by G protein <inline-formula><inline-graphic xlink:href="pone.0013021.e025.jpg" mimetype="image"/></inline-formula> subunit to RAS protein which in turn activates the MAP kinase and downstream MAPK signaling pathway.</p>
+      <p>It is believed that module two is more important than module one in pathogenesis since module two includes more pathogenic genes and is involved in important pathogenic processes, such as nutrimental response, environmental response and cell wall degradation process. From <xref ref-type="fig" rid="pone-0013021-g002">Figure 2</xref>, we can see that the signal is possibly transmitted from module one to module two through FGSG_09778 (RAS), which connects FGSG_09903(MAPKK in module two) and FGSG_04104(G protein <inline-formula><inline-graphic xlink:href="pone.0013021.e026.jpg" mimetype="image"/></inline-formula> subunit in module one). It is observed that the MAPK signal transduction pathway is usually activated by RAS and heterotrimeric G proteins <xref ref-type="bibr" rid="pone.0013021-Lewin1">[22]</xref>, and RAS could be regulated by heterotrimeric G protein <xref ref-type="bibr" rid="pone.0013021-Gutkind1">[42]</xref>. Therefore, these two network modules are possibly involved in pathogenesis and the genes in these two modules are potential pathogenic genes. Although there are many components involved in a signaling pathway, it is possible that only the genes in our predicted modules are closely related to pathogenesis while others are not affected due to the modularity and robustness of biological systems <xref ref-type="bibr" rid="pone.0013021-Idnurm1">[5]</xref>. In addition, several pathogenic genes predicted by our method were verified in other pathogenic fungi, which demonstrate the effectiveness of the proposed method.</p>
+      <p>In this work, an existing tool maxClique was employed to detect modules from PPIN. Note that our aim is not to develop new tools for identifying subnetworks. Actually, any popular methods that detect subnetworks can be used here. The statistical analysis of both our identified modules and predicted pathogenic genes demonstrate that our prediction results are statistically significant and our predictions cannot be found by chance.</p>
+      <p>In summary, the network approach presented in this work is really effective for predicting pathogenic genes of <italic>F. graminearum</italic> based on protein interaction network and gene expression data. We believe that our prediction results can also provide helpful guidelines for future experiments in lab.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s4">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Gene expression data</title>
+        <p>The microarray data obtained with <italic>Fusarium graminearum</italic> Affymetrix GeneChip were downloaded from Plant Expression Database (PLEXdb, <ext-link ext-link-type="uri" xlink:href="http://www.plexdb.org/index.php">http://www.plexdb.org/index.php</ext-link>), which is a unified public resource for gene expression data of plants and plant pathogens. In particular, the gene expression data of <italic>F. graminearum</italic> measured under two distinct groups of conditions corresponding to before and after the infection of the fungus into plant were used here. The details of gene expression data were summarized in <xref ref-type="table" rid="pone-0013021-t001">Table 1</xref>.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Detection of differentially expressed genes</title>
+        <p>The Mann-Whitney Wilcoxon test is a non-parametric rank-based test for identifying the difference between populations with respect to their medians or means. The Mann-Whitney Wilcoxon test method does not require the sample data to be or nearly normal distribution, and therefore is less sensitive than parametric hypothesis test, such as Student's <inline-formula><inline-graphic xlink:href="pone.0013021.e027.jpg" mimetype="image"/></inline-formula>-test and <inline-formula><inline-graphic xlink:href="pone.0013021.e028.jpg" mimetype="image"/></inline-formula>-test. The Wilcoxon test is used here because it is not guaranteed that the microarray data obey normal distribution. The genes that are differentially expressed between two conditions were identified by using Wilcox.test function of R, where the genes with <inline-formula><inline-graphic xlink:href="pone.0013021.e029.jpg" mimetype="image"/></inline-formula>-value less than 0.01 were selected for further investigation.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Identification of pathogenic network</title>
+        <p><xref ref-type="fig" rid="pone-0013021-g006">Figure 6</xref> shows the flowchart of predicting pathogenic genes based on protein-protein interaction and gene expression data. There are some genes that have been identified as pathogenic genes deposited in PHI-base (<ext-link ext-link-type="uri" xlink:href="http://www.phi-base.org/query.php">http://www.phi-base.org/query.php</ext-link>), which contains manually curated genes proven to affect the outcome of pathogen-host interactions. There are 49 genes in total are found to be pathogenic genes of <italic>F. graminearum</italic> according to PHI-base and were downloaded for future studies. Since some <italic>F. graminearum</italic> genes from PHI-base have different names from those from Broad Institute, these genes were aligned against those obtained from Broad Institute using BLAST, and the best hit was found for each gene and the name was used as the one defined by Broad Institute. For example, PKS2 got its best hit of FGSG_04694. However, some genes in PHI-base do not have nucleic acid or animo acid sequences, which were then queried in MIPS FGDB database and the gene names were retrieved. For example, HMR1 was named as FGSG_09197.</p>
+        <fig id="pone-0013021-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0013021.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Flowchart of a novel network approach to predict pathogenic genes.</title>
+            <p>The differentially expressed genes were identified first. Subsequently, a pathogenic network was extracted, and the network was mapped by differentially expressed genes that interact with at least two seed genes. In addition, the modules that consist of genes intensely interacting with each other were identified, and the genes in the modules are believed to be more likely to be pathogenic genes.</p>
+          </caption>
+          <graphic xlink:href="pone.0013021.g006"/>
+        </fig>
+        <p>The known pathogenic genes described above were then mapped to the protein-protein interaction network (PPIN) predicted by our previous work <xref ref-type="bibr" rid="pone.0013021-Zhao2">[8]</xref>. In this work, only the high-confidence protein interactions were used in PPIN, <italic>i.e.</italic> 27,102 interactions and 3,745 proteins. Consequently, there are 20 genes that can be mapped to PPIN of <italic>F. graminearum</italic> due to the incompleteness of PPIN, and these genes were treated as seed genes in sequel. Subsequently, a network was extracted from PPIN that consists of genes that interact with seed genes, where the genes were further required to be differentially expressed before and after the invasion of the pathogenic fungus. Therefore, the genes in the subnetwork are more possibly pathogenic genes. Furthermore, a smaller subnetwork that consists of genes interacting with at least two seed genes was extracted from previous network and regarded as pathogenic network, where the genes in pathogenic network are believed to be related to pathogenesis.</p>
+        <p>In addition, two intensely connected network modules were identified from the pathogenic network by employing maxClique, a tool in RBGL package <xref ref-type="bibr" rid="pone.0013021-Carey1">[14]</xref> of Bioconductor, and each module is possibly a pathway. The functions of the genes in the network modules were investigated with the annotations from MIPS FGDB database. The pathogenic network and modules were visualized with Cytoscape (<ext-link ext-link-type="uri" xlink:href="http://www.cytoscape.org/">http://www.cytoscape.org/</ext-link>).</p>
+      </sec>
+      <sec id="s4d">
+        <title>Ranking of the pathogenic genes</title>
+        <p>To facilitate the biologists to choose more confident pathogenic genes from our predictions. Each gene was assigned a weight according to the interactions and co-expressions with seed genes, where a gene is more confident to be a pathogenic gene if it interacts and is co-expressed with more seed genes. The co-expression is evaluated by the <italic>Pearson</italic> correlation coefficients between our predicted pathogenic gene and seed genes based on all gene expression data, including those measured before and after <italic>F. graminearum</italic> invading its host.</p>
+        <p>With the correlation coefficients obtained above, the weight <inline-formula><inline-graphic xlink:href="pone.0013021.e030.jpg" mimetype="image"/></inline-formula> for each gene <inline-formula><inline-graphic xlink:href="pone.0013021.e031.jpg" mimetype="image"/></inline-formula> is defined as follows,<disp-formula><graphic xlink:href="pone.0013021.e032"/><label>(1)</label></disp-formula>Where <inline-formula><inline-graphic xlink:href="pone.0013021.e033.jpg" mimetype="image"/></inline-formula> is the set of known pathogenic genes, <inline-formula><inline-graphic xlink:href="pone.0013021.e034.jpg" mimetype="image"/></inline-formula> is the correlation coefficient between gene <inline-formula><inline-graphic xlink:href="pone.0013021.e035.jpg" mimetype="image"/></inline-formula> and gene <inline-formula><inline-graphic xlink:href="pone.0013021.e036.jpg" mimetype="image"/></inline-formula>, and <inline-formula><inline-graphic xlink:href="pone.0013021.e037.jpg" mimetype="image"/></inline-formula> is an indication function, where <inline-formula><inline-graphic xlink:href="pone.0013021.e038.jpg" mimetype="image"/></inline-formula> if protein <inline-formula><inline-graphic xlink:href="pone.0013021.e039.jpg" mimetype="image"/></inline-formula> interacts with protein <inline-formula><inline-graphic xlink:href="pone.0013021.e040.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0013021.e041.jpg" mimetype="image"/></inline-formula> otherwise. The weight of each predicted pathogenic gene can illustrate the correlation between this gene and the seed genes. The higher the weight of one gene is, the more possible the gene is involved in pathogenic procedure.</p>
+      </sec>
+      <sec id="s4e">
+        <title>Properties of pathogenic network</title>
+        <p>To investigate the possible roles of the pathogenic genes predicted above, the network properties were investigated for all genes in the PPIN of <italic>F. graminearum</italic>, including degree, clustering coefficient and betweenness. These indices were calculated respectively for seed genes, predicted pathogenic genes and all genes in PPIN so that we can investigate the specific properties of the pathogenic genes.</p>
+        <p>The PPIN can be represented as an undirected network <inline-formula><inline-graphic xlink:href="pone.0013021.e042.jpg" mimetype="image"/></inline-formula>, where <inline-formula><inline-graphic xlink:href="pone.0013021.e043.jpg" mimetype="image"/></inline-formula> is the set of vertices and <inline-formula><inline-graphic xlink:href="pone.0013021.e044.jpg" mimetype="image"/></inline-formula> is the set of edges. The degree <inline-formula><inline-graphic xlink:href="pone.0013021.e045.jpg" mimetype="image"/></inline-formula> of a vertex <inline-formula><inline-graphic xlink:href="pone.0013021.e046.jpg" mimetype="image"/></inline-formula> is the number of edges connected to that vertex, which can be computed as follows<disp-formula><graphic xlink:href="pone.0013021.e047"/><label>(2)</label></disp-formula>where <inline-formula><inline-graphic xlink:href="pone.0013021.e048.jpg" mimetype="image"/></inline-formula> if there is an edge between node <inline-formula><inline-graphic xlink:href="pone.0013021.e049.jpg" mimetype="image"/></inline-formula> and node <inline-formula><inline-graphic xlink:href="pone.0013021.e050.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0013021.e051.jpg" mimetype="image"/></inline-formula> otherwise. The average degree of a network is the average of <inline-formula><inline-graphic xlink:href="pone.0013021.e052.jpg" mimetype="image"/></inline-formula> over all vertices in the network,<disp-formula><graphic xlink:href="pone.0013021.e053"/><label>(3)</label></disp-formula>The clustering coefficient of a vertex is an index that quantifies how close a vertex connects to its neighbors, and is defined as below<disp-formula><graphic xlink:href="pone.0013021.e054"/><label>(4)</label></disp-formula>Where <inline-formula><inline-graphic xlink:href="pone.0013021.e055.jpg" mimetype="image"/></inline-formula> is the clustering coefficient for vertex <inline-formula><inline-graphic xlink:href="pone.0013021.e056.jpg" mimetype="image"/></inline-formula>, <inline-formula><inline-graphic xlink:href="pone.0013021.e057.jpg" mimetype="image"/></inline-formula> is the degree of vertex <inline-formula><inline-graphic xlink:href="pone.0013021.e058.jpg" mimetype="image"/></inline-formula>, <inline-formula><inline-graphic xlink:href="pone.0013021.e059.jpg" mimetype="image"/></inline-formula> if <inline-formula><inline-graphic xlink:href="pone.0013021.e060.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0013021.e061.jpg" mimetype="image"/></inline-formula> otherwise. The average clustering coefficient of a network is defined:<disp-formula><graphic xlink:href="pone.0013021.e062"/><label>(5)</label></disp-formula></p>
+        <p>The Betweenness is one of the standard measures of node centrality, which is originally introduced to qualify the importance of a node in a social network. It is normally calculated as the fraction of the shortest paths between node pairs that pass through the node of interest <xref ref-type="bibr" rid="pone.0013021-Newman1">[45]</xref>.<disp-formula><graphic xlink:href="pone.0013021.e063"/><label>(6)</label></disp-formula>where <inline-formula><inline-graphic xlink:href="pone.0013021.e064.jpg" mimetype="image"/></inline-formula> is the number of the shortest paths connecting nodes <inline-formula><inline-graphic xlink:href="pone.0013021.e065.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0013021.e066.jpg" mimetype="image"/></inline-formula>, while <inline-formula><inline-graphic xlink:href="pone.0013021.e067.jpg" mimetype="image"/></inline-formula> is the number of the shortest paths connecting <inline-formula><inline-graphic xlink:href="pone.0013021.e068.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0013021.e069.jpg" mimetype="image"/></inline-formula> but passing through <inline-formula><inline-graphic xlink:href="pone.0013021.e070.jpg" mimetype="image"/></inline-formula>.</p>
+      </sec>
+      <sec id="s4f">
+        <title>Identification of orthologous genes</title>
+        <p>To investigate whether our predicted pathogenic genes have already been confirmed in other pathogenic fungi, some pathogenic fungi genome were downloaded from Broad Institute, including <italic>Magnaporthe grisea</italic>, <italic>Botrytis cinerea</italic>, <italic>Ustilago maydis</italic>, <italic>Venturia inaequalis</italic>, <italic>Rhynchosporium secalis</italic>, and <italic>Cryphonectria parasitica</italic>. The orhtologs of <italic>F. graminearum</italic> proteins were identified in other pathogenic fungi by utilizing Inparanoid <xref ref-type="bibr" rid="pone.0013021-OBrien1">[27]</xref>. Especially, the orthologs in other pathogenic fungi were investigated to see whether they have been already verified to be pathogenic genes using the annotations from PHI-base. If the orthologs of our predicted pathogenic gene are found to be annotated as pathogenic genes in PHI-base, the predicted pathogenic gene is believed to be potential pathogenic gene of <italic>F. graminearum</italic>.</p>
+      </sec>
+      <sec id="s4g">
+        <title>Statistical analysis of prediction results</title>
+        <p>To see the significance of the predicted modules, a significance score (SS) is defined for each module as the geometric mean of <inline-formula><inline-graphic xlink:href="pone.0013021.e071.jpg" mimetype="image"/></inline-formula>-values accompanying the nodes in one module, where the <inline-formula><inline-graphic xlink:href="pone.0013021.e072.jpg" mimetype="image"/></inline-formula>-value for each node is obtained by the Mann-Whitney Wilcoxon test based on gene expression data before and after the invasion of the pathogen. Since all the genes are differentially expressed in our background network, it does not necessarily mean that the genes in one module are more differentially expressed, <italic>i.e.</italic> with smaller <inline-formula><inline-graphic xlink:href="pone.0013021.e073.jpg" mimetype="image"/></inline-formula>-values. On the other hand, a set of genes are more possibly involved in pathogenesis if these genes are closely interacted and more differentially expressed because pathogenesis generally involves a set of concert-acting genes. Therefore, the SS defined here can evaluate the significance of one module.</p>
+        <p>To see the statistical significance of the two predicted modules, a <inline-formula><inline-graphic xlink:href="pone.0013021.e074.jpg" mimetype="image"/></inline-formula>-value was respectively obtained for each module by using an empirical randomization test procedure that preserves the interactions among genes. Firstly, the <inline-formula><inline-graphic xlink:href="pone.0013021.e075.jpg" mimetype="image"/></inline-formula>-values of the genes in the network are randomly shuffled and each gene will get a new <inline-formula><inline-graphic xlink:href="pone.0013021.e076.jpg" mimetype="image"/></inline-formula>-value after shuffling (Shown in <xref ref-type="fig" rid="pone-0013021-g007">Figure 7</xref>). Secondly, the SSs for the two modules are recalculated after the <inline-formula><inline-graphic xlink:href="pone.0013021.e077.jpg" mimetype="image"/></inline-formula>-value labels are shuffled and these are regarded as null distribution of SSs. Thirdly, the randomization is repeated for 10000 times. Fourthly, the <inline-formula><inline-graphic xlink:href="pone.0013021.e078.jpg" mimetype="image"/></inline-formula>-value for a module is defined as the probability that one module can be detected in randomization procedure with smaller SS than that of our predicted module.</p>
+        <fig id="pone-0013021-g007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0013021.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title>Randomization of network labels.</title>
+            <p>A and B denote two differentially expressed genes in the network, where each gene is labeled with a differential expression derived <italic>P</italic>-value, <italic>i.e.</italic> 0.005 for gene A and 0.002 for gene B. After randomization, the labels of the two genes are exchanged, <italic>i.e.</italic> 0.002 for gene A and 0.005 for gene B.</p>
+          </caption>
+          <graphic xlink:href="pone.0013021.g007"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0013021.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p>The module predicted by MCODE. The red nodes are seed nodes, and the green nodes are non-seed nodes, this module includes module two we predicted.</p>
+          <p>(4.16 MB TIF)</p>
+        </caption>
+        <media xlink:href="pone.0013021.s001.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0013021.s002">
+        <label>Table S1</label>
+        <caption>
+          <p>Network modules consist of differentially expressed genes that intensely interact with each other. The functions of the genes in the modules were downloaded from MIPS FGDB, and the known pathogenic genes were marked in bold.</p>
+          <p>(0.05 MB PDF)</p>
+        </caption>
+        <media xlink:href="pone.0013021.s002.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0013021.s003">
+        <label>Table S2</label>
+        <caption>
+          <p>GeneName is all of the genes which is connected with seed genes, GeneWeight is the weight for every nodes, DiseaseNum is the number of seed genes which are connected by genes in GeneName column.</p>
+          <p>(0.03 MB XLS)</p>
+        </caption>
+        <media xlink:href="pone.0013021.s003.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>Dr Wei-hua Tang was partly supported by the Ministry of Science and Technology of China (Grant No. 2006CB101901). Dr Xing-Ming Zhao was partly supported by the National High Technology Research and Development Program of China (2006AA02Z309), Innovation Program of Shanghai Municipal Education Commission (10YZ01), Innovation Funding of Shanghai University, Open Funding of National Key Laboratory of Plant Molecular Genetics, Shanghai Rising-Star Program (10QA1402700). Dr Luonan Chen was supported by the Chief Scientist Program of Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences with Grant No. 2009CSP002, and supported by the Key Project of Shanghai Education Committee (B.10-0412-08-001). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0013021-Miedaner1">
+        <label>1</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miedaner</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Cumagun</surname>
+              <given-names>CJR</given-names>
+            </name>
+            <name>
+              <surname>Chakraborty</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Population genetics of three important head blight pathogens <italic>Fusarium graminearum</italic>, <italic>F. pseudograminearum</italic> and <italic>F. culmorum</italic>.</article-title>
+          <source>Journal of Phytopathology</source>
+          <volume>156</volume>
+          <fpage>129</fpage>
+          <lpage>139</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-McMullen1">
+        <label>2</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McMullen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Gallenberg</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Scab of wheat and barley: a re-emerging disease of devastating impact.</article-title>
+          <source>Plant Disease</source>
+          <volume>81</volume>
+          <fpage>1340</fpage>
+          <lpage>1348</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Pestka1">
+        <label>3</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pestka</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Smolinski</surname>
+              <given-names>AT</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Deoxynivalenol: toxicology and potential effects on humans.</article-title>
+          <source>Journal of Toxicology and Environmental Health Part B: Critical Reviews</source>
+          <volume>8</volume>
+          <fpage>39</fpage>
+          <lpage>69</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Garvey1">
+        <label>4</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garvey</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>McCormick</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Rayment</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Structural and functional characterization of the TRI101 trichothecene 3-O-acetyltransferase from <italic>Fusarium sporotrichioides</italic> and <italic>Fusarium graminearum</italic>.</article-title>
+          <source>The Journal of Biological Chemistry</source>
+          <volume>283</volume>
+          <fpage>1660</fpage>
+          <lpage>1669</lpage>
+          <pub-id pub-id-type="pmid">17923480</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Idnurm1">
+        <label>5</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Idnurm</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Howlett</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Pathogenicity genes of phytopathogenic fungi.</article-title>
+          <source>Molecular Plant Pathology</source>
+          <volume>2</volume>
+          <fpage>241</fpage>
+          <lpage>255</lpage>
+          <pub-id pub-id-type="pmid">20573012</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Zhao1">
+        <label>6</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>XM</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Motif based identification of pathogenic patterns for filamentous fungi.</article-title>
+          <source>The Second International Symposium on Optimization and Systems Biology</source>
+          <fpage>115</fpage>
+          <lpage>122</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Gohre1">
+        <label>7</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gohre</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Robatzek</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Breaking the barriers: microbial effector molecules subvert plant immunity.</article-title>
+          <source>Annual Review of Phytopathology</source>
+          <volume>46</volume>
+          <fpage>189</fpage>
+          <lpage>215</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Zhao2">
+        <label>8</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>XM</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>XW</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>FPPI: <italic>Fusarium graminearum</italic> protein-protein interaction database.</article-title>
+          <source>Journal of Proteomic Research</source>
+          <volume>8</volume>
+          <fpage>4714</fpage>
+          <lpage>4721</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Wu1">
+        <label>9</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>XM</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>A Systems biology approach to identify effective cocktail drugs.</article-title>
+          <source>BMC Systems Biology</source>
+          <comment>In press</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Zhao3">
+        <label>10</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>XM</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Aihara</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Uncovering signal transduction networks from high-throughput data by integer linear programming.</article-title>
+          <source>Nucl Acids Res</source>
+          <volume>36</volume>
+          <fpage>e48</fpage>
+          <pub-id pub-id-type="pmid">18411207</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Zhao4">
+        <label>11</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>XM</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Aihara</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Gene function prediction using labeled and unlabeled data.</article-title>
+          <source>BMC Bioinformatics</source>
+          <volume>9</volume>
+          <fpage>57</fpage>
+          <pub-id pub-id-type="pmid">18221567</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Kraus1">
+        <label>12</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kraus</surname>
+              <given-names>PR</given-names>
+            </name>
+            <name>
+              <surname>Heitman</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Coping with stress: calmodulin and calcineurin in model and pathogenic fungi.</article-title>
+          <source>Biochemical and Biophysical Research Communications</source>
+          <volume>311</volume>
+          <fpage>1151</fpage>
+          <lpage>1157</lpage>
+          <pub-id pub-id-type="pmid">14623301</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Wehenkel1">
+        <label>13</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wehenkel</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bellinzoni</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gra&#xF1;a</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Duran</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Villarino</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Mycobacterial Ser/Thr protein kinases and phosphatases: Physiological roles and therapeutic potential.</article-title>
+          <source>Biochimica et Biophysica Acta</source>
+          <volume>1784</volume>
+          <fpage>193</fpage>
+          <lpage>202</lpage>
+          <pub-id pub-id-type="pmid">17869195</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Carey1">
+        <label>14</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carey</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Long</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Gentleman</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>RBGL: An interface to the BOOST graph library.</article-title>
+          <comment>URL <ext-link ext-link-type="uri" xlink:href="http://www.bioconductor.org">http://www.bioconductor.org</ext-link>. R package version 1.24.0</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Mammoto1">
+        <label>15</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mammoto</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sasaki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Takai</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Physical and functional interaction of rabphilin-11 with mammalian Sec13 protein implication in vesicle trafficking.</article-title>
+          <source>The Journal of Biological Chemistry</source>
+          <volume>275</volume>
+          <fpage>13167</fpage>
+          <lpage>13170</lpage>
+          <pub-id pub-id-type="pmid">10747849</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Bickford1">
+        <label>16</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bickford</surname>
+              <given-names>LC</given-names>
+            </name>
+            <name>
+              <surname>Mossessova</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>A structural view of the COPII vesicle coat.</article-title>
+          <source>Current Opinion in Structural Biology</source>
+          <volume>14</volume>
+          <fpage>147</fpage>
+          <lpage>153</lpage>
+          <pub-id pub-id-type="pmid">15093828</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Nickel1">
+        <label>17</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nickel</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Br&#xFC;gger</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Wieland</surname>
+              <given-names>FT</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Protein and lipid sorting between the endoplasmic reticulum and the Golgi complex.</article-title>
+          <source>Cell and Developmental Biology</source>
+          <volume>9</volume>
+          <fpage>493</fpage>
+          <lpage>501</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Liu1">
+        <label>18</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Sekito</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Epstein</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Butow</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>RTG-dependent mitochondria to nucleus signaling is negatively regulated by the seven WD-repeat protein Lst8p.</article-title>
+          <source>The EMBO Journal</source>
+          <volume>20</volume>
+          <fpage>7209</fpage>
+          <lpage>7219</lpage>
+          <pub-id pub-id-type="pmid">11742997</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Loewith1">
+        <label>19</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Loewith</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Jacinto</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wullschleger</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lorberg</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Crespo</surname>
+              <given-names>JL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2002</year>
+          <article-title>Two TOR complexes, only one of which is rapamycin sensitive, have distinct roles in cell growth control.</article-title>
+          <source>Molecular Cell</source>
+          <volume>10</volume>
+          <fpage>457</fpage>
+          <lpage>468</lpage>
+          <pub-id pub-id-type="pmid">12408816</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Bastidas1">
+        <label>20</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bastidas</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Heitman</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cardenas</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>The protein kinase Tor1 regulates adhesin gene expression in <italic>Candida albicans</italic>.</article-title>
+          <source>PLoS Pathogens</source>
+          <volume>5</volume>
+          <fpage>e1000294</fpage>
+          <pub-id pub-id-type="pmid">19197361</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Nez1">
+        <label>21</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>N&#xFA;&#xF1;ez</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Franco</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Madrid</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Soto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Vicente</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Role for RACK1 orthologue Cpc2 in the modulation of stress response in fission yeast.</article-title>
+          <source>Molecular Biology of the Cell</source>
+          <volume>20</volume>
+          <fpage>3996</fpage>
+          <lpage>4009</lpage>
+          <pub-id pub-id-type="pmid">19625445</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Lewin1">
+        <label>22</label>
+        <mixed-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lewin</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <source>Genes VIII. Pearson Education, Inc</source>
+          <publisher-loc>Upper Saddle River, NT 07458</publisher-loc>
+          <publisher-name>Pearson Prentice Hall</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Zeller1">
+        <label>23</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zeller</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Parnell</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Dohlman</surname>
+              <given-names>HG</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>The RACK1 ortholog Asc1 functions as a G-protein <italic>&#x3B2;</italic> subunit coupled to glucose responsiveness in yeast.</article-title>
+          <source>The Journal of Biological Chemistry</source>
+          <volume>282</volume>
+          <fpage>25168</fpage>
+          <lpage>25176</lpage>
+          <pub-id pub-id-type="pmid">17591772</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Muoz1">
+        <label>24</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mu&#xF1;oz</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Sim&#xF3;n</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Casals</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Clotet</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ari&#xF1;o</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Identification of multicopy suppressors of cell cycle arrest at the G1-S transition in Saccharomyces cerevisiae.</article-title>
+          <source>Yeast</source>
+          <volume>20</volume>
+          <fpage>157</fpage>
+          <lpage>169</lpage>
+          <pub-id pub-id-type="pmid">12518319</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-GarciaHiguera1">
+        <label>25</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garcia-Higuera</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Gaitatzes</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>TF</given-names>
+            </name>
+            <name>
+              <surname>Neer</surname>
+              <given-names>EJ</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Folding a WD repeat propeller role of highly conserved aspartic acid residues in the G protein beta subunit and Sec13.</article-title>
+          <source>The Journal of Biological Chemistry</source>
+          <volume>273</volume>
+          <fpage>9041</fpage>
+          <lpage>9049</lpage>
+          <pub-id pub-id-type="pmid">9535892</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Neer1">
+        <label>26</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neer</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Nambudripad</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>TF</given-names>
+            </name>
+          </person-group>
+          <year>1994</year>
+          <article-title>The ancient regulatory-protein family of WD-repeat proteins.</article-title>
+          <source>Nature</source>
+          <volume>371</volume>
+          <fpage>297</fpage>
+          <lpage>300</lpage>
+          <pub-id pub-id-type="pmid">8090199</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-OBrien1">
+        <label>27</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>O'Brien</surname>
+              <given-names>KP</given-names>
+            </name>
+            <name>
+              <surname>Remm</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sonnhammer</surname>
+              <given-names>ELL</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Inparanoid: a comprehensive database of eukaryotic orthologs.</article-title>
+          <source>Nucleic Acids Research</source>
+          <volume>33</volume>
+          <fpage>D476</fpage>
+          <lpage>D480</lpage>
+          <pub-id pub-id-type="pmid">15608241</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Stergiopoulos1">
+        <label>28</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stergiopoulos</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>van Nistelrooy</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Kema</surname>
+              <given-names>GH</given-names>
+            </name>
+            <name>
+              <surname>Waard</surname>
+              <given-names>MAD</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Multiple mechanisms account for variation in base-line sensitivity to azole fungicides in field isolates of <italic>Mycosphaerella graminicola</italic>.</article-title>
+          <source>Pest Management Science</source>
+          <volume>59</volume>
+          <fpage>1333</fpage>
+          <lpage>1343</lpage>
+          <pub-id pub-id-type="pmid">14667055</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Regenfelder1">
+        <label>29</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Regenfelder</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Spellig</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hartmann</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lauenstein</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>B&#xF6;lker</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1997</year>
+          <article-title>G proteins in <italic>Ustilago maydis</italic>: transmission of multiple signals.</article-title>
+          <source>The EMBO Journal</source>
+          <volume>16</volume>
+          <fpage>1934</fpage>
+          <lpage>1942</lpage>
+          <pub-id pub-id-type="pmid">9155019</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Lee1">
+        <label>30</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Mulugu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>York</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>O'Shea</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Regulation of a cyclin-CDK-CDK inhibitor complex by inositol pyrophosphates.</article-title>
+          <source>Science</source>
+          <volume>316</volume>
+          <fpage>109</fpage>
+          <lpage>112</lpage>
+          <pub-id pub-id-type="pmid">17412959</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Ettinger1">
+        <label>31</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ettinger</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Thukral</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kolattukudy</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>1987</year>
+          <article-title>Structure of cutinase gene, cDNA, and the derived amino acid sequence from phytopathogenic fungi.</article-title>
+          <source>Biochemistry</source>
+          <volume>26</volume>
+          <fpage>7883</fpage>
+          <lpage>7892</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Sweigard1">
+        <label>32</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sweigard</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chumley</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Valent</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Cloning and analysis of CUT1, a cutinase gene from <italic>Magnaporthe grisea</italic>.</article-title>
+          <source>Molecular and General Genetics</source>
+          <volume>232</volume>
+          <fpage>174</fpage>
+          <lpage>182</lpage>
+          <pub-id pub-id-type="pmid">1557023</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Sinha1">
+        <label>33</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sinha</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>YM</given-names>
+            </name>
+            <name>
+              <surname>Philp</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Yap</surname>
+              <given-names>WH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>Cyclin-dependent kinases control septin phosphorylation in <italic>Candida albicans</italic> hyphal development.</article-title>
+          <source>Developmental Cell</source>
+          <volume>13</volume>
+          <fpage>421</fpage>
+          <lpage>432</lpage>
+          <pub-id pub-id-type="pmid">17765684</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Liu2">
+        <label>34</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gou</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Mao</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>ZR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>In vitro inhibition of postharvest pathogens of fruit and control of gray mold of strawberry and green mold of citrus by aureobasidin A.</article-title>
+          <source>International Journal of Food Microbiology</source>
+          <volume>119</volume>
+          <fpage>223</fpage>
+          <lpage>229</lpage>
+          <pub-id pub-id-type="pmid">17765990</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Liebmann1">
+        <label>35</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liebmann</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>M&#xFC;ller</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Braun</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Brakhage</surname>
+              <given-names>AA</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>The cyclic AMP-dependent protein kinase a network regulates development and virulence in <italic>Aspergillus fumigatus</italic>.</article-title>
+          <source>Infection and Immunity</source>
+          <volume>72</volume>
+          <fpage>5193</fpage>
+          <lpage>5203</lpage>
+          <pub-id pub-id-type="pmid">15322014</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-BorgesWalmsley1">
+        <label>36</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Borges-Walmsley</surname>
+              <given-names>MI</given-names>
+            </name>
+            <name>
+              <surname>Walmsley</surname>
+              <given-names>AR</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>cAMP signalling in pathogenic fungi: control of dimorphic switching and pathogenicity.</article-title>
+          <source>Trends in Microbiology</source>
+          <volume>8</volume>
+          <fpage>133</fpage>
+          <lpage>141</lpage>
+          <pub-id pub-id-type="pmid">10707067</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Guidi1">
+        <label>37</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Guidi</surname>
+              <given-names>BW</given-names>
+            </name>
+            <name>
+              <surname>Bjornsdottir</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hopkins</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Lacomis</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Erdjument-Bromage</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Mutual targeting of mediator and the TFIIH kinase Kin28.</article-title>
+          <source>The Journal of Biological Chemistry</source>
+          <volume>279</volume>
+          <fpage>29114</fpage>
+          <lpage>29120</lpage>
+          <pub-id pub-id-type="pmid">15126497</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Lenssen1">
+        <label>38</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lenssen</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Azzouz</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Michel</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Landrieux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Collart</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>The Ccr4-Not complex regulates Skn7 through Srb10 kinase.</article-title>
+          <source>Eukaryot Cell</source>
+          <volume>6</volume>
+          <fpage>2251</fpage>
+          <lpage>2259</lpage>
+          <pub-id pub-id-type="pmid">17965252</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Tang1">
+        <label>39</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Tsurumi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Alaei</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Chiu</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>Dsk1p kinase phosphorylates SR proteins and regulates their cellular localization in fission yeast.</article-title>
+          <source>Biochemical Journal</source>
+          <volume>405</volume>
+          <fpage>21</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">17362205</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Gioti1">
+        <label>40</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gioti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Simon</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Le P&#xEA;cheur</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Giraud</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Pradier</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Expression profiling of <italic>Botrytis cinerea</italic> genes identifies three patterns of up-regulation in planta and an FKBP12 protein affecting pathogenicity.</article-title>
+          <source>Journal of Molecular Biology</source>
+          <volume>258</volume>
+          <fpage>372</fpage>
+          <lpage>386</lpage>
+          <pub-id pub-id-type="pmid">16497329</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Luttrell1">
+        <label>41</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Luttrell</surname>
+              <given-names>LM</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Composition and function of G protein-coupled receptor signalsomes controlling mitogen-activated protein kinase activity.</article-title>
+          <source>Journal of Molecular Neuroscience</source>
+          <volume>26</volume>
+          <fpage>253</fpage>
+          <lpage>263</lpage>
+          <pub-id pub-id-type="pmid">16012199</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Gutkind1">
+        <label>42</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gutkind</surname>
+              <given-names>JS</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>The pathways connecting G protein-coupled receptors to the nucleus through divergent mitogen-activated protein kinase cascades.</article-title>
+          <source>The Journal of Biological Chemistry</source>
+          <volume>273</volume>
+          <fpage>1839</fpage>
+          <lpage>1842</lpage>
+          <pub-id pub-id-type="pmid">9442012</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Costa1">
+        <label>43</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Costa</surname>
+              <given-names>LDF</given-names>
+            </name>
+            <name>
+              <surname>Rodrigues</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name>
+              <surname>Travieso</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Villas Boas</surname>
+              <given-names>PR</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Characterization of complex networks: A survey of measurements.</article-title>
+          <source>Advances in Physics</source>
+          <volume>56</volume>
+          <fpage>167</fpage>
+          <lpage>242</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Boccaletti1">
+        <label>44</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boccaletti</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Latora</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Moreno</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Chavez</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hwang</surname>
+              <given-names>DU</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Complex networks: Structure and dynamics.</article-title>
+          <source>Physics Reports</source>
+          <volume>424</volume>
+          <fpage>175</fpage>
+          <lpage>308</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Newman1">
+        <label>45</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Newman</surname>
+              <given-names>MEJ</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>A measure of betweenness centrality based on random walks.</article-title>
+          <source>Social Networks</source>
+          <volume>27</volume>
+          <fpage>39</fpage>
+          <lpage>54</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="pone.0013021-Bader1">
+        <label>46</label>
+        <mixed-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bader</surname>
+              <given-names>GD</given-names>
+            </name>
+            <name>
+              <surname>Hogue</surname>
+              <given-names>CWV</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>An automated method for finding molecular complexes in large protein interaction networks.</article-title>
+          <source>BMC Bioinformatics</source>
+          <volume>4</volume>
+          <fpage>2</fpage>
+          <pub-id pub-id-type="pmid">12525261</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

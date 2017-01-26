@@ -1,0 +1,1727 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.0 20040830//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3113845</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-02187</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0020867</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Molecular Cell Biology</subject>
+            <subj-group>
+              <subject>Gene Expression</subject>
+              <subj-group>
+                <subject>RNA processing</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Plant Cell Biology</subject>
+              <subj-group>
+                <subject>Plant Mitochondria</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Plant Science</subject>
+            <subj-group>
+              <subject>Plant Cell Biology</subject>
+              <subj-group>
+                <subject>Plant Mitochondria</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The RNA Editing Pattern of <italic>cox2</italic> mRNA Is Affected by Point Mutations in Plant Mitochondria</article-title>
+        <alt-title alt-title-type="running-head">Mutational Analysis of <italic>cox2</italic> mRNA Editing</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Castandet</surname>
+            <given-names>Beno&#xEE;t</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1"/>
+          <xref ref-type="author-notes" rid="fn1">
+            <sup>&#xA4;</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Araya</surname>
+            <given-names>Alejandro</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1"/>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <addr-line>Laboratoire de Microbiologie Cellulaire et Mol&#xE9;culaire et Pathog&#xE9;nicit&#xE9; (M.C.M.P.- UMR5234). Centre National de la Recherche Scientifique and Universit&#xE9; Bordeaux Segalen. Bordeaux, France</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Papavasiliou</surname>
+            <given-names>Nina</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">The Rockefeller University, United States of America</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>aaraya@reger.u-bordeaux2.fr</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: BC AA. Performed the experiments: BC. Analyzed the data: BC AA. Contributed reagents/materials/analysis tools: BC AA. Wrote the paper: BC AA.</p>
+        </fn>
+        <fn id="fn1" fn-type="current-aff">
+          <label>&#xA4;</label>
+          <p>Current address: Boyce Thompson Institute for Plant Research, Ithaca, New York, United States of America</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>6</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>6</volume>
+      <issue>6</issue>
+      <elocation-id>e20867</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>1</day>
+          <month>2</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>11</day>
+          <month>5</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Castandet, Araya. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2011</copyright-year>
+      </permissions>
+      <abstract>
+        <p>The mitochondrial transcriptome from land plants undergoes hundreds of specific C-to-U changes by RNA editing. These events are important since most of them occur in the coding region of mRNAs. One challenging question is to understand the mechanism of recognition of a selected C residue (editing sites) on the transcript. It has been reported that a short region surrounding the target C forms the <italic>cis</italic>-recognition elements, but individual residues on it do not play similar roles for the different editing sites. Here, we studied the role of the &#x2212;1 and +1 nucleotide in wheat <italic>cox2</italic> editing site recognition using an <italic>in organello</italic> approach. We found that four different recognition patterns can be distinguished: (a) +1 dependency, (b) &#x2212;1 dependency, (c) +1/&#x2212;1 dependency, and (d) no dependency on nearest neighbor residues. A striking observation was that whereas a 23 nt <italic>cis</italic> region is necessary for editing, some mutants affect the editing efficiency of unmodified distant sites. As a rule, mutations or pre-edited variants of the transcript have an impact on the complete set of editing targets. When some Cs were changed into Us, the remaining editing sites presented a higher efficiency of C-to-U conversion than in wild type mRNA. Our data suggest that the complex response observed for <italic>cox2</italic> mRNA may be a consequence of the fate of the transcript during mitochondrial gene expression.</p>
+      </abstract>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>RNA editing challenges the central dogma of molecular biology as it changes the information encoded for by the gene at the RNA level. This process affects a wide variety of organisms through nucleotide insertion/deletion or nucleotide conversion <xref ref-type="bibr" rid="pone.0020867-Brennicke1">[1]</xref>. In plant mitochondria, RNA editing occurs by site-specific deamination of cytosines <xref ref-type="bibr" rid="pone.0020867-Blanc1">[2]</xref>. While around 30 editing events occur in the chloroplast transcriptome <xref ref-type="bibr" rid="pone.0020867-ChateignerBoutin1">[3]</xref>, more than 400 cytosine residues are changed to uracil in flowering plant mitochondria <xref ref-type="bibr" rid="pone.0020867-Giege1">[4]</xref>, <xref ref-type="bibr" rid="pone.0020867-Handa1">[5]</xref>, <xref ref-type="bibr" rid="pone.0020867-Mower1">[6]</xref>, <xref ref-type="bibr" rid="pone.0020867-Notsu1">[7]</xref>, <xref ref-type="bibr" rid="pone.0020867-Picardi1">[8]</xref>. In most cases, changes occur in the coding region of mitochondrial mRNAs, increasing the similarity of the encoded proteins with their counterparts from organisms that do not edit their transcripts. Therefore, RNA editing constitutes an essential step to ensure the production of functional proteins and the proper functioning of mitochondria <xref ref-type="bibr" rid="pone.0020867-Bgu1">[9]</xref>, <xref ref-type="bibr" rid="pone.0020867-Hernould1">[10]</xref>.</p>
+      <p>One major issue is to understand how the editing machinery can recognize specific C residues on the transcript, since there is no obvious consensus sequence when comparing the different <italic>cis</italic>-elements on the transcriptome. Based on <italic>in vitro</italic> and <italic>in organello</italic> experiments, it has been reported that the <italic>cis</italic>-acting elements necessary and sufficient for recognition reside in a short sequence of fewer than 30 nucleotides encompassing the C target <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>, <xref ref-type="bibr" rid="pone.0020867-Farr1">[12]</xref>, <xref ref-type="bibr" rid="pone.0020867-Takenaka1">[13]</xref>, <xref ref-type="bibr" rid="pone.0020867-Verbitskiy1">[14]</xref>. However, in some cases, distal regions can affect the editing efficiency <xref ref-type="bibr" rid="pone.0020867-Staudinger1">[15]</xref>, <xref ref-type="bibr" rid="pone.0020867-vanderMerwe1">[16]</xref>.</p>
+      <p>Little is known about the <italic>trans</italic>-elements constituting the RNA editing machinery in plants. Organellar RNA editing <italic>trans</italic> factors were first discovered for the chloroplast <xref ref-type="bibr" rid="pone.0020867-Kotera1">[17]</xref> and recently, several PPR proteins have been identified as <italic>trans</italic> acting factors involved in mitochondrial RNA editing <xref ref-type="bibr" rid="pone.0020867-Doniwa1">[18]</xref>, <xref ref-type="bibr" rid="pone.0020867-Kim1">[19]</xref>, <xref ref-type="bibr" rid="pone.0020867-Sung1">[20]</xref>, <xref ref-type="bibr" rid="pone.0020867-Takenaka2">[21]</xref>, <xref ref-type="bibr" rid="pone.0020867-Takenaka3">[22]</xref>, <xref ref-type="bibr" rid="pone.0020867-Tang1">[23]</xref>, <xref ref-type="bibr" rid="pone.0020867-Tasaki1">[24]</xref>, <xref ref-type="bibr" rid="pone.0020867-Verbitskiy2">[25]</xref>, <xref ref-type="bibr" rid="pone.0020867-Zehrmann1">[26]</xref>, <xref ref-type="bibr" rid="pone.0020867-Ohtani1">[27]</xref>, <xref ref-type="bibr" rid="pone.0020867-Bentolila1">[28]</xref>. Since no deaminase activity has been found associated with these PPR proteins, it is postulated that they are involved in editing site recognition. The specific binding to the <italic>cis</italic> elements is thought to recruit the catalytic element, the cytosine deaminase. However, to date, specific binding to the <italic>cis</italic> element has only been reported for two PPR <italic>trans</italic> factor, CRR4 in the chloroplast <xref ref-type="bibr" rid="pone.0020867-Okuda1">[29]</xref> and PpPPR_71 in the mitochondria from the moss <italic>Physcomitrella patens_</italic><xref ref-type="bibr" rid="pone.0020867-Tasaki1">[24]</xref>. It should be noted that some PPR proteins participate in editing several C residues <xref ref-type="bibr" rid="pone.0020867-Kim1">[19]</xref>, <xref ref-type="bibr" rid="pone.0020867-Sung1">[20]</xref>, <xref ref-type="bibr" rid="pone.0020867-Tang1">[23]</xref>, <xref ref-type="bibr" rid="pone.0020867-Verbitskiy2">[25]</xref>, <xref ref-type="bibr" rid="pone.0020867-Zehrmann1">[26]</xref>, <xref ref-type="bibr" rid="pone.0020867-Ohtani1">[27]</xref>, <xref ref-type="bibr" rid="pone.0020867-Bentolila1">[28]</xref>. Considering that the <italic>cis</italic>-acting elements of these sites present no similarity, the mechanism allowing the recognition of different sites by <italic>trans</italic>-acting factors remains an important question.</p>
+      <p>To gain insight into the RNA editing process, we studied the consequences of point mutants of <italic>cis</italic> recognition elements on the editing capacity of <italic>cox2</italic> editing sites. Extensive mutagenesis analyses of C77 and C259 editing sites from wheat <italic>cox2</italic> demonstrated that although the extent of <italic>cis</italic>-elements is similar, the role of each residue is different in the recognition of these targets <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>, <xref ref-type="bibr" rid="pone.0020867-Farr1">[12]</xref>. Notably, two different recognition patterns were observed based on the requirement for either the +1 or the &#x2212;1 neighbor nucleotide to the target C residue <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>. These observations have been confirmed by <italic>in vitro</italic> and <italic>in silico</italic> analyses <xref ref-type="bibr" rid="pone.0020867-Neuwirt1">[30]</xref>, <xref ref-type="bibr" rid="pone.0020867-Mulligan1">[31]</xref>, <xref ref-type="bibr" rid="pone.0020867-Salmans1">[32]</xref>. One question is whether the identity of the nearest neighbor nucleotide of the editing site reflects a general recognition mechanism for <italic>trans</italic>-acting factors. In this case, selected residues in the <italic>cis</italic>-element should make it possible to discriminate between different editing sites on the transcript. Bioinformatic analyses suggest that <italic>trans</italic> acting factors may be able to distinguish purines from pyrimidines and, at particular positions, one specific nucleotide <xref ref-type="bibr" rid="pone.0020867-Hammani1">[33]</xref>.</p>
+      <p>We present here the editing status of mitochondrial mRNAs from single and multiple mutants of <italic>cox2</italic> introduced into purified mitochondria. This approach allows the coincidental analysis of all editing sites on the same transcript. Our study reveals at least four different recognition patterns for C-to-U editing based on the importance of the contiguous residue. Furthermore, our findings suggest that RNA editing in plant mitochondria is not isolated but is rather part of a more general maturation process.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <p>All plasmids used in this study are based on the pCOX2Ta vector previously described <xref ref-type="bibr" rid="pone.0020867-Farr1">[12]</xref>. They contain the inverted repeat region from the wheat <italic>cob</italic> gene (<italic>Ir-cob</italic>) (accession no. AF337547). This sequence combined with the 23 bp upstream insert sequence served to specifically amplify transgenic products with nested PCR.</p>
+      <sec id="s2a">
+        <title>Construction of mutants</title>
+        <p>The list of the oligonucleotides used is given in <xref ref-type="supplementary-material" rid="pone.0020867.s002">Table S1</xref>. The strategy is based on the QuikChange&#xAE; Site-Directed Mutagenesis Kit (Stratagene). Complementary primers bearing the mutation were used for PCR reactions on 100 ng of pCOX2Ta plasmid or derivatives. The PCR mixture contained 1 &#xB5;M of each primer, 200 &#xB5;M of each dNTP and 2.5 units of <italic>Pfu</italic> DNA polymerase (Stratagene) in a final volume of 50 &#xB5;l, according to the supplier's protocol. Parameters for amplification were 95&#xB0;C for 2 min, 20 cycles at 95&#xB0;C for 30 s, 48&#xB0;C for 30 s and 68&#xB0;C for 14 min, and finally 68&#xB0;C for 10 min. After amplification, 10 units of <italic>DpnI</italic> endonuclease (Promega) were directly added to the PCR reaction for 3 hours at 37&#xB0;C to eliminate the original DNA template. Ten microliters of the digestion reaction were used to transform competent <italic>E. coli</italic> DH5&#x3B1;. The sequence of selected mutants was verified before use.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Mitochondrial purification and electroporation</title>
+        <p>Mitochondria were prepared from 20 grams of wheat embryos essentially as described <xref ref-type="bibr" rid="pone.0020867-Farr2">[34]</xref>. Sucrose gradient purified mitochondria were used immediately in electroporation experiments after protein determination using the Bio-Rad Protein Assay (Bio-Rad).</p>
+        <p>Electroporation was carried out with 1 mg of mitochondrial proteins in 50 &#xB5;l of 0.33 M sucrose and 2 &#xB5;g of recombinant plasmid in the conditions previously described <xref ref-type="bibr" rid="pone.0020867-Farr2">[34]</xref>. Electroporated mitochondria were incubated for 18 h at 25&#xB0;C with shaking at 130 rpm in a reaction mixture containing 0.33 M mannitol, 90 mM KCl, 10 mM MgCl<sub>2</sub>, 12 mM Tricine (pH 7.2), 5 mM KH<sub>2</sub>PO<sub>4</sub>, 1.2 mM EGTA, 10 mM sodium succinate, 1 mM GTP, 2 mM ADP, 0.15 mM (each) CTP and UTP, 2 mM dithiothreitol. Mitochondria were recovered by centrifugation at 15000&#xD7; g for 15 min at 4&#xB0;C. RNA was purified with 800 &#xB5;l Trizol&#xAE; reagent (Invitrogen) according to the supplier's protocol.</p>
+      </sec>
+      <sec id="s2c">
+        <title>RT-PCR</title>
+        <p>One microgram of nucleic acids obtained after Trizol&#xAE; treatment was digested with 2 U of DNase I Amplification grade (Invitrogen) for 15 min at 25&#xB0;C. cDNA synthesis was performed with 200 units of Superscript II RT (Invitrogen) using 100 ng of random primers hexamers as primers (Promega). PCR amplifications were performed with primers 1a and 1b using the Advantage 2 polymerase mix (Clontech) as follows: 95&#xB0;C for 2 min, 20 cycles at 95&#xB0;C for 30 s, 64&#xB0;C for 1 min and 68&#xB0;C for 2 min, and finally 68&#xB0;C for 10 min. Primers 2a and 2b were used for nested PCR on 2 &#xB5;l of PCR1. Parameters were the same for PCR2, except for annealing temperature and cycling, which were 55&#xB0;C and 20 cycles respectively.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Primers used in RT-PCR analyses</title>
+        <p>1a: <named-content content-type="gene">GCGGTGCAGTCATACAGATCTGC</named-content></p>
+        <p>1b: <named-content content-type="gene">TCCCGCGGGAAGCGGAAAGC</named-content></p>
+        <p>2a: <named-content content-type="gene">GAGCAGAGCTGAAAAAGATG</named-content></p>
+        <p>2b: <named-content content-type="gene">TATCCAGATTTGGTACCAAA</named-content></p>
+      </sec>
+      <sec id="s2e">
+        <title>Quantization of RNA editing</title>
+        <p>To determine the profile and the rate of C-to-U conversion in RT-PCR products, PCR bands corresponding to the mature transcripts were excised from the agarose electrophoresis gel and purified with the GFX PCR DNA and Gel Band Purification Kit (GE Healthcare). The purified fragments were ligated into pGEM-T easy vector as recommended by the manufacturer (Promega). Cloned PCR products were sequenced with the BigDye&#xAE; Terminator Cycle Sequencing Kit v 1.1 (Applied Biosystems). Sequences analyses were performed at the Genotyping and Sequencing Facility of Universit&#xE9; Bordeaux Segalen. Editing efficiency was determined by sequencing at least 16 cDNA clones from each electroporation experiment as described <xref ref-type="bibr" rid="pone.0020867-Castandet1">[35]</xref>. Editing efficiency variations in mutants between independent experiments were lower than 10%. Moreover, no significant variations in the ratio precursor/mature mRNA were observed.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>The wheat <italic>cox2</italic> construct and their mutant derivatives are formed by two exons of 388 and 392 bp, split by a 1223 bp intron. The <italic>cox2</italic> transcript possesses 17 editing sites, 6 in the first and 11 in the second exon respectively <xref ref-type="bibr" rid="pone.0020867-Covello1">[36]</xref>. After introduction of the recombinant DNA into <italic>T. aestivum</italic> mitochondria, the mRNA was analyzed by RT-PCR and the identity of spliced molecules was verified by sequence analysis. The editing efficiency of wild-type and mutant <italic>cox2</italic> transcripts was determined by sequencing at least 16 individual RT-PCR clones from each electroporation experiment. The results presented correspond to the percentage of C-to-U conversion for every editing site in the population of cDNA analyzed. The editing efficiency of site C259, which has been extensively studied <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>, <xref ref-type="bibr" rid="pone.0020867-Farr1">[12]</xref>, was used as an internal standard and was systematically monitored for each assay. In all the experiments presented in this study, site C259 was edited with an efficiency higher than 85%.</p>
+      <sec id="s3a">
+        <title>Four different recognition patterns exist based on +1/&#x2212;1 dependency</title>
+        <p>RNA editing of sites C77 and C259 on <italic>cox2</italic> transcripts is known to be affected by mutations at the &#x2212;1 and +1 residues, respectively <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>, <xref ref-type="bibr" rid="pone.0020867-Farr1">[12]</xref>. We extended these analyses to the entire transcript by mutating the neighbor &#x2212;1 or +1 residue from the different <italic>cox2</italic> editing sites. The A residues were replaced by T and vice versa; the C residues were replaced by G, and the G residues were replaced by T. Site C385 belonging to the IBS1 region of exon1 was not modified.</p>
+        <p>The editing response was defined as &#x201C;severely affected&#x201D; when the editing efficiency was reduced to less than 25% of the wild type, and &#x201C;slightly affected&#x201D; when the editing efficiency was comprised between 75% and 25% of the wild type. Individual mutants showed that residues C167, C169, C467, C550, C563 and C620 were severely affected when the neighbor +1 residue was changed, whereas sites C449 and C587 were slightly affected. Residues C30, C466, C682 and C704 were not affected by the +1 mutation (<xref ref-type="fig" rid="pone-0020867-g001">Fig. 1</xref>). When the &#x2212;1 residue was mutated, sites C167, C563 and C682 were severely affected, whereas sites C30, C466, C467, C550, C587 and C620 showed only a moderate reduction of editing. A weak editing efficiency modification for sites C169, C449 and C704 was observed in &#x2212;1 mutants (<xref ref-type="fig" rid="pone-0020867-g001">Fig. 1</xref>).</p>
+        <fig id="pone-0020867-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020867.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Effect of nearest neighbor mutations on <italic>cox2</italic> mRNA editing.</title>
+            <p>The editing efficiency of different editing sites on <italic>cox2</italic> mRNAs was analyzed for &#x2212;1 (blue bars) and +1 (red bars) mutants from wheat <italic>cox2</italic> constructs. Gray bars represent the editing status of wild type transcripts. Editing status of C targets was assessed by sequencing of at least 16 independent RT-PCR clones. The results presented are representative from at least two separate experiments. Editing efficiency variations in replicates was lower than 10%.</p>
+          </caption>
+          <graphic xlink:href="pone.0020867.g001"/>
+        </fig>
+        <p>These results make it possible to define four different recognition patterns based on the role of the +1/&#x2212;1 nucleotide: (a) +1 dependency for sites C169, C449, C467, C550, and C259, (b) &#x2212;1 dependency for sites C30, C682 and C77, (c) &#x2212;1/+1 dependency for sites C167, C563 and C620, (d) no dependency on the nearest neighbor residues for sites C466, C587 and C704.</p>
+        <p>As previously described, sites C482 and C638 are not considered in this analysis because they were found unedited in electroporation experiments <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>. This observation was confirmed in most of the experiments described here. Unexpectedly, the +1 mutation on site C482 and the &#x2212;1 mutation on site C638 (<xref ref-type="fig" rid="pone-0020867-g001">Fig. 1</xref>) showed a low but significant level of editing for both residues.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Some editing sites are not autonomous for editing reaction</title>
+        <p>In a second set of experiments, either the &#x2212;1 or the +1 neighbor residues from all editing sites, with the exception of C77, C259 and C385, were mutated on a single construct. In these mutants, the target residues C466 and C467 are abolished by the &#x2212;1 and +1 mutation respectively. In both +1 and &#x2212;1 combined mutant constructs, the overall editing profile and extent of the transcripts were different from the wild type (<xref ref-type="fig" rid="pone-0020867-g002">Fig. 2</xref>). Notably, site C385 had a decreased editing efficiency in combined +1 mutant although it was not mutated (<xref ref-type="fig" rid="pone-0020867-g002">Fig. 2B</xref>). Comparing the editing efficiency of individual sites in transcripts from the combined mutant with those from single mutants, we observed that sites C167, C169, C449, C482, C550, C638 and C704 presented a similar response. In contrast, sites C30(&#x2212;1), C620(+1) and C620(&#x2212;1) showed weaker editing efficiency in transcripts from the single mutant construct than those from combined mutant ones (<xref ref-type="table" rid="pone-0020867-t001">Table 1</xref>). For sites C587(+1) and C587(&#x2212;1) the situation was the contrary as editing efficiency was higher in combined than individual mutants. Moreover, sites C563(+1) and C682(&#x2212;1) reached 10% editing efficiency in individual mutants whereas they were not edited in combined constructions. These results indicate that some editing sites are not autonomous and that the editing reaction may be affected by mutations outside of the &#x2212;16/+6 region. Indeed, the editing profile of <italic>cox2</italic> transcripts from single &#x2212;1 and +1 mutants (supplemental <xref ref-type="supplementary-material" rid="pone.0020867.s001">Fig. S1</xref>) indicate that modifications in point mutations may have an impact on the editing status of the mRNA.</p>
+        <fig id="pone-0020867-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020867.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Editing status of <italic>cox2</italic> transcripts carrying combined &#x2212;1 or +1 mutations.</title>
+            <p>Gray bars represent the editing efficiency on the wild type transcripts. (A) Editing status of mRNA from the combined &#x2212;1 mutant (blue bars). (B) Editing status of mRNA from the combined +1 mutant (red bars). The sites C77, C259 and C385 not mutated in the &#x2212;1 or +1 combined constructs are shown by light gray bars. The results presented are representative from at least two separate experiments. Editing efficiency variations in replicates was lower than 10%.</p>
+          </caption>
+          <graphic xlink:href="pone.0020867.g002"/>
+        </fig>
+        <table-wrap id="pone-0020867-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020867.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Comparison of RNA editing in single and combined &#x2212;1 or +1 mutants.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0020867-t001-1" xlink:href="pone.0020867.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">WT</td>
+                  <td colspan="2" align="left" rowspan="1">&#x2212;1 Mutants</td>
+                  <td colspan="2" align="left" rowspan="1">+1 Mutants</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Editing site</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">single</td>
+                  <td align="left" rowspan="1" colspan="1">combined</td>
+                  <td align="left" rowspan="1" colspan="1">single</td>
+                  <td align="left" rowspan="1" colspan="1">combined</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C30</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">40</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">60</td>
+                  <td align="left" rowspan="1" colspan="1">43</td>
+                  <td align="left" rowspan="1" colspan="1">49</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C167</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">60</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C169</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">80</td>
+                  <td align="left" rowspan="1" colspan="1">73</td>
+                  <td align="left" rowspan="1" colspan="1">90</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C449</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">77</td>
+                  <td align="left" rowspan="1" colspan="1">80</td>
+                  <td align="left" rowspan="1" colspan="1">29</td>
+                  <td align="left" rowspan="1" colspan="1">17</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C466</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2014;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2014;</td>
+                  <td align="left" rowspan="1" colspan="1">77</td>
+                  <td align="left" rowspan="1" colspan="1">95</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C467</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">43</td>
+                  <td align="left" rowspan="1" colspan="1">20</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2014;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2014;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C482</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C550</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">57</td>
+                  <td align="left" rowspan="1" colspan="1">70</td>
+                  <td align="left" rowspan="1" colspan="1">22</td>
+                  <td align="left" rowspan="1" colspan="1">24</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C563</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">60</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C587</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">80</td>
+                  <td align="left" rowspan="1" colspan="1">31</td>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                  <td align="left" rowspan="1" colspan="1">47</td>
+                  <td align="left" rowspan="1" colspan="1">20</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C620</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">80</td>
+                  <td align="left" rowspan="1" colspan="1">22</td>
+                  <td align="left" rowspan="1" colspan="1">60</td>
+                  <td align="left" rowspan="1" colspan="1">20</td>
+                  <td align="left" rowspan="1" colspan="1">63</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C638</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">20</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C682</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">40</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">38</td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C704</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">87</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">95</td>
+                  <td align="left" rowspan="1" colspan="1">90</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>Editing sites are indicated by a C followed by the position of the base on the mature cox2 transcript. Combined mutants present all but C77, C259 and C385 editing sites mutated either at &#x2212;1 or +1 position in a single construct. Sites C466 and C467 disappeared in the &#x2212;1 and +1 combined mutants respectively. The numbers indicate the percentage of edited transcripts at the site indicated after sequencing of at least 16 RT-PCR clones.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s3c">
+        <title>Editing is increased in pre-edited molecules</title>
+        <p>To verify whether the editing status of one site may have an impact on the editing efficiency of others, we decided to modify the residues that are highly edited in wild type transcripts. For this purpose, sites C259, C466, C467, C550 and C704 were mutated into Ts (pre-edited state). Notably, sites C77, C167, C169, C482, C638 and C682 were more efficiently edited in pre-edited than in wild type mRNAs. The editing efficiency of sites C30, C385, C449, C563 and C620 showed minor differences or none at all. Interestingly, site C587 behaves differently as it was less edited in the pre-edited context than in the wild type one (<xref ref-type="fig" rid="pone-0020867-g003">Fig. 3</xref>).</p>
+        <fig id="pone-0020867-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020867.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Editing of <italic>cox2</italic> transcripts carrying pre-edited sites.</title>
+            <p>Residues C259, C466, C467, C550 and C704 were changed into T (pre-edited) on the <italic>cox2</italic> transgene. The editing efficiency of the remaining sites was determined by sequencing at least 16 independent RT-PCR clones obtained from spliced products. Gray bars represent the values obtained from wild type transcripts. Blue bars indicate the values from mutated mRNAs. Pre-edited sites are depicted by light gray bars. The results presented are representative from at least two separate experiments. Editing efficiency variations in replicates was lower than 10%.</p>
+          </caption>
+          <graphic xlink:href="pone.0020867.g003"/>
+        </fig>
+      </sec>
+      <sec id="s3d">
+        <title>Editing efficiency is influenced by the status of another site</title>
+        <p>In the case of contiguous editing sites, the C targets are also part of the <italic>cis</italic>-recognition sequence of the neighboring one. The contiguous C167 and C169 editing sites allow the reciprocal influence between editing sites to be studied. For this purpose, different constructs containing either &#x2212;1 or +1 mutations were expressed in isolated mitochondria. <xref ref-type="fig" rid="pone-0020867-g004">Fig. 4A</xref> depicts the different mutations used. As shown above, editing of C167 was strongly affected by &#x2212;1 or +1 mutation (&#xD7;1 and &#xD7;2). It was reduced about 50% by the mutation at position +3 (&#xD7;3). In contrast, editing of C169 was not affected by the &#x2212;1 mutation (&#xD7;2) but was severely reduced in the mutant + 1 (&#xD7;3) (<xref ref-type="fig" rid="pone-0020867-g004">Fig. 4B</xref>). It should be noted that &#xD7;2 represents a +1 modification for C167, but is a &#x2212;1 mutant with regard to C169. The same mutations were introduced into pre-edited C167T and C169T constructs. Both C167T and C169T presented slight modifications on the editing efficiency of the contiguous residue. The C169T mutant did not affect the editing efficiency of C167 when combined with the &#xD7;2 and &#xD7;3 mutations compared to the wild type construct. On the other hand, the pre-edited C167T form increased the inhibitory effect of &#xD7;1 mutations (<xref ref-type="fig" rid="pone-0020867-g004">Fig. 4B</xref>, line C167T). The C169T mutant did not affect the editing efficiency of C167. Similarly, &#xD7;1 and &#xD7;2 mutations had an effect on C167 editing whatever the C169 status. However, the pre-edited C169T alleviated the editing inhibition when combined with the &#xD7;1 mutation (<xref ref-type="fig" rid="pone-0020867-g004">Fig. 4B</xref>, line C169T).</p>
+        <fig id="pone-0020867-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020867.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Editing of mutants of overlapping C167 and C169 sites.</title>
+            <p>(A) Sequence encompassing sites C167 and C169. &#xD7;1 and &#xD7;2 represent the &#x2212;1 and the +1 mutations of the site C167 respectively. &#xD7;2 is also the &#x2212;1 mutant of site C169. &#xD7;3 represents the +1 mutation of the site C169. (B) Chromatopherograms of the sequences surrounding the sites C167 and C169 from different constructs. Arrows indicate the C167 (left) and C169 (right) editing sites. The editing efficiency in wild type and mutant transcripts is indicated below the chromatopherogram. C167T and C169T indicate the presence of a residue T at the place of the editing target C167 and C169 respectively. At least 16 independent RT-PCR clones were sequenced for each construct.</p>
+          </caption>
+          <graphic xlink:href="pone.0020867.g004"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>RNA editing is a major posttranscriptional process in plant mitochondria where hundreds of particular cytosine residues are changed into uracil in mRNAs to produce functional proteins. Based on <italic>in organello</italic> experiments, it was demonstrated that a region formed by nucleotides &#x2212;16 to +6 and encompassing the target C constitutes the <italic>cis</italic> element necessary and sufficient to perform the editing reaction <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>, <xref ref-type="bibr" rid="pone.0020867-Farr1">[12]</xref>. These studies were performed by site-directed mutagenesis on the regions encompassing two sites with different nucleotide sequences, C77 and C259. They also revealed different roles for the individual residues in the &#x2212;16 to +6 region <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>. Particularly striking is the behavior of mutants affecting the nearest neighbor residue to the C target. Editing of C77(&#x2212;1) and C259(+1) mutants was completely abolished, indicating that two different responses are possible and that different <italic>trans</italic>-acting factors are involved in their recognition. The length of <italic>cis</italic>-elements and the importance of the nearest residue in RNA editing were confirmed by other approaches <xref ref-type="bibr" rid="pone.0020867-Takenaka1">[13]</xref>, <xref ref-type="bibr" rid="pone.0020867-Verbitskiy1">[14]</xref>, <xref ref-type="bibr" rid="pone.0020867-Neuwirt1">[30]</xref>, <xref ref-type="bibr" rid="pone.0020867-Mulligan1">[31]</xref>.</p>
+      <p>We wondered whether the role of the residue neighboring the C target could be considered as a general recognition mechanism. To obtain more insight into this hypothesis, we systematically changed &#x2212;1 or +1 residues from the different editing sites on the <italic>cox2</italic> gene and observed the effect on the editing reaction (<xref ref-type="fig" rid="pone-0020867-g001">Fig. 1</xref>). We found that the &#x2212;1 or +1 dependence was not the only way to distinguish the type of recognition for the editing sites. We distinguished four different responses: (a) dependency on the +1 residue for sites, C169, C259, C449, C467 and C550 (this report and <xref ref-type="bibr" rid="pone.0020867-Farr1">[12]</xref>); (b) dependency on the &#x2212;1 residue for sites C30, C77 and C682 (this report and <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>); (c) dependency on both &#x2212;1 and +1 residues for sites, C167, C563 and C620; (d) no dependency on neighboring residues for sites C466, C587 and C704. Thus, while editing of some sites clearly depends on the identity of the neighboring residue, this situation is not a general rule since some of them are only slightly affected by the mutations or not at all.</p>
+      <p>The different recognition patterns found for <italic>cox2</italic> mRNA could be an indication of the diversity of <italic>trans</italic> acting factors involved in RNA editing. The discovery of several genes characterized as <italic>trans</italic>-acting factors and involved in plant mitochondrial RNA editing is in agreement with this observation <xref ref-type="bibr" rid="pone.0020867-Doniwa1">[18]</xref>, <xref ref-type="bibr" rid="pone.0020867-Kim1">[19]</xref>, <xref ref-type="bibr" rid="pone.0020867-Sung1">[20]</xref>, <xref ref-type="bibr" rid="pone.0020867-Takenaka2">[21]</xref>, <xref ref-type="bibr" rid="pone.0020867-Takenaka3">[22]</xref>, <xref ref-type="bibr" rid="pone.0020867-Tang1">[23]</xref>, <xref ref-type="bibr" rid="pone.0020867-Tasaki1">[24]</xref>, <xref ref-type="bibr" rid="pone.0020867-Verbitskiy2">[25]</xref>, <xref ref-type="bibr" rid="pone.0020867-Zehrmann1">[26]</xref>, <xref ref-type="bibr" rid="pone.0020867-Ohtani1">[27]</xref>, <xref ref-type="bibr" rid="pone.0020867-Bentolila1">[28]</xref>. As some of these proteins recognize several editing sites <xref ref-type="bibr" rid="pone.0020867-Kim1">[19]</xref>, <xref ref-type="bibr" rid="pone.0020867-Sung1">[20]</xref>, <xref ref-type="bibr" rid="pone.0020867-Tang1">[23]</xref>, <xref ref-type="bibr" rid="pone.0020867-Verbitskiy2">[25]</xref>, <xref ref-type="bibr" rid="pone.0020867-Zehrmann1">[26]</xref>, <xref ref-type="bibr" rid="pone.0020867-Ohtani1">[27]</xref>, <xref ref-type="bibr" rid="pone.0020867-Bentolila1">[28]</xref>, their different targets might have some features in common. As there is clearly no sequence identity on the <italic>cis</italic>-acting elements <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>, the dependency of the editing sites on the +1/&#x2212;1 nucleotide could constitute a common feature for site recognition by <italic>trans</italic>-acting proteins.</p>
+      <p>Sites C482 and C638 are efficiently edited in endogenous <italic>cox2</italic> mRNAs but are unedited in electroporation experiments with the wild type construct (<xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref> and this report). Surprisingly, both sites were found edited in pre-edited constructs and in transcripts from +1 and &#x2212;1 single mutants, respectively (Supplementary <xref ref-type="supplementary-material" rid="pone.0020867.s001">Fig. S1</xref>). These observations indicate that the inability to edit C482 and C638 was not due to a deficiency of the experimental model, but rather to the availability of <italic>trans</italic>-acting factors that are probably recruited primarily by other editing sites. One explanation is that mutations increase the binding ability of <italic>trans</italic>-factors for C482 and C638, which conceivably undergo RNA editing later than sites C259 or C704 in wild type transcripts. This may explain some of the results obtained in studies using potato <italic>cox2</italic> genes expressed in heterologous mitochondria <xref ref-type="bibr" rid="pone.0020867-Choury2">[37]</xref>.</p>
+      <p>The efficiency of C-to-U conversions for different editing sites in <italic>cox2</italic> mRNAs may be explained by the expression level of specific <italic>trans</italic>-acting factors <xref ref-type="bibr" rid="pone.0020867-Bentolila1">[28]</xref>. Thus, the residues edited most efficiently could be expected to be recognized by abundant <italic>trans</italic>-acting factors. In this regard, several editing sites may compete when recognized by the same limiting <italic>trans-</italic>acting factor. Several reports on chloroplast RNA editing revealed competition between editing sites, suggesting that <italic>trans</italic>-recognition elements may be limiting in the editing reaction <xref ref-type="bibr" rid="pone.0020867-ChateignerBoutin2">[38]</xref>, <xref ref-type="bibr" rid="pone.0020867-Chaudhuri1">[39]</xref>, <xref ref-type="bibr" rid="pone.0020867-Heller1">[40]</xref>. However, our results do not support this idea since the editing efficiency of a particular site can vary in different unrelated mutants. Another possibility is that the affinity of different <italic>trans</italic>-elements, specificity factors and/or deaminases for the respective editing sites are not the same. The dependency on the nearest neighbor residue may be explained by this fact. However, it cannot account for the influence on RNA editing when the mutations are located far from the <italic>cis</italic>-element.</p>
+      <p>When the &#x2212;1 (or +1) neighboring residues from a majority of C targets were changed on a single construct, most sites were edited with similar efficiency to that found for single mutants (<xref ref-type="table" rid="pone-0020867-t001">Table 1</xref>). Such a behavior is expected since editing sites are thought to be recognized individually by the editing machinery according to the hit-and-run model <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>, <xref ref-type="bibr" rid="pone.0020867-vanderMerwe1">[16]</xref>. However, this is not the case for sites C30(&#x2212;1), C620(+1) and C620(&#x2212;1), which are less efficiently edited in single than in multiple mutants. On the other hand, C587(+1) and C587(&#x2212;1) showed enhanced editing in single mutants. These editing sites derogate from the postulated autonomy, indicating that the recognition mechanism is more complex than thought and that additional parameters are probably involved. As C30, C587 and C620 are relatively isolated from other editing sites on the transcript, the respective &#x2212;16/+6 regions were not affected in combined mutants. One can argue that some <italic>cis</italic>-elements may be longer than previously described, or that the editing status of some residues has an impact on the editing ability of others <xref ref-type="bibr" rid="pone.0020867-Takenaka1">[13]</xref>, <xref ref-type="bibr" rid="pone.0020867-Staudinger1">[15]</xref>, <xref ref-type="bibr" rid="pone.0020867-Verbitskiy3">[41]</xref>. Moreover, we cannot exclude the hypothesis that the mutations introduced affect RNA editing through changes in the RNA secondary structure.</p>
+      <p>Structural constraints during RNA processing may indeed explain the variation in editing efficiency observed. A survey of the editing status of the complete set of editing sites for each single mutant either at the &#x2212;1 or +1 position clearly shows that each construct presents different editing patterns (see Supplementary <xref ref-type="supplementary-material" rid="pone.0020867.s001">Fig. S1</xref>). This observation is significant since the results from replicate experiments are very reproducible for wild-type or mutant constructs, and are in agreement with the idea that long-range effects on the efficiency of C deamination operate in plant RNA editing.</p>
+      <p>Transcripts from mutants with sites C259, C466, C467, C550 and C704 changed conjointly into Ts were more efficiently edited than the wild type construct at all sites, except for C587 (<xref ref-type="fig" rid="pone-0020867-g003">Fig. 3</xref>). Interestingly, sites C482 and C638 were found edited, as was the case in some &#x2212;1 and +1 mutants (<xref ref-type="fig" rid="pone-0020867-g001">Figs. 1</xref> and <xref ref-type="fig" rid="pone-0020867-g002">2</xref>). Taken together, these observations support the idea that some C-to-U changes promote the editing reaction of other target Cs, in agreement with the &#x201C;scanning model&#x201D; for RNA editing where the editing machinery, once bound to the transcript, searches along the RNA (<xref ref-type="fig" rid="pone-0020867-g003">Fig. 3</xref> and Supplementary <xref ref-type="supplementary-material" rid="pone.0020867.s001">Fig. S1</xref>) <xref ref-type="bibr" rid="pone.0020867-Takenaka1">[13]</xref>, <xref ref-type="bibr" rid="pone.0020867-Staudinger1">[15]</xref>, <xref ref-type="bibr" rid="pone.0020867-Neuwirt1">[30]</xref>. This is in contrast with the &#x201C;hit-and-run&#x201D; model which posits that the choice of editing targets is a stochastic event <xref ref-type="bibr" rid="pone.0020867-Choury1">[11]</xref>, <xref ref-type="bibr" rid="pone.0020867-Verbitskiy3">[41]</xref>. However, the majority of <italic>cox2</italic> editing sites analyzed in this report showed an autonomous behavior (<xref ref-type="table" rid="pone-0020867-t001">Table 1</xref>), indicating that no current hypothesis can provide an accurate description of the editing mechanism.</p>
+      <p>To better understand the effect of pre-edited mutants, we focused on sites C167 and C169 with overlapping <italic>cis-</italic>elements, since they are directly concerned by the C-to-U conversions of the neighboring site (<xref ref-type="fig" rid="pone-0020867-g004">Fig. 4</xref>). Interestingly, in the C167(&#x2212;1) mutant, the conversion of C169 was severely reduced but not in the C167(+1) mutant. The fact that C169 is efficiently edited in mutants where editing of C167 was abolished and in mutants where this residue is pre-edited (C167T, <xref ref-type="fig" rid="pone-0020867-g004">Fig. 4B</xref>; see also Supplementary <xref ref-type="supplementary-material" rid="pone.0020867.s001">Fig. S1</xref>) indicates that the differences observed on C169 were not related to the editing status of the upstream site. In contrast, when site C169 was pre-edited, it counteracted the inhibition of C167 editing observed for the C167(&#x2212;1) mutant (169TX1, <xref ref-type="fig" rid="pone-0020867-g004">Fig. 4B</xref>). One can argue that editing of C167 requires a prior deamination of C169, thus improving the recognition of C167 by the editing machinery. Indeed, an enhanced binding activity of a <italic>trans</italic> acting factor for the edited form of the mRNA has recently been shown <xref ref-type="bibr" rid="pone.0020867-Tasaki1">[24]</xref>. On the other hand, it was reported that the editing of individual sites did not influence the status of the neighboring ones in <italic>atp4</italic> mRNA <xref ref-type="bibr" rid="pone.0020867-Verbitskiy3">[41]</xref>. In our case, the fact that C167T and C169T pre-edited constructs had little or no effect on the neighboring site in the absence of additional mutation indicates that C-to-U conversion for both sites is not involved in recognition of the nearest neighboring site.</p>
+      <p>Taken together our results indicate that RNA editing cannot be interpreted solely as the interaction between independent <italic>cis</italic>- and <italic>trans</italic>-elements. It was recently found that altering the mRNA maturation process results in impaired RNA editing <xref ref-type="bibr" rid="pone.0020867-Castandet1">[35]</xref>, <xref ref-type="bibr" rid="pone.0020867-Choury2">[37]</xref>, <xref ref-type="bibr" rid="pone.0020867-Iwabuchi1">[42]</xref>. It is thus plausible that the mutations introduced on the transcript may have an impact on different events of RNA maturation, thereby influencing RNA editing. We therefore postulate that transcripts have to be recognized and engaged in the editing process during a coordinated RNA maturation process.</p>
+      <p>An important conclusion from this study is that some experimental results on RNA editing must be interpreted with caution since this event may be affected by the fate of the mRNA. This may be relevant when studying <italic>trans</italic>-acting factors and may explain why some of them only partially affect the editing reaction <xref ref-type="bibr" rid="pone.0020867-Takenaka3">[22]</xref>, <xref ref-type="bibr" rid="pone.0020867-Zehrmann1">[26]</xref>. Recently, it was shown that a <italic>trans</italic> acting factor can influence the editing efficiency of two sites different from its primary targets <xref ref-type="bibr" rid="pone.0020867-Bentolila1">[28]</xref>. Similarly, PPR956 is known to reduce the editing efficiency of several sites on a single transcript <xref ref-type="bibr" rid="pone.0020867-Doniwa1">[18]</xref>. As PPR proteins are involved in several organellar gene expression processes <xref ref-type="bibr" rid="pone.0020867-Lurin1">[43]</xref>, the effects induced by mutations have to be carefully investigated in order to discriminate between a direct contribution to RNA editing and a secondary consequence of impaired RNA processing.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0020867.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p>Editing profile of <italic>cox2</italic> transcripts single mutants. Mutations were performed on the &#x2212;1 or +1 nearest neighbor residue of the editing target. The number of the editing site corresponds to the position of the C target in the mature transcript, starting from the first nucleotide of the initiation codon. The base changes in &#x2212;1 and +1 mutant constructs were performed by changing purines by pyrimidines and vice versa. To avoid the introduction of a potential C target, the following changes were performed: A was changed to T, T to A, C to G and G to T depending on the nature of the residue neighbor to the editable C. The results represent the average of at least 16 sequenced RT-PCR clones. The results presented are representative from at least two separate experiments. Editing efficiency variations in replicates was lower than 10%.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0020867.s001.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0020867.s002">
+        <label>Table S1</label>
+        <caption>
+          <p>Oligonucleotide sequences used in the study.</p>
+          <p>(DOC)</p>
+        </caption>
+        <media xlink:href="pone.0020867.s002.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Evelyne Lepage and Cindy Aknin for skilled technical support.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>Work was supported by the Centre National de la Recherche Scientifique, the Universit&#xE9; Victor Segalen Bordeaux 2, France, and the PICS program n&#xB0; 3641. B.C. was supported by a Doctoral fellowship from the French Minist&#xE8;re de l'Enseignement Sup&#xE9;rieur et de la Recherche. DNA sequencing was performed at the Genotyping and Sequencing Facility of Bordeaux supported by grants from the Conseil R&#xE9;gional d'Aquitaine n&#xB0; 20030304002FA and 20040305003FA and from the European Union, FEDER n&#xB0; 2003227. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0020867-Brennicke1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Marchfelder</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Binder</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>RNA editing.</article-title>
+          <source>FEMS Microbiol Rev</source>
+          <volume>23</volume>
+          <fpage>297</fpage>
+          <lpage>316</lpage>
+          <pub-id pub-id-type="pmid">10371035</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Blanc1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blanc</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Litvak</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Araya</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>RNA editing in wheat mitochondria proceeds by a deamination mechanism.</article-title>
+          <source>FEBS Lett</source>
+          <volume>373</volume>
+          <fpage>56</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="pmid">7589434</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-ChateignerBoutin1">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chateigner-Boutin</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Small</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>A rapid high-throughput method for the detection and quantification of RNA editing based on high-resolution melting of amplicons.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>35</volume>
+          <fpage>e114</fpage>
+          <pub-id pub-id-type="pmid">17726051</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Giege1">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Giege</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>RNA editing in Arabidopsis mitochondria effects 441 C-to-U changes in ORFs.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>96</volume>
+          <fpage>15324</fpage>
+          <lpage>15329</lpage>
+          <pub-id pub-id-type="pmid">10611383</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Handa1">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Handa</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>The complete nucleotide sequence and RNA editing content of the mitochondrial genome of rapeseed (Brassica napus L.): comparative analysis of the mitochondrial genomes of rapeseed and Arabidopsis thaliana.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>31</volume>
+          <fpage>5907</fpage>
+          <lpage>5916</lpage>
+          <pub-id pub-id-type="pmid">14530439</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Mower1">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mower</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Palmer</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Patterns of partial RNA editing in mitochondrial genes of Beta vulgaris.</article-title>
+          <source>Mol Genet Genomics</source>
+          <volume>276</volume>
+          <fpage>285</fpage>
+          <lpage>293</lpage>
+          <pub-id pub-id-type="pmid">16862402</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Notsu1">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Notsu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Masood</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nishikawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kubo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Akiduki</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2002</year>
+          <article-title>The complete sequence of the rice (Oryza sativa L.) mitochondrial genome: frequent DNA sequence acquisition and loss during the evolution of flowering plants.</article-title>
+          <source>Mol Genet Genomics</source>
+          <volume>268</volume>
+          <fpage>434</fpage>
+          <lpage>445</lpage>
+          <pub-id pub-id-type="pmid">12471441</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Picardi1">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Picardi</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Horner</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Chiara</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Schiavon</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Valle</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Large-scale detection and analysis of RNA editing in grape mtDNA by RNA deep-sequencing.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>38</volume>
+          <fpage>4755</fpage>
+          <lpage>4767</lpage>
+          <pub-id pub-id-type="pmid">20385587</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Bgu1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>B&#xE9;gu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Graves</surname>
+              <given-names>PV</given-names>
+            </name>
+            <name>
+              <surname>Domec</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Arselin</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Litvak</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1990</year>
+          <article-title>RNA editing of wheat mitochondrial ATP synthase subunit 9: direct protein and cDNA sequencing.</article-title>
+          <source>Plant Cell</source>
+          <volume>2</volume>
+          <fpage>1283</fpage>
+          <lpage>1290</lpage>
+          <pub-id pub-id-type="pmid">1726783</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Hernould1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hernould</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Suharsono</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Litvak</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Araya</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mouras</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>1993</year>
+          <article-title>Male-sterility induction in transgenic tobacco plants with an unedited atp9 mitochondrial gene from wheat.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>90</volume>
+          <fpage>2370</fpage>
+          <lpage>2374</lpage>
+          <pub-id pub-id-type="pmid">7681593</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Choury1">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Choury</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Farr&#xE9;</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Jordana</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Araya</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Different patterns in the recognition of editing sites in plant mitochondria.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>32</volume>
+          <fpage>6397</fpage>
+          <lpage>6406</lpage>
+          <pub-id pub-id-type="pmid">15585663</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Farr1">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Farr&#xE9;</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Leon</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Jordana</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Araya</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>cis Recognition elements in plant mitochondrion RNA editing.</article-title>
+          <source>Mol Cell Biol</source>
+          <volume>21</volume>
+          <fpage>6731</fpage>
+          <lpage>6737</lpage>
+          <pub-id pub-id-type="pmid">11564858</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Takenaka1">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Neuwirt</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Complex cis-elements determine an RNA editing site in pea mitochondria.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>32</volume>
+          <fpage>4137</fpage>
+          <lpage>4144</lpage>
+          <pub-id pub-id-type="pmid">15295040</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Verbitskiy1">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Verbitskiy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>van der Merwe</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Zehrmann</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Multiple specificity recognition motifs enhance plant mitochondrial RNA editing in vitro.</article-title>
+          <source>J Biol Chem</source>
+          <volume>283</volume>
+          <fpage>24374</fpage>
+          <lpage>24381</lpage>
+          <pub-id pub-id-type="pmid">18596040</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Staudinger1">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Staudinger</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bolle</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kempken</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Mitochondrial electroporation and in organello RNA editing of chimeric atp6 transcripts.</article-title>
+          <source>Mol Genet Genomics</source>
+          <volume>273</volume>
+          <fpage>130</fpage>
+          <lpage>136</lpage>
+          <pub-id pub-id-type="pmid">15729585</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-vanderMerwe1">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>van der Merwe</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Neuwirt</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Verbitskiy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>RNA editing sites in plant mitochondria can share cis-elements.</article-title>
+          <source>FEBS Lett</source>
+          <volume>580</volume>
+          <fpage>268</fpage>
+          <lpage>272</lpage>
+          <pub-id pub-id-type="pmid">16364306</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Kotera1">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kotera</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Tasaka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shikanai</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>A pentatricopeptide repeat protein is essential for RNA editing in chloroplasts.</article-title>
+          <source>Nature</source>
+          <volume>433</volume>
+          <fpage>326</fpage>
+          <lpage>330</lpage>
+          <pub-id pub-id-type="pmid">15662426</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Doniwa1">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doniwa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ueda</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ueta</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kadowaki</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>The involvement of a PPR protein of the P subfamily in partial RNA editing of an Arabidopsis mitochondrial transcript.</article-title>
+          <source>Gene</source>
+          <volume>454</volume>
+          <fpage>39</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="pmid">20117193</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Kim1">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>JI</given-names>
+            </name>
+            <name>
+              <surname>Moon</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ryu</surname>
+              <given-names>CH</given-names>
+            </name>
+            <name>
+              <surname>An</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Rice OGR1 encodes a pentatricopeptide repeat-DYW protein and is essential for RNA editing in mitochondria.</article-title>
+          <source>Plant J</source>
+          <volume>59</volume>
+          <fpage>738</fpage>
+          <lpage>749</lpage>
+          <pub-id pub-id-type="pmid">19453459</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Sung1">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sung</surname>
+              <given-names>TY</given-names>
+            </name>
+            <name>
+              <surname>Tseng</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Hsieh</surname>
+              <given-names>MH</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>The SLO1 PPR protein is required for RNA editing at multiple sites with similar upstream sequences in Arabidopsis mitochondria.</article-title>
+          <source>Plant J</source>
+          <volume>63</volume>
+          <fpage>499</fpage>
+          <lpage>511</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Takenaka2">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>MEF9, an E-subclass pentatricopeptide repeat protein, is required for an RNA editing event in the nad7 transcript in mitochondria of Arabidopsis.</article-title>
+          <source>Plant Physiol</source>
+          <volume>152</volume>
+          <fpage>939</fpage>
+          <lpage>947</lpage>
+          <pub-id pub-id-type="pmid">20018598</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Takenaka3">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Verbitskiy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Zehrmann</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Reverse genetic screening identifies five E-class PPR proteins involved in RNA editing in mitochondria of Arabidopsis thaliana.</article-title>
+          <source>J Biol Chem</source>
+          <volume>285</volume>
+          <fpage>27122</fpage>
+          <lpage>27129</lpage>
+          <pub-id pub-id-type="pmid">20566637</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Tang1">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Matsumoto</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Muranaka</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>The mitochondrial PPR protein LOVASTATIN INSENSITIVE 1 plays regulatory roles in cytosolic and plastidial isoprenoid biosynthesis through RNA editing.</article-title>
+          <source>Plant J</source>
+          <volume>61</volume>
+          <fpage>456</fpage>
+          <lpage>466</lpage>
+          <pub-id pub-id-type="pmid">19929879</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Tasaki1">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tasaki</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Hattori</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sugita</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>The moss pentatricopeptide repeat protein with a DYW domain is responsible for RNA editing of mitochondrial ccmFc transcript.</article-title>
+          <source>Plant J</source>
+          <volume>62</volume>
+          <fpage>560</fpage>
+          <lpage>570</lpage>
+          <pub-id pub-id-type="pmid">20163555</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Verbitskiy2">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Verbitskiy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Zehrmann</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>van der Merwe</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>The PPR protein encoded by the LOVASTATIN INSENSITIVE 1 gene is involved in RNA editing at three sites in mitochondria of Arabidopsis thaliana.</article-title>
+          <source>Plant J</source>
+          <volume>61</volume>
+          <fpage>446</fpage>
+          <lpage>455</lpage>
+          <pub-id pub-id-type="pmid">19919573</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Zehrmann1">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zehrmann</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Verbitskiy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>van der Merwe</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>A DYW domain-containing pentatricopeptide repeat protein is required for RNA editing at multiple sites in mitochondria of Arabidopsis thaliana.</article-title>
+          <source>Plant Cell</source>
+          <volume>21</volume>
+          <fpage>558</fpage>
+          <lpage>567</lpage>
+          <pub-id pub-id-type="pmid">19252080</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Ohtani1">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ohtani</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ichinose</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tasaki</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Aoki</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Komura</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Targeted Gene Disruption Identifies Three PPR-DYW Proteins Involved in RNA Editing for Five Editing Sites of the Moss Mitochondrial Transcripts.</article-title>
+          <source>Plant Cell Physiol</source>
+          <volume>51</volume>
+          <fpage>1942</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">20837503</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Bentolila1">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bentolila</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Knight</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Hanson</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Natural variation in Arabidopsis leads to the identification of REME1, a pentatricopeptide repeat-DYW protein controlling the editing of mitochondrial transcripts.</article-title>
+          <source>Plant Physiol</source>
+          <volume>154</volume>
+          <fpage>1966</fpage>
+          <lpage>82</lpage>
+          <pub-id pub-id-type="pmid">20974892</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Okuda1">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Okuda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Nakamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sugita</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shimizu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Shikanai</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>A pentatricopeptide repeat protein is a site recognition factor in chloroplast RNA editing.</article-title>
+          <source>J Biol Chem</source>
+          <volume>281</volume>
+          <fpage>37661</fpage>
+          <lpage>37667</lpage>
+          <pub-id pub-id-type="pmid">17015439</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Neuwirt1">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neuwirt</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>van der Merwe</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>An in vitro RNA editing system from cauliflower mitochondria: editing site recognition parameters can vary in different plant species.</article-title>
+          <source>RNA</source>
+          <volume>11</volume>
+          <fpage>1563</fpage>
+          <lpage>1570</lpage>
+          <pub-id pub-id-type="pmid">16131591</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Mulligan1">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mulligan</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Chou</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Computational analysis of RNA editing sites in plant mitochondrial genomes reveals similar information content and a sporadic distribution of editing sites.</article-title>
+          <source>Mol Biol Evol</source>
+          <volume>24</volume>
+          <fpage>1971</fpage>
+          <lpage>1981</lpage>
+          <pub-id pub-id-type="pmid">17591603</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Salmans1">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Salmans</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Chaw</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>CP</given-names>
+            </name>
+            <name>
+              <surname>Shih</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>YW</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Editing site analysis in a gymnosperm mitochondrial genome reveals similarities with angiosperm mitochondrial genomes.</article-title>
+          <source>Curr Genet</source>
+          <volume>56</volume>
+          <fpage>439</fpage>
+          <lpage>446</lpage>
+          <pub-id pub-id-type="pmid">20617318</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Hammani1">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hammani</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Okuda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Tanz</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Chateigner-Boutin</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Shikanai</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>A study of new Arabidopsis chloroplast RNA editing mutants reveals general features of editing factors and their target sites.</article-title>
+          <source>Plant Cell</source>
+          <volume>21</volume>
+          <fpage>3686</fpage>
+          <lpage>3699</lpage>
+          <pub-id pub-id-type="pmid">19934379</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Farr2">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Farr&#xE9;</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Choury</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Araya</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>In organello gene expression and RNA editing studies by electroporation-mediated transformation of isolated plant mitochondria.</article-title>
+          <source>Methods Enzymol</source>
+          <volume>424</volume>
+          <fpage>483</fpage>
+          <lpage>500</lpage>
+          <pub-id pub-id-type="pmid">17662855</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Castandet1">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Castandet</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Choury</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>B&#xE9;gu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Jordana</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Araya</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Intron RNA editing is essential for splicing in plant mitochondria.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>38</volume>
+          <fpage>7112</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="pmid">20615898</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Covello1">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Covello</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Gray</surname>
+              <given-names>MW</given-names>
+            </name>
+          </person-group>
+          <year>1990</year>
+          <article-title>Differences in editing at homologous sites in messenger RNAs from angiosperm mitochondria.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>18</volume>
+          <fpage>5189</fpage>
+          <lpage>5196</lpage>
+          <pub-id pub-id-type="pmid">1698279</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Choury2">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Choury</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Araya</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>RNA editing site recognition in heterologous plant mitochondria.</article-title>
+          <source>Curr Genet</source>
+          <volume>50</volume>
+          <fpage>405</fpage>
+          <lpage>416</lpage>
+          <pub-id pub-id-type="pmid">17033819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-ChateignerBoutin2">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chateigner-Boutin</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Hanson</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Cross-competition in transgenic chloroplasts expressing single editing sites reveals shared cis elements.</article-title>
+          <source>Mol Cell Biol</source>
+          <volume>22</volume>
+          <fpage>8448</fpage>
+          <lpage>8456</lpage>
+          <pub-id pub-id-type="pmid">12446765</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Chaudhuri1">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chaudhuri</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Carrer</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Maliga</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Site-specific factor involved in the editing of the psbL mRNA in tobacco plastids.</article-title>
+          <source>EMBO J</source>
+          <volume>14</volume>
+          <fpage>2951</fpage>
+          <lpage>2957</lpage>
+          <pub-id pub-id-type="pmid">7796820</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Heller1">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heller</surname>
+              <given-names>WP</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Hanson</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Cross-competition in editing of chloroplast RNA transcripts in vitro implicates sharing of trans-factors between different C targets.</article-title>
+          <source>J Biol Chem</source>
+          <volume>283</volume>
+          <fpage>7314</fpage>
+          <lpage>7319</lpage>
+          <pub-id pub-id-type="pmid">18192271</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Verbitskiy3">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Verbitskiy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Neuwirt</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>van der Merwe</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Brennicke</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Partially edited RNAs are intermediates of RNA editing in plant mitochondria.</article-title>
+          <source>Plant J</source>
+          <volume>47</volume>
+          <fpage>408</fpage>
+          <lpage>416</lpage>
+          <pub-id pub-id-type="pmid">16774644</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Iwabuchi1">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Iwabuchi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kyozuka</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Shimamoto</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>1993</year>
+          <article-title>Processing followed by complete editing of an altered mitochondrial atp6 RNA restores fertility of cytoplasmic male sterile rice.</article-title>
+          <source>EMBO J</source>
+          <volume>12</volume>
+          <fpage>1437</fpage>
+          <lpage>1446</lpage>
+          <pub-id pub-id-type="pmid">7682174</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0020867-Lurin1">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lurin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Andres</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Aubourg</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bellaoui</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bitton</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Genome-wide analysis of Arabidopsis pentatricopeptide repeat proteins reveals their essential role in organelle biogenesis.</article-title>
+          <source>Plant Cell</source>
+          <volume>16</volume>
+          <fpage>2089</fpage>
+          <lpage>2103</lpage>
+          <pub-id pub-id-type="pmid">15269332</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

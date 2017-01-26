@@ -1,0 +1,1765 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-title>BMC Genomics</journal-title>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">2694213</article-id>
+      <article-id pub-id-type="publisher-id">1471-2164-10-253</article-id>
+      <article-id pub-id-type="pmid">19480707</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2164-10-253</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Large-scale analysis of antisense transcription in wheat using the Affymetrix GeneChip Wheat Genome Array</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib id="A1" corresp="yes" contrib-type="author">
+          <name>
+            <surname>Coram</surname>
+            <given-names>Tristan E</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>tristan.coram@ars.usda.gov</email>
+        </contrib>
+        <contrib id="A2" contrib-type="author">
+          <name>
+            <surname>Settles</surname>
+            <given-names>Matthew L</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>msettles@wsu.edu</email>
+        </contrib>
+        <contrib id="A3" contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Xianming</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>xianming@wsu.edu</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>US Department of Agriculture &#x2013; Agricultural Research Service, and Washington State University, Department of Plant Pathology, Pullman, WA 99164-6430, USA</aff>
+      <aff id="I2"><label>2</label>Department of Molecular Biosciences, Washington State University, Pullman, WA, 99164-4234, USA</aff>
+      <aff id="I3"><label>3</label>US Department of Agriculture &#x2013; Agricultural Research Service, and North Carolina State University, Department of Crop Science, Campus Box 7620, Raleigh, NC, 27695-7620, USA</aff>
+      <pub-date pub-type="collection">
+        <year>2009</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>29</day>
+        <month>5</month>
+        <year>2009</year>
+      </pub-date>
+      <volume>10</volume>
+      <fpage>253</fpage>
+      <lpage>253</lpage>
+      <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1471-2164/10/253"/>
+      <history>
+        <date date-type="received">
+          <day>24</day>
+          <month>10</month>
+          <year>2008</year>
+        </date>
+        <date date-type="accepted">
+          <day>29</day>
+          <month>5</month>
+          <year>2009</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2009 Coram et al; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2009</copyright-year>
+        <copyright-holder>Coram et al; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0"/>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</p>
+          <!--<rdf xmlns="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1" xmlns:dcterms="http://purl.org/dc/terms"><Work xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:about=""><license rdf:resource="http://creativecommons.org/licenses/by/2.0"/><dc:type rdf:resource="http://purl.org/dc/dcmitype/Text"/><dc:author>               Coram
+               E
+               Tristan
+               
+               
+               tristan.coram@ars.usda.gov
+            </dc:author><dc:title>
+            Large-scale analysis of antisense transcription in wheat using the Affymetrix GeneChip Wheat Genome Array
+         </dc:title><dc:date>2009</dc:date><dcterms:bibliographicCitation>BMC Genomics 10(1): 253-. (2009)</dcterms:bibliographicCitation><dc:identifier type="sici">1471-2164(2009)10:1&#x0003c;253&#x0003e;</dc:identifier><dcterms:isPartOf>urn:ISSN:1471-2164</dcterms:isPartOf><License rdf:about="http://creativecommons.org/licenses/by/2.0"><permits rdf:resource="http://web.resource.org/cc/Reproduction" xmlns=""/><permits rdf:resource="http://web.resource.org/cc/Distribution" xmlns=""/><requires rdf:resource="http://web.resource.org/cc/Notice" xmlns=""/><requires rdf:resource="http://web.resource.org/cc/Attribution" xmlns=""/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" xmlns=""/></License></Work></rdf>-->
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Natural antisense transcripts (NATs) are transcripts of the opposite DNA strand to the sense-strand either at the same locus (<italic>cis</italic>-encoded) or a different locus (<italic>trans</italic>-encoded). They can affect gene expression at multiple stages including transcription, RNA processing and transport, and translation. NATs give rise to sense-antisense transcript pairs and the number of these identified has escalated greatly with the availability of DNA sequencing resources and public databases. Traditionally, NATs were identified by the alignment of full-length cDNAs or expressed sequence tags to genome sequences, but an alternative method for large-scale detection of sense-antisense transcript pairs involves the use of microarrays. In this study we developed a novel protocol to assay sense- and antisense-strand transcription on the 55 K Affymetrix GeneChip Wheat Genome Array, which is a 3' <italic>in vitro </italic>transcription (3'IVT) expression array. We selected five different tissue types for assay to enable maximum discovery, and used the 'Chinese Spring' wheat genotype because most of the wheat GeneChip probe sequences were based on its genomic sequence. This study is the first report of using a 3'IVT expression array to discover the expression of natural sense-antisense transcript pairs, and may be considered as proof-of-concept.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>By using alternative target preparation schemes, both the sense- and antisense-strand derived transcripts were labeled and hybridized to the Wheat GeneChip. Quality assurance verified that successful hybridization did occur in the antisense-strand assay. A stringent threshold for positive hybridization was applied, which resulted in the identification of 110 sense-antisense transcript pairs, as well as 80 potentially antisense-specific transcripts. Strand-specific RT-PCR validated the microarray observations, and showed that antisense transcription is likely to be tissue specific. For the annotated sense-antisense transcript pairs, analysis of the gene ontology terms showed a significant over-representation of transcripts involved in energy production. These included several representations of ATP synthase, photosystem proteins and RUBISCO, which indicated that photosynthesis is likely to be regulated by antisense transcripts.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>This study demonstrated the novel use of an adapted labeling protocol and a 3'IVT GeneChip array for large-scale identification of antisense transcription in wheat. The results show that antisense transcription is relatively abundant in wheat, and may affect the expression of valuable agronomic phenotypes. Future work should select potentially interesting transcript pairs for further functional characterization to determine biological activity.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Natural antisense transcripts (NATs) are defined as transcripts of the opposite DNA strand to the sense-strand either at the same locus (<italic>cis</italic>-encoded) or a different locus (<italic>trans</italic>-encoded). The first NATs were detected in viruses, followed by prokaryotes and then eukaryotes. For an excellent review of current NAT knowledge, please refer to Lapidot and Pilpel [<xref ref-type="bibr" rid="B1">1</xref>]. NATs usually possess a negative regulatory effect and can affect gene expression at multiple stages including transcription, RNA processing and transport, and translation [<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B3">3</xref>]. Thus, NATs may be involved in the regulation of varying biological functions such as the adaptation to stresses and development. NATs are involved in RNA interference [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B5">5</xref>], methylation [<xref ref-type="bibr" rid="B6">6</xref>] and genomic imprinting [<xref ref-type="bibr" rid="B7">7</xref>]. NATs give rise to sense-antisense transcript pairs that were once considered as rare, but the number identified has escalated greatly with the availability of DNA sequencing resources and public databases. For example, 22% of annotated genes in the fruit fly genome are reported to overlap as transcript pairs [<xref ref-type="bibr" rid="B8">8</xref>], and more than 20% of human transcripts may form sense-antisense transcript pairs [<xref ref-type="bibr" rid="B9">9</xref>]. In plants, few sense-antisense transcript pairs had been reported until recent large-scale studies in rice [<xref ref-type="bibr" rid="B10">10</xref>,<xref ref-type="bibr" rid="B11">11</xref>] and <italic>A. thaliana </italic>[<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B13">13</xref>]. In the rice study, full-length cDNA data revealed that approximately 7% of transcripts formed sense-antisense transcript pairs [<xref ref-type="bibr" rid="B10">10</xref>]. In these plant studies, the alignment of full-length cDNAs and expressed sequence tags (ESTs) to the genome sequence was used to identify the sense-antisense transcript pairs, which is limited to the detection of <italic>cis</italic>-encoded pairs. In wheat, antisense transcripts have been discovered from serial analysis of gene expression (SAGE) tags of developing grain [<xref ref-type="bibr" rid="B14">14</xref>], where it was reported that 25.7% of forward (sense) tags had a matching reverse (antisense) tag, which indicated widespread antisense transcription in wheat.</p>
+      <p>An alternative method for large-scale discovery of sense-antisense transcript pairs involves the use of microarrays. In the first study of this type, Yelin <italic>et al</italic>. [<xref ref-type="bibr" rid="B15">15</xref>] used a strand-specific oligonucleotide probe array to detect antisense transcription in human cell lines. A study in mouse using a custom oligonucleotide array to assay the expression of 1,947 known sense-antisense transcript pairs has also been reported [<xref ref-type="bibr" rid="B16">16</xref>]. However, these studies required prior knowledge of the sense-antisense transcript pairs to enable the design of strand specific probes. To overcome this, Werner <italic>et al</italic>. [<xref ref-type="bibr" rid="B17">17</xref>] took advantage of the approximately 25% of incorrectly orientated probes on the Affymetrix GeneChip U74A and U74B 3'<italic>in vitro </italic>transcription (3'IVT) mouse arrays to detect novel antisense transcription in mouse brain and kidney tissues. The results showed that the commercial expression arrays were sensitive enough to detect antisense transcription, but because it cannot be assumed that current commercial arrays contain incorrectly orientated probes, this type of study could not be repeated. Subsequently, Ge <italic>et al</italic>. [<xref ref-type="bibr" rid="B18">18</xref>] developed a method called 'Antisense Transcriptome analysis using Exon array (ATE)' that used an altered target synthesis and labeling method that allowed both sense- and antisense-strand transcription to be assayed on Affymetrix Whole-Transcript Expression arrays (ie. Exon and Gene arrays). This protocol was successful but cannot be applied to the numerous Affymetrix (3'IVT) expression arrays, because these arrays are constructed with probes of the opposite strand to the Whole-Transcript Expression arrays, thus they use a different target labeling procedure altogether.</p>
+      <p>In the current study, we sought to develop a protocol that could be used to assay sense- and antisense-strand transcription on the Affymetrix GeneChip Wheat Genome array, which is a 3'IVT expression array. The 3'IVT expression arrays rely on <italic>in vitro </italic>transcription of double-stranded cDNA to both amplify and label the target cRNA before hybridization. The wheat array currently provides the most comprehensive coverage of the wheat genome for a microarray and is a commonly used resource for transcript expression studies [<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B20">20</xref>] and hybridization-based DNA marker discovery [<xref ref-type="bibr" rid="B21">21</xref>]. This study is the first report of using a 3'IVT expression array to discover the expression of natural sense-antisense transcript pairs without relying on the presence of incorrectly oriented probes, and may be considered as proof-of-concept. By using alternative target preparation schemes, both the sense- and antisense-strand derived transcripts were labeled and hybridized to the Wheat Genome Array. To enable maximum discovery we selected five different tissue types for assay and used 'Chinese Spring' wheat genotype, since most of the GeneChip probe sequences were based on its genomic sequence. The functional annotation of detected wheat sense-antisense transcript pairs is discussed, as well as the performance and validation of the technique.</p>
+    </sec>
+    <sec>
+      <title>Results</title>
+      <sec>
+        <title>Target preparation</title>
+        <p>Total RNA was extracted from five 'Chinese Spring' tissue types (germinated seed, shoot, flag leaf, spike pre-anthesis and spike post-anthesis; see materials and methods). In addition to maximizing discovery, these tissue types were also selected to align with the predominant tissues used for wheat EST sequencing efforts, including the International Wheat Genome Sequencing Consortium (IWGSC). All samples were of excellent quality as assessed by gel electrophoresis and spectrophotometry. The total RNA samples were mixed at equal concentrations before target preparation. The assay of sense-strand transcription followed the regular scheme as for all Affymetrix 3'IVT GeneChips (see materials and methods). However, to assay antisense-strand transcription, the Affymetrix Whole Transcript (WT) Sense Target Labeling Assay was used, which was designed specifically for use on Whole-Transcript Expression arrays. The WT target preparation method resulted in labeling the opposite strand to the 3'IVT assay and was therefore used in this study to assess antisense-strand transcription (Figure <xref ref-type="fig" rid="F1">1</xref>). The mixed total RNA sample was used as starting material for both the 3'IVT and WT target preparation, and each hybridization was carried out once according to standard Affymetrix protocol for the Wheat Genome Array.</p>
+        <fig position="float" id="F1">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Principles of the two target preparation methods used to assay both sense- and antisense-strand transcription</bold>. A 5' (head-to-head) overlapping sense-antisense transcript pair is used as an example. The standard Affymetrix 3' <italic>in vitro </italic>transcription (3'IVT) assay was used to detect sense-strand transcription, while a modified Affymetrix Whole Transcript (WT) assay was used to detect antisense-strand transcription.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-10-253-1"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Data analysis</title>
+        <p>Following hybridization and scanning, CEL files were analyzed to identify probe sets that showed successful hybridization in each of the 3'IVT and WT assay. The quality control metrics from the <italic>affyQCreport </italic>package [<xref ref-type="bibr" rid="B22">22</xref>] of Bioconductor [<xref ref-type="bibr" rid="B23">23</xref>] showed that data was of high-quality for both assays, but as expected the WT assay resulted in a lower percentage of detected transcripts (16.27%) than the 3'IVT assay (47.95%) using Affymetrix PMA (Present/Marginal/Absent) calls. Subsequently the relationship of array distributions (Figure <xref ref-type="fig" rid="F2">2</xref>) showed a skewing towards the 3'IVT assay, but it is clear that successful hybridization did occur in the WT assay. Figure <xref ref-type="fig" rid="F2">2</xref> also showed that the spiked-in hybridization controls from Affymetrix (<italic>bioB</italic>, <italic>bioC</italic>, <italic>bioD </italic>and <italic>creX</italic>) produced similar signals from both assays although signals were slightly higher in the WT assay. The MAS 5.0 PMA calls and Robust Multi-array Average (RMA) summarized expression values were used to determine successful hybridization for each probe set. Because of differences in the two labeling methods, including starting amount of RNA and RNA amplification, the expression values of each array could not be validly compared. However, the PMA calls in combination with the expression values were used to determine positive hybridization to a particular probe set in each assay. This provided a qualitative measure of expression rather than quantitative, but for the purposes of this study which was to detect natural sense-antisense transcript pairs, this measure was satisfactory.</p>
+        <fig position="float" id="F2">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>Comparison of the 3'IVT (sense signal) and WT (antisense signal) array distributions</bold>. The summarized log<sub>2 </sub>expression value for all probe sets (n = 61,127). Red spots indicate probe sets with absent MAS 5.0 PMA calls (<italic>P </italic>&lt; 0.01) in both assays, black spots indicate probe sets called as present in one assay only, blue spots indicate probe sets with present calls in both assays, and green spots indicate the replicated spiked-in hybridization controls (<italic>bioB, bioC, bioD </italic>and <italic>creX</italic>). The black box shows the probe sets with expression values greater than the spiked-in hybridization controls in both assays, which were considered as positively hybridizing for this study.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-10-253-2"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Identifying sense-antisense transcript pairs</title>
+        <p>To determine a confident positive threshold for expression value in both assays, the expression values of spiked-in hybridization controls (<italic>bioB</italic>, <italic>bioC</italic>, <italic>bioD </italic>and <italic>creX</italic>) were used. Because these controls are spiked-in immediately before hybridization, they were expected to behave in the same way in both assays. The <italic>bioB </italic>control is spiked-in at the detection limit, while the others are spiked-in at staggered concentrations after <italic>bioB</italic>. Thus, the log<sub>2 </sub>expression value of <italic>bioB </italic>was considered the threshold for positive hybridization in each assay (Figure <xref ref-type="fig" rid="F2">2</xref>). Because the <italic>bioB </italic>probe set is replicated three times on the wheat GeneChip, the log<sub>2 </sub>expression value of the lowest individual probe set was used. For the 3'IVT assay this value was 8.76, and for the WT assay it was 9.86. These cut-off values were used in combination with the MAS 5.0 PMA calls and corresponding probability (<italic>p</italic>) values to detect successful hybridization in each assay. In both assays, a probe set must have firstly been called 'Present' with Wilcoxon rank sum test <italic>p-</italic>value &lt; 0.01, and the RMA summarized log<sub>2 </sub>expression value must have been greater than 8.76 in the 3'IVT assay, and greater than 9.86 in the WT assay. This threshold cutoff identified 110 probe sets as positively hybridizing in both the 3'IVT and WT assays. In addition to the 110 probe sets, 8940 probe sets uniquely hybridized in the 3'IVT assay and 80 uniquely hybridized to the WT assay (potentially antisense-specific transcripts). Because the aim of this study was detect transcript pairs transcribed from both strands, we mainly focused on probe sets detected in both assays. These stringent detection criteria ensured that the probe sets left were highly expressed in both assays and could more reliably be considered as sense-antisense transcript pairs. In fact, the 80 antisense-specific probe sets could not necessarily be classified as antisense transcripts, because these may represent incorrectly orientated probes. Also, because the probes for a given transcript do not cover the entire sequence, there is a possibility for bias during hybridization. However, to form the basis of future studies these 80 probe sets were also given some attention.</p>
+      </sec>
+      <sec>
+        <title>Annotation of probe sets</title>
+        <p>Each of the 110 candidate sense-antisense transcript pair probe sets were functionally annotated using HarvEST (Affymetrix Wheat1 Chip version 1.52). Gene Ontology (GO) was based on the TIGR rice genome annotation such that if a unigene possessed a significant (&lt;1e-10) BLASTx match to rice, as identified in HarvEST, the corresponding GO terms for the rice protein were used, if available. Of the 110 probe sets 76 could be annotated (see Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>), of which 46 (59%) were classified as involved in energy production ('Energy'), including several representations of ATP synthase, photosystem proteins and RUBISCO. To determine the significance of overrepresentation of the number of energy-related transcripts identified, a hypergeometric test of selected energy-related terms in the HarvEST annotated transcript description were used (see 'Methods'). For the transcripts identified as present in one or both hybridizations, energy-related terms were identified in 1831 of the 24578 transcripts (7.4%) that possessed a transcript description. Using the same search terms, 46 of the 76 annotated probe sets identified in this study possessed energy-related terms. Subsequently, energy-related transcripts were found to be significantly over-represented in this study with a <italic>p</italic>-value of 4.88 &#xD7; 10<sup>-37</sup>. The diversity of the annotated probe sets is summarized in Table <xref ref-type="table" rid="T1">1</xref>.</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Summary of the 76 successfully detected and annotated sense-antisense transcript pairs in both the 3'IVT and WT assay.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <td align="left">
+                  <bold>Number of transcripts</bold>
+                </td>
+                <td align="left">
+                  <bold>Functional category</bold>
+                  <sup>
+                    <bold>1</bold>
+                  </sup>
+                </td>
+                <td align="left">
+                  <bold>Putative function</bold>
+                  <sup>
+                    <bold>2</bold>
+                  </sup>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">20</td>
+                <td align="left">Metabolism: Protein biosynthesis</td>
+                <td align="left">Ribosomal protein</td>
+              </tr>
+              <tr>
+                <td align="left">10</td>
+                <td align="left">Energy</td>
+                <td align="left">ATP synthase</td>
+              </tr>
+              <tr>
+                <td align="left">9</td>
+                <td align="left">Energy</td>
+                <td align="left">Photosystem I protein</td>
+              </tr>
+              <tr>
+                <td align="left">5</td>
+                <td align="left">Energy</td>
+                <td align="left">Photosystem II protein</td>
+              </tr>
+              <tr>
+                <td align="left">4</td>
+                <td align="left">Energy</td>
+                <td align="left">NAD(P)H-quinone oxidoreductase</td>
+              </tr>
+              <tr>
+                <td align="left">4</td>
+                <td align="left">Energy</td>
+                <td align="left">RUBISCO large subunit</td>
+              </tr>
+              <tr>
+                <td align="left">2</td>
+                <td align="left">Cell death</td>
+                <td align="left">Putative senescence-associated protein</td>
+              </tr>
+              <tr>
+                <td align="left">2</td>
+                <td align="left">Energy</td>
+                <td align="left">Carbonic anhydrase</td>
+              </tr>
+              <tr>
+                <td align="left">2</td>
+                <td align="left">Energy</td>
+                <td align="left">Cytochrome b subunit</td>
+              </tr>
+              <tr>
+                <td align="left">2</td>
+                <td align="left">Energy</td>
+                <td align="left">Cytochrome c subunit</td>
+              </tr>
+              <tr>
+                <td align="left">2</td>
+                <td align="left">Energy</td>
+                <td align="left">Photosystem Q(B) protein</td>
+              </tr>
+              <tr>
+                <td align="left">2</td>
+                <td align="left">Energy</td>
+                <td align="left">RUBISCO small subunit</td>
+              </tr>
+              <tr>
+                <td align="left">2</td>
+                <td align="left">Transcription</td>
+                <td align="left">Maturase K</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Energy</td>
+                <td align="left">Chlorophyll a/b binding protein</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Energy</td>
+                <td align="left">RUBISCO activase</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Energy</td>
+                <td align="left">NADH dehydrogenase</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Homeostasis</td>
+                <td align="left">Metallothionein</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Metabolism: Secondary</td>
+                <td align="left">Nicotianamine synthase</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Metabolism: Secondary</td>
+                <td align="left">Thioredoxin</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Transcription</td>
+                <td align="left">DNA-directed RNA polymerase</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Transcription</td>
+                <td align="left">Translation initiation factor</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Transcription</td>
+                <td align="left">Zinc finger protein</td>
+              </tr>
+              <tr>
+                <td align="left">1</td>
+                <td align="left">Transport</td>
+                <td align="left">Yip1 domain containing protein</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><sup>1</sup>Functional categories were based on the Munich Information Center for Protein Sequences classifications</p>
+            <p><sup>2</sup>Putative function shows the best significant BLASTX database hit from HarvEST.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The 80 potential antisense-specific probe sets were also annotated as described for the transcript pairs. Of the 80 probe sets only 31 could be annotated (see Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>), of which 10 (32%) were classified as involved in energy production ('Energy') including several representations of RUBISCO. Nine (28%) were involved in transcription ('Transcription') and included several DNA-directed RNA polymerase transcripts. However, the majority of antisense-specific transcripts were of unknown function.</p>
+      </sec>
+      <sec>
+        <title>Strand-specific transcription validation</title>
+        <p>Ten probe sets selected to represent a range of functional categories were validated for sense- and antisense-strand transcription using strand-specific reverse transcription-PCR (RT-PCR). An example of the electrophoresis results is shown in Figure <xref ref-type="fig" rid="F3">3</xref>. Sense-strand transcription was detected for all 10 targets sets in each tissue except for the target RUBISCO activase in the 'Germinated seed' tissue (Table <xref ref-type="table" rid="T2">2</xref>). In fact, the 'Germinated seed' tissue was most different to the other tissues and showed the least amount of antisense-strand transcription for the 10 targets. The 'Shoot', 'Flag leaf', 'Spike pre-anthesis' and 'Spike post-anthesis' tissues all showed the same pattern of sense- and antisense-strand transcription. These results indicate that antisense-strand transcription is likely specific to certain tissues and/or developmental stages, although not to a great extent in the 10 target transcripts analyzed in this study. Only one of the 10 targets (10%) did not show any antisense-strand transcription in any tissue, thus was not in agreement with the microarray results. However, this could be due to the position of the RT-PCR primer for amplifying the antisense-strand transcript. Because antisense-strand transcripts may not necessarily span the full-length of their complementary sense-strand transcript, the RT-PCR primer may have been targeted to a missing region in the antisense-strand transcript, thus the RT-PCR would fail.</p>
+        <fig position="float" id="F3">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Strand-specific RT-PCR for target Carbonic anhydrase (Ta.5227.1)</bold>. Sense-strand transcription was detected only for germinated seed tissue, and both sense- and antisense-strand transcription for all other tissues. M: DNA marker, 1: Germinated seed antisense, 2: Germinated seed sense, 3: Shoot antisense, 4: Shoot sense, 5: Flag leaf antisense, 6: Flag leaf sense, 7: Spike pre-anthesis antisense, 8: Spike pre-anthesis sense, 9: Spike post-anthesis antisense, 10: Spike post-anthesis sense, N: Negative controls.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-10-253-3"/>
+        </fig>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>Validation of selected sense-antisense transcript pairs with strand-specific reverse transcription PCR (RT-PCR).</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <td align="left">
+                  <bold>Probe set ID</bold>
+                </td>
+                <td align="left">
+                  <bold>Putative function</bold>
+                  <sup>
+                    <bold>1</bold>
+                  </sup>
+                </td>
+                <td align="center" colspan="10">
+                  <bold>RT-PCR result</bold>
+                  <sup>
+                    <bold>2</bold>
+                  </sup>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td/>
+                <td/>
+                <td align="center" colspan="2">
+                  <italic>Germinated seed</italic>
+                </td>
+                <td align="center" colspan="2">
+                  <italic>Shoot</italic>
+                </td>
+                <td align="center" colspan="2">
+                  <italic>Flag leaf</italic>
+                </td>
+                <td align="center" colspan="2">
+                  <italic>Spike pre-anthesis</italic>
+                </td>
+                <td align="center" colspan="2">
+                  <italic>Spike post-anthesis</italic>
+                </td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td colspan="10">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td align="left">
+                  <italic>S</italic>
+                </td>
+                <td align="left">
+                  <italic>A</italic>
+                </td>
+                <td align="left">
+                  <italic>S</italic>
+                </td>
+                <td align="left">
+                  <italic>A</italic>
+                </td>
+                <td align="left">
+                  <italic>S</italic>
+                </td>
+                <td align="left">
+                  <italic>A</italic>
+                </td>
+                <td align="left">
+                  <italic>S</italic>
+                </td>
+                <td align="left">
+                  <italic>A</italic>
+                </td>
+                <td align="left">
+                  <italic>S</italic>
+                </td>
+                <td align="left">
+                  <italic>A</italic>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="12">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">Ta.136.1</td>
+                <td align="left">Thioredoxin</td>
+                <td align="left">X</td>
+                <td/>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+              </tr>
+              <tr>
+                <td align="left">Ta.2752.2</td>
+                <td align="left">RUBISCO small subunit</td>
+                <td align="left">X</td>
+                <td/>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+              </tr>
+              <tr>
+                <td align="left">Ta.27660.1</td>
+                <td align="left">RUBISCO activase</td>
+                <td/>
+                <td/>
+                <td align="left">X</td>
+                <td/>
+                <td align="left">X</td>
+                <td/>
+                <td align="left">X</td>
+                <td/>
+                <td align="left">X</td>
+                <td/>
+              </tr>
+              <tr>
+                <td align="left">Ta.5227.1</td>
+                <td align="left">Carbonic anhydrase</td>
+                <td align="left">X</td>
+                <td/>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+              </tr>
+              <tr>
+                <td align="left">TaAffx.128414.1</td>
+                <td align="left">RUBISCO large subunit</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+              </tr>
+              <tr>
+                <td align="left">TaAffx.128418.24</td>
+                <td align="left">Putative senescence-associated protein</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+              </tr>
+              <tr>
+                <td align="left">TaAffx.128757.1</td>
+                <td align="left">Photosystem Q(B) protein</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+              </tr>
+              <tr>
+                <td align="left">TaAffx.129824.1</td>
+                <td align="left">Translation initiation factor</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+              </tr>
+              <tr>
+                <td align="left">TaAffx.4530.1</td>
+                <td align="left">ATP synthase alpha chain</td>
+                <td align="left">X</td>
+                <td/>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+              </tr>
+              <tr>
+                <td align="left">TaAffx.4544.2</td>
+                <td align="left">Cytochrome c biogenesis protein ccsA</td>
+                <td align="left">X</td>
+                <td/>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+                <td align="left">X</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><sup>1</sup>Functional categories were based on the Munich Information Center for Protein Sequences classifications and putative function shows the best significant BLASTX database hit from HarvEST.</p>
+            <p><sup>2</sup>RT-PCR result shows detection of transcription (X) for the sense (S) strand and antisense (A) strand in each tissue.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec>
+      <title>Discussion</title>
+      <p>This study reports on the first use of an Affymetrix GeneChip 3'IVT expression array for discovering both sense- and antisense-strand transcription. Through the adaptation of the Affymetrix WT assay, the antisense transcribed strand was successfully labeled and hybridized to the Wheat Genome Array, which allowed for the detection of natural sense-antisense transcript pairs. To our knowledge, the Wheat Genome Array does not contain any probes for known sense-antisense transcript pairs, thus the data from the hybridizations could not be standardized and/or normalized to a known sense-antisense transcript pair. Subsequently, a highly stringent data acceptance threshold was applied, based on PMA call and expression value cutoffs. This increased the confidence in detecting true antisense transcription. It is important to recognize the limitations of this study, which stem from the 'closed' nature of microarray systems. Because the Wheat Genome Array contains only known transcript sequences, the study is clearly limited to detection of transcript pairs that are present on the array. Further, the probes for each transcript are biased to the 3' end of transcripts and do not span the entire gene. Thus, because antisense-strand transcripts commonly have a different splice structure they may not be detected. Subsequently the 110 candidate sense-antisense transcript pairs and the 80 potentially antisense-specific transcripts that were identified are likely to under-represent the number of true transcript pairs. In future studies, custom microarrays containing probes for sense and antisense transcripts would be useful as different target preparation assays would not be required, but because we aimed to obtain a broad representation of the extent of antisense transcription we chose to use the most comprehensive Wheat Genome Array.</p>
+      <p>The function of antisense-strand transcription is widely believed to regulate the expression of sense-strand transcripts at either transcription, mRNA maturation or translation [<xref ref-type="bibr" rid="B2">2</xref>]. In fact, Lapidot and Pilpel [<xref ref-type="bibr" rid="B1">1</xref>] reviewed the literature and postulated four mechanisms of action; transcriptional interference, RNA masking, double-stranded RNA (ds-RNA)-dependent mechanisms, and chromatin remodeling. The ds-RNA mechanisms would likely be the result of RNA-dependent RNA polymerases, which generate ds-RNA that are the precursors of short interfering RNA (siRNA). The timing of sense- and antisense-strand transcription is also important; for example, if the sense-strand is transcribed first up to a certain level followed by transcription of the antisense-strand, the biological result would be delayed inhibition of the sense-strand gene expression. Conversely, if the antisense-strand was transcribed first, this would result in pre-inhibition of sense-strand gene expression up to a threshold. Differences in the half-life of the sense-and antisense-strand transcripts, as well as tissue-specificity and potential light and/or diurnal transcript regulation [<xref ref-type="bibr" rid="B24">24</xref>] would also affect these scenarios. In the present study the timing of transcription and relative level of sense- and antisense-transcripts could not be determined because a single time-point was used for RNA extraction in each tissue, and the design of the assay did not allow valid comparisons between the 3'IVT and WT results to estimate transcript levels. Thus the mode of action of the detected sense-antisense transcript pairs would require further study.</p>
+      <p>An important observation in this study was the functional annotation of the sense-antisense transcript pairs, which indicated a significant over-representation of those involved in energy production, particularly photosynthesis. Additionally, many transcripts for ribosomal proteins involved in protein synthesis were identified. The abundance of antisense transcripts for these common plant processes may indicate that they are negatively regulated by antisense transcripts. Alternatively, the antisense transcripts could possibly be the result of ectopic expression. There is little data on large-scale antisense transcription profiling in plants to compare these results with, but a study in rice of leaf and seed tissue using Serial Analysis of Gene Expression (SAGE) identified sense-antisense transcript pairs and also found that the most abundant pairs were annotated as involved in energy production, including RUBISCO and a Photosystem I protein [<xref ref-type="bibr" rid="B11">11</xref>]. The similarity between studies shows that transcripts involved in photosynthesis are likely to be controlled by antisense transcripts in plants. An appealing explanation is the possibility for diurnal regulation of photosynthesis through antisense regulation. Although this study did not span a time-course required to demonstrate diurnal regulation, the results warrant further exploration of this hypothesis.</p>
+      <p>The results of the strand-specific RT-PCR also showed that antisense transcription is likely to be tissue-specific. Only one of the RT-PCR results was not in complete agreement with the microarray result, which could be due to truncated antisense transcripts where the priming sites were absent. In their microarray study of human cell antisense transcription, Ge <italic>et al</italic>. [<xref ref-type="bibr" rid="B18">18</xref>] found that 26% of the RT-PCR results were not consistent with microarray observations. In this study we also identified 80 transcripts as potentially antisense-specific, although further studies would be needed to confirm this because of the possibility for incorrectly oriented probes or strand bias during hybridization. The majority of these transcripts were annotated as unknown, but of those that were there was again a trend towards function in photosynthesis. A high percentage were also functionally involved in controlling transcription, including transcripts with homology to DNA-directed RNA polymerase, which indicates that gene expression in wheat may be regulated by antisense transcripts at the transcriptional level.</p>
+      <p>A recent study in wheat involving SAGE of developing grain also identified antisense transcripts [<xref ref-type="bibr" rid="B14">14</xref>], where the most abundant functional categories aside from unknown tags were associated with storage and reproduction. The abundance of these functional categories was due to the sampling of developing grain tissue, while the abundance of energy-related transcripts in our study is most likely due to the selection of photosynthetic tissues. For this reason, these two studies complement each other well. As in our study, Poole <italic>et al</italic>. [<xref ref-type="bibr" rid="B14">14</xref>] found that most antisense tags were of unknown function and that many transcripts were highly expressed in both sense and antisense, which may suggest a function of the antisense transcript for mediating alternative polyadenylation rather than down-regulation of the sense transcript, although there is no evidence for this at this stage. One other similarity to our study was the identification by Poole <italic>et al</italic>. [<xref ref-type="bibr" rid="B14">14</xref>] of antisense transcripts related to transcription, such as nucleotide binding proteins, which the authors suggest may enable the control of multiple pathways that require large scale changes during development. Other than these similarities, the results of our study differ from Poole <italic>et al</italic>. [<xref ref-type="bibr" rid="B14">14</xref>], which again is likely due to the complementary tissues analyzed.</p>
+      <p>This study was exploratory and revealed that the method was successful in identifying sense-antisense transcript pairs using the commercial Wheat Genome Array. The next step from this study is to select potentially interesting antisense transcripts for further study. There were several transcript pairs belonging to functional categories including 'Cell death' and 'Transcription' that may be involved in the regulation of important biological processes, and the antisense-specific transcripts related to transcription are also of interest. An understanding of the role of antisense transcription as it relates to gene expression may be important for the expression of certain phenotypes of interest. Additionally, knowledge of natural antisense transcripts may also be important for altering gene expression through transgenic studies in plants. The abundance of antisense-strand transcripts in plants is supported by recent studies using 'open' transcriptomics systems including SAGE [<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B14">14</xref>] and Massively Parallel Signature Sequencing (MPSS) [<xref ref-type="bibr" rid="B12">12</xref>]. With the advent of RNA-Seq (RNA sequencing), which is high-throughput transcriptome sequencing method [<xref ref-type="bibr" rid="B25">25</xref>] that incorporates the use of next-generation sequence-by-synthesis technologies, the future will see a greatly enhanced discovery and understanding of antisense-strand transcription in plants.</p>
+    </sec>
+    <sec>
+      <title>Conclusion</title>
+      <p>This study demonstrated the novel use of an adapted labeling protocol and a 3'IVT Affymetrix GeneChip microarray for large-scale identification of antisense transcription in wheat, a crop of great economic importance. The results show that antisense transcription is relatively abundant in wheat, and may affect the expression of valuable agronomic phenotypes. Strand-specific RT-PCR validated the microarray observations, and showed that antisense transcription is likely to be tissue specific. Most of the identified sense-antisense transcript pairs were annotated as genes involved in energy production, indicating that photosynthesis is likely to be under regulation by antisense transcripts.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Plant material and RNA extraction</title>
+        <p>The spring wheat genotype 'Chinese Spring' was selected for this study because the majority of GeneChip Wheat Genome Array (Affymetrix, Santa Clara, California, USA) probe sequences were based on its DNA sequence. Five tissue types were selected for this study; i.Germinated seed (germinated on wetted filter paper in a petri-dish in the dark for two days, radicle and plumule emerged), ii.Shoot (Feekes 1.2, emergence with second leaf unfolded), iii.Flag leaf (Feekes 9.0, flag leaf stage with ligule emerged), iv.Spike pre-anthesis (Feekes 10.5, heading complete), and v.Spike post-anthesis (Feekes 10.5.3, flowering complete to base of spike). For each tissue type except 'Germinated seed', six seeds were planted in 6-inch round pots using a potting mix (6 peat moss: 4 vermiculite with lime: 3 sand: 3 commercial potting mix: 2 perlite: 1.7 g/L lime: 3.3 g/L Osmocote: 2.2 g/L ammonium nitrate). Seedlings were grown to the appropriate growth stages for tissue collection in a greenhouse with a stable temperature of 25 &#xB1; 2&#xB0;C and a 16 h light/8 h dark cycle. All tissue samples were immediately frozen in liquid nitrogen, and total RNA was extracted from 1.0 g of each pooled tissue type using the Trizol<sup>&#xAE; </sup>Plus RNA Purification Kit (Invitrogen, Carlsbad, CA) with an on-column DNase treatment. Purified total RNA samples were quantified with a NanoDrop<sup>&#xAE; </sup>ND-1000 (NanoDrop, Wilmington, DE) spectrophotometer, and satisfactory purity was indicated by A260:280 ratios of 1.9&#x2013;2.1 in 10 mM Tris-Hcl (pH 7.5). Integrity of total RNA samples was assessed by denaturing formaldehyde gel electrophoresis, where the presence of sharp 28S and 18S ribosomal RNA bands at an intensity ratio of ~2:1 (28S:18S) indicated good integrity. The five total RNA samples were then mixed at equal concentrations before analysis.</p>
+      </sec>
+      <sec>
+        <title>Wheat Genome Array</title>
+        <p>The GeneChip Wheat Genome Array (Affymetrix, Santa Clara, California, USA) is a 3'IVT array that includes 61,127 probe sets representing 55,052 transcripts for all 21 wheat chromosomes in the genome. 59,356 probes sets represent modern hexaploid (A, B and D genomes) bread wheat (<italic>T. aestivum</italic>) and are derived from the public content of the <italic>T. aestivum </italic>UniGene Build #38 (April 24, 2004). 1,215 probe sets are derived from ESTs of a diploid near relative of the A genome (<italic>T. monococcum</italic>), a further 539 represent ESTs of the tetraploid (A and B genomes) macaroni wheat species <italic>T. turgidum</italic>, and five are from ESTs of a diploid near relative of the D genome known as <italic>Aegilops tauschii</italic>. Probe sets consisted of pairs of 11 perfect match (PM) and mismatch (MM) 25-mer oligonucleotides designed from the 3' end of exemplar sequences, with nucleotide 13 as the MM. Array annotation information is available on the NetAffx data analysis center <ext-link ext-link-type="uri" xlink:href="http://www.affymetrix.com"/>.</p>
+      </sec>
+      <sec>
+        <title>Sense-strand transcription analysis</title>
+        <p>The 3'IVT Wheat Genome Array detects sense strand transcription by generating antisense-orientated labeled complementary RNA (cRNA) from the original RNA sample that is then hybridized to the probes that are designed to hybridize to the antisense-orientated labeled cRNA. Although the system generates antisense-orientated labeled cRNA, the assayed strand for transcription is the sense strand. Thus, to assay sense strand transcription in the mixed Chinese Spring total RNA sample, the regular 3'IVT Affymetrix protocol was carried out <ext-link ext-link-type="uri" xlink:href="http://www.affymetrix.com"/>. Briefly, double-stranded cDNA was generated from mRNA using a T7-oligo(dT) primer. The double-stranded cDNA was cleaned up and used as template for <italic>in vitro </italic>transcription (IVT) in the presence of T7 RNA Polymerase and a biotinylated nucleotide analog/ribonucleotide mix for cRNA amplification and biotin labeling. The biotinylated cRNA target was then cleaned up, fragmented, and hybridized to the Wheat Genome Array. All hybridizations and data acquisition was performed at the Genomics Core Facility at Washington State University (Pullman, Washington, USA) according to standard Affymetrix protocols <ext-link ext-link-type="uri" xlink:href="http://www.biotechnology.wsu.edu/Core_Laboratories.aspx#"/>.</p>
+      </sec>
+      <sec>
+        <title>Antisense-strand transcription analysis</title>
+        <p>To assay antisense strand transcription, the Affymetrix Whole Transcript (WT) Sense Target Labeling Assay <ext-link ext-link-type="uri" xlink:href="http://www.affymetrix.com"/> was used. This WT assay is intended for use on Affymetrix Whole Transcript expression arrays, which contain probes designed to hybridize with sense-orientated labeled cDNA. Because the probes of the 3'IVT Wheat Genome Array are designed to hybridize to antisense-orientated labeled cRNA derived from sense strand transcription, the sense-orientated labeled cDNA generated by the WT assay will not hybridize to the array unless it was derived from antisense transcription. Thus to discover antisense transcription in the mixed Chinese Spring total RNA sample, the target was prepared using the WT assay but hybridized to the 3'IVT Wheat Genome Array. Briefly, double-stranded cDNA was synthesized with random hexamers coupled to the T7 promoter, followed by IVT amplification with T7 RNA polymerase to produce cRNA. A second cycle cDNA synthesis was then performed using random primers for reverse transcription, which converted the cRNA into single-stranded cDNA in the same orientation as the original mRNA (sense-orientation). The single-stranded cDNA was then cleaned up, fragmented, and hybridized to the Wheat Genome Array according to standard Affymetrix protocol.</p>
+      </sec>
+      <sec>
+        <title>Data analysis</title>
+        <p>Using GeneChip Operating Software (GCOS) v.1.4 (Affymetrix, Santa Clara, California, USA), image quality control was performed by inspecting raw intensity (DAT) files for scratches/smears and uniform performance of the B2 oligo around the border of each image. Data quality control was from raw data in CEL files using the <italic>affyQCreport </italic>package [<xref ref-type="bibr" rid="B22">22</xref>] of Bioconductor [<xref ref-type="bibr" rid="B23">23</xref>], which provided Affymetrix recommended quality metrics, per array intensity distributions, between array comparisons, and other diagnostic plots for each hybridization. The Bioconductor [<xref ref-type="bibr" rid="B23">23</xref>] package <italic>affy </italic>[<xref ref-type="bibr" rid="B26">26</xref>] was used to read in the raw Affymetrix 'CEL' files, which were pre-processed using Robust Multi-array Average (RMA) [<xref ref-type="bibr" rid="B27">27</xref>,<xref ref-type="bibr" rid="B28">28</xref>]. Pre-processing was modified so that only expression value summarization was applied. Background correction and normalization were omitted because the arrays were hybridized using different labeling assays. PMA (present, marginal and absent) calls were calculated for each probe set using a Wilcoxon rank sum test from MAS 5.0 [<xref ref-type="bibr" rid="B29">29</xref>]. Only those probe sets with a Wilcoxon <italic>p</italic>-value &lt; 0.01 were considered 'present'.</p>
+        <p>Probe sets called as present were also required to possess a summarized log<sub>2 </sub>expression value greater than the <italic>bioB </italic>spiked-in hybridization control (&gt;8.76 in the 3'IVT assay and &gt;9.86 in the WT assay). Probe sets meeting these criteria were annotated using HarvEST (Affymetrix Wheat1 Chip version 1.52), which identified the corresponding unigene for each probe set and provided the current best BLASTX hit from the non-redundant (nr) database of NCBI, as well as the best BLASTX hits from rice and <italic>Arabidopsis thaliana </italic>TIGR databases <ext-link ext-link-type="uri" xlink:href="http://www.tigr.org/plantProjects.shtml"/>. A database hit &lt;1e-10 was considered as significant, otherwise the unigene was annotated as 'no homology'. Unigenes were assigned to functional categories based on Munich Information Center for Protein Sequences (MIPS; <ext-link ext-link-type="uri" xlink:href="http://mips.gsf.de/"/>) classifications. All minimum information about microarray experiments (MIAME) guidelines were observed and GeneChip data was deposited into WheatPLEX [<xref ref-type="bibr" rid="B30">30</xref>] accession TA21, as well as NCBI's Gene Expression Omnibus [<xref ref-type="bibr" rid="B31">31</xref>] accession number GSE12528. For gene ontology (GO), the rice locus matching each probe set in the HarvEST output provided the most comprehensive annotation set. To assess the significance of energy-related transcripts, common terms in the rice transcript description for energy-related transcripts were selected and used as search terms across the annotation of transcripts found to be present in one or both assays. The search terms used were: photosystem, ribosomal protein, chloroplast, chlorophyll, cp12, oxygen-evolving, carbonic anhydrase, ATP synthase, ribulose, cytochrome, NADH. Each probe set was inspected as to whether or not it contained one or more the 'energy' search terms. To assess whether 'energy' related transcripts were significantly overrepresented in the identified sense-antisense transcript pairs than was expected by random chance, we performed a hypergeometric test.</p>
+      </sec>
+      <sec>
+        <title>Strand-specific transcription validation</title>
+        <p>Ten probe sets that were found to be transcribed on both strands were selected for validation using strand-specific reverse transcription-PCR (RT-PCR) (Table <xref ref-type="table" rid="T2">2</xref>). The strand-specificity of the Qiagen One Step RT-PCR kit (Qiagen, Valencia, California, USA) has been confirmed in previous studies [<xref ref-type="bibr" rid="B32">32</xref>], thus was selected for use in this study. DNase-treated total RNA from each tissue type was used to determine potential tissue specificity of transcription. Unigene sequences for each of the 10 probe sets were identified using HarvEST (Affymetrix Wheat1 Chip version 1.52), and primer pairs were designed using Vector NTI (v. 10.3.0, Invitrogen Corporation). Strand-specificity was achieved by selective use of primers in the reverse transcription step, where the reverse primer was used to detect sense transcripts, and the forward primer to detect antisense transcripts. PCR reactions following reverse transcription were carried out in the presence of both forward and reverse primers, with the following cycling parameters; i. 50&#xB0;C for 60 min (reverse transcription), ii. 95&#xB0;C for 15 min (activate polymerase and deactivate RT enzymes), iii. 4&#xB0;C for 5 min (added missing primer/s for PCR at this point), iv. 94&#xB0;C for 30 s, 60&#xB0;C for 30 s, 72&#xB0;C for 45 s (PCR cycling repeated 35 times), and v. 72&#xB0;C for 10 min (final extension). All PCR products were visualized on 1.5% agarose gels.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Authors' contributions</title>
+      <p>TEC carried out the tissue collection, RNA extraction, RT-PCR, data analysis, and drafted the manuscript. MLS participated in the design of the study and performed the statistical analysis. TEC and XC conceived the study. XC participated in its design and coordination and helped to draft the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>List of the 110 sense-antisense transcript pairs with Present calls (<italic>P </italic>&lt; 0.01), &gt;8.76 3'IVT assay log<sub>2 </sub>expression value and &gt;9.86 WT assay log<sub>2 </sub>expression value</bold>. The data provided represents annotation and statistical values for the candidate sense-antisense transcript pairs.</p>
+        </caption>
+        <media xlink:href="1471-2164-10-253-S1.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p><bold>List of the 80 potential antisense-specific transcripts with Present calls (<italic>P </italic>&lt; 0.01) and &gt;9.86 WT assay log<sub>2 </sub>expression value</bold>. The data provided represents annotation and statistical values for the potential antisense-specific transcripts.</p>
+        </caption>
+        <media xlink:href="1471-2164-10-253-S2.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <sec>
+        <title>Acknowledgements</title>
+        <p>This research was supported in part by the US Department of Agriculture (USDA), Agricultural Research Service (ARS) (Project No. 5348-22000-014-00D), USDA-ARS Postdoctoral Program, and Washington Wheat Commission (Project No. 13C-3061-3923). PPNS No. 0510, Department of Plant Pathology, College of Agricultural, Human, and Natural Resources Research Center, Project Numbers: WNP00823. The authors acknowledge Derek Pouchnik (Washington State University, School of Molecular Biosciences) for carrying out GeneChip hybridizations and scanning, and thank Dr. Scot Hulbert and Dr. Patricia Okubara for critical reviews of the manuscript.</p>
+      </sec>
+    </ack>
+    <ref-list>
+      <ref id="B1">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lapidot</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pilpel</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide natural antisense transcription: coupling its regulation to its different regulatory mechanisms</article-title>
+          <source>EMBO Rep</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <fpage>1216</fpage>
+          <lpage>1222</lpage>
+          <pub-id pub-id-type="pmid">17139297</pub-id>
+          <pub-id pub-id-type="doi">10.1038/sj.embor.7400857</pub-id>
+        </citation>
+      </ref>
+      <ref id="B2">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Terryn</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Rouze</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>The sense of naturally transcribed antisense RNAs in plants</article-title>
+          <source>Trends in Plant Science</source>
+          <year>2000</year>
+          <volume>5</volume>
+          <fpage>394</fpage>
+          <lpage>396</lpage>
+          <pub-id pub-id-type="pmid">10973095</pub-id>
+          <pub-id pub-id-type="doi">10.1016/S1360-1385(00)01696-4</pub-id>
+        </citation>
+      </ref>
+      <ref id="B3">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vanhee-Brossollet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Vaquero</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Do natural antisense transcripts make sense in eukaryotes?</article-title>
+          <source>Gene</source>
+          <year>1998</year>
+          <volume>211</volume>
+          <fpage>1</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">9573333</pub-id>
+          <pub-id pub-id-type="doi">10.1016/S0378-1119(98)00093-6</pub-id>
+        </citation>
+      </ref>
+      <ref id="B4">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bosher</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Labouesse</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>RNA interference: genetic wand and genetic watchdog</article-title>
+          <source>Nat Cell Biol</source>
+          <year>2000</year>
+          <volume>2</volume>
+          <fpage>E31</fpage>
+          <lpage>E36</lpage>
+          <pub-id pub-id-type="pmid">10655601</pub-id>
+          <pub-id pub-id-type="doi">10.1038/35000102</pub-id>
+        </citation>
+      </ref>
+      <ref id="B5">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Jeong</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Kulkarni</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Pillay</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nobuta</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>German</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Thatcher</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Maher</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ware</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide analysis for discovery of rice microRNAs reveals natural antisense microRNAs (nat-miRNAs)</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2008</year>
+          <volume>105</volume>
+          <fpage>4951</fpage>
+          <lpage>4956</lpage>
+          <pub-id pub-id-type="pmid">18353984</pub-id>
+          <pub-id pub-id-type="doi">10.1073/pnas.0708743105</pub-id>
+        </citation>
+      </ref>
+      <ref id="B6">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tufarelli</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Stanley</surname>
+              <given-names>JAS</given-names>
+            </name>
+            <name>
+              <surname>Garrick</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Sharpe</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Ayyub</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Wood</surname>
+              <given-names>WG</given-names>
+            </name>
+            <name>
+              <surname>Higgs</surname>
+              <given-names>DR</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcription of antisense RNA leading to gene silencing and methylation as a novel cause of human genetic disease</article-title>
+          <source>Nature Genetics</source>
+          <year>2003</year>
+          <volume>34</volume>
+          <fpage>157</fpage>
+          <lpage>165</lpage>
+          <pub-id pub-id-type="pmid">12730694</pub-id>
+          <pub-id pub-id-type="doi">10.1038/ng1157</pub-id>
+        </citation>
+      </ref>
+      <ref id="B7">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Reik</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic imprinting: Parental influence on the genome</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2001</year>
+          <volume>2</volume>
+          <fpage>21</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="pmid">11253064</pub-id>
+          <pub-id pub-id-type="doi">10.1038/35047554</pub-id>
+        </citation>
+      </ref>
+      <ref id="B8">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Misra</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Crosby</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mungall</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Matthews</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Campbell</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hradecky</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kaminker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Millburn</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Prochnik</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Annotation of the Drosophila melanogaster euchromatic genome: a systematic review</article-title>
+          <source>Genome Biol</source>
+          <year>2002</year>
+          <volume>3</volume>
+          <fpage>research0083.0081</fpage>
+          <lpage>0083.0022</lpage>
+          <pub-id pub-id-type="pmid">12537572</pub-id>
+          <pub-id pub-id-type="doi">10.1186/gb-2002-3-12-research0083</pub-id>
+        </citation>
+      </ref>
+      <ref id="B9">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kent</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>XQ</given-names>
+            </name>
+            <name>
+              <surname>Xie</surname>
+              <given-names>HQ</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>WQ</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>GL</given-names>
+            </name>
+            <name>
+              <surname>Shi</surname>
+              <given-names>RZ</given-names>
+            </name>
+            <name>
+              <surname>Rowley</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <article-title>Over 20% of human transcripts might form sense-antisense pairs</article-title>
+          <source>Nucleic Acids Research</source>
+          <year>2004</year>
+          <volume>32</volume>
+          <fpage>4812</fpage>
+          <lpage>4820</lpage>
+          <pub-id pub-id-type="pmid">15356298</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/gkh818</pub-id>
+        </citation>
+      </ref>
+      <ref id="B10">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Osato</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yamada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Satoh</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ooka</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kawai</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Carninci</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Ohtomo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Murakami</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Antisense transcripts with rice full-length cDNAs</article-title>
+          <source>Genome Biol </source>
+          <year>2004</year>
+          <volume>5</volume>
+          <fpage>R5</fpage>
+          <pub-id pub-id-type="pmid">14709177</pub-id>
+          <pub-id pub-id-type="doi">10.1186/gb-2003-5-1-r5</pub-id>
+        </citation>
+      </ref>
+      <ref id="B11">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gibbings</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Cook</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Dufault</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Madden</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Khuri</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Turnbull</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Dunwell</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Global transcript analysis of rice leaf and seed using SAGE technology</article-title>
+          <source>Plant Biotechnology Journal</source>
+          <year>2003</year>
+          <volume>1</volume>
+          <fpage>271</fpage>
+          <lpage>285</lpage>
+          <pub-id pub-id-type="pmid">17163904</pub-id>
+          <pub-id pub-id-type="doi">10.1046/j.1467-7652.2003.00026.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B12">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meyers</surname>
+              <given-names>BC</given-names>
+            </name>
+            <name>
+              <surname>Vu</surname>
+              <given-names>TH</given-names>
+            </name>
+            <name>
+              <surname>Tej</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Ghazal</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Matvienko</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Agrawal</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ning</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Haudenschild</surname>
+              <given-names>CD</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis of the transcriptional complexity of Arabidopsis thaliana by massively parallel signature sequencing</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2004</year>
+          <volume>22</volume>
+          <fpage>1006</fpage>
+          <lpage>1011</lpage>
+          <pub-id pub-id-type="pmid">15247925</pub-id>
+          <pub-id pub-id-type="doi">10.1038/nbt992</pub-id>
+        </citation>
+      </ref>
+      <ref id="B13">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamada</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Lim</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dale</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name>
+              <surname>Shinn</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Palm</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Southwick</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Empirical analysis of transcriptional activity in the Arabidopsis genome</article-title>
+          <source>Science</source>
+          <year>2003</year>
+          <volume>302</volume>
+          <fpage>842</fpage>
+          <lpage>846</lpage>
+          <pub-id pub-id-type="pmid">14593172</pub-id>
+          <pub-id pub-id-type="doi">10.1126/science.1088305</pub-id>
+        </citation>
+      </ref>
+      <ref id="B14">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poole</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Werner</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Biggi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gibbings</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Berry</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Dunwell</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis of wheat SAGE tags reveals evidence for widespread antisense transcription</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>475</fpage>
+          <pub-id pub-id-type="pmid">18847483</pub-id>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-9-475</pub-id>
+        </citation>
+      </ref>
+      <ref id="B15">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yelin</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Dahary</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Sorek</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Levanon</surname>
+              <given-names>EY</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Shoshan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Diber</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Biton</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tamir</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Khosravi</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Widespread occurrence of antisense transcription in the human genome</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2003</year>
+          <volume>21</volume>
+          <fpage>379</fpage>
+          <lpage>386</lpage>
+          <pub-id pub-id-type="pmid">12640466</pub-id>
+          <pub-id pub-id-type="doi">10.1038/nbt808</pub-id>
+        </citation>
+      </ref>
+      <ref id="B16">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kiyosawa</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Mise</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Iwase</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hayashizaki</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Abe</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Disclosing hidden transcripts: Mouse natural sense-antisense transcripts tend to be poly(A) negative and nuclear localized</article-title>
+          <source>Genome Research</source>
+          <year>2005</year>
+          <volume>15</volume>
+          <fpage>463</fpage>
+          <lpage>474</lpage>
+          <pub-id pub-id-type="pmid">15781571</pub-id>
+          <pub-id pub-id-type="doi">10.1101/gr.3155905</pub-id>
+        </citation>
+      </ref>
+      <ref id="B17">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Werner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Schmutzler</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Carlile</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Miles</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name>
+              <surname>Peters</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Expression profiling of antisense transcripts on DNA arrays</article-title>
+          <source>Physiological Genomics</source>
+          <year>2007</year>
+          <volume>28</volume>
+          <fpage>294</fpage>
+          <lpage>300</lpage>
+          <pub-id pub-id-type="pmid">17105753</pub-id>
+          <pub-id pub-id-type="doi">10.1152/physiolgenomics.00127.2006</pub-id>
+        </citation>
+      </ref>
+      <ref id="B18">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ge</surname>
+              <given-names>XJ</given-names>
+            </name>
+            <name>
+              <surname>Rubinstein</surname>
+              <given-names>WS</given-names>
+            </name>
+            <name>
+              <surname>Jung</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>QF</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide analysis of antisense transcription with Affymetrix exon array</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>27</fpage>
+          <pub-id pub-id-type="pmid">18211689</pub-id>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-9-27</pub-id>
+        </citation>
+      </ref>
+      <ref id="B19">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Coram</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Settles</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>XM</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcriptome analysis of high-temperature adult-plant resistance conditioned by Yr39 during the wheat-Puccinia striiformis f. sp tritici interaction</article-title>
+          <source>Molecular Plant Pathology</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>479</fpage>
+          <lpage>493</lpage>
+          <pub-id pub-id-type="pmid">18705862</pub-id>
+          <pub-id pub-id-type="doi">10.1111/j.1364-3703.2008.00476.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B20">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Coram</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>XM</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcriptome analysis of the wheat &#x2013; Puccinia striiformis f. sp tritici interaction</article-title>
+          <source>Molecular Plant Pathology</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>157</fpage>
+          <lpage>169</lpage>
+          <pub-id pub-id-type="pmid">18705849</pub-id>
+          <pub-id pub-id-type="doi">10.1111/j.1364-3703.2007.00453.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B21">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Coram</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Settles</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>X</given-names>
+            </name>
+          </person-group>
+          <article-title>Surveying expression level polymorphism and single-feature polymorphism in near-isogenic wheat lines differing for the Yr5 stripe rust resistance locus</article-title>
+          <source>Theoretical and Applied Genetics</source>
+          <year>2008</year>
+          <volume>117</volume>
+          <fpage>401</fpage>
+          <lpage>411</lpage>
+          <pub-id pub-id-type="pmid">18470504</pub-id>
+          <pub-id pub-id-type="doi">10.1007/s00122-008-0784-5</pub-id>
+        </citation>
+      </ref>
+      <ref id="B22">
+        <citation citation-type="other">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Parman</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Halling</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gentleman</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>affyQCReport:QC Report Generation for affyBatch objects. R package version 1.16.0</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.bioconductor.org/packages/2.4/bioc/manuals/affyQCReport/man/affyQCReport.pdf"/>
+        </citation>
+      </ref>
+      <ref id="B23">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gentleman</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Carey</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Bates</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bolstad</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Dettling</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dudoit</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ellis</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Gautier</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ge</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Gentry</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Bioconductor: Open software development for computational biology and bioinformatics</article-title>
+          <source>Genome Biol</source>
+          <year>2004</year>
+          <volume>5</volume>
+          <fpage>R80</fpage>
+          <pub-id pub-id-type="pmid">15461798</pub-id>
+          <pub-id pub-id-type="doi">10.1186/gb-2004-5-10-r80</pub-id>
+        </citation>
+      </ref>
+      <ref id="B24">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kramer</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Loros</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dunlap</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Crosthwaite</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Role for antisense RNA in regulating circadian clock function in <italic>Neurospora crassa</italic></article-title>
+          <source>Nature</source>
+          <year>2004</year>
+          <volume>421</volume>
+          <fpage>948</fpage>
+          <lpage>952</lpage>
+          <pub-id pub-id-type="pmid">12607002</pub-id>
+          <pub-id pub-id-type="doi">10.1038/nature01427</pub-id>
+        </citation>
+      </ref>
+      <ref id="B25">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Gerstein</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>RNA-Seq: a revolutionary tool for transcriptomics</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>57</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="pmid">19015660</pub-id>
+          <pub-id pub-id-type="doi">10.1038/nrg2484</pub-id>
+        </citation>
+      </ref>
+      <ref id="B26">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gautier</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Cope</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Bolstad</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Irizarry</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>affy-analysis of Affymetrix GeneChip data at the probe level</article-title>
+          <source>Bioinformatics</source>
+          <year>2004</year>
+          <volume>20</volume>
+          <fpage>307</fpage>
+          <lpage>315</lpage>
+          <pub-id pub-id-type="pmid">14960456</pub-id>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btg405</pub-id>
+        </citation>
+      </ref>
+      <ref id="B27">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bolstad</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Irizarry</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Astrand</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Speed</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>A Comparison of Normalization Methods for High Density Oligonucleotide Array Data Based on Bias and Variance</article-title>
+          <source>Bioinformatics</source>
+          <year>2003</year>
+          <volume>19</volume>
+          <fpage>185</fpage>
+          <lpage>193</lpage>
+          <pub-id pub-id-type="pmid">12538238</pub-id>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/19.2.185</pub-id>
+        </citation>
+      </ref>
+      <ref id="B28">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Irizarry</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bolstad</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Collin</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Cope</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hobbs</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Speed</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Summaries of Affymetrix GeneChip probe level data</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2003</year>
+          <volume>31</volume>
+          <fpage>e15</fpage>
+          <pub-id pub-id-type="pmid">12582260</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/gng015</pub-id>
+        </citation>
+      </ref>
+      <ref id="B29">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benjamini</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hochberg</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Controlling the false discovery rate: a practical and powerful approach to multiple testing</article-title>
+          <source>J Roy Stat Soc B</source>
+          <year>1995</year>
+          <volume>57</volume>
+          <fpage>289</fpage>
+          <lpage>300</lpage>
+        </citation>
+      </ref>
+      <ref id="B30">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wise</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Caldo</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Cannon</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Dickerson</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>BarleyBase/PLEXdb &#x2013; A unified expression profiling database for plants and plant pathogens</article-title>
+          <source>Methods in Molecular Biology</source>
+          <year>2007</year>
+          <fpage>347</fpage>
+          <lpage>363</lpage>
+          <pub-id pub-id-type="pmid">18287702</pub-id>
+        </citation>
+      </ref>
+      <ref id="B31">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Edgar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Domrachev</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lash</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Gene Expression Omnibus: NCBI gene expression and hybridization array data repository</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2002</year>
+          <volume>30</volume>
+          <fpage>207</fpage>
+          <lpage>210</lpage>
+          <pub-id pub-id-type="pmid">11752295</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/30.1.207</pub-id>
+        </citation>
+      </ref>
+      <ref id="B32">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haddad</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>AQX</given-names>
+            </name>
+            <name>
+              <surname>Giger</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>HY</given-names>
+            </name>
+            <name>
+              <surname>Baldwin</surname>
+              <given-names>KM</given-names>
+            </name>
+          </person-group>
+          <article-title>Potential pitfalls in the accuracy of analysis of natural sense-antisense RNA pairs by reverse transcription-PCR</article-title>
+          <source>BMC Biotechnology</source>
+          <year>2007</year>
+          <volume>7</volume>
+          <fpage>14</fpage>
+          <pub-id pub-id-type="pmid">17346344</pub-id>
+          <pub-id pub-id-type="doi">10.1186/1472-6750-7-21</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

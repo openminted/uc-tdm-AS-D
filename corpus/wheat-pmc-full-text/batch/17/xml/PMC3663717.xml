@@ -1,0 +1,2214 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Plant Biol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Plant Biol</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Plant Biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2229</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3663717</article-id>
+      <article-id pub-id-type="publisher-id">1471-2229-13-83</article-id>
+      <article-id pub-id-type="pmid">23688397</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2229-13-83</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Database</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>PLANEX: the plant co-expression database</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="A1">
+          <name>
+            <surname>Yim</surname>
+            <given-names>Won Cheol</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>ascendo@dongguk.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Yu</surname>
+            <given-names>Yongbin</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>supemania@gmail.com</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Song</surname>
+            <given-names>Kitae</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>skt525@dongguk.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Jang</surname>
+            <given-names>Cheol Seong</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>csjang@kangwon.ac.kr</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A5">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Byung-Moo</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>bmlee@dongguk.edu</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Department of Plant Biotechnology, Dongguk Univ-Seoul, Seoul, 100-715, Korea</aff>
+      <aff id="I2"><label>2</label>Department of Healthcare informatics, The Catholic University of Korea, Seoul, 137-701, Korea</aff>
+      <aff id="I3"><label>3</label>Department of Applied Plant Sciences, Kangwon National University, Chuncheon, 200-701, Korea</aff>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>5</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>13</volume>
+      <fpage>83</fpage>
+      <lpage>83</lpage>
+      <history>
+        <date date-type="received">
+          <day>21</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>16</day>
+          <month>5</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2013 Yim et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Yim et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1471-2229/13/83"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The PLAnt co-EXpression database (PLANEX) is a new internet-based database for plant gene analysis. PLANEX (<ext-link ext-link-type="uri" xlink:href="http://planex.plantbioinformatics.org">http://planex.plantbioinformatics.org</ext-link>) contains publicly available GeneChip data obtained from the Gene Expression Omnibus (GEO) of the National Center for Biotechnology Information (NCBI). PLANEX is a genome-wide co-expression database, which allows for the functional identification of genes from a wide variety of experimental designs. It can be used for the characterization of genes for functional identification and analysis of a gene&#x2019;s dependency among other genes. Gene co-expression databases have been developed for other species, but gene co-expression information for plants is currently limited.</p>
+        </sec>
+        <sec>
+          <title>Description</title>
+          <p>We constructed PLANEX as a list of co-expressed genes and functional annotations for <italic>Arabidopsis thaliana</italic>, <italic>Glycine max</italic>, <italic>Hordeum vulgare, Oryza sativa</italic>, <italic>Solanum lycopersicum, Triticum aestivum, Vitis vinifera</italic> and <italic>Zea mays.</italic> PLANEX reports Pearson&#x2019;s correlation coefficients (PCCs; <italic>r</italic>-values) that distribute from a gene of interest for a given microarray platform set corresponding to a particular organism. To support PCCs, PLANEX performs an enrichment test of Gene Ontology terms and Cohen&#x2019;s Kappa value to compare functional similarity for all genes in the co-expression database. PLANEX draws a cluster network with co-expressed genes, which is estimated using the <italic>k</italic>-mean method. To construct PLANEX, a variety of datasets were interpreted by the IBM supercomputer Advanced Interactive eXecutive (AIX) in a supercomputing center.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>PLANEX provides a correlation database, a cluster network and an interpretation of enrichment test results for eight plant species. A typical co-expressed gene generates lists of co-expression data that contain hundreds of genes of interest for enrichment analysis. Also, co-expressed genes can be identified and cataloged in terms of comparative genomics by using the &#x2018;Co-expression gene compare&#x2019; feature. This type of analysis will help interpret experimental data and determine whether there is a common term among genes of interest.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Co-expression</kwd>
+        <kwd>Database</kwd>
+        <kwd>Pearson&#x2019;s correlation coefficients</kwd>
+        <kwd>Clustering</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>A combination of methodologies from the fields of genomics, proteomics and bioinformatics provides a powerful approach to investigating biological processes. Biological functions of genes are usually determined by the interaction of a protein or gene product, and gene expressions are frequently related in biological processes. Therefore, co-expressed genes might be related in a biological pathway and may provide information critical for understanding complex biological systems[<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>]. Many technical approaches have been used in genome-wide experiments, and the ability to measure the regulation of several thousand genes simultaneously has revolutionized the way biological processes are analyzed. To understand biological systems, co-expression data have been used in a wide variety of experimental designs, including gene targeting, regulatory investigations and identification of potential partners in protein-protein interactions
+[<xref ref-type="bibr" rid="B3">3</xref>].</p>
+      <p>Substantial amounts of such expression data are required to estimate co-expressed gene dependency. Unfortunately, these experiments are costly and time consuming. However, a vast number of gene expression data sets have recently become available for several plant species. The most popular public microarray databases are ArrayExpress
+[<xref ref-type="bibr" rid="B4">4</xref>], Gene Expression Omnibus (GEO)
+[<xref ref-type="bibr" rid="B5">5</xref>], NASCArrays
+[<xref ref-type="bibr" rid="B6">6</xref>] and Genevestigator
+[<xref ref-type="bibr" rid="B7">7</xref>]. Still, it is difficult for biological researchers to manage this large amount of gene expression data without a background in bioinformatics. To this end, the field of bioinformatics has accelerated co-expression analysis of biological processes. In addition, the completion of the genome sequences of the model plants <italic>Arabidopsis thaliana</italic>[<xref ref-type="bibr" rid="B8">8</xref>], <italic>Glycine max</italic>[<xref ref-type="bibr" rid="B9">9</xref>], <italic>Oryza sativa</italic>[<xref ref-type="bibr" rid="B10">10</xref>], <italic>Solanum lycopersicum</italic>[<xref ref-type="bibr" rid="B11">11</xref>]<italic>, Vitis vinifera</italic>[<xref ref-type="bibr" rid="B12">12</xref>] and <italic>Zea mays</italic>[<xref ref-type="bibr" rid="B13">13</xref>] have advanced genome and gene expression analysis. For other species with poorly resolved gene expression data, such as <italic>Hordeum vulgare</italic> and <italic>Triticum aestivum</italic>, genome resources are improving with The Gene Index Project by the Dana Faber Cancer Institute (DFCI)
+[<xref ref-type="bibr" rid="B14">14</xref>]. The annotated genome sequences have stimulated the development of a number of functional genomic approaches. These materials are valuable for gene expression in genome-scale microarrays.</p>
+      <p>During the co-expression data set construction, the gene expression data were normalized with summarization methods, including RMA
+[<xref ref-type="bibr" rid="B15">15</xref>], GCRMA
+[<xref ref-type="bibr" rid="B16">16</xref>] and MAS5
+[<xref ref-type="bibr" rid="B17">17</xref>]. One method of identifying co-expressed gene sets is through the estimation of gene expression similarity. The most convenient way to estimate gene expression similarities is to use Pearson's correlation coefficients (PCCs)
+[<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B18">18</xref>]. If similarity is determined by a correlation metric (e.g. PCCs), a comprehensive pairwise matrix of correlation values are generated that represents expression similarity.</p>
+      <p>Based on co-expression data set analysis, we focused on improving the construction of gene networks. Principal components analysis (PCA) is a popular technique used to find the major component of a multivariate dataset. In DNA microarray analysis, it is used to find the gene groups that cooperatively change expressions over several experiments
+[<xref ref-type="bibr" rid="B19">19</xref>], and PCA is done in gene space. Then, the <italic>k</italic>-mean cluster algorithm is combined to reveal samples with large contributions.</p>
+      <p>Plant co-expression databases have previously been constructed for <italic>Arabidopsis thaliana</italic>, <italic>Oryza sativa</italic> and <italic>Hordeum vulgare.</italic> These databases, the Arabidopsis Co-expression Toolkit (ACT)
+[<xref ref-type="bibr" rid="B20">20</xref>], STARNET 2
+[<xref ref-type="bibr" rid="B21">21</xref>], RiceArrayNet
+[<xref ref-type="bibr" rid="B22">22</xref>], ATTED-II
+[<xref ref-type="bibr" rid="B23">23</xref>], Co-expressed biological Processes (CoP) database
+[<xref ref-type="bibr" rid="B24">24</xref>] and PlaNet
+[<xref ref-type="bibr" rid="B25">25</xref>], are used for searching co-expression relationships and incorporating functional data. Given the recent rapid growth of high performance computers with the ability to perform rapid calculations, co-expression database construction is possible using large-scale gene expression data.</p>
+      <p>In this report, we describe the construction and use of the PLAnt co-EXpression database (PLANEX; Additional file
+<xref ref-type="supplementary-material" rid="S1">1</xref>: Table S1) and discuss the output produced by user query. PLANEX mines already-computed gene pair correlations across eight species of plants. With PLANEX, we provide <italic>Arabidopsis thaliana, Glycine max, Hordeum vulgare, Oryza sativa, Solanum lycopersicum, Triticum aestivum, Vitis vinifera</italic> and <italic>Zea mays</italic> co-expression data sets with a user-friendly web interface for retrieving co-expressed gene lists and functional enrichment data of interest. A central motivation for constructing PLANEX was to leverage massive resources of microarray data for biological interactions, expression diversity and the discovery of putative gene regulatory relationships prior to conducting additional costly wet lab experiments. This database provides details that may aid in understanding expression similarity and functional enrichment of input genes.</p>
+    </sec>
+    <sec>
+      <title>Construction and content</title>
+      <sec>
+        <title>Expression data</title>
+        <p>Raw microarray data were obtained from the GEO of the National Center for Biotechnology Information (NCBI) through April 2011. We selected data from <italic>Arabidopsis thaliana, Glycine max, Hordeum vulgare, Oryza sativa, Solanum lycopersicum, Triticum aestivum, Vitis vinifera</italic> and <italic>Zea mays</italic> Affymetrix GeneChip Genome Array, which is one of the most frequently-used and publicly-deposited platforms for plants (Table&#xA0;
+<xref ref-type="table" rid="T1">1</xref>).</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Co-expression data information contained in PLANEX</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Species</bold>
+                </th>
+                <th align="left">
+                  <bold>Affymetrix GeneChip</bold>
+                </th>
+                <th align="left">
+                  <bold>Number of microarray slides</bold>
+                </th>
+                <th align="left">
+                  <bold>Micorarray platform</bold>
+                </th>
+                <th align="left">
+                  <bold>Source database of coding sequence</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Arabidopsis thaliana</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">ATH1<hr/></td>
+                <td align="left" valign="bottom">5502<hr/></td>
+                <td align="left" valign="bottom">GPL198<hr/></td>
+                <td align="left" valign="bottom">Phytozome<sup>1</sup><hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Glycine max</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Soybean<hr/></td>
+                <td align="left" valign="bottom">3080<hr/></td>
+                <td align="left" valign="bottom">GPL4592<hr/></td>
+                <td align="left" valign="bottom">Phytozome<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Hordeum vulgare</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Barley1<hr/></td>
+                <td align="left" valign="bottom">738<hr/></td>
+                <td align="left" valign="bottom">GPL1340<hr/></td>
+                <td align="left" valign="bottom">DFCI<sup>2</sup><hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Oryza sativa</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Rice<hr/></td>
+                <td align="left" valign="bottom">884<hr/></td>
+                <td align="left" valign="bottom">GPL2025<hr/></td>
+                <td align="left" valign="bottom">Phytozome<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Solanum lycopersicum</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Tomato<hr/></td>
+                <td align="left" valign="bottom">253<hr/></td>
+                <td align="left" valign="bottom">GPL4741<hr/></td>
+                <td align="left" valign="bottom">Phytozome<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Triticum aestivum</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Wheat<hr/></td>
+                <td align="left" valign="bottom">451<hr/></td>
+                <td align="left" valign="bottom">GPL3802<hr/></td>
+                <td align="left" valign="bottom">DFCI<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Vitis vinifera</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Vitis vinifera<hr/></td>
+                <td align="left" valign="bottom">738<hr/></td>
+                <td align="left" valign="bottom">GPL1320<hr/></td>
+                <td align="left" valign="bottom">Phytozome<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">
+                  <italic>Zea mays</italic>
+                </td>
+                <td align="left">Maize</td>
+                <td align="left">379</td>
+                <td align="left">GPL4032</td>
+                <td align="left">Phytozome</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><sup>1</sup>Dana Faber Cancer Institute (DFCI),
+<ext-link ext-link-type="uri" xlink:href="http://compbio.dfci.harvard.edu/tgi/">http://compbio.dfci.harvard.edu/tgi/</ext-link>.</p>
+            <p><sup>2</sup>Phytozome v 9.0,
+<ext-link ext-link-type="uri" xlink:href="http://www.phytozome.net">http://www.phytozome.net</ext-link>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>All of the raw data (in CEL file format) were downloaded through programmatic access to GEO (
+<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/geo/info/geo_paccess.html">http://www.ncbi.nlm.nih.gov/geo/info/geo_paccess.html</ext-link>). We terminated GEO Series (GSEs) that included truncated GEO Sample (GSM). The cross platform GSMs were also terminated, including GSE13641 (<italic>Rorippa amphibia</italic> expression profile on <italic>Arabidopsis thaliana</italic> Affymetrix GeneChip platform; GPL198). We also collected raw data, with the exclusion of subspecies expression data, including <italic>Glycine soja</italic> on the <italic>Glycine max</italic> platform (GPL4592; e.g. GSE20323) and <italic>Arabidopsis lyrata subsp. petraea</italic> and <italic>Arabidopsis halleri</italic> on the <italic>Arabidopsis thaliana</italic> Affymetrix GeneChip platform (GPL198; e.g. GSE5738).</p>
+        <p>The CEL files were used for summarizing probe sets, which were the results of the intensity calculations on the chip pixel value. All expression levels were analyzed using background subtraction, normalization and summarizing probe sets. We estimated quantile normalization using an RMA algorithm for detecting the background information. All microarrays were computed probe sets that summarized each of the eight species using Affymetrix Power Tools
+[<xref ref-type="bibr" rid="B26">26</xref>].</p>
+      </sec>
+      <sec>
+        <title>Implementation</title>
+        <p>The gene co-expression data were entered in the PLANEX system by pre-implementation. The data were implemented with expression probe set summarizing data. We provided PCCs to assess the extent of gene co-expression, and we developed novel C++ codes to generate co-expression data. The pairwise co-expression calculations did not require heavy CPU power, but numerous CPUs helped reduce calculation time. We used the GAIA system at the Supercomputing Center of the Korea Institute of Science and Technology Information,
+[<xref ref-type="bibr" rid="B27">27</xref>] which contained 1536 CPU cores. The GAIA system is based on Advanced Interactive eXecutive (AIX) by IBM, which supports Message Passing Interface (MPI)
+[<xref ref-type="bibr" rid="B28">28</xref>]. Our unique C++ code supported MPI and co-expression data were estimated by 512 CPU cores. To retrieve co-expression data, we set thresholds for co-expression values. To specify positive (top 1% of PCCs) and negative (bottom 1% PCCs) values for co-expressed gene sets, the distribution of random gene pairs was assessed by PCCs (Figure&#xA0;
+<xref ref-type="fig" rid="F1">1</xref>). The number of random gene pairs corresponded to the number of probes on the array (Table&#xA0;
+<xref ref-type="table" rid="T2">2</xref>).</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>Frequency distribution of PCCs of randomly selected gene pairs.</p>
+          </caption>
+          <graphic xlink:href="1471-2229-13-83-1"/>
+        </fig>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>The thresholds for co-expression values</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Species</bold>
+                </th>
+                <th align="left">
+                  <bold>No. of probes</bold>
+                </th>
+                <th align="left">
+                  <bold>Positive</bold>
+                  <sup>
+                    <bold>1</bold>
+                  </sup>
+                </th>
+                <th align="left">
+                  <bold>Negative</bold>
+                  <sup>
+                    <bold>2</bold>
+                  </sup>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Arabidopsis thaliana</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">22,810<hr/></td>
+                <td align="left" valign="bottom">0.585<hr/></td>
+                <td align="left" valign="bottom">&#x2212;0.465<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Hordeum vulgare</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">22,840<hr/></td>
+                <td align="left" valign="bottom">0.68<hr/></td>
+                <td align="left" valign="bottom">&#x2212;0.625<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Oryza sativa</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">57,381<hr/></td>
+                <td align="left" valign="bottom">0.646<hr/></td>
+                <td align="left" valign="bottom">&#x2212;0.535<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Triticum aestivum</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">61,290<hr/></td>
+                <td align="left" valign="bottom">0.686<hr/></td>
+                <td align="left" valign="bottom">&#x2212;0.635<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Zea mays</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">17,734<hr/></td>
+                <td align="left" valign="bottom">0.835<hr/></td>
+                <td align="left" valign="bottom">&#x2212;0.775<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Glycine max</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">61,170<hr/></td>
+                <td align="left" valign="bottom">0.645<hr/></td>
+                <td align="left" valign="bottom">&#x2212;0.505<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Vitis vinifera</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">16,602<hr/></td>
+                <td align="left" valign="bottom">0.715<hr/></td>
+                <td align="left" valign="bottom">&#x2212;0.715<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">
+                  <italic>Solanum lycopersicum</italic>
+                </td>
+                <td align="left">10,209</td>
+                <td align="left">0.775</td>
+                <td align="left">&#x2212;0.705</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><sup>1</sup> Positive indicated PCCs &#x2264; 0.01.</p>
+            <p><sup>2</sup> Negative indicated PCCs &#x2265; 0.99.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Clustering</title>
+        <p>For clustering, the gene expression values were used for analysis. We applied the <italic>k</italic>-mean clustering method to the expression data, which assigned each point to the cluster whose center was nearest
+[<xref ref-type="bibr" rid="B29">29</xref>]. We used the PCA to determine the number of cluster <italic>k</italic>. The PCA was conducted using CLUSTER, so that the clusters were ordered and chosen to maximally explain the remaining variance in data vectors
+[<xref ref-type="bibr" rid="B1">1</xref>]. Consequently, the <italic>k</italic>-mean clusters were analyzed with the number of clusters in each species. The large amount of expression data required long-term clustering time. Therefore, we compiled the Parallel K-mean Data Clustering code
+[<xref ref-type="bibr" rid="B30">30</xref>], which was executed on the AIX supercomputer system with MPI. The <italic>k</italic>-mean algorithm provided nodes of the co-expression network in PLANEX.</p>
+      </sec>
+      <sec>
+        <title>Mapping gene identifiers onto probe set IDs</title>
+        <p>The genome sequence and annotation project Phytozome was recently completed and released
+[<xref ref-type="bibr" rid="B31">31</xref>]. We clarified annotations and sequences of the species by downloading all Affymetrix GeneChip probe sequences
+[<xref ref-type="bibr" rid="B26">26</xref>], and we mapped them against the probe to the nucleotide of the genome of six sequenced plants: <italic>Arabidopsis thaliana, Glycine max, Oryza sativa, Vitis vinifera,Solanum lycopersicum</italic> and <italic>Zea mays (</italic>Phytozome V9.0). In contrast, other species whose genome sequences are still unfinished, such as <italic>Hordeum vulgare</italic> and <italic>Triticum aestivum</italic>, were mapped with Tentative Consensus sequences from DFCI. The probe matches were made using our unique Perl script. The script processed string-matched nucleotide sequences (including reverse complement) against an individual GeneChip probe of any given species and returned a list of probe set affinities that corresponded to the sequence of each species. Specifically, <italic>Zea mays</italic> had 15 sequence pairs per probe, and all other plant species had 11 pairs per probe.</p>
+      </sec>
+      <sec>
+        <title>Gene ontology term assignment</title>
+        <p>Due to the hierarchical tree of the gene ontology (GO) terms and redundancy of the terms, we mapped GO terms against representative gene function. The DFCI provided GO mapping annotation. Phytozome sequence annotation did not support GO mapping annotation, but it did provide Pfam IDs; we mapped the representative Pfam IDs against GO terms. We mapped the external classification system to GO
+[<xref ref-type="bibr" rid="B32">32</xref>]. GO-TermFinder was used to estimate the enrichment of GO terms
+[<xref ref-type="bibr" rid="B33">33</xref>]. GO-TermFinder was integrated into PLANEX using a web interface, which evaluated the enrichment of the principle GO categories, including cellular components, biological processes, and molecular functions with hypergeometric distribution and a False Discovery Rate (FDR) described by Benjamini and Hochberg.</p>
+      </sec>
+      <sec>
+        <title>Comparative analysis of co-expressed gene sets</title>
+        <p>Cohen&#x2019;s Kappa statistics were used to compare co-expression data between species
+[<xref ref-type="bibr" rid="B34">34</xref>]. An in-house module similar to the online DAVID tool
+[<xref ref-type="bibr" rid="B35">35</xref>,<xref ref-type="bibr" rid="B36">36</xref>] was used to evaluate co-expression similarity using Kappa statistics, which were integrated using a web interface. A protein sequence was used to select two genes from among the species <italic>Arabidopsis thaliana</italic>, <italic>Glycine max</italic>, <italic>Oryza sativa</italic>, <italic>Vitis vinifera</italic> and <italic>Zea mays</italic>. After two query genes were submitted, the module compared the co-expression data set of each query gene, which were converted to the Pfam ID
+[<xref ref-type="bibr" rid="B37">37</xref>]. The Kappa measured the percentage of data values in the main diagonal of the table and then adjusted those values for the amount of agreements that could be expected due to chance alone.</p>
+      </sec>
+      <sec>
+        <title>System development</title>
+        <p>The web application of PLANEX was developed with Dancer (Perl web application framework)
+[<xref ref-type="bibr" rid="B38">38</xref>] for the server side and JQuery (Javascript framework)
+[<xref ref-type="bibr" rid="B39">39</xref>] for the client side. The co-expression database was combined with MongoDB (document-oriented database)
+[<xref ref-type="bibr" rid="B40">40</xref>] and TokyoCabinet (management of database)
+[<xref ref-type="bibr" rid="B41">41</xref>]. MongoDB stored co-expression data as a document file, making the integration of data in pairwise co-expression applications easier and faster. TokyoCabinet stored gene ID data by a single key and used hashing techniques to enable fast retrieval of co-expression data of the query gene. This combination markedly improved the processing and accessing speeds of searches. We used the Cytoscape Web
+[<xref ref-type="bibr" rid="B42">42</xref>] to display the network on internet browsers. The Cytoscape Web does not require the installation of a plugin and works fast for all kinds of browsers. PLANEX operates on a Ubuntu 10.04
+[<xref ref-type="bibr" rid="B43">43</xref>] sever equipped with a 2.66GHz dual CPU and 8GB RAM.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Utility and discussion</title>
+      <sec>
+        <title>Web interface</title>
+        <p>PLANEX can be accessed through a user-friendly web interface (
+<ext-link ext-link-type="uri" xlink:href="http://planex.plantbioinformatics.org/">http://planex.plantbioinformatics.org/</ext-link>, see Avaliability an requirements section) that provides three search menus: &#x2018;Co-expression search&#x2019;, &#x2018;Cluster network&#x2019;, and &#x2018;Co-expression gene compare&#x2019; (Figure&#xA0;
+<xref ref-type="fig" rid="F2">2</xref>). The &#x2018;Co-expression search&#x2019; can be used for co-expressed gene sets and PCC values. To search the database, an Affymetrix GeneChip ID or a representative gene ID is used to &#x2018;Search by IDs&#x2019; or a paste sequence is used to &#x2018;Search with BLAST&#x2019;
+[<xref ref-type="bibr" rid="B44">44</xref>]; two or more representative gene IDs are used to &#x2018;Retrieve PCC with gene list&#x2019; (Figure&#xA0;
+<xref ref-type="fig" rid="F3">3</xref>A). As shown in Figure&#xA0;
+<xref ref-type="fig" rid="F3">3</xref>A, PLANEX depends on the selection of options such as species, target, cut-off, BLAST program and e-value. The distributions of random genes were determined to be cut-off values in each species.</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p>The homepage of PLANEX.</p>
+          </caption>
+          <graphic xlink:href="1471-2229-13-83-2"/>
+        </fig>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>An example of a &#x2018;Co-expression Search&#x2019;.</bold> (<bold>A</bold>) The layout of &#x2018;Co-expression Search&#x2019;. (<bold>B</bold>) The results of probe mapping. (<bold>C</bold>) Co-expression search result. (<bold>D</bold>) Co-expressed genes with duplicated probe or gene redundancy. (<bold>E</bold>) Results of a statistical test for gene functional enrichment. (<bold>F</bold>) Search result of &#x2018;Retrieve PCCs with gene list&#x2019;.</p>
+          </caption>
+          <graphic xlink:href="1471-2229-13-83-3"/>
+        </fig>
+        <p>After a query is submitted to &#x2018;Search by IDs&#x2019; or &#x2018;Search with BLAST&#x2019;, the probe match results page is shown. The probe match page indicates the number of probes matching the query over the total number of probes, as well as their affinity, shown as &#x2018;match&#x2019; (Figure&#xA0;
+<xref ref-type="fig" rid="F3">3</xref>B). This probe match page will help discard redundant probes to genes. PLANEX finds many co-expressed genes within the cut-off values (Figure&#xA0;
+<xref ref-type="fig" rid="F3">3</xref>C). The duplicated Affymetrix IDs are indicated in the &#x2018;Duplicated&#x2019; section of the results page (Figure&#xA0;
+<xref ref-type="fig" rid="F3">3</xref>D). The co-expressed gene set can be downloaded in CSV format for analysis by GO-TermFinder. GO-TermFinder provides three GO term enrichment analyses with a hypergeometric <italic>p</italic>-value &lt; 0.05 at FDR &#x2264; 10&#x2013;6 (Figure&#xA0;
+<xref ref-type="fig" rid="F3">3</xref>E). After submitting a query to &#x2018;Retrieve PCCs with gene list&#x2019;, the gene list will show the correlation in pairwise format (Figure&#xA0;
+<xref ref-type="fig" rid="F3">3</xref>F). PLANEX does not provide a probe match page, but, instead, it provides all potentially matching probe sets for a gene list, which indicate PCCs and affinity. The data are supported by GO-TermFinder, which is similar to the other searches.</p>
+        <p>PLANEX allows co-expression network data to be displayed in a browser. The &#x2018;Cluster network&#x2019; is based on <italic>k</italic>-mean cluster analysis and PCCs, which support &#x2018;Search by IDs&#x2019; and &#x2018;Search with BLAST&#x2019; functions (Figure&#xA0;
+<xref ref-type="fig" rid="F4">4</xref>A). The network consists of the results of the <italic>k</italic>-mean cluster analysis, indicated as node, size of node, represented number of the edge, and the edge indicated by PCCs (Figure&#xA0;
+<xref ref-type="fig" rid="F4">4</xref>B).</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>An example of &#x2018;Cluster Network&#x2019;.</bold> (<bold>A</bold>) The layout of &#x2018;Cluster Network&#x2019;. (<bold>B</bold>) The query genes in the co-expressed gene network.</p>
+          </caption>
+          <graphic xlink:href="1471-2229-13-83-4"/>
+        </fig>
+        <p>The Kappa statistics analysis tools in PLANEX can be used to compare co-expressed genes with other species, using the &#x2018;Co-expression gene compare&#x2019; feature (Figure&#xA0;
+<xref ref-type="fig" rid="F5">5</xref>). It accepts only <italic>Arabidopsis thaliana, Glycine max, Oryza sativa, Vitis vinifera</italic> and <italic>Zea mays</italic> as protein annotated plant gene IDs. Any two species can be compared with their representative gene ID from Phytozome. The simple Kappa statistics coefficients show the agreement between two co-expressed gene sets, which is measured on a binary scale. This analysis is useful in comparative genomics to determine the similarity of co-expressed gene sets or the functional similarity of family genes. This approach provides a comparative analysis with commonly reported measurements in the medical literature.</p>
+        <fig id="F5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p><bold>An example of &#x2018;Co-expression gene compare&#x2019;.</bold> (<bold>A</bold>) The layout of &#x2018;Co-expression gene compare&#x2019;. (<bold>B</bold>) The results of probe mapping. (<bold>C</bold>) Results of a Cohen&#x2019;s Kappa statistical test for the query genes.</p>
+          </caption>
+          <graphic xlink:href="1471-2229-13-83-5"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>PLANEX is a novel database that helps researchers study complex biological processes by co-expressed gene sets overlayed onto a <italic>k</italic>-mean cluster. ATTED-II, STARNET 2, RiceArrayNet and CoP provide co-expression relationships, but they contain only one to three sets of co-expression data. Therefore, an advantage of PLANEX is that it combines sets of co-expression data from eight different species. Additionally, it clusters and compares members of co-expressed genes. As far as we know, PLANEX is the only system that combines cluster and PCCs data.</p>
+      <p>Another advantage of PLANEX is that probes were mapped against representative genes by string match instead of BLAST. Our probe match script produced positive results if each base in a probe sequence matched perfectly with the representative gene sequence without any gap.</p>
+      <p>One potential application in PLANEX is GO-TermFinder. We generated a <italic>Saccharomyces</italic> Genome Database (SGD) file format for each species. Model species like <italic>Arabidopsis thaliana</italic> and <italic>Oryza sativa</italic> have a large set of functionally annotated genes with GO terms supported by various experimentally-derived evidence codes. In contrast, other organisms only have annotations inferred through electronic annotation (e.g., <italic>Vitis vinifera</italic> and <italic>Zea mays</italic>) or completely lack functional annotation. Since we initially lacked functional GO data, we converted Pfam to GO IDs and built an SGD file for functional enrichment analysis. However, this mapping should be used only as a guide.</p>
+      <p>Our previous report of <italic>Oryza sativa</italic> genome duplication
+[<xref ref-type="bibr" rid="B45">45</xref>] evidenced the positive (top 1% of PCCs) value as 0.545, but we used 0.646 as the positive PCCs threshold in <italic>Oryza sativa</italic> for this report. We established this different criterion because we included more than the given number of microarrays, since we believed that more microarrays generated more significance for the expression study. Also, Aoki et al.
+[<xref ref-type="bibr" rid="B46">46</xref>] specified a minimum PCCs value (0.55-0.66) for co-expressed gene retrieval to minimize false gene function relationships. We provided a particular threshold to retrieve co-expressed genes for each species that showed normal distribution (Figure&#xA0;
+<xref ref-type="fig" rid="F1">1</xref>).</p>
+      <p>The &#x2018;Co-expression gene compare&#x2019; tab on the PLANEX menu provides data for comparative genomics. The <italic>Arabidopsis</italic> genome is believed to contain similar gene numbers to the rice genome, and both have undergone a whole genome duplication event
+[<xref ref-type="bibr" rid="B47">47</xref>,<xref ref-type="bibr" rid="B48">48</xref>]. The use of Kappa statistics coefficients is expected to be in accordance with the degree of expression divergence of the data. Previously, we reported that the rice gene families evidenced a similar high degree of expression diversity between members using rice public microarrays
+[<xref ref-type="bibr" rid="B45">45</xref>]. The comparison of co-expressed genes may support the understanding of specialization in the direction of complex biological processes between members of a gene family over evolutionary time
+[<xref ref-type="bibr" rid="B49">49</xref>].</p>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>The small, but important, function of comparing co-expressed genes may provide clues to the molecular functional conservation or diversity between orthologus genes, particularly <italic>Poaceae</italic> family genes. PLANEX can be used to interpret results of co-expressed genes and, also, to perform delicate analyses in comparative genomics. PLANEX complements existing databases and tools such as ATTED-II, CoP and STARNET 2.</p>
+    </sec>
+    <sec>
+      <title>Availability and requirements</title>
+      <p><bold>Project name:</bold> PLANEX</p>
+      <p><bold>Operating system(s):</bold> Platform Independent (tested on Windows, i386 Linux and Mac)</p>
+      <p><bold>Programming Languages:</bold> Perl</p>
+      <p><bold>Other requirements:</bold> Web browser (tested on Chrome, Safari and Explorer)</p>
+      <p><bold>License:</bold> Creative Commons Attribution License</p>
+      <p>
+        <bold>The serve is freely available at</bold>
+        <ext-link ext-link-type="uri" xlink:href="http://planex.plantbioinformatics.org">http://planex.plantbioinformatics.org</ext-link>
+      </p>
+    </sec>
+    <sec>
+      <title>Abbreviations</title>
+      <p>ACT: Arabidopsis co-expression toolkit; AIX: Advanced interactive eXecutive; DFCI: Dana faber cancer institute; GEO: Gene expression omnibus; GO: Gene ontology; KEGG: Kyoto encyclopedia of genes and genomes; PCA: Principal components analysis; PCC: Pearson&#x2019;s correlation coefficients; PLANEX: The PLAnt co-EXpression database; PPIs: Protein-protein interactions; SGD: <italic>Saccharomyces</italic> genome database; TAIR: The arabidopsis information resource.</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests<bold>.</bold></p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>WCY, YY and CSJ designed and implemented the database. WCY and YY constructed website pages and on-line tools. WCY, CSJ, KS and BML were responsible for data collection. WCY and KS participated in the design of the database schema. WCY and BML conceived the study. WCY, CSJ, KS and BML drafted the manuscript. All authors read and approved the manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1: Table S1</title>
+          <p>Public microarray data information in PLANEX.</p>
+        </caption>
+        <media xlink:href="1471-2229-13-83-S1.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgement</title>
+      <p>The authors would like to thank Kunho Kim for contributing to the PLANEX project and, thereby, making bioinformatics investigations possible. We thank Silex and Jongjin Lee for building the web interface. We also would like to thanks Hojung Yun for his contribution to various anonymous referees for improvements in perl and this manuscript.</p>
+      <p>This research was supported by the Basic Science Research Program through the National Research Foundation (NRF) of Korea funded by the Ministry of Education, Science and Technology (NRF-2011-0011643).</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Eisen</surname>
+            <given-names>MB</given-names>
+          </name>
+          <name>
+            <surname>Spellman</surname>
+            <given-names>PT</given-names>
+          </name>
+          <name>
+            <surname>Brown</surname>
+            <given-names>PO</given-names>
+          </name>
+          <name>
+            <surname>Botstein</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Cluster analysis and display of genome-wide expression patterns</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1998</year>
+          <volume>13</volume>
+          <fpage>14863</fpage>
+          <lpage>14868</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.95.25.14863</pub-id>
+          <?supplied-pmid 9843981?>
+          <pub-id pub-id-type="pmid">9843981</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lee</surname>
+            <given-names>HK</given-names>
+          </name>
+          <name>
+            <surname>Hsu</surname>
+            <given-names>AK</given-names>
+          </name>
+          <name>
+            <surname>Sajdak</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Qin</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Pavlidis</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Coexpression analysis of human genes across many microarray data sets</article-title>
+          <source>Genome Res</source>
+          <year>2004</year>
+          <volume>13</volume>
+          <fpage>1085</fpage>
+          <lpage>1094</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.1910904</pub-id>
+          <?supplied-pmid 15173114?>
+          <pub-id pub-id-type="pmid">15173114</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Aoki</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Ogata</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Shibata</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Approaches for extracting practical information from gene co-expression networks in plant biology</article-title>
+          <source>Plant Cell Physiol</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>381</fpage>
+          <lpage>390</lpage>
+          <pub-id pub-id-type="doi">10.1093/pcp/pcm013</pub-id>
+          <?supplied-pmid 17251202?>
+          <pub-id pub-id-type="pmid">17251202</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brazma</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Parkinson</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Sarkans</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Shojatalab</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Vilo</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Abeygunawardena</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Holloway</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Kapushesky</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kemmeren</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Lara</surname>
+            <given-names>GG</given-names>
+          </name>
+          <article-title>ArrayExpress a public repository for microarray gene expression data at the EBI</article-title>
+          <source>Nucl Acids Res</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>68</fpage>
+          <lpage>71</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkg091</pub-id>
+          <?supplied-pmid 12519949?>
+          <pub-id pub-id-type="pmid">12519949</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Barrett</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Troup</surname>
+            <given-names>DB</given-names>
+          </name>
+          <name>
+            <surname>Wilhite</surname>
+            <given-names>SE</given-names>
+          </name>
+          <name>
+            <surname>Ledoux</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Rudnev</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Evangelista</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>IF</given-names>
+          </name>
+          <name>
+            <surname>Soboleva</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Tomashevsky</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Edgar</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>NCBI GEO: mining tens of millions of expression profiles&#x2013;database and tools update</article-title>
+          <source>Nucl Acids Res</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>D760</fpage>
+          <lpage>D765</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkl887</pub-id>
+          <?supplied-pmid 17099226?>
+          <pub-id pub-id-type="pmid">17099226</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Craigon</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <name>
+            <surname>James</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Okyere</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Higgins</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Jotham</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>May</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>NASCArrays: a repository for microarray data generated by NASC&#x2019;s transcriptomics service</article-title>
+          <source>Nucl Acids Res</source>
+          <year>2004</year>
+          <volume>13</volume>
+          <fpage>D575</fpage>
+          <lpage>D577</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkh133</pub-id>
+          <?supplied-pmid 14681484?>
+          <pub-id pub-id-type="pmid">14681484</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zimmermann</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Hirsch-Hoffmann</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Hennig</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Gruissem</surname>
+            <given-names>W</given-names>
+          </name>
+          <article-title>GENEVESTIGATOR. Arabidopsis microarray database and analysis toolbox</article-title>
+          <source>Plant Physiol</source>
+          <year>2004</year>
+          <volume>13</volume>
+          <fpage>2621</fpage>
+          <lpage>2632</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp. 104.046367</pub-id>
+          <pub-id pub-id-type="pmid">15375207</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <article-title>Analysis of the genome sequence of the flowering plant Arabidopsis thaliana</article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>13</volume>
+          <fpage>796</fpage>
+          <lpage>815</lpage>
+          <pub-id pub-id-type="doi">10.1038/35048692</pub-id>
+          <?supplied-pmid 11130711?>
+          <pub-id pub-id-type="pmid">11130711</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schmutz</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Cannon</surname>
+            <given-names>SB</given-names>
+          </name>
+          <name>
+            <surname>Schlueter</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Ma</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Mitros</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Nelson</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Hyten</surname>
+            <given-names>DL</given-names>
+          </name>
+          <name>
+            <surname>Song</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Thelen</surname>
+            <given-names>JJ</given-names>
+          </name>
+          <name>
+            <surname>Cheng</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Genome sequence of the palaeopolyploid soybean</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>13</volume>
+          <fpage>178</fpage>
+          <lpage>183</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature08670</pub-id>
+          <?supplied-pmid 20075913?>
+          <pub-id pub-id-type="pmid">20075913</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ouyang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Zhu</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Hamilton</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Lin</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Campbell</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Childs</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Thibaud-Nissen</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Malek</surname>
+            <given-names>RL</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Zheng</surname>
+            <given-names>L</given-names>
+          </name>
+          <article-title>The TIGR rice genome annotation resource: improvements and new features</article-title>
+          <source>Nucl Acids Res</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>D883</fpage>
+          <lpage>D887</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkl976</pub-id>
+          <?supplied-pmid 17145706?>
+          <pub-id pub-id-type="pmid">17145706</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <collab>Tomato Genome Consortium</collab>
+          <article-title>The tomato genome sequence provides insights into fleshy fruit evolution</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>635</fpage>
+          <lpage>664</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature11119</pub-id>
+          <?supplied-pmid 22660326?>
+          <pub-id pub-id-type="pmid">22660326</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jaillon</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Aury</surname>
+            <given-names>J-M</given-names>
+          </name>
+          <name>
+            <surname>Noel</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Policriti</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Clepet</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Casagrande</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Choisne</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Aubourg</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Vitulo</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Jubin</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Vezzi</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Legeai</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Hugueney</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Dasilva</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Horner</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Mica</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Jublot</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Poulain</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Bruy&#xE8;re</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Billault</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Segurens</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Gouyvenoux</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ugarte</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Cattonaro</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Anthouard</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Vico</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Del Fabbro</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Alaux</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Di Gaspero</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Dumas</surname>
+            <given-names>V</given-names>
+          </name>
+          <article-title>The grapevine genome sequence suggests ancestral hexaploidization in major angiosperm phyla</article-title>
+          <source>Nature</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>463</fpage>
+          <lpage>467</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature06148</pub-id>
+          <?supplied-pmid 17721507?>
+          <pub-id pub-id-type="pmid">17721507</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schnable</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Ware</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Fulton</surname>
+            <given-names>RS</given-names>
+          </name>
+          <name>
+            <surname>Stein</surname>
+            <given-names>JC</given-names>
+          </name>
+          <name>
+            <surname>Wei</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Pasternak</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Liang</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Fulton</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Graves</surname>
+            <given-names>TA</given-names>
+          </name>
+          <article-title>The B73 maize genome: complexity, diversity, and dynamics</article-title>
+          <source>Science</source>
+          <year>2009</year>
+          <volume>13</volume>
+          <fpage>1112</fpage>
+          <lpage>1115</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1178534</pub-id>
+          <?supplied-pmid 19965430?>
+          <pub-id pub-id-type="pmid">19965430</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Antonescu</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Antonescu</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Sultana</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Quackenbush</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Using the DFCI gene index databases for biological discovery</article-title>
+          <source>Curr Protoc Bioinformatics</source>
+          <year>2010</year>
+          <comment>Chapter 1:Unit1.6.1-36</comment>
+          <pub-id pub-id-type="doi">10.1002/0471250953.bi0106s29</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Irizarry</surname>
+            <given-names>RA</given-names>
+          </name>
+          <name>
+            <surname>Hobbs</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Collin</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Beazer-Barclay</surname>
+            <given-names>YD</given-names>
+          </name>
+          <name>
+            <surname>Antonellis</surname>
+            <given-names>KJ</given-names>
+          </name>
+          <name>
+            <surname>Scherf</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Speed</surname>
+            <given-names>TP</given-names>
+          </name>
+          <article-title>Exploration, normalization, and summaries of high density oligonucleotide array probe level data</article-title>
+          <source>Biostatistics</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>249</fpage>
+          <lpage>264</lpage>
+          <pub-id pub-id-type="doi">10.1093/biostatistics/4.2.249</pub-id>
+          <?supplied-pmid 12925520?>
+          <pub-id pub-id-type="pmid">12925520</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wu</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Irizarry</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Gentleman</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Martinez-Murillo</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Spencer</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>A model-based background adjustment for oligonucleotide expression arrays</article-title>
+          <source>J Am Stat Assoc</source>
+          <year>2004</year>
+          <volume>13</volume>
+          <fpage>909</fpage>
+          <lpage>917</lpage>
+          <pub-id pub-id-type="doi">10.1198/016214504000000683</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hubbell</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>WM</given-names>
+          </name>
+          <name>
+            <surname>Mei</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Robust estimators for expression analysis</article-title>
+          <source>Bioinformatics</source>
+          <year>2002</year>
+          <volume>13</volume>
+          <fpage>1585</fpage>
+          <lpage>1592</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/18.12.1585</pub-id>
+          <?supplied-pmid 12490442?>
+          <pub-id pub-id-type="pmid">12490442</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Soper</surname>
+            <given-names>HE</given-names>
+          </name>
+          <name>
+            <surname>Young</surname>
+            <given-names>AE</given-names>
+          </name>
+          <name>
+            <surname>Cave</surname>
+            <given-names>BM</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Pearson</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>On the distribution of the correlation coefficient in small samples. appendixAppendix ii to the papers of &#x201C;student&#x201D; and r. a. Fisher. a cooperative study</article-title>
+          <source>Biometrika</source>
+          <year>1917</year>
+          <volume>13</volume>
+          <fpage>328</fpage>
+          <lpage>413</lpage>
+          <pub-id pub-id-type="doi">10.1093/biomet/11.4.328</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brunet</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Tamayo</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Golub</surname>
+            <given-names>TR</given-names>
+          </name>
+          <name>
+            <surname>Mesirov</surname>
+            <given-names>JP</given-names>
+          </name>
+          <article-title>Metagenes and molecular pattern discovery using matrix factorization</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2004</year>
+          <volume>13</volume>
+          <fpage>4164</fpage>
+          <lpage>41693</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0308531101</pub-id>
+          <?supplied-pmid 15016911?>
+          <pub-id pub-id-type="pmid">15016911</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Manfield</surname>
+            <given-names>IW</given-names>
+          </name>
+          <name>
+            <surname>Jen</surname>
+            <given-names>CH</given-names>
+          </name>
+          <name>
+            <surname>Pinney</surname>
+            <given-names>JW</given-names>
+          </name>
+          <name>
+            <surname>Michalopoulos</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Bradford</surname>
+            <given-names>JR</given-names>
+          </name>
+          <name>
+            <surname>Gilmartin</surname>
+            <given-names>PM</given-names>
+          </name>
+          <name>
+            <surname>Westhead</surname>
+            <given-names>DR</given-names>
+          </name>
+          <article-title>Arabidopsis co-expression tool (ACT): web server tools for microarray-based gene expression analysis</article-title>
+          <source>Nucl Acids Res</source>
+          <year>2006</year>
+          <volume>13</volume>
+          <fpage>W504</fpage>
+          <lpage>W509</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkl204</pub-id>
+          <?supplied-pmid 16845059?>
+          <pub-id pub-id-type="pmid">16845059</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jupiter</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Van Buren</surname>
+            <given-names>V</given-names>
+          </name>
+          <article-title>STARNET 2: a web-based tool for accelerating discovery of gene regulatory networks using microarray co-expression data</article-title>
+          <source>BMC Bioinforma</source>
+          <year>2009</year>
+          <volume>13</volume>
+          <fpage>332</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-10-332</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lee</surname>
+            <given-names>TH</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>YK</given-names>
+          </name>
+          <name>
+            <surname>Pham</surname>
+            <given-names>TTM</given-names>
+          </name>
+          <name>
+            <surname>Song</surname>
+            <given-names>SI</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>JK</given-names>
+          </name>
+          <name>
+            <surname>Kang</surname>
+            <given-names>KY</given-names>
+          </name>
+          <name>
+            <surname>An</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Jung</surname>
+            <given-names>KH</given-names>
+          </name>
+          <name>
+            <surname>Galbraith</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>RiceArrayNet: a database for correlating gene expression from transcriptome profiling, and its application to the analysis of coexpressed genes in rice</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>13</volume>
+          <fpage>16</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp. 109.139030</pub-id>
+          <?supplied-pmid 19605550?>
+          <pub-id pub-id-type="pmid">19605550</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Obayashi</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Hayashi</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Saeki</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ohta</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Kinoshita</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>ATTED-II provides coexpressed gene networks for Arabidopsis</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2009</year>
+          <volume>13</volume>
+          <fpage>D987</fpage>
+          <lpage>D991</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkn807</pub-id>
+          <?supplied-pmid 18953027?>
+          <pub-id pub-id-type="pmid">18953027</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ogata</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Suzuki</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Sakurai</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Shibata</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>CoP: a database for characterizing co-expressed gene modules with biological information in plants</article-title>
+          <source>Bioinformatics</source>
+          <year>2010</year>
+          <volume>13</volume>
+          <fpage>1267</fpage>
+          <lpage>1268</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btq121</pub-id>
+          <?supplied-pmid 20305269?>
+          <pub-id pub-id-type="pmid">20305269</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mutwil</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Klie</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Tohge</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Giorgi</surname>
+            <given-names>FM</given-names>
+          </name>
+          <name>
+            <surname>Wilkins</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Campbell</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>Fernie</surname>
+            <given-names>AR</given-names>
+          </name>
+          <name>
+            <surname>Usadel</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Nikoloski</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Persson</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>PlaNet: combined sequence and expression comparisons across plant networks derived from seven species</article-title>
+          <source>Plant Cell</source>
+          <year>2011</year>
+          <volume>13</volume>
+          <fpage>895</fpage>
+          <lpage>910</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.111.083667</pub-id>
+          <?supplied-pmid 21441431?>
+          <pub-id pub-id-type="pmid">21441431</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="other">
+          <source>Affymetrix</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.affymetrix.com/estore/">http://www.affymetrix.com/estore/</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="other">
+          <source>KISTI Super Computing Center</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.ksc.re.kr/">http://www.ksc.re.kr/</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Staff</surname>
+          </name>
+          <article-title>Using MPI-portable parallel programming with the message-passing interface</article-title>
+          <source>William Gropp Sci Program</source>
+          <year>1996</year>
+          <volume>13</volume>
+          <fpage>275</fpage>
+          <lpage>276</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hartigan</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Wong</surname>
+            <given-names>MA</given-names>
+          </name>
+          <article-title>Algorithm AS 136: a K-means clustering algorithm</article-title>
+          <source>J Royal Stat Soc Series C (Applied Statistics)</source>
+          <year>1979</year>
+          <volume>13</volume>
+          <fpage>100</fpage>
+          <lpage>108</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="other">
+          <source>Parallel K-Means Data Clustering</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://users.eecs.northwestern.edu/~wkliao/Kmeans/">http://users.eecs.northwestern.edu/~wkliao/Kmeans/</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="other">
+          <source>Phytozome</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.phytozome.net">http://www.phytozome.net</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hunter</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Apweiler</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Attwood</surname>
+            <given-names>TK</given-names>
+          </name>
+          <name>
+            <surname>Bairoch</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Bateman</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Binns</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Bork</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Das</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Daugherty</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Duquenne</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Finn</surname>
+            <given-names>RD</given-names>
+          </name>
+          <name>
+            <surname>Gough</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Haft</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Hulo</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Kahn</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Kelly</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Laugraud</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Letunic</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Lonsdale</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Lopez</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Madera</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Maslen</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>McAnulla</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>McDowall</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Mistry</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Mitchell</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Mulder</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Natale</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Orengo</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Quinn</surname>
+            <given-names>AF</given-names>
+          </name>
+          <article-title>InterPro: the integrative protein signature database</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2009</year>
+          <volume>13</volume>
+          <fpage>D211</fpage>
+          <lpage>D215</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkn785</pub-id>
+          <?supplied-pmid 18940856?>
+          <pub-id pub-id-type="pmid">18940856</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Boyle</surname>
+            <given-names>EI</given-names>
+          </name>
+          <name>
+            <surname>Weng</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Gollub</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Jin</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Botstein</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Cherry</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Sherlock</surname>
+            <given-names>G</given-names>
+          </name>
+          <article-title>GO: TermFinder&#x2013;open source software for accessing gene ontology information and finding significantly enriched gene ontology terms associated with a list of genes</article-title>
+          <source>Bioinformatics</source>
+          <year>2004</year>
+          <volume>13</volume>
+          <fpage>3710</fpage>
+          <lpage>3715</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/bth456</pub-id>
+          <?supplied-pmid 15297299?>
+          <pub-id pub-id-type="pmid">15297299</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cohen</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>A coefficient of agreement for nominal scales</article-title>
+          <source>Educ Psychol Meas</source>
+          <year>1960</year>
+          <volume>13</volume>
+          <fpage>37</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="doi">10.1177/001316446002000104</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Huang</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Sherman</surname>
+            <given-names>BT</given-names>
+          </name>
+          <name>
+            <surname>Lempicki</surname>
+            <given-names>RA</given-names>
+          </name>
+          <article-title>Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources</article-title>
+          <source>Nat Protoc</source>
+          <year>2009</year>
+          <volume>13</volume>
+          <fpage>44</fpage>
+          <lpage>57</lpage>
+          <?supplied-pmid 19131956?>
+          <pub-id pub-id-type="pmid">19131956</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Huang</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Sherman</surname>
+            <given-names>BT</given-names>
+          </name>
+          <name>
+            <surname>Lempicki</surname>
+            <given-names>RA</given-names>
+          </name>
+          <article-title>Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2009</year>
+          <volume>13</volume>
+          <fpage>1</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkn923</pub-id>
+          <?supplied-pmid 19033363?>
+          <pub-id pub-id-type="pmid">19033363</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bateman</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Coin</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Durbin</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Finn</surname>
+            <given-names>RD</given-names>
+          </name>
+          <name>
+            <surname>Hollich</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Griffiths-Jones</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Khanna</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Marshall</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Moxon</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Sonnhammer</surname>
+            <given-names>ELL</given-names>
+          </name>
+          <name>
+            <surname>Studholme</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <name>
+            <surname>Yeats</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Eddy</surname>
+            <given-names>SR</given-names>
+          </name>
+          <article-title>The Pfam protein families database</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2004</year>
+          <volume>13</volume>
+          <fpage>D138</fpage>
+          <lpage>D141</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkh121</pub-id>
+          <?supplied-pmid 14681378?>
+          <pub-id pub-id-type="pmid">14681378</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="other">
+          <source>Dancer</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.perldancer.org">http://www.perldancer.org</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="other">
+          <source>Jquery</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.jquery.com">http://www.jquery.com</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="other">
+          <source>MongoDB</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.mongodb.com">http://www.mongodb.com</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="other">
+          <source>Tokyocabinet</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://fallabs.com/tokyocabinet">http://fallabs.com/tokyocabinet</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lopes</surname>
+            <given-names>CT</given-names>
+          </name>
+          <name>
+            <surname>Franz</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kazi</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Donaldson</surname>
+            <given-names>SL</given-names>
+          </name>
+          <name>
+            <surname>Morris</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Bader</surname>
+            <given-names>GD</given-names>
+          </name>
+          <article-title>Cytoscape Web: an interactive web-based network browser</article-title>
+          <source>Bioinformatics</source>
+          <year>2010</year>
+          <volume>13</volume>
+          <fpage>2347</fpage>
+          <lpage>2348</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btq430</pub-id>
+          <?supplied-pmid 20656902?>
+          <pub-id pub-id-type="pmid">20656902</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="other">
+          <source>Ubuntu</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.ubuntu.com">http://www.ubuntu.com</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Johnson</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Zaretskaya</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Raytselis</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Merezhuk</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>McGinnis</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Madden</surname>
+            <given-names>TL</given-names>
+          </name>
+          <article-title>NCBI BLAST: a better web interface</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2008</year>
+          <volume>13</volume>
+          <fpage>W5</fpage>
+          <lpage>W9</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkn201</pub-id>
+          <?supplied-pmid 18440982?>
+          <pub-id pub-id-type="pmid">18440982</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yim</surname>
+            <given-names>WC</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>B-M</given-names>
+          </name>
+          <name>
+            <surname>Jang</surname>
+            <given-names>CS</given-names>
+          </name>
+          <article-title>Expression diversity and evolutionary dynamics of rice duplicate genes</article-title>
+          <source>Mol Genet Genomics</source>
+          <year>2009</year>
+          <volume>13</volume>
+          <fpage>483</fpage>
+          <lpage>493</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00438-009-0425-y</pub-id>
+          <?supplied-pmid 19184107?>
+          <pub-id pub-id-type="pmid">19184107</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Aoki</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Ogata</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Shibata</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Approaches for extracting practical information from gene co-expression networks in plant biology</article-title>
+          <source>Plant Cell Physiol</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>381</fpage>
+          <lpage>390</lpage>
+          <pub-id pub-id-type="doi">10.1093/pcp/pcm013</pub-id>
+          <?supplied-pmid 17251202?>
+          <pub-id pub-id-type="pmid">17251202</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Simillion</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Vandepoele</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Van Montagu</surname>
+            <given-names>MCE</given-names>
+          </name>
+          <name>
+            <surname>Zabeau</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Van de Peer</surname>
+            <given-names>Y</given-names>
+          </name>
+          <article-title>The hidden duplication past of Arabidopsis thaliana</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2002</year>
+          <volume>13</volume>
+          <fpage>13627</fpage>
+          <lpage>13632</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.212522399</pub-id>
+          <?supplied-pmid 12374856?>
+          <pub-id pub-id-type="pmid">12374856</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bowers</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Chapman</surname>
+            <given-names>BA</given-names>
+          </name>
+          <name>
+            <surname>Rong</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Paterson</surname>
+            <given-names>AH</given-names>
+          </name>
+          <article-title>Unravelling angiosperm genome evolution by phylogenetic analysis of chromosomal duplication events</article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>433</fpage>
+          <lpage>438</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature01521</pub-id>
+          <?supplied-pmid 12660784?>
+          <pub-id pub-id-type="pmid">12660784</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jang</surname>
+            <given-names>CS</given-names>
+          </name>
+          <name>
+            <surname>Yim</surname>
+            <given-names>WC</given-names>
+          </name>
+          <name>
+            <surname>Moon</surname>
+            <given-names>J-C</given-names>
+          </name>
+          <name>
+            <surname>Jung</surname>
+            <given-names>JH</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>TG</given-names>
+          </name>
+          <name>
+            <surname>Lim</surname>
+            <given-names>SD</given-names>
+          </name>
+          <name>
+            <surname>Cho</surname>
+            <given-names>SH</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>KK</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Seo</surname>
+            <given-names>YW</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>B-M</given-names>
+          </name>
+          <article-title>Evolution of non-specific lipid transfer protein (nsLTP) genes in the Poaceae family: their duplication and diversity</article-title>
+          <source>Mol Genet Genomics</source>
+          <year>2008</year>
+          <volume>13</volume>
+          <fpage>481</fpage>
+          <lpage>497</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00438-008-0327-4</pub-id>
+          <?supplied-pmid 18270740?>
+          <pub-id pub-id-type="pmid">18270740</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,2688 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="product-review">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Plant Methods</journal-id>
+      <journal-title>Plant Methods</journal-title>
+      <issn pub-type="epub">1746-4811</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">2705364</article-id>
+      <article-id pub-id-type="publisher-id">1746-4811-5-8</article-id>
+      <article-id pub-id-type="pmid">19545381</article-id>
+      <article-id pub-id-type="doi">10.1186/1746-4811-5-8</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Software</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The DAWGPAWS pipeline for the annotation of genes and transposable elements in plant genomes</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib id="A1" corresp="yes" contrib-type="author">
+          <name>
+            <surname>Estill</surname>
+            <given-names>James C</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>JamesEstill@gmail.com</email>
+        </contrib>
+        <contrib id="A2" contrib-type="author">
+          <name>
+            <surname>Bennetzen</surname>
+            <given-names>Jeffrey L</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>maize@uga.edu</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Department of Plant Biology, The University of Georgia, Athens, Georgia 30602-7271, USA</aff>
+      <aff id="I2"><label>2</label>Department of Genetics, The University of Georgia, Athens, Georgia 30602-7223, USA</aff>
+      <pub-date pub-type="collection">
+        <year>2009</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>19</day>
+        <month>6</month>
+        <year>2009</year>
+      </pub-date>
+      <volume>5</volume>
+      <fpage>8</fpage>
+      <lpage>8</lpage>
+      <ext-link ext-link-type="uri" xlink:href="http://www.plantmethods.com/content/5/1/8"/>
+      <history>
+        <date date-type="received">
+          <day>30</day>
+          <month>4</month>
+          <year>2009</year>
+        </date>
+        <date date-type="accepted">
+          <day>19</day>
+          <month>6</month>
+          <year>2009</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2009 Estill and Bennetzen; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2009</copyright-year>
+        <copyright-holder>Estill and Bennetzen; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0"/>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</p>
+          <!--<rdf xmlns="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1" xmlns:dcterms="http://purl.org/dc/terms"><Work xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:about=""><license rdf:resource="http://creativecommons.org/licenses/by/2.0"/><dc:type rdf:resource="http://purl.org/dc/dcmitype/Text"/><dc:author>               Estill
+               C
+               James
+               
+               JamesEstill@gmail.com
+            </dc:author><dc:title>
+            The DAWGPAWS pipeline for the annotation of genes and transposable elements in plant genomes
+         </dc:title><dc:date>2009</dc:date><dcterms:bibliographicCitation>Plant Methods 5(1): 8-. (2009)</dcterms:bibliographicCitation><dc:identifier type="sici">1746-4811(2009)5:1&#x0003c;8&#x0003e;</dc:identifier><dcterms:isPartOf>urn:ISSN:1746-4811</dcterms:isPartOf><License rdf:about="http://creativecommons.org/licenses/by/2.0"><permits rdf:resource="http://web.resource.org/cc/Reproduction" xmlns=""/><permits rdf:resource="http://web.resource.org/cc/Distribution" xmlns=""/><requires rdf:resource="http://web.resource.org/cc/Notice" xmlns=""/><requires rdf:resource="http://web.resource.org/cc/Attribution" xmlns=""/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" xmlns=""/></License></Work></rdf>-->
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>High quality annotation of the genes and transposable elements in complex genomes requires a human-curated integration of multiple sources of computational evidence. These evidences include results from a diversity of <italic>ab initio </italic>prediction programs as well as homology-based searches. Most of these programs operate on a single contiguous sequence at a time, and the results are generated in a diverse array of readable formats that must be translated to a standardized file format. These translated results must then be concatenated into a single source, and then presented in an integrated form for human curation.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We have designed, implemented, and assessed a Perl-based workflow named DAWGPAWS for the generation of computational results for human curation of the genes and transposable elements in plant genomes. The use of DAWGPAWS was found to accelerate annotation of 80&#x2013;200 kb wheat DNA inserts in bacterial artificial chromosome (BAC) vectors by approximately twenty-fold and to also significantly improve the quality of the annotation in terms of completeness and accuracy.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>The DAWGPAWS genome annotation pipeline fills an important need in the annotation of plant genomes by generating computational evidences in a high throughput manner, translating these results to a common file format, and facilitating the human curation of these computational results. We have verified the value of DAWGPAWS by using this pipeline to annotate the genes and transposable elements in 220 BAC insertions from the hexaploid wheat genome (<italic>Triticum aestivum </italic>L.). DAWGPAWS can be applied to annotation efforts in other plant genomes with minor modifications of program-specific configuration files, and the modular design of the workflow facilitates integration into existing pipelines.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Genomic sequence assemblies are rapidly being published for a great number of species [<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>]. The sequence data used to produce genome assemblies are being generated at ever-increasing rates for reduced costs [<xref ref-type="bibr" rid="B3">3</xref>], indicating that the genomes of many more plant species will be <italic>de novo </italic>sequenced in coming years. The relative value of these sequencing efforts is a direct function of the accuracy of the annotation of the resultant sequence assemblies. Genome annotation seeks to delineate the sequence features that occur on the genome, thereby permitting definition of the biological processes responsible for these features [<xref ref-type="bibr" rid="B4">4</xref>]. In plants, the sequence characteristics that are most critical to our interpretation of gene function and genome evolution include both genes and transposable elements (TEs) [<xref ref-type="bibr" rid="B5">5</xref>,<xref ref-type="bibr" rid="B6">6</xref>].</p>
+      <p>Identification of the genes that have been uncovered in assembled genome sequence data can utilize evidence from both <italic>ab initio </italic>gene annotation programs as well as sequence similarity searches against databases of previously identified proteins and expressed RNA [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B7">7</xref>,<xref ref-type="bibr" rid="B8">8</xref>]. The <italic>ab initio </italic>gene finding programs derive full gene models from DNA sequence data based solely on knowledge of the sequence features associated with protein coding domains. Sequence alignments can refine the exon-intron boundaries of these models and provide evidence that computationally predicted genes are actually transcribed <italic>in vivo</italic>. Existing software can automatically synthesize these data to derive combined evidence gene models [<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B10">10</xref>].</p>
+      <p>While this combination of <italic>ab initio </italic>and homology-based approaches have been used to accurately annotate genes in a number of eukaryotic genomes, plant genome annotation efforts cannot focus solely on the annotation of genes due to the risk of conflating genes with transposable elements [<xref ref-type="bibr" rid="B11">11</xref>]. Many TEs contain open reading frames (ORFs) that generate the proteins required for TE transposition. The <italic>ab initio </italic>gene annotation programs will often annotate these TE ORFs as genes. Since most TE genes are expressed and represented in cDNA libraries, homology-based searches will indicate that these ORFs are transcribed and they thus may be considered legitimate gene predictions. Simply removing the high-copy-number candidate genes does not alleviate this problem because some true gene families are highly abundant while not all transposable elements are highly repetitive [<xref ref-type="bibr" rid="B12">12</xref>]. These erroneous gene annotations are especially problematic in plant genomes where transposable elements make up the majority of sequenced genome space. Since these false positive gene predictions cannot be mitigated by gene prediction methods alone, plant genome annotation must directly annotate TEs in order to remove them from the gene candidate list.</p>
+      <p>Similar to the prediction of genes, accurate identification of the TEs in genomic sequence data combines homology-based searches and <italic>ab initio </italic>results [<xref ref-type="bibr" rid="B13">13</xref>-<xref ref-type="bibr" rid="B15">15</xref>]. Tools for <italic>ab initio </italic>transposable element discovery can exploit the fact that many families of TEs occur in high copy number within a host genome [<xref ref-type="bibr" rid="B16">16</xref>-<xref ref-type="bibr" rid="B18">18</xref>], or they can utilize diagnostic structural features such as tandem inverted repeats (TIRs) or long terminal repeats (LTRs) that delineate an individual TE insertion [<xref ref-type="bibr" rid="B19">19</xref>-<xref ref-type="bibr" rid="B21">21</xref>]. Homology-based searches of transposable elements are facilitated by specialized tools [<xref ref-type="bibr" rid="B22">22</xref>-<xref ref-type="bibr" rid="B25">25</xref>] that make use of databases of previously identified TEs [<xref ref-type="bibr" rid="B26">26</xref>-<xref ref-type="bibr" rid="B29">29</xref>] or leverage repetitive data from the sequenced genome [<xref ref-type="bibr" rid="B30">30</xref>-<xref ref-type="bibr" rid="B32">32</xref>].</p>
+      <p>The gold standard of genome annotation is the integration and curation of multiple computational results by a knowledgeable biologist [<xref ref-type="bibr" rid="B11">11</xref>]. This approach has been advocated for the structural annotation of genes [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B11">11</xref>], as well as transposable elements [<xref ref-type="bibr" rid="B33">33</xref>]. A limitation of the manually-curated multiple-evidences approach is that the process requires the combination of computational results from a disparate set of independent annotation programs. The output of this software has been designed to maximize readability by humans and not to facilitate integration of results across programs. Furthermore, these tools are often designed to work on a single contiguous sequence (contig) at a time, while many annotation efforts require the generation of computational results for thousands of assembled contigs. Computational workflow suites that seek to aid in plant genome annotation must therefore overcome these limitations while facilitating the human interpretation of the computational results contributing to a biological annotation.</p>
+      <p>Here, we introduce an annotation suite that allows for computational evidences to be generated in an automated fashion, integrates the results from multiple programs and facilitates the human curation of these computational results. This suite was designed to assist a Distributed Annotation Working Group (DAWG) approach for a Pipeline to Annotate Wheat Sequences (PAWS), and we hereafter refer to this effort as DAWGPAWS.</p>
+    </sec>
+    <sec>
+      <title>Implementation</title>
+      <p>The DAWGPAWS workflow (Figure <xref ref-type="fig" rid="F1">1</xref>) is distributed as a suite of individual command line interface (CLI) programs written in the Perl programming language. Generally, each program is tailored for an individual step in the annotation process, and it can be used independently of all other programs in the package. This allows users to design an individualized annotation pipeline by selecting those computational components that are most appropriate to their annotation efforts. This modular design also facilitates using DAWGPAWS in a high throughput cluster-computing framework. Large-scale annotation jobs can be split across compute nodes by contigs being annotated as well as by the computational process used to generate computational results.</p>
+      <fig position="float" id="F1">
+        <label>Figure 1</label>
+        <caption>
+          <p><bold>An overview of the workflow supported by the current version of the DAWGPAWS suite of programs</bold>.</p>
+        </caption>
+        <graphic xlink:href="1746-4811-5-8-1"/>
+      </fig>
+      <p>A common thread to each component of the DAWGPAWS package is that computational evidences are translated from the native annotation program output into the standard general feature format (GFF) [<xref ref-type="bibr" rid="B34">34</xref>]. The GFF file format facilitates integration of multiple computational results. This format can be directly curated by any biologist using standard sequence curation and visualization tools such as Apollo [<xref ref-type="bibr" rid="B35">35</xref>], Artemis [<xref ref-type="bibr" rid="B36">36</xref>], GBrowse [<xref ref-type="bibr" rid="B37">37</xref>], the UCSC genome browser [<xref ref-type="bibr" rid="B38">38</xref>] or the Ensembl Genome Browser [<xref ref-type="bibr" rid="B39">39</xref>]. The GFF files also provide a standard format for loading annotation results to relational database schemas such as BioSQL [<xref ref-type="bibr" rid="B40">40</xref>] or CHADO [<xref ref-type="bibr" rid="B41">41</xref>].</p>
+      <p>One of the main sets of scripts in the DAWGPAWS package is the batch run program set (Table <xref ref-type="table" rid="T1">1</xref>). All of these scripts are designed to run individual annotation programs in a high throughput batch mode. They take as their input a directory of sequence files that are to be annotated and a configuration file describing the sets of parameters to use for each sequence file. The output of these batch scripts includes the original output from the annotation program as well as this output translated to the GFF format. The resulting files are stored in a predefined directory structure that allows users to quickly locate the original annotation results as well as the GFF copy. These batch programs exist for both gene and TE annotation results. The <italic>ab initio </italic>gene annotation programs supported by these scripts include EuG&#xE8;ne [<xref ref-type="bibr" rid="B9">9</xref>], GeneID [<xref ref-type="bibr" rid="B42">42</xref>], GeneMark.hmm [<xref ref-type="bibr" rid="B43">43</xref>], and Genscan [<xref ref-type="bibr" rid="B44">44</xref>]. The <italic>ab initio </italic>TE annotation programs that can be run in batch mode are Find_LTR [<xref ref-type="bibr" rid="B45">45</xref>], LTR_STRUC [<xref ref-type="bibr" rid="B20">20</xref>], LTR_FINDER [<xref ref-type="bibr" rid="B21">21</xref>], LTR_seq [<xref ref-type="bibr" rid="B46">46</xref>], FINDMITE [<xref ref-type="bibr" rid="B19">19</xref>], and Tandem Repeats Finder [<xref ref-type="bibr" rid="B47">47</xref>]. Batch mode scripts also support TE annotation using HMMER [<xref ref-type="bibr" rid="B48">48</xref>], NCBI-BLAST [<xref ref-type="bibr" rid="B49">49</xref>], RepeatMasker [<xref ref-type="bibr" rid="B22">22</xref>], and TEnest [<xref ref-type="bibr" rid="B24">24</xref>]. The full set of gene and TE annotation programs that can be run in batch mode are summarized in Table <xref ref-type="table" rid="T1">1</xref>.</p>
+      <table-wrap position="float" id="T1">
+        <label>Table 1</label>
+        <caption>
+          <p>DAWGPAWS annotation scripts for generating computational annotation results in batch mode.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td align="left">
+                <bold>Annotation Program</bold>
+              </td>
+              <td align="left">
+                <bold>Result Type</bold>
+              </td>
+              <td align="left">
+                <bold>DAWGPAWS Script</bold>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left">EuG&#xE8;ne [<xref ref-type="bibr" rid="B9">9</xref>]</td>
+              <td align="left">Gene <italic>ab initio </italic>and automated combined evidence</td>
+              <td align="left">batch_eugene.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">GeneID [<xref ref-type="bibr" rid="B42">42</xref>]</td>
+              <td align="left">Gene <italic>ab initio</italic></td>
+              <td align="left">batch_geneid.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">GeneMark.hmm [<xref ref-type="bibr" rid="B43">43</xref>]</td>
+              <td align="left">Gene <italic>ab initio</italic></td>
+              <td align="left">batch_genemark.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">Genscan [<xref ref-type="bibr" rid="B44">44</xref>]</td>
+              <td align="left">Gene <italic>ab initio</italic></td>
+              <td align="left">batch_genescan.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">Find_LTR [<xref ref-type="bibr" rid="B45">45</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">batch_findltr.pl*</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">LTR_STRUC [<xref ref-type="bibr" rid="B20">20</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">batch_ltrstruc.vbs</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">LTR_FINDER [<xref ref-type="bibr" rid="B21">21</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">batch_ltrfinder.pl*</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">LTR_seq [<xref ref-type="bibr" rid="B46">46</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">batch_ltrseq.pl*</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">FINDMITE [<xref ref-type="bibr" rid="B19">19</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">batch_findmite.pl*</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">Tandem Repeats Finder [<xref ref-type="bibr" rid="B47">47</xref>]</td>
+              <td align="left">Repeat <italic>ab initio</italic></td>
+              <td align="left">batch_trf.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">HMMER [<xref ref-type="bibr" rid="B48">48</xref>]</td>
+              <td align="left">TE homology</td>
+              <td align="left">batch_hmmer.pl*</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">NCBI-BLAST [<xref ref-type="bibr" rid="B49">49</xref>]</td>
+              <td align="left">TE and gene homology</td>
+              <td align="left">batch_blast.pl*</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">RepeatMasker [<xref ref-type="bibr" rid="B22">22</xref>]</td>
+              <td align="left">TE homology</td>
+              <td align="left">batch_repmask.pl*</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">TEnest [<xref ref-type="bibr" rid="B24">24</xref>]</td>
+              <td align="left">TE homology</td>
+              <td align="left">batch_tenest.pl</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <p>These scripts operate on a directory of FASTA files, and generate the native results of the annotation program as well as the GFF file format. The exception is the batch_ltrstruc.vbs visual basic script that must be used in conjunction with cnv_ltrstruc2gff.pl to generate results in GFF.</p>
+          <p>* Indicates programs that make use of a configuration file. The nature and format of the configuration file for these programs is described in the individual help file for those programs.</p>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>In addition to the batch run programs, scripts that convert an individual annotation program output to GFF are also available (Table <xref ref-type="table" rid="T2">2</xref>). These programs allow an existing annotation result to be specified, or they can take advantage of UNIX standard streams. If an input file is not specified, the conversion scripts will expect input from the standard input stream. Likewise, if the output path is not specified, these programs will write the output to a standard output stream. Accepting standard input and output streams facilitates using these programs as supplements to an existing workflow. For example, data can be piped directly from the output stream of an annotation program to a DAWGPAWS converter, and then piped on to a parser that loads the GFF formatted result to a database. These conversion programs provide the ability to support conversion of output from programs such as FGENESH [<xref ref-type="bibr" rid="B50">50</xref>,<xref ref-type="bibr" rid="B51">51</xref>] and RepSeek [<xref ref-type="bibr" rid="B52">52</xref>] that are not supported by batch scripts in DAWGPAWS.</p>
+      <table-wrap position="float" id="T2">
+        <label>Table 2</label>
+        <caption>
+          <p>DAWGPAWS scripts for conversion of annotation results from native program output to GFF.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td align="left">
+                <bold>Annotation Program</bold>
+              </td>
+              <td align="left">
+                <bold>Result Type</bold>
+              </td>
+              <td align="left">
+                <bold>DAWGPAWS Script</bold>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left">FGENESH [<xref ref-type="bibr" rid="B50">50</xref>,<xref ref-type="bibr" rid="B51">51</xref>]</td>
+              <td align="left">Gene <italic>ab initio</italic></td>
+              <td align="left">cnv_fgenesh2gff.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">GeneMark.hmm [<xref ref-type="bibr" rid="B43">43</xref>]</td>
+              <td align="left">Gene <italic>ab initio</italic></td>
+              <td align="left">cnv_genemark2gff.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">Find_LTR [<xref ref-type="bibr" rid="B45">45</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">cnv_findltr2gff.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">LTR_FINDER [<xref ref-type="bibr" rid="B21">21</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">cnv_ltrfinder2gff.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">LTR_seq [<xref ref-type="bibr" rid="B46">46</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">cnv_ltrseq2gff.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">LTR_STRUC [<xref ref-type="bibr" rid="B20">20</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">cnv_ltrstruc2gff.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">RepSeek [<xref ref-type="bibr" rid="B52">52</xref>]</td>
+              <td align="left">TE <italic>ab initio</italic></td>
+              <td align="left">cnv_repseek2gff.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">NCBI-BLAST [<xref ref-type="bibr" rid="B49">49</xref>]</td>
+              <td align="left">TE and gene homology</td>
+              <td align="left">cnv_blast2gff.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">RepeatMasker [<xref ref-type="bibr" rid="B22">22</xref>]</td>
+              <td align="left">TE homology</td>
+              <td align="left">cnv_repmask2gff.pl</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">TEnest [<xref ref-type="bibr" rid="B24">24</xref>]</td>
+              <td align="left">TE homology</td>
+              <td align="left">cnv_tenest2gff.pl</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <p>The DAWGPAWS suite also includes specialized tools for TE annotation. For identification of the highly repetitive regions of a contig, the seq_oligocount.pl program can count the occurrence of oligomers in the query sequence against an index of random shotgun sequences. This program generates all oligomers of length k from the query sequence, and uses the vmatch program [<xref ref-type="bibr" rid="B53">53</xref>] to determine the number of these k-mers that occur in a random shotgun sequence data set generated by mkvtree [<xref ref-type="bibr" rid="B53">53</xref>]. The output of this program is a GFF file indicating the count of these k-mers in the shotgun sequence dataset. These results may be used to identify the mathematically defined repeats in the query sequence, as well as provides a means to visualize low-copy-number runs in the query sequence [<xref ref-type="bibr" rid="B54">54</xref>].</p>
+      <p>In addition to the gene and TE annotation-specific scripts included in the DAWGPAWS package, helper applications are also included (Table <xref ref-type="table" rid="T3">3</xref>). These CLI programs fulfill needs that occur when generating annotation results. They allow for file conversion such as the conversion of GFF to game.xml format or the conversion of a lowercase masked sequence file to a hard masked sequence file. They also prepare the sequence files for annotation by shortening FASTA headers as required by some programs, or by splitting a single FASTA file containing multiple records into multiple FASTA files containing single record files. The ability to generate Euler Diagrams is also supported via the vennseq.pl conversion script that formats GFF file data for input into the VennMaster program [<xref ref-type="bibr" rid="B55">55</xref>].</p>
+      <table-wrap position="float" id="T3">
+        <label>Table 3</label>
+        <caption>
+          <p>Additional helper scripts included in the DAWGPAWS package.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td align="left">
+                <bold>DAWGPAWS Script</bold>
+              </td>
+              <td align="left">
+                <bold>Purpose</bold>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left">cnv_gff2game.pl</td>
+              <td align="left">Converts GFF files to the game.xml format.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">cnv_game2gff3.pl</td>
+              <td align="left">Converts game.xml files to the GFF3 format.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">batch_hardmask.pl</td>
+              <td align="left">Given a directory of lowercase masked sequence files, this will replace lowercase residues with an N or X to indicate masking.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">dir_merge.pl</td>
+              <td align="left">Given annotation results scattered across multiple directories, this program can merge the results into subdirectories in a single parent directory.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">vennseq.pl</td>
+              <td align="left">Given GFF annotation results from multiple methods, this program generates a Euler Diagram of these features using the VennMaster program [<xref ref-type="bibr" rid="B55">55</xref>]</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">batch_findgaps.pl</td>
+              <td align="left">This program will annotate gaps in the query sequences in the input directory.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">clust_write_shell.pl</td>
+              <td align="left">This program writes shell scripts to run DAWGPAWS in a cluster environment running the Platform LSF queuing system.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">cnv_seq2dir.pl</td>
+              <td align="left">Given a FASTA file with multiple sequence files, this program generates a separate FASTA file for each sequence record. The sequence files produced are named using the sequence ID in the FASTA header in the input file.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">fasta_merge.pl</td>
+              <td align="left">This program merges all FASTA files in a directory into a single FASTA file.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">fasta_shorten.pl</td>
+              <td align="left">This program shortens the FASTA header by limiting the header length, or splitting the header by a delimiting character. Some annotation programs are limited by the length of the FASTA header that is accepted, and this programs allows input files to meet this limitation.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">fetch_tenest.pl</td>
+              <td align="left">Fetches multiple results from the Plant GDB TEnest server and converts the results to GFF.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">gff_seg.pl</td>
+              <td align="left">Given a GFF file that contains point or segment data, this will extract segments with score values that exceed a threshold value.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">ltrstruc_prep.pl</td>
+              <td align="left">Because the LTR_STRUC program only runs under the windows environment, this program converts FASTA sequences in UNIX to DOS line endings and generates the files name and flist file required for LTR_STRUC.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">seq_oligiocount.pl</td>
+              <td align="left">This program allows for the generation of a GFF file that counts the number of times an oligomer in the genomic contig occurs in a reference shotgun sequence database.</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <p>A CLI interface was selected for DAWGPAWS to facilitate the use of our applications in a cluster-computing environment, and to provide stability in program interface across multiple operating systems. While command line interface programs may be daunting to some users, every effort has been made to simplify their use. All of the CLI programs included in the DAWGPAWS suite follow consistent protocols for command line options (Table <xref ref-type="table" rid="T4">4</xref>). Help files or full program manuals are available from the command line within all programs by invoking the &#x2013; help or &#x2013; man options. These application manuals are also available in HTML form on the DAWGPAWS website along with a general program manual describing the installation and use of a local implementation of the DAWGPAWS package [<xref ref-type="bibr" rid="B56">56</xref>]. This documentation is also included in the downloadable release of DAWGPAWS.</p>
+      <table-wrap position="float" id="T4">
+        <label>Table 4</label>
+        <caption>
+          <p>Common command line options used throughout the DAWGPAWS suite of programs.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td align="left">
+                <bold>Option</bold>
+              </td>
+              <td align="left">
+                <bold>Description</bold>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left">--indir <italic>or</italic><break/>--infile</td>
+              <td align="left">For batch scripts, this indicates the input directory containing the FASTA files to annotate. For conversion scripts, this indicates the input file to convert from the native format to the GFF format.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--outdir <italic>or</italic><break/>--outfile</td>
+              <td align="left">For batch scripts, this indicates the output directory containing the annotation results for the program and the GFF results.<break/>For conversion scripts, this indicates the path to the GFF output file.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--config</td>
+              <td align="left">For programs that make use of a configuration file, this indicates the path to the configuration file to use.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--seqname</td>
+              <td align="left">For conversion scripts, this indicates the sequence id to use in the GFF output file.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--param</td>
+              <td align="left">For conversion scripts, this indicates the name of that parameter set used with the annotation program. This option allows the user to distinguish among multiple parameter sets for the same annotation program, and this parameter name is appended to the source column of the GFF output file.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--program</td>
+              <td align="left">For conversion scripts, this indicates the name of the program used to generate the annotation result.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--version</td>
+              <td align="left">Print the current version of the script.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--usage</td>
+              <td align="left">Print a short program usage message.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--help</td>
+              <td align="left">Print a short help message including the common usage and all program options available at the command line.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--man</td>
+              <td align="left">Print the full program manual.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">--verbose</td>
+              <td align="left">This will run the program with maximum verbosity. This option will generate status updates while the program is running, and will maximize the error reporting functions of the script. All verbose statements are written to the standard error output stream.</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </sec>
+    <sec>
+      <title>Results and discussion</title>
+      <p>The computational annotation results generated by DAWGPAWS can be directly imported into any genome annotation program that supports GFF. We have used the Apollo program [<xref ref-type="bibr" rid="B35">35</xref>] to visualize and curate our results for genes and transposable elements in the wheat genome (Figure <xref ref-type="fig" rid="F2">2</xref>). Since the game xml file format is the most stable way to store annotation results in Apollo, it is generally useful to first convert GFF files to the game xml format before beginning curation of computational results. The visual display of computational results in Apollo is modified by a tiers configuration file. This file controls how and where individual computational and annotation results are drawn on the annotation pane. The tiers file used in these annotation efforts is included in the DAWGPAWS download package, and it can serve as a starting point for generating individualized tier files for other plant annotation efforts. As an alternative to Apollo, it is also possible to curate computational results using the Artemis sequence visualization program [<xref ref-type="bibr" rid="B36">36</xref>].</p>
+      <fig position="float" id="F2">
+        <label>Figure 2</label>
+        <caption>
+          <p><bold>Screen capture image of gene and TE annotation results visualized in the Apollo genome annotation program</bold>. This example shown is for a wheat BAC that has been annotated and curated with the assistance of DAWGPAWS.</p>
+        </caption>
+        <graphic xlink:href="1746-4811-5-8-2"/>
+      </fig>
+      <p>The GBrowse package [<xref ref-type="bibr" rid="B37">37</xref>] can also visualize GFF formatted annotations, and has proven to be a useful method for visualizing TE results. GBrowse makes use of core images called glyphs that are used to draw sequence features along a genome. The available glyphs in GBrowse can be supplemented by writing additional Perl modules, and we have generated TE glyphs that allow visualization of the biologically relevant features of TEs. GBrowse also has the capability to draw histograms along the sequence contigs. GBrowse can thus combine TE glyphs and histograms to provide an informative visualization of the distribution of mathematically defined repeats and the structural features of TEs (Figure <xref ref-type="fig" rid="F3">3</xref>). The current drawback to visualizations in GBrowse is that the program is intended to serve as a static visualization tool, and does not provide the means for the curation and combination of computational results. It would therefore be helpful if the current curation programs for gene annotation, such as Apollo or Artemis, directly addressed the needs of TE annotation curation and developed glyphs for the major classes of TEs.</p>
+      <fig position="float" id="F3">
+        <label>Figure 3</label>
+        <caption>
+          <p><bold>Screen capture image of the TE annotation results and oligomer counts visualized in the GBrowse genome annotation visualization program</bold>. The example shown is for a 15 kb segment of a BAC with a wheat DNA insert.</p>
+        </caption>
+        <graphic xlink:href="1746-4811-5-8-3"/>
+      </fig>
+      <p>In addition to visualization and curation of the annotated DNA, it is also possible to transfer the DAWGPAWS results into existing database schema. For example, the CHADO database [<xref ref-type="bibr" rid="B41">41</xref>] can make use of the gmod_bulk_load_gff3.pl program [<xref ref-type="bibr" rid="B57">57</xref>] that can load GFF3 format files into a CHADO database. In the DAWGPAWS package, the GFF3 format files from curated results can be generated with the cnv_game2gff3.pl program. These curated results could then be stored in a local implementation of the CHADO database. The BioSQL database schema [<xref ref-type="bibr" rid="B40">40</xref>] also includes a bp_load_gff.pl script that can load GFF results into the database schema.</p>
+      <p>The DAWGPAWS annotation framework has a number of features that make it a good choice to facilitate the workflow in plant genome annotation. The use of configuration files makes it fairly easy to modify the annotation workflow for the species of interest. The configuration files also makes it quite easy to generate results with multiple parameter sets for an individual program. Using multiple parameter sets will be especially useful when working with a genome that has not been annotated before, and for which appropriate annotation parameters have not been identified. Also, while previous annotation pipelines have focused on gene annotation, the DAWGPAWS suite maximizes the quality of TE annotation results. Most plants contain genomes with sizes &gt; 5000 Mb [<xref ref-type="bibr" rid="B58">58</xref>], and are therefore expected to contain more than 80% TEs [<xref ref-type="bibr" rid="B59">59</xref>], so efficiently dealing with this large number and diverse set of mobile DNAs is necessary for effective genome annotation.</p>
+      <p>The current focus of DAWGPAWS in our laboratory is the structural annotation of the genes and TEs in a genome using methods and applications tuned to the Triticeae. In annotation of 220 BACs from hexaploid bread wheat, we found that the DAWGPAWS pipeline increased the rate of individual BAC annotations by twenty-fold. Due to the time required to manually generate annotation results, this previous annotation effort was limited to using the FGENESH annotation program combined with a BLAST search of predicted models against known transposable elements and protein databases [<xref ref-type="bibr" rid="B60">60</xref>]. Using this method, annotators could annotate a single BAC in one to two days. The implementation of the DAWGPAWS pipeline increased the speed of annotation to ten-fifteen BACs per person per day. Furthermore, the quality of both TE and gene prediction were also seen to improve with the use of DAWGPAWS. This was due, at least in part, to the larger number of complementary programs for TE and gene discovery that could be conveniently employed in each BAC annotation. Specifically, the inclusion of <italic>ab initio </italic>TE prediction programs allowed for the identification of new families of LTR retrotransposons that would have been missed in our previous annotation efforts. Predicted gene models that span these newly discovered families would not have been identified as TEs in the exclusively homology-based searches that were previously used.</p>
+      <p>Future development of DAWGPAWS will incorporate tools for the functional annotation of the predicted genes. Currently, functional annotation can be done within the Apollo program by manually selecting individual gene models and BLASTing these results against appropriate databases. A batch run support for additional local alignment search tools will also be added. The use of NCBI-BLAST is sufficient for most comparisons of sequence contigs against reference databases, but programs such as BLAT [<xref ref-type="bibr" rid="B61">61</xref>] or sim4 [<xref ref-type="bibr" rid="B62">62</xref>] are designed specifically to align ESTs and flcDNAs against assembled genomes. While output from these local alignment tools can be converted to GFF using the existing cnv_blast2gff.pl program in DAWGPAWS, it would be useful to use these packages in a batch run framework similar to the batch_blast.pl program.</p>
+      <p>Support for additional <italic>ab initio </italic>gene annotation programs will also be added to future releases of DAWGPAWS. Augustus [<xref ref-type="bibr" rid="B63">63</xref>] is an <italic>ab initio </italic>annotation program that will be useful for gene annotation that seeks to identify all transcripts derived from a single locus. Support for GENEZILLA [<xref ref-type="bibr" rid="B64">64</xref>] and GlimmerHMM [<xref ref-type="bibr" rid="B64">64</xref>] gene annotation packages will also be added to future releases of DAWGPAWS. The SNAP program [<xref ref-type="bibr" rid="B65">65</xref>] will be added to support the annotation of genomes that have been sequenced <italic>de novo </italic>and lack species-specific HMM model parameterizations. The addition of the PASA [<xref ref-type="bibr" rid="B66">66</xref>] program would assist in the annotation of genomes that have large transcript databases that can assist genome annotation. As additional fully-sequenced genomes are added to the plant genomics literature, we can make use of syntenic comparisons and multiple alignments to aid in gene annotation [<xref ref-type="bibr" rid="B67">67</xref>] as well as TE annotation [<xref ref-type="bibr" rid="B68">68</xref>]. Future development of DAWGPAWS will incorporate syntenic alignment and prediction programs such as SGP2 [<xref ref-type="bibr" rid="B69">69</xref>], SLAM [<xref ref-type="bibr" rid="B70">70</xref>], and TWINSCAN [<xref ref-type="bibr" rid="B71">71</xref>] as they become increasingly relevant to plant genome annotation.</p>
+    </sec>
+    <sec>
+      <title>Conclusion</title>
+      <p>The DAWGPAWS annotation workflow provides a suite of command line interface programs that can generate computational evidences for human curation in a high-throughput fashion. We have used the DAWGPAWS pipeline to annotate 220 randomly selected BACs with wheat DNA inserts for both gene and TE content. Our curation efforts on the DAWGPAWS output are implemented in the Apollo program. The tiers file used for visualization of this curation are available as part of the DAWGPAWS package.</p>
+      <p>DAWGPAWS represents an efficient tool for genome annotation in the Triticeae, and can be used in its current form to generate gene and TE computational results for other grass genomes. Minor modifications to the configuration files used by DAWGPAWS can make this program suitable to the generation of computational annotation results for any plant genome. The TE annotation capabilities of DAWGPAWS exceeds any other current genome annotation suite, and makes this package particularly valuable for the great majority of plant genomes, such as wheat or maize, that contain a diverse arrays of TEs that comprise the majority of the nuclear genome.</p>
+      <p>The DAWGPAWS program has been specifically designed to facilitate use of individual component scripts outside of the entire package. Each script can function independently of all other applications in the package, and programs make use of standard input and standard output streams when possible to facilitate integration into existing pipelines. Since this package is being released under the open source GPL (version 3), the suite and its individual components can be used and modified under the terms of the GPL. Template batch run and conversion scripts are provided in a boilerplate format to facilitate extending DAWGPAWS to additional annotation tools. Furthermore, since we have selected the Perl language for the implementation of our package, the addition of new annotation tools can leverage existing modules in the BioPerl toolkit [<xref ref-type="bibr" rid="B72">72</xref>]. These modules include parsers for computational tools useful for predicting alternative splicing [<xref ref-type="bibr" rid="B62">62</xref>,<xref ref-type="bibr" rid="B61">61</xref>] as well as interfaces for transfer RNA prediction [<xref ref-type="bibr" rid="B73">73</xref>]. We also formally invite collaboration in the development of additional DAWGPAWS applications under the auspices of the GNU GPL, as facilitated by the SourceForge subversion repository of the DAWGPAWS source code. Interested collaborators may contact the authors or become member developers of the DAWGPAWS SourceForge project [<xref ref-type="bibr" rid="B74">74</xref>].</p>
+    </sec>
+    <sec>
+      <title>Availability and requirements</title>
+      <p>Project Name: DAWGPAWS Plant Genome Annotation Pipeline</p>
+      <p>Project Home Page: <ext-link ext-link-type="uri" xlink:href="http://dawgpaws.sourceforge.net/"/></p>
+      <p>Operating System: Platform Independent</p>
+      <p>Programming Language: Perl</p>
+      <p>Other Requirements: BioPerl 1.4, as well as the annotation programs that scripts are dependent upon.</p>
+      <p>License: GNU General Public License 3</p>
+      <p>Any restrictions to use by non-academics: No restrictions</p>
+    </sec>
+    <sec>
+      <title>Abbreviations</title>
+      <p>BAC: Bacterial Artificial Chromosome; cDNA: complementary DNA; CLI: Command Line Interface; EST: Expressed Sequence Tag; flcDNA: full-length complementary DNA; GFF: General Feature Format; GPL: General Public License; HMM: Hidden Markov Model; LTR: Long Terminal Repeat; ORF: Open Reading Frame; pHMM: Profile Hidden Markov Model; TE: Transposable Element</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors' contributions</title>
+      <p>JE developed the pipeline, wrote the software, and drafted the manuscript. JB conceived the study, oversaw pipeline development, and helped draft the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <sec>
+        <title>Acknowledgements</title>
+        <p>The authors would like to thank Katrien Devos, Antonio Costa de Oliveira, Xiangyang Xu, Ansuya Jogi, and Jennifer Hawkins for their useful feedback that has been incorporated in the implementation of DAWGPAWS. Xiangyang Xu provided helpful comments on a draft version of this manuscript. The submitted version of this manuscript was refined with constructive comments from two anonymous peer reviewers. This work was supported by NSF grants DBI-0501814 and DBI-0607123.</p>
+      </sec>
+    </ack>
+    <ref-list>
+      <ref id="B1">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liolios</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Mavromatis</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Tavernarakis</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kyrpides</surname>
+              <given-names>NC</given-names>
+            </name>
+          </person-group>
+          <article-title>The Genomes On Line Database (GOLD) in 2007: status of genomic and metagenomic projects and their associated metadata</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <fpage>D475</fpage>
+          <lpage>479</lpage>
+          <pub-id pub-id-type="pmid">17981842</pub-id>
+        </citation>
+      </ref>
+      <ref id="B2">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wheeler</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Barrett</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Benson</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Bryant</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Canese</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Chetvernin</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Church</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Dicuccio</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Edgar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Federhen</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Database resources of the National Center for Biotechnology Information</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <fpage>D13</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="pmid">18045790</pub-id>
+        </citation>
+      </ref>
+      <ref id="B3">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pop</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Salzberg</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>Bioinformatics challenges of new sequencing technology</article-title>
+          <source>Trends Genet</source>
+          <year>2008</year>
+          <volume>24</volume>
+          <fpage>142</fpage>
+          <lpage>149</lpage>
+          <pub-id pub-id-type="pmid">18262676</pub-id>
+        </citation>
+      </ref>
+      <ref id="B4">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stein</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome annotation: from sequence to biology</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2001</year>
+          <volume>2</volume>
+          <fpage>493</fpage>
+          <lpage>503</lpage>
+          <pub-id pub-id-type="pmid">11433356</pub-id>
+        </citation>
+      </ref>
+      <ref id="B5">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bennetzen</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Transposable element contributions to plant gene and genome evolution</article-title>
+          <source>Plant Mol Biol</source>
+          <year>2000</year>
+          <volume>42</volume>
+          <fpage>251</fpage>
+          <lpage>269</lpage>
+          <pub-id pub-id-type="pmid">10688140</pub-id>
+        </citation>
+      </ref>
+      <ref id="B6">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bennetzen</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Transposable elements, gene creation and genome rearrangement in flowering plants</article-title>
+          <source>Curr Opin Genet Dev</source>
+          <year>2005</year>
+          <volume>15</volume>
+          <fpage>621</fpage>
+          <lpage>627</lpage>
+          <pub-id pub-id-type="pmid">16219458</pub-id>
+        </citation>
+      </ref>
+      <ref id="B7">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>A brief review of computational gene prediction methods</article-title>
+          <source>Genomics Proteomics Bioinformatics</source>
+          <year>2004</year>
+          <volume>2</volume>
+          <fpage>216</fpage>
+          <lpage>221</lpage>
+          <pub-id pub-id-type="pmid">15901250</pub-id>
+        </citation>
+      </ref>
+      <ref id="B8">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Do</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>DK</given-names>
+            </name>
+          </person-group>
+          <article-title>Computational approaches to gene prediction</article-title>
+          <source>J Microbiol</source>
+          <year>2006</year>
+          <volume>44</volume>
+          <fpage>137</fpage>
+          <lpage>144</lpage>
+          <pub-id pub-id-type="pmid">16728949</pub-id>
+        </citation>
+      </ref>
+      <ref id="B9">
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schiex</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Moisan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rouz&#xE9;</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Gascuel O, Sagot M-F</surname>
+            </name>
+          </person-group>
+          <article-title>EuGene: An Eucaryotic Gene Finder that combines several sources of evidence</article-title>
+          <source>Computational Biology</source>
+          <year>2001</year>
+          <fpage>111</fpage>
+          <lpage>125</lpage>
+        </citation>
+      </ref>
+      <ref id="B10">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Allen</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Salzberg</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>JIGSAW: integration of multiple sources of evidence for gene prediction</article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <fpage>3596</fpage>
+          <lpage>3603</lpage>
+          <pub-id pub-id-type="pmid">16076884</pub-id>
+        </citation>
+      </ref>
+      <ref id="B11">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bennetzen</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Coleman</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ramakrishna</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Consistent over-estimation of gene number in complex plant genomes</article-title>
+          <source>Curr Opin Plant Biol</source>
+          <year>2004</year>
+          <volume>7</volume>
+          <fpage>732</fpage>
+          <lpage>736</lpage>
+          <pub-id pub-id-type="pmid">15491923</pub-id>
+        </citation>
+      </ref>
+      <ref id="B12">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sanmiguel</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bennetzen</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Evidence that a recent increase in maize genome size was caused by the massive amplification of intergene retrotransposons</article-title>
+          <source>Annals of Botany</source>
+          <year>1998</year>
+          <volume>82</volume>
+          <fpage>37</fpage>
+          <lpage>44</lpage>
+        </citation>
+      </ref>
+      <ref id="B13">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bergman</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Quesneville</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Discovering and detecting transposable elements in genome sequences</article-title>
+          <source>Brief Bioinform</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>382</fpage>
+          <lpage>392</lpage>
+          <pub-id pub-id-type="pmid">17932080</pub-id>
+        </citation>
+      </ref>
+      <ref id="B14">
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Feschotte</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Pritham</surname>
+              <given-names>EJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Computational analysis and paleogenomics of interspersed repeats in eukaryotes</article-title>
+          <source>Computational Genomics: Current Methods</source>
+          <year>2007</year>
+          <publisher-name>Stojanovic N: Taylor and Francis</publisher-name>
+          <fpage>31</fpage>
+          <lpage>54</lpage>
+        </citation>
+      </ref>
+      <ref id="B15">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saha</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bridges</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Magbanua</surname>
+              <given-names>ZV</given-names>
+            </name>
+            <name>
+              <surname>Peterson</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <article-title>Computational Approaches and Tools Used in Identification of Dispersed Repetitive DNA Sequences</article-title>
+          <source>Tropical Plant Biology</source>
+          <year>2008</year>
+          <volume>1</volume>
+          <fpage>85</fpage>
+          <lpage>96</lpage>
+        </citation>
+      </ref>
+      <ref id="B16">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bao</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Eddy</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>Automated de novo identification of repeat sequence families in sequenced genomes</article-title>
+          <source>Genome Res</source>
+          <year>2002</year>
+          <volume>12</volume>
+          <fpage>1269</fpage>
+          <lpage>1276</lpage>
+          <pub-id pub-id-type="pmid">12176934</pub-id>
+        </citation>
+      </ref>
+      <ref id="B17">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Edgar</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>EW</given-names>
+            </name>
+          </person-group>
+          <article-title>PILER: identification and classification of genomic repeats</article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <fpage>i152</fpage>
+          <lpage>158</lpage>
+          <pub-id pub-id-type="pmid">15961452</pub-id>
+        </citation>
+      </ref>
+      <ref id="B18">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Price</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>NC</given-names>
+            </name>
+            <name>
+              <surname>Pevzner</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title>De novo identification of repeat families in large genomes</article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <fpage>i351</fpage>
+          <lpage>358</lpage>
+          <pub-id pub-id-type="pmid">15961478</pub-id>
+        </citation>
+      </ref>
+      <ref id="B19">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tu</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Eight novel families of miniature inverted repeat transposable elements in the African malaria mosquito, Anopheles gambiae</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2001</year>
+          <volume>98</volume>
+          <fpage>1699</fpage>
+          <lpage>1704</lpage>
+          <pub-id pub-id-type="pmid">11172014</pub-id>
+        </citation>
+      </ref>
+      <ref id="B20">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McCarthy</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>McDonald</surname>
+              <given-names>JF</given-names>
+            </name>
+          </person-group>
+          <article-title>LTR_STRUC: a novel search and identification program for LTR retrotransposons</article-title>
+          <source>Bioinformatics</source>
+          <year>2003</year>
+          <volume>19</volume>
+          <fpage>362</fpage>
+          <lpage>367</lpage>
+          <pub-id pub-id-type="pmid">12584121</pub-id>
+        </citation>
+      </ref>
+      <ref id="B21">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>LTR_FINDER: an efficient tool for the prediction of full-length LTR retrotransposons</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2007</year>
+          <volume>35</volume>
+          <fpage>W265</fpage>
+          <lpage>268</lpage>
+          <pub-id pub-id-type="pmid">17485477</pub-id>
+        </citation>
+      </ref>
+      <ref id="B22">
+        <citation citation-type="other">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smit</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hubley</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Green</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>RepeatMasker Open-3.0. 1996&#x2013;2004</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.repeatmasker.org/cgi-bin/WEBRepeatMasker"/>
+        </citation>
+      </ref>
+      <ref id="B23">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kohany</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Gentles</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Hankus</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Jurka</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Annotation, submission and screening of repetitive elements in Repbase: RepbaseSubmitter and Censor</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <fpage>474</fpage>
+          <pub-id pub-id-type="pmid">17064419</pub-id>
+        </citation>
+      </ref>
+      <ref id="B24">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kronmiller</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Wise</surname>
+              <given-names>RP</given-names>
+            </name>
+          </person-group>
+          <article-title>TEnest: Automated chronological annotation and visualization of nested plant transposable elements</article-title>
+          <source>Plant Physiol</source>
+          <year>2008</year>
+          <volume>146</volume>
+          <fpage>45</fpage>
+          <lpage>59</lpage>
+          <pub-id pub-id-type="pmid">18032588</pub-id>
+        </citation>
+      </ref>
+      <ref id="B25">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pereira</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Automated paleontology of repetitive DNA with REANNOTATE</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>614</fpage>
+          <pub-id pub-id-type="pmid">19094224</pub-id>
+        </citation>
+      </ref>
+      <ref id="B26">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wicker</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Matthews</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Keller</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>TREP: a database for Triticeae repetitive elements</article-title>
+          <source>Trends in Plant Science</source>
+          <year>2002</year>
+          <volume>7</volume>
+          <fpage>561</fpage>
+          <lpage>562</lpage>
+        </citation>
+      </ref>
+      <ref id="B27">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ouyang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Buell</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <article-title>The TIGR Plant Repeat Databases: a collective resource for the identification of repetitive sequences in plants</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2004</year>
+          <volume>32</volume>
+          <fpage>D360</fpage>
+          <lpage>363</lpage>
+          <pub-id pub-id-type="pmid">14681434</pub-id>
+        </citation>
+      </ref>
+      <ref id="B28">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jurka</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kapitonov</surname>
+              <given-names>VV</given-names>
+            </name>
+            <name>
+              <surname>Pavlicek</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Klonowski</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kohany</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Walichiewicz</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Repbase Update, a database of eukaryotic repetitive elements</article-title>
+          <source>Cytogenet Genome Res</source>
+          <year>2005</year>
+          <volume>110</volume>
+          <fpage>462</fpage>
+          <lpage>467</lpage>
+          <pub-id pub-id-type="pmid">16093699</pub-id>
+        </citation>
+      </ref>
+      <ref id="B29">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Spannagl</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Noubibou</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Haase</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Gundlach</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hindemitt</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Klee</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Haberer</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Schoof</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Mayer</surname>
+              <given-names>KF</given-names>
+            </name>
+          </person-group>
+          <article-title>MIPSPlantsDB &#x2013; plant database resource for integrative and comparative plant genome research</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2007</year>
+          <volume>35</volume>
+          <fpage>D834</fpage>
+          <lpage>840</lpage>
+          <pub-id pub-id-type="pmid">17202173</pub-id>
+        </citation>
+      </ref>
+      <ref id="B30">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>GK</given-names>
+            </name>
+          </person-group>
+          <article-title>ReAS: Recovery of ancestral sequences for transposable elements from the unassembled reads of a whole genome shotgun</article-title>
+          <source>PLoS Comput Biol</source>
+          <year>2005</year>
+          <volume>1</volume>
+          <fpage>e43</fpage>
+          <pub-id pub-id-type="pmid">16184192</pub-id>
+        </citation>
+      </ref>
+      <ref id="B31">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DeBarry</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bennetzen</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Discovery and assembly of repeat family pseudomolecules from sparse genomic sequence data using the Assisted Automated Assembler of Repeat Families (AAARF) algorithm</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>235</fpage>
+          <pub-id pub-id-type="pmid">18474116</pub-id>
+        </citation>
+      </ref>
+      <ref id="B32">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kurtz</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Narechania</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Ware</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>A new method to compute K-mer frequencies and its application to annotate large repetitive plant genomes</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>517</fpage>
+          <pub-id pub-id-type="pmid">18976482</pub-id>
+        </citation>
+      </ref>
+      <ref id="B33">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Quesneville</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Bergman</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Andrieu</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Autard</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Nouaud</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ashburner</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Anxolabehere</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Combined evidence annotation of transposable elements in genome sequences</article-title>
+          <source>PLoS Comput Biol</source>
+          <year>2005</year>
+          <volume>1</volume>
+          <fpage>166</fpage>
+          <lpage>175</lpage>
+          <pub-id pub-id-type="pmid">16110336</pub-id>
+        </citation>
+      </ref>
+      <ref id="B34">
+        <citation citation-type="other">
+          <article-title>GFF Format Specifications</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.sanger.ac.uk/Software/formats/GFF/GFF_Spec.shtml"/>
+        </citation>
+      </ref>
+      <ref id="B35">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lewis</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Searle</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Gibson</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lyer</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Richter</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wiel</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bayraktaroglir</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Birney</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Crosby</surname>
+              <given-names>MA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Apollo: a sequence annotation editor</article-title>
+          <source>Genome Biol</source>
+          <year>2002</year>
+          <volume>3</volume>
+          <fpage>RESEARCH0082</fpage>
+          <pub-id pub-id-type="pmid">12537571</pub-id>
+        </citation>
+      </ref>
+      <ref id="B36">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rutherford</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Parkhill</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Crook</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Horsnell</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Rice</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Rajandream</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Barrell</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Artemis: sequence visualization and annotation</article-title>
+          <source>Bioinformatics</source>
+          <year>2000</year>
+          <volume>16</volume>
+          <fpage>944</fpage>
+          <lpage>945</lpage>
+          <pub-id pub-id-type="pmid">11120685</pub-id>
+        </citation>
+      </ref>
+      <ref id="B37">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Donlin</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Using the Generic Genome Browser (GBrowse)</article-title>
+          <source>Curr Protoc Bioinformatics</source>
+          <year>2007</year>
+          <volume>Chapter 9</volume>
+          <fpage>9</fpage>
+          <pub-id pub-id-type="pmid">18428797</pub-id>
+        </citation>
+      </ref>
+      <ref id="B38">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuhn</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Karolchik</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Zweig</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>KE</given-names>
+            </name>
+            <name>
+              <surname>Rosenbloom</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name>
+              <surname>Rhead</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Raney</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Pohl</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Pheasant</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The UCSC Genome Browser Database: update 2009</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2009</year>
+          <volume>37</volume>
+          <fpage>D755</fpage>
+          <lpage>761</lpage>
+          <pub-id pub-id-type="pmid">18996895</pub-id>
+        </citation>
+      </ref>
+      <ref id="B39">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stalker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gibbins</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Meidl</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Spooner</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Hotz</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>AV</given-names>
+            </name>
+          </person-group>
+          <article-title>The Ensembl Web site: mechanics of a genome browser</article-title>
+          <source>Genome Res</source>
+          <year>2004</year>
+          <volume>14</volume>
+          <fpage>951</fpage>
+          <lpage>955</lpage>
+          <pub-id pub-id-type="pmid">15123591</pub-id>
+        </citation>
+      </ref>
+      <ref id="B40">
+        <citation citation-type="other">
+          <article-title>BioSQL</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.biosql.org"/>
+        </citation>
+      </ref>
+      <ref id="B41">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhou</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Emmert</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Using Chado to store genome annotation data</article-title>
+          <source>Curr Protoc Bioinformatics</source>
+          <year>2006</year>
+          <volume>Chapter 9</volume>
+          <fpage>6</fpage>
+          <pub-id pub-id-type="pmid">18428772</pub-id>
+        </citation>
+      </ref>
+      <ref id="B42">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Parra</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Blanco</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Guigo</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>GeneID in Drosophila</article-title>
+          <source>Genome Res</source>
+          <year>2000</year>
+          <volume>10</volume>
+          <fpage>511</fpage>
+          <lpage>515</lpage>
+          <pub-id pub-id-type="pmid">10779490</pub-id>
+        </citation>
+      </ref>
+      <ref id="B43">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lukashin</surname>
+              <given-names>AV</given-names>
+            </name>
+            <name>
+              <surname>Borodovsky</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>GeneMark.hmm: new solutions for gene finding</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>1998</year>
+          <volume>26</volume>
+          <fpage>1107</fpage>
+          <lpage>1115</lpage>
+          <pub-id pub-id-type="pmid">9461475</pub-id>
+        </citation>
+      </ref>
+      <ref id="B44">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burge</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Karlin</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Prediction of complete gene structures in human genomic DNA</article-title>
+          <source>J Mol Biol</source>
+          <year>1997</year>
+          <volume>268</volume>
+          <fpage>78</fpage>
+          <lpage>94</lpage>
+          <pub-id pub-id-type="pmid">9149143</pub-id>
+        </citation>
+      </ref>
+      <ref id="B45">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rho</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lynch</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>De novo identification of LTR retrotransposons in eukaryotic genomes</article-title>
+          <source>BMC Genomics</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>90</fpage>
+          <pub-id pub-id-type="pmid">17407597</pub-id>
+        </citation>
+      </ref>
+      <ref id="B46">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kalyanaraman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Aluru</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Efficient algorithms and software for detection of full-length LTR retrotransposons</article-title>
+          <source>J Bioinform Comput Biol</source>
+          <year>2006</year>
+          <volume>4</volume>
+          <fpage>197</fpage>
+          <lpage>216</lpage>
+          <pub-id pub-id-type="pmid">16819780</pub-id>
+        </citation>
+      </ref>
+      <ref id="B47">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benson</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Tandem repeats finder: a program to analyze DNA sequences</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>1999</year>
+          <volume>27</volume>
+          <fpage>573</fpage>
+          <lpage>580</lpage>
+          <pub-id pub-id-type="pmid">9862982</pub-id>
+        </citation>
+      </ref>
+      <ref id="B48">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eddy</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>Profile hidden Markov models</article-title>
+          <source>Bioinformatics</source>
+          <year>1998</year>
+          <volume>14</volume>
+          <fpage>755</fpage>
+          <lpage>763</lpage>
+          <pub-id pub-id-type="pmid">9918945</pub-id>
+        </citation>
+      </ref>
+      <ref id="B49">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altschul</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Gish</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Lipman</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>J Mol Biol</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <fpage>403</fpage>
+          <lpage>410</lpage>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </citation>
+      </ref>
+      <ref id="B50">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Solovyev</surname>
+              <given-names>VV</given-names>
+            </name>
+            <name>
+              <surname>Salamov</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Lawrence</surname>
+              <given-names>CB</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of human gene structure using linear discriminant functions and dynamic programming</article-title>
+          <source>Proc Int Conf Intell Syst Mol Biol</source>
+          <year>1995</year>
+          <volume>3</volume>
+          <fpage>367</fpage>
+          <lpage>375</lpage>
+          <pub-id pub-id-type="pmid">7584460</pub-id>
+        </citation>
+      </ref>
+      <ref id="B51">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Salamov</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Solovyev</surname>
+              <given-names>VV</given-names>
+            </name>
+          </person-group>
+          <article-title>Ab initio gene finding in Drosophila genomic DNA</article-title>
+          <source>Genome Res</source>
+          <year>2000</year>
+          <volume>10</volume>
+          <fpage>516</fpage>
+          <lpage>522</lpage>
+          <pub-id pub-id-type="pmid">10779491</pub-id>
+        </citation>
+      </ref>
+      <ref id="B52">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Achaz</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Boyer</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Rocha</surname>
+              <given-names>EP</given-names>
+            </name>
+            <name>
+              <surname>Viari</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Coissac</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Repseek, a tool to retrieve approximate repeats from large DNA sequences</article-title>
+          <source>Bioinformatics</source>
+          <year>2007</year>
+          <volume>23</volume>
+          <fpage>119</fpage>
+          <lpage>121</lpage>
+          <pub-id pub-id-type="pmid">17038345</pub-id>
+        </citation>
+      </ref>
+      <ref id="B53">
+        <citation citation-type="other">
+          <article-title>vmatch</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.vmatch.de/"/>
+        </citation>
+      </ref>
+      <ref id="B54">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wicker</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Narechania</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sabot</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vu</surname>
+              <given-names>GT</given-names>
+            </name>
+            <name>
+              <surname>Graner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ware</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Low-pass shotgun sequencing of the barley genome facilitates rapid identification of genes, conserved non-coding sequences and novel repeats</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>518</fpage>
+          <pub-id pub-id-type="pmid">18976483</pub-id>
+        </citation>
+      </ref>
+      <ref id="B55">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kestler</surname>
+              <given-names>HA</given-names>
+            </name>
+            <name>
+              <surname>Muller</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gress</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Buchholz</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Generalized Venn diagrams: a new method of visualizing complex genetic set relations</article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <fpage>1592</fpage>
+          <lpage>1595</lpage>
+          <pub-id pub-id-type="pmid">15572472</pub-id>
+        </citation>
+      </ref>
+      <ref id="B56">
+        <citation citation-type="other">
+          <article-title>DAWGPAWS User Manual</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://dawgpaws.sourceforge.net/man.html"/>
+        </citation>
+      </ref>
+      <ref id="B57">
+        <citation citation-type="other">
+          <article-title>How to Load GFF Into Chado</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://gmod.org/wiki/Load_GFF_Into_Chado"/>
+        </citation>
+      </ref>
+      <ref id="B58">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zonneveld</surname>
+              <given-names>BJM</given-names>
+            </name>
+            <name>
+              <surname>Leitch</surname>
+              <given-names>IJ</given-names>
+            </name>
+            <name>
+              <surname>Bennett</surname>
+              <given-names>MD</given-names>
+            </name>
+          </person-group>
+          <article-title>First nuclear DNA amounts in more than 300 angiosperms</article-title>
+          <source>Annals of Botany</source>
+          <year>2005</year>
+          <volume>96</volume>
+          <fpage>229</fpage>
+          <lpage>244</lpage>
+          <pub-id pub-id-type="pmid">15905300</pub-id>
+        </citation>
+      </ref>
+      <ref id="B59">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flavell</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Bennett</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome Size and Proportion of Repeated Nucleotide-Sequence DNA in Plants</article-title>
+          <source>Biochemical Genetics</source>
+          <year>1974</year>
+          <volume>12</volume>
+          <fpage>257</fpage>
+          <lpage>269</lpage>
+          <pub-id pub-id-type="pmid">4441361</pub-id>
+        </citation>
+      </ref>
+      <ref id="B60">
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Devos</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Costa de Oliveira</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Estill</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Estep</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jogi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Morales</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pinheiro</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>SanMiguel</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bennetzen</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Rudi Appels, Russell Eastwood, Evans Lagudah, Peter Langridge, Michael Mackay, Lynne McIntyre, Peter Sharp</surname>
+            </name>
+          </person-group>
+          <article-title>Structure and organization of the wheat genome &#x2013; the number of genes in the hexaploid wheat genome</article-title>
+          <source>11th International Wheat Genetics Symposium 2008 Proceedings</source>
+          <year>2008</year>
+          <publisher-name>Sydney University Press</publisher-name>
+          <fpage>1</fpage>
+          <lpage>5</lpage>
+          <ext-link ext-link-type="uri" xlink:href="http://ses.library.usyd.edu.au/bitstream/2123/3389/1/O25.pdf"/>
+        </citation>
+      </ref>
+      <ref id="B61">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kent</surname>
+              <given-names>WJ</given-names>
+            </name>
+          </person-group>
+          <article-title>BLAT &#x2013; the BLAST-like alignment tool</article-title>
+          <source>Genome Res</source>
+          <year>2002</year>
+          <volume>12</volume>
+          <fpage>656</fpage>
+          <lpage>664</lpage>
+          <pub-id pub-id-type="pmid">11932250</pub-id>
+        </citation>
+      </ref>
+      <ref id="B62">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Florea</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hartzell</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Rubin</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>A computer program for aligning a cDNA sequence with a genomic DNA sequence</article-title>
+          <source>Genome Res</source>
+          <year>1998</year>
+          <volume>8</volume>
+          <fpage>967</fpage>
+          <lpage>974</lpage>
+          <pub-id pub-id-type="pmid">9750195</pub-id>
+        </citation>
+      </ref>
+      <ref id="B63">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stanke</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Keller</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Gunduz</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Waack</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Morgenstern</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>AUGUSTUS: ab initio prediction of alternative transcripts</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2006</year>
+          <volume>34</volume>
+          <fpage>W435</fpage>
+          <lpage>439</lpage>
+          <pub-id pub-id-type="pmid">16845043</pub-id>
+        </citation>
+      </ref>
+      <ref id="B64">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Majoros</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Pertea</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Salzberg</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>TigrScan and GlimmerHMM: two open source ab initio eukaryotic gene-finders</article-title>
+          <source>Bioinformatics</source>
+          <year>2004</year>
+          <volume>20</volume>
+          <fpage>2878</fpage>
+          <lpage>2879</lpage>
+          <pub-id pub-id-type="pmid">15145805</pub-id>
+        </citation>
+      </ref>
+      <ref id="B65">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Korf</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Gene finding in novel genomes</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2004</year>
+          <volume>5</volume>
+          <fpage>59</fpage>
+          <pub-id pub-id-type="pmid">15144565</pub-id>
+        </citation>
+      </ref>
+      <ref id="B66">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haas</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Delcher</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Mount</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Wortman</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>RK</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <name>
+              <surname>Hannick</surname>
+              <given-names>LI</given-names>
+            </name>
+            <name>
+              <surname>Maiti</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ronning</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Rusch</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Town</surname>
+              <given-names>CD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Improving the Arabidopsis genome annotation using maximal transcript alignment assemblies</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2003</year>
+          <volume>31</volume>
+          <fpage>5654</fpage>
+          <lpage>5666</lpage>
+          <pub-id pub-id-type="pmid">14500829</pub-id>
+        </citation>
+      </ref>
+      <ref id="B67">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dubchak</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparative analysis and visualization of genomic sequences using VISTA browser and associated computational tools</article-title>
+          <source>Methods Mol Biol</source>
+          <year>2007</year>
+          <volume>395</volume>
+          <fpage>3</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="pmid">17993664</pub-id>
+        </citation>
+      </ref>
+      <ref id="B68">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Caspi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Pachter</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of transposable elements using multiple alignments of related genomes</article-title>
+          <source>Genome Res</source>
+          <year>2006</year>
+          <volume>16</volume>
+          <fpage>260</fpage>
+          <lpage>270</lpage>
+          <pub-id pub-id-type="pmid">16354754</pub-id>
+        </citation>
+      </ref>
+      <ref id="B69">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Parra</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Agarwal</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Abril</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Wiehe</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Fickett</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Guigo</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparative gene prediction in human and mouse</article-title>
+          <source>Genome Res</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>108</fpage>
+          <lpage>117</lpage>
+          <pub-id pub-id-type="pmid">12529313</pub-id>
+        </citation>
+      </ref>
+      <ref id="B70">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alexandersson</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cawley</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pachter</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>SLAM: cross-species gene finding and alignment with a generalized pair hidden Markov model</article-title>
+          <source>Genome Res</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>496</fpage>
+          <lpage>502</lpage>
+          <pub-id pub-id-type="pmid">12618381</pub-id>
+        </citation>
+      </ref>
+      <ref id="B71">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Korf</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Flicek</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Duan</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Brent</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <article-title>Integrating genomic homology into gene structure prediction</article-title>
+          <source>Bioinformatics</source>
+          <year>2001</year>
+          <volume>17</volume>
+          <fpage>S140</fpage>
+          <lpage>148</lpage>
+          <pub-id pub-id-type="pmid">11473003</pub-id>
+        </citation>
+      </ref>
+      <ref id="B72">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stajich</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Block</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Boulez</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Brenner</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Chervitz</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Dagdigian</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Fuellen</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Gilbert</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Korf</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Lapp</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Bioperl toolkit: Perl modules for the life sciences</article-title>
+          <source>Genome Res</source>
+          <year>2002</year>
+          <volume>12</volume>
+          <fpage>1611</fpage>
+          <lpage>1618</lpage>
+          <pub-id pub-id-type="pmid">12368254</pub-id>
+        </citation>
+      </ref>
+      <ref id="B73">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lowe</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Eddy</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>tRNAscan-SE: a program for improved detection of transfer RNA genes in genomic sequence</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>1997</year>
+          <volume>25</volume>
+          <fpage>955</fpage>
+          <lpage>964</lpage>
+          <pub-id pub-id-type="pmid">9023104</pub-id>
+        </citation>
+      </ref>
+      <ref id="B74">
+        <citation citation-type="other">
+          <article-title>DAWGPAWS SourceForge Project Page</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://sourceforge.net/projects/dawgpaws/"/>
+        </citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,1624 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName JATS-archivearticle1.dtd?>
+  <?SourceDTD.Version 1.1?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS Genet</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS Genet</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosgen</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS Genetics</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1553-7390</issn>
+      <issn pub-type="epub">1553-7404</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3415456</article-id>
+      <article-id pub-id-type="pmid">22912594</article-id>
+      <article-id pub-id-type="publisher-id">PGENETICS-D-12-00024</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pgen.1002875</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Biotechnology</subject>
+            <subj-group>
+              <subject>Environmental Biotechnology</subject>
+              <subj-group>
+                <subject>Biodegradation</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Applied Microbiology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Analysis Tools</subject>
+                <subj-group>
+                  <subject>Transcriptomes</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome Expression Analysis</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Microbiology</subject>
+            <subj-group>
+              <subject>Mycology</subject>
+              <subj-group>
+                <subject>Fungal Physiology</subject>
+                <subject>Fungi</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Uncovering the Genome-Wide Transcriptional Responses of the Filamentous Fungus <italic>Aspergillus niger</italic> to Lignocellulose Using RNA Sequencing</article-title>
+        <alt-title alt-title-type="running-head"><italic>A. niger</italic> Responses to Lignocellulose</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Delmas</surname>
+            <given-names>St&#xE9;phane</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Pullan</surname>
+            <given-names>Steven T.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gaddipati</surname>
+            <given-names>Sanyasi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kokolski</surname>
+            <given-names>Matthew</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Malla</surname>
+            <given-names>Sunir</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Blythe</surname>
+            <given-names>Martin J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ibbett</surname>
+            <given-names>Roger</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Campbell</surname>
+            <given-names>Maria</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liddell</surname>
+            <given-names>Susan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Aboobaker</surname>
+            <given-names>Aziz</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tucker</surname>
+            <given-names>Gregory A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Archer</surname>
+            <given-names>David B.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>School of Biology, University of Nottingham, Nottingham, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>School of Biosciences, Sutton Bonington Campus, University of Nottingham, Loughborough, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Deep Seq, Faculty of Medicine and Health Sciences, Queen's Medical Centre, University of Nottingham, Nottingham, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Division of Animal Sciences, Sutton Bonington Campus, University of Nottingham, Loughborough, United Kingdom</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>Jens</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Chalmers University of Technology, Sweden</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>david.archer@nottingham.ac.uk</email></corresp>
+        <fn fn-type="COI-statement">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: SD STP DBA. Performed the experiments: SD STP SG MK SM RI MC SL. Analyzed the data: SD STP SG MK MJB RI SL AA GAT DBA. Contributed reagents/materials/analysis tools: SG RI SL AA GAT. Wrote the paper: SD STP MK DBA.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <month>8</month>
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>9</day>
+        <month>8</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>8</issue>
+      <elocation-id>e1002875</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>4</day>
+          <month>1</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>6</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2012 Delmas et al</copyright-statement>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Delmas et al</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>A key challenge in the production of second generation biofuels is the conversion of lignocellulosic substrates into fermentable sugars. Enzymes, particularly those from fungi, are a central part of this process, and many have been isolated and characterised. However, relatively little is known of how fungi respond to lignocellulose and produce the enzymes necessary for dis-assembly of plant biomass. We studied the physiological response of the fungus <italic>Aspergillus niger</italic> when exposed to wheat straw as a model lignocellulosic substrate. Using RNA sequencing we showed that, 24 hours after exposure to straw, gene expression of known and presumptive plant cell wall&#x2013;degrading enzymes represents a huge investment for the cells (about 20% of the total mRNA). Our results also uncovered new esterases and surface interacting proteins that might form part of the fungal arsenal of enzymes for the degradation of plant biomass. Using transcription factor deletion mutants (<italic>xlnR</italic> and <italic>creA</italic>) to study the response to both lignocellulosic substrates and low carbon source concentrations, we showed that a subset of genes coding for degradative enzymes is induced by starvation. Our data support a model whereby this subset of enzymes plays a scouting role under starvation conditions, testing for available complex polysaccharides and liberating inducing sugars, that triggers the subsequent induction of the majority of hydrolases. We also showed that antisense transcripts are abundant and that their expression can be regulated by growth conditions.</p>
+      </abstract>
+      <abstract abstract-type="summary">
+        <title>Author Summary</title>
+        <p>The aim of second generation biofuels is to produce fuels from non-food crops and agricultural wastes such as straw. A key, and often limiting, step is the extraction of simple sugars (saccharification) from the complex plant materials. This typically requires the use of fungal enzymes. Many such enzymes have been isolated and characterised, but less is known about how fungi naturally utilise their array of enzymes and what other strategies they employ in degrading plant material. In this study, we show that the filamentous fungus <italic>Aspergillus</italic> niger deploys a large number of plant cell wall-degrading enzymes when using wheat straw as its carbon source. Our results identify several other types of proteins that may play a role in this process, and thereby offer applications in the improvement of current saccharification processes. In addition, we show that wheat straw itself is not initially detected by the fungus and, instead, the onset of carbon starvation triggers the release of a small subset of degradative enzymes. These enzymes might play a scouting role, to sense the presence of plant cell walls and initiate degradation on a small scale, in turn releasing sugars that cause the fungus to express its full degradative arsenal.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>The research reported here was supported by the Biotechnology and Biological Sciences Research Council (BBSRC) Sustainable Bioenergy Centre (BSBEC), under the programme for &#x2018;Lignocellulosic Conversion To Ethanol&#x2019; (LACE) [Grant Ref: BB/G01616X/1]. This is a large interdisciplinary programme and the views expressed in this paper are those of the authors alone, and do not necessarily reflect the views of the collaborators or the policies of the funding bodies. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="13"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The conversion of cellulose and hemicellulose, from non-food crop sources into fermentable sugars is one of the key challenges in the production of second generation biofuels. Fungi are the predominant source of enzymes currently being used on an industrial scale for this purpose <xref rid="pgen.1002875-Sims1" ref-type="bibr">[1]</xref>, <xref rid="pgen.1002875-Gusakov1" ref-type="bibr">[2]</xref>. Many relevant enzymes have been isolated and characterised for functionality <xref rid="pgen.1002875-Stephanopoulos1" ref-type="bibr">[3]</xref>, <xref rid="pgen.1002875-Weber1" ref-type="bibr">[4]</xref>. The overall aim of our study was to look beyond the simple array of hydrolytic enzymes produced by fungi and to understand the strategies that fungi employ to degrade complex polysaccharides. This approach may provide novel insights into the development of strategies for the production of second generation biofuels.</p>
+      <p><italic>Aspergillus niger</italic> is a filamentous, black-spored fungus that has been used in many industrial processes, including the production of enzymes, food products and pharmaceuticals <xref rid="pgen.1002875-Archer1" ref-type="bibr">[5]</xref>. This historical importance has led to the development of a wide array of genetic tools <xref rid="pgen.1002875-Meyer1" ref-type="bibr">[6]</xref>. These include a variety of mutagenesis systems, both targeted <xref rid="pgen.1002875-vanHartingsveldt1" ref-type="bibr">[7]</xref> and random <xref rid="pgen.1002875-Hihlal1" ref-type="bibr">[8]</xref>, highly tuneable expression systems <xref rid="pgen.1002875-Meyer2" ref-type="bibr">[9]</xref>, and complete genome sequences for both the enzyme-producing industrial strain CBS 513.88 <xref rid="pgen.1002875-Pel1" ref-type="bibr">[10]</xref> and the citric acid-producing strain, ATCC 1015 <xref rid="pgen.1002875-Andersen1" ref-type="bibr">[11]</xref>. The Carbohydrate-Active Enzymes Database (<ext-link ext-link-type="uri" xlink:href="http://www.cazy.org/">http://www.cazy.org/</ext-link>
+<xref rid="pgen.1002875-Cantarel1" ref-type="bibr">[12]</xref>) identifies the CBS 513.88 genome as encoding 281 putative polysaccharide degrading enzymes, that represent 61 different enzyme families. Thus, the genome of <italic>A. niger</italic> encodes one of the most diverse CAZy enzyme arsenals among currently sequenced fungal genomes. The availability of DNA microarrays for <italic>A. niger</italic> has led to discoveries in the areas of protein secretion <xref rid="pgen.1002875-Guillemette1" ref-type="bibr">[13]</xref> and of global transcriptional responses to simple sugars such as glucose, xylose and glycerol <xref rid="pgen.1002875-Andersen2" ref-type="bibr">[14]</xref>&#x2013;<xref rid="pgen.1002875-Jorgensen1" ref-type="bibr">[16]</xref>. This genomic information is complemented by studies that have elucidated some of the basic molecular pathways by which hydrolytic enzyme production and sugar metabolism are regulated in <italic>A. niger</italic>
+<xref rid="pgen.1002875-deVries1" ref-type="bibr">[17]</xref>, <xref rid="pgen.1002875-deSouza1" ref-type="bibr">[18]</xref>. Furthermore, genome-wide approaches provide a basis for comparability with other fungal species <xref rid="pgen.1002875-LeCrom1" ref-type="bibr">[19]</xref>, <xref rid="pgen.1002875-Coutinho1" ref-type="bibr">[20]</xref>. This wealth of background knowledge of <italic>A. niger</italic> and closely-related species, and their responses to monomeric sugars and simple polysaccharides, provides an excellent foundation on which to build more complete studies of growth on more complex, industrially relevant substrates. Measuring gene expression of <italic>Neurospora crassa</italic> during growth on <italic>Miscanthus</italic>
+<xref rid="pgen.1002875-Tian1" ref-type="bibr">[21]</xref>, and transcriptional changes when <italic>A. niger</italic> is exposed to sugar cane bagasse <xref rid="pgen.1002875-Guillemette1" ref-type="bibr">[13]</xref> using microarray technology have previously provided important insights into degradation of those substrates.</p>
+      <p>Wheat straw is one of the most attractive potential feed stocks for biofuel production. It is a co-product of cereal grain production and is available in significant quantities; for example, in the order of 10 million tonnes are produced in the UK each year <xref rid="pgen.1002875-Brander1" ref-type="bibr">[22]</xref>. This study aims to gain a thorough understanding of the mechanisms employed by <italic>A. niger</italic> to degrade and grow upon this complex lignocellulosic substrate, beginning with the transcriptional changes associated with exposure to wheat straw compared to simple sugars. Our data were acquired using Next Generation RNA-sequencing (RNA-seq) technology which provides a wealth of information for the confirmation of gene predictions from both published genomes, as well as in identifying alternative splicing patterns, novel genes/exons, transcription start/end points and antisense (AS) transcripts.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results/Discussion</title>
+      <sec id="s2a">
+        <title>Saccharification of wheat straw by <italic>A. niger</italic>
+</title>
+        <p>The wheat straw used was composed of 37&#xB1;1.69% cellulose and 32&#xB1;1.2% hemicelluloses, 22&#xB1;0.1% lignin and, after ball milling, the substrate retained 25&#xB1;0.76% crystallinity (data are the mean of three replicates and are shown &#xB1; standard deviation). In order to determine the time at which degradation of the wheat straw by <italic>A. niger</italic> had begun to take place, the monomeric sugar content of the culture supernatant was analysed by HPLC. <xref ref-type="fig" rid="pgen-1002875-g001">Figure 1A</xref> shows that, prior to inoculation, in minimal media containing 1% straw, the concentration of free monomeric sugar present in the liquid fraction was 76&#xB1;0.9 &#xB5;M. After 12 h of incubation, control samples, which had not been inoculated with <italic>A. niger</italic>, contained similar levels of each sugar. In the <italic>A. niger</italic> cultures, the total concentration of free monomeric sugar present in the liquid fraction increased to 166&#xB1;26.9 &#xB5;M, showing that degradation of wheat straw polysaccharides had begun to take place. There were also changes detected in the proportions of individual sugars (<xref ref-type="fig" rid="pgen-1002875-g001">Figure 1A</xref>). Xylose, arabinose and galactose levels were increased by a statistically significant level, whilst glucose levels were not. Two non-exclusive hypotheses could explain this observation; i) the hemicellulose fraction of the lignocelluloses substrate is degraded first, and/or ii) glucose is preferentially imported by the fungus. Indeed a requirement for glucose depletion prior to xylose utilisation, when both sugars are present, has been observed in <italic>Aspergillus nidulans</italic>
+<xref rid="pgen.1002875-Prathumpai1" ref-type="bibr">[23]</xref>. After 24 h of incubation, levels of free sugar had not increased any further suggesting that the balance of degradation and sugar uptake had reached a steady state. RT-PCR showed that transcription of several genes encoding glycoside hydrolases, (endoglucanase; <italic>eglA</italic>, cellobiohydrolase; <italic>cbhA</italic> and the endoxylanases; <italic>xynA</italic> and <italic>xynB</italic>) that are transcriptionally activated in response to xylose by the xylanolytic regulator XlnR, were highly induced at this point, when compared to expression in the Glucose 48 h cultures (data not shown). These two time-points were therefore chosen for RNA-seq analysis (Glucose 48 h and Straw 24 h). After 24 h incubation in the straw media, the particles of straw were in intimate association with <italic>A.niger</italic> mycelia (<xref ref-type="fig" rid="pgen-1002875-g001">Figure 1B</xref>). It is possible therefore that the responses seen are due not only to the presence of inducing molecules, but also due to the physical interaction between the fungal mycelia and the straw.</p>
+        <fig id="pgen-1002875-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1002875.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Free sugars in the straw media.</title>
+            <p>(A) The monomeric sugar content of culture supernatants was analysed by HPLC at 0, 12 and 24 h after the transfer of the mycelia to the straw media. Each bar represents the mean +/&#x2212; the standard deviation of values from three independent experiments where black represents control cultures and blue represents cultures containing <italic>A. niger</italic>. The asterisk indicates p-values&lt;0.05 relative to the control culture at the corresponding time by unpaired t-test. (B) <italic>A. niger</italic> mycelial clump from a culture grown for 24 hours in minimum media containing straw as sole carbon source.</p>
+          </caption>
+          <graphic xlink:href="pgen.1002875.g001"/>
+        </fig>
+        <p>To investigate the repressive effect of glucose on expression of degradative enzymes, glucose was added exogenously to the wheat straw-incubated 24 h cultures to a final concentration of 1% (w/v). Samples were taken for RT-PCR analysis after 30 min, 1, 2 and 5 h. For all genes tested the levels of hydrolase expression decreased over this time course, reaching for most of the genes a similar level to that seen in the Glucose 48 h cultures after 5 hours of exposure to the exogenously added glucose (data not shown). Therefore, 5 hours after the addition of glucose to the straw cultures was selected as the final time point for RNA-seq analysis (Straw+Glucose 5 h). These represent three physiologically distinct conditions; long term growth under glucose repressing conditions, growth in the presence of an inducing lignocellulosic substrate and growth in the presence of the inducing substrate and glucose simultaneously. RNA was extracted from triplicate independent cultures in each condition for RNA-seq analysis.</p>
+      </sec>
+      <sec id="s2b">
+        <title>The wheat straw-induced transcriptome of <italic>A. niger</italic>
+</title>
+        <p>Reads were mapped to the <italic>A. niger</italic> ATCC 1015 genome sequence <xref rid="pgen.1002875-Andersen1" ref-type="bibr">[11]</xref> as it is phylogenetically very close (based on the &#x3B2;-tubulin sequence) to the N402 strain used in this study, and RPKMs (Reads Per Kilobase of exon model per Million mapped reads) were calculated for each annotated gene. The ATCC 1015 gene model is thought to under-predict the true number of genes present in the <italic>A. niger</italic> genome <xref rid="pgen.1002875-Andersen1" ref-type="bibr">[11]</xref> so, in order to extract the maximum amount of data from our transcriptome sequencing, reads were also mapped to the CBS 513.88 sequence <xref rid="pgen.1002875-Pel1" ref-type="bibr">[10]</xref>, which has a greater number of predicted genes. Approximately 2.5% more reads were successfully mapped to the ATCC 1015 genome than the CBS 513.88, reflecting the closer relationship between this strain and N402 used in this study. The CBS 513.88 genome model contains 4213 genes not included within the ATCC 1015 genome model and 939 of these genes were found to have an RPKM of 1 or more in at least one of the conditions tested in our transcriptome and are therefore very likely to be present within the ATCC 1015 genome also. A full list of the gene expression for the 4213 genes is included in supplementary material (<xref ref-type="supplementary-material" rid="pgen.1002875.s008">Table S1</xref>). Eight of these genes encoded potential polysaccharide degrading enzymes or demonstrated a transcriptional pattern in the CBS 513.8 of interest to this study and so were added to the ATCC 1015 gene model and their RPKM values from the ATCC 1015 mapping were calculated.</p>
+        <p>RPKM values for all genes were calculated for each of the separate biological replicates, as well as for the combined mapping of all three, (<xref ref-type="supplementary-material" rid="pgen.1002875.s009">Table S2</xref>). <xref ref-type="supplementary-material" rid="pgen.1002875.s010">Table S3</xref> shows that inter-replicate reproducibility was extremely high (R-squared values of &gt;0.9). The results shown within the main text are from the combined mapping scores. Three statistical significance tests were applied to changes in gene expression, the Likelihood Ratio Test <xref rid="pgen.1002875-Marioni1" ref-type="bibr">[24]</xref>, Fisher's Exact Test <xref rid="pgen.1002875-Bloom1" ref-type="bibr">[25]</xref>, and an MA-plot-based method with Random Sampling model <xref rid="pgen.1002875-Wang1" ref-type="bibr">[26]</xref>. The results of these tests for each gene are listed in <xref ref-type="supplementary-material" rid="pgen.1002875.s009">Table S2</xref>. All gene inductions discussed within the text had a p-value of &lt;0.001 for all three statistical tests.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Expression of CAZy genes</title>
+        <p>Deconstruction of plant cell wall polysaccharides is mediated by enzymes of three major classes: Glycoside Hydrolases (GH), Carbohydrate Esterases (CE) and Polysaccharide Lyases (PL). The Carbohydrate Active Enzyme database (CAZy - <ext-link ext-link-type="uri" xlink:href="http://www.cazy.org">http://www.cazy.org</ext-link>) subdivides enzymes within these three classes into families based on their related activity and sequence. CAZy defines 281 of these enzymes within the CBS 513.88 genome, all but two of which are also predicted in the ATCC 1015 genome model (CBS 513.88 annotation: An14g07390 and An14g07420). The ATCC 1015 genome encodes 246 predicted GHs, representing 51 families; 25 CEs representing 9 families and 8 PLs representing 2 families.</p>
+        <p>After 48 hours of growth in minimal media with 1% glucose, CAZy genes represent approximately 3 percent of total mRNA, with the glucoamylase <italic>glaA</italic> (GH15 family) accounting for the majority (over 65 percent) of this (<xref ref-type="fig" rid="pgen-1002875-g002">Figure 2A</xref>). SDS-PAGE of the culture supernatant revealed the presence of a highly predominant protein band, which was identified by tandem MS as GlaA (data not shown). Twenty-four hours after the mycelia were transferred to straw, expression of CAZy genes made up more than 19 percent of total mRNA. This is a strong over-representation of the CAZy group of genes, as they represent only &#x223C;2.5 percent of the coding genome. Thirty of the induced CAZy genes reached an expression level above 50 RPKM. They represent 14 families of GH, 2 of CE and 1 of PL (<xref ref-type="table" rid="pgen-1002875-t001">Table 1</xref>).</p>
+        <fig id="pgen-1002875-g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1002875.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>CAZy gene expression.</title>
+            <p>The sampling conditions are shown for the RNA-seq study. Cells were grown in glucose (48 h), washed and transferred to straw (24 h) and then glucose was added (downward arrow) followed by a further 5 h incubation. (A) Percentage of total mRNA (calculated from RPKM values) represented by CAZy family genes from each condition of the transcriptome study. (B) Proportions of total of CAZY gene mRNA from each enzyme family. The families are listed in decreasing order of expression in the Straw 24 h condition.</p>
+          </caption>
+          <graphic xlink:href="pgen.1002875.g002"/>
+        </fig>
+        <table-wrap id="pgen-1002875-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1002875.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Straw-induced CAZy genes.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pgen-1002875-t001-1" xlink:href="pgen.1002875.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">Gene ID</td>
+                  <td align="left" rowspan="1" colspan="1">CAZy</td>
+                  <td align="left" rowspan="1" colspan="1">CADRE Annotation</td>
+                  <td colspan="3" align="left" rowspan="1">RPKM</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ATCC1015</td>
+                  <td align="left" rowspan="1" colspan="1">CBS 513.88</td>
+                  <td align="left" rowspan="1" colspan="1">Family</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Glucose 48 h</td>
+                  <td align="left" rowspan="1" colspan="1">Straw 24 h</td>
+                  <td align="left" rowspan="1" colspan="1">Straw+Glucose 5 h</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">53159</td>
+                  <td align="left" rowspan="1" colspan="1">An07g09330</td>
+                  <td align="left" rowspan="1" colspan="1">GH 7</td>
+                  <td align="left" rowspan="1" colspan="1">1,4-beta-D-glucan cellobiohydrolase - <italic>cbhA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">6.2</td>
+                  <td align="left" rowspan="1" colspan="1">4137.0</td>
+                  <td align="left" rowspan="1" colspan="1">21.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">211595</td>
+                  <td align="left" rowspan="1" colspan="1">An12g04610</td>
+                  <td align="left" rowspan="1" colspan="1">GH 61</td>
+                  <td align="left" rowspan="1" colspan="1">Partial similarity to endoglucanase IV <italic>egl4</italic> -<italic>Trichoderma reesei</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">3.3</td>
+                  <td align="left" rowspan="1" colspan="1">3389.9</td>
+                  <td align="left" rowspan="1" colspan="1">54.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">52071</td>
+                  <td align="left" rowspan="1" colspan="1">An01g00780</td>
+                  <td align="left" rowspan="1" colspan="1">GH 11</td>
+                  <td align="left" rowspan="1" colspan="1">Endo-1,4-xylanase - <italic>xynB</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">4.4</td>
+                  <td align="left" rowspan="1" colspan="1">3015.4</td>
+                  <td align="left" rowspan="1" colspan="1">14.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">55136</td>
+                  <td align="left" rowspan="1" colspan="1">An03g00960</td>
+                  <td align="left" rowspan="1" colspan="1">GH 62</td>
+                  <td align="left" rowspan="1" colspan="1">1,4-beta-D-arabinoxylan arabinofuranohydrolase - <italic>axhA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">4.1</td>
+                  <td align="left" rowspan="1" colspan="1">2521.9</td>
+                  <td align="left" rowspan="1" colspan="1">9.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">211544</td>
+                  <td align="left" rowspan="1" colspan="1">An12g05010</td>
+                  <td align="left" rowspan="1" colspan="1">CE 1</td>
+                  <td align="left" rowspan="1" colspan="1">Acetyl xylan esterase - <italic>axeA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.6</td>
+                  <td align="left" rowspan="1" colspan="1">1514.1</td>
+                  <td align="left" rowspan="1" colspan="1">5.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">179265</td>
+                  <td align="left" rowspan="1" colspan="1">An11g00200</td>
+                  <td align="left" rowspan="1" colspan="1">GH 3</td>
+                  <td align="left" rowspan="1" colspan="1">Probable beta-glucosidase - <italic>bglM</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.1</td>
+                  <td align="left" rowspan="1" colspan="1">924.6</td>
+                  <td align="left" rowspan="1" colspan="1">16.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">43785</td>
+                  <td align="left" rowspan="1" colspan="1">An12g02550</td>
+                  <td align="left" rowspan="1" colspan="1">CE 1</td>
+                  <td align="left" rowspan="1" colspan="1">Probable feruloyl esterase - <italic>faeC</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.0</td>
+                  <td align="left" rowspan="1" colspan="1">902.9</td>
+                  <td align="left" rowspan="1" colspan="1">2.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">56619</td>
+                  <td align="left" rowspan="1" colspan="1">An14g05800</td>
+                  <td align="left" rowspan="1" colspan="1">GH 67</td>
+                  <td align="left" rowspan="1" colspan="1">Alpha-glucuronidase - <italic>aguA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.4</td>
+                  <td align="left" rowspan="1" colspan="1">828.3</td>
+                  <td align="left" rowspan="1" colspan="1">6.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">57436</td>
+                  <td align="left" rowspan="1" colspan="1">An03g00940</td>
+                  <td align="left" rowspan="1" colspan="1">GH 10</td>
+                  <td align="left" rowspan="1" colspan="1">Endo-1,4-beta-xylanase - <italic>xynA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.9</td>
+                  <td align="left" rowspan="1" colspan="1">713.0</td>
+                  <td align="left" rowspan="1" colspan="1">4.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">54490</td>
+                  <td align="left" rowspan="1" colspan="1">An12g02220</td>
+                  <td align="left" rowspan="1" colspan="1">GH 6</td>
+                  <td align="left" rowspan="1" colspan="1">Probable 1,4-beta-cellobiosidase - <italic>cbhC</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.7</td>
+                  <td align="left" rowspan="1" colspan="1">611.5</td>
+                  <td align="left" rowspan="1" colspan="1">5.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">211053</td>
+                  <td align="left" rowspan="1" colspan="1">An14g02760</td>
+                  <td align="left" rowspan="1" colspan="1">GH 12</td>
+                  <td align="left" rowspan="1" colspan="1">Endoglucanase - <italic>eglA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.1</td>
+                  <td align="left" rowspan="1" colspan="1">510.8</td>
+                  <td align="left" rowspan="1" colspan="1">10.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">133986</td>
+                  <td align="left" rowspan="1" colspan="1">An08g01760</td>
+                  <td align="left" rowspan="1" colspan="1">GH 6</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to cellobiohydrolase - <italic>Acremonium cellulolyticus</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                  <td align="left" rowspan="1" colspan="1">346.5</td>
+                  <td align="left" rowspan="1" colspan="1">4.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">52011</td>
+                  <td align="left" rowspan="1" colspan="1">An01g03340</td>
+                  <td align="left" rowspan="1" colspan="1">GH 12</td>
+                  <td align="left" rowspan="1" colspan="1">Probable xyloglucan-specific endo-beta-1,4-glucanase - <italic>xgeA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.3</td>
+                  <td align="left" rowspan="1" colspan="1">334.4</td>
+                  <td align="left" rowspan="1" colspan="1">4.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">183088</td>
+                  <td align="left" rowspan="1" colspan="1">An15g04550</td>
+                  <td align="left" rowspan="1" colspan="1">GH 11</td>
+                  <td align="left" rowspan="1" colspan="1">Endo-1,4-beta-xylanase</td>
+                  <td align="left" rowspan="1" colspan="1">0.6</td>
+                  <td align="left" rowspan="1" colspan="1">327.4</td>
+                  <td align="left" rowspan="1" colspan="1">5.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">209376</td>
+                  <td align="left" rowspan="1" colspan="1">An07g08950</td>
+                  <td align="left" rowspan="1" colspan="1">GH 5</td>
+                  <td align="left" rowspan="1" colspan="1">Endoglucanase - <italic>eglC</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.3</td>
+                  <td align="left" rowspan="1" colspan="1">316.2</td>
+                  <td align="left" rowspan="1" colspan="1">2.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">125000</td>
+                  <td align="left" rowspan="1" colspan="1">An01g04560</td>
+                  <td align="left" rowspan="1" colspan="1">GH 16</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to mixed-linked glucanase MLG1 - <italic>Cochliobolus carbonum</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">2.0</td>
+                  <td align="left" rowspan="1" colspan="1">302.0</td>
+                  <td align="left" rowspan="1" colspan="1">58.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">56782</td>
+                  <td align="left" rowspan="1" colspan="1">An18g03570</td>
+                  <td align="left" rowspan="1" colspan="1">GH 3</td>
+                  <td align="left" rowspan="1" colspan="1">Probable beta-glucosidase - <italic>bglA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">2.6</td>
+                  <td align="left" rowspan="1" colspan="1">275.8</td>
+                  <td align="left" rowspan="1" colspan="1">31.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">47677</td>
+                  <td align="left" rowspan="1" colspan="1">An08g01900</td>
+                  <td align="left" rowspan="1" colspan="1">GH 43</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to 1,4-beta-xylosidase - <italic>Butyrivibrio fibrisolvens</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                  <td align="left" rowspan="1" colspan="1">209.7</td>
+                  <td align="left" rowspan="1" colspan="1">1.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">205580</td>
+                  <td align="left" rowspan="1" colspan="1">An01g11670</td>
+                  <td align="left" rowspan="1" colspan="1">GH 5</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to endo-beta-1,4-glucanase - <italic>Aspergillus nidulans</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.2</td>
+                  <td align="left" rowspan="1" colspan="1">208.2</td>
+                  <td align="left" rowspan="1" colspan="1">8.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">45801</td>
+                  <td align="left" rowspan="1" colspan="1">An03g00500</td>
+                  <td align="left" rowspan="1" colspan="1">GH 30</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to diglycosidase related protein -<italic>Aspergillus fumigatus</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">5.1</td>
+                  <td align="left" rowspan="1" colspan="1">147.8</td>
+                  <td align="left" rowspan="1" colspan="1">24.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">51773</td>
+                  <td align="left" rowspan="1" colspan="1">An01g11660</td>
+                  <td align="left" rowspan="1" colspan="1">GH 7</td>
+                  <td align="left" rowspan="1" colspan="1">1,4-beta-D-glucan cellobiohydrolase - <italic>cbhB</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.3</td>
+                  <td align="left" rowspan="1" colspan="1">121.1</td>
+                  <td align="left" rowspan="1" colspan="1">102.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">135787</td>
+                  <td align="left" rowspan="1" colspan="1">An07g08940</td>
+                  <td align="left" rowspan="1" colspan="1">CE 16</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to acetyl-esterase I - <italic>Aspergillus aculeatus</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.1</td>
+                  <td align="left" rowspan="1" colspan="1">118.7</td>
+                  <td align="left" rowspan="1" colspan="1">0.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">55419</td>
+                  <td align="left" rowspan="1" colspan="1">An01g04880</td>
+                  <td align="left" rowspan="1" colspan="1">GH 31</td>
+                  <td align="left" rowspan="1" colspan="1">alpha-glucosidase II -<italic>axlB</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.8</td>
+                  <td align="left" rowspan="1" colspan="1">109.7</td>
+                  <td align="left" rowspan="1" colspan="1">0.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">202490</td>
+                  <td align="left" rowspan="1" colspan="1">An18g04100</td>
+                  <td align="left" rowspan="1" colspan="1">GH 5</td>
+                  <td align="left" rowspan="1" colspan="1">Probable glucan 1,3-beta-glucosidase - <italic>exgA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                  <td align="left" rowspan="1" colspan="1">99.0</td>
+                  <td align="left" rowspan="1" colspan="1">15.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">210947</td>
+                  <td align="left" rowspan="1" colspan="1">An14g01130</td>
+                  <td align="left" rowspan="1" colspan="1">PL 4</td>
+                  <td align="left" rowspan="1" colspan="1">Probable rhamnogalacturonate lyase - <italic>rglA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.2</td>
+                  <td align="left" rowspan="1" colspan="1">86.2</td>
+                  <td align="left" rowspan="1" colspan="1">1.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">43342</td>
+                  <td align="left" rowspan="1" colspan="1">An09g03300</td>
+                  <td align="left" rowspan="1" colspan="1">GH 31</td>
+                  <td align="left" rowspan="1" colspan="1">alpha-xylosidase - <italic>axlA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">3.7</td>
+                  <td align="left" rowspan="1" colspan="1">78.8</td>
+                  <td align="left" rowspan="1" colspan="1">14.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">203143</td>
+                  <td align="left" rowspan="1" colspan="1">An09g01190</td>
+                  <td align="left" rowspan="1" colspan="1">GH 43</td>
+                  <td align="left" rowspan="1" colspan="1">Endo 1,5-alpha-arabinanase - <italic>abnA</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.1</td>
+                  <td align="left" rowspan="1" colspan="1">74.0</td>
+                  <td align="left" rowspan="1" colspan="1">2.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">197735</td>
+                  <td align="left" rowspan="1" colspan="1">An02g10550</td>
+                  <td align="left" rowspan="1" colspan="1">GH 43</td>
+                  <td align="left" rowspan="1" colspan="1">Probable endo-1,5-alpha-arabinanase - <italic>abnC</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                  <td align="left" rowspan="1" colspan="1">61.7</td>
+                  <td align="left" rowspan="1" colspan="1">11.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">50997</td>
+                  <td align="left" rowspan="1" colspan="1">An17g00300</td>
+                  <td align="left" rowspan="1" colspan="1">GH 3</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to xylosidase-arabinosidase <italic>xarB</italic> - <italic>Thermoanaerobacter ethanolicus</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                  <td align="left" rowspan="1" colspan="1">58.3</td>
+                  <td align="left" rowspan="1" colspan="1">1.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">This Study</td>
+                  <td align="left" rowspan="1" colspan="1">An02g02540</td>
+                  <td align="left" rowspan="1" colspan="1">CE 16</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to acetyl-esterase I - <italic>Aspergillus aculeatus</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.9</td>
+                  <td align="left" rowspan="1" colspan="1">56.4</td>
+                  <td align="left" rowspan="1" colspan="1">0.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <p>CAZy genes strongly induced (&#x2265;20 x) and expressed (&#x2265;50 RPKM) after 24 h in Straw. An02g02540 has not been annotated in the ATCC 1015 genome but was found on chromosome 4_2 (5&#x2032;-669026 - 667767-3&#x2032;). Annotation are from CADRE <xref rid="pgen.1002875-MabeyGilsenan1" ref-type="bibr">[66]</xref> (<ext-link ext-link-type="uri" xlink:href="http://www.cadre-genomes.org.uk/index.html">http://www.cadre-genomes.org.uk/index.html</ext-link>). RPKM values are from the combined mapping of three biologically-independent samples under each condition, values for each individual sample are listed in <xref ref-type="supplementary-material" rid="pgen.1002875.s009">Table S2</xref>. All genes listed showed a statistically significant induction when switched from glucose to straw (p&gt;0.001).</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The diverse categories of CAZy genes expressed during exposure to straw reflect the complexity of the carbohydrates present within the substrate. However, it is interesting to note that around 65 percent of the mRNA from the CAZy group at this time-point is from genes encoding just 5 families of enzyme, GH7, 11, 61 and 62 (cellobiohydrolases, xylanases, polysaccharide monooxygenases and arabinofuranosidases, respectively) and CE1 (acetyl xylan esterases) (<xref ref-type="fig" rid="pgen-1002875-g002">Figure 2B</xref> and <xref ref-type="table" rid="pgen-1002875-t001">Table 1</xref>). Proteins from each of these categories, except GH61, were also identified within culture supernatants by SDS-PAGE and tandem MS (data not shown). The fact we did not identify any GH61 proteins, that play a role in the oxidative cleavage of recalcitrant plant biomass <xref rid="pgen.1002875-Harris1" ref-type="bibr">[27]</xref>&#x2013;<xref rid="pgen.1002875-Beeson1" ref-type="bibr">[29]</xref>, amongst the major bands could be due to a discrepancy between transcript and protein levels, or simply a technical issue in detection, such as the protein not staining well, or the protein being attached to the substrate or the fungal membrane, whilst only the supernatant was analysed. Based on transcript abundance, the 5 categories of encoded enzyme might provide the bulk of activities required for the degradation of straw. Catabolite repression, by addition of glucose to the straw cultures, exerts strong repression upon CAZy gene expression; after 5 hours, CAZy gene mRNA is reduced to only 1% of total mRNA. The glucoamylase <italic>glaA</italic> (GH15) becoming again the most expressed CAZy gene under this condition (<xref ref-type="fig" rid="pgen-1002875-g002">Figure 2B</xref>).</p>
+      </sec>
+      <sec id="s2d">
+        <title>Expression of non-CAZy genes</title>
+        <p>Twenty-eight genes that were transcriptionally induced more than 20-fold, and reached an RPKM of greater than 50 after the switch to straw, do not encode hydrolases as classified by CAZy. These genes are listed in <xref ref-type="table" rid="pgen-1002875-t002">Table 2</xref> and 23 of them fall into four broad functional categories: lipases/esterases, surface interacting proteins, enzymes of carbon and nitrogen metabolism and transporters.</p>
+        <table-wrap id="pgen-1002875-t002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1002875.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Straw-induced non-CAZy genes.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pgen-1002875-t002-2" xlink:href="pgen.1002875.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">Gene ID</td>
+                  <td align="left" rowspan="1" colspan="1">CADRE Annotation</td>
+                  <td colspan="3" align="left" rowspan="1">RPKM</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AT15CC10</td>
+                  <td align="left" rowspan="1" colspan="1">CBS 513.88</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Glucose 48 h</td>
+                  <td align="left" rowspan="1" colspan="1">Straw 24 h</td>
+                  <td align="left" rowspan="1" colspan="1">Straw+Glucose 5 h</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Esterases &amp; Lipases</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">173684</td>
+                  <td align="left" rowspan="1" colspan="1">An02g09690</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to lipase I precursor TFLI - <italic>Geotrichum fermentans</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.0</td>
+                  <td align="left" rowspan="1" colspan="1">1728.9</td>
+                  <td align="left" rowspan="1" colspan="1">6.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">51662</td>
+                  <td align="left" rowspan="1" colspan="1">An09g00120</td>
+                  <td align="left" rowspan="1" colspan="1">Ferulic acid esterase A FaeA</td>
+                  <td align="left" rowspan="1" colspan="1">0.9</td>
+                  <td align="left" rowspan="1" colspan="1">1100.5</td>
+                  <td align="left" rowspan="1" colspan="1">3.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">50877</td>
+                  <td align="left" rowspan="1" colspan="1">An13g01880</td>
+                  <td align="left" rowspan="1" colspan="1">Esterase EstA</td>
+                  <td align="left" rowspan="1" colspan="1">2.9</td>
+                  <td align="left" rowspan="1" colspan="1">317.6</td>
+                  <td align="left" rowspan="1" colspan="1">3.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">210730</td>
+                  <td align="left" rowspan="1" colspan="1">An16g01880</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to lysophospholipase - <italic>Aspergillus foetidus</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.6</td>
+                  <td align="left" rowspan="1" colspan="1">203.7</td>
+                  <td align="left" rowspan="1" colspan="1">2.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">54865</td>
+                  <td align="left" rowspan="1" colspan="1">Not Present</td>
+                  <td align="left" rowspan="1" colspan="1">GDSL lipase/acylhydrolase family protein - <italic>Aspergillus fumigatus</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.3</td>
+                  <td align="left" rowspan="1" colspan="1">168.0</td>
+                  <td align="left" rowspan="1" colspan="1">0.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">This Study</td>
+                  <td align="left" rowspan="1" colspan="1">An03g06560</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to triacylglycerol lipase Lip2 - <italic>Candida rugosa</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.2</td>
+                  <td align="left" rowspan="1" colspan="1">84.4</td>
+                  <td align="left" rowspan="1" colspan="1">0.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">53620</td>
+                  <td align="left" rowspan="1" colspan="1">An16g03700</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to phospholipase B - <italic>Aspergillus oryzae</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.7</td>
+                  <td align="left" rowspan="1" colspan="1">62.5</td>
+                  <td align="left" rowspan="1" colspan="1">62.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Surface-interacting Proteins</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">128530</td>
+                  <td align="left" rowspan="1" colspan="1">An07g03340</td>
+                  <td align="left" rowspan="1" colspan="1">Hydrophobin Hyp1</td>
+                  <td align="left" rowspan="1" colspan="1">3.5</td>
+                  <td align="left" rowspan="1" colspan="1">380.4</td>
+                  <td align="left" rowspan="1" colspan="1">423.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">This Study</td>
+                  <td align="left" rowspan="1" colspan="1">An08g09880</td>
+                  <td align="left" rowspan="1" colspan="1">Hydrophobin HbD</td>
+                  <td align="left" rowspan="1" colspan="1">0.0</td>
+                  <td align="left" rowspan="1" colspan="1">138.5</td>
+                  <td align="left" rowspan="1" colspan="1">29.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">188224</td>
+                  <td align="left" rowspan="1" colspan="1">An09g00840</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to HsbA - <italic>Aspergillus oryzae</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.3</td>
+                  <td align="left" rowspan="1" colspan="1">118.6</td>
+                  <td align="left" rowspan="1" colspan="1">1.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">54125</td>
+                  <td align="left" rowspan="1" colspan="1">An18g02730</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to transmembrane protein PTH11 - <italic>Magnaporthe grisea</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.9</td>
+                  <td align="left" rowspan="1" colspan="1">70.5</td>
+                  <td align="left" rowspan="1" colspan="1">4.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Enzymes of Carbon and Nitrogen Metabolism</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">51997</td>
+                  <td align="left" rowspan="1" colspan="1">An01g03740</td>
+                  <td align="left" rowspan="1" colspan="1">D-xylose reductase XyrA</td>
+                  <td align="left" rowspan="1" colspan="1">1.1</td>
+                  <td align="left" rowspan="1" colspan="1">448.7</td>
+                  <td align="left" rowspan="1" colspan="1">2.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">52460</td>
+                  <td align="left" rowspan="1" colspan="1">An02g13750</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to glutaminase A <italic>GtaA - Aspergillus oryzae</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">2.2</td>
+                  <td align="left" rowspan="1" colspan="1">213.7</td>
+                  <td align="left" rowspan="1" colspan="1">14.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">40496</td>
+                  <td align="left" rowspan="1" colspan="1">An15g02410</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to nitrogen metabolic repression regulator hNmrr - <italic>Homo sapiens</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.3</td>
+                  <td align="left" rowspan="1" colspan="1">132.6</td>
+                  <td align="left" rowspan="1" colspan="1">45.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">40740</td>
+                  <td align="left" rowspan="1" colspan="1">An15g05990</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to D-arabinitol 2-dehydrogenase ARDH - <italic>Pichia stipitis</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.6</td>
+                  <td align="left" rowspan="1" colspan="1">69.6</td>
+                  <td align="left" rowspan="1" colspan="1">22.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">56084</td>
+                  <td align="left" rowspan="1" colspan="1">An11g10890</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to UDP-glucose 4-epimerase Gal10 - <italic>Saccharomyces cerevisiae</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">2.1</td>
+                  <td align="left" rowspan="1" colspan="1">51.2</td>
+                  <td align="left" rowspan="1" colspan="1">0.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Transporters</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">56643</td>
+                  <td align="left" rowspan="1" colspan="1">An12g09270</td>
+                  <td align="left" rowspan="1" colspan="1">Lactose permease - Lac12</td>
+                  <td align="left" rowspan="1" colspan="1">3.3</td>
+                  <td align="left" rowspan="1" colspan="1">273.4</td>
+                  <td align="left" rowspan="1" colspan="1">34.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">38375</td>
+                  <td align="left" rowspan="1" colspan="1">An08g04040</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to quinate transport protein QutD - <italic>Aspergillus nidulans</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.7</td>
+                  <td align="left" rowspan="1" colspan="1">141.9</td>
+                  <td align="left" rowspan="1" colspan="1">2.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">55668</td>
+                  <td align="left" rowspan="1" colspan="1">An06g00560</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to hexose transporter Hxt13 - <italic>Saccharomyces cerevisiae</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.6</td>
+                  <td align="left" rowspan="1" colspan="1">124.0</td>
+                  <td align="left" rowspan="1" colspan="1">3.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">180069</td>
+                  <td align="left" rowspan="1" colspan="1">An07g02540</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to carboxylic acid transport protein Jen1 - <italic>Saccharomyces cerevisiae</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.5</td>
+                  <td align="left" rowspan="1" colspan="1">108.6</td>
+                  <td align="left" rowspan="1" colspan="1">2.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">197549</td>
+                  <td align="left" rowspan="1" colspan="1">An02g08230</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to high affinity glucose transporter HGT1 - <italic>Kluyveromyces lactis</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.0</td>
+                  <td align="left" rowspan="1" colspan="1">105.4</td>
+                  <td align="left" rowspan="1" colspan="1">0.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">54095</td>
+                  <td align="left" rowspan="1" colspan="1">An18g01700</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to quinate transport protein <italic>GutD</italic> - <italic>Aspergillus nidulans</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.2</td>
+                  <td align="left" rowspan="1" colspan="1">98.6</td>
+                  <td align="left" rowspan="1" colspan="1">1.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">54838</td>
+                  <td align="left" rowspan="1" colspan="1">An13g03110</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to high-affinity nicotinic acid permease Tna1 - <italic>Saccharomyces cerevisiae</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.6</td>
+                  <td align="left" rowspan="1" colspan="1">66.6</td>
+                  <td align="left" rowspan="1" colspan="1">0.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Others</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">120161</td>
+                  <td align="left" rowspan="1" colspan="1">An18g05500</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to mitochondrial ceramidase AAF86240.1 - <italic>Homo sapiens</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.6</td>
+                  <td align="left" rowspan="1" colspan="1">144.9</td>
+                  <td align="left" rowspan="1" colspan="1">1.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">42809</td>
+                  <td align="left" rowspan="1" colspan="1">An18g03380</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to mitochondrial thioredoxin Trx3 - <italic>Saccharomyces cerevisiae</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">2.1</td>
+                  <td align="left" rowspan="1" colspan="1">98.0</td>
+                  <td align="left" rowspan="1" colspan="1">2.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">180489</td>
+                  <td align="left" rowspan="1" colspan="1">An07g00070</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to hypothetical protein EAL85123.1 - <italic>Aspergillus fumigatus</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.1</td>
+                  <td align="left" rowspan="1" colspan="1">66.1</td>
+                  <td align="left" rowspan="1" colspan="1">25.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">53013</td>
+                  <td align="left" rowspan="1" colspan="1">An11g07040</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to EST an_2779 - <italic>Aspergillus niger</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">0.3</td>
+                  <td align="left" rowspan="1" colspan="1">65.5</td>
+                  <td align="left" rowspan="1" colspan="1">1.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">43786</td>
+                  <td align="left" rowspan="1" colspan="1">An12g02560</td>
+                  <td align="left" rowspan="1" colspan="1">Similarity to protein-tyrosine phosphatase SH-PTP2 - <italic>Rattus norvegicus</italic>
+</td>
+                  <td align="left" rowspan="1" colspan="1">1.8</td>
+                  <td align="left" rowspan="1" colspan="1">51.3</td>
+                  <td align="left" rowspan="1" colspan="1">36.1</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <p>Non-CAZy genes strongly induced (&#x2265;20 x) and expressed (&#x2265;50 RPKM) after 24 h in Straw. An03g06560 and An08g09880 have not been annotated in the ATCC 1015 genome but were found on chromosome 6_1 (5&#x2032;-1494949 - 1403261-3&#x2032;) and 8_2 (5&#x2032;-2365138 - 2364987 - 3&#x2032;) respectively. Annotation are from CADRE <xref rid="pgen.1002875-MabeyGilsenan1" ref-type="bibr">[66]</xref> (<ext-link ext-link-type="uri" xlink:href="http://www.cadre-genomes.org.uk/index.html">http://www.cadre-genomes.org.uk/index.html</ext-link>). RPKM values are from the combined mapping of three biologically-independent samples under each condition, values for each individual sample are listed in <xref ref-type="supplementary-material" rid="pgen.1002875.s009">Table S2</xref>. All genes listed showed a statistically significant induction when switched from glucose to straw (p&gt;0.001).</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <sec id="s2d1">
+          <title>Lipases and esterases</title>
+          <p>Seven putative lipases or esterases not classified as CEs by CAZy were strongly induced after the transfer to straw, and 6 of these were repressed by addition of glucose (<xref ref-type="table" rid="pgen-1002875-t002">Table 2</xref>). The esterase EstA (TID_50877) was shown to be regulated by XlnR <xref rid="pgen.1002875-Bourne1" ref-type="bibr">[30]</xref>, and we identified it by SDS-PAGE and tandem MS as being one of the major proteins present in the supernatant after 24 hours in straw, while the ferulic acid esterase (FaeA) has been shown to have activity against wheat arabinoxylan <xref rid="pgen.1002875-deVries2" ref-type="bibr">[31]</xref>. Whilst the others have not previously been associated with polysaccharide degradation, their co-expression alongside the well characterised <italic>estA</italic> and <italic>faeA</italic>, raises the possibility that these enzymes may be involved in the saccharification of wheat straw lignocellulose.</p>
+        </sec>
+        <sec id="s2d2">
+          <title>Surface-interacting proteins</title>
+          <p>Two genes encoding hydrophobin family proteins and one hydrophobic surface binding protein (HsbA) were strongly induced by the switch from glucose to straw (<xref ref-type="table" rid="pgen-1002875-t002">Table 2</xref>). The gene <italic>hyp1</italic> is not repressed by the re-addition of glucose to the culture, but <italic>hfbD</italic> and and <italic>hsbA</italic> were strongly repressed; their transcriptional profile is therefore similar to many of the genes of the CAZy group. Hydrophobins are amphipathic, surface-active proteins produced by filamentous fungi, with numerous biological functions, often relating to mycelial interactions with solid surfaces <xref rid="pgen.1002875-Linder1" ref-type="bibr">[32]</xref>. RolA (homologous to Hyp1) and HsbA of <italic>Aspergillus oryzae</italic> have been shown to associate with the synthetic polyester polybutylene succinate-coadipate and promote its degradation through the recruitment of a specific polyesterase <xref rid="pgen.1002875-Takahashi1" ref-type="bibr">[33]</xref>, <xref rid="pgen.1002875-Ohtaki1" ref-type="bibr">[34]</xref>. It is striking therefore that <italic>A. niger</italic> genes that encode proteins bearing homology to each, are highly induced by the presence of straw, suggesting that these proteins could have a role in recruiting degradative enzymes to the straw surface. The last gene in this group TID_54125 encodes a G-protein couple receptor homologous to Pth11p from the rice pathogen <italic>Magnaporthe grisea</italic>. Pth11p is required for signalling in appressorium formation <xref rid="pgen.1002875-DeZwaan1" ref-type="bibr">[35]</xref> through the sensing of the plant host surface via both hydrophobicity and the presence of cutin monomers (which are also a component of the wheat straw cuticula <xref rid="pgen.1002875-Stelte1" ref-type="bibr">[36]</xref>). The induction of the <italic>A. niger</italic> homologue of <italic>pth11</italic> in the presence of straw suggests that a similar strategy could perhaps be employed by <italic>A. niger</italic> in the sensing of solid substrate surfaces.</p>
+        </sec>
+        <sec id="s2d3">
+          <title>Carbon metabolism</title>
+          <p>The increased expression of the xylose reductase <italic>xyrA</italic> and other genes of the xylose utilisation pathway, such as xylitol dehydrogenase (TID_203198) and D-xylulokinase (TID_209771) (both induced approximately 10-fold, <xref ref-type="supplementary-material" rid="pgen.1002875.s009">Table S2</xref>), along with decreased expression of glycolytic pathway enzymes (e.g. phosphofructokinase, TID_54093, repressed 5-fold), suggests that 24 hours after the transfer to straw, pentose sugars are the prominent carbon source available. These results, and the fact that <italic>A. niger</italic> is an efficient xylan-degrading organism <xref rid="pgen.1002875-King1" ref-type="bibr">[37]</xref>, support the first of the hypotheses discussed earlier, that the reason xylose is the predominant free sugar observed after 24 hours incubation of wheat straw with <italic>A. niger</italic> (<xref ref-type="fig" rid="pgen-1002875-g001">Figure 1A</xref>) is that the hemicellulose fraction of the straw is the first to be degraded, rather than being due to a greater rate of glucose uptake by the fungus.</p>
+        </sec>
+      </sec>
+      <sec id="s2e">
+        <title>The degradative response is sequential and triggered by carbon starvation</title>
+        <p>To establish the order of induction of the genes that were highly expressed by 24 h, a time-course experiment was performed. RNA was extracted 0.5, 1, 2, 3, 6, 9 and 12 h after the switch from glucose to straw, and the expression of genes of interest was measured using RT-PCR (<xref ref-type="supplementary-material" rid="pgen.1002875.s001">Figure S1</xref>). The results show the cellobiohydrolase <italic>cbhB</italic> to be induced after 6 hours of exposure to straw, whilst <italic>cbhA</italic> and <italic>GH61a</italic> do not appear to be induced until the 9 hour time point. These timings were verified, and shown statistically significant, using quantitative RT-PCR (<xref ref-type="supplementary-material" rid="pgen.1002875.s002">Figure S2</xref>). To investigate the regulatory basis for the differential response of these genes, expression under the glucose and straw conditions was examined in strains deleted for either the gene encoding the xylanolytic activator XlnR, that mediates xylose-induction of some GHs and esterases, or CreA, which mediates wide-domain carbon catabolite repression <xref rid="pgen.1002875-Kobayashi1" ref-type="bibr">[38]</xref>. All three of the glycosyl hydrolases showed a statistically significant (p-value of &gt;0.01 in an equal variance, one-tailed T-test) dependence upon XlnR for maximal induction at 24 h in straw (<xref ref-type="supplementary-material" rid="pgen.1002875.s003">Figure S3</xref>), which is typical of hydrolases in <italic>A. niger</italic>
+<xref rid="pgen.1002875-deVries3" ref-type="bibr">[39]</xref>, <xref rid="pgen.1002875-vanPeij1" ref-type="bibr">[40]</xref>. Interestingly, a smaller scale induction of <italic>cbhB</italic> in the straw media was still observed in the <italic>&#x394;xlnR</italic> strain. This induction is mediated by alleviation of CreA repression, since in the <italic>&#x394;creA</italic> strain, <italic>cbhB</italic> was expressed at a significantly higher level than the wild-type during growth on glucose, as assessed by qRT-PCR, whilst <italic>cbhA</italic> and <italic>GH61a</italic> were not (<xref ref-type="supplementary-material" rid="pgen.1002875.s004">Figure S4</xref>). This observation led to the hypothesis that the earlier induction seen for <italic>cbhB</italic> is triggered, not by the presence of an inducing sugar such as xylose, but instead by the absence of an available carbon source. Transferring mycelia from glucose (48 h) to media completely devoid of carbon source for 24 h had a significant inductive effect upon <italic>cbhB</italic> expression, whereas it did not induce <italic>cbhA</italic> or <italic>GH61a</italic> (<xref ref-type="supplementary-material" rid="pgen.1002875.s005">Figure S5</xref>). As only a very low concentration of free xylose is present in the straw media until several hours after incubation with <italic>A. niger</italic> (<xref ref-type="fig" rid="pgen-1002875-g001">Figure 1A</xref>), this might explain why the induction of <italic>cbhB</italic> occurs earlier than the induction of <italic>cbhA</italic> or <italic>GH61a</italic>.</p>
+        <p>CbhA and CbhB are the only two GH7-family cellobiohydrolases in <italic>A. niger</italic>. CbhB contains a family 1 Carbohydrate-Binding-Module (CBM), whilst CbhA has no CBM <xref rid="pgen.1002875-Gielkens1" ref-type="bibr">[41]</xref>. CBMs aid the attachment of the enzymes containing them to the complex polysaccharide surfaces of intact cell walls <xref rid="pgen.1002875-Boraston1" ref-type="bibr">[42]</xref>, <xref rid="pgen.1002875-Herve1" ref-type="bibr">[43]</xref>. It could be speculated that the CBM-containing enzyme is induced early because it plays an important role in targeting the relatively intact plant cell wall. Whilst the enzyme lacking the CBM is induced later, once soluble oligosaccharides have been released. Six other genes that were induced after 24 h in straw also encoded proteins containing CBM domains. Two of these genes, TID_205580 (encoding a member of the GH family 5, containing a CBM 1) and <italic>abfB</italic> (an arabinofuranosidase containing a CBM 42), showed the same pattern of expression and regulation as <italic>cbhB</italic>; i.e. de-repression in a <italic>&#x394;creA</italic> strain, induction 6 h after transfer to straw, and induction by carbon source starvation (<xref ref-type="supplementary-material" rid="pgen.1002875.s003">Figures S3</xref>, <xref ref-type="supplementary-material" rid="pgen.1002875.s005">S5</xref> and <xref ref-type="supplementary-material" rid="pgen.1002875.s006">S6</xref>). This CreA de-repression-dependent/XlnR activation-independent mechanism of induction may allow a subset of hydrolases that are targeted more specifically to the intact plant cell wall to play a &#x201C;scouting&#x201D; role under carbon starvation conditions, testing for available complex polysaccharides and liberating small quantities of sugar and oligosaccharides which trigger the subsequent larger scale induction of the genes themselves and the remaining majority of hydrolases by XlnR. Such a system would allow the organism to probe the surrounding environment for complex substrates when undergoing carbon starvation, without over-committing resources, until the presence of a degradable substrate is sensed from the release of inducing sugars. The expression of the &#x201C;scouting&#x201D; enzymes themselves, as well as the majority of hydrolases, which are completely dependent upon an active form of XlnR for expression, are then induced to extremely high levels (around one-fifth of the total mRNA inside the cell 24 hour after the transfer to straw, <xref ref-type="fig" rid="pgen-1002875-g002">Figure 2A</xref>). None of the genes identified here as being induced early are predicted to encode enzymatic activities capable of releasing xylose from wheat straw, which would lead to XlnR activation. However, our preliminary data (not shown) indicates that the genes shown here are only part of a larger subset, which may encode such activity. Defining the full subset of hydrolase genes that are induced concurrently with <italic>cbhB</italic> is the subject of ongoing study.</p>
+        <p>Of the non-CAZy genes that are responsive to straw, both the putative lipase gene (TID_173684) and esterase, <italic>estA</italic> (TID_51662), are induced by the 6 h time point (<xref ref-type="supplementary-material" rid="pgen.1002875.s001">Figure S1</xref>); they therefore form part of the early response, along with <italic>cbhB</italic>, <italic>abfB</italic> and the GH5 family member TID_205580. The lipase-encoding gene shares the same CreA-dependent expression pattern as <italic>cbhB</italic> (<xref ref-type="supplementary-material" rid="pgen.1002875.s007">Figure S7B</xref>). The genes encoding the Pth11 homologue and HsbA are also induced by a lack of carbon source but their induction shows dependence upon neither XlnR nor CreA (data not shown). The extremely early expression of the homologue of <italic>pth11</italic>, after 3 h, may indicate a role in the early stages of the signalling pathway and is the subject of current investigation. The concurrent timing of expression of <italic>hsbA</italic> with the majority of hydrolases, at 9 h, raises the possibility of a role in recruiting hydrolases to the surface of the straw, i.e. analogous to the recruitment of degradative enzymes to the surface of certain plastics <xref rid="pgen.1002875-Takahashi1" ref-type="bibr">[33]</xref>, <xref rid="pgen.1002875-Ohtaki1" ref-type="bibr">[34]</xref>. The gene encoding the hydrophobin HfbD was induced later, at 12 h. The possible functionality of surface binding proteins in the recognition of surfaces, and the possibility that those proteins recruit hydrolytic enzymes to the surface, is intriguing and may provide new avenues to enhance the action of hydrolases in the saccharification of biomass in the generation of biofuels and the synthesis of other chemicals within a bio-based economy.</p>
+        <p>The mechanism by which the presence of a complex substrate, which cannot be imported into the cell, is signalled and triggers expression of the requisite hydrolytic enzyme mix, is widely debated and may vary with fungal species. The predominant induction model in fungal systems <xref rid="pgen.1002875-Tian1" ref-type="bibr">[21]</xref>, <xref rid="pgen.1002875-CarleUrioste1" ref-type="bibr">[44]</xref> proposes that general basal expression of small quantities of hydrolase begins the degradation of complex polysaccharides, thereby producing inducing compounds that elicit the full transcriptional response. It has alternatively been suggested that some relevant genes are induced by carbon source depletion, and that the derived enzymes might play a foraging role, under starvation conditions <xref rid="pgen.1002875-Foreman1" ref-type="bibr">[45]</xref>. Temporally differential expression of complex polysaccharide degrading enzymes and the presence of &#x201C;scouting&#x201D; enzymes that do not require the presence of a substrate-derived inducer for expression, but work to release inducing molecules and trigger a larger degradative response, has also been observed for the <italic>A. niger</italic> response to pectin <xref rid="pgen.1002875-Parenicova1" ref-type="bibr">[46]</xref>, <xref rid="pgen.1002875-deVries4" ref-type="bibr">[47]</xref> and starch <xref rid="pgen.1002875-Yuan1" ref-type="bibr">[48]</xref> perhaps indicating a conserved response pattern to insoluble substrates. Our data support this model for lignocellulose and we take it further by proposing a succession of events that not only includes the timing of expression of genes encoding hydrolases but also involves sensing proteins and the possibility that surface-binding proteins serve as a scaffold for recruitment of hydrolases. In summary the overall strategy appears to be an induction of a specific, small scale, sensory response by carbon source starvation, mediated at least partially by alleviation of CreA-dependent catabolite repression. This leads, in the event of successful liberation of free sugars from the wheat straw substrate, to the full scale degradative response, which is activated by XlnR (<xref ref-type="fig" rid="pgen-1002875-g003">Figure 3</xref>).</p>
+        <fig id="pgen-1002875-g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1002875.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Induction model based on the sequential expression of responsive genes.</title>
+            <p>The sequence of events is illustrated and key events are numbered. The upper panel represents the transcriptional events in <italic>A. niger</italic> upon exposure (0&#x2013;6 h) to straw represented by filled ovals. Lack of easily-available carbon source leads to the alleviation of CreA repression (represented by the arrow above CreA) and induction of a subset of starvation-induced genes represented by <italic>cbhB</italic>. At 6&#x2013;9 h exposure to straw (middle panel), the expressed hydrolases and other enzymes (examples named in the Figure.) act upon the wheat straw, releasing small quantities of inducing sugars such as xylose (filled pentamer) as well as glucose (filled hexamer). Transporters for the sugars are induced (indicated by the trans-membrane cylinders and un-filled large arrow). By 9 hours (lower panel) the presence of xylose has caused activation of XlnR and, thereby, large scale expression of hydrolases genes. Also induced by 9 hours, in an XlnR-independent manner, is the hydrophobic binding protein HsbA. The hydrophobin HfbD is induced by 12 hours. A physical association of hydrophobic binding proteins with straw and degradative enzymes is hypothesised and represented. Note that the functionality of XlnR and CreA is indicated by attachment to recognition sequences in target promoters and is meant only to indicate the functional control of those promoters by the transcription factors. Modifications to those transcription factors (e.g. phosphorylation of XlnR in <italic>A. oryzae</italic>
+<xref rid="pgen.1002875-Noguchi1" ref-type="bibr">[65]</xref>) may occur without necessarily implying that their location changes.</p>
+          </caption>
+          <graphic xlink:href="pgen.1002875.g003"/>
+        </fig>
+      </sec>
+      <sec id="s2f">
+        <title>Antisense transcription</title>
+        <p>Natural antisense transcripts (NATs) are RNAs transcribed from a region of the genome that lies antisense (AS) to a gene. They have been found in a number of organisms, including several fungi <xref rid="pgen.1002875-Gowda1" ref-type="bibr">[49]</xref>&#x2013;<xref rid="pgen.1002875-Ohm1" ref-type="bibr">[51]</xref>, and play various regulatory roles <xref rid="pgen.1002875-Lapidot1" ref-type="bibr">[52]</xref>. The number of reads that fell upon the AS strand was counted for each gene in our study and AS RPKM values were calculated in each condition. AS reads accounted for approximately 2% of total reads under the conditions tested (2.41, 1.94 and 2.04% in Glucose 48 h, Straw 24 h and Straw+Glucose 5 h, respectively). Although the vast majority of genes had just a few associated AS transcripts, 521 genes had an AS RPKM of greater than 1 and up to about 120 (<xref ref-type="supplementary-material" rid="pgen.1002875.s006">Figure S6</xref> and <xref ref-type="supplementary-material" rid="pgen.1002875.s011">Table S4</xref>).</p>
+        <p>In order to confirm that the NATs observed were biologically significant, and not simply an artefact of RNA-sequencing, a specific example, TID_53176, encoding a predicted membrane protein belonging to the GPR1/FUN34/YaaH family, which is required for acetate uptake in <italic>A. nidulans</italic>
+<xref rid="pgen.1002875-Robellet1" ref-type="bibr">[53]</xref>, was chosen for further analysis. The TID_53176 sense transcript is expressed in the straw media, whilst the AS transcript is expressed in the presence of glucose (<xref ref-type="fig" rid="pgen-1002875-g004">Figure 4A</xref>).</p>
+        <fig id="pgen-1002875-g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1002875.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Sense and antisense transcription from TID_53176.</title>
+            <p>(A) Alignment of RNA-seq reads to the TID_53176 genome region under each condition. Reads represented in blue are antisense, those in red are sense. The Figure was constructed using the Integrative Genomics Viewer <xref rid="pgen.1002875-Robinson1" ref-type="bibr">[62]</xref>. (B) Oligo(dT) primed RT-PCR using TID_53176 specific primers. The expected band size from the spliced sense transcript is 411 bp and the size of the non-spliced antisense transcript is 524 bp. The red line under the gene model in panel A indicates the amplified region. (C) Strand-specific RT-PCR. One of the standard PCR primers, with an added sequence tag (<xref ref-type="supplementary-material" rid="pgen.1002875.s012">Table S5</xref>), was used to synthesise cDNA from one strand only and then the PCR step was performed by using the tagged sequencing primer together with the opposing gene-specific primer. The larger band is only seen in the antisense-specific reaction, confirming it does represent an antisense transcript. The smaller band is the only band present in the sense-specific reaction.</p>
+          </caption>
+          <graphic xlink:href="pgen.1002875.g004"/>
+        </fig>
+        <p>The AS coverage level is high in both glucose conditions, and extends over the full length of the predicted gene including the two introns and extends both upstream and downstream, but does not overlap any neighbouring genes (<xref ref-type="fig" rid="pgen-1002875-g004">Figure 4A</xref>). The sense coverage, seen in the straw condition, is shorter in length and there is almost zero coverage of the introns, indicating that the vast majority of sense transcripts are fully spliced. <xref ref-type="fig" rid="pgen-1002875-g004">Figure 4B</xref> shows that RT-PCR, using primers upstream of the first intron and downstream of the second, can distinguish between the larger AS product and the shorter, fully spliced, sense transcript. Since oligo(dT) was used as the primer for cDNA synthesis, the AS transcript must be polyadenylated. To verify the strandedness of the two products, strand-specific RT-PCR was performed using a tagged primer approach and the results confirmed that all of the larger product is generated from antisense transcripts, whilst the smaller product is the only band seen in a sense-specific reaction (<xref ref-type="fig" rid="pgen-1002875-g004">Figure 4C</xref>). A trace amount of a smaller antisense product can be seen in the antisense-specific assay under straw 24 h conditions. This may represent a true RNA intermediate, or it could be due to the high level of sense transcript self-priming and slight carryover of primer from the cDNA synthesis priming its amplification.</p>
+        <p>To identify AS transcripts that responded to the change in carbon source we calculated the ratio of antisense&#x2236;sense expression under Glucose 48 h and Straw 24 h conditions for the 521 genes with an AS RPKM of &gt;1 (<xref ref-type="supplementary-material" rid="pgen.1002875.s011">Table S4</xref>). Genes where sense transcription is induced on straw but AS predominates on glucose, include examples of transporters and permeases, CAZy enzymes and the putative lipase TID_173684.</p>
+        <p>This putative lipase TID_173684, one of the most highly induced genes upon exposure to straw, is also one of the genes showing the most marked antisense&#x2236;sense ratio switch (<xref ref-type="supplementary-material" rid="pgen.1002875.s011">Table S4</xref>). Under glucose 48 h conditions there is significant expression of both sense and AS transcripts with a 60% greater level of AS (RPKMs of 1 and 1.6 respectively). After the switch to straw, at 24 h there is a large induction of the sense transcript (&#x223C;1700-fold) and AS transcription is cut to less than a third of the initial level (<xref ref-type="supplementary-material" rid="pgen.1002875.s007">Figure S7A</xref>). Standard and strand-specific RT-PCR reactions under the same conditions give a similar pattern of bands to that seen above for TID_53176 (<xref ref-type="fig" rid="pgen-1002875-g004">Figure 4</xref>). Interestingly, in the <italic>&#x394;creA</italic> strain sense transcription is seen in both glucose and straw conditions, suggesting that the AS/S ratio switch is regulated either directly or indirectly by CreA. This was confirmed by strand-specific RT-PCR (<xref ref-type="supplementary-material" rid="pgen.1002875.s007">Figure S7B</xref>). The timeline of induction experiment detailed earlier (<xref ref-type="supplementary-material" rid="pgen.1002875.s001">Figure S1</xref>) shows that the AS/S switch in the expression of the putative lipase can be seen to occur between 3 and 6 h after the transfer to straw, which is concurrent with the expression of the carbon starvation induced subset of genes (of which the lipase gene is part). This suggests a possible relationship between carbon source responsive regulation by CreA and antisense transcription, providing an interesting area for further study.</p>
+      </sec>
+    </sec>
+    <sec sec-type="methods" id="s3">
+      <title>Methods</title>
+      <sec id="s3a">
+        <title>Wheat straw analysis</title>
+        <sec id="s3a1">
+          <title>Ball milling</title>
+          <p>The wheat straw (Cordiale variety) was milled using a Laboratory Mill (Laboratory Mill 3600, Perten, Sweden) and passed through a sieve with a mesh size of 700 &#xB5;m for size reduction prior to ball milling. 5 g of pre-milled wheat straw was ball-milled in 80 mL stainless steel grinding bowls with 10-mm-diameter steel balls in a Planetary Mill (Pulverisette 5 classic line, Fritsch, Germany), at 400 rpm for a grinding time of 20 min, resulting in an average particle size of &#x223C;75 &#xB5;m.</p>
+        </sec>
+        <sec id="s3a2">
+          <title>Sugar analysis</title>
+          <p>The total sugar in processed ball-milled wheat straw was quantified in the hydrosylate after acid hydrolysis. 30 mg of dried wheat straw was weighed and subjected to a two stage acid hydrolysis initially with 12 M sulphuric acid for 1 hour at 37&#xB0;C followed by 1 M sulphuric acid for 2 hours at 100&#xB0;C. The monosaccharide analysis was performed on the supernatant. Sugar monomers in culture supernatants, collected at appropriate times points and separated from mycelia and insoluble straw by filtration through Miracloth (CalBioChem), and fully acid hydrolysed residues were determined by high-performance anion exchange chromatography with pulsed amperometric detection (HPAEC-PAD) (Dionex, UK) using a CarboPac PA20 column with 50 mM NaOH isocratic system at working flow rate of 0.5 ml/min at 30&#xB0;C. Glucose, xylose, arabinose and galactose were used as standards with mannitol as an internal standard.</p>
+        </sec>
+        <sec id="s3a3">
+          <title>Lignin analysis</title>
+          <p>The acetyl bromide method <xref rid="pgen.1002875-Fukushima1" ref-type="bibr">[54]</xref>, <xref rid="pgen.1002875-Hatfield1" ref-type="bibr">[55]</xref> was performed to quantify lignin in wheat straw samples. 100 mg of dried sample was digested with 4 ml of 25% v/v acetyl bromide in glacial acetic acid (HAc) in a Teflon capped tube at 50&#xB0;C for 2 h with occasional mixing. After cooling, the digested sample volume was made up to 16 ml with HAc. After centrifugation at 3000 g for 15 min, 0.5 ml of the supernatant was mixed with 2.5 mL of HAc and 1.5 mL of 0.3M NaOH. 0.5 mL of 0.5M hydroxylamine hydrochloride solution was then added and the volume was made up to 10 mL with HAc. An analytical sample of low sulphate lignin (Sigma) was used as the standard for quantitative analysis by the acetyl bromide method. 10 mg of the lignin was dissolved in 5 ml of dioxane and 0.2, 0.3, 0.4, 0.5 and 0.6 mL was added in Teflon capped tubes to determine a standard curve. A reagent blank was also included. 0.5 mL of 25% acetyl bromide in glacial acetic acid (HAcBr) was added to each tube and incubated at 50&#xB0;C for 30 min. The samples were cooled and 2.5 mL of HAc, 1.5 mL of 0.3 M NaOH, and 0.5 mL of 0.5 M hydroxylamine hydrochloride solution were added. The final volume was made up to 10 mL with HAc. Optical density was measured by scanning from 250 to 400 nm in a UV-Visible spectrophotometer (Varian, UK). The concentration of acetyl bromide soluble lignin for the samples was determined from the standard curve measured at 280 nm.</p>
+        </sec>
+        <sec id="s3a4">
+          <title>X-ray diffraction</title>
+          <p>The percentage cystallinity in the milled straw samples was estimated using X-ray diffraction, according to a variation of the method of Ruland and Vonk <xref rid="pgen.1002875-Maier1" ref-type="bibr">[56]</xref>. Cellulose is presumed to be the only crystallisable polymer in the cell-wall matrix so non-cellulose components such as lignin and hemicelluloses also contribute to the non-crystalline proportion. Powder measurements were carried out on a Siemens D5000 system, with copper K&#x3B1; X-ray source, with scans performed from 5 to 50&#xB0; 2&#xE8;, A linear baseline was applied between the scan limits and a diffractogram of a ball-milled (fully amorphous) straw sample was then subtracted from the experimental profiles.</p>
+        </sec>
+      </sec>
+      <sec id="s3b">
+        <title>Strains and growth conditions</title>
+        <p>The <italic>A. niger</italic> strains used were N402 <xref rid="pgen.1002875-Bos1" ref-type="bibr">[57]</xref> and AB4.1 <italic>pyrG</italic>
+<xref rid="pgen.1002875-vanHartingsveldt1" ref-type="bibr">[7]</xref> or as specified otherwise. Strains were maintained on potato dextrose agar (Oxoid). All AB4.1 cultures were supplemented by 10 mM uridine (Sigma). Cultures were incubated at 28&#xB0;C until they had conidiated. Spores were harvested into 0.1% (v/v) Tween 20 (Sigma). &#x394;<italic>xlnR</italic> and &#x394;<italic>creA</italic> strains are <italic>A. niger</italic> AB4.1 <italic>pyrG</italic> containing a deletion of the respective open reading frame. Strains were constructed using the method developed by Scherer and Davis. <xref rid="pgen.1002875-Scherer1" ref-type="bibr">[58]</xref> based on recombination between a plasmid containing the flanking region of the gene of interest and the chromosome. As a selection/counter-selection marker we used the gene coding for the orotidine-5-phosphate decarboxylase <xref rid="pgen.1002875-Boeke1" ref-type="bibr">[59]</xref> (<italic>pyrG</italic>, from <italic>Aspergillus oryzae</italic>). After transformation of <italic>A. niger</italic>, cells were selected for uridine prototrophy, confirming integration of the plasmid into the chromosome. After purification of the transformants, release of the selective pressure for the integrated plasmid was achieved by propagating the clones twice on potato dextrose agar containing 10 mM uridine. Selection for cells that had excised the plasmid from the chromosome was done by plating them on media containing 4 mM of 5-fluoro-orotic acid (Melford) and 1.6 mM uridine. Deletion of <italic>creA</italic> or <italic>xlnR</italic> was confirmed by PCR using internal and external oligonucleotide primers and by sequencing around the respective loci.</p>
+        <p>Liquid batch cultures were inoculated with spores to a final concentration of 10<sup>6</sup> spores/ml. <italic>A. niger</italic> was grown in 100 ml of minimal media [all l<sup>&#x2212;1</sup>: NaNO<sub>3</sub>, 6 g; KCl, 0.52 g; MgSO<sub>4</sub>.7H<sub>2</sub>O, 0.52 g; KH<sub>2</sub>PO<sub>4</sub>, 1.52 g; Na<sub>2</sub>B<sub>4</sub>O<sub>7</sub>.10H<sub>2</sub>O, 0.008 mg; CuSO<sub>4</sub>.5H<sub>2</sub>O, 0.16 mg; FePO<sub>4</sub>.H<sub>2</sub>O, 0.16 mg; MnSO<sub>4</sub>.4H<sub>2</sub>O, 0.16 mg; NaMoO<sub>4</sub>.2H<sub>2</sub>O, 0.16 mg; ZnSO<sub>4</sub>, 1.6 mg] with the appropriate carbon source added to a final concentration of 1% (w/v) in 250 ml Erlenmeyer flasks at 28&#xB0;C, shaken at 150 rpm. The standard time-course consisted of growth for 48 h in 1% (w/v) glucose media, after which mycelia were removed by filtration through Miracloth (Merck), washed thoroughly with media devoid of carbon source, and transferred to fresh media containing 1% (w/v) ball-milled wheat straw as sole carbon source. Incubation was continued for 24 h. Glucose was then added exogenously to a final concentration of 1% (w/v) and incubation continued for 5 hours. <xref ref-type="fig" rid="pgen-1002875-g001">Figure 1</xref> shows an image of a mycelial clump that was magnified using a Nikon SMZ1000 stereomicroscope and the picture taken using a Nikon 4500 camera.</p>
+      </sec>
+      <sec id="s3c">
+        <title>RNA extraction</title>
+        <p>Mycelia from each condition were frozen and ground under liquid nitrogen using a mortar and pestle. Total RNA was extracted from the ground material using the TRIzol reagent protocol (Invitrogen). An additional clean-up was performed using the RNEasy Mini Kit (Qiagen), following the manufacturer's RNA Clean-up protocol, including the additional on-column DNAse digest.</p>
+      </sec>
+      <sec id="s3d">
+        <title>RT-PCR</title>
+        <p>SuperScript III Reverse Transcriptase (Invitrogen) was used to synthesise cDNA from total RNA according to manufacturer's instructions, using oligo(dT) as primer or tagged gene specific primers for strand-specific experiments. 0.5 &#xB5;g of total RNA was used for each reverse transcription. PCR reactions were performed using Phusion (New England Biolabs) using 1 &#xB5;l of cDNA in a 25 &#xB5;l reaction. PCR conditions were 30 cycles of denaturation at 98&#xB0;C for 30 s, annealing at 60&#xB0;C for 30 s and extension at 72&#xB0;C for 30 s. For PCR amplification of cDNA synthesised strand-specifically, a primer identical to the added tag sequence was paired with the opposing standard primer. In this way only cDNA synthesised from the tagged primer, and not non-specifically self-primed transcripts, was amplified.</p>
+        <p>qPCR amplifications were carried out using the Applied Biosystems 7500 Fast Real-Time PCR system. The PCR reaction mixture (10 &#xB5;l) contained 1 &#xB5;l of cDNA, specific primer sets (175 nM final concentration), and FAST SYBR-Green Master Mix (Applied Biosystems). PCRs were carried out for 40 cycles; denaturation at 95&#xB0;C for 15 seconds, annealing at 67&#xB0;C for 30 seconds, and extension at 60&#xB0;C for 60 seconds. All measurements were independently conducted 3 times on 2 separate biological isolates. The specificity of primer sets used for qRT-PCR amplification was evaluated by melting curve analysis. The Standard Curve Method was used for quantification against a known concentration of genomic DNA (Li et al 2009). All primers used, and sequences are listed in <xref ref-type="supplementary-material" rid="pgen.1002875.s012">Table S5</xref>.</p>
+      </sec>
+      <sec id="s3e">
+        <title>RNA-seq</title>
+        <p>10 &#xB5;g of Total RNA was depleted of ribosomal RNA using the Ribominus Eukaryotic kit (Invitrogen). SOLiD whole transcriptome libraries were made as outlined in the SOLiD Whole transcriptome kit protocol (Applied Biosystems). The Quant-it HS dsDNA assay kit (Invitrogen) was used to measure the concentration of libraries in order to pool equimolar amounts. Pooled libraries were gel-purified using 2% size-select E-gels to 200&#x2013;300 bp (Invitrogen). Emulsion PCR (0.5 pM final concentration of pooled libraries) and bead-based enrichment was carried out according to the SOLiD 4 Templated bead preparation guide containing library. Sequencing was performed on a SOLiD 4 ABi sequencer according to the manufacturer's instructions to generate 50 bp reads in colour space.</p>
+      </sec>
+      <sec id="s3f">
+        <title>Data analysis</title>
+        <p>SOLiD 4 RNA-seq reads from each experimental sample were mapped to the two published genome sequences of <italic>A. niger</italic> (JGI <italic>A. niger</italic> version 3.0 unmasked assembly scaffolds and gene annotation and CADRE <italic>A. niger</italic> assembly) using the BioScope 1.3.1 Whole Transcriptome Pipeline (LifeTechnologies). This included the initial filtering of reads against a collection of published <italic>A. niger</italic> rRNA sequences prior to mapping (Genbank <xref rid="pgen.1002875-Benson1" ref-type="bibr">[60]</xref> sequence IDs: 197115286, 300675560, 222105557, 312434471, 34304202, 241017633, 157267321, 213866863). BioScope provided the primary read alignment position of each read mapped against the complete genome sequence and exon spanning junctions using available gene coordinate information. Read alignment results were recorded in BAM format for further downstream analysis. Read counts per gene were calculated for each sample with Htseq-count (<ext-link ext-link-type="uri" xlink:href="http://www-huber.embl.de/users/anders/HTSeq">http://www-huber.embl.de/users/anders/HTSeq</ext-link>) using the BAM file and genome annotation as the input. Strand-specific RNA-seq reads, as generated by SOLiD, can be specified for when executing Htseq-count in determining accurate read counts per gene. These counts were then used to calculate normalized expression values (RPKM) for each gene <xref rid="pgen.1002875-Mortazavi1" ref-type="bibr">[61]</xref>. Additionally, antisense transcription could be detected by comparing gene counts generated by Htseq-count when opting to ignore or include strand-specificity in the calculations.. Data were further visualised using Integrative Genomic Viewer (IGV) <xref rid="pgen.1002875-Robinson1" ref-type="bibr">[62]</xref>. Raw and processed data files have been submitted to the Gene Expression Omnibus, under accession number GSE33852. Reads were mapped against an EST assembly of Genbank EST records <xref rid="pgen.1002875-Benson1" ref-type="bibr">[60]</xref> for the wheat <italic>Triticum aestivum</italic> (taxon id 4565; 1,073,845 EST's March 2012) a publicly available wheat genome <xref rid="pgen.1002875-Lai1" ref-type="bibr">[63]</xref>. The number of reads that mapped was no higher in the wheat-grown <italic>A. niger</italic> cultures than it was in the glucose-grown cultures. This suggests wheat transcript levels are insignificant, and any reads mapping to the wheat genome are simply due to a basic level of homology between genomes.</p>
+      </sec>
+      <sec id="s3g">
+        <title>Identification of secreted proteins</title>
+        <p>Proteins in culture supernatant from relevant times were separated on 4&#x2013;20% Tris-glycine Novex SDS-PAGE gels (Invitrogen). 15 &#xB5;l Tris-glycine-SDS loading buffer was added to 12 &#xB5;l supernatant plus 3 &#xB5;l 1 M DTT. The sample mixture was heated to 100&#xB0;C for 5 minutes before being loaded onto the gel with running conditions of 100 V for 3 hours. The gel was subsequently silver stained <xref rid="pgen.1002875-Yan1" ref-type="bibr">[64]</xref>. Bands resolved by size were excised from the gel, diced into cubes (&#x223C;1 mm<sup>3</sup>) and placed into individual wells of a microtitre plate, processed (destained, reduced, alkylated) and digested with trypsin using standard procedures on a MassPREP station (Waters). Resulting peptides were delivered via nanoflow reversed phase-HPLC to a Q-ToF2 (Waters) for tandem MS analysis. An automated experiment (DDA&#x200A;=&#x200A;data dependent acquisition) was run where selected peptides automatically enter MSMS for fragmentation. The data was searched against the Swissprot and NCBInr databases using the MS/MSIONS search on the MASCOT web site (<ext-link ext-link-type="uri" xlink:href="http://www.matrixscience.com">http://www.matrixscience.com</ext-link>) using the variable modifications of carbamidomethylation of cysteine and oxidation of methionine.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s4">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>RT-PCR measurement of gene expression over time after the switch to growth on wheat straw.</bold> Results shown are representative of at least two biologically independent experiments. Time of induction varies for different genes, with two notably distinct clusters of induction at the 6 h and 9 h time points.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s001.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s002">
+        <label>Figure S2</label>
+        <caption>
+          <p><bold>qRT-PCR analysis of glycoside hydrolase gene expression after 6 and 9 hours of exposure to straw.</bold> Expression was measured in the N402 strain. Results shown are representative of at least two biologically independent experiments. * indicates significant induction (a p-value of &gt;0.01 in an equal variance, one-tailed T-test) compared to the expression level measured at the Glucose 48 h time point.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s002.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s003">
+        <label>Figure S3</label>
+        <caption>
+          <p><bold>qRT-PCR analysis of glycoside hydrolase gene expression after 24 hours exposure to straw in </bold><italic>&#x394;xlnR</italic><bold> and parent strain.</bold> Results shown are triplicate measurements taken from each of at least two biologically independent experiments.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s003.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s004">
+        <label>Figure S4</label>
+        <caption>
+          <p>qRT-PCR analysis of glycoside hydrolase gene expression in the <italic>&#x394;creA</italic>
+<bold> and parent strain after 48 hours growth on glucose.</bold> Results shown are triplicate measurements taken from each of at least two biologically independent experiments. * indicates significant change in expression level (a p-value of &gt;0.01 in an equal variance, one-tailed T-test) in the mutant strain, when compared to the parent strain.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s004.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s005">
+        <label>Figure S5</label>
+        <caption>
+          <p><bold>qRT-PCR analysis of glycoside hydrolase gene expression in the N402 wild-type after the switch to media completely devoid of carbon source.</bold> Expression was measured in the wild-type strain. Results shown are representative of at least two biologically independent experiments. Fold-induction values for <italic>cbhA</italic> and <italic>GH61</italic> inductions were &lt;3 and are therefore not visible on the scale of this Figure. * indicates significant induction (a p-value of &gt;0.01 in an equal variance, one-tailed T-test) compared to the expression level measured at the Glucose 48 h time point.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s005.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s006">
+        <label>Figure S6</label>
+        <caption>
+          <p><bold>Distribution of genes as a function of their antisense RPKM.</bold> Antisense RPKM was calculated for each gene in Glucose 48 h (blue bar) and Straw 24 h (red bar). Approximately 5 percent of genes have a value of 1 or more RPKM. The number of genes is represented on a log scale.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s006.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s007">
+        <label>Figure S7</label>
+        <caption>
+          <p><bold>Characterisation of </bold><italic>tfl1</italic><bold> transcripts from sense and antisense directions and their regulation by CreA.</bold><bold>A. Antisense transcription through </bold><italic>tfl1</italic><bold> in glucose growth conditions.</bold> RNA-sequencing reads aligned to the <italic>tfl1</italic> locus in Glucose 48 h and Straw 24 h conditions. The figure is adapted from Integrated Genomics Viewer. Blue reads are sense, and red reads antisense, to <italic>tfl1</italic>. RPKM values for sense and antisense for each condition are given below the gene model. The red line below the gene model indicates the region amplified in RT-PCR (B). <bold>B. Confirmation of antisense transcript and its regulation by CreA.</bold> The RT-PCR primers amplify a region (indicated by the red line) spanning across the first two introns of the gene (A). A non-spliced transcript will generate a product of 507 bp; A fully spliced transcript, a product of 365 bp, and a transcript with a single intron removed will give a product of either 421 or 451 bp. Standard RT-PCR (which does not differentiate between sense and antisense transcripts) on the parent strain shows, when grown on straw the product size is as expected from a spliced transcript template. In contrast, when grown on glucose, a larger product is observed. Strand-specific RT-PCR confirms that the predominant band seen at glucose 48 h in the conventional RT-PCR is from the antisense strand, whilst in straw the predominant band is sense to <italic>tfl1</italic>. In a <italic>&#x394;creA</italic> strain, standard and strand-specific RT-PCR shows that the products formed are from RNAs that are mainly sense to <italic>tfl1</italic>. The existence of low levels of spliced and partially spliced intermediates of antisense transcripts can also be observed. Results shown are representative of at least two biologically independent experiments.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s007.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s008">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Genes annotated in the CBS 513.8 genome but not the ATCC 1015 genome.</bold>
+          </p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s008.xls">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s009">
+        <label>Table S2</label>
+        <caption>
+          <p>
+            <bold>Read mapping scores and RPKM values for each biological replicate, the combined mapping scores and statistical significance scores for all genes under Glucose 48 h, Straw 24 h and Straw+Glucose 5 h conditions.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s009.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s010">
+        <label>Table S3</label>
+        <caption>
+          <p><bold>Inter-sample correlation comparison.</bold> R-squared values for comparison of each of the mapping results of each individual biological sample.</p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s010.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s011">
+        <label>Table S4</label>
+        <caption>
+          <p>
+            <bold>Antisense and sense RPKM values and ratios under Glucose 48 h, Straw 24 h and Straw+Glucose 5 h conditions, for all genes with an antisense RPKM &gt;1 in any condition.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s011.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pgen.1002875.s012">
+        <label>Table S5</label>
+        <caption>
+          <p>
+            <bold>Primers used in this study.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pgen.1002875.s012.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors would like to thank Lee Shunburne for technical assistance.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pgen.1002875-Sims1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Sims</surname><given-names>RE</given-names></name>, <name><surname>Mabee</surname><given-names>W</given-names></name>, <name><surname>Saddler</surname><given-names>JN</given-names></name>, <name><surname>Taylor</surname><given-names>M</given-names></name> (<year>2010</year>) <article-title>An overview of second generation biofuel technologies</article-title>. <source>Bioresour Technol</source>
+<volume>101</volume>: <fpage>1570</fpage>&#x2013;<lpage>1580</lpage>.<pub-id pub-id-type="pmid">19963372</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Gusakov1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Gusakov</surname><given-names>AV</given-names></name> (<year>2011</year>) <article-title>Alternatives to <italic>Trichoderma reesei</italic> in biofuel production</article-title>. <source>Trends Biotechnol</source>
+<volume>29</volume>: <fpage>419</fpage>&#x2013;<lpage>425</lpage>.<pub-id pub-id-type="pmid">21612834</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Stephanopoulos1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Stephanopoulos</surname><given-names>G</given-names></name> (<year>2007</year>) <article-title>Challenges in engineering microbes for biofuels production</article-title>. <source>Science</source>
+<volume>315</volume>: <fpage>801</fpage>&#x2013;<lpage>804</lpage>.<pub-id pub-id-type="pmid">17289987</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Weber1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Weber</surname><given-names>C</given-names></name>, <name><surname>Farwick</surname><given-names>A</given-names></name>, <name><surname>Benisch</surname><given-names>F</given-names></name>, <name><surname>Brat</surname><given-names>D</given-names></name>, <name><surname>Dietz</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Trends and challenges in the microbial production of lignocellulosic bioalcohol fuels</article-title>. <source>Appl Microbiol Biotechnol</source>
+<volume>87</volume>: <fpage>1303</fpage>&#x2013;<lpage>1315</lpage>.<pub-id pub-id-type="pmid">20535464</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Archer1">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Archer</surname><given-names>DB</given-names></name> (<year>2000</year>) <article-title>Filamentous fungi as microbial cell factories for food use</article-title>. <source>Curr Opin Biotechnol</source>
+<volume>11</volume>: <fpage>478</fpage>&#x2013;<lpage>483</lpage>.<pub-id pub-id-type="pmid">11024367</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Meyer1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Meyer</surname><given-names>V</given-names></name>, <name><surname>Wu</surname><given-names>B</given-names></name>, <name><surname>Ram</surname><given-names>AF</given-names></name> (<year>2011</year>) <article-title><italic>Aspergillus</italic> as a multi-purpose cell factory: current status and perspectives</article-title>. <source>Biotechnol Lett</source>
+<volume>33</volume>: <fpage>469</fpage>&#x2013;<lpage>476</lpage>.<pub-id pub-id-type="pmid">21088867</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-vanHartingsveldt1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>van Hartingsveldt</surname><given-names>W</given-names></name>, <name><surname>Mattern</surname><given-names>IE</given-names></name>, <name><surname>van Zeijl</surname><given-names>CM</given-names></name>, <name><surname>Pouwels</surname><given-names>PH</given-names></name>, <name><surname>van den Hondel</surname><given-names>CA</given-names></name> (<year>1987</year>) <article-title>Development of a homologous transformation system for <italic>Aspergillus niger</italic> based on the <italic>pyrG</italic> gene</article-title>. <source>Mol Gen Genet</source>
+<volume>206</volume>: <fpage>71</fpage>&#x2013;<lpage>75</lpage>.<pub-id pub-id-type="pmid">3472035</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Hihlal1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Hihlal</surname><given-names>E</given-names></name>, <name><surname>Braumann</surname><given-names>I</given-names></name>, <name><surname>van den Berg</surname><given-names>M</given-names></name>, <name><surname>Kempken</surname><given-names>F</given-names></name> (<year>2011</year>) <article-title>Suitability of Vader for transposon-mediated mutagenesis in <italic>Aspergillus niger</italic>
+</article-title>. <source>Appl Environ Microbiol</source>
+<volume>77</volume>: <fpage>2332</fpage>&#x2013;<lpage>2336</lpage>.<pub-id pub-id-type="pmid">21296936</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Meyer2">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Meyer</surname><given-names>V</given-names></name>, <name><surname>Wanka</surname><given-names>F</given-names></name>, <name><surname>van Gent</surname><given-names>J</given-names></name>, <name><surname>Arentshorst</surname><given-names>M</given-names></name>, <name><surname>van den Hondel</surname><given-names>CA</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Fungal Gene Expression on Demand: an Inducible, Tunable, and Metabolism-Independent Expression System for <italic>Aspergillus niger</italic>
+</article-title>. <source>Appl Environ Microbiol</source>
+<volume>77</volume>: <fpage>2975</fpage>&#x2013;<lpage>2983</lpage>.<pub-id pub-id-type="pmid">21378046</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Pel1">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Pel</surname><given-names>HJ</given-names></name>, <name><surname>de Winde</surname><given-names>JH</given-names></name>, <name><surname>Archer</surname><given-names>DB</given-names></name>, <name><surname>Dyer</surname><given-names>PS</given-names></name>, <name><surname>Hofmann</surname><given-names>G</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>Genome sequencing and analysis of the versatile cell factory <italic>Aspergillus niger</italic> CBS 513.88</article-title>. <source>Nat Biotechnol</source>
+<volume>25</volume>: <fpage>221</fpage>&#x2013;<lpage>231</lpage>.<pub-id pub-id-type="pmid">17259976</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Andersen1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Andersen</surname><given-names>MR</given-names></name>, <name><surname>Salazar</surname><given-names>MP</given-names></name>, <name><surname>Schaap</surname><given-names>PJ</given-names></name>, <name><surname>van de Vondervoort</surname><given-names>PJI</given-names></name>, <name><surname>Culley</surname><given-names>D</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Comparative genomics of citric-acid-producing <italic>Aspergillus niger</italic> ATCC 1015 versus enzyme-producing CBS 513.88</article-title>. <source>Genome Research</source>
+<volume>21</volume>: <fpage>885</fpage>&#x2013;<lpage>897</lpage>.<pub-id pub-id-type="pmid">21543515</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Cantarel1">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Cantarel</surname><given-names>BL</given-names></name>, <name><surname>Coutinho</surname><given-names>PM</given-names></name>, <name><surname>Rancurel</surname><given-names>C</given-names></name>, <name><surname>Bernard</surname><given-names>T</given-names></name>, <name><surname>Lombard</surname><given-names>V</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>The Carbohydrate-Active EnZymes database (CAZy): an expert resource for Glycogenomics</article-title>. <source>Nucleic Acids Res</source>
+<volume>37</volume>: <fpage>D233</fpage>&#x2013;<lpage>238</lpage>.<pub-id pub-id-type="pmid">18838391</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Guillemette1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Guillemette</surname><given-names>T</given-names></name>, <name><surname>van Peij</surname><given-names>NN</given-names></name>, <name><surname>Goosen</surname><given-names>T</given-names></name>, <name><surname>Lanthaler</surname><given-names>K</given-names></name>, <name><surname>Robson</surname><given-names>GD</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>Genomic analysis of the secretion stress response in the enzyme-producing cell factory <italic>Aspergillus niger</italic>
+</article-title>. <source>BMC Genomics</source>
+<volume>8</volume>: <fpage>158</fpage>.<pub-id pub-id-type="pmid">17561995</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Andersen2">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Andersen</surname><given-names>MR</given-names></name>, <name><surname>Vongsangnak</surname><given-names>W</given-names></name>, <name><surname>Panagiotou</surname><given-names>G</given-names></name>, <name><surname>Salazar</surname><given-names>MP</given-names></name>, <name><surname>Lehmann</surname><given-names>L</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>A trispecies <italic>Aspergillus</italic> microarray: comparative transcriptomics of three <italic>Aspergillus</italic> species</article-title>. <source>Proc Natl Acad Sci U S A</source>
+<volume>105</volume>: <fpage>4387</fpage>&#x2013;<lpage>4392</lpage>.<pub-id pub-id-type="pmid">18332432</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Salazar1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Salazar</surname><given-names>M</given-names></name>, <name><surname>Vongsangnak</surname><given-names>W</given-names></name>, <name><surname>Panagiotou</surname><given-names>G</given-names></name>, <name><surname>Andersen</surname><given-names>MR</given-names></name>, <name><surname>Nielsen</surname><given-names>J</given-names></name> (<year>2009</year>) <article-title>Uncovering transcriptional regulation of glycerol metabolism in Aspergilli through genome-wide gene expression data analysis</article-title>. <source>Mol Genet Genomics</source>
+<volume>282</volume>: <fpage>571</fpage>&#x2013;<lpage>586</lpage>.<pub-id pub-id-type="pmid">19784673</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Jorgensen1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Jorgensen</surname><given-names>TR</given-names></name>, <name><surname>Goosen</surname><given-names>T</given-names></name>, <name><surname>Hondel</surname><given-names>CA</given-names></name>, <name><surname>Ram</surname><given-names>AF</given-names></name>, <name><surname>Iversen</surname><given-names>JJ</given-names></name> (<year>2009</year>) <article-title>Transcriptomic comparison of <italic>Aspergillus niger</italic> growing on two different sugars reveals coordinated regulation of the secretory pathway</article-title>. <source>BMC Genomics. England</source>. <fpage>44</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-deVries1">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>de Vries</surname><given-names>RP</given-names></name> (<year>2003</year>) <article-title>Regulation of <italic>Aspergillus</italic> genes encoding plant cell wall polysaccharide-degrading enzymes; relevance for industrial production</article-title>. <source>Appl Microbiol Biotechnol</source>
+<volume>61</volume>: <fpage>10</fpage>&#x2013;<lpage>20</lpage>.<pub-id pub-id-type="pmid">12658510</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-deSouza1">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>de Souza</surname><given-names>WR</given-names></name>, <name><surname>de Gouvea</surname><given-names>PF</given-names></name>, <name><surname>Savoldi</surname><given-names>M</given-names></name>, <name><surname>Malavazi</surname><given-names>I</given-names></name>, <name><surname>de Souza Bernardes</surname><given-names>LA</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Transcriptome analysis of <italic>Aspergillus niger</italic> grown on sugarcane bagasse</article-title>. <source>Biotechnol Biofuels</source>
+<volume>4</volume>: <fpage>40</fpage>.<pub-id pub-id-type="pmid">22008461</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-LeCrom1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Le Crom</surname><given-names>S</given-names></name>, <name><surname>Schackwitz</surname><given-names>W</given-names></name>, <name><surname>Pennacchio</surname><given-names>L</given-names></name>, <name><surname>Magnuson</surname><given-names>JK</given-names></name>, <name><surname>Culley</surname><given-names>DE</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Tracking the roots of cellulase hyperproduction by the fungus <italic>Trichoderma reesei</italic> using massively parallel DNA sequencing</article-title>. <source>Proc Natl Acad Sci U S A. United States</source>
+<fpage>16151</fpage>&#x2013;<lpage>16156</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Coutinho1">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Coutinho</surname><given-names>PM</given-names></name>, <name><surname>Andersen</surname><given-names>MR</given-names></name>, <name><surname>Kolenova</surname><given-names>K</given-names></name>, <name><surname>vanKuyk</surname><given-names>PA</given-names></name>, <name><surname>Benoit</surname><given-names>I</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Post-genomic insights into the plant polysaccharide degradation potential of <italic>Aspergillus nidulans</italic> and comparison to <italic>Aspergillus niger</italic> and <italic>Aspergillus oryzae</italic>
+</article-title>. <source>Fungal Genet Biol</source>
+<volume>46 Suppl 1</volume>: <fpage>S161</fpage>&#x2013;<lpage>S169</lpage>.<pub-id pub-id-type="pmid">19618505</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Tian1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Tian</surname><given-names>C</given-names></name>, <name><surname>Beeson</surname><given-names>WT</given-names></name>, <name><surname>Iavarone</surname><given-names>AT</given-names></name>, <name><surname>Sun</surname><given-names>J</given-names></name>, <name><surname>Marletta</surname><given-names>MA</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Systems analysis of plant cell wall degradation by the model filamentous fungus <italic>Neurospora crassa</italic>
+</article-title>. <source>Proc Natl Acad Sci U S A</source>
+<volume>106</volume>: <fpage>22157</fpage>&#x2013;<lpage>22162</lpage>.<pub-id pub-id-type="pmid">20018766</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Brander1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Brander</surname><given-names>M</given-names></name>, <name><surname>Hutchison</surname><given-names>C</given-names></name>, <name><surname>Sherrington</surname><given-names>C</given-names></name>, <name><surname>Ballinger</surname><given-names>A</given-names></name>, <name><surname>Beswick</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Methodology and Evidence Base on the Indirect Greenhouse Gas Effects of Using Wastes, Residues, and By-products for Biofuels and Bioenergy : Report to the Renewable Fuels Agency and the Department for Energy and Climate Change</article-title>. Ecometrica, Eunomia, Imperial College London.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Prathumpai1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Prathumpai</surname><given-names>W</given-names></name>, <name><surname>McIntyre</surname><given-names>M</given-names></name>, <name><surname>Nielsen</surname><given-names>J</given-names></name> (<year>2004</year>) <article-title>The effect of CreA in glucose and xylose catabolism in <italic>Aspergillus nidulans</italic>
+</article-title>. <source>Appl Microbiol Biotechnol</source>
+<volume>63</volume>: <fpage>748</fpage>&#x2013;<lpage>753</lpage>.<pub-id pub-id-type="pmid">12920487</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Marioni1">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Marioni</surname><given-names>JC</given-names></name>, <name><surname>Mason</surname><given-names>CE</given-names></name>, <name><surname>Mane</surname><given-names>SM</given-names></name>, <name><surname>Stephens</surname><given-names>M</given-names></name>, <name><surname>Gilad</surname><given-names>Y</given-names></name> (<year>2008</year>) <article-title>RNA-seq: an assessment of technical reproducibility and comparison with gene expression arrays</article-title>. <source>Genome Res</source>
+<volume>18</volume>: <fpage>1509</fpage>&#x2013;<lpage>1517</lpage>.<pub-id pub-id-type="pmid">18550803</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Bloom1">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Bloom</surname><given-names>JS</given-names></name>, <name><surname>Khan</surname><given-names>Z</given-names></name>, <name><surname>Kruglyak</surname><given-names>L</given-names></name>, <name><surname>Singh</surname><given-names>M</given-names></name>, <name><surname>Caudy</surname><given-names>AA</given-names></name> (<year>2009</year>) <article-title>Measuring differential gene expression by short read sequencing: quantitative comparison to 2-channel gene expression microarrays</article-title>. <source>BMC Genomics</source>
+<volume>10</volume>: <fpage>221</fpage>.<pub-id pub-id-type="pmid">19435513</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Wang1">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Wang</surname><given-names>L</given-names></name>, <name><surname>Feng</surname><given-names>Z</given-names></name>, <name><surname>Wang</surname><given-names>X</given-names></name>, <name><surname>Zhang</surname><given-names>X</given-names></name> (<year>2010</year>) <article-title>DEGseq: an R package for identifying differentially expressed genes from RNA-seq data. Bioinformatics</article-title>. <source>2010</source>
+<volume>26</volume>: <fpage>136</fpage>&#x2013;<lpage>138</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Harris1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Harris</surname><given-names>PV</given-names></name>, <name><surname>Welner</surname><given-names>D</given-names></name>, <name><surname>McFarland</surname><given-names>KC</given-names></name>, <name><surname>Re</surname><given-names>E</given-names></name>, <name><surname>Navarro Poulsen</surname><given-names>JC</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Stimulation of lignocellulosic biomass hydrolysis by proteins of glycoside hydrolase family 61: structure and function of a large, enigmatic family</article-title>. <source>Biochemistry</source>
+<volume>49</volume>: <fpage>3305</fpage>&#x2013;<lpage>3316</lpage>.<pub-id pub-id-type="pmid">20230050</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Quinlan1">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Quinlan</surname><given-names>RJ</given-names></name>, <name><surname>Sweeney</surname><given-names>MD</given-names></name>, <name><surname>Lo Leggio</surname><given-names>L</given-names></name>, <name><surname>Otten</surname><given-names>H</given-names></name>, <name><surname>Poulsen</surname><given-names>JC</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Insights into the oxidative degradation of cellulose by a copper metalloenzyme that exploits biomass components</article-title>. <source>Proc Natl Acad Sci U S A</source>
+<volume>108</volume>: <fpage>15079</fpage>&#x2013;<lpage>15084</lpage>.<pub-id pub-id-type="pmid">21876164</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Beeson1">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Beeson</surname><given-names>WT</given-names></name>, <name><surname>Phillips</surname><given-names>CM</given-names></name>, <name><surname>Cate</surname><given-names>JH</given-names></name>, <name><surname>Marletta</surname><given-names>MA</given-names></name> (<year>2012</year>) <article-title>Oxidative cleavage of cellulose by fungal copper-dependent polysaccharide monooxygenases</article-title>. <source>J Am Chem Soc</source>
+<volume>134</volume>: <fpage>890</fpage>&#x2013;<lpage>892</lpage>.<pub-id pub-id-type="pmid">22188218</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Bourne1">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Bourne</surname><given-names>Y</given-names></name>, <name><surname>Hasper</surname><given-names>AA</given-names></name>, <name><surname>Chahinian</surname><given-names>H</given-names></name>, <name><surname>Juin</surname><given-names>M</given-names></name>, <name><surname>De Graaff</surname><given-names>LH</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title><italic>Aspergillus niger</italic> protein EstA defines a new class of fungal esterases within the alpha/beta hydrolase fold superfamily of proteins</article-title>. <source>Structure</source>
+<volume>12</volume>: <fpage>677</fpage>&#x2013;<lpage>687</lpage>.<pub-id pub-id-type="pmid">15062090</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-deVries2">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>de Vries</surname><given-names>RP</given-names></name>, <name><surname>Michelsen</surname><given-names>B</given-names></name>, <name><surname>Poulsen</surname><given-names>CH</given-names></name>, <name><surname>Kroon</surname><given-names>PA</given-names></name>, <name><surname>van den Heuvel</surname><given-names>RH</given-names></name>, <etal>et al</etal> (<year>1997</year>) <article-title>The faeA genes from <italic>Aspergillus niger</italic> and <italic>Aspergillus tubingensis</italic> encode ferulic acid esterases involved in degradation of complex cell wall polysaccharides</article-title>. <source>Appl Environ Microbiol</source>
+<volume>63</volume>: <fpage>4638</fpage>&#x2013;<lpage>4644</lpage>.<pub-id pub-id-type="pmid">9406381</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Linder1">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Linder</surname><given-names>MB</given-names></name>, <name><surname>Szilvay</surname><given-names>GR</given-names></name>, <name><surname>Nakari-Set&#xE4;l&#xE4;</surname><given-names>T</given-names></name>, <name><surname>Penttil&#xE4;</surname><given-names>ME</given-names></name> (<year>2005</year>) <article-title>Hydrophobins: the protein-amphiphiles of filamentous fungi</article-title>. <source>FEMS Microbiol Rev</source>
+<volume>29</volume>: <fpage>877</fpage>&#x2013;<lpage>896</lpage>.<pub-id pub-id-type="pmid">16219510</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Takahashi1">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Takahashi</surname><given-names>T</given-names></name>, <name><surname>Maeda</surname><given-names>H</given-names></name>, <name><surname>Yoneda</surname><given-names>S</given-names></name>, <name><surname>Ohtaki</surname><given-names>S</given-names></name>, <name><surname>Yamagata</surname><given-names>Y</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>The fungal hydrophobin RolA recruits polyesterase and laterally moves on hydrophobic surfaces</article-title>. <source>Mol Microbiol</source>
+<volume>57</volume>: <fpage>1780</fpage>&#x2013;<lpage>1796</lpage>.<pub-id pub-id-type="pmid">16135240</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Ohtaki1">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Ohtaki</surname><given-names>S</given-names></name>, <name><surname>Maeda</surname><given-names>H</given-names></name>, <name><surname>Takahashi</surname><given-names>T</given-names></name>, <name><surname>Yamagata</surname><given-names>Y</given-names></name>, <name><surname>Hasegawa</surname><given-names>F</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Novel hydrophobic surface binding protein, HsbA, produced by <italic>Aspergillus oryzae</italic>
+</article-title>. <source>Appl Environ Microbiol</source>
+<volume>72</volume>: <fpage>2407</fpage>&#x2013;<lpage>2413</lpage>.<pub-id pub-id-type="pmid">16597938</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-DeZwaan1">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>DeZwaan</surname><given-names>TM</given-names></name>, <name><surname>Carroll</surname><given-names>AM</given-names></name>, <name><surname>Valent</surname><given-names>B</given-names></name>, <name><surname>Sweigard</surname><given-names>JA</given-names></name> (<year>1999</year>) <article-title><italic>Magnaporthe grisea</italic> pth11p is a novel plasma membrane protein that mediates appressorium differentiation in response to inductive substrate cues</article-title>. <source>Plant Cell</source>
+<volume>11</volume>: <fpage>2013</fpage>&#x2013;<lpage>2030</lpage>.<pub-id pub-id-type="pmid">10521529</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Stelte1">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Stelte</surname><given-names>W</given-names></name>, <name><surname>Clemons</surname><given-names>C</given-names></name>, <name><surname>Holm</surname><given-names>J</given-names></name>, <name><surname>Ahrenfeldt</surname><given-names>J</given-names></name>, <name><surname>Henriksen</surname><given-names>U</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Fuel pellets from wheat straw: The effect of lignin glass transition and surface waxes on pelletizing properties</article-title>. <source>Bioenerg. Res. (2012)</source>
+<volume>5</volume>: <fpage>450</fpage>&#x2013;<lpage>458</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-King1">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>King</surname><given-names>BC</given-names></name>, <name><surname>Waxman</surname><given-names>KD</given-names></name>, <name><surname>Nenni</surname><given-names>NV</given-names></name>, <name><surname>Walker</surname><given-names>LP</given-names></name>, <name><surname>Bergstrom</surname><given-names>GC</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Arsenal of plant cell wall degrading enzymes reflects host preference among plant pathogenic fungi</article-title>. <source>Biotechnol Biofuels</source>
+<volume>4</volume>: <fpage>4</fpage>.<pub-id pub-id-type="pmid">21324176</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Kobayashi1">
+        <label>38</label>
+        <mixed-citation publication-type="book">Kobayashi T, Kato M (2012) Transcriptional Regulation in <italic>Aspergillus</italic> In: Machida M, Gomi K, editors. <italic>Aspergillus</italic> Molecular Biology and Genomics. UK: Caister Academic Press. 85&#x2013;114.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-deVries3">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>de Vries</surname><given-names>RP</given-names></name>, <name><surname>Visser</surname><given-names>J</given-names></name>, <name><surname>de Graaff</surname><given-names>LH</given-names></name> (<year>1999</year>) <article-title>CreA modulates the XlnR-induced expression on xylose of <italic>Aspergillus niger</italic> genes involved in xylan degradation</article-title>. <source>Res Microbiol</source>
+<volume>150</volume>: <fpage>281</fpage>&#x2013;<lpage>285</lpage>.<pub-id pub-id-type="pmid">10376490</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-vanPeij1">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>van Peij</surname><given-names>NN</given-names></name>, <name><surname>Gielkens</surname><given-names>MM</given-names></name>, <name><surname>de Vries</surname><given-names>RP</given-names></name>, <name><surname>Visser</surname><given-names>J</given-names></name>, <name><surname>de Graaff</surname><given-names>LH</given-names></name> (<year>1998</year>) <article-title>The transcriptional activator XlnR regulates both xylanolytic and endoglucanase gene expression in <italic>Aspergillus niger</italic>
+</article-title>. <source>Appl Environ Microbiol</source>
+<volume>64</volume>: <fpage>3615</fpage>&#x2013;<lpage>3619</lpage>.<pub-id pub-id-type="pmid">9758775</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Gielkens1">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Gielkens</surname><given-names>MM</given-names></name>, <name><surname>Dekkers</surname><given-names>E</given-names></name>, <name><surname>Visser</surname><given-names>J</given-names></name>, <name><surname>de Graaff</surname><given-names>LH</given-names></name> (<year>1999</year>) <article-title>Two cellobiohydrolase-encoding genes from <italic>Aspergillus niger</italic> require D-xylose and the xylanolytic transcriptional activator XlnR for their expression</article-title>. <source>Appl Environ Microbiol</source>
+<volume>65</volume>: <fpage>4340</fpage>&#x2013;<lpage>4345</lpage>.<pub-id pub-id-type="pmid">10508057</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Boraston1">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Boraston</surname><given-names>AB</given-names></name>, <name><surname>Bolam</surname><given-names>DN</given-names></name>, <name><surname>Gilbert</surname><given-names>HJ</given-names></name>, <name><surname>Davies</surname><given-names>GJ</given-names></name> (<year>2004</year>) <article-title>Carbohydrate-binding modules: fine-tuning polysaccharide recognition</article-title>. <source>Biochem J</source>
+<volume>382</volume>: <fpage>769</fpage>&#x2013;<lpage>781</lpage>.<pub-id pub-id-type="pmid">15214846</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Herve1">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>Herve</surname><given-names>C</given-names></name>, <name><surname>Rogowski</surname><given-names>A</given-names></name>, <name><surname>Blake</surname><given-names>AW</given-names></name>, <name><surname>Marcus</surname><given-names>SE</given-names></name>, <name><surname>Gilbert</surname><given-names>HJ</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Carbohydrate-binding modules promote the enzymatic deconstruction of intact plant cell walls by targeting and proximity effects</article-title>. <source>Proc Natl Acad Sci U S A</source>
+<volume>107</volume>: <fpage>15293</fpage>&#x2013;<lpage>15298</lpage>.<pub-id pub-id-type="pmid">20696902</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-CarleUrioste1">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Carle-Urioste</surname><given-names>JC</given-names></name>, <name><surname>Escobar-Vera</surname><given-names>J</given-names></name>, <name><surname>El-Gogary</surname><given-names>S</given-names></name>, <name><surname>Henrique-Silva</surname><given-names>F</given-names></name>, <name><surname>Torigoi</surname><given-names>E</given-names></name>, <etal>et al</etal> (<year>1997</year>) <article-title>Cellulase induction in <italic>Trichoderma reesei</italic> by cellulose requires its own basal expression</article-title>. <source>J Biol Chem</source>
+<volume>272</volume>: <fpage>10169</fpage>&#x2013;<lpage>10174</lpage>.<pub-id pub-id-type="pmid">9092563</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Foreman1">
+        <label>45</label>
+        <mixed-citation publication-type="journal"><name><surname>Foreman</surname><given-names>PK</given-names></name>, <name><surname>Brown</surname><given-names>D</given-names></name>, <name><surname>Dankmeyer</surname><given-names>L</given-names></name>, <name><surname>Dean</surname><given-names>R</given-names></name>, <name><surname>Diener</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2003</year>) <article-title>Transcriptional regulation of biomass-degrading enzymes in the filamentous fungus <italic>Trichoderma reesei</italic>
+</article-title>. <source>J Biol Chem</source>
+<volume>278</volume>: <fpage>31988</fpage>&#x2013;<lpage>31997</lpage>.<pub-id pub-id-type="pmid">12788920</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Parenicova1">
+        <label>46</label>
+        <mixed-citation publication-type="journal"><name><surname>Parenicova</surname><given-names>L</given-names></name>, <name><surname>Benen</surname><given-names>JA</given-names></name>, <name><surname>Kester</surname><given-names>HC</given-names></name>, <name><surname>Visser</surname><given-names>J</given-names></name> (<year>2000</year>) <article-title><italic>pgaA</italic> and <italic>pgaB</italic> encode two constitutively expressed endopolygalacturonases of <italic>Aspergillus niger</italic>
+</article-title>. <source>Biochem J</source>
+<volume>345</volume>: <fpage>637</fpage>&#x2013;<lpage>644</lpage>.<pub-id pub-id-type="pmid">10642523</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-deVries4">
+        <label>47</label>
+        <mixed-citation publication-type="journal"><name><surname>de Vries</surname><given-names>RP</given-names></name>, <name><surname>Jansen</surname><given-names>J</given-names></name>, <name><surname>Aguilar</surname><given-names>G</given-names></name>, <name><surname>Parenicova</surname><given-names>L</given-names></name>, <name><surname>Joosten</surname><given-names>V</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>Expression profiling of pectinolytic genes from <italic>Aspergillus niger</italic>
+</article-title>. <source>FEBS Lett</source>
+<volume>530</volume>: <fpage>41</fpage>&#x2013;<lpage>47</lpage>.<pub-id pub-id-type="pmid">12387863</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Yuan1">
+        <label>48</label>
+        <mixed-citation publication-type="journal"><name><surname>Yuan</surname><given-names>XL</given-names></name>, <name><surname>van der Kaaij</surname><given-names>RM</given-names></name>, <name><surname>van den Hondel</surname><given-names>CA</given-names></name>, <name><surname>Punt</surname><given-names>PJ</given-names></name>, <name><surname>van der Maarel</surname><given-names>MJ</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title><italic>Aspergillus niger</italic> genome-wide analysis reveals a large number of novel alpha-glucan acting enzymes with unexpected expression profiles</article-title>. <source>Mol Genet Genomics</source>
+<volume>279</volume>: <fpage>545</fpage>&#x2013;<lpage>561</lpage>.<pub-id pub-id-type="pmid">18320228</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Gowda1">
+        <label>49</label>
+        <mixed-citation publication-type="journal"><name><surname>Gowda</surname><given-names>M</given-names></name>, <name><surname>Venu</surname><given-names>RC</given-names></name>, <name><surname>Raghupathy</surname><given-names>MB</given-names></name>, <name><surname>Nobuta</surname><given-names>K</given-names></name>, <name><surname>Li</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Deep and comparative analysis of the mycelium and appressorium transcriptomes of <italic>Magnaporthe grisea</italic> using MPSS, RL-SAGE, and oligoarray methods</article-title>. <source>BMC Genomics</source>
+<volume>7</volume>: <fpage>310</fpage>.<pub-id pub-id-type="pmid">17156450</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Ni1">
+        <label>50</label>
+        <mixed-citation publication-type="journal"><name><surname>Ni</surname><given-names>T</given-names></name>, <name><surname>Tu</surname><given-names>K</given-names></name>, <name><surname>Wang</surname><given-names>Z</given-names></name>, <name><surname>Song</surname><given-names>S</given-names></name>, <name><surname>Wu</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>The prevalence and regulation of antisense transcripts in <italic>Schizosaccharomyces pombe</italic>
+</article-title>. <source>PLoS One</source>
+<volume>5</volume>: <fpage>e15271</fpage>.<pub-id pub-id-type="pmid">21187966</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Ohm1">
+        <label>51</label>
+        <mixed-citation publication-type="journal"><name><surname>Ohm</surname><given-names>RA</given-names></name>, <name><surname>de Jong</surname><given-names>JF</given-names></name>, <name><surname>Lugones</surname><given-names>LG</given-names></name>, <name><surname>Aerts</surname><given-names>A</given-names></name>, <name><surname>Kothe</surname><given-names>E</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Genome sequence of the model mushroom <italic>Schizophyllum commune</italic>
+</article-title>. <source>Nat Biotechnol</source>
+<volume>28</volume>: <fpage>957</fpage>&#x2013;<lpage>963</lpage>.<pub-id pub-id-type="pmid">20622885</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Lapidot1">
+        <label>52</label>
+        <mixed-citation publication-type="journal"><name><surname>Lapidot</surname><given-names>M</given-names></name>, <name><surname>Pilpel</surname><given-names>Y</given-names></name> (<year>2006</year>) <article-title>Genome-wide natural antisense transcription: coupling its regulation to its different regulatory mechanisms</article-title>. <source>EMBO Rep</source>
+<volume>7</volume>: <fpage>1216</fpage>&#x2013;<lpage>1222</lpage>.<pub-id pub-id-type="pmid">17139297</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Robellet1">
+        <label>53</label>
+        <mixed-citation publication-type="journal"><name><surname>Robellet</surname><given-names>X</given-names></name>, <name><surname>Flipphi</surname><given-names>M</given-names></name>, <name><surname>Pegot</surname><given-names>S</given-names></name>, <name><surname>Maccabe</surname><given-names>AP</given-names></name>, <name><surname>Velot</surname><given-names>C</given-names></name> (<year>2008</year>) <article-title>AcpA, a member of the GPR1/FUN34/YaaH membrane protein family, is essential for acetate permease activity in the hyphal fungus <italic>Aspergillus nidulans</italic>
+</article-title>. <source>Biochem J</source>
+<volume>412</volume>: <fpage>485</fpage>&#x2013;<lpage>493</lpage>.<pub-id pub-id-type="pmid">18302536</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Fukushima1">
+        <label>54</label>
+        <mixed-citation publication-type="journal"><name><surname>Fukushima</surname><given-names>RS</given-names></name>, <name><surname>Hatfield</surname><given-names>RD</given-names></name> (<year>2001</year>) <article-title>Extraction and isolation of lignin for utilization as a standard to determine lignin concentration using the acetyl bromide spectrophotometric method</article-title>. <source>J Agric Food Chem</source>
+<volume>49</volume>: <fpage>3133</fpage>&#x2013;<lpage>3139</lpage>.<pub-id pub-id-type="pmid">11453742</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Hatfield1">
+        <label>55</label>
+        <mixed-citation publication-type="journal"><name><surname>Hatfield</surname><given-names>R</given-names></name>, <name><surname>Fukushima</surname><given-names>RS</given-names></name> (<year>2005</year>) <article-title>Can lignin be accurately measured?</article-title>
+<source>Crop Sci</source>
+<volume>45</volume>: <fpage>832</fpage>&#x2013;<lpage>839</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Maier1">
+        <label>56</label>
+        <mixed-citation publication-type="journal"><name><surname>Maier</surname><given-names>G</given-names></name>, <name><surname>Zipper</surname><given-names>P</given-names></name>, <name><surname>Stubi&#x10D;ar</surname><given-names>M</given-names></name>, <name><surname>Schurz</surname><given-names>J</given-names></name> (<year>2005</year>) <article-title>Amorphization of different cellulose samples by ballmilling</article-title>. <source>Cellulose Chem Technol</source>
+<volume>39</volume>: <fpage>167</fpage>&#x2013;<lpage>177</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Bos1">
+        <label>57</label>
+        <mixed-citation publication-type="journal"><name><surname>Bos</surname><given-names>CJ</given-names></name>, <name><surname>Debets</surname><given-names>AJ</given-names></name>, <name><surname>Swart</surname><given-names>K</given-names></name>, <name><surname>Huybers</surname><given-names>A</given-names></name>, <name><surname>Kobus</surname><given-names>G</given-names></name>, <etal>et al</etal> (<year>1988</year>) <article-title>Genetic analysis and the construction of master strains for assignment of genes to six linkage groups in <italic>Aspergillus niger</italic>
+</article-title>. <source>Curr Genet</source>
+<volume>14</volume>: <fpage>437</fpage>&#x2013;<lpage>443</lpage>.<pub-id pub-id-type="pmid">3224384</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Scherer1">
+        <label>58</label>
+        <mixed-citation publication-type="journal"><name><surname>Scherer</surname><given-names>S</given-names></name>, <name><surname>Davis</surname><given-names>RW</given-names></name> (<year>1979</year>) <article-title>Replacement of chromosome segments with altered DNA sequences constructed <italic>in vitro</italic>
+</article-title>. <source>Proc Natl Acad Sci U S A</source>
+<volume>76</volume>: <fpage>4951</fpage>&#x2013;<lpage>4955</lpage>.<pub-id pub-id-type="pmid">388424</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Boeke1">
+        <label>59</label>
+        <mixed-citation publication-type="journal"><name><surname>Boeke</surname><given-names>JD</given-names></name>, <name><surname>LaCroute</surname><given-names>F</given-names></name>, <name><surname>Fink</surname><given-names>GR</given-names></name> (<year>1984</year>) <article-title>A positive selection for mutants lacking orotidine-5&#x2032;-phosphate decarboxylase activity in yeast: 5-fluoro-orotic acid resistance</article-title>. <source>Mol Gen Genet</source>
+<volume>197</volume>: <fpage>345</fpage>&#x2013;<lpage>346</lpage>.<pub-id pub-id-type="pmid">6394957</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Benson1">
+        <label>60</label>
+        <mixed-citation publication-type="journal"><name><surname>Benson</surname><given-names>DA</given-names></name>, <name><surname>Karsch-Mizrachi</surname><given-names>I</given-names></name>, <name><surname>Lipman</surname><given-names>DJ</given-names></name>, <name><surname>Ostell</surname><given-names>J</given-names></name>, <name><surname>Sayers</surname><given-names>EW</given-names></name> (<year>2011</year>) <article-title>GenBank</article-title>. <source>Nucleic Acids Res</source>
+<volume>39</volume>: <fpage>D32</fpage>&#x2013;<lpage>37</lpage>.<pub-id pub-id-type="pmid">21071399</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Mortazavi1">
+        <label>61</label>
+        <mixed-citation publication-type="journal"><name><surname>Mortazavi</surname><given-names>A</given-names></name>, <name><surname>Williams</surname><given-names>BA</given-names></name>, <name><surname>McCue</surname><given-names>K</given-names></name>, <name><surname>Schaeffer</surname><given-names>L</given-names></name>, <name><surname>Wold</surname><given-names>B</given-names></name> (<year>2008</year>) <article-title>Mapping and quantifying mammalian transcriptomes by RNA-Seq</article-title>. <source>Nat Methods</source>
+<volume>5</volume>: <fpage>621</fpage>&#x2013;<lpage>628</lpage>.<pub-id pub-id-type="pmid">18516045</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Robinson1">
+        <label>62</label>
+        <mixed-citation publication-type="journal"><name><surname>Robinson</surname><given-names>JT</given-names></name>, <name><surname>Thorvaldsd&#xF3;ttir</surname><given-names>H</given-names></name>, <name><surname>Winckler</surname><given-names>W</given-names></name>, <name><surname>Guttman</surname><given-names>M</given-names></name>, <name><surname>Lander</surname><given-names>ES</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Integrative genomics viewer</article-title>. <source>Nat Biotechnol</source>
+<volume>29</volume>: <fpage>24</fpage>&#x2013;<lpage>26</lpage>.<pub-id pub-id-type="pmid">21221095</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Lai1">
+        <label>63</label>
+        <mixed-citation publication-type="journal"><name><surname>Lai</surname><given-names>K</given-names></name>, <name><surname>Berkman</surname><given-names>PJ</given-names></name>, <name><surname>Lorenc</surname><given-names>MT</given-names></name>, <name><surname>Duran</surname><given-names>C</given-names></name>, <name><surname>Smits</surname><given-names>L</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>WheatGenome.info: an integrated database and portal for wheat genome information</article-title>. <source>Plant Cell Physiol</source>
+<volume>53</volume>: <fpage>e2</fpage>.<pub-id pub-id-type="pmid">22009731</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Yan1">
+        <label>64</label>
+        <mixed-citation publication-type="journal"><name><surname>Yan</surname><given-names>JX</given-names></name>, <name><surname>Wait</surname><given-names>R</given-names></name>, <name><surname>Berkelman</surname><given-names>T</given-names></name>, <name><surname>Harry</surname><given-names>RA</given-names></name>, <name><surname>Westbrook</surname><given-names>JA</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>A modified silver staining protocol for visualization of proteins compatible with matrix-assisted laser desorption/ionization and electrospray ionization-mass spectrometry</article-title>. <source>Electrophoresis</source>
+<volume>21</volume>: <fpage>3666</fpage>&#x2013;<lpage>3672</lpage>.<pub-id pub-id-type="pmid">11271485</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-Noguchi1">
+        <label>65</label>
+        <mixed-citation publication-type="journal"><name><surname>Noguchi</surname><given-names>Y</given-names></name>, <name><surname>Tanaka</surname><given-names>H</given-names></name>, <name><surname>Kanamaru</surname><given-names>K</given-names></name>, <name><surname>Kato</surname><given-names>M</given-names></name>, <name><surname>Kobayashi</surname><given-names>T</given-names></name> (<year>2011</year>) <article-title>Xylose triggers reversible phosphorylation of XlnR, the fungal transcriptional activator of xylanolytic and cellulolytic genes in <italic>Aspergillus oryzae</italic>
+</article-title>. <source>Biosci Biotechnol Biochem</source>
+<volume>75</volume>: <fpage>953</fpage>&#x2013;<lpage>959</lpage>.<pub-id pub-id-type="pmid">21597200</pub-id></mixed-citation>
+      </ref>
+      <ref id="pgen.1002875-MabeyGilsenan1">
+        <label>66</label>
+        <mixed-citation publication-type="journal"><name><surname>Mabey Gilsenan</surname><given-names>J</given-names></name>, <name><surname>Cooley</surname><given-names>J</given-names></name>, <name><surname>Bowyer</surname><given-names>P</given-names></name> (<year>2012</year>) <article-title>CADRE: the Central <italic>Aspergillus</italic> Data REpository 2012</article-title>. <source>Nucleic Acids Res</source>
+<volume>40</volume>: <fpage>D660</fpage>&#x2013;<lpage>666</lpage>.<pub-id pub-id-type="pmid">22080563</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,2562 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">5148886</article-id>
+      <article-id pub-id-type="publisher-id">3371</article-id>
+      <article-id pub-id-type="doi">10.1186/s12864-016-3371-1</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Whole genome sequencing and comparative genomics of closely related Fusarium Head Blight fungi: <italic>Fusarium graminearum</italic>, <italic>F. meridionale</italic> and <italic>F. asiaticum</italic></article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Walkowiak</surname>
+            <given-names>Sean</given-names>
+          </name>
+          <address>
+            <email>sean.walkowiak@agr.gc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rowland</surname>
+            <given-names>Owen</given-names>
+          </name>
+          <address>
+            <email>owen.rowland@carleton.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rodrigue</surname>
+            <given-names>Nicolas</given-names>
+          </name>
+          <address>
+            <email>nicolas.rodrigue@carleton.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2954-041X</contrib-id>
+          <name>
+            <surname>Subramaniam</surname>
+            <given-names>Rajagopal</given-names>
+          </name>
+          <address>
+            <email>rajagopal.subramaniam@agr.gc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+        </contrib>
+        <aff id="Aff1"><label>1</label>Department of Biology, Carleton University, 1125 Colonel By Dr, Ottawa, Canada </aff>
+        <aff id="Aff2"><label>2</label>Agriculture and Agri-Food Canada, Government of Canada, 960 Carling Ave, Ottawa, Canada </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>9</day>
+        <month>12</month>
+        <year>2016</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>9</day>
+        <month>12</month>
+        <year>2016</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2016</year>
+      </pub-date>
+      <volume>17</volume>
+      <elocation-id>1014</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>17</day>
+          <month>6</month>
+          <year>2016</year>
+        </date>
+        <date date-type="accepted">
+          <day>2</day>
+          <month>12</month>
+          <year>2016</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; The Author(s). 2016</copyright-statement>
+        <license license-type="OpenAccess">
+          <license-p><bold>Open Access</bold>This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>The <italic>Fusarium graminearum</italic> species complex is composed of many distinct fungal species that cause several diseases in economically important crops, including Fusarium Head Blight of wheat. Despite being closely related, these species and individuals within species have distinct phenotypic differences in toxin production and pathogenicity, with some isolates reported as non-pathogenic on certain hosts. In this report, we compare genomes and gene content of six new isolates from the species complex, including the first available genomes of <italic>F. asiaticum</italic> and <italic>F. meridionale</italic>, with four other genomes reported in previous studies.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>A comparison of genome structure and gene content revealed a 93&#x2013;99% overlap across all ten genomes. We identified more than 700&#xA0;k base pairs (kb) of single nucleotide polymorphisms (SNPs), insertions, and deletions (indels) within common regions of the genome, which validated the species and genetic populations reported within species. We constructed a non-redundant pan gene list containing 15,297 genes from the ten genomes and among them 1827 genes or 12% were absent in at least one genome. These genes were co-localized in telomeric regions and select regions within chromosomes with a corresponding increase in SNPs and indels. Many are also predicted to encode for proteins involved in secondary metabolism and other functions associated with disease. Genes that were common between isolates contained high levels of nucleotide variation and may be pseudogenes, allelic, or under diversifying selection.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>The genomic resources we have contributed will be useful for the identification of genes that contribute to the phenotypic variation and niche specialization that have been reported among members of the <italic>F. graminearum</italic> species complex.</p>
+        </sec>
+        <sec>
+          <title>Electronic supplementary material</title>
+          <p>The online version of this article (doi:10.1186/s12864-016-3371-1) contains supplementary material, which is available to authorized users.</p>
+        </sec>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Fusarium Head Blight</kwd>
+        <kwd>Cereal pathogens</kwd>
+        <kwd><italic>Fusarium graminearum</italic> species complex</kwd>
+        <kwd>Bioinformatics</kwd>
+        <kwd>Phylogenomics</kwd>
+        <kwd>Pan genome</kwd>
+        <kwd>Accessory genome</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2016</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="introduction">
+      <title>Background</title>
+      <p>Fungi belonging to the genus <italic>Fusarium</italic> are very diverse and occupy a wide variety of ecological niches. The genus is divided into several distinct species complexes, each with many species [<xref ref-type="bibr" rid="CR1">1</xref>]. For example, the <italic>Fusarium oxysporum</italic> species complex is composed of a variety of species including plant and animal pathogens, decomposers and soil fungi [<xref ref-type="bibr" rid="CR2">2</xref>&#x2013;<xref ref-type="bibr" rid="CR5">5</xref>]. The genomes of at least ten <italic>F. oxysporum</italic> isolates were sequenced in an attempt to delineate the genetic basis of niche specialization, and lineage specific regions within the genome were demonstrated to be important for pathogenicity in plants. For example, a supernumerary chromosome identified in <italic>F. oxysporum</italic> harbors virulence genes that confer pathogenicity to tomato [<xref ref-type="bibr" rid="CR4">4</xref>].</p>
+      <p>In this study, we focused our attention on closely related individuals from the <italic>Fusarium graminearum</italic> species complex, which cause Fusarium Head Blight (FHB) disease of wheat. The species complex composed of several distinct species, including <italic>F. graminearum</italic>, <italic>F. asiaticum</italic>, and <italic>F. meridionale</italic> [<xref ref-type="bibr" rid="CR6">6</xref>]. The genome of <italic>F. graminearum</italic> isolate PH-1 was the first genome available from the species complex, and has been re-examined as additional information on gene and genome structure has become available [<xref ref-type="bibr" rid="CR7">7</xref>&#x2013;<xref ref-type="bibr" rid="CR10">10</xref>]. There have also been some large-scale genomics studies that have used this genome as a reference to study different biological phenomenon, such as genome wide association analyses of SNPs, as well as analyses of recombination events by restriction site associated DNA sequencing [<xref ref-type="bibr" rid="CR11">11</xref>, <xref ref-type="bibr" rid="CR12">12</xref>]. Few studies have explored the genetic diversity of members of the <italic>F. graminearum</italic> species complex by performing whole genome assembly and comparative genetics; studies were largely focused on <italic>F. graminearum sensu stricto</italic> &#x2013; a single lineage within the complex [<xref ref-type="bibr" rid="CR7">7</xref>, <xref ref-type="bibr" rid="CR13">13</xref>, <xref ref-type="bibr" rid="CR14">14</xref>].</p>
+      <p>As part of the infection process, these fungi produce trichothecene mycotoxins that contribute to disease progression and accumulate in infected plant tissues [<xref ref-type="bibr" rid="CR15">15</xref>]. The toxicity of <italic>Fusarium</italic> trichothecenes makes contaminated crops unsafe for consumption by animals [<xref ref-type="bibr" rid="CR16">16</xref>]. The economic losses resulting from reductions in crop yield and grain quality has prompted significant amounts of research into understanding the genetic basis of toxin production by these fungi, which has been largely facilitated by the available genomic sequence of <italic>F. graminearum</italic> isolate PH-1 [<xref ref-type="bibr" rid="CR7">7</xref>]. Phenotypic variations in toxin production, pathology on different hosts, development and morphology, and growth differences have been reported both among and between species of the <italic>F. graminearum</italic> species complex [<xref ref-type="bibr" rid="CR17">17</xref>&#x2013;<xref ref-type="bibr" rid="CR19">19</xref>]. Currently, the only well-established virulence factor contributing to disease in wheat by <italic>F. graminearum</italic> and closely related species are the trichothecene mycotoxins [<xref ref-type="bibr" rid="CR15">15</xref>, <xref ref-type="bibr" rid="CR20">20</xref>]. Allelic differences in genes as well as large-scale changes have been reported for the trichothecene gene cluster, with some genes occurring outside of the main cluster in separate regions of the genome [<xref ref-type="bibr" rid="CR20">20</xref>]. For example, allelic differences in the biosynthetic gene <italic>Tri8</italic> are attributed to structural variation in the trichothecene deoxynivalenol (DON), namely 3-acetyldeoxynivalenol (3-ADON) and 15-acetyldeoxynivalenol (15-ADON) [<xref ref-type="bibr" rid="CR21">21</xref>]. Similarly, allelic variation in <italic>Tri1</italic> is associated with the production of the alternate trichothecene NX-2, while <italic>Tri13</italic> and <italic>Tri7</italic> are associated with production of the trichothecene nivalenol [<xref ref-type="bibr" rid="CR22">22</xref>, <xref ref-type="bibr" rid="CR23">23</xref>]. Although differences in genes that contribute to trichothecene variation are known, our current knowledge of other factors that lead to variations in disease profiles remains largely unknown. Information gathered from sequences of additional members of the <italic>F. graminearum</italic> species complex will lead to a better understanding of the genetic variations between isolates that are associated with reported phenotypic diversity.</p>
+      <p>This study reports on genomic and genetic differences among ten closely related members of the <italic>F. graminearum</italic> species complex that cause FHB. Six isolates were newly sequenced as part of this study (Accessions: NRRL 6101, NRRL 28720, NRRL 28721, NRRL 28723, NRRL 28336 and DAOM 180378) and four were sequenced previously (PH-1, DAOM 233423 or GZ 3639, DAOM 241165, and CS 3005) [<xref ref-type="bibr" rid="CR7">7</xref>, <xref ref-type="bibr" rid="CR13">13</xref>, <xref ref-type="bibr" rid="CR14">14</xref>]. NRRL 6101, isolated from barley in Japan, was reported to be non-pathogenic in wheat and was categorized as <italic>F. asiaticum</italic> [<xref ref-type="bibr" rid="CR17">17</xref>, <xref ref-type="bibr" rid="CR24">24</xref>]. NRRL 28720, NRRL 28721, and NRRL 28723 were isolated from maize in Nepal. While NRRL 28720 belongs to the species <italic>F. asiaticum</italic>, NRRL 28723 is of the related species <italic>F. meridionale</italic>, and the species classification for NRRL 28721 is still unclear and has been suggested to be a species hybrid (<italic>F. asiaticum</italic> x <italic>F. meridionale</italic>) [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR17">17</xref>, <xref ref-type="bibr" rid="CR18">18</xref>, <xref ref-type="bibr" rid="CR25">25</xref>&#x2013;<xref ref-type="bibr" rid="CR27">27</xref>]. Further investigation with additional markers suggested that this isolate may be in a basal group within the <italic>F. asiaticum</italic> clade or belong within <italic>F. meridionale</italic> [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR18">18</xref>]. The isolates PH-1, DAOM 233423, DAOM 241165, DAOM 180378, NRRL 28336, and CS 3005 belong to <italic>F. graminearum sensu stricto</italic>. With the exception of CS 3005, which was isolated in Australia, all other isolates were isolated in North America [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR7">7</xref>, <xref ref-type="bibr" rid="CR13">13</xref>, <xref ref-type="bibr" rid="CR14">14</xref>]. PH-1 and DAOM 180378 were isolated from maize, NRRL 28336, DAOM 233423, and DAOM 241165 were isolated from wheat, and CS 3005 was isolated from barley. Both the trichothecene chemotype and pathology on wheat for each isolate has been reported (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>) [<xref ref-type="bibr" rid="CR14">14</xref>, <xref ref-type="bibr" rid="CR17">17</xref>, <xref ref-type="bibr" rid="CR19">19</xref>, <xref ref-type="bibr" rid="CR21">21</xref>, <xref ref-type="bibr" rid="CR24">24</xref>, <xref ref-type="bibr" rid="CR28">28</xref>&#x2013;<xref ref-type="bibr" rid="CR30">30</xref>].<table-wrap id="Tab1"><label>Table 1</label><caption><p>Description of <italic>Fusarium</italic> Isolates Used in this Study</p></caption><table frame="hsides" rules="groups"><thead><tr><th rowspan="2">Accession</th><th rowspan="2">Species</th><th rowspan="2">Disease on Wheat<sup>a, b</sup>
+</th><th rowspan="2">Trichothecene Toxin<sup>b</sup>
+</th><th colspan="2">Origin</th></tr><tr><th>Host</th><th>Location</th></tr></thead><tbody><tr><td>PH-1</td><td><italic>F. graminearum</italic></td><td>High</td><td>15-ADON, DON</td><td>Maize</td><td>USA</td></tr><tr><td>CS 3005</td><td><italic>F. graminearum</italic></td><td>High</td><td>15-ADON, DON</td><td>Barley</td><td>Australia</td></tr><tr><td>DAOM 233423 (GZ 3639)</td><td><italic>F. graminearum</italic></td><td>High</td><td>15-ADON, DON</td><td>Wheat</td><td>USA</td></tr><tr><td>DAOM 241165</td><td><italic>F. graminearum</italic></td><td>High</td><td>3-ADON, DON</td><td>Wheat</td><td>Canada</td></tr><tr><td>DAOM 180378</td><td><italic>F. graminearum</italic></td><td>High</td><td>15-ADON, DON</td><td>Maize</td><td>Canada</td></tr><tr><td>NRRL 28336</td><td><italic>F. graminearum</italic></td><td>Medium</td><td>3-ADON, DON</td><td>Wheat</td><td>USA</td></tr><tr><td>NRRL 6101</td><td><italic>F. asiaticum</italic></td><td>None</td><td>3-ADON, DON</td><td>Barley</td><td>Japan</td></tr><tr><td>NRRL 28720</td><td><italic>F. asiaticum</italic></td><td>Medium</td><td>DON</td><td>Maize</td><td>Nepal</td></tr><tr><td>NRRL 28721</td><td><italic>F. meridionale</italic></td><td>Low</td><td>4A-NIV, NIV</td><td>Maize</td><td>Nepal</td></tr><tr><td>NRRL 28723</td><td><italic>F. meridionale</italic></td><td>Low</td><td>NIV</td><td>Maize</td><td>Nepal</td></tr></tbody></table><table-wrap-foot><p><sup>a</sup>High&#x2009;=&#x2009;more than six florets infected, Medium&#x2009;=&#x2009;three to six florets infected, Low&#x2009;=&#x2009;infection on florets adjacent to inoculation site, None&#x2009;=&#x2009;no disease beyond the inoculation site</p><p><sup>b</sup>Toxin analyses and pathology testing were performed in culture and/or on wheat [<xref ref-type="bibr" rid="CR14">14</xref>, <xref ref-type="bibr" rid="CR17">17</xref>, <xref ref-type="bibr" rid="CR19">19</xref>, <xref ref-type="bibr" rid="CR21">21</xref>, <xref ref-type="bibr" rid="CR24">24</xref>, <xref ref-type="bibr" rid="CR28">28</xref>&#x2013;<xref ref-type="bibr" rid="CR30">30</xref>]</p></table-wrap-foot></table-wrap>
+</p>
+      <p>In this study, we compared the genome sequences of these ten closely related <italic>Fusarium</italic> isolates and identified genes that are part of the accessory genome and potentially involved in niche specialization within and between species.</p>
+    </sec>
+    <sec id="Sec2" sec-type="materials|methods">
+      <title>Methods</title>
+      <sec id="Sec3">
+        <title><italic>Fusarium</italic> isolates, sequencing, and genome assembly</title>
+        <p>The isolates NRRL 28336, NRRL 28721, and NRRL 6101 were obtained from the collection at the Centraalbureau voor Schimmelcultures (CBS), in the Netherlands, while isolates NRRL 28720, NRRL 28723, and DAOM180378 were obtained from the collection at the Department of Agriculture Mycology (DAOM), in Canada. NRRL accession numbers are from the United States Department of Agriculture&#x2019;s Agriculture Research Service Culture Collection. Total DNA was isolated from all the NRRL <italic>Fusarium</italic> isolates: 6101, 28336, 28720, 28721, 28723 and the DAOM isolate 180378 by the E.Z.N.A. Fungal DNA Mini Kit (Omega). DNA was sequenced according to manufacturer instructions using 74&#xA0;bp reads from paired-end libraries by Illumina GAII sequencing. The sequencing reactions were performed by the Center for the Analysis of Genome Evolution and Function (CAGEF) at the University of Toronto, Canada. Sequence reads were imported into CLC Genomics Workbench. Prior to <italic>de novo</italic> assembly, reads were trimmed and short reads &lt;20&#xA0;bp were removed. Assemblies were optimized for contig length by adjusting the &#x2018;word size&#x2019; parameter and keeping all other parameters at default settings. The optimal word sizes were determined to be 34, 41, 39, 38, 34, and 39 for NRRL 6101, NRRL 28720, NRRL 28723, NRRL 28336, and DAOM 180378, respectively. Average contig coverage was determined for each genome assembly and contigs that was 75% or lower than the average contig coverage and contigs shorter than 200&#xA0;bp were removed from the assembly. The contigs were then reordered to the genome sequence of PH-1 from the MIPS database v3.2 by ABACAS [<xref ref-type="bibr" rid="CR31">31</xref>]. The ordered contig sequences were uploaded to the GenBank database at NCBI (Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref>).<table-wrap id="Tab2"><label>Table 2</label><caption><p>Genome and Assembly Statistics of <italic>Fusarium</italic> Isolates Used in this Study</p></caption><table frame="hsides" rules="groups"><thead><tr><th>Isolate</th><th>Genome Size (Mb)</th><th>N50</th><th>Coverage (fold)</th><th>NCBI<sup>a</sup> Accession</th><th>Genome Reference<sup>b</sup>
+</th></tr></thead><tbody><tr><td>PH-1</td><td char="." align="char">36.6</td><td char="." align="char">5.37</td><td>10</td><td>AACM</td><td>Cuomo 2007 [<xref ref-type="bibr" rid="CR7">7</xref>]</td></tr><tr><td>CS 3005</td><td char="." align="char">36.7</td><td char="." align="char">0.46</td><td>40</td><td>JATU</td><td>Gardiner 2014 [<xref ref-type="bibr" rid="CR13">13</xref>]</td></tr><tr><td>DAOM 233423</td><td char="." align="char">36.5</td><td char="." align="char">0.17</td><td>86</td><td>LAJZ0</td><td>Walkowiak 2015 [<xref ref-type="bibr" rid="CR14">14</xref>]</td></tr><tr><td>DAOM 241165</td><td char="." align="char">36.6</td><td char="." align="char">0.44</td><td>144</td><td>LAKA</td><td>Walkowiak 2015 [<xref ref-type="bibr" rid="CR14">14</xref>]</td></tr><tr><td>DAOM 180378</td><td char="." align="char">36.4</td><td char="." align="char">0.16</td><td>53</td><td>LHUC</td><td>This study</td></tr><tr><td>NRRL 28336</td><td char="." align="char">36.7</td><td char="." align="char">0.40</td><td>36</td><td>LHUD</td><td>This study</td></tr><tr><td>NRRL 6101</td><td char="." align="char">36.5</td><td char="." align="char">1.21</td><td>111</td><td>LHTY</td><td>This study</td></tr><tr><td>NRRL 28720</td><td char="." align="char">36.4</td><td char="." align="char">0.35</td><td>36</td><td>LHTZ</td><td>This study</td></tr><tr><td>NRRL 28721</td><td char="." align="char">36.5</td><td char="." align="char">0.11</td><td>51</td><td>LHUA</td><td>This study</td></tr><tr><td>NRRL 28723</td><td char="." align="char">36.4</td><td char="." align="char">0.41</td><td>32</td><td>LHUB</td><td>This study</td></tr></tbody></table><table-wrap-foot><p><sup>a</sup>National Center for Biotechnology Information</p><p><sup>b</sup>Genomes were sequenced using Sanger, Illumina HiSeq 2000, and Illumina GAII sequencing for Cuomo 2007 [<xref ref-type="bibr" rid="CR7">7</xref>], Gardiner 2014 [<xref ref-type="bibr" rid="CR13">13</xref>], and Walkowiak 2015 [<xref ref-type="bibr" rid="CR14">14</xref>], respectively</p></table-wrap-foot></table-wrap>
+</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Genomic alignments</title>
+        <p>The newly sequenced genomes, genome for PH-1 (MIPS v3.2), and sequences for CS 3005, DAOM 241165 and DAOM 233423 that were obtained from GenBank at NCBI were all used in separate pairwise genome alignments using the NUCmer and PROmer algorithms in the software package MUMmer [<xref ref-type="bibr" rid="CR32">32</xref>, <xref ref-type="bibr" rid="CR33">33</xref>]. NUCmer is designed for aligning highly conserved regions of DNA, while PROmer aligns more divergent sequences. Since all matching and alignment routines are performed on the six frame amino acid translation of the DNA input sequence PROmer is more sensitive than NUCmer.</p>
+        <p>NUCMER was also used to extract the SNP and indel data, which was obtained by default parameters of the 1-to-1 algorithm in dnadiff [<xref ref-type="bibr" rid="CR32">32</xref>, <xref ref-type="bibr" rid="CR33">33</xref>]. For each reference genome, the number of SNPs in each of the genomes was summed and averaged for each of the species to represent an average for each species. SNPs within conserved regions of the genome were obtained from PANSEQ with the following parameters: run mode&#x2009;=&#x2009;pan, fragment size&#x2009;=&#x2009;500, percent identity cut-off&#x2009;=&#x2009;90 and core genome threshold&#x2009;=&#x2009;10 (i.e. sequences were present in all genomes) [<xref ref-type="bibr" rid="CR34">34</xref>]. The resultant SNP alignment was imported into CLC Genomics Workbench for phylogenetic analyses using the maximum likelihood phylogeny tool, and the phylogeny constructed by the neighbor joining method and Jukes Cantor substitution model using 100 replicates; the bootstrap values at all nodes were 100%.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Construction of pan and accessory genomes</title>
+        <p>Pan genome consists of full complement of genes from all ten genomes. The list was started by including all the genes from PH-1, then, genes from other genomes were compared to the current pan genome with BLASTn and added if the e-value was&#x2009;&gt;&#x2009;1E-10. The software program AUGUSTUS was used to predict genes from the six newly sequenced genomes [<xref ref-type="bibr" rid="CR35">35</xref>]. The percentage alignment to PH-1 by MUMmer was used to select the order in which genomes were selected to contribute to the pan genome list going from greatest percent alignment to lowest. Genes in the pan genome that did not originate from PH-1 were annotated by Blast-2-Go using default parameters, which identified similar sequences in databases at NCBI, gene families/domains (InterPro), and gene ontology (GO) [<xref ref-type="bibr" rid="CR36">36</xref>]. The accessory genome was created by comparing genes from the pan genome to each genome and included if they had a BLASTn e-value &gt;1E-10 in at least one genome.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Analysis of sequence variation within genes</title>
+        <p>For the analysis of sequence variation within genes, the number of positions that contained SNPs and indels from the dnadiff analysis in MUMmer were tabulated for the full length of the sequence for each gene. Orthologues of select PH-1 genes in the other genomes were obtained by BLASTn. The orthologues were aligned by MUSCLE using default parameters [<xref ref-type="bibr" rid="CR37">37</xref>]. Genes containing a single orthologue in each genome were examined for nonsynonymous and synonymous substitution rates by Prank with the -codon -F options [<xref ref-type="bibr" rid="CR38">38</xref>]. We then used CodeML to fit the M0, M7, and M8 models to study the overall nonsynonymous to synonymous substitution rate ratio (dN/dS) of these genes [<xref ref-type="bibr" rid="CR39">39</xref>]. M0 is used to estimate global dN/dS ratios, while M7 and M8 are separate models that are compared and a likelihood ratio test showing the preference of M8 constitutes evidence of adaptive evolution [<xref ref-type="bibr" rid="CR39">39</xref>].</p>
+      </sec>
+    </sec>
+    <sec id="Sec7" sec-type="results">
+      <title>Results</title>
+      <sec id="Sec8">
+        <title>Genome assembly information and statistics</title>
+        <p>We performed whole genome sequencing of six fungal isolates (NRRL 6101, NRRL 28336, NRRL 28720, NRRL 28721, NRRL 28723 and DAOM 180378) from the <italic>F. graminearum</italic> species complex that are associated with FHB disease in plants (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). The newly sequenced genomes, along with four previously sequenced isolates, were selected based on their incidence in various geographical locations, taxonomy/species, host isolation, toxin production and pathology [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR17">17</xref>, <xref ref-type="bibr" rid="CR18">18</xref>, <xref ref-type="bibr" rid="CR26">26</xref>, <xref ref-type="bibr" rid="CR27">27</xref>] (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). Overall, the ten sequenced genomes were comparable in size and structure when compared to the four previously characterized chromosomes of isolate PH-1 (Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref>) [<xref ref-type="bibr" rid="CR7">7</xref>]. The sizes of the ten genomes ranged from approximately 36.4 to 36.7&#xA0;Mb. The N50 values is defined as the contig length such that using equal or longer contigs produces half the bases of the genome, which ranged from 0.11 to 1.21&#xA0;Mb for the six genomes sequenced by Illumina platforms; the genome coverages ranged from 32x to 144x (Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref>).</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Whole genome alignments of ten <italic>Fusarium</italic> pathogens within the <italic>F. graminearum</italic> complex</title>
+        <p>To determine the degree of overlap among the ten genomes, we performed genome alignments of the ten genomes with one another (Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref>) and with 41 genomes of other plant pathogenic fungi using the NUCmer and PROmer algorithms in the software package MUMmer, (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>) [<xref ref-type="bibr" rid="CR32">32</xref>]. A direct pairwise comparison with the sequence aligner NUCmer, which is designed for the alignment of closely related sequences, revealed at least 96.4% sequence alignment among the six <italic>F. graminearum</italic> genomes (PH-1, CS 3005, DAOM 233423, DAOM 241165, DAOM 180378, and NRRL 28336). Similarly, when the two <italic>F. asiaticum</italic> genomes (NRRL 6101 and NRRL 28720) were compared, 97.7% of the genomes aligned. Lastly, a comparison between the two <italic>F. meridionale</italic> genomes (NRRL 28721 and NRRL 28723) revealed a 99.0% alignment between them (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). When we aligned the genomes of different species, <italic>F. graminearum</italic> and <italic>F. asiaticum</italic> had at least 93.1% sequence alignment, <italic>F. graminearum</italic> and <italic>F. meridionale</italic> had at least 94.4% sequence alignment, and <italic>F. asiaticum</italic> and <italic>F. meridionale</italic> had at least 93.8% sequence alignment. The ten genomes had between 90.9 and 92.0% alignment to <italic>F. pseudograminearum</italic> and 64.9&#x2013;65.5% alignment to <italic>F. langsethiae</italic>, but only 3.5&#x2013;12.8% aligned to other <italic>Fusarium</italic> genomes, and&#x2009;&lt;&#x2009;1% alignment to genomes from other plant pathogenic fungi (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>).<fig id="Fig1"><label>Fig. 1</label><caption><p>High concordance between genome alignments and taxonomy. Whole genomes were aligned between ten closely related isolates of <italic>F. graminearum</italic>, <italic>F. asiaticum</italic>, and <italic>F. meridionale</italic>, as well as 11 other <italic>Fusaria</italic>, individuals from 21 different <italic>Ascomycete</italic> genera, and individuals from 11 different <italic>Basidiomycete</italic> genera. Alignments were performed using two different algorithms, &#x2018;NUCMER&#x2019; (<italic>left</italic>), which is designed for alignment of related sequences, and &#x2018;PROMER&#x2019; (<italic>right</italic>), which is designed for alignment of distantly related sequences. Genomes are arranged by species; <italic>F. graminearum</italic> (<italic>FG</italic>), <italic>F. asiaticum</italic> (<italic>FA</italic>), and <italic>F. meridionale</italic> (<italic>FM</italic>). A non-linear full spectrum heat map is used to represent the percentage alignment to each query genome, where <italic>red</italic> has the lowest alignment and <italic>violet</italic> has the greatest alignment</p></caption><graphic xlink:href="12864_2016_3371_Fig1_HTML" id="MO1"/></fig>
+</p>
+        <p>Analysis with PROmer, which is designed for the alignment of distantly related sequences, yielded results similar to those of NUCmer in pairwise comparisons of the ten genomes to one another and to <italic>F. pseudograminearum</italic> and <italic>F. langsethiae</italic> (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). However, the alignment to other <italic>Fusarium</italic> species increased from 3.5&#x2013;12.8 to 39.0&#x2013;50.8%. Alignment to other phytopathogenic Ascomycetes increased from &lt;1% to 3.4&#x2013;26.1%, and alignment to phytopathogenic Basidiomycetes remained lower at 0.8&#x2013;3.9% (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). The concordance observed between genomes from our pairwise alignments agrees with taxonomic phylogenies suggested that <italic>F. graminearum</italic>, <italic>F. asiaticum</italic>, and <italic>F. meridionale</italic> are more closely related, while <italic>F. pseudograminearum</italic> and <italic>F. langsethiae</italic> are more distantly related, and that other Fusaria belong to even more distant taxonomic groups, followed by other genera and other phyla (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). This agrees with the established evolutionary relationships suggested by other research studies [<xref ref-type="bibr" rid="CR1">1</xref>, <xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR18">18</xref>, <xref ref-type="bibr" rid="CR40">40</xref>].</p>
+        <p>In addition to analyzing genetic overlap by direct pairwise alignments, we also identified SNPs and indels in all genomes, which were used to construct a maximum likelihood phylogenetic tree (Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>). We used PANSEQ to identify a total of 704,566 SNPs and indels that differed among the ten genomes [<xref ref-type="bibr" rid="CR34">34</xref>]. As observed, the ten isolates arranged according to their previously reported species assignments and were in agreement with the pairwise alignment data (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). Together, the data indicate that PH-1, DAOM 233423, DAOM 180378, DAOM 241165, CS 3005, and NRRL 28336 are <italic>F. graminearum sensu stricto</italic>, while NRRL 6101 and NRRL 29720 are <italic>F. asiaticum</italic> [<xref ref-type="bibr" rid="CR1">1</xref>, <xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR18">18</xref>, <xref ref-type="bibr" rid="CR40">40</xref>] (Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>). The phylogeny also supports our pairwise genome alignment data which indicated that NRRL 28721 is more closely related to NRRL 28723 and may correspond to <italic>F. meridionale</italic> (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). Interestingly, the two <italic>F. graminearum</italic> isolates that produce the trichothecene 3-ADON (DAOM 241165 and NRRL 28336) form a distinct genetic group from the four isolates that produce 15-ADON (PH-1, DAOM 233423, DAOM 180378, and CS 3005) (Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>). This supports claims that individuals from these two chemotypes (3-ADON and 15-ADON) belong to distinctly separate genetic populations [<xref ref-type="bibr" rid="CR41">41</xref>]. The <italic>F. graminearum</italic> isolate CS 3005, originating from Australia grouped in the same phylogenetic group as the other 15-ADON producers from North America, implying that it may belong to the same genetic population (Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>).<fig id="Fig2"><label>Fig. 2</label><caption><p>Phylogeny of FHB pathogens by whole genome alignment. A SNP and indel alignment of conserved genomic regions was performed by PANSEQ and was used to construct a maximum likelihood phylogeny by neighbor joining using 100 replicates. <ext-link ext-link-type="uri" xlink:href="http://purl.org/phylo/treebase/phylows/study/TB2:S20221?x-accesscode=7489a1a68445a29618a659d472297db8&amp;format=html">http://purl.org/phylo/treebase/phylows/study/TB2:S20221?x-accesscode=7489a1a68445a29618a659d472297db8&amp;format=html</ext-link>
+</p></caption><graphic xlink:href="12864_2016_3371_Fig2_HTML" id="MO2"/></fig>
+</p>
+      </sec>
+      <sec id="Sec10">
+        <title>Regions of genomic variability in FHB fungi</title>
+        <p>To visualize the genomic regions with sequence differences, the genomes were organized into 100&#xA0;kb sections and the average number of SNPs and indels in the genomes of each species were plotted across the length of the four chromosomes using PH-1 as a reference (black line, Fig.&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). Generally, we observed that the average number of SNPs and indels were fewer within the species (black line) than genomes from <italic>F. asiaticum</italic> (red line) and <italic>F. meridionale</italic> (blue line) (Fig.&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). When a genome from a separate species was used as a reference, we observed that SNPs and indels were generally fewer in genomes within the same species than between genomes from different species (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S1). Overall, we observed averages of 105&#x2013;189&#xA0;kb of SNPs and indels when comparing genomes from the same species and 796&#x2013;893&#xA0;kb of SNPs and indels when comparing genomes from different species. Sequence variation was co-localized at the ends of chromosomes and select regions within chromosomes, similar to what has been reported previously [<xref ref-type="bibr" rid="CR14">14</xref>]. In addition, we also observed islands of increased nucleotide variation in specific genomes. For example, in the genomes of CS 3005, NRRL 28336, and NRRL 28720, we observed regions where the nucleotide variations increased compared to most other genomes (boxed, Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S1).<fig id="Fig3"><label>Fig. 3</label><caption><p>Genome sequence and gene content variability in PH-1 compared to other isolates. SNPs/indels and absent genes between genomes were determined separately, by whole genome alignments and BLASTn using PH-1 as a reference. The number of SNPs and indels per 100&#xA0;kb were averaged for each species and are presented separately for <italic>F. graminearum</italic> (<italic>black lines</italic>), <italic>F. asiaticum</italic> (<italic>red lines</italic>), and <italic>F. meridionale</italic> (<italic>blue lines</italic>). Positions of absent genes whose sequences had a lowest expected value&#x2009;&gt;&#x2009;1E-10 by BLASTn for at least one member of the species are presented as sySNPsols; <italic>F. graminearum</italic> (<italic>black diamonds</italic>), <italic>F. asiaticum</italic> (<italic>red diamonds</italic>), and <italic>F. meridionale</italic> (<italic>blue diamonds</italic>). Chromosomes are demarked by vertical <italic>dashed lines</italic>
+</p></caption><graphic xlink:href="12864_2016_3371_Fig3_HTML" id="MO3"/></fig>
+</p>
+        <p>There is preponderance of evidence to suggest that niche adaptation, toxin production, and disease outcomes are attributed to differences in gene content and variation within genes [<xref ref-type="bibr" rid="CR4">4</xref>, <xref ref-type="bibr" rid="CR14">14</xref>, <xref ref-type="bibr" rid="CR20">20</xref>&#x2013;<xref ref-type="bibr" rid="CR22">22</xref>, <xref ref-type="bibr" rid="CR42">42</xref>, <xref ref-type="bibr" rid="CR43">43</xref>]. We were interested to know if nucleotide variations were associated with genes absent among the ten genomes. AUGUSTUS was used to predict genes from the six genomes and gene sequences for isolates PH-1, DAOM 233423, DAOM 241165 and CS 3005 were obtained from previous studies [<xref ref-type="bibr" rid="CR9">9</xref>, <xref ref-type="bibr" rid="CR13">13</xref>, <xref ref-type="bibr" rid="CR14">14</xref>, <xref ref-type="bibr" rid="CR35">35</xref>]. Gene conservation was determined by BLASTn using similar approaches to other studies [<xref ref-type="bibr" rid="CR14">14</xref>]; genes were considered absent if they had the expected value&#x2009;&gt;&#x2009;1E-10 compared to other genomes. Our analysis showed that regardless of the reference genome, genes that are absent in <italic>F. graminearum</italic> (black symbols), <italic>F. meridionale</italic> (blue symbols), and <italic>F. asiaticum</italic> (red symbols) were all located in regions with high SNPs and indels (Fig.&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). We also identified genes that were unique to each isolate (purple symbols), which were also localized to regions of increased nucleotide variability (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S1).</p>
+      </sec>
+      <sec id="Sec11">
+        <title>Construction of the pan and accessory genomes of the <italic>Fusarium</italic> species complex</title>
+        <p>We constructed a pan genome by reiteratively appending genes of the PH-1 isolate from other genomes based on BLASTn expected values (e-value&#x2009;&gt;&#x2009;1E-10). This non-redundant gene list contained a total of 15,297 genes (Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>). Of the 15,297 genes in the pan-genome 12% or 1827 genes had BLASTn hits with expected values&#x2009;&gt;&#x2009;1E-10 in at least one genome and was considered to be part of the accessory genome (Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>, Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S1). The accessory genome contributes to the genetic variability within and among species and might encode biochemical functions that are not essential for <italic>Fusarium</italic> growth, but confer selective advantages, such as adaptation to different niches or colonization of a new host [<xref ref-type="bibr" rid="CR34">34</xref>].<fig id="Fig4"><label>Fig. 4</label><caption><p>The accessory genome is a susbset of the pan-genome. The pan-genome, which incorporates the genes from all ten genomes, is composed of 15,297 genes, 1827 of which are accessory genes that are not conserved in all genomes. The accessory genome further divides into genes that are specific to each species, with 105 genes specific to <italic>F. graminearum</italic> (<italic>FG</italic>), 126 specific to <italic>F. meridionale</italic> (<italic>FM</italic>), and 184 specific to <italic>F. asiaticum</italic> (<italic>FA</italic>)</p></caption><graphic xlink:href="12864_2016_3371_Fig4_HTML" id="MO4"/></fig>
+</p>
+        <p>The accessory genome was further parsed into genes that are unique to a species or to each isolate (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S2). Analyses identified a total of 105 species-specific genes that were present in all six <italic>F. graminearum</italic> isolates, but were absent in all genomes of the other two species (Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>). Similarly, a total of 126 and 184 species-specific genes were found in <italic>F. meridionale</italic> and <italic>F. asiaticum</italic>, respectively (Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>). Analysis of the accessory genome also revealed genes that are present in a single isolate, but absent in others (Uniquely Present, Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref>, Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S2). We observed between 12 and 92 unique genes in each of the ten isolates (Uniquely Present, Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref>, Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S2). In contrast, the <italic>F. asiaticum</italic> isolate NRRL 6101 had the most number of &#x201C;uniquely absent&#x201D; genes (34) and this isolate has been reported to be unable to infect wheat [<xref ref-type="bibr" rid="CR17">17</xref>].<table-wrap id="Tab3"><label>Table 3</label><caption><p>Isolate-Specific Genes Identified from Accessory Genome</p></caption><table frame="hsides" rules="groups"><thead><tr><th>Isolate</th><th>Uniquely Present Genes<sup>a</sup>
+</th><th>Uniquely Absent Genes<sup>b</sup>
+</th></tr></thead><tbody><tr><td>PH-1</td><td>14</td><td>13</td></tr><tr><td>DAOM 180378</td><td>18</td><td>8</td></tr><tr><td>NRRL 28336</td><td>92</td><td>2</td></tr><tr><td>DAOM 233423</td><td>18</td><td>10</td></tr><tr><td>DAOM 241165</td><td>12</td><td>1</td></tr><tr><td>CS 3005</td><td>14</td><td>6</td></tr><tr><td>NRRL 6101</td><td>65</td><td>34</td></tr><tr><td>NRRL 28720</td><td>72</td><td>29</td></tr><tr><td>NRRL 28721</td><td>18</td><td>2</td></tr><tr><td>NRRL 28723</td><td>22</td><td>7</td></tr></tbody></table><table-wrap-foot><p><sup>a</sup>Uniquely present genes were considered present in the genome of the isolate and absent in genomes of all other isolates; absence was determined by having a BLASTn hit with the lowest expected value&#x2009;&gt;&#x2009;1E-10 in the genome of the isolate</p><p><sup>b</sup>Uniquely absent genes were considered absent in the genomes of the isolate and present in the genomes of all other isolates; absence was determined by having a BLASTn hit with the lowest expected value&#x2009;&gt;&#x2009;1E-10 in the genome of the isolate</p></table-wrap-foot></table-wrap>
+</p>
+      </sec>
+      <sec id="Sec12">
+        <title>The accessory genome reveals species and isolate-specific genes potentially involved in secondary metabolism and disease</title>
+        <p>Functional enrichment analyses of 105&#x2009;<italic>F. graminearum-</italic>specific genes, 90 of which were originally identified in PH-1 by the MIPS FunCat database revealed 72 genes or 80% as unclassified. The remaining 18 genes were enriched in metabolic and defense pathways (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S3). The genes involved in defense included two aldehyde dehydrogenases, <italic>FGSG_17538</italic> and <italic>FGSG_01759</italic>, as well as <italic>FGSG_17130</italic> encoding a protein similar to pisatin demethylase cytochrome P450. Pisatin is a phytoalexin produced by plants as a defense molecule; detoxification of pisatin has been demonstrated by the action of demethylase genes from <italic>F. solani</italic> [<xref ref-type="bibr" rid="CR44">44</xref>]. Analysis of 184 genes specific to <italic>F. asiaticum</italic> included secondary metabolic genes such as a non-ribosomal peptide synthetase (NRPS) APS1, which is involved in apicidin biosynthesis, and a polyketide synthase (PKS) PKS40 associated with W493 biosynthesis (Table&#xA0;<xref rid="Tab4" ref-type="table">4</xref>) [<xref ref-type="bibr" rid="CR42">42</xref>, <xref ref-type="bibr" rid="CR45">45</xref>, <xref ref-type="bibr" rid="CR46">46</xref>]. There were also 126 genes specific to <italic>F. meridionale</italic> and a gene (<italic>g3644</italic>) is annotated as a &#x2018;pectin lyase fold virulence factor&#x2019; implicated in cell wall catabolism (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S4) [<xref ref-type="bibr" rid="CR47">47</xref>]. Twelve heterokaryon or vegetative incompatibility genes were also identified as being species-specific; these gene classes are known to diversify in fungi and may have roles in speciation [<xref ref-type="bibr" rid="CR48">48</xref>, <xref ref-type="bibr" rid="CR49">49</xref>].<table-wrap id="Tab4"><label>Table 4</label><caption><p>Secondary Metabolic Genes are Part of Accessory Genome</p></caption><table frame="hsides" rules="groups"><thead><tr><th>Gene Name</th><th>Source</th><th>Possible Function</th><th>Alternate Name(s)</th><th>Conservation<sup>a</sup>
+</th></tr></thead><tbody><tr><td colspan="5">Polyketide metabolism</td></tr><tr><td>&#x2003;
+<italic>FGSG_04694</italic>
+</td><td>PH-1</td><td>polyketide synthase</td><td>PKS2</td><td>FG, FM</td></tr><tr><td>&#x2003;
+<italic>FGSG_06540</italic>
+</td><td>PH-1</td><td>polyketide cyclase</td><td/><td>FG, FA</td></tr><tr><td>&#x2003;
+<italic>g11843</italic>
+</td><td>NRRL 28723</td><td>chalcone synthase b</td><td/><td>FM, FA</td></tr><tr><td>&#x2003;
+<italic>g6531</italic>
+</td><td>NRRL 6101</td><td>polyketide enoyl_reductase</td><td/><td>FA</td></tr><tr><td>&#x2003;
+<italic>g1989</italic>
+</td><td>NRRL 6101</td><td>polyketide synthase</td><td>PKS40</td><td>FA</td></tr><tr><td>&#x2003;
+<italic>g21</italic>
+</td><td>NRRL 28723</td><td>polyketide cyclase dehydrase protein</td><td/><td>FM</td></tr><tr><td>&#x2003;
+<italic>FG05_30424</italic>
+</td><td>CS 3005</td><td>polyketide synthase</td><td>PKS52</td><td>FG, FA</td></tr><tr><td>&#x2003;
+<italic>FG05_30565</italic>
+</td><td>CS 3005</td><td>snoal-like polyketide cyclase family protein</td><td/><td>FG, FM</td></tr><tr><td>&#x2003;
+<italic>FG05_30492</italic>
+</td><td>CS 3005</td><td>polyketide synthase</td><td/><td>FG, FM, FA</td></tr><tr><td>&#x2003;
+<italic>FG05_30491</italic>
+</td><td>CS 3005</td><td>polyketide synthase</td><td/><td>FG, FM, FA</td></tr><tr><td>&#x2003;
+<italic>FG05_30490</italic>
+</td><td>CS 3005</td><td>polyketide synthase</td><td/><td>FG, FM, FA</td></tr><tr><td>&#x2003;
+<italic>FG05_30489</italic>
+</td><td>CS 3005</td><td>polyketide synthase</td><td>PKS43</td><td>FG, FM, FA</td></tr><tr><td colspan="5">Non-ribosomal peptide metabolism</td></tr><tr><td>&#x2003;
+<italic>FGSG_10702</italic>
+</td><td>PH-1</td><td>non-ribosomal peptide synthetase</td><td>NRPS17</td><td>FG</td></tr><tr><td>&#x2003;
+<italic>g11745</italic>
+</td><td>NRRL 6101</td><td>non-ribosomal peptide synthetase</td><td/><td>FA</td></tr><tr><td><italic>&#x2003;g6644</italic></td><td>NRRL 6101</td><td>non-ribosomal peptide synthetase</td><td>APS1, NRPS31</td><td>FA</td></tr><tr><td colspan="2">Terpene metabolism</td><td/><td/><td/></tr><tr><td>&#x2003;
+<italic>FGSG_08181</italic>
+</td><td>PH-1</td><td>terpene synthase</td><td/><td>FG, FA</td></tr><tr><td>&#x2003;
+<italic>g8968</italic>
+</td><td>NRRL 28721</td><td>Tri5-like terpene synthase</td><td/><td>FM, FA</td></tr></tbody></table><table-wrap-foot><p><sup>a</sup>Gene was present in the genome of at least one isolate of <italic>F. graminearum</italic> (FG), <italic>F. asiaticum</italic> (FA), or <italic>F. meridionale</italic> (FM)</p></table-wrap-foot></table-wrap>
+</p>
+        <p>Our functional analysis was extended to isolate-specific genes. Of the 1827 genes from the accessory genome, 12&#x2013;92 genes were present in a single isolate and were considered unique to that isolate (Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref>). The function of unique genes spanned a wide range of categories, including primary, secondary metabolism, as well as signal transduction. Examples include a glutamine synthase (g9634) from NRRL 28336 and a non-ribosomal peptide synthase (g11745) from NRRL 6101 (Table&#xA0;<xref rid="Tab4" ref-type="table">4</xref>; Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Tables S2 and S4). Among the 92 genes unique to NRRL 28336, nine are predicted to have kinase functions and could be involved in signal transduction (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Tables S2 and S4). A kinase unique to PH-1, <italic>FGSG_11614</italic>, has been disrupted and resulted in reduced DON production [<xref ref-type="bibr" rid="CR50">50</xref>].</p>
+        <p>Genes that were uniquely absent in an isolate were also analysed (uniquely absent, Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref>). The isolate NRRL 6101 was reported to have limited virulence in wheat and contained the most number of uniquely absent genes (34, Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref>). These included two genes categorized by MIPS to be involved in cell rescue, defense and virulence, namely <italic>FGSG_16080</italic> predicted to encode a chitinase, and <italic>FGSG_00132</italic> with potential kinase function. The kinase <italic>FGSG_00132</italic> was previously target by reverse genetics, but no phenotype was observed in the mutant [<xref ref-type="bibr" rid="CR50">50</xref>]. Another gene, <italic>FGSG_08005</italic> that was absent in the NRRL 28720 genome was predicted to be involved in isoprenoid metabolism, potentially contributing to secondary metabolic pathways (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S4).</p>
+        <p>Our analysis also showed that some of the genes in the accessory genome had irregular patterns of gene conservation across the ten genomes; many of these genes were associated with secondary metabolism (Table&#xA0;<xref rid="Tab4" ref-type="table">4</xref>). Examples include <italic>FGSG_04694</italic>, a gene encoding polyketide synthase (PKS2), which was absent in both <italic>F. asiaticum</italic> genomes but was present in all <italic>F. graminearum</italic> and <italic>F. meridionale</italic> isolates (Table&#xA0;<xref rid="Tab4" ref-type="table">4</xref>). Mutation of <italic>PKS2</italic> in <italic>F. graminearum</italic> showed reduced mycelial growth and a defect in virulence [<xref ref-type="bibr" rid="CR51">51</xref>]. A polyketide cyclase, <italic>FGSG_06540</italic> showed poor conservation in both <italic>F. meridionale</italic> isolates, but was present in <italic>F. graminearum</italic> and <italic>F. asiaticum</italic> isolates [<xref ref-type="bibr" rid="CR43">43</xref>]. Another example includes gene <italic>g11843</italic> from NRRL 28723 (<italic>F. meridionale</italic>), which shares similarity with <italic>FAVG1_07768</italic>, a gene from <italic>F. avenaceum</italic> that is present in the genomes of both <italic>F. meridionale</italic> isolates and the <italic>F. asiaticum</italic> isolate NRRL 6101, but is absent in all <italic>F. graminearum</italic> isolates. This gene was predicted to encode a chalcone synthase, which has been characterized in plants and is involved in the biosynthesis of defensive flavonoid compounds [<xref ref-type="bibr" rid="CR52">52</xref>]. In addition to polyketide synthases, a metabolic gene <italic>g8968</italic> from NRRL 28721 (<italic>F. meridionale</italic>) shares identity with a terpene synthase gene, <italic>Tri5</italic>, which catalyzes the first step of trichothecene biosynthesis in <italic>F. graminearum</italic> and is essential for trichothecene biosynthesis and infection of wheat [<xref ref-type="bibr" rid="CR15">15</xref>]. Interestingly, <italic>g8968</italic> did not have a positive BLASTn hit to the other <italic>F. meridionale</italic> genome NRRL 28723 but had positive BLASTn hits to the <italic>F. asiaticum</italic> genomes NRRL 6101 and NRRL 28720. Upon closer examination, g8968 showed only 21.8% protein identity to Tri5 from the <italic>F. graminearum</italic> isolate PH-1, but 95% protein identity to FAVG1_13210 from <italic>F. avenaceum</italic> [<xref ref-type="bibr" rid="CR53">53</xref>]. A true homologue of Tri5 (g5480) with &gt;97% protein identity was identified in the <italic>F. meridionale</italic> isolate NRRL 28721. Despite the low identity to Tri5, g8968 was predicted to contain a Tri5 domain by Interpro and Pfam (e-value 5.3E-15). It is unclear if the protein from this gene acts on substrates from the trichothecene biosynthetic pathway and contributes to their production, or if the protein is involved in the production of other molecules.</p>
+        <p>In addition to individual genes involved in secondary metabolism, accessory genes with irregular patterns of conservation also extended to gene clusters. For example, a gene cluster composed of five genes was absent in the <italic>F. meridionale</italic> genomes, but is present in <italic>F. graminearum</italic> and <italic>F. asiaticum</italic> isolates (Table&#xA0;<xref rid="Tab4" ref-type="table">4</xref>) [<xref ref-type="bibr" rid="CR42">42</xref>, <xref ref-type="bibr" rid="CR43">43</xref>]. The genes within this cluster include <italic>FGSG_08181</italic>, which is predicted to encode a terpene synthase, <italic>FGSG_08182</italic>, which encodes a putative transcription factor and three putative cytochrome P450 genes <italic>FGSG_17088</italic>, <italic>FGSG_08183</italic>, and <italic>FGSG_08187</italic> [<xref ref-type="bibr" rid="CR42">42</xref>, <xref ref-type="bibr" rid="CR43">43</xref>]. Genes from this cluster have been reported to be expressed during infection in different cereal hosts [<xref ref-type="bibr" rid="CR54">54</xref>]. Similarly, another gene cluster (<italic>FG05_30489 - FG05_30492</italic>) from the <italic>F. graminearum</italic> isolate CS 3005 from Australia was absent in the 15-ADON producing isolates of <italic>F. graminearum</italic> from North America, but was present in all other genomes (Table&#xA0;<xref rid="Tab4" ref-type="table">4</xref>). The gene <italic>FG05_30489</italic> with similarity to a polyketide synthase gene <italic>PKS43</italic> was also present in the <italic>F. avenaceum</italic> and <italic>F. equiseti</italic> genomes [<xref ref-type="bibr" rid="CR42">42</xref>].</p>
+        <p>In addition to the genes potentially involved in secondary metabolism, there were other genes from the accessory genome with irregular conservation patterns that have been shown to contribute to fecundity and disease by the fungi (Table <xref rid="Tab4" ref-type="table">4</xref>). A study that targeted transcription factors determined that accessory genes <italic>FGSG_08182</italic> and <italic>FGSG_11561</italic> contributed to disease and spore production, respectively [<xref ref-type="bibr" rid="CR55">55</xref>]. A separate study that focused on kinases determined that the accessory genes <italic>FGSG_07812</italic>, <italic>FGSG_11614</italic>, and <italic>FGSG_02153</italic> all contributed to toxin production while <italic>FGSG_03146</italic> contributed to spore production and disease [<xref ref-type="bibr" rid="CR50">50</xref>]. Disruption of a possible phosphatase regulatory subunit <italic>FGSG_11641</italic> has also been shown to reduce disease accumulation [<xref ref-type="bibr" rid="CR56">56</xref>]. Together, the accessory genome appears to contain genes that contribute to metabolic processes, as well as other processes potentially involved in development or disease.</p>
+      </sec>
+      <sec id="Sec13">
+        <title>Highly polymorphic genes in common genome include alleles, pseudogenes and genes under diversifying selection</title>
+        <p>Genes not considered part of the accessory genome was identified to contain high levels of sequence variation. We identified a total of 163 genes that were highly variable with &gt;200 SNPs or indel sites per kb (Fig.&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>, Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S5). Since 110 of the163 genes originated from PH-1, the MIPS FunCat database (<ext-link ext-link-type="uri" xlink:href="http://mips.helmholtz-muenchen.de/funcatDB/">http://mips.helmholtz-muenchen.de/funcatDB/</ext-link>) was used to detect functional enrichment of gene categories (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S6). The analysis revealed that the majority of the genes (73.6%) are functionally unclassified, compared to 52.3% for all genes from PH-1. Functional categories that were determined to be enriched compared to the rest of the genome (<italic>p</italic>-value&#x2009;&lt;&#x2009;0.05) included motility, energy, metabolism, and cell migration (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S6). Select genes that exhibited high frequency of SNPs and indels were inspected in greater detail, these included <italic>Tri8</italic>, three putative transcription factors, two proteins with nodulin-like domains and three putative heterokaryon incompatibility genes.<fig id="Fig5"><label>Fig. 5</label><caption><p>Sequence variability within common genes. Only 163 genes contain greater than 20% sequence variation. Genetic variability of genes was assessed based on SNPs and indels from the genome alignments</p></caption><graphic xlink:href="12864_2016_3371_Fig5_HTML" id="MO5"/></fig>
+</p>
+        <p>Allelic variation in Tri8 is attributed to the production of either 15-ADON or 3-ADON [<xref ref-type="bibr" rid="CR21">21</xref>]. Multiple sequence alignment by MUSCLE indicated that within a specific chemotype, such as 3-ADON producing isolates, <italic>Tri8</italic> had greater than 95% sequence identity in the coding regions. Comparison of the coding sequences between chemotypes showed only 84&#x2013;89% sequence identity. Although, no acetylated form of DON has been shown to be produced by NRRL 28720 isolate, <italic>Tri8</italic> from this isolate showed 97% identity to other15-ADON producing isolates [<xref ref-type="bibr" rid="CR17">17</xref>]. Thus, high alignment of <italic>Tri8</italic> suggests that the high variation in this gene may be associated with allelic variation within chemotypes.</p>
+        <p>Three genes <italic>FGSG_13457</italic>, <italic>FGSG_08954</italic>, and <italic>FGSG_10508</italic> that encode transcription factors have been previously targeted for functional analysis [<xref ref-type="bibr" rid="CR55">55</xref>]. Disruption of <italic>FGSG_13457</italic> resulted in no apparent phenotypic difference in toxin production or disease, while no mutants were obtained for <italic>FGSG_08954</italic> and <italic>FGSG_10508</italic> [<xref ref-type="bibr" rid="CR55">55</xref>]. Closer inspection of <italic>FGSG_08954</italic> in the ten genomes revealed that the gene may have a small deletion and a premature stop codon in NRRL 28720 and duplicate copies in DAOM 241165. The two other transcription factors FGSG_13457 and FGSG_10508 were subjected to diversifying selection analysis by CodeML to assess overall nonsynonymous to synonymous substitution (<italic>dN/dS</italic>) rate of these genes. With the M0 model, the <italic>dN/dS</italic> ratios for <italic>FGSG_13457</italic> and <italic>FGSG_10508</italic> were estimated to be 0.221 and 0.408, respectively, and application of the two site model (M7 and M8) did not provide evidence of diversifying selection (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S7).</p>
+        <p>Two genes encoding putative nodulin-like domains, <italic>FGSG_03381</italic> and <italic>FGSG_03550</italic>, were also found to have high sequence variation; nodulin-like domains are often found in plant proteins and are implicated in plant-microbe interaction [<xref ref-type="bibr" rid="CR57">57</xref>]. The orthologue of <italic>FGSG_03550</italic> spanned a region with ambiguous nucleotides for four of the genomes or was at the very end of a contig, the gene also contained a 24&#xA0;bp insertion in the two <italic>F. asiaticum</italic> genomes. The <italic>dN/dS</italic> ratio of <italic>FGSG_03381</italic> was 0.355, and the two site model indicated no evidence for adaptive evolution (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S7).</p>
+        <p>Lastly, three putative heterokaryon incompatibility genes <italic>FGSG_10601</italic>, <italic>FGSG_08120</italic> and <italic>FGSG_08144</italic> with potential roles in non-self-recognition were identified to have high sequence variation [<xref ref-type="bibr" rid="CR48">48</xref>, <xref ref-type="bibr" rid="CR49">49</xref>]. <italic>FGSG_08120</italic> was determined to have a premature stop in NRRL 6101, while the closest orthologue of <italic>FGSG_08144</italic> in NRRL 6101 had an identity &lt;50&#xA0;to the orthologues. Analysis of diversifying selection for <italic>FGSG_10601</italic> showed a dN/dS ratio of 0.708 and was the only gene from the four investigated that showed significant evidence of adaptive evolution (with a <italic>p</italic>-value&#x2009;<italic>&lt;</italic>&#x2009;0.01) by the two site model (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S7).</p>
+        <p>Altogether, the increased sequence variation in select common genes may be associated with allelic variation (<italic>Tri8</italic>) or mutations resulting in premature stop codons resulting in a pseudogene (<italic>FGSG_08120</italic> and <italic>FGSG_08954</italic>). In addition, <italic>FGSG_10601</italic> was determined to be under adaptive evolutionary pressures that may have contributed to diversification of this gene.</p>
+      </sec>
+    </sec>
+    <sec id="Sec14" sec-type="discussion">
+      <title>Discussion</title>
+      <p>Fusarium Head Blight fungi are globally distributed and isolates are known to exhibit phenotypic diversity in their morphology, growth and development, production of toxins and other secondary metabolites, and pathogenicity towards specific hosts [<xref ref-type="bibr" rid="CR17">17</xref>]. DNA-based phylogenetic analyses using gene markers have allowed us to identify distinct species and genetic populations of these fungi. However, some isolates have proven difficult to classify using marker analyses and the biological mechanisms underlying phenotypic diversity remain unsettled [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR17">17</xref>, <xref ref-type="bibr" rid="CR18">18</xref>, <xref ref-type="bibr" rid="CR25">25</xref>&#x2013;<xref ref-type="bibr" rid="CR27">27</xref>]. Genome sequencing of additional isolates provided the opportunity to better understand and confirm the genetic relationship between fungal isolates, and identified gene candidates that could contribute to phenotypic differences and niche adaptation. Similar approaches were successfully applied to the <italic>F. oxysporum</italic> species complex; for example, genomic comparison of <italic>F. oxysporum</italic> isolates identified gene expansion that may be associated with pathogenicity towards banana, as well as genes associated with infection in melon [<xref ref-type="bibr" rid="CR2">2</xref>, <xref ref-type="bibr" rid="CR5">5</xref>].</p>
+      <p>A comparative genomics approach used in this study was effective at better resolving the genetic relationship among fungal species and isolates. In pairwise alignments, the genomes of the ten closely related Fusaria exhibited high levels of identity, particularly within species. The genomes from isolates of the <italic>F. graminearum</italic> species complex also had greater alignment to <italic>F. pseudograminearum</italic> and <italic>F. langsethiae</italic>, than to genomes from other Fusaria, or other genera altogether. These findings confirm the previously established phylogenetic relationships among these closely related <italic>Fusarium</italic> to each other and other fungi [<xref ref-type="bibr" rid="CR4">4</xref>, <xref ref-type="bibr" rid="CR17">17</xref>, <xref ref-type="bibr" rid="CR18">18</xref>]. Interestingly, on average, <italic>F. meridionale</italic> shared more genes and showed high levels of identity than <italic>F. asiaticum</italic> to <italic>F. graminearum</italic>. Based on these findings, <italic>F. meridionale</italic> and <italic>F. graminearum</italic> may be more closely related than <italic>F. asiaticum</italic> and <italic>F. graminearum</italic>. In addition to providing insights into the relationships between species, we were also able to better resolve species placement of NRRL 28721, which was difficult to determine using marker analyses. Marker analyses had suggested that NRRL 28721 is either <italic>F. asiaticum</italic> or <italic>F. meridionale</italic> or a species hybrid [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR17">17</xref>, <xref ref-type="bibr" rid="CR18">18</xref>, <xref ref-type="bibr" rid="CR25">25</xref>&#x2013;<xref ref-type="bibr" rid="CR27">27</xref>]. Analyses of NRRL 28723 and NRRL 28721genomes showed high level of identity (99.0%). In combination of with SNPs and indels analyses, we suggest that NRRL 28721 and NRRL 28723 isolates are closely related and may be of the same species, <italic>F. meridionale</italic> (Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>). Similar analyses also enabled us to separate 3-ADON or 15-ADON genetic populations within <italic>F. graminearum</italic> species complex that have been reported by others [<xref ref-type="bibr" rid="CR41">41</xref>].</p>
+      <p>This study provided insights into the relationships between isolates with known differences in geographical distribution, species and population backgrounds. For example, CS 3005, an isolate from Australia grouped within the same population as the 15-ADON producers in North America. This suggested that this Australian isolate may be more related to the 15-ADON producers rather than the 3-ADON producers from North America. Furthermore, the study suggests that genetic populations are globally distributed, and that geographical barriers may not play a significant role in the spread of these fungi. The presence of different species such as <italic>F. asiaticum</italic> and <italic>F. meridionale</italic> in Nepal, or genetic populations of the same species, such as 3-ADON and 15-ADON populations of <italic>F. graminearum</italic> in North America that cause similar diseases indicates that different populations and species can coexist and may have distinguishable traits that allow them to occupy slightly different niches than other populations or species. For example, environmental and host conditions have been demonstrated to affect disease outcomes by 3-ADON and 15-ADON producers of <italic>F. graminearum</italic> [<xref ref-type="bibr" rid="CR58">58</xref>]. Further monitoring will better resolve the geographical distribution of these populations/species and the stability of the population and community structure over time. This may be particularly important when we consider the environmental consequences of climate change.</p>
+      <p>In addition to providing insights into the genetic relationship between isolates, our comparative genomics analyses also provided perspective into the conservation and evolution of genes that may contribute to phenotypic differences among these pathogens. We observed a high degree of conservation (95 to 99%) of genes among the ten genomes; highest within species than between species (Additional file <xref rid="MOESM3" ref-type="media">3</xref>: Figure S2). Analyses of the pan genome indicated that the two 3-ADON producing strains of <italic>F. graminearum</italic> (NRRL 28336 and DAOM 241165) had the fewest number of absent genes (914 and 990, respectively). In contrast, the two <italic>F. asiaticum</italic> isolates NRRLs 6101 and 28720 had the greatest number of absent genes, 1126 and 1146, respectively, when compared to the pan genome (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S2). Further study across additional isolates would be required to determine if there is gene expansion or loss in populations or species of these fungi.</p>
+      <p>Many of the genes from the accessory genome were predicted to be involved in metabolism. This is particularly important because <italic>Fusarium</italic> species are well known for their ability to make a wide array of secondary metabolites, including DON, which has been studied for its role as a virulence factor during plant infection and for its toxic effects in humans [<xref ref-type="bibr" rid="CR15">15</xref>]. Based on the sequence, <italic>F. graminearum</italic> isolate PH-1 is reported to have at least 16 known PKS genes and 19 known NRPS and other metabolic genes [<xref ref-type="bibr" rid="CR42">42</xref>, <xref ref-type="bibr" rid="CR43">43</xref>]. We discovered that some of these genes, such as <italic>PKS2</italic>, <italic>PKS52</italic> and <italic>NRPS17</italic> that have described previously in <italic>F. graminearum</italic> are absent in some of the genomes [<xref ref-type="bibr" rid="CR42">42</xref>]. We also identified genes in some of the ten genomes, such as <italic>NRPS31</italic>, that were previously not reported in the <italic>F. graminearum</italic> species complex (Table&#xA0;<xref rid="Tab4" ref-type="table">4</xref>) [<xref ref-type="bibr" rid="CR42">42</xref>]. These analyses underscore the potential importance of secondary metabolites in host and niche adaptation and future studies should focus on the discovery of metabolites produced by these enzymes.</p>
+      <p>Genes to be species or isolate specific were annotated by Blast-2-Go based on sequence similarity to genes from other Fusaria (Fig.&#xA0;<xref rid="Fig6" ref-type="fig">6</xref>). A total of 1061 gene sequences were annotated from the new genomes (excluding CS 3005 and PH-1) and 361 or 34% of these had a top tBLASTx hit in <italic>F. oxysporum</italic>, while the next top hits were in <italic>F. pseudograminearum</italic> (15%), <italic>F. graminearum</italic> (11%), <italic>F. avenaceum</italic> (7%), <italic>F. fujikuroi</italic> (5%), <italic>F. solani</italic> (3%), and <italic>F. verticillioides</italic> (2%) (Fig.&#xA0;<xref rid="Fig6" ref-type="fig">6</xref>). All other genus/species that had more than 0.5% of genes BLASTx hits were from other Fusaria or other Ascomycete genera, including <italic>Colletotrichum</italic>, <italic>Stachybotrys</italic>, <italic>Bipolaris</italic>, and <italic>Pseudogymnoascus</italic>. This indicates that many genes from the accessory genome are conserved across the genus, but may be lost or acquired, depending on selective pressures from the environment or plant host. This has been previously described as an attribute of pathogen effectors that are involved in the evolutionary interactions between pathogen and host.<fig id="Fig6"><label>Fig. 6</label><caption><p>Top BLASTx hit of genes from the pan-genome not from PH-1 or CS 3005. The top 13 genus/species that match to the genes are presented in descending order and are presented as a percentage of genes; all other species/genus had less than five genes (0.5% of genes) that were a top hit to that genus/species</p></caption><graphic xlink:href="12864_2016_3371_Fig6_HTML" id="MO6"/></fig>
+</p>
+      <p>Such conservation of accessory genes within the genus also suggest that horizontal gene transfer may play a significant role in the biology of <italic>Fusarium</italic>. This is supported by our observations of genes that were absent across isolates and were co-localized in regions of the genome with increased nucleotide variability (Fig.&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). The co-localization of divergent genetic regions and genes that are absent among related genomes is consistent with what has been reported previously for <italic>Fusarium</italic> species [<xref ref-type="bibr" rid="CR4">4</xref>, <xref ref-type="bibr" rid="CR14">14</xref>, <xref ref-type="bibr" rid="CR59">59</xref>]. Co-localization may suggest that genes were acquired or lost as clusters; multiple gains or losses of gene clusters have been suggested for the secondary metabolite gene cluster responsible for fumonisin biosynthesis in <italic>Fusarium</italic> [<xref ref-type="bibr" rid="CR60">60</xref>]. Lineage specific chromosomes and large scale horizontal gene transfer events, such as the transfer of an entire chromosome that have been reported in <italic>F. oxysporum</italic>, are yet to be reported for members of the <italic>F. graminearum</italic> species complex [<xref ref-type="bibr" rid="CR4">4</xref>]. However, small scale horizontal transfer events have been suggested between <italic>F. graminearum</italic> and other fungi [<xref ref-type="bibr" rid="CR43">43</xref>]. Horizontal gene transfer has also been suggested between bacteria and <italic>F. pseudograminearum</italic>, which is also within the <italic>graminearum</italic> species complex and is reported to cause disease on the roots of cereals [<xref ref-type="bibr" rid="CR59">59</xref>]. Closer inspection of the presence, location, and orientation within the genomes of other organisms could shed light on their history and origin.</p>
+      <p>In addition to accessory genes contributing to genetic differences amongst the genomes, we also identified common genes that are variable and could contribute to niche adaptation and disease. Common genes involved in plant-pathogen interaction that are recognized by the host are selected against but in some cases cannot be shed; instead, these genes modify their sequence in order to avoid recognition by the host [<xref ref-type="bibr" rid="CR61">61</xref>]. Our analyses identified 163 common genes with more than 20% sequence variability present among genomes. This included <italic>Tri8</italic>, which has reported allelic variation and contributes to the structural variation that exists between 3-ADON and 15-ADON toxins [<xref ref-type="bibr" rid="CR21">21</xref>]. Other genes, such as <italic>FGSG_08120</italic> and <italic>FGSG_08954</italic> may have acquired mutations that resulted in pre mature stop codons, resulting in pseudogenes. In addition, analysis of synonymous and nonsynonymous mutation rates of <italic>FGSG_10601</italic> indicated that this gene may be under diversifying selection. A comparative analysis of three <italic>Fusarium</italic> species identified genes from <italic>F. graminearum</italic> that may be under diversifying selection [<xref ref-type="bibr" rid="CR62">62</xref>]. These included <italic>FGSG_03550</italic>, <italic>FGSG_03859</italic>, <italic>FGSG_05819</italic>, <italic>FGSG_10508</italic>, <italic>FGSG_11067</italic>, <italic>FGSG_12487</italic>, <italic>FGSG_13517</italic>, <italic>FGSG_04520</italic>, <italic>FGSG_10636</italic>, and <italic>FGSG_15331</italic>, which were also identified to have &gt;20% sequence variation between genomes in our study [<xref ref-type="bibr" rid="CR62">62</xref>]. In contrast, our analyses of <italic>FGSG_10508</italic> among the <italic>F. graminearum</italic> species complex did not find significant evidence for diversifying selection, possibly due to the shorter evolutionary distance between the genomes we investigated. Nevertheless, further investigation of these highly variable common genes as well as the accessory genes could implicate these genes with phenotypic differences or known adaptive processes.</p>
+    </sec>
+    <sec id="Sec15" sec-type="conclusion">
+      <title>Conclusions</title>
+      <p>Comparative genomics has enabled us to place ten isolates from the <italic>F. graminearum</italic> species complex into their respective species or genetic populations. A construction of a pan and accessory genome has also given us insights into the genetic diversity among members of the <italic>F. graminearum</italic> species complex. Further investigation of the roles of both accessory genes and highly variable common genes with respect to niche adaptation is required. As more genomes of this species complex become available, a larger comparative study will allow for further characterization of the genetic diversity amongst these economically important pathogenic fungi.</p>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="App1">
+        <sec id="Sec16">
+          <title>Additional files</title>
+          <p>
+            <media position="anchor" xlink:href="12864_2016_3371_MOESM1_ESM.docx" id="MOESM1">
+              <label>Additional file 1:</label>
+              <caption>
+                <p>Sequence and gene content variability between genomes. Description: SNPs/indels and absent genes between genomes were determined separately, by whole genome alignments and BLASTn, using each genome as a reference. a, <italic>F. graminearum</italic> genomes were used as a reference. b, <italic>F. meridionale</italic> genomes are used as a reference. c, <italic>F. asiaticum</italic> genomes are used as a reference. The number of SNPs and indels per 100&#xA0;kb between the reference genome and the average for each species is presented separately for <italic>F. graminearum</italic> (black lines), <italic>F. asiaticum</italic> (red lines), and <italic>F. meridionale</italic> (blue lines). The minimum and maximum for each plot is 0 and 10,000 nucleotide positions. Positions of absent genes whose sequences had a lowest expected value&#x2009;&gt;&#x2009;1E-10 by BLASTn for at least one member of the other species are presented as symbols; <italic>F. graminearum</italic> (black diamonds), <italic>F. asiaticum</italic> (red diamonds), and <italic>F. meridionale</italic> (blue diamonds). Absent genes in all other members of all species were considered unique genes (purple squares). Some regions of SNPs /indels that are greater in a specific reference genome than in other reference genomes are highlighted (dotted box). (DOCX 635&#xA0;kb)</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2016_3371_MOESM2_ESM.xlsx" id="MOESM2">
+              <label>Additional file 2:</label>
+              <caption>
+                <p>Summary tables for gene conservation, variation, annotation, and functional enrichment analyses. Description: <bold>Table S1.</bold> the accessory genome is a subset of the pan genome. <bold>Table S2.</bold> components of the accessory genome that are species and isolate specific. <bold>Table S3.</bold> functional categories of <italic>F. graminearum</italic> species-specific accessory genes. <bold>Table S4.</bold> genes from the pan genome not from PH-1 were annotated by Blast-2-Go to be involved in a wide array of processes. <bold>Table S5.</bold> common genes with &gt;20% sequence variation. <bold>Table S6.</bold> common genes that are variable are mostly of unknown function. <bold>Table S7.</bold> parameter values and log likelihood scores of codon substitution models. (XLSX 2162&#xA0;kb)</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2016_3371_MOESM3_ESM.docx" id="MOESM3">
+              <label>Additional file 3:</label>
+              <caption>
+                <p>Percent gene overlap between genomes. Description: The percentage of genes from the query genome in the reference genome are presented in a greyscale heatmap, where white represents 95% conservation and black represents 100% conservation. Genes were considered absent if they had a lowest BLASTn e-value&#x2009;&gt;&#x2009;1E-10. Genomes are arranged by species; <italic>F. graminearum</italic> (<italic>FG</italic>), <italic>F. asiaticum</italic> (<italic>FA</italic>), and <italic>F. meridionale</italic> (<italic>FM</italic>). (DOCX 28&#xA0;kb)</p>
+              </caption>
+            </media>
+          </p>
+        </sec>
+      </app>
+    </app-group>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>15-ADON</term>
+          <def>
+            <p>15-acetyldeoxynivalenol</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>3-ADON</term>
+          <def>
+            <p>3-acetyldeoxynivalenol</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CAGEF</term>
+          <def>
+            <p>Center for the Analysis of Genome Evolution and Function</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CBS</term>
+          <def>
+            <p>Centraalbureau voor Schimmelcultures</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DAOM</term>
+          <def>
+            <p>Department of Agriculture Mycology</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DON</term>
+          <def>
+            <p>Deoxynivalenol</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FA</term>
+          <def>
+            <p>
+              <italic>Fusarium asiaticum</italic>
+            </p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FG</term>
+          <def>
+            <p>
+              <italic>Fusarium graminearum</italic>
+            </p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FHB</term>
+          <def>
+            <p>Fusarium Head Blight</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FM</term>
+          <def>
+            <p>
+              <italic>Fusarium meridionale</italic>
+            </p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>GO</term>
+          <def>
+            <p>Gene ontology</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>Indel</term>
+          <def>
+            <p>Insertion and/or deletion</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>kb</term>
+          <def>
+            <p>Kilo base pairs</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>Mb</term>
+          <def>
+            <p>Mega base pairs</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>NRPS</term>
+          <def>
+            <p>Non-ribosomal peptide synthase</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>ORDC</term>
+          <def>
+            <p>Ottawa Research and Development Centre</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PKS</term>
+          <def>
+            <p>Polyketide synthase</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SNP</term>
+          <def>
+            <p>Single nucleotide polymorphism</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>The authors would like to acknowledge Li Wang (Agriculture and Agri-Food Canada, Ottawa Research and Development Centre (ORDC), Ottawa) for technical assistance.</p>
+      <sec id="FPar1">
+        <title>Funding</title>
+        <p>This work was supported by funds from Agriculture and Agri-Food Canada and the National Sciences and Engineering Research Council of Canada.</p>
+      </sec>
+      <sec id="FPar2">
+        <title>Availability of data and materials</title>
+        <p>
+          <table-wrap id="Taba">
+            <table frame="hsides" rules="groups">
+              <tbody>
+                <tr>
+                  <td>Isolate</td>
+                  <td>NCBI Accession</td>
+                </tr>
+                <tr>
+                  <td>PH-1</td>
+                  <td>AACM</td>
+                </tr>
+                <tr>
+                  <td>CS 3005</td>
+                  <td>JATU</td>
+                </tr>
+                <tr>
+                  <td>DAOM 233423</td>
+                  <td>LAJZ0</td>
+                </tr>
+                <tr>
+                  <td>DAOM 241165</td>
+                  <td>LAKA</td>
+                </tr>
+                <tr>
+                  <td>DAOM 180378</td>
+                  <td>LHUC</td>
+                </tr>
+                <tr>
+                  <td>NRRL 28336</td>
+                  <td>LHUD</td>
+                </tr>
+                <tr>
+                  <td>NRRL 6101</td>
+                  <td>LHTY</td>
+                </tr>
+                <tr>
+                  <td>NRRL 28720</td>
+                  <td>LHTZ</td>
+                </tr>
+                <tr>
+                  <td>NRRL 28721</td>
+                  <td>LHUA</td>
+                </tr>
+                <tr>
+                  <td>NRRL 28723</td>
+                  <td>LHUB</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </p>
+        <p>
+          <ext-link ext-link-type="uri" xlink:href="http://purl.org/phylo/treebase/phylows/study/TB2:S20221?x-accesscode=7489a1a68445a29618a659d472297db8&amp;format=html">http://purl.org/phylo/treebase/phylows/study/TB2:S20221?x-accesscode=7489a1a68445a29618a659d472297db8&amp;format=html</ext-link>
+        </p>
+      </sec>
+      <sec id="FPar3">
+        <title>Authors&#x2019; contributions</title>
+        <p>SW, OR and RS designed the project and wrote the manuscript. SW carried out data analysis and data interpretation. Adaptive evolution analyses were conducted by NR. All authors have read and approved the final version of the manuscript.</p>
+      </sec>
+      <sec id="FPar4">
+        <title>Competing interests</title>
+        <p>The authors declare that they have no competing interests.</p>
+      </sec>
+      <sec id="FPar5">
+        <title>Consent for publication</title>
+        <p>Not applicable.</p>
+      </sec>
+      <sec id="FPar6">
+        <title>Ethics approval and consent to participate</title>
+        <p>We declare that all relevant licenses and permissions were obtained for using the strains used in this study.</p>
+      </sec>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Geiser</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Aoki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Bacon</surname>
+              <given-names>CW</given-names>
+            </name>
+            <name>
+              <surname>Baker</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Bhattacharyya</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Brandt</surname>
+              <given-names>ME</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>One fungus, one name: defining the genus <italic>Fusarium</italic> in a scientifically robust way that preserves longstanding use</article-title>
+          <source>Phytopathology</source>
+          <year>2013</year>
+          <volume>103</volume>
+          <fpage>400</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1094/PHYTO-07-12-0150-LE</pub-id>
+          <?supplied-pmid 23379853?>
+          <pub-id pub-id-type="pmid">23379853</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Guo</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Zeng</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome and transcriptome analysis of the fungal pathogen Fusarium oxysporum f. sp. cubense causing banana vascular wilt disease</article-title>
+          <source>PLoS ONE</source>
+          <year>2014</year>
+          <volume>9</volume>
+          <fpage>e95543</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0095543</pub-id>
+          <?supplied-pmid 24743270?>
+          <pub-id pub-id-type="pmid">24743270</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <mixed-citation publication-type="other">Ma L-J, Shea T, Young S, Zeng Q, Kistler HC. Genome Sequence of <italic>Fusarium oxysporum</italic> f. sp. melonis Strain NRRL 26406, a Fungus Causing Wilt Disease on Melon. Genome Announc. 2014; doi:10.1128/genomeA.00730-14.</mixed-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ma</surname>
+              <given-names>L-J</given-names>
+            </name>
+            <name>
+              <surname>van der Does</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Borkovich</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Coleman</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Daboussi</surname>
+              <given-names>M-J</given-names>
+            </name>
+            <name>
+              <surname>Di Pietro</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Comparative genomics reveals mobile pathogenicity chromosomes in <italic>Fusarium</italic></article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>464</volume>
+          <fpage>367</fpage>
+          <lpage>73</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature08850</pub-id>
+          <?supplied-pmid 20237561?>
+          <pub-id pub-id-type="pmid">20237561</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Lukasiewicz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Farrer</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>van Dam</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bertoldo</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Rep</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparative genomics of <italic>Fusarium oxysporum f. sp. melonis</italic> reveals the secreted protein recognized by the Fom-2 resistance gene in melon</article-title>
+          <source>New Phytol</source>
+          <year>2016</year>
+          <volume>209</volume>
+          <fpage>307</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="doi">10.1111/nph.13584</pub-id>
+          <?supplied-pmid 26305378?>
+          <pub-id pub-id-type="pmid">26305378</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>O&#x2019;Donnell</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Geiser</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Corby Kistler</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Aoki</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Genealogical concordance between the mating type locus and seven other nuclear genes supports formal recognition of nine phylogenetically distinct species within the <italic>Fusarium graminearum</italic> clade</article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2004</year>
+          <volume>41</volume>
+          <fpage>600</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2004.03.003</pub-id>
+          <?supplied-pmid 15121083?>
+          <pub-id pub-id-type="pmid">15121083</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cuomo</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>G&#xFC;ldener</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>J-R</given-names>
+            </name>
+            <name>
+              <surname>Trail</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Turgeon</surname>
+              <given-names>BG</given-names>
+            </name>
+            <name>
+              <surname>Di Pietro</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The <italic>Fusarium graminearum</italic> genome reveals a link between localized polymorphism and pathogen specialization</article-title>
+          <source>Science</source>
+          <year>2007</year>
+          <volume>317</volume>
+          <fpage>1400</fpage>
+          <lpage>2</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1143708</pub-id>
+          <?supplied-pmid 17823352?>
+          <pub-id pub-id-type="pmid">17823352</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>King</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Urban</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hammond-Kosack</surname>
+              <given-names>MCU</given-names>
+            </name>
+            <name>
+              <surname>Hassani-Pak</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hammond-Kosack</surname>
+              <given-names>KE</given-names>
+            </name>
+          </person-group>
+          <article-title>The completed genome sequence of the pathogenic ascomycete fungus <italic>Fusarium graminearum</italic></article-title>
+          <source>BMC Genomics</source>
+          <year>2015</year>
+          <volume>16</volume>
+          <fpage>544</fpage>
+          <pub-id pub-id-type="doi">10.1186/s12864-015-1756-1</pub-id>
+          <?supplied-pmid 26198851?>
+          <pub-id pub-id-type="pmid">26198851</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wong</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Mannhaupt</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>M&#xFC;nsterk&#xF6;tter</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mewes</surname>
+              <given-names>H-W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>FGDB: revisiting the genome annotation of the plant pathogen <italic>Fusarium graminearum</italic></article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <fpage>D637</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkq1016</pub-id>
+          <?supplied-pmid 21051345?>
+          <pub-id pub-id-type="pmid">21051345</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Waalwijk</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>de Wit</surname>
+              <given-names>PJGM</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>van der Lee</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>RNA-Seq analysis reveals new gene models and alternative splicing in the fungal pathogen <italic>Fusarium graminearum</italic></article-title>
+          <source>BMC Genomics</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>21</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-14-21</pub-id>
+          <?supplied-pmid 23324402?>
+          <pub-id pub-id-type="pmid">23324402</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Talas</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Kalih</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Miedaner</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>McDonald</surname>
+              <given-names>BA</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide association study identifies novel candidate genes for aggressiveness, deoxynivalenol production, and azole sensitivity in natural field populations of <italic>Fusarium graminearum</italic></article-title>
+          <source>Mol Plant Microbe Interact</source>
+          <year>2016</year>
+          <volume>29</volume>
+          <fpage>417</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="doi">10.1094/MPMI-09-15-0218-R</pub-id>
+          <?supplied-pmid 26959837?>
+          <pub-id pub-id-type="pmid">26959837</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Talas</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>McDonald</surname>
+              <given-names>BA</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide analysis of <italic>Fusarium graminearum</italic> field populations reveals hotspots of recombination</article-title>
+          <source>BMC Genomics</source>
+          <year>2015</year>
+          <volume>16</volume>
+          <fpage>996</fpage>
+          <pub-id pub-id-type="doi">10.1186/s12864-015-2166-0</pub-id>
+          <?supplied-pmid 26602546?>
+          <pub-id pub-id-type="pmid">26602546</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gardiner</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Stiller</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kazan</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome sequence of <italic>Fusarium graminearum</italic> isolate CS3005</article-title>
+          <source>Genome Announc</source>
+          <year>2014</year>
+          <?supplied-pmid 24744326?>
+          <pub-id pub-id-type="pmid">24744326</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Walkowiak</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bonner</surname>
+              <given-names>CT</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Blackwell</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Rowland</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Subramaniam</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Intraspecies interaction of <italic>Fusarium graminearum</italic> contributes to reduced toxin production and virulence</article-title>
+          <source>Mol Plant Microbe Interact</source>
+          <year>2015</year>
+          <volume>28</volume>
+          <fpage>1256</fpage>
+          <lpage>67</lpage>
+          <?supplied-pmid 26125491?>
+          <pub-id pub-id-type="pmid">26125491</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jansen</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>von Wettstein</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Sch&#xE4;fer</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Kogel</surname>
+              <given-names>K-H</given-names>
+            </name>
+            <name>
+              <surname>Felk</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Maier</surname>
+              <given-names>FJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Infection patterns in barley and wheat spikes inoculated with wild-type and trichodiene synthase gene disrupted <italic>Fusarium graminearum</italic></article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2005</year>
+          <volume>102</volume>
+          <fpage>16892</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0508467102</pub-id>
+          <?supplied-pmid 16263921?>
+          <pub-id pub-id-type="pmid">16263921</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sobrova</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Adam</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Vasatkova</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Beklova</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zeman</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kizek</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Deoxynivalenol and its toxicity</article-title>
+          <source>Interdiscip Toxicol</source>
+          <year>2010</year>
+          <volume>3</volume>
+          <fpage>94</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.2478/v10102-010-0019-x</pub-id>
+          <?supplied-pmid 21217881?>
+          <pub-id pub-id-type="pmid">21217881</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>O&#x2019;Donnell</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kistler</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Tacke</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Casper</surname>
+              <given-names>HH</given-names>
+            </name>
+          </person-group>
+          <article-title>Gene genealogies reveal global phylogeographic structure and reproductive isolation among lineages of <italic>Fusarium graminearum</italic>, the fungus causing wheat scab</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2000</year>
+          <volume>97</volume>
+          <fpage>7905</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.130193297</pub-id>
+          <?supplied-pmid 10869425?>
+          <pub-id pub-id-type="pmid">10869425</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Starkey</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Aoki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Gale</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name>
+              <surname>Kistler</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Geiser</surname>
+              <given-names>DM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Global molecular surveillance reveals novel Fusarium head blight species and trichothecene toxin diversity</article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2007</year>
+          <volume>44</volume>
+          <fpage>1191</fpage>
+          <lpage>204</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2007.03.001</pub-id>
+          <?supplied-pmid 17451976?>
+          <pub-id pub-id-type="pmid">17451976</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ward</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Clear</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Rooney</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>O&#x2019;Donnell</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Gaba</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Patrick</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>An adaptive evolutionary shift in Fusarium head blight pathogen populations is driving the rapid spread of more toxigenic <italic>Fusarium graminearum</italic> in North America</article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2008</year>
+          <volume>45</volume>
+          <fpage>473</fpage>
+          <lpage>84</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2007.10.003</pub-id>
+          <?supplied-pmid 18035565?>
+          <pub-id pub-id-type="pmid">18035565</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Proctor</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>McCormick</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Alexander</surname>
+              <given-names>NJ</given-names>
+            </name>
+            <name>
+              <surname>Desjardins</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Evidence that a secondary metabolic biosynthetic gene cluster has grown by gene relocation during evolution of the filamentous fungus <italic>Fusarium</italic></article-title>
+          <source>Mol Microbiol</source>
+          <year>2009</year>
+          <volume>74</volume>
+          <fpage>1128</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-2958.2009.06927.x</pub-id>
+          <?supplied-pmid 19843228?>
+          <pub-id pub-id-type="pmid">19843228</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alexander</surname>
+              <given-names>NJ</given-names>
+            </name>
+            <name>
+              <surname>McCormick</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Waalwijk</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>van der Lee</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Proctor</surname>
+              <given-names>RH</given-names>
+            </name>
+          </person-group>
+          <article-title>The genetic basis for 3-ADON and 15-ADON trichothecene chemotypes in <italic>Fusarium</italic></article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2011</year>
+          <volume>48</volume>
+          <fpage>485</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2011.01.003</pub-id>
+          <?supplied-pmid 21216300?>
+          <pub-id pub-id-type="pmid">21216300</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>Y-K</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>K-H</given-names>
+            </name>
+            <name>
+              <surname>Yun</surname>
+              <given-names>S-H</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>Y-W</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>Tri13</italic> and <italic>Tri7</italic> determine deoxynivalenol- and nivalenol- producing chemotypes of <italic>Gibberella zeae</italic></article-title>
+          <source>Appl Environ Microbiol</source>
+          <year>2002</year>
+          <volume>68</volume>
+          <fpage>2148</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="doi">10.1128/AEM.68.5.2148-2154.2002</pub-id>
+          <?supplied-pmid 11976083?>
+          <pub-id pub-id-type="pmid">11976083</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Varga</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wiesenberger</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hametner</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Sch&#xF6;fbeck</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>New tricks of an old enemy: isolates of <italic>Fusarium graminearum</italic> produce a type A trichothecene mycotoxin</article-title>
+          <source>Environ Microbiol</source>
+          <year>2015</year>
+          <volume>17</volume>
+          <fpage>2588</fpage>
+          <lpage>600</lpage>
+          <pub-id pub-id-type="doi">10.1111/1462-2920.12718</pub-id>
+          <?supplied-pmid 25403493?>
+          <pub-id pub-id-type="pmid">25403493</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vesonder</surname>
+              <given-names>RF</given-names>
+            </name>
+            <name>
+              <surname>Ellis</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Kwolek</surname>
+              <given-names>WF</given-names>
+            </name>
+            <name>
+              <surname>DeMarini</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Production of vomitoxin on corn by <italic>Fusarium graminearum</italic> NRRL 5883 and <italic>Fusarium roseum</italic> NRRL 6101</article-title>
+          <source>Appl Environ Microbiol</source>
+          <year>1982</year>
+          <volume>43</volume>
+          <fpage>967</fpage>
+          <lpage>70</lpage>
+          <?supplied-pmid 7081990?>
+          <pub-id pub-id-type="pmid">7081990</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carter</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Rezanoor</surname>
+              <given-names>HN</given-names>
+            </name>
+            <name>
+              <surname>Holden</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Desjardins</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Plattner</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Nicholson</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Variation in pathogenicity associated with the genetic diversity of <italic>Fusarium graminearum</italic></article-title>
+          <source>Eur J Plant Pathol</source>
+          <year>2002</year>
+          <volume>108</volume>
+          <fpage>573</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="doi">10.1023/A:1019921203161</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ward</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Bielawski</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Kistler</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Sullivan</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>O&#x2019;Donnell</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Ancestral polymorphism and adaptive evolution in the trichothecene mycotoxin gene cluster of phytopathogenic <italic>Fusarium</italic></article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2002</year>
+          <volume>99</volume>
+          <fpage>9278</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.142307199</pub-id>
+          <?supplied-pmid 12080147?>
+          <pub-id pub-id-type="pmid">12080147</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>van der Lee</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Waalwijk</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>Fusarium</italic> populations on Chinese barley show a dramatic gradient in mycotoxin profiles</article-title>
+          <source>Phytopathology</source>
+          <year>2008</year>
+          <volume>98</volume>
+          <fpage>719</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="doi">10.1094/PHYTO-98-6-0719</pub-id>
+          <?supplied-pmid 18944297?>
+          <pub-id pub-id-type="pmid">18944297</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gardiner</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Kazan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Manners</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Novel genes of <italic>Fusarium graminearum</italic> that negatively regulate deoxynivalenol production and virulence</article-title>
+          <source>Mol Plant Microbe Interact</source>
+          <year>2009</year>
+          <volume>22</volume>
+          <fpage>1588</fpage>
+          <lpage>600</lpage>
+          <pub-id pub-id-type="doi">10.1094/MPMI-22-12-1588</pub-id>
+          <?supplied-pmid 19888824?>
+          <pub-id pub-id-type="pmid">19888824</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gilbert</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Abramson</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>McCallum</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Clear</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparison of Canadian <italic>Fusarium graminearum</italic> isolates for aggressiveness, vegetative compatibility, and production of ergosterol and mycotoxins</article-title>
+          <source>Mycopathologia</source>
+          <year>2002</year>
+          <volume>153</volume>
+          <fpage>209</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="doi">10.1023/A:1014940523921</pub-id>
+          <?supplied-pmid 12014482?>
+          <pub-id pub-id-type="pmid">12014482</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miller</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Greenhalgh</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Production of deoxynivalenol and related compounds in liquid culture by <italic>Fusarium graminearum</italic></article-title>
+          <source>Can J Microbiol</source>
+          <year>1983</year>
+          <volume>29</volume>
+          <fpage>1171</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1139/m83-179</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Assefa</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Keane</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Otto</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Newbold</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Berriman</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>ABACAS: algorithm-based automatic contiguation of assembled sequences</article-title>
+          <source>Bioinformatics</source>
+          <year>2009</year>
+          <volume>25</volume>
+          <fpage>1968</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btp347</pub-id>
+          <?supplied-pmid 19497936?>
+          <pub-id pub-id-type="pmid">19497936</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kurtz</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Phillippy</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Delcher</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Smoot</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shumway</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Antonescu</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Versatile and open software for comparing large genomes</article-title>
+          <source>Genome Biol</source>
+          <year>2004</year>
+          <volume>5</volume>
+          <fpage>R12</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2004-5-2-r12</pub-id>
+          <?supplied-pmid 14759262?>
+          <pub-id pub-id-type="pmid">14759262</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Delcher</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Kasif</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Fleischmann</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Peterson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Salzberg</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>Alignment of whole genomes</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>1999</year>
+          <volume>27</volume>
+          <fpage>2369</fpage>
+          <lpage>76</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/27.11.2369</pub-id>
+          <?supplied-pmid 10325427?>
+          <pub-id pub-id-type="pmid">10325427</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laing</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Buchanan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Taboada</surname>
+              <given-names>EN</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kropinski</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Villegas</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pan-genome sequence analysis using Panseq: an online tool for the rapid analysis of core and accessory genomic regions</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>461</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-11-461</pub-id>
+          <?supplied-pmid 20843356?>
+          <pub-id pub-id-type="pmid">20843356</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stanke</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Waack</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Gene prediction with a hidden Markov model and a new intron submodel</article-title>
+          <source>Bioinformatics</source>
+          <year>2003</year>
+          <volume>19</volume>
+          <fpage>ii215</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btg1080</pub-id>
+          <?supplied-pmid 14534192?>
+          <pub-id pub-id-type="pmid">14534192</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Conesa</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>G&#xF6;tz</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Garc&#xED;a-G&#xF3;mez</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Terol</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tal&#xF3;n</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Robles</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Blast2GO: a universal tool for annotation, visualization and analysis in functional genomics research</article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <fpage>3674</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/bti610</pub-id>
+          <?supplied-pmid 16081474?>
+          <pub-id pub-id-type="pmid">16081474</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Edgar</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>MUSCLE: multiple sequence alignment with high accuracy and high throughput</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2004</year>
+          <volume>32</volume>
+          <fpage>1792</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkh340</pub-id>
+          <?supplied-pmid 15034147?>
+          <pub-id pub-id-type="pmid">15034147</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Loytynoja</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Goldman</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>A model of evolution and structure for multiple sequence alignment</article-title>
+          <source>Philos Trans R Soc Lond B Biol Sci</source>
+          <year>2008</year>
+          <volume>363</volume>
+          <fpage>3913</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1098/rstb.2008.0170</pub-id>
+          <?supplied-pmid 18852103?>
+          <pub-id pub-id-type="pmid">18852103</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Paml 4: phylogenetic analysis by maximum likelihood</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2007</year>
+          <volume>24</volume>
+          <fpage>1586</fpage>
+          <lpage>91</lpage>
+          <pub-id pub-id-type="doi">10.1093/molbev/msm088</pub-id>
+          <?supplied-pmid 17483113?>
+          <pub-id pub-id-type="pmid">17483113</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kristensen</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Torp</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kosiak</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Holt-Jensen</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Phylogeny and toxigenic potential is correlated in <italic>Fusarium</italic> species as revealed by partial translation elongation factor 1 alpha gene sequences</article-title>
+          <source>Mycol Res</source>
+          <year>2005</year>
+          <volume>109</volume>
+          <fpage>173</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0953756204002114</pub-id>
+          <?supplied-pmid 15839101?>
+          <pub-id pub-id-type="pmid">15839101</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lofgren</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Kistler</surname>
+              <given-names>HC</given-names>
+            </name>
+          </person-group>
+          <article-title>Population subdivision of <italic>Fusarium graminearum</italic> from barley and wheat in the Upper Midwestern United States at the turn of the century</article-title>
+          <source>Phytopathology</source>
+          <year>2015</year>
+          <volume>105</volume>
+          <fpage>1466</fpage>
+          <lpage>74</lpage>
+          <pub-id pub-id-type="doi">10.1094/PHYTO-01-15-0021-R</pub-id>
+          <?supplied-pmid 26107972?>
+          <pub-id pub-id-type="pmid">26107972</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hansen</surname>
+              <given-names>FT</given-names>
+            </name>
+            <name>
+              <surname>Gardiner</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Lys&#xF8;e</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Fuertes</surname>
+              <given-names>PR</given-names>
+            </name>
+            <name>
+              <surname>Tudzynski</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Wiemann</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>An update to polyketide synthase and non-ribosomal synthetase genes and nomenclature in <italic>Fusarium</italic></article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2015</year>
+          <volume>75</volume>
+          <fpage>20</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2014.12.004</pub-id>
+          <?supplied-pmid 25543026?>
+          <pub-id pub-id-type="pmid">25543026</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43.</label>
+        <mixed-citation publication-type="other">Sieber CMK, Lee W, Wong P, M&#xFC;nsterk&#xF6;tter M, Mewes H-W, Schmeitzl C, et al. The <italic>Fusarium graminearum</italic> genome reveals more secondary metabolite gene clusters and hints of horizontal gene transfer. PLoS ONE. 2014;9: doi:10.1371/journal.pone.0110311.</mixed-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Milani</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Lawrence</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Elizabeth Arnold</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>VanEtten</surname>
+              <given-names>HD</given-names>
+            </name>
+          </person-group>
+          <article-title>Origin of pisatin demethylase (PDA) in the genus <italic>Fusarium</italic></article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2012</year>
+          <volume>49</volume>
+          <fpage>933</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2012.08.007</pub-id>
+          <?supplied-pmid 22985693?>
+          <pub-id pub-id-type="pmid">22985693</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jin</surname>
+              <given-names>J-M</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Baek</surname>
+              <given-names>S-R</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>J-C</given-names>
+            </name>
+            <name>
+              <surname>Yun</surname>
+              <given-names>S-H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Functional characterization and manipulation of the apicidin biosynthetic pathway in <italic>Fusarium semitectum</italic></article-title>
+          <source>Mol Microbiol</source>
+          <year>2010</year>
+          <volume>76</volume>
+          <fpage>456</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-2958.2010.07109.x</pub-id>
+          <?supplied-pmid 20233305?>
+          <pub-id pub-id-type="pmid">20233305</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>S&#xF8;rensen</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Sondergaard</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Covarelli</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Fuertes</surname>
+              <given-names>PR</given-names>
+            </name>
+            <name>
+              <surname>Hansen</surname>
+              <given-names>FT</given-names>
+            </name>
+            <name>
+              <surname>Frandsen</surname>
+              <given-names>RJN</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Identification of the biosynthetic gene clusters for the lipopeptides fusaristatin A and W493 B in <italic>Fusarium graminearum</italic> and <italic>F. pseudograminearum</italic></article-title>
+          <source>J Nat Prod</source>
+          <year>2014</year>
+          <volume>77</volume>
+          <fpage>2619</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="doi">10.1021/np500436r</pub-id>
+          <?supplied-pmid 25412204?>
+          <pub-id pub-id-type="pmid">25412204</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayans</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Scott</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Connerton</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Gravesen</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Benen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Visser</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Two crystal structures of pectin lyase A from <italic>Aspergillus</italic> reveal a pH driven conformational change and striking divergence in the substrate-binding clefts of pectin and pectate lyases</article-title>
+          <source>Structure</source>
+          <year>1997</year>
+          <volume>5</volume>
+          <fpage>677</fpage>
+          <lpage>89</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0969-2126(97)00222-0</pub-id>
+          <?supplied-pmid 9195887?>
+          <pub-id pub-id-type="pmid">9195887</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glass</surname>
+              <given-names>NL</given-names>
+            </name>
+            <name>
+              <surname>Kaneko</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Fatal attraction: nonself recognition and heterokaryon incompatibility in filamentous fungi</article-title>
+          <source>Eukaryot Cell</source>
+          <year>2003</year>
+          <volume>2</volume>
+          <fpage>1</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1128/EC.2.1.1-8.2003</pub-id>
+          <?supplied-pmid 12582117?>
+          <pub-id pub-id-type="pmid">12582117</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49.</label>
+        <mixed-citation publication-type="other">Paoletti M, Saupe SJ, Clav&#xE9; C. Genesis of a fungal non-self recognition repertoire. PLoS ONE. 2007;2: doi:10.1371/journal.pone.0000283.</mixed-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hou</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>Q</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Functional analysis of the kinome of the wheat scab fungus <italic>Fusarium graminearum</italic></article-title>
+          <source>PLoS Pathog</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <fpage>e1002460</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.ppat.1002460</pub-id>
+          <?supplied-pmid 22216007?>
+          <pub-id pub-id-type="pmid">22216007</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR51">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gaffoor</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Trail</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional analysis of the polyketide synthase genes in the filamentous fungus <italic>Gibberella zeae</italic> (anamorph <italic>Fusarium graminearum</italic>)</article-title>
+          <source>Eukaryotic Cell</source>
+          <year>2005</year>
+          <volume>4</volume>
+          <fpage>1926</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="doi">10.1128/EC.4.11.1926-1933.2005</pub-id>
+          <?supplied-pmid 16278459?>
+          <pub-id pub-id-type="pmid">16278459</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR52">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dao</surname>
+              <given-names>TTH</given-names>
+            </name>
+            <name>
+              <surname>Linthorst</surname>
+              <given-names>HJM</given-names>
+            </name>
+            <name>
+              <surname>Verpoorte</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Chalcone synthase and its functions in plant resistance</article-title>
+          <source>Phytochem Rev</source>
+          <year>2011</year>
+          <volume>10</volume>
+          <fpage>397</fpage>
+          <lpage>412</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11101-011-9211-7</pub-id>
+          <?supplied-pmid 21909286?>
+          <pub-id pub-id-type="pmid">21909286</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR53">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lys&#xF8;e</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Walkowiak</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Subramaniam</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Divon</surname>
+              <given-names>HH</given-names>
+            </name>
+            <name>
+              <surname>Riiser</surname>
+              <given-names>ES</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The genome of the generalist plant pathogen <italic>Fusarium avenaceum</italic> is enriched with genes involved in redox, signaling and secondary metabolism</article-title>
+          <source>PLoS ONE</source>
+          <year>2014</year>
+          <volume>9</volume>
+          <fpage>e112703</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0112703</pub-id>
+          <?supplied-pmid 25409087?>
+          <pub-id pub-id-type="pmid">25409087</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR54">
+        <label>54.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harris</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Balcerzak</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Johnston</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Schneiderman</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ouellet</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Host-preferential <italic>Fusarium graminearum</italic> gene expression during infection of wheat, barley, and maize</article-title>
+          <source>Fungal Biol</source>
+          <year>2016</year>
+          <volume>120</volume>
+          <fpage>111</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.funbio.2015.10.010</pub-id>
+          <?supplied-pmid 26693688?>
+          <pub-id pub-id-type="pmid">26693688</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR55">
+        <label>55.</label>
+        <mixed-citation publication-type="other">Son H, Seo Y-S, Min K, Park AR, Lee J, Jin J-M, et al. A phenome-based functional analysis of transcription factors in the cereal head blight fungus, <italic>Fusarium graminearum</italic>. PLoS Pathog. 2011;7. doi:10.1371/journal.ppat.1002310</mixed-citation>
+      </ref>
+      <ref id="CR56">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yun</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>J-R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Functional analysis of the <italic>Fusarium graminearum</italic> phosphatome</article-title>
+          <source>New Phytol</source>
+          <year>2015</year>
+          <volume>207</volume>
+          <fpage>119</fpage>
+          <lpage>34</lpage>
+          <pub-id pub-id-type="doi">10.1111/nph.13374</pub-id>
+          <?supplied-pmid 25758923?>
+          <pub-id pub-id-type="pmid">25758923</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR57">
+        <label>57.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Denanc&#xE9;</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Szurek</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>No&#xEB;l</surname>
+              <given-names>LD</given-names>
+            </name>
+          </person-group>
+          <article-title>Emerging functions of nodulin-like proteins in non-nodulating plant species</article-title>
+          <source>Plant Cell Physiol</source>
+          <year>2014</year>
+          <volume>55</volume>
+          <fpage>469</fpage>
+          <lpage>74</lpage>
+          <pub-id pub-id-type="doi">10.1093/pcp/pct198</pub-id>
+          <?supplied-pmid 24470637?>
+          <pub-id pub-id-type="pmid">24470637</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR58">
+        <label>58.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gilbert</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Br&#xFB;l&#xE9;-Babel</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Guerrieri</surname>
+              <given-names>AT</given-names>
+            </name>
+            <name>
+              <surname>Clear</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Patrick</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Slusarenko</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ratio of 3-ADON and 15-ADON isolates of <italic>Fusarium graminearum</italic> recovered from wheat kernels in Manitoba from 2008 to 2012</article-title>
+          <source>Can J Plant Pathol</source>
+          <year>2014</year>
+          <volume>36</volume>
+          <fpage>54</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="doi">10.1080/07060661.2014.887033</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR59">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gardiner</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>McDonald</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Covarelli</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Solomon</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Rusu</surname>
+              <given-names>AG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Comparative pathogenomics reveals horizontally acquired novel virulence genes in fungi infecting cereal hosts</article-title>
+          <source>PLoS Pathog</source>
+          <year>2012</year>
+          <volume>8</volume>
+          <fpage>e1002952</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.ppat.1002952</pub-id>
+          <?supplied-pmid 23028337?>
+          <pub-id pub-id-type="pmid">23028337</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR60">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Proctor</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Van Hove</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Susca</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Stea</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Busman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>van der Lee</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Birth, death and horizontal transfer of the fumonisin biosynthetic gene cluster during the evolutionary diversification of Fusarium</article-title>
+          <source>Mol Microbiol</source>
+          <year>2013</year>
+          <volume>90</volume>
+          <fpage>290</fpage>
+          <lpage>306</lpage>
+          <?supplied-pmid 23937442?>
+          <pub-id pub-id-type="pmid">23937442</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR61">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jones</surname>
+              <given-names>JDG</given-names>
+            </name>
+            <name>
+              <surname>Dangl</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>The plant immune system</article-title>
+          <source>Nature</source>
+          <year>2006</year>
+          <volume>444</volume>
+          <fpage>323</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature05286</pub-id>
+          <?supplied-pmid 17108957?>
+          <pub-id pub-id-type="pmid">17108957</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR62">
+        <label>62.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sperschneider</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gardiner</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Thatcher</surname>
+              <given-names>LF</given-names>
+            </name>
+            <name>
+              <surname>Lyons</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>KB</given-names>
+            </name>
+            <name>
+              <surname>Manners</surname>
+              <given-names>JM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide analysis in three <italic>Fusarium</italic> pathogens identifies rapidly evolving chromosomes and genes associated with pathogenicity</article-title>
+          <source>Genome Biol Evol</source>
+          <year>2015</year>
+          <volume>7</volume>
+          <fpage>1613</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="doi">10.1093/gbe/evv092</pub-id>
+          <?supplied-pmid 25994930?>
+          <pub-id pub-id-type="pmid">25994930</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

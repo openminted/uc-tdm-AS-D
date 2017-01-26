@@ -1,0 +1,1738 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="review-article" xml:lang="en">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Plant Methods</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Plant Methods</journal-id>
+      <journal-title-group>
+        <journal-title>Plant Methods</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1746-4811</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3847682</article-id>
+      <article-id pub-id-type="publisher-id">1746-4811-9-35</article-id>
+      <article-id pub-id-type="pmid">24011260</article-id>
+      <article-id pub-id-type="doi">10.1186/1746-4811-9-35</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Review</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Analysing complex <italic>Triticeae</italic> genomes &#x2013; concepts and strategies</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" id="A1">
+          <name>
+            <surname>Spannagl</surname>
+            <given-names>Manuel</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>manuel.spannagl@helmholtz-muenchen.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Martis</surname>
+            <given-names>Mihaela M</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>mihaela.martis@helmholtz-muenchen.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Pfeifer</surname>
+            <given-names>Matthias</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>matthias.pfeifer@helmholtz-muenchen.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Nussbaumer</surname>
+            <given-names>Thomas</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>thomas.nussbaumer@helmholtz-muenchen.de</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A5">
+          <name>
+            <surname>Mayer</surname>
+            <given-names>Klaus FX</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>k.mayer@helmholtz-muenchen.de</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>MIPS/IBIS, Helmholtz Center Munich, National Research Center for Environment and Health, Ingolstaedter Landstr. 1, Neuherberg, Germany</aff>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>6</day>
+        <month>9</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>9</volume>
+      <fpage>35</fpage>
+      <lpage>35</lpage>
+      <history>
+        <date date-type="received">
+          <day>17</day>
+          <month>5</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>10</day>
+          <month>7</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2013 Spannagl et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Spannagl et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.plantmethods.com/content/9/1/35"/>
+      <abstract>
+        <p>The genomic sequences of many important <italic>Triticeae</italic> crop species are hard to assemble and analyse due to their large genome sizes, (in part) polyploid genomes and high repeat content. Recently, the draft genomes of barley and bread wheat were reported thanks to cost-efficient and fast NGS technologies. The genome of barley is estimated to be 5 Gb in size whereas the genome of bread wheat accounts for 17 Gb and harbours an allo-hexaploid genome. Direct assembly of the sequence reads and access to the gene content is hampered by the repeat content. As a consequence, novel strategies and data analysis concepts had to be developed to provide much-needed whole genome sequence surveys and access to the gene repertoires. Here we describe some analytical strategies that now enable structuring of massive NGS data generated and pave the way towards structured and ordered sequence data and gene order. Specifically we report on the GenomeZipper, a synteny driven approach to order and structure NGS survey sequences of grass genomes that lack a physical map. In addition, to access and analyse the gene repertoire of allo-hexaploid bread wheat from the raw sequence reads, a reference-guided approach was developed utilizing representative genes from rice, <italic>Brachypodium distachyon</italic>, sorghum and barley. Stringent sub-assembly on the reference genes prevented collapsing of homeologous wheat genes and allowed to estimate gene retention rate and determine gene family sizes. Genomic sequences from the wheat sub-genome progenitors enabled to discriminate a large number of sub-assemblies between the wheat A, B or D sub-genome using machine learning algorithms. Many of the concepts outlined here can readily be applied to other complex plant and non-plant genomes.</p>
+      </abstract>
+      <kwd-group>
+        <kwd><italic>Triticeae</italic> genomes</kwd>
+        <kwd>Grass genomes</kwd>
+        <kwd>Wheat genome</kwd>
+        <kwd>Barley genome</kwd>
+        <kwd>GenomeZipper</kwd>
+        <kwd>Genome analysis</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Review</title>
+      <sec>
+        <title>Introduction</title>
+        <p>The <italic>Triticeae</italic> tribe comprises some of the most economically important crops including bread wheat, barley and rye. Bread wheat ranked third in world crop production with 681 million tons in 2011 [<xref ref-type="bibr" rid="B1">1</xref>], making it an indispensable source for our everyday diet. Domestication history of <italic>Triticeae</italic> dates back several thousand years. They consequently have a complex genetic history [<xref ref-type="bibr" rid="B2">2</xref>].</p>
+        <p>The genomes of many <italic>Triticeae</italic> species including wheat and barley appear to be extremely challenging to assemble and analyse due to their genome size, high repeat content, complex transposable element structure and, in part, polyploid genome [<xref ref-type="bibr" rid="B3">3</xref>,<xref ref-type="bibr" rid="B4">4</xref>].</p>
+        <p>With an estimated genome size of ~5 Gb the barley genome is significantly larger than the human genome, however exceeded by the bread wheat genome with ~17 Gb. Bread wheat contains an allo-hexaploid genome with three sub-genomes, namely the A, B and D sub-genome. It has been speculated that the bread wheat genome originated from hybridization between cultivated tetraploid emmer wheat (AABB) and diploid goat grass (DD) about 8000&#xA0;years ago [<xref ref-type="bibr" rid="B5">5</xref>].</p>
+        <p>Complementing the genome size, many <italic>Triticeae</italic> genomes show a very high degree of repetitive elements (~80% in bread wheat [<xref ref-type="bibr" rid="B6">6</xref>]). These repetitive stretches can span several 100kbs and have a complex architecture and composition. Consequently assembly of long scaffolds or even whole chromosome sequences from NGS survey sequences using current technology is still an open problem [Review [<xref ref-type="bibr" rid="B7">7</xref>]]. Although synteny is pronounced in grasses and in general the gene order appears to be well conserved [<xref ref-type="bibr" rid="B8">8</xref>], repeat and TE activities as well as structural rearrangements contribute to the formation of pseudogenes, gene fragments and changes in local gene order [<xref ref-type="bibr" rid="B4">4</xref>].</p>
+        <p>With the availability of economic and rapid NGS technologies whole-genome sequence surveys of many grass genomes including a number of <italic>Triticeae</italic> species were generated recently [<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B10">10</xref>]. While the direct assembly of reads into pseudo-chromosomes or scaffolds is hampered by the genomes&#x2019; repetitiveness and size, the gene inventory, gene order and chromosomal positioning of genetic elements such as genes and markers is of high interest not only for breeders but also helps to shed light on the evolutionary history of the respective plants and the <italic>Triticeae</italic> in general.</p>
+        <p>Consequently, numerous novel strategies and concepts were developed over the last few years to order [<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B12">12</xref>], analyse [<xref ref-type="bibr" rid="B9">9</xref>] and compare complex <italic>Triticeae</italic> genomes even in the light of the challenges and limitations described. Here, we highlight a few of these concepts that were applied to analyse the recently published genome sequences of barley [<xref ref-type="bibr" rid="B10">10</xref>] and bread wheat [<xref ref-type="bibr" rid="B9">9</xref>] and describe the methodology used in more detail.</p>
+        <p>Many of the concepts and strategies described and discussed here are not restricted to the <italic>Triticeae</italic> but can be applied to other complex grass and plant genomes that have not been sequenced and analysed so far due to their genome size and/or polyploid nature.</p>
+      </sec>
+      <sec>
+        <title>A strategy for the comprehensive analysis of polyploid genomes. an ortholome approach for the analysis of hexaploid bread wheat</title>
+        <p>The orthologous group assembly (OA) is a strategy which aims to identify the gene repertoire of polyploid genomes based on low- and medium coverage, long-read (454) whole genome shotgun data. This approach was applied for the comprehensive sequence analysis of hexaploid bread wheat [<xref ref-type="bibr" rid="B9">9</xref>] and facilitated the identification of 94,000-96,000 wheat genes. Due to a stringent assembly protocol, rare sequence polymorphisms are sufficient in order to maintain and distinguish distinct copies of homeologous genes, which might be collapsed by a brute-force <italic>de novo</italic> assembly. In contrast to traditional assembly approaches, the orthologous group assembly focuses on the gene space and uses conserved sequence homology to genes of closely related plant species of smaller size and repeat content. Briefly, orthologous genes of multiple species are grouped and, for each gene family, one representative protein is selected thereby defining an orthologous group representative (OGR). Subsequently, based on conserved sequence homology, raw sequencing reads are associated to the OGRs. These associations define sequence read collections for each individual OGR. Each of these sequence bins is independently assembled using stringent parameters that can be estimated from <italic>in silico</italic> simulations of whole genome sequencing experiments. The assembled gene fragments are re-aligned and ordered along the OGR to facilitate estimation of the gene copy number of the target genome and further simplifies downstream analysis (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>).</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Schematic representation of the orthologous group assembly workflow and the protocol for the estimation of gene copy number.</bold> Grey boxes represent the protein sequence of orthologous group representative, whereas lines connecting boxes depict exon boundaries. Coloured boxes visualize sequencing reads and assembled sequences, respectively. The colour code groups sequences that originate from the same genome and light colouring visualize non-coding regions. <bold>A</bold> The orthologous assembly algorithm sorts the raw sequencing reads to corresponding orthologous gene representatives based on sequence similarity (BLASTX). Then, each sequence bin is separately assembled using NEWBLER, an overlap graph assembler which identifies overlapping sequence reads first and then creates a consensus assembly sequence based on the overlap graph. <bold>B</bold> For estimating the gene copy number the orthologous assembly sequences were re-aligned to the corresponding template (BLASTX) and, thus, ordered along its protein sequence. The alignments are transferred into a position-specific hit count profile that counts the number of distinct sub-assemblies mapped to each amino acid of the template protein. Based on the cumulative coverage distribution of the hit-count profile, the final gene copy number is determined as the maximum number of distinct sub-assemblies covering a defined proportion of the template gene.</p>
+          </caption>
+          <graphic xlink:href="1746-4811-9-35-1"/>
+        </fig>
+        <sec>
+          <title>Definition of an orthologous gene set</title>
+          <p>In a first step, orthologous gene clusters were computed for the reference genomes of three grass genomes (<italic>Brachypodium distachyon</italic>[<xref ref-type="bibr" rid="B13">13</xref>], <italic>Sorghum bicolor</italic>[<xref ref-type="bibr" rid="B14">14</xref>] and <italic>Oryza sativa</italic>[<xref ref-type="bibr" rid="B15">15</xref>]) originating from different grass sub-families plus publicly- available barley full-length cDNAs. The OrthoMCL software version 1.4 [<xref ref-type="bibr" rid="B16">16</xref>] was used to calculate pairwise sequence similarities between all input protein sequences using BLASTP [<xref ref-type="bibr" rid="B17">17</xref>]. Markov clustering of the resulting similarity matrix defines the orthologous cluster structure.</p>
+          <p>A total of 86,944 coding sequences from these four grasses were clustered into 20,496 gene families. 9,843 clusters contained sequences from all four genomes.</p>
+          <p>In a second step, one representative gene model was selected from each of the 20,496 orthologous gene clusters, using the following strategy: 1. BLASTX [<xref ref-type="bibr" rid="B17">17</xref>] of all contigs from the bread wheat LCG assembly against all grass genes used in the OrthoMCL analysis; 2. Select the gene in each cluster that concentrates the most distinct wheat contigs; 3. If genes pool the same number of wheat contigs, select the one with the longest protein sequence as the representative gene model.</p>
+          <p>Genes with associated wheat contigs were identified for all but 445 gene clusters resulting in a total of 20,051 representative gene models.</p>
+        </sec>
+        <sec>
+          <title>Allocating the sequencing reads to orthologous gene representatives</title>
+          <p>The 454 sequence reads are clustered to the orthologous gene representatives using conserved sequence similarity. Thereby, pre-processing of the raw 454 sequencing data is a helpful approach to reduce computational complexity. Especially repetitive sequences, which represent up to 80% of the grass genomes [<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B19">19</xref>], considerably extend search space, and thus memory as well as time requirements. Moreover, increased gene copy numbers caused by repetitive mechanisms and transposable element activity complicate and hampers downstream gene family analysis. For a fivefold whole genome shotgun dataset from hexaploid wheat using this strategy, 77% of raw sequence data was removed and 24 Gb out of 83 Gb of sequence kept for the orthologous group assemblies.</p>
+          <p>Afterwards reads were aligned to the orthologous gene representatives using BLASTX [<xref ref-type="bibr" rid="B17">17</xref>] and reported alignments filtered for minimum alignment length (minimum of 30 amino acids (AA)) and minimum alignment identity. Thereby, different alignment identity thresholds were applied accounting for the different evolutionary distances between bread wheat and the reference species used for the orthologous group analysis. Overall, 4 million (6%) of the wheat repeat-filtered sequencing reads passed the applied alignment criteria, and approximately two-third (68%) of these matched a single OGR. For the remaining 454 reads, that map multiple representatives, only the first-best match (FBH), were considered. Almost all (19,483) of the selected orthologous representatives were detected by at least one 454 sequence read indicating the good representation of the majority of wheat genes in the whole genome shotgun sequence dataset.</p>
+        </sec>
+        <sec>
+          <title>Generating gene-centric &#x201C;sub-assemblies&#x201D; using the Newbler overlap assembler</title>
+          <p>Sequence information and quality scores were extracted for the 4 million aligned 454 reads from the original sequencing library files. For each orthologous group, individual assemblies were computed using the Newbler de novo assembly software, which generates larger contigs based on overlaps between reads [<xref ref-type="bibr" rid="B20">20</xref>]. Thereby, the assembly parameter specifying the minimum alignment identity (<italic>mi</italic>) to accept overlaps between reads has to be selected with caution. On the one hand, a too relaxed <italic>mi</italic> parameter may cause a collapse of homeologous sequence copies, but, on the other hand, too stringent <italic>mi</italic> parameter would overestimate gene copies due to sequencing errors. Two methods applied for selection of the best <italic>mi</italic> parameter are discussed in the following section. The final set of &#x201C;sub-assembly&#x201D; sequences was created by combining singletons (454 reads that do not overlap with any other reads) and the assembled contigs (&gt;&#x2009;=&#x2009;100&#xA0;bp).</p>
+          <p>The assembly results are strongly dependent on the chosen minimum alignment identity parameter. Whereas, 76% of reads were assembled into contigs applying 97% minimum alignment identity, the number of assembled reads dropped to 51% applying a minimum alignment identity of 100%, respectively (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>). On the contrary, the number of 454 reads remaining singletons almost doubles between 97% and 100% <italic>mi</italic>. This fact already indicates that small-scale adjustments of this parameters influence the assembly results and the subsequent downstream analysis. Since this parameter is thus of critical importance in the following we discuss two method for the selection of the minimum overlap identity parameter in the following sections.</p>
+          <fig id="F2" position="float">
+            <label>Figure 2</label>
+            <caption>
+              <p><bold>Newbler assembly statistics of 454 reads for different minimum overlap identity parameters.</bold> Three orthologous assemblies were performed using 97% minimum alignment identity (<italic>mi</italic>), 99% and 100%. For each assembly, the number of 454 remaining singletons (no significant overlap to any other 454 read), the number of assembled 454 reads and the number of excluded 454 reads (ultra-short reads, outlier reads, repeat reads) were counted.</p>
+            </caption>
+            <graphic xlink:href="1746-4811-9-35-2"/>
+          </fig>
+        </sec>
+        <sec>
+          <title>Estimation of gene copy number based on gene coverage</title>
+          <p>In order to estimate the gene copy number, the orthologous sub-assemblies were re-aligned to the corresponding template gene. The same alignment parameters used for mapping the raw sequencing reads were applied. Thereby, spliced alignments of sub-assemblies were additionally considered and all consecutive high-scoring segment pairs (HSPs) along the template protein sequence accepted. Using this strategy, we account stretches of non-coding sequence regions of the sub-assemblies which span and/or reach into introns or 5&#x2032; and 3&#x2032; UTRs. Then, the alignments of the sub-assemblies were transferred into a position-specific hit count profile by counting the number of aligned sub-assemblies located at a specific amino acid position of the template sequence. The algorithm converts the hit count profiles into a cumulative coverage distribution. The distribution curve ranges from 1 to the maximum hit-count in the profile by only considering template positions that are tagged by one or more sub-assemblies. Based on that profile, the gene copy number is determined as the hit count assigned to C% of the OG representatives, whereby C is defined as the minimum fraction of the covered template. As already indicated above, the estimated gene copy number is dependent on the assembly parameters. As shown in Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>, the more stringent the <italic>mi</italic> parameter was chosen, the higher the estimated gene copy number.</p>
+          <fig id="F3" position="float">
+            <label>Figure 3</label>
+            <caption>
+              <p>Wheat gene copy number in dependency of the applied assembly minimum alignment parameter.</p>
+            </caption>
+            <graphic xlink:href="1746-4811-9-35-3"/>
+          </fig>
+        </sec>
+        <sec>
+          <title>Estimation of assembly parameters and evaluation of the copy number predictions</title>
+          <p>As already shown in Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref> and Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>, the correct selection of the Newbler parameter &#x2013;<italic>mi</italic>, which specifies the minimum identity in order to combine two reads during the assembly, is a major factor affecting both the assembly outcome and the downstream gene family analysis based on predicted gene copy numbers. To estimate the correct Newbler parameterisation two simulation experiments were applied: (i) simulation of an whole-genome sequencing experiment for a diploid reference genome of similar genome size and repeat and gene composition and (ii) an <italic>in silico</italic> generation of an hexaploid gene set with similar sequence differences as in the homeologous genes of the target species.</p>
+        </sec>
+        <sec>
+          <title>Simulation of a whole genome sequencing experiment</title>
+          <p>Established reference assemblies or complete genome sequences of a reference species with similar genome size and structure can be used for the <italic>in silico</italic> simulation reflecting the experimental setting as achieved for the target genome sequence. Thereby, genomes with different degree of polyploidy could be used for this evaluation by adjusting the expectation of the reference gene family size. For the bread wheat genome analysis, the repeat masked genome sequence of maize (ZMb73, version 5b.60; <ext-link ext-link-type="uri" xlink:href="http://www.maizegdb.org">http://www.maizegdb.org</ext-link>) was used and first, the &#x201C;real&#x201D; gene family size (gene count) identified by OrthoMCL clustering of the 39,656 annotated maize proteins and the reference protein data sets. However, because highly similar gene sequences, which could not be discriminated with the applied identity cut-offs during the sequence assembly, would artificially lead to significant underestimation of predicted gene counts, CD-Hit [<xref ref-type="bibr" rid="B21">21</xref>] nucleotide similarity clustering was performed at different similarity levels (97%, 99% and 100%, respectively) and all but one of the redundant sequences was retained. We selected more than 15,000 OrthoMCL cluster including one or more maize genes as well as exactly one OGR. Thus, counting the number of grouped maize proteins provided reference values for subsequent analysis and comparisons.</p>
+          <p>Next, the input data set for the orthologous assembly was designed and a collection of raw 454 sequencing reads created from the maize reference genome assembly applying with 5&#xD7; genome coverage along with a uniform error rate of 0.5% [<xref ref-type="bibr" rid="B22">22</xref>]. Then, the above described protocol for the orthologous assembly was carried out with varying minimum overlap identity between 97% mi and 100% <italic>mi</italic>, respectively, and the gene copy number was predicted for the orthologous assembly.</p>
+        </sec>
+        <sec>
+          <title>Simulation of a polyploidy gene catalogue</title>
+          <p>Complementary to the above described evaluation method, a second evaluation was implemented, which in addition to the gene count simulates the polyploid effect size in the whole genome sequencing experiment. For this purpose, the transcript sequences of the 28,236 rice gene models (RAP2 annotation), including coding sequences as well as non-coding 3&#x2032; and 5&#x2032; UTRs and introns, were aligned against the orthologous gene representatives. Thereby the gene copy number in the rice data set was determined for each OG representative. Then, the aligned rice transcripts were triplicated and random single nucleotide variants (SNVs) were introduced to simulate the sequence similarity of the homeologous genes in the polyploid target genome. For example, for bread wheat nucleotides were randomly exchanged with p&#x2009;=&#x2009;0.01 (1 nucleotide change per 100&#xA0;bp) in coding transcript sequences and p&#x2009;=&#x2009;0.04 (4 nucleotide exchanges per 100&#xA0;bp) in non-coding transcript sequences, respectively. Then, 454-like shotgun reads were simulated (5&#xD7; genome coverage), re-mapped against their corresponding OG representatives, sub-assembled with varying minimum overlap identity (97% mi, 99% mi and 100% mi) and, finally, the gene copy number predicted.</p>
+          <p>As expected, depending on the required stringency for read overlaps, the copy number prediction largely differs. In both evaluation methods 454 reads of different gene copy were collapsed by using 97% <italic>mi</italic>, whereas, requiring perfect alignment overlaps (100% <italic>mi</italic>) clearly results in an overestimation of the gene family sizes. As expected, we observed nearly perfect agreement of the expected 1:1 relationship between the expected and observed gene family size in the maize simulation, as well as the 1:3 relationship in the polyploidy simulation by using 99% alignment identity. This parameterisation allows compensating for sequencing errors, by simultaneously maintaining distinct gene copies that share high sequence similarity in coding regions. However, highly similar gene copies from large gene families may still collapse into single assemblies resulting in slight overall gene number underestimates.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Sub-genome classification of bread wheat transcripts using machine learning</title>
+        <p>Besides sheer size and high repeat content hexaploidy makes the genome of bread wheat extremely challenging to analyse. Being able to differentiate between homologous genes of the three wheat sub-genomes (<italic>A</italic>, <italic>B</italic> and <italic>D</italic>) is of high importance not only for marker design and breeding but also to address open questions in the evolution and domestication of bread wheat.</p>
+        <p>Recent NGS sequencing approaches of the bread wheat genome generated a 5-fold 454 survey sequence, without being able to separate A, B and D sub-genome directly [<xref ref-type="bibr" rid="B9">9</xref>]. In principle, this can be facilitated applying a chromosome sorting technology [<xref ref-type="bibr" rid="B23">23</xref>], however, sorted sequences were only available for wheat linkage group 1 at this time [<xref ref-type="bibr" rid="B4">4</xref>]<italic>.</italic></p>
+        <p>As a consequence, an alternative approach was established to classify wheat sub-assembly sequences for the A, B and D sub-genomes. Wheat sub-assemblies were generated by a stringent assembly of reads mapped to representative (for orthologous groups defined by OrthoMCL [<xref ref-type="bibr" rid="B16">16</xref>]) genes from the reference organisms <italic>Brachypodium distachyon</italic>[<xref ref-type="bibr" rid="B13">13</xref>]<italic>, Hordeum vulgare, Oryza sativa</italic>[<xref ref-type="bibr" rid="B15">15</xref>]<italic>and Sorghum bicolor</italic>[<xref ref-type="bibr" rid="B14">14</xref>] as well as the genome sequences of the D genome donor species <italic>Ae. tauschii</italic>[<xref ref-type="bibr" rid="B24">24</xref>], and the A genome relative <italic>Triticum monococcum</italic> (NCBI archive SRP004490.3), and cDNA sequence assemblies from <italic>Ae. speltoides</italic> (Trick&amp;Bancroft, unpublished data) a member of the Sitopsis section to which the putative B genome donor belongs. Expecting that A- related sub-assemblies are more related to <italic>T. monococcum</italic> sequences, D- related sub-assemblies to <italic>Ae. tauschii</italic>, and B-related sub-assemblies to <italic>Ae. speltoides,</italic> sequence similarities of the sub-assemblies to each of these datasets would define and discriminate their origin.</p>
+        <p>In a first step, sequence similarities of each sub-assembly sequence to the wheat progenitor sequences were computed using BLAST [<xref ref-type="bibr" rid="B17">17</xref>]. Only sub-assemblies with BLAST hits to all three wheat progenitor sequences were considered for classification. Although a classification into A, B or D sub-genome derived transcripts seemed possible for many sub-assemblies by applying simple similarity cut-offs or rules, fixed similarity cut-offs appeared not suitable to separate the majority of sub-assemblies with confidence [<xref ref-type="bibr" rid="B9">9</xref>].</p>
+        <p>Consequently, several machine learning approaches were applied to the similarity matrix and evaluated for their performance. A major prerequisite represents the identification of a suitable training and test data set. We made use of wheat group 1 chromosome sequences which were separated into their sub-genomes (A, B and D) using flow-sorted chromosomes [<xref ref-type="bibr" rid="B4">4</xref>]. We extracted all wheat sub-assemblies associated with wheat group 1 chromosome sequences and classified them into A, B or D depending on their best hit. Every sub-genome classification was then complemented with the sub-assemblies&#x2019; similarities to <italic>T. monococcum</italic>, <italic>Ae. speltoides</italic> and <italic>Ae. tauschii</italic> sequences to create a training set compatible to all non-chr1 related sequences.</p>
+        <p>We applied a number of machine learning algorithms (e.g. Logistic Regression, Naive Bayes, Decision Trees and Support Vector Machine algorithms) from the WEKA package [<xref ref-type="bibr" rid="B25">25</xref>] (<ext-link ext-link-type="uri" xlink:href="http://www.cs.waikato.ac.nz/ml/weka/">http://www.cs.waikato.ac.nz/ml/weka/</ext-link>) to this training set and evaluated the results by stratified k-fold cross-validation. The best compromise between precision and recall was observed for the Support Vector Machine algorithm (libSVM). This trained libSVM classifier was used to classify the set of genic wheat sub-assemblies into A-, B- or D-related sequences. The results of this classification are summarized in Table&#xA0;<xref ref-type="table" rid="T1">1</xref>. Below defined libSVM probability estimate thresholds the classification was considered unreliable (e.g. in cases where a sub-assembly sequence matches equally well to all three progenitor sequence sets).</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Support Vector Machine classification results on wheat genic sub-assemblies</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="left"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Classification category</bold>
+                </th>
+                <th align="left">
+                  <bold>Wheat sub-assembly sequences with intact open reading frame</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>Used for classification</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>462,803 (100%)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>Classified as A</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>94,949 (20.5%)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>Classified as D</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>113,065 (24.4%)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>Classified as B</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>97,923 (21.2%)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">
+                  <bold>Not classified</bold>
+                </td>
+                <td align="left">
+                  <bold>157,166 (33.9%)</bold>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>With the recently published draft genome sequences of <italic>Aegilops tauschii</italic>[<xref ref-type="bibr" rid="B26">26</xref>] and <italic>Triticum urartu</italic>[<xref ref-type="bibr" rid="B27">27</xref>] two additional WGS datasets from wheat progenitors have since become available. As <italic>T.urartu</italic> is thought to represent the wheat A sub-genome progenitor even better than <italic>T. monococcum</italic>[<xref ref-type="bibr" rid="B28">28</xref>], using these datasets in an analysis update could potentially further improve the separation of sub-assemblies generated from the A sub-genome and therefore re-fine the overall result.</p>
+        <p>An alternative approach was taken in the separation of homeologs in the tetraploid wheat (AABB; &#x201C;pasta wheat&#x201D;) transcriptome, published by Krasileva et al. [<xref ref-type="bibr" rid="B29">29</xref>]. Here, a post-assembly pipeline including polymorphism identification, phasing of SNPs, read sorting and re-assembly of phased reads was used to separate homeologs.</p>
+      </sec>
+      <sec>
+        <title>Physical, genetic and functional assembly of the barley genome</title>
+        <p>Barley is diploid and diverged from wheat approximately 12 million years ago (Mya) [<xref ref-type="bibr" rid="B30">30</xref>]. Barley is the first cereal genome where an anchored physical map has been reported on the basis of the entire genome. The physical map was constructed by combining different clone libraries using FPC [<xref ref-type="bibr" rid="B31">31</xref>] to assemble clones into contigs.</p>
+        <p>The genome size of 5 Gb made barley the largest genome for which a physical map has been constructed. 570,000 BAC clones were assembled into 9,265 fingerprinted contigs (contigs). Several clone libraries were combined to prevent that genomic regions would remain unrepresented. End-merging of contigs allowed to bridge overlapping contigs together, possible when marker evidences on both ends would indicate a merge. A wealth of different marker resources mostly linked to transcripts [<xref ref-type="bibr" rid="B32">32</xref>] but also by using <italic>genotyping by sequencing</italic> (GBS) technology helped to assign a majority of contigs to a genetic position. To increase the robustness of the resulting map, experimental markers were included. Apart from the construction of the physical map three different barley cultivars were sequenced under high coverage resulting in <italic>whole genome shotgun</italic> (WGS) assembly with approximately 2 gigabases (Gb) each. These WGS contigs, apart from forming the basis to derive gene models also helped to extend sequences on the physical map by extending clone end sequences. The WGS contig decorated physical map was then taken to infer a genetic position for physical contigs. Altogether 4 Gb out of the 5 Gb cumulative contig map length was anchored.</p>
+        <p>The anchoring and ordering of FPC and sequence contigs along the barley genome demonstrates that GBS technology combined with a transcript derived map is powerful to develop a rich and deep physical map even for the complex and large barley genome. Along with the annotation of genes it describes the functional and physical assembly of a cereal genome.</p>
+      </sec>
+      <sec>
+        <title>The GenomeZipper approach</title>
+        <p>The GenomeZipper (GZ) [<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B12">12</xref>] is a synteny driven approach to order and structure NGS survey sequences of grass genomes that lack a physical map. The approach can be applied to a variety of different data sets, i.e. 454 reads, contigs, or scaffolds grouped in individual chromosomes or chromosome arms. The approach exploits the widely conserved synteny among grasses [<xref ref-type="bibr" rid="B33">33</xref>] and uses corresponding syntenic intervals, as defined by heterologous, corresponding marker intervals among the species under investigation and suitable reference genomes to deduce a tentative ordering of genes in the corresponding regions. This approach can be undertaken for smaller regions of interest, whole chromosome arms and chromosomes on a genome wide level. The outcome is a virtual gene order map which integrates gene-based marker maps as well as conserved syntenic information from at least one sequenced model grass genome and NGS data. Initially applied on the barley genome [<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B12">12</xref>], the genome zipper approach has now also been used with other grass species, such as wheat chromosome 4A [<xref ref-type="bibr" rid="B34">34</xref>], rye chromosome B [<xref ref-type="bibr" rid="B35">35</xref>] and Lolium [<xref ref-type="bibr" rid="B36">36</xref>].</p>
+        <p>The GenomeZipper approach consists of three discrete steps: repeat filtering, detection of syntenic conserved regions and an integration step which provides an anchored, information-rich scaffold (Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref>).</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>GenomeZipper workflow.</bold> The GenomeZipper approach can be divided into three individual steps which can be run independently: repeat masking <bold>(A)</bold>, detection of syntenic conserved blocks <bold>(B)</bold> and the &#x2018;zipping&#x2019;/integration <bold>(C)</bold> of all data sets into a virtual linear gene order model. <bold>A)</bold> The repetitive sequences (grey boxes) were filtered out from the NGS data (orange boxes) using Vmatch and the MIPS REdat Poaceae v9.0 library. Only sequences without repetitive elements or with at least 100 base pairs repeat-free regions were considered for the next analysis steps. <bold>B)</bold> The syntenic conserved regions between target and reference genome(s) were determined using BLASTX and a sliding window approach. The sequences were aligned against the reference genome(s) and the highly conserved genes (coloured boxes) were extracted and used for the construction of the gene map. <bold>C)</bold> The virtual gene map is constructed by integrating the syntenic conserved genes of one or multiple reference genomes and the NGS survey sequences along a backbone build by a genetic marker map of the same organisms as the target or a very closely related one. In a first step all conserved genes with a bi-directional blast hit to the gene-based marker are integrated into the zipper backbone. The remaining conserved genes (depicted in the clouds) are indirectly incorporated using the order deduced from the corresponding reference genome. The NGS data (orange boxes) are anchored to the ordered map by first best blast hits.</p>
+          </caption>
+          <graphic xlink:href="1746-4811-9-35-4"/>
+        </fig>
+        <p>In the first step, filtering repeat regions out of the query sequence reduces computational effort in gene space estimation. In barley and wheat the repetitive amount was identified by aligning the 454 reads against the MIPS REdat Poaceae repeat library using Vmatch (<ext-link ext-link-type="uri" xlink:href="http://vmatch.de">http://vmatch.de</ext-link>).</p>
+        <p>In the next step, the conserved homologs between query sequence and one or multiple reference genomes are determined. For barley, three model grass genomes - <italic>Brachypodium distachyon</italic>[<xref ref-type="bibr" rid="B13">13</xref>], rice [<xref ref-type="bibr" rid="B15">15</xref>] and <italic>Sorghum bicolor</italic>[<xref ref-type="bibr" rid="B14">14</xref>] - were used to identify homologous regions. The sequence comparisons were done using BLASTX and only first best hits with at least 75%/70% sequence identity and a minimal alignment length of 30 amino acids were considered. The syntenic conserved regions are defined by the density of homologous matches between query and reference genome using a sliding window approach.</p>
+        <p>During the last step, the NGS data is structured and ordered using a high resolution genetic map and orthologous genes obtained in the previous step. Thereby the intervals as defined by genetically ordered markers are used as a scaffold to project the likely order of corresponding genes in these intervals. Gene order in these intervals is deduced from the order found in the respective reference genomes, whereby evolutionary closest reference genomes get highest rank. Once ordered, additional evidences, such as full length cDNAs and/or ESTs can be attached to the ordered gene scaffold.</p>
+        <p>The linear ordered gene maps provide a valuable resource for a variety of applications: (i) for marker development and to assist positional cloning [<xref ref-type="bibr" rid="B37">37</xref>], (ii) for comparative analyses of the conserved gene space [<xref ref-type="bibr" rid="B4">4</xref>], and (iii) to resolve the structure of a genome/chromosome and to establish the colinearity between grass genomes[<xref ref-type="bibr" rid="B34">34</xref>,<xref ref-type="bibr" rid="B35">35</xref>].</p>
+      </sec>
+      <sec>
+        <title>Conclusions</title>
+        <p>Next generation sequencing technologies now start to enable to decipher large plant genomes such as those from many <italic>Triticeae</italic> (wheat, barley, rye) which until recently were difficult to access due to severe technological and economic restrictions. The assembly and analysis of these complex genomes remains a challenge and requires novel concepts and strategies. Here, we outlined and described a number of these concepts, that were developed and used to analyse and order genes from the recently published genome sequences of barley and hexaploid wheat. For barley, a physical and genetic map integration approach allows to positionally anchor ~21,000 genes. A complimentary approach, the GenomeZipper concept, makes use of the conserved gene order between grass reference genomes and many monocot crop genomes to anchor and order genes by an <italic>in silico</italic> approach in the complex wheat and barley genomes.</p>
+        <p>The hexaploid nature with three highly homologous sub-genomes makes the genome of bread wheat extremely challenging to assemble and analyse. To access the gene inventory, a set of orthologous representative genes was constructed from related and finished reference grass genomes. Wheat NGS reads from a 454 5&#xD7; whole genome sequence survey were mapped onto these orthologous representatives and separately assembled in a stringent way to avoid collapsing of homologous (sub-genome derived) genes. Genic sub-assembly sequences were subsequently classified into A, B or D- sub-genome derived with a machine-learning assisted approach making use of differing sequence similarities to the A, B and D sub-genomes progenitor species.</p>
+        <p>The approaches and concepts outlined here may be readily applied to other complex genomes, even beyond plants, where direct sequence assembly and analysis is hampered by size and/or polyploidy but related, less complex reference genomes are available.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interest.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>MS wrote the introduction, conclusions, and contributed to the wheat sections. MM contributed to the GenomeZipper section. MP contributed to the wheat sections and TN contributed to the barley section. KM supervised the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>The authors want to thank all collaboration partners involved in the individual studies reviewed here. In particular, all members from the International Barley Sequencing Consortium (IBSC), the UK wheat consortium (Neil Hall, Anthony Hall and Mike Bevan et al.) as well as IPK Gatersleben (Nils Stein et al.).</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="other">
+          <collab>United States</collab>
+          <source>Department of agriculture. World agricultural supply and demand estimates</source>
+          <comment>Report No. WASDE-511; 2012</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Purugganan</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Fuller</surname>
+            <given-names>DQ</given-names>
+          </name>
+          <article-title>The nature of selection during plant domestication</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <fpage>843</fpage>
+          <lpage>848</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature07895</pub-id>
+          <?supplied-pmid 19212403?>
+          <pub-id pub-id-type="pmid">19212403</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Eilam</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Anikster</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Millet</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Manisterski</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Sagi-Assif</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Feldman</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Genome size and genome evolution in diploid Triticeae species</article-title>
+          <source>Genome</source>
+          <year>2007</year>
+          <volume>50</volume>
+          <fpage>1029</fpage>
+          <lpage>1037</lpage>
+          <pub-id pub-id-type="doi">10.1139/G07-083</pub-id>
+          <?supplied-pmid 18059548?>
+          <pub-id pub-id-type="pmid">18059548</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Mayer</surname>
+            <given-names>KF</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Martis</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Steuernagel</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Scholz</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Kubalakova</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Choulet</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Taudien</surname>
+            <given-names>S</given-names>
+          </name>
+          <etal/>
+          <article-title>Frequent gene movement and pseudogene evolution is common to the large and complex genomes of wheat, barley, and their relatives</article-title>
+          <source>Plant Cell</source>
+          <year>2011</year>
+          <volume>23</volume>
+          <fpage>1706</fpage>
+          <lpage>1718</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.111.086629</pub-id>
+          <?supplied-pmid 21622801?>
+          <pub-id pub-id-type="pmid">21622801</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Nesbitt</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Samuel</surname>
+            <given-names>D</given-names>
+          </name>
+          <person-group person-group-type="editor">Padulosi S, Hammer K, Heller J</person-group>
+          <article-title>Hulled wheats</article-title>
+          <source>Proc. 1st Internat. Workshop hulled wheats, international plant genetic resources institute</source>
+          <year>1996</year>
+          <fpage>41</fpage>
+          <lpage>100</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Choulet</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Rustenholz</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Paux</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Salse</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Leroy</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Schlub</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Le Paslier</surname>
+            <given-names>MC</given-names>
+          </name>
+          <name>
+            <surname>Magdelenat</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Gonthier</surname>
+            <given-names>C</given-names>
+          </name>
+          <etal/>
+          <article-title>Megabase level sequencing reveals contrasted organization and evolution patterns of the wheat gene and transposable element spaces</article-title>
+          <source>Plant Cell</source>
+          <year>2010</year>
+          <volume>22</volume>
+          <fpage>1686</fpage>
+          <lpage>1701</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.110.074187</pub-id>
+          <?supplied-pmid 20581307?>
+          <pub-id pub-id-type="pmid">20581307</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Flicek</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Birney</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>Sense from sequence reads: methods for alignment and assembly</article-title>
+          <source>Nat Methods</source>
+          <year>2009</year>
+          <volume>6</volume>
+          <fpage>S6</fpage>
+          <lpage>S12</lpage>
+          <pub-id pub-id-type="doi">10.1038/nmeth.1376</pub-id>
+          <?supplied-pmid 19844229?>
+          <pub-id pub-id-type="pmid">19844229</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Moore</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Devos</surname>
+            <given-names>KM</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Gale</surname>
+            <given-names>MD</given-names>
+          </name>
+          <article-title>Cereal genome evolution. Grasses, line up and form a circle</article-title>
+          <source>Curr Biol</source>
+          <year>1995</year>
+          <volume>5</volume>
+          <fpage>737</fpage>
+          <lpage>739</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0960-9822(95)00148-5</pub-id>
+          <?supplied-pmid 7583118?>
+          <pub-id pub-id-type="pmid">7583118</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brenchley</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Spannagl</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Pfeifer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Barker</surname>
+            <given-names>GL</given-names>
+          </name>
+          <name>
+            <surname>D&#x2019;Amore</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Allen</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>McKenzie</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Kramer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kerhornou</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Bolser</surname>
+            <given-names>D</given-names>
+          </name>
+          <etal/>
+          <article-title>Analysis of the bread wheat genome using whole-genome shotgun sequencing</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>705</fpage>
+          <lpage>710</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature11650</pub-id>
+          <?supplied-pmid 23192148?>
+          <pub-id pub-id-type="pmid">23192148</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mayer</surname>
+            <given-names>KF</given-names>
+          </name>
+          <name>
+            <surname>Waugh</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Brown</surname>
+            <given-names>JW</given-names>
+          </name>
+          <name>
+            <surname>Schulman</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Langridge</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Platzer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Fincher</surname>
+            <given-names>GB</given-names>
+          </name>
+          <name>
+            <surname>Muehlbauer</surname>
+            <given-names>GJ</given-names>
+          </name>
+          <name>
+            <surname>Sato</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Close</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <etal/>
+          <article-title>A physical, genetic and functional sequence assembly of the barley genome</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>711</fpage>
+          <lpage>716</lpage>
+          <?supplied-pmid 23075845?>
+          <pub-id pub-id-type="pmid">23075845</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mayer</surname>
+            <given-names>KF</given-names>
+          </name>
+          <name>
+            <surname>Taudien</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Martis</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Suchankova</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Petzold</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Felder</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Steuernagel</surname>
+            <given-names>B</given-names>
+          </name>
+          <etal/>
+          <article-title>Gene content and virtual gene order of barley chromosome 1H</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>151</volume>
+          <fpage>496</fpage>
+          <lpage>505</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.109.142612</pub-id>
+          <?supplied-pmid 19692534?>
+          <pub-id pub-id-type="pmid">19692534</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mayer</surname>
+            <given-names>KF</given-names>
+          </name>
+          <name>
+            <surname>Martis</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Hedley</surname>
+            <given-names>PE</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Morris</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Steuernagel</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Taudien</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Roessner</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <etal/>
+          <article-title>Unlocking the barley genome by chromosomal and comparative genomics</article-title>
+          <source>Plant Cell</source>
+          <year>2011</year>
+          <volume>23</volume>
+          <fpage>1249</fpage>
+          <lpage>1263</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.110.082537</pub-id>
+          <?supplied-pmid 21467582?>
+          <pub-id pub-id-type="pmid">21467582</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Initiative</surname>
+            <given-names>IB</given-names>
+          </name>
+          <article-title>Genome sequencing and analysis of the model grass Brachypodium distachyon</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <fpage>763</fpage>
+          <lpage>768</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature08747</pub-id>
+          <?supplied-pmid 20148030?>
+          <pub-id pub-id-type="pmid">20148030</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Paterson</surname>
+            <given-names>AH</given-names>
+          </name>
+          <name>
+            <surname>Bowers</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Bruggmann</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Dubchak</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Grimwood</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Haberer</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Hellsten</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Mitros</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Poliakov</surname>
+            <given-names>A</given-names>
+          </name>
+          <etal/>
+          <article-title>The Sorghum bicolor genome and the diversification of grasses</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <fpage>551</fpage>
+          <lpage>556</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature07723</pub-id>
+          <?supplied-pmid 19189423?>
+          <pub-id pub-id-type="pmid">19189423</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Project</surname>
+            <given-names>IRGS</given-names>
+          </name>
+          <article-title>The map-based sequence of the rice genome</article-title>
+          <source>Nature</source>
+          <year>2005</year>
+          <volume>436</volume>
+          <fpage>793</fpage>
+          <lpage>800</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature03895</pub-id>
+          <?supplied-pmid 16100779?>
+          <pub-id pub-id-type="pmid">16100779</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Stoeckert</surname>
+            <given-names>CJ</given-names>
+            <suffix>Jr</suffix>
+          </name>
+          <name>
+            <surname>Roos</surname>
+            <given-names>DS</given-names>
+          </name>
+          <article-title>OrthoMCL: identification of ortholog groups for eukaryotic genomes</article-title>
+          <source>Genome Res</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>2178</fpage>
+          <lpage>2189</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.1224503</pub-id>
+          <?supplied-pmid 12952885?>
+          <pub-id pub-id-type="pmid">12952885</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Altschul</surname>
+            <given-names>SF</given-names>
+          </name>
+          <name>
+            <surname>Gish</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Miller</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Myers</surname>
+            <given-names>EW</given-names>
+          </name>
+          <name>
+            <surname>Lipman</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>J Mol Biol</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <fpage>403</fpage>
+          <lpage>410</lpage>
+          <?supplied-pmid 2231712?>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Flavell</surname>
+            <given-names>RB</given-names>
+          </name>
+          <name>
+            <surname>Bennett</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>JB</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>DB</given-names>
+          </name>
+          <article-title>Genome size and the proportion of repeated nucleotide sequence DNA in plants</article-title>
+          <source>Biochem Genet</source>
+          <year>1974</year>
+          <volume>12</volume>
+          <fpage>257</fpage>
+          <lpage>269</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00485947</pub-id>
+          <?supplied-pmid 4441361?>
+          <pub-id pub-id-type="pmid">4441361</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Taudien</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Houben</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Keller</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Graner</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Platzer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Stein</surname>
+            <given-names>N</given-names>
+          </name>
+          <article-title>A whole-genome snapshot of 454 sequences exposes the composition of the barley genome and provides evidence for parallel evolution of genome size in wheat and barley</article-title>
+          <source>Plant J</source>
+          <year>2009</year>
+          <volume>59</volume>
+          <fpage>712</fpage>
+          <lpage>722</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2009.03911.x</pub-id>
+          <?supplied-pmid 19453446?>
+          <pub-id pub-id-type="pmid">19453446</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Miller</surname>
+            <given-names>JR</given-names>
+          </name>
+          <name>
+            <surname>Koren</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Sutton</surname>
+            <given-names>G</given-names>
+          </name>
+          <article-title>Assembly algorithms for next-generation sequencing data</article-title>
+          <source>Genomics</source>
+          <year>2010</year>
+          <volume>95</volume>
+          <fpage>315</fpage>
+          <lpage>327</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ygeno.2010.03.001</pub-id>
+          <?supplied-pmid 20211242?>
+          <pub-id pub-id-type="pmid">20211242</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Godzik</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences</article-title>
+          <source>Bioinformatics</source>
+          <year>2006</year>
+          <volume>22</volume>
+          <fpage>1658</fpage>
+          <lpage>1659</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btl158</pub-id>
+          <?supplied-pmid 16731699?>
+          <pub-id pub-id-type="pmid">16731699</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Richter</surname>
+            <given-names>DC</given-names>
+          </name>
+          <name>
+            <surname>Ott</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Auch</surname>
+            <given-names>AF</given-names>
+          </name>
+          <name>
+            <surname>Schmid</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Huson</surname>
+            <given-names>DH</given-names>
+          </name>
+          <article-title>MetaSim: a sequencing simulator for genomics and metagenomics</article-title>
+          <source>PLoS One</source>
+          <year>2008</year>
+          <volume>3</volume>
+          <fpage>e3373</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0003373</pub-id>
+          <?supplied-pmid 18841204?>
+          <pub-id pub-id-type="pmid">18841204</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dolezel</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Vrana</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Safar</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Bartos</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kubalakova</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Chromosomes in the flow to simplify genome analysis</article-title>
+          <source>Funct Integr Genomics</source>
+          <year>2012</year>
+          <volume>12</volume>
+          <fpage>397</fpage>
+          <lpage>416</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10142-012-0293-0</pub-id>
+          <?supplied-pmid 22895700?>
+          <pub-id pub-id-type="pmid">22895700</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Luo</surname>
+            <given-names>MC</given-names>
+          </name>
+          <name>
+            <surname>Gu</surname>
+            <given-names>YQ</given-names>
+          </name>
+          <name>
+            <surname>You</surname>
+            <given-names>FM</given-names>
+          </name>
+          <name>
+            <surname>Deal</surname>
+            <given-names>KR</given-names>
+          </name>
+          <name>
+            <surname>Ma</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Hu</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Huo</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>S</given-names>
+          </name>
+          <etal/>
+          <article-title>A 4-gigabase physical map unlocks the structure and evolution of the complex genome of Aegilops tauschii, the wheat D-genome progenitor</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2013</year>
+          <volume>110</volume>
+          <fpage>7940</fpage>
+          <lpage>7945</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1219082110</pub-id>
+          <?supplied-pmid 23610408?>
+          <pub-id pub-id-type="pmid">23610408</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Frank</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Hall</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Trigg</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Holmes</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Witten</surname>
+            <given-names>IH</given-names>
+          </name>
+          <article-title>Data mining in bioinformatics using Weka</article-title>
+          <source>Bioinformatics</source>
+          <year>2004</year>
+          <volume>20</volume>
+          <fpage>2479</fpage>
+          <lpage>2481</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/bth261</pub-id>
+          <?supplied-pmid 15073010?>
+          <pub-id pub-id-type="pmid">15073010</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jia</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Kong</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>He</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Appels</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Pfeifer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Tao</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>X</given-names>
+          </name>
+          <etal/>
+          <article-title>Aegilops tauschii draft genome sequence reveals a gene repertoire for wheat adaptation</article-title>
+          <source>Nature</source>
+          <year>2013</year>
+          <volume>496</volume>
+          <fpage>91</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature12028</pub-id>
+          <?supplied-pmid 23535592?>
+          <pub-id pub-id-type="pmid">23535592</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ling</surname>
+            <given-names>HQ</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Sun</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Fan</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Dong</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Tao</surname>
+            <given-names>Y</given-names>
+          </name>
+          <etal/>
+          <article-title>Draft genome of the wheat A-genome progenitor Triticum urartu</article-title>
+          <source>Nature</source>
+          <year>2013</year>
+          <volume>496</volume>
+          <fpage>87</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature11997</pub-id>
+          <?supplied-pmid 23535596?>
+          <pub-id pub-id-type="pmid">23535596</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dvorak</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Terlizzi</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>HB</given-names>
+          </name>
+          <name>
+            <surname>Resta</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>The evolution of polyploid wheats: identification of the A genome donor species</article-title>
+          <source>Genome</source>
+          <year>1993</year>
+          <volume>36</volume>
+          <fpage>21</fpage>
+          <lpage>31</lpage>
+          <pub-id pub-id-type="doi">10.1139/g93-004</pub-id>
+          <?supplied-pmid 18469969?>
+          <pub-id pub-id-type="pmid">18469969</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Krasileva</surname>
+            <given-names>KV</given-names>
+          </name>
+          <name>
+            <surname>Buffalo</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Bailey</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Pearce</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ayling</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Tabbita</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Soria</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Consortium</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Akhunov</surname>
+            <given-names>E</given-names>
+          </name>
+          <etal/>
+          <article-title>Separating homeologs by phasing in the tetraploid wheat transcriptome</article-title>
+          <source>Genome Biol</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>R66</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2013-14-6-r66</pub-id>
+          <?supplied-pmid 23800085?>
+          <pub-id pub-id-type="pmid">23800085</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Chalupska</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>HY</given-names>
+          </name>
+          <name>
+            <surname>Faris</surname>
+            <given-names>JD</given-names>
+          </name>
+          <name>
+            <surname>Evrard</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Chalhoub</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Haselkorn</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Gornicki</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Acc homoeoloci and the evolution of wheat genomes</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2008</year>
+          <volume>105</volume>
+          <fpage>9691</fpage>
+          <lpage>9696</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0803981105</pub-id>
+          <?supplied-pmid 18599450?>
+          <pub-id pub-id-type="pmid">18599450</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Soderlund</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Longden</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Mott</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>FPC: a system for building contigs from restriction fingerprinted clones</article-title>
+          <source>Comput Appl Biosci</source>
+          <year>1997</year>
+          <volume>13</volume>
+          <fpage>523</fpage>
+          <lpage>535</lpage>
+          <?supplied-pmid 9367125?>
+          <pub-id pub-id-type="pmid">9367125</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Comadran</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kilian</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Russell</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Ramsay</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Stein</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Ganal</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Shaw</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Bayer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Thomas</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Marshall</surname>
+            <given-names>D</given-names>
+          </name>
+          <etal/>
+          <article-title>Natural variation in a homolog of Antirrhinum CENTRORADIALIS contributed to spring growth habit and environmental adaptation in cultivated barley</article-title>
+          <source>Nat Genet</source>
+          <year>2012</year>
+          <volume>44</volume>
+          <fpage>1388</fpage>
+          <lpage>1392</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng.2447</pub-id>
+          <?supplied-pmid 23160098?>
+          <pub-id pub-id-type="pmid">23160098</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gale</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Devos</surname>
+            <given-names>KM</given-names>
+          </name>
+          <article-title>Comparative genetics in the grasses</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1998</year>
+          <volume>95</volume>
+          <fpage>1971</fpage>
+          <lpage>1974</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.95.5.1971</pub-id>
+          <?supplied-pmid 9482816?>
+          <pub-id pub-id-type="pmid">9482816</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hernandez</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Martis</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Dorado</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Pfeifer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Galvez</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Schaaf</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Jouve</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Valarik</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Dolezel</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Mayer</surname>
+            <given-names>KF</given-names>
+          </name>
+          <article-title>Next-generation sequencing and syntenic integration of flow-sorted arms of wheat chromosome 4A exposes the chromosome structure and gene content</article-title>
+          <source>Plant J</source>
+          <year>2012</year>
+          <volume>69</volume>
+          <fpage>377</fpage>
+          <lpage>386</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2011.04808.x</pub-id>
+          <?supplied-pmid 21974774?>
+          <pub-id pub-id-type="pmid">21974774</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Martis</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>Klemme</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Banaei-Moghaddam</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Blattner</surname>
+            <given-names>FR</given-names>
+          </name>
+          <name>
+            <surname>Macas</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Schmutzer</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Scholz</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Simkova</surname>
+            <given-names>H</given-names>
+          </name>
+          <etal/>
+          <article-title>Selfish supernumerary chromosome reveals its origin as a mosaic of host genome and organellar sequences</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2012</year>
+          <volume>109</volume>
+          <fpage>13343</fpage>
+          <lpage>13346</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1204237109</pub-id>
+          <?supplied-pmid 22847450?>
+          <pub-id pub-id-type="pmid">22847450</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Pfeifer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Martis</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Asp</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Mayer</surname>
+            <given-names>KF</given-names>
+          </name>
+          <name>
+            <surname>Lubberstedt</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Byrne</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Frei</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Studer</surname>
+            <given-names>B</given-names>
+          </name>
+          <article-title>The perennial ryegrass GenomeZipper: targeted use of genome resources for comparative grass genomics</article-title>
+          <source>Plant Physiol</source>
+          <year>2013</year>
+          <volume>161</volume>
+          <fpage>571</fpage>
+          <lpage>582</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.112.207282</pub-id>
+          <?supplied-pmid 23184232?>
+          <pub-id pub-id-type="pmid">23184232</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lupken</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Stein</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Perovic</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Habekuss</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Kramer</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Hahnel</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Steuernagel</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Scholz</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Zhou</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Ariyadasa</surname>
+            <given-names>R</given-names>
+          </name>
+          <etal/>
+          <article-title>Genomics-based high-resolution mapping of the BaMMV/BaYMV resistance gene rym11 in barley (Hordeum vulgare L.)</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2013</year>
+          <volume>126</volume>
+          <fpage>1201</fpage>
+          <lpage>1212</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-013-2047-3</pub-id>
+          <?supplied-pmid 23456135?>
+          <pub-id pub-id-type="pmid">23456135</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

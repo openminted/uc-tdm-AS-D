@@ -1,0 +1,2196 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Syst Biol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Syst Biol</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Systems Biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1752-0509</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3431263</article-id>
+      <article-id pub-id-type="publisher-id">1752-0509-6-50</article-id>
+      <article-id pub-id-type="pmid">22640921</article-id>
+      <article-id pub-id-type="doi">10.1186/1752-0509-6-50</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A systems biology approach reveals common metastatic pathways in osteosarcoma</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="A1">
+          <name>
+            <surname>Flores</surname>
+            <given-names>Ricardo J</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>rjflores@txch.org</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Li</surname>
+            <given-names>Yiting</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>yxli@txch.org</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Yu</surname>
+            <given-names>Alexander</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>axyu@txch.org</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Shen</surname>
+            <given-names>Jianhe</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>jjshen@txch.org</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Rao</surname>
+            <given-names>Pulivarthi H</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>prao@bcm.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A6">
+          <name>
+            <surname>Lau</surname>
+            <given-names>Serrine S</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>lau@pharmacy.arizona.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A7">
+          <name>
+            <surname>Vannucci</surname>
+            <given-names>Marina</given-names>
+          </name>
+          <xref ref-type="aff" rid="I5">5</xref>
+          <email>marina@rice.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A8">
+          <name>
+            <surname>Lau</surname>
+            <given-names>Ching C</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>cclau@txch.org</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A9">
+          <name>
+            <surname>Man</surname>
+            <given-names>Tsz-Kwong</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>ctman@txch.org</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Texas Children&#x2019;s Cancer and Hematology Centers, Texas Children&#x2019;s Hospital, Houston, TX, USA</aff>
+      <aff id="I2"><label>2</label>Department of Pediatrics, Baylor College of Medicine, Houston, TX, USA</aff>
+      <aff id="I3"><label>3</label>Dan L. Duncan Cancer Center, Baylor College of Medicine, Houston, TX, USA</aff>
+      <aff id="I4"><label>4</label>Southwest Environmental Health Science Centers, The University of Arizona, Tucson, AZ, USA</aff>
+      <aff id="I5"><label>5</label>Department of Statistics, Rice University, Houston, TX, USA</aff>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>28</day>
+        <month>5</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>6</volume>
+      <fpage>50</fpage>
+      <lpage>50</lpage>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>10</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>28</day>
+          <month>5</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2012 Flores et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Flores et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1752-0509/6/50"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Osteosarcoma (OS) is the most common malignant bone tumor in children and adolescents. The survival rate of patients with metastatic disease remains very dismal. Nevertheless, metastasis is a complex process and a single-level analysis is not likely to identify its key biological determinants. In this study, we used a systems biology approach to identify common metastatic pathways that are jointly supported by both mRNA and protein expression data in two distinct human metastatic OS models.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>mRNA expression microarray and N-linked glycoproteomic analyses were performed on two commonly used isogenic pairs of human metastatic OS cell lines, namely HOS/143B and SaOS-2/LM7. Pathway analysis of the differentially regulated genes and glycoproteins separately revealed pathways associated to metastasis including cell cycle regulation, immune response, and epithelial-to-mesenchymal-transition. However, no common significant pathway was found at both genomic and proteomic levels between the two metastatic models, suggesting a very different biological nature of the cell lines. To address this issue, we used a topological significance analysis based on a &#x201C;shortest-path&#x201D; algorithm to identify topological nodes, which uncovered additional biological information with respect to the genomic and glycoproteomic profiles but remained hidden from the direct analyses. Pathway analysis of the significant topological nodes revealed a striking concordance between the models and identified significant common pathways, including &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D;, &#x201C;Cytoskeleton remodeling/Cytoskeleton remodeling&#x201D;, and &#x201C;Cell adhesion/Chemokines and adhesion&#x201D;. Of these, the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; was the top ranked common pathway from the topological analysis of the genomic and proteomic profiles in the two metastatic models. The up-regulation of proteins in the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; pathway in the SaOS-2/LM7 and HOS/143B models was further validated using an orthogonal Reverse Phase Protein Array platform.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>In this study, we used a systems biology approach by integrating genomic and proteomic data to identify key and common metastatic mechanisms in OS. The use of the topological analysis revealed hidden biological pathways that are known to play critical roles in metastasis. Wnt signaling has been previously implicated in OS and other tumors, and inhibitors of Wnt signaling pathways are available for clinical testing. Further characterization of this common pathway and other topological pathways identified from this study may lead to a novel therapeutic strategy for the treatment of metastatic OS.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Osteosarcoma (OS) is the most common malignant bone tumor in children and adolescents, and accounts for approximately 60% of bone cancers in the first two decades of life [<xref ref-type="bibr" rid="B1">1</xref>]. Despite intensive research in the pathogenesis of this cancer, the outcome of OS patients has not significantly improved over the past three decades. The main reason for the lack of survival improvement is that this cancer is highly prone to metastasis, which is the most consistent indicator of poor outcome. Even with the most current multi-drug treatment protocols, the survival rate for patients with metastatic disease at diagnosis is only about 20% [<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B3">3</xref>].</p>
+      <p>Similar to other types of cancer, metastasis in OS is a complex process [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B5">5</xref>] and a single-level of analysis alone, such as mRNA expression profiling, cannot capture the complete information to fully understand the metastatic mechanism. Therefore, a systems biology approach that takes into account different data sources such as gene and protein expression profiles is more likely to identify the dysfunctional molecules and pathways of cancer biology. Nonetheless, previous studies have revealed that direct comparisons of transcriptomic and proteomic data are difficult [<xref ref-type="bibr" rid="B6">6</xref>-<xref ref-type="bibr" rid="B8">8</xref>]. Major sources of discordance between the two types of omic data exist, such as mRNA degradation, alternative splicing, translational regulation, post-translational modifications, and protein degradation. This suggests that a new analytical approach is needed to identify biological pathways that are hidden from the direct analyses but commonly supported by various data sources. The goal of our study is to test if we could identify common metastatic processes or pathways that are jointly supported by both mRNA and protein profiling data in OS using a topological significance analysis to identify the hidden nodes.</p>
+      <p>Due to the low incidence and limited amounts of biopsy materials, clinical OS samples available for research are particularly scarce, making it extremely difficult to analyze the tumor samples using multiple genomic and proteomic platforms [<xref ref-type="bibr" rid="B9">9</xref>]. To circumvent this problem, isogenic metastatic cell lines have been developed for OS research. However, many of these cell lines have different genetic origins and have not been systematically characterized at the genomic or proteomic level [<xref ref-type="bibr" rid="B10">10</xref>-<xref ref-type="bibr" rid="B14">14</xref>]. Therefore, in this study we applied a systems biology approach to analyze, integrate, and identify hidden common functional pathways from two commonly used human metastatic OS cell lines and their parental non-metastatic lines. The two human metastatic OS cell line models were HOS/143B and SaOS-2/LM7. The HOS cell line, originally known as M.T. and later as TE-85, was derived from an OS of a 13 year-old girl. The 143B metastatic subline was generated from HOS by a Ki-RAS oncogene transformation [<xref ref-type="bibr" rid="B15">15</xref>]. On the other hand, the SaOS-2 cell was derived from an OS of an 11 year-old girl, and its metastatic subline LM7, was developed by multiple <italic>in vivo</italic> selection of SaOS-2 cells in mice with pulmonary metastases [<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B16">16</xref>]. Our systems biology approach involved the analysis of the transcriptomes and glycoproteomes of the two pairs of cell lines. We validated our results using Western blotting and Reverse Phase Protein Arrays (RPPA), and the clinical significance of our findings are discussed.</p>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <p>To understand the common dysregulated processes in metastatic OS, we employed a systems biology approach to characterize the transcriptomes and proteomes of two commonly used human metastatic OS cell line models. The two models used were HOS and SaOS-2 and their isogenic metastatic sublines, 143B and LM7 respectively [<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B15">15</xref>].</p>
+      <sec>
+        <title>mRNA expression data</title>
+        <p>mRNA expression microarray analysis was performed on both models, and the differentially expressed genes within each cell line model were identified by comparing the metastatic versus non-metastatic cell lines. The differentially expressed genes were identified using two criteria: a p-value of differential expression less than 0.05 and a fold change between the two classes greater than 2-fold. We identified 1,576 up-regulated genes and 1,656 down-regulated genes in the 143B cell relative to the HOS cell, and 648 up-regulated genes and 745 down-regulated genes in the LM7 cell relative to the SaOS-2 cell (See Tables&#x2009;<xref ref-type="table" rid="T1">1</xref> and <xref ref-type="table" rid="T2">2</xref>). The two models had 102 common features in the up-regulated gene profiles and 157 of the down-regulated genes. By comparing to the LM7/SaOS-2 results, which constitute smaller numbers of differentially expressed genes, the common features represent 16% of up-regulated genes and 21% of down-regulated genes. The overall level of concordance for all differentially regulated genes between the two models was 19% of the differentially expressed genes in the LM7/SaOS-2 model.</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Top 10 up-regulated genes in HOS/143B model</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Up-regulated genes</bold>
+                </th>
+                <th align="center">
+                  <bold>Entrez Gene</bold>
+                </th>
+                <th align="center">
+                  <bold>HOS/143B (Log2)</bold>
+                </th>
+                <th align="center">
+                  <bold>p-value</bold>
+                </th>
+                <th align="center">
+                  <bold>Function</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">FOXR1<hr/></td>
+                <td align="center" valign="bottom">283150<hr/></td>
+                <td align="center" valign="bottom">8<hr/></td>
+                <td align="center" valign="bottom">8.4 x 10E-6<hr/></td>
+                <td align="left" valign="bottom">Play roles in determining cell fates during early development<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RTN1<hr/></td>
+                <td align="center" valign="bottom">6252<hr/></td>
+                <td align="center" valign="bottom">7<hr/></td>
+                <td align="center" valign="bottom">1.1 x 10E-5<hr/></td>
+                <td align="left" valign="bottom">Involved in membrane trafficking in neuroendocrine cells<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">FRMD3<hr/></td>
+                <td align="center" valign="bottom">257019<hr/></td>
+                <td align="center" valign="bottom">7<hr/></td>
+                <td align="center" valign="bottom">1.7 x 10E-5<hr/></td>
+                <td align="left" valign="bottom">Structural protein essential for erythrocyte shape and mechanical properties<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">HOXA9<hr/></td>
+                <td align="center" valign="bottom">3205<hr/></td>
+                <td align="center" valign="bottom">7<hr/></td>
+                <td align="center" valign="bottom">1.4 x 10E-5<hr/></td>
+                <td align="left" valign="bottom">Transcription factor which may regulate gene expression, morphogenesis and differentiation<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">ANGPT2<hr/></td>
+                <td align="center" valign="bottom">285<hr/></td>
+                <td align="center" valign="bottom">7<hr/></td>
+                <td align="center" valign="bottom">9.4 x 10E-6<hr/></td>
+                <td align="left" valign="bottom">In concert with VEGF, may serve as a permissive angiogenic signal<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">KRT18<hr/></td>
+                <td align="center" valign="bottom">3875<hr/></td>
+                <td align="center" valign="bottom">6<hr/></td>
+                <td align="center" valign="bottom">1.1 x 10E-5<hr/></td>
+                <td align="left" valign="bottom">Involved in the uptake of thrombin-antithrombin complexes by hepatic cells<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">IL10RA<hr/></td>
+                <td align="center" valign="bottom">3587<hr/></td>
+                <td align="center" valign="bottom">6<hr/></td>
+                <td align="center" valign="bottom">1.0 x 10E-5<hr/></td>
+                <td align="left" valign="bottom">Interferon receptor that mediates the immunosuppressive signal of IL10<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">TPD52<hr/></td>
+                <td align="center" valign="bottom">7163<hr/></td>
+                <td align="center" valign="bottom">6<hr/></td>
+                <td align="center" valign="bottom">2.0 x 10E-5<hr/></td>
+                <td align="left" valign="bottom">Uncharacterized function, but expressed in many tumor cell lines including colon, breast, prostate, pancreas and kidney<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">CA2<hr/></td>
+                <td align="center" valign="bottom">760<hr/></td>
+                <td align="center" valign="bottom">6<hr/></td>
+                <td align="center" valign="bottom">1.8 x 10E-5<hr/></td>
+                <td align="left" valign="bottom">Essential for bone resorption and osteoclast differentiation<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">BEND4</td>
+                <td align="center">389206</td>
+                <td align="center">6</td>
+                <td align="center">1.2 x 10E-5</td>
+                <td align="left">Uncharacterized function, but known to be phosphorylated upon DNA damage</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>Top 10 up-regulated genes in SaOS-2/LM7 model</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Up-regulated genes</bold>
+                </th>
+                <th align="center">
+                  <bold>Entrez Gene</bold>
+                </th>
+                <th align="center">
+                  <bold>SaOS-2/LM7 (Log2)</bold>
+                </th>
+                <th align="center">
+                  <bold>p-value</bold>
+                </th>
+                <th align="left">
+                  <bold>Function</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">NES<hr/></td>
+                <td align="center" valign="bottom">10763<hr/></td>
+                <td align="center" valign="bottom">30<hr/></td>
+                <td align="center" valign="bottom">1.8 x 10E-11<hr/></td>
+                <td align="left" valign="bottom">May play a role in the trafficking and distribution of intermediate filaments and other cell factors during cell division<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">WDR72<hr/></td>
+                <td align="center" valign="bottom">256764<hr/></td>
+                <td align="center" valign="bottom">25<hr/></td>
+                <td align="center" valign="bottom">1.8 x 10E-9<hr/></td>
+                <td align="left" valign="bottom">Involved in enamel formation<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">VAMP8<hr/></td>
+                <td align="center" valign="bottom">8673<hr/></td>
+                <td align="center" valign="bottom">24<hr/></td>
+                <td align="center" valign="bottom">1.5 x 10E-10<hr/></td>
+                <td align="left" valign="bottom">Involved in the targeting and fusion of transport vesicles to their target membrane<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">MUC15<hr/></td>
+                <td align="center" valign="bottom">143662<hr/></td>
+                <td align="center" valign="bottom">23<hr/></td>
+                <td align="center" valign="bottom">3.2 x 10E-12<hr/></td>
+                <td align="left" valign="bottom">May play a role in the cell adhesion to the extracellular matrix<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">LPPR4<hr/></td>
+                <td align="center" valign="bottom">9890<hr/></td>
+                <td align="center" valign="bottom">21<hr/></td>
+                <td align="center" valign="bottom">1.5 x 10E-10<hr/></td>
+                <td align="left" valign="bottom">Facilitates axonal outgrowth during development and regenerative sprouting<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">PTPRB<hr/></td>
+                <td align="center" valign="bottom">5787<hr/></td>
+                <td align="center" valign="bottom">18<hr/></td>
+                <td align="center" valign="bottom">1.9 x 10E-9<hr/></td>
+                <td align="left" valign="bottom">Plays an important role in blood vessel remodelling and angiogenesis<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">WIF1<hr/></td>
+                <td align="center" valign="bottom">11197<hr/></td>
+                <td align="center" valign="bottom">18<hr/></td>
+                <td align="center" valign="bottom">5.6 x 10E-11<hr/></td>
+                <td align="left" valign="bottom">Binds to Wnt proteins and inhibits their activities<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">PTPRR<hr/></td>
+                <td align="center" valign="bottom">5801<hr/></td>
+                <td align="center" valign="bottom">17<hr/></td>
+                <td align="center" valign="bottom">4.6 x 10E-9<hr/></td>
+                <td align="left" valign="bottom">Sequesters protein kinases in the cytoplasm in an inactive form and releases them for activation and translocation into the nucleus<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">FIBIN<hr/></td>
+                <td align="center" valign="bottom">387758<hr/></td>
+                <td align="center" valign="bottom">17<hr/></td>
+                <td align="center" valign="bottom">1.5 x 10E-11<hr/></td>
+                <td align="left" valign="bottom">Uncharacterized<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">SYK</td>
+                <td align="center">6850</td>
+                <td align="center">16</td>
+                <td align="center">1.0 x 10E-10</td>
+                <td align="left">Regulates several processes including immunity, cell adhesion, osteoclast maturation, platelet activation and vascular development</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>To identify the pathways that are enriched in the mRNA expression data, the differentially regulated genes from the cell line models were analyzed by calculating enrichment in functional pathways. The most significant pathways from the HOS/143B model were associated with important biological functions such as cell cycle regulation and G-protein signaling in the up-regulated genes, and cell adhesion and immune response in the down-regulated genes. For the SaOS-2/LM7 model, the most significant pathways were associated with development and cell adhesion in the up-regulated genes, and muscle contraction and cytoskeleton remodeling in the down-regulated genes. By analyzing all significant pathways, we found only one common pathway, the &#x201C;Development_WNT signaling pathway&#x201D;, in the up-regulated genes between the two models (Figure <xref ref-type="fig" rid="F1">1</xref>). Similarly, there were 3 common pathways in the down-regulated genes, namely the &#x201C;Muscle contraction_GPCRs in the regulation of smooth muscle tone&#x201D;, &#x201C;Cytoskeleton remodeling_Regulation of actin cytoskeleton by Rho GTPases&#x201D;, and &#x201C;Development_MAG-dependent inhibition of neurite outgrowth&#x201D; (See Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S 1).</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Pathway analysis of up-regulated genes from HOS/143B and SaOS-2/LM7 models.</bold> Top 10 significant pathways identified by MetaCore using all the significantly up-regulated genes from <bold>(A)</bold> HOS/143B and <bold>(b)</bold> SaOS-2/LM7 models. Only one common pathway, the &#x201C;Development_WNT signaling pathway. Part 2&#x201D;, was identified in the top 10 significant pathways between the two models. Bars quantify the &#x2013;log (p-value) indicating the enrichment of the individual pathways identified. False discovery rate (FDR) is calculated for all identified pathways and a cutoff of FDR&#x2009;&lt;&#x2009;0.05 is set to define pathways as significant. Asterisks denote significant pathways shown.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-50-1"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Glycogenes expression and pathway analysis</title>
+        <p>Since there is no single platform that can characterize the whole proteome in the cell and many of the clinically applicable tumor biomarkers, such as Prostate-Specific Antigen (PSA) and Carcinoembryonic Antigen (CA125), are glycoproteins [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B18">18</xref>], we tested if glycosylation was aberrantly regulated in the human metastatic cell line models. The mRNA expression data of 191 known human glycogenes in the metastatic and non-metastatic cell lines were investigated. This panel of glycogenes represents a comprehensive group of known human genes related to glycosylation and glycan synthesis pathways [<xref ref-type="bibr" rid="B19">19</xref>]. The analysis showed that 23 and 9 glycogenes had a p-value of differential expression less than 0.05 and a fold change greater than 2-fold in the HOS/143B and SaOS-2/LM7 models, respectively. Pathway analysis using all 191 glycogenes identified the baseline pathways involved in these glycogenes. The top significant baseline pathways are O-glycan biosynthesis, neolacto-series glycosphingolipids metabolism, and Keratan sulfate metabolism (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S 1). Then, the pathway analysis was performed on the differentially regulated glycogenes from both cell line models and the results were compared to the baseline glyco-pathways. Results showed that &#x201C;N-Glycan biosynthesis&#x201D; was the top common pathway between the two models (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>: Figure S 2). These results suggest that the N-linked glycosylation may be involved in the metastatic process of OS. Analysis of the N-linked glycoproteome will likely provide important information in metastatic OS.</p>
+      </sec>
+      <sec>
+        <title>Glycoproteomic analysis by a lectin column followed by multidimensional protein identification technology (MudPIT)</title>
+        <p>Next, we used an affinity-based mass spectrometry approach to identify the differentially expressed glycoproteins in the two cell line models. First, we used wheat germ agglutinin (WGA) lectin chromatography to selectively capture N-linked glycoproteins (Additional file <xref ref-type="supplementary-material" rid="S4">4</xref>). Subsequently, MudPIT analysis was performed on the captured glycoproteins from the two pairs of human metastatic OS cell line models. Totally, 14,928 spectra were detected in the HOS/143B model, and 34,834 spectra in the SaOS-2/LM7 model. These spectra corresponded to 3,147 and 3,123 unique peptides, which gave rise to 290 and 260 unique proteins identified in the HOS/143B and SaOS-2/LM7 models, respectively. The protein identification criteria were (1) at least two unique peptides, and (2) higher than 99% confidence of protein identification.</p>
+        <p>To measure the expressions or abundances of the glycoproteins in the metastatic OS cell line models, a spectral counting method was employed (see Methods). Spectral counting entails averaging the spectrum counts across the different protein samples tested, followed by calculating the quantitative value for each identified protein. The quantitative values of the identified proteins in the metastatic versus non-metastatic cell lines were then compared and their respective fold change was calculated. Then, the p-value for the differential expression of each protein between the two classes was calculated by Fisher&#x2019;s exact test [<xref ref-type="bibr" rid="B20">20</xref>] and corrected for multiple testing using a step-up method [<xref ref-type="bibr" rid="B21">21</xref>]. Proteins with a corrected p-value less than 0.05 and a greater than 2-fold expression were considered significantly differentially expressed. The analysis showed that 90 and 135 glycoproteins were differentially regulated in the HOS/143B and SaOS-2/LM7 models, respectively. 54 glycoproteins were up-regulated and 36 glycoproteins down-regulated in the HOS/143B model (Table <xref ref-type="table" rid="T3">3</xref>); and 75 glycoproteins were up-regulated and 60 glycoproteins were down-regulated in the SaOS-2/LM7 model (Table <xref ref-type="table" rid="T4">4</xref>). The models had 6 common proteins in the up-regulated glycoprotein profiles and 2 common proteins in the down-regulated glycoprotein profiles. By comparing to the results of LM7/SaOs-2, the common differentially expressed proteins represent 11% of up-regulated glycoproteins and 6% of down-regulated glycoproteins. The overall level of concordance for all differentially regulated glycoproteins between the two models was 9% of the differently expressed glycoproteins in the LM7/SaOS-2 model.</p>
+        <table-wrap position="float" id="T3">
+          <label>Table 3</label>
+          <caption>
+            <p>Top 10 up-regulated glycoproteins in HOS/143B model</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Gene Symbol</bold>
+                </th>
+                <th align="center">
+                  <bold>Accession #</bold>
+                </th>
+                <th align="center">
+                  <bold>HOS/143B</bold>
+                </th>
+                <th align="center">
+                  <bold>p-value</bold>
+                </th>
+                <th align="center">
+                  <bold>Unique Peptides</bold>
+                </th>
+                <th align="center">
+                  <bold>Function</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">CANX<break/>(cDNA FLJ55574)<hr/></td>
+                <td align="center" valign="bottom">IPI00020984<hr/></td>
+                <td align="center" valign="bottom">32<hr/></td>
+                <td align="center" valign="bottom">1.8 x 10E-9<hr/></td>
+                <td align="center" valign="bottom">7<hr/></td>
+                <td align="left" valign="bottom">Molecular chaperone and protein translation quality control machinery<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RPSAP55<hr/></td>
+                <td align="center" valign="bottom">IPI00399077<hr/></td>
+                <td align="center" valign="bottom">32<hr/></td>
+                <td align="center" valign="bottom">1.8 x 10E-9<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">Uncharacterized<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">YWHAQ<hr/></td>
+                <td align="center" valign="bottom">IPI00018146<hr/></td>
+                <td align="center" valign="bottom">32<hr/></td>
+                <td align="center" valign="bottom">1.8 x 10E-9<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">Regulation of a large spectrum of signaling pathway<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">ENO1<hr/></td>
+                <td align="center" valign="bottom">IPI00465248<hr/></td>
+                <td align="center" valign="bottom">25<hr/></td>
+                <td align="center" valign="bottom">3.2 x 10E-7<hr/></td>
+                <td align="center" valign="bottom">8<hr/></td>
+                <td align="left" valign="bottom">Role in glycolysis, growth control, and hypoxia tolerance<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">LDHB<hr/></td>
+                <td align="center" valign="bottom">IPI00219217<hr/></td>
+                <td align="center" valign="bottom">23<hr/></td>
+                <td align="center" valign="bottom">9.2 x 10E-7<hr/></td>
+                <td align="center" valign="bottom">9<hr/></td>
+                <td align="left" valign="bottom">Catalyzes the interconversion of pyruvate and lactate<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">EIF4A3<hr/></td>
+                <td align="center" valign="bottom">IPI00009328<hr/></td>
+                <td align="center" valign="bottom">23<hr/></td>
+                <td align="center" valign="bottom">9.2 x 10E-7<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">ATP-dependent RNA helicase<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">GAPDH<hr/></td>
+                <td align="center" valign="bottom">IPI00219018<hr/></td>
+                <td align="center" valign="bottom">29<hr/></td>
+                <td align="center" valign="bottom">9.4 x 10E-9<hr/></td>
+                <td align="center" valign="bottom">9<hr/></td>
+                <td align="left" valign="bottom">Role in glycolysis, transcription, RNA transport, DNA replication and apoptosis<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">EIF3<hr/></td>
+                <td align="center" valign="bottom">IPI00012795<hr/></td>
+                <td align="center" valign="bottom">18<hr/></td>
+                <td align="center" valign="bottom">2.5 x 10E-5<hr/></td>
+                <td align="center" valign="bottom">4<hr/></td>
+                <td align="left" valign="bottom">Required for several steps in the initiation of protein synthesis<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">GLUD1<hr/></td>
+                <td align="center" valign="bottom">IPI00016801<hr/></td>
+                <td align="center" valign="bottom">16<hr/></td>
+                <td align="center" valign="bottom">7.7 x 10E-5<hr/></td>
+                <td align="center" valign="bottom">5<hr/></td>
+                <td align="left" valign="bottom">Deamination of glutamate and role in energy homeostasis<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">PSME1</td>
+                <td align="center">IPI00479722</td>
+                <td align="center">16</td>
+                <td align="center">7.7 x 10E-5</td>
+                <td align="center">4</td>
+                <td align="left">Immunoproteasome assembly and efficient antigen processing</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <table-wrap position="float" id="T4">
+          <label>Table 4</label>
+          <caption>
+            <p>Top 10 up-regulated glycoproteins in SaOS-2/LM7 model</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Gene</bold>
+                  <break/>
+                  <bold>Symbol</bold>
+                </th>
+                <th align="center">
+                  <bold>Accession #</bold>
+                </th>
+                <th align="center">
+                  <bold>LM7/</bold>
+                  <break/>
+                  <bold>SaOS-2</bold>
+                </th>
+                <th align="center">
+                  <bold>p-value</bold>
+                </th>
+                <th align="center">
+                  <bold>Unique Peptides</bold>
+                </th>
+                <th align="left">
+                  <bold>Function</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">VIM<hr/></td>
+                <td align="center" valign="bottom">IPI00418471<hr/></td>
+                <td align="center" valign="bottom">350<hr/></td>
+                <td align="center" valign="bottom">1 x<break/>10E-42<hr/></td>
+                <td align="center" valign="bottom">22<hr/></td>
+                <td align="left" valign="bottom">Filaments expressed in neoplasms originated from mesenchymal cells<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">TPM1<hr/></td>
+                <td align="center" valign="bottom">IPI00940084<hr/></td>
+                <td align="center" valign="bottom">130<hr/></td>
+                <td align="center" valign="bottom">2.2 x 10E-41<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">Contractile system of muscles and the cytoskeleton of non-muscle cells<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">ALB<hr/></td>
+                <td align="center" valign="bottom">IPI00022434<hr/></td>
+                <td align="center" valign="bottom">120<hr/></td>
+                <td align="center" valign="bottom">2 x<break/>10E-38<hr/></td>
+                <td align="center" valign="bottom">9<hr/></td>
+                <td align="left" valign="bottom">Primarily a carrier protein in serum<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">ODZ3<hr/></td>
+                <td align="center" valign="bottom">IPI00398020<hr/></td>
+                <td align="center" valign="bottom">97<hr/></td>
+                <td align="center" valign="bottom">1.1 x 10E-30<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">May function as signal transducer<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">KRT5<hr/></td>
+                <td align="center" valign="bottom">IPI00009867<hr/></td>
+                <td align="center" valign="bottom">90<hr/></td>
+                <td align="center" valign="bottom">1.4 x 10E-28<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">Filaments found in basal layer of epidermis<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">WDR49<hr/></td>
+                <td align="center" valign="bottom">IPI00216853<hr/></td>
+                <td align="center" valign="bottom">86<hr/></td>
+                <td align="center" valign="bottom">2.7 x 10E-27<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">Regulates cell division, cell-fate determination, gene transcription, and transmembrane signaling<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">A2M<hr/></td>
+                <td align="center" valign="bottom">IPI00478003<hr/></td>
+                <td align="center" valign="bottom">84<hr/></td>
+                <td align="center" valign="bottom">1.9 x 10E-26<hr/></td>
+                <td align="center" valign="bottom">6<hr/></td>
+                <td align="left" valign="bottom">Inhibits all classes of proteinases by a unique 'trapping' mechanism<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">NES<hr/></td>
+                <td align="center" valign="bottom">IPI00010800<hr/></td>
+                <td align="center" valign="bottom">81<hr/></td>
+                <td align="center" valign="bottom">1.3 x 10E-25<hr/></td>
+                <td align="center" valign="bottom">16<hr/></td>
+                <td align="left" valign="bottom">Disassembly of vimentin, role in the trafficking and distribution of cellular factors during progenitor cell division<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">CAL2<hr/></td>
+                <td align="center" valign="bottom">IPI00916600<hr/></td>
+                <td align="center" valign="bottom">70<hr/></td>
+                <td align="center" valign="bottom">3.4 x 10E-22<hr/></td>
+                <td align="center" valign="bottom">3<hr/></td>
+                <td align="left" valign="bottom">Mediates the control of numerous enzymes and proteins by calcium<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">ANXA5</td>
+                <td align="center">IPI00329801</td>
+                <td align="center">58</td>
+                <td align="center">2.4 x 10E-18</td>
+                <td align="center">6</td>
+                <td align="left">Anticoagulant, inhibitor of the thromboplastin-specific complex</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>To show that the identified proteins were likely to be glycosylated, the top 20 up-regulated proteins from each cell line model were analyzed using a post-translational modification prediction algorithm. The selected proteins were modeled using Net-<italic>N</italic>-Glyc [<xref ref-type="bibr" rid="B22">22</xref>,<xref ref-type="bibr" rid="B23">23</xref>] for prediction of N-glycosylation sites in human proteins<italic>.</italic> The threshold was established at greater than 50% potential of glycosylation for each identified site. Results showed that 70% and 75% of the top proteins in HOS/143B and SaOS-2/LM7, respectively, have asparagines predicted to be N-glycosylated.</p>
+        <p>Up-regulated proteins in each model included 14-3-3 protein theta and alpha enolase from HOS/143B, and nestin and vimentin from SaOS-2/LM7, all of which have been implicated in cancer progression and metastasis [<xref ref-type="bibr" rid="B24">24</xref>-<xref ref-type="bibr" rid="B28">28</xref>]. Nonetheless, when the differentially regulated proteins were interrogated by the pathway analysis, only one common significant pathway, the &#x201C;Immune response_Antigen presentation by MHC class I&#x201D;, was found in the up-regulated proteins (Figure <xref ref-type="fig" rid="F2">2</xref>). In the down-regulated proteins there were 3 common significant pathways, namely the &#x201C;Proteolysis_Role of Parikin in the Ubiquitin-Proteasomal Pathway&#x201D;, &#x201C;Cytoskeleton remodeling_Keratin filaments&#x201D;, and &#x201C;Regulation of CFTR activity&#x201D;. Notably, none of these pathways was common at both the mRNA and protein levels in the two models.</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>Pathway analysis of up-regulated glycoproteins from HOS/143B and SaOS-2/LM7 models.</bold> Top 10 significant pathways identified by MetaCore using all the significantly up-regulated glycoproteins from <bold>(A)</bold> HOS/143B and <bold>(B)</bold> SaOS-2/LM7 models. No common significant pathways were identified in the top 10 pathways between the two models. All pathways shown are significant. Refer to Figure 1 legend for graph details.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-50-2"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Validation of the differentially expressed glycoproteins by Western blot</title>
+        <p>Two candidate glycoproteins were selected for validation based on criteria that required the candidates to be among the top significantly up-regulated glycoproteins from MudPIT, be supported by the transcriptomic data, and have a commercially available antibody for validation experiments. The first candidate glycoprotein selected for validation was amidophosphoribosyltransferase (Atase), which was up-regulated by 14-fold in the metastatic 143B relative to the non-metastatic HOS in the MudPIT analysis. The other candidate was vimentin, which was up-regulated by 350-fold in the metastatic LM7 relative to the non-metastatic SaOS-2 in the MudPIT analysis. The results confirmed that both proteins were overexpressed in the metastatic sublines compared to the parental cell line (Figure <xref ref-type="fig" rid="F3">3</xref>).</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Western blot validation of atase and vimentin.</bold> The glycoproteomic analysis identified atase and vimentin to be significantly up-regulated in metastatic 143B and LM7 cell lines, respectively. &#xDF;-Tubulin was used as a loading control (second row)</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-50-3"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Topological significance scoring analysis of genomic and glycoproteomic data</title>
+        <p>Although the direct analyses indicated that no dysregulated pathways were common between the two cell line models at both the mRNA and protein levels, we hypothesized that common metastatic processes could be uncovered by identifying the hidden nodes in the data. We applied the &#x201C;shortest-path&#x201D; algorithm of topological scoring to the differentially regulated genes and glycoproteins. This algorithm has been shown previously to be able to identify significant topological nodes with respect to the differentially expressed genes or proteins by combining the high-throughput data with the global network of protein interactions [<xref ref-type="bibr" rid="B29">29</xref>]. These significant nodes represent a common set of signaling proteins responsible for changes in the expression of target genes and proteins. The activity of such nodes often remains hidden from direct genomic and proteomic analyses due to posttranslational modifications, binding to second messengers, recruitment to sub-cellular compartments, or specific limitations of the approach used, such as glycoproteomics focusing on a specific subproteome [<xref ref-type="bibr" rid="B29">29</xref>,<xref ref-type="bibr" rid="B30">30</xref>]. In our study, the identified hidden nodes may reveal common dysregulated pathways between the two models at the genomic and proteomic levels associated to the metastatic phenotype.</p>
+        <p>In the HOS/143B model, the topological analysis revealed 663 and 1,434 significant nodes for the up-regulated genes and down-regulated genes respectively, and 242 and 325 nodes for the up-regulated proteins and down-regulated proteins respectively. For the SaOS-2/LM7 model, there are 474 and 450 significant nodes for the up-regulated genes and down-regulated genes respectively, and 424 and 180 significant nodes for up-regulated proteins and down-regulated proteins respectively. The numbers of common genes between the models for the gene topological profiles were 85 for up-regulated genes and 199 for down-regulated genes. For the protein topological sets, there are 50 common proteins for the up-regulated proteins and 27 for the down-regulated proteins. When compared to the direct analyses, the level of concordance in the differentially regulated molecules between the two models increased in both, the genomic profiles (from 19% to 31%) and proteomic profiles (from 9% to 18%) following the topological analysis.</p>
+        <p>Additionally, the majority of the topological significant nodes identified were hidden molecules that were not present in the differentially regulated genes and proteins sets. In the transcriptomic profiles, 85% and 95% of the topological nodes from HOS/143B and LM7/SaOS2 respectively, represent hidden molecules that were not identified by the direct mRNA analysis. Similarly, in the proteomic profiles 93% and 91% of the topological nodes represent hidden molecules in the HOS/143B and LM7/SaOS2, respectively. Significant topological nodes that had been already identified by the direct transcriptomic analysis, and were therefore not hidden, include molecules such as chemokine (CXCL2), oncogenes suppressor (TP53), growth factor receptor (IGF1R), and downstream Wnt signaling factor (JUN). Conversely, topological nodes that were not hidden to the direct proteomic analysis include factors involved in cell division cycle (CDC37), eukaryotic translation elongation (EEF1A1), and interleukin enhancement (ILF2, ILF3).</p>
+        <p>On the other hand, the topological nodes that remained hidden to the direct transcriptomic and proteomic analyses include a much larger number of molecules, many of which also belong to important cancer associated families such as SMAD (SMAD1, 2, 3, 4, 7), FOX (FOXA2, C1, C2, M1), GATA (GATA1, 2, 3, 6), and MMP (MMP7, 8, 10, 13, 16, 20). These hidden nodes may carry additional information of functional processes and pathways that were unidentifiable in the direct analyses of differentially regulated genes and glycoproteins. Therefore, after the statistically significant nodes were identified, they were further interrogated to identify the associated pathways. In contrast to the previous pathway analysis results, the topological nodes analysis revealed a remarkable concordance between the two metastatic models. In the top 10 significant pathways of the genomic data, we identified that 2 and 4 pathways were common between the 2 models from the topological analysis of up-regulated genes and down-regulated genes, respectively (Figure <xref ref-type="fig" rid="F4">4</xref> and Figure <xref ref-type="fig" rid="F5">5</xref>). The common pathways from the differentially regulated genes are the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D;, &#x201C;Cytoskeleton remodeling/Cytoskeleton remodeling&#x201D;, &#x201C;Cell adhesion/chemokines and adhesion&#x201D;, and &#x201C;Cell adhesion/ECM remodeling&#x201D;. For the proteomic data, the two models shared 3 common pathways for the up-regulated and none in the down-regulated proteins in the top 10 most significant pathways. The common pathways from the differentially regulated glycoproteins nodes are the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D;, &#x201C;Cytoskeleton remodeling/Cytoskeleton remodeling&#x201D;, and &#x201C;Cell adhesion/chemokines and adhesion&#x201D;. Together, we identified the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; pathway to be the most significant common pathway of the topological analysis of the up-regulated mRNA and glycoprotein profiles from both cell line models (Figure <xref ref-type="fig" rid="F6">6</xref>).</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>Topological nodes of up-regulated genes from HOS/143B and SaOS-2/LM7 models</bold>. Top 10 significant pathways identified by MetaCore using all the topological significant nodes from the up-regulated genes from <bold>(A)</bold> HOS/143B and <bold>(B)</bold> SaOS-2/LM7 models. Two common significant pathways were identified in the top 10 pathways of the two models, namely the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; and the &#x201C;Cytoskeleton remodeling/Cytoskeleton remodeling&#x201D;. All pathways shown are significant. Refer to Figure 1 legend for graph details.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-50-4"/>
+        </fig>
+        <fig id="F5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p><bold>Topological nodes of down-regulated genes from HOS/143B and SaOS-2/LM7 models.</bold> Top significant pathways identified by MetaCore using all the topological significant nodes from the down-regulated genes from <bold>(A)</bold> HOS/143B and <bold>(B)</bold> SaOS-2/LM7 models. Four common significant pathways were identified in the top 10 pathways of the two models, namely the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D;, &#x201C;Cytoskeleton remodeling/Cytoskeleton remodeling&#x201D;, &#x201C;Cell adhesion_Chemokines and adhesion&#x201D;, and &#x201C;Cell adhesion_ECM remodeling&#x201D;. All pathways shown are significant. Refer to Figure 1 legend for graph details.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-50-5"/>
+        </fig>
+        <fig id="F6" position="float">
+          <label>Figure 6</label>
+          <caption>
+            <p><bold>Map of Cytoskeleton remodeling/TGF/WNT pathway showing the molecules identified by the topological significance analysis using significantly up-regulated genes and up-regulated proteins from the two metastatic models.</bold> The highlighted molecules in the pathway represent the molecules identified by the topological analysis of the genomic and/or proteomic datasets.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-50-6"/>
+        </fig>
+        <p>To test the specificity of our pathway analysis and if the common pathways could be identified by a random chance, we created 10 sets of 300 randomly selected genes (not differentially expressed). The number of selected genes was chosen based on the topological proteomic analysis, where approximately 300 significant molecules were identified. We then analyzed these gene sets in an identical fashion using the topological scoring algorithm and the pathway analysis. If the topological significance analysis or the pathway analysis would bias certain pathways that are not biologically relevant to the dataset, these specific pathways would be frequently identified from the analysis of randomly selected genes. The result showed that the false discovery rate (FDR) of identifying the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; within the most significant pathways was 10% if the top 10 pathways were considered (Additional file Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>: Figure S3). Similarly, the FDR within the top ten pathways for the &#x201C;Cytoskeleton remodeling/Cytoskeleton remodeling&#x201D; and the &#x201C;Cell adhesion/Chemokines and adhesion&#x201D; pathways were 10% and 20%, respectively.</p>
+      </sec>
+      <sec>
+        <title>Validation of the Cytoskeleton/TGF/WNT pathway using RPPA</title>
+        <p>As previously described, the Cytoskeleton/TGF/WNT pathway was the top common pathways for the topological analysis of the up-regulated genes and up-regulated glycoproteins. We used an orthogonal platform, RPPA, to validate if the proteins involved in the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; pathway were up-regulated when compared to proteins involved in other pathways. Protein lysates of the two models were analyzed by the RPPA, which consists of antibodies for 120 unique proteins. The numbers of up-regulated proteins in the RPPA were 35 and 14 for HOS/143B and SaOS-2/LM7, respectively. Of the unique proteins in the RPPA, 24 belonged to the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; pathway 16 of these 24 proteins were identified by the topological analyses of up-regulated genes and proteins. The probability of these &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; pathway proteins to be up-regulated relative to all 120 proteins in the RPPA was found to be higher than expected in both, HOS/143B (45.8% vs. 29.1%) and SaOS-2/LM7 (25.0% vs. 11.7%) models, with p-values of 0.042 and 0.034, respectively (See Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S 2a and S2b).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>Although cancer is a heterogeneous disease, accumulating evidence supports the idea that signals for malignant transformation, progression and invasion are likely affected by a multitude of signaling pathways converging on several key regulators [<xref ref-type="bibr" rid="B29">29</xref>,<xref ref-type="bibr" rid="B31">31</xref>,<xref ref-type="bibr" rid="B32">32</xref>]. Identifying these key regulators will be critical for the development of novel cancer therapeutics. Nonetheless, due to diverse genetic backgrounds of tumors and the intrinsic limitations of high-throughput profiling technologies, many of these key regulators remain hidden from conventional single-level or direct analyses. In this study, we used a systems biology approach to reveal and identify topologically significant nodes by integrating transcriptomic and glycoproteomic data of two human metastatic OS models.</p>
+      <p>Direct pathway analyses of the mRNA and glycoproteomic profiles revealed a low concordance of differentially expressed genes or proteins and their respective functional pathways between the models. These results may in parts reflect the unique methodologies used to develop the cell line models. The metastatic 143B subline was generated <italic>in vitro</italic> via a Ki-RAS oncogene transformation of the HOS cell line [<xref ref-type="bibr" rid="B15">15</xref>], while the LM7 subline was developed <italic>in vivo</italic> through successive cycles of pulmonary metastases selection and re-injections in mice [<xref ref-type="bibr" rid="B14">14</xref>]. The different genetic background of the parental cell lines and the <italic>in vitro</italic> versus <italic>in vivo</italic> development of the respective metastatic sublines, may account for the differences observed in the genomic and glycoproteomic analysis of the models. The discordance between the mRNA and proteomics profiles was not surprising because of their known limited correlation [<xref ref-type="bibr" rid="B7">7</xref>,<xref ref-type="bibr" rid="B8">8</xref>], and the specific subproteome characterized in this study, namely the N-linked glycoproteins with affinity for WGA lectin. These fundamental differences and the large number of discordant pathways between the cell line models, increase the difficulty of prioritizing and identifying the key common regulators in the metastatic process of OS.</p>
+      <p>Despite of the different origins, the two OS cell line models share the same metastatic phenotype. Thus, we hypothesized that some key metastatic pathways are common to different tumors of the same cancer type, but remain hidden from the direct genomic and proteomic profiling analyses. Therefore, we performed further analysis and data integration to identify key nodes in the pathways that will reveal the critical players in common metastatic processes. For this analysis, we applied a recently developed &#x201C;topological scoring&#x201D; algorithm to integrate the genomic and glycoproteomic profiles and identified significant hidden common pathways between the two OS models. The &#x201C;topological scoring&#x201D; algorithm scores nodes in a network built from the experimentally derived, condition-specific genomic and proteomic profiles [<xref ref-type="bibr" rid="B29">29</xref>,<xref ref-type="bibr" rid="B30">30</xref>]. The output provides a series of signaling proteins associated with the metastatic phenotype and helps delineate the underlying biological processes. One of the main advantages of the topological algorithm is that it assesses the relative contribution of every node in the condition-specific network under study relative to its role in the global network. Thus, the &#x201C;hubs&#x201D; that are commonly present in different pathways and have high connectivity in the global network, are penalized if they do not have any special role related to the experimentally derived set of differentially expressed genes or proteins. On the other hand, nodes that provide significant connectivity among the differentially expressed genes or proteins are highly scored regardless of their global network interactions, rendering the results more specific.</p>
+      <p>Pathway analysis of the identified topological nodes revealed many common and significant dysregulated pathways between the models, which were missed by the direct analyses. Remarkably, the analysis revealed pathways such as &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; and &#x201C;Cell adhesion/chemokines and adhesion&#x201D;, which were common to both models and present at both mRNA and protein levels. All the processes represented in these common pathways have been previously associated with metastasis in various cancer types, and changes involved in these signaling networks associated to cytoskeleton remodeling, cell-cell and cell-matrix adhesion are critical for the cancer cell migration and invasion [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B33">33</xref>-<xref ref-type="bibr" rid="B36">36</xref>]. To determine if these pathways would be identified by a random chance or nonspecifically, we performed a false discovery analysis using randomly selected genes and confirmed the specificity of these pathways in our datasets.</p>
+      <p>Our results support the notion that there are common metastatic mechanisms acting downstream of different genetic aberrations or origins. This implies the existence of common molecular therapeutic targets and disease biomarkers irrespective of the driver genetic abnormalities in the tumors. This finding is particularly significant in tumors, such as OS, in which the genomic abnormalities are known to be highly complex and it is hard to determine the driver mutations from the passengers [<xref ref-type="bibr" rid="B37">37</xref>,<xref ref-type="bibr" rid="B38">38</xref>]. For instance, the most significantly overrepresented pathway of the topological analysis was the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D;, which includes the interesting Wnt component. The Wnt signaling is particularly important for cancer cells as they are able to disrupt this pathway in different ways resulting in tumorigenesis and metastasis. Activation of the Wnt signaling pathway is necessary for the commitment of mesenchymal stem cells to the osteoblast lineage. In addition, aberrant Wnt signaling activity has been reported in a variety of human cancers including soft tissue sarcomas and human OS primary tissues and cell lines [<xref ref-type="bibr" rid="B36">36</xref>,<xref ref-type="bibr" rid="B39">39</xref>-<xref ref-type="bibr" rid="B42">42</xref>]. Abnormal activation of the canonical Wnt pathway results in stabilized &#x3B2;-catenin that translocates into the nucleus. Subsequently, it binds to transcription factors and drives the uncontrolled expression of target genes implicated in cell proliferation, transformation, and tumor progression, such as Myc, matrix metalloproteinase 7, Axin-2, the cell adhesion molecule L1-CAM, the metastasis gene S100A4, and others [<xref ref-type="bibr" rid="B33">33</xref>,<xref ref-type="bibr" rid="B43">43</xref>,<xref ref-type="bibr" rid="B44">44</xref>]. Therefore, targeting the Wnt signaling may have a therapeutic effect on different types of metastatic OS.</p>
+      <p>Similarly, our findings suggest that Wnt signaling is highly relevant to the metastasis of OS. Previous studies have shown that OS harbors an accumulation of &#x3B2;-catenin either in the cytoplasm or in the nucleus [<xref ref-type="bibr" rid="B45">45</xref>], a hallmark of Wnt signaling activation. Additionally, the Wnt coreceptor LRP5 expression in OS tissue samples correlated with metastasis and a lower rate of disease-free survival in patients [<xref ref-type="bibr" rid="B46">46</xref>]. Furthermore, OS cell lines have been reported to express many Wnt ligands and receptors, whereas secreted Wnt antagonists including secreted frizzled-related protein (sFRP) and Dickkopf (Dkk) families are commonly absent [<xref ref-type="bibr" rid="B46">46</xref>,<xref ref-type="bibr" rid="B47">47</xref>]. Inhibition of similar mechanisms by the reintroduction of secreted Wnt antagonists in OS, such as the Wnt inhibitory factor (WIF-1), has been proposed for downregulation of Wnt signaling as a novel therapeutic approach. For instance, overexpression of WIF-1 significantly decreased tumor growth and markedly reduced the number of lung metastasis of 143B cells <italic>in vivo</italic>[<xref ref-type="bibr" rid="B48">48</xref>]. In other studies soluble LRP5 (sLRP5), which blocks Wnt signaling, was able to reduce <italic>in vitro</italic> cellular invasion, and transfection of sLRP5 in SaOS-2 caused a marked up-regulation of E-cadherin and down-regulation of N-cadherin suggesting a reversal of epithelial-mesenchymal transition [<xref ref-type="bibr" rid="B40">40</xref>]. These findings suggest an important role for aberrant Wnt signaling in the pathobiology and progression of OS. The Wnt pathway may represent a promising source of novel therapeutic targets and disease progression biomarkers.</p>
+      <p>Another common pathway relevant in metastasis is the &#x201C;Cell adhesion/chemokines and adhesion&#x201D;, which was identified at both the genomic and proteomic levels. Chemokine ligands and their cognate receptors have been extensively implicated in the progression and metastasis of multiple tumors such as melanoma, breast cancer, prostate cancer, and others [<xref ref-type="bibr" rid="B49">49</xref>-<xref ref-type="bibr" rid="B53">53</xref>]. In OS, research has revealed a complex interaction between chemokine ligand/receptor axis, and their role in tumor invasion, metastasis and patient prognosis [<xref ref-type="bibr" rid="B54">54</xref>]. Our group previously reported that expression of two CXC chemokines were elevated in tumor and plasma of pediatric OS patients, and their levels correlated with patient outcomes [<xref ref-type="bibr" rid="B55">55</xref>]. Several of the CXC chemokines were also identified by the topological analysis in this study, including CXCL12 which has been directly associated to metastasis in OS and other tumors [<xref ref-type="bibr" rid="B56">56</xref>]. Identification of the significant topological nodes within such complex networks could help identify the key players and delineate their roles in cell adhesion, invasion and other important metastasis functions.</p>
+      <p>In addition to the identification of therapeutic targets, identification of tumor-derived biomarkers for early detection of disease progression and metastasis is a critical component for personalized medicine. As previously noted, characterization of key hidden nodes could facilitate the identification of candidate biomarkers for metastatic OS. Because of the diversity of the human proteome and limitations of the current proteomic methods, targeting specific subproteomes that are likely to be secreted into the blood stream, such as the glycoproteome, will improve the likelihood of identifying tumor-derived circulating biomarkers. In this study, we characterized the N-linked glycoproteome due to their involvement in metastatic OS as evidenced by the glycogene analysis, and their frequent localization in the cellular membrane and extracellular space. In spite of the limited number of glycoproteins identified in this study, the topological analysis revealed common significant pathways between the differentially regulated glycoproteins and genes in both OS models. Using this analysis, we can prioritize the up-regulated glycoproteins and up-regulated genes as well as the hidden molecules that may serve as biomarkers for the disease or metastasis in the future validation, such as proteins in the TGF beta (i.e. TGFB1, TGFBR1, TGFBR2) and MAP kinase (MAPK1, MAPK3, MAP3K1,MAP3K8) families identified by topological analysis.</p>
+      <p>Despite the encouraging results, we recognize that there are limitations in the current study. For instance, the cell line models used in our study represents a significant limitation. Although the <italic>in vitro</italic> models provide a convenient and renewable platform that cannot be surpassed by clinical specimens, it may not faithfully reflect the behavior of tumor cells <italic>in vivo</italic>. Therefore, future directions include the development of orthotopic xenograft mouse models to recapitulate and validate the results obtained in this study. In addition, the characterized N-linked glycoproteins with an affinity for the WGA lectin represent a restricted number of proteins, which is typical to this type of subproteome analysis [<xref ref-type="bibr" rid="B57">57</xref>,<xref ref-type="bibr" rid="B58">58</xref>]. This limits the number of identifiable up-regulated glycoproteins amenable for validation as candidate biomarkers. Further studies with a wider range of proteins including additional glycoproteins by different capture methods (i.e. cell surface biotin labeling, biocytin hydrazide N-linked enrichment) [<xref ref-type="bibr" rid="B59">59</xref>,<xref ref-type="bibr" rid="B60">60</xref>] and other relevant subproteomes, such as the secretome [<xref ref-type="bibr" rid="B61">61</xref>,<xref ref-type="bibr" rid="B62">62</xref>] will help to alleviate this limitation.</p>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>We used a systems biology approach to identify key and common metastatic mechanisms in OS. A similar approach can be applied to other genetically distinct but phenotypically similar cell lines of other tumor types. The use of the topological analysis revealed hidden biological networks known to play a fundamental role in metastasis. The analysis will also provide new types of information in this pediatric cancer that are not identifiable by conventional single-level analyses, and present new directions for future research. Our study shows that the systems biology analysis of metastasis through different types of genomic and proteomic characterization can shed light on the key biological processes of OS invasion. Our findings have significant implications on both the development of biomarkers for disease progression and metastasis, and identification of potential targets for novel therapies. Ultimately, we believe that the results reported in this study will accelerate the development of a personalized treatment for metastatic OS patients to maximize their survival and decrease treatment toxicity.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Human metastatic OS cell line models</title>
+        <p>Human osteosarcoma cell lines 143B and HOS were purchased from ATCC (Manassas, VA). The SaOS-2 and LM-7 cell lines were provided by Eugenie S. Kleinerman from The University of Texas M. D. Anderson Cancer Center. The cell lines were maintained in GIBCO Minimum Essential Media supplemented with 10% fetal bovine serum at 37<sup>o</sup>C in 5% CO<sub>2</sub>, and they were tested to be mycoplasma-free. Unless otherwise indicated, all chemicals were purchased from Sigma-Aldrich (St. Louis, MO). Cell lines were validated by STR DNA fingerprinting using the AmpF_STR Identifiler kit according to manufacturer's instructions (Applied Biosystems cat 4322288). The STR profiles were compared to known ATCC fingerprints (ATCC.org), and to the Cell Line Integrated Molecular Authentication database (CLIMA) version 0.1.200808 (<ext-link ext-link-type="uri" xlink:href="http://bioinformatics.istge.it/clima/">http://bioinformatics.istge.it/clima/</ext-link>) (Nucleic Acids Research 37:D925-D932 PMCID: PMC2686526). The STR profiles matched known DNA fingerprints or were unique.</p>
+      </sec>
+      <sec>
+        <title>mRNA expression profiling</title>
+        <p>The TRIzol reagent (Invitrogen, San Diego, CA) was used to extract RNA from the cell lines, and the RNA was further purified by the RNeasy kit (QIAGEN, Valencia, CA). 250ng of purified RNA were labelled by the Genechip 3&#x201D; IVT express kit (Affymetrix, Santa Clara, CA) following the manufacturer&#x2019;s protocol. Then the labelled RNA was hybridized with the Human U133 plus 2 array using the GeneChip hybridization, wash and stain kit (Affymetrix). The hybridization signals were obtained from the GeneChip 7G Scanner (Affymetrix).</p>
+        <p>The data was normalized using the Robust Multichip Average (RMA). RMA consists of three steps: a background adjustment, quantile normalization and summarization [<xref ref-type="bibr" rid="B63">63</xref>-<xref ref-type="bibr" rid="B65">65</xref>]. The quality of the arrays data was assessed through affyQCReport [<xref ref-type="bibr" rid="B66">66</xref>]. The microarray data was then analyzed using the S-score algorithm, which is a comparative method for gene expression data analysis that uses probe level data. The algorithm consists of an error model for the expression of probe pair signals in which the detected signal is assumed to be proportional to the probe pair signal for highly expressed genes, while approaching a background noise level for genes with low levels of expression. These probe pairs level data are used to calculate the significance score (S-score), which is a measure of relative change. Under conditions of no differential expression between chips, the S-scores of all the genes follow a standard normal distribution. The p-values for differential expressions of genes can be then obtained from the distribution, which accounts for multiple testing [<xref ref-type="bibr" rid="B67">67</xref>,<xref ref-type="bibr" rid="B68">68</xref>]. Differential gene expression was defined as genes with a p-value less than 0.05 and a 2-fold or greater difference in normalized fluorescence intensity between the 143B (numerator) and HOS (denominator), and LM7 (numerator) and SaOS-2 (denominator) cells.</p>
+      </sec>
+      <sec>
+        <title>N-linked glycoprotein capturing</title>
+        <p>Total proteins of approximately 10<sup>8</sup> cells were extracted by the M-PER Mammalian Protein Extraction Reagent (Pierce. Rockford, IL). Insoluble debris was removed by centrifugation at 14,000 g for 15 min at 4&#xB0;C. The WGA high affinity lectin chromatography was used to isolate glycoproteins with N-acetyl glucosamine (GlcNAC) and terminal GlcNAC structures as described in the manufacturer&#x2019;s protocol (Pierce). The eluted glycoprotein concentration was determined using BCA Protein Assay (Pierce). The glycoproteins were stored at &#x2212;80&#xB0;C for the mass spectrometry analysis following deglycosylation. Peptide-N-glycosidase F was used for the deglycosylation of glycoproteins as described in the manufacturer&#x2019;s protocol (Sigma).</p>
+      </sec>
+      <sec>
+        <title>MudPIT</title>
+        <p>The MudPIT consists of two independent separation steps, namely the strong cation exchange and the reversed phase that are coupled with mass spectrometry analysis. For the nanoLC-LC-MS/MS, a microbore HPLC system (Paradigm MS4, Michrom, Auburn, CA) was used with two separate strong cation exchange (SCX) and reversed phase (RP) columns. A representative twelve step LC-LC-MS/MS analysis was performed. The elution was directly sprayed into a custom-built nanoelectrospray ionization source of a ThermoFinnigan LTQ ion trap mass spectrometer (ThermoFinnigan, San Jose, CA). Dependent data scanning was then performed by Xcalibur v-1.4 software [<xref ref-type="bibr" rid="B69">69</xref>]. The MS/MS spectra were collected in an information-dependent acquisition mode at 3-second intervals.</p>
+        <p>The MS analysis was performed at the Arizona Mass Spectrometry Consortium, the University of Arizona. Tandem MS spectra of peptides were analyzed with TurboSEQUEST&#x2122; v-3.1, a program that allows the correlation of experimental tandem MS data with theoretical spectra generated from known protein sequences [<xref ref-type="bibr" rid="B70">70</xref>]. The peak list (dta files) for the search was generated by Bioworks 3.1. All spectra were searched against the latest version of the non-redundant protein database downloaded from NCBI. The results were also validated using X!Tandem, and with Scaffold, (Proteome Software, Portland, Oregon, USA) a program that probabilistically validates these peptide identifications and derives corresponding protein probabilities using ProteinProphet [<xref ref-type="bibr" rid="B71">71</xref>].</p>
+        <p>Peptide identifications were accepted if they exceeded specific database search engine thresholds. Sequest identifications required at least deltaCn scores of greater than 0.08 and XCorr scores of greater than 1.8, 2.5, 3.5 for singly, doubly, triply charged peptides. X! Tandem identifications required at least -Log(Expect Scores) scores of greater than 3.0. Protein identifications were accepted if they contained at least two identified peptides. Proteins that contained similar peptides and could not be differentiated based on MS/MS analysis alone were grouped to satisfy the principles of parsimony.</p>
+        <p>Relative expression of glycoproteins between the metastatic OS cell line models was analyzed using spectral counting function within the Scaffold software. Scaffold calculates the quantitative value number by normalizing spectral counts across the experiment. The normalized spectral count for a given protein was compared between the metastatic and non-metastatic cell line samples, the minimum quantitative value was set at 1.0, and a relative fold change between the two samples was calculated. The p-value for the differential expression of each protein was calculated using a Fisher&#x2019;s exact test. This test uses spectral count statistics to measure differential protein expression in pairwise experiments, and has been found to be a reliable and preferable method when two replicates are available in label-free proteomics experiments [<xref ref-type="bibr" rid="B20">20</xref>]. Then, the p-values were corrected by a step-up method [<xref ref-type="bibr" rid="B21">21</xref>]. Differential expression was then defined as proteins having both, a corrected p-value lower than 0.05 and a fold change greater than 2.</p>
+      </sec>
+      <sec>
+        <title>Data analysis</title>
+        <p>For prediction of N-glycosylation, the top 20 identified proteins from each cell line model were modeled using Net-<italic>N</italic>-Glyc [<xref ref-type="bibr" rid="B22">22</xref>,<xref ref-type="bibr" rid="B23">23</xref>]<italic>.</italic> The predictions were done only on the Asn-Xaa-Ser/Thr sequons and the threshold was established at higher than 50% potential of glycosylation for each identified site.</p>
+        <p>MetaCore was used for pathway analysis of the differentially regulated genes and glycoproteins (GeneGo Inc, St. Joseph, MI). We used all proteins in the MetaCore network as the reference list for calculating enrichment p-values. For the identification of key regulatory molecules within the genomic and glycoproteomic data, the &#x201C;topological scoring&#x201D; method was used. This method utilizes GeneGo&#x2019;s MetaBase knowledgebase containing approximately 300,000 protein-protein and protein-small molecule interactions manually extracted from the literature by expert annotators. The algorithm used for the analysis was the &#x201C;shortest-paths among nodes&#x201D;, the background list used includes all network nodes, and the significance level was 0.05 [<xref ref-type="bibr" rid="B29">29</xref>,<xref ref-type="bibr" rid="B30">30</xref>]. Functional analysis using MetaCore was then performed on the identified topological nodes derived from the genomic and glycoproteomic profiles to determine the most significantly enriched canonical pathways.</p>
+        <p>As the topological analysis identified close to 300 proteins for each of the proteomic profiles, we utilized 10 sets of 300 randomly selected genes from the genome to measure the false discovery rate of the results. The random genes sets were analyzed as described above. First, functional pathway analysis was performed on the randomly selected genes. Then, topological analysis was performed on the random genes, followed by functional analysis of the identified key topological nodes. The top significant pathways identified from the initial random genes and the topological nodes were compared to the respective identified pathways from the human cell line models. Specifically, the chance of identifying each of the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D;, the &#x201C;Cytoskeleton remodeling/Cytoskeleton remodeling&#x201D;, and the &#x201C;Cell adhesion/Chemokines and adhesion&#x201D; pathways within the top 10 most significant pathways in the random sets was calculated to determine their false discovery rates.</p>
+      </sec>
+      <sec>
+        <title>Confirmation/validation by Western blot and RPPA</title>
+        <p>For Western blotting, the proteins were first resolved by NuPAGE 4-12% Bis-Tris gel (Invitrogen) and then transferred to a PVDF membrane. The membranes were incubated with the primary antibody against the specific protein of interest, i.e. mouse anti-human atase, rabbit anti-human vimentin, and &#xDF;-tubulin antibodies. Proteins were detected by donkey anti-mouse or goat anti-rabbit secondary antibodies (LI-COR Biosciences, Lincoln, NE). &#xDF;-tubulin was used as loading controls. The fluorescence was captured by Odyssey imaging System (LI-COR Biosciences).</p>
+        <p>Proteins involved in the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; pathway were validated using RPPA. The RPPA consists of 242 antibodies that target 120 unique proteins. The antibody with the largest differential expression for each of the 120 unique proteins was selected for further analysis. 24 out of the 120 unique proteins in the RPPA including AKT1, CAV1, EIF4E, GSK2B, JUN, MAPK1, MTOR, MYC, PTK2, TP53, and VEGFA, belonged to the &#x201C;Cytoskeleton remodeling /TGF/WNT&#x201D; pathway. Under the null hypothesis, the 24 proteins from the &#x201C;Cytoskeleton/TGF/WNT&#x201D; pathway have no preferential up-regulation relative to the total set of RPPA proteins.</p>
+        <p>For RPPA profiling, serial diluted lysates were arrayed on nitrocellulose-coated slides (Grace Biolab, Bend, OR) by Aushon 2470 Arrayer (Aushon BioSystems, Billerica, MA). Each slide was probed with a validated primary antibody plus a biotin-conjugated secondary antibody. The signal obtained was amplified using a Dako Cytomation&#x2013;catalyzed system (Dako) and visualized by DAB colorimetric reaction. The slides were scanned, analyzed, and quantified using a customized Microvigene software (VigeneTech Inc., Carlisle, MA) to generate spot intensity. Each dilution curve was fitted with the logistic model &#x201C;Supercurve Fitting&#x201D; developed by the Department of Bioinformatics and Computational Biology in MD Anderson Cancer Center (http://bioinformatics.mdanderson.org/OOMPA).</p>
+        <p>RPPA data analysis showed that the Log2 expression of the 120 unique proteins in the 143B vs. HOS model had a mean of 0.03 with a standard deviation of 0.58. For the LM7 vs. SaOS-2 model, the mean was -0.05 with a standard deviation of 0.40. Because of the limited fold changes observed in the RPPA platform, an up-regulated protein was defined as a Log2 expression higher than 0.3 (fold change higher than 1.23). The probability of a protein&#x2019;s expression being greater than a pre-determined &#x201C;up-regulated&#x201D; threshold follows a hypergeometric distribution. In this case, the 120 unique proteins from the RPPA represent the sample size, and the 24 &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; pathway proteins represent a &#x201C;selection&#x201D;. If the proteins involved in the &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; pathway are not enriched, then the number of &#x201C;up-regulated proteins&#x201D; in that pathway or &#x201C;selection&#x201D; follows the hypergeometric distribution</p>
+        <p>
+          <disp-formula id="bmcM1">
+            <label>(1)</label>
+            <mml:math id="M1" name="1752-0509-6-50-i1" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>P</mml:mi>
+                <mml:mfenced open="(" close=")">
+                  <mml:mrow>
+                    <mml:mi>x</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mi>k</mml:mi>
+                  </mml:mrow>
+                </mml:mfenced>
+                <mml:mo>=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mfenced open="[" close="]">
+                      <mml:mrow>
+                        <mml:mtext>C</mml:mtext>
+                        <mml:mfenced open="(" close=")">
+                          <mml:mtext>K,k</mml:mtext>
+                        </mml:mfenced>
+                      </mml:mrow>
+                    </mml:mfenced>
+                    <mml:mfenced open="[" close="]">
+                      <mml:mrow>
+                        <mml:mtext>C</mml:mtext>
+                        <mml:mfenced open="(" close=")">
+                          <mml:mtext>M,m</mml:mtext>
+                        </mml:mfenced>
+                      </mml:mrow>
+                    </mml:mfenced>
+                  </mml:mrow>
+                  <mml:mfenced open="[" close="]">
+                    <mml:mrow>
+                      <mml:mtext>C</mml:mtext>
+                      <mml:mfenced open="(" close=")">
+                        <mml:mtext>N,n</mml:mtext>
+                      </mml:mfenced>
+                    </mml:mrow>
+                  </mml:mfenced>
+                </mml:mfrac>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>where <italic>P(x&#x2009;=&#x2009;k)</italic> is the probability of a &#x201C;k&#x201D; number of up-regulated proteins being present in a specific Pathway.</p>
+        <p>Note: C(A,a)&#x2009;=&#x2009;A! / [(A-a)! *(a!)]</p>
+        <p>k&#x2009;=&#x2009;number of up-regulated proteins in the Pathway</p>
+        <p>K&#x2009;=&#x2009;number of up-regulated proteins in the RPPA</p>
+        <p>m&#x2009;=&#x2009;number of not up-regulated proteins in the Pathway</p>
+        <p>M&#x2009;=&#x2009;number of not up-regulated proteins in the RPPA</p>
+        <p>n&#x2009;=&#x2009;number of all proteins in the Pathway</p>
+        <p>N&#x2009;=&#x2009;number of all proteins in the RPPA</p>
+        <p>The p-value is then calculated as the cumulative distribution of the function above.</p>
+      </sec>
+      <sec>
+        <title>Availability of supporting data</title>
+        <p>The microarray data described in this study have been deposited in the Gene Expression Omnibus [<xref ref-type="bibr" rid="B72">72</xref>] with the accession number GSE37552. The proteomic data are available in the Digital Object Identifier System with the DOI number <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.6070/H47P8W9B">http://dx.doi.org/10.6070/H47P8W9B</ext-link>.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that there are no known competing interests regarding to this study.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>RJF carried out the cell line work, glycoprotein analysis, Western blot validation, pathway analysis, topological scoring analysis, RPPA data analysis, and prepared the manuscript. YL participated in the cell line work, protein analysis and Western blot validation. AY processed the mRNA expression data and helped with the pathway analysis. JS and PR carried out the mRNA isolation and expression microarray analysis. SL contributed to the mass spectrometry analysis. CCL participated in the study design, data analysis, and in the interpretation of results. TKM conceived of, supervised, designed and coordinated the study, and prepared the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>Table S1.</bold> Significant Pathways from the ontology enrichment of the down-regulated genes in the HOS/143B model and SaOS-2/LM7 model. <bold>Tables S2a and S2b</bold>. &#x201C;Cytoskeleton remodeling/TGF/WNT&#x201D; pathway proteins up-regulated in the RPPA on HOS/143B and SaOS-2/LM7 models.</p>
+        </caption>
+        <media xlink:href="1752-0509-6-50-S1.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p><bold>Figure S1.</bold> Pathway analysis of all glycogenes. Top significant pathways identified by MetaCore using all 191 glycogenes identified in the genomic profile. All pathways shown are significant. Refer to Figure 1 legend for graph details.</p>
+        </caption>
+        <media xlink:href="1752-0509-6-50-S2.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p><bold>Figure S2.</bold> Pathway analysis of differentially regulated glycogenes from 143B/HOS and LM7/SaOS-2 models. Top significant pathways identified by MetaCore using (a) differentially regulated genes from 143B/HOS model, and (b) differentially regulated genes from LM7/SaOS-2 model. Results showed that &#x201C;N-Glycan biosynthesis&#x201D; was the top common pathway between the two models. Dark orange bars represent significant pathways. Refer to Figure 1 legend for graph details.</p>
+        </caption>
+        <media xlink:href="1752-0509-6-50-S3.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S4">
+        <caption>
+          <title>Additional file 4</title>
+          <p>Methods for the N-Linked glycoproteins enrichment by lectin affinity chromatography.</p>
+        </caption>
+        <media xlink:href="1752-0509-6-50-S4.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S5">
+        <caption>
+          <title>Additional file 5</title>
+          <p><bold>Figure S3.</bold> Pathway analysis of random genes and their topological nodes. Top significant pathways identified by MetaCore using (a) 300 randomly selected genes and (b) topological significant nodes from the 300 randomly selected genes. None of the top common significant pathways identified from the topological analysis of the up-regulated genes and up-regulated glycoproteins from the 143B/HOS and LM7/SaOS-2 models were identified by the topological analysis of this random gene set. Dark orange bars represent significant pathways. Refer to Figure 1 legend for graph details.</p>
+        </caption>
+        <media xlink:href="1752-0509-6-50-S5.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>We are thankful to Andrea Hunt, Dr. Linda Breci and Dr. George Tsaprailis from the Arizona Proteomics Consortium for their technical and intellectual support during the mass spectrometry analysis. We are also grateful to Dr. Eugenie Kleinerman for providing the SaOS-2 and LM7 cell lines. Special thanks to Dr. Eastwood Leung for intellectual support for the proteomic component of this project.</p>
+      <sec>
+        <title>Funding</title>
+        <p>This work was partly supported by the NIH Training Grant T32 CA115303-04S1 (RJF), the Training fellowship from the Keck Center Computational Cancer Biology Training Program of the Gulf Coast Consortia (CPRIT Grant No. RP101489) (RJF), the Multiple Investigator Research Award, Cancer Prevention and Research Institute of Texas (TKM, CCL). Mass spectrometric data were acquired by the Arizona Proteomics Consortium supported by the NIEHS grant ES06694 to the SWEHSC, the NIH/NCI grant CA023074 to the AZCC and by the BIO5 Institute of the University of Arizona.</p>
+      </sec>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mirabello</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Troisi</surname>
+            <given-names>RJ</given-names>
+          </name>
+          <name>
+            <surname>Savage</surname>
+            <given-names>SA</given-names>
+          </name>
+          <article-title>Osteosarcoma incidence and survival rates from 1973 to 2004: data from the Surveillance, Epidemiology, and End Results Program</article-title>
+          <source>Cancer</source>
+          <year>2009</year>
+          <volume>115</volume>
+          <issue>7</issue>
+          <fpage>1531</fpage>
+          <lpage>1543</lpage>
+          <pub-id pub-id-type="pmid">19197972</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Petrilli</surname>
+            <given-names>AS</given-names>
+          </name>
+          <etal/>
+          <article-title>Results of the Brazilian Osteosarcoma Treatment Group Studies III and IV: prognostic factors and impact on survival</article-title>
+          <source>J Clin Oncol</source>
+          <year>2006</year>
+          <volume>24</volume>
+          <issue>7</issue>
+          <fpage>1161</fpage>
+          <lpage>1168</lpage>
+          <pub-id pub-id-type="pmid">16505436</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Meyers</surname>
+            <given-names>PA</given-names>
+          </name>
+          <etal/>
+          <article-title>Osteogenic sarcoma with clinically detectable metastasis at initial presentation</article-title>
+          <source>J Clin Oncol</source>
+          <year>1993</year>
+          <volume>11</volume>
+          <issue>3</issue>
+          <fpage>449</fpage>
+          <lpage>453</lpage>
+          <pub-id pub-id-type="pmid">8445419</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bjornland</surname>
+            <given-names>K</given-names>
+          </name>
+          <etal/>
+          <article-title>Matrix metalloproteinases participate in osteosarcoma invasion</article-title>
+          <source>J Surg Res</source>
+          <year>2005</year>
+          <volume>127</volume>
+          <issue>2</issue>
+          <fpage>151</fpage>
+          <lpage>156</lpage>
+          <pub-id pub-id-type="pmid">16083752</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Khanna</surname>
+            <given-names>C</given-names>
+          </name>
+          <etal/>
+          <article-title>Metastasis-associated differences in gene expression in a murine model of osteosarcoma</article-title>
+          <source>Cancer Res</source>
+          <year>2001</year>
+          <volume>61</volume>
+          <issue>9</issue>
+          <fpage>3750</fpage>
+          <lpage>3759</lpage>
+          <pub-id pub-id-type="pmid">11325848</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kleijn</surname>
+            <given-names>M</given-names>
+          </name>
+          <etal/>
+          <article-title>Regulation of translation initiation factors by signal transduction</article-title>
+          <source>Eur J Biochem</source>
+          <year>1998</year>
+          <volume>253</volume>
+          <issue>3</issue>
+          <fpage>531</fpage>
+          <lpage>544</lpage>
+          <pub-id pub-id-type="pmid">9654048</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gygi</surname>
+            <given-names>SP</given-names>
+          </name>
+          <etal/>
+          <article-title>Correlation between protein and mRNA abundance in yeast</article-title>
+          <source>Mol Cell Biol</source>
+          <year>1999</year>
+          <volume>19</volume>
+          <issue>3</issue>
+          <fpage>1720</fpage>
+          <lpage>1730</lpage>
+          <pub-id pub-id-type="pmid">10022859</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Chen</surname>
+            <given-names>G</given-names>
+          </name>
+          <etal/>
+          <article-title>Discordant protein and mRNA expression in lung adenocarcinomas</article-title>
+          <source>Mol Cell Proteomics</source>
+          <year>2002</year>
+          <volume>1</volume>
+          <issue>4</issue>
+          <fpage>304</fpage>
+          <lpage>313</lpage>
+          <pub-id pub-id-type="pmid">12096112</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Man</surname>
+            <given-names>TK</given-names>
+          </name>
+          <etal/>
+          <article-title>Optimising the use of TRIzol-extracted proteins in surface enhanced laser desorption/ ionization (SELDI) analysis</article-title>
+          <source>Proteome Sci</source>
+          <year>2006</year>
+          <volume>4</volume>
+          <fpage>3</fpage>
+          <pub-id pub-id-type="pmid">16556310</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Luu</surname>
+            <given-names>HH</given-names>
+          </name>
+          <etal/>
+          <article-title>An orthotopic model of human osteosarcoma growth and spontaneous pulmonary metastasis</article-title>
+          <source>Clin Exp Metastasis</source>
+          <year>2005</year>
+          <volume>22</volume>
+          <issue>4</issue>
+          <fpage>319</fpage>
+          <lpage>329</lpage>
+          <pub-id pub-id-type="pmid">16170668</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Chen</surname>
+            <given-names>X</given-names>
+          </name>
+          <etal/>
+          <article-title>Establishment and characterization of human osteosarcoma cell lines with different pulmonary metastatic potentials</article-title>
+          <source>Cytotechnology</source>
+          <year>2009</year>
+          <volume>61</volume>
+          <issue>1&#x2013;2</issue>
+          <fpage>37</fpage>
+          <lpage>44</lpage>
+          <pub-id pub-id-type="pmid">20016965</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kimura</surname>
+            <given-names>K</given-names>
+          </name>
+          <etal/>
+          <article-title>Establishment of human osteosarcoma cell lines with high metastatic potential to lungs and their utilities for therapeutic studies on metastatic osteosarcoma</article-title>
+          <source>Clin Exp Metastasis</source>
+          <year>2002</year>
+          <volume>19</volume>
+          <issue>6</issue>
+          <fpage>477</fpage>
+          <lpage>485</lpage>
+          <pub-id pub-id-type="pmid">12405284</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Nakano</surname>
+            <given-names>T</given-names>
+          </name>
+          <etal/>
+          <article-title>Biological properties and gene expression associated with metastatic potential of human osteosarcoma</article-title>
+          <source>Clin Exp Metastasis</source>
+          <year>2003</year>
+          <volume>20</volume>
+          <issue>7</issue>
+          <fpage>665</fpage>
+          <lpage>674</lpage>
+          <pub-id pub-id-type="pmid">14669798</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jia</surname>
+            <given-names>SF</given-names>
+          </name>
+          <name>
+            <surname>Worth</surname>
+            <given-names>LL</given-names>
+          </name>
+          <name>
+            <surname>Kleinerman</surname>
+            <given-names>ES</given-names>
+          </name>
+          <article-title>A nude mouse model of human osteosarcoma lung metastases for evaluating new therapeutic strategies</article-title>
+          <source>Clin Exp Metastasis</source>
+          <year>1999</year>
+          <volume>17</volume>
+          <issue>6</issue>
+          <fpage>501</fpage>
+          <lpage>506</lpage>
+          <pub-id pub-id-type="pmid">10763916</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rhim</surname>
+            <given-names>JS</given-names>
+          </name>
+          <etal/>
+          <article-title>Characterization of human cells transformed in vitro by N-methyl-N'-nitro-N-nitrosoguanidine</article-title>
+          <source>Int J Cancer</source>
+          <year>1977</year>
+          <volume>19</volume>
+          <issue>4</issue>
+          <fpage>505</fpage>
+          <lpage>510</lpage>
+          <pub-id pub-id-type="pmid">265298</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Fogh</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Fogh</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Orfeo</surname>
+            <given-names>T</given-names>
+          </name>
+          <article-title>One hundred and twenty-seven cultured human tumor cell lines producing tumors in nude mice</article-title>
+          <source>J Natl Cancer Inst</source>
+          <year>1977</year>
+          <volume>59</volume>
+          <issue>1</issue>
+          <fpage>221</fpage>
+          <lpage>226</lpage>
+          <pub-id pub-id-type="pmid">327080</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>Y</given-names>
+          </name>
+          <etal/>
+          <article-title>Detection and verification of glycosylation patterns of glycoproteins from clinical specimens using lectin microarrays and lectin-based immunosorbent assays</article-title>
+          <source>Anal Chem</source>
+          <year>2011</year>
+          <volume>83</volume>
+          <issue>22</issue>
+          <fpage>8509</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="pmid">21975078</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Theriault</surname>
+            <given-names>C</given-names>
+          </name>
+          <etal/>
+          <article-title>MUC16 (CA125) regulates epithelial ovarian cancer cell growth, tumorigenesis and metastasis</article-title>
+          <source>Gynecol Oncol</source>
+          <year>2011</year>
+          <volume>121</volume>
+          <issue>3</issue>
+          <fpage>434</fpage>
+          <lpage>43</lpage>
+          <pub-id pub-id-type="pmid">21421261</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Narimatsu</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Construction of a human glycogene library and comprehensive functional analysis</article-title>
+          <source>Glycoconj J</source>
+          <year>2004</year>
+          <volume>21</volume>
+          <issue>1&#x2013;2</issue>
+          <fpage>17</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="pmid">15467393</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>B</given-names>
+          </name>
+          <etal/>
+          <article-title>Detecting differential and correlated protein expression in label-free shotgun proteomics</article-title>
+          <source>J Proteome Res</source>
+          <year>2006</year>
+          <volume>5</volume>
+          <issue>11</issue>
+          <fpage>2909</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="pmid">17081042</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Benjamini</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Hochberg</surname>
+            <given-names>Y</given-names>
+          </name>
+          <article-title>Controlling the false discovery rate: A practical and powerful approach to multiple testing</article-title>
+          <source>J R Stat Soc</source>
+          <year>1995</year>
+          <volume>Series B</volume>
+          <issue>57</issue>
+          <fpage>289</fpage>
+          <lpage>300</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Gupta</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Jung</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Brunak</surname>
+            <given-names>S</given-names>
+          </name>
+          <source>NetNGlyc 1.0 Server</source>
+          <year>2004</year>
+          <publisher-name>Center For Biological Sequence Analysis, Techical University of Denmark, Kongens Lyngby, Denmark</publisher-name>
+          <comment>available at <ext-link ext-link-type="uri" xlink:href="http://www.cbs.dtu.dk/services/NetNGlyc/">http://www.cbs.dtu.dk/services/NetNGlyc/</ext-link></comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gupta</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Brunak</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Prediction of glycosylation across the human proteome and the correlation to protein function</article-title>
+          <source>Pac Symp Biocomput</source>
+          <year>2002</year>
+          <volume>7</volume>
+          <fpage>310</fpage>
+          <lpage>22</lpage>
+          <pub-id pub-id-type="pmid">11928486</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Qiu</surname>
+            <given-names>J</given-names>
+          </name>
+          <etal/>
+          <article-title>Occurrence of autoantibodies to annexin I, 14-3-3 theta and LAMR1 in prediagnostic lung cancer sera</article-title>
+          <source>J Clin Oncol</source>
+          <year>2008</year>
+          <volume>26</volume>
+          <issue>31</issue>
+          <fpage>5060</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">18794547</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>Z</given-names>
+          </name>
+          <etal/>
+          <article-title>Role of 14-3-3sigma in poor prognosis and in radiation and drug resistance of human pancreatic cancers</article-title>
+          <source>BMC Cancer</source>
+          <year>2010</year>
+          <volume>10</volume>
+          <fpage>598</fpage>
+          <pub-id pub-id-type="pmid">21040574</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tomaino</surname>
+            <given-names>B</given-names>
+          </name>
+          <etal/>
+          <article-title>Circulating autoantibodies to phosphorylated alpha-enolase are a hallmark of pancreatic cancer</article-title>
+          <source>J Proteome Res</source>
+          <year>2011</year>
+          <volume>10</volume>
+          <issue>1</issue>
+          <fpage>105</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="pmid">20455595</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ishiwata</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Matsuda</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Naito</surname>
+            <given-names>Z</given-names>
+          </name>
+          <article-title>Nestin in gastrointestinal and other cancers: effects on cells and tumor angiogenesis</article-title>
+          <source>World J Gastroenterol</source>
+          <year>2011</year>
+          <volume>17</volume>
+          <issue>4</issue>
+          <fpage>409</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="pmid">21274370</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Nijkamp</surname>
+            <given-names>MM</given-names>
+          </name>
+          <etal/>
+          <article-title>Expression of E-cadherin and vimentin correlates with metastasis formation in head and neck squamous cell carcinoma patients</article-title>
+          <source>Radiother Oncol</source>
+          <year>2011</year>
+          <volume>99</volume>
+          <issue>3</issue>
+          <fpage>344</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">21684617</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Vellaichamy</surname>
+            <given-names>A</given-names>
+          </name>
+          <etal/>
+          <article-title>"Topological significance" analysis of gene expression and proteomic profiles from prostate cancer cells reveals key mechanisms of androgen response</article-title>
+          <source>PLoS One</source>
+          <year>2010</year>
+          <volume>5</volume>
+          <issue>6</issue>
+          <fpage>e10936</fpage>
+          <pub-id pub-id-type="pmid">20532174</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dezso</surname>
+            <given-names>Z</given-names>
+          </name>
+          <etal/>
+          <article-title>Identifying disease-specific genes based on their topological significance in protein networks</article-title>
+          <source>BMC Syst Biol</source>
+          <year>2009</year>
+          <volume>3</volume>
+          <fpage>36</fpage>
+          <pub-id pub-id-type="pmid">19309513</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kvinlaug</surname>
+            <given-names>BT</given-names>
+          </name>
+          <etal/>
+          <article-title>Common and Overlapping Oncogenic Pathways Contribute to the Evolution of Acute Myeloid Leukemias</article-title>
+          <source>Cancer Res</source>
+          <year>2011</year>
+          <volume>71</volume>
+          <issue>12</issue>
+          <fpage>4117</fpage>
+          <lpage>4129</lpage>
+          <pub-id pub-id-type="pmid">21505102</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Daves</surname>
+            <given-names>MH</given-names>
+          </name>
+          <etal/>
+          <article-title>Meta-analysis of multiple microarray datasets reveals a common gene signature of metastasis in solid tumors</article-title>
+          <source>BMC Med Genomics</source>
+          <year>2011</year>
+          <volume>4</volume>
+          <issue>1</issue>
+          <fpage>56</fpage>
+          <pub-id pub-id-type="pmid">21736749</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yilmaz</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Christofori</surname>
+            <given-names>G</given-names>
+          </name>
+          <article-title>Mechanisms of motility in metastasizing cells</article-title>
+          <source>Mol Cancer Res</source>
+          <year>2010</year>
+          <volume>8</volume>
+          <issue>5</issue>
+          <fpage>629</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="pmid">20460404</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>K</given-names>
+          </name>
+          <etal/>
+          <article-title>Slug enhances invasion ability of pancreatic cancer cells through upregulation of matrix metalloproteinase-9 and actin cytoskeleton remodeling</article-title>
+          <source>Lab Invest</source>
+          <year>2011</year>
+          <volume>91</volume>
+          <issue>3</issue>
+          <fpage>426</fpage>
+          <lpage>38</lpage>
+          <pub-id pub-id-type="pmid">21283078</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>H</given-names>
+          </name>
+          <etal/>
+          <article-title>Engagement of I-Branching beta}-1, 6-N-Acetylglucosaminyltransferase 2 in Breast Cancer Metastasis and TGF-{beta Signaling</article-title>
+          <source>Cancer Res</source>
+          <year>2011</year>
+          <volume>71</volume>
+          <issue>14</issue>
+          <fpage>4846</fpage>
+          <lpage>4856</lpage>
+          <pub-id pub-id-type="pmid">21750175</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Takebe</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Warren</surname>
+            <given-names>RQ</given-names>
+          </name>
+          <name>
+            <surname>Ivy</surname>
+            <given-names>SP</given-names>
+          </name>
+          <article-title>Breast cancer growth and metastasis: interplay between cancer stem cells, embryonic signaling pathways and epithelial-to-mesenchymal transition</article-title>
+          <source>Breast Cancer Res</source>
+          <year>2011</year>
+          <volume>13</volume>
+          <issue>3</issue>
+          <fpage>211</fpage>
+          <pub-id pub-id-type="pmid">21672282</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Letson</surname>
+            <given-names>GD</given-names>
+          </name>
+          <name>
+            <surname>Muro-Cacho</surname>
+            <given-names>CA</given-names>
+          </name>
+          <article-title>Genetic and molecular abnormalities in tumors of the bone and soft tissues</article-title>
+          <source>Cancer Control</source>
+          <year>2001</year>
+          <volume>8</volume>
+          <issue>3</issue>
+          <fpage>239</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="pmid">11378650</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sudoyo</surname>
+            <given-names>AW</given-names>
+          </name>
+          <name>
+            <surname>Hardi</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>Cytogenetics in solid tumors: lessons from the Philadelphia Chromosome</article-title>
+          <source>Acta Med Indones</source>
+          <year>2011</year>
+          <volume>43</volume>
+          <issue>1</issue>
+          <fpage>68</fpage>
+          <lpage>73</lpage>
+          <pub-id pub-id-type="pmid">21339549</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Espada</surname>
+            <given-names>J</given-names>
+          </name>
+          <etal/>
+          <article-title>Wnt signalling and cancer stem cells</article-title>
+          <source>Clin Transl Oncol</source>
+          <year>2009</year>
+          <volume>11</volume>
+          <issue>7</issue>
+          <fpage>411</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="pmid">19574199</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Guo</surname>
+            <given-names>Y</given-names>
+          </name>
+          <etal/>
+          <article-title>Blocking Wnt/LRP5 signaling by a soluble receptor modulates the epithelial to mesenchymal transition and suppresses met and metalloproteinases in osteosarcoma Saos-2 cells</article-title>
+          <source>J Orthop Res</source>
+          <year>2007</year>
+          <volume>25</volume>
+          <issue>7</issue>
+          <fpage>964</fpage>
+          <lpage>71</lpage>
+          <pub-id pub-id-type="pmid">17318900</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Qiao</surname>
+            <given-names>L</given-names>
+          </name>
+          <etal/>
+          <article-title>Dkk-1 secreted by mesenchymal stem cells inhibits growth of breast cancer cells via depression of Wnt signalling</article-title>
+          <source>Cancer Lett</source>
+          <year>2008</year>
+          <volume>269</volume>
+          <issue>1</issue>
+          <fpage>67</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="pmid">18571836</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Vijayakumar</surname>
+            <given-names>S</given-names>
+          </name>
+          <etal/>
+          <article-title>High-frequency canonical Wnt activation in multiple sarcoma subtypes drives proliferation through a TCF/beta-catenin target gene, CDC25A</article-title>
+          <source>Cancer Cell</source>
+          <year>2011</year>
+          <volume>19</volume>
+          <issue>5</issue>
+          <fpage>601</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="pmid">21575861</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Polakis</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>The many ways of Wnt in cancer</article-title>
+          <source>Curr Opin Genet Dev</source>
+          <year>2007</year>
+          <volume>17</volume>
+          <issue>1</issue>
+          <fpage>45</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="pmid">17208432</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Reya</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Clevers</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Wnt signalling in stem cells and cancer</article-title>
+          <source>Nature</source>
+          <year>2005</year>
+          <volume>434</volume>
+          <issue>7035</issue>
+          <fpage>843</fpage>
+          <lpage>50</lpage>
+          <pub-id pub-id-type="pmid">15829953</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Haydon</surname>
+            <given-names>RC</given-names>
+          </name>
+          <etal/>
+          <article-title>Cytoplasmic and/or nuclear accumulation of the beta-catenin protein is a frequent event in human osteosarcoma</article-title>
+          <source>Int J Cancer</source>
+          <year>2002</year>
+          <volume>102</volume>
+          <issue>4</issue>
+          <fpage>338</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="pmid">12402302</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hoang</surname>
+            <given-names>BH</given-names>
+          </name>
+          <etal/>
+          <article-title>Expression of LDL receptor-related protein 5 (LRP5) as a novel marker for disease progression in high-grade osteosarcoma</article-title>
+          <source>Int J Cancer</source>
+          <year>2004</year>
+          <volume>109</volume>
+          <issue>1</issue>
+          <fpage>106</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="pmid">14735475</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kansara</surname>
+            <given-names>M</given-names>
+          </name>
+          <etal/>
+          <article-title>Wnt inhibitory factor 1 is epigenetically silenced in human osteosarcoma, and targeted disruption accelerates osteosarcomagenesis in mice</article-title>
+          <source>J Clin Invest</source>
+          <year>2009</year>
+          <volume>119</volume>
+          <issue>4</issue>
+          <fpage>837</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="pmid">19307728</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rubin</surname>
+            <given-names>EM</given-names>
+          </name>
+          <etal/>
+          <article-title>Wnt inhibitory factor 1 decreases tumorigenesis and metastasis in osteosarcoma</article-title>
+          <source>Mol Cancer Ther</source>
+          <year>2010</year>
+          <volume>9</volume>
+          <issue>3</issue>
+          <fpage>731</fpage>
+          <lpage>41</lpage>
+          <pub-id pub-id-type="pmid">20197388</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Muller</surname>
+            <given-names>A</given-names>
+          </name>
+          <etal/>
+          <article-title>Involvement of chemokine receptors in breast cancer metastasis</article-title>
+          <source>Nature</source>
+          <year>2001</year>
+          <volume>410</volume>
+          <issue>6824</issue>
+          <fpage>50</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">11242036</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Singh</surname>
+            <given-names>S</given-names>
+          </name>
+          <etal/>
+          <article-title>CXCR1 and CXCR2 enhances human melanoma tumourigenesis, growth and invasion</article-title>
+          <source>Br J Cancer</source>
+          <year>2009</year>
+          <volume>100</volume>
+          <issue>10</issue>
+          <fpage>1638</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="pmid">19401689</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Vicari</surname>
+            <given-names>AP</given-names>
+          </name>
+          <name>
+            <surname>Caux</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Chemokines in cancer</article-title>
+          <source>Cytokine Growth Factor Rev</source>
+          <year>2002</year>
+          <volume>13</volume>
+          <issue>2</issue>
+          <fpage>143</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="pmid">11900990</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jiang</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Enomoto</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Takahashi</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Cell biology of the movement of breast cancer cells: intracellular signalling and the actin cytoskeleton</article-title>
+          <source>Cancer Lett</source>
+          <year>2009</year>
+          <volume>284</volume>
+          <issue>2</issue>
+          <fpage>122</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">19303207</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B53">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Clarke</surname>
+            <given-names>NW</given-names>
+          </name>
+          <name>
+            <surname>Hart</surname>
+            <given-names>CA</given-names>
+          </name>
+          <name>
+            <surname>Brown</surname>
+            <given-names>MD</given-names>
+          </name>
+          <article-title>Molecular mechanisms of metastasis in prostate cancer</article-title>
+          <source>Asian J Androl</source>
+          <year>2009</year>
+          <volume>11</volume>
+          <issue>1</issue>
+          <fpage>57</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="pmid">19050684</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B54">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>von Luettichau</surname>
+            <given-names>I</given-names>
+          </name>
+          <etal/>
+          <article-title>A complex pattern of chemokine receptor expression is seen in osteosarcoma</article-title>
+          <source>BMC Cancer</source>
+          <year>2008</year>
+          <volume>8</volume>
+          <fpage>23</fpage>
+          <pub-id pub-id-type="pmid">18215331</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B55">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>Y</given-names>
+          </name>
+          <etal/>
+          <article-title>Elevated expression of CXC chemokines in pediatric osteosarcoma patients</article-title>
+          <source>Cancer</source>
+          <year>2011</year>
+          <volume>117</volume>
+          <issue>1</issue>
+          <fpage>207</fpage>
+          <lpage>17</lpage>
+          <pub-id pub-id-type="pmid">20806347</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B56">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kim</surname>
+            <given-names>SY</given-names>
+          </name>
+          <etal/>
+          <article-title>Inhibition of the CXCR4/CXCL12 chemokine pathway reduces the development of murine pulmonary metastases</article-title>
+          <source>Clin Exp Metastasis</source>
+          <year>2008</year>
+          <volume>25</volume>
+          <issue>3</issue>
+          <fpage>201</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="pmid">18071913</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B57">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kaji</surname>
+            <given-names>H</given-names>
+          </name>
+          <etal/>
+          <article-title>Lectin affinity capture, isotope-coded tagging and mass spectrometry to identify N-linked glycoproteins</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2003</year>
+          <volume>21</volume>
+          <issue>6</issue>
+          <fpage>667</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="pmid">12754521</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B58">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kaji</surname>
+            <given-names>H</given-names>
+          </name>
+          <etal/>
+          <article-title>Mass spectrometric identification of N-linked glycopeptides using lectin-mediated affinity capture and glycosylation site-specific stable isotope tagging</article-title>
+          <source>Nat Protoc</source>
+          <year>2006</year>
+          <volume>1</volume>
+          <issue>6</issue>
+          <fpage>3019</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="pmid">17406563</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B59">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Nunomura</surname>
+            <given-names>K</given-names>
+          </name>
+          <etal/>
+          <article-title>Cell surface labeling and mass spectrometry reveal diversity of cell surface markers and signaling molecules expressed in undifferentiated mouse embryonic stem cells</article-title>
+          <source>Mol Cell Proteomics</source>
+          <year>2005</year>
+          <volume>4</volume>
+          <issue>12</issue>
+          <fpage>1968</fpage>
+          <lpage>76</lpage>
+          <pub-id pub-id-type="pmid">16176923</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B60">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wollscheid</surname>
+            <given-names>B</given-names>
+          </name>
+          <etal/>
+          <article-title>Mass-spectrometric identification and relative quantification of N-linked cell surface glycoproteins</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2009</year>
+          <volume>27</volume>
+          <issue>4</issue>
+          <fpage>378</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="pmid">19349973</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B61">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wu</surname>
+            <given-names>CC</given-names>
+          </name>
+          <etal/>
+          <article-title>Candidate serological biomarkers for cancer identified from the secretomes of 23 cancer cell lines and the human protein atlas</article-title>
+          <source>Mol Cell Proteomics</source>
+          <year>2010</year>
+          <volume>9</volume>
+          <issue>6</issue>
+          <fpage>1100</fpage>
+          <lpage>17</lpage>
+          <pub-id pub-id-type="pmid">20124221</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B62">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kulasingam</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Diamandis</surname>
+            <given-names>EP</given-names>
+          </name>
+          <article-title>Strategies for discovering novel cancer biomarkers through utilization of emerging technologies</article-title>
+          <source>Nat Clin Pract Oncol</source>
+          <year>2008</year>
+          <volume>5</volume>
+          <issue>10</issue>
+          <fpage>588</fpage>
+          <lpage>99</lpage>
+          <pub-id pub-id-type="pmid">18695711</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B63">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Irizarry</surname>
+            <given-names>RA</given-names>
+          </name>
+          <etal/>
+          <article-title>Exploration, normalization, and summaries of high density oligonucleotide array probe level data</article-title>
+          <source>Biostatistics</source>
+          <year>2003</year>
+          <volume>4</volume>
+          <issue>2</issue>
+          <fpage>249</fpage>
+          <lpage>64</lpage>
+          <pub-id pub-id-type="pmid">12925520</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B64">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bolstad</surname>
+            <given-names>BM</given-names>
+          </name>
+          <etal/>
+          <article-title>A comparison of normalization methods for high density oligonucleotide array data based on variance and bias</article-title>
+          <source>Bioinformatics</source>
+          <year>2003</year>
+          <volume>19</volume>
+          <issue>2</issue>
+          <fpage>185</fpage>
+          <lpage>93</lpage>
+          <pub-id pub-id-type="pmid">12538238</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B65">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Irizarry</surname>
+            <given-names>RA</given-names>
+          </name>
+          <etal/>
+          <article-title>Summaries of Affymetrix GeneChip probe level data</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2003</year>
+          <volume>31</volume>
+          <issue>4</issue>
+          <fpage>e15</fpage>
+          <pub-id pub-id-type="pmid">12582260</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B66">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Craig</surname>
+            <given-names>Parman</given-names>
+          </name>
+          <name>
+            <surname>Conrad</surname>
+            <given-names>Halling</given-names>
+          </name>
+          <name>
+            <surname>Robert</surname>
+            <given-names>Gentleman</given-names>
+          </name>
+          <source>affyQCReport: QC Report Generation for affyBatch objects. R package version 1.32.0</source>
+        </mixed-citation>
+      </ref>
+      <ref id="B67">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kennedy</surname>
+            <given-names>RE</given-names>
+          </name>
+          <name>
+            <surname>Archer</surname>
+            <given-names>KJ</given-names>
+          </name>
+          <name>
+            <surname>Miles</surname>
+            <given-names>MF</given-names>
+          </name>
+          <article-title>Empirical validation of the S-Score algorithm in the analysis of gene expression data</article-title>
+          <source>BMC Bioinforma</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <fpage>154</fpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B68">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kennedy</surname>
+            <given-names>RE</given-names>
+          </name>
+          <etal/>
+          <article-title>SScore: an R package for detecting differential gene expression without gene expression summaries</article-title>
+          <source>Bioinformatics</source>
+          <year>2006</year>
+          <volume>22</volume>
+          <issue>10</issue>
+          <fpage>1272</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="pmid">16574698</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B69">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Nancy</surname>
+            <given-names>LA</given-names>
+          </name>
+          <etal/>
+          <article-title>Proteomic characterization of wheat amyloplasts using identification of proteins by tandem mass spectrometry</article-title>
+          <source>Proteomics</source>
+          <year>2002</year>
+          <volume>2</volume>
+          <issue>9</issue>
+          <fpage>1156</fpage>
+          <lpage>1168</lpage>
+          <pub-id pub-id-type="pmid">12362334</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B70">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yates</surname>
+            <given-names>JR</given-names>
+          </name>
+          <etal/>
+          <article-title>Method to correlate tandem mass spectra of modified peptides to amino acid sequences in the protein database</article-title>
+          <source>Anal Chem</source>
+          <year>1995</year>
+          <volume>67</volume>
+          <issue>8</issue>
+          <fpage>1426</fpage>
+          <lpage>36</lpage>
+          <pub-id pub-id-type="pmid">7741214</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B71">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Nesvizhskii</surname>
+            <given-names>AI</given-names>
+          </name>
+          <etal/>
+          <article-title>A statistical model for identifying proteins by tandem mass spectrometry</article-title>
+          <source>Anal Chem</source>
+          <year>2003</year>
+          <volume>75</volume>
+          <issue>17</issue>
+          <fpage>4646</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="pmid">14632076</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B72">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Edgar</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Domrachev</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Lash</surname>
+            <given-names>AE</given-names>
+          </name>
+          <article-title>Gene Expression Omnibus: NCBI gene expression and hybridization array data repository</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2002</year>
+          <volume>30</volume>
+          <issue>1</issue>
+          <fpage>207</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="pmid">11752295</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

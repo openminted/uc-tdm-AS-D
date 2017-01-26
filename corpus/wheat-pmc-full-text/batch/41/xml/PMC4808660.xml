@@ -1,0 +1,1295 @@
+<?xml version="1.0"?>
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName JATS-journalpublishing1.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Biomed Res Int</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Biomed Res Int</journal-id>
+      <journal-id journal-id-type="publisher-id">BMRI</journal-id>
+      <journal-title-group>
+        <journal-title>BioMed Research International</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">2314-6133</issn>
+      <issn pub-type="epub">2314-6141</issn>
+      <publisher>
+        <publisher-name>Hindawi Publishing Corporation</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4808660</article-id>
+      <article-id pub-id-type="doi">10.1155/2016/3524908</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>SNP Mining in Functional Genes from Nonmodel Species by Next-Generation Sequencing: A Case of Flowering, Pre-Harvest Sprouting, and Dehydration Resistant Genes in Wheat</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Zhong-Xu</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Deng</surname>
+            <given-names>Mei</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-5019-6844</contrib-id>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Ji-Rui</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1"/>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="I1">Triticeae Research Institute, Sichuan Agricultural University, Chengdu 611130, China</aff>
+      <author-notes>
+        <corresp id="cor1">*Ji-Rui Wang: <email>wangjirui@gmail.com</email></corresp>
+        <fn fn-type="other">
+          <p>Academic Editor: Hongwei Wang</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <year>2016</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>14</day>
+        <month>3</month>
+        <year>2016</year>
+      </pub-date>
+      <volume>2016</volume>
+      <elocation-id>3524908</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>30</day>
+          <month>12</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>18</day>
+          <month>2</month>
+          <year>2016</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2016 Zhong-Xu Chen et al.</copyright-statement>
+        <copyright-year>2016</copyright-year>
+        <license license-type="open-access">
+          <license-p>This is an open access article distributed under the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>As plenty of nonmodel plants are without genomic sequences, the combination of molecular technologies and the next generation sequencing (NGS) platform has led to a new approach to study the genetic variations of these plants. Software GATK, SOAPsnp, samtools, and others are often used to deal with the NGS data. In this study, BLAST was applied to call SNPs from 16 mixed functional gene's sequence data of polyploidy wheat. In total 1.2 million reads were obtained with the average of 7500 reads per genes. To get accurate information, 390,992 pair reads were successfully assembled before aligning to those functional genes. Standalone BLAST tools were used to map assembled sequence to functional genes, respectively. Polynomial fitting was applied to find the suitable minor allele frequency (MAF) threshold at 6% for assembled reads of each functional gene. SNPs accuracy form assembled reads, pretrimmed reads, and original reads were compared, which declared that SNPs mined from the assembled reads were more reliable than others. It was also demonstrated that mixed samples' NGS sequences and then analysis by BLAST were an effective, low-cost, and accurate way to mine SNPs for nonmodel species. Assembled reads and polynomial fitting threshold were recommended for more accurate SNPs target.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1">
+      <title>1. Background</title>
+      <p>Next-generation sequencing technologies (e.g., Solexa/Illumina, SOLiD/ABI, 454/Roche, and HeliScope/Helicos) have opened a new field to genotype analysis of nonmodel organisms. Technologies generating long-sequence reads (200&#x2013;400&#x2009;bp) are increasingly used in evolutionary studies of nonmodel organisms, but the short sequence reads (30&#x2013;150&#x2009;bp) can be produced at lower cost and with more sequence data per run [<xref rid="B1" ref-type="bibr">1</xref>]. Short-read technologies are typically best suitable for resequencing projects where a reference genome on which the reads can be mapped is already available [<xref rid="B2" ref-type="bibr">2</xref>, <xref rid="B3" ref-type="bibr">3</xref>]. Because of the short-read lengths, the application of NGS technologies has generally been restricted to nonmodel organisms for which the genome sequences is not available. However, recently many algorithmic and experimental advances have made it possible to succeed at de novo sequence projects [<xref rid="B4" ref-type="bibr">4</xref>&#x2013;<xref rid="B6" ref-type="bibr">6</xref>]. But some of these reads (both long and short) contain adapters and other exogenous contents by experimental designs. On other cases, adapters were sequenced inadvertently when they are out of operational errors and other unknown reasons. If these adapters were not trimmed out, they would interfere with the downstream data analysis, such as mapping the reads to the reference genome and de novo assembly [<xref rid="B7" ref-type="bibr">7</xref>, <xref rid="B8" ref-type="bibr">8</xref>].</p>
+      <p>For most of the next-generation sequencing technologies (both single-read and paired-end libraries), the quality of the sequencing gets lower while approaching the end of the reads. If excessive sequencing errors occurred in the end of the reads, this would affect the accuracy of mapping and other downstream analysis, even if the reads contain high-quality bases in the beginning. To prevent otherwise high-quality reads from being rejected during quality filtering or from influencing mapping or assembly processes, it can be beneficial to trim bases from poor-quality ends of reads [<xref rid="B9" ref-type="bibr">9</xref>]. Illumina's sequencing by synthesis (SBS) technology (Illumina report) is the most successful and widely adopted next-generation sequencing platform worldwide, which is also the only platform that offers a short-insert paired-end capability for high-resolution genome sequencing as well as long-insert paired-end reads using the same robust chemistry for efficient sequence assembly, de novo sequencing, large-scale structural variation detection, and so on [<xref rid="B10" ref-type="bibr">10</xref>].</p>
+      <p>Triticeae has large and complex genomes with a great abundance of repeated sequences, which does not have a very good whole genome reference available now. Studies on these plants whose polyploidy has further increased genome size and complexity have not been able to fully take advantage of next-generation sequencing for SNP discovery (since SNPs are of more importance on functional genes coding region, 16 genes were molecular-cloned and resequenced form wheat as a case). After these genes were cloned and mixed, these genes were resequenced by NGS Solexa platform and SNPs were called following our pipelines in <xref ref-type="fig" rid="fig1">Figure 1</xref>. The polynomial fitting equation was applied to find the best threshold value to filter the low quality SNPs.</p>
+    </sec>
+    <sec id="sec2">
+      <title>2. Materials and Methods</title>
+      <sec id="sec2.1">
+        <title>2.1. DNA Isolation and PCR Amplification</title>
+        <p>Genomic DNA was extracted from leaves of single plants of about 2 weeks old with a modified CTAB protocol. 16 functional genes were randomly selected from NCBI database with the sequences as reference in the following study (<xref ref-type="table" rid="tab1">Table 1</xref>).</p>
+        <p>Anchored primers were designed on the basis of conserved sequences outside of the polymorphic regions. PCR amplification was performed with GeneAmp PTC-240 cycler (Bio-Rad) in 50&#x2009;<italic>&#x3BC;</italic>L volume which consisted of 100&#x2009;ng of genomic DNA, 100&#x2009;<italic>&#x3BC;</italic>M of each dNTP, 1&#x2009;<italic>&#x3BC;</italic>M of each primer, 1&#x2009;U Taq polymerase with high fidelity, 1.5&#x2009;mM Mg<sup>2+</sup>, and 1x PCR buffer. The cycling parameters were 95&#xB0;C for 5&#x2009;min to predenature, followed by 35 cycles of 95&#xB0;C for 50&#x2009;sec, 50&#x2013;60&#xB0;C for 30&#x2009;sec and 72&#xB0;C 45&#x2009;sec, and a final extension at 72&#xB0;C for 5&#x2009;min. Desired PCR products were obtained by agarose gel. The fragments of genes were mixed with similar concentration.</p>
+      </sec>
+      <sec id="sec2.2">
+        <title>2.2. Sequence Data Quantity and Quality</title>
+        <p>Ten mixed DNA samples were sequenced in one run with Illumina Solexa platform. We get the sequencing result as pairing reads, which was stored in two fastq files, &#x201C;read_1.fq&#x201D; and &#x201C;read_2.fq,&#x201D; respectively. The sequences at the same position from read_1.fq and read_2.fq are pairing. In each file there were about 0.6 million reads and all reads were the same in length. Each pair should belong to the same reference gene and the paired sequences reversed complementary to each other. File read_1 and file read_2 are corresponding to each other in lines. read_1 is positive sequencing result while read_2 is reverse complementary sequencing result and they could be assembled into one tag if both reads were of high quality (<xref ref-type="fig" rid="fig2">Figure 2</xref>). Usually raw reads that only have 3&#x2032; adaptor fragments should be removed before data analysis. The following analysis was carried out after the dirty raw reads were removed (Illumina report).</p>
+      </sec>
+      <sec id="sec2.3">
+        <title>2.3. Assembly and Alignment</title>
+        <p>Theoretically, the overlap part of two assembled reads should have totally consistent code. But because the sequencing techniques still have read errors, there will be some low quality locus at the end of the sequence. Generally, when we intend to map reads to reference, we will take a reads quality inspection and cut some length to control the read quality. In this study, to avoid the influence of the final SNP sites statistic caused by such case, we set such locus of each assemble sequence as &#x201C;N&#x201D; (<xref ref-type="fig" rid="fig2">Figure 2</xref>). In the following basic group frequency statistic of reference sequence, &#x201C;N&#x201D; is not participated in the statistic. Thus it eliminates the problem of bad quality of reads in the end; meanwhile it reduces the influence of the SNP quality sites caused by the whole segment sequencing.</p>
+        <p>As there was no genome reference in nonmodel plant, people usually do mapping works without a genome reference and then calculate the SNPs [<xref rid="B11" ref-type="bibr">11</xref>, <xref rid="B12" ref-type="bibr">12</xref>]. Here the DNA sequences of known functional gene were used as reference. To make reads align to reference, we make all the assembled reads into databases with<italic> standalone BLAST tool</italic> (NCBI). Meanwhile to compare the quality difference between assembled reads and nonassembled reads from the same sequence file, among the rest of reads the nonassembled ones were also made into a new database. Then we used the function genes as the query sequence to blast in the database by basic local alignment algorithm [<xref rid="B13" ref-type="bibr">13</xref>]. In some of our function genes there are several low-complexity fragments and at the same time the BLAST tool will not calculate the low-complexity part as default. Therefore, we should set the &#x201C;-F&#x201D; as &#x201C;F&#x201D; to close the low-complexity filter when we use the<italic> blast all</italic> command. To compare the quality of the assembled reads and nonassembled reads, another database was set up by nonassembled reads and the 16 function genes were blast in each database. Blast of 16 genes (with 800&#x2009;bp average length) in one database containing 0.4 million reads could be completed in 10&#x2009;minutes by regular PC.</p>
+      </sec>
+      <sec id="sec2.4">
+        <title>2.4. SNPs Calling</title>
+        <p>Researchers selected SNPs when the MAF is more than 1% for human sequences, while they selected MAF &gt; 5% for plant sequences. All of those are an estimate threshold. As we all know, different experiments may have their own errors and the sequence quality is also different when different technology platforms were used. In this study, we present a new way to find a reasonable MAF for each independent experiment. First we selected some stable genes which were already known as comparable samples and sequence with other samples together. Then the ratios of SNPs change by the MAF were calculated. To observe those trends of SNPs rations variation feature better, polynomial equation was applied to fit the curves (theoretically, N-order polynomial can approximate to any nonlinear function). We derived the first-order differential equation of fitting polynomial equation and that is the accelerating equation of initial equation. The stable value of the accelerated curve was the best threshold.</p>
+        <p>To check the result of SNPs' ratio by this process, the pretrimmed reads and original reads (clean and adapts discarded) were also used to map and screen SNPs. Three kinds of reads data were compared by SNPs' ratio and position. The assembled reads data should have less SNPs than other reads at the same MAF threshold.</p>
+      </sec>
+    </sec>
+    <sec id="sec3">
+      <title>3. Result and Discussion</title>
+      <sec id="sec3.1">
+        <title>3.1. Assembled Reads</title>
+        <p>16 function gene samples were sequenced in one run and 2 fastq files (each file contains 589573 reads) were output. The usage of the methods referred above to assembled reads and 390992 pairs of reads were successfully assembled. The assembled reads rate was about 66.32%. The average length of assembled reads was 155.10, which illustrated that when two reads assembled nearly 50&#x2009;bp locus will be overlapped. Over 98.56% assembled reads were assembled by reverse complementary reads; meanwhile the 1.5% assembled reads from others may have very low quality. To get accurate result, raw data were reprocessed (<xref ref-type="fig" rid="fig1">Figure 1</xref>), and only assembled reads with both forward and reverse complementary reads were selected for accurate sequence. As we checked the sequence data, only 15~20&#x2009;bp of original reads in the end were of low quality. Thus the low quality segment of the two reads will be aligned to the other reads (<xref ref-type="fig" rid="fig2">Figure 2</xref>). If there is any different code at the alignment locus, that locus will be set as &#x201C;N&#x201D; and when we align reads to references sequence, &#x201C;N&#x201D; will not be calculated. Thus, the problem of low quality segment in the reads will be solved. In blast result of the nonassembled reads database, most contigs are longer than 80&#x2009;bp; meanwhile when blasting in assembled reads database, there were many short contigs (more or less than 20&#x2009;bp) aligned to references. We use standalone BLAST tool to blast function genes in local database. To compare the sequence quality of the assembled and nonassembled reads, we made two local databases.</p>
+        <p>One database consists of assembled reads and the other consists of nonassembled reads. When blasting in the assembled reads database, 321919 contigs have successfully aligned to the function genes when the identity threshold was set as 85% identities and the number of contigs changed to 249076 by the threshold 90% identities. As a result of blasting in nonassembled database, 314977 contigs from 397162 recorders were aligned to the same query sequence (<xref ref-type="table" rid="tab2">Table 2</xref>). Comparing both assembled and nonassembled valid reads by different blast thresholds, assembled sequence performed high mapping rate (<xref ref-type="fig" rid="fig3">Figure 3</xref>). We found that the rates of the successful aligned contigs in each database, both assembled and nonassembled reads, were of little difference. When the identity threshold rises up, the two rate curves become nearly coincident. This illustrated that the assembled reads and nonassembled reads may have similar correct alignment contigs rate on quantity.</p>
+      </sec>
+      <sec id="sec3.2">
+        <title>3.2. SNPs Calling</title>
+        <p>It is widely believed that SNP could be identified in human gene if the frequency of second base was above 1%. But there is no uniform criterion in plant gene. People who study on crops usually select the threshold value of SNP screening by experience or according to actual condition. If the threshold was too low, some false SNPs would be selected; if the threshold was high, a few of real SNPs could not be completely selected. When threshold was set at 1% in our study, there were too many SNPs in some genes, such as<italic> WCOR14</italic>,<italic> LEA1</italic>, and<italic> LEC1</italic>; the rate of SNP in each reference gene almost reached 40%. That is not reasonable.</p>
+        <p>To find better threshold value for SNP screening in this study, we set the threshold from 1% to 20% by 1% increase and plotted the curves of<italic> ACC1</italic>,<italic> PhyC</italic>, and<italic> Q</italic> genes' SNP rate variation trend (<xref ref-type="fig" rid="fig4">Figure 4(a)</xref>). Because<italic> ACC1</italic>,<italic> PhyC</italic>, and<italic> Q</italic> genes were known as stable genes, we use their SNPs rate variation curve as reference to analysis curve character and find out the best second code rate threshold. We could clearly find that the SNPs rate by nonassembled reads was higher than SNPs rate by assembled reads. Meanwhile the SNPs rate curve of nonassembled keeps descending most of the time, but the assembled reads SNPs curve becomes relatively stable when the second code rises up to 4%. It revealed that nonassembled reads will bring in more SNPs. Most contigs aligned to the function genes in nonassembled reads database were over 80&#x2009;bp with some low quality locus at the end of the sequence. But the assembled reads have about 50&#x2009;bp overlap locus at average. When two reads assembled into a sequence, those overlap loci with different codes from two reads were set as &#x201C;N&#x201D; (<xref ref-type="fig" rid="fig2">Figure 2</xref>) and will not be statistic as potential SNPs. That is why assembled reads are of higher quality than nonassembled reads. So we suggest using assembled sequence to get accurate SNPs or MSV information.</p>
+        <p>In our study, to find the best MAF to screen SNPs, we only discuss the results from assembled reads database. All the solid lines descended fast in the beginning and become stable after 4% or 5% second code rate (<xref ref-type="fig" rid="fig4">Figure 4</xref>). The severe decline may be caused by the sequencing precision. To eliminate the problem by sequencing quality reasonably, selecting an appropriate threshold is more significant. Polynomial fitting method was used to fit the curve to get more information about the curve variation rate. After examination, the 6-order polynomial turned out to be the best one to fit the curves. Then we computed first-order differential of the fitted equation and got the curve variation equations. From derivation equation curve (<xref ref-type="fig" rid="fig4">Figure 4</xref>), it showed us the acceleration of SNPs rate descent. When the acceleration became near 0, there were few variations in the initial curve. It means that the rate of SNPs will remain unchanged when the threshold rises up. According to <xref ref-type="fig" rid="fig4">Figure 4</xref>, we chose 6% as the second threshold in our study. In future research, the new MAF threshold should be calculated based on the new sequence result.</p>
+        <p>As designed, the assembled reads have high quality and when they are aligned to reference genes, they will perform more quality than others reads. Here we compared the castoff length while reads aligned to sequence with nonassembled reads, assembled reads, pretrimmed reads, and original reads. The pretrimmed reads were original reads cut by the end of 20&#x2009;bp before being used to align to reference. Original reads came from the sequence result without any process. It declared that most reads were zero-cut in the process of alignment (<xref ref-type="fig" rid="fig5">Figure 5</xref>). But the assembled reads have more proportion of zero-cut; over 65% reads were zero-cut. Obviously the nonassembled reads have the longest length cut than the other three reads, which illustrated that the reads that cannot be assembled from original reads were of lower quality than the reads that can be assembled. Consequently, if we just use the part of assembled reads for SNPs, we could get more accurate result.</p>
+        <p>There are not as much reads as pretrimmed and original reads in assembled database. The overlaps of each gene from assembled reads were lower than other two databases (<xref ref-type="fig" rid="fig6">Figure 6</xref>). But in assembled reads database the lowest overlap in<italic> Q</italic> gene still exceeds 100. Although the number of assembled reads is not as much as others, it still has a reliable overlap. We can see that the average overlap of each gene is not homogeneous;<italic> PhyC</italic> gene had 341.83 overlaps,<italic> ACC1</italic> gene 793.03, and<italic> Q</italic> gene 1764.03. That is because the PCR samples concentration we mixed was not under the same uniformity. To get more average overlap, the sample concentration should be as equal as possible.</p>
+        <p>The advantage of assembled reads in SNPs analysis is that they perform more accurately. In <xref ref-type="table" rid="tab3">Table 3</xref>, there were SNPs from the main stable genes we discussed before. By the same MAF threshold (6%),<italic> ACC1</italic> gene had 10 SNPs from assembled and pretrimmed reads database and had 16 SNPs when aligned by original reads, but in<italic> PhyC</italic> and<italic> Q</italic> gene, less SNPs were screened by assembly. The quality of reads will determine the reliability of SNPs. As original reads have low sequence quality at the end of 15&#x2009;bp, the pretrimmed reads will surely have high sequence quality and alignment quality. The high-quality reads could avoid bringing too much false SNPs and be aligned to reference more accurate. The SNPs of each gene screened by pretrimmed reads and assembled reads were all overlapped with SNPs from original reads (<xref ref-type="fig" rid="fig7">Figure 7(a)</xref>). It is as estimated that assembled and pretrimmed reads will screen less SNPs than original reads. Form the SNPs relationship diagram we can find that most SNPs in assembled reads were overlapped with pretrimmed reads. Only one SNP of<italic> ACC1</italic> gene was not matched. Then we checked that the unmatched SNPs were at 80th (assembled) and 387th (pretrimmed) loci. At the 80th locus, main code was C and minor one is T. The proportion of T from assembled reads was more than that from both original and pretrimmed (<xref ref-type="fig" rid="fig7">Figure 7(b)</xref>). Judging from the result of sequencing, different reads had different sequence quality at the same locus, which caused gravity of code skewing to main code. But we set the mismatched locus as &#x201C;N&#x201D; without considering the gravity of code when we assembled reads. In that way, the skewing of main code gravity whose low sequence reads brought in was relieved and allowed us to use high-quality reads to get accurate SNPs. At the 387th locus, the proportion of minor code decreased progressively from original to assembled reads. Based on our design ideas, the decrease of minor code proportion may be caused by high-quality reads which we used to align to reference.</p>
+        <p>We marked all the SNPs from the assembled and nonassembled reads on the genes (<xref ref-type="fig" rid="fig8">Figure 8</xref>). There was large amount of distributed SNPs which only discovered in nonassembled reads (orange color) even in stable genes<italic> ACC1</italic>,<italic> PhyC</italic>, and<italic> Q</italic>. Many of them may be false SNPs because of the low quality reads. SNPs markers only from assembled reads (green color) were less than those from nonassembled. It was proved that the reads with higher quality could be assembled easier than that without enough quality. We suggest discarding the reads that could not be assembled when using this method to mine SNPs for getting more reliable information.</p>
+        <p>The blue and green markers were the final SNPs position tags we found in this study. There were incredible quantities of SNPs in some genes (<xref ref-type="fig" rid="fig8">Figure 8</xref>). As wheat was one of organics which have the most complex genome, it has a large genome size and a high proportion of repetitive elements (85&#x2013;90%) [<xref rid="B14" ref-type="bibr">14</xref>, <xref rid="B15" ref-type="bibr">15</xref>]. Many duplicate SNPs may be nothing more than paralogous sequence variants (PSVs). Alternatively, gene conversion in duplicate may generate allelic diversity. So the SNPs in our result could be explained as the PSVs or polymorphism multisite variation (MSV) [<xref rid="B16" ref-type="bibr">16</xref>, <xref rid="B17" ref-type="bibr">17</xref>].</p>
+      </sec>
+    </sec>
+    <sec id="sec4">
+      <title>4. Conclusion</title>
+      <p>As the high throughput next-generation sequence technology is progressing almost every year, more long read sequence will be brought to us, such as PacBio that will make more easy way for calling SNPs in nonreference species [<xref rid="B18" ref-type="bibr">18</xref>]. Particularly for plants with large and complex genome, more long and accurate technology will be helpful in calling SNP [<xref rid="B19" ref-type="bibr">19</xref>, <xref rid="B20" ref-type="bibr">20</xref>] (what a pity that PacBio is still a very high-cost way compared to Illumina system). This study aims at finding an efficient and flexible pipeline to mine SNPs with low cost for function genes of nonmodel plant. In outline, our strategy is to mix as much DNA samples as we required and sequence by one run and then use assembled reads to make database for mapping by local blast algorithm computational tools and meanwhile utilize function gene sequence as reference and finally analyze the resulting genotyping data and screen SNPs. The result demonstrated that several function genes of nonmodel plants can be molecular-cloned, mixed to sequence, and analyzed after being assembled and aligned. The assembled reads performed more accurately than the trimmed reads when they are aligned to references (functional genes). Utilizing polynomial fitting and differential equation to find the best MAF threshold is more reasonable.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>This work was supported by the National Basic Research Program of China (2014CB147200) and the National Natural Science Foundation of China (31171555 and 31571654). Zhong-Xu Chen was supported by the Miaozi Project from Science &amp; Technology Department of Sichuan Province (2015RZ0026).</p>
+    </ack>
+    <sec>
+      <title>Competing Interests</title>
+      <p>The authors declare that there is no conflict of interests regarding the publication of this paper.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mardis</surname>
+              <given-names>E. R.</given-names>
+            </name>
+          </person-group>
+          <article-title>The impact of next-generation sequencing technology on genetics</article-title>
+          <source>
+            <italic>Trends in Genetics</italic>
+          </source>
+          <year>2008</year>
+          <volume>24</volume>
+          <issue>3</issue>
+          <fpage>133</fpage>
+          <lpage>141</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tig.2007.12.007</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-39649117755</pub-id>
+          <pub-id pub-id-type="pmid">18262675</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Whiteford</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Haslam</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Weber</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>An analysis of the feasibility of short read sequencing</article-title>
+          <source>
+            <italic>Nucleic Acids Research</italic>
+          </source>
+          <year>2005</year>
+          <volume>33</volume>
+          <issue>19, article e171</issue>
+          <pub-id pub-id-type="doi">10.1093/nar/gni170</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-32944474474</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schuster</surname>
+              <given-names>S. C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Next-generation sequencing transforms today's biology</article-title>
+          <source>
+            <italic>Nature Methods</italic>
+          </source>
+          <year>2008</year>
+          <volume>5</volume>
+          <issue>1</issue>
+          <fpage>16</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="doi">10.1038/nmeth1156</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-37749031255</pub-id>
+          <pub-id pub-id-type="pmid">18165802</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zerbino</surname>
+              <given-names>D. R.</given-names>
+            </name>
+            <name>
+              <surname>Birney</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Velvet: algorithms for de novo short read assembly using de Bruijn graphs</article-title>
+          <source>
+            <italic>Genome Research</italic>
+          </source>
+          <year>2008</year>
+          <volume>18</volume>
+          <issue>5</issue>
+          <fpage>821</fpage>
+          <lpage>829</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.074492.107</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-43149115851</pub-id>
+          <pub-id pub-id-type="pmid">18349386</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Butler</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>MacCallum</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Kleber</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>ALLPATHS: de novo assembly of whole-genome shotgun microreads</article-title>
+          <source>
+            <italic>Genome Research</italic>
+          </source>
+          <year>2008</year>
+          <volume>18</volume>
+          <issue>5</issue>
+          <fpage>810</fpage>
+          <lpage>820</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.7337908</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-43149086380</pub-id>
+          <pub-id pub-id-type="pmid">18340039</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Simpson</surname>
+              <given-names>J. T.</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Jackman</surname>
+              <given-names>S. D.</given-names>
+            </name>
+            <name>
+              <surname>Schein</surname>
+              <given-names>J. E.</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>S. J. M.</given-names>
+            </name>
+            <name>
+              <surname>Birol</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <article-title>ABySS: a parallel assembler for short read sequence data</article-title>
+          <source>
+            <italic>Genome Research</italic>
+          </source>
+          <year>2009</year>
+          <volume>19</volume>
+          <issue>6</issue>
+          <fpage>1117</fpage>
+          <lpage>1123</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.089532.108</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-66449136667</pub-id>
+          <pub-id pub-id-type="pmid">19251739</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmieder</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Quality control and preprocessing of metagenomic datasets</article-title>
+          <source>
+            <italic>Bioinformatics</italic>
+          </source>
+          <year>2011</year>
+          <volume>27</volume>
+          <issue>6</issue>
+          <fpage>863</fpage>
+          <lpage>864</lpage>
+          <pub-id pub-id-type="publisher-id">btr026</pub-id>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btr026</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-79952422304</pub-id>
+          <pub-id pub-id-type="pmid">21278185</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Patel</surname>
+              <given-names>R. K.</given-names>
+            </name>
+            <name>
+              <surname>Jain</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>NGS QC toolkit: a toolkit for quality control of next generation sequencing data</article-title>
+          <source>
+            <italic>PLoS ONE</italic>
+          </source>
+          <year>2012</year>
+          <volume>7</volume>
+          <issue>2</issue>
+          <pub-id pub-id-type="publisher-id">e30619</pub-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0030619</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-84856468953</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blankenberg</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Von Kuster</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Manipulation of FASTQ data with galaxy</article-title>
+          <source>
+            <italic>Bioinformatics</italic>
+          </source>
+          <year>2010</year>
+          <volume>26</volume>
+          <issue>14</issue>
+          <fpage>1783</fpage>
+          <lpage>1785</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btq281</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-77954489376</pub-id>
+          <pub-id pub-id-type="pmid">20562416</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10">
+        <label>10</label>
+        <element-citation publication-type="other">
+          <collab>Illumina Technology</collab>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.illumina.com/techniques/sequencing.html">http://www.illumina.com/techniques/sequencing.html</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="B11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ratan</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>V. M.</given-names>
+            </name>
+            <name>
+              <surname>Schuster</surname>
+              <given-names>S. C.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Calling SNPs without a reference sequence</article-title>
+          <source>
+            <italic>BMC Bioinformatics</italic>
+          </source>
+          <year>2010</year>
+          <volume>11, article 130</volume>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-11-130</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-77949442104</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>You</surname>
+              <given-names>F. M.</given-names>
+            </name>
+            <name>
+              <surname>Huo</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Deal</surname>
+              <given-names>K. R.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Annotation-based genome-wide SNP discovery in the large and complex <italic>Aegilops tauschii</italic> genome using next-generation sequencing without a reference genome sequence</article-title>
+          <source>
+            <italic>BMC Genomics</italic>
+          </source>
+          <year>2011</year>
+          <volume>12, article 59</volume>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-12-59</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-78951478131</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altschul</surname>
+              <given-names>S. F.</given-names>
+            </name>
+            <name>
+              <surname>Gish</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>E. W.</given-names>
+            </name>
+            <name>
+              <surname>Lipman</surname>
+              <given-names>D. J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>
+            <italic>Journal of Molecular Biology</italic>
+          </source>
+          <year>1990</year>
+          <volume>215</volume>
+          <issue>3</issue>
+          <fpage>403</fpage>
+          <lpage>410</lpage>
+          <pub-id pub-id-type="doi">10.1006/jmbi.1990.9999</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0025183708</pub-id>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flavell</surname>
+              <given-names>R. B.</given-names>
+            </name>
+            <name>
+              <surname>Bennett</surname>
+              <given-names>M. D.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>J. B.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>D. B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome size and the proportion of repeated nucleotide sequence DNA in plants</article-title>
+          <source>
+            <italic>Biochemical Genetics</italic>
+          </source>
+          <year>1974</year>
+          <volume>12</volume>
+          <issue>4</issue>
+          <fpage>257</fpage>
+          <lpage>269</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00485947</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0016351896</pub-id>
+          <pub-id pub-id-type="pmid">4441361</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trick</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Adamski</surname>
+              <given-names>N. M.</given-names>
+            </name>
+            <name>
+              <surname>Mugford</surname>
+              <given-names>S. G.</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>C.-C.</given-names>
+            </name>
+            <name>
+              <surname>Febrer</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Uauy</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Combining SNP discovery from next-generation sequencing data with bulked segregant analysis (BSA) to fine-map genes in polyploid wheat</article-title>
+          <source>
+            <italic>BMC Plant Biology</italic>
+          </source>
+          <year>2012</year>
+          <volume>12, article 14</volume>
+          <pub-id pub-id-type="doi">10.1186/1471-2229-12-14</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-84856121095</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Estivill</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Cheung</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Pujana</surname>
+              <given-names>M. A.</given-names>
+            </name>
+            <name>
+              <surname>Nakabayashi</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Scherer</surname>
+              <given-names>S. W.</given-names>
+            </name>
+            <name>
+              <surname>Tsui</surname>
+              <given-names>L.-C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Chromosomal regions containing high-density and ambiguously mapped putative single nucleotide polymorphisms (SNPs) correlate with segmental duplications in the human genome</article-title>
+          <source>
+            <italic>Human Molecular Genetics</italic>
+          </source>
+          <year>2002</year>
+          <volume>11</volume>
+          <issue>17</issue>
+          <fpage>1987</fpage>
+          <lpage>1995</lpage>
+          <pub-id pub-id-type="doi">10.1093/hmg/11.17.1987</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0037101840</pub-id>
+          <pub-id pub-id-type="pmid">12165560</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fredman</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>S. J.</given-names>
+            </name>
+            <name>
+              <surname>Potter</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Eichler</surname>
+              <given-names>E. E.</given-names>
+            </name>
+            <name>
+              <surname>Den Dunnen</surname>
+              <given-names>J. T.</given-names>
+            </name>
+            <name>
+              <surname>Brookes</surname>
+              <given-names>A. J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Complex SNP-related sequence variation in segmental genome duplications</article-title>
+          <source>
+            <italic>Nature Genetics</italic>
+          </source>
+          <year>2004</year>
+          <volume>36</volume>
+          <issue>8</issue>
+          <fpage>861</fpage>
+          <lpage>866</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng1401</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-3543040014</pub-id>
+          <pub-id pub-id-type="pmid">15247918</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roberts</surname>
+              <given-names>R. J.</given-names>
+            </name>
+            <name>
+              <surname>Carneiro</surname>
+              <given-names>M. O.</given-names>
+            </name>
+            <name>
+              <surname>Schatz</surname>
+              <given-names>M. C.</given-names>
+            </name>
+          </person-group>
+          <article-title>The advantages of SMRT sequencing</article-title>
+          <source>
+            <italic>Genome Biology</italic>
+          </source>
+          <year>2013</year>
+          <volume>14</volume>
+          <issue>7</issue>
+          <fpage>p. 405</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2013-14-6-405</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-84879808057</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huddleston</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Ranade</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Malig</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Reconstructing complex regions of genomes using long-read sequencing technology</article-title>
+          <source>
+            <italic>Genome Research</italic>
+          </source>
+          <year>2014</year>
+          <volume>24</volume>
+          <issue>4</issue>
+          <fpage>688</fpage>
+          <lpage>696</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.168450.113</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-84897965254</pub-id>
+          <pub-id pub-id-type="pmid">24418700</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rhoads</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Au</surname>
+              <given-names>K. F.</given-names>
+            </name>
+          </person-group>
+          <article-title>PacBio sequencing and its applications</article-title>
+          <source>
+            <italic>Genomics, Proteomics &amp; Bioinformatics</italic>
+          </source>
+          <year>2015</year>
+          <volume>13</volume>
+          <issue>5</issue>
+          <fpage>278</fpage>
+          <lpage>289</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.gpb.2015.08.002</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="fig1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p>The main steps to mine SNPs on function genes.</p>
+      </caption>
+      <graphic xlink:href="BMRI2016-3524908.001"/>
+    </fig>
+    <fig id="fig2" orientation="portrait" position="float">
+      <label>Figure 2</label>
+      <caption>
+        <p>Reads assembly. A(i).fastq and B(i).fastq were one-paired-end reads. The color lines were low quality parts (20&#x2009;bp). Purple wireframe was the assembled reads part. Solid triangle was the locus which was not consistent in two reads. Paired-end reads were reverse compliment reads. To assemble the two reads, reverse compliment sequence should be calculated by one of them and the other one should be kept. The entire mismatch locus would be set as &#x201C;N.&#x201D;</p>
+      </caption>
+      <graphic xlink:href="BMRI2016-3524908.002"/>
+    </fig>
+    <fig id="fig3" orientation="portrait" position="float">
+      <label>Figure 3</label>
+      <caption>
+        <p>Rate curve of reads can be aligned to reference by identity varied. The valid contigs rate equals the number of the contigs which successfully aligned to references dividing the total reads number in the database.</p>
+      </caption>
+      <graphic xlink:href="BMRI2016-3524908.003"/>
+    </fig>
+    <fig id="fig4" orientation="portrait" position="float">
+      <label>Figure 4</label>
+      <caption>
+        <p>Curve of SNPs rate with the threshold value of MAF variation. (a) SNPs rate curves. The <italic>x</italic>-axis shows the MAF variation and the <italic>y</italic>-axis was the SNPs' proportion in each gene. Solid lines are a result of assembled reads and dotted lines are of nonassembled reads. (b) The curve of accelerating equation from assembled database. The <italic>x</italic>-axis is also the MAF variation, but the <italic>y</italic>-axis was the acceleration of SNPs variation by MAF. The curve was calculated by the fitting polynomial from (a).</p>
+      </caption>
+      <graphic xlink:href="BMRI2016-3524908.004"/>
+    </fig>
+    <fig id="fig5" orientation="portrait" position="float">
+      <label>Figure 5</label>
+      <caption>
+        <p>Proportions of reads were trimmed by different length. The <italic>x</italic>-axis was the lengths of reads which were trimmed by local blast algorithm. The <italic>y</italic>-axis was the proportion of each trimmed length. The less the length was trimmed the less the low quality parts the reads have.</p>
+      </caption>
+      <graphic xlink:href="BMRI2016-3524908.005"/>
+    </fig>
+    <fig id="fig6" orientation="portrait" position="float">
+      <label>Figure 6</label>
+      <caption>
+        <p>Bar chart of genes locus overlaps by contigs mapping. In each subgraph, the <italic>x</italic>-axis was the whole function gene locus; the <italic>y</italic>-axis was the total number of contigs on each locus.</p>
+      </caption>
+      <graphic xlink:href="BMRI2016-3524908.006"/>
+    </fig>
+    <fig id="fig7" orientation="portrait" position="float">
+      <label>Figure 7</label>
+      <caption>
+        <p>Relationship diagram of SNPs from different reads mapping. (a) The relationship of the SNPs calculated by different data in each gene. (b) The base frequency on mismatch SNPs locus. Different color means different code. The <italic>y</italic>-axis was the proportion.</p>
+      </caption>
+      <graphic xlink:href="BMRI2016-3524908.007"/>
+    </fig>
+    <fig id="fig8" orientation="portrait" position="float">
+      <label>Figure 8</label>
+      <caption>
+        <p>The position of SNPs on the gene. Comparison of SNPs position of the assembled reads and nonassembled reads. The vertical bars were the potential SNPs locus. The green bars form assembled reads, the orange bars form nonassembled reads, and the blue bars belonged to both assembled and nonassembled reads.</p>
+      </caption>
+      <graphic xlink:href="BMRI2016-3524908.008"/>
+    </fig>
+    <table-wrap id="tab1" orientation="portrait" position="float">
+      <label>Table 1</label>
+      <caption>
+        <p>Information of sixteen functional genes.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" rowspan="1" colspan="1">Name</th>
+            <th align="center" rowspan="1" colspan="1">NCBI number</th>
+            <th align="center" rowspan="1" colspan="1">Length</th>
+            <th align="center" rowspan="1" colspan="1">Product</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ABA8OH</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: AB455560]</td>
+            <td align="center" rowspan="1" colspan="1">654</td>
+            <td align="center" rowspan="1" colspan="1">ABA 8-hydroxylase</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ABI5</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: AB238934]</td>
+            <td align="center" rowspan="1" colspan="1">1540</td>
+            <td align="center" rowspan="1" colspan="1">bZip-type transcription factor TaABI5</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ACC1</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: EU660901]</td>
+            <td align="center" rowspan="1" colspan="1">1131</td>
+            <td align="center" rowspan="1" colspan="1">Plastid acetyl-CoA carboxylase</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>Apx</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: AY513261]</td>
+            <td align="center" rowspan="1" colspan="1">1354</td>
+            <td align="center" rowspan="1" colspan="1">Thylakoid ascorbate peroxidase</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>DRF</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: FJ560492]</td>
+            <td align="center" rowspan="1" colspan="1">963</td>
+            <td align="center" rowspan="1" colspan="1">Dehydration responsive factor 1 variant</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>EMH5</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: X73228.1]</td>
+            <td align="center" rowspan="1" colspan="1">443</td>
+            <td align="center" rowspan="1" colspan="1">Early-methionine-labeled protein</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ERD4</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: AK330512]</td>
+            <td align="center" rowspan="1" colspan="1">810</td>
+            <td align="center" rowspan="1" colspan="1">Transmembrane protein 63B-like</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>FUC3</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: BQ806797]</td>
+            <td align="center" rowspan="1" colspan="1">564</td>
+            <td align="center" rowspan="1" colspan="1">Predicted protein</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>GSK</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: DQ678922]</td>
+            <td align="center" rowspan="1" colspan="1">527</td>
+            <td align="center" rowspan="1" colspan="1">GSK-like kinase 1A</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>HKT8</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: DQ646339]</td>
+            <td align="center" rowspan="1" colspan="1">866</td>
+            <td align="center" rowspan="1" colspan="1">High affinity K<sub>+</sub> transporters</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>LEA1</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: AY148490]</td>
+            <td align="center" rowspan="1" colspan="1">816</td>
+            <td align="center" rowspan="1" colspan="1">Late embryogenesis abundant protein</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>LEC1</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: BT009029]</td>
+            <td align="center" rowspan="1" colspan="1">910</td>
+            <td align="center" rowspan="1" colspan="1">Nuclear transcription factor Y subunit B1</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>PhyC</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: AJ295224]</td>
+            <td align="center" rowspan="1" colspan="1">934</td>
+            <td align="center" rowspan="1" colspan="1">Phytochrome C</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>Q</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: AY702960]</td>
+            <td align="center" rowspan="1" colspan="1">809</td>
+            <td align="center" rowspan="1" colspan="1">Floral homeotic protein</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>WDAI</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: AY729672]</td>
+            <td align="center" rowspan="1" colspan="1">446</td>
+            <td align="center" rowspan="1" colspan="1">Dimeric alpha-amylase inhibitor</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ZCCT1</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">[GenBank: AY485644]</td>
+            <td align="center" rowspan="1" colspan="1">669</td>
+            <td align="center" rowspan="1" colspan="1">Zinc finger-CCT domain</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap id="tab2" orientation="portrait" position="float">
+      <label>Table 2</label>
+      <caption>
+        <p>Elementary information about the reads.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" rowspan="1" colspan="1">&#x2009;</th>
+            <th align="center" rowspan="1" colspan="1">&#x2009;</th>
+            <th align="center" rowspan="1" colspan="1">Reads number </th>
+            <th align="center" rowspan="1" colspan="1">Average length</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" rowspan="2" colspan="1">Assembled</td>
+            <td align="center" rowspan="1" colspan="1">Original reads</td>
+            <td align="center" rowspan="1" colspan="1">390992 (pair)</td>
+            <td align="center" rowspan="1" colspan="1">155.10</td>
+          </tr>
+          <tr>
+            <td align="center" rowspan="1" colspan="1">Aligned to reference</td>
+            <td align="center" rowspan="1" colspan="1">219433 (pair)</td>
+            <td align="center" rowspan="1" colspan="1">156.90</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="4" rowspan="1">
+              <hr/>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="2" colspan="1">Nonassembled</td>
+            <td align="center" rowspan="1" colspan="1">Original reads</td>
+            <td align="center" rowspan="1" colspan="1">198581 (pair)</td>
+            <td align="center" rowspan="1" colspan="1">100</td>
+          </tr>
+          <tr>
+            <td align="center" rowspan="1" colspan="1">Aligned to reference</td>
+            <td align="center" rowspan="1" colspan="1">206362 (single)</td>
+            <td align="center" rowspan="1" colspan="1">81.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn>
+          <p>The threshold of the aligned identities was 85%.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap id="tab3" orientation="portrait" position="float">
+      <label>Table 3</label>
+      <caption>
+        <p>The sequence variation information of functional gene by 6% MAF.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" rowspan="2" colspan="1">Name</th>
+            <th align="center" rowspan="2" colspan="1">Length</th>
+            <th align="center" colspan="2" rowspan="1">Assembled reads</th>
+            <th align="center" colspan="2" rowspan="1">Nonassembled reads</th>
+            <th align="center" colspan="2" rowspan="1">Pretrimmed reads</th>
+            <th align="center" colspan="2" rowspan="1">Original reads</th>
+          </tr>
+          <tr>
+            <th align="center" rowspan="1" colspan="1">Number</th>
+            <th align="center" rowspan="1" colspan="1">Ratio</th>
+            <th align="center" rowspan="1" colspan="1">Number</th>
+            <th align="center" rowspan="1" colspan="1">Ratio</th>
+            <th align="center" rowspan="1" colspan="1">Number</th>
+            <th align="center" rowspan="1" colspan="1">Ratio</th>
+            <th align="center" rowspan="1" colspan="1">Number</th>
+            <th align="center" rowspan="1" colspan="1">Ratio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ABA8OH</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">654</td>
+            <td align="center" rowspan="1" colspan="1">5</td>
+            <td align="center" rowspan="1" colspan="1">0.76%</td>
+            <td align="center" rowspan="1" colspan="1">19</td>
+            <td align="center" rowspan="1" colspan="1">2.91%</td>
+            <td align="center" rowspan="1" colspan="1">13</td>
+            <td align="center" rowspan="1" colspan="1">1.99%</td>
+            <td align="center" rowspan="1" colspan="1">20</td>
+            <td align="center" rowspan="1" colspan="1">3.06%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ABI5</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">1540</td>
+            <td align="center" rowspan="1" colspan="1">159</td>
+            <td align="center" rowspan="1" colspan="1">10.32%</td>
+            <td align="center" rowspan="1" colspan="1">171</td>
+            <td align="center" rowspan="1" colspan="1">11.10%</td>
+            <td align="center" rowspan="1" colspan="1">145</td>
+            <td align="center" rowspan="1" colspan="1">9.42%</td>
+            <td align="center" rowspan="1" colspan="1">152</td>
+            <td align="center" rowspan="1" colspan="1">9.87%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ACC1</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">1131</td>
+            <td align="center" rowspan="1" colspan="1">10</td>
+            <td align="center" rowspan="1" colspan="1">0.88%</td>
+            <td align="center" rowspan="1" colspan="1">14</td>
+            <td align="center" rowspan="1" colspan="1">1.24%</td>
+            <td align="center" rowspan="1" colspan="1">10</td>
+            <td align="center" rowspan="1" colspan="1">0.88%</td>
+            <td align="center" rowspan="1" colspan="1">16</td>
+            <td align="center" rowspan="1" colspan="1">1.41%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>APX</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">1354</td>
+            <td align="center" rowspan="1" colspan="1">97</td>
+            <td align="center" rowspan="1" colspan="1">7.16%</td>
+            <td align="center" rowspan="1" colspan="1">86</td>
+            <td align="center" rowspan="1" colspan="1">6.35%</td>
+            <td align="center" rowspan="1" colspan="1">83</td>
+            <td align="center" rowspan="1" colspan="1">6.13%</td>
+            <td align="center" rowspan="1" colspan="1">96</td>
+            <td align="center" rowspan="1" colspan="1">7.09%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>DRF</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">963</td>
+            <td align="center" rowspan="1" colspan="1">42</td>
+            <td align="center" rowspan="1" colspan="1">4.36%</td>
+            <td align="center" rowspan="1" colspan="1">39</td>
+            <td align="center" rowspan="1" colspan="1">4.05%</td>
+            <td align="center" rowspan="1" colspan="1">41</td>
+            <td align="center" rowspan="1" colspan="1">4.26%</td>
+            <td align="center" rowspan="1" colspan="1">46</td>
+            <td align="center" rowspan="1" colspan="1">4.78%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>EMH5</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">443</td>
+            <td align="center" rowspan="1" colspan="1">21</td>
+            <td align="center" rowspan="1" colspan="1">4.74%</td>
+            <td align="center" rowspan="1" colspan="1">29</td>
+            <td align="center" rowspan="1" colspan="1">6.55%</td>
+            <td align="center" rowspan="1" colspan="1">20</td>
+            <td align="center" rowspan="1" colspan="1">4.51%</td>
+            <td align="center" rowspan="1" colspan="1">27</td>
+            <td align="center" rowspan="1" colspan="1">6.09%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ERD4</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">810</td>
+            <td align="center" rowspan="1" colspan="1">46</td>
+            <td align="center" rowspan="1" colspan="1">5.68%</td>
+            <td align="center" rowspan="1" colspan="1">44</td>
+            <td align="center" rowspan="1" colspan="1">5.43%</td>
+            <td align="center" rowspan="1" colspan="1">42</td>
+            <td align="center" rowspan="1" colspan="1">5.19%</td>
+            <td align="center" rowspan="1" colspan="1">45</td>
+            <td align="center" rowspan="1" colspan="1">5.56%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>FUC3</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">564</td>
+            <td align="center" rowspan="1" colspan="1">18</td>
+            <td align="center" rowspan="1" colspan="1">3.19%</td>
+            <td align="center" rowspan="1" colspan="1">13</td>
+            <td align="center" rowspan="1" colspan="1">2.30%</td>
+            <td align="center" rowspan="1" colspan="1">20</td>
+            <td align="center" rowspan="1" colspan="1">3.55%</td>
+            <td align="center" rowspan="1" colspan="1">22</td>
+            <td align="center" rowspan="1" colspan="1">3.90%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>GSK</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">527</td>
+            <td align="center" rowspan="1" colspan="1">9</td>
+            <td align="center" rowspan="1" colspan="1">1.71%</td>
+            <td align="center" rowspan="1" colspan="1">9</td>
+            <td align="center" rowspan="1" colspan="1">1.71%</td>
+            <td align="center" rowspan="1" colspan="1">15</td>
+            <td align="center" rowspan="1" colspan="1">2.85%</td>
+            <td align="center" rowspan="1" colspan="1">20</td>
+            <td align="center" rowspan="1" colspan="1">3.80%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>HKT8</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">866</td>
+            <td align="center" rowspan="1" colspan="1">51</td>
+            <td align="center" rowspan="1" colspan="1">5.89%</td>
+            <td align="center" rowspan="1" colspan="1">36</td>
+            <td align="center" rowspan="1" colspan="1">4.16%</td>
+            <td align="center" rowspan="1" colspan="1">44</td>
+            <td align="center" rowspan="1" colspan="1">5.08%</td>
+            <td align="center" rowspan="1" colspan="1">56</td>
+            <td align="center" rowspan="1" colspan="1">6.47%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>LEA1</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">816</td>
+            <td align="center" rowspan="1" colspan="1">14</td>
+            <td align="center" rowspan="1" colspan="1">1.72%</td>
+            <td align="center" rowspan="1" colspan="1">44</td>
+            <td align="center" rowspan="1" colspan="1">5.39%</td>
+            <td align="center" rowspan="1" colspan="1">44</td>
+            <td align="center" rowspan="1" colspan="1">5.39%</td>
+            <td align="center" rowspan="1" colspan="1">61</td>
+            <td align="center" rowspan="1" colspan="1">7.48%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>LEC1</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">910</td>
+            <td align="center" rowspan="1" colspan="1">92</td>
+            <td align="center" rowspan="1" colspan="1">10.11%</td>
+            <td align="center" rowspan="1" colspan="1">90</td>
+            <td align="center" rowspan="1" colspan="1">9.89%</td>
+            <td align="center" rowspan="1" colspan="1">83</td>
+            <td align="center" rowspan="1" colspan="1">9.12%</td>
+            <td align="center" rowspan="1" colspan="1">110</td>
+            <td align="center" rowspan="1" colspan="1">12.09%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>PhyC</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">934</td>
+            <td align="center" rowspan="1" colspan="1">19</td>
+            <td align="center" rowspan="1" colspan="1">2.03%</td>
+            <td align="center" rowspan="1" colspan="1">30</td>
+            <td align="center" rowspan="1" colspan="1">3.21%</td>
+            <td align="center" rowspan="1" colspan="1">31</td>
+            <td align="center" rowspan="1" colspan="1">3.32%</td>
+            <td align="center" rowspan="1" colspan="1">36</td>
+            <td align="center" rowspan="1" colspan="1">4.07%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>Q</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">809</td>
+            <td align="center" rowspan="1" colspan="1">4</td>
+            <td align="center" rowspan="1" colspan="1">0.49%</td>
+            <td align="center" rowspan="1" colspan="1">28</td>
+            <td align="center" rowspan="1" colspan="1">3.46%</td>
+            <td align="center" rowspan="1" colspan="1">25</td>
+            <td align="center" rowspan="1" colspan="1">3.09%</td>
+            <td align="center" rowspan="1" colspan="1">35</td>
+            <td align="center" rowspan="1" colspan="1">4.20%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>WDAI</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">446</td>
+            <td align="center" rowspan="1" colspan="1">44</td>
+            <td align="center" rowspan="1" colspan="1">9.87%</td>
+            <td align="center" rowspan="1" colspan="1">47</td>
+            <td align="center" rowspan="1" colspan="1">10.54%</td>
+            <td align="center" rowspan="1" colspan="1">38</td>
+            <td align="center" rowspan="1" colspan="1">8.52%</td>
+            <td align="center" rowspan="1" colspan="1">34</td>
+            <td align="center" rowspan="1" colspan="1">7.62%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <italic>ZCCT1</italic>
+            </td>
+            <td align="center" rowspan="1" colspan="1">669</td>
+            <td align="center" rowspan="1" colspan="1">28</td>
+            <td align="center" rowspan="1" colspan="1">4.19%</td>
+            <td align="center" rowspan="1" colspan="1">34</td>
+            <td align="center" rowspan="1" colspan="1">5.08%</td>
+            <td align="center" rowspan="1" colspan="1">21</td>
+            <td align="center" rowspan="1" colspan="1">3.14%</td>
+            <td align="center" rowspan="1" colspan="1">28</td>
+            <td align="center" rowspan="1" colspan="1">4.19%</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

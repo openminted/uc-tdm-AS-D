@@ -1,0 +1,1496 @@
+<?xml version="1.0"?>
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d1 20130915//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName JATS-journalpublishing1.dtd?>
+  <?SourceDTD.Version 39.96?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <?epub May-11-2015?>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Nucleic Acids Res</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Nucleic Acids Res</journal-id>
+      <journal-id journal-id-type="hwp">nar</journal-id>
+      <journal-id journal-id-type="publisher-id">nar</journal-id>
+      <journal-title-group>
+        <journal-title>Nucleic Acids Research</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0305-1048</issn>
+      <issn pub-type="epub">1362-4962</issn>
+      <publisher>
+        <publisher-name>Oxford University Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4489293</article-id>
+      <article-id pub-id-type="doi">10.1093/nar/gkv487</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Web Server issue</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>OrthoVenn: a web server for genome wide comparison and annotation of orthologous clusters across multiple species</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Yi</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="AFF2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="AFF3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="COR1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Coleman-Derr</surname>
+            <given-names>Devin</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Guoping</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gu</surname>
+            <given-names>Yong Q.</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="COR1">*</xref>
+        </contrib>
+        <aff id="AFF1"><label>1</label>USDA-ARS, Western Regional Research Center, Crop Improvement and Genetics Research Unit, Albany, CA 94710, USA</aff>
+        <aff id="AFF2"><label>2</label>Department of Plant Sciences, University of California, Davis, CA 95616, USA</aff>
+        <aff id="AFF3"><label>3</label>Bioengineering College, Campus A, Chongqing University, Chongqing 400030, China</aff>
+        <aff id="AFF4"><label>4</label>USDA-ARS, Plant Gene Expression Center, Albany, CA 94710, USA</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="COR1"><label>*</label>To whom correspondence should be addressed. Tel: +1 510 509 6146; Fax: +1 510 559 5818; Email: <email>Yi.Wang@ars.usda.gov</email></corresp>
+        <corresp id="COR2">Correspondence may also be addressed to Yong Q. Gu. Tel: +1 510 509 9055; Fax: +1 510 559 5818; Email: <email>Yong.Gu@ars.usda.gov</email></corresp>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <day>01</day>
+        <month>7</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>11</day>
+        <month>5</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>11</day>
+        <month>5</month>
+        <year>2015</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on the							<pub-date pub-type="epub"/>. -->
+      <volume>43</volume>
+      <issue>Web Server issue</issue>
+      <fpage>W78</fpage>
+      <lpage>W84</lpage>
+      <history>
+        <date date-type="accepted">
+          <day>02</day>
+          <month>5</month>
+          <year>2015</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>28</day>
+          <month>4</month>
+          <year>2015</year>
+        </date>
+        <date date-type="received">
+          <day>08</day>
+          <month>2</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; The Author(s) 2015. Published by Oxford University Press on behalf of Nucleic Acids Research.</copyright-statement>
+        <copyright-year>2015</copyright-year>
+        <license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:title="pdf" xlink:href="gkv487.pdf"/>
+      <abstract>
+        <p>Genome wide analysis of orthologous clusters is an important component of comparative genomics studies. Identifying the overlap among orthologous clusters can enable us to elucidate the function and evolution of proteins across multiple species. Here, we report a web platform named OrthoVenn that is useful for genome wide comparisons and visualization of orthologous clusters. OrthoVenn provides coverage of vertebrates, metazoa, protists, fungi, plants and bacteria for the comparison of orthologous clusters and also supports uploading of customized protein sequences from user-defined species. An interactive Venn diagram, summary counts, and functional summaries of the disjunction and intersection of clusters shared between species are displayed as part of the OrthoVenn result. OrthoVenn also includes in-depth views of the clusters using various sequence analysis tools. Furthermore, OrthoVenn identifies orthologous clusters of single copy genes and allows for a customized search of clusters of specific genes through key words or BLAST. OrthoVenn is an efficient and user-friendly web server freely accessible at <ext-link ext-link-type="uri" xlink:href="http://probes.pw.usda.gov/OrthoVenn">http://probes.pw.usda.gov/OrthoVenn</ext-link> or <ext-link ext-link-type="uri" xlink:href="http://aegilops.wheat.ucdavis.edu/OrthoVenn">http://aegilops.wheat.ucdavis.edu/OrthoVenn</ext-link>.</p>
+      </abstract>
+      <counts>
+        <page-count count="7"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>cover-date</meta-name>
+          <meta-value>1 July 2015</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="SEC1">
+      <title>INTRODUCTION</title>
+      <p>Orthologs or orthologous genes are clusters of genes in different species that originated by vertical descent from a single gene in the last common ancestor (<xref rid="B1" ref-type="bibr">1</xref>). Comparative analysis of the organization of orthologous clusters is important for understanding the rules of genome structure and gene/protein function. The information gained from comparisons of orthologous clusters can serve as raw material for taxonomic classification and phylogenetic studies of organisms, thereby shedding light on the mechanisms underlying the molecular evolution of genes and genomes (<xref rid="B2" ref-type="bibr">2</xref>,<xref rid="B3" ref-type="bibr">3</xref>). Recent advances in genome sequencing technologies has provided a wealth of genome sequence data from many organisms. The increasing availability of genome sequence data across the tree of life now makes it possible to conduct whole-genome comparative analyses of orthologous clusters across multiple species.</p>
+      <p>In order to identify orthologous genes from different genomes for classification within gene clusters, databases have employed different approaches that can be generally classified into two groups. One group is based on pairwise sequence comparisons (e.g. eggNOG (<xref rid="B4" ref-type="bibr">4</xref>), InParanoid (<xref rid="B5" ref-type="bibr">5</xref>), OrthoDB (<xref rid="B6" ref-type="bibr">6</xref>)), while the other uses phylogenetic methods (e.g. MetaPhOrs (<xref rid="B7" ref-type="bibr">7</xref>), PhylomeDB (<xref rid="B8" ref-type="bibr">8</xref>)). These analysis tools are well known and widely used, but their online servers are often database-oriented and focused on gene searches and analysis within specific orthologous groups, and lack the functionality to generate visualizations displaying the difference and overlapping for all orthologous clusters. Some of these databases also provide ortholog prediction software (InParanoid: <ext-link ext-link-type="uri" xlink:href="http://software.sbc.su.se/cgi-bin/request.cgi?project=inparanoid">http://software.sbc.su.se/cgi-bin/request.cgi?project=inparanoid</ext-link>, OrthoDB: <ext-link ext-link-type="uri" xlink:href="http://www.orthodb.org/orthodb_software/">http://www.orthodb.org/orthodb_software/</ext-link>), but generally the software has to be downloaded and run locally. The Quest for Orthologs Consortium (<ext-link ext-link-type="uri" xlink:href="http://questfororthologs.org/">http://questfororthologs.org/</ext-link>) improves and standardizes orthology predictions and provides a list of &gt;30 of these databases.</p>
+      <p>The tools for establishing homologies between genes or their products are becoming increasingly important to transfer knowledge from well-studied model organisms to other organisms (<xref rid="B9" ref-type="bibr">9</xref>). One of the simplest but most useful methods of genome wide orthologous comparison is to display the different and overlapping orthologous clusters in a Venn diagram, which in our case provides circles or other shapes representing each species with overlapping regions that illustrate the genes or gene clusters that are unique to or shared between each species. As an example, a recent analysis of the banana genome (<ext-link ext-link-type="uri" xlink:href="http://www.promusa.org/blogpost174-The-best-genomics-Venn-diagram-ever-deconstructed">http://www.promusa.org/blogpost174-The-best-genomics-Venn-diagram-ever-deconstructed</ext-link>), presented such a Venn diagrams for orthologous clusters comparison among six plant genomes. Venn diagrams allow for quick visualization of relationships by revealing intersections (overlaps) and disjunctions (non-overlaps) for large biological datasets obtained from different species, and are often used in the whole-genome analysis across species (<xref rid="B10" ref-type="bibr">10</xref>&#x2013;<xref rid="B12" ref-type="bibr">12</xref>). Currently, a number of online Venn diagram applications have been developed to provide simultaneous visual interpretation of large amounts of biological data. The Pangloss Venn diagram generator (<ext-link ext-link-type="uri" xlink:href="http://www.pangloss.com/seidel/Protocols?/venn4.cgi">http://www.pangloss.com/seidel/Protocols&#x200B;/venn4.cgi</ext-link>) and Venny (<ext-link ext-link-type="uri" xlink:href="http://bioinfogp.cnb.csic.es/tools/venny?/index.html">http://bioinfogp.cnb.csic.es/tools/venny&#x200B;/index.html</ext-link>) are web applications that can create Venn diagrams from user-provided ID lists. BioVenn (<xref rid="B13" ref-type="bibr">13</xref>) provides a comparison and visualization of biological lists using area-proportional Venn diagrams. GeneVenn (<xref rid="B14" ref-type="bibr">14</xref>) and VennMaster (<xref rid="B15" ref-type="bibr">15</xref>) possess the additional feature of linking genes within each group to related information in the NCBI Entrez Nucleotide database or the Gene Ontology database. NetVenn (<xref rid="B16" ref-type="bibr">16</xref>) compares and analyzes gene lists by combining a Venn diagram visualization with an interactome network and biological annotation data. A database named EDGAR provides Venn diagrams of the common gene pools for the comparative analysis of prokaryotic genomes (<xref rid="B17" ref-type="bibr">17</xref>).</p>
+      <p>To our knowledge, a web application that offers genome wide comparison and analysis of orthologous clusters across multiple species is not available. SPOCS (<xref rid="B18" ref-type="bibr">18</xref>) provides a web server for prediction of orthologs and paralogs among closely related genomes, however, it's simple visualization function does not allow for comparison of overlapping orthologous clusters among species. Here, we present a web platform named OrthoVenn (<ext-link ext-link-type="uri" xlink:href="http://probes.pw.usda.gov/OrthoVenn">http://probes.pw.usda.gov/OrthoVenn</ext-link> or <ext-link ext-link-type="uri" xlink:href="http://aegilops.wheat.ucdavis.edu/OrthoVenn">http://aegilops.wheat.ucdavis.edu/OrthoVenn</ext-link>) for the comparison and analysis of genome wide orthologous clusters across multiple species. In OrthoVenn, users can select protein sequence data for genome wide comparisons from 272 species in the database, including vertebrates, metazoa, protists, fungi, plants and bacteria. OrthoVenn also allows user-defined species to be uploaded as customized protein sequences. An efficient and interactive graphics tool is employed to provide a Venn diagram view of the genome wide comparison of orthologous clusters based on the protein sequence data selected from up to six species. The intersection of orthologous clusters is analyzed by GO Slim annotation and UniProt search. In the output of OrthoVenn, each orthologous cluster provide sequence analysis data, single copy gene cluster identification, protein similarity comparisons, and the phylogenetic relationships among clustered genes. OrthoVenn also provides key word search and BLAST functions for finding clusters of specific interest to the user. In addition, OrthoVenn allows the user to create Venn diagrams from orthologous cluster files generated by other software.</p>
+    </sec>
+    <sec id="SEC2">
+      <title>WEB SERVER CONSTRUCTION</title>
+      <sec id="SEC2-1">
+        <title>Protein sequences collection</title>
+        <p>We downloaded sequence data from the Ensembl database, which is a genomic interpretation system providing the most up-to-date annotations of whole-genome protein sequences for many species (<xref rid="B19" ref-type="bibr">19</xref>). After quality analysis (sequences contains illegal characters or &lt;20 amino acids were removed) of the amino acid fasta file, we retrieved the protein sequences of all gene coding sequences without alternative splice variants. We grouped the protein sequences into six categories: vertebrates, metazoa, protists, fungi, plants and bacteria. A summary of the collected protein sequences in each category is presented in Table <xref ref-type="table" rid="tbl1">1</xref>. OrthoVenn also allows user-defined protein sequences in fasta or compressed fasta (.tar.gz and .zip) format for any non-represented species. Each of these novel species can be given their own name so that the user can immediately see which part of the output in the Venn diagram corresponds to which species.</p>
+        <table-wrap id="tbl1" orientation="portrait" position="float">
+          <label>Table 1.</label>
+          <caption>
+            <title>Total numbers of categorized protein sequences in OrthoVenn</title>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="left" rowspan="1" colspan="1">Category</th>
+                <th align="left" rowspan="1" colspan="1">Number of species</th>
+                <th align="left" rowspan="1" colspan="1">Number of protein sequences</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Vertebrates</td>
+                <td align="left" rowspan="1" colspan="1">69</td>
+                <td align="left" rowspan="1" colspan="1">1 276 453</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Metazoa</td>
+                <td align="left" rowspan="1" colspan="1">55</td>
+                <td align="left" rowspan="1" colspan="1">1 020 988</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Protists</td>
+                <td align="left" rowspan="1" colspan="1">32</td>
+                <td align="left" rowspan="1" colspan="1">458 802</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Fungi</td>
+                <td align="left" rowspan="1" colspan="1">52</td>
+                <td align="left" rowspan="1" colspan="1">567 086</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Plants</td>
+                <td align="left" rowspan="1" colspan="1">38</td>
+                <td align="left" rowspan="1" colspan="1">1 321 298</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Bacteria</td>
+                <td align="left" rowspan="1" colspan="1">26</td>
+                <td align="left" rowspan="1" colspan="1">56&#xA0;830</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Total</td>
+                <td align="left" rowspan="1" colspan="1">272</td>
+                <td align="left" rowspan="1" colspan="1">4 701 457</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec id="SEC2-2">
+        <title>Identification of orthologous cluster</title>
+        <p>There are multiple methods for orthology prediction. We used the popular heuristic approach named OrthoMCL (<xref rid="B20" ref-type="bibr">20</xref>) to identify ortholog groups. The OrthoMCL performs an all-against-all BLASTP alignment, identifies putative orthology and inparalogy relationships with the Inparanoid algorithm (<xref rid="B21" ref-type="bibr">21</xref>) and generates disjoint clusters of closely related proteins with the Markov Clustering Algorithm (MCL) (<xref rid="B22" ref-type="bibr">22</xref>). The steps in the OrthoMCL are time-consuming for large numbers of protein sequences from multiple species. In order to make the approach suitable for the web application, we modified portions of the data processing steps in the OrthoMCL algorithm. First, we used UBLAST (v7.0.1090) (<xref rid="B23" ref-type="bibr">23</xref>) to do the all-against-all similarity search. UBLAST is &#x223C;350&#xD7; faster than BLASTP and achieves very similar results for ortholog searches (<xref rid="B24" ref-type="bibr">24</xref>,<xref rid="B25" ref-type="bibr">25</xref>). Second, each of the protein sequences downloaded from Ensembl have been aligned with one another and the result is stored in the server as BLAST tab format data (&#x223C;1.6TB). If the input species for a new OrthoVenn analysis is contained in the previously sorted alignment table, the step for sequence comparison will be omitted in the process. Finally, we used orthAgogue (v1.0.3) for identification of putative orthology and inparalogy relations. The orthAgogue is a multithreaded C application for high-speed estimation of homology relations in massive datasets (<xref rid="B26" ref-type="bibr">26</xref>). We have compared the orthologous clustering results between OrthoMCL and OrthoVenn, and they have similar clustering behavior (Supplemental Material).</p>
+      </sec>
+      <sec id="SEC2-3">
+        <title>Orthologous cluster annotation</title>
+        <p>To deduce the putative function of each ortholog, the first protein sequence in each cluster are subjected to BLASTP analysis against the non-redundant protein database in UniProt (<xref rid="B27" ref-type="bibr">27</xref>). We only selected one sequence in each cluster because the proteins are very similar and performing BLASTP on all sequences in each cluster against UniProt is computationally too expensive, especially for large genomes which contain many protein sequences. Any hit with an e-value &lt;1e&#x2212;5 is considered and the top hit is defined as the putative function of each cluster. The GOSlim terms for biological process, molecular function, and cellular component categories are assigned to the corresponding orthologous cluster. The GOSlimViewer (<xref rid="B28" ref-type="bibr">28</xref>) is used to provide a high-level summary of functions for orthologous clusters in the Venn diagram overlapping regions using pre-computed GO Slim sets. An alignment of the protein sequences in each cluster is performed using the multiple sequence alignment tool MUSCLE (<xref rid="B29" ref-type="bibr">29</xref>). The conserved motifs in the protein sequences are identified by Multiple Expectation Maximization for Motif Elicitation program (MEME) (<xref rid="B30" ref-type="bibr">30</xref>). Phylogenetic trees for the orthologous clusters are built in FastTree (<xref rid="B31" ref-type="bibr">31</xref>).</p>
+      </sec>
+      <sec id="SEC2-4">
+        <title>Implementation</title>
+        <p>OrthoVenn was implemented with a Java code as the back end, configured on a Ubuntu Linux with an Apache server (<ext-link ext-link-type="uri" xlink:href="http://www.apache.org/">http://www.apache.org/</ext-link>). PHP 5.5, JavaScript and HTML were used to develop the front-end user interface. The user input is sent to a PHP script through an interactive form and calls a core program written by Java. After the program is finished running, the PHP script retrieves and displays the results with hyperlinks to additional information. The Venn diagram is presented through jvenn, which is a new JavaScript library that allows the developer to embed Venn diagram viewers within HTML documents (<xref rid="B32" ref-type="bibr">32</xref>). Since we expect that the protein sequences in the Ensembl database will be updated regularly, we will update the OrthoVenn dataset every half year with our semi-automatic sequence identification pipeline.</p>
+      </sec>
+    </sec>
+    <sec id="SEC3">
+      <title>SAMPLE AND RESULT ANALYSIS</title>
+      <p>We applied OrthoVenn clustering to identify gene clusters enriched in six grass genomes including <italic>Aegilops tauschii</italic> (Tausch's goatgrass), <italic>Brachypodium distachyon</italic> (false brome), <italic>Oryza sativa</italic> (rice), <italic>Sorghum bicolor</italic> (sorghum), <italic>Hordeum vulgare</italic> (Barley) and <italic>Zea mays</italic> (maize). Pairwise sequence similarities between all input protein sequences were calculated with an e-value cut-off of 1e&#x2212;5. An inflation value (&#x2212;<italic>I</italic>) of 1.5 was used to define orthologous cluster structure. The result is present at <ext-link ext-link-type="uri" xlink:href="http://probes.pw.usda.gov/OrthoVenn/result.php?ID=g5">http://probes.pw.usda.gov/OrthoVenn/result.php?ID=g5</ext-link>.</p>
+      <p>Four main components are shown in the results page: a Venn diagram showing the shared orthologous gene clusters among six grass genomes (Figure <xref ref-type="fig" rid="F1">1A</xref>), a control panel for setting the colors and Venn diagram display mode (Figure <xref ref-type="fig" rid="F1">1B</xref>), a table of the number of clusters in each genome (Figure <xref ref-type="fig" rid="F1">1C</xref>), and the key words input and BLAST link for performing user-defined searches (Figure <xref ref-type="fig" rid="F1">1D</xref>). The analysis showed that 24 342 orthologous clusters were formed based on the protein sequences from the 6 species. These observations are consistent with that reported in a recent study which found 23 202 orthologous groups in&#xA0;five grass genomes (<xref rid="B33" ref-type="bibr">33</xref>). The numbers in the Venn diagram represent the number of orthologous clusters that <italic>A. tauschii</italic> shares with the five other species. The diagram shows that 9887 gene clusters are shared by all six species, suggesting their conservation in the lineage after speciation. Additionally, it shows that there were 951 clusters specific to <italic>A. tauschii</italic>. These clusters are likely gene clusters within multiple genes or in-paralog clusters. The presence of the in-paralog clusters suggests that there might be a lineage specific gene expansion in these gene families in <italic>A. tauschii</italic>. Based on annotation of these clusters, some of these lineage specific clusters could be potentially involved in important biological processes (e.g. nitrogen compound metabolic process or cellular aromatic compound metabolic process) (Figure <xref ref-type="fig" rid="F2">2</xref>).</p>
+      <fig id="F1" orientation="portrait" position="float">
+        <label>Figure 1.</label>
+        <caption>
+          <p>A results page in OrthoVenn. (<bold>A</bold>) Venn diagram showing the distribution of shared gene families (orthologous clusters) among <italic>Aegilops tauschii, Brachypodium distachyon, Oryza sativa, Sorghum bicolor, Hordeum vulgare</italic> and <italic>Zea mays</italic>. The cluster number in each component is listed. (<bold>B</bold>) Color selector and display mode setting for the Venn diagram. (<bold>C</bold>) Counts of clusters in each genome. (<bold>D</bold>) Key word search and BLAST links for finding specific clusters in the result.</p>
+        </caption>
+        <graphic xlink:href="gkv487fig1"/>
+      </fig>
+      <fig id="F2" orientation="portrait" position="float">
+        <label>Figure 2.</label>
+        <caption>
+          <p>Distributions of <italic>Aegilops tauschii</italic> specific gene sets in biological process GO slim terms.</p>
+        </caption>
+        <graphic xlink:href="gkv487fig2"/>
+      </fig>
+      <p>The identification of single copy orthologs in any group of species is important for phylogenetic studies (<xref rid="B34" ref-type="bibr">34</xref>). Based on the orthologous clustering result, we have identified a set of 5929 clusters representing single copy genes shared in all six genomes, suggesting they maintained single copy status through evolutionary time after the divergence of these species. Each orthologous cluster in the OrthoVenn result provides an in-depth view of the genes and their sequences (Figure <xref ref-type="fig" rid="F3">3</xref>). Users can search specific clusters using key words, however, a BLAST search function is also provided. In the case of the key word search, input of &#x2018;Agamous-like MADS-box&#x2019; will result in an orthologous cluster search result. Selection of cluster602 from the search result indicates that this orthologous group contains 12 protein sequences from five species (Figure <xref ref-type="fig" rid="F3">3A</xref>). Multiple sequence alignment and motif analysis indicate that the cluster represents a typical MADS-box protein (Figure <xref ref-type="fig" rid="F3">3B</xref> and&#xA0;<xref ref-type="fig" rid="F3">C</xref>). Phylogenetic tree data shows that in cluster602, <italic>A. tauschii</italic> contains more paralogous genes, suggesting there is lineage-specific expansion of this specific type of MADS-box protein (Figure <xref ref-type="fig" rid="F3">3D</xref>). Furthermore, OrthoVenn includes the Cytoscape Web application (<xref rid="B35" ref-type="bibr">35</xref>) for visualizing and manipulating the graphs of the cluster and the relationship between clusters. In cluster602, proteins from the same species had higher similarity to one another than proteins between different species (Figure <xref ref-type="fig" rid="F3">3E</xref>), suggesting that duplication events after speciation resulted in closely related paralogous genes. In addition, cluster602 is closely related to cluster20273, cluster1325 and cluster23528, as revealed by the width of the lines connecting the cluster nodes (Figure <xref ref-type="fig" rid="F3">3F</xref>). Related clusters are defined by sequence similarity of proteins in these clusters as determined by the orthAgogue analysis result. The edge weight means the amount of similar sequences by counting similar sequence pairs between the clusters. Annotation data indicates that all of these clusters are Agamous-like MADS-box proteins.</p>
+      <fig id="F3" orientation="portrait" position="float">
+        <label>Figure 3.</label>
+        <caption>
+          <p>The annotation of cluster602 with different methods. (<bold>A</bold>) Composition of the cluster. (<bold>B</bold>) Multiple sequence alignment viewer. (<bold>C</bold>) Motifs in the proteins of the cluster. (<bold>D</bold>) Phylogenetic tree showing the inferred evolutionary relationships among the sequences in cluster602. (<bold>E</bold>) Network layout of the cluster. Nodes represent proteins and the edge width indicates the similarity between protein nodes. (<bold>F</bold>) The relationships between cluster602 and other clusters. Each node is a cluster and node size represents the number of proteins in the cluster. The edge weight means the amount of similar sequences by counting similar sequence pairs between the clusters.</p>
+        </caption>
+        <graphic xlink:href="gkv487fig3"/>
+      </fig>
+    </sec>
+    <sec id="SEC4">
+      <title>VENN DIAGRAM GENERATION FROM CLUSTER FILE</title>
+      <p>In order to display orthologous cluster files directly in a Venn diagram, we developed a tool named ClusterVenn in the web site of OrthoVenn for converting clusters file to Venn diagrams. This allows users to submit their own orthologous cluster files generated by other software such as OrthoMCL. ClusterVenn calculates the number of species in the file, and provides a convenient way for users to choose which species should be compared. ClusterVenn then identifies the shared and unshared orthologous clusters based on identifiers in the orthologous cluster file and displays the Venn diagram as the result.</p>
+    </sec>
+    <sec sec-type="discussion" id="SEC5">
+      <title>DISCUSSION</title>
+      <p>With the rapid increase of genome sequence data from high-throughput sequencing technologies, effective bioinformatics tools for genome wide comparisons among species has become an important component of gene and genome analysis. The identification of orthologs among species is a fundamental step in many comparative genomics studies. Visualization of disjointed or intersecting orthologous clusters provides insights into genome evolution across multiple species. OrthoVenn is a unique web tool for the visualization of genome wide comparisons of orthologous clusters with an interactive Venn diagram view and provides a high-level summary of functions for overlapping and non-overlapping orthologous gene sets. The integration of several sequence analysis methods in OrthoVenn provides further information related to the sequence conservation of orthologous genes of interest to the user. Furthermore, OrthoVenn is an easy-to-use web server that only requires users to choose species from the available list of 272 organisms or to submit a list of protein sequences for their species of interest, and allows the ortholog analysis to be performed without the need to install programs locally. We think OrthoVenn provides a powerful platform for identifying, analyzing and assigning the biological meaning to orthologous genes and facilitates a better understanding of gene and genome evolution across diverse taxa.</p>
+    </sec>
+    <sec id="SEC6">
+      <title>AVAILABILITY</title>
+      <p><ext-link ext-link-type="uri" xlink:href="http://probes.pw.usda.gov/OrthoVenn">http://probes.pw.usda.gov/OrthoVenn</ext-link> or <ext-link ext-link-type="uri" xlink:href="http://aegilops.wheat.ucdavis.edu/OrthoVenn">http://aegilops.wheat.ucdavis.edu/OrthoVenn</ext-link>.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SEC7">
+      <title>SUPPLEMENTARY DATA</title>
+      <p><ext-link ext-link-type="uri" xlink:href="http://nar.oxfordjournals.org/lookup/suppl/doi:10.1093/nar/gkv487/-/DC1">Supplementary Data</ext-link> are available at NAR Online.</p>
+      <supplementary-material id="PMC_1" content-type="local-data">
+        <caption>
+          <title>SUPPLEMENTARY DATA</title>
+        </caption>
+        <media mimetype="text" mime-subtype="html" xlink:href="supp_43_W1_W78__index.html"/>
+        <media xlink:role="associated-file" mimetype="application" mime-subtype="vnd.ms-powerpoint" xlink:href="supp_gkv487_nar-00371-web-b-2015-File003.pptx"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Xiaohua He for the critical reading of the manuscript. We are very grateful to many anonymous reviewers for testing the server and offering valuable comments.</p>
+    </ack>
+    <sec id="SEC8">
+      <title>FUNDING</title>
+      <p>U.S. National Science Foundation [IOS 0822100]; United State Department of Agriculture, Agriculture Research Service CRIS project [5325-21000-021]. Funding for open access charge: U.S. National Science Foundation [IOS 0822100].</p>
+      <p><italic>Conflict of interest statement</italic>. None declared.</p>
+    </sec>
+    <ref-list>
+      <title>REFERENCES</title>
+      <ref id="B1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fitch</surname>
+              <given-names>W.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Distinguishing homologous from analogous proteins</article-title>
+          <source>Syst. Zool.</source>
+          <year>1970</year>
+          <volume>19</volume>
+          <fpage>99</fpage>
+          <lpage>113</lpage>
+          <pub-id pub-id-type="pmid">5449325</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Henikoff</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Greene</surname>
+              <given-names>E.A.</given-names>
+            </name>
+            <name>
+              <surname>Pietrokovski</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Bork</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Attwood</surname>
+              <given-names>T.K.</given-names>
+            </name>
+            <name>
+              <surname>Hood</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Gene families: the taxonomy of protein paralogs and chimeras</article-title>
+          <source>Science</source>
+          <year>1997</year>
+          <volume>278</volume>
+          <fpage>609</fpage>
+          <lpage>614</lpage>
+          <pub-id pub-id-type="pmid">9381171</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mushegian</surname>
+              <given-names>A.R.</given-names>
+            </name>
+            <name>
+              <surname>Garey</surname>
+              <given-names>J.R.</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>L.X.</given-names>
+            </name>
+          </person-group>
+          <article-title>Large-scale taxonomic profiling of eukaryotic model organisms: a comparison of orthologous proteins encoded by the human, fly, nematode, and yeast genomes</article-title>
+          <source>Genome Res.</source>
+          <year>1998</year>
+          <volume>8</volume>
+          <fpage>590</fpage>
+          <lpage>598</lpage>
+          <pub-id pub-id-type="pmid">9647634</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Powell</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Forslund</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Szklarczyk</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Trachana</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Roth</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Huerta-Cepas</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Gabaldon</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Rattei</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Creevey</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Kuhn</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>eggNOG v4.0: nested orthology inference across 3686 organisms</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <fpage>D231</fpage>
+          <lpage>D239</lpage>
+          <pub-id pub-id-type="pmid">24297252</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sonnhammer</surname>
+              <given-names>E.L.</given-names>
+            </name>
+            <name>
+              <surname>Ostlund</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>InParanoid 8: orthology analysis between 273 proteomes, mostly eukaryotic</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2015</year>
+          <volume>43</volume>
+          <fpage>D234</fpage>
+          <lpage>D239</lpage>
+          <pub-id pub-id-type="pmid">25429972</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kriventseva</surname>
+              <given-names>E.V.</given-names>
+            </name>
+            <name>
+              <surname>Tegenfeldt</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Petty</surname>
+              <given-names>T.J.</given-names>
+            </name>
+            <name>
+              <surname>Waterhouse</surname>
+              <given-names>R.M.</given-names>
+            </name>
+            <name>
+              <surname>Simao</surname>
+              <given-names>F.A.</given-names>
+            </name>
+            <name>
+              <surname>Pozdnyakov</surname>
+              <given-names>I.A.</given-names>
+            </name>
+            <name>
+              <surname>Ioannidis</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Zdobnov</surname>
+              <given-names>E.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>OrthoDB v8: update of the hierarchical catalog of orthologs and the underlying free software</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2015</year>
+          <volume>43</volume>
+          <fpage>D250</fpage>
+          <lpage>D256</lpage>
+          <pub-id pub-id-type="pmid">25428351</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pryszcz</surname>
+              <given-names>L.P.</given-names>
+            </name>
+            <name>
+              <surname>Huerta-Cepas</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Gabaldon</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>MetaPhOrs: orthology and paralogy predictions from multiple phylogenetic evidence using a consistency-based confidence score</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <fpage>e32</fpage>
+          <pub-id pub-id-type="pmid">21149260</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huerta-Cepas</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Capella-Gutierrez</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Pryszcz</surname>
+              <given-names>L.P.</given-names>
+            </name>
+            <name>
+              <surname>Marcet-Houben</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Gabaldon</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>PhylomeDB v4: zooming into the plurality of evolutionary histories of a genome</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <fpage>D897</fpage>
+          <lpage>D902</lpage>
+          <pub-id pub-id-type="pmid">24275491</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altenhoff</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Dessimoz</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Inferring orthology and paralogy</article-title>
+          <source>Methods Mol. Biol.</source>
+          <year>2012</year>
+          <volume>855</volume>
+          <fpage>259</fpage>
+          <lpage>279</lpage>
+          <pub-id pub-id-type="pmid">22407712</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Argout</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Salse</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Aury</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Guiltinan</surname>
+              <given-names>M.J.</given-names>
+            </name>
+            <name>
+              <surname>Droc</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Gouzy</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Allegre</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Chaparro</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Legavre</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Maximova</surname>
+              <given-names>S.N.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The genome of Theobroma cacao</article-title>
+          <source>Nat. Genet.</source>
+          <year>2011</year>
+          <volume>43</volume>
+          <fpage>101</fpage>
+          <lpage>108</lpage>
+          <pub-id pub-id-type="pmid">21186351</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>D'Hont</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Denoeud</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Aury</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Baurens</surname>
+              <given-names>F.C.</given-names>
+            </name>
+            <name>
+              <surname>Carreel</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Garsmeur</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Noel</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Bocs</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Droc</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Rouard</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The banana (Musa acuminata) genome and the evolution of monocotyledonous plants</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>488</volume>
+          <fpage>213</fpage>
+          <lpage>217</lpage>
+          <pub-id pub-id-type="pmid">22801500</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cho</surname>
+              <given-names>Y.S.</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Hou</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Kwon</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Oh</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>H.M.</given-names>
+            </name>
+            <name>
+              <surname>Jho</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>S.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The tiger genome and comparative analysis with lion and snow leopard genomes</article-title>
+          <source>Nat. Commun.</source>
+          <year>2013</year>
+          <volume>4</volume>
+          <fpage>2433</fpage>
+          <pub-id pub-id-type="pmid">24045858</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hulsen</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>de&#xA0;Vlieg</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Alkema</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>BioVenn &#x2013; a web application for the comparison and visualization of biological lists using area-proportional Venn diagrams</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>488</fpage>
+          <pub-id pub-id-type="pmid">18925949</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pirooznia</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Nagarajan</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Deng</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>GeneVenn &#x2013; a web application for comparing gene lists using Venn diagrams</article-title>
+          <source>Bioinformation</source>
+          <year>2007</year>
+          <volume>1</volume>
+          <fpage>420</fpage>
+          <lpage>422</lpage>
+          <pub-id pub-id-type="pmid">17597932</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kestler</surname>
+              <given-names>H.A.</given-names>
+            </name>
+            <name>
+              <surname>Muller</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kraus</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Buchholz</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Gress</surname>
+              <given-names>T.M.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Kane</surname>
+              <given-names>D.W.</given-names>
+            </name>
+            <name>
+              <surname>Zeeberg</surname>
+              <given-names>B.R.</given-names>
+            </name>
+            <name>
+              <surname>Weinstein</surname>
+              <given-names>J.N.</given-names>
+            </name>
+          </person-group>
+          <article-title>VennMaster: area-proportional Euler diagrams for functional GO analysis of microarrays</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>67</fpage>
+          <pub-id pub-id-type="pmid">18230172</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Thilmony</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>Y.Q.</given-names>
+            </name>
+          </person-group>
+          <article-title>NetVenn: an integrated network analysis web platform for gene lists</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <fpage>W161</fpage>
+          <lpage>W166</lpage>
+          <pub-id pub-id-type="pmid">24771340</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blom</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Albaum</surname>
+              <given-names>S.P.</given-names>
+            </name>
+            <name>
+              <surname>Doppmeier</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Puhler</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Vorholter</surname>
+              <given-names>F.J.</given-names>
+            </name>
+            <name>
+              <surname>Zakrzewski</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Goesmann</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>EDGAR: a software framework for the comparative analysis of prokaryotic genomes</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>154</fpage>
+          <pub-id pub-id-type="pmid">19457249</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Curtis</surname>
+              <given-names>D.S.</given-names>
+            </name>
+            <name>
+              <surname>Phillips</surname>
+              <given-names>A.R.</given-names>
+            </name>
+            <name>
+              <surname>Callister</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Conlan</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>McCue</surname>
+              <given-names>L.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>SPOCS: software for predicting and visualizing orthology/paralogy relationships among genomes</article-title>
+          <source>Bioinformatics</source>
+          <year>2013</year>
+          <volume>29</volume>
+          <fpage>2641</fpage>
+          <lpage>2642</lpage>
+          <pub-id pub-id-type="pmid">23956303</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cunningham</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Amode</surname>
+              <given-names>M.R.</given-names>
+            </name>
+            <name>
+              <surname>Barrell</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Beal</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Billis</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Brent</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Carvalho-Silva</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Clapham</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Coates</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Fitzgerald</surname>
+              <given-names>S.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ensembl 2015</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2015</year>
+          <volume>43</volume>
+          <fpage>D662</fpage>
+          <lpage>D669</lpage>
+          <pub-id pub-id-type="pmid">25352552</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Stoeckert</surname>
+              <given-names>C.J.</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <name>
+              <surname>Roos</surname>
+              <given-names>D.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>OrthoMCL: identification of ortholog groups for eukaryotic genomes</article-title>
+          <source>Genome Res.</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>2178</fpage>
+          <lpage>2189</lpage>
+          <pub-id pub-id-type="pmid">12952885</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Remm</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Storm</surname>
+              <given-names>C.E.</given-names>
+            </name>
+            <name>
+              <surname>Sonnhammer</surname>
+              <given-names>E.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Automatic clustering of orthologs and in-paralogs from pairwise species comparisons</article-title>
+          <source>J. Mol. Biol.</source>
+          <year>2001</year>
+          <volume>314</volume>
+          <fpage>1041</fpage>
+          <lpage>1052</lpage>
+          <pub-id pub-id-type="pmid">11743721</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Enright</surname>
+              <given-names>A.J.</given-names>
+            </name>
+            <name>
+              <surname>Van&#xA0;Dongen</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Ouzounis</surname>
+              <given-names>C.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>An efficient algorithm for large-scale detection of protein families</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2002</year>
+          <volume>30</volume>
+          <fpage>1575</fpage>
+          <lpage>1584</lpage>
+          <pub-id pub-id-type="pmid">11917018</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Edgar</surname>
+              <given-names>R.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Search and clustering orders of magnitude faster than BLAST</article-title>
+          <source>Bioinformatics</source>
+          <year>2010</year>
+          <volume>26</volume>
+          <fpage>2460</fpage>
+          <lpage>2461</lpage>
+          <pub-id pub-id-type="pmid">20709691</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moreno-Hagelsieb</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Hudy-Yuffa</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimating overannotation across prokaryotic genomes using BLAST+, UBLAST, LAST and BLAT</article-title>
+          <source>BMC Res. Notes</source>
+          <year>2014</year>
+          <volume>7</volume>
+          <fpage>651</fpage>
+          <pub-id pub-id-type="pmid">25228073</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ward</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Moreno-Hagelsieb</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Quickly finding orthologs as reciprocal best hits with BLAT, LAST, and UBLAST: how much do we miss</article-title>
+          <source>PLoS One</source>
+          <year>2014</year>
+          <volume>9</volume>
+          <fpage>e101850</fpage>
+          <pub-id pub-id-type="pmid">25013894</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ekseth</surname>
+              <given-names>O.K.</given-names>
+            </name>
+            <name>
+              <surname>Kuiper</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Mironov</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>orthAgogue: an agile tool for the rapid prediction of orthology relations</article-title>
+          <source>Bioinformatics</source>
+          <year>2014</year>
+          <volume>30</volume>
+          <fpage>734</fpage>
+          <lpage>736</lpage>
+          <pub-id pub-id-type="pmid">24115168</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>UniProt</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>UniProt: a hub for protein information</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2015</year>
+          <volume>43</volume>
+          <fpage>D204</fpage>
+          <lpage>D212</lpage>
+          <pub-id pub-id-type="pmid">25348405</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McCarthy</surname>
+              <given-names>F.M.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Magee</surname>
+              <given-names>G.B.</given-names>
+            </name>
+            <name>
+              <surname>Nanduri</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Lawrence</surname>
+              <given-names>M.L.</given-names>
+            </name>
+            <name>
+              <surname>Camon</surname>
+              <given-names>E.B.</given-names>
+            </name>
+            <name>
+              <surname>Barrell</surname>
+              <given-names>D.G.</given-names>
+            </name>
+            <name>
+              <surname>Hill</surname>
+              <given-names>D.P.</given-names>
+            </name>
+            <name>
+              <surname>Dolan</surname>
+              <given-names>M.E.</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>W.P.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>AgBase: a functional genomics resource for agriculture</article-title>
+          <source>BMC Genomics</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <fpage>229</fpage>
+          <pub-id pub-id-type="pmid">16961921</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Edgar</surname>
+              <given-names>R.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>MUSCLE: multiple sequence alignment with high accuracy and high throughput</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2004</year>
+          <volume>32</volume>
+          <fpage>1792</fpage>
+          <lpage>1797</lpage>
+          <pub-id pub-id-type="pmid">15034147</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bailey</surname>
+              <given-names>T.L.</given-names>
+            </name>
+            <name>
+              <surname>Boden</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Buske</surname>
+              <given-names>F.A.</given-names>
+            </name>
+            <name>
+              <surname>Frith</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Grant</surname>
+              <given-names>C.E.</given-names>
+            </name>
+            <name>
+              <surname>Clementi</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Ren</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>W.W.</given-names>
+            </name>
+            <name>
+              <surname>Noble</surname>
+              <given-names>W.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>MEME SUITE: tools for motif discovery and searching</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2009</year>
+          <volume>37</volume>
+          <fpage>W202</fpage>
+          <lpage>W208</lpage>
+          <pub-id pub-id-type="pmid">19458158</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Price</surname>
+              <given-names>M.N.</given-names>
+            </name>
+            <name>
+              <surname>Dehal</surname>
+              <given-names>P.S.</given-names>
+            </name>
+            <name>
+              <surname>Arkin</surname>
+              <given-names>A.P.</given-names>
+            </name>
+          </person-group>
+          <article-title>FastTree 2&#x2014;approximately maximum-likelihood trees for large alignments</article-title>
+          <source>PLoS One</source>
+          <year>2010</year>
+          <volume>5</volume>
+          <fpage>e9490</fpage>
+          <pub-id pub-id-type="pmid">20224823</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bardou</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Mariette</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Escudie</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Djemiel</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Klopp</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>jvenn: an interactive Venn diagram viewer</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2014</year>
+          <volume>15</volume>
+          <fpage>293</fpage>
+          <pub-id pub-id-type="pmid">25176396</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jia</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Appels</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Pfeifer</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Tao</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Aegilops tauschii draft genome sequence reveals a gene repertoire for wheat adaptation</article-title>
+          <source>Nature</source>
+          <year>2013</year>
+          <volume>496</volume>
+          <fpage>91</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="pmid">23535592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Creevey</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Muller</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Doerks</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Arendt</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bork</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Identifying single copy orthologs in Metazoa</article-title>
+          <source>PLoS Comput. Biol.</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <fpage>e1002269</fpage>
+          <pub-id pub-id-type="pmid">22144877</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lopes</surname>
+              <given-names>C.T.</given-names>
+            </name>
+            <name>
+              <surname>Franz</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Kazi</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Donaldson</surname>
+              <given-names>S.L.</given-names>
+            </name>
+            <name>
+              <surname>Morris</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Bader</surname>
+              <given-names>G.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cytoscape Web: an interactive web-based network browser</article-title>
+          <source>Bioinformatics</source>
+          <year>2010</year>
+          <volume>26</volume>
+          <fpage>2347</fpage>
+          <lpage>2348</lpage>
+          <pub-id pub-id-type="pmid">20656902</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

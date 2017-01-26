@@ -1,0 +1,2809 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3017866</article-id>
+      <article-id pub-id-type="publisher-id">1471-2164-11-655</article-id>
+      <article-id pub-id-type="pmid">21106049</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2164-11-655</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>In silico reversal of repeat-induced point mutation (RIP) identifies the origins of repeat families and uncovers obscured duplicated genes</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="A1">
+          <name>
+            <surname>Hane</surname>
+            <given-names>James K</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>James.Hane@csiro.au</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A2">
+          <name>
+            <surname>Oliver</surname>
+            <given-names>Richard P</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>Richard.Oliver@curtin.edu.au</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Faculty of Health Sciences, Murdoch University, Perth, Western Australia, 6150, Australia</aff>
+      <aff id="I2"><label>2</label>Department of Environment and Agriculture, Curtin University, Perth, Western Australia, 6102, Australia</aff>
+      <aff id="I3"><label>3</label>Current address: CSIRO Plant Industry, CELS Floreat, Perth, Western Australia, 6014, Australia</aff>
+      <pub-date pub-type="collection">
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>24</day>
+        <month>11</month>
+        <year>2010</year>
+      </pub-date>
+      <volume>11</volume>
+      <fpage>655</fpage>
+      <lpage>655</lpage>
+      <history>
+        <date date-type="received">
+          <day>12</day>
+          <month>8</month>
+          <year>2010</year>
+        </date>
+        <date date-type="accepted">
+          <day>24</day>
+          <month>11</month>
+          <year>2010</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2010 Hane and Oliver; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2010</copyright-year>
+        <copyright-holder>Hane and Oliver; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (&lt;url&gt;http://creativecommons.org/licenses/by/2.0&lt;/url&gt;), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1471-2164/11/655"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Repeat-induced point mutation (RIP) is a fungal genome defence mechanism guarding against transposon invasion. RIP mutates the sequence of repeated DNA and over time renders the affected regions unrecognisable by similarity search tools such as BLAST.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>DeRIP is a new software tool developed to predict the original sequence of a RIP-mutated region prior to the occurrence of RIP. In this study, we apply deRIP to the genome of the wheat pathogen <italic>Stagonospora nodorum </italic>SN15 and predict the origin of several previously uncharacterised classes of repetitive DNA.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Five new classes of transposon repeats and four classes of endogenous gene repeats were identified after deRIP. The deRIP process is a new tool for fungal genomics that facilitates the identification and understanding of the role and origin of fungal repetitive DNA. DeRIP is open-source and is available as part of the RIPCAL suite at <ext-link ext-link-type="uri" xlink:href="http://www.sourceforge.net/projects/ripcal">http://www.sourceforge.net/projects/ripcal</ext-link>.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Repeat-induced point mutation (RIP) is a genome defence mechanism found within filamentous ascomycete fungi that is purported to combat transposon invasion. RIP mutates duplicated DNA sequences during sexual reproduction, thereby inactivating genes encoded in both copies. First discovered in <italic>Neurospora crassa </italic>[<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>], RIP was later demonstrated in the Ascomycetes <italic>Magnaporthe oryzae </italic>[<xref ref-type="bibr" rid="B3">3</xref>,<xref ref-type="bibr" rid="B4">4</xref>], <italic>Podospora anserina </italic>[<xref ref-type="bibr" rid="B5">5</xref>], <italic>Leptosphaeria maculans </italic>[<xref ref-type="bibr" rid="B6">6</xref>] and <italic>Fusarium graminearum </italic>[<xref ref-type="bibr" rid="B7">7</xref>]. Putative RIP events have also been detected bioinformatically in <italic>Aspergillus fumigatus </italic>[<xref ref-type="bibr" rid="B8">8</xref>], <italic>Fusarium oxysporum </italic>[<xref ref-type="bibr" rid="B9">9</xref>-<xref ref-type="bibr" rid="B11">11</xref>], <italic>Aspergillus nidulans </italic>[<xref ref-type="bibr" rid="B12">12</xref>], <italic>Neurospora tetrasperma </italic>[<xref ref-type="bibr" rid="B13">13</xref>], <italic>Microbotryum violaceum </italic>[<xref ref-type="bibr" rid="B14">14</xref>], <italic>Aspergillus oryzae </italic>[<xref ref-type="bibr" rid="B15">15</xref>], <italic>Magnaporthe oryzae </italic>[<xref ref-type="bibr" rid="B16">16</xref>], <italic>Colletotrichum cereal </italic>[<xref ref-type="bibr" rid="B17">17</xref>], <italic>Aspergillus niger </italic>[<xref ref-type="bibr" rid="B18">18</xref>], <italic>Penicillium chysogenum </italic>[<xref ref-type="bibr" rid="B18">18</xref>] and most recently in <italic>Stagonospora nodorum </italic>[<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B20">20</xref>]. Given this broad distribution, it is reasonable to assume that RIP is widespread across, but so far restricted to, filamentous ascomycota and basidiomycota.</p>
+      <p>The mechanism by which RIP operates is yet to be fully understood, but the following observations have been made. RIP involves transition mutations from C:G to T:A nucleotide base pairs in duplicated DNA; this affects both copies of the repeat and occurs prior to meiosis [<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>]. In the majority of cases studied so far, there is a strong bias for the mutation of C:G nucleotide base pairs followed by A:T nucleotide base pairs [<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B22">22</xref>]. Thus CpA di-nucleotides are more frequently affected than any of the other 15 di-nucleotides. CpA nucleotides are converted to TpA. Coincidentally, the complementary TpG di-nucleotide on the opposite strand is also converted to TpA (Table <xref ref-type="table" rid="T1">1</xref>). In <italic>N. crassa</italic>, RIP requires &#x2265; 80% identity of duplicated DNA over a length of &#x2265; 400 bp [<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>].</p>
+      <table-wrap id="T1" position="float">
+        <label>Table 1</label>
+        <caption>
+          <p>The four potential di-nucleotide RIP mutations detected by RIPCAL.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" colspan="4">RIP mutation</th>
+              <th align="left" colspan="2">Counted di-nucleotides</th>
+            </tr>
+            <tr>
+              <th align="left" colspan="2">Forward</th>
+              <th align="left" colspan="2">Reverse complement</th>
+              <th align="left">Forward</th>
+              <th align="left">Reverse complement</th>
+            </tr>
+            <tr>
+              <th colspan="4">
+                <hr/>
+              </th>
+              <th/>
+              <th/>
+            </tr>
+            <tr>
+              <th align="left">pre-RIP</th>
+              <th align="left">post-RIP</th>
+              <th align="left">pre-RIP</th>
+              <th align="left">post-RIP</th>
+              <th/>
+              <th/>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left">CpA</td>
+              <td align="left">TpA</td>
+              <td align="left">TpG</td>
+              <td align="left">TpA</td>
+              <td align="left">CpA, TpA</td>
+              <td align="left">TpG, TpA</td>
+            </tr>
+            <tr>
+              <td align="left">CpC</td>
+              <td align="left">TpC</td>
+              <td align="left">GpG</td>
+              <td align="left">GpA</td>
+              <td align="left">CpC, TpC</td>
+              <td align="left">GpG, GpA</td>
+            </tr>
+            <tr>
+              <td align="left">CpG</td>
+              <td align="left">TpG</td>
+              <td align="left">CpG</td>
+              <td align="left">CpA</td>
+              <td align="left">CpG, TpG</td>
+              <td align="left">CpG, CpA</td>
+            </tr>
+            <tr>
+              <td align="left">CpT</td>
+              <td align="left">TpT</td>
+              <td align="left">ApA</td>
+              <td align="left">ApG</td>
+              <td align="left">CpT, TpT</td>
+              <td align="left">ApG, ApA</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <p>The deRIP process counts the occurrence of the contributing di-nucleotides incrementally across a multiple alignment of repeats and alters the consensus sequence at each position to the appropriate pre-RIP di-nucleotide sequence.</p>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>The consequences of RIP are that repeated DNA segments, such as would result from the transposition of a retrotransposon, or the duplication of a gene, are mutated and inactivated. RIP would be expected to operate in successive sexual cycles until the sequence identity between duplicated sequences is reduced below the minimum homology threshold required by the RIP machinery. The genome would then contain a repeat family consisting of relics of the duplication event degraded to varying degrees.</p>
+      <p>The rapid increase in the number of fungal genome assemblies has created a demand for methods to detect and quantify RIP. Two approaches have been used; RIP indices and alignment methods. RIP increases the frequency of particular di-nucleotides (TpA in most cases studied to date) in affected regions of DNA. Thus RIP can be identified by comparing ratios of di-nucleotide frequencies in pre-RIP to post-RIP sequences; these ratios are referred to as "RIP indices" [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B25">25</xref>,<xref ref-type="bibr" rid="B26">26</xref>]. However, in reality RIP depends upon the alignment of two similar regions of double-stranded DNA [<xref ref-type="bibr" rid="B23">23</xref>] and therefore it is more appropriate to use alignments of repeat families to identify and quantify RIP. We have previously introduced a rapid, automated alignment-based procedure for the whole-genome analysis of RIP mutation called RIPCAL [<xref ref-type="bibr" rid="B20">20</xref>]. Using this procedure, we readily identified and quantified the degree of RIP in all repeated DNA families within the genome of the necrotrophic fungal wheat pathogen <italic>S. nodorum</italic>.</p>
+      <p><italic>Stagonospora </italic>(syn. <italic>Septoria</italic>) <italic>nodorum </italic>[teleomorph: <italic>Phaeosphaeria </italic>(syn. <italic>Leptosphaeria</italic>) <italic>nodorum </italic>(M&#xFC;ll) Hedjar.] is a major pathogen of wheat and is a model for the fungal class Dothideomycetes, a taxon that includes many important pathogens of crops [<xref ref-type="bibr" rid="B27">27</xref>]. <italic>S. nodorum </italic>infects wheat crops in most wheat-growing areas of the world [<xref ref-type="bibr" rid="B28">28</xref>]. Infection is predominantly determined by the presence of various effectors (host-specific toxins) harboured by different strains of the fungus [<xref ref-type="bibr" rid="B29">29</xref>]. The fungus is heterothallic (out-crossing) and the mating types are evenly distributed [<xref ref-type="bibr" rid="B30">30</xref>]. The fungus over-summers as ascospores on stubble [<xref ref-type="bibr" rid="B28">28</xref>] and multiplies via asexual reproduction during the growing season. The pathogen displays high levels of variability as determined by genomic analyses [<xref ref-type="bibr" rid="B31">31</xref>,<xref ref-type="bibr" rid="B32">32</xref>] and this has been exploited to determine the biogeographic history of the pathogen [<xref ref-type="bibr" rid="B33">33</xref>]. The pattern of micro-satellite markers is consistent with a pattern whereby the pathogen originated in the "Golden Triangle" region and spread as wheat cultivation was adopted in Eurasia and North Africa several thousand years ago and into North and South America, South Africa and Australia since European colonisation.</p>
+      <p>An initial survey of the nuclear genome sequence of a West Australian isolate (strain SN15) [<xref ref-type="bibr" rid="B19">19</xref>] identified 26 repeat families which comprised 6.2% of assembly. The role and origin of several repeat families could not be inferred by homology. We ascribed this to RIP mutation, after which all copies were unrecognisable. RIPCAL analysis showed that the repetitive DNA of SN15 was subject to RIP-like changes [<xref ref-type="bibr" rid="B20">20</xref>]. The rDNA repeat (Y1) exhibits selective susceptibility to RIP mutation (Figure <xref ref-type="fig" rid="F1">1</xref>). RIP does not affect copies located within the tandem rDNA array (also referred to as the nucleolus organiser region, or NOR, Figure <xref ref-type="fig" rid="F1">1</xref>: regions 3 &amp; 4) [<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B34">34</xref>]. One exception was found in a repeat at the array terminus, which showed evidence of RIP at similar levels to those of non-rDNA array repeats. rDNA repeats were also found scattered throughout the genome. Within the non-rDNA array repeats, short repeats (defined as &lt; 1 kb, however the majority were &lt; 300 bp) did not show evidence of RIP whilst the long repeats (&gt; 1 kb) were RIP-affected [<xref ref-type="bibr" rid="B20">20</xref>]. Due to the presence of both RIP-affected and non-RIP-affected copies, the rDNA repeat was perfectly suited to be used as a test case for the validity of bioinformatic predictions of RIP.</p>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p><bold>The distribution of the Y1 family of rDNA repeats and their susceptibility to RIP mutation</bold>. (A) A multiple alignment of Y1 rDNA repeats found in the genome of <italic>S. nodorum </italic>strain SN15. Each repeat was compared for mutation with the alignment majority consensus (black = match, grey = mismatch, white = gap). The mutation of CpN di-nucleotides is color-coded according to the legend (left). In <italic>S. nodorum </italic>RIP is characterised by the mutation of CpA di-nucleotides (red). Y1 rDNA repeats are grouped according to their genomic location and length. Full length rDNA repeats scattered randomly throughout the genome are prone to RIP whereas short, incomplete copies (defined as &lt;1 kb but generally &lt;300 bp) are not affected. rDNA repeats located in a tandem array at the 3' end of scaffold 5 [NCBI: CH445329] are protected from RIP, excepting a single repeat. (B) The <italic>S. nodorum </italic>tandem rDNA array, also known as the nucleolus organiser region (NOR), and flanking regions. Region 1 contains gene encoding regions, region 2 contains non-rDNA repeats and regions 3 and 4 comprise the tandem rDNA array. RIP mutates repetitive DNA, hence genes in region 1 are not RIP-mutated but repeats in region 2 are RIP-mutated (indicated in red). The tandem rDNA array repeats are protected from RIP (region 4), except for a single repeat at the array terminus (region 3).</p>
+        </caption>
+        <graphic xlink:href="1471-2164-11-655-1"/>
+      </fig>
+      <p>The presence and activity of transposons in <italic>S. nodorum </italic>had previously been studied using a transposon trap procedure [<xref ref-type="bibr" rid="B35">35</xref>]. Several strains of <italic>S. nodorum </italic>from the United Kingdom (UK) were plated on chlorate [<xref ref-type="bibr" rid="B36">36</xref>] to select for mutations in the nitrate reductase (<italic>Nia1</italic>) structural gene. Using the cloned <italic>Nia1 </italic>gene as a probe [<xref ref-type="bibr" rid="B37">37</xref>] several insertional mutants were identified. Three insertions were cloned and sequenced [<xref ref-type="bibr" rid="B35">35</xref>]. These insertion sequences, named Molly, Pixie and Elsa, represented intact copies of active transposons (Table <xref ref-type="table" rid="T2">2</xref>). Southern blots probed with these transposons revealed large variations in copy number, band size and band intensity between strains. When the sequences of the intact copies of these transposons were compared to the genome sequence of the SN15 strain [<xref ref-type="bibr" rid="B19">19</xref>], related repetitive regions were identified. However, no active (non-RIP-affected) copies of these transposons were found in the SN15 assembly. The lack of active transposons within SN15 was intriguing and raises the question of the relationship of the repeat families to the active transposons in the UK isolates. This relationship is addressed here.</p>
+      <table-wrap id="T2" position="float">
+        <label>Table 2</label>
+        <caption>
+          <p>Validation of the deRIP technique comparing homology of majority- and deRIP-consensus sequences with non-RIP-affected sequences.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th/>
+              <th/>
+              <th align="center" colspan="6">Blastn homology</th>
+              <th align="center" colspan="3">Needleman-Wunsch Global Alignment</th>
+            </tr>
+            <tr>
+              <th/>
+              <th/>
+              <th align="center" colspan="2">Majority consensus</th>
+              <th align="center" colspan="2">deRIP consensus</th>
+              <th align="center" colspan="2">deRIP improvement factor</th>
+              <th align="left">Majority consensus</th>
+              <th align="left">deRIP consensus</th>
+              <th align="right">deRIP improvement to percent identity</th>
+            </tr>
+            <tr>
+              <th align="left">Repeat class</th>
+              <th align="left">Hit Accession</th>
+              <th align="right">e-value</th>
+              <th align="right">bitscore</th>
+              <th align="right">e-value</th>
+              <th align="right">bitscore</th>
+              <th/>
+              <th/>
+              <th align="center" colspan="2">Percent identity</th>
+              <th/>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="11">
+                <bold>(A) Comparisons to active transposon sequences</bold>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="11">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">Elsa</td>
+              <td align="left">AJ277966</td>
+              <td align="right">1.00E-51</td>
+              <td align="right">216</td>
+              <td align="right">1.00E-121</td>
+              <td align="right">381</td>
+              <td align="right">1.8 X</td>
+              <td align="right">69.2%</td>
+              <td align="right">73.1%</td>
+              <td align="right" colspan="2">3.9%</td>
+            </tr>
+            <tr>
+              <td align="left">Molly</td>
+              <td align="left">AJ488502</td>
+              <td align="right">7.00E-07</td>
+              <td align="right">66</td>
+              <td align="right">3.00E-86</td>
+              <td align="right">329</td>
+              <td align="right">5.0 X</td>
+              <td align="right">72.3%</td>
+              <td align="right">77.5%</td>
+              <td align="right" colspan="2">5.2%</td>
+            </tr>
+            <tr>
+              <td align="left">Pixie</td>
+              <td align="left">AJ488503</td>
+              <td align="right">5.00E-07</td>
+              <td align="right">66</td>
+              <td align="right">2.00E-28</td>
+              <td align="right">137</td>
+              <td align="right">2.1 X</td>
+              <td align="right">72.5%</td>
+              <td align="right">75%</td>
+              <td align="right" colspan="2">2.5%</td>
+            </tr>
+            <tr>
+              <td colspan="11">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" colspan="11">
+                <bold>(B) Comparisons to RIP-protected rDNA array consensus (Figure 1: region 4)</bold>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="11">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" colspan="2">Long, non-rDNA array repeats &gt; 1 kb</td>
+              <td align="right">0</td>
+              <td align="right">12800</td>
+              <td align="right">0</td>
+              <td align="right">17220</td>
+              <td align="right">1.3 X</td>
+              <td align="right">89.5%</td>
+              <td align="right">94.0%</td>
+              <td align="right" colspan="2">4.5%</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="2">Short, non-rDNA array repeats &lt; 1 kb</td>
+              <td align="right">3.00E-10</td>
+              <td align="right">58</td>
+              <td align="right">1.00E-27</td>
+              <td align="right">122</td>
+              <td align="right">2.1 X</td>
+              <td align="right">46.2% <sup>a</sup></td>
+              <td align="right">45.6% <sup>a</sup></td>
+              <td align="right" colspan="2">-0.6%</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="2">RIP-mutated terminal rDNA array repeat<break/>(Figure 1: region 3)</td>
+              <td align="right">0</td>
+              <td align="right">8258</td>
+              <td align="right">--</td>
+              <td align="right">--</td>
+              <td align="right">--</td>
+              <td align="right">85.8%</td>
+              <td align="right">--</td>
+              <td align="right" colspan="2">--</td>
+            </tr>
+            <tr>
+              <td colspan="11">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" colspan="11"><sup>a </sup>Needleman-Wunsch global alignment was performed using a sub-region of long rDNA repeats corresponding to the short rDNA repeat consensus</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <p>Blastn hits and pairwise global percent identities to non-RIP-affected sequences were compared between the majority consensus and deRIP consensus versions. (A) The transposons Elsa, Molly and Pixie of <italic>S. nodorum </italic>SN15 were compared to active copies of an alternate strain. In all 3 cases the deRIP sequences match best to the active transposons. This is indicated by the 'deRIP improvement' factor and the differences in percent identities for global alignments. DeRIP improvement is a measure of how much better the deRIP consensus matched the hit compared to the majority consensus. DeRIP improvement &gt; 1 indicates that the repeat family was derived from the hit or a related homolog, but was subsequently mutated by RIP. (B) RIP-protected copies of the <italic>S. nodorum </italic>rDNA repeat are located within a tandem array (Figure <xref ref-type="fig" rid="F1">1</xref>). RIP-susceptible copies were grouped by size into long (&gt; 1 kB) and short (&lt; 1 kB) categories and compared to the RIP-protected copies. Homology between RIP-protected repeats in rDNA array and long RIP-susceptible non-rDNA array repeats were improved by deRIP. The rDNA array also contains one RIP-affected repeat at its terminus which shows similar levels of homology to the rDNA array as the majority consensus of the long non-rDNA array repeats.</p>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>Building upon the RIPCAL procedure, we describe here a new technique to reverse the effects of RIP mutation <italic>in silico</italic>: "deRIP". The deRIP process involves scanning a multiple alignment of a repeat family for RIP-like polymorphism and reverting the alignment consensus to the putative pre-RIP-mutated sequence. The resultant "deRIPped" sequence is a prediction of what a RIP-mutated repeat DNA may have looked like prior to RIP mutation. We have applied the deRIP process to the repetitive DNA of <italic>S. nodorum </italic>SN15 which has increased the number of recognisable repeat families from 65% (17/26) to 92% (23/25).</p>
+    </sec>
+    <sec>
+      <title>Results</title>
+      <sec>
+        <title>Validating the deRIP process using known non-RIP-affected repeats</title>
+        <p>The repetitive DNA content of the <italic>S. nodorum </italic>SN15 nuclear genome was previously estimated to contain 26 families comprising 6.2% of the assembly [<xref ref-type="bibr" rid="B19">19</xref>]. A repeat family was defined if there were 10 or more copies, of greater than 200 bp and sharing greater than 65% sequence identity. Each family had been analysed by RIPCAL and the extent of RIP measured using the CpA&#x2194;TpA dominance statistic [<xref ref-type="bibr" rid="B20">20</xref>]. RIP dominance varied from 0.2 to 2.96 (by comparison to the highest G:C content sequence). Blast comparisons predicted the origin of 17 out of the 26 repeat families.</p>
+        <p>Functional and authentic transposon homologues of the repeat families Molly, Pixie and Elsa had been previously characterized. Elsa was identified as a LTR retrotransposon; Molly and Pixie as Tc-1 Mariner elements [<xref ref-type="bibr" rid="B38">38</xref>]. Characterized sequences were derived from UK isolates of <italic>S. nodorum </italic>[<xref ref-type="bibr" rid="B35">35</xref>]. The maximum sequence identity between the proteins encoded by the active copies and matches within the SN15 genome assembly was approximately 66% by blastx (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>).</p>
+        <p>To determine whether the SN15 repeats were derived from the active copies via RIP mutation, the deRIP procedure was applied to the alignment of the Molly, Elsa and Pixie-like sequences. The example shown in Figure <xref ref-type="fig" rid="F2">2</xref> illustrates the deRIP process applied to the transposon repeat Molly.</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>Application of the deRIP process to the Molly transposon repeat family of <italic>Stagonospora nodorum </italic>SN15</bold>. Molly is one of three <italic>S. nodorum </italic>repeats with known functionally transposable sequence available [NCBI AJ488502.1]. (A) Genomic matches to the Molly repeat family were aligned and compared for RIP-like polymorphism against a model sequence (in this case the majority consensus). RIP mutation of the form CpN &#x2190;&#x2192; TpN was color-coded as indicated in the legend. (B) The deRIP process was applied to a 51 bp sub-region of the alignment. A 'majority' consensus of the alignment represented the most abundant nucleotide at each alignment position. The deRIP consensus was derived from the majority consensus, however where di-nucleotides were detected exhibiting RIP-like polymorphism (Table <xref ref-type="table" rid="T1">1</xref>) they were reverted back to their pre-RIP state. Changes in sequence between majority and deRIP consensus sequences was compared to the sequence of the active transposon. (C) Phylogram showing relationships between all genomic regions, majority consensus, deRIP consensus and active copy of the Molly repeat family. The deRIP consensus resembled the functional transposon more closely than the majority consensus, highest G:C content sequence and the majority of matching genomic regions.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-11-655-2"/>
+        </fig>
+        <p>Molly-like repeat sequences of SN15 were aligned and analysed for RIP mutation via RIPCAL [<xref ref-type="bibr" rid="B20">20</xref>] (Figure <xref ref-type="fig" rid="F2">2A</xref>). The alignment includes 18 full length copies and 22 incomplete copies. Mismatches between individual repeats and the majority consensus are colour-coded; vertical red bars represent the CpA/TpG to TpA di-nucleotide substitution previously shown to be the predominant RIP-induced change in <italic>S. nodorum </italic>[<xref ref-type="bibr" rid="B20">20</xref>]. The predominance of red changes indicates that the repeat family has been affected by RIP.</p>
+        <p>The Molly alignment was processed using the new deRIP algorithm. The process is illustrated in Figure <xref ref-type="fig" rid="F2">2B</xref> in a 51 bp subsection of the alignment from position 1900 to 1950. At position 1900-1901 of the alignment there is a TpA di-nucleotide in 23 out of 24 copies and TpG in one copy. This set of di-nucleotides corresponds to the TpG&#x2192; TpA mutation, which is characteristic of RIP (the reverse complement of CpA&#x2192; TpA, Table <xref ref-type="table" rid="T1">1</xref>). It was assumed that the TpA copies were derived from an ancestral TpG via RIP. Therefore while the majority consensus (alignment consensus by base majority) was TpA at this position, the deRIP process changed this to the most probable pre-RIP sequence - TpG. This process was extended across the length of the repeat alignment, producing a new sequence called the 'deRIP consensus'. This deRIP consensus sequence was compared to the majority consensus as well as the sequence of the active copy of Molly [NCBI: AJ488502.1] (Figure <xref ref-type="fig" rid="F2">2B</xref>). In this example, deRIP changes were labelled as "correct" where alterations in the deRIP consensus agreed with the sequence of the active copy. Nine such cases occurred in the highlighted section. DeRIP changes were labelled as "errors" where the deRIP changes and the active copy sequence did not agree. There was one deRIP error in the sub-alignment at alignment position 1940-1. Non-deRIP related base differences, common between the majority and deRIP consensus sequences but different in the active copy sequence, occurred five times in the sub-alignment.</p>
+        <p>All the Molly-like repeats, the active copy, the alignment 'majority' consensus sequence and the new deRIP consensus sequence were compared via RAxML (using the gamma model and maximum-likelihood phylogeny) [<xref ref-type="bibr" rid="B39">39</xref>] (Figure <xref ref-type="fig" rid="F2">2C</xref>). The deRIP-predicted sequence was a closer match to the authentic, active copy than the majority consensus. The relative levels of sequence similarity between the active transposon and the majority and deRIP consensus sequences were also tested via Needleman-Wunsch global alignment [<xref ref-type="bibr" rid="B40">40</xref>]. The sequence identity between the active copy and majority consensus was 72.3% whereas the identity between the active copy and the deRIP consensus was 77.5% (Table <xref ref-type="table" rid="T2">2</xref>).</p>
+        <p>The deRIP process was applied to the other transposon repeat families with pre-existing characterized active copy sequences, Pixie and Elsa. Table <xref ref-type="table" rid="T2">2A</xref> summarises the results for all three previously identified active <italic>S. nodorum </italic>transposons. In the case of Molly, the majority consensus by blastn had an e-value to the active copy of 7e-07 (bitscore = 66) whereas the deRIP consensus by blastn had ane-value of 3e-86 (bitscore = 329). These results can be summarised as a "deRIP improvement" of 329/66 = 5.0. DeRIP improvement factors were 1.8 and 2.1 and global percent identities to the active transposons were improved 3.9% and 2.5% for Elsa and Pixie respectively (Table <xref ref-type="table" rid="T2">2</xref>). The overall improvement in maximum bit scores to active transposons indicates that the deRIP versions were significantly better matches to the functional transposons that were the presumed ancestors of the sequences in the Australian SN15 strain.</p>
+        <p>The rDNA repeat family Y1 had been previously demonstrated to show differential susceptibility to RIP between its various copies (Figure <xref ref-type="fig" rid="F1">1</xref>) [<xref ref-type="bibr" rid="B20">20</xref>]. rDNA repeats within a tandem rDNA array were not RIP-affected except for one repeat at the array terminus. Non-rDNA array repeats greater than 1 kb (which we call "long") showed evidence of RIP, however non-rDNA array repeats less than 1 kb ("short") did not. After deRIP was applied to the consensus of long, non-rDNA array repeats, the percent identity to the non-RIP-affected rDNA-array consensus was improved by 4.5% - from 89.5% to 94% and the deRIP improvement factor was 1.3 (Table <xref ref-type="table" rid="T2">2</xref>). Conversely, the percent identity between the non-rDNA array short repeat consensus and the rDNA array consensus was not improved by deRIP (Table <xref ref-type="table" rid="T2">2</xref>). The RIP-affected terminal rDNA repeat and the majority consensus of the RIP-affected long non-rDNA array repeats both had similar levels of homology to the rDNA array (Table <xref ref-type="table" rid="T2">2</xref>).</p>
+      </sec>
+      <sec>
+        <title>Determining the role and origin of RIP-degraded repeats in <italic>S. nodorum</italic></title>
+        <p>The deRIP process was extended to all repeat families of <italic>S. nodorum </italic>SN15 (Additional files <xref ref-type="supplementary-material" rid="S2">2</xref>, <xref ref-type="supplementary-material" rid="S3">3</xref>, <xref ref-type="supplementary-material" rid="S4">4</xref>). Table <xref ref-type="table" rid="T3">3</xref> summarises the copy number and size of repeat families as estimated previously [<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B20">20</xref>]. The extent to which repeat families were affected by RIP is indicated by the RIP dominance scores. RIP dominance [<xref ref-type="bibr" rid="B20">20</xref>] was calculated using a variety of comparative models including: sequence of highest G:C content; alignment majority consensus and; consensus sequence predicted by deRIP (Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>). A RIP dominance of greater than 0.6 by comparison to the repeat with highest G:C content was considered a reliable threshold for RIP [<xref ref-type="bibr" rid="B20">20</xref>].</p>
+        <table-wrap id="T3" position="float">
+          <label>Table 3</label>
+          <caption>
+            <p>Summary of RIP mutation in the repeat families of S. nodorum strain SN15.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th/>
+                <th/>
+                <th/>
+                <th align="center" colspan="3">RIP Dominance Scores</th>
+                <th align="center" colspan="3">NCBI NR Protein Blastx</th>
+                <th align="center" colspan="3">GIRI Repbase Tblastx</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">
+                  <bold>Repeat Family</bold>
+                </td>
+                <td align="center">
+                  <bold>Copy Number</bold>
+                </td>
+                <td align="center">
+                  <bold>Full Length (bp)</bold>
+                </td>
+                <td align="center"><bold>RIP dominance by highest G:C content </bold>[<xref ref-type="bibr" rid="B20">20</xref>]</td>
+                <td align="center">
+                  <bold>RIP dominance by majority consensus</bold>
+                </td>
+                <td align="center">
+                  <bold>RIP dominance by deRIP consensus</bold>
+                </td>
+                <td align="center">
+                  <bold>Hits to deRIP consensus</bold>
+                </td>
+                <td align="center">
+                  <bold>Hits to majority consensus</bold>
+                </td>
+                <td align="center">
+                  <bold>deRIP Improve-ment factor (Maximum value)</bold>
+                </td>
+                <td align="center">
+                  <bold>Hits to deRIP consensus</bold>
+                </td>
+                <td align="center">
+                  <bold>Hits to majority consensus</bold>
+                </td>
+                <td align="center">
+                  <bold>deRIP Improve-ment factor (Maximum value)</bold>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="12">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="center">R8</td>
+                <td align="right">48</td>
+                <td align="right">9143</td>
+                <td align="right">2.96</td>
+                <td align="right">1.95</td>
+                <td align="right">2.91</td>
+                <td align="right">126</td>
+                <td align="right">77</td>
+                <td align="right">1.96</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">R10</td>
+                <td align="right">59</td>
+                <td align="right">1241</td>
+                <td align="right">1.91</td>
+                <td align="right">0.96</td>
+                <td align="right">2.07</td>
+                <td align="right">3</td>
+                <td align="right">2</td>
+                <td align="right">2.13</td>
+                <td align="right">0</td>
+                <td align="right">3</td>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">X0</td>
+                <td align="right">76</td>
+                <td align="right">3862</td>
+                <td align="right">2.13</td>
+                <td align="right">0.97</td>
+                <td align="right">2.05</td>
+                <td align="right">1</td>
+                <td align="right">0</td>
+                <td/>
+                <td align="right">3</td>
+                <td align="right">1</td>
+                <td align="right">1.34</td>
+              </tr>
+              <tr>
+                <td align="center">R9</td>
+                <td align="right">72</td>
+                <td align="right">4108</td>
+                <td align="right">1.88</td>
+                <td align="right">0.92</td>
+                <td align="right">1.77</td>
+                <td align="right">250</td>
+                <td align="right">25</td>
+                <td align="right">2.75</td>
+                <td align="right">124</td>
+                <td align="right">4</td>
+                <td align="right">1.28</td>
+              </tr>
+              <tr>
+                <td align="center">Molly</td>
+                <td align="right">40</td>
+                <td align="right">1862</td>
+                <td align="right">1.21</td>
+                <td align="right">0.64</td>
+                <td align="right">1.73</td>
+                <td align="right">250</td>
+                <td align="right">161</td>
+                <td align="right">3.78</td>
+                <td align="right">34</td>
+                <td align="right">15</td>
+                <td align="right">1.92</td>
+              </tr>
+              <tr>
+                <td align="center">X3</td>
+                <td align="right">213</td>
+                <td align="right">9364</td>
+                <td align="right">0.63</td>
+                <td align="right">0.81</td>
+                <td align="right">1.62</td>
+                <td align="right">11</td>
+                <td align="right">10</td>
+                <td align="right">2.8</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">X35</td>
+                <td align="right">19</td>
+                <td align="right">1157</td>
+                <td align="right">1.5</td>
+                <td align="right">1.34</td>
+                <td align="right">1.43</td>
+                <td align="right">1</td>
+                <td align="right">0</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">X96</td>
+                <td align="right">14</td>
+                <td align="right">308</td>
+                <td align="right">0.87</td>
+                <td align="right">0.89</td>
+                <td align="right">1.39</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">X48</td>
+                <td align="right">22</td>
+                <td align="right">265</td>
+                <td align="right">1.82</td>
+                <td align="right">1.16</td>
+                <td align="right">1.33</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">R22</td>
+                <td align="right">23</td>
+                <td align="right">678</td>
+                <td align="right">1.2</td>
+                <td align="right">0.84</td>
+                <td align="right">1.28</td>
+                <td/>
+                <td/>
+                <td/>
+                <td align="right">2</td>
+                <td align="right">2</td>
+                <td align="right">1.06</td>
+              </tr>
+              <tr>
+                <td align="center">X26</td>
+                <td align="right">38</td>
+                <td align="right">4628</td>
+                <td align="right">1.16</td>
+                <td align="right">1.08</td>
+                <td align="right">1.19</td>
+                <td align="right">57</td>
+                <td align="right">57</td>
+                <td align="right">1.38</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">Pixie</td>
+                <td align="right">28</td>
+                <td align="right">1845</td>
+                <td align="right">0.77</td>
+                <td align="right">0.57</td>
+                <td align="right">1.06</td>
+                <td align="right">250</td>
+                <td align="right">190</td>
+                <td align="right">1.79</td>
+                <td align="right">17</td>
+                <td align="right">18</td>
+                <td align="right">1.25</td>
+              </tr>
+              <tr>
+                <td align="center">R37</td>
+                <td align="right">98</td>
+                <td align="right">1603</td>
+                <td align="right">0.49</td>
+                <td align="right">0.25</td>
+                <td align="right">0.95</td>
+                <td align="right">0</td>
+                <td align="right">55</td>
+                <td/>
+                <td align="right">4</td>
+                <td align="right">18</td>
+                <td align="right">1.16</td>
+              </tr>
+              <tr>
+                <td align="center">R31</td>
+                <td align="right">23</td>
+                <td align="right">3031</td>
+                <td align="right">0.99</td>
+                <td align="right">0.83</td>
+                <td align="right">0.9</td>
+                <td align="right">16</td>
+                <td align="right">15</td>
+                <td align="right">1.44</td>
+                <td align="right">3</td>
+                <td align="right">7</td>
+                <td align="right">1.14</td>
+              </tr>
+              <tr>
+                <td align="center">X23</td>
+                <td align="right">29</td>
+                <td align="right">685</td>
+                <td align="right">0.45</td>
+                <td align="right">0.4</td>
+                <td align="right">0.9</td>
+                <td/>
+                <td/>
+                <td/>
+                <td align="right">3</td>
+                <td align="right">3</td>
+                <td align="right">0.82</td>
+              </tr>
+              <tr>
+                <td align="center">X36</td>
+                <td align="right">10</td>
+                <td align="right">512</td>
+                <td align="right">0.89</td>
+                <td align="right">0.78</td>
+                <td align="right">0.87</td>
+                <td align="right">2</td>
+                <td align="right">1</td>
+                <td align="right">1.43</td>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">Elsa</td>
+                <td align="right">17</td>
+                <td align="right">5240</td>
+                <td align="right">0.86</td>
+                <td align="right">0.78</td>
+                <td align="right">0.82</td>
+                <td align="right">250</td>
+                <td align="right">231</td>
+                <td align="right">2.06</td>
+                <td align="right">65</td>
+                <td align="right">30</td>
+                <td align="right">1.44</td>
+              </tr>
+              <tr>
+                <td align="center">R51</td>
+                <td align="right">39</td>
+                <td align="right">833</td>
+                <td align="right">0.47</td>
+                <td align="right">0.31</td>
+                <td align="right">0.8</td>
+                <td align="right">0</td>
+                <td align="right">3</td>
+                <td/>
+                <td align="right">0</td>
+                <td align="right">3</td>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">X11</td>
+                <td align="right">36</td>
+                <td align="right">8555</td>
+                <td align="right">0.83</td>
+                <td align="right">0.71</td>
+                <td align="right">0.78</td>
+                <td align="right">250</td>
+                <td align="right">250</td>
+                <td align="right">1.35</td>
+                <td align="right">250</td>
+                <td align="right">228</td>
+                <td align="right">2.18</td>
+              </tr>
+              <tr>
+                <td align="center">X12</td>
+                <td align="right">29</td>
+                <td align="right">2263</td>
+                <td align="right">0.67</td>
+                <td align="right">0.43</td>
+                <td align="right">0.76</td>
+                <td align="right">0</td>
+                <td align="right">1</td>
+                <td/>
+                <td align="right">10</td>
+                <td align="right">10</td>
+                <td align="right">1.44</td>
+              </tr>
+              <tr>
+                <td align="center">R39</td>
+                <td align="right">29</td>
+                <td align="right">2050</td>
+                <td align="right">0.59</td>
+                <td align="right">0.28</td>
+                <td align="right">0.74</td>
+                <td align="right">173</td>
+                <td align="right">149</td>
+                <td align="right">1.54</td>
+                <td align="right">34</td>
+                <td align="right">31</td>
+                <td align="right">1.88</td>
+              </tr>
+              <tr>
+                <td align="center">X28</td>
+                <td align="right">30</td>
+                <td align="right">1784</td>
+                <td align="right">0.83</td>
+                <td align="right">0.59</td>
+                <td align="right">0.73</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td align="center">R25</td>
+                <td align="right">23</td>
+                <td align="right">3320</td>
+                <td align="right">0.25</td>
+                <td align="right">0.6</td>
+                <td align="right">0.65</td>
+                <td align="right">4</td>
+                <td align="right">4</td>
+                <td align="right">1.19</td>
+                <td align="right">3</td>
+                <td align="right">1</td>
+                <td align="right">0.86</td>
+              </tr>
+              <tr>
+                <td align="center">X15</td>
+                <td align="right">37</td>
+                <td align="right">6231</td>
+                <td align="right">0.61</td>
+                <td align="right">0.46</td>
+                <td align="right">0.61</td>
+                <td align="right">250</td>
+                <td align="right">250</td>
+                <td align="right">1.45</td>
+                <td align="right">243</td>
+                <td align="right">217</td>
+                <td align="right">1.66</td>
+              </tr>
+              <tr>
+                <td align="center">R38</td>
+                <td align="right">25</td>
+                <td align="right">358</td>
+                <td align="right">0.2</td>
+                <td align="right">0.14</td>
+                <td align="right">0.5</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>RIP dominance, a measure of the strength of RIP mutation, is reported for all 3 different RIPCAL comparison methods: versus the highest G:C content sequence; versus the alignment 'majority' consensus and; versus the deRIP consensus. Measures of how much the predicted deRIP consensus of a repeat family resembles its original version, hit discovery scores and deRIP improvement factors, are also summarised for comparisons against NCBI NR Proteins via blastx and the GIRI Repbase database of repetitive elements via tblastx.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>DeRIP consensus-generated RIP dominances correlated with the highest G:C content RIP dominance scores better (correlation coefficient = 0.88) than those of the majority consensus (0.85). This supports the reliability of the deRIP consensus as an accurate prediction of the pre-RIP-mutated progenitor sequence.</p>
+        <p>Table <xref ref-type="table" rid="T3">3</xref> also lists Blast hits to the NCBI NR and GIRI Repbase. The number of hits of the majority consensus is compared to those of the deRIP consensus sequence. Similarly, the number of hits of either sequence to Repbase is also reported. The deRIP improvement factor used the ratio of highest bit scores of the deRIP and majority sequences to either NR by blastx or Repbase by tblastx respectively. An improvement factor can only be calculated if both consensus sequences have hits above the thresholds (see methods).</p>
+        <p>In the great majority of cases the number of hits of the deRIP consensus matched or exceeded the number achieved by the majority consensus sequences (Table <xref ref-type="table" rid="T3">3</xref>). In two cases, (X35, X0 to NR) the deRIP sequence found a hit where none had been found before (Table <xref ref-type="table" rid="T4">4</xref>). In other cases, very substantial increases in hit number were observed (R8, R9 to NR; R9 to Repbase). In a few cases the number of hits was reduced (X12, R37 and R51 by NR; R10, Pixie, R31 and R37 by Repbase).</p>
+        <table-wrap id="T4" position="float">
+          <label>Table 4</label>
+          <caption>
+            <p>Classification of repeat family origin in S. nodorum SN15.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="left">Repeat family</th>
+                <th align="left"><bold>Predicted origin </bold>[<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B20">20</xref>]</th>
+                <th align="left">Predicted origin after deRIP</th>
+                <th align="left">comparison type</th>
+                <th align="left">informative hits</th>
+                <th align="left">Majority Consensus e-value</th>
+                <th align="left">deRIP consensus e-value</th>
+                <th align="left">deRIP improvement factor (maximum)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">X26</td>
+                <td align="left">Sub-telomeric, transposon remnant</td>
+                <td align="left">Telomere-associated RecQ helicase</td>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAL89306.1 telomere-associated RecQ helicase, putative<break/><italic>Aspergillus fumigatus </italic>Af293</td>
+                <td align="left">1.00E-07</td>
+                <td align="left">2.00E-12</td>
+                <td align="left">1.25</td>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">R25</td>
+                <td align="left">Transposon remnant</td>
+                <td align="left">Histone H3</td>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EDU47581.1 histone H3<break/><italic>Pyrenophora tritici-repentis </italic>Pt-1C-BFP</td>
+                <td align="left">0.032</td>
+                <td align="left">2.00E-04</td>
+                <td align="left">1.16</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">tblastx vs Repbase</td>
+                <td align="left">TDD4 DNA transposon<break/><italic>Dictyostelium_discoideum</italic></td>
+                <td/>
+                <td align="left">6.00E-04</td>
+                <td/>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">R10</td>
+                <td align="left">Unknown</td>
+                <td align="left">Uncharacterized endogenous gene region and DNA transposon</td>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT76576.1 hypothetical protein SNOG_15997<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">2.2</td>
+                <td align="left">2.00E-13</td>
+                <td align="left">2.13</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT81769.1 hypothetical protein SNOG_11270<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td/>
+                <td align="left">5.00E-11</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT76052.1 hypothetical protein SNOG_16585<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">0.006</td>
+                <td align="left">2.00E-08</td>
+                <td align="left">1.40</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">tblastx vs Repbase</td>
+                <td align="left">CR1-3_HM CR1<break/><italic>Hydra magnipapillata</italic></td>
+                <td align="left">9.00E-06</td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">R31</td>
+                <td align="left">Unknown</td>
+                <td align="left">DNA Transposon</td>
+                <td align="left">blastx vs NR</td>
+                <td align="left">CAP79587.1 Pc23g00930<break/><italic>Penicillium chrysogenum </italic>Wisconsin 54-1255</td>
+                <td align="left">0.013</td>
+                <td align="left">1.00E-06</td>
+                <td align="left">1.28</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">tblastx vs Repbase</td>
+                <td align="left">hAT-1_AN hAT DNA transposon<break/><italic>Emericella nidulans</italic></td>
+                <td align="left">1.00E-05</td>
+                <td align="left">1.00E-06</td>
+                <td align="left">1.07</td>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">R39</td>
+                <td align="left">Unknown</td>
+                <td align="left">Mariner/Tc1-like DNA transposon</td>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT91063.1 hypothetical protein SNOG_01414<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">2.00E-62</td>
+                <td align="left">3.00E-73</td>
+                <td align="left">1.15</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EED11513.1 pogo transposable element, putative<break/><italic>Talaromyces stipitatus </italic>ATCC 10500</td>
+                <td align="left">2.00E-28</td>
+                <td align="left">1.00E-36</td>
+                <td align="left">1.20</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">tblastx vs Repbase</td>
+                <td align="left">Mariner-9_AN Mariner/Tc1<break/><italic>Emericella_nidulans</italic></td>
+                <td align="left">8.00E-37</td>
+                <td align="left">1.00E-25</td>
+                <td align="left">1.01</td>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">R51</td>
+                <td align="left">Unknown</td>
+                <td align="left">Mariner/Tc1-like DNA transposon</td>
+                <td align="left">tblastx vs Repbase</td>
+                <td align="left">P-29_HM P<break/><italic>Hydra magnipapillata</italic></td>
+                <td align="left">1.00E-05</td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">tblastx vs Repbase</td>
+                <td align="left">Mariner-31_HM Mariner/Tc1<break/><italic>Hydra magnipapillata</italic></td>
+                <td align="left">3.00E-05</td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">X23</td>
+                <td align="left">Unknown</td>
+                <td align="left">LTR Retrotransposon</td>
+                <td align="left">tblastx vs Repbase</td>
+                <td align="left">ATCOPIA80_I Copia<break/><italic>Arabidopsis thaliana</italic></td>
+                <td/>
+                <td align="left">1.00E-04</td>
+                <td/>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">tblastx vs Repbase</td>
+                <td align="left">CR1-3_HM CR1<break/><italic>Hydra magnipapillata</italic></td>
+                <td align="left">9.00E-05</td>
+                <td align="left">3.00E-04</td>
+                <td align="left">0.82</td>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">X36</td>
+                <td align="left">Unknown</td>
+                <td align="left">Retrotransposon</td>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAS29858.1 hypothetical protein CIMG_08604<break/><italic>Coccidioides immitis </italic>RS</td>
+                <td align="left">4.9</td>
+                <td align="left">2.00E-04</td>
+                <td align="left">1.43</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">gag-pol polyprotein<break/><italic>Podospora anserina</italic></td>
+                <td/>
+                <td align="left">4.00E-03</td>
+                <td/>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">X3X3R8</td>
+                <td align="left">X3: Helicase</td>
+                <td align="left">Endogenous gene cluster containing tandem duplicated Rad5/SNF2-like helicase, Rad6/ubiquitin conjugating enzyme and uncharacterised ORFs</td>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT83378.1 hypothetical protein SNOG_09186<break/>EAT91019.1 hypothetical protein SNOG_01370<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">1.00E-165</td>
+                <td align="left">0</td>
+                <td align="left">1.48</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT90556.1 hypothetical protein SNOG_02344<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">6.00E-75</td>
+                <td align="left">1.00E-122</td>
+                <td align="left">1.54</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT83381.1 hypothetical protein SNOG_09189<break/>EAT91023.1 hypothetical protein SNOG_01374<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">8.00E-93</td>
+                <td align="left">1.00E-117</td>
+                <td align="left">1.51</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT90553.1 hypothetical protein SNOG_02341<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">7.00E-61</td>
+                <td align="left">1.00E-100</td>
+                <td align="left">1.51</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT92620.1 hypothetical protein SNOG_16597<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">9.00E-39</td>
+                <td align="left">2.00E-49</td>
+                <td align="left">1.43</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT91018.1 hypothetical protein SNOG_01369 <italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">3.00E-30</td>
+                <td align="left">1.00E-48</td>
+                <td align="left">1.44</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT90555.1 hypothetical protein SNOG_02343<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">7.00E-36</td>
+                <td align="left">5.00E-33</td>
+                <td align="left">1.31</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT90554.1 hypothetical protein SNOG_02342<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">1.00E-36</td>
+                <td align="left">2.00E-26</td>
+                <td align="left">1.34</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT83379.1 hypothetical protein SNOG_09187<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">3.00E-14</td>
+                <td align="left">1.00E-21</td>
+                <td align="left">1.28</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT91020.2 hypothetical protein SNOG_01371<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">3.00E-15</td>
+                <td align="left">2.00E-20</td>
+                <td align="left">1.19</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT83294.1 hypothetical protein SNOG_09102<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">2.00E-13</td>
+                <td align="left">4.00E-20</td>
+                <td align="left">1.25</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT83377.2 hypothetical protein SNOG_09185<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">1.00E-13</td>
+                <td align="left">8.00E-20</td>
+                <td align="left">1.23</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT92618.1 hypothetical protein SNOG_16595 <italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">3.00E-07</td>
+                <td align="left">4.00E-19</td>
+                <td align="left">1.60</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT83380.1 hypothetical protein SNOG_09188<break/>EAT91022.1 hypothetical protein SNOG_01373<break/>EAT92619.1 hypothetical protein SNOG_16596 <italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">4.00E-05</td>
+                <td align="left">7.00E-15</td>
+                <td align="left">1.57</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT91021.1 hypothetical protein SNOG_01372<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">2.00E-06</td>
+                <td align="left">8.00E-14</td>
+                <td align="left">1.40</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EDU40406.1 ubiquitin-conjugating enzyme E2-21 kDa<break/><italic>Pyrenophora tritici-repentis </italic>Pt-1C-BFP</td>
+                <td align="left">2.00E-10</td>
+                <td align="left">2.00E-16</td>
+                <td align="left">1.27</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAW17873.1 ubiquitin conjugating enzyme (<italic>UbcC</italic>), putative<break/><italic>Neosartorya fischeri </italic>NRRL 181</td>
+                <td align="left">1.00E-07</td>
+                <td align="left">2.00E-13</td>
+                <td align="left">1.29</td>
+              </tr>
+              <tr>
+                <td/>
+                <td colspan="1">
+                  <hr/>
+                </td>
+                <td/>
+                <td colspan="5">
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td/>
+                <td align="left">R8: Ubiquitin conjugating enzyme</td>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT91013.2 hypothetical protein SNOG_01364<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">0</td>
+                <td align="left">0</td>
+                <td align="left">0.91</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT92627.2 hypothetical protein SNOG_16589<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">0</td>
+                <td align="left">0</td>
+                <td align="left">0.91</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT83373.2 hypothetical protein SNOG_09181<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">1.00E-177</td>
+                <td align="left">0</td>
+                <td align="left">0.95</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT90557.2 hypothetical protein SNOG_02345<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">2.00E-65</td>
+                <td align="left">1.00E-106</td>
+                <td align="left">2.80</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT90559.2 hypothetical protein SNOG_02347<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">1.00E-62</td>
+                <td align="left">5.00E-91</td>
+                <td align="left">1.38</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT91015.1 hypothetical protein SNOG_01366<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">3.00E-40</td>
+                <td align="left">3.00E-62</td>
+                <td align="left">1.35</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT85951.1 hypothetical protein SNOG_06120<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">2.00E-18</td>
+                <td align="left">3.00E-24</td>
+                <td align="left">1.19</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT91016.1 hypothetical protein SNOG_01367<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">1.00E-15</td>
+                <td align="left">2.00E-23</td>
+                <td align="left">1.28</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT83374.2 hypothetical protein SNOG_09182<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">5.00E-05</td>
+                <td align="left">4.00E-08</td>
+                <td align="left">1.23</td>
+              </tr>
+              <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td align="left">blastx vs NR</td>
+                <td align="left">EAT91014.2 hypothetical protein SNOG_01365<break/><italic>Phaeosphaeria nodorum </italic>SN15</td>
+                <td align="left">1.00E-04</td>
+                <td align="left">2.00E-04</td>
+                <td align="left">1.15</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>After deRIP analysis the predicted origin of 8 repeat families has been altered from that described in Hane &amp; Oliver (2008) [<xref ref-type="bibr" rid="B20">20</xref>]. Details of the blast hits which were most informative in re-classifying a repeat family are listed below. E-values are shown for matches to both the majority and deRIP consensus sequences. DeRIP improvement is a measure of how much better the deRIP consensus matched the hit compared to the majority consensus. DeRIP improvement &gt; 1 indicates that the repeat family was derived from the hit or a related homolog, but was subsequently mutated by RIP.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The deRIP improvement factor was greater than one in all cases for NR and in all but two case for Repbase indicating a general increase in the confidence and significance of a hit and hence a functional assignment. The factor ranged up to 3.78 for NR and up to 2.18 for Repbase hits (Table <xref ref-type="table" rid="T3">3</xref>). In two cases (R25 and X23) the factor with Repbase was less than 1. This can occur if the hit present in the reference database had been submitted in its non-functional, RIP-affected form.</p>
+        <p>Blast information was used to determine the origin of several RIP-degraded repeat families of <italic>S. nodorum </italic>SN15. Previously the probable origin of 17 out of 26 repeat families had been identified. However after deRIP had been applied to each repeat family, 23 out of 25 have now been categorised. In six cases (R10, R31, R39, R51, X23 and X36) no previous homology information had been available. Repeat families R31, R39, R51, X23 and X36 were re-classified as transposons after deRIP analysis (Table <xref ref-type="table" rid="T4">4</xref>). The repeat family R10, also previously unknown, was identified as corresponding to <italic>S. nodorum </italic>genes SNOG_15997, SNOG_11270 and SNOG_16585 [NCBI: EAT76576.1, EAT81769.1, EAT76052.1].</p>
+        <p>The previous classification of X15 as a Gypsy class transposon remnant was confirmed after deRIP. The deRIP improvement factors for Gypsy sequences were 1.45 and 1.66 for NR Proteins and Repbase sequences respectively (Table <xref ref-type="table" rid="T4">4</xref>). X26, previously predicted to be a transposon remnant, was found after deRIP to contain regions corresponding to a telomere-associated RecQ helicase (Table <xref ref-type="table" rid="T4">4</xref>). R25 was previously classified as a putative transposon remnant. After deRIP, some weak homology to DNA transposons was detected versus Repbase but a region of homology to histone H3 proteins was also detected (Table <xref ref-type="table" rid="T4">4</xref>). Repeat family R25 was thus re-classified as originating from a (presumably) endogenous gene-encoding region.</p>
+        <p>R8 and X3 were previously predicted to contain the remnants of an ubiquitin conjugating enzyme and helicase genes respectively [<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B20">20</xref>]. DeRIP analysis was used to predict the ancestral sequence and identified matches to nine copies of a cluster of endogenous <italic>S. nodorum </italic>genes (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). Analysis of repeats X3 and R8 indicated that several copies of these repeat families were physically adjacent (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). Studying the location of X3 and R8 repeats revealed that these repeats were frequently arranged in a distinctive pattern roughly corresponding to two tandem X3 repeats followed by a reversed R8 repeat (Figure <xref ref-type="fig" rid="F3">3</xref>, Figure S# 4). These two repeat classes were combined and renamed X3X3R8.</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Nine copies of the repeat X3X3R8 contain predicted gene annotations in the <italic>S. nodorum </italic>genome</bold>. Blast analysis of the deRIP consensus sequence led to the hypothesis that 3 helicase genes, an ubiquitin conjugating enzyme and 2 unknown genes originally occupied this region. The effects of RIP mutation have led to the disruption of open-reading frames in several of these genes resulting in multiple, short-length gene predictions which are highly likely to be pseudogenes.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-11-655-3"/>
+        </fig>
+        <p>In addition to the cluster of endogenous genes, the X3X3R8 deRIP consensus also hit known ubiquitin conjugating enzymes with greater homology than the majority consensus (Table <xref ref-type="table" rid="T4">4</xref>). Homology relationships to DNA excision/repair helicase regions were inferred from hits to the endogenous <italic>S. nodorum </italic>genes residing within X3X3R8 (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>).</p>
+        <p>Since the deRIP consensus is a prediction of the sequence prior to RIP-mutation it can be presumed that the X3X3R8 repeats with functional genes are closely related to the deRIP consensus. The majority of repeats with predicted gene annotations were found to be highly similar to the deRIP consensus (Figure <xref ref-type="fig" rid="F4">4</xref>, green circles). Current evidence supports the functionality of some or all of the genes contained in six out of these nine X3X3R8 repeats.</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>Comparison of the repeats of the X3X3R8 repeat family with respect to predicted gene content</bold>. The deRIP consensus (red square, top) is a prediction of the original repeat sequence prior to RIP-degradation. Nine X3X3R8 repeats contained predicted gene annotations (green circles, refer to Figure 3). All gene-annotation containing repeats were more closely related to the deRIP consensus than to the majority consensus (red square, middle).</p>
+          </caption>
+          <graphic xlink:href="1471-2164-11-655-4"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec>
+      <title>Discussion</title>
+      <p>The deRIP algorithm was designed to reverse the affect of RIP upon repeat families in-silico and thereby help determine the evolutionary history of repeated elements. The process automates the selective alteration of bases within a consensus according to a set of rules that can be determined by considering the RIP machinery operating in the organism concerned. Despite its validation with known non-RIP-affected sequences, deRIP has some limitations and will not necessarily perfectly predict the ancestral sequence. DeRIP can only choose within options provided by the aligned set of repeats. In the example given in Figure <xref ref-type="fig" rid="F2">2</xref> the TpA sequence at position 1900-1901 was converted to TpG. To do this, at least one of the copies of the repeat must have the presumably ancestral di-nucleotide TpG at this site. If all extant copies had been mutated, the reversion would have no support. The deRIP process is therefore critically dependent on the degree of RIP within a repeat. The success of deRIP is also dependent upon the accuracy of the alignment. A noteworthy aside is that default alignment parameters often fail to align fungal repeats correctly due to complex internal repeat structures. Finally, the diagnostic metrics of deRIP success, deRIP improvement and hit discovery, are only possible to calculate if appropriate matching sequences exist in the queried databases. If a repeat sequence is truly novel, its "homology" cannot be improved until homologs are found.</p>
+      <p>RIPCAL uses a model sequence to compare to aligned repeats for RIP-like polymorphism. Selecting the repeat with the highest total count of G and C nucleotides assumes that high G:C content is representative of the least RIP-affected repeat. The majority consensus model on the other hand could be representative of the least or most RIP-affected repeat depending on the level of RIP mutation within the repeat family. Previously, we had selected the sequence with the highest G:C content as the RIPCAL model [<xref ref-type="bibr" rid="B20">20</xref>]. While in most cases this rationale is sound, the G:C model has several shortcomings. If a sequence with the highest total G:C content does not span the full length of its alignment, RIP data from the un-covered regions would be lost. Alternatively, a repeat longer than the least RIP-affected repeat (e.g. resulting from a large sequence insertion into a RIP-affected repeat) may have higher total G:C content merely due to its greater length. The G:C model is also sensitive to variations in G:C content not related to RIP. Furthermore, RIP occurs between multiple combinations of repeats over time. The G:C model sequence therefore comprises of an amalgam of pre-RIP and post-RIP di-nucleotides relative to the alignment as a whole.</p>
+      <p>RIP mutations have directionality (Table <xref ref-type="table" rid="T1">1</xref>), so the combination of pre- and post-RIP sites makes it necessary to consider RIP mutation both towards and away from the G:C model sequence. In contrast, a deRIP consensus model, being a prediction of the pre-RIP-mutated sequence, has the advantage of polarity. As such, deRIP mutation calculations can be restricted to one direction: proceeding from the deRIP consensus to the RIP-affected repeat.</p>
+      <p>The prior isolation of active copies of three transposons, Molly Pixie and Elsa, as well as the differential effect of RIP on the rDNA repeats, allowed a thorough test of the power of deRIP to reconstruct the ancestral sequence. In all four examples the predicted deRIP consensus of the RIP-affected sequences was the best match to the active copy indicating that deRIP was able to accurately revert the RIP-degraded repeats close to their original states. These analyses helped define the concepts of hit discovery number and deRIP improvements as applied more broadly in Table <xref ref-type="table" rid="T3">3</xref>.</p>
+      <p>The deRIP process serves to highlight the effectiveness of RIP as a transposon-silencing mechanism. In most observed cases, the resemblance between RIP-degraded repeats and their non-RIP-affected, functional counterparts is minimal (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>). In the case of the Molly, Elsa and Pixie transposons, functional sequences of transposon proteins were available for comparison. No viable open-reading frames could be found in any of their respective genomic matches in <italic>S. nodorum </italic>SN15 (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>). Some repeat families could not even be classified by homology prior to deRIP (Table <xref ref-type="table" rid="T4">4</xref>). The deRIP process is therefore an essential tool which facilitates the identification and understanding of the role and origin of fungal repetitive DNA. The effectiveness of deRIP was such that functional assignments were improved quantitatively or qualitatively in nearly all cases. This was most clearly the case when repeat families were most clearly affected by RIP (Table <xref ref-type="table" rid="T3">3</xref>, Table <xref ref-type="table" rid="T4">4</xref>).</p>
+      <p>Conversely when the repeat family was not RIP-affected, the deRIP process was not able to improve the homology assignment. An example is the transposon repeat family R37 which had low RIP dominance (by majority consensus) of 0.25, indicating that R37 is not greatly affected by RIP mutation.</p>
+      <p>The R10 repeat contained regions corresponding to three <italic>S. nodorum </italic>genes (SNOG_15997, SNOG_11270 and SNOG_16585 [NCBI: EAT76576.1, EAT81769.1, EAT76052.1]) (Table <xref ref-type="table" rid="T4">4</xref>) which are located in separate regions of the genome assembly. The sub-telomeric repeat X26, which contained telomere-associated RecQ helicase sequence and was subject to relatively high levels of RIP mutation (Table <xref ref-type="table" rid="T3">3</xref>). RecQ helicase plays a critical role in genome maintenance and is essential for DNA replication in eukaryotes [<xref ref-type="bibr" rid="B41">41</xref>]. Twenty six putative functional copies (i.e annotated gene models) of RecQ are present within the <italic>S. nodorum </italic>genome (Additional file <xref ref-type="supplementary-material" rid="S6">6</xref>). It is currently unclear by what mechanism function is preserved in certain copies of this highly repeated gene family, but not in others.</p>
+      <p>The repeat family X3X3R8, which replaced the previously defined repeat families X3 and R8, matched to a cluster of endogenous <italic>S. nodorum </italic>SN15 genes (Table <xref ref-type="table" rid="T4">4</xref>) - some of these coding for a DNA repair helicase and ubiquitin conjugating enzyme (Figure <xref ref-type="fig" rid="F3">3</xref>). The helicase and ubiquitin conjugating enzyme genes within X3X3R8 were homologous to <italic>Saccharomyces cerevisiae </italic>proteins Rad5 [SGD: YLR032W] and Rad6 [SGD: YGL058W] respectively (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>). These proteins are involved in the post-replication repair of UV-damaged DNA, the epigenetic silencing of telomeres and sporulation in yeast [<xref ref-type="bibr" rid="B42">42</xref>-<xref ref-type="bibr" rid="B44">44</xref>].</p>
+      <p>The absence of active copies of the Elsa, Molly and Pixie families in the Australian SN15 isolate contrasts with the situation in the UK. Rawson screened several isolates for active transposons and used a trapping process to isolate active copies [<xref ref-type="bibr" rid="B35">35</xref>]. Using these transposons as probes showed great variation in copy number and band intensity amongst a collection of UK isolates. We have only looked at one Australian isolate, but it appears to be devoid of active transposons (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>). Consideration of the properties of RIP, the need for sexual reproduction by the fungus in Mediterranean climates and the biogeography of <italic>S. nodorum</italic>, could explain the absence of transposons in the Australian isolate. Repeated elements over a threshold size and above a threshold identity would be subject to RIP. This would inactivate all copies of a transposon during a meiotic event that appears to be necessary for survival over the hot summer [<xref ref-type="bibr" rid="B30">30</xref>]. It would not be conceivable for an active copy to be reconstituted in an asexual population derived from such an event. The survival of a transposon in a population of a sexually reproducing fungus would require mating with an isolate with an active (and presumably single) copy of the transposon. The invasion of <italic>S. nodorum </italic>into Australia most likely occurred via the propagation of a small founder population consistent with the reduced polymorphism of populations found here [<xref ref-type="bibr" rid="B33">33</xref>]. We speculate that no active transposons have survived within any Australian isolate capable of RIP. Screening of a larger population of Australian and Eurasian isolates to determine differences in frequency and distribution of active copies between the founder and derived populations would be required to confirm this.</p>
+    </sec>
+    <sec>
+      <title>Conclusions</title>
+      <p>In summary, we present a facile and rapid method to assist the annotation of repetitive elements of ascomycete genomes. The deRIP process can predict ancestral functional sequence from degraded repeat elements. Analysis of the repeat families of the fungal phytopathogen <italic>Stagonospora nodorum </italic>(strain SN15) using deRIP-converted sequences increased the number of recognisable repeat families from 65% (17/26) to 92% (23/25). This has enabled the characterization of many repeat families and has advanced our progress towards the goal of understanding and accounting for the evolutionary history of all regions of a genome.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Analysis of RIP-mutation of <italic>S. nodorum </italic>repetitive DNA</title>
+        <p>The 26 distinct repeat families of <italic>S. nodorum </italic>SN15 [<xref ref-type="bibr" rid="B19">19</xref>] were analysed for RIP mutation using RIPCAL [<xref ref-type="bibr" rid="B20">20</xref>]. RIPCAL requires an appropriate model sequence, which is a template to which all other aligned sequences of the repeat family are compared for RIP-like polymorphism. Previously we used the sequence of highest total G:C content as the model sequence. As RIP irreversibly converts G:C nucleotide pairs to A:T, it was assumed that the sequence with the highest G:C content was the least RIP-affected repeat in the family. In this study, we have performed RIPCAL analyses using 3 different models: highest G:C content, alignment majority consensus and predicted sequence of the repeat family prior to RIP-mutation.</p>
+      </sec>
+      <sec>
+        <title>Predicting the original repeat sequence prior to RIP-degradation</title>
+        <p>The deRIP process predicts the sequence of the pre-RIP-mutated version of the repeat alignment. Firstly, the majority consensus was generated by counting the nucleotide frequency at each position of the repeat alignment. The majority consensus sequence was determined by the highest frequency nucleotide. Secondly, at each position of the multiple alignment, counts of di-nucleotides exhibiting RIP-like polymorphism (CpN &#x2192; TpN) were calculated (Table <xref ref-type="table" rid="T1">1</xref>). A RIP mutation with the highest corresponding di-nucleotide count was presumed to be dominant and therefore the majority consensus was converted to the appropriate pre-RIP di-nucleotide sequence. This predicted sequence is henceforth referred to as the 'deRIP consensus'.</p>
+      </sec>
+      <sec>
+        <title>Validating the deRIP technique</title>
+        <p>The sequences of the active copies (which are presumably non-RIP-degraded) of the <italic>S. nodorum </italic>transposon repeats Molly, Pixie and Elsa [NCBI; AJ277966, AJ488502, AJ488503] [<xref ref-type="bibr" rid="B35">35</xref>] were compared to their respective majority and deRIP consensus sequences from strain SN15 via blastn [<xref ref-type="bibr" rid="B45">45</xref>]. Majority and deRIP consensus sequences of these repeat families were also globally aligned against their respective active copy via needle [<xref ref-type="bibr" rid="B40">40</xref>]. The SN15 rDNA repeat (Y1) was previously shown to be differentially susceptible to RIP [<xref ref-type="bibr" rid="B20">20</xref>]. The majority consensus of the non-RIP-affected copies of Y1 were compared to the majority and deRIP consensus sequences of the RIP-susceptible copies as above. The relative difference in alignment bit scores between majority and deRIP consensus sequences with their respective active copies was used to measure the degree of 'improvement' of the deRIP consensus over the majority consensus:</p>
+        <p>
+          <disp-formula>
+            <mml:math id="M1" name="1471-2164-11-655-i1" overflow="scroll">
+              <mml:mrow>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mtext>Bit&#xA0;score&#xA0;of&#xA0;best&#xA0;HSP&#xA0;</mml:mtext>
+                      <mml:mo mathvariant="italic" stretchy="false">(</mml:mo>
+                      <mml:mtext>deRIP&#xA0;consensus</mml:mtext>
+                      <mml:mo mathvariant="italic" stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mtext>Bit&#xA0;score&#xA0;of&#xA0;best&#xA0;HSP&#xA0;</mml:mtext>
+                      <mml:mo mathvariant="italic" stretchy="false">(</mml:mo>
+                      <mml:mtext>majority&#xA0;consensus</mml:mtext>
+                      <mml:mo mathvariant="italic" stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>A 'deRIP improvement factor' greater than 1 indicated that the deRIP process had modified the RIP-affected sequence to resemble the sequence of the active copy.</p>
+      </sec>
+      <sec>
+        <title>Predicting the origin of RIP-degraded repeats</title>
+        <p>Majority and deRIP consensus sequences were compared to the NCBI NR protein database via blastx [<xref ref-type="bibr" rid="B45">45</xref>] and to the GIRI Repbase database of repetitive DNA [<xref ref-type="bibr" rid="B46">46</xref>] via tblastx. The results of these comparisons were used to infer repeat family origin and function. In this analysis, NCBI and Repbase sequences were both assumed to represent active transposons. Stronger deRIP matches to either database indicated that the deRIP algorithm was able to convert a RIP-inactivated sequence back into that of an active transposon. A maximum e-value threshold of 10 was imposed on hits against both the majority or deRIP consensus, with one of these also required to be less than 1e-3. DeRIP improvement factors were calculated for each hit as above. However for the purpose of summarising this data in Table <xref ref-type="table" rid="T3">3</xref>, the maximum value was reported for each respective repeat family. 'Hit discovery scores' are the number of hits that the deRIP or majority consensus sequences have to the NR or GIRI databases. The scores illustrate the extent to which the deRIP process was able to discover new homology relationships that were previously lost due to RIP.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Authors' contributions</title>
+      <p>JKH designed the deRIP algorithm and performed the bioinformatics analyses. JKH and RPO wrote the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>Test for viable copies of the transposons Molly, Pixie and Elsa in the <italic>S. nodorum </italic>SN15 genome</bold>.</p>
+        </caption>
+        <media xlink:href="1471-2164-11-655-S1.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p><bold>Summary of deRIP improvement and hit discovery scores</bold>. Contains summaries of the RIPCAL analyses for highest G:C content, majority consensus and deRIP consensus comparisons. Also contains details of majority and deRIP consensus hits by blastx to the NCBI NR Protein database and by tblastx to the GIRI Repbase database.</p>
+        </caption>
+        <media xlink:href="1471-2164-11-655-S2.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p><bold>Merging of the previously identified repeat families X3 and R8 to form the new repeat family X3X3R8</bold>.</p>
+        </caption>
+        <media xlink:href="1471-2164-11-655-S3.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S4">
+        <caption>
+          <title>Additional file 4</title>
+          <p><bold>Merging of the previously identified repeat families X3 and R8 to form the new repeat family X3X3R8</bold>. Supplementary Figure, PNG format. The previously predicted X3 and R8 repeat families (H<sc>ANE</sc> and O<sc>LIVER</sc> 2008) were found to correspond to genomic regions in a distinctive repeated pattern which spanned 26 kB. This region was classified as a new repeat family, X3X3R8, which supersedes the old repeat families R8 and X3. The MUMMER dot-plot above illustrates how the nucleotide majority consensus sequences of R8 and X3 relate to X3X3R8. The first third of the X3X3R8 majority consensus corresponds to a full length copy of X3. The second third of X3X3R8 is comprised of a second, incomplete copy of X3 which in matching regions is 10-20% divergent from the X3 consensus. The final third corresponds to a complete copy of the R8 repeat, in the reverse orientation with respect to its previously defined sequence.</p>
+        </caption>
+        <media xlink:href="1471-2164-11-655-S4.PNG" mimetype="image" mime-subtype="png">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S5">
+        <caption>
+          <title>Additional file 5</title>
+          <p><bold>deRIP RIPCAL analysis of the repetitive DNA of <italic>S. nodorum </italic>SN15</bold>. RIPCAL outputs for highest G:C, consensus and deRIP models versus S. nodorum repeat families, tab-delimited txt and gif formats.</p>
+        </caption>
+        <media xlink:href="1471-2164-11-655-S5.XLS" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S6">
+        <caption>
+          <title>Additional file 6</title>
+          <p><bold>List of predicted functional RecQ helicases in the <italic>S. nodorum </italic>genome</bold>.</p>
+        </caption>
+        <media xlink:href="1471-2164-11-655-S6.ZIP" mimetype="application" mime-subtype="x-zip-compressed">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>This work was supported by the Grains Research and Development Corporation [grants: UMU00022 and GRS128]. Barbara Howlett and Thierry Rouxel were consulted during the writing of this manuscript.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Selker</surname>
+            <given-names>EU</given-names>
+          </name>
+          <article-title>Premeiotic instability of repeated sequences in <italic>Neurospora crassa</italic></article-title>
+          <source>Annual review of genetics</source>
+          <year>1990</year>
+          <volume>24</volume>
+          <fpage>579</fpage>
+          <lpage>613</lpage>
+          <pub-id pub-id-type="doi">10.1146/annurev.ge.24.120190.003051</pub-id>
+          <pub-id pub-id-type="pmid">2150906</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Selker</surname>
+            <given-names>EU</given-names>
+          </name>
+          <name>
+            <surname>Cambareri</surname>
+            <given-names>EB</given-names>
+          </name>
+          <name>
+            <surname>Jensen</surname>
+            <given-names>BC</given-names>
+          </name>
+          <name>
+            <surname>Haack</surname>
+            <given-names>KR</given-names>
+          </name>
+          <article-title>Rearrangement of duplicated DNA in specialized cells of <italic>Neurospora</italic></article-title>
+          <source>Cell</source>
+          <year>1987</year>
+          <volume>51</volume>
+          <issue>5</issue>
+          <fpage>741</fpage>
+          <lpage>752</lpage>
+          <pub-id pub-id-type="doi">10.1016/0092-8674(87)90097-3</pub-id>
+          <pub-id pub-id-type="pmid">2960455</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dean</surname>
+            <given-names>RA</given-names>
+          </name>
+          <name>
+            <surname>Talbot</surname>
+            <given-names>NJ</given-names>
+          </name>
+          <name>
+            <surname>Ebbole</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <name>
+            <surname>Farman</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Mitchell</surname>
+            <given-names>TK</given-names>
+          </name>
+          <name>
+            <surname>Orbach</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <name>
+            <surname>Thon</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kulkarni</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Xu</surname>
+            <given-names>JR</given-names>
+          </name>
+          <name>
+            <surname>Pan</surname>
+            <given-names>H</given-names>
+          </name>
+          <etal/>
+          <article-title>The genome sequence of the rice blast fungus <italic>Magnaporthe grisea</italic></article-title>
+          <source>Nature</source>
+          <year>2005</year>
+          <volume>434</volume>
+          <issue>7036</issue>
+          <fpage>980</fpage>
+          <lpage>986</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature03449</pub-id>
+          <pub-id pub-id-type="pmid">15846337</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ikeda</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Nakayashiki</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Kataoka</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Tamba</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Hashimoto</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Tosa</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Mayama</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Repeat-induced point mutation (RIP) in <italic>Magnaporthe grisea</italic>: implications for its sexual cycle in the natural field context</article-title>
+          <source>Molecular microbiology</source>
+          <year>2002</year>
+          <volume>45</volume>
+          <issue>5</issue>
+          <fpage>1355</fpage>
+          <lpage>1364</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1365-2958.2002.03101.x</pub-id>
+          <pub-id pub-id-type="pmid">12207702</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Graia</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Lespinet</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Rimbault</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Dequard-Chablat</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Coppin</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Picard</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Genome quality control: RIP (repeat-induced point mutation) comes to <italic>Podospora</italic></article-title>
+          <source>Molecular microbiology</source>
+          <year>2001</year>
+          <volume>40</volume>
+          <issue>3</issue>
+          <fpage>586</fpage>
+          <lpage>595</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1365-2958.2001.02367.x</pub-id>
+          <pub-id pub-id-type="pmid">11359565</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Idnurm</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Howlett</surname>
+            <given-names>BJ</given-names>
+          </name>
+          <article-title>Analysis of loss of pathogenicity mutants reveals that repeat-induced point mutations can occur in the Dothideomycete <italic>Leptosphaeria maculans</italic></article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2003</year>
+          <volume>39</volume>
+          <fpage>31</fpage>
+          <lpage>37</lpage>
+          <pub-id pub-id-type="doi">10.1016/S1087-1845(02)00588-1</pub-id>
+          <pub-id pub-id-type="pmid">12742061</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cuomo</surname>
+            <given-names>CA</given-names>
+          </name>
+          <name>
+            <surname>Guldener</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Xu</surname>
+            <given-names>JR</given-names>
+          </name>
+          <name>
+            <surname>Trail</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Turgeon</surname>
+            <given-names>BG</given-names>
+          </name>
+          <name>
+            <surname>Di Pietro</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Walton</surname>
+            <given-names>JD</given-names>
+          </name>
+          <name>
+            <surname>Ma</surname>
+            <given-names>LJ</given-names>
+          </name>
+          <name>
+            <surname>Baker</surname>
+            <given-names>SE</given-names>
+          </name>
+          <name>
+            <surname>Rep</surname>
+            <given-names>M</given-names>
+          </name>
+          <etal/>
+          <article-title>The <italic>Fusarium graminearum </italic>genome reveals a link between localized polymorphism and pathogen specialization</article-title>
+          <source>Science (New York, NY)</source>
+          <year>2007</year>
+          <volume>317</volume>
+          <issue>5843</issue>
+          <fpage>1400</fpage>
+          <lpage>1402</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Neuveglise</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Sarfati</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Latge</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Paris</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Afut1, a retrotransposon-like element from <italic>Aspergillus fumigatus</italic></article-title>
+          <source>Nucleic acids research</source>
+          <year>1996</year>
+          <volume>24</volume>
+          <issue>8</issue>
+          <fpage>1428</fpage>
+          <lpage>1434</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/24.8.1428</pub-id>
+          <pub-id pub-id-type="pmid">8628674</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hua-Van</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Hericourt</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Capy</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Daboussi</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <name>
+            <surname>Langin</surname>
+            <given-names>T</given-names>
+          </name>
+          <article-title>Three highly divergent subfamilies of the impala transposable element coexist in the genome of the fungus <italic>Fusarium oxysporum</italic></article-title>
+          <source>Mol Gen Genet</source>
+          <year>1998</year>
+          <volume>259</volume>
+          <issue>4</issue>
+          <fpage>354</fpage>
+          <lpage>362</lpage>
+          <pub-id pub-id-type="doi">10.1007/s004380050822</pub-id>
+          <pub-id pub-id-type="pmid">9790589</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hua-Van</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Langin</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Daboussi</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <article-title>Evolutionary history of the impala transposon in <italic>Fusarium oxysporum</italic></article-title>
+          <source>Molecular biology and evolution</source>
+          <year>2001</year>
+          <volume>18</volume>
+          <issue>10</issue>
+          <fpage>1959</fpage>
+          <lpage>1969</lpage>
+          <pub-id pub-id-type="pmid">11557801</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Julien</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Poirier-Hamon</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Brygoo</surname>
+            <given-names>Y</given-names>
+          </name>
+          <article-title>Foret1, a reverse transcriptase-like sequence in the filamentous fungus <italic>Fusarium oxysporum</italic></article-title>
+          <source>Nucleic acids research</source>
+          <year>1992</year>
+          <volume>20</volume>
+          <issue>15</issue>
+          <fpage>3933</fpage>
+          <lpage>3937</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/20.15.3933</pub-id>
+          <pub-id pub-id-type="pmid">1380691</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Hermansen</surname>
+            <given-names>TD</given-names>
+          </name>
+          <name>
+            <surname>Aleksenko</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>A family of DNA repeats in <italic>Aspergillus nidulans </italic>has assimilated degenerated retrotransposons</article-title>
+          <source>Mol Genet Genomics</source>
+          <year>2001</year>
+          <volume>265</volume>
+          <issue>5</issue>
+          <fpage>883</fpage>
+          <lpage>887</lpage>
+          <pub-id pub-id-type="doi">10.1007/s004380100484</pub-id>
+          <pub-id pub-id-type="pmid">11523805</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bhat</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Tamuli</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Kasbekar</surname>
+            <given-names>DP</given-names>
+          </name>
+          <article-title>Genetic transformation of <italic>Neurospora tetrasperma</italic>, demonstration of repeat-induced point mutation (RIP) in self-crosses and a screen for recessive RIP-defective mutants</article-title>
+          <source>Genetics</source>
+          <year>2004</year>
+          <volume>167</volume>
+          <issue>3</issue>
+          <fpage>1155</fpage>
+          <lpage>1164</lpage>
+          <pub-id pub-id-type="doi">10.1534/genetics.103.025171</pub-id>
+          <pub-id pub-id-type="pmid">15280231</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hood</surname>
+            <given-names>ME</given-names>
+          </name>
+          <name>
+            <surname>Katawczik</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Giraud</surname>
+            <given-names>T</given-names>
+          </name>
+          <article-title>Repeat-induced point mutation and the population structure of transposable elements in <italic>Microbotryum violaceum</italic></article-title>
+          <source>Genetics</source>
+          <year>2005</year>
+          <volume>170</volume>
+          <issue>3</issue>
+          <fpage>1081</fpage>
+          <lpage>1089</lpage>
+          <pub-id pub-id-type="doi">10.1534/genetics.105.042564</pub-id>
+          <pub-id pub-id-type="pmid">15911572</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Montiel</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>HA</given-names>
+          </name>
+          <name>
+            <surname>Archer</surname>
+            <given-names>DB</given-names>
+          </name>
+          <article-title>Evidence of RIP (repeat-induced point mutation) in transposase sequences of <italic>Aspergillus oryzae</italic></article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2006</year>
+          <volume>43</volume>
+          <issue>6</issue>
+          <fpage>439</fpage>
+          <lpage>445</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2006.01.011</pub-id>
+          <pub-id pub-id-type="pmid">16531081</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Farman</surname>
+            <given-names>ML</given-names>
+          </name>
+          <article-title>Telomeres in the rice blast fungus <italic>Magnaporthe oryzae</italic>: the world of the end as we know it</article-title>
+          <source>FEMS microbiology letters</source>
+          <year>2007</year>
+          <volume>273</volume>
+          <issue>2</issue>
+          <fpage>125</fpage>
+          <lpage>132</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1574-6968.2007.00812.x</pub-id>
+          <pub-id pub-id-type="pmid">17610516</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Crouch</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Glasheen</surname>
+            <given-names>BM</given-names>
+          </name>
+          <name>
+            <surname>Giunta</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Clarke</surname>
+            <given-names>BB</given-names>
+          </name>
+          <name>
+            <surname>Hillman</surname>
+            <given-names>BI</given-names>
+          </name>
+          <article-title>The evolution of transposon repeat-induced point mutation in the genome of <italic>Colletotrichum cereale</italic>: reconciling sex, recombination and homoplasy in an ''asexual" pathogen</article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2008</year>
+          <volume>45</volume>
+          <issue>3</issue>
+          <fpage>190</fpage>
+          <lpage>206</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2007.08.004</pub-id>
+          <pub-id pub-id-type="pmid">17962053</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Braumann</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>van den Berg</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kempken</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>Repeat induced point mutation in two asexual fungi, <italic>Aspergillus niger </italic>and <italic>Penicillium chrysogenum</italic></article-title>
+          <source>Current genetics</source>
+          <year>2008</year>
+          <volume>53</volume>
+          <issue>5</issue>
+          <fpage>287</fpage>
+          <lpage>297</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00294-008-0185-y</pub-id>
+          <pub-id pub-id-type="pmid">18347798</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hane</surname>
+            <given-names>JK</given-names>
+          </name>
+          <name>
+            <surname>Lowe</surname>
+            <given-names>RG</given-names>
+          </name>
+          <name>
+            <surname>Solomon</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Tan</surname>
+            <given-names>KC</given-names>
+          </name>
+          <name>
+            <surname>Schoch</surname>
+            <given-names>CL</given-names>
+          </name>
+          <name>
+            <surname>Spatafora</surname>
+            <given-names>JW</given-names>
+          </name>
+          <name>
+            <surname>Crous</surname>
+            <given-names>PW</given-names>
+          </name>
+          <name>
+            <surname>Kodira</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Birren</surname>
+            <given-names>BW</given-names>
+          </name>
+          <name>
+            <surname>Galagan</surname>
+            <given-names>JE</given-names>
+          </name>
+          <etal/>
+          <article-title>Dothideomycete plant interactions illuminated by genome sequencing and EST analysis of the wheat pathogen <italic>Stagonospora nodorum</italic></article-title>
+          <source>The Plant cell</source>
+          <year>2007</year>
+          <volume>19</volume>
+          <issue>11</issue>
+          <fpage>3347</fpage>
+          <lpage>3368</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.107.052829</pub-id>
+          <pub-id pub-id-type="pmid">18024570</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hane</surname>
+            <given-names>JK</given-names>
+          </name>
+          <name>
+            <surname>Oliver</surname>
+            <given-names>RP</given-names>
+          </name>
+          <article-title>RIPCAL: a tool for alignment-based analysis of repeat-induced point mutations in fungal genomic sequences</article-title>
+          <source>BMC bioinformatics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>478</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-9-478</pub-id>
+          <pub-id pub-id-type="pmid">19014496</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cambareri</surname>
+            <given-names>EB</given-names>
+          </name>
+          <name>
+            <surname>Jensen</surname>
+            <given-names>BC</given-names>
+          </name>
+          <name>
+            <surname>Schabtach</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Selker</surname>
+            <given-names>EU</given-names>
+          </name>
+          <article-title>Repeat-induced G-C to A-T mutations in <italic>Neurospora</italic></article-title>
+          <source>Science (New York, NY)</source>
+          <year>1989</year>
+          <volume>244</volume>
+          <issue>4912</issue>
+          <fpage>1571</fpage>
+          <lpage>1575</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Galagan</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Selker</surname>
+            <given-names>EU</given-names>
+          </name>
+          <article-title>RIP: the evolutionary cost of genome defense</article-title>
+          <source>Trends Genet</source>
+          <year>2004</year>
+          <volume>20</volume>
+          <issue>9</issue>
+          <fpage>417</fpage>
+          <lpage>423</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tig.2004.07.007</pub-id>
+          <pub-id pub-id-type="pmid">15313550</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cambareri</surname>
+            <given-names>EB</given-names>
+          </name>
+          <name>
+            <surname>Singer</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <name>
+            <surname>Selker</surname>
+            <given-names>EU</given-names>
+          </name>
+          <article-title>Recurrence of repeat-induced point mutation (RIP) in <italic>Neurospora crassa</italic></article-title>
+          <source>Genetics</source>
+          <year>1991</year>
+          <volume>127</volume>
+          <issue>4</issue>
+          <fpage>699</fpage>
+          <lpage>710</lpage>
+          <pub-id pub-id-type="pmid">1827629</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Watters</surname>
+            <given-names>MK</given-names>
+          </name>
+          <name>
+            <surname>Randall</surname>
+            <given-names>TA</given-names>
+          </name>
+          <name>
+            <surname>Margolin</surname>
+            <given-names>BS</given-names>
+          </name>
+          <name>
+            <surname>Selker</surname>
+            <given-names>EU</given-names>
+          </name>
+          <name>
+            <surname>Stadler</surname>
+            <given-names>DR</given-names>
+          </name>
+          <article-title>Action of repeat-induced point mutation on both strands of a duplex and on tandem duplications of various sizes in <italic>Neurospora</italic></article-title>
+          <source>Genetics</source>
+          <year>1999</year>
+          <volume>153</volume>
+          <issue>2</issue>
+          <fpage>705</fpage>
+          <lpage>714</lpage>
+          <pub-id pub-id-type="pmid">10511550</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Galagan</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Calvo</surname>
+            <given-names>SE</given-names>
+          </name>
+          <name>
+            <surname>Borkovich</surname>
+            <given-names>KA</given-names>
+          </name>
+          <name>
+            <surname>Selker</surname>
+            <given-names>EU</given-names>
+          </name>
+          <name>
+            <surname>Read</surname>
+            <given-names>ND</given-names>
+          </name>
+          <name>
+            <surname>Jaffe</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>FitzHugh</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Ma</surname>
+            <given-names>LJ</given-names>
+          </name>
+          <name>
+            <surname>Smirnov</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Purcell</surname>
+            <given-names>S</given-names>
+          </name>
+          <etal/>
+          <article-title>The genome sequence of the filamentous fungus <italic>Neurospora crassa</italic></article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>422</volume>
+          <issue>6934</issue>
+          <fpage>859</fpage>
+          <lpage>868</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature01554</pub-id>
+          <pub-id pub-id-type="pmid">12712197</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Margolin</surname>
+            <given-names>BS</given-names>
+          </name>
+          <name>
+            <surname>Garrett-Engele</surname>
+            <given-names>PW</given-names>
+          </name>
+          <name>
+            <surname>Stevens</surname>
+            <given-names>JN</given-names>
+          </name>
+          <name>
+            <surname>Fritz</surname>
+            <given-names>DY</given-names>
+          </name>
+          <name>
+            <surname>Garrett-Engele</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Metzenberg</surname>
+            <given-names>RL</given-names>
+          </name>
+          <name>
+            <surname>Selker</surname>
+            <given-names>EU</given-names>
+          </name>
+          <article-title>A methylated <italic>Neurospora </italic>5 S rRNA pseudogene contains a transposable element inactivated by repeat-induced point mutation</article-title>
+          <source>Genetics</source>
+          <year>1998</year>
+          <volume>149</volume>
+          <issue>4</issue>
+          <fpage>1787</fpage>
+          <lpage>1797</lpage>
+          <pub-id pub-id-type="pmid">9691037</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schoch</surname>
+            <given-names>CL</given-names>
+          </name>
+          <name>
+            <surname>Shoemaker</surname>
+            <given-names>RA</given-names>
+          </name>
+          <name>
+            <surname>Seifert</surname>
+            <given-names>KA</given-names>
+          </name>
+          <name>
+            <surname>Hambleton</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Spatafora</surname>
+            <given-names>JW</given-names>
+          </name>
+          <name>
+            <surname>Crous</surname>
+            <given-names>PW</given-names>
+          </name>
+          <article-title>A multigene phylogeny of the Dothideomycetes using four nuclear loci</article-title>
+          <source>Mycologia</source>
+          <year>2006</year>
+          <volume>98</volume>
+          <issue>6</issue>
+          <fpage>1041</fpage>
+          <lpage>1052</lpage>
+          <pub-id pub-id-type="doi">10.3852/mycologia.98.6.1041</pub-id>
+          <pub-id pub-id-type="pmid">17486979</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Solomon</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Lowe</surname>
+            <given-names>RG</given-names>
+          </name>
+          <name>
+            <surname>Tan</surname>
+            <given-names>KC</given-names>
+          </name>
+          <name>
+            <surname>Waters</surname>
+            <given-names>OD</given-names>
+          </name>
+          <name>
+            <surname>Oliver</surname>
+            <given-names>RP</given-names>
+          </name>
+          <article-title><italic>Stagonospora nodorum</italic>: cause of stagonospora nodorum blotch of wheat</article-title>
+          <source>Molecular plant pathology</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <issue>3</issue>
+          <fpage>147</fpage>
+          <lpage>156</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1364-3703.2006.00326.x</pub-id>
+          <pub-id pub-id-type="pmid">20507435</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Friesen</surname>
+            <given-names>TL</given-names>
+          </name>
+          <name>
+            <surname>Faris</surname>
+            <given-names>JD</given-names>
+          </name>
+          <name>
+            <surname>Solomon</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Oliver</surname>
+            <given-names>RP</given-names>
+          </name>
+          <article-title>Host-specific toxins: effectors of necrotrophic pathogenicity</article-title>
+          <source>Cellular microbiology</source>
+          <year>2008</year>
+          <volume>10</volume>
+          <issue>7</issue>
+          <fpage>1421</fpage>
+          <lpage>1428</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1462-5822.2008.01153.x</pub-id>
+          <pub-id pub-id-type="pmid">18384660</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Solomon</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Parker</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Loughman</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Oliver</surname>
+            <given-names>RP</given-names>
+          </name>
+          <article-title>Both mating types of <italic>Phaeosphaeria </italic>(anamorph <italic>Stagonospora</italic>) <italic>nodorum </italic>are present in Western Australia</article-title>
+          <source>Eur J Plant Pathol</source>
+          <year>2004</year>
+          <volume>110</volume>
+          <fpage>763</fpage>
+          <lpage>766</lpage>
+          <pub-id pub-id-type="doi">10.1023/B:EJPP.0000041565.42836.c1</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cooley</surname>
+            <given-names>RN</given-names>
+          </name>
+          <name>
+            <surname>Caten</surname>
+            <given-names>CE</given-names>
+          </name>
+          <article-title>Variation in electrophoretic karyotype between strains of <italic>Septoria nodorum</italic></article-title>
+          <source>Mol Gen Genet</source>
+          <year>1991</year>
+          <volume>228</volume>
+          <fpage>17</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="pmid">1886607</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Keller</surname>
+            <given-names>SM</given-names>
+          </name>
+          <name>
+            <surname>McDermott</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Pettway</surname>
+            <given-names>RE</given-names>
+          </name>
+          <name>
+            <surname>Wolfe</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>McDonald</surname>
+            <given-names>BA</given-names>
+          </name>
+          <article-title>Gene flow and sexual reproduction in the wheat glume blotch pathogen <italic>Phaeosphaeria nodorum </italic>(anamorph <italic>Stagonospora nodorum</italic>)</article-title>
+          <source>Phytopathology</source>
+          <year>1997</year>
+          <volume>87</volume>
+          <issue>3</issue>
+          <fpage>353</fpage>
+          <lpage>358</lpage>
+          <pub-id pub-id-type="doi">10.1094/PHYTO.1997.87.3.353</pub-id>
+          <pub-id pub-id-type="pmid">18945180</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Stukenbrock</surname>
+            <given-names>EH</given-names>
+          </name>
+          <name>
+            <surname>Banke</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>McDonald</surname>
+            <given-names>BA</given-names>
+          </name>
+          <article-title>Global migration patterns in the fungal wheat pathogen <italic>Phaeosphaeria nodorum</italic></article-title>
+          <source>Molecular ecology</source>
+          <year>2006</year>
+          <volume>15</volume>
+          <issue>10</issue>
+          <fpage>2895</fpage>
+          <lpage>2904</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-294X.2006.02986.x</pub-id>
+          <pub-id pub-id-type="pmid">16911209</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Perkins</surname>
+            <given-names>DD</given-names>
+          </name>
+          <name>
+            <surname>Metzenberg</surname>
+            <given-names>RL</given-names>
+          </name>
+          <name>
+            <surname>Raju</surname>
+            <given-names>NB</given-names>
+          </name>
+          <name>
+            <surname>Selker</surname>
+            <given-names>EU</given-names>
+          </name>
+          <name>
+            <surname>Barry</surname>
+            <given-names>EG</given-names>
+          </name>
+          <article-title>Reversal of a <italic>Neurospora </italic>translocation by crossing over involving displaced rDNA, and methylation of the rDNA segments that result from recombination</article-title>
+          <source>Genetics</source>
+          <year>1986</year>
+          <volume>114</volume>
+          <issue>3</issue>
+          <fpage>791</fpage>
+          <lpage>817</lpage>
+          <pub-id pub-id-type="pmid">2947829</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Rawson</surname>
+            <given-names>JM</given-names>
+          </name>
+          <source>PhD Thesis: Transposable elements in the phytopathogenic fungus <italic>Stagonospora nodorum</italic></source>
+          <year>2000</year>
+          <publisher-name>Birmingham: University of Birmingham</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cove</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <article-title>Chlorate toxicity in <italic>Aspergillus nidulans</italic>: the selection and characterisation of chlorate resistant mutants</article-title>
+          <source>Heredity</source>
+          <year>1976</year>
+          <volume>36</volume>
+          <issue>2</issue>
+          <fpage>191</fpage>
+          <lpage>203</lpage>
+          <pub-id pub-id-type="doi">10.1038/hdy.1976.24</pub-id>
+          <pub-id pub-id-type="pmid">773908</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cutler</surname>
+            <given-names>SB</given-names>
+          </name>
+          <name>
+            <surname>Cooley</surname>
+            <given-names>RN</given-names>
+          </name>
+          <name>
+            <surname>Caten</surname>
+            <given-names>CE</given-names>
+          </name>
+          <article-title>Cloning of the nitrate reductase gene of <italic>Stagonospora </italic>(<italic>Septoria</italic>) <italic>nodorum </italic>and its use as a selectable marker for targeted transformation</article-title>
+          <source>Current genetics</source>
+          <year>1998</year>
+          <volume>34</volume>
+          <issue>2</issue>
+          <fpage>128</fpage>
+          <lpage>137</lpage>
+          <pub-id pub-id-type="doi">10.1007/s002940050377</pub-id>
+          <pub-id pub-id-type="pmid">9724416</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kempken</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Kuck</surname>
+            <given-names>U</given-names>
+          </name>
+          <article-title>Transposons in filamentous fungi--facts and perspectives</article-title>
+          <source>Bioessays</source>
+          <year>1998</year>
+          <volume>20</volume>
+          <issue>8</issue>
+          <fpage>652</fpage>
+          <lpage>659</lpage>
+          <pub-id pub-id-type="doi">10.1002/(SICI)1521-1878(199808)20:8&lt;652::AID-BIES8&gt;3.0.CO;2-K</pub-id>
+          <pub-id pub-id-type="pmid">9841641</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Stamatakis</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Hoover</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Rougemont</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>A Rapid Bootstrap Algorithm for the RAxML Web-Servers</article-title>
+          <source>Systematic Biology</source>
+          <year>2008</year>
+          <volume>75</volume>
+          <issue>5</issue>
+          <fpage>758</fpage>
+          <lpage>771</lpage>
+          <pub-id pub-id-type="doi">10.1080/10635150802429642</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rice</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Longden</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Bleasby</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>EMBOSS: the European Molecular Biology Open Software Suite</article-title>
+          <source>Trends Genet</source>
+          <year>2000</year>
+          <volume>16</volume>
+          <issue>6</issue>
+          <fpage>276</fpage>
+          <lpage>277</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0168-9525(00)02024-2</pub-id>
+          <pub-id pub-id-type="pmid">10827456</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Killoran</surname>
+            <given-names>MP</given-names>
+          </name>
+          <name>
+            <surname>Keck</surname>
+            <given-names>JL</given-names>
+          </name>
+          <article-title>Sit down, relax and unwind: structural insights into RecQ helicase mechanisms</article-title>
+          <source>Nucleic acids research</source>
+          <year>2006</year>
+          <volume>34</volume>
+          <issue>15</issue>
+          <fpage>4098</fpage>
+          <lpage>4105</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkl538</pub-id>
+          <pub-id pub-id-type="pmid">16935877</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gangavarapu</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Haracska</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Unk</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Johnson</surname>
+            <given-names>RE</given-names>
+          </name>
+          <name>
+            <surname>Prakash</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Prakash</surname>
+            <given-names>L</given-names>
+          </name>
+          <article-title>Mms2-Ubc13-dependent and -independent roles of Rad5 ubiquitin ligase in postreplication repair and translesion DNA synthesis in <italic>Saccharomyces cerevisiae</italic></article-title>
+          <source>Molecular and cellular biology</source>
+          <year>2006</year>
+          <volume>26</volume>
+          <issue>20</issue>
+          <fpage>7783</fpage>
+          <lpage>7790</lpage>
+          <pub-id pub-id-type="doi">10.1128/MCB.01260-06</pub-id>
+          <pub-id pub-id-type="pmid">16908531</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jentsch</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>McGrath</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Varshavsky</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>The yeast DNA repair gene <italic>RAD6 </italic>encodes a ubiquitin-conjugating enzyme</article-title>
+          <source>Nature</source>
+          <year>1987</year>
+          <volume>329</volume>
+          <issue>6135</issue>
+          <fpage>131</fpage>
+          <lpage>134</lpage>
+          <pub-id pub-id-type="doi">10.1038/329131a0</pub-id>
+          <pub-id pub-id-type="pmid">3306404</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Torres-Ramos</surname>
+            <given-names>CA</given-names>
+          </name>
+          <name>
+            <surname>Prakash</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Prakash</surname>
+            <given-names>L</given-names>
+          </name>
+          <article-title>Requirement of <italic>RAD5 </italic>and <italic>MMS2 </italic>for postreplication repair of UV-damaged DNA in <italic>Saccharomyces cerevisiae</italic></article-title>
+          <source>Molecular and cellular biology</source>
+          <year>2002</year>
+          <volume>22</volume>
+          <issue>7</issue>
+          <fpage>2419</fpage>
+          <lpage>2426</lpage>
+          <pub-id pub-id-type="doi">10.1128/MCB.22.7.2419-2426.2002</pub-id>
+          <pub-id pub-id-type="pmid">11884624</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Altschul</surname>
+            <given-names>SF</given-names>
+          </name>
+          <name>
+            <surname>Gish</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Miller</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Myers</surname>
+            <given-names>EW</given-names>
+          </name>
+          <name>
+            <surname>Lipman</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>Journal of molecular biology</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <issue>3</issue>
+          <fpage>403</fpage>
+          <lpage>410</lpage>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jurka</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kapitonov</surname>
+            <given-names>VV</given-names>
+          </name>
+          <name>
+            <surname>Pavlicek</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Klonowski</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Kohany</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Walichiewicz</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Repbase Update, a database of eukaryotic repetitive elements</article-title>
+          <source>Cytogenetic and genome research</source>
+          <year>2005</year>
+          <volume>110</volume>
+          <issue>1-4</issue>
+          <fpage>462</fpage>
+          <lpage>467</lpage>
+          <pub-id pub-id-type="doi">10.1159/000084979</pub-id>
+          <pub-id pub-id-type="pmid">16093699</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

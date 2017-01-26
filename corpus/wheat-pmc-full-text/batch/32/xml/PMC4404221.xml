@@ -1,0 +1,1418 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4404221</article-id>
+      <article-id pub-id-type="pmid">25880848</article-id>
+      <article-id pub-id-type="publisher-id">1404</article-id>
+      <article-id pub-id-type="doi">10.1186/s12864-015-1404-9</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Methodology Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Spiked GBS: a unified, open platform for single marker genotyping and whole-genome profiling</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rife</surname>
+            <given-names>Trevor W</given-names>
+          </name>
+          <address>
+            <email>trife@ksu.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wu</surname>
+            <given-names>Shuangye</given-names>
+          </name>
+          <address>
+            <email>swu4455@ksu.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bowden</surname>
+            <given-names>Robert L</given-names>
+          </name>
+          <address>
+            <email>Robert.Bowden@ARS.USDA.GOV</email>
+          </address>
+          <xref ref-type="aff" rid="Aff3"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Poland</surname>
+            <given-names>Jesse A</given-names>
+          </name>
+          <address>
+            <email>jpoland@ksu.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+          <xref ref-type="aff" rid="Aff4"/>
+        </contrib>
+        <aff id="Aff1"><label/>Interdepartmental Genetics, Kansas State University, 4024 Throckmorton Hall, Manhattan, KS 66506 USA </aff>
+        <aff id="Aff2"><label/>Wheat Genetics Resource Center, Department of Plant Pathology, Kansas State University, 4024 Throckmorton Hall, Manhattan, KS 66506 USA </aff>
+        <aff id="Aff3"><label/>USDA-ARS, Hard Winter Wheat Genetics Research Unit, 4008 Throckmorton Hall, Manhattan, KS 66506 USA </aff>
+        <aff id="Aff4"><label/>Department of Plant Pathology, Kansas State University, Manhattan, KS 66506 USA </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>28</day>
+        <month>3</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>28</day>
+        <month>3</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>16</volume>
+      <issue>1</issue>
+      <elocation-id>248</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>10</day>
+          <month>7</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>25</day>
+          <month>2</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; Rife et al.; licensee BioMed Central. 2015</copyright-statement>
+        <license license-type="open-access">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0">http://creativecommons.org/licenses/by/4.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>In plant breeding, there are two primary applications for DNA markers in selection: 1) selection of known genes using a single marker assay (marker-assisted selection; MAS); and 2) whole-genome profiling and prediction (genomic selection; GS). Typically, marker platforms have addressed only one of these objectives.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We have developed spiked genotyping-by-sequencing (sGBS), which combines targeted amplicon sequencing with reduced representation genotyping-by-sequencing. To minimize the cost of targeted assays, we utilize a small percent of sequencing capacity available in runs of GBS libraries to &#x201C;spike&#x201D; amplified targets of <italic>a priori</italic> alleles tagged with a different set of unique barcodes. This open platform allows multiple, single-target loci to be assayed while simultaneously generating a whole-genome profile. This dual-genotyping approach allows different sets of samples to be evaluated for single markers or whole genome-profiling. Here, we report the application of sGBS on a winter wheat panel that was screened for converted KASP markers and newly-designed markers targeting known polymorphisms in the leaf rust resistance gene <italic>Lr34</italic>.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>The flexibility and low-cost of sGBS will enable a range of applications across genetics research. Specifically in breeding applications, the sGBS approach will allow breeders to obtain a whole-genome profile of important individuals while simultaneously targeting specific genes for a range of selection strategies across the breeding program.</p>
+        </sec>
+        <sec>
+          <title>Electronic supplementary material</title>
+          <p>The online version of this article (doi:10.1186/s12864-015-1404-9) contains supplementary material, which is available to authorized users.</p>
+        </sec>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Plant breeding</kwd>
+        <kwd>Wheat</kwd>
+        <kwd>Marker platform</kwd>
+        <kwd>Genotyping-by-sequencing</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2015</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1">
+      <title>Background</title>
+      <p>Progress in plant breeding focuses on the rapid development of new cultivars with improved attributes. Molecular markers allow breeders to characterize specific lines without the need for laborious and time-consuming phenotyping. Marker-assisted selection (MAS) is used in plant breeding to identify the allele present at a specific locus, allowing the breeder to select based on genotype [<xref ref-type="bibr" rid="CR1">1</xref>]. MAS has been used for plant breeding in many crops to identify specific individuals with known genes of interest [<xref ref-type="bibr" rid="CR2">2</xref>-<xref ref-type="bibr" rid="CR4">4</xref>], primarily to target large-effect, single targets [<xref ref-type="bibr" rid="CR5">5</xref>,<xref ref-type="bibr" rid="CR6">6</xref>]. Since each locus is generally genotyped independently, breeders tend to consider <italic>per data point</italic> costs when utilizing MAS within breeding programs.</p>
+      <p>Contemporary marker technologies for assaying single targets that are often used with MAS include KASP, targeted amplicon sequencing, and SNP arrays. KASP (Kompetitive Allele Specific PCR) is a uniplex, fluorescence-based single nucleotide genotyping technology that utilizes allele-specific oligo extension [<xref ref-type="bibr" rid="CR7">7</xref>]. KASP markers have been used for breeding, QTL mapping, and are the main genotyping platform for the Generation Challenge Program at CIMMYT [<xref ref-type="bibr" rid="CR7">7</xref>]. The arrival of inexpensive sequencing has led to the development of economical sequence-based genotyping approaches. Targeted amplicon sequencing (TAS) amplifies known gene targets and attaches a barcode in a second PCR reaction for multiplexing [<xref ref-type="bibr" rid="CR8">8</xref>]. Samples are pooled, sequenced, and analyzed by parsing the sample-specific barcode and then identifying <italic>a priori</italic> or newly discovered variants [<xref ref-type="bibr" rid="CR8">8</xref>,<xref ref-type="bibr" rid="CR9">9</xref>]. Using a targeted amplicon approach, Bybee et al. [<xref ref-type="bibr" rid="CR8">8</xref>] specifically looked at genes useful for phylogenetic analysis. TAS was further extended to a single PCR reaction that utilized linker sequences which allowed common target primers and a single set of barcoded primers to be utilized across distinct samples and loci [<xref ref-type="bibr" rid="CR10">10</xref>].</p>
+      <p>Complementary to assaying single loci for MAS, whole-genome profiling can be utilized for genomic section, QTL mapping, and diversity analysis [<xref ref-type="bibr" rid="CR11">11</xref>]. Whole-genome profiling approaches focus on assaying large numbers of markers while reducing the <italic>per sample</italic> cost [<xref ref-type="bibr" rid="CR12">12</xref>]. Two common whole-genome profiling methods are SNP arrays and genotyping-by-sequencing (GBS). SNP arrays are comprised of a large number of known polymorphisms that allow an individual to be genotyped at all sites simultaneously which reduces the overall cost per data point [<xref ref-type="bibr" rid="CR13">13</xref>]. SNP arrays have been used across a range of species to characterize diversity [<xref ref-type="bibr" rid="CR14">14</xref>,<xref ref-type="bibr" rid="CR15">15</xref>] and for association mapping [<xref ref-type="bibr" rid="CR16">16</xref>]. SNP arrays tend to be robust marker platforms but can have limitations, including the inability to target loci that were not included during the array development (i.e. ascertainment bias) and a relatively high per-sample cost.</p>
+      <p>GBS is a reduced representation whole-genome profiling strategy that leverages rapidly dropping sequencing cost and increasing output. Multiplexing samples with DNA barcodes greatly reduces the per sample cost [<xref ref-type="bibr" rid="CR17">17</xref>,<xref ref-type="bibr" rid="CR18">18</xref>]. GBS is one of several reduced representation marker platforms to take advantage of second-generation sequencing platforms that produce enormous amounts of sequence [<xref ref-type="bibr" rid="CR12">12</xref>,<xref ref-type="bibr" rid="CR19">19</xref>]. However, since many samples are sequenced together to minimize cost, the reduced sequencing coverage per sample often results in higher levels of missing data. Since sequencing is only targeted to regions flanking restriction sites, GBS is unable to directly ascertain specific loci, leading to considerable informatics challenges when used in MAS.</p>
+      <p>Spiked genotyping-by-sequencing (sGBS) takes advantage of the abundant sequencing output by combining reduced representation GBS libraries with multiple, targeted amplicons. sGBS assesses known alleles via targeted amplicon sequencing and individual genotypes are determined by allele frequency counts. Multiple loci can be assayed concurrently since genotyping relies on the direct sequence output. A similar approach to sGBS was developed by Wells et al. [<xref ref-type="bibr" rid="CR20">20</xref>] that utilizes sequencing-based variant detection by barcoding amplicons. sGBS is more economical since it uses only a small fraction of available sequencing capacity, the majority of which is simultaneously being used to generate independent, whole-genome profiles. By combining both approaches, breeders and geneticists are able to employ multi-faceted selection strategies and marker assays with nominal resource expenditure.</p>
+      <p>To evaluate this approach, we performed sGBS on a winter wheat panel that was screened for six converted KASP markers, four known polymorphisms in the leaf rust resistance gene <italic>Lr34</italic>, and one newly-designed marker targeting a known deletion in <italic>Lr34</italic>.</p>
+    </sec>
+    <sec id="Sec2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="Sec3">
+        <title>Plant material</title>
+        <p>A panel of 153 diverse, advanced wheat lines (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S1) was assembled and DNA was extracted from seedling leaf tissue using a BioSprint 96 DNA Plant Kit (Qiagen). DNA was quantified in plates using PicoGreen and concentrations were normalized to 20 ng/&#x3BC;L.</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Markers</title>
+        <p>Eleven single nucleotide markers were tested for the sGBS approach. Six of the markers were converted from a set of the KASP core markers: BS00023148, BS00083385, BS00150192, BS00067189, BS00088726, and BS00089969 [<xref ref-type="bibr" rid="CR21">21</xref>]. Four of the markers were developed from previously designed <italic>Lr34</italic> KASP markers: Lr34exon11kasp, Lr34exon12kasp, Lr34intron4kasp, and Lr34exon22kasp [<xref ref-type="bibr" rid="CR22">22</xref>]. The &#x2018;Lr34exon11&#x2019; marker from Lagudah et al. [<xref ref-type="bibr" rid="CR22">22</xref>] was also adapted for sGBS, by targeting a 3 bp insertion in exon 11, indicative of a non-functional allele (Lr34 minus). All primer and allele sequences are provided in Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S2. Two of the markers from the KASP core collection did not amplify (BS00067189 and BS00088726) and were not included in the subsequent analysis.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Primer design</title>
+        <p>Primers were designed to amplify the full sequencing construct in a single PCR reaction (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). A set of 384 unique barcoded primers was developed for multiplexing and to differentiate spiked amplicons from GBS reads (Additional file <xref rid="MOESM3" ref-type="media">3</xref>: Table S3). Each barcode primer contains a sequencing platform forward priming site, a unique 10-base barcode, and a M13 tail sequence (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). These were combined with allele-specific primers that also included the M13 tail sequence on the forward primer [<xref ref-type="bibr" rid="CR23">23</xref>]. The allele-specific reverse primer includes both the flanking sequence reverse primer and the sequencer-specific reverse priming site. Incorporating the M13 tail design on both the barcoded primer and allele-specific primer enables the utilization of the same set of barcode oligos for any target sequence, amortizing the cost of oligo synthesis for barcodes across many samples. The alternative of making barcoded allele specific primers for each target locus would be cost-prohibitive.<fig id="Fig1"><label>Figure 1</label><caption><p><bold>Primer and amplicon construction.</bold> The first round of PCR uses a forward primer containing the M13 sequence to amplify the target region. The second round of PCR extends from the M13 tail and incorporates a unique barcode, leading to a final product containing the sequencer primers, barcode, M13 sequence, and polymorphic target.</p></caption><graphic xlink:href="12864_2015_1404_Fig1_HTML" id="MO1"/></fig></p>
+        <p>KASP markers were converted to primers for sGBS by removing the selective base on the end of each forward primer, effectively creating a single, common forward primer for each locus rather than the two allele-specific primers used for KASP genotyping. Integrating the respective M13 and reverse Ion Torrent sequences on the primer pair made the KASP primer sequences compatible with sGBS.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Allele-specific amplification</title>
+        <p>In a 96 well plate, 150 ng of DNA was combined with 3 pmol of M13 barcode primer (4 &#x3BC;L at 0.75 &#x3BC;M). A master mix consisting of buffer (1X final), 0.75 &#x3BC;L MgCl<sub>2</sub> at 50 mM (2.5 mM final concentration), 1.2 &#x3BC;L dNTP mix at 2.5 mM for each nucleotide (200 &#x3BC;M final concentration for each), 0.3 pmol forward-tailed primer (0.03 &#x3BC;L at 10 &#x3BC;M: 20 nM final concentration), 3 pmol reverse primer (0.3 &#x3BC;L at 10 &#x3BC;M: 200 nM final concentration), 0.33 U Taq polymerase, and 3.62 &#x3BC;L H<sub>2</sub>O were combined with the DNA for a total volume of 15 &#x3BC;L for each reaction. Plates were PCR-amplified for 36 cycles consisting of 95C (1 min), 57C (20 s), and 72C (40 s). All samples in the plates were pooled and added to the quantified GBS libraries.</p>
+      </sec>
+      <sec id="Sec7">
+        <title>Library construction and sequencing</title>
+        <p>Two GBS libraries were prepared for Ion Torrent&#x2122; (Life Technologies, Carlsbad, CA) sequencing following the protocol from Mascher et al. [<xref ref-type="bibr" rid="CR24">24</xref>]. Libraries were size-selected on a 2% agarose gel between 200 and 250 bp, quantified using Quant-iTTM PicoGreen&#xAE; (Molecular Probes/Invitrogen Eugene, OR 97402), and normalized to 11 nM. After pooling, the amplicon libraries were quantified using PicoGreen and normalized to 1.1 nM. Five &#x3BC;L of the pooled amplicons were added to 50 &#x3BC;L of each GBS library for a final concentration of 1% (Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>). The libraries were prepared using the Ion PI&#x2122; Template OT2 200 Kit (v2 and v3) and then sequenced on an Ion Proton&#x2122; System using the Ion PI&#x2122; Chip Kit v1. The full protocol for library preparation is provided in Additional file <xref rid="MOESM4" ref-type="media">4</xref>.<fig id="Fig2"><label>Figure 2</label><caption><p><bold>Library construction flow chart.</bold> GBS libraries are created following standard protocols. Each spiked library amplifies a single target locus. Spiked libraries are pooled, combined with GBS libraries, and sequenced. Sequence data for the amplicon library is parsed using the M13 and unique barcode sequence.</p></caption><graphic xlink:href="12864_2015_1404_Fig2_HTML" id="MO2"/></fig></p>
+      </sec>
+      <sec id="Sec8">
+        <title>Data processing</title>
+        <p>A TASSEL pipeline designed for Illumina sequence data was modified to identify SNPs from the GBS tags [<xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR25">25</xref>]. Specifically, TASSEL was modified to process Ion Torrent sequencing sites and with variable length sequence reads. SNP genotypes were called according to the approach of Poland et al. [<xref ref-type="bibr" rid="CR26">26</xref>] using a population-based filter. A TASSEL-based custom pipeline was written to determine the allele counts at each amplified locus by identifying the presence of both the M13 sequence and the target SNP alleles. Reads with the M13 tail sequence were parsed by barcode and the number of reads at each allele for a given locus was counted by exact matching to one of the target sequences.</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Genotype calling for allele-specific amplicons</title>
+        <p>Lines with less than 10x read coverage were not included when clustering and calling genotypes. Genotypes were called using k-means clustering and DBSCAN clustering, both performed in R [<xref ref-type="bibr" rid="CR27">27</xref>-<xref ref-type="bibr" rid="CR29">29</xref>]. For k-means, the relative proportion of reads for each allele were plotted to determine the appropriate number of clusters to use for this input parameter. DBSCAN relies on reachability distance to determine the appropriate number of clusters [<xref ref-type="bibr" rid="CR27">27</xref>,<xref ref-type="bibr" rid="CR28">28</xref>]. Varying reachability distances were empirically tested to ascertain an appropriate value. Observationally, a reachability distance of 0.1 ideally grouped all but one locus. For BS00150192, the optimal reachability distance was 0.06.</p>
+      </sec>
+    </sec>
+    <sec id="Sec10" sec-type="discussion">
+      <title>Results and discussion</title>
+      <p>To test the approach of spiked GBS, we assayed a panel of diverse wheat lines using GBS to create a whole-genome profile and sGBS to target 11 known polymorphic sites. DNA was extracted and normalized and GBS libraries were constructed for the Ion Proton sequencing platform. The two sequenced GBS libraries contained 73 M and 81 M reads with a respective mean read length of 145 bp and 183 bp. Consistent with previous experience with unspiked GBS libraries, 83.6% and 81.3% of reads contained a good GBS barcode and a barcode plus enzyme cut site, respectively. Internal alignment-based discovery resulted in the identification of 13,617 SNPs with less than 20% missing data. This is also consistent with previous unspiked GBS libraries [<xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR30">30</xref>].</p>
+      <p>As a proportion of total sequencing output, the spiked amplicons constituted 1.8% and 3.1% of each library as determined by a count of M13 sequences. Amplicon libraries were individually analyzed to avoid bias due read number differences. For each locus, the allelic state of each line was determined by counting the number of reads containing both the sample-specific barcode and a given allele. Genotypes were called using k-means clustering in R and DBSCAN clustering using the fpc package in R [<xref ref-type="bibr" rid="CR27">27</xref>,<xref ref-type="bibr" rid="CR28">28</xref>]. Relative read frequency was used to group individuals into one of three classes: A, B, or Heterozygous. K-means requires a parameter specifying the number of expected clusters while DBSCAN requires the reachability distance [<xref ref-type="bibr" rid="CR27">27</xref>]. Both of these values require individual curation for loci to ensure two (A/B or A/H) or three (A/B/H) clusters are correctly called.</p>
+      <p>Generally, there were few differences in the results from either method. For single-copy loci, both methods performed equally and homozygotes and heterozygotes were easily identifiable (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>A). Loci with non-zero axis clusters were also easily identified with both methods. Clusters arising from multi-copy loci were often distinct enough to confidently postulate the genotype allelic state (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>C). Overall, the level of concordance between the two clustering algorithms was high with 97.2% of the genotype calls the same between the two methods (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>B and D). The majority of discordance was due to k-means requiring that all genotypes be classified whereas DBSCAN did not classify individuals outside of the main clusters. The DBSCAN algorithm is therefore likely of more use in polyploid species where a heterozygote may not be as readily identified (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>D). Ignoring the individuals that DBSCAN did not classify, there was 100% agreement between the two methods.<fig id="Fig3"><label>Figure 3</label><caption><p><bold>k-means clustering and DBSCAN clustering for Lr34exon11 and BS00083385.</bold> k-means clustering and DBSCAN clustering were used to cluster genotypes for each individual on relative read frequency of the two SNP alleles. Genotypes called within the same group are denoted by color. Unfilled symbols indicate samples that were not classified by the algorithms. <bold>(A)</bold> k-means and <bold>(B)</bold> DBSCAN clustering of LR34exon11. LR34exon11 locus is a single-copy locus and the two genotypes are easily distinguished by either clustering algorithm. Heterozygotes are characterized by an equal proportion of both alleles. <bold>(C)</bold> k-means and <bold>(D)</bold> DBSCAN clustering of BS00083385. This primer pair presumably amplifies multiple loci in the polyploid wheat genome that can still be distinguished based on relative read frequency. The three genotypic classes for individual lines are likely AAAAAA, AABBBB, and AAAABB. The BBBBBB group does not appear to be present, since a null A genotype should fall on the vertical axis with zero reads counts of allele A. DBSCAN did not classify the unfilled individual, which is potentially heterozygous at one of the loci (AAABBB).</p></caption><graphic xlink:href="12864_2015_1404_Fig3_HTML" id="MO3"/></fig></p>
+      <p>Robust conversion of SNP markers between different platforms is important for future genotyping applications, but success can vary considerably [<xref ref-type="bibr" rid="CR31">31</xref>-<xref ref-type="bibr" rid="CR33">33</xref>]. In this study, we observed a good level of conversion from the KASP markers. Two attempted primer sets did not result in amplifying the target sequence and further efforts to optimize conditions for these primer sets were not attempted. For markers that successfully amplified, the average call rate was 94.8%. Several markers from the KASP core set resulted in non-zero axis read count clusters, likely due to the existence of homologous copies of the target locus. The percentage of alleles called for each locus and average coverage are reported in Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>.<table-wrap id="Tab1"><label>Table 1</label><caption><p><bold>Reads/Marker</bold></p></caption><table frame="hsides" rules="groups"><thead><tr><th><bold>Marker</bold></th><th><bold>Call rate</bold></th><th><bold>Avg. depth</bold></th></tr></thead><tbody><tr><td>LR34exon11</td><td>94.5%</td><td>336</td></tr><tr valign="top"><td>Lr34intron4kasp</td><td>96.4%</td><td>114</td></tr><tr valign="top"><td>Lr34exon12kasp</td><td>99.3%</td><td>923</td></tr><tr valign="top"><td>LR34exon11kasp</td><td>98.7%</td><td>1573</td></tr><tr valign="top"><td>Lr34exon22kasp</td><td>99.2%</td><td>117</td></tr><tr valign="top"><td>BS00150192</td><td>92.8%</td><td>863</td></tr><tr valign="top"><td>BS00089969</td><td>92.7%</td><td>564</td></tr><tr valign="top"><td>BS00023148</td><td>98.2%</td><td>1577</td></tr><tr valign="top"><td>BS00083385</td><td>81.0%</td><td>1118</td></tr></tbody></table><table-wrap-foot><p>Marker name, total call rate, and average read depth.</p></table-wrap-foot></table-wrap></p>
+    </sec>
+    <sec id="Sec11" sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>With sGBS, we have developed a low-cost, flexible platform for whole-genome profiling and targeted, single-locus genotyping. The open architecture of primer design for the spiked amplicons enables simple inclusion of new or different target loci. Utilizing a unique set of barcodes combined with locus-specific M13 tail primers enabled sequencing of amplified targets in parallel with GBS libraries. While GBS provides a very low-cost approach for whole-genome profiling, it relies on reproducibly sequencing between restriction sites and cannot target <italic>a priori</italic> selected loci. Targeted amplicons fill this gap by allowing specific loci to be characterized. However, with the enormous sequencing output from current sequencing platforms, generating a sufficient number of amplicons across an appropriate number of samples to avoid unreasonable sequencing depth and cost is prohibitive. To minimize cost, we utilized a small fraction of the sequencing run (1-3%) while generating more than sufficient coverage across all target loci. Any reasonable number of amplicons could likely be combined with a GBS run. As with any sequencing approach, increasing the number of samples (or targets) decreases coverage. As sequencing output continues to increase, further &#x2018;excess&#x2019; capacity can be leveraged in this way. However, targeted amplicon numbers beyond 10&#x2013;20 are likely to be impractical relative to a fully designed array or whole-genome characterization (i.e. GBS).</p>
+      <p>Routine implementation of genotyping approaches in large genetic and breeding applications requires simple and robust laboratory pipelines. In concert with GBS library development, sGBS target amplification is a streamlined procedure affording routine, high-throughput implementation. The amplicon libraries are generated through a single PCR reaction, collectively normalized, and pooled with a GBS library. Though not attempted here, multiplex PCR reactions for the allele-specific amplification would further simplify the overall protocol.</p>
+      <p>sGBS was designed for MAS in breeding but is also broadly applicable for a large number of other molecular genetics purposes. Many approaches ranging from diversity studies [<xref ref-type="bibr" rid="CR34">34</xref>] to genetic and association mapping [<xref ref-type="bibr" rid="CR35">35</xref>] and genomic selection [<xref ref-type="bibr" rid="CR26">26</xref>] have successfully applied GBS, but the number of genetic markers generated by GBS often exceeds what is needed for genetic studies, such as fine mapping or TILLING. Fine mapping for map-based cloning generally requires screening a very large population with flanking markers for the gene of interest. While GBS is not a suitable marker platform for fine mapping, utilizing the spiked portion of sGBS for these studies would be ideal. Likewise, the targeted amplicons of sGBS could also be used to screen for novel mutations in TILLING or ECO-TILLING populations. Though <italic>a priori</italic> SNPs were targeted in the present study, the direct sequencing of targets also enables <italic>de novo</italic> discovery of novel mutations as in a TILLING study.</p>
+      <p>For plant breeding, sGBS will enable breeders to genotype large collections of germplasm for specific markers by taking advantage of the massive data output of current sequencing platforms. Large numbers of markers are required for genomic selection, but plant breeders are also interested in characterizing important disease or physiological loci in breeding populations. sGBS provides a low-cost, scalable approach for both requirements and will serve as an important tool as plant breeding continues its use of molecular markers.</p>
+      <p>Since sGBS amplicons are independent of GBS libraries, breeders can generate a whole-genome profile for advanced breeding material while also applying marker-assisted selection to earlier generations. Importantly, the only realized cost for target genotyping using sGBS is a single PCR reaction. The ability to quickly identify lines containing specific alleles will enhance the capacity and speed of superior cultivar generation in breeding programs.</p>
+      <p>Plant breeding is inherently an exercise in producing and analyzing large amounts of data to discover improved rare and novel variants. Future advancements in plant breeding will fundamentally rely on new technologies being implemented that allow breeders to progress through this process with the most efficient utilization of resources and least disruption to current workflow. Plant breeding programs have historically depended on single-marker germplasm characterization and are beginning to take advantage of whole-genome profiles for genomic selection. sGBS combines both approaches, eliminating the current necessity of two distinct platforms while leveraging continual advancements in sequencing technology. This efficient strategy will allow breeders to increase the amount of germplasm and number of loci that are assayed with few changes to workflow and limited expenditure of resources. Developments like sGBS that enable genomics-assisted breeding are crucial to ensuring progress in developing improved plant varieties in the effort to eliminate hunger and poverty across the world.</p>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="App1">
+        <sec id="Sec12">
+          <title>Additional files</title>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1404_MOESM1_ESM.xlsx" id="MOESM1">
+              <label>Additional file 1: Table S1.</label>
+              <caption>
+                <p>Wheat varieties used in this analysis.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1404_MOESM2_ESM.xlsx" id="MOESM2">
+              <label>Additional file 2: Table S2.</label>
+              <caption>
+                <p>Loci, target alleles, and primer sequences used for sGBS.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1404_MOESM3_ESM.xlsx" id="MOESM3">
+              <label>Additional file 3: Table S3.</label>
+              <caption>
+                <p>Barcode sequences and forward oligo sequences.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1404_MOESM4_ESM.docx" id="MOESM4">
+              <label>Additional file 4:</label>
+              <caption>
+                <p>
+                  <bold>Full protocol for spiked genotyping-by-sequencing.</bold>
+                </p>
+              </caption>
+            </media>
+          </p>
+        </sec>
+      </app>
+    </app-group>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>MAS</term>
+          <def>
+            <p>Marker-assisted selection</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>GS</term>
+          <def>
+            <p>Genomic selection</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>KASP</term>
+          <def>
+            <p>Kompetitive Allele specific PCR</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TAS</term>
+          <def>
+            <p>Targeted amplicon sequencing</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>GBS</term>
+          <def>
+            <p>Genotyping-by-sequencing</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Competing interests</bold>
+        </p>
+        <p>The authors declare that they have no competing interests.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Authors&#x2019; contributions</bold>
+        </p>
+        <p>JP and RB conceived and planned the experiments. SY carried out the experiments. TR and JP performed data analysis. TR and JP wrote the manuscript. All authors read and approved the final manuscript.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>We would like to thank the USDA Central Small Grain Genotyping Lab in Manhattan, KS for sequencing. The USDA-NIFA funded Triticeae Coordinated Agriculture Project (T-CAP) (2011-68002-30029) provided support for TR. This work was completed under the auspices of WGRC I/UCRC partially funded by NSF grant contract (IIP-1338897) and the USAID Feed the Future Innovation Lab for Applied Wheat Genomics (Cooperative Agreement No. AID-OAA-A-13-00051). Partial funding for this research was provided by the Bill &amp; Melinda Gates Foundation through a grant to Cornell University for &#x201C;Genomic Selection: The next frontier for rapid gains in maize and wheat improvement&#x201D;, the United States Department of Agriculture- Agricultural Research Service (Appropriation #5430-21000-006-00D), the Kansas Wheat Alliance, and the Kansas Wheat Commission. Mention of trade names does not constitute endorsement by the U.S. Department of Agriculture.</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Collard</surname>
+              <given-names>BCY</given-names>
+            </name>
+            <name>
+              <surname>Jahufer</surname>
+              <given-names>MZZ</given-names>
+            </name>
+            <name>
+              <surname>Brouwer</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Pang</surname>
+              <given-names>ECK</given-names>
+            </name>
+          </person-group>
+          <article-title>An introduction to markers, quantitative trait loci (QTL) mapping and marker-assisted selection for crop improvement: the basic concepts</article-title>
+          <source>Euphytica</source>
+          <year>2005</year>
+          <volume>142</volume>
+          <fpage>169</fpage>
+          <lpage>96</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10681-005-1681-5</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buerstmayr</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ban</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>QTL mapping and marker&#x2010;assisted selection for Fusarium head blight resistance in wheat: a review</article-title>
+          <source>Plant Breed</source>
+          <year>2009</year>
+          <volume>26</volume>
+          <fpage>1</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1439-0523.2008.01550.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suh</surname>
+              <given-names>J-P</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>S-J</given-names>
+            </name>
+            <name>
+              <surname>Jeung</surname>
+              <given-names>J-U</given-names>
+            </name>
+            <name>
+              <surname>Pamplona</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>J-J</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>J-H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Development of elite breeding lines conferring Bph18 gene-derived resistance to brown planthopper (BPH) by marker-assisted selection and genome-wide background analysis in japonica rice (Oryza sativa L.)</article-title>
+          <source>F Crop Res</source>
+          <year>2011</year>
+          <volume>120</volume>
+          <fpage>215</fpage>
+          <lpage>22</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fcr.2010.10.004</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Xing</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Zuo</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Marker-assisted introgression of qHSR1 to improve maize resistance to head smut</article-title>
+          <source>Mol Breed</source>
+          <year>2012</year>
+          <volume>30</volume>
+          <fpage>1077</fpage>
+          <lpage>88</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11032-011-9694-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Crouch</surname>
+              <given-names>JH</given-names>
+            </name>
+          </person-group>
+          <article-title>Marker-assisted selection in plant breeding: from publications to practice</article-title>
+          <source>Crop Sci</source>
+          <year>2008</year>
+          <volume>48</volume>
+          <fpage>391</fpage>
+          <lpage>407</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2007.04.0191</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Collard</surname>
+              <given-names>BCY</given-names>
+            </name>
+            <name>
+              <surname>Mackill</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Marker-assisted selection: an approach for precision plant breeding in the twenty-first century</article-title>
+          <source>Philos Trans R Soc Lond B Biol Sci</source>
+          <year>2008</year>
+          <volume>363</volume>
+          <fpage>557</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="doi">10.1098/rstb.2007.2170</pub-id>
+          <?supplied-pmid 17715053?>
+          <pub-id pub-id-type="pmid">17715053</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Semagn</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Babu</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Hearne</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Olsen</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Single nucleotide polymorphism genotyping using Kompetitive Allele Specific PCR (KASP): overview of the technology and its application in crop improvement</article-title>
+          <source>Mol Breed</source>
+          <year>2013</year>
+          <volume>33</volume>
+          <fpage>1</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11032-013-9917-x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bybee</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Bracken-Grissom</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Haynes</surname>
+              <given-names>BD</given-names>
+            </name>
+            <name>
+              <surname>Hermansen</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Byers</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Clement</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Targeted amplicon sequencing (TAS): a scalable next-gen approach to multilocus, multitaxa phylogenetics</article-title>
+          <source>Genome Biol Evol</source>
+          <year>2011</year>
+          <volume>3</volume>
+          <fpage>1312</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="doi">10.1093/gbe/evr106</pub-id>
+          <?supplied-pmid 22002916?>
+          <pub-id pub-id-type="pmid">22002916</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Durstewitz</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Polley</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Plieske</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Luerssen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Graner</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Wieseke</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>SNP discovery by amplicon sequencing and multiplex SNP genotyping in the allopolyploid species Brassica napus</article-title>
+          <source>Genome</source>
+          <year>2010</year>
+          <volume>53</volume>
+          <fpage>948</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="doi">10.1139/G10-079</pub-id>
+          <?supplied-pmid 21076510?>
+          <pub-id pub-id-type="pmid">21076510</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clarke</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Czechowski</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Soubrier</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Stevens</surname>
+              <given-names>MI</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Modular tagging of amplicons using a single PCR for high-throughput sequencing</article-title>
+          <source>Mol Ecol Resour</source>
+          <year>2014</year>
+          <volume>14</volume>
+          <fpage>117</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="doi">10.1111/1755-0998.12162</pub-id>
+          <?supplied-pmid 24028345?>
+          <pub-id pub-id-type="pmid">24028345</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jannink</surname>
+              <given-names>J-L</given-names>
+            </name>
+            <name>
+              <surname>Lorenz</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Iwata</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic selection in plant breeding: from theory to practice</article-title>
+          <source>Brief Funct Genomics</source>
+          <year>2010</year>
+          <volume>9</volume>
+          <fpage>166</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="doi">10.1093/bfgp/elq001</pub-id>
+          <?supplied-pmid 20156985?>
+          <pub-id pub-id-type="pmid">20156985</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Davey</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Hohenlohe</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Etter</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Boone</surname>
+              <given-names>JQ</given-names>
+            </name>
+            <name>
+              <surname>Catchen</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Blaxter</surname>
+              <given-names>ML</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide genetic marker discovery and genotyping using next-generation sequencing</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <fpage>499</fpage>
+          <lpage>510</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg3012</pub-id>
+          <?supplied-pmid 21681211?>
+          <pub-id pub-id-type="pmid">21681211</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ganal</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Polley</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Graner</surname>
+              <given-names>E-M</given-names>
+            </name>
+            <name>
+              <surname>Plieske</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wieseke</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Luerssen</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Large SNP arrays for genotyping in crop plants</article-title>
+          <source>J Biosci</source>
+          <year>2012</year>
+          <volume>37</volume>
+          <fpage>821</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12038-012-9225-3</pub-id>
+          <?supplied-pmid 23107918?>
+          <pub-id pub-id-type="pmid">23107918</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Akhunov</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Akhunova</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>OD</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>J a</given-names>
+            </name>
+            <name>
+              <surname>Blake</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Clegg</surname>
+              <given-names>MT</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nucleotide diversity maps reveal variation in diversity among wheat genomes and chromosomes</article-title>
+          <source>BMC Genomics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>702</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-11-702</pub-id>
+          <?supplied-pmid 21156062?>
+          <pub-id pub-id-type="pmid">21156062</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hyten</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>I-Y</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Specht</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Carter</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Shoemaker</surname>
+              <given-names>RC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A high density integrated genetic linkage Map of Soybean and the development of a 1536 Universal Soy linkage panel for quantitative trait locus mapping</article-title>
+          <source>Crop Sci</source>
+          <year>2010</year>
+          <volume>50</volume>
+          <fpage>960</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2009.06.0360</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cockram</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zuluaga</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Comadran</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Macaulay</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide association mapping to candidate polymorphism resolution in the unsequenced barley genome</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2010</year>
+          <volume>107</volume>
+          <fpage>21611</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1010179107</pub-id>
+          <?supplied-pmid 21115826?>
+          <pub-id pub-id-type="pmid">21115826</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Elshire</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Glaubitz</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Poland</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Kawamoto</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Buckler</surname>
+              <given-names>ES</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A robust, simple genotyping-by-sequencing (GBS) approach for high diversity species</article-title>
+          <source>PLoS One</source>
+          <year>2011</year>
+          <volume>6</volume>
+          <fpage>e19379</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0019379</pub-id>
+          <?supplied-pmid 21573248?>
+          <pub-id pub-id-type="pmid">21573248</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <mixed-citation publication-type="other">DNA sequencing costs: data from the NHGRI Genome Sequencing Program (GSP) [<ext-link ext-link-type="uri" xlink:href="http://www.genome.gov/sequencingcosts">www.genome.gov/sequencingcosts</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poland</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Rife</surname>
+              <given-names>TW</given-names>
+            </name>
+          </person-group>
+          <article-title>Genotyping-by-sequencing for plant breeding and genetics</article-title>
+          <source>Plant Genome J</source>
+          <year>2012</year>
+          <volume>5</volume>
+          <fpage>92</fpage>
+          <lpage>102</lpage>
+          <pub-id pub-id-type="doi">10.3835/plantgenome2012.05.0005</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wells</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Trick</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Fraser</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Soumpourou</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Clissold</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Morgan</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Sequencing-based variant detection in the polyploid crop oilseed rape</article-title>
+          <source>BMC Plant Biol</source>
+          <year>2013</year>
+          <volume>13</volume>
+          <fpage>111</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2229-13-111</pub-id>
+          <?supplied-pmid 23915099?>
+          <pub-id pub-id-type="pmid">23915099</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilkinson</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Winfield</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GLA</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Burridge</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>JA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>CerealsDB 2.0: an integrated resource for plant breeders and scientists</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>219</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-13-219</pub-id>
+          <?supplied-pmid 22943283?>
+          <pub-id pub-id-type="pmid">22943283</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lagudah</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name>
+              <surname>Krattinger</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Herrera-Foessel</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Huerta-Espino</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Spielmeyer</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gene-specific markers for the wheat gene Lr34/Yr18/Pm38 which confers resistance to multiple fungal pathogens</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2009</year>
+          <volume>119</volume>
+          <fpage>889</fpage>
+          <lpage>98</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-009-1097-z</pub-id>
+          <?supplied-pmid 19578829?>
+          <pub-id pub-id-type="pmid">19578829</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gholami</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bekele</surname>
+              <given-names>WA</given-names>
+            </name>
+            <name>
+              <surname>Schondelmaier</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Snowdon</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>A tailed PCR procedure for cost-effective, two-order multiplex sequencing of candidate genes in polyploid plants</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2012</year>
+          <volume>10</volume>
+          <fpage>635</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1467-7652.2012.00696.x</pub-id>
+          <?supplied-pmid 22489678?>
+          <pub-id pub-id-type="pmid">22489678</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mascher</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Amand</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Poland</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Application of genotyping-by-sequencing on semiconductor sequencing platforms: a comparison of genetic and reference-based marker ordering in Barley</article-title>
+          <source>PLoS One</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <fpage>e76925</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0076925</pub-id>
+          <?supplied-pmid 24098570?>
+          <pub-id pub-id-type="pmid">24098570</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glaubitz</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Casstevens</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Harriman</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Elshire</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>Q</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>TASSEL-GBS: a high capacity genotyping by sequencing analysis pipeline</article-title>
+          <source>PLoS One</source>
+          <year>2014</year>
+          <volume>9</volume>
+          <fpage>e90346</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0090346</pub-id>
+          <?supplied-pmid 24587335?>
+          <pub-id pub-id-type="pmid">24587335</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poland</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Endelman</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dawson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rutkoski</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Manes</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genomic selection in wheat breeding using genotyping-by-sequencing</article-title>
+          <source>Plant Genome</source>
+          <year>2012</year>
+          <volume>5</volume>
+          <fpage>103</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="doi">10.3835/plantgenome2012.06.0006</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ester</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kriegel</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Sander</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>X</given-names>
+            </name>
+          </person-group>
+          <article-title>A density-based algorithm for discovering clusters in large spatial databases with noise</article-title>
+          <source>2nd Int Conf Knowl Discov Databases Data Min</source>
+          <year>1996</year>
+          <fpage>226</fpage>
+          <lpage>31</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hennig</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <source>fpc: flexible procedures for clustering</source>
+          <year>2014</year>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>R Core Team</collab>
+          </person-group>
+          <source>R: a language and environment for statistical computing</source>
+          <year>2014</year>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poland</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Sorrells</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Jannink</surname>
+              <given-names>J-L</given-names>
+            </name>
+          </person-group>
+          <article-title>Development of high-density genetic maps for barley and wheat using a novel two-enzyme genotyping-by-sequencing approach</article-title>
+          <source>PLoS One</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>e32253</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0032253</pub-id>
+          <?supplied-pmid 22389690?>
+          <pub-id pub-id-type="pmid">22389690</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <mixed-citation publication-type="other">Hyten DL, Cannon SB, Song Q, Weeks N, Fickus EW, Shoemaker RC, et al. High-throughput SNP discovery through deep resequencing of a reduced representation library to anchor and orient scaffolds in the soybean whole genome sequence. BMC Genomics. 2010;11.</mixed-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ragoussis</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Genotyping technologies for all</article-title>
+          <source>Drug Discov Today Technol</source>
+          <year>2006</year>
+          <volume>3</volume>
+          <fpage>115</fpage>
+          <lpage>22</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ddtec.2006.06.013</pub-id>
+          <?supplied-pmid 24980397?>
+          <pub-id pub-id-type="pmid">24980397</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Uitdewilligen</surname>
+              <given-names>JGAML</given-names>
+            </name>
+            <name>
+              <surname>Wolters</surname>
+              <given-names>A-MA</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;hoop</surname>
+              <given-names>BB</given-names>
+            </name>
+            <name>
+              <surname>Borm</surname>
+              <given-names>TJA</given-names>
+            </name>
+            <name>
+              <surname>Visser</surname>
+              <given-names>RGF</given-names>
+            </name>
+            <name>
+              <surname>van Eck</surname>
+              <given-names>HJ</given-names>
+            </name>
+          </person-group>
+          <article-title>A next-generation sequencing method for genotyping-by-sequencing of highly heterozygous autotetraploid potato</article-title>
+          <source>PLoS One</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <fpage>e62355</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0062355</pub-id>
+          <?supplied-pmid 23667470?>
+          <pub-id pub-id-type="pmid">23667470</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lu</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Lipka</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Glaubitz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Elshire</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Cherney</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Casler</surname>
+              <given-names>MD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Switchgrass genomic diversity, ploidy, and evolution: novel insights from a network-based SNP discovery protocol</article-title>
+          <source>PLoS Genet</source>
+          <year>2013</year>
+          <volume>9</volume>
+          <fpage>e1003215</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pgen.1003215</pub-id>
+          <?supplied-pmid 23349638?>
+          <pub-id pub-id-type="pmid">23349638</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Bayer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Druka</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Russell</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Hackett</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Poland</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>An evaluation of genotyping by sequencing (GBS) to map the Breviaristatum-e (ari-e) locus in cultivated barley</article-title>
+          <source>BMC Genomics</source>
+          <year>2014</year>
+          <volume>15</volume>
+          <fpage>104</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-15-104</pub-id>
+          <?supplied-pmid 24498911?>
+          <pub-id pub-id-type="pmid">24498911</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

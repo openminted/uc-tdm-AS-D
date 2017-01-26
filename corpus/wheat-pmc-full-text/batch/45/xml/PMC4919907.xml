@@ -1,0 +1,1643 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Bioinformatics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Bioinformatics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Bioinformatics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2105</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4919907</article-id>
+      <article-id pub-id-type="publisher-id">1139</article-id>
+      <article-id pub-id-type="doi">10.1186/s12859-016-1139-x</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Database</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>CerealsDB 3.0: expansion of resources and data integration</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Wilkinson</surname>
+            <given-names>Paul A.</given-names>
+          </name>
+          <address>
+            <phone>44 117 331 6770</phone>
+            <fax>44 117 925 7374</fax>
+            <email>Paul.Wilkinson@bristol.ac.uk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Winfield</surname>
+            <given-names>Mark O.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Barker</surname>
+            <given-names>Gary L. A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tyrrell</surname>
+            <given-names>Simon</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bian</surname>
+            <given-names>Xingdong</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Allen</surname>
+            <given-names>Alexandra M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Burridge</surname>
+            <given-names>Amanda</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Coghill</surname>
+            <given-names>Jane A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Waterfall</surname>
+            <given-names>Christy</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Caccamo</surname>
+            <given-names>Mario</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff3"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Davey</surname>
+            <given-names>Robert P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Edwards</surname>
+            <given-names>Keith J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <aff id="Aff1"><label/>School of Biological Sciences, University of Bristol, Bristol, BS8 1UG UK </aff>
+        <aff id="Aff2"><label/>The Genome Analysis Centre (TGAC), Norwich Research Park, Norwich, UK </aff>
+        <aff id="Aff3"><label/>National Institute of Agricultural Botany (NIAB), Huntingdon Road, Cambridge, UK </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>24</day>
+        <month>6</month>
+        <year>2016</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>24</day>
+        <month>6</month>
+        <year>2016</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2016</year>
+      </pub-date>
+      <volume>17</volume>
+      <elocation-id>256</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>30</day>
+          <month>3</month>
+          <year>2016</year>
+        </date>
+        <date date-type="accepted">
+          <day>14</day>
+          <month>6</month>
+          <year>2016</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; The Author(s). 2016</copyright-statement>
+        <license license-type="OpenAccess">
+          <license-p><bold>Open Access</bold>This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>The increase in human populations around the world has put pressure on resources, and as a consequence food security has become an important challenge for the 21st century. Wheat (<italic>Triticum aestivum)</italic> is one of the most important crops in human and livestock diets, and the development of wheat varieties that produce higher yields, combined with increased resistance to pests and resilience to changes in climate, has meant that wheat breeding has become an important focus of scientific research. In an attempt to facilitate these improvements in wheat, plant breeders have employed molecular tools to help them identify genes for important agronomic traits that can be bred into new varieties. Modern molecular techniques have ensured that the rapid and inexpensive characterisation of SNP markers and their validation with modern genotyping methods has produced a valuable resource that can be used in marker assisted selection. CerealsDB was created as a means of quickly disseminating this information to breeders and researchers around the globe.</p>
+        </sec>
+        <sec>
+          <title>Description</title>
+          <p>CerealsDB version 3.0 is an online resource that contains a wide range of genomic datasets for wheat that will assist plant breeders and scientists to select the most appropriate markers for use in marker assisted selection. CerealsDB includes a database which currently contains in excess of a million putative varietal SNPs, of which several hundreds of thousands have been experimentally validated. In addition, CerealsDB also contains new data on functional SNPs predicted to have a major effect on protein function and we have constructed a web service to encourage data integration and high-throughput programmatic access.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>CerealsDB is an open access website that hosts information on SNPs that are considered useful for both plant breeders and research scientists. The recent inclusion of web services designed to federate genomic data resources allows the information on CerealsDB to be more fully integrated with the WheatIS network and other biological databases.</p>
+        </sec>
+        <sec>
+          <title>Electronic supplementary material</title>
+          <p>The online version of this article (doi:10.1186/s12859-016-1139-x) contains supplementary material, which is available to authorized users.</p>
+        </sec>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Wheat</kwd>
+        <kwd>Single nucleotide polymorphisms</kwd>
+        <kwd>SNPs</kwd>
+        <kwd>Database</kwd>
+        <kwd>CerealsDB</kwd>
+        <kwd>Genomic selection</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/501100000268</institution-id>
+              <institution>Biotechnology and Biological Sciences Research Council</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>BB/I003207/1</award-id>
+          <award-id>BB/I017496/1</award-id>
+          <award-id>BB/F010370/1</award-id>
+          <award-id>BB/L020718/1</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>Keith J.</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+      </funding-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2016</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1">
+      <title>Background</title>
+      <p>A rapidly expanding human population has meant that food security has become one of the primary global concerns that scientists and governments are seeking to address. Cereal crops are a major source of nutrition for both humans and domesticated animals. The development of novel varieties that result in an increase in yield, and have other beneficial characteristics such as disease and drought resistance, should help to safeguard the future supply of these economically important crops.</p>
+      <p>Single nucleotide polymorphisms (SNPs) have become the marker of choice used by plant breeders in marker assisted selection (MAS). The CerealsDB website was developed in response to a need to collate and present validated SNP data for wheat (<italic>Triticum aestivum</italic>) that is easily accessible to wheat breeders and researchers around the world.</p>
+      <p>CerealsDB was originally created in 2003 to host a dataset of 26,382 EST sequences [<xref ref-type="bibr" rid="CR1">1</xref>]. In 2010 it was expanded to include a database of DArT markers, SNPs validated using the KASP genotyping platform and pages that allowed users to download the draft genome of the wheat variety &#x2018;Chinese Spring&#x2019; [<xref ref-type="bibr" rid="CR2">2</xref>]. This version 2.0 of the CerealsDB website was also extensively redesigned using cascading style-sheets (CSS) to standardise the format of the site, and improve its presentation, to provide a more intuitive browsing experience. The enduring ethos of CerealsDB has been to implement a website that is simple to use, which displays the data in a format that is easy to understand and to release the data into the public domain. CerealsDB has maintained a policy of making its data freely available to the public without restrictions or intellectual property rights. The site does not require registration, access is not password protected and data is provided to the wheat breeding and research communities as quickly as possible to maximise the potential utility of the data.</p>
+      <p>Since the release of CerealsDB version 2.0 there has been another extensive redesign of the site to accommodate the addition of new SNP datasets that were validated on various platforms: the Illumina iSelect platform; the 820&#xA0;K Axiom HD Wheat Genotyping Array and 35&#xA0;K Axiom Wheat Breeders Array, that were developed in collaboration with Affymetrix [<xref ref-type="bibr" rid="CR3">3</xref>]; and Taqman. The website and database was also migrated to a new server in response to the increase in the number of users and volume of data hosted by the website.</p>
+      <p>The latest incarnation of CerealsDB (version 3.0) contains links to functional SNPs which are defined as those SNPs with a high probability of affecting phenotype <italic>i.e.</italic> those non-synonymous variants that lie within protein-coding regions and have a significant effect on the function of the protein. These SNPs are of interest to breeders as perfect markers for traits and to academics as candidate genes.</p>
+      <p>In addition, version 3.0 has employed the use of web services to expose the underlying data in the CerealsDB database in formats that enable integration of its data with other online genomic data resources. The CerealsDB web services have been developed in collaboration with partners from the Wheat Initiative [<xref ref-type="bibr" rid="CR4">4</xref>] Wheat Information System [<xref ref-type="bibr" rid="CR5">5</xref>] (WheatIS) expert working group to produce an application programming interface (API) that is interoperable and conforms to a set of common data standards.</p>
+    </sec>
+    <sec id="Sec2">
+      <title>Construction and content</title>
+      <sec id="Sec3">
+        <title>Implementation</title>
+        <p>CerealsDB version 3.0 uses a MySQL relational database management system (RDMS) database (version 14.14) running on a Linux server (Ubuntu OS version 12.04) and hosted using the Apache2 web server (version 2.4.7) with Perl and PHP scripts used for all data retrieval and output. The site was migrated to a new server that has significantly more resources than the previous web server (CerealsDB version 2.0), with 256&#xA0;GB RAM, 32 CPU&#x2019;s and 2.6&#xA0;TB of disk space. The migration of the site to a new server was considered essential as the amount of data hosted and the number of users accessing it (average of 13,300 per month&#x2014;see Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S1.) meant that the original web server was no longer fit for purpose.</p>
+        <p>The CerealsDB database has experienced a rapid increase in size from 11 tables in version 2.0, to 35 tables in version 3.0 (see Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S2.), with more than a ten-fold increase in the amount of data stored in the database (CerealsDB contained 151&#xA0;Mb of data, which has increased to 1.7 Gb in the latest version). When the tables were constructed, data types were selected that would result in a more efficient indexing to ensure a rapid response to queries. Fourteen of the tables share an identifying relationship with the &#x2018;Contig&#x2019; table through their common primary key, &#x2018;SNP_id&#x2019; (displayed in Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S2).</p>
+        <p>In addition to the &#x2018;Contig&#x2019; table described previously [<xref ref-type="bibr" rid="CR2">2</xref>], which holds 111,442 SNPs validated on the KASPAR genotyping platform [<xref ref-type="bibr" rid="CR6">6</xref>], there are now SNPs that have been analysed using the iSelect, Axiom and Taqman genotyping platforms. Of the 81,587 SNPs that were validated using the wheat 90&#xA0;K iSelect assay [<xref ref-type="bibr" rid="CR7">7</xref>] there were 43,999 that have been mapped and 41,704 mapped unambiguously. The iSelect SNPs are located in the table called &#x2018;iselect_all&#x2019; which also contains genotyping information on 252 wheat varieties, close relatives and progenitor species.</p>
+        <p>Two tables in the database relate to the 35&#xA0;K wheat breeders array &#x2018;axiom35&#x2019; and the 820&#xA0;K array &#x2018;axiom820&#x2019; described in Winfield et al<italic>.</italic> 2015. The &#x2018;axiom35&#x2019; table contains 35,143 markers (of which 35,042 have been mapped). The &#x2018;axiom820&#x2019; contains 819,571 SNPs, and 164,250 of these have been mapped (120,730 mapped unambiguously).</p>
+        <p>Taqman SNPs are stored in a table called &#x2018;taqman_SNPs_mapped&#x2019; which contains 4800 entries, of which 4735 have been mapped. TaqMan Assays are a qPCR genotyping application developed by Thermo Fisher and based on 5&#x2019; nuclease chemistry that uses specific fluorescent probes to discriminate SNP variants. A separate table &#x2018;taqman_core_set&#x2019; contains 935 SNPs that are known to be evenly distributed across the wheat genome.</p>
+        <p>The table called &#x2018;funcSNPs&#x2019; contains 19,641 non-synonymous SNPs of which 2738 have been characterised as having a major effect on the protein function. Functional SNPs are defined as those with a FATHMM score less than -3.0 or greater than 3.0.</p>
+        <p>The largest table in the database is called &#x2018;axiom820dataab&#x2019; consisting of 476 rows linking the axiom 820&#xA0;K SNP codes to the genotyping data for 475 varieties of wheat and closely related species such as the A,B and D genome progenitors (Triticae and <italic>Aegilops)</italic>, and more distantly related species such as <italic>Secale</italic> (Rye) and <italic>Thinopyrum</italic>.</p>
+        <p>Alignment information is contained in three tables called &#x2018;snps_vs_brachy&#x2019; (which are segregated by the BLAST alignment evalue) and the &#x2018;burdock&#x2019; table. These tables map SNPs to the fully contiguous <italic>Brachypodium distachyon</italic> genome and also contain physical map locations for three mapping populations (Avalon &#xD7; Cadenza, Savannah &#xD7; Rialto, Synthetic &#xD7; Opata).</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Data sources</title>
+        <p>SNP data were included from previous studies [<xref ref-type="bibr" rid="CR1">1</xref>, <xref ref-type="bibr" rid="CR8">8</xref>, <xref ref-type="bibr" rid="CR9">9</xref>] as well as from ongoing experiments. SNPs were validated using the LGC Kompetitive Allele&#x2010;Specific PCR (KASPar), Illumina iSelect, Affymetrix axiom and Thermofisher Taqman genotyping platforms. All SNP data were curated to remove redundancy and duplicate values. The contigs used in the database were generated from an assembly of wheat (5x Chinese Spring var.) cDNA sequences and also obtained from the International Wheat Genome Sequencing Consortium (IWGSC) which used flow sorted chromosomes to generate a high quality reference genome.</p>
+        <p>The CerealsDB database currently consists of data on 1,017,400 SNPs characterised on at least one of the four genotyping platforms, of which 86,514 (8.5&#xA0;%) have been mapped to a genetic position. These SNPs are uniquely identified by a 10-character code, beginning with a Bristol SNP (BS) prefix, followed by 8 digits (<italic>e.g</italic>., BS00000001). For the axiom SNPs unique IDs were created for each axiom probe using an 11-character code, beginning with an &#x2018;AX-&#x2018; prefix followed by 8 digits (e.g., AX-94381124). Users can enter this code on the CerealsDB site to retrieve information about the SNP, such as its position within a contig, the contig sequence, map location and adjacent SNPs. Links are also provided to the Ensembl Plants database [<xref ref-type="bibr" rid="CR10">10</xref>] if the SNP is found to be mapped to the current wheat genome reference.</p>
+      </sec>
+    </sec>
+    <sec id="Sec5" sec-type="discussion">
+      <title>Utility and discussion</title>
+      <sec id="Sec6">
+        <title>Web interface and user querying capabilities</title>
+        <p>The CerealsDB website contains a range of datasets that are accessible via the horizontal menu bar at the top of each page which links to SNPs validated on one of four genotyping platforms (KASP, Axiom, iSelect and Taqman)&#xA0;see Fig. <xref rid="Fig1" ref-type="fig">1</xref>. A BLAST [<xref ref-type="bibr" rid="CR11">11</xref>] search page is also available that allows users to query a range of databases that include the Brenchley [<xref ref-type="bibr" rid="CR12">12</xref>] and Chapman [<xref ref-type="bibr" rid="CR13">13</xref>] wheat genome assemblies, the Rye exome assembly and validated SNPs. A drop down field is available for setting the e-value cut-off.<fig id="Fig1"><label>Fig. 1</label><caption><p>The latest home page for CerealsDB showing a completely redesigned website, with a horizontal navigation bar at the top that links to separate areas of the site for Wheat sequences, Dart markers, KASP SNPs, axiom SNPs, iSelect SNPs and Taqman SNPs. There is also a link to the BLAST databases and pages describing the web services available on CerealsDB. Additional navigation menus are available on the right hand side of the website including a quick search facility for SNPs with an axiom or BS code</p></caption><graphic xlink:href="12859_2016_1139_Fig1_HTML" id="MO1"/></fig></p>
+        <p>There are also links to a download page for the draft wheat genome, a wheat EST database, a search page for wheat DArT data and a page describing the mapping of DArT markers using wheat deletion lines.</p>
+        <p>The SNP database allows SNP name and contig queries using a BS code or Axiom code. Some queries (<italic>e.g.</italic> SNP name and Axiom code) are exact. The initial page for each of genotyping platforms contains statistics on the SNPs for that particular platform. All SNPs listed in CerealsDB have been assigned a unique ID and the output page for a query gives information about the gene name and locus. As described previously [<xref ref-type="bibr" rid="CR1">1</xref>], chromosome information can be accessed via a clickable image (ideogram).</p>
+        <p>Wheat ESTs can be searched by gene name, homology search (via BLAST) or westdb cloneID. The wheat DArT markers can be searched by marker name or wheat line and the facility is available to download the DArT datasets in Excel format. Mapped DArT markers can also be viewed on their respective chromosome by clicking the appropriate chromosome image of the ideogram.</p>
+        <p>Users can create Flapjack files based on the axiom genotyping data (.map and .dat) that can be imported into the flapjack software to allow comparison of the user-selected wheat varieties (see Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>). Flapjack is a multi-platform application providing interactive visualisations of high-throughput genotype data, allowing for rapid navigation and comparisons between lines, markers and chromosomes [<xref ref-type="bibr" rid="CR14">14</xref>].<fig id="Fig2"><label>Fig. 2</label><caption><p>The diagram shows the generation of flapjack .map and .dat files from axiom genotyping data. The user selects one of three physical maps and then a selection of wheat varieties (105 available). The resulting flapjack formatted files can then be visualised with the Flapjack software</p></caption><graphic xlink:href="12859_2016_1139_Fig2_HTML" id="MO2"/></fig></p>
+      </sec>
+      <sec id="Sec7">
+        <title>Web services</title>
+        <p>A web service can be described as a collection of open protocols and data standards that allow data to be exchanged between software applications or computer systems. These applications can be implemented in a wide variety of programming languages and run on a diverse set of platforms. Web services exchange data over local or global computer networks and through the use of consistent data interchange formats such as JSON, can enable interoperability (<italic>i.e.</italic> data can be exchanged between different programming languages such as Perl and Python, or different software that may run on different operating systems such as Windows and Linux). JSON is a text-based open standard for data exchange that has been designed to be human-readable and easy for machines to parse and create. JSON uses a simple methodology to store information as key-value pairs, facilitating the structuring of data so that it can be consumed by other services. For the web services we adopted a JSON-based schema for messaging between the CerealsDB server and its clients.</p>
+        <p>The CerealsDB web services use HTTP methods to implement the concept of REST architecture. A RESTful web service will typically define a URI (Uniform Resource Identifier), and provides resource representation such as JSON or XML and a set of HTTP Methods. The web services that have been implemented on CerealsDB are based on the WheatIS Grassroots API to ensure that we share common nomenclature with the wider community. The Grassroots API is able to expose data and analytical services through a consistent descriptive specification and industry-standard software packages, so that when two or more data resources use the Grassroots API, they can easily be federated together and enable a single view over these multiple disparate resources.</p>
+        <p>Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref> shows a simple request made by a client computer across the web in the form of an HTTP request which contains information encoded in JSON. The CerealsDB webserver then interprets this request and queries CerealsDB. The response data is represented as a JSON fragment and returned to the client computer, where the information embedded in the JSON code can be parsed.<fig id="Fig3"><label>Fig. 3</label><caption><p>The diagram shows a simple request to CerealsDB made by a client computer across the web in the form of an HTTP request which contains information encoded in JSON. The CerealsDB webserver then interprets this request and queries the CerealsDB MySQL database. The response from the database is converted into JSON and returned to the client computer, where the information embedded in the JSON code can be parsed</p></caption><graphic xlink:href="12859_2016_1139_Fig3_HTML" id="MO3"/></fig></p>
+        <p>The available web services can be accessed by sending a JSON request to CerealsDB (via cURL or a perl script for example). The initial web services request to CerealsDB is described in the Additional file <xref rid="MOESM1" ref-type="media">1</xref>. This will return a JSON response containing a list of the services that the CerealsDB site provides (currently a Contig service and Search service). This response is also displayed in the Additional file <xref rid="MOESM1" ref-type="media">1</xref>, and users can parse this JSON code using JSON modules included with many popular programming languages, which contain JSON-specific decode/encode functions that can convert a JSON string into a data structure, and vice versa. Users can then construct a fresh JSON query to the web service to extract information on contig sequence that relates to a SNP, SNP position and other SNPs located on the same contig (an example of this is included in the Additional file <xref rid="MOESM1" ref-type="media">1</xref>).</p>
+        <p>The CerealsDB web services were written in Perl and example Perl and Python scripts are available to download from the website to help users construct queries. Additional examples of querying CerealsDB via the web services are provided on the site, describing the use of the cURL program on the command line and via a web browser&#x2019;s address bar. These examples are available via the &#x2018;WebAPI&#x2019; link in the horizontal menu bar.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>BLAST services</title>
+        <p>BLAST services on CerealsDB have been exposed to the WheatIS network using the Grassroots API [<xref ref-type="bibr" rid="CR15">15</xref>] developed by The Genome Analysis Centre (TGAC). The Grassroots API is an architecture to allow both services and data to be shared between separate remote servers. A user connecting into a Grassroots server is able to access all of the services and data on any other connected Grassroots servers transparently without having to log into each server individually. All of the information is communicated using a standardised extensible schema. Connecting CerealsDB and the Grassroots servers based at TGAC means that, from the user&#x2019;s perspective, they see a single Blast web service accessing many local databases.</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Functional SNPs</title>
+        <p>A new search page that allows users to identify functional SNPs has been added to CerealsDB (see Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>) and can be accessed from the following URL: <ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/funcSNPs_select.php">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/funcSNPs_select.php</ext-link>. Functional SNP prediction was performed using the functional analysis through hidden Markov models (FATHMM) technique described by Shihab et al<italic>.</italic> [<xref ref-type="bibr" rid="CR16">16</xref>]. Users can search non-synonymous and functional SNPs by BS or axiom codes, search term (<italic>e.g.</italic> Disease resistance) or FATHMM score. The response from CerealsDB contains information on the Contig that contains the SNP, along with the translated amino acid sequence and the location of the amino acid change. If a BLAST annotation is available for this SNP it is displayed with the BLAST e-value, alongside the SNPs associated FATHMM score and an indication as to whether the SNP has an effect on the proteins function. If the amino acid sequence has been annotated with a genbank accession, a &#x201C;Uniprot button&#x201D; appears to the right of the screen, which links out to the Uniprot website [<xref ref-type="bibr" rid="CR17">17</xref>] where users can find additional information on gene ontologies, protein families and taxonomy.<fig id="Fig4"><label>Fig. 4</label><caption><p>On the functional SNPs page it is possible to search for fSNPs and non-synonymous SNPs by name or a specific search term such as disease resistance. Functional SNPs can be selected by searching for SNPs with a FATHMM score less than -3.0 or greater than 3.0. Pressing the submit button generates a search and the resulting data is shown on the right of this diagram detailing the SNP amino acid sequence, BLAST annotations and FATHMM scores. If a SNP sequence has been annotated with a genbank accession number there will be an option to link out to the Uniprot website where additional information on gene ontologies, protein families and taxonomy can be found</p></caption><graphic xlink:href="12859_2016_1139_Fig4_HTML" id="MO4"/></fig></p>
+        <p>CerealsDB has evolved into a resource for researchers and plant breeders who are primarily interested in wheat SNPs. In addition to CerealsDB, there are a number of websites, such as Ensembl Plants [<xref ref-type="bibr" rid="CR18">18</xref>], the URGI wheat portal website [<xref ref-type="bibr" rid="CR19">19</xref>] and GrainGenes [<xref ref-type="bibr" rid="CR20">20</xref>], that provide genomic information on wheat. Ensembl Plants hosts information on eleven plant species, including wheat, and incorporates the sequence data of Brenchley [<xref ref-type="bibr" rid="CR12">12</xref>] with the International Wheat Genome Sequence Consortium&#x2019;s Chromosome Survey Sequence [<xref ref-type="bibr" rid="CR21">21</xref>], the Chapman genetic mapping data [<xref ref-type="bibr" rid="CR13">13</xref>], as well as SNP markers that have been characterised by CerealsDB [<xref ref-type="bibr" rid="CR2">2</xref>] and the Wheat HapMap project [<xref ref-type="bibr" rid="CR22">22</xref>]. The site offers a comprehensive overview of wheat genomic resources with data being displayed in the Ensembl genome browser allowing users to search the genome sequence assembly, annotations of protein-coding regions and non-coding genes, and information on genetic variation and comparative genomics. Similarly, the URGI wheat portal maintains databases and tools that allow users to study genetic and genomic wheat data. The information hosted on the URGI site includes chromosome survey sequences, reference sequences, both physical and genetic maps, polymorphisms, phenotypic information and array data. The portal also provides links to international wheat projects and access to analysis tools such as annotation pipelines [<xref ref-type="bibr" rid="CR19">19</xref>]. GrainGenes is another site focussed on a wide range of cereals such as wheat, barley, rye and oat genomes. It is a repository of information consisting of genetic maps, mapping probes and primers, genes, alleles and QTLs [<xref ref-type="bibr" rid="CR20">20</xref>]. The site includes data on primer sequences, polymorphism descriptions, genotype and trait scoring data, experimental protocols, photographs of marker polymorphisms, disease symptoms and mutant phenotypes [<xref ref-type="bibr" rid="CR20">20</xref>]. The three sites have been designed as &#x2018;hubs&#x2019; that integrate genomic information from a wide range of sources and, as a result, it can be difficult for inexperienced users to navigate or access relevant information. CerealsDB differentiates itself from other sites by maintaining its primary focus on the hosting and curation of characterised SNPs that have been validated on a range of genotyping platforms, ensuring these SNPs can be quickly disseminated to plant breeding companies and scientists. The site has been designed to display SNP data in a way that is intuitive to its end users and accessible in a wide range of formats (such as excel spreadsheets), in response to the requirements of breeders who may not have access to the bioinformatics skills needed to parse information from more specialized formats such as variant call format (VCF).&#xA0;Users can download files in VCF format from the site via the download sections for each of the genotyping platforms (see <ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/KASP_SNPs_070616.vcf">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/KASP_SNPs_070616.vcf</ext-link>).</p>
+        <p>Since its inception, CerealsDB has maintained a policy of making its data freely available to the public without restrictions or intellectual property rights. Users of CerealsDB are not required to register and there are no areas of the site that are password protected. The inclusion of web services means that data can automatically flow from CerealsDB to other databases, integrating resources and expanding the user base. Potential developments for CerealsDB could include the addition of annotations from other sources such as haplotype and phenotypic information currently being generated, however this would clearly need to integrate with the sites simple functionality to avoid becoming overly complicated and more importantly it should aim to be distinct from existing wheat resources which are in danger of homogenisation.</p>
+        <p>An example case study is included here to illustrate how simple it is to use the website. A user wanting to search for SNPs linked to disease resistance genes (these play a major role in plant responses to pathogens and pests and are of major interest to plant breeders) would start by selecting &#x2018;Functional SNPs&#x2019; from the search page (<ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/funcSNPs_select.php">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/funcSNPs_select.php</ext-link>) and would then enter the term &#x2018;disease&#x2019; in the &#x2018;search term&#x2019; field. This would produce a list of SNPs linked to disease resistance based on the annotation given to the contig in which the SNP is located. Some of these SNPs, such as BS00023108, will already have an assay designed for them and the primer sequences can be downloaded. Entering the SNP&#x2019;s BS code in the &#x2018;Quick search&#x2019; box in the right hand menu, reveals that the SNP is available in the KASP and Axiom platforms and includes information such as KASP marker primer sequences that have been validated for this SNP, along with the contig sequence for BC000011796 (with SNP highlighted in red) and a chromosomal location on 7D. Should the user require additional detail, a simple click on the UniProt link takes them through to that website for information on gene ontologies and domains.</p>
+      </sec>
+    </sec>
+    <sec id="Sec10">
+      <title>Conclusions</title>
+      <p>CerealsDB version 3.0 site represents a considerable advance on previous versions, and includes large datasets of SNPs that have been characterised on a wide range of genotyping platforms. A subset of these SNPs have added value through BLAST annotation and the characterisation of functional SNPs. The site has additional functionality to help users to visualise the SNP genotyping data and the format of the site has been redesigned to help them find information more quickly. The data integration architecture provided by the Grassroots API will allow CerealsDB to seamlessly merge with wider networks of biological databases, and efforts to enforce current standards and formats (such as those suggested by the WheatIS consortium) have been adhered to, helping to guarantee their wider adoption by the community.</p>
+      <p>The CerealsDB website has a large user base across the globe as evidenced by the number of hits the site receives each month. The simplicity and functionality of the site along with the policy of releasing all data into the public domain without restriction has ensured that both plant breeding and wheat research communities continue to employ CerealsDB as an important tool in their efforts to develop new varieties of wheat that could help to solve global food shortages and deliver food security to the world&#x2019;s burgeoning population.</p>
+    </sec>
+    <sec id="Sec11">
+      <title>Availability and requirements</title>
+      <sec id="Sec12">
+        <title>Availability</title>
+        <p>CerealsDB can be accessed online from the following URL: <ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/indexNEW.php">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/indexNEW.php</ext-link>. The SNP database is publicly and freely accessible, requiring no registration and with no restrictions on use. The non-synonymous and functional SNPs are available at the following URL: <ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/funcSNPs_select.php">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/funcSNPs_select.php</ext-link>.</p>
+      </sec>
+      <sec id="Sec13">
+        <title>Technical requirements</title>
+        <p>It is recommended that one of the following browsers is used: Mozilla Firefox 3 on Linux, Mac OSX or Windows, Internet Explorer 8 on Windows, Safari 4 on Mac OsX or Windows, Chrome on Linux or Windows.</p>
+      </sec>
+    </sec>
+    <sec id="Sec14">
+      <title>Abbreviations</title>
+      <p>API, Application programming interface; BC, Bristol contig; BLAST, Basic local alignment search tool; BS, Bristol SNP; CPU, Central processing unit, CSS, Cascading style sheets; DArT, diversity array technology; ER, Entity-relationship; EST, Expressed sequence tag; FAO, Food and Agriculture Organisation of the United Nations; FAQ, Facts and questions; Gb, gigabytes; HTTP, Hypertext transfer protocol; ID, identification; JSON, Javascript object notation; MAS, marker-assisted selection; Mb, megabytes; NCBI, National Center for Biotechnology Information; NGS, Next generation sequencing; OS, Operating system; PHP, Hypertext pre-processor; RDMS, Relational database management system; REST, Representational state transfer; SNP, Single nucleotide polymorphism; TGAC, The genome analysis centre; URGI, Unit&#xE9; de Recherche G&#xE9;nomique Info; URI, Uniform Resource Identifier; URL, uniform resource locator; VCF, variant call format</p>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="App1">
+        <sec id="Sec15">
+          <title>Additional file</title>
+          <p>
+            <media position="anchor" xlink:href="12859_2016_1139_MOESM1_ESM.docx" id="MOESM1">
+              <label>Additional file 1:</label>
+              <caption>
+                <p>This file contains an&#xA0;initial web services request to CerealsDB in JSON, with the JSON response from CerealsDB containing a list of the services that the CerealsDB site provides (currently a Contig service and Search service). An example user query is also provided. (DOCX 560 kb)</p>
+              </caption>
+            </media>
+          </p>
+        </sec>
+      </app>
+    </app-group>
+    <ack>
+      <title>Funding</title>
+      <p>We are grateful to the Biotechnology and Biological Sciences Research Council, UK, for providing the funding for this work (awards BB/I003207/1, BB/I017496/1, BB/F010370/1, BB/L020718/1). We are also grateful to the Lady Emily Smyth Agricultural Research Station for providing the funds for next generation sequencing.</p>
+      <sec id="FPar1">
+        <title>Availability of data and materials</title>
+        <p>Datasets contained in CerealsDB are available on the site to download as excel spreadsheets or VCF format. The wheat genome sequence can be accessed at the following URL <ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/copyright.php">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/copyright.php</ext-link>.</p>
+        <p>SNP data can be downloaded from the right hand menu for each of the different genotyping platforms.</p>
+        <p>
+          <list list-type="bullet">
+            <list-item>
+              <p>VCF files for download:<list list-type="bullet"><list-item><p>KASP SNPs</p></list-item><list-item><p><ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/KASP_SNPs_070616.vcf">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/KASP_SNPs_070616.vcf</ext-link></p></list-item></list><list list-type="bullet"><list-item><p>Axiom SNPs</p></list-item><list-item><p><ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/axiom_SNPs_070616.vcf">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/axiom_SNPs_070616.vcf</ext-link></p></list-item></list><list list-type="bullet"><list-item><p>iSelect SNPs</p></list-item><list-item><p><ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/iSELECT_SNPs_070616.vcf">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/iSELECT_SNPs_070616.vcf</ext-link></p></list-item></list><list list-type="bullet"><list-item><p>Taqman SNPs</p></list-item><list-item><p><ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/taqman_SNPs_070616.vcf">http://www.cerealsdb.uk.net/cerealgenomics/CerealsDB/taqman_SNPs_070616.vcf</ext-link></p></list-item></list></p>
+            </list-item>
+          </list>
+        </p>
+      </sec>
+      <sec id="FPar2">
+        <title>Authors&#x2019; contributions</title>
+        <p>PAW &amp; ST wrote the manuscript. MOW, PAW &amp; GLAB built CerealsDB version 3.0, PAW, ST, XB, MC &amp; RD contributed to the web services, AMA and AB carried out the SNP validation experiments, JC and CW carried out NGS sequencing and KJE conceived of the study, participated in its design and coordination, and helped to draft the manuscript. All authors have read and approved the final manuscript.</p>
+      </sec>
+      <sec id="FPar3">
+        <title>Competing interests</title>
+        <p>The authors declare that they have no competing interests.</p>
+      </sec>
+      <sec id="FPar4">
+        <title>Consent for publication</title>
+        <p>Not applicable.</p>
+      </sec>
+      <sec id="FPar5">
+        <title>Ethics approval and consent to participate</title>
+        <p>Not applicable.</p>
+      </sec>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilson</surname>
+              <given-names>ID</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GL</given-names>
+            </name>
+            <name>
+              <surname>Beswick</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Shepherd</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Owen</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lyons</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Parker</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Lenton</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Holdsworth</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Shewry</surname>
+              <given-names>PR</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <article-title>A transcriptomics resource for wheat functional genomics</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2004</year>
+          <volume>2</volume>
+          <fpage>495</fpage>
+          <lpage>506</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1467-7652.2004.00096.x</pub-id>
+          <?supplied-pmid 17147622?>
+          <pub-id pub-id-type="pmid">17147622</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilkinson</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Winfield</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GLA</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Burridge</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <article-title>CerealsDB 2.0: an integrated resource for plant breeders and scientists</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>219</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-13-219</pub-id>
+          <?supplied-pmid 22943283?>
+          <pub-id pub-id-type="pmid">22943283</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Winfield</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Burridge</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GL</given-names>
+            </name>
+            <name>
+              <surname>Benbow</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Wilkinson</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Waterfall</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Davassi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Scopes</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Pirani</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Webster</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Brew</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Bloor</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>King</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>West</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Griffiths</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>King</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Bentley</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <article-title>High-density SNP genotyping array for hexaploid wheat and its secondary and tertiary gene pool</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2015</year>
+          <volume>14</volume>
+          <fpage>1195</fpage>
+          <lpage>1206</lpage>
+          <pub-id pub-id-type="doi">10.1111/pbi.12485</pub-id>
+          <?supplied-pmid 26466852?>
+          <pub-id pub-id-type="pmid">26466852</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <mixed-citation publication-type="other">The Wheat Initiative [<ext-link ext-link-type="uri" xlink:href="http://www.wheatinitiative.org/">http://www.wheatinitiative.org/</ext-link>]. Accessed on date 13 Jun 2016.</mixed-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <mixed-citation publication-type="other">International Wheat Information System [<ext-link ext-link-type="uri" xlink:href="http://wheatis.org/">http://wheatis.org/</ext-link>]. Accessed on date 13 Jun 2016.</mixed-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <mixed-citation publication-type="other">Cuppen E. Genotyping by allele-specific amplification (KASPar). Cold Spring Harb Protocols. 2007. pp 172&#x2013;173. </mixed-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Forrest</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>BE</given-names>
+            </name>
+            <name>
+              <surname>Maccaferri</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Salvi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Milner</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Cattivelli</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Mastrangelo</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Whan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Stephen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Wieseke</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Plieske</surname>
+              <given-names>J</given-names>
+            </name>
+            <collab>IWGSC</collab>
+            <name>
+              <surname>Lillemo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mather</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Appels</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Dolferus</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Brown-Guedira</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Korol</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Akhunova</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Salse</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Morgante</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pozniak</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Morell</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ganal</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tuberosa</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Lawley</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Mikoulitch</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Cavanagh</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Hayden</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Akhunov</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterization of polyploid wheat genomic diversity using a high-density 90,000 SNP array</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2014</year>
+          <volume>12</volume>
+          <fpage>787</fpage>
+          <lpage>796</lpage>
+          <pub-id pub-id-type="doi">10.1111/pbi.12183</pub-id>
+          <?supplied-pmid 24646323?>
+          <pub-id pub-id-type="pmid">24646323</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Allen</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GL</given-names>
+            </name>
+            <name>
+              <surname>Berry</surname>
+              <given-names>ST</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Gwilliam</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kirby</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Brenchley</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;Amore</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>McKenzie</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Waite</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bevan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcript-specific, single-nucleotide polymorphism discovery and linkage analysis in hexaploid bread wheat (<italic>Triticum aestivum L</italic>.)</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2011</year>
+          <volume>9</volume>
+          <fpage>1086</fpage>
+          <lpage>1099</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1467-7652.2011.00628.x</pub-id>
+          <?supplied-pmid 21627760?>
+          <pub-id pub-id-type="pmid">21627760</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Allen</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GLA</given-names>
+            </name>
+            <name>
+              <surname>Wilkinson</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Burridge</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Winfield</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Uauy</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Griffiths</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Jack</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Berry</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Werner</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Melichar</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>McDougall</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gwilliam</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Discovery and development of exome-based, co-dominant single nucleotide polymorphism markers in hexaploid wheat (<italic>Triticum aestivum L</italic>.)</article-title>
+          <source>Plant Biotechnology J</source>
+          <year>2012</year>
+          <volume>11</volume>
+          <fpage>279</fpage>
+          <lpage>295</lpage>
+          <pub-id pub-id-type="doi">10.1111/pbi.12009</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kersey</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Armean</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Boddu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bolt</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Carvalho-Silva</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Christensen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Davis</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Falin</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Grabmueller</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Humphrey</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kerhornou</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Khobova</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Aranganathan</surname>
+              <given-names>NK</given-names>
+            </name>
+            <name>
+              <surname>Langridge</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Lowy</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>McDowall</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Maheswari</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Nuhn</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ong</surname>
+              <given-names>CK</given-names>
+            </name>
+            <name>
+              <surname>Overduin</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Paulini</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pedro</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Perry</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Spudich</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Tapanari</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Walts</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Tello-Ruiz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ware</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bolser</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Howe</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Kulesha</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Lawson</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Maslen</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Staines</surname>
+              <given-names>DM</given-names>
+            </name>
+          </person-group>
+          <article-title>Ensembl Genomes 2016: more genomes, more complexity</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2016</year>
+          <volume>44</volume>
+          <fpage>D574</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkv1209</pub-id>
+          <?supplied-pmid 26578574?>
+          <pub-id pub-id-type="pmid">26578574</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altschul</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Gish</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Lipman</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>J Mol Biol</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <fpage>403</fpage>
+          <lpage>410</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0022-2836(05)80360-2</pub-id>
+          <?supplied-pmid 2231712?>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brenchley</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Spannagl</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pfeiffer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GLA</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;Amore</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>McKenzie</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kramer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kerhornou</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bolser</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kay</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Waite</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Trick</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bancroft</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Huo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Sehgal</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Kianian</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Kersey</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>McCombie</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mayer</surname>
+              <given-names>MFX</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Bevan</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis of the bread wheat genome using whole-genome shotgun sequencing</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>705</fpage>
+          <lpage>710</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature11650</pub-id>
+          <?supplied-pmid 23192148?>
+          <pub-id pub-id-type="pmid">23192148</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chapman</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Mascher</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bulu&#xE7;</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Barry</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Georganas</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Session</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Strnadova</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Jenkins</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Sehgal</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Oliker</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Schmutz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yelick</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Scholz</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Waugh</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Poland</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Muehlbauer</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Rokhsar</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <article-title>A whole-genome shotgun approach for assembling and anchoring the hexaploid bread wheat genome</article-title>
+          <source>Genome Biol</source>
+          <year>2015</year>
+          <volume>16</volume>
+          <fpage>26</fpage>
+          <pub-id pub-id-type="doi">10.1186/s13059-015-0582-8</pub-id>
+          <?supplied-pmid 25637298?>
+          <pub-id pub-id-type="pmid">25637298</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Milne</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Shaw</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Stephen</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bayer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cardle</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>WTB</given-names>
+            </name>
+            <name>
+              <surname>Flavell</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Marshall</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Flapjack &#x2013; graphical genotype visualization</article-title>
+          <source>Bioinformatics</source>
+          <year>2010</year>
+          <volume>26</volume>
+          <fpage>3133</fpage>
+          <lpage>3134</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btq580</pub-id>
+          <?supplied-pmid 20956241?>
+          <pub-id pub-id-type="pmid">20956241</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <mixed-citation publication-type="other">Grassroots Infrastructure project [<ext-link ext-link-type="uri" xlink:href="https://wheatis.tgac.ac.uk">https://wheatis.tgac.ac.uk</ext-link>] Accessed on date 13 Jun 2016.</mixed-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shihab</surname>
+              <given-names>HA</given-names>
+            </name>
+            <name>
+              <surname>Gough</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>DN</given-names>
+            </name>
+            <name>
+              <surname>Stenson</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GLA</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>INM</given-names>
+            </name>
+            <name>
+              <surname>Gaunt</surname>
+              <given-names>TR</given-names>
+            </name>
+          </person-group>
+          <article-title>Predicting the functional, molecular, and phenotypic consequences of amino acid substitutions using Hidden Markov Models</article-title>
+          <source>Hum Mutat</source>
+          <year>2013</year>
+          <volume>34</volume>
+          <fpage>57</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="doi">10.1002/humu.22225</pub-id>
+          <?supplied-pmid 23033316?>
+          <pub-id pub-id-type="pmid">23033316</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>The UniProt Consortium</collab>
+          </person-group>
+          <article-title>UniProt: a hub for protein information</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2015</year>
+          <volume>43</volume>
+          <fpage>D204</fpage>
+          <lpage>D212</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gku989</pub-id>
+          <pub-id pub-id-type="pmid">25348405</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kersey</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Christensen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Davis</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Falin</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Grabmueller</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Hughes</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Humphrey</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kerhornou</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Khobova</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ensembl Genomes 2013: scaling up access to genome-wide data</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <fpage>D546</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkt979</pub-id>
+          <?supplied-pmid 24163254?>
+          <pub-id pub-id-type="pmid">24163254</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <mixed-citation publication-type="other">The Wheat Portal [<ext-link ext-link-type="uri" xlink:href="http://wheat-urgi.versailles.inra.fr/">http://wheat-urgi.versailles.inra.fr/</ext-link>]. Accessed on date 13 Jun 2016.</mixed-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Matthews</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Carollo</surname>
+              <given-names>VL</given-names>
+            </name>
+            <name>
+              <surname>Lazo</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>OD</given-names>
+            </name>
+          </person-group>
+          <article-title>GrainGenes, the genome database for small-grain crops</article-title>
+          <source>Nucl Acids Res</source>
+          <year>2003</year>
+          <volume>31</volume>
+          <fpage>183</fpage>
+          <lpage>186</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkg058</pub-id>
+          <?supplied-pmid 12519977?>
+          <pub-id pub-id-type="pmid">12519977</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>The International Wheat Genome Sequencing Consortium</collab>
+            <name>
+              <surname>Mayer</surname>
+              <given-names>KFX</given-names>
+            </name>
+            <name>
+              <surname>Rogers</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dole&#x17E;el</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pozniak</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Eversole</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Friebe</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Lukaszewski</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A chromosome-based draft sequence of the hexaploid bread wheat (<italic>Triticum aestivum</italic>) genome</article-title>
+          <source>Science</source>
+          <year>2014</year>
+          <volume>345</volume>
+          <fpage>1251788</fpage>
+          <pub-id pub-id-type="doi">10.1126/science.1251788</pub-id>
+          <pub-id pub-id-type="pmid">25035500</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jordan</surname>
+              <given-names>KW</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lun</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Gardiner</surname>
+              <given-names>L-J</given-names>
+            </name>
+            <name>
+              <surname>MacLachlan</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Hucl</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Wiebe</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Forrest</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Sharpe</surname>
+              <given-names>AG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A haplotype map of allohexaploid wheat reveals distinct patterns of selection on homoeologous genomes</article-title>
+          <source>Genome Biol</source>
+          <year>2015</year>
+          <volume>16</volume>
+          <fpage>48</fpage>
+          <pub-id pub-id-type="doi">10.1186/s13059-015-0606-4</pub-id>
+          <?supplied-pmid 25886949?>
+          <pub-id pub-id-type="pmid">25886949</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

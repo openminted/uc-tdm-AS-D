@@ -1,0 +1,2612 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.0 20040830//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Plant J</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Plant J</journal-id>
+      <journal-id journal-id-type="publisher-id">tpj</journal-id>
+      <journal-title-group>
+        <journal-title>The Plant Journal</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0960-7412</issn>
+      <issn pub-type="epub">1365-313X</issn>
+      <publisher>
+        <publisher-name>BlackWell Publishing Ltd</publisher-name>
+        <publisher-loc>Oxford, UK</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4241024</article-id>
+      <article-id pub-id-type="doi">10.1111/tpj.12550</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Technical Advance</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Whole-genome profiling and shotgun sequencing delivers an anchored, gene-decorated, physical map assembly of bread wheat chromosome 6A</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Poursarebani</surname>
+            <given-names>Naser</given-names>
+          </name>
+          <xref ref-type="aff" rid="au1">1</xref>
+          <xref ref-type="corresp" rid="cor2">&#x2020;</xref>
+          <xref ref-type="corresp" rid="cor1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nussbaumer</surname>
+            <given-names>Thomas</given-names>
+          </name>
+          <xref ref-type="aff" rid="au2">2</xref>
+          <xref ref-type="corresp" rid="cor2">&#x2020;</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>&#x160;imkov&#xE1;</surname>
+            <given-names>Hana</given-names>
+          </name>
+          <xref ref-type="aff" rid="au3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>&#x160;af&#xE1;&#x159;</surname>
+            <given-names>Jan</given-names>
+          </name>
+          <xref ref-type="aff" rid="au3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Witsenboer</surname>
+            <given-names>Hanneke</given-names>
+          </name>
+          <xref ref-type="aff" rid="au4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>van Oeveren</surname>
+            <given-names>Jan</given-names>
+          </name>
+          <xref ref-type="aff" rid="au4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dole&#x17E;el</surname>
+            <given-names>Jaroslav</given-names>
+          </name>
+          <xref ref-type="aff" rid="au3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mayer</surname>
+            <given-names>Klaus FX</given-names>
+          </name>
+          <xref ref-type="aff" rid="au2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Stein</surname>
+            <given-names>Nils</given-names>
+          </name>
+          <xref ref-type="aff" rid="au1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Schnurbusch</surname>
+            <given-names>Thorsten</given-names>
+          </name>
+          <xref ref-type="aff" rid="au1">1</xref>
+          <xref ref-type="corresp" rid="cor1">*</xref>
+        </contrib>
+        <aff id="au1">
+          <label>1</label>
+          <institution>Leibniz Institute of Plant Genetics and Crop Plant Research (IPK)</institution>
+          <addr-line>Corrensstr. 3, D-06466, Stadt Seeland (OT) Gatersleben, Germany</addr-line>
+        </aff>
+        <aff id="au2">
+          <label>2</label>
+          <institution>MIPS/IBIS German Research Center for Environmental Health</institution>
+          <addr-line>D-85764, Neuherberg, Germany</addr-line>
+        </aff>
+        <aff id="au3">
+          <label>3</label>
+          <institution>Institute of Experimental Botany, Centre of the Region Han&#xE1; for Biotechnological and Agricultural Research</institution>
+          <addr-line>CZ-78371, Olomouc, Czech Republic</addr-line>
+        </aff>
+        <aff id="au4">
+          <label>4</label>
+          <institution>Keygene N.V.</institution>
+          <addr-line>Agro Business Park 90, 6708 PW, Wageningen, The Netherlands</addr-line>
+        </aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor1">* For correspondence (e-mails <email>thor@ipk-gatersleben.de</email> and <email>poursarebani@ipk-gatersleben.de</email>).</corresp>
+        <corresp id="cor2">&#x2020; These authors contributed equally to this work.</corresp>
+        <fn>
+          <p>International Wheat Genome Sequencing Consortium (IWGSC)&#x2014;<ext-link ext-link-type="uri" xlink:href="http://www.wheatgenome.org/;eversole@eversoleassociates.com">http://www.wheatgenome.org/; eversole@eversoleassociates.com</ext-link>).</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <month>7</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>09</day>
+        <month>5</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>79</volume>
+      <issue>2</issue>
+      <fpage>334</fpage>
+      <lpage>347</lpage>
+      <history>
+        <date date-type="received">
+          <day>03</day>
+          <month>3</month>
+          <year>2014</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>25</day>
+          <month>4</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>01</day>
+          <month>5</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2014 The Authors. The Plant Journal published by Society for Experimental Biology and John Wiley &amp; Sons Ltd.</copyright-statement>
+        <copyright-year>2014</copyright-year>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/3.0/">
+          <license-p>This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Bread wheat (<italic>Triticum aestivum</italic> L.) is the most important staple food crop for 35% of the world's population. International efforts are underway to facilitate an increase in wheat production, of which the International Wheat Genome Sequencing Consortium (IWGSC) plays an important role. As part of this effort, we have developed a sequence-based physical map of wheat chromosome 6A using whole-genome profiling (WGP&#x2122;). The bacterial artificial chromosome (BAC) contig assembly tools <sc>fingerprinted contig</sc> (<sc>fpc</sc>) and <sc>linear topological contig</sc> (<sc>ltc</sc>) were used and their contig assemblies were compared. A detailed investigation of the contigs structure revealed that <sc>ltc</sc> created a highly robust assembly compared with those formed by <sc>fpc</sc>. The <sc>ltc</sc> assemblies contained 1217 contigs for the short arm and 1113 contigs for the long arm, with an L<sub>50</sub> of 1&#xA0;Mb. To facilitate <italic>in silico</italic> anchoring, WGP&#x2122; tags underlying BAC contigs were extended by wheat and wheat progenitor genome sequence information. Sequence data were used for <italic>in silico</italic> anchoring against genetic markers with known sequences, of which almost 79% of the physical map could be anchored. Moreover, the assigned sequence information led to the &#x2018;decoration&#x2019; of the respective physical map with 3359 anchored genes. Thus, this robust and genetically anchored physical map will serve as a framework for the sequencing of wheat chromosome 6A, and is of immediate use for map-based isolation of agronomically important genes/quantitative trait loci located on this chromosome.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>bread wheat chromosome 6A</kwd>
+        <kwd>whole-genome profiling</kwd>
+        <kwd>
+          <sc>linear topological contigs</sc>
+        </kwd>
+        <kwd>anchored physical map</kwd>
+        <kwd>bacterial artificial chromosome contigs</kwd>
+        <kwd>technical advance</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Introduction</title>
+      <p>Bread wheat (<italic>Triticum aestivum</italic> L.) has been a constant staple food and major crop that has provided energy and protein for humankind for millennia. Today, it represents approximately 20% of all calories consumed by humans (<ext-link ext-link-type="uri" xlink:href="http://www.fao.org">http://www.fao.org</ext-link>). As the world population grows and the climate continuously changes, future generations may challenge the current food supplies, which could augment the demand for wheat (<xref rid="b32" ref-type="bibr">Ortiz <italic>et al.</italic>, 2008</xref>; <xref rid="b45" ref-type="bibr">Sommer <italic>et al.</italic>, 2013</xref>). Therefore, accelerating wheat breeding and production by understanding the molecular basis of phenotypic variation and exploiting genetic diversity to improve performance are crucial. In this respect, the sequencing of the entire bread wheat genome has been considered to be a critical step for achieving these goals (<xref rid="b11" ref-type="bibr">Eversole <italic>et al.</italic>, 2009</xref>).</p>
+      <p>Accessing complete chromosomal sequences and the gene repertoire of hexaploid wheat (2<italic>n</italic>&#xA0;=&#xA0;6<italic>x</italic>&#xA0;=&#xA0;42) is quickly becoming a necessary but daunting task because of its large genome size (&#x223C;17&#xA0;Gb/1C), which has resulted from successive hybridization events of three diploid grasses with large and structurally similar genomes (A, B and D), populated with more than 80% of repetitive elements (<xref rid="b12" ref-type="bibr">Flavell <italic>et al.</italic>, 1977</xref>). To overcome these challenges, a strategy has been identified that aims to break down genomic analyses into manageable-sized tasks (i.e. individual chromosomes and/or chromosome arms). This strategy relies on flow-sorting of individual chromosome arms used for construction of BAC libraries and also for next-generation sequencing (<xref rid="b7" ref-type="bibr">Dole&#x17E;el <italic>et&#xA0;al</italic>., 2007</xref>, <xref rid="b8" ref-type="bibr">2014</xref>). Moreover, together with the advent of physical map building using whole-genome profiling (WGP&#x2122;; <xref rid="b31" ref-type="bibr">van Oeveren <italic>et al.</italic>, 2011</xref>), chromosome flow cytometry represents an important technological development that provides easier access to large and polyploid genomes (<xref rid="b8" ref-type="bibr">Dole&#x17E;el <italic>et&#xA0;al</italic>., 2014</xref>).</p>
+      <p>Whole-genome profiling (WGP&#x2122;) produces sequence tags at terminal ends of enzymatic restriction fragments from individual bacterial artificial chromosome (BAC) clones using a short-read &#x2018;Next Generation&#x2019; or &#x2018;High Throughput&#x2019; sequencing device (<xref rid="b31" ref-type="bibr">van Oeveren <italic>et al.</italic>, 2011</xref>). Identification of BAC overlaps by pairwise WGP&#x2122; tag comparisons allows for the assembly of BAC clones into contigs using the <sc>fingerprinted contigs</sc> (<sc>fpc</sc>; <xref rid="b44" ref-type="bibr">Soderlund <italic>et al.</italic>, 1997</xref>) or <sc>linear topological contig</sc> (<sc>ltc</sc>) programs (<xref rid="b13" ref-type="bibr">Frenkel <italic>et al.</italic>, 2010</xref>). WGP&#x2122; is considered more robust, less laborious and more efficient at building physical contigs than conventional high-information content fingerprinting (HICF; <xref rid="b28" ref-type="bibr">Luo <italic>et al.</italic>, 2003</xref>; <xref rid="b34" ref-type="bibr">Philippe <italic>et al.</italic>, 2012</xref>). The WGP&#x2122; approach has been successfully used on a number of genomes (<xref rid="b31" ref-type="bibr">van Oeveren <italic>et al.</italic>, 2011</xref>; <xref rid="b50" ref-type="bibr">TTGC, 2012</xref>; <xref rid="b41" ref-type="bibr">Sierro <italic>et al.</italic>, 2013</xref>), and its application has also been demonstrated for BAC clone contig formation originating from only a small fraction of wheat chromosome 3B (<xref rid="b34" ref-type="bibr">Philippe <italic>et al.</italic>, 2012</xref>). Moreover, WGP&#x2122; short sequence tags connected to the sequence contigs obtained from whole-chromosome shotgun sequencing (WCS; or chromosome shotgun sequencing, CSS) may further expand the possibilities for using WGP&#x2122;.</p>
+      <p>Substantially longer WCS contigs connected to BAC-associated WGP&#x2122; tags facilitate sequence homology searches against respective genetic markers with known sequences, thereby providing an <italic>in silico</italic>-anchored physical map. A physical map, aided by shotgun sequencing, can provide clear insight into the physically positioned and ordered gene repertoire before complete genomic sequences of the wheat chromosomes become available. Without a link to physical maps, individual wheat chromosome shotgun sequence data sets were previously used to estimate virtual gene order, composition and evolutionary chromosomal rearrangements (<xref rid="b51" ref-type="bibr">Vitulo <italic>et al.</italic>, 2011</xref>; <xref rid="b14" ref-type="bibr">Hernandez <italic>et al.</italic>, 2012</xref>; <xref rid="b1" ref-type="bibr">Akhunov <italic>et al.</italic>, 2013</xref>; <xref rid="b48" ref-type="bibr">Tanaka <italic>et al.</italic>, 2014</xref>). Such studies were mainly performed by an analysis of extensive long-range conserved synteny with reference grass genomes [<italic>Oryza sativa</italic> (rice), <italic>Sorghum bicolor</italic> and <italic>Brachypodium distachyon</italic>]. Similarly, a fivefold genome coverage-based sequence assembly of the entire bread wheat genome shotgun sequence was previously completed and analyzed (<xref rid="b4" ref-type="bibr">Brenchley <italic>et al.</italic>, 2012</xref>) using a similar comparative genomics-based approach that involved comparison with sequences of diploid ancestral and progenitor genomes. Although these reports represent significant achievements in wheat genome biology, a more accurate wheat reference genome that avoids assumptions made by comparative genomics requires the establishment of genetically anchored physical maps.</p>
+      <p>Genes assigned to a physical map significantly facilitate positional gene cloning efforts and detection of regulatory elements. Herein, we constructed a physical map of wheat chromosome 6A linked to the annotated gene sequence information. We report a high-resolution gene map of chromosome 6A based on DNA sequences obtained from flow-sorted chromosome arms and by using the WGP&#x2122;-based physical map approach. BAC assembly was performed using <sc>ltc</sc> software, and the assembly robustness was compared with <sc>fpc</sc>. WCS contigs from hexaploid wheat chromosome 6A [International Wheat Genome Sequencing Consortium (IWGSC), <ext-link ext-link-type="uri" xlink:href="http://www.wheatgenome.org">http://www.wheatgenome.org</ext-link>], together with available sequences from wheat ancestral diploid genomes (<xref rid="b20" ref-type="bibr">Jia <italic>et al.</italic>, 2013</xref>; <xref rid="b25" ref-type="bibr">Ling <italic>et al.</italic>, 2013</xref>), were aligned to the 6A physical map. Overall, we describe the development of a powerful resource for 6A that facilitates the study of its assigned genes and quantitative trait loci (QTLs).</p>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <sec>
+        <title>BAC libraries of the 6A chromosome arms</title>
+        <p>Bacterial artificial chromosome libraries were constructed separately from short (6AS) and long (6AL) arms of chromosome 6A, which were purified separately by flow-cytometric sorting from two telosomic lines of wheat in which the arms originating from 6A of cv. Chinese Spring are stably maintained as telocentric chromosomes. Analysis of random samples of sorted chromosome fractions by fluorescence <italic>in situ</italic> hybridization (FISH) revealed an average purity of 89 and 86% for 6AS and 6AL, respectively. A total of 7.15<italic>&#xA0;</italic>million and 6<italic>&#xA0;</italic>million 6AS and 6AL arms were collected, which represented 4.91 and 4.53<italic>&#xA0;</italic>&#x3BC;g DNA, respectively. The DNA was used to construct chromosome arm-specific BAC libraries TaaCsp6AShA (6AS; 49<italic>&#xA0;</italic>152 clones, average insert size 125 Kb; <italic>Hin</italic>dIII) and TaaCsp6ALhA (6AL; 55<italic>&#xA0;</italic>296 clones, average insert size 123 Kb; <italic>Hin</italic>dIII). Considering the molecular size of 336 Mbp for 6AS and 369<italic>&#xA0;</italic>Mbp for 6AL (<xref rid="b38" ref-type="bibr">&#x160;af&#xE1;&#x159; <italic>et&#xA0;al</italic>., 2010</xref>), as well as contamination from other chromosomes, the libraries represent &#x223C;16 equivalents of the 6A arms (Table <xref ref-type="table" rid="tbl1">1</xref>).</p>
+        <table-wrap id="tbl1" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>Chromosome 6A arm-specific BAC libraries used to construct the physical maps</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="left" rowspan="1" colspan="1">No. of BAC clone</th>
+                <th align="center" rowspan="1" colspan="1">Short arm (6AS; 336&#xA0;Mb)<xref ref-type="table-fn" rid="tf1-2">a</xref></th>
+                <th align="center" rowspan="1" colspan="1">Long arm (6AL; 369&#xA0;Mb)<xref ref-type="table-fn" rid="tf1-2">b</xref></th>
+                <th align="left" rowspan="1" colspan="1">Library coverage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Complete BAC library</td>
+                <td align="left" rowspan="1" colspan="1">49&#xA0;152</td>
+                <td align="left" rowspan="1" colspan="1">55&#xA0;296</td>
+                <td align="left" rowspan="1" colspan="1">&#x223C;16&#xD7;</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">For WGP&#x2122;</td>
+                <td align="left" rowspan="1" colspan="1">22&#xA0;656</td>
+                <td align="left" rowspan="1" colspan="1">24&#xA0;576</td>
+                <td align="left" rowspan="1" colspan="1">&#x223C;8&#xD7;</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">As WGP&#x2122; output</td>
+                <td align="left" rowspan="1" colspan="1">19&#xA0;289</td>
+                <td align="left" rowspan="1" colspan="1">18&#xA0;660</td>
+                <td align="left" rowspan="1" colspan="1">&#x223C;7&#xD7;</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">WGP&#x2122; output used for BAC assembly<xref ref-type="table-fn" rid="tf1-2">b</xref></td>
+                <td align="left" rowspan="1" colspan="1">18&#xA0;820</td>
+                <td align="left" rowspan="1" colspan="1">17&#xA0;309</td>
+                <td align="left" rowspan="1" colspan="1">&#x223C;7&#xD7; (6AS)<break/>&amp; &#x223C;5&#xD7; (6AL)</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>WGP&#x2122;, whole-genome profiling.</p>
+            </fn>
+            <fn id="tf1-2">
+              <label>a</label>
+              <p><xref rid="b38" ref-type="bibr">&#x160;af&#xE1;&#x159; <italic>et&#xA0;al</italic>. (2010)</xref>.</p>
+            </fn>
+            <fn id="tf1-3">
+              <label>b</label>
+              <p>BACs containing &lt;6 or &gt;68 tags were not entered into the physical map assembly pipeline.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>BAC contig assembly of the 6A chromosome arms</title>
+        <p>Whole-genome profiling (WGP&#x2122;) data were produced for both chromosome arms 6AS and 6AL (Table <xref ref-type="table" rid="tbl2">2</xref>; Appendix S1). Only BAC clones containing 6&#x2013;68 tags entered the BAC assembly pipelines. A total of 18&#xA0;820 BAC clones and 109&#xA0;570 unique WGP&#x2122; tags were used as input for BAC assembly of 6AS (Table <xref ref-type="table" rid="tbl2">2</xref>). For 6AL, 17&#xA0;309 BAC clones containing 108&#xA0;700 unique WGP&#x2122; tags were used to build the physical map (Table <xref ref-type="table" rid="tbl2">2</xref>). This delivered an average of 29.7 WGP&#x2122; tags per BAC for 6AS and 28.6 WGP&#x2122; tags per BAC for 6AL, by considering all BACs for a given WGP&#x2122; tag (Table <xref ref-type="table" rid="tbl2">2</xref>). We used <sc>ltc</sc> and <sc>fpc</sc> tools for assembly. <sc>ltc</sc> has been shown to outperform <sc>fpc</sc> because it can build longer, better ordered and mo re robust contigs, compared with <sc>fpc</sc>, employing HICF-based BAC fingerprints (<xref rid="b3" ref-type="bibr">Breen <italic>et al.</italic>, 2013</xref>; <xref rid="b26" ref-type="bibr">Lucas <italic>et al.</italic>, 2013</xref>; <xref rid="b35" ref-type="bibr">Philippe <italic>et al.</italic>, 2013</xref>; <xref rid="b37" ref-type="bibr">Raats <italic>et al.</italic>, 2013</xref>). The same set of BACs and WGP&#x2122; tags were used for both <sc>fpc</sc> and <sc>ltc</sc> analyses.</p>
+        <table-wrap id="tbl2" position="float">
+          <label>Table 2</label>
+          <caption>
+            <p>Overview of general whole-genome profiling (WGP&#x2122;) parameters and sequence data processing</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="left" rowspan="1" colspan="1">Parameter</th>
+                <th align="center" rowspan="1" colspan="1">6AS</th>
+                <th align="center" rowspan="1" colspan="1">6AL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Estimated size of chromosome</td>
+                <td align="left" rowspan="1" colspan="1">336&#xA0;Mbp</td>
+                <td align="left" rowspan="1" colspan="1">369&#xA0;Mbp</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">WGP&#x2122; tag length, incl. restriction site<xref ref-type="table-fn" rid="tf2-2">a</xref></td>
+                <td align="left" rowspan="1" colspan="1">50&#xA0;nt</td>
+                <td align="left" rowspan="1" colspan="1">50&#xA0;nt</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of BACs tested</td>
+                <td align="left" rowspan="1" colspan="1">22&#xA0;656</td>
+                <td align="left" rowspan="1" colspan="1">24&#xA0;576</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Chromosome arm equivalent BACs tested</td>
+                <td align="left" rowspan="1" colspan="1">8.4</td>
+                <td align="left" rowspan="1" colspan="1">7.0</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of high-quality reads produced (M)</td>
+                <td align="left" rowspan="1" colspan="1">99.8</td>
+                <td align="left" rowspan="1" colspan="1">165.4</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of deconvolutable reads (M)</td>
+                <td align="left" rowspan="1" colspan="1">52.2</td>
+                <td align="left" rowspan="1" colspan="1">78.2</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Percentage of deconvolutable reads (%)</td>
+                <td align="left" rowspan="1" colspan="1">52.30</td>
+                <td align="left" rowspan="1" colspan="1">47.30</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of tagged BACs</td>
+                <td align="left" rowspan="1" colspan="1">19&#xA0;289</td>
+                <td align="left" rowspan="1" colspan="1">18&#xA0;660</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of tagged BACs used in assembly</td>
+                <td align="left" rowspan="1" colspan="1">18&#xA0;820</td>
+                <td align="left" rowspan="1" colspan="1">17&#xA0;309</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of unique WGP&#x2122; tags</td>
+                <td align="left" rowspan="1" colspan="1">109&#xA0;611</td>
+                <td align="left" rowspan="1" colspan="1">108&#xA0;811</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of unique WGP&#x2122; tags used in assembly</td>
+                <td align="left" rowspan="1" colspan="1">109&#xA0;570</td>
+                <td align="left" rowspan="1" colspan="1">108&#xA0;700</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Percentage of tagged BACs (%)</td>
+                <td align="left" rowspan="1" colspan="1">85</td>
+                <td align="left" rowspan="1" colspan="1">75.9</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Average no. of WGP&#x2122; tags/BAC</td>
+                <td align="left" rowspan="1" colspan="1">29.7</td>
+                <td align="left" rowspan="1" colspan="1">28.6</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Average no. of reads/tag</td>
+                <td align="left" rowspan="1" colspan="1">61.4</td>
+                <td align="left" rowspan="1" colspan="1">111.1</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="tf2-1">
+              <p>BAC, bacterial artificial chromosome.</p>
+            </fn>
+            <fn id="tf2-2">
+              <label>b</label>
+              <p>The enzyme combination applied was <italic>Hind</italic>III/<italic>Mse</italic>I for both libraries.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Automated <sc>ltc</sc> delivered 1217 contigs and 3136 singletons for 6AS and 1113 contigs and 2581 singletons for 6AL (Table <xref ref-type="table" rid="tbl3">3</xref>; Appendices S2 and S3). All contigs contained at least two BAC clones. The 6AS average contig size was estimated to be 0.429<italic>&#xA0;</italic>Mb with an L<sub>50</sub> contig size of 1<italic>&#xA0;</italic>Mb, whereas the 6AL physical map had an average of 0.488<italic>&#xA0;</italic>Mb and had an L<sub>50</sub> contig size of 0.945<italic>&#xA0;</italic>Mb (Table <xref ref-type="table" rid="tbl3">3</xref>). All contigs were validated for linear topology and represented as the net width value. Contigs with a width &gt;1, which indicates the presence of clone(s) having no significant overlaps with clones from the selected minimal tiling path (MTP) of the contig, were considered questionable because their topological network representation contradicted the linear chromosomal structure. Almost 95% of the cumulative 6AS and 6AL contigs were initially linear, whereas the rest, having a width &#x2265;2, were checked manually for linearity. In the latter group, nonlinearity was presumably caused by missing WGP&#x2122; tags in a particular single BAC. Thus, these contigs were kept as such and further break down was not performed. Using <sc>ltc</sc>, a total of 5139 (6AS) and 5621 (6AL) clones were selected for the MTP (Appendices S2 and S3). Another physical map was made by <sc>fpc</sc> (1e<sup>&#x2212;11</sup> final cut-off; Appendix S4), in which a total of 640 and 620 contigs for 6AS and 6AL were formed, respectively. A total of 5045 and 3560 BACs were sorted out as singletons for 6AS and 6AL, respectively (Table S1; Appendix S5).</p>
+        <table-wrap id="tbl3" position="float">
+          <label>Table 3</label>
+          <caption>
+            <p>Chromosome 6A arm-separated assemblies via <sc>linear topological contigs</sc> (<sc>ltc</sc>), with at least two BAC clones</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th align="left" colspan="3" rowspan="1">6AS</th>
+                <th align="left" colspan="3" rowspan="1">6AL</th>
+              </tr>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th align="left" rowspan="1" colspan="1">All</th>
+                <th align="left" rowspan="1" colspan="1"><sc>ltc</sc>-specific contigs<xref ref-type="table-fn" rid="tf3-2">a</xref></th>
+                <th align="left" rowspan="1" colspan="1">Contigs common to <sc>fpc</sc> (1e<sup>&#x2212;11</sup>)<xref ref-type="table-fn" rid="tf3-3">b</xref></th>
+                <th align="left" rowspan="1" colspan="1">All</th>
+                <th align="left" rowspan="1" colspan="1"><sc>ltc</sc>-specific contigs<xref ref-type="table-fn" rid="tf3-2">a</xref></th>
+                <th align="left" rowspan="1" colspan="1">Contigs common to <sc>fpc</sc> (1e<sup>&#x2212;11</sup>)<xref ref-type="table-fn" rid="tf3-3">b</xref></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Total no. of contigs (&#x2265;2 clones)</td>
+                <td align="left" rowspan="1" colspan="1">1217</td>
+                <td align="left" rowspan="1" colspan="1">539</td>
+                <td align="left" rowspan="1" colspan="1">678</td>
+                <td align="left" rowspan="1" colspan="1">1113</td>
+                <td align="left" rowspan="1" colspan="1">368</td>
+                <td align="left" rowspan="1" colspan="1">745</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Singleton</td>
+                <td align="left" rowspan="1" colspan="1">3136</td>
+                <td align="left" rowspan="1" colspan="1">&#x2013;</td>
+                <td align="left" rowspan="1" colspan="1">&#x2013;</td>
+                <td align="left" rowspan="1" colspan="1">2581</td>
+                <td align="left" rowspan="1" colspan="1">&#x2013;</td>
+                <td align="left" rowspan="1" colspan="1">&#x2013;</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Minimum Kb</td>
+                <td align="left" rowspan="1" colspan="1">42.3</td>
+                <td align="left" rowspan="1" colspan="1">42.3</td>
+                <td align="left" rowspan="1" colspan="1">98.7</td>
+                <td align="left" rowspan="1" colspan="1">47</td>
+                <td align="left" rowspan="1" colspan="1">47</td>
+                <td align="left" rowspan="1" colspan="1">65.8</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Maximum Kb</td>
+                <td align="left" rowspan="1" colspan="1">9531.6</td>
+                <td align="left" rowspan="1" colspan="1">470</td>
+                <td align="left" rowspan="1" colspan="1">9531.6</td>
+                <td align="left" rowspan="1" colspan="1">3139.6</td>
+                <td align="left" rowspan="1" colspan="1">521.7</td>
+                <td align="left" rowspan="1" colspan="1">3139.6</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Average Kb</td>
+                <td align="left" rowspan="1" colspan="1">428.526</td>
+                <td align="left" rowspan="1" colspan="1">131.033</td>
+                <td align="left" rowspan="1" colspan="1">665.029</td>
+                <td align="left" rowspan="1" colspan="1">487.887</td>
+                <td align="left" rowspan="1" colspan="1">123.336</td>
+                <td align="left" rowspan="1" colspan="1">667.961</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">L<sub>50</sub> Kb</td>
+                <td align="left" rowspan="1" colspan="1">1090.4</td>
+                <td align="left" rowspan="1" colspan="1">136.3</td>
+                <td align="left" rowspan="1" colspan="1">1386.5</td>
+                <td align="left" rowspan="1" colspan="1">944.7</td>
+                <td align="left" rowspan="1" colspan="1">126.9</td>
+                <td align="left" rowspan="1" colspan="1">1005.8</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>N</italic>
+                  <sub>50</sub>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1106</td>
+                <td align="left" rowspan="1" colspan="1">351</td>
+                <td align="left" rowspan="1" colspan="1">595</td>
+                <td align="left" rowspan="1" colspan="1">921</td>
+                <td align="left" rowspan="1" colspan="1">249</td>
+                <td align="left" rowspan="1" colspan="1">577</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="tf3-1">
+              <p><sc>fpc</sc>, <sc>fingerprinted contigs</sc>.</p>
+            </fn>
+            <fn id="tf3-2">
+              <label>a</label>
+              <p>Small contigs (average bacterial artificial chromosomes, BACs/contig&#xA0;=&#xA0;2.6 for 6AS and 2.8 for 6AL) exclusively made by <sc>ltc</sc>. The average tag per BAC for the underlying clones was only 15 tags, equal to the value observed for singletons.</p>
+            </fn>
+            <fn id="tf3-3">
+              <label>b</label>
+              <p>The average number of tags per BAC for the underlying clones was 34 tags.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>BAC WGP&#x2122; tags facilitated <italic>in silico</italic> genetic anchoring of the 6A physical map</title>
+        <p>To facilitate efficient <italic>in silico</italic> anchoring, the short WGP&#x2122; tags underlying 6A physical contigs were extended by connecting them to the available wheat sequence information in three ways (Figures S1 and S2; Appendix S6). Firstly, WGP&#x2122; tags were connected to the available shotgun sequence contigs (obtained from IWGSC) of the bread wheat 6A chromosome arms (Appendix S6). This resulted in assigning 165&#x2013;Mb of sequences (out of 433.6<italic>&#xA0;</italic>Mb) from WCS contigs to the wheat 6A physical map. Secondly, the previously assigned WCS contigs were connected to the progenitor genome sequences of <italic>Triticum urartu</italic> (an A&#x2013;genome progenitor; <xref rid="b25" ref-type="bibr">Ling <italic>et al.</italic>, 2013</xref>), which resulted in assignments of 375<italic>&#xA0;</italic>Mb of sequences along the physical map. Thirdly, in order to enrich the physical map with further sequence information, an additional layer of sequences was added to sequences already assigned to 6A WCS and <italic>T.&#xA0;urartu</italic> using <italic>Aegilops tauschii</italic> (a D&#x2013;genome progenitor; <xref rid="b20" ref-type="bibr">Jia <italic>et al.</italic>, 2013</xref>; Figures S1 and S2; Appendix S6). This provided a total of 157<italic>&#xA0;</italic>Mb of sequences from <italic>Ae.&#xA0;tauschii</italic> assigned to the 6A physical map. Considering the more distant relation of <italic>Ae.&#xA0;tauschii</italic> to bread wheat chromosome 6A, the effect of the <italic>Ae.&#xA0;tauschii</italic> sequence inclusion to our anchoring analysis was checked. We found that the incorporation of this sequence data set had a limited contribution to the overall anchoring of the physical map, with no negative effect on the accuracy of the genetic anchoring (Appendix S7). Altogether, the average cumulative sequence information per physical contig increased from 2144 nt using WGP&#x2122; tags to 11<italic>&#xA0;</italic>067 nt, simply by adding the available wheat sequence resources (Figure S2; Appendix S8). This number of sequences directly assigned to the physical map enabled sequence homology searches against all available genetic markers with known sequences, and thus provided the basis for the integration of genetic and physical maps <italic>in silico</italic> (Appendix S6). Genetic anchoring was performed for both <sc>ltc</sc> and <sc>fpc</sc> physical map assemblies; however, only the result of genetic anchoring performed for <sc>ltc</sc> assembly is shown here. This assembly was selected as the final 6A assembly because we observed that <sc>ltc</sc> provided a more robust assembly than <sc>fpc</sc> (see the following section).</p>
+        <p>First, <sc>ltc</sc> contigs were anchored to two highly dense wheat genetic maps (<xref rid="b36" ref-type="bibr">Poland <italic>et al.</italic>, 2012</xref>; <xref rid="b6" ref-type="bibr">Cavanagh <italic>et al.</italic>, 2013</xref>), which allowed us to genetically anchor 298 6AS and 384 6AL <sc>ltc</sc>-derived contigs. This genetically anchored a total of 661<italic>&#xA0;</italic>Mb out of the 1048<italic>&#xA0;</italic>Mb, which represents the cumulative contig map length (Figure <xref ref-type="fig" rid="fig01">1</xref>; Appendix S9). By considering only genetically anchored <sc>ltc</sc>-built contigs, we were able to genetically anchor 132<italic>&#xA0;</italic>Mb of WCS contigs, 303<italic>&#xA0;</italic>Mb of sequence data from <italic>T.&#xA0;urartu</italic> and 129<italic>&#xA0;</italic>Mb from <italic>Ae.&#xA0;tauschii</italic> to the 6A genetic maps. The remaining unanchored 6A physical contigs were subjected to a second round of anchoring using the publicly available barley genomic resource. This was performed to provide researchers with an additional layer of anchoring information for the respective physical map. The barley-based anchoring was kept independent (Appendix S10) of the wheat-based anchoring. Therefore, in our analysis, we used 15<italic>&#xA0;</italic>719 high-confidence barley genes from the barley genome (<xref rid="b16" ref-type="bibr">IBSC, 2012</xref>), together with 723<italic>&#xA0;</italic>499 anchored barley WCS contigs from barley POPSEQ data (<xref rid="b29" ref-type="bibr">Mascher <italic>et al.</italic>, 2013</xref>). Using high-confidence barley genes we were only able to anchor 26 additional 6A physical contigs (8<italic>&#xA0;</italic>Mb), whereas 98 physical contigs from 6A (37&#xA0;Mb) were exclusively anchored via barley population sequencing (POPSEQ) data (Appendix S10). Overall, 831&#xA0;Mb (i.e. 79% of 6A physical contigs) were genetically anchored (Figure <xref ref-type="fig" rid="fig01">1</xref>).</p>
+        <fig id="fig01" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>Contribution of different genetic map resources to the <italic>in silico</italic>-based anchoring of the wheat chromosome 6A physical map.</p>
+            <p>(a) The number of <sc>ltc</sc> contigs that were anchored using one or a combination of different map resources: e.g. 493 <sc>ltc</sc> contigs were anchored by all three resources. (b) The corresponding cumulative size of the <sc>ltc</sc> contigs that were anchored using one or a combination of different map resources: e.g. 558&#xA0;Mb was anchored by all three resources. The integrated genetic map of 6A (constructed in the current study; Appendix S6) refers to the combined genetic map derived from two highly dense wheat genetic maps, as previously described (<xref rid="b36" ref-type="bibr">Poland <italic>et al.</italic>, 2012</xref>; <xref rid="b6" ref-type="bibr">Cavanagh <italic>et al.</italic>, 2013</xref>). <xref rid="b16" ref-type="bibr">IBSC (2012)</xref> and POPSEQ (<xref rid="b29" ref-type="bibr">Mascher <italic>et al.</italic>, 2013</xref>) refer to the publicly available <italic>Horedum vulgare</italic> (barley) resources, including data sets from the International Barley Genome Sequencing Consortium (<xref rid="b16" ref-type="bibr">IBSC, 2012</xref>) and population sequencing (<xref rid="b29" ref-type="bibr">Mascher <italic>et al.</italic>, 2013</xref>), respectively.</p>
+          </caption>
+          <graphic xlink:href="tpj0079-0334-f1"/>
+        </fig>
+        <p>The large portion of the physical map anchored to the respective wheat genetic maps allowed for the analysis of recombination frequencies along the entire wheat 6A chromosome. For this purpose, an integrated wheat genetic map was constructed from the two aforementioned wheat genetic maps (Appendix S6). We then calculated the physical distance per 10&#x2013;cM bins (Appendix S11). As expected, for plants with large genomes [i.e. <italic>Zea mays</italic> (maize; <xref rid="b2" ref-type="bibr">Anderson <italic>et al.</italic>, 2003</xref>), <italic>Hordeum vulgare</italic> (barley; <xref rid="b23" ref-type="bibr">Kunzel <italic>et al.</italic>, 2000</xref>) and wheat (<xref rid="b27" ref-type="bibr">Lukaszewski and Curtis, 1993</xref>)], we were able to reconfirm that recombination greatly increased from the centromere towards the telomeres (Figure <xref ref-type="fig" rid="fig02">2</xref>). These detailed estimates related to recombination frequencies along 6A will be most useful for future map-based cloning and gene identification projects.</p>
+        <fig id="fig02" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p>Estimated recombination frequency along wheat chromosome 6A. The underlying genetic map used for 6A genetic anchoring was divided into 26 bins, each of 10&#xA0;cM in size. The physical map anchored to each bin measured the recombination pattern (Mb/cM) along the 6A chromosome. The genetic map is derived from integrating two wheat genetic maps (Appendix S6) developed previously (<xref rid="b36" ref-type="bibr">Poland <italic>et al.</italic>, 2012</xref>; <xref rid="b6" ref-type="bibr">Cavanagh <italic>et al.</italic>, 2013</xref>).</p>
+          </caption>
+          <graphic xlink:href="tpj0079-0334-f2"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Comparison between <sc>ltc</sc> and <sc>fpc</sc> assembly at different cut-off values</title>
+        <p>To date, physical maps of four arms of wheat chromosomes, including 1AS, 1AL, 1BS, 1BL and 3B, have been reported (<xref rid="b33" ref-type="bibr">Paux <italic>et al.</italic>, 2008</xref>; <xref rid="b3" ref-type="bibr">Breen <italic>et al.</italic>, 2013</xref>; <xref rid="b26" ref-type="bibr">Lucas <italic>et al.</italic>, 2013</xref>; <xref rid="b35" ref-type="bibr">Philippe <italic>et al.</italic>, 2013</xref>; <xref rid="b37" ref-type="bibr">Raats <italic>et al.</italic>, 2013</xref>). With the exception of chromosome 3B, both <sc>ltc</sc> and <sc>fpc</sc> tools have been used to assemble wheat chromosome physical maps. A comparison was performed between the two tools for wheat chromosome arm 1AL and showed that the <sc>ltc</sc> assembly provided significantly higher accuracy (<xref rid="b3" ref-type="bibr">Breen <italic>et al.</italic>, 2013</xref>); however, the previous study only described the advantages of <sc>ltc</sc> by comparing the <sc>ltc</sc> assembly with a single <sc>fpc</sc> assembly constructed at 1e<sup>&#x2212;45</sup> and by using HICF data (and not WGP&#x2122;) as the input (<xref rid="b3" ref-type="bibr">Breen <italic>et al.</italic>, 2013</xref>). In our study, we compared contigs obtained by <sc>ltc</sc> as the reference assembly with individual <sc>fpc</sc> assemblies (Table S1) generated at different stringencies to assess the differences between the <sc>ltc</sc> and the <sc>fpc</sc> assemblies employing WGP&#x2122;. This allowed for the identification of the most robust physical map for 6A. Our comparison distributed an assortment of <sc>ltc</sc>-made contigs into five groups (Figure <xref ref-type="fig" rid="fig03">3</xref>; Tables S2 and S3; Appendix S12). The <sc>ltc</sc>&#xA0;&#x2265;&#xA0;2<sc>fpc</sc> group (<sc>ltc</sc>-derived contigs for which BACs were assembled into two or more different contigs via <sc>fpc</sc>; cases of conflict; Figure <xref ref-type="fig" rid="fig04">4</xref>) was considered the most suitable group for comparing the two assembly platforms.</p>
+        <fig id="fig03" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p>Comparison of <sc>linear topological contig</sc> (<sc>ltc</sc>)-derived physical contigs with <sc>fingerprinted contigs</sc> (<sc>fpc</sc>) at different stringencies. Different classes of <sc>ltc</sc>-derived contigs were identified when compared with <sc>fpc</sc> assemblies that include the first class, which are contigs that were exclusively made by <sc>ltc</sc> (not found in <sc>fpc</sc>). The number of such <sc>ltc</sc>-specific contigs was relatively constant for both of the 6A arms when compared with <sc>fpc</sc> assemblies at various stringencies. The second class contained contigs that were identical between assemblies made by both tools (<sc>ltc</sc>&#xA0;=&#xA0;<sc>fpc</sc>, i.e. BAC composition and order were the same in corresponding <sc>ltc</sc> and <sc>fpc</sc> contigs). This class showed a slight increase when the <sc>fpc</sc> stringency was lowered. The third class includes <sc>ltc</sc>&#xA0;&gt;&#xA0;<sc>fpc</sc> (i.e. <sc>ltc</sc> contigs longer than <sc>fpc</sc> contigs), which refers to contigs with the same backbone, whereas more BACs were added to the end of corresponding contigs via <sc>ltc</sc>. This class also showed a slight decrease in number by lowering the stringency in <sc>fpc</sc>. The two remaining classes include <sc>ltc</sc>&#xA0;&lt;&#xA0;<sc>fpc</sc> (i.e. <sc>ltc</sc> contigs that are shorter than <sc>fpc</sc> contigs) and <sc>ltc</sc>&#xA0;&#x2265;&#xA0;2<sc>fpc</sc> (i.e. <sc>ltc</sc>-made contigs, the BACs of which were assembled into two or more different contigs via <sc>fpc</sc>). Both classes showed higher differences in number across the <sc>fpc</sc> assemblies that are mainly explainable by end-to-end merging during <sc>fpc</sc> assembly. For example, a decrease in the number of <sc>ltc</sc>&#xA0;&#x2265;&#xA0;2<sc>fpc</sc> from 1e<sup>&#x2212;30</sup> to 1e<sup>&#x2212;25</sup> is likely to have resulted from the merging of the two corresponding <sc>fpc</sc> contigs at 1e<sup>&#x2212;25</sup>. Therefore, contigs of 1<sc>ltc</sc>&#xA0;=&#xA0;2<sc>fpc</sc> at a higher level of <sc>fpc</sc> stringency later became 1<sc>ltc</sc>&#xA0;&lt;&#xA0;1<sc>fpc</sc> (or 1<sc>ltc</sc>&#xA0;=&#xA0;1<sc>fpc</sc>) at a lower level of stringency. In both chromosome arms, identical classes show a relatively similar trend of variation across <sc>fpc</sc> assemblies, although they may contain different numbers of contigs in each of the arms.</p>
+          </caption>
+          <graphic xlink:href="tpj0079-0334-f3"/>
+        </fig>
+        <fig id="fig04" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p>Schematic representation of a case of conflict (<sc>ltc</sc>&#xA0;&#x2265;&#xA0;2<sc>fpc</sc>) in <sc>fingerprinted contigs</sc> (<sc>fpc</sc>) versus <sc>linear topological contigs</sc> (<sc>ltc</sc>), as a reference. Anchored genetic markers (M) were used to confirm the corresponding bacterial artificial chromosome (BAC) contig structure. Three situations were observed. Status 1: concordant M<sub>1</sub> and M<sub>2</sub> genetic positions, with the genetic position for the corresponding marker in at least one <sc>fpc</sc> contradictory; <sc>ltc</sc> 001 correctly assembled. Status 2: non-concordant M<sub>1</sub> and M<sub>2</sub> genetic positions, with the genetic position of the corresponding marker in both <sc>fpc</sc> contigs reconciled; <sc>ltc</sc> 001 not correctly assembled. Status 3: concordant M<sub>1</sub> and M<sub>2</sub> genetic positions, with the genetic position for the corresponding marker in both <sc>fpc</sc> contigs reconciled; all contigs correctly assembled. Red/blue bars, BAC clones underlying BAC contigs; dashed bars, connect shared BACs; green arrowheads, genetic marker position; red arrowheads, region of low BAC coverage.</p>
+          </caption>
+          <graphic xlink:href="tpj0079-0334-f4"/>
+        </fig>
+        <p>The number of such <sc>ltc</sc>-built contigs (<sc>ltc</sc>&#xA0;&#x2265;&#xA0;2<sc>fpc</sc>) was found to decrease with declining <sc>fpc</sc> assembly cut-off values. This was explained by end-to-end merging during <sc>fpc</sc> assembly. To check whether contig merges were accurately formed via <sc>fpc</sc> while decreasing assembly cut-off, all <sc>ltc</sc><italic>&#xA0;</italic>&#x2265;<italic>&#xA0;</italic>2<sc>fpc</sc> cases were visualized and inspected (Figure <xref ref-type="fig" rid="fig04">4</xref>). This inspection was only performed for cases of conflict between <sc>ltc</sc> and <sc>fpc</sc> assemblies at a 1e<sup>&#x2212;11</sup><sc>fpc</sc> cut-off for each chromosome arm (Figure <xref ref-type="fig" rid="fig04">4</xref>; Appendices S13 and S14). This cut-off was selected because it was closest to the <sc>ltc</sc> cut-off value (1e<sup>&#x2212;10</sup>), and thus was considered to represent the most comparable cut-off value. In the case of 6AS, 72 conflicts were found for which a particular set of overlapping BACs were always shared between <sc>ltc</sc> and corresponding <sc>fpc</sc> counterparts. These BACs were also similarly ordered along the respective contigs (Figure <xref ref-type="fig" rid="fig04">4</xref>, red-colored BACs; Table <xref ref-type="table" rid="tbl4">4</xref>).</p>
+        <table-wrap id="tbl4" position="float">
+          <label>Table 4</label>
+          <caption>
+            <p>Cases of conflict (<sc>ltc</sc>&#xA0;&#x2265;&#xA0;2<sc>fpc</sc>) for which marker data allowed further confirmation of contig structure</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Chromosome arm</td>
+                <td align="left" rowspan="1" colspan="1">6AS</td>
+                <td align="left" rowspan="1" colspan="1">6AL</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of conflicts</td>
+                <td align="left" rowspan="1" colspan="1">72</td>
+                <td align="left" rowspan="1" colspan="1">143</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of conflicts for which informative markers were available<xref ref-type="table-fn" rid="tf4-2">a</xref></td>
+                <td align="left" rowspan="1" colspan="1">22</td>
+                <td align="left" rowspan="1" colspan="1">26</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Engaged <sc>fpc</sc> contig(s) is chimeric</td>
+                <td align="left" rowspan="1" colspan="1">17</td>
+                <td align="left" rowspan="1" colspan="1">20</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Engaged <sc>ltc</sc> contig is chimeric</td>
+                <td align="left" rowspan="1" colspan="1">4</td>
+                <td align="left" rowspan="1" colspan="1">4</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">The <sc>ltc</sc> contig corresponds to the ends of the respective <sc>fpc</sc> contigs<xref ref-type="table-fn" rid="tf4-3">b</xref></td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">2</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="tf4-1">
+              <p><sc>fpc</sc>, <sc>fingerprinted contigs</sc>; <sc>ltc</sc>, <sc>linear topological contigs</sc>.</p>
+            </fn>
+            <fn id="tf4-2">
+              <label>a</label>
+              <p>Genetic markers from the same map were anchored to different parts of the same contig.</p>
+            </fn>
+            <fn id="tf4-3">
+              <label>b</label>
+              <p>Neither the <sc>ltc</sc> contig nor the respective <sc>fpc</sc> contigs could be flagged as chimerical on the basis of anchored genetic markers.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>We then analyzed whether the conflict could be resolved by consulting genetic markers anchored to corresponding BAC clones. For 22 of the 72 6AS cases of conflict, the corresponding affected <sc>ltc</sc>- and <sc>fpc</sc>-made contigs were provided with a sufficient number of anchored genetic markers (informative markers). Such markers allowed us to ascertain whether the different parts of affected contigs had been correctly overlapped/merged and, if so, whether the conflict could be resolved. In the majority of cases (17 out of 22), genetic markers revealed a false assembly of different <sc>fpc</sc>-derived contig parts (e.g. a chimerical <sc>fpc</sc> contig was built; Figure <xref ref-type="fig" rid="fig04">4</xref>, status 1). For the remaining five cases, either the <sc>ltc</sc>-built contigs were chimeric (four cases; Figure <xref ref-type="fig" rid="fig04">4</xref>, status 2) or the respective BACs were correctly assembled by both <sc>fpc</sc> and <sc>ltc</sc> tools (one case), and thus corresponding conflicts were resolved (Figure <xref ref-type="fig" rid="fig04">4</xref>, status 3). We achieved a similar result for 143 conflicts identified for 6AL (Table <xref ref-type="table" rid="tbl4">4</xref>). Therefore, we concluded that the ability of <sc>fpc</sc> to form longer and consequently lower numbers of contigs, while decreasing the assembly cut-off value, could potentially produce higher numbers of chimerical contigs as a result of false BAC contig end-to-end merges.</p>
+        <p>We also observed a highly consistent number of <sc>ltc</sc>-specific contigs (small contigs, average BAC/contig<italic>&#xA0;</italic>=<italic>&#xA0;</italic>2.6&#x2013;2.9) compared with <sc>fpc</sc> assemblies. These <sc>ltc</sc>-derived contigs (539 for 6AS and 368 for 6AL, compared with <sc>fpc</sc> at 1e<sup>&#x2212;11</sup>) were composed of BACs that were left out as singletons in the initial <sc>fpc</sc> build at 1e<sup>&#x2212;75</sup> (Table S1), where BACs were assembled into contigs only if they shared &gt;70% of WGP&#x2122; tags (<xref rid="b33" ref-type="bibr">Paux <italic>et al.</italic>, 2008</xref>). BAC clones containing fewer tags (an average of 15 tags/BAC, compared with 34 tags/BAC for the rest of the assembly) were incorporated into contigs via <sc>ltc</sc> because the initial assembly was performed at a lower stringency (1e<sup>&#x2212;2</sup> cut-off). Therefore, such <sc>ltc</sc>-specific small contigs resulted in a higher number of <sc>ltc</sc>-made contigs, and consequently had higher chromosomal arm coverage, as they most likely cover the same regions as larger contigs. Although <sc>ltc</sc> had an artificially generated larger number of small contigs, the robustness of BAC order and overlap identification for the remaining contigs was significantly higher in <sc>ltc</sc> versus <sc>fpc</sc> assemblies (see cases of conflict above). For this reason, we considered the entire <sc>ltc</sc>-based assembly to be a more reliable physical map for subsequent analyses, including synteny analysis, MTP selection and future BAC-based sequencing of wheat chromosome 6A.</p>
+      </sec>
+      <sec>
+        <title>Efficacy of <sc>fpc</sc> at improving <sc>ltc</sc>-made assembly</title>
+        <p>To test whether gaps between <sc>ltc</sc>-derived contigs could be closed via <sc>fpc</sc>-assembled BACs, <sc>ltc</sc>-derived contigs were aligned against <sc>fpc</sc> assemblies using a 1e<sup>&#x2212;50</sup> cut-off as a reference. This was in contrast to the aforementioned comparisons, where <sc>ltc</sc> was used as a reference. We selected this stringently formed FPC assembly to ensure the robustness of overlap among BACs of the corresponding contigs. Using this approach, we identified 25 <sc>fpc</sc>-built contigs for 6AS and 45 <sc>fpc</sc>-built contigs for 6AL in which BAC clones were represented in more than two <sc>ltc</sc>-made contigs (Table <xref ref-type="table" rid="tbl5">5</xref>). These <sc>ltc</sc>-derived contigs were thus considered potentially mergable or potential scaffolds because the gap between two <sc>ltc</sc>-made contigs could be bridged using a robustly formed <sc>fpc</sc>-built contig. All of these scaffolds were depicted as individual images according to BAC position to enable a visual inspection of their structure (Figure S3). Only scaffolds for which the corresponding <sc>fpc</sc>-made contig was composed of BACs from the ends of two different <sc>ltc</sc>-made contigs were flagged as potentially true scaffolds (10 for 6AS; 17 for 6AL); however, those <sc>fpc</sc>-derived contigs that, for example, contained BACs from the end of one <sc>ltc</sc>-made contig and BACs from the middle of another were rejected (almost 60% for each arm; Figure S3). These rejected scaffolds most likely represent falsely assembled BACs via <sc>fpc</sc> (chimerical contigs).</p>
+        <table-wrap id="tbl5" position="float">
+          <label>Table 5</label>
+          <caption>
+            <p>Scaffolding <sc>linear topological contigs</sc> (<sc>ltc</sc>) using <sc>fingerprinted contigs</sc> (<sc>fpc</sc>) assembled at a cut-off of 1e<sup>&#x2212;50</sup>, for which the same set of bacterial artificial chromosomes (BACs) was employed</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Chromosome arm</td>
+                <td align="left" rowspan="1" colspan="1">6AL</td>
+                <td align="left" rowspan="1" colspan="1">6AS</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of potential scaffolds</td>
+                <td align="left" rowspan="1" colspan="1">45</td>
+                <td align="left" rowspan="1" colspan="1">25</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Scaffolding was structurally allowed<xref ref-type="table-fn" rid="tf5-1">a</xref></td>
+                <td align="left" rowspan="1" colspan="1">17</td>
+                <td align="left" rowspan="1" colspan="1">10</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Structurally allowed scaffolds for which genetic markers were available<xref ref-type="table-fn" rid="tf5-2">b</xref></td>
+                <td align="left" rowspan="1" colspan="1">6</td>
+                <td align="left" rowspan="1" colspan="1">4</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Structurally allowed scaffolds were supported by genetic markers</td>
+                <td align="left" rowspan="1" colspan="1">3</td>
+                <td align="left" rowspan="1" colspan="1">3</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Structurally allowed scaffolds were not supported by genetic markers</td>
+                <td align="left" rowspan="1" colspan="1">3</td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="tf5-1">
+              <label>a</label>
+              <p>The corresponding <sc>fpc</sc> contig was only composed of BACs from the end of two different <sc>ltc</sc> contigs, and not from the end of one <sc>ltc</sc> and the middle of another (not allowed).</p>
+            </fn>
+            <fn id="tf5-2">
+              <label>b</label>
+              <p>The corresponding <sc>ltc</sc> contigs were provided by genetic anchoring information.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Using these scaffolds we then tested whether any anchoring information could support scaffold accuracy. For 6AS, genetic markers were available for four such scaffolds, of which one was confirmed genetically; for 6AL, we found three cases out of six (Table <xref ref-type="table" rid="tbl5">5</xref>). This result indicated that the efficacy of <sc>fpc</sc> assemblies (at 1e<sup>&#x2212;50</sup>) at improving <sc>ltc</sc>-derived assemblies was relatively low. In general, this might indicate that the complexity of the wheat sequence restricted the ability of <sc>fpc</sc>, using WGP&#x2122; data as input, to construct robust contigs, even at the initial higher stringency (in this case 1e<sup>&#x2212;50</sup>).</p>
+      </sec>
+      <sec>
+        <title>Scaffolding the <sc>ltc</sc> assembly using WGP&#x2122; tags and shotgun sequence contigs</title>
+        <p>Publicly available <italic>T.&#xA0;urartu</italic> sequence contigs (Tu contigs) were used to determine whether they allow for the bridging of <sc>ltc</sc>-made contigs and building of <sc>ltc</sc> scaffolds. We checked whether a single Tu contig exclusively matched terminal parts of two different <sc>ltc</sc>-derived contigs (Appendix S15). Using Tu contigs as a proxy, we identified 84 6AS and 65 6AL potential scaffolds (Table <xref ref-type="table" rid="tbl6">6</xref>; Appendix S16). Those <sc>ltc</sc>-made contigs engaged in scaffolding were relatively small (average BAC/contig<italic>&#xA0;</italic>=<italic>&#xA0;</italic>5 6AS and 17 6AL), and therefore could not have a significantly positive effect on the L<sub>50</sub> of the overall BAC assembly; however, we asked whether <sc>ltc</sc>-derived contigs involved in such scaffolds were supported by genetically anchored markers to validate our approach (with a similar approach as described in Figure <xref ref-type="fig" rid="fig04">4</xref>). For 6AS, we found only four of these scaffolds, of which two could be genetically validated; for 6AL, 12 scaffolds with genetic markers were provided, of which eight were genetically confirmed (Table <xref ref-type="table" rid="tbl6">6</xref>). Although genetic markers were not available for structural confirmation of all the scaffolds constructed, we kept and reported all formed scaffolds (Appendix S16) because they could potentially support and/or guide future BAC-based sequencing and sequence assembly of the respective physical contigs.</p>
+        <table-wrap id="tbl6" position="float">
+          <label>Table 6</label>
+          <caption>
+            <p>Scaffolding <sc>linear topological contigs</sc> (<sc>ltc</sc>) using the underlying whole-genome profiling (WGP&#x2122;) tag and whole-genome shotgun sequence contigs of <italic>Triticum urartu</italic><xref ref-type="table-fn" rid="tf6-1">a</xref></p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Chromosome arm</td>
+                <td align="left" rowspan="1" colspan="1">6AL</td>
+                <td align="left" rowspan="1" colspan="1">6AS</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of potential scaffolds<xref ref-type="table-fn" rid="tf6-2">b</xref></td>
+                <td align="left" rowspan="1" colspan="1">65</td>
+                <td align="left" rowspan="1" colspan="1">84</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of scaffolds for which genetic markers were available<xref ref-type="table-fn" rid="tf6-3">c</xref></td>
+                <td align="left" rowspan="1" colspan="1">12</td>
+                <td align="left" rowspan="1" colspan="1">4</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of genetically confirmed scaffolds</td>
+                <td align="left" rowspan="1" colspan="1">8</td>
+                <td align="left" rowspan="1" colspan="1">2</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">No. of not genetically confirmed scaffolds</td>
+                <td align="left" rowspan="1" colspan="1">4</td>
+                <td align="left" rowspan="1" colspan="1">2</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="tf6-1">
+              <label>a</label>
+              <p>This investigation was performed using only a subset of <italic>T.&#xA0;urartu</italic> sequence info (<italic>T.&#xA0;urartu</italic> scaffolds): 90.7&#xA0;Mb, with an L<sub>50</sub> of 64&#xA0;532&#xA0;nt.</p>
+            </fn>
+            <fn id="tf6-2">
+              <label>b</label>
+              <p>Scaffolding was allowed if the corresponding sequence contigs hit at least three WGP&#x2122; from the ends of only two <sc>ltc</sc> contigs.</p>
+            </fn>
+            <fn id="tf6-3">
+              <label>c</label>
+              <p>The corresponding <sc>ltc</sc> contigs were provided by genetic anchoring information.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>&#x2018;Gene decoration&#x2019; of the newly formed anchored physical map of wheat chromosome 6A</title>
+        <p>Chromosome 6A shotgun sequences (6A WCS contigs) have already been annotated for genes (IWGSC, In press), which established 5024 genes grouped into four confidence classes (HC1&#x2013;HC4). Of these, 2531 genes were assigned to the HC1 category because &#x2265;70% of coding sequences overlapped with a reference gene in <italic>B.&#xA0;distachyon</italic>, rice or <italic>S.&#xA0;bicolor</italic>. The remaining confidence classes (HC2&#x2013;HC4) had less overlap with reference genes (IWGSC, In press); however, in our analysis of the total 5024 HC1&#x2013;HC4 genes, 3359 genes (1667 6AS; 1692 6AL) were assigned to the anchored portion of the 6A physical map (i.e. genetically positioned genes). This was accomplished by assigning the corresponding WCS contigs to the WGP&#x2122; tags (Appendix S6). We then calculated the gene density on this newly formed physical map along 6A by dividing the chromosome length in bins of 5<italic>&#xA0;</italic>Mb (Figures<xref ref-type="fig" rid="fig05">5</xref> and S4). In more telomeric bins we found a maximum of 84 genes, whereas in the centromeric region with low recombination the number of genes decreased dramatically to less than 20 (Figure <xref ref-type="fig" rid="fig05">5</xref>). Moreover, this analysis revealed a general correlation between the recombination rate pattern and distribution of genes along the chromosome (Figures<xref ref-type="fig" rid="fig02">2</xref> and <xref ref-type="fig" rid="fig05">5</xref>).</p>
+        <fig id="fig05" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p>Estimated gene distribution along wheat chromosome 6A. Chromosome 6A gene-annotated whole chromosome survey sequencing contigs were linked to whole-genome profiling tags underlying bacterial artificial chromosome (BAC) contigs. High-confidence (HC) genes represent annotated genes, wherein HC1 are genes with &gt;70% coding sequence&#x2013;reference gene overlap in <italic>Brachypodium distachyon</italic>, <italic>Oryza sativa</italic> (rice) or <italic>Sorghum bicolor</italic>, whereas the other HC2&#x2013;HC4 classes have a smaller overlap (IWGSC, In press).</p>
+          </caption>
+          <graphic xlink:href="tpj0079-0334-f5"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Synteny-based approach addressed 6A evolutionary relations with model grass genomes</title>
+        <p>To analyse the completeness of the anchored physical map and to gain insight into the evolutionary origin of chromosome 6A, physical contig-associated sequences were compared against reference genomes (Appendix S6). Associated sequence information, including WGP&#x2122; tags, WCS, <italic>T.&#xA0;urartu</italic> and <italic>Ae.&#xA0;tauschii</italic> contigs, were compared with coding sequences from other grass genomes of <italic>Hordeum vulgare</italic> (Hv), <italic>Brachypodium distachyon</italic> (Bd), <italic>Oryza sativa</italic> (Os), and <italic>Sorghum bicolor</italic> (Sb). Anchored sequences showed sequence homology to 2799 Hv, 2455 Bd, 2539 Os and 2465 Sb genes. Of these genes, 40.0&#x2013;48.5% matched syntenic chromosomes of the three genomes, including Bd3, Os2 and Sb4. These results are comparable with those reported previously (40.2&#x2013;59.7%) for syntenic genes of 6B (<xref rid="b48" ref-type="bibr">Tanaka <italic>et al.</italic>, 2014</xref>).</p>
+        <p>Figure <xref ref-type="fig" rid="fig06">6</xref> depicts the 6A gene distribution among model grass genomes. We observed that the number of wheat coding sequences shared with at least three species (1994 genes) was higher than the genes presented in two (873 genes) or a single species (1713 genes). Proteins with significant similarity (seed length of 20, identity &#x2265;75%; <ext-link ext-link-type="uri" xlink:href="http://www.vmatch.de">http://www.vmatch.de</ext-link>) to wheat sequence information were plotted along the chromosomes (Figure <xref ref-type="fig" rid="fig07">7</xref>). The average syntenic gene content was calculated as the number of matching wheat proteins in a window of 1<italic>&#xA0;</italic>Mb, without overlap. In this analysis, 6A sequence information showed homology with genes/proteins located on chromosome 6H of Hv (Hv6H), Bd3, Os2 and Sb4, but not with any other chromosomes of these genomes (Figure <xref ref-type="fig" rid="fig07">7</xref>), which is consistent with previous reports (<xref rid="b39" ref-type="bibr">Salse <italic>et al.</italic>, 2008</xref>; <xref rid="b49" ref-type="bibr">TIBI, 2010</xref>; <xref rid="b4" ref-type="bibr">Brenchley <italic>et al.</italic>, 2012</xref>; <xref rid="b16" ref-type="bibr">IBSC, 2012</xref>).</p>
+        <fig id="fig06" position="float">
+          <label>Figure 6</label>
+          <caption>
+            <p>Venn diagram of wheat chromosome 6A physical map-associated gene distribution with significant similarity to <italic>Brachypodium distachyon</italic>, <italic>Oryza stiva</italic> (rice) and <italic>Sorghum bicolor</italic>. Chromosome 6A physical map-associated sequence information, including whole chromosome survey sequencing, <italic>Triticum urartu</italic> and <italic>Aegilops tauschii</italic> contigs, were compared with coding sequences from model grass genomes. In <italic>Hordeum vulgare</italic>, all genes including genetically anchored and unanchored genes were considered (<xref rid="b16" ref-type="bibr">IBSC, 2012</xref>).</p>
+          </caption>
+          <graphic xlink:href="tpj0079-0334-f6"/>
+        </fig>
+        <fig id="fig07" position="float">
+          <label>Figure 7</label>
+          <caption>
+            <p>Wheat chromosome 6A physical map-associated genes mapped to barley (<italic>Hordeum vulgare</italic>; Hv), <italic>Brachypodium distachyon</italic> (Bd), rice (<italic>Oryza sativa</italic>; Os) and <italic>Sorghum bicolor</italic> (Sb) genomes. In barley, only genetically anchored genes are depicted (<xref rid="b16" ref-type="bibr">IBSC, 2012</xref>). Gene overlaps ranged from 0 (dark blue) to the maximum, shown in dark red.</p>
+          </caption>
+          <graphic xlink:href="tpj0079-0334-f7"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>The current study is the German contribution to the IWGSC. This international consortium has aimed to sequence wheat chromosomes and/or chromosome arms individually, with the construction of the respective BAC-based physical maps as a necessary intermediate step. In this context, we report here the successful application of WGP&#x2122; together with the contig assembly tool <sc>ltc</sc> to robustly assemble BAC clones into 1113 contigs for the long arm and 1217 contigs for the short arm, representing the wheat chromosome 6A physical map. To date, physical maps of four arms of wheat chromosomes, including 1AS, 1AL, 1BS and 1BL, as well as the entire chromosome of 3B, have been reported (<xref rid="b33" ref-type="bibr">Paux <italic>et al.</italic>, 2008</xref>; <xref rid="b3" ref-type="bibr">Breen <italic>et al.</italic>, 2013</xref>; <xref rid="b26" ref-type="bibr">Lucas <italic>et al.</italic>, 2013</xref>; <xref rid="b35" ref-type="bibr">Philippe <italic>et al.</italic>, 2013</xref>; <xref rid="b37" ref-type="bibr">Raats <italic>et al.</italic>, 2013</xref>). The 6AS chromosome arm (336<italic>&#xA0;</italic>Mb) has the closest estimated size to that of 1BS (314<italic>&#xA0;</italic>Mb; <xref rid="b38" ref-type="bibr">&#x160;af&#xE1;&#x159; <italic>et&#xA0;al</italic>., 2010</xref>), for which an initial assembly (before manual end-to-end merging) of 254 <sc>ltc</sc>-derived contigs (with six or more clones) was reported. Excluding small contigs (with five or fewer clones) from our 6A assemblies would result in 293 (368<italic>&#xA0;</italic>Mb) and 545 (459<italic>&#xA0;</italic>Mb) contigs for the short and long arms, respectively. Therefore, the number of contigs obtained for 6AS is comparable with the total number of contigs in the initial assembly of 1BS; however, in contrast to the final assembly (after manual end-to-end merging) of 1BS that resulted in 57 scaffolds, no further contig merging or scaffold construction was considered in the final 6A assemblies, as this must be guided by highly reliable and robust genetic maps. Otherwise, the complexity and repeat content of the wheat genome could potentially hamper any manual contig merging or super-contig construction. Excluding small contigs, we obtained more than 100% coverage for 6AS (109%) and 6AL (124%) assemblies. This is most likely because the original chromosomal arm sizes have been underestimated.</p>
+      <p>Overall, we were able to anchor 79% of the physical contigs into corresponding genetic maps, which is greater than the aforementioned wheat chromosomal physical maps, including 1BL (74%), 1AS (74%), 1AL (&#x223C;75%) and the first version of 3B with a 56% anchored physical map. Nevertheless, the 1BS physical map contained 83% of the contigs anchored to the respective genetic maps because of the low number of contigs (<xref rid="b37" ref-type="bibr">Raats <italic>et al.</italic>, 2013</xref>). The availability of extended WGP&#x2122; tags allowed for the direct placement of 3843 genes into a physical map, which was comparable with the recent physical map for barley, where an average of &#x223C;3700 genes could be assigned to each chromosome (<xref rid="b16" ref-type="bibr">IBSC, 2012</xref>). This high level of genetically anchored physical maps and their respective genes provides a more efficient way to clone agronomically important genes/QTLs located on 6A. Fine-mapping and the identification of genes underlying these important QTLs have been inhibited in wheat, mainly by technical constraints linked to its genome size (17<italic>&#xA0;</italic>Gb), repeat content (&gt;80%) and genomic redundancy (presence of three highly homologous genomes: A, B and D). These limitations may explain why very few wheat genes have been cloned (<xref rid="b22" ref-type="bibr">Krattinger <italic>et al.</italic>, 2009</xref>). Therefore, chromosomal BAC-based physical maps are of utmost importance to promote and simplify positional cloning in this large genome.</p>
+      <p>In this study, the comprehensive and integrated 6A physical map localized some genetic determinants to the corresponding physical map, and provided information required for the development of tightly linked genetic markers (Figure <xref ref-type="fig" rid="fig08">8</xref>). Such loci include one resistance QTL that is important against the wheat disease <italic>Fusarium</italic> head blight (<xref rid="b40" ref-type="bibr">Schmolke <italic>et al.</italic>, 2005</xref>; <xref rid="b15" ref-type="bibr">Holzapfel <italic>et al.</italic>, 2008</xref>), the stem rust resistance gene <italic>Sr13</italic> (<xref rid="b9" ref-type="bibr">Dubcovsky <italic>et al.</italic>, 2011</xref>; <xref rid="b43" ref-type="bibr">Simons <italic>et al.</italic>, 2011</xref>), an anti-xenosis gene against a new aphid biotype (<xref rid="b5" ref-type="bibr">Castro <italic>et al.</italic>, 2005</xref>) and QTLs involved in adult plant resistance to powdery mildew (<xref rid="b30" ref-type="bibr">Muranty <italic>et al.</italic>, 2009</xref>), as well as greater seedling vigor (<xref rid="b46" ref-type="bibr">Spielmeyer <italic>et al.</italic>, 2007</xref>). All of these QTLs/genes had already been genetically mapped to 6A; however, in the current study, only two corresponding gene intervals were successfully localized to the 6A physical map. For the remaining genes, either the corresponding primer/marker sequence information was not publicly available or the marker sequence could not be detected in our 6A-connected sequence data set. For the identified intervals, the respective information, including the number of genes and physical contigs assigned to a respective region, were identified (Figure <xref ref-type="fig" rid="fig08">8</xref>). This analysis shows the usefulness of our physical map and represents an unprecedented opportunity to accelerate detailed gene studies, including positional cloning, and ultimately wheat breeding programs.</p>
+      <fig id="fig08" position="float">
+        <label>Figure 8</label>
+        <caption>
+          <p>Physical map intervals containing agronomically important genes on wheat chromosome 6A. Primers or corresponding PCR-amplified sequences were used to define the corresponding interval. An <italic>in silico</italic> sequence homology search was performed to connect primer sequences or corresponding PCR-amplified sequences to sequence information underlying the 6A physical map; PM, powdery mildew-resistant gene (<xref rid="b30" ref-type="bibr">Muranty <italic>et al.</italic>, 2009</xref>); SR, stem rust resistance (<xref rid="b9" ref-type="bibr">Dubcovsky <italic>et al.</italic>, 2011</xref>; <xref rid="b43" ref-type="bibr">Simons <italic>et al.</italic>, 2011</xref>). Bi-directional arrows indicate gene containing intervals; corresponding genetic and physical information of each interval have been highlighted with the same color.</p>
+        </caption>
+        <graphic xlink:href="tpj0079-0334-f8"/>
+      </fig>
+      <p>In the absence of the aforementioned wheat physical maps, comparative genomics and collinearity between wheat and related grass genomes have been the method of choice for map-based cloning in wheat. Previous strategies have been shown to be very arduous, costly and to require a variety of genomic resources. For example, initial attempts at cloning the wheat <italic>Lr34/Yr18</italic> locus failed because of a lack of sufficient collinearity between wheat and the small rice and <italic>B.&#xA0;distachyon</italic> genomes (<xref rid="b47" ref-type="bibr">Spielmeyer <italic>et al.</italic>, 2008</xref>). Although conserved synteny was of great support in narrowing down respective gene-containing intervals, the region carrying <italic>Lr34/Yr18</italic> is absent in both rice and <italic>B.&#xA0;distachyon</italic> syntenic segments, validating the hypothesis that grass resistance genes have less conserved micro-colinearity (<xref rid="b24" ref-type="bibr">Leister <italic>et al.</italic>, 1998</xref>). Access to robustly assembled hexaploid wheat genome physical maps is the key to expediting future wheat genome sequencing efforts.</p>
+      <p>Together with the 6A physical map, we were also able to estimate the rate of recombination along 6A. A general agreement between the pattern of recombination rate and gene distribution along chromosomes was observed, similar to an earlier report (<xref rid="b10" ref-type="bibr">Erayman <italic>et al.</italic>, 2004</xref>). This report revealed a correlation between recombination gradient and gene distribution by physically mapping 3025 genes/QTLs to 334 deletion break points that spanned all seven wheat chromosomal groups. This eventually enabled the co-localization of gene- and recombination-rich regions along wheat chromosomes. In our study, the highest density of genes was found for more distal regions of 6A and where recombination rates reached their maximum. In the centromeric area of 6A, however, where recombination rates were the lowest, the number of genes per physical unit also declined dramatically. Such suppression of recombination limits our genetic anchoring resolution for the (peri)centromeric area in which a high number of physical contigs are anchored with unclear order. Therefore, different mapping approaches (e.g. radiation hybrid mapping that is independent of recombination; <xref rid="b21" ref-type="bibr">Kalavacharla <italic>et al.</italic>, 2006</xref>) should be used in the future to precisely order contigs in this region. In any case, the recombination estimates along 6A provided are imperative for accomplishing a more efficient isolation of important genes/QTLs via map-based cloning, as genes located in regions with high recombination rates are more accessible to map-based isolation (<xref rid="b19" ref-type="bibr">Jander <italic>et al.</italic>, 2002</xref>).</p>
+      <sec>
+        <title>The efficiency of WGP&#x2122; technology and the advantage of the <sc>ltc</sc> assembly tool over <sc>fpc</sc></title>
+        <p>This study reports the application of WGP&#x2122; on individual wheat chromosome arms and effectively confirms how well WGP&#x2122; technology works on arms with highly repetitive sequences (&gt;80%) to accurately form a physical map. The advantage of WGP&#x2122; over conventional HICF-BAC fingerprinting assembly in wheat has previously been discussed (<xref rid="b31" ref-type="bibr">van Oeveren <italic>et al.</italic>, 2011</xref>; <xref rid="b34" ref-type="bibr">Philippe <italic>et al.</italic>, 2012</xref>). In this respect, the robustness and quality of a BAC assembly may be justified with the quality and quantity of information (e.g. tag length and density in WGP&#x2122; or band size and similarity in HICF) provided for pairwise comparison of BACs and the subsequent establishment of respective contigs. In our study, both tag length and density were significantly improved by 64% compared with the values obtained in the WGP&#x2122;-based pilot study performed on wheat chromosome 3B (<xref rid="b34" ref-type="bibr">Philippe <italic>et al.</italic>, 2012</xref>). Our improved WGP&#x2122; results were achieved by applying a different combination of restriction enzymes with higher cut-site frequency (<italic>Hin</italic>dIII/<italic>Mse</italic>I), and by increasing the initial sequence read length to 100 nt, as previously suggested (<xref rid="b34" ref-type="bibr">Philippe <italic>et al.</italic>, 2012</xref>). Therefore, by using additional sequence information per BAC, together with higher stringency (tolerance value&#xA0;=&#xA0;0) during assembly and a more efficient contig formation tool (<sc>ltc</sc>), we propose that a highly accurate BAC-based physical map of 6A has been developed.</p>
+        <p>The superior performance of <sc>ltc</sc> using HICF data compared with <sc>fpc</sc> was recently illustrated in wheat (<xref rid="b3" ref-type="bibr">Breen <italic>et al.</italic>, 2013</xref>; <xref rid="b37" ref-type="bibr">Raats <italic>et al.</italic>, 2013</xref>). Here, similar conclusions were derived while applying WGP&#x2122; tags for BAC assembly of both 6A arms. <sc>ltc</sc>-derived contigs could be classified into five groups when compared with <sc>fpc</sc>-made contigs obtained at a given cut-off value. The striking difference between <sc>ltc</sc> and <sc>fpc</sc> is reflected in <sc>ltc</sc>-built contigs (i.e. LTC &#x2265;&#xA0;2<sc>fpc</sc>; cases of conflicts) in which underlying BAC clones were assembled in more than one contig when compared with <sc>fpc</sc> assemblies. In a randomly selected sample (<sc>ltc</sc>&#xA0;&#x2265;&#xA0;2<sc>fpc</sc>, <sc>fpc</sc> at 1e<sup>&#x2212;11</sup>), genetic anchoring revealed that in 71% of such cases, the corresponding <sc>fpc</sc>-derived contigs were incorrectly merged, whereas for <sc>ltc</sc>, this was only 13%. Moreover, by visually inspecting mis-assembled <sc>fpc</sc>-made contigs, we often observed that inconsistent cases had highly degenerate BAC coverage compared with other contig parts (Figure <xref ref-type="fig" rid="fig04">4</xref>, red arrowheads). Low-coverage regions were rarely detectable in corresponding <sc>ltc</sc>-derived contigs for which multiple <sc>fpc</sc> contigs were available. Low-coverage regions in <sc>fpc</sc>-built contigs are most likely the result of false end-merging during the stepwise reduction of assembly stringency in <sc>fpc</sc>.</p>
+        <p>Our observations further demonstrate the advantages of the <sc>ltc</sc>-based BAC assembly for large genomes containing large numbers of repetitive elements. This is in agreement with a previous report that showed <sc>ltc</sc> was more efficient at forming BAC contigs using HICF (<xref rid="b3" ref-type="bibr">Breen <italic>et al.</italic>, 2013</xref>; <xref rid="b37" ref-type="bibr">Raats <italic>et al.</italic>, 2013</xref>). In addition, we showed that by applying a more reliable technology (i.e. WGP&#x2122;), <sc>fpc</sc> performance is still considerably lower than that of <sc>ltc</sc> in physical map assembly. Therefore, we highly recommend combining WGP&#x2122; fingerprint methodology together with <sc>ltc</sc> assembly software for future physical mapping efforts in wheat.</p>
+      </sec>
+    </sec>
+    <sec sec-type="methods">
+      <title>Experimental Procedures</title>
+      <sec>
+        <title>Chromosome sorting and construction of BAC libraries</title>
+        <p>The 6AS arm was flow-sorted from a double ditelosomic line of wheat carrying both arms of chromosome 6A as telosomes (2<italic>n</italic>&#xA0;=&#xA0;40&#xA0;+&#xA0;2t6AS&#xA0;+&#xA0;2t6AL), whereas the 6AL arm was purified from a ditelosomic line carrying only the 6AL arm as a telocentric chromosome (2<italic>n</italic>&#xA0;=&#xA0;40&#xA0;+&#xA0;2t6AL), according to <xref rid="b53" ref-type="bibr">Vrana <italic>et&#xA0;al</italic>. (2000</xref>). Both flow-sorted telosomes were derived from cv. Chinese Spring. The identity and purity in the sorted fractions was checked by fluorescence <italic>in situ</italic> hybridization using probes for the telomeric repeat and for the GAA repeat (<xref rid="b18" ref-type="bibr">Janda <italic>et al.</italic>, 2006</xref>). Chromosome arm-specific BAC libraries were constructed as described by <xref rid="b42" ref-type="bibr">&#x160;imkov&#xE1; <italic>et&#xA0;al</italic>. (2011)</xref>. In order to estimate the average insert size, 160 BAC clones were randomly selected from each of the libraries and analyzed as described in <xref rid="b18" ref-type="bibr">Janda <italic>et&#xA0;al</italic>. (2006)</xref>.</p>
+      </sec>
+      <sec>
+        <title>WGP&#x2122; data production</title>
+        <p>A 3D format of BAC pools was made for each BAC library (Appendix S17). High-concentration BAC DNA was subsequently isolated from pooled BACs, followed by WGP&#x2122; sample preparation, as previously described (<xref rid="b31" ref-type="bibr">van Oeveren <italic>et al.</italic>, 2011</xref>). Briefly, restriction ligation templates were prepared from pooled BAC DNA by digestion using <italic>Hin</italic>dIII and <italic>Mse</italic>I, followed by ligation of adaptor sequences containing sample identification tags (barcodes), PCR amplification and the pooling of respective PCR products. Sequencing of the resulting amplified cluster was performed using the Illumina HiSeq with a 100&#x2013;nt read length. Sequence reads were used for WGP&#x2122; tag production (see Appendix S1), which included barcode and restriction site identification, deconvolution of reads as WGP&#x2122; tags to the individual BACs and the filtering of WGP&#x2122; tags using various quality controls. This filtering pipeline was used to eliminate tags matching vectors, <italic>E.&#xA0;coli</italic> or chloroplast sequences. Tags containing homopolymer sequences &#x2265;5 nt were considered uninformative (i.e. with a high chance of being present in more than one BAC in a particular plate). Moreover, tags potentially introducing ambiguities were also eliminated (i.e. those present in &gt;12 BACs).</p>
+      </sec>
+      <sec>
+        <title>BAC contig assembly</title>
+        <p>To operate the BAC assembly, we used <sc>ltc</sc> (<xref rid="b13" ref-type="bibr">Frenkel <italic>et al.</italic>, 2010</xref>) and <sc>fpc</sc> 9.4 (<ext-link ext-link-type="uri" xlink:href="http://www.agcol.arizona.edu/software/fpc/">http://www.agcol.arizona.edu/software/fpc/</ext-link>). Both employ the same metric or so-called Sulston score. In the case of <sc>ltc</sc>, as the tolerance could be set at the best stringency (tolerance<italic>&#xA0;</italic>=<italic>&#xA0;</italic>0), the initial net of significant clone overlaps obtained at a 1e<sup>&#x2212;2</sup> cut-off was considered. Corresponding subnets were then obtained at a 1e<sup>&#x2212;10</sup> cut-off and used for contig formation. All contigs with at least two clones were exported into <sc>fpc</sc> format and checked for linear topology. All contigs with a width &#x2265;2 were checked and split manually to obtain linear contigs. If only one clone explained the nonlinearity, the contigs were left as such because this nonlinearity was likely to be caused by a lack of WGP&#x2122; tags in the corresponding clone (<xref rid="b35" ref-type="bibr">Philippe <italic>et al.</italic>, 2013</xref>). Further parameters required to establish the <sc>ltc</sc> physical map were as follows: a tolerance of 0; gel length of 111&#xA0;000; N_bands_Sulston (number of bands for Sulston score calculation) equal to gel length; and a minimum contig size of two clones. Adaptive clustering was performed using the following criteria: a 1e<sup>&#x2212;3</sup> cut-off (while the initial value to make the net of significant clone overlaps was set to 1e<sup>&#x2212;2</sup>) and a step size of 1, with seven steps. MTP clones were selected applying the aforementioned parameters in the <sc>ltc</sc> program. Because of the low number of genetic markers and the lack of adequate anchoring, no further contig merging or supercontig construction was performed.</p>
+        <p>In addition to <sc>ltc</sc>, contig assembly was also performed via <sc>fpc</sc> to compare the performance of each tool in physical map construction. Briefly, the initial <sc>fpc</sc> assembly was performed with a 1e<sup>&#x2212;75</sup> cut-off. This was subsequently run through single-to-end and end-to-end merging (Match, 1; From End, 13) at 13 sequentially higher cut-offs (thus, lower stringency) that ended up at 1e<sup>&#x2212;11</sup>, as was suggested for a WGP&#x2122;-based strategy in wheat (Appendix S4; <xref rid="b34" ref-type="bibr">Philippe <italic>et al.</italic>, 2012</xref>).</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank B.S. Gill and Adam Lukaszewski for providing seeds of the wheat telosomic lines. We are grateful to Marie Kubal&#xE1;kov&#xE1;, Jarmila &#x10C;&#xED;hal&#xED;kov&#xE1;, Jan Vr&#xE1;na, Romana &#x160;perkov&#xE1;, Jana Dost&#xE1;lov&#xE1; and Zde&#x148;ka Dubsk&#xE1; for assistance with chromosome sorting and BAC library construction. We would like to acknowledge Zeev Frankel and Abraham Korol for technical advice and Jenny Knibbiche for excellent technical support. The work was financially supported by a grant from the German Ministry of Education and Research (BMBF) in the framework of the TRITEX grant number FKZ 0315954A to NS and to TS, and partly by the GABI-FUTURE Start Program grant number FKZ 0315071 to TS. The WGP&#x2122; technology is protected by patents and patent applications owned by Keygene N.V. WGP&#x2122; is a trademark of Keygene N.V.</p>
+    </ack>
+    <sec>
+      <title>Conflict of Interest</title>
+      <p>The authors have declared that they have no conflicts of interest.</p>
+      <sec>
+        <title>Data availability</title>
+        <p>The URL to view the wheat 6A physical map, to blast against assigned LTC contig sequences, and to download the respective sequences is: <ext-link ext-link-type="uri" xlink:href="http://seacow.helmholtz-muenchen.de/cgi-bin/gb2/gbrowse/Wheat_PhysMap_6A">http://seacow.helmholtz-muenchen.de/cgi-bin/gb2/gbrowse/Wheat_PhysMap_6A</ext-link>.</p>
+      </sec>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="b1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Akhunov</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Sehgal</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>HQ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Comparative analysis of syntenic genes in grass genomes reveals accelerated rates of gene structure and coding sequence evolution in polyploid wheat</article-title>
+          <source>Plant Physiol</source>
+          <year>2013</year>
+          <volume>161</volume>
+          <fpage>252</fpage>
+          <lpage>265</lpage>
+          <pub-id pub-id-type="pmid">23124323</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anderson</surname>
+              <given-names>LK</given-names>
+            </name>
+            <name>
+              <surname>Doyle</surname>
+              <given-names>GG</given-names>
+            </name>
+            <name>
+              <surname>Brigham</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Carter</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hooker</surname>
+              <given-names>KD</given-names>
+            </name>
+            <name>
+              <surname>Lai</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rice</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Stack</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <article-title>High-resolution crossover maps for each bivalent of <italic>Zea mays</italic> using recombination nodules</article-title>
+          <source>Genetics</source>
+          <year>2003</year>
+          <volume>165</volume>
+          <fpage>849</fpage>
+          <lpage>865</lpage>
+          <pub-id pub-id-type="pmid">14573493</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wicker</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Shatalina</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A physical map of the short arm of wheat Chromosome 1A</article-title>
+          <source>PLoS ONE</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <fpage>e80272</fpage>
+          <pub-id pub-id-type="pmid">24278269</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brenchley</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Spannagl</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pfeifer</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Analysis of the breadwheat genome using whole-genome shotgun sequencing</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>705</fpage>
+          <lpage>710</lpage>
+          <pub-id pub-id-type="pmid">23192148</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Castro</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Vasicek</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Manifiesto</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gimenez</surname>
+              <given-names>DO</given-names>
+            </name>
+            <name>
+              <surname>Tacaliti</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Dobrovolskaya</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Roder</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Snape</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Borner</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Mapping antixenosis genes on chromosome 6A of wheat to greenbug and to a new biotype of Russian wheat aphid</article-title>
+          <source>Plant Breeding</source>
+          <year>2005</year>
+          <volume>124</volume>
+          <fpage>229</fpage>
+          <lpage>233</lpage>
+        </element-citation>
+      </ref>
+      <ref id="b6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cavanagh</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>SC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide comparative diversity uncovers multiple targets of selection for improvement in hexaploid wheat landraces and cultivars</article-title>
+          <source>Proc. Natl Acad. Sci. USA</source>
+          <year>2013</year>
+          <volume>110</volume>
+          <fpage>8057</fpage>
+          <lpage>8062</lpage>
+          <pub-id pub-id-type="pmid">23630259</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dole&#x17E;el</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Barto&#x161;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Chromosome-based genomics in the cereals</article-title>
+          <source>Chromosome Res</source>
+          <year>2007</year>
+          <volume>15</volume>
+          <fpage>51</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="pmid">17295126</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b8">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dole&#x17E;el</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vr&#xE1;na</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>C&#xE1;pal</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bure&#x161;ov&#xE1;</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>&#x160;imkov&#xE1;</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Advances in plant chromosome genomics</article-title>
+          <source>Biotechnol. Adv</source>
+          <year>2014</year>
+          <volume>32</volume>
+          <fpage>122</fpage>
+          <lpage>136</lpage>
+          <pub-id pub-id-type="pmid">24406816</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ordon</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Perovic</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Admassu</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Friedt</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Abate</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Conflicting mapping results for stem rust resistance gene Sr13</article-title>
+          <source>Theor. Appl. Genet</source>
+          <year>2011</year>
+          <volume>122</volume>
+          <fpage>659</fpage>
+          <pub-id pub-id-type="pmid">21153628</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Erayman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sandhu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Sidhu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Dilbirligi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Baenziger</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>KS</given-names>
+            </name>
+          </person-group>
+          <article-title>Demarcating the gene-rich regions of the wheat genome</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2004</year>
+          <volume>32</volume>
+          <fpage>3546</fpage>
+          <lpage>3565</lpage>
+          <pub-id pub-id-type="pmid">15240829</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b11">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eversole</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Graner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Muehlbauer</surname>
+              <given-names>GJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Wheat and barley genome sequencing</article-title>
+          <source>Genetics and Genomics of the Triticeae</source>
+          <year>2009</year>
+          <publisher-loc>Berlin</publisher-loc>
+          <publisher-name>Springer</publisher-name>
+          <fpage>713</fpage>
+          <lpage>742</lpage>
+        </element-citation>
+      </ref>
+      <ref id="b12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flavell</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Rimpau</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <article-title>Repeated sequence DNA relationships in 4 cereal genomes</article-title>
+          <source>Chromosoma</source>
+          <year>1977</year>
+          <volume>63</volume>
+          <fpage>205</fpage>
+          <lpage>222</lpage>
+        </element-citation>
+      </ref>
+      <ref id="b13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Frenkel</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Mester</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Korol</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>LTC: a novel algorithm to improve the efficiency of contig assembly for physical mapping in complex genomes</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>584</fpage>
+          <lpage>601</lpage>
+          <pub-id pub-id-type="pmid">21118513</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hernandez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Martis</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dorado</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Next-generation sequencing and syntenic integration of flow-sorted arms of wheat chromosome 4A exposes the chromosome structure and gene content</article-title>
+          <source>Plant J</source>
+          <year>2012</year>
+          <volume>69</volume>
+          <fpage>377</fpage>
+          <lpage>386</lpage>
+          <pub-id pub-id-type="pmid">21974774</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b15">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Holzapfel</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Voss</surname>
+              <given-names>HH</given-names>
+            </name>
+            <name>
+              <surname>Miedaner</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Korzun</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Haberle</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Schweizer</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Mohler</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Zimmermann</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hartl</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Inheritance of resistance to Fusarium head blight in three European winter wheat populations</article-title>
+          <source>Theor. Appl. Genet</source>
+          <year>2008</year>
+          <volume>117</volume>
+          <fpage>1119</fpage>
+          <lpage>1128</lpage>
+          <pub-id pub-id-type="pmid">18670751</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b16">
+        <element-citation publication-type="journal">
+          <collab>IBSC</collab>
+          <article-title>A physical, genetic and functional sequence assembly of the barley genome</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>711</fpage>
+          <lpage>716</lpage>
+          <pub-id pub-id-type="pmid">23075845</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b17">
+        <element-citation publication-type="journal">
+          <collab>IWGSC</collab>
+          <article-title>A chromosome-based draft sequence of the hexaploid bread wheat genome</article-title>
+          <source>Science</source>
+          <year>(In press)</year>
+        </element-citation>
+      </ref>
+      <ref id="b18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Janda</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Safar</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kubalakova</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Advanced resources for plant genomics: a BAC library specific for the short arm of wheat chromosome 1B</article-title>
+          <source>Plant J</source>
+          <year>2006</year>
+          <volume>47</volume>
+          <fpage>977</fpage>
+          <lpage>986</lpage>
+          <pub-id pub-id-type="pmid">16911585</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jander</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Norris</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Rounsley</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Bush</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Levin</surname>
+              <given-names>IM</given-names>
+            </name>
+            <name>
+              <surname>Last</surname>
+              <given-names>RL</given-names>
+            </name>
+          </person-group>
+          <article-title>Arabidopsis map-based cloning in the post-genome era</article-title>
+          <source>Plant Physiol</source>
+          <year>2002</year>
+          <volume>129</volume>
+          <fpage>440</fpage>
+          <lpage>450</lpage>
+          <pub-id pub-id-type="pmid">12068090</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jia</surname>
+              <given-names>JZ</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>XY</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title><italic>Aegilops tauschii</italic> draft genome sequence reveals a gene repertoire for wheat adaptation</article-title>
+          <source>Nature</source>
+          <year>2013</year>
+          <volume>496</volume>
+          <fpage>91</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="pmid">23535592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b21">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kalavacharla</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Hossain</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Riera-Lizarazu</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Vales</surname>
+              <given-names>MI</given-names>
+            </name>
+            <name>
+              <surname>Bhamidimarri</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gonzalez-Hernandez</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Maan</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Kianian</surname>
+              <given-names>SF</given-names>
+            </name>
+          </person-group>
+          <article-title>High-resolution radiation hybrid map of wheat chromosome 1D</article-title>
+          <source>Genetics</source>
+          <year>2006</year>
+          <volume>173</volume>
+          <fpage>1089</fpage>
+          <lpage>1099</lpage>
+          <pub-id pub-id-type="pmid">16624903</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b22">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krattinger</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wicker</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Keller</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Muehlbauer</surname>
+              <given-names>GJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Map-based cloning of genes in Triticeae (wheat and barley)</article-title>
+          <source>Genetics and Genomics of the Triticeae</source>
+          <year>2009</year>
+          <publisher-loc>Berlin</publisher-loc>
+          <publisher-name>Springer</publisher-name>
+          <fpage>337</fpage>
+          <lpage>357</lpage>
+        </element-citation>
+      </ref>
+      <ref id="b23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kunzel</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Korzun</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Meister</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Cytologically integrated physical restriction fragment length polymorphism maps for the barley genome based on translocation breakpoints</article-title>
+          <source>Genetics</source>
+          <year>2000</year>
+          <volume>154</volume>
+          <fpage>397</fpage>
+          <lpage>412</lpage>
+          <pub-id pub-id-type="pmid">10628998</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leister</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kurth</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Laurie</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Yano</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sasaki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Devos</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Graner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Schulze-Lefert</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Rapid reorganization of resistance gene homologues in cereal genomes</article-title>
+          <source>Proc. Natl Acad. Sci. USA</source>
+          <year>1998</year>
+          <volume>95</volume>
+          <fpage>370</fpage>
+          <lpage>375</lpage>
+          <pub-id pub-id-type="pmid">9419382</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ling</surname>
+              <given-names>HQ</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>DC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Draft genome of the wheat A-genome progenitor <italic>Triticum urartu</italic></article-title>
+          <source>Nature</source>
+          <year>2013</year>
+          <volume>496</volume>
+          <fpage>87</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="pmid">23535596</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lucas</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Akpinar</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Kantar</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Physical mapping integrated with syntenic analysis to characterize the gene space of the long arm of wheat chromosome 1A</article-title>
+          <source>PLoS ONE</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <fpage>e59542</fpage>
+          <pub-id pub-id-type="pmid">23613713</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lukaszewski</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Curtis</surname>
+              <given-names>CA</given-names>
+            </name>
+          </person-group>
+          <article-title>Physical distribution of recombination in B-genome chromosomes of tetraploid wheat</article-title>
+          <source>Theor. Appl. Genet</source>
+          <year>1993</year>
+          <volume>86</volume>
+          <fpage>121</fpage>
+          <lpage>127</lpage>
+          <pub-id pub-id-type="pmid">24193391</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Luo</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Hsiao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Shu</surname>
+              <given-names>OY</given-names>
+            </name>
+            <name>
+              <surname>Buell</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Malandro</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>McGuire</surname>
+              <given-names>PE</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>OD</given-names>
+            </name>
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>High-throughput fingerprinting of bacterial artificial chromosomes using the SNaPshot labeling kit and sizing of restriction fragments by capillary electrophoresis</article-title>
+          <source>Genomics</source>
+          <year>2003</year>
+          <volume>82</volume>
+          <fpage>378</fpage>
+          <lpage>389</lpage>
+          <pub-id pub-id-type="pmid">12906862</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mascher</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Muehlbauer</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Rokhsar</surname>
+              <given-names>DS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Anchoring and ordering NGS contig assemblies by population sequencing (POPSEQ)</article-title>
+          <source>Plant J</source>
+          <year>2013</year>
+          <volume>76</volume>
+          <fpage>718</fpage>
+          <lpage>727</lpage>
+          <pub-id pub-id-type="pmid">23998490</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Muranty</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Pavoine</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Jaudeau</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Radek</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Doussinault</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Barloy</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Two stable QTL involved in adult plant resistance to powdery mildew in the winter wheat line RE714 are expressed at different times along the growing season</article-title>
+          <source>Mol. Breeding</source>
+          <year>2009</year>
+          <volume>23</volume>
+          <fpage>445</fpage>
+          <lpage>461</lpage>
+        </element-citation>
+      </ref>
+      <ref id="b31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>van Oeveren</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>de Ruiter</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jesse</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Sequence-based physical mapping of complex genomes by whole genome profiling</article-title>
+          <source>Genome Res</source>
+          <year>2011</year>
+          <volume>21</volume>
+          <fpage>618</fpage>
+          <lpage>625</lpage>
+          <pub-id pub-id-type="pmid">21324881</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b32">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ortiz</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sayre</surname>
+              <given-names>KD</given-names>
+            </name>
+            <name>
+              <surname>Govaerts</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Gupta</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Subbarao</surname>
+              <given-names>GV</given-names>
+            </name>
+            <name>
+              <surname>Ban</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hodson</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Dixon</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Ortiz-Monasterio</surname>
+              <given-names>JI</given-names>
+            </name>
+            <name>
+              <surname>Reynolds</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Climate change: can wheat beat the heat?</article-title>
+          <source>Agric. Ecosyst. Environ</source>
+          <year>2008</year>
+          <volume>126</volume>
+          <fpage>46</fpage>
+          <lpage>58</lpage>
+        </element-citation>
+      </ref>
+      <ref id="b33">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Sourdille</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Salse</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A physical map of the 1-gigabase bread wheat chromosome 3B</article-title>
+          <source>Science</source>
+          <year>2008</year>
+          <volume>322</volume>
+          <fpage>101</fpage>
+          <lpage>104</lpage>
+          <pub-id pub-id-type="pmid">18832645</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b34">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Philippe</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Choulet</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Whole genome profiling provides a robust framework for physical mapping and sequencing in the highly complex and repetitive wheat genome</article-title>
+          <source>BMC Genomics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>47</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="pmid">22289472</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b35">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Philippe</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Bertin</surname>
+              <given-names>I</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A high density physical map of chromosome 1BL supports evolutionary studies, map-based cloning and sequencing in wheat</article-title>
+          <source>Genome Biol</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>R64</fpage>
+          <pub-id pub-id-type="pmid">23800011</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b36">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poland</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Sorrells</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Jannink</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Development of high-density genetic maps for barley and wheat using a novel two-enzyme genotyping-by-sequencing approach</article-title>
+          <source>PLoS ONE</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>e32253</fpage>
+          <pub-id pub-id-type="pmid">22389690</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b37">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raats</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Frenkel</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Krugman</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The physical map of wheat chromosome 1BS provides insights into its gene space organization and evolution</article-title>
+          <source>Genome Biol</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>R138</fpage>
+          <pub-id pub-id-type="pmid">24359668</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b38">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>&#x160;af&#xE1;&#x159;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>&#x160;imkov&#xE1;</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>&#x10C;&#xED;hal&#xED;kov&#xE1;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Such&#xE1;nkov&#xE1;</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Barto&#x161;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dole&#x17E;el</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Development of chromosome-specific BAC resources for genomics of bread wheat</article-title>
+          <source>Cytogenet. Genome Res</source>
+          <year>2010</year>
+          <volume>129</volume>
+          <fpage>211</fpage>
+          <lpage>223</lpage>
+          <pub-id pub-id-type="pmid">20501977</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b39">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Salse</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bolot</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Throude</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jouffe</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Piegu</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Quraishi</surname>
+              <given-names>UM</given-names>
+            </name>
+            <name>
+              <surname>Calcagno</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Cooke</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Delseny</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification and characterization of shared duplications between rice and wheat provide new insight into grass genome evolution</article-title>
+          <source>Plant Cell</source>
+          <year>2008</year>
+          <volume>20</volume>
+          <fpage>11</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="pmid">18178768</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b40">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmolke</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zimmermann</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Buerstmayr</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Schweizer</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Miedaner</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Korzun</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ebmeyer</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Hartl</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular mapping of Fusarium head blight resistance in the winter wheat population Dream/Lynx</article-title>
+          <source>Theor. Appl. Genet</source>
+          <year>2005</year>
+          <volume>111</volume>
+          <fpage>747</fpage>
+          <lpage>756</lpage>
+          <pub-id pub-id-type="pmid">15947905</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b41">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sierro</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>van Oeveren</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>van Eijk</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Stormo</surname>
+              <given-names>KE</given-names>
+            </name>
+            <name>
+              <surname>Peitsch</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Ivanov</surname>
+              <given-names>NV</given-names>
+            </name>
+          </person-group>
+          <article-title>Whole genome profiling physical map and ancestral annotation of tobacco Hicks Broadleaf</article-title>
+          <source>Plant J</source>
+          <year>2013</year>
+          <volume>75</volume>
+          <fpage>880</fpage>
+          <lpage>889</lpage>
+          <pub-id pub-id-type="pmid">23672264</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b42">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>&#x160;imkov&#xE1;</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>&#x160;af&#xE1;&#x159;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>BAC libraries from wheat chromosome 7D: efficient tool for positional cloning of aphid resistance genes</article-title>
+          <source>J. Biomed. Biotechnol</source>
+          <year>2011</year>
+          <volume>2011</volume>
+          <fpage>302543</fpage>
+          <pub-id pub-id-type="pmid">21318113</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b43">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Simons</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Abate</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Rouse</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Elias</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic mapping of stem rust resistance gene Sr13 in tetraploid wheat (Triticum turgidum ssp durum L.)</article-title>
+          <source>Theor. Appl. Genet</source>
+          <year>2011</year>
+          <volume>122</volume>
+          <fpage>649</fpage>
+          <lpage>658</lpage>
+          <pub-id pub-id-type="pmid">20857083</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b44">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Soderlund</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Longden</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Mott</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>FPC: a system for building contigs from restriction fingerprinted clones</article-title>
+          <source>Comput. Appl. Biosci</source>
+          <year>1997</year>
+          <volume>13</volume>
+          <fpage>523</fpage>
+          <lpage>535</lpage>
+          <pub-id pub-id-type="pmid">9367125</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b45">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sommer</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Glazirina</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Yuldashev</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Impact of climate change on wheat productivity in Central Asia</article-title>
+          <source>Agric. Ecosyst. Environ</source>
+          <year>2013</year>
+          <volume>178</volume>
+          <fpage>78</fpage>
+          <lpage>99</lpage>
+        </element-citation>
+      </ref>
+      <ref id="b46">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Spielmeyer</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Hyles</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Joaquim</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Azanza</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Bonnett</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ellis</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Richards</surname>
+              <given-names>RA</given-names>
+            </name>
+          </person-group>
+          <article-title>A QTL on chromosome 6A in bread wheat (<italic>Triticum aestivum</italic>) is associated with longer coleoptiles, greater seedling vigour and final plant height</article-title>
+          <source>Theor. Appl. Genet</source>
+          <year>2007</year>
+          <volume>115</volume>
+          <fpage>59</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="pmid">17429602</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b47">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Spielmeyer</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>McFadden</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Wellings</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Huerta-Espino</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Appels</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Lagudah</surname>
+              <given-names>ES</given-names>
+            </name>
+          </person-group>
+          <article-title>Fine scale genetic and physical mapping using interstitial deletion mutants of Lr34 /Yr18: a disease resistance locus effective against multiple pathogens in wheat</article-title>
+          <source>Theor. Appl. Genet</source>
+          <year>2008</year>
+          <volume>116</volume>
+          <fpage>481</fpage>
+          <lpage>490</lpage>
+          <pub-id pub-id-type="pmid">18074114</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b48">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tanaka</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Joshi</surname>
+              <given-names>GP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Next-generation survey sequencing and the molecular organization of wheat chromosome 6B</article-title>
+          <source>DNA Res</source>
+          <year>2014</year>
+          <volume>21</volume>
+          <fpage>103</fpage>
+          <lpage>114</lpage>
+          <comment>first published online October 1, 2013 doi: <ext-link ext-link-type="doi" xlink:href="10.1093/dnares/dst041">10.1093/dnares/dst041</ext-link></comment>
+          <pub-id pub-id-type="pmid">24086083</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b49">
+        <element-citation publication-type="journal">
+          <collab>TIBI</collab>
+          <article-title>Genome sequencing and analysis of the model grass <italic>Brachypodium distachyon</italic></article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <fpage>763</fpage>
+          <lpage>768</lpage>
+          <pub-id pub-id-type="pmid">20148030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b50">
+        <element-citation publication-type="journal">
+          <collab>TTGC</collab>
+          <article-title>The tomato genome sequence provides insights into fleshy fruit evolution</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>485</volume>
+          <fpage>635</fpage>
+          <lpage>641</lpage>
+          <pub-id pub-id-type="pmid">22660326</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b51">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vitulo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Albiero</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Forcato</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>First survey of the wheat chromosome 5A composition through a next generation sequencing approach</article-title>
+          <source>PLoS ONE</source>
+          <year>2011</year>
+          <volume>6</volume>
+          <fpage>e26421</fpage>
+          <pub-id pub-id-type="pmid">22028874</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b53">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vrana</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kubalakova</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Simkova</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Cihalikova</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lysak</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Dolezel</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Flow sorting of mitotic chromosomes in common wheat (<italic>Triticum aestivum</italic> L.)</article-title>
+          <source>Genetics</source>
+          <year>2000</year>
+          <volume>156</volume>
+          <fpage>2033</fpage>
+          <lpage>2041</lpage>
+          <pub-id pub-id-type="pmid">11102393</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="supplementary-material">
+      <title>Supporting Information</title>
+      <p>Additional Supporting Information may be found in the online version of this article.</p>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>Figure S1</label>
+        <caption>
+          <p>Steps for the elongation of WGP&#x2122; tags by connecting them to the available 6A related sequence information.</p>
+        </caption>
+        <media mimetype="pdf" mime-subtype="pdf" xlink:href="tpj0079-0334-SD1.pdf" xlink:type="simple" id="d35e4931" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD2">
+        <label>Figure S2</label>
+        <caption>
+          <p>Different quantities of publicly available sequence information were connected with the physical contigs using the underlying WGP&#x2122; tags.</p>
+        </caption>
+        <media mimetype="txt" mime-subtype="txt" xlink:href="tpj0079-0334-SD2.txt" xlink:type="simple" id="d35e4938" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD3">
+        <label>Figure S3</label>
+        <caption>
+          <p>An example of homology between <sc>ltc</sc> and <sc>fpc</sc> contigs (as reference). <sc>ltc</sc> contigs were aligned against <sc>fpc</sc> contigs.</p>
+        </caption>
+        <media mimetype="pdf" mime-subtype="pdf" xlink:href="tpj0079-0334-SD3.pdf" xlink:type="simple" id="d35e4957" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD4">
+        <label>Figure S4</label>
+        <caption>
+          <p>Different gene classes assigned to the physical contigs.</p>
+        </caption>
+        <media mimetype="txt" mime-subtype="txt" xlink:href="tpj0079-0334-SD4.txt" xlink:type="simple" id="d35e4964" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD5">
+        <label>Table S1</label>
+        <caption>
+          <p>Reduction in number of contigs and singleton assembled using <sc>fpc</sc> as a result of decreasing cut-off value.</p>
+        </caption>
+        <media mimetype="pdf" mime-subtype="pdf" xlink:href="tpj0079-0334-SD5.pdf" xlink:type="simple" id="d35e4974" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD6">
+        <label>Table S2</label>
+        <caption>
+          <p>Comparison of 1214 <sc>ltc</sc>-assembled physical contigs of 6AS with <sc>fpc</sc> at different stringencies.</p>
+        </caption>
+        <media mimetype="txt" mime-subtype="txt" xlink:href="tpj0079-0334-SD6.txt" xlink:type="simple" id="d35e4987" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD7">
+        <label>Table S3</label>
+        <caption>
+          <p>Comparison of 1108 <sc>ltc</sc>-assembled physical contigs of 6AL with <sc>fpc</sc> at different stringencies.</p>
+        </caption>
+        <media mimetype="pdf" mime-subtype="pdf" xlink:href="tpj0079-0334-SD7.pdf" xlink:type="simple" id="d35e5000" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD8">
+        <label>Appendix S1</label>
+        <caption>
+          <p>Whole-genome profiling (WGP&#x2122;) of 6A chromosome arms.</p>
+        </caption>
+        <media mimetype="txt" mime-subtype="txt" xlink:href="tpj0079-0334-SD8.txt" xlink:type="simple" id="d35e5007" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD9">
+        <label>Appendix S2</label>
+        <caption>
+          <p>6AS <sc>ltc</sc>-derived physical map.</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD9.doc" xlink:type="simple" id="d35e5017" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD10">
+        <label>Appendix S3</label>
+        <caption>
+          <p>6AL <sc>ltc</sc>-derived physical map.</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD10.doc" xlink:type="simple" id="d35e5028" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD11">
+        <label>Appendix S4</label>
+        <caption>
+          <p>The <sc>fpc</sc>-based assembly of the WGP&#x2122;-based BAC fingerprints.</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD11.doc" xlink:type="simple" id="d35e5038" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD12">
+        <label>Appendix S5</label>
+        <caption>
+          <p>The <sc>fpc</sc>-based BAC assembly.</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD12.doc" xlink:type="simple" id="d35e5048" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD13">
+        <label>Appendix S6</label>
+        <caption>
+          <p>Construction of an <italic>in silico</italic> anchored, gene-decorated physical map.</p>
+        </caption>
+        <media mimetype="xls" mime-subtype="xls" xlink:href="tpj0079-0334-SD13.xls" xlink:type="simple" id="d35e5058" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD14">
+        <label>Appendix S7</label>
+        <caption>
+          <p>The effect of incorporating <italic>Ae.&#xA0;tauschii</italic> sequences to the overall anchoring of the 6A physical map.</p>
+        </caption>
+        <media mimetype="xls" mime-subtype="xls" xlink:href="tpj0079-0334-SD14.xls" xlink:type="simple" id="d35e5068" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD15">
+        <label>Appendix S8</label>
+        <caption>
+          <p>6A <sc>ltc</sc> contigs and the associated sequence information.</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD15.doc" xlink:type="simple" id="d35e5078" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD16">
+        <label>Appendix S9</label>
+        <caption>
+          <p>6A <sc>ltc</sc>-derived contigs genetically anchored to the genetic maps of wheat.</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD16.doc" xlink:type="simple" id="d35e5088" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD17">
+        <label>Appendix S10</label>
+        <caption>
+          <p>6A <sc>ltc</sc>-derived contigs anchored to barley genomic resources.</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD17.doc" xlink:type="simple" id="d35e5098" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD18">
+        <label>Appendix S11</label>
+        <caption>
+          <p>An estimation of the recombination frequencies along the chromosome.</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD18.doc" xlink:type="simple" id="d35e5105" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD19">
+        <label>Appendix S12</label>
+        <caption>
+          <p>Complementary description of five different classes of <sc>ltc</sc> contigs when compared with individual assemblies obtained via <sc>fpc</sc>.</p>
+        </caption>
+        <media mimetype="xlsx" mime-subtype="xlsx" xlink:href="tpj0079-0334-SD19.xlsx" xlink:type="simple" id="d35e5118" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD20">
+        <label>Appendix S13</label>
+        <caption>
+          <p>6AS final <sc>fpc</sc>-derived physical map with a cut-off at 1e<sup>&#x2212;11</sup>.</p>
+        </caption>
+        <media mimetype="xlsx" mime-subtype="xlsx" xlink:href="tpj0079-0334-SD20.xlsx" xlink:type="simple" id="d35e5131" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD21">
+        <label>Appendix S14</label>
+        <caption>
+          <p>6AL final <sc>fpc</sc>-derived physical map with a cut-off at 1e<sup>&#x2212;11</sup>.</p>
+        </caption>
+        <media mimetype="xlsx" mime-subtype="xlsx" xlink:href="tpj0079-0334-SD21.xlsx" xlink:type="simple" id="d35e5145" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD22">
+        <label>Appendix S15</label>
+        <caption>
+          <p>Scaffolding the <sc>ltc</sc> contig.</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD22.doc" xlink:type="simple" id="d35e5155" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD23">
+        <label>Appendix S16</label>
+        <caption>
+          <p>6A <sc>ltc</sc>-derived contigs mergable via Tu contigs (<sc>ltc</sc> scaffolds).</p>
+        </caption>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD23.doc" xlink:type="simple" id="d35e5168" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD24">
+        <label>Appendix S17</label>
+        <caption>
+          <p>BAC pooling scheme for WGP&#x2122; data production.</p>
+        </caption>
+        <media mimetype="xlsx" mime-subtype="xlsx" xlink:href="tpj0079-0334-SD24.xlsx" xlink:type="simple" id="d35e5175" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD25">
+        <media mimetype="xlsx" mime-subtype="xlsx" xlink:href="tpj0079-0334-SD25.xlsx" xlink:type="simple" id="d35e5177" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD26">
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD26.doc" xlink:type="simple" id="d35e5179" position="anchor"/>
+        <media mimetype="xlsx" mime-subtype="xlsx" xlink:href="tpj0079-0334-SD27.xlsx" xlink:type="simple" id="d35e5180" position="anchor"/>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD28.doc" xlink:type="simple" id="d35e5181" position="anchor"/>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD29.doc" xlink:type="simple" id="d35e5182" position="anchor"/>
+        <media mimetype="doc" mime-subtype="doc" xlink:href="tpj0079-0334-SD30.doc" xlink:type="simple" id="d35e5183" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </back>
+</article>

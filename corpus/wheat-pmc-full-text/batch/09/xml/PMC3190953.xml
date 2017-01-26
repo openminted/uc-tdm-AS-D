@@ -1,0 +1,2077 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.3 20070202//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.3?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">DNA Res</journal-id>
+      <journal-id journal-id-type="publisher-id">dnares</journal-id>
+      <journal-id journal-id-type="hwp">dnares</journal-id>
+      <journal-title-group>
+        <journal-title>DNA Research: An International Journal for Rapid Publication of Reports on Genes and Genomes</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1340-2838</issn>
+      <issn pub-type="epub">1756-1663</issn>
+      <publisher>
+        <publisher-name>Oxford University Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3190953</article-id>
+      <article-id pub-id-type="doi">10.1093/dnares/dsr019</article-id>
+      <article-id pub-id-type="publisher-id">dsr019</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Full Papers</subject>
+        </subj-group>
+        <series-title>Editor's Choice</series-title>
+      </article-categories>
+      <title-group>
+        <article-title><italic>In Silico</italic> Analysis of Transcription Factor Repertoires and Prediction of Stress-Responsive Transcription Factors from Six Major Gramineae Plants</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mochida</surname>
+            <given-names>Keiichi</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1">1</xref>
+          <xref ref-type="aff" rid="af2">2</xref>
+          <xref ref-type="aff" rid="af3">3</xref>
+          <xref ref-type="corresp" rid="cor1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yoshida</surname>
+            <given-names>Takuhiro</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sakurai</surname>
+            <given-names>Tetsuya</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yamaguchi-Shinozaki</surname>
+            <given-names>Kazuko</given-names>
+          </name>
+          <xref ref-type="aff" rid="af4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Shinozaki</surname>
+            <given-names>Kazuo</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1">1</xref>
+          <xref ref-type="aff" rid="af2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tran</surname>
+            <given-names>Lam-Son Phan</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1">1</xref>
+          <xref ref-type="corresp" rid="cor1">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="af1"><label>1</label><institution>RIKEN Plant Science Center</institution>, <addr-line>1-7-22 Suehiro-cho, Tsurumi-ku, Yokohama, Kanagawa 230-0045</addr-line>, <country>Japan</country></aff>
+      <aff id="af2"><label>2</label><institution>RIKEN Biomass Engineering Program</institution>, <addr-line>1-7-22 Suehiro-cho, Tsurumi-ku, Yokohama, Kanagawa 230-0045</addr-line>, <country>Japan</country></aff>
+      <aff id="af3"><label>3</label><institution>Kihara Institute for Biological Research, Yokohama City University</institution>, <addr-line>641-12 Maioka-cho, Totsuka-ku, Yokohama, Kanagawa 230-0045</addr-line>, <country>Japan</country></aff>
+      <aff id="af4"><label>4</label><institution>Japan International Center of Agricultural Sciences</institution>, <addr-line>Ibaraki 305-8686</addr-line>, <country>Japan</country></aff>
+      <author-notes>
+        <corresp id="cor1"><label>*</label>To whom correspondence should be addressed. Tel. +81 45-503-9593 (L.-S.P.T.), +81 45-503-9111 (K.M.). Fax. +81 45-503-9591 (L.-S.P.T.), +81 45-503-9591 (K.M.). Email: <email>tran@psc.riken.jp</email> (L.-S.P.T.); <email>mochida@psc.riken.jp</email> (K.M.)</corresp>
+        <fn fn-type="con">
+          <p>Edited by Satoshi Tabata</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <month>10</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>4</day>
+        <month>7</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>4</day>
+        <month>7</month>
+        <year>2011</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on the							<pub-date pub-type="epub"/>. -->
+      <volume>18</volume>
+      <issue>5</issue>
+      <fpage>321</fpage>
+      <lpage>332</lpage>
+      <history>
+        <date date-type="received">
+          <day>12</day>
+          <month>3</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>7</day>
+          <month>6</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; The Author 2011. Published by Oxford University Press on behalf of Kazusa DNA Research Institute.</copyright-statement>
+        <copyright-year>2011</copyright-year>
+        <license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (<uri xlink:type="simple" xlink:href="http://creativecommons.org/licenses/by-nc/3.0">http://creativecommons.org/licenses/by-nc/3.0</uri>), which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:type="simple" xlink:href="dsr019.pdf"/>
+      <abstract>
+        <p>The interactions between transcription factors (TFs) and <italic>cis</italic>-regulatory DNA sequences control gene expression, constituting the essential functional linkages of gene regulatory networks. The aim of this study is to identify and integrate all putative TFs from six grass species: <italic>Brachypodium distachyon</italic>, maize, rice, sorghum, barley, and wheat with significant information into an integrative database (GramineaeTFDB) for comparative genomics and functional genomics. For each TF, sequence features, promoter regions, domain alignments, GO assignment, FL-cDNA information, if available, and cross-references to various public databases and genetic resources are provided. Additionally, GramineaeTFDB possesses a tool which aids the users to search for putative <italic>cis</italic>-elements located in the promoter regions of TFs and predict the functions of the TFs using <italic>cis</italic>-element-based functional prediction approach. We also supplied hyperlinks to expression profiles of those TF genes of maize, rice, and barley, for which data are available. Furthermore, information about the availability of FOX and <italic>Ds</italic> mutant lines for rice and maize TFs, respectively, are also accessible through hyperlinks. Our study provides an important user-friendly public resource for functional analyses and comparative genomics of grass TFs, and understanding of the architecture of transcriptional regulatory networks and evolution of the TFs in agriculturally important cereal crops.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>abiotic stress</kwd>
+        <kwd><italic>cis</italic>-motif</kwd>
+        <kwd>database</kwd>
+        <kwd>grasses</kwd>
+        <kwd>transcription factor</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <label>1.</label>
+      <title>Introduction</title>
+      <p>The availability of complete genomic sequences of several important grasses, including <italic>Brachypodium distachyon</italic>, rice (<italic>Oryza sativa</italic>), sorghum (<italic>Sorghum bicolor</italic>), and maize (<italic>Zea mays</italic>), has provided a unique opportunity for comparative genomics studies of grass transcriptional regulatory networks controlled by sequence-specific DNA-binding transcription factors (TFs) which bind to DNA and either activate or repress gene transcription.<sup><xref ref-type="bibr" rid="DSR019C1">1</xref>&#x2013;<xref ref-type="bibr" rid="DSR019C4">4</xref></sup> The specific interactions between TFs and their binding sites, i.e. the <italic>cis</italic>-regulatory sequences, play a central role in the regulation of different biological processes such as development, growth, cell division, and responses to environmental stimuli.<sup><xref ref-type="bibr" rid="DSR019C5">5</xref>,<xref ref-type="bibr" rid="DSR019C6">6</xref></sup> Identification, characterization, and annotation of TF repertoires from different grass species will provide an insight on TF organization and biological functions of the TFs in grasses as well as their evolution. Additionally, from a biotechnology perspective, TF annotations are especially important for studying transcriptional regulatory switches involved in plant productivity, seed quality, and the sensing/response and adaptation to the environment. A great deal of evidence has demonstrated that identification and molecular tailoring of novel stress-responsive TFs have the potential to stabilize and protect crop performance under adverse conditions.<sup><xref ref-type="bibr" rid="DSR019C7">7</xref>,<xref ref-type="bibr" rid="DSR019C8">8</xref></sup></p>
+      <p>In plants, &#x223C;7% of all genes encodes putative TFs.<sup><xref ref-type="bibr" rid="DSR019C9">9</xref></sup> The majority of TFs can be grouped into a number of different families according to the specific type of DNA-binding domain that is present within their sequence.<sup><xref ref-type="bibr" rid="DSR019C5">5</xref>,<xref ref-type="bibr" rid="DSR019C10">10</xref>,<xref ref-type="bibr" rid="DSR019C11">11</xref></sup> In the past decade, the completion of various plant genome sequences and the development of high-throughput experimental techniques have enabled scientists to carry out genome-wide analyses of TF repertoires and described the function and organization of TF regulatory systems in a number of plant species.<sup><xref ref-type="bibr" rid="DSR019C12">12</xref>&#x2013;<xref ref-type="bibr" rid="DSR019C22">22</xref></sup></p>
+      <p>Taking advantage of the available complete sequence of <italic>B. distachyon</italic> and maize, we have identified the full complements of TFs from these species using a prediction method which used 51 Hidden Markov Models (HMMs) from the Pfam database.<sup><xref ref-type="bibr" rid="DSR019C23">23</xref></sup> We also used 11 models, which were originally created by HMMbuild of HMMER2 package, to identify the domains within the putative TF proteins. Given the importance of barley (<italic>Hordeum vulgare</italic>) and wheat (<italic>Triticum aestivum</italic>) as major cereals, their TF repertoires also deserve attention. However, currently their genome sequences have not yet been completed. We, therefore, used available full-length cDNA and coding sequence (CDS) resources (<uri xlink:type="simple" xlink:href="http://trifldb.psc.riken.jp">http://trifldb.psc.riken.jp</uri>) to identify all potential TFs from these two plants.<sup><xref ref-type="bibr" rid="DSR019C24">24</xref></sup> We integrated all the TF data from these four grasses together with those from rice and sorghum to develop a knowledge integrative database, named GramineaeTFDB. This database provides open access for researchers to all relevant and basic information on functional motifs, promoter regions, available FL-cDNAs, genomic distribution, and multiple sequence alignment of the DNA-binding domains for each TF family of each grass species. In addition, we supplied hyperlinks linking TFs of maize, rice, and barley to their expression profiles documented in Genevestigator. Since most of these TFs have not been experimentally characterized for regulatory function as indicated by assessment in PubMed, we searched for their putative regulatory function by assessing annotations of the gene ontology (GO) using comparative analysis with their <italic>Arabidopsis</italic> counterparts. In addition, we also mapped all putative <italic>cis</italic>-regulatory elements on the promoter regions of all TF encoding genes using a total of 480 <italic>cis</italic>-motifs, which include 11 well-defined abiotic stress-responsive ones. In this analysis, we placed a particular emphasis on stress-responsive <italic>cis</italic>-elements. Knowledge gained from identifying the presence of stress-responsive <italic>cis</italic>-elements, in addition to GO annotation, phylogenetics-based annotation, and expression data, enables effective prediction of stress-responsive TFs. Additionally, the supplied information on <italic>Ds</italic> and FOX and T-DNA insertion lines for a number of TFs from maize and rice, respectively, which can easily identified on GramineaeTFDB, have made convenient access to novel resources for loss- and gain-of-function analyses. Taken together, our results provide comprehensive information on TFs of six major grass species as well as tools for comparative genomic analyses of large TF data sets found in the grasses and non-grass plants.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <label>2.</label>
+      <title>Materials and methods</title>
+      <sec id="s2a">
+        <label>2.1.</label>
+        <title>Identification of TF repertoires in six grasses</title>
+        <p>The strategy and bioinformatics pipeline established previously were used to identify the complete sets of TFs from the annotated proteomes of <italic>B. distachyon</italic> (v1.0), maize (v4a.53), rice (v6.0), and sorghum (vSbi1_4), and the partial TF repertoires from barley and wheat using their FL-cDNA and CDS resources.<sup><xref ref-type="bibr" rid="DSR019C21">21</xref>,<xref ref-type="bibr" rid="DSR019C24">24</xref></sup> Fifty-one HMMs of Pfam and those of 11 originally created using HMMbuild of the HMMER2 package (<uri xlink:type="simple" xlink:href="http://hmmer.janelia.org/">http://hmmer.janelia.org/</uri>) were applied, which corresponded to a total of 61 TF families because there are two HHM profiles which are completely matched.<sup><xref ref-type="bibr" rid="DSR019C23">23</xref></sup> A pre-defined threshold of <italic>E</italic> &lt; 1e&#x2212;5 was used as the common value cut-off for HMMER search using built HMM profiles. The criteria described previously for the classification of each TF family were applied.<sup><xref ref-type="bibr" rid="DSR019C25">25</xref></sup> Additionally, the TFs identified by initial HMMER search were subjected to a homology search (blastp) with known TFs of <italic>Arabidopsis</italic> classified previously by PlantTFDB (<uri xlink:type="simple" xlink:href="http://planttfdb.cbi.pku.edu.cn/">http://planttfdb.cbi.pku.edu.cn/</uri>) and PlnTFDB (<uri xlink:type="simple" xlink:href="http://plntfdb.bio.uni-potsdam.de/v3.0/">http://plntfdb.bio.uni-potsdam.de/v3.0/</uri>) to confirm the HMMER search results based on the results of homology search (blastp <italic>E</italic>-value &#x2264; 1e&#x2212;30).<sup><xref ref-type="bibr" rid="DSR019C18">18</xref></sup> TFs for which the homology search yielded results of 1e&#x2212;30 &lt; blastp <italic>E</italic>-value &lt; 1e&#x2212;5 were inspected manually to exclude false-positive hits and determine the true <italic>E</italic>-value for each family (GramineaeTFDB Help page, Statistics). For wheat and barley, we also used the NCBI UniGene sequences of wheat and barley as queries in a blastx homology search against <italic>B. distachyon</italic> protein data set with a threshold <italic>E</italic>-value &lt; 1e&#x2212;10 to identify putative TFs.</p>
+      </sec>
+      <sec id="s2b">
+        <label>2.2.</label>
+        <title>Structural and functional annotations of putative grass TFs</title>
+        <p>Structural and functional annotations of putative grass TFs were done as described previously.<sup><xref ref-type="bibr" rid="DSR019C21">21</xref></sup> All of the similarity searches using blastn were performed with a threshold <italic>E</italic>-value &lt; 1e&#x2212;100, and the top scoring hit for each query was applied. All similarity searches with blastp against protein data sets were performed with a threshold <italic>E</italic>-value &lt; 1e&#x2212;5 to find possible functional descriptions for TF encoding genes. The top scoring hit for each query was applied. To determine the global characteristic features of functional categories of TF encoding genes of the grasses, the TFs were assigned to possible GO terms based on a blastp similarity search (<italic>E</italic>-value &lt; 1e&#x2212;10) using the data set of <italic>Arabidopsis</italic> of TAIR10.<sup><xref ref-type="bibr" rid="DSR019C26">26</xref></sup> The GO annotation and TFs of <italic>Arabidopsis</italic> were retrieved from TAIR and PlnTFDB, respectively. Particular emphasis was placed on sequences serving under the &#x2018;biological process&#x2019; functional category.</p>
+      </sec>
+      <sec id="s2c">
+        <label>2.3.</label>
+        <title>Discovery of cis-regulatory motifs in promoter regions of TF genes</title>
+        <p>Discovery of <italic>cis</italic>-regulatory motifs located in the &#x2212;500, &#x2212;1000, and &#x2212;3000 bp upstream sequences from the putative transcription start site for each TF encoding gene using 469 <italic>cis</italic>-motif sequences collected from the PLACE database (<uri xlink:type="simple" xlink:href="http://www.dna.affrc.go.jp/PLACE/">http://www.dna.affrc.go.jp/PLACE/</uri>)<sup><xref ref-type="bibr" rid="DSR019C27">27</xref></sup> and 11 major stress-responsive <italic>cis</italic>-motifs reported previously<sup><xref ref-type="bibr" rid="DSR019C28">28</xref></sup> was performed as described previously.<sup><xref ref-type="bibr" rid="DSR019C21">21</xref></sup> The <italic>cis-</italic>element search results were implemented into the GraminaeTFDB as a searchable property. In addition, these search results were also incorporated as an annotation track of the genome browser (Gbrowse).</p>
+      </sec>
+      <sec id="s2d">
+        <label>2.4.</label>
+        <title>Expression data for TF encoding genes</title>
+        <p>Hyperlinks linking those putative TF encoding genes of maize, rice, barley, and wheat, whose expression data are available in Genevestigator (<uri xlink:type="simple" xlink:href="https://www.genevestigator.com">https://www.genevestigator.com</uri>),<sup><xref ref-type="bibr" rid="DSR019C29">29</xref></sup> were built and supplied on GramineaeTFDB. For putative rice TF encoding genes, hyperlinks linking their expression patterns available at RiceXPro (<uri xlink:type="simple" xlink:href="http://ricexpro.dna.affrc.go.jp/">http://ricexpro.dna.affrc.go.jp/</uri>)<sup><xref ref-type="bibr" rid="DSR019C30">30</xref>,<xref ref-type="bibr" rid="DSR019C31">31</xref></sup> were also built and supplied on our database.</p>
+      </sec>
+      <sec id="s2e">
+        <label>2.5.</label>
+        <title>Genetic resources for TF encoding genes</title>
+        <p>Hyperlinks linking putative TF encoding genes of maize and rice to genetic resources available at <uri xlink:type="simple" xlink:href="http://www.plantgdb.org">http://www.plantgdb.org</uri>,<sup><xref ref-type="bibr" rid="DSR019C32">32</xref>,<xref ref-type="bibr" rid="DSR019C33">33</xref></sup> <uri xlink:type="simple" xlink:href="http://ricefox.psc.riken.jp">http://ricefox.psc.riken.jp</uri>,<sup><xref ref-type="bibr" rid="DSR019C34">34</xref></sup> and <uri xlink:type="simple" xlink:href="http://signal.salk.edu/cgi-bin/RiceGE">http://signal.salk.edu/cgi-bin/RiceGE</uri> databases were built and supplied on GramineaeTFDB.</p>
+      </sec>
+      <sec id="s2f">
+        <label>2.6.</label>
+        <title>Construction of a web-accessible database</title>
+        <p>The database is implemented in MySQL and the web interface of Perl CGI and Java script run on the Apache Web server. The definition strings used for sequence similarity searches for each database, the domain searches by InterProScan, <italic>cis</italic>-motif names from the PLACE database, and the assigned GO terms have been assembled as a keyword database enabling the users to specify queries on any keyword and to retrieve relevant information for genes from the GramineaeTFDB. A BLAST server was implemented to provide a similarity search interface for queried sequences using NCBI BLAST together with sequences of the six grasses, as well as those from <italic>Arabidopsis</italic>. Generic Genome Browser (Gbrowse)<sup><xref ref-type="bibr" rid="DSR019C35">35</xref></sup> was also implemented in GramineaeTFDB for sequenced grasses to visualize the gene annotations of the putative TF encoding genes together with <italic>cis</italic>-motifs found on the upstream sequence of the TF genes. All of the data in the GramineaeTFDB are accessible not only through a web interface but also as downloadable files from the website. The cross-references of corresponding data for each of the entries were also implemented into the GramineaeTFDB together with the URLs for each of the original referenced data to provide hyperlinks on the web interface with seamless navigations.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <label>3.</label>
+      <title>Results and discussion</title>
+      <sec id="s3a">
+        <label>3.1.</label>
+        <title>Identification of putative TFs in B. distachyon, maize, rice, sorghum, barley, and wheat</title>
+        <p>We have used the strategy and bioinformatics pipeline established previously to identify the complete TF repertoires from <italic>B. distachyon</italic> and maize from their annotated proteomes.<sup><xref ref-type="bibr" rid="DSR019C20">20</xref>,<xref ref-type="bibr" rid="DSR019C21">21</xref></sup> We started with retrieving the complete sets of predicted proteins from <italic>B. distachyon</italic> (v1.0) and maize (v4a.53), followed by an HMMER search with all HMMs assembled using a predefined threshold of <italic>E</italic> &lt; 1e&#x2212;5. We then refined the results by combined automatic and manual inspections of the raw alignments to exclude false-positive hits and determine the true <italic>E</italic>-value for each TF family (GramineaeTFDB, Help page, Statistics). Given the importance of wheat and barley as major cereal crops, although their completed genomic sequences are currently not available yet, we attempted to identify partial TF repertoires from these two grass species using their FL-cDNA and CDS resources housed at TriFLDB (<uri xlink:type="simple" xlink:href="http://trifldb.psc.riken.jp">http://trifldb.psc.riken.jp</uri>).<sup><xref ref-type="bibr" rid="DSR019C24">24</xref></sup> Thus, a total of 2152, 3623, 444, and 916 TF models were identified in <italic>B. distachyon</italic>, maize, barley, and wheat, respectively. These TFs were grouped into 60 families, while those of barley and wheat were classified into 49 and 58 families, respectively, based on the presence of domains that were specific for the family (Table&#xA0;<xref ref-type="table" rid="DSR019TB1">1</xref>).
+<table-wrap id="DSR019TB1" position="float"><label>Table&#xA0;1.</label><caption><p>Predicted TF models in six grasses</p></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/></colgroup><thead><tr><th rowspan="1" colspan="1"/><th align="left" rowspan="1" colspan="1">TF gene families</th><th align="left" rowspan="1" colspan="1"><italic>B. distachyon</italic><sup>a</sup></th><th align="left" rowspan="1" colspan="1"><italic>Z. mays</italic><sup>a</sup></th><th align="left" rowspan="1" colspan="1"><italic>S. bicolor</italic><sup>a</sup></th><th align="left" rowspan="1" colspan="1"><italic>O. sativa</italic><sup>a</sup></th><th align="left" rowspan="1" colspan="1"><italic>H. vulgare</italic><sup>b</sup></th><th align="left" rowspan="1" colspan="1"><italic>T. aestivum</italic><sup>b</sup></th></tr></thead><tbody><tr><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">(R1)R2R3_MYB</td><td rowspan="1" colspan="1">86</td><td rowspan="1" colspan="1">214</td><td rowspan="1" colspan="1">116</td><td rowspan="1" colspan="1">89</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">64</td></tr><tr><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">ABI3VP1</td><td rowspan="1" colspan="1">51</td><td rowspan="1" colspan="1">69</td><td rowspan="1" colspan="1">63</td><td rowspan="1" colspan="1">37</td><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">18</td></tr><tr><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">Alfin-like</td><td rowspan="1" colspan="1">16</td><td rowspan="1" colspan="1">33</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">7</td></tr><tr><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">AP2_EREBP</td><td rowspan="1" colspan="1">146</td><td rowspan="1" colspan="1">265</td><td rowspan="1" colspan="1">167</td><td rowspan="1" colspan="1">117</td><td rowspan="1" colspan="1">142</td><td rowspan="1" colspan="1">131</td></tr><tr><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">ARF</td><td rowspan="1" colspan="1">42</td><td rowspan="1" colspan="1">66</td><td rowspan="1" colspan="1">29</td><td rowspan="1" colspan="1">22</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">8</td></tr><tr><td rowspan="1" colspan="1">6</td><td rowspan="1" colspan="1">ARID</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">2</td></tr><tr><td rowspan="1" colspan="1">7</td><td rowspan="1" colspan="1">atypical_MYB</td><td rowspan="1" colspan="1">40</td><td rowspan="1" colspan="1">56</td><td rowspan="1" colspan="1">32</td><td rowspan="1" colspan="1">28</td><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">9</td></tr><tr><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">Aux_IAA</td><td rowspan="1" colspan="1">41</td><td rowspan="1" colspan="1">83</td><td rowspan="1" colspan="1">32</td><td rowspan="1" colspan="1">27</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">13</td></tr><tr><td rowspan="1" colspan="1">9</td><td rowspan="1" colspan="1">BBR-BPC</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">9</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">1</td></tr><tr><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">BES1</td><td rowspan="1" colspan="1">7</td><td rowspan="1" colspan="1">14</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">6</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">3</td></tr><tr><td rowspan="1" colspan="1">11</td><td rowspan="1" colspan="1">bHLH</td><td rowspan="1" colspan="1">158</td><td rowspan="1" colspan="1">274</td><td rowspan="1" colspan="1">171</td><td rowspan="1" colspan="1">107</td><td rowspan="1" colspan="1">14</td><td rowspan="1" colspan="1">29</td></tr><tr><td rowspan="1" colspan="1">12</td><td rowspan="1" colspan="1">bZIP</td><td rowspan="1" colspan="1">103</td><td rowspan="1" colspan="1">185</td><td rowspan="1" colspan="1">108</td><td rowspan="1" colspan="1">78</td><td rowspan="1" colspan="1">13</td><td rowspan="1" colspan="1">53</td></tr><tr><td rowspan="1" colspan="1">13</td><td rowspan="1" colspan="1">C2C2_Zn-CO-like</td><td rowspan="1" colspan="1">38</td><td rowspan="1" colspan="1">53</td><td rowspan="1" colspan="1">37</td><td rowspan="1" colspan="1">25</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">18</td></tr><tr><td rowspan="1" colspan="1">14</td><td rowspan="1" colspan="1">C2C2_Zn-Dof</td><td rowspan="1" colspan="1">27</td><td rowspan="1" colspan="1">44</td><td rowspan="1" colspan="1">29</td><td rowspan="1" colspan="1">25</td><td rowspan="1" colspan="1">21</td><td rowspan="1" colspan="1">9</td></tr><tr><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">C2C2_Zn-GATA</td><td rowspan="1" colspan="1">36</td><td rowspan="1" colspan="1">31</td><td rowspan="1" colspan="1">33</td><td rowspan="1" colspan="1">24</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">12</td></tr><tr><td rowspan="1" colspan="1">16</td><td rowspan="1" colspan="1">C2C2_Zn-YABBY</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">26</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">7</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">4</td></tr><tr><td rowspan="1" colspan="1">17</td><td rowspan="1" colspan="1">C2H2_Zn</td><td rowspan="1" colspan="1">106</td><td rowspan="1" colspan="1">185</td><td rowspan="1" colspan="1">113</td><td rowspan="1" colspan="1">94</td><td rowspan="1" colspan="1">11</td><td rowspan="1" colspan="1">26</td></tr><tr><td rowspan="1" colspan="1">18</td><td rowspan="1" colspan="1">C3H-TypeI</td><td rowspan="1" colspan="1">85</td><td rowspan="1" colspan="1">160</td><td rowspan="1" colspan="1">73</td><td rowspan="1" colspan="1">60</td><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">32</td></tr><tr><td rowspan="1" colspan="1">19</td><td rowspan="1" colspan="1">CAMTA</td><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">9</td><td rowspan="1" colspan="1">7</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">1</td></tr><tr><td rowspan="1" colspan="1">20</td><td rowspan="1" colspan="1">CCAAT_Dr1</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">1</td></tr><tr><td rowspan="1" colspan="1">21</td><td rowspan="1" colspan="1">CCAAT_HAP2</td><td rowspan="1" colspan="1">18</td><td rowspan="1" colspan="1">27</td><td rowspan="1" colspan="1">11</td><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">14</td></tr><tr><td rowspan="1" colspan="1">22</td><td rowspan="1" colspan="1">CCAAT_HAP3</td><td rowspan="1" colspan="1">18</td><td rowspan="1" colspan="1">22</td><td rowspan="1" colspan="1">13</td><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">7</td></tr><tr><td rowspan="1" colspan="1">23</td><td rowspan="1" colspan="1">CCAAT_HAP5</td><td rowspan="1" colspan="1">13</td><td rowspan="1" colspan="1">21</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">3</td></tr><tr><td rowspan="1" colspan="1">24</td><td rowspan="1" colspan="1">CPP</td><td rowspan="1" colspan="1">11</td><td rowspan="1" colspan="1">17</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">9</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">6</td></tr><tr><td rowspan="1" colspan="1">25</td><td rowspan="1" colspan="1">E2F_DP</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">19</td><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">9</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">3</td></tr><tr><td rowspan="1" colspan="1">26</td><td rowspan="1" colspan="1">EIL</td><td rowspan="1" colspan="1">6</td><td rowspan="1" colspan="1">9</td><td rowspan="1" colspan="1">7</td><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">7</td></tr><tr><td rowspan="1" colspan="1">27</td><td rowspan="1" colspan="1">GARP_ARRB</td><td rowspan="1" colspan="1">11</td><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">6</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">2</td></tr><tr><td rowspan="1" colspan="1">28</td><td rowspan="1" colspan="1">GARP_G2-like</td><td rowspan="1" colspan="1">59</td><td rowspan="1" colspan="1">71</td><td rowspan="1" colspan="1">48</td><td rowspan="1" colspan="1">38</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">12</td></tr><tr><td rowspan="1" colspan="1">29</td><td rowspan="1" colspan="1">GeBP</td><td rowspan="1" colspan="1">17</td><td rowspan="1" colspan="1">29</td><td rowspan="1" colspan="1">18</td><td rowspan="1" colspan="1">12</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">4</td></tr><tr><td rowspan="1" colspan="1">30</td><td rowspan="1" colspan="1">GRAS</td><td rowspan="1" colspan="1">48</td><td rowspan="1" colspan="1">84</td><td rowspan="1" colspan="1">74</td><td rowspan="1" colspan="1">34</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">13</td></tr><tr><td rowspan="1" colspan="1">31</td><td rowspan="1" colspan="1">GRF</td><td rowspan="1" colspan="1">28</td><td rowspan="1" colspan="1">17</td><td rowspan="1" colspan="1">38</td><td rowspan="1" colspan="1">14</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">1</td></tr><tr><td rowspan="1" colspan="1">32</td><td rowspan="1" colspan="1">HB</td><td rowspan="1" colspan="1">112</td><td rowspan="1" colspan="1">194</td><td rowspan="1" colspan="1">88</td><td rowspan="1" colspan="1">73</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">40</td></tr><tr><td rowspan="1" colspan="1">33</td><td rowspan="1" colspan="1">HMG-box</td><td rowspan="1" colspan="1">16</td><td rowspan="1" colspan="1">27</td><td rowspan="1" colspan="1">13</td><td rowspan="1" colspan="1">11</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">17</td></tr><tr><td rowspan="1" colspan="1">34</td><td rowspan="1" colspan="1">HRT</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">35</td><td rowspan="1" colspan="1">HSF</td><td rowspan="1" colspan="1">30</td><td rowspan="1" colspan="1">51</td><td rowspan="1" colspan="1">25</td><td rowspan="1" colspan="1">26</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">7</td></tr><tr><td rowspan="1" colspan="1">36</td><td rowspan="1" colspan="1">JUMONJI</td><td rowspan="1" colspan="1">24</td><td rowspan="1" colspan="1">33</td><td rowspan="1" colspan="1">22</td><td rowspan="1" colspan="1">14</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">4</td></tr><tr><td rowspan="1" colspan="1">37</td><td rowspan="1" colspan="1">LFY</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">4</td></tr><tr><td rowspan="1" colspan="1">38</td><td rowspan="1" colspan="1">LIM</td><td rowspan="1" colspan="1">20</td><td rowspan="1" colspan="1">30</td><td rowspan="1" colspan="1">9</td><td rowspan="1" colspan="1">11</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">8</td></tr><tr><td rowspan="1" colspan="1">39</td><td rowspan="1" colspan="1">LUG</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">6</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">3</td></tr><tr><td rowspan="1" colspan="1">40</td><td rowspan="1" colspan="1">MADS</td><td rowspan="1" colspan="1">83</td><td rowspan="1" colspan="1">96</td><td rowspan="1" colspan="1">83</td><td rowspan="1" colspan="1">46</td><td rowspan="1" colspan="1">58</td><td rowspan="1" colspan="1">124</td></tr><tr><td rowspan="1" colspan="1">41</td><td rowspan="1" colspan="1">MBF1</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">7</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">3</td></tr><tr><td rowspan="1" colspan="1">42</td><td rowspan="1" colspan="1">MYB_related</td><td rowspan="1" colspan="1">47</td><td rowspan="1" colspan="1">70</td><td rowspan="1" colspan="1">64</td><td rowspan="1" colspan="1">36</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">22</td></tr><tr><td rowspan="1" colspan="1">43</td><td rowspan="1" colspan="1">NAC</td><td rowspan="1" colspan="1">84</td><td rowspan="1" colspan="1">168</td><td rowspan="1" colspan="1">124</td><td rowspan="1" colspan="1">96</td><td rowspan="1" colspan="1">18</td><td rowspan="1" colspan="1">22</td></tr><tr><td rowspan="1" colspan="1">44</td><td rowspan="1" colspan="1">Nin-like</td><td rowspan="1" colspan="1">17</td><td rowspan="1" colspan="1">24</td><td rowspan="1" colspan="1">13</td><td rowspan="1" colspan="1">7</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">5</td></tr><tr><td rowspan="1" colspan="1">45</td><td rowspan="1" colspan="1">PcG</td><td rowspan="1" colspan="1">58</td><td rowspan="1" colspan="1">77</td><td rowspan="1" colspan="1">46</td><td rowspan="1" colspan="1">30</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">15</td></tr><tr><td rowspan="1" colspan="1">46</td><td rowspan="1" colspan="1">PHD</td><td rowspan="1" colspan="1">185</td><td rowspan="1" colspan="1">270</td><td rowspan="1" colspan="1">169</td><td rowspan="1" colspan="1">114</td><td rowspan="1" colspan="1">14</td><td rowspan="1" colspan="1">48</td></tr><tr><td rowspan="1" colspan="1">47</td><td rowspan="1" colspan="1">PLATZ</td><td rowspan="1" colspan="1">14</td><td rowspan="1" colspan="1">17</td><td rowspan="1" colspan="1">18</td><td rowspan="1" colspan="1">11</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">2</td></tr><tr><td rowspan="1" colspan="1">48</td><td rowspan="1" colspan="1">S1Fa-like</td><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">2</td></tr><tr><td rowspan="1" colspan="1">49</td><td rowspan="1" colspan="1">SAP</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">50</td><td rowspan="1" colspan="1">SBP</td><td rowspan="1" colspan="1">18</td><td rowspan="1" colspan="1">50</td><td rowspan="1" colspan="1">19</td><td rowspan="1" colspan="1">17</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">5</td></tr><tr><td rowspan="1" colspan="1">51</td><td rowspan="1" colspan="1">SRS</td><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">11</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">2</td></tr><tr><td rowspan="1" colspan="1">52</td><td rowspan="1" colspan="1">TCP</td><td rowspan="1" colspan="1">21</td><td rowspan="1" colspan="1">49</td><td rowspan="1" colspan="1">27</td><td rowspan="1" colspan="1">18</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">5</td></tr><tr><td rowspan="1" colspan="1">53</td><td rowspan="1" colspan="1">Trihelix</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">21</td><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">7</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">3</td></tr><tr><td rowspan="1" colspan="1">54</td><td rowspan="1" colspan="1">TUB</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">32</td><td rowspan="1" colspan="1">20</td><td rowspan="1" colspan="1">12</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">9</td></tr><tr><td rowspan="1" colspan="1">55</td><td rowspan="1" colspan="1">ULT</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">0</td></tr><tr><td rowspan="1" colspan="1">56</td><td rowspan="1" colspan="1">VOZ</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">2</td></tr><tr><td rowspan="1" colspan="1">57</td><td rowspan="1" colspan="1">Whirly</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">6</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">2</td></tr><tr><td rowspan="1" colspan="1">58</td><td rowspan="1" colspan="1">WRKY_Zn</td><td rowspan="1" colspan="1">80</td><td rowspan="1" colspan="1">151</td><td rowspan="1" colspan="1">96</td><td rowspan="1" colspan="1">79</td><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">36</td></tr><tr><td rowspan="1" colspan="1">59</td><td rowspan="1" colspan="1">zf-HD</td><td rowspan="1" colspan="1">16</td><td rowspan="1" colspan="1">26</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">15</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">2</td></tr><tr><td rowspan="1" colspan="1">60</td><td rowspan="1" colspan="1">zf-TAZ</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">0</td><td rowspan="1" colspan="1">1</td></tr><tr><td rowspan="1" colspan="1">61</td><td rowspan="1" colspan="1">ZIM</td><td rowspan="1" colspan="1">30</td><td rowspan="1" colspan="1">45</td><td rowspan="1" colspan="1">20</td><td rowspan="1" colspan="1">18</td><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">13</td></tr><tr><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">Total</td><td rowspan="1" colspan="1">2152</td><td rowspan="1" colspan="1">3623</td><td rowspan="1" colspan="1">2205</td><td rowspan="1" colspan="1">1597</td><td rowspan="1" colspan="1">444</td><td rowspan="1" colspan="1">916</td></tr></tbody></table><table-wrap-foot><fn><p><sup>a</sup>Complete TF repertoires predicted using proteomes annotated from genomic sequences.</p></fn><fn><p><sup>b</sup>Partial TF repertoires predicted using FL-cDNA resources available on TriFLDB.</p></fn></table-wrap-foot></table-wrap></p>
+        <p>Currently, the GRASSIUS is the only grass-specific database which provides accession to TFs from several grass species, including maize, rice, sorghum, and sugarcane, as a tool for comparative genomics of grass TFs.<sup><xref ref-type="bibr" rid="DSR019C19">19</xref></sup> However, although GRASSIUS contains maize and rice TFs, it used the old annotated version of maize and rice genomes (v3b.50 for maize and TIGR5 for rice) for TF identification. In our study, we used the newest release version of maize and rice annotated protein sequences, the v4a.53 and TIGR6 for maize and rice, respectively, for TF prediction. Furthermore, we also included the TF repertoires of sorghum (Sbi1.4), which were identified using the same approach (Table&#xA0;<xref ref-type="table" rid="DSR019TB1">1</xref>), with the aim to construct a comprehensive grass TF database of six major grass species for comparative genomics of the grass TFs.</p>
+        <p>Our distribution analysis has indicated that the TF families of the sequenced species, including <italic>B. distachyon</italic>, maize, rice, and sorghum, are scattered throughout the genome. The larger families, such as bHLH and PHD, have members that are distributed on almost every chromosome. Currently, the genomic sequencing and annotations of barley and wheat have not been finished yet; we will update their TF repertoires when completed genome sequences are available. Additionally, the number of predicted TFs of <italic>B. distachyon</italic>, maize, sorghum, and perhaps rice may be changed by future fine-tuning of gene annotations and/or HMM profiles. We will continue to update our website with new information to enhance the accuracy of TF prediction and annotation.</p>
+        <p>A number of studies have substantiated that sequence homology-based clustering of the members of several gene families correlates with their function.<sup><xref ref-type="bibr" rid="DSR019C21">21</xref>,<xref ref-type="bibr" rid="DSR019C36">36</xref>&#x2013;<xref ref-type="bibr" rid="DSR019C38">38</xref></sup> The complete sequence of the wild grass <italic>B. distachyon,</italic> the first member of the Pooideae subfamily, can serve as a template for analysis of the large genomes of economically important pooideae grasses, including wheat and barley. We, therefore, subjected all the putative UniGene sequences of wheat and barley to a blastx homology search with their <italic>B. distachyon</italic> counterparts (<italic>E</italic> &lt; 1e&#x2212;10) as a means to identify putative TFs by homology search-based approach. A significant proportion of wheat and barley TFs showed high homology to <italic>B. distachyon</italic> TFs (<ext-link ext-link-type="uri" xlink:href="http://dnaresearch.oxfordjournals.org/cgi/content/full/dsr019/DC1">Supplementary Table S1A and S1B</ext-link>, Fig.&#xA0;<xref ref-type="fig" rid="DSR019F1">1</xref>). Additionally, data shown in Fig.&#xA0;<xref ref-type="fig" rid="DSR019F1">1</xref> suggest that the HMM search of FL-cDNA/CDS and this homology search-based approach may complement and support each other. Furthermore, recognition of <italic>B. distachyon</italic> as an important model system has led to the development of highly efficient transformation, genetic markers, microarrays, and databases (<uri xlink:type="simple" xlink:href="http://www.brachybase.org">http://www.brachybase.org</uri>, <uri xlink:type="simple" xlink:href="http://www.phytozome.net">http://www.phytozome.net</uri>, <uri xlink:type="simple" xlink:href="http://www.modelcrop.org">http://www.modelcrop.org</uri>, <uri xlink:type="simple" xlink:href="http://mips.helmholtz-muenchen.de/plant/index.jsp">http://mips.helmholtz-muenchen.de/plant/index.jsp</uri>) and various valuable genetic resources, such as mutant and germplasm collections, have facilitated the use of <italic>B. distachyon</italic> by the research community.<sup><xref ref-type="bibr" rid="DSR019C4">4</xref>,<xref ref-type="bibr" rid="DSR019C39">39</xref>&#x2013;<xref ref-type="bibr" rid="DSR019C41">41</xref></sup> All these available tools can effectively aid homology-based functional annotations of the TFs of wheat, barley, and other pooideae grasses.
+<fig id="DSR019F1" position="float"><label>Figure&#xA0;1.</label><caption><p>Distribution and number of TFs of <italic>T. aestivum</italic> and <italic>H. vulgare</italic>, which were found by HMM search or homology search with TFs of <italic>B. distachyon</italic>. The HMM search was performed against full-length cDNA/CDS of both species. The homology search using blastx was applied between NCBI UniGene data set of both species and <italic>B. distachion</italic>, the predicted protein data set in Bdi1.0 with 1e&#x2212;10 to find significant homologues.</p></caption><graphic xlink:href="dsr01901"/></fig></p>
+      </sec>
+      <sec id="s3b">
+        <label>3.2.</label>
+        <title>GO-based functional annotation of identified TFs of B. distachyon, maize, sorghum, and rice</title>
+        <p>A search for potential functions of the identified TFs of <italic>B. distachyon</italic>, maize, sorghum, and rice by literature analysis of published papers on PubMed database has revealed that although the sequences of <italic>B. distachyon</italic>, maize, sorghum, and rice have been completed, the majority of their TFs remain experimentally uncharacterized. Thus, as a means to extend our current knowledge base regarding their regulatory function, especially in abiotic stress responses, we assessed the putative functions of the TFs of these four species via comparative analyses with relevant GO annotations of <italic>Arabidopsis</italic> in TAIR. First, sequence similarity searches against <italic>Arabidopsis</italic> counterparts having GO terms in TAIR were carried out to assign the profile of GO terms to the grass TFs at the biological process level. All of the assigned terms were then counted to grasp the overall representation of GO terms in applied entries of grass TFs, and the top 20 most abundant terms, excluding broad terms of &#x2018;regulation of transcription&#x2019;, &#x2018;DNA-dependent regulation of transcription&#x2019;, &#x2018;positive regulation of transcription&#x2019;, &#x2018;negative regulation of transcription&#x2019;, and &#x2018;biological process&#x2019;, were subsequently used to classify the TFs (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F2">2</xref>). A number of the analysed TFs are found to be related to stress and hormone responses, indicating important role of these TFs in controlling these biological processes. The assigned GO terms for each TF can be accessed through the detailed page of each TF of each grass species on our database (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref>I). These annotations provide an insight into potential functions of identified TFs of <italic>B. distachyon</italic>, maize, sorghum, and rice which would aid researchers in selection of TFs of interest for further studies. At the same time, a large number of analysed TFs could not be classified into any GO category, indicating the limited amount of functional information that we know regarding the biological processes that most of the TFs mediate, even for model plants such as <italic>Arabidopsis</italic>.
+<fig id="DSR019F2" position="float"><label>Figure&#xA0;2.</label><caption><p>The representative distributions of the GO terms for biological processes associated with TFs from <italic>B. distachyon</italic> (<italic>B.d.</italic>), <italic>Z. mays</italic> (<italic>Z.m</italic>.), <italic>S. bicolor</italic> (<italic>S.b</italic>.), and <italic>O. sativa</italic> (<italic>O.s</italic>.) in comparison with <italic>A. thaliana</italic> (<italic>A.t.</italic>). The top 20 abundantly found GO terms were assigned based on homology searches against annotated <italic>Arabidopsis</italic> genes (blastp homology search with <italic>E</italic>-value &lt; 1e&#x2212;10). TF numbers are shown for each GO term.</p></caption><graphic xlink:href="dsr01902"/></fig>
+<fig id="DSR019F3" position="float"><label>Figure&#xA0;3.</label><caption><p>The web-based user interface of GramineaeTFDB and a demonstration of a typical example of related annotations for a putative TF encoding gene. The homepage of GramineaeTFDB displays TF families and number of TFs of each TF family identified in six grass species: <italic>B. distachyon</italic>, <italic>O. sativa</italic>, <italic>S. bicolor</italic>, <italic>Z. mays</italic>, <italic>H. vulgare</italic>, and <italic>T. aestivum</italic>. By clicking on &#x2018;Go to TF search&#x2019;, the users will be directed to the search page which provides search queries for the names of TF families, keywords, sequence identifiers, identifiers of domains supported by InterProScan, GO terms, and available <italic>cis</italic>-motifs for each grass species (A). The search results are listed for a TF family of a grass species with a description of corresponding genes based on similarity searches. For those TF encoding genes of barley, maize, and rice, whose expression data are available through hyperlinks, [Genevestigator] and/or [RiceXPro] strings are displayed. [RiceFOX], [RiceGE], or [Closet DS] string is also displayed for to indicate the availability of hyperlinks linking the rice TFs to RiceFOX and RiceGE databases and maize TFs to PlantGDB database (<italic>Ac/Ds</italic> lines) in the detailed page (B). Users are able to navigate to the detailed annotation pages to browse the related annotations. The detailed annotation pages provide summarized basic information on each of the gene models annotated with gene structure. The figure for a gene structure is accessible via a hyperlink to a genome browser which is browsed together with other sequences allocated onto the grass genome (C). The HMM search result for the TF is displayed (D). The sequences of cDNA and protein are provided and all clickable buttons navigate users to the blast search interface directory (E). The similarity search results for each of the entries against NCBI nr, UniProt, and gene models of <italic>Arabidopsis</italic> and other grass species with detailed search results and hyperlinks to the original data (F). Resultant hierarchical clustering of homologous TFs can be browsed with multiple alignment of each cluster (G). Information of other sequence identifiers for representative transcript sequence databases, including UniGene, TIGR Gene Index, and PlantGDB as well as the probe ID of target sequences on the Affymetrix GeneChip, if available, are also accessible. Furthermore, information about available FL-cDNAs is provided through hyperlinks (H). The GO terms assigned to each of the entries based on InterProScan and sequence similarity search against the annotated genes of <italic>Arabidopsis</italic> of TAIR10 (I). The domain structure predicted by InterProScan is provided (J). The result of a <italic>cis</italic>-motif sequence pattern search of promoter regions for each gene is shown together with genomic gene structure (K). Hyperlinks to Genevestigator and/or RiceXPro are provided for those TFs for which expression data are available (L). Hyperlinks to RiceFox and/or RiceGE for rice TFs or PlantGDB (<italic>Ac/Ds</italic> lines) for maize TF (M).</p></caption><graphic xlink:href="dsr01903"/></fig></p>
+      </sec>
+      <sec id="s3c">
+        <label>3.3.</label>
+        <title>Discovery of cis-elements in the promoter regions of identified TFs and cis-element-based functional prediction of the TFs</title>
+        <p>Numerous <italic>cis</italic>-elements have been reported for their essential roles in determining the tissue-specific or stress-induced expression patterns of genes.<sup><xref ref-type="bibr" rid="DSR019C28">28</xref>,<xref ref-type="bibr" rid="DSR019C42">42</xref></sup> Strong lines of evidence have indicated that the <italic>cis</italic>-motifs are highly conserved among orthologous or paralogous genes and co-regulated genes, and defined <italic>cis</italic>-elements can effectively aid in the genome-wide screening of ABA and abiotic stress-responsive genes, which is our major interest.<sup><xref ref-type="bibr" rid="DSR019C42">42</xref>&#x2013;<xref ref-type="bibr" rid="DSR019C45">45</xref></sup> To facilitate the functional characterization and prediction of the TFs, especially the stress-related TFs, we retrieved the &#x2212;500, &#x2212;1000, and &#x2212;3000 promoter regions of all the TF genes from <italic>B. distachyon</italic>, maize, rice, and shorgum, whose complete genomic sequences are available. We provided this promoter sequence data set on our website in addition to other relevant information on the TFs for convenient downloading. The &#x2212;500, &#x2212;1000, and &#x2212;3000 bp promoter regions were subjected to an extensive <italic>in silico</italic> analyses to search for the existence of a total of 480 putative known <italic>cis</italic>-regulatory motifs, including 11 major abiotic stress-responsive <italic>cis</italic>-motifs.<sup><xref ref-type="bibr" rid="DSR019C27">27</xref>,<xref ref-type="bibr" rid="DSR019C28">28</xref></sup> Information on the <italic>cis</italic>-elements located in the promoter regions of each TF is accessible on the detailed page of each TF gene under &#x2018;<italic>cis</italic>-motif prediction&#x2019; function (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref>K). By clicking on either &#x2018;500 bp&#x2019;, &#x2018;1000 bp&#x2019;, or &#x2018;3000 bp&#x2019; function, the users will find additional page displaying the 500, 1000, or 3000 bp promoter region and the genomic sequence of the TF encoding gene, respectively, together with the <italic>cis</italic>-motifs located in the corresponding promoter region. The &#x2018;+&#x2019; was added to indicate the putative transcription start. In addition, by clicking on &#x2018;Go to TF search&#x2019; (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref>A), the users will be navigated to the search page that provides the &#x2018;<italic>cis</italic>-motif (stress-responsive)&#x2019; and &#x2018;<italic>cis</italic>-motif (PLACE)&#x2019; search functions, which enables the search for all types of <italic>cis</italic>-motifs implemented in our database in promoter region of any TF and/or the search for those TFs which contains the <italic>cis</italic>-motif(s) of interest. In combination with comparative sequence analysis-based GO annotations, <italic>cis</italic>-motif analysis can facilitate the systematic functional predictions of grass TFs. For instance, first we search for grass TF genes which harbour stress-responsive <italic>cis</italic>-motif(s) in their promoter regions using our grass-specific database. Next, we screen the identified TFs using GO annotation provided for each TF on detailed annotation page (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref>I). Thus, we will be able to identify the putative stress-responsive TFs based on both the existence of stress-responsive <italic>cis</italic>-motif(s) and the associated stress-responsive GO terms. The predicted stress-responsive function should be verified using an expression profiling approach prior to the launching of laborious <italic>in planta</italic> functional studies.</p>
+      </sec>
+      <sec id="s3d">
+        <label>3.4.</label>
+        <title>Expression patterns of TF encoding genes from maize, rice, and barley</title>
+        <p>The specifically expressed TFs are interesting as they are involved in defining the precise nature of individual tissues. Additionally, both <italic>in silico</italic> and genetic inspection suggested a positive correlation between the existence of <italic>cis</italic>-regulatory motifs and tissue-specific and/or stress-responsive expression patterns.<sup><xref ref-type="bibr" rid="DSR019C46">46</xref></sup> To make our database a comprehensive integrated database for functional characterization and selection of stress-responsive TFs, we provided access to tissue-specific expression profiles documented in Genevestigator and RiceXPro through hyperlinks for those TF encoding genes of barley, maize, and rice, for which data are available. These TF genes are indicated by either [Genevestigator] and/or [RiceXPro] strings on the detailed page of our database (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref>B). It is important to note that TF activity often depends on post-translational events and that levels of gene expression are not necessarily directly correlated to their regulatory activity. However, it is still useful to assess the extent of TF expression as it provides the first line of temporal and spatial evidence for linking them to putative <italic>in planta</italic> functions. The tissue-specific expression data can be used to address the combinatorial usage of TFs, which allows great precision and flexibility in dictating the transcriptional programme of different tissues. Ubiquitous TFs might control the general gene expression either in isolation or in combination with each other. Combinations of specific TFs might regulate tissue-specific genes. Alternatively, and perhaps most commonly, ubiquitous TFs might serve as a platform to regulate a broad set of genes, which are subsequently fine-tuned by specific regulators. Additionally, co-operativity among TFs has been shown to involve extensive protein&#x2013;protein interactions, both within families of homomeric and heteromeric TFs and between structurally unrelated TFs.<sup><xref ref-type="bibr" rid="DSR019C6">6</xref>,<xref ref-type="bibr" rid="DSR019C47">47</xref>,<xref ref-type="bibr" rid="DSR019C48">48</xref></sup> Analysis of such interactions will help elucidate patterns of combinatorial regulation and ultimately the regulatory functions of the TFs.<sup><xref ref-type="bibr" rid="DSR019C49">49</xref></sup></p>
+        <p>One of our main interests in the functional analysis of grass TF encoding genes is to identify abiotic stress-responsive TFs. At the present time, the Genevestigator resource contains stress-related expression data derived from high-throughput microarray experiments for the TF encoding genes of rice and barley. These expression patterns related to drought, cold, and salt stresses can also be accessed through the same hyperlinks provided on GramineaeTFDB for tissue-specific expression. The expression data together with information of <italic>cis</italic>-motif analyses, GO annotations, and sequence similarities inferred from comparative sequence analyses can facilitate the systematic functional predictions of identified TFs as well as provide valuable insights into further functional analyses of TFs. We will continue to update our database when expression information for other TF encoding genes becomes available.</p>
+      </sec>
+      <sec id="s3e">
+        <label>3.5.</label>
+        <title>Mutant resources for functional studies of maize and rice TFs</title>
+        <p>An advantage in functional analyses of maize and rice TFs is the availability of the <italic>Ds</italic>, FOX, and T-DNA insertion mutant resources for a number of maize and rice TFs.<sup><xref ref-type="bibr" rid="DSR019C32">32</xref>,<xref ref-type="bibr" rid="DSR019C50">50</xref>,<xref ref-type="bibr" rid="DSR019C51">51</xref></sup> A two-element Activator/Dissociation (<italic>Ac</italic>/<italic>Ds</italic>) gene trap system was successfully established and used for insertional mutagenesis in maize and numerous heterologous species to generate collections of stable, unlinked, and single-copy <italic>Ds</italic> mutants.<sup><xref ref-type="bibr" rid="DSR019C32">32</xref>,<xref ref-type="bibr" rid="DSR019C52">52</xref>,<xref ref-type="bibr" rid="DSR019C53">53</xref></sup> <italic>Ds</italic> mutant lines are generally gene knockout or knockdown mutants, but <italic>Ds</italic> activation tagging lines can also be identified among the mutants.<sup><xref ref-type="bibr" rid="DSR019C54">54</xref>,<xref ref-type="bibr" rid="DSR019C55">55</xref></sup> On the other hand, FOX lines are basically gain-of-function mutants which were constructed by constitutively overexpressing rice FL-cDNAs under the control of 35S promoter in <italic>Arabidopsis.</italic><sup><xref ref-type="bibr" rid="DSR019C50">50</xref></sup> As a means to make the search for FOX and <italic>Ds</italic> lines convenient, we provided [RiceFOX] and [Closet DS] strings on the list of the search page of each TF family of rice and maize, respectively, for those TFs for which mutants are available (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref>B). Users can gain full access to the respective mutant lines through the supplied hyperlinks on the detailed page (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref>M) or <ext-link ext-link-type="uri" xlink:href="http://dnaresearch.oxfordjournals.org/cgi/content/full/dsr019/DC1">Supplementary Tables S2 and S3</ext-link>. Additionally, for loss-of-function analysis of rice, the RiceGE database (<uri xlink:type="simple" xlink:href="http://signal.salk.edu/cgi-bin/RiceGE">http://signal.salk.edu/cgi-bin/RiceGE</uri>) is very useful and has broad functions. For instance, RiceGE provides information about available T-DNA insertion lines generated by an enhancer trap system. We, therefore, supplied [RiceGE] strings and hyperlinks linking directly the rice TFs to RiceGE on the detailed page (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref>B and M). <ext-link ext-link-type="uri" xlink:href="http://dnaresearch.oxfordjournals.org/cgi/content/full/dsr019/DC1">Supplementary Table S4</ext-link> summarizes the GramineaeTFDB-RiceGE hyperlinks available for the rice TFs. Our database will be occasionally updated when more information are available in public resources or new mutant resources of other grass species are constructed and made available to public.</p>
+      </sec>
+      <sec id="s3f">
+        <label>3.6.</label>
+        <title>Construction and description of a web-accessible database: GramineaeTFDB</title>
+        <p>Extensive annotations were performed at both gene and family levels to provide comprehensive knowledge on the identified TFs of <italic>B. distachyon</italic>, maize, rice, sorghum, barley, and wheat (for details, see the GramineaeTFDB Help page). All the annotation data were integrated to develop GramineaeTFDB (<uri xlink:type="simple" xlink:href="http://gramineaetfdb.psc.riken.jp">http://gramineaetfdb.psc.riken.jp</uri>) aimed at integrating TF repertoires of major grasses for functional analyses and comparative genomics of the grass TFs. Figure&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref> illustrates the web-based user interface of GramineaeTFDB. More detailed descriptions are provided on the Help page of GramineaeTFDB. Users can conveniently access to the detailed information on gene annotations, including gene structure, cDNA and protein sequences, domain structure predicted by InterProScan, promoter regions, domain alignments, clusters of homologous proteins within families, and GO terms derived from GO annotation using comparative analysis with their <italic>Arabidopsis</italic> counterparts. The data supplied are available not only for viewing but also for immediate downloading. The scientific community can browse predictions for a total of 2152, 3623, 444, and 916 TF models of <italic>B. distachyon</italic>, maize, barley, and wheat, respectively, as well as 1597 and 2205 TF models of rice and sorghum. Users can access to the search results listed for each TF family with description of each gene based on similarity search with TFs of other grasses and <italic>Arabidopsis</italic> as well as with sequences found in NCBI nr and UniProt databases. In detailed page for each TF gene, multiple alignments of amino acid sequences within TF families are also available for downloading and can be used for the construction of phylogenetic trees. Clustered results showing amino acid similarity with different levels of amino acid identity (30, 60, and 90%) and search functions for functional motif information of InterProScan, <italic>cis</italic>-motifs in promoter regions of TFs, and GO annotations are also provided. Additionally, GramineaeTFDB supplies an interface to perform sequence similarity searches using the NCBI BLAST program, as well as cross-reference links to different plant TF databases, including the general PlantTFDB and PlnTFDB, the grass-specific GRASSIUS, and the species-specific DATF, DRTF, and RARTF,<sup><xref ref-type="bibr" rid="DSR019C17">17</xref>&#x2013;<xref ref-type="bibr" rid="DSR019C19">19</xref>,<xref ref-type="bibr" rid="DSR019C56">56</xref>&#x2013;<xref ref-type="bibr" rid="DSR019C58">58</xref></sup> making it a comprehensive integrated database for comparative studies of the TFs derived from different plant species.</p>
+        <p>Integration of expression analysis, <italic>cis</italic>-motif, and GO annotations as well as comparative sequence analysis provided through this study may effectively aid in functional prediction of the TFs. It is noteworthy that for rice TF researchers, information about the availability of FOX and T-DNA insertion lines for rice TFs supplied through hyperlinks are very useful (Fig.&#xA0;<xref ref-type="fig" rid="DSR019F3">3</xref>B and M). Together with FOX, T-DNA insertion, and <italic>Ds</italic> lines, all the genetic and DNA resources, which are currently available for functional analyses of the grass TFs, can be accessed from our database. Table&#xA0;<xref ref-type="table" rid="DSR019TB2">2</xref> summarizes all these useful resources available for each of six grass species. Providing such an information to the users has made our database unique in comparison with either GRASSIUS or PlantTFDB or PlnTFDB. GramineaeTFDB will therefore meet the broad demands of researchers who strive to perform research on TFs of grasses with the goal of gaining greater understanding of their regulatory roles in different signalling pathways underlying plant development, differentiation, and environmental responses. Our database may accelerate functional genomics and comparative genomics of TFs within individual grass, among grasses themselves, between grasses and non-grass plants, as well as other organisms. We will expand GraminaeTFDB by adding TF repertoires from other grasses upon their genomic sequencing and annotations are completed.
+<table-wrap id="DSR019TB2" position="float"><label>Table&#xA0;2.</label><caption><p>The availability of resources for functional analyses of the TFs from six grass species</p></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/></colgroup><thead><tr><th rowspan="1" colspan="1"/><th align="left" rowspan="1" colspan="1">FLcDNA/CDS</th><th align="left" rowspan="1" colspan="1">Microarray probe</th><th align="left" rowspan="1" colspan="1">Clustered EST</th><th align="left" rowspan="1" colspan="1">Expression</th><th align="left" rowspan="1" colspan="1">Genetic resource</th></tr></thead><tbody><tr><td rowspan="1" colspan="1">Rice</td><td rowspan="1" colspan="1">KOME</td><td rowspan="1" colspan="1">Affymetrix</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">Genevestigator RiceXPro</td><td rowspan="1" colspan="1">RiceFOX RiceGE</td></tr><tr><td rowspan="1" colspan="1">Maize</td><td rowspan="1" colspan="1">Maize full-length cDNA project</td><td rowspan="1" colspan="1">Affymetrix</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">Genevestigator</td><td rowspan="1" colspan="1">PlantGDB</td></tr><tr><td rowspan="1" colspan="1"><italic>Sorghum</italic></td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">NCBI UniGene PlantGDB</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">NA</td></tr><tr><td rowspan="1" colspan="1"><italic>Brachypodium</italic></td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">TIGR Gene Index</td><td rowspan="1" colspan="1">NA</td><td rowspan="1" colspan="1">NA</td></tr><tr><td rowspan="1" colspan="1">Wheat</td><td rowspan="1" colspan="1">TriFLDB</td><td rowspan="1" colspan="1">Affymetrix</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">Genevestigator</td><td rowspan="1" colspan="1">NA</td></tr><tr><td rowspan="1" colspan="1">Barley</td><td rowspan="1" colspan="1">TriFLDB</td><td rowspan="1" colspan="1">Affymetrix</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">Genevestigator</td><td rowspan="1" colspan="1">NA</td></tr></tbody></table><table-wrap-foot><fn><p>NA, not available.</p></fn></table-wrap-foot></table-wrap></p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Funding</title>
+      <p>This work was supported by Grant-in-Aid for Young Scientists (B) (21780011) to K.M. from the <funding-source>Ministry of Education, Culture, Sports, Science and Technology of Japan</funding-source>. Research in L.-S.P.T.'s lab is supported by Grants-in-Aid (Start-up) for Scientific Research (No. <award-id>21870046</award-id>) from <funding-source>Ministry of Education, Culture, Sports, Science and Technology of Japan</funding-source>, and by Start-up Support grant (No. <award-id>M36-57000</award-id>) from <funding-source>RIKEN</funding-source> <funding-source>Yokohama Institute Director Discretionary Funds</funding-source>.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material id="PMC_1" content-type="local-data">
+        <caption>
+          <title>Supplementary Data</title>
+        </caption>
+        <media mimetype="text" mime-subtype="html" xlink:href="supp_18_5_321__index.html"/>
+        <media xlink:role="associated-file" mimetype="application" mime-subtype="vnd.ms-excel" xlink:href="supp_dsr019_dsr019supp_table1.xls"/>
+        <media xlink:role="associated-file" mimetype="application" mime-subtype="vnd.ms-excel" xlink:href="supp_dsr019_dsr019supp_table2.xls"/>
+        <media xlink:role="associated-file" mimetype="application" mime-subtype="vnd.ms-excel" xlink:href="supp_dsr019_dsr019supp_table3.xls"/>
+        <media xlink:role="associated-file" mimetype="application" mime-subtype="vnd.ms-excel" xlink:href="supp_dsr019_dsr019supp_table4.xls"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>The sequence data of <italic>B. distachyon</italic> and sorghum were produced by the US Department of Energy Joint Genome Institute in collaboration with the scientific user community. The authors thank MGSC and RAP-DB for maize and rice sequence data.</p>
+      <p>
+        <bold>Supplementary data:</bold>
+        <ext-link ext-link-type="uri" xlink:href="http://dnaresearch.oxfordjournals.org/cgi/content/full/dsr019/DC1">Supplementary data are available at www.dnaresearch.oxfordjournals.org.</ext-link>
+      </p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="DSR019C1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paterson</surname>
+              <given-names>A.H.</given-names>
+            </name>
+            <name>
+              <surname>Bowers</surname>
+              <given-names>J.E.</given-names>
+            </name>
+            <name>
+              <surname>Bruggmann</surname>
+              <given-names>R.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Sorghum bicolor genome and the diversification of grasses</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <fpage>551</fpage>
+          <lpage>6</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature07723">doi:10.1038/nature07723</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19189423</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schnable</surname>
+              <given-names>P.S.</given-names>
+            </name>
+            <name>
+              <surname>Ware</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Fulton</surname>
+              <given-names>R.S.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The B73 maize genome: complexity, diversity, and dynamics</article-title>
+          <source>Science</source>
+          <year>2009</year>
+          <volume>326</volume>
+          <fpage>1112</fpage>
+          <lpage>5</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1178534">doi:10.1126/science.1178534</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19965430</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tanaka</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Antonio</surname>
+              <given-names>B.A.</given-names>
+            </name>
+            <name>
+              <surname>Kikuchi</surname>
+              <given-names>S.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Rice Annotation Project Database (RAP-DB): 2008 update</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <fpage>D1028</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="pmid">18089549</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vogel</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <name>
+              <surname>Garvin</surname>
+              <given-names>D.F.</given-names>
+            </name>
+            <name>
+              <surname>Mockler</surname>
+              <given-names>T.C.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome sequencing and analysis of the model grass <italic>Brachypodium distachyon</italic></article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <fpage>763</fpage>
+          <lpage>8</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature08747">doi:10.1038/nature08747</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">20148030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Riechmann</surname>
+              <given-names>J.L.</given-names>
+            </name>
+            <name>
+              <surname>Heard</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Arabidopsis transcription factors: genome-wide comparative analysis among eukaryotes</article-title>
+          <source>Science</source>
+          <year>2000</year>
+          <volume>290</volume>
+          <fpage>2105</fpage>
+          <lpage>10</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.290.5499.2105">doi:10.1126/science.290.5499.2105</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">11118137</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tran</surname>
+              <given-names>L.S.</given-names>
+            </name>
+            <name>
+              <surname>Nakashima</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Yamaguchi-Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Plant gene networks in osmotic stress response: from genes to regulatory networks</article-title>
+          <source>Methods Enzymol.</source>
+          <year>2007</year>
+          <volume>428</volume>
+          <fpage>109</fpage>
+          <lpage>28</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0076-6879(07)28006-1">doi:10.1016/S0076-6879(07)28006-1</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">17875414</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tran</surname>
+              <given-names>L.S.</given-names>
+            </name>
+            <name>
+              <surname>Mochida</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional genomics of soybean for improvement of productivity in adverse conditions</article-title>
+          <source>Funct. Integr. Genomics</source>
+          <year>2010</year>
+          <volume>10</volume>
+          <fpage>447</fpage>
+          <lpage>62</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10142-010-0178-z">doi:10.1007/s10142-010-0178-z</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">20582712</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hadiarto</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Tran</surname>
+              <given-names>L.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Progress studies of drought-responsive genes in rice</article-title>
+          <source>Plant Cell Rep.</source>
+          <year>2011</year>
+          <volume>30</volume>
+          <fpage>297</fpage>
+          <lpage>310</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00299-010-0956-z">doi:10.1007/s00299-010-0956-z</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">21132431</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Udvardi</surname>
+              <given-names>M.K.</given-names>
+            </name>
+            <name>
+              <surname>Kakar</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Wandrey</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Legume transcription factors: global regulators of plant development and response to the environment</article-title>
+          <source>Plant Physiol.</source>
+          <year>2007</year>
+          <volume>144</volume>
+          <fpage>538</fpage>
+          <lpage>49</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.107.098061">doi:10.1104/pp.107.098061</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">17556517</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilson</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Charoensawan</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Kummerfeld</surname>
+              <given-names>S.K.</given-names>
+            </name>
+            <name>
+              <surname>Teichmann</surname>
+              <given-names>S.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>DBD&#x2014;taxonomically broad transcription factor predictions: new content and functionality</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <fpage>D88</fpage>
+          <lpage>92</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkm964">doi:10.1093/nar/gkm964</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">18073188</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tran</surname>
+              <given-names>L.S.</given-names>
+            </name>
+            <name>
+              <surname>Mochida</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>A platform for functional prediction and comparative analyses of transcription factors of legumes and beyond</article-title>
+          <source>Plant Signal Behav.</source>
+          <year>2010</year>
+          <volume>5</volume>
+          <fpage>550</fpage>
+          <lpage>2</lpage>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rushton</surname>
+              <given-names>P.J.</given-names>
+            </name>
+            <name>
+              <surname>Bokowiec</surname>
+              <given-names>M.T.</given-names>
+            </name>
+            <name>
+              <surname>Laudeman</surname>
+              <given-names>T.W.</given-names>
+            </name>
+            <name>
+              <surname>Brannock</surname>
+              <given-names>J.F.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Timko</surname>
+              <given-names>M.P.</given-names>
+            </name>
+          </person-group>
+          <article-title>TOBFAC: the database of tobacco transcription factors</article-title>
+          <source>BMC Bioinform.</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>53</fpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2105-9-53">doi:10.1186/1471-2105-9-53</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fredslund</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>DATFAP: a database of primers and homology alignments for transcription factors from 13 plant species</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>140</fpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2164-9-140">doi:10.1186/1471-2164-9-140</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">18366738</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Richardt</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Lang</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Reski</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Frank</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Rensing</surname>
+              <given-names>S.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>PlanTAPDB, a phylogeny-based resource of plant transcription-associated proteins</article-title>
+          <source>Plant Physiol.</source>
+          <year>2007</year>
+          <volume>143</volume>
+          <fpage>1452</fpage>
+          <lpage>66</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.107.095760">doi:10.1104/pp.107.095760</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">17337525</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Palaniswamy</surname>
+              <given-names>S.K.</given-names>
+            </name>
+            <name>
+              <surname>James</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Lamb</surname>
+              <given-names>R.S.</given-names>
+            </name>
+            <name>
+              <surname>Davuluri</surname>
+              <given-names>R.V.</given-names>
+            </name>
+            <name>
+              <surname>Grotewold</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>AGRIS and AtRegNet. a platform to link cis-regulatory elements and transcription factors into regulatory networks</article-title>
+          <source>Plant Physiol.</source>
+          <year>2006</year>
+          <volume>140</volume>
+          <fpage>818</fpage>
+          <lpage>29</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.105.072280">doi:10.1104/pp.105.072280</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">16524982</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mitsuda</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Ohme-Takagi</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional analysis of transcription factors in Arabidopsis</article-title>
+          <source>Plant Cell Physiol.</source>
+          <year>2009</year>
+          <volume>50</volume>
+          <fpage>1232</fpage>
+          <lpage>48</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/pcp/pcp075">doi:10.1093/pcp/pcp075</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19478073</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>PlantTFDB 2.0: update and improvement of the comprehensive plant transcription factor database</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <fpage>D1114</fpage>
+          <lpage>7</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkq1141">doi:10.1093/nar/gkq1141</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">21097470</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perez-Rodriguez</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Riano-Pachon</surname>
+              <given-names>D.M.</given-names>
+            </name>
+            <name>
+              <surname>Correa</surname>
+              <given-names>L.G.</given-names>
+            </name>
+            <name>
+              <surname>Rensing</surname>
+              <given-names>S.A.</given-names>
+            </name>
+            <name>
+              <surname>Kersten</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Mueller-Roeber</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>PlnTFDB: updated content and new features of the plant transcription factor database</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2010</year>
+          <volume>38</volume>
+          <fpage>D822</fpage>
+          <lpage>7</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkp805">doi:10.1093/nar/gkp805</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19858103</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yilmaz</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Nishiyama</surname>
+              <given-names>M.Y.</given-names>
+              <suffix>Jr.</suffix>
+            </name>
+            <name>
+              <surname>Fuentes</surname>
+              <given-names>B.G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>GRASSIUS: a platform for comparative regulatory genomics across the grasses</article-title>
+          <source>Plant Physiol.</source>
+          <year>2009</year>
+          <volume>149</volume>
+          <fpage>171</fpage>
+          <lpage>80</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.108.128579">doi:10.1104/pp.108.128579</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">18987217</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mochida</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Sakurai</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Yamaguchi-Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Tran</surname>
+              <given-names>L.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>LegumeTFDB: an integrative database of <italic>Glycine max</italic>, <italic>Lotus japonicus</italic> and <italic>Medicago truncatula</italic> transcription factors</article-title>
+          <source>Bioinformatics</source>
+          <year>2010</year>
+          <volume>26</volume>
+          <fpage>290</fpage>
+          <lpage>1</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btp645">doi:10.1093/bioinformatics/btp645</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19933159</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mochida</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Sakurai</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Yamaguchi-Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Tran</surname>
+              <given-names>L.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>In silico analysis of transcription factor repertoire and prediction of stress responsive transcription factors in soybean</article-title>
+          <source>DNA Res.</source>
+          <year>2009</year>
+          <volume>16</volume>
+          <fpage>353</fpage>
+          <lpage>69</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/dnares/dsp023">doi:10.1093/dnares/dsp023</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19884168</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Libault</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Joshi</surname>
+              <given-names>T.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>SoyDB: a knowledge database of soybean transcription factors</article-title>
+          <source>BMC Plant Biol.</source>
+          <year>2010</year>
+          <volume>10</volume>
+          <fpage>14</fpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2229-10-14">doi:10.1186/1471-2229-10-14</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">20082720</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sammut</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Finn</surname>
+              <given-names>R.D.</given-names>
+            </name>
+            <name>
+              <surname>Bateman</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Pfam 10 years on: 10,000 families and still growing</article-title>
+          <source>Brief Bioinform.</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>210</fpage>
+          <lpage>9</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bib/bbn010">doi:10.1093/bib/bbn010</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">18344544</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mochida</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Sakurai</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Ogihara</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>TriFLDB: a database of clustered full-length coding sequences from Triticeae with applications to comparative grass genomics</article-title>
+          <source>Plant Physiol.</source>
+          <year>2009</year>
+          <volume>150</volume>
+          <fpage>1135</fpage>
+          <lpage>46</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.109.138214">doi:10.1104/pp.109.138214</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19448038</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>Q.H.</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>A.Y.</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>DPTF: a database of poplar transcription factors</article-title>
+          <source>Bioinformatics</source>
+          <year>2007</year>
+          <volume>23</volume>
+          <fpage>1307</fpage>
+          <lpage>8</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btm113">doi:10.1093/bioinformatics/btm113</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">17392330</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Swarbreck</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Wilks</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Lamesch</surname>
+              <given-names>P.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Arabidopsis Information Resource (TAIR): gene structure and function annotation</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <fpage>D1009</fpage>
+          <lpage>14</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkm965">doi:10.1093/nar/gkm965</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">17986450</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Higo</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Ugawa</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Iwamoto</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Korenaga</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Plant cis-acting regulatory DNA elements (PLACE) database: 1999</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>1999</year>
+          <volume>27</volume>
+          <fpage>297</fpage>
+          <lpage>300</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/27.1.297">doi:10.1093/nar/27.1.297</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">9847208</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamaguchi-Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Organization of cis-acting regulatory elements in osmotic- and cold-stress-responsive promoters</article-title>
+          <source>Trends Plant Sci.</source>
+          <year>2005</year>
+          <volume>10</volume>
+          <fpage>88</fpage>
+          <lpage>94</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tplants.2004.12.012">doi:10.1016/j.tplants.2004.12.012</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">15708346</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hruz</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Laule</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Szabo</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genevestigator v3: a reference expression database for the meta-analysis of transcriptomes</article-title>
+          <source>Adv. Bioinform.</source>
+          <year>2008</year>
+          <volume>2008</volume>
+          <fpage>420747</fpage>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sato</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Antonio</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Namiki</surname>
+              <given-names>N.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Field transcriptome revealed critical developmental and physiological transitions involved in the expression of growth potential in japonica rice</article-title>
+          <source>BMC Plant Biol.</source>
+          <year>2011</year>
+          <volume>11</volume>
+          <fpage>10</fpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2229-11-10">doi:10.1186/1471-2229-11-10</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">21226959</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sato</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Antonio</surname>
+              <given-names>B.A.</given-names>
+            </name>
+            <name>
+              <surname>Namiki</surname>
+              <given-names>N.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>RiceXPro: a platform for monitoring gene expression in japonica rice grown under natural field conditions</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <fpage>D1141</fpage>
+          <lpage>8</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkq1085">doi:10.1093/nar/gkq1085</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">21045061</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Duvick</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Fu</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Muppirala</surname>
+              <given-names>U.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>PlantGDB: a resource for comparative plant genomics</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <fpage>D959</fpage>
+          <lpage>65</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkm1041">doi:10.1093/nar/gkm1041</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">18063570</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vollbrecht</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Duvick</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Schares</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide distribution of transposed dissociation elements in maize</article-title>
+          <source>Plant Cell</source>
+          <year>2010</year>
+          <volume>22</volume>
+          <fpage>1667</fpage>
+          <lpage>85</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1105/tpc.109.073452">doi:10.1105/tpc.109.073452</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">20581308</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sakurai</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Kondou</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Akiyama</surname>
+              <given-names>K.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>RiceFOX: a database of Arabidopsis mutant lines overexpressing rice full-length cDNA that contains a wide range of trait information to facilitate analysis of gene function</article-title>
+          <source>Plant Cell Physiol.</source>
+          <year>2011</year>
+          <volume>52</volume>
+          <fpage>265</fpage>
+          <lpage>73</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/pcp/pcq190">doi:10.1093/pcp/pcq190</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">21186176</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Donlin</surname>
+              <given-names>M.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Using the Generic Genome Browser (GBrowse)</article-title>
+          <source>Curr. Protoc. Bioinform.</source>
+          <year>2009</year>
+          <comment>Chapter 9, Unit 9 9</comment>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Xie</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Xie</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Xiong</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Systematic sequence analysis and identification of tissue-specific or stress-responsive genes of NAC transcription factor family in rice</article-title>
+          <source>Mol. Genet. Genomics</source>
+          <year>2008</year>
+          <volume>280</volume>
+          <fpage>547</fpage>
+          <lpage>63</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00438-008-0386-6">doi:10.1007/s00438-008-0386-6</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">18813954</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C37">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tran</surname>
+              <given-names>L.S.</given-names>
+            </name>
+            <name>
+              <surname>Quach</surname>
+              <given-names>T.N.</given-names>
+            </name>
+            <name>
+              <surname>Guttikonda</surname>
+              <given-names>S.K.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Molecular characterization of stress-inducible GmNAC genes in soybean</article-title>
+          <source>Mol. Genet. Genomics</source>
+          <year>2009</year>
+          <volume>281</volume>
+          <fpage>647</fpage>
+          <lpage>64</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00438-009-0436-8">doi:10.1007/s00438-009-0436-8</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19277718</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C38">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mochida</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Sakurai</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Yamaguchi-Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Tran</surname>
+              <given-names>L.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide analysis of two-component systems and prediction of stress-responsive two-component system members in soybean</article-title>
+          <source>DNA Res.</source>
+          <year>2010b</year>
+          <volume>17</volume>
+          <fpage>303</fpage>
+          <lpage>24</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/dnares/dsq021">doi:10.1093/dnares/dsq021</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">20817745</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C39">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vogel</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Hill</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>High-efficiency <italic>Agrobacterium</italic>-mediated transformation of <italic>Brachypodium distachyon</italic> inbred line Bd21-3</article-title>
+          <source>Plant Cell Rep.</source>
+          <year>2008</year>
+          <volume>27</volume>
+          <fpage>471</fpage>
+          <lpage>8</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00299-007-0472-y">doi:10.1007/s00299-007-0472-y</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">17999063</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C40">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vogel</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <name>
+              <surname>Tuna</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Budak</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Huo</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>Y.Q.</given-names>
+            </name>
+            <name>
+              <surname>Steinwand</surname>
+              <given-names>M.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Development of SSR markers and analysis of diversity in Turkish populations of <italic>Brachypodium distachyon</italic></article-title>
+          <source>BMC Plant Biol.</source>
+          <year>2009</year>
+          <volume>9</volume>
+          <fpage>88</fpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2229-9-88">doi:10.1186/1471-2229-9-88</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19594938</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C41">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Filiz</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Ozdemir</surname>
+              <given-names>B.S.</given-names>
+            </name>
+            <name>
+              <surname>Budak</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Vogel</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <name>
+              <surname>Tuna</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Budak</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular, morphological, and cytological analysis of diverse <italic>Brachypodium distachyon</italic> inbred lines</article-title>
+          <source>Genome</source>
+          <year>2009</year>
+          <volume>52</volume>
+          <fpage>876</fpage>
+          <lpage>90</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1139/G09-062">doi:10.1139/G09-062</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19935911</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C42">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>D.W.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>S.H.</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>S.B.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Functional conservation of a root hair cell-specific cis-element in angiosperms with different root hair distribution patterns</article-title>
+          <source>Plant Cell</source>
+          <year>2006</year>
+          <volume>18</volume>
+          <fpage>2958</fpage>
+          <lpage>70</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1105/tpc.106.045229">doi:10.1105/tpc.106.045229</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">17098810</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C43">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Walther</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Brunnemann</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Selbig</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The regulatory code for transcriptional response diversity and its relation to genome structural properties in <italic>A. thaliana</italic></article-title>
+          <source>PLoS Genet.</source>
+          <year>2007</year>
+          <volume>3</volume>
+          <fpage>e11</fpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.0030011">doi:10.1371/journal.pgen.0030011</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">17291162</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C44">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Ruan</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Ho</surname>
+              <given-names>T.H.</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Quatrano</surname>
+              <given-names>R.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cis-regulatory element based targeted gene finding: genome-wide identification of abscisic acid- and abiotic stress-responsive genes in <italic>Arabidopsis thaliana</italic></article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <fpage>3074</fpage>
+          <lpage>81</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/bti490">doi:10.1093/bioinformatics/bti490</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">15890746</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C45">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Won</surname>
+              <given-names>S.K.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>Y.J.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>H.Y.</given-names>
+            </name>
+            <name>
+              <surname>Heo</surname>
+              <given-names>Y.K.</given-names>
+            </name>
+            <name>
+              <surname>Cho</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Cho</surname>
+              <given-names>H.T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cis-element- and transcriptome-based screening of root hair-specific genes and their functional characterization in Arabidopsis</article-title>
+          <source>Plant Physiol.</source>
+          <year>2009</year>
+          <volume>150</volume>
+          <fpage>1459</fpage>
+          <lpage>73</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.109.140905">doi:10.1104/pp.109.140905</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19448035</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C46">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vandepoele</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Quimbaya</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Casneuf</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>De Veylder</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Van de Peer</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Unraveling transcriptional control in Arabidopsis using cis-regulatory elements and coexpression networks</article-title>
+          <source>Plant Physiol.</source>
+          <year>2009</year>
+          <volume>150</volume>
+          <fpage>535</fpage>
+          <lpage>46</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.109.136028">doi:10.1104/pp.109.136028</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19357200</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C47">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tran</surname>
+              <given-names>L.S.</given-names>
+            </name>
+            <name>
+              <surname>Nakashima</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Sakuma</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Isolation and functional analysis of Arabidopsis stress-inducible NAC transcription factors that bind to a drought-responsive cis-element in the early responsive to dehydration stress 1 promoter</article-title>
+          <source>Plant Cell</source>
+          <year>2004</year>
+          <volume>16</volume>
+          <fpage>2481</fpage>
+          <lpage>98</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1105/tpc.104.022699">doi:10.1105/tpc.104.022699</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">15319476</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C48">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamaguchi-Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcriptional regulatory networks in cellular responses and tolerance to dehydration and cold stresses</article-title>
+          <source>Annu. Rev. Plant Biol.</source>
+          <year>2006</year>
+          <volume>57</volume>
+          <fpage>781</fpage>
+          <lpage>803</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev.arplant.57.032905.105444">doi:10.1146/annurev.arplant.57.032905.105444</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">16669782</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C49">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vaquerizas</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Kummerfeld</surname>
+              <given-names>S.K.</given-names>
+            </name>
+            <name>
+              <surname>Teichmann</surname>
+              <given-names>S.A.</given-names>
+            </name>
+            <name>
+              <surname>Luscombe</surname>
+              <given-names>N.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>A census of human transcription factors: function, expression and evolution</article-title>
+          <source>Nat. Rev. Genet.</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>252</fpage>
+          <lpage>63</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrg2538">doi:10.1038/nrg2538</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19274049</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C50">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kondou</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Higuchi</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Takahashi</surname>
+              <given-names>S.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Systematic approaches to using the FOX hunting system to identify useful rice genes</article-title>
+          <source>Plant J.</source>
+          <year>2009</year>
+          <volume>57</volume>
+          <fpage>883</fpage>
+          <lpage>94</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-313X.2008.03733.x">doi:10.1111/j.1365-313X.2008.03733.x</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">18980645</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C51">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mochida</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomics and bioinformatics resources for crop improvement</article-title>
+          <source>Plant Cell Physiol.</source>
+          <year>2010</year>
+          <volume>51</volume>
+          <fpage>497</fpage>
+          <lpage>523</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/pcp/pcq027">doi:10.1093/pcp/pcq027</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">20208064</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C52">
+        <label>52</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuromori</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Kamiya</surname>
+              <given-names>A.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A trial of phenome analysis using 4000 Ds-insertional mutants in gene-coding regions of Arabidopsis</article-title>
+          <source>Plant J.</source>
+          <year>2006</year>
+          <volume>47</volume>
+          <fpage>640</fpage>
+          <lpage>51</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-313X.2006.02808.x">doi:10.1111/j.1365-313X.2006.02808.x</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">16813574</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C53">
+        <label>53</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kolesnik</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Szeverenyi</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Bachmann</surname>
+              <given-names>D.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Establishing an efficient Ac/Ds tagging system in rice: large-scale analysis of Ds flanking sequences</article-title>
+          <source>Plant J.</source>
+          <year>2004</year>
+          <volume>37</volume>
+          <fpage>301</fpage>
+          <lpage>14</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1365-313X.2003.01948.x">doi:10.1046/j.1365-313X.2003.01948.x</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">14690513</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C54">
+        <label>54</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ichikawa</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Nakazawa</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Kawashima</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Sequence database of 1172 T-DNA insertion sites in Arabidopsis activation-tagging lines that showed phenotypes in T1 generation</article-title>
+          <source>Plant J.</source>
+          <year>2003</year>
+          <volume>36</volume>
+          <fpage>421</fpage>
+          <lpage>9</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1365-313X.2003.01876.x">doi:10.1046/j.1365-313X.2003.01876.x</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">14617098</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C55">
+        <label>55</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuromori</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Takahashi</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kondou</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Shinozaki</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Matsui</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Phenome analysis in plant species using loss-of-function and gain-of-function mutants</article-title>
+          <source>Plant Cell Physiol.</source>
+          <year>2009</year>
+          <volume>50</volume>
+          <fpage>1215</fpage>
+          <lpage>31</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/pcp/pcp078">doi:10.1093/pcp/pcp078</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">19502383</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C56">
+        <label>56</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Guo</surname>
+              <given-names>A.Y.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>PlantTFDB: a comprehensive plant transcription factor database</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <fpage>D966</fpage>
+          <lpage>9</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkm841">doi:10.1093/nar/gkm841</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">17933783</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C57">
+        <label>57</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Iida</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Seki</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Sakurai</surname>
+              <given-names>T.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>RARTF: database and tools for complete sets of Arabidopsis transcription factors</article-title>
+          <source>DNA Res.</source>
+          <year>2005</year>
+          <volume>12</volume>
+          <fpage>247</fpage>
+          <lpage>56</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/dnares/dsi011">doi:10.1093/dnares/dsi011</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">16769687</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="DSR019C58">
+        <label>58</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gao</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Zhong</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>A.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>DRTF: a database of rice transcription factors</article-title>
+          <source>Bioinformatics</source>
+          <year>2006</year>
+          <volume>22</volume>
+          <fpage>1286</fpage>
+          <lpage>7</lpage>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btl107">doi:10.1093/bioinformatics/btl107</ext-link>
+          </comment>
+          <pub-id pub-id-type="pmid">16551659</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

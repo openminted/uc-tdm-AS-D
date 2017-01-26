@@ -1,0 +1,3647 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3598684</article-id>
+      <article-id pub-id-type="publisher-id">1471-2164-14-77</article-id>
+      <article-id pub-id-type="pmid">23379779</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2164-14-77</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Characterisation of the wheat (<italic>triticum aestivum</italic> L<italic>.</italic>) transcriptome by <italic>de novo</italic> assembly for the discovery of phosphate starvation-responsive genes: gene expression in Pi-stressed wheat</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" id="A1">
+          <name>
+            <surname>Oono</surname>
+            <given-names>Youko</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>yoono@nias.affrc.go.jp</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Kobayashi</surname>
+            <given-names>Fuminori</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>kobafumi@affrc.go.jp</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Kawahara</surname>
+            <given-names>Yoshihiro</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>y.kawahara@affrc.go.jp</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Yazawa</surname>
+            <given-names>Takayuki</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>tyazawa@affrc.go.jp</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Handa</surname>
+            <given-names>Hirokazu</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>hirokazu@affrc.go.jp</email>
+        </contrib>
+        <contrib contrib-type="author" id="A6">
+          <name>
+            <surname>Itoh</surname>
+            <given-names>Takeshi</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>taitoh@affrc.go.jp</email>
+        </contrib>
+        <contrib contrib-type="author" id="A7">
+          <name>
+            <surname>Matsumoto</surname>
+            <given-names>Takashi</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>mat@affrc.go.jp</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Agrogenomics Research Center, National Institute of Agrobiological Sciences, 2-1-2 Kannondai, Tsukuba, Ibaraki, 305-8602, Japan</aff>
+      <aff id="I2"><label>2</label>Government and Public Corporation Information Systems, Hitachi Co., Ltd., 2-4-18 Toyo, Koto-ku, Tokyo, 135-8633, Japan</aff>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>4</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>14</volume>
+      <fpage>77</fpage>
+      <lpage>77</lpage>
+      <history>
+        <date date-type="received">
+          <day>16</day>
+          <month>10</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>30</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2013 Oono et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Oono et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1471-2164/14/77"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Phosphorus (P) is an essential macronutrient for plant growth and development. To modulate their P homeostasis, plants must balance P uptake, mobilisation, and partitioning to various organs. Despite the worldwide importance of wheat as a cultivated food crop, molecular mechanisms associated with phosphate (Pi) starvation in wheat remain unclear. To elucidate these mechanisms, we used RNA-Seq methods to generate transcriptome profiles of the wheat variety &#x2018;Chinese Spring&#x2019; responding to 10 days of Pi starvation.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We carried out <italic>de novo</italic> assembly on 73.8 million high-quality reads generated from RNA-Seq libraries. We then constructed a transcript dataset containing 29,617 non-redundant wheat transcripts, comprising 15,047 contigs and 14,570 non-redundant full-length cDNAs from the TriFLDB database. When compared with barley full-length cDNAs, 10,656 of the 15,047 contigs were unalignable, suggesting that many might be distinct from barley transcripts. The average expression level of the contigs was lower than that of the known cDNAs, implying that these contigs included transcripts that were rarely represented in the full-length cDNA library. Within the non-redundant transcript set, we identified 892&#x2013;2,833 responsive transcripts in roots and shoots, corresponding on average to 23.4% of the contigs not covered by cDNAs in TriFLDB under Pi starvation. The relative expression level of the wheat <italic>IPS1</italic> (<italic>Induced by Phosphate Starvation 1</italic>) homologue, <italic>TaIPS1</italic>, was 341-fold higher in roots and 13-fold higher in shoots; this finding was further confirmed by qRT-PCR analysis. A comparative analysis of the wheat- and rice-responsive transcripts for orthologous genes under Pi-starvation revealed commonly upregulated transcripts, most of which appeared to be involved in a general response to Pi starvation, namely, an IPS1-mediated signalling cascade and its downstream functions such as Pi remobilisation, Pi uptake, and changes in Pi metabolism.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Our transcriptome profiles demonstrated the impact of Pi starvation on global gene expression in wheat. This study revealed that enhancement of the Pi-mediated signalling cascade using <italic>IPS1</italic> is a potent adaptation mechanism to Pi starvation that is conserved in both wheat and rice and validated the effectiveness of using short-read next-generation sequencing data for wheat transcriptome analysis in the absence of reference genome information.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd><italic>De novo</italic> assembly</kwd>
+        <kwd>RNA-Seq</kwd>
+        <kwd>Transcriptome</kwd>
+        <kwd>Wheat</kwd>
+        <kwd>Phosphorus</kwd>
+        <kwd>Phosphate starvation</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>As a key component of plant cell molecules, phosphorus (P) is an essential macronutrient for plant growth. Large quantities are used in fertiliser, but worldwide P resources will be exhausted by the end of this century [<xref ref-type="bibr" rid="B1">1</xref>]. Phosphate (Pi) starvation can generally be observed throughout an afflicted field. Visual symptoms of Pi starvation (&#x2212;P) are the development of dark-green leaf colour and a reduction in shoot elongation and leaf size. As &#x2212;P progresses in wheat (<italic>Triticum aestivum</italic> L.), the oldest leaves become chlorotic and show signs of desiccation [<xref ref-type="bibr" rid="B2">2</xref>].</p>
+      <p>Wheat is a major staple food crop in many parts of the world in terms of both cultivation area and prevalence as a food source. To meet the increasing global demand for wheat, this crop&#x2019;s exploitation of nutrients must be made more efficient and its requirement for nutritional fertilisers reduced. Because wheat is primarily grown on substrates with low P levels, such as the acidic soils of tropical and subtropical regions and the calcareous soils of temperate regions, an important constraint to wheat production is its lack of tolerance to &#x2212;P.</p>
+      <p>Various genetic approaches have been used to understand genetic control of &#x2212;P tolerance in wheat; these include aneuploid analyses of the nulli-tetrasomic series and wheat alien chromosome addition lines of the cultivar &#x2018;Chinese Spring&#x2019; (CS) and quantitative trait locus (QTL) mapping [<xref ref-type="bibr" rid="B3">3</xref>-<xref ref-type="bibr" rid="B6">6</xref>]. QTL analyses using &#x2013;P-sensitive CS and the tolerant variety &#x2018;Lovrin 10&#x2019; indicated that CS possesses positive alleles of the major QTLs for P use efficiency on chromosomes 3B, 4B, and 5A [<xref ref-type="bibr" rid="B4">4</xref>]. In another study, seven and six QTLs were repeatedly detected controlling P uptake and use efficiency [<xref ref-type="bibr" rid="B5">5</xref>]. A large number of QTLs for agronomic trait changes under low or high P concentrations have been detected on all chromosomes in the hexaploid wheat genome, implying that &#x2212;P tolerance is controlled by polygenes [<xref ref-type="bibr" rid="B5">5</xref>]. However, the studies are few in number; a reverse genetic approach could help characterise genes that potentially contribute to complex multilocus traits and their global transcriptional networks in Pi-starved wheat.</p>
+      <p>Several technologies, including massively parallel sequencing and microarray analysis, have recently been used to simultaneously catalogue the effects of &#x2212;P on the expressions of thousands of genes in model species [<xref ref-type="bibr" rid="B7">7</xref>-<xref ref-type="bibr" rid="B10">10</xref>]. Transcriptome sequencing using next generation sequencing (NGS) technology provides high-resolution data and is a powerful tool for studying global transcriptional networks. The evaluation of sequence-based expression profiles can identify responsive genes and provide functional annotation for genes underlying complex and multilocus traits under &#x2212;P in wheat.</p>
+      <p>In model species, transcriptome profiling and the quantification of gene expression levels are generally performed by mapping reads from the NGS analysis to a reference genome sequence and annotating genes. The strategies for model species are not feasible in wheat, as its reference genome sequence and gene annotation are still incomplete; an international project to achieve these goals is currently making progress (IWGSC: International Wheat Genome Sequencing Consortium, <ext-link ext-link-type="uri" xlink:href="http://www.wheatgenome.org/">http://www.wheatgenome.org/</ext-link>). This project may take considerable time, because of the difficulties involved in sequencing the huge (40 times larger than rice), highly-repetitive hexaploid genome of wheat.</p>
+      <p>The database of putative full-length cDNAs for wheat, TriFLDB, has released approximately 16,000 full-length cDNAs (<ext-link ext-link-type="uri" xlink:href="http://trifldb.psc.riken.jp/index.pl">http://trifldb.psc.riken.jp/index.pl</ext-link>) [<xref ref-type="bibr" rid="B11">11</xref>]. Although this dataset is a useful reference for transcript mapping, it is incomplete, because 36,000 to 50,000 genes have been estimated per diploid genome based on the 3B chromosome of hexaploid wheat [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B13">13</xref>]. Recently, <italic>de novo</italic> transcript assembly analysis has made possible comprehensive analyses of transcriptomes, and several studies have detailed the transcriptome sequencing of various non-model species, including wheat, using massively parallel sequencing technology [<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B15">15</xref>]. <italic>De novo</italic> assembly of short sequences of transcripts enables researchers to reconstruct the sequences of entire transcriptomes, identify and catalogue all of the expressed genes, separate isoforms, and capture transcript expression levels.</p>
+      <p>Although computer-based <italic>de novo</italic> assembly tools (e.g., Trans-ABySS, Velvet-Oases, and Trinity) [<xref ref-type="bibr" rid="B16">16</xref>-<xref ref-type="bibr" rid="B18">18</xref>] have been developed in conjunction with massively parallel sequencing, their usefulness in transcriptome assembly is not yet well demonstrated, and improvements can still be achieved using recent advances in bioinformatics. Some studies have used short-read sequence data obtained with the Illumina sequencer for <italic>de novo</italic> assembly; others have used the relatively long-read sequence data obtained with the Roche 454 pyrosequencing system or have adopted a hybrid approach of both short and long reads. In addition, contig construction is greatly affected by sequence read quality (i.e., length) and quantity. Furthermore, the cDNA library construction methods, sequencing technologies, and data pre-treatment techniques chosen influence the quality of the assembled transcriptomes [<xref ref-type="bibr" rid="B19">19</xref>]. Consequently, a comparison of several assembly programs is needed to determine the best combination of parameters, which can then serve as a guideline for sequence assembly performance.</p>
+      <p>In this study, we verified the <italic>de novo</italic> assembly approach by comparing analyses from several programs using short-read sequence data obtained from wheat cultivar CS seedlings under &#x2013;P. We constructed a wheat transcript dataset for <italic>de novo</italic> assembly and quantified gene expression. As a reference in the gene expression analysis, we used a non-redundant set of transcripts generated from the <italic>de novo</italic> assembly and full-length cDNAs. This dataset was also used to assess transcripts, to investigate sequence similarity, for conservation analyses among several plant species, and for comparison with our previous report on rice transcript profiling under &#x2212;P conditions [<xref ref-type="bibr" rid="B10">10</xref>]. We demonstrated that an overall mechanism regulating gene expression of &#x2212;P-responsive genes in wheat could be effectively characterised using short-read NGS data. A comparison of gene expression profiles in wheat and rice revealed the presence of conserved gene expression systems, which appear to be essential to adaptation to &#x2013;P conditions. Finally, we described an effective method for assembly of short transcript sequences to discover novel functional genes in the absence of a reference genome. The transcript assembly generated in this study should serve as a useful resource for wheat genomics and genetics.</p>
+    </sec>
+    <sec>
+      <title>Results and discussion</title>
+      <sec>
+        <title>Construction of the wheat transcript dataset</title>
+        <p>A set of transcripts consisting of cDNAs from TriFLDB and contigs from RNA-Seq reads was constructed as shown in Figure <xref ref-type="fig" rid="F1">1</xref> (steps 1&#x2013;5). A total of 12 libraries (two tissues, two treatments, and three replicates) from seedlings subjected to &#x2013;P (0 mM NaH<sub>2</sub>PO<sub>4</sub>; 0 mg L<sup>&#x2212;1</sup> P) and control (0.323 mM NaH<sub>2</sub>PO<sub>4</sub>; 10 mg L<sup>&#x2212;1</sup> P) treatments were used in the RNA-Seq analysis. Overall, 115 million paired-end short-read sequences were produced by an Illumina HighSeq 2000 system (Illumina, San Diego, CA, USA) and used for <italic>de novo</italic> assembly after the removal of low-quality segments. The choice of data pre-treatment technique, in which data are pre-processed to remove sequencing errors and other artefacts, influences the accuracy and precision of the gene expression analyses [<xref ref-type="bibr" rid="B19">19</xref>]. Trans-ABySS, Velvet-Oases (henceforth Oases), and Trinity were used for sequence assembly in this experiment (see Methods for details). Each contig included various transcript isoforms, which cause redundancy. Because their inclusion could present difficulties in a quantitative analysis, the redundant contigs were removed. The removal of these contigs generated a non-redundant set of contigs, which were assessed using various output parameters&#x2014;such as number of contigs and mean contig length as a function of <italic>k</italic>-mer length&#x2014;to select the appropriate assembly program. The largest assembly, comprising 555,287 contigs at least 101 bp long, was produced by Trinity, while the smallest, consisting of 337,969 contigs of at least 100 bp in length, was generated by Oases. However, Oases yielded the best results of the three assembly programs, with a maximum contig length of 22,610 bp, a mean contig length of 1,113 bp, and a median contig length of 698 bp (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref> and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>).</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Strategy used in the wheat RNA-Seq analysis.</bold> A set of 29,617 wheat transcripts was constructed from 15,047 non-redundant contigs and 14,570 full-length cDNAs in TriFLDB. To identify the responsive transcripts under &#x2013;P conditions, all reads were aligned to the transcripts using Bowtie, and a G-test with an FDR value cut-off&#x2009;&lt;&#x2009;0.01 was used.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-14-77-1"/>
+        </fig>
+        <p>Contig quantity and mean length are often used in <italic>de novo</italic> assembly assessment, but these values may not reflect contig accuracy. We therefore assessed accuracy using the three assembly programs discussed above. We counted the number of contigs that could be aligned with 90% or greater coverage to their corresponding full-length cDNAs in TriFLDB (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). Of the three assembly programs, Oases assembled the longest transcripts and had the highest percentage of alignments to the wheat full-length cDNAs. Although it generated the smallest number of contigs, Oases was able to reconstruct 87% of the TriFLDB cDNAs with identity &#x2265;90% and coverage &#x2265;50%, or 75% of the TriFLDB cDNAs with identity &#x2265;90% and coverage &#x2265;90% (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). Conversely, Trinity produced the largest number of contigs, but could only reconstruct 16% of the TriFLDB cDNAs (identity &#x2265;90%, coverage &#x2265;90%). Trans-ABySS could reconstruct just 6% of the TriFLDB cDNAs (identity &#x2265;90%, coverage &#x2265;90%). Thus, the reconstruction percentages of the latter two programs were considerably worse than those of Oases, and we concluded that Oases was the most appropriate program for our analyses. Of the 337,969 contigs generated from Oases, 169,024 could not be aligned to the cDNAs using BLAT. When the longest contigs per locus were selected, 67,616 of them could not be aligned with the cDNAs.</p>
+        <p>Because the 67,616 non-redundant contigs could indicate homology to either plants or non-plants, we treated them as contaminants and removed them from the analysis, except when a BLASTX hit matched a land plant. The contigs were analysed for similarity/sequence conservation against nr (non-redundancy datasets of various species) using a BLASTX search (E-value &#x2264;1E-03). A total of 15,047 contigs were found in land plants (top hit), with 91.4% in monocots, such as <italic>Hordeum vulgare</italic> ssp. <italic>vulgare</italic> (33.3%; 5,017 transcripts), <italic>Brachypodium distachyon</italic> (26.0%; 3,913 transcripts), <italic>Oryza sativa</italic> ssp. <italic>japonica</italic> group (13.5%; 2,025 transcripts), <italic>Sorghum bicolor</italic> (7.3%; 1,101 transcripts), <italic>O. sativa</italic> ssp. <italic>indica</italic> group (4.9%; 743 transcripts), <italic>T. aestivum</italic> (3.6%; 537 transcripts), <italic>Zea mays</italic> (2.1%; 317 transcripts), and other <italic>H. vulgare</italic> subspecies (0.7%; 100 transcripts) (Additional file <xref ref-type="supplementary-material" rid="S4">4</xref>). Notably, 10,656 of the 15,047 contigs could not be aligned to full-length cDNAs in the barley full-length cDNA database (<ext-link ext-link-type="uri" xlink:href="http://barleyflc.dna.affrc.go.jp/hvdb/">http://barleyflc.dna.affrc.go.jp/hvdb/</ext-link>) using BLAT, suggesting that most of the contigs were distinct from the barley transcripts. Finally, we obtained 29,617 wheat transcripts by combining the 15,047 non-redundant contigs with 14,570 non-redundant full-length cDNAs (Steps 1&#x2013;5 in Figure <xref ref-type="fig" rid="F1">1</xref>). This dataset is available upon request.</p>
+      </sec>
+      <sec>
+        <title>Mapping reads to the wheat transcript dataset</title>
+        <p>Characterisations of contigs and cDNAs from the 29,617 transcripts are presented in Table <xref ref-type="table" rid="T1">1</xref>. To determine whether our contigs reflected the effect of &#x2212;P in wheat, 51,130,274 of 115,495,198 quality-controlled paired-end reads were aligned back to the wheat transcript dataset (contigs and cDNAs) using Bowtie (step 6 in Figure <xref ref-type="fig" rid="F1">1</xref>, Table <xref ref-type="table" rid="T2">2</xref>), which is designed for short-read mapping onto the genome. We used 39.6&#x2013;46.7% of the uniquely-mapped reads in the expression analysis of each treatment. Replicates in all treatments were highly correlated (coefficient&#x2009;&gt;&#x2009;0.94), and reads from the same treatment were merged to calculate reads per kilobase of exon model per million mapped reads (RPKM), which indicates the relative transcription amount. We observed that 70% (10,144) of the 14,570 non-redundant cDNAs were associated with at least one unique read. On average, 92% of transcript length was covered by reads, with coverage depth of each transcript averaging 420 reads. These statistics suggested that nearly complete coverage of the entire cDNA length was obtained in this analysis. Many reads were impossible to align back to the contigs, possibly because the redundant contigs had been removed in the previous analysis (Step 3 in Figure <xref ref-type="fig" rid="F1">1</xref>, with the longest contigs per locus selected by Oases).</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Characterisation of the 29,617 wheat transcripts obtained from contigs and cDNAs in TriFLDB</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="right"/>
+              <col align="right"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">&#xA0;</th>
+                <th align="right">
+                  <bold>Contig</bold>
+                </th>
+                <th align="right">
+                  <bold>cDNA</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">No. of transcripts<hr/></td>
+                <td align="right" valign="bottom">15,047<hr/></td>
+                <td align="right" valign="bottom">14,570<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Maximum length<hr/></td>
+                <td align="right" valign="bottom">20,980<hr/></td>
+                <td align="right" valign="bottom">8,983<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Minimum length<hr/></td>
+                <td align="right" valign="bottom">100<hr/></td>
+                <td align="right" valign="bottom">64<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Average length<hr/></td>
+                <td align="right" valign="bottom">769<hr/></td>
+                <td align="right" valign="bottom">1,755<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Median length<hr/></td>
+                <td align="right" valign="bottom">394<hr/></td>
+                <td align="right" valign="bottom">1,655<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">Transcripts larger than 1,000 bp</td>
+                <td align="right">3,649</td>
+                <td align="right">12,089</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>Statistical summary of the reads aligned against the set of contigs and full-length cDNAs in TriFLDB</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="center">
+                  <bold>Tissue</bold>
+                </th>
+                <th align="center">
+                  <bold>Total aligned</bold>
+                </th>
+                <th align="center">
+                  <bold>Unique-hit</bold>
+                </th>
+                <th align="center">
+                  <bold>%</bold>
+                </th>
+                <th align="center">
+                  <bold>Multi-hit</bold>
+                </th>
+                <th align="center">
+                  <bold>%</bold>
+                </th>
+                <th align="center">
+                  <bold>Unaligned</bold>
+                </th>
+                <th align="center">
+                  <bold>%</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="center" valign="bottom">Root_0d<hr/></td>
+                <td align="center" valign="bottom">21,505,572<hr/></td>
+                <td align="center" valign="bottom">8,793,897<hr/></td>
+                <td align="center" valign="bottom">40.9<hr/></td>
+                <td align="center" valign="bottom">2,166,997<hr/></td>
+                <td align="center" valign="bottom">10.1<hr/></td>
+                <td align="center" valign="bottom">10,544,678<hr/></td>
+                <td align="center" valign="bottom">49.0<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">Root_10d<hr/></td>
+                <td align="center" valign="bottom">20,619,073<hr/></td>
+                <td align="center" valign="bottom">8,161,939<hr/></td>
+                <td align="center" valign="bottom">39.6<hr/></td>
+                <td align="center" valign="bottom">1,971,013<hr/></td>
+                <td align="center" valign="bottom">9.6<hr/></td>
+                <td align="center" valign="bottom">10,486,121<hr/></td>
+                <td align="center" valign="bottom">50.9<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">Shoot_0d<hr/></td>
+                <td align="center" valign="bottom">37,116,104<hr/></td>
+                <td align="center" valign="bottom">17,335,224<hr/></td>
+                <td align="center" valign="bottom">46.7<hr/></td>
+                <td align="center" valign="bottom">6,676,313<hr/></td>
+                <td align="center" valign="bottom">18<hr/></td>
+                <td align="center" valign="bottom">13,104,567<hr/></td>
+                <td align="center" valign="bottom">35.3<hr/></td>
+              </tr>
+              <tr>
+                <td align="center">Shoot_10d</td>
+                <td align="center">36,254,449</td>
+                <td align="center">16,839,214</td>
+                <td align="center">46.4</td>
+                <td align="center">6,046,477</td>
+                <td align="center">16.7</td>
+                <td align="center">13,368,758</td>
+                <td align="center">36.9</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>TriFLDB: <ext-link ext-link-type="uri" xlink:href="http://trifldb.psc.riken.jp/index.pl">http://trifldb.psc.riken.jp/index.pl</ext-link>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Distribution of RPKM values was assessed by comparing contigs and cDNAs (Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>). Average RPKM values from each treatment ranged from 2.75&#x2013;4.75 for contigs and 31.95&#x2013;33.68 for cDNAs. The distributions of maximum and median RPKM values were lower for contigs than cDNAs, suggesting that most cDNAs were highly expressed, probably reflecting the overall distribution of gene expression in this study. We identified 529 contigs, however, with higher expressions than the average observed for cDNAs under one or more of the four tissue/treatment combinations. Some of these contigs may correspond to transcripts rarely represented in the full-length cDNA library or transcripts that were expressed at low levels in other conditions.</p>
+      </sec>
+      <sec>
+        <title>Identification of differentially-expressed wheat transcripts under &#x2212;P</title>
+        <p>A G-test (FDR [False Discovery Rate] &lt;0.01) of the RPKM-derived read counts was performed to detect differences in gene expression between control and &#x2013;P-treated plants, and to identify responsive wheat transcripts under &#x2013;P conditions (step 7 in Figure <xref ref-type="fig" rid="F1">1</xref>). In roots, 1,004 transcripts were upregulated and 892 were downregulated; in shoots, 2,833 and 1,382 transcripts were upregulated and downregulated, respectively. The most numerous responsive transcripts were those upregulated in shoots, which were more than twice as abundant as those upregulated in roots (Figure <xref ref-type="fig" rid="F2">2</xref>). This result may be a consequence of the fact that most of the cDNAs in TriFLDB were constructed from shoot samples. On average, 23.4% of the transcripts in the responsive transcript set were contigs not covered by cDNAs in TriFLDB (Figure <xref ref-type="fig" rid="F2">2</xref>). The wheat transcript set contained more contigs than cDNAs, but there were more responsive cDNAs than contigs. The low-expression contigs might reflect small differences in expression between the two conditions that may not be detectable statistically, making the characterization of these transcripts difficult (Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>). We were able to demonstrate, nonetheless, that the <italic>de novo</italic> assembly strategy can improve transcriptome analysis of a non-model species and that these upregulated or downregulated contigs could be functionally annotated as Pi responses in wheat under &#x2013;P.</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>Distribution of transcripts upregulated or downregulated in response to &#x2212;P.</bold> The total number of upregulated or downregulated transcripts identified by RNA-Seq was determined in roots and shoots under &#x2013;P conditions. Each bar shows the distribution of transcripts with their matching cDNAs in TriFLDB (light grey) and contigs (grey).</p>
+          </caption>
+          <graphic xlink:href="1471-2164-14-77-2"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Functional annotation of responsive transcripts under &#x2013;P</title>
+        <p>To obtain a functional annotation of upregulated wheat transcripts under &#x2013;P conditions, we used Gene Ontology (GO) biological process categories. GO annotations were assigned to 40.7% (409) of the root transcripts and 34.4% (974) of the shoot transcripts. We identified the top 20 GO categories into which upregulated transcripts in roots and shoots were distributed (Figure <xref ref-type="fig" rid="F3">3</xref>). Although the numbers of transcripts differed, the overall categorisations were very similar between roots and shoots. Sixteen of the 20 GO categories were represented in both roots and shoots: oxidation-reduction process, protein phosphorylation, transmembrane transport, metabolic process, regulation of transcription (DNA-dependent), lipid metabolic process, proteolysis, transport, translation and carbohydrate metabolic process, defence response, response to oxidative stress, biosynthetic process, cation transport, response to stress, and cell redox homeostasis. Transcripts from both roots and shoots most belonged to the oxidation-reduction process category. This category was represented by many instances of cytochrome P450 and oxidoreductase 2OG-FeII, both of which were reported to be upregulated in response to oxidative stress in <italic>Arabidopsis</italic>[<xref ref-type="bibr" rid="B20">20</xref>]. The protein phosphorylation category included several protein kinases, which may participate in signal transduction during many cellular processes under &#x2013;P conditions, including metabolism, transcription, and cell cycle progression and differentiation. The lipid metabolic process category had many instances of lipase, which can alter membrane lipid composition to maintain internal Pi homeostasis under &#x2212;P [<xref ref-type="bibr" rid="B21">21</xref>].</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Distribution of Gene Ontology (GO) biological process categories for upregulated contigs.</bold> The number of upregulated transcripts in roots and shoots categorised in the top twenty GOs are summarised. The <italic>y</italic>-axis indicates the category. The <italic>x</italic>-axis indicates the number of transcripts in a category.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-14-77-3"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Analysis of <italic>IPS1</italic> expression by RNA-Seq and qRT-PCR</title>
+        <p>Because RPKM values obtained from RNA-Seq indicated significant upregulation of <italic>TaIPS1,</italic> the wheat <italic>IPS1</italic> homologue, in root and shoot samples after 10 d of &#x2013;P conditions, its expression levels were further analysed<italic>. IPS1</italic>, a non-protein coding gene that includes highly conserved sequences near miR399 complementary regions in different plant species [<xref ref-type="bibr" rid="B22">22</xref>], has been found to be strongly upregulated under &#x2212;P in rice [<xref ref-type="bibr" rid="B10">10</xref>]. The homologous sequences <italic>TaIPS1.1</italic> (accession number EU753150), <italic>TaIPS1.2</italic> (EU753151), and <italic>TaIPS1.3</italic> (EU753152) have been isolated and deposited in GenBank, but molecular studies, such as expression analyses, have not been reported.</p>
+        <p>Based on RNA-Seq, expression levels increased 341-fold in roots and 13-fold in shoots under &#x2013;P conditions. In this study, we did not distinguish homeologous forms, and we present the results for each gene as an integration of counts from the three genomes of hexaploid wheat as reported by Pellny et al. [<xref ref-type="bibr" rid="B23">23</xref>]. The primary goal of our study to identify &#x2013;P-responsive wheat genes, but we noted that using an integration of counts from the three homeologous forms for each gene could cause problems with transcript abundance when reads were aligned back to the wheat transcript set using Bowtie. A quantitative real-time PCR (qRT-PCR) analysis was used to confirm these results under identical conditions. Expression levels increased 368-fold in roots and 17-fold in shoots according to qRT-PCR, confirming the results obtained using RNA-Seq analysis (Figure <xref ref-type="fig" rid="F4">4</xref>). These data demonstrated that these transcriptomes accurately reflected the response of wheat to Pi starvation and suggest that the <italic>IPS1</italic>-mediated signalling cascade may also function in wheat.</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>Expression of </bold><bold><italic>IPS1 </italic></bold><bold>and several upregulated transcripts under &#x2013;P conditions was determined using RNA-Seq and qRT-PCR.</bold><italic>IPS1</italic>, <italic>IPS2, RNS1</italic>, and <italic>MGD</italic> expression in roots and <italic>IPS1</italic>, <italic>SPX1, GDPD</italic>, and <italic>PAP</italic> expression in shoots under &#x2013;P were also analysed using qRT-PCR at 0 and 10 d after &#x2013;P treatment. Transcript expression levels were normalised using an internal control (<italic>Ubiquitin1</italic>) and plotted relative to expression on day 10. Bars represent mean&#x2009;&#xB1;&#x2009;SE from the three experiments. Fold changes based on RPKM values according to RNA-Seq are plotted on the same graph.</p>
+          </caption>
+          <graphic xlink:href="1471-2164-14-77-4"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>A highly conserved PHR1-IPS1-miR399-UBC24/PHO2 signalling cascade</title>
+        <p>Members of the <italic>IPS1</italic> gene family from different plant species, including rice, have a highly-conserved 23-nt-long motif that exhibits complementarity with the miR399 involved in Pi response [<xref ref-type="bibr" rid="B22">22</xref>]. Because <italic>IPS1</italic> is strongly upregulated in rice [<xref ref-type="bibr" rid="B10">10</xref>], we investigated the conserved responsive genes by comparing the wheat transcripts with rice transcripts used in our previous RNA-Seq study [<xref ref-type="bibr" rid="B10">10</xref>]. To assign Rice Annotation Project (RAP) IDs to responsive transcripts in wheat under &#x2013;P conditions, we searched for homology to RAP (<ext-link ext-link-type="uri" xlink:href="http://rapdb.dna.affrc.go.jp/">http://rapdb.dna.affrc.go.jp/</ext-link>) proteins using BLASTP. Of the 29,617 wheat transcripts in our constructed dataset, open reading frames (ORFs) were predicted for 21,864. Among these, 9,435 transcripts with reciprocal top hits (E-value &#x2264;1E-06) were identified.</p>
+        <p>A total of 7,449 transcripts were found to be orthologous to their corresponding rice genes based on a threshold of&#x2009;&#x2265;&#x2009;60% identity and&#x2009;&#x2265;&#x2009;60% coverage. In addition, BLASTN was used to identify rice orthologues of wheat non-protein coding genes. Orthologues of the responsive wheat transcripts were verified for their responses by comparing their data with those of the responsive rice transcripts. Because most well-characterised transcripts have been found to be upregulated under &#x2212;P conditions in plants, we focused on the upregulated transcripts (Figure <xref ref-type="fig" rid="F2">2</xref>). In wheat, 376 of the 1,004 upregulated transcripts in roots and 1,326 of the 2,833 upregulated transcripts in shoots possessed orthologues, which were then compared with those found in the responsive rice transcripts. Thirty-nine transcripts in roots and 21 transcripts in shoots were upregulated in both wheat and rice, suggesting their importance in adaptation to &#x2013;P conditions in Poaceae species (Table <xref ref-type="table" rid="T3">3</xref>). The 16 transcripts upregulated in both roots and shoots are of particular interest.</p>
+        <table-wrap position="float" id="T3">
+          <label>Table 3</label>
+          <caption>
+            <p>Upregulated transcripts found in both wheat and rice under &#x2013;P conditions</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Transcript ID</bold>
+                </th>
+                <th align="center">
+                  <bold>Source</bold>
+                </th>
+                <th align="center">
+                  <bold>Tissue</bold>
+                </th>
+                <th align="center">
+                  <bold>Length</bold>
+                </th>
+                <th align="center">
+                  <bold>RPKM (0d)</bold>
+                </th>
+                <th align="center">
+                  <bold>RPKM (10d)</bold>
+                </th>
+                <th align="center">
+                  <bold>Fold change</bold>
+                </th>
+                <th align="center">
+                  <bold>RAP transcripts</bold>
+                </th>
+                <th align="center">
+                  <bold>Gene</bold>
+                </th>
+                <th align="center">
+                  <bold>Gene annotation</bold>
+                </th>
+                <th align="center">
+                  <bold>P1BS in 1-kb upstream region of rice gene</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig1729<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">756<hr/></td>
+                <td align="center" valign="bottom">1.14<hr/></td>
+                <td align="center" valign="bottom">389.75<hr/></td>
+                <td align="center" valign="bottom">340.97<hr/></td>
+                <td align="center" valign="bottom">Os03t0146800-01<hr/></td>
+                <td align="center" valign="bottom">IPS1<hr/></td>
+                <td align="center" valign="bottom">Non-protein coding transcript<hr/></td>
+                <td align="center" valign="bottom">+<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0015j18<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,571<hr/></td>
+                <td align="center" valign="bottom">3.88<hr/></td>
+                <td align="center" valign="bottom">100.42<hr/></td>
+                <td align="center" valign="bottom">25.87<hr/></td>
+                <td align="center" valign="bottom">Os02t0514500-01<hr/></td>
+                <td align="center" valign="bottom">GDPD<hr/></td>
+                <td align="center" valign="bottom">Glycerophosphoryl diester phosphodiesterase family protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig1771<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">391<hr/></td>
+                <td align="center" valign="bottom">6.30<hr/></td>
+                <td align="center" valign="bottom">135.25<hr/></td>
+                <td align="center" valign="bottom">21.46<hr/></td>
+                <td align="center" valign="bottom">Os01t0838350-01<hr/></td>
+                <td align="center" valign="bottom">IPS2<hr/></td>
+                <td align="center" valign="bottom">Conserved hypothetical protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig2948<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,360<hr/></td>
+                <td align="center" valign="bottom">22.19<hr/></td>
+                <td align="center" valign="bottom">373.52<hr/></td>
+                <td align="center" valign="bottom">16.83<hr/></td>
+                <td align="center" valign="bottom">Os06t0603600-01<hr/></td>
+                <td align="center" valign="bottom">SPX1<hr/></td>
+                <td align="center" valign="bottom">SYG/PHO8/XPR1 (SPX) domain gene<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0011c17<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,685<hr/></td>
+                <td align="center" valign="bottom">2.29<hr/></td>
+                <td align="center" valign="bottom">37.19<hr/></td>
+                <td align="center" valign="bottom">16.22<hr/></td>
+                <td align="center" valign="bottom">Os08t0299400-01<hr/></td>
+                <td align="center" valign="bottom">MGD<hr/></td>
+                <td align="center" valign="bottom">MGDG synthase type A<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0011c17<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,685<hr/></td>
+                <td align="center" valign="bottom">2.02<hr/></td>
+                <td align="center" valign="bottom">29.80<hr/></td>
+                <td align="center" valign="bottom">14.78<hr/></td>
+                <td align="center" valign="bottom">Os08t0299400-01<hr/></td>
+                <td align="center" valign="bottom">MGD<hr/></td>
+                <td align="center" valign="bottom">MGDG synthase type A<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig1729<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">756<hr/></td>
+                <td align="center" valign="bottom">8.71<hr/></td>
+                <td align="center" valign="bottom">114.37<hr/></td>
+                <td align="center" valign="bottom">13.13<hr/></td>
+                <td align="center" valign="bottom">Os03t0146800-01<hr/></td>
+                <td align="center" valign="bottom">IPS1<hr/></td>
+                <td align="center" valign="bottom">Non-protein coding transcript<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig1771<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">391<hr/></td>
+                <td align="center" valign="bottom">1.81<hr/></td>
+                <td align="center" valign="bottom">20.83<hr/></td>
+                <td align="center" valign="bottom">11.51<hr/></td>
+                <td align="center" valign="bottom">Os01t0838350-01<hr/></td>
+                <td align="center" valign="bottom">IPS2<hr/></td>
+                <td align="center" valign="bottom">Non-protein coding transcript<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0009k23<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,609<hr/></td>
+                <td align="center" valign="bottom">6.46<hr/></td>
+                <td align="center" valign="bottom">53.39<hr/></td>
+                <td align="center" valign="bottom">8.26<hr/></td>
+                <td align="center" valign="bottom">Os02t0325600-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to phosphate starvation response regulator-like protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0015j18<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,571<hr/></td>
+                <td align="center" valign="bottom">21.91<hr/></td>
+                <td align="center" valign="bottom">170.15<hr/></td>
+                <td align="center" valign="bottom">7.77<hr/></td>
+                <td align="center" valign="bottom">Os02t0514500-01<hr/></td>
+                <td align="center" valign="bottom">GDPD<hr/></td>
+                <td align="center" valign="bottom">Glycerophosphoryl diester phosphodiesterase family protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0009k23<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,609<hr/></td>
+                <td align="center" valign="bottom">3.35<hr/></td>
+                <td align="center" valign="bottom">21.14<hr/></td>
+                <td align="center" valign="bottom">6.30<hr/></td>
+                <td align="center" valign="bottom">Os02t0325600-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to phosphate starvation response regulator-like protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Contig.28393.5<hr/></td>
+                <td align="center" valign="bottom">Assembled<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,075<hr/></td>
+                <td align="center" valign="bottom">1.17<hr/></td>
+                <td align="center" valign="bottom">6.69<hr/></td>
+                <td align="center" valign="bottom">5.73<hr/></td>
+                <td align="center" valign="bottom">Os08t0433200-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Conserved hypothetical protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0017d11<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,344<hr/></td>
+                <td align="center" valign="bottom">2.12<hr/></td>
+                <td align="center" valign="bottom">10.98<hr/></td>
+                <td align="center" valign="bottom">5.18<hr/></td>
+                <td align="center" valign="bottom">Os04t0555300-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to glycerol 3-phosphate permease<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Contig.28393.5<hr/></td>
+                <td align="center" valign="bottom">Assembled<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,075<hr/></td>
+                <td align="center" valign="bottom">1.00<hr/></td>
+                <td align="center" valign="bottom">4.64<hr/></td>
+                <td align="center" valign="bottom">4.64<hr/></td>
+                <td align="center" valign="bottom">Os08t0433200-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Conserved hypothetical protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig180<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">929<hr/></td>
+                <td align="center" valign="bottom">151.92<hr/></td>
+                <td align="center" valign="bottom">649.17<hr/></td>
+                <td align="center" valign="bottom">4.27<hr/></td>
+                <td align="center" valign="bottom">Os07t0630400-01<hr/></td>
+                <td align="center" valign="bottom">OsRNS1<hr/></td>
+                <td align="center" valign="bottom">Ribonuclease T2 family protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0002b13<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">915<hr/></td>
+                <td align="center" valign="bottom">16.38<hr/></td>
+                <td align="center" valign="bottom">69.34<hr/></td>
+                <td align="center" valign="bottom">4.23<hr/></td>
+                <td align="center" valign="bottom">Os08t0434100-01<hr/></td>
+                <td align="center" valign="bottom">OsRNS3<hr/></td>
+                <td align="center" valign="bottom">S-like ribonuclease<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Contig.8101.10<hr/></td>
+                <td align="center" valign="bottom">Assembled<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,058<hr/></td>
+                <td align="center" valign="bottom">3.74<hr/></td>
+                <td align="center" valign="bottom">14.18<hr/></td>
+                <td align="center" valign="bottom">3.79<hr/></td>
+                <td align="center" valign="bottom">Os09t0321200-00<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to carotenoid cleavage dioxygenase<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0010d01<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,435<hr/></td>
+                <td align="center" valign="bottom">2.20<hr/></td>
+                <td align="center" valign="bottom">8.28<hr/></td>
+                <td align="center" valign="bottom">3.76<hr/></td>
+                <td align="center" valign="bottom">Os08t0535700-00<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to glycerophosphodiester phosphodiesterase<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Contig.9738.4<hr/></td>
+                <td align="center" valign="bottom">Assembled<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,060<hr/></td>
+                <td align="center" valign="bottom">7.56<hr/></td>
+                <td align="center" valign="bottom">27.93<hr/></td>
+                <td align="center" valign="bottom">3.70<hr/></td>
+                <td align="center" valign="bottom">Os06t0325200-00<hr/></td>
+                <td align="center" valign="bottom">Pht1;10<hr/></td>
+                <td align="center" valign="bottom">Major facilitator superfamily protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0005p16<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,900<hr/></td>
+                <td align="center" valign="bottom">25.71<hr/></td>
+                <td align="center" valign="bottom">91.49<hr/></td>
+                <td align="center" valign="bottom">3.56<hr/></td>
+                <td align="center" valign="bottom">Os10t0100500-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Serine/threonine protein kinase-related domain containing protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig2948<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,360<hr/></td>
+                <td align="center" valign="bottom">22.46<hr/></td>
+                <td align="center" valign="bottom">71.55<hr/></td>
+                <td align="center" valign="bottom">3.19<hr/></td>
+                <td align="center" valign="bottom">Os06t0603600-01<hr/></td>
+                <td align="center" valign="bottom">SPX1<hr/></td>
+                <td align="center" valign="bottom">SYG/PHO8/XPR1 (SPX) domain gene<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Contig.7073.9<hr/></td>
+                <td align="center" valign="bottom">Assembled<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,151<hr/></td>
+                <td align="center" valign="bottom">10.97<hr/></td>
+                <td align="center" valign="bottom">32.96<hr/></td>
+                <td align="center" valign="bottom">3.01<hr/></td>
+                <td align="center" valign="bottom">Os12t0554500-00<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Lipase, class 3 family protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0004l11<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,241<hr/></td>
+                <td align="center" valign="bottom">86.40<hr/></td>
+                <td align="center" valign="bottom">210.59<hr/></td>
+                <td align="center" valign="bottom">2.44<hr/></td>
+                <td align="center" valign="bottom">Os04t0652700-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to nuclease PA3<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Contig.19551.3<hr/></td>
+                <td align="center" valign="bottom">Assembled<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">756<hr/></td>
+                <td align="center" valign="bottom">3.83<hr/></td>
+                <td align="center" valign="bottom">9.28<hr/></td>
+                <td align="center" valign="bottom">2.42<hr/></td>
+                <td align="center" valign="bottom">Os08t0478000-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to mucin-2<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig6043<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,744<hr/></td>
+                <td align="center" valign="bottom">29.56<hr/></td>
+                <td align="center" valign="bottom">69.86<hr/></td>
+                <td align="center" valign="bottom">2.36<hr/></td>
+                <td align="center" valign="bottom">Os05t0475400-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to alanine:glyoxylate aminotransferase-like protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Contig.7627.18<hr/></td>
+                <td align="center" valign="bottom">Assembled<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,951<hr/></td>
+                <td align="center" valign="bottom">14.40<hr/></td>
+                <td align="center" valign="bottom">29.37<hr/></td>
+                <td align="center" valign="bottom">2.04<hr/></td>
+                <td align="center" valign="bottom">Os06t0115600-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to CYCLOPS<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Contig.1419.6<hr/></td>
+                <td align="center" valign="bottom">Assembled<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">845<hr/></td>
+                <td align="center" valign="bottom">12.66<hr/></td>
+                <td align="center" valign="bottom">24.57<hr/></td>
+                <td align="center" valign="bottom">1.94<hr/></td>
+                <td align="center" valign="bottom">Os09t0367700-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to GST6 protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig5356<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">2,134<hr/></td>
+                <td align="center" valign="bottom">62.44<hr/></td>
+                <td align="center" valign="bottom">117.43<hr/></td>
+                <td align="center" valign="bottom">1.88<hr/></td>
+                <td align="center" valign="bottom">Os01t0557500-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Cation/proton exchanger 1a<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig1089<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,979<hr/></td>
+                <td align="center" valign="bottom">15.97<hr/></td>
+                <td align="center" valign="bottom">29.71<hr/></td>
+                <td align="center" valign="bottom">1.86<hr/></td>
+                <td align="center" valign="bottom">Os05t0387200-01<hr/></td>
+                <td align="center" valign="bottom">SQD1<hr/></td>
+                <td align="center" valign="bottom">Sulfite:UDP-glucose sulfotransferase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig3773<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,915<hr/></td>
+                <td align="center" valign="bottom">14.45<hr/></td>
+                <td align="center" valign="bottom">26.40<hr/></td>
+                <td align="center" valign="bottom">1.83<hr/></td>
+                <td align="center" valign="bottom">Os07t0100300-02<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Glycosyl transferase, group 1 domain containing protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Contig.5729.19<hr/></td>
+                <td align="center" valign="bottom">Assembled<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,057<hr/></td>
+                <td align="center" valign="bottom">16.32<hr/></td>
+                <td align="center" valign="bottom">29.61<hr/></td>
+                <td align="center" valign="bottom">1.81<hr/></td>
+                <td align="center" valign="bottom">Os05t0489900-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Calcium/calmodulin-dependent protein kinase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0005j01<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,911<hr/></td>
+                <td align="center" valign="bottom">42.84<hr/></td>
+                <td align="center" valign="bottom">71.03<hr/></td>
+                <td align="center" valign="bottom">1.66<hr/></td>
+                <td align="center" valign="bottom">Os03t0760200-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Cytochrome P450 family protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig3516<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,119<hr/></td>
+                <td align="center" valign="bottom">158.24<hr/></td>
+                <td align="center" valign="bottom">256.48<hr/></td>
+                <td align="center" valign="bottom">1.62<hr/></td>
+                <td align="center" valign="bottom">Os05t0137400-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to aspartic protease precursor<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig1089<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,979<hr/></td>
+                <td align="center" valign="bottom">103.87<hr/></td>
+                <td align="center" valign="bottom">166.66<hr/></td>
+                <td align="center" valign="bottom">1.60<hr/></td>
+                <td align="center" valign="bottom">Os05t0387200-01<hr/></td>
+                <td align="center" valign="bottom">SQD1<hr/></td>
+                <td align="center" valign="bottom">Sulfite:UDP-glucose sulfotransferase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig3516<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">2,119<hr/></td>
+                <td align="center" valign="bottom">123.51<hr/></td>
+                <td align="center" valign="bottom">190.78<hr/></td>
+                <td align="center" valign="bottom">1.54<hr/></td>
+                <td align="center" valign="bottom">Os05t0137400-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to aspartic protease precursor<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig3173<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,096<hr/></td>
+                <td align="center" valign="bottom">93.45<hr/></td>
+                <td align="center" valign="bottom">143.24<hr/></td>
+                <td align="center" valign="bottom">1.53<hr/></td>
+                <td align="center" valign="bottom">Os03t0826600-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to phospholipase<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0011n16<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">3,325<hr/></td>
+                <td align="center" valign="bottom">506.03<hr/></td>
+                <td align="center" valign="bottom">752.10<hr/></td>
+                <td align="center" valign="bottom">1.49<hr/></td>
+                <td align="center" valign="bottom">Os09t0315700-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Phosphoenolpyruvate carboxylase family protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig3773<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,915<hr/></td>
+                <td align="center" valign="bottom">119.10<hr/></td>
+                <td align="center" valign="bottom">170.78<hr/></td>
+                <td align="center" valign="bottom">1.43<hr/></td>
+                <td align="center" valign="bottom">Os07t0100300-02<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Glycosyl transferase, group 1 domain containing protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0011n16<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">3,325<hr/></td>
+                <td align="center" valign="bottom">122.46<hr/></td>
+                <td align="center" valign="bottom">174.90<hr/></td>
+                <td align="center" valign="bottom">1.43<hr/></td>
+                <td align="center" valign="bottom">Os09t0315700-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Phosphoenolpyruvate carboxylase family protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0006o12<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,917<hr/></td>
+                <td align="center" valign="bottom">13.84<hr/></td>
+                <td align="center" valign="bottom">19.77<hr/></td>
+                <td align="center" valign="bottom">1.43<hr/></td>
+                <td align="center" valign="bottom">Os01t0109300-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to predicted protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0002m14<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,205<hr/></td>
+                <td align="center" valign="bottom">156.19<hr/></td>
+                <td align="center" valign="bottom">221.81<hr/></td>
+                <td align="center" valign="bottom">1.42<hr/></td>
+                <td align="center" valign="bottom">Os01t0897200-04<hr/></td>
+                <td align="center" valign="bottom">OsRNS2<hr/></td>
+                <td align="center" valign="bottom">Ribonuclease 2 precursor<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig3173<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">2,096<hr/></td>
+                <td align="center" valign="bottom">93.61<hr/></td>
+                <td align="center" valign="bottom">132.02<hr/></td>
+                <td align="center" valign="bottom">1.41<hr/></td>
+                <td align="center" valign="bottom">Os03t0826600-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to phospholipase<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig2349<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">3,073<hr/></td>
+                <td align="center" valign="bottom">304.03<hr/></td>
+                <td align="center" valign="bottom">425.90<hr/></td>
+                <td align="center" valign="bottom">1.40<hr/></td>
+                <td align="center" valign="bottom">Os02t0809800-01<hr/></td>
+                <td align="center" valign="bottom">PHO1:H2<hr/></td>
+                <td align="center" valign="bottom">Root-to-shoot inorganic phosphate (Pi) transfer<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig3543<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,308<hr/></td>
+                <td align="center" valign="bottom">187.76<hr/></td>
+                <td align="center" valign="bottom">259.91<hr/></td>
+                <td align="center" valign="bottom">1.38<hr/></td>
+                <td align="center" valign="bottom">Os03t0238600-01<hr/></td>
+                <td align="center" valign="bottom">PAP<hr/></td>
+                <td align="center" valign="bottom">Similar to purple acid phosphatase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig5356<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,134<hr/></td>
+                <td align="center" valign="bottom">20.40<hr/></td>
+                <td align="center" valign="bottom">28.11<hr/></td>
+                <td align="center" valign="bottom">1.38<hr/></td>
+                <td align="center" valign="bottom">Os01t0557500-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Cation/proton exchanger 1a<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0013h02<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,851<hr/></td>
+                <td align="center" valign="bottom">62.68<hr/></td>
+                <td align="center" valign="bottom">83.60<hr/></td>
+                <td align="center" valign="bottom">1.33<hr/></td>
+                <td align="center" valign="bottom">Os10t0500600-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Zinc finger, C2H2-like domain containing protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig5307<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,219<hr/></td>
+                <td align="center" valign="bottom">43.36<hr/></td>
+                <td align="center" valign="bottom">57.80<hr/></td>
+                <td align="center" valign="bottom">1.33<hr/></td>
+                <td align="center" valign="bottom">Os01t0128200-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to nuclease I<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0004m05<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">942<hr/></td>
+                <td align="center" valign="bottom">42.30<hr/></td>
+                <td align="center" valign="bottom">55.89<hr/></td>
+                <td align="center" valign="bottom">1.32<hr/></td>
+                <td align="center" valign="bottom">Os02t0704900-02<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to inorganic pyrophosphatase-like protein<hr/></td>
+                <td align="center" valign="bottom">
+                  <bold>+</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0011n23<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,648<hr/></td>
+                <td align="center" valign="bottom">105.24<hr/></td>
+                <td align="center" valign="bottom">137.60<hr/></td>
+                <td align="center" valign="bottom">1.31<hr/></td>
+                <td align="center" valign="bottom">Os01t0621900-02<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Conserved hypothetical protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0008m02<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,657<hr/></td>
+                <td align="center" valign="bottom">149.03<hr/></td>
+                <td align="center" valign="bottom">190.13<hr/></td>
+                <td align="center" valign="bottom">1.28<hr/></td>
+                <td align="center" valign="bottom">Os08t0557600-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to monodehydroascorbate reductase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig3543<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,308<hr/></td>
+                <td align="center" valign="bottom">597.17<hr/></td>
+                <td align="center" valign="bottom">755.77<hr/></td>
+                <td align="center" valign="bottom">1.27<hr/></td>
+                <td align="center" valign="bottom">Os03t0238600-01<hr/></td>
+                <td align="center" valign="bottom">PAP<hr/></td>
+                <td align="center" valign="bottom">Similar to purple acid phosphatase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig6043<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,744<hr/></td>
+                <td align="center" valign="bottom">272.35<hr/></td>
+                <td align="center" valign="bottom">333.30<hr/></td>
+                <td align="center" valign="bottom">1.22<hr/></td>
+                <td align="center" valign="bottom">Os05t0475400-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to alanine:glyoxylate aminotransferase-like protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0001a12<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,678<hr/></td>
+                <td align="center" valign="bottom">23.44<hr/></td>
+                <td align="center" valign="bottom">28.13<hr/></td>
+                <td align="center" valign="bottom">1.20<hr/></td>
+                <td align="center" valign="bottom">Os06t0204400-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to aminoalcoholphosphotransferase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0010b10<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,838<hr/></td>
+                <td align="center" valign="bottom">295.07<hr/></td>
+                <td align="center" valign="bottom">343.13<hr/></td>
+                <td align="center" valign="bottom">1.16<hr/></td>
+                <td align="center" valign="bottom">Os09t0553200-01<hr/></td>
+                <td align="center" valign="bottom">UGPase<hr/></td>
+                <td align="center" valign="bottom">UDP-glucose pyrophosphorylase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0017h23<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,988<hr/></td>
+                <td align="center" valign="bottom">97.39<hr/></td>
+                <td align="center" valign="bottom">112.72<hr/></td>
+                <td align="center" valign="bottom">1.16<hr/></td>
+                <td align="center" valign="bottom">Os09t0478300-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Conserved hypothetical protein<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">RFL_Contig3605<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">2,532<hr/></td>
+                <td align="center" valign="bottom">72.22<hr/></td>
+                <td align="center" valign="bottom">83.43<hr/></td>
+                <td align="center" valign="bottom">1.16<hr/></td>
+                <td align="center" valign="bottom">Os09t0379900-02<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0004a13<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">2,730<hr/></td>
+                <td align="center" valign="bottom">389.19<hr/></td>
+                <td align="center" valign="bottom">449.07<hr/></td>
+                <td align="center" valign="bottom">1.15<hr/></td>
+                <td align="center" valign="bottom">Os06t0178900-01<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Vacuolar H&#x2009;+&#x2009;&#x2212;pyrophosphatase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0010b10<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Shoot<hr/></td>
+                <td align="center" valign="bottom">1,838<hr/></td>
+                <td align="center" valign="bottom">338.48<hr/></td>
+                <td align="center" valign="bottom">380.45<hr/></td>
+                <td align="center" valign="bottom">1.12<hr/></td>
+                <td align="center" valign="bottom">Os09t0553200-01<hr/></td>
+                <td align="center" valign="bottom">UGPase<hr/></td>
+                <td align="center" valign="bottom">UDP-glucose pyrophosphorylase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">tplb0006p01<hr/></td>
+                <td align="center" valign="bottom">TriFLDB<hr/></td>
+                <td align="center" valign="bottom">Root<hr/></td>
+                <td align="center" valign="bottom">1,330<hr/></td>
+                <td align="center" valign="bottom">1139.67<hr/></td>
+                <td align="center" valign="bottom">1233.89<hr/></td>
+                <td align="center" valign="bottom">1.08<hr/></td>
+                <td align="center" valign="bottom">Os08t0126300-02<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+                <td align="center" valign="bottom">Similar to glyceraldehyde-3-phosphate dehydrogenase<hr/></td>
+                <td align="center" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">tplb0013o11</td>
+                <td align="center">TriFLDB</td>
+                <td align="center">Root</td>
+                <td align="center">2,022</td>
+                <td align="center">197.87</td>
+                <td align="center">210.17</td>
+                <td align="center">1.06</td>
+                <td align="center">Os07t0622200-01</td>
+                <td align="center">-</td>
+                <td align="center">Similar to M-160-u1_1</td>
+                <td align="center">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>The Pi regulatory mechanism has been elucidated through <italic>Arabidopsis</italic> mutant analyses and involves PHR1 (phosphate starvation response 1), a MYB-type transcription factor, acting as a key factor in regulating downstream &#x2013;P-responsive gene expression, including that of <italic>IPS1,</italic> through the P1BS <italic>cis</italic>-acting element (GNATATNC) of the PHR1 binding site (Figure <xref ref-type="fig" rid="F5">5</xref>). This mechanism is conserved in vascular plants and unicellular algae [<xref ref-type="bibr" rid="B24">24</xref>]. As in conserved genes in wheat and rice, the P1BS <italic>cis</italic>-element exists in the promoter of wheat-orthologous rice genes; <italic>IPS1</italic> is upregulated primarily in the roots of wheat (Table <xref ref-type="table" rid="T3">3</xref>) and rice [<xref ref-type="bibr" rid="B10">10</xref>], suggesting conservation of the <italic>IPS1</italic>-mediated signalling cascade under the control of PHR1 (PHR2 in rice [<xref ref-type="bibr" rid="B25">25</xref>]). In <italic>Arabidopsis</italic>, SIZ1 (small ubiquitin-like modifier [SUMO] E3 ligase) [<xref ref-type="bibr" rid="B16">16</xref>], miR399, and UBC24/PHO2 (ubiquitin E2 conjugase) are also involved in the cascade (Figure <xref ref-type="fig" rid="F5">5</xref>) [<xref ref-type="bibr" rid="B26">26</xref>]. According to genome sequencing information, SIZ1 is conserved in rice [<xref ref-type="bibr" rid="B27">27</xref>]; miR399 expression has been confirmed in rice, and a potential orthologue of UBC24/PHO2 has been identified by assembly using genomic DNA and expressed sequence tags (ESTs) [<xref ref-type="bibr" rid="B26">26</xref>]. Transcribed sequences encoding miR399, miR399-binding sites, or protein sequences homologous to N- or C-terminal extensions of UBC24/PHO2 have been observed in wheat [<xref ref-type="bibr" rid="B26">26</xref>]. We also detected rice-orthologous wheat transcripts of <italic>PHR1</italic>, <italic>UBC24/PHO2</italic>, and <italic>SIZ1</italic>, although these transcripts were not highly responsive to &#x2212;P in wheat (data not shown) or rice [<xref ref-type="bibr" rid="B10">10</xref>]. Mature miRNAs shorter than the sequencing length of the short reads could be difficult to detect in our RNA-Seq libraries, however. Based on the identification of HvmiR399s [<xref ref-type="bibr" rid="B28">28</xref>] and the upregulation of <italic>HvIPS1</italic>[<xref ref-type="bibr" rid="B29">29</xref>], the IPS1-miR399-UBC24/PHO2 signalling cascade appears to be conserved in barley [<xref ref-type="bibr" rid="B18">18</xref>]. Consequently, the PHR1-IPS1-miR399-UBC24/PHO2 signalling cascade is probably also conserved in wheat (Figure <xref ref-type="fig" rid="F5">5</xref>). <italic>In silico</italic> comparative analysis [<xref ref-type="bibr" rid="B30">30</xref>] suggested the presence of conserved <italic>cis</italic>-acting elements, such as the P1BS-like motif, and <italic>trans</italic>-acting factors that are capable of regulating the sole putative wheat high-affinity phosphate transporter TaPT2, which is expressed in a tissue-specific and Pi-dependent fashion in both monocots and dicots.</p>
+        <fig id="F5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p><bold>Overview of the P-dependent signalling cascades that affect Pi remobilisation, Pi uptake, and changes in Pi metabolism.</bold> The functions of wheat transcripts and rice orthologues of Pi-related transcripts were characterised under &#x2013;P conditions. Asterisks show that the P1BS <italic>cis</italic>-acting element (GNATATNC), an imperfect palindromic sequence [<xref ref-type="bibr" rid="B24">24</xref>], is located in the upstream region (1 kb).</p>
+          </caption>
+          <graphic xlink:href="1471-2164-14-77-5"/>
+        </fig>
+        <p>We also studied the upregulated expressions of other responsive rice-orthologous wheat transcripts (Table <xref ref-type="table" rid="T3">3</xref>). <italic>SPX1,</italic> upregulated under &#x2013;P conditions, acts as a negative regulator for the expression of <italic>PHR2</italic> and, consequently, Pi transporters in rice [<xref ref-type="bibr" rid="B31">31</xref>]. RNS1-3 (RNase) [<xref ref-type="bibr" rid="B32">32</xref>], PAP (purple acid phosphatase) [<xref ref-type="bibr" rid="B33">33</xref>], and PHO1 (which transfers Pi from roots to shoots in rice [<xref ref-type="bibr" rid="B34">34</xref>]) may function in the remobilisation of Pi. In <italic>Arabidopsis</italic>, PHR1 SUMOylated by SIZ1 positively regulates <italic>RNS1</italic> expression [<xref ref-type="bibr" rid="B35">35</xref>]. Pht1;10 (phosphate transporter) [<xref ref-type="bibr" rid="B36">36</xref>] may function in the uptake of Pi. <italic>AtPht1;8</italic> repression and <italic>AtPht1;9</italic> expression are attenuated in the <italic>pho2</italic> mutant of <italic>Arabidopsis</italic>[<xref ref-type="bibr" rid="B26">26</xref>].</p>
+        <p>Genes involved in lipid metabolism, such as those that function in the synthesis of galactolipids and sulfolipids, were strongly induced under &#x2212;P conditions. These include SQD1 (UDP-sulfoquinovose synthase 1) [<xref ref-type="bibr" rid="B37">37</xref>], MGD (MGDG [monogalactosyldiacylglycerol] synthases) [<xref ref-type="bibr" rid="B38">38</xref>], and GDPD (glycerophosphoryl diester phosphodiesterase) [<xref ref-type="bibr" rid="B39">39</xref>], which may work to re-route Pi during lipid metabolism. UDP-glucose pyrophosphorylase may act as a sugar-signalling network under &#x2013;P conditions [<xref ref-type="bibr" rid="B40">40</xref>,<xref ref-type="bibr" rid="B41">41</xref>]. These factors may be related to the PHR1-IPS1-miR399-UBC24/PHO2 signalling cascade, as Pi remobilisation, Pi uptake, and Pi-related metabolism are under the control of that cascade (Figure <xref ref-type="fig" rid="F5">5</xref>). Upregulation of several transcripts in this cascade was also confirmed by qRT-PCR (Figure <xref ref-type="fig" rid="F4">4</xref>). These results suggested that the PHR1-IPS1-miR399-UBC24/PHO2 signalling cascade functions as a potent adaptation to &#x2212;P in wheat.</p>
+      </sec>
+      <sec>
+        <title>Transcriptional control of other &#x2212;P responsive transcripts</title>
+        <p>We identified several upregulated regulatory wheat transcripts involved in &#x2212;P response from top hits to <italic>Arabidopsis</italic> proteins using BLASTP. (Contig transcript searches were performed with BLASTX.) <italic>WRKY6 (RFL_Contig5159)</italic> and <italic>PHO1 (RFL_Contig2349)</italic> transcripts were upregulated in roots. In <italic>Arabidopsis</italic>, enhanced <italic>WRKY6</italic> mutants are more sensitive to &#x2212;P conditions, having lower Pi contents in shoots compared with wild-type seedlings [<xref ref-type="bibr" rid="B42">42</xref>]. WRKY6 is involved in responses to &#x2013;P by regulating <italic>PHOSPHATE1 (PHO1)</italic> expression [<xref ref-type="bibr" rid="B42">42</xref>]. PHO1 plays a role in Pi translation from roots to shoots, aiding plant adaptation to &#x2013;P [<xref ref-type="bibr" rid="B43">43</xref>]. Salt and mannitol stress-inducible <italic>WRKY33 (tplb0001n04)</italic> and <italic>SKIP (tplb0006k10)</italic>[<xref ref-type="bibr" rid="B44">44</xref>,<xref ref-type="bibr" rid="B45">45</xref>], and <italic>WRKY70</italic> (<italic>Contig.7004.23</italic>) [<xref ref-type="bibr" rid="B46">46</xref>], which have pivotal roles in determining the balance between salicylic acid- and jasmonic acid-dependent defence pathways, were also upregulated in shoots. <italic>SWI3C (RFL_Contig4840), SWI3D (tplb0017g02)</italic>, and <italic>GCN5-related N-acetyltransferase (Contig.1767.6)</italic> were upregulated in shoots. SWI/SNF (SWITCH/SUCROSE NONFERMENTING) chromatin-remodelling complexes mediate ATP-dependent alterations of DNA-histone contacts. Histone H2A.Z regulates the expression of several classes of phosphate starvation response genes [<xref ref-type="bibr" rid="B47">47</xref>]. Although mechanisms of transcription rate modulation entailing chromatin structure alteration have not been fully elucidated under &#x2013;P in <italic>Arabidopsis</italic>, SWI/SNF complexes and Gcn5 histone acetyltransferase are necessary for full induction of several phosphatase genes and PHO84 high-affinity phosphate transporter gene in yeast [<xref ref-type="bibr" rid="B48">48</xref>-<xref ref-type="bibr" rid="B52">52</xref>].</p>
+        <p>Finally, we investigated downregulated wheat transcripts under &#x2013;P and found that <italic>PsbQ-like 1 (RFL_Contig3541), PsbQ-like 2 (RFL_Contig550), PSBP-1 (tplb0004p24), PSBQ-1 (tplb0011f13), LHCB1.5 (tplb0016n06), LHCA6 (RFL_Contig363), LHCB3 (tplb0013f07)</italic>, and <italic>Photosystem I reaction centre subunit N (tplb0007a14)</italic> were downregulated in shoots. These genes are involved in photosynthesis. In <italic>Brassica nigra</italic> leaf petiole suspension cells, the rate of photosynthesis and photosynthetic product partitioning were altered under &#x2013;P [<xref ref-type="bibr" rid="B53">53</xref>]. <italic>Glyceraldehyde-3-phosphate dehydrogenase (RFL_Contig1308)</italic> and <italic>sedoheptulose-1,7-bisphosphatase (SBPase) (tplb0007f04)</italic> were also downregulated in shoots under &#x2013;P. These are key regulatory enzymes in CO<sub>2</sub> reduction and the regeneration phase of the Calvin cycle for carbon fixation pathways, respectively. SBPase, which catalyses the dephosphorylation of sedoheptulose-1,7-bisphosphate into sedoheptulose-7-phosphate and Pi, is specific to the eukaryotic Calvin cycle and plays vital roles in regulating the pathways in the cycle [<xref ref-type="bibr" rid="B54">54</xref>] and improving photosynthetic capacity [<xref ref-type="bibr" rid="B55">55</xref>]. Downregulation under &#x2013;P of transcripts associated with photosynthesis and alteration of the balance of carbon metabolism are well documented in <italic>Arabidopsis</italic>[<xref ref-type="bibr" rid="B8">8</xref>].</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>In this study, we demonstrated the use of short-read sequence data to rapidly characterise a wheat transcriptome and have contributed significantly to the corpus of wheat transcript data. Differentially-expressed transcripts under &#x2013;P in wheat included, on average, 23.4% of the contigs not covered by cDNAs in TriFLDB. The induction of these responses requires a sophisticated regulatory system, however, and details of this regulation in wheat have only recently begun to be elucidated. Comparison of upregulated wheat and rice transcripts revealed that the PHR1-IPS1-miR399-UBC24/PHO2 signalling cascade is conserved in both crop species. Data from our previous study of rice transcripts and other supportive studies in other species confirmed that our analysis captured the transcriptome for &#x2013;P response in wheat. This study thus represents a genomic approach to discovering wheat transcripts when genome sequences are unavailable. This contribution is significant to the development of genomic resources for wheat and other species and should accelerate the progress of functional genomic studies and breeding programs.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Plant materials and stress treatment</title>
+        <p>Seeds of the wheat cultivar &#x2018;Chinese Spring&#x2019; were germinated and grown hydroponically in nutrient media (0.323 mM NaH<sub>2</sub>PO<sub>4</sub>; 10 mg L<sup>&#x2212;1</sup> P) [<xref ref-type="bibr" rid="B56">56</xref>] in a growth chamber. After 14 d, seedlings were subjected to a &#x2013;P stress treatment by being transferred to a similar medium (0 mM NaH<sub>2</sub>PO<sub>4</sub>; 0 mg L<sup>&#x2212;1</sup> P). Plants were maintained under &#x2013;P for 10 d at 23&#xB0;C under a 16 h light/8 h dark cycle, with the light period extending from 6:00 AM to 10:00 PM. Root and shoot samples were collected as described previously [<xref ref-type="bibr" rid="B10">10</xref>].</p>
+      </sec>
+      <sec>
+        <title>RNA isolation and quality control</title>
+        <p>Total RNA was extracted from all tissue samples using a RNeasy Plant Mini kit (Qiagen, Hilden, Germany). RNA quality was assessed using a Bioanalyzer (Agilent, Palo Alto, CA, USA); as suggested by the manufacturer, only those samples with RIN (RNA integrity number) scores greater than 8.0 were used in subsequent analyses.</p>
+      </sec>
+      <sec>
+        <title>Illumina sequencing and quality control</title>
+        <p>Twelve paired-end (PE) cDNA libraries were used to generate 107,298,935 PE reads from root and shoot tissues. Sequencing was performed on each library to generate 100-bp PE reads for transcriptome sequencing on an Illumina High-Seq 2000 platform. Library construction was accomplished using commercial products (Illumina), with sequencing performed by commercial service providers (Takara, Shiga, Japan). The sequence data generated in this study were deposited in the DDBJ Sequence Read Archive (Accession No. DRA000737). Low-quality bases (Q&#x2009;&lt;&#x2009;15) were trimmed from both ends using a customised program, and the adapters were trimmed using Cutadapt ver. 1.0 (<ext-link ext-link-type="uri" xlink:href="http://code.google.com/p/cutadapt/">http://code.google.com/p/cutadapt/</ext-link>) with the parameters &#x2018;-f fastq -e 0.1 -O 5 -m 20&#x2019;.</p>
+      </sec>
+      <sec>
+        <title><italic>De novo</italic> assembly</title>
+        <p>To generate a non-redundant set of transcripts, we performed a <italic>de novo</italic> assembly with publicly available programs using 73,804,720 PE RNA-Seq reads (36,902,360 pairs; 97.5 average read length, 7,198,965,163 total bases, 260 average insert length) obtained from four libraries, with each library consisting of three replicates of one of the four tissue/treatment combinations. Reads from each library were aligned to cDNAs in TriFLDB using Bowtie, and the calculated RPKM values were used to conduct a correlation analysis of the replicates. The replicate pair with the highest correlation coefficient among the three replicate pairs was selected for <italic>de novo</italic> assembly. Trans-ABySS (ver. 1.3.2) [<xref ref-type="bibr" rid="B16">16</xref>], Velvet (ver. 1.2.03; <ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/~zerbino/velvet/)-Oases">http://www.ebi.ac.uk/~zerbino/velvet/)-Oases</ext-link> (ver. 0.2.05; <ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/~zerbino/oases/">http://www.ebi.ac.uk/~zerbino/oases/</ext-link>) [<xref ref-type="bibr" rid="B17">17</xref>], and Trinity (ver. r2012-01-25, --seqType fq and --kmer_method meryl) [<xref ref-type="bibr" rid="B18">18</xref>] were used in this study. Those programs were developed to assemble short reads using a de Bruijn graph algorithm [<xref ref-type="bibr" rid="B57">57</xref>]. Various assembly parameters were also optimised to obtain the best results from each program. Trinity, a program developed specifically for <italic>de novo</italic> transcriptome assembly from short-read RNA-Seq data, was also used to assemble the single <italic>k</italic>-mers (k&#x2009;=&#x2009;21). Trinity has been shown to be efficient and sensitive in recovering full-length transcripts and isoforms in yeast, mice, and whiteflies [<xref ref-type="bibr" rid="B18">18</xref>]. Velvet (&#x2018;-fastq &#x2013;short&#x2019; [velveth], &#x2018;-read_trkg yes&#x2019; [velvetg])-Oases (default parameters) and ABySS (ver. 1.3.3, OVERLAP_OPTIONS=&#x2018;--no-scaffold&#x2019; SIMPLEGRAPH_OPTIONS=&#x2018;--no-scaffold&#x2019;) [<xref ref-type="bibr" rid="B58">58</xref>] were also used to assemble individual <italic>k</italic>-mer lengths from every odd number between 21 and 51.</p>
+        <p>Using a multiple <italic>k</italic>-mer (MK) strategy for the <italic>de novo</italic> assembly gave better results than did a non-multiple <italic>k</italic>-mer approach because it was able to capture both weakly expressed transcripts with small <italic>k</italic>-mer values and highly expressed genes with large <italic>k</italic>-mer values [<xref ref-type="bibr" rid="B59">59</xref>]. In this study, Velvet-Oases (&#x2018;-merge yes&#x2019;) and Trans-ABySS (default) were used to assemble different <italic>k</italic>-mer lengths from 21 to 51; both yielded better results than those obtained with the individual <italic>k</italic>-mer approach. We therefore used the MK strategy for downstream analyses. We also performed <italic>de novo</italic> assembly with Oases and Trans-ABySS at different <italic>k</italic>-mer lengths, using every odd number from 21 to 95; these results did not improve the assessment. To remove redundant contigs, short contigs that were entirely covered by longer ones with more than 90% identity were removed using cd-hit-est (ver. 4.5.7) [<xref ref-type="bibr" rid="B60">60</xref>] with default parameters. Furthermore, Oases produces isoforms from a locus; the longest transcripts of each locus were selected to construct a non-redundant set of contigs to identify responsive transcripts.</p>
+      </sec>
+      <sec>
+        <title>Calculation of RPKM values and the detection of differentially-expressed transcripts</title>
+        <p>The PE RNA-Seq reads from each treatment were aligned back to the cDNA, and the transcripts were assembled using Bowtie 2 ver. 2.0.0-beta6, with the parameters &#x2018;-k 2 --no-discordant --no-mixed -q&#x2019;. Expression levels of all unique transcripts mapped onto the full-length cDNAs and contigs were quantified using the RPKM values [<xref ref-type="bibr" rid="B61">61</xref>]. The RPKM value of each transcript was calculated using uniquely-aligned reads with an in-house program; each value was incremented by 1 to avoid division by 0 following the fold change calculations. Differentially expressed transcripts were detected using a G-test with an FDR value cut-off&#x2009;&lt;&#x2009;0.01. Details of this process have been described in previous work [<xref ref-type="bibr" rid="B10">10</xref>].</p>
+      </sec>
+      <sec>
+        <title>Gene ontology analysis</title>
+        <p>The GO terms assigned to the responsive transcripts were obtained from InterProScan 5 Release Candidate 2 (<ext-link ext-link-type="uri" xlink:href="http://code.google.com/p/interproscan/">http://code.google.com/p/interproscan/</ext-link>) with the parameters &#x2018;-f tsv -t p -dp &#x2013;goterms&#x2019; for each GO category after those transcripts were predicted with ORFs using transcripts_to_best_scoring_ORFs.pl with the parameter &#x2018;-B&#x2019; in Trinity (ver. r2012-04-27).</p>
+      </sec>
+      <sec>
+        <title>qRT-PCR analysis of wheat transcripts</title>
+        <p>First-strand cDNA was synthesised using a Transcriptor First Strand synthesis kit (Roche, Basel, Switzerland). Expression of Pi-upregulated transcripts was analysed by qRT-PCR in a LightCycler 480 system (Roche) with transcript-specific primers (Additional file <xref ref-type="supplementary-material" rid="S6">6</xref>). The detection threshold cycle of each reaction was normalised using <italic>Ubiquitin1</italic> primers 5<sup>&#x2032;</sup>-GGAGGACACAGAAAGGCAAC-3<sup>&#x2032;</sup> and 5<sup>&#x2032;</sup>-CTCCGTGGTGGCCAGTAAGT-3<sup>&#x2032;</sup>. Three technical replicates of each treatment were used in the analysis.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>YO conceived and coordinated this study, performed the experiments, analysed and interpreted the data, and drafted the manuscript. FK, YK, and TY performed the general statistical analysis on the RNA-Seq data and participated in interpreting the results and in useful discussions. HH, TI, and TM provided valuable insights in the discussion and revision of the manuscript. All authors have read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>Comparison of the </bold><bold><italic>de novo</italic></bold><bold>assembly of three datasets using Trinity (</bold><bold><italic>k</italic></bold><bold>= 21), Oases (MK) and Trans-ABySS (MK) programs.</bold> Bars indicate the number of contigs. The dashed line indicates the mean contig length, and the solid line indicates the median contig length.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-77-S1.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p>Statistical analysis of the non-redundant set of wheat transcripts obtained from three assembly programs.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-77-S2.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p><bold>Assessment of contigs aligned to full-length wheat cDNAs in TriFLDB.</bold> All quality-controlled reads were aligned to these full-length cDNAs using Bowtie and three assembly programs. The proportion of numbers and bases of the full-length transcripts covered by each assembly program were calculated.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-77-S3.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S4">
+        <caption>
+          <title>Additional file 4</title>
+          <p><bold>Conservation of sequences between wheat transcripts and other land plants.</bold> The number of contigs showing significant similarities (E-value &lt;1E-03) when compared with nr according to BLASTX is shown.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-77-S4.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S5">
+        <caption>
+          <title>Additional file 5</title>
+          <p><bold>RPKM values of contigs and cDNAs in TriFLDB.</bold> (PDF 77 kb)</p>
+        </caption>
+        <media xlink:href="1471-2164-14-77-S5.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S6">
+        <caption>
+          <title>Additional file 6</title>
+          <p>PCR primers used for qRT-PCR analysis.</p>
+        </caption>
+        <media xlink:href="1471-2164-14-77-S6.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>We thank Ms. F. Aota, Ms. K. Ohtsu, and Ms. K. Yamada for their technical assistance.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Vance</surname>
+            <given-names>CP</given-names>
+          </name>
+          <name>
+            <surname>Uhde-Stone</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Allan</surname>
+            <given-names>DL</given-names>
+          </name>
+          <article-title>Phosphorus acquisition and use: critical adaptations by plants for securing a nonrenewable resource</article-title>
+          <source>New Phytol</source>
+          <year>2003</year>
+          <volume>157</volume>
+          <issue>3</issue>
+          <fpage>423</fpage>
+          <lpage>447</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1469-8137.2003.00695.x</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ozturk</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Eke</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Torun</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Cakmak</surname>
+            <given-names>I</given-names>
+          </name>
+          <article-title>Variation in phosphorus efficiency among 73 bread and durum wheat genotypes grown in a phosphorus-deficient calcareous soil</article-title>
+          <source>Plant Soil</source>
+          <year>2005</year>
+          <volume>269</volume>
+          <issue>1&#x2013;2</issue>
+          <fpage>69</fpage>
+          <lpage>80</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wang</surname>
+            <given-names>SW</given-names>
+          </name>
+          <name>
+            <surname>Yin</surname>
+            <given-names>LN</given-names>
+          </name>
+          <name>
+            <surname>Tanaka</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Tanaka</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Tsujimoto</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Identification of wheat alien chromosome addition lines for breeding wheat with high phosphorus efficiency</article-title>
+          <source>Breeding Sci</source>
+          <year>2010</year>
+          <volume>60</volume>
+          <issue>4</issue>
+          <fpage>371</fpage>
+          <lpage>379</lpage>
+          <pub-id pub-id-type="doi">10.1270/jsbbs.60.371</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Su</surname>
+            <given-names>JY</given-names>
+          </name>
+          <name>
+            <surname>Xiao</surname>
+            <given-names>YM</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>QY</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Tong</surname>
+            <given-names>YP</given-names>
+          </name>
+          <name>
+            <surname>Jia</surname>
+            <given-names>JZ</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>ZS</given-names>
+          </name>
+          <article-title>Mapping QTLs for phosphorus-deficiency tolerance at wheat seedling stage</article-title>
+          <source>Plant Soil</source>
+          <year>2006</year>
+          <volume>281</volume>
+          <issue>1&#x2013;2</issue>
+          <fpage>25</fpage>
+          <lpage>36</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Su</surname>
+            <given-names>JY</given-names>
+          </name>
+          <name>
+            <surname>Zheng</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>HW</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Jing</surname>
+            <given-names>RL</given-names>
+          </name>
+          <name>
+            <surname>Tong</surname>
+            <given-names>YP</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>ZS</given-names>
+          </name>
+          <article-title>Detection of QTLs for phosphorus use efficiency in relation to agronomic performance of wheat grown under phosphorus sufficient and limited conditions</article-title>
+          <source>Plant Sci</source>
+          <year>2009</year>
+          <volume>176</volume>
+          <issue>6</issue>
+          <fpage>824</fpage>
+          <lpage>836</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.plantsci.2009.03.006</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>YJ</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>JZ</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>JY</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>ZS</given-names>
+          </name>
+          <article-title>Chromosomal control of the tolerance to soil phosphorus deficiency in genome of common wheat</article-title>
+          <source>Chin J Genet</source>
+          <year>1999</year>
+          <volume>26</volume>
+          <fpage>529</fpage>
+          <lpage>538</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wasaki</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Yonetani</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Kuroda</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Shinano</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Yazaki</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Fujii</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Shimbo</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Yamamoto</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Sakata</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Sasaki</surname>
+            <given-names>T</given-names>
+          </name>
+          <etal/>
+          <article-title>Transcriptomic analysis of metabolic changes by phosphorus stress in rice plant roots</article-title>
+          <source>Plant Cell Environ</source>
+          <year>2003</year>
+          <volume>26</volume>
+          <issue>9</issue>
+          <fpage>1515</fpage>
+          <lpage>1523</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1365-3040.2003.01074.x</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wu</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Ma</surname>
+            <given-names>LG</given-names>
+          </name>
+          <name>
+            <surname>Hou</surname>
+            <given-names>XL</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>MY</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>YR</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>FY</given-names>
+          </name>
+          <name>
+            <surname>Deng</surname>
+            <given-names>XW</given-names>
+          </name>
+          <article-title>Phosphate starvation triggers distinct alterations of genome expression in Arabidopsis roots and leaves</article-title>
+          <source>Plant Physiol</source>
+          <year>2003</year>
+          <volume>132</volume>
+          <issue>3</issue>
+          <fpage>1260</fpage>
+          <lpage>1271</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.103.021022</pub-id>
+          <pub-id pub-id-type="pmid">12857808</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Misson</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Raghothama</surname>
+            <given-names>KG</given-names>
+          </name>
+          <name>
+            <surname>Jain</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Jouhet</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Block</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Bligny</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Ortet</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Creff</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Somerville</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Rolland</surname>
+            <given-names>N</given-names>
+          </name>
+          <etal/>
+          <article-title>A genome-wide transcriptional analysis using Arabidopsis thaliana Affymetrix gene chips determined plant responses to phosphate deprivation</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2005</year>
+          <volume>102</volume>
+          <issue>33</issue>
+          <fpage>11934</fpage>
+          <lpage>11939</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0505266102</pub-id>
+          <pub-id pub-id-type="pmid">16085708</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Oono</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Kawahara</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Kanamori</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Mizuno</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Yamagata</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Yamamoto</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Hosokawa</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ikawa</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Akahane</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Zhu</surname>
+            <given-names>Z</given-names>
+          </name>
+          <etal/>
+          <article-title>mRNA-Seq reveals a comprehensive transcriptome profile of rice under phosphate stress</article-title>
+          <source>Rice</source>
+          <year>2011</year>
+          <volume>4</volume>
+          <issue>2</issue>
+          <fpage>50</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12284-011-9064-0</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mochida</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Yoshida</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Sakurai</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ogihara</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Shinozaki</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>TriFLDB: a database of clustered full-length coding sequences from Triticeae with applications to comparative grass genomics</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>150</volume>
+          <issue>3</issue>
+          <fpage>1135</fpage>
+          <lpage>1146</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.109.138214</pub-id>
+          <pub-id pub-id-type="pmid">19448038</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Paux</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Roger</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Badaeva</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Gay</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Bernard</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Sourdille</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Feuillet</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Characterizing the composition and evolution of homoeologous genomes in hexaploid wheat through BAC-end sequencing on chromosome 3B</article-title>
+          <source>Plant J</source>
+          <year>2006</year>
+          <volume>48</volume>
+          <issue>3</issue>
+          <fpage>463</fpage>
+          <lpage>474</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2006.02891.x</pub-id>
+          <pub-id pub-id-type="pmid">17010109</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Choulet</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Rustenholz</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Paux</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Salse</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Leroy</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Schlub</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Le Paslier</surname>
+            <given-names>M-C</given-names>
+          </name>
+          <name>
+            <surname>Magdelenat</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Gonthier</surname>
+            <given-names>C</given-names>
+          </name>
+          <etal/>
+          <article-title>Megabase level sequencing reveals contrasted organization and evolution patterns of the wheat gene and transposable element spaces</article-title>
+          <source>Plant Cell</source>
+          <year>2010</year>
+          <volume>22</volume>
+          <issue>6</issue>
+          <fpage>1686</fpage>
+          <lpage>1701</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.110.074187</pub-id>
+          <pub-id pub-id-type="pmid">20581307</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Garg</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Patel</surname>
+            <given-names>RK</given-names>
+          </name>
+          <name>
+            <surname>Jhanwar</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Priya</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Bhattacharjee</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Yadav</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Bhatia</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Chattopadhyay</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Tyagi</surname>
+            <given-names>AK</given-names>
+          </name>
+          <name>
+            <surname>Jain</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Gene discovery and tissue-specific transcriptome analysis in chickpea with massively parallel pyrosequencing and web resource development</article-title>
+          <source>Plant Physiol</source>
+          <year>2011</year>
+          <volume>156</volume>
+          <issue>4</issue>
+          <fpage>1661</fpage>
+          <lpage>1678</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.111.178616</pub-id>
+          <pub-id pub-id-type="pmid">21653784</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Duan</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Xia</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Jia</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kong</surname>
+            <given-names>X</given-names>
+          </name>
+          <article-title>Optimizing de novo common wheat transcriptome assembly using short-read RNA-Seq data</article-title>
+          <source>BMC Genomics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <issue>1</issue>
+          <fpage>392</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-13-392</pub-id>
+          <pub-id pub-id-type="pmid">22891638</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Birol</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Jackman</surname>
+            <given-names>SD</given-names>
+          </name>
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>CB</given-names>
+          </name>
+          <name>
+            <surname>Qian</surname>
+            <given-names>JQ</given-names>
+          </name>
+          <name>
+            <surname>Varhol</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Stazyk</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Morin</surname>
+            <given-names>RD</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Hirst</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Schein</surname>
+            <given-names>JE</given-names>
+          </name>
+          <etal/>
+          <article-title>De novo transcriptome assembly with ABySS</article-title>
+          <source>Bioinformatics</source>
+          <year>2009</year>
+          <volume>25</volume>
+          <issue>21</issue>
+          <fpage>2872</fpage>
+          <lpage>2877</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btp367</pub-id>
+          <pub-id pub-id-type="pmid">19528083</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schulz</surname>
+            <given-names>MH</given-names>
+          </name>
+          <name>
+            <surname>Zerbino</surname>
+            <given-names>DR</given-names>
+          </name>
+          <name>
+            <surname>Vingron</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Birney</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>Oases: robust de novo RNA-seq assembly across the dynamic range of expression levels</article-title>
+          <source>Bioinformatics</source>
+          <year>2012</year>
+          <volume>28</volume>
+          <issue>8</issue>
+          <fpage>1086</fpage>
+          <lpage>1092</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/bts094</pub-id>
+          <pub-id pub-id-type="pmid">22368243</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Grabherr</surname>
+            <given-names>MG</given-names>
+          </name>
+          <name>
+            <surname>Haas</surname>
+            <given-names>BJ</given-names>
+          </name>
+          <name>
+            <surname>Yassour</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Levin</surname>
+            <given-names>JZ</given-names>
+          </name>
+          <name>
+            <surname>Thompson</surname>
+            <given-names>DA</given-names>
+          </name>
+          <name>
+            <surname>Amit</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Adiconis</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Fan</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Raychowdhury</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Zeng</surname>
+            <given-names>Q</given-names>
+          </name>
+          <etal/>
+          <article-title>Full-length transcriptome assembly from RNA-Seq data without a reference genome</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2011</year>
+          <volume>29</volume>
+          <issue>7</issue>
+          <fpage>644</fpage>
+          <lpage>652</lpage>
+          <pub-id pub-id-type="doi">10.1038/nbt.1883</pub-id>
+          <pub-id pub-id-type="pmid">21572440</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Martin</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Z</given-names>
+          </name>
+          <article-title>Next-generation transcriptome assembly</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <issue>10</issue>
+          <fpage>671</fpage>
+          <lpage>682</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg3068</pub-id>
+          <pub-id pub-id-type="pmid">21897427</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Thibaud</surname>
+            <given-names>M-C</given-names>
+          </name>
+          <name>
+            <surname>Arrighi</surname>
+            <given-names>J-F</given-names>
+          </name>
+          <name>
+            <surname>Bayle</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Chiarenza</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Creff</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Bustos</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Paz-Ares</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Poirier</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Nussaume</surname>
+            <given-names>L</given-names>
+          </name>
+          <article-title>Dissection of local and systemic transcriptional responses to phosphate starvation in Arabidopsis</article-title>
+          <source>Plant J</source>
+          <year>2010</year>
+          <volume>64</volume>
+          <issue>5</issue>
+          <fpage>775</fpage>
+          <lpage>789</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2010.04375.x</pub-id>
+          <pub-id pub-id-type="pmid">21105925</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lin</surname>
+            <given-names>WY</given-names>
+          </name>
+          <name>
+            <surname>Lin</surname>
+            <given-names>SI</given-names>
+          </name>
+          <name>
+            <surname>Chiou</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <article-title>Molecular regulators of phosphate homeostasis in plants</article-title>
+          <source>J Exp Bot</source>
+          <year>2009</year>
+          <volume>60</volume>
+          <issue>5</issue>
+          <fpage>1427</fpage>
+          <lpage>1438</lpage>
+          <pub-id pub-id-type="doi">10.1093/jxb/ern303</pub-id>
+          <pub-id pub-id-type="pmid">19168668</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Franco-Zorrilla</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Valli</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Todesco</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Mateos</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Puga</surname>
+            <given-names>MI</given-names>
+          </name>
+          <name>
+            <surname>Rubio-Somoza</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Leyva</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Weigel</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Garcia</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Paz-Ares</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Target mimicry provides a new mechanism for regulation of microRNA activity</article-title>
+          <source>Nat Genet</source>
+          <year>2007</year>
+          <volume>39</volume>
+          <issue>8</issue>
+          <fpage>1033</fpage>
+          <lpage>1037</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng2079</pub-id>
+          <pub-id pub-id-type="pmid">17643101</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Pellny</surname>
+            <given-names>TK</given-names>
+          </name>
+          <name>
+            <surname>Lovegrove</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Freeman</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Tosi</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Love</surname>
+            <given-names>CG</given-names>
+          </name>
+          <name>
+            <surname>Knox</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Shewry</surname>
+            <given-names>PR</given-names>
+          </name>
+          <name>
+            <surname>Mitchell</surname>
+            <given-names>RA</given-names>
+          </name>
+          <article-title>Cell walls of developing wheat starchy endosperm: comparison of composition and RNA-Seq transcriptome</article-title>
+          <source>Plant Physiol</source>
+          <year>2012</year>
+          <volume>158</volume>
+          <issue>2</issue>
+          <fpage>612</fpage>
+          <lpage>627</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.111.189191</pub-id>
+          <pub-id pub-id-type="pmid">22123899</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rubio</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Linhares</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Solano</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Martin</surname>
+            <given-names>AC</given-names>
+          </name>
+          <name>
+            <surname>Iglesias</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Leyva</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Paz-Ares</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>A conserved MYB transcription factor involved in phosphate starvation signaling both in vascular plants and in unicellular algae</article-title>
+          <source>Gene Dev</source>
+          <year>2001</year>
+          <volume>15</volume>
+          <issue>16</issue>
+          <fpage>2122</fpage>
+          <lpage>2133</lpage>
+          <pub-id pub-id-type="doi">10.1101/gad.204401</pub-id>
+          <pub-id pub-id-type="pmid">11511543</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhou</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Jiao</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>He</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Zhong</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>OsPHR2 is involved in phosphate-starvation signaling and excessive phosphate accumulation in shoots of plants</article-title>
+          <source>Plant Physiol</source>
+          <year>2008</year>
+          <volume>146</volume>
+          <issue>4</issue>
+          <fpage>1673</fpage>
+          <lpage>1686</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.107.111443</pub-id>
+          <pub-id pub-id-type="pmid">18263782</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bari</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Datt Pant</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Stitt</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Scheible</surname>
+            <given-names>WR</given-names>
+          </name>
+          <article-title>PHO2, microRNA399, and PHR1 define a phosphate-signaling pathway in plants</article-title>
+          <source>Plant Physiol</source>
+          <year>2006</year>
+          <volume>141</volume>
+          <issue>3</issue>
+          <fpage>988</fpage>
+          <lpage>999</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.106.079707</pub-id>
+          <pub-id pub-id-type="pmid">16679424</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Miura</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Jin</surname>
+            <given-names>JB</given-names>
+          </name>
+          <name>
+            <surname>Hasegawa</surname>
+            <given-names>PM</given-names>
+          </name>
+          <article-title>Sumoylation, a post-translational regulatory process in plants</article-title>
+          <source>Curr Opin Plant Biol</source>
+          <year>2007</year>
+          <volume>10</volume>
+          <issue>5</issue>
+          <fpage>495</fpage>
+          <lpage>502</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.pbi.2007.07.002</pub-id>
+          <pub-id pub-id-type="pmid">17720613</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schreiber</surname>
+            <given-names>AW</given-names>
+          </name>
+          <name>
+            <surname>Shi</surname>
+            <given-names>BJ</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>CY</given-names>
+          </name>
+          <name>
+            <surname>Langridge</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Baumann</surname>
+            <given-names>U</given-names>
+          </name>
+          <article-title>Discovery of barley miRNAs through deep sequencing of short reads</article-title>
+          <source>BMC Genomics</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <fpage>129</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-12-129</pub-id>
+          <pub-id pub-id-type="pmid">21352554</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Huang</surname>
+            <given-names>CY</given-names>
+          </name>
+          <name>
+            <surname>Shirley</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Genc</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Shi</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Langridge</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Phosphate utilization efficiency correlates with expression of low-affinity phosphate transporters and noncoding RNA, IPS1, in barley</article-title>
+          <source>Plant Physiol</source>
+          <year>2011</year>
+          <volume>156</volume>
+          <issue>3</issue>
+          <fpage>1217</fpage>
+          <lpage>1229</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.111.178459</pub-id>
+          <pub-id pub-id-type="pmid">21606317</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tittarelli</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Milla</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Vargas</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Morales</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Neupert</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Meisel</surname>
+            <given-names>LA</given-names>
+          </name>
+          <name>
+            <surname>Salvo</surname>
+            <given-names>GH</given-names>
+          </name>
+          <name>
+            <surname>Penaloza</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Munoz</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Corcuera</surname>
+            <given-names>LJ</given-names>
+          </name>
+          <etal/>
+          <article-title>Isolation and comparative analysis of the wheat TaPT2 promoter: identification in silico of new putative regulatory motifs conserved between monocots and dicots</article-title>
+          <source>J Exp Bot</source>
+          <year>2007</year>
+          <volume>58</volume>
+          <issue>10</issue>
+          <fpage>2573</fpage>
+          <lpage>2582</lpage>
+          <pub-id pub-id-type="doi">10.1093/jxb/erm123</pub-id>
+          <pub-id pub-id-type="pmid">17562688</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wang</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Ying</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Shou</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Involvement of OsSPX1 in phosphate homeostasis in rice</article-title>
+          <source>Plant J</source>
+          <year>2009</year>
+          <volume>57</volume>
+          <issue>5</issue>
+          <fpage>895</fpage>
+          <lpage>904</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2008.03734.x</pub-id>
+          <pub-id pub-id-type="pmid">19000161</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>MacIntosh</surname>
+            <given-names>GC</given-names>
+          </name>
+          <name>
+            <surname>Hillwig</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Meyer</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Flagel</surname>
+            <given-names>L</given-names>
+          </name>
+          <article-title>RNase T2 genes from rice and the evolution of secretory ribonucleases in plants</article-title>
+          <source>Mol Genet Genomics</source>
+          <year>2010</year>
+          <volume>283</volume>
+          <issue>4</issue>
+          <fpage>381</fpage>
+          <lpage>396</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00438-010-0524-9</pub-id>
+          <pub-id pub-id-type="pmid">20182746</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Tian</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Shou</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Identification of rice purple acid phosphatases related to posphate starvation signalling</article-title>
+          <source>Plant Biology</source>
+          <year>2011</year>
+          <volume>13</volume>
+          <issue>1</issue>
+          <fpage>7</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1438-8677.2010.00346.x</pub-id>
+          <pub-id pub-id-type="pmid">21143719</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Secco</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Baumann</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Poirier</surname>
+            <given-names>Y</given-names>
+          </name>
+          <article-title>Characterization of the rice PHO1 gene family reveals a key role for OsPHO1;2 in phosphate homeostasis and the evolution of a distinct clade in dicotyledons</article-title>
+          <source>Plant Physiol</source>
+          <year>2010</year>
+          <volume>152</volume>
+          <issue>3</issue>
+          <fpage>1693</fpage>
+          <lpage>1704</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.109.149872</pub-id>
+          <pub-id pub-id-type="pmid">20081045</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Miura</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Rus</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Sharkhuu</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Yokoi</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Karthikeyan</surname>
+            <given-names>AS</given-names>
+          </name>
+          <name>
+            <surname>Raghothama</surname>
+            <given-names>KG</given-names>
+          </name>
+          <name>
+            <surname>Baek</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Koo</surname>
+            <given-names>YD</given-names>
+          </name>
+          <name>
+            <surname>Jin</surname>
+            <given-names>JB</given-names>
+          </name>
+          <name>
+            <surname>Bressan</surname>
+            <given-names>RA</given-names>
+          </name>
+          <etal/>
+          <article-title>The Arabidopsis SUMO E3 ligase SIZ1 controls phosphate deficiency responses</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2005</year>
+          <volume>102</volume>
+          <issue>21</issue>
+          <fpage>7760</fpage>
+          <lpage>7765</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0500778102</pub-id>
+          <pub-id pub-id-type="pmid">15894620</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Paszkowski</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Kroken</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Roux</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Briggs</surname>
+            <given-names>SP</given-names>
+          </name>
+          <article-title>Rice phosphate transporters include an evolutionarily divergent gene specifically activated in arbuscular mycorrhizal symbiosis</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2002</year>
+          <volume>99</volume>
+          <issue>20</issue>
+          <fpage>13324</fpage>
+          <lpage>13329</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.202474599</pub-id>
+          <pub-id pub-id-type="pmid">12271140</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Essigmann</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Guler</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Narang</surname>
+            <given-names>RA</given-names>
+          </name>
+          <name>
+            <surname>Linke</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Benning</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Phosphate availability affects the thylakoid lipid composition and the expression of SQD1, a gene required for sulfolipid biosynthesis in Arabidopsis thaliana</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>1998</year>
+          <volume>95</volume>
+          <issue>4</issue>
+          <fpage>1950</fpage>
+          <lpage>1955</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.95.4.1950</pub-id>
+          <pub-id pub-id-type="pmid">9465123</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kobayashi</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Awai</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Nakamura</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Nagatani</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Masuda</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ohta</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Type-B monogalactosyldiacylglycerol synthases are involved in phosphate starvation-induced lipid remodeling, and are crucial for low-phosphate adaptation</article-title>
+          <source>Plant J</source>
+          <year>2009</year>
+          <volume>57</volume>
+          <issue>2</issue>
+          <fpage>322</fpage>
+          <lpage>331</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2008.03692.x</pub-id>
+          <pub-id pub-id-type="pmid">18808455</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wang</surname>
+            <given-names>XM</given-names>
+          </name>
+          <name>
+            <surname>Yi</surname>
+            <given-names>KK</given-names>
+          </name>
+          <name>
+            <surname>Tao</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>ZC</given-names>
+          </name>
+          <name>
+            <surname>Jiang</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Zhu</surname>
+            <given-names>LH</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Cytokinin represses phosphate-starvation response through increasing of intracellular phosphate level</article-title>
+          <source>Plant Cell Environ</source>
+          <year>2006</year>
+          <volume>29</volume>
+          <issue>10</issue>
+          <fpage>1924</fpage>
+          <lpage>1935</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-3040.2006.01568.x</pub-id>
+          <pub-id pub-id-type="pmid">16930318</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ciereszko</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Johansson</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Hurry</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Kleczkowski</surname>
+            <given-names>LA</given-names>
+          </name>
+          <article-title>Phosphate status affects the gene expression, protein content and enzymatic activity of UDP-glucose pyrophosphorylase in wild-type and pho mutants of Arabidopsis</article-title>
+          <source>Planta</source>
+          <year>2001</year>
+          <volume>212</volume>
+          <issue>4</issue>
+          <fpage>598</fpage>
+          <lpage>605</lpage>
+          <pub-id pub-id-type="doi">10.1007/s004250000424</pub-id>
+          <pub-id pub-id-type="pmid">11525517</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hammond</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>White</surname>
+            <given-names>PJ</given-names>
+          </name>
+          <article-title>Sucrose transport in the phloem: integrating root responses to phosphorus starvation</article-title>
+          <source>J Exp Bot</source>
+          <year>2008</year>
+          <volume>59</volume>
+          <issue>1</issue>
+          <fpage>93</fpage>
+          <lpage>109</lpage>
+          <pub-id pub-id-type="pmid">18212031</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Chen</surname>
+            <given-names>YF</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>LQ</given-names>
+          </name>
+          <name>
+            <surname>Xu</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Kong</surname>
+            <given-names>YH</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>WH</given-names>
+          </name>
+          <article-title>The WRKY6 transcription factor modulates PHOSPHATE1 expression in response to low Pi stress in Arabidopsis</article-title>
+          <source>Plant Cell</source>
+          <year>2009</year>
+          <volume>21</volume>
+          <issue>11</issue>
+          <fpage>3554</fpage>
+          <lpage>3566</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.108.064980</pub-id>
+          <pub-id pub-id-type="pmid">19934380</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hamburger</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Rezzonico</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>MacDonald-Comber Petetot</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Somerville</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Poirier</surname>
+            <given-names>Y</given-names>
+          </name>
+          <article-title>Identification and characterization of the Arabidopsis PHO1 gene involved in phosphate loading to the xylem</article-title>
+          <source>Plant Cell</source>
+          <year>2002</year>
+          <volume>14</volume>
+          <issue>4</issue>
+          <fpage>889</fpage>
+          <lpage>902</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.000745</pub-id>
+          <pub-id pub-id-type="pmid">11971143</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jiang</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Deyholos</surname>
+            <given-names>MK</given-names>
+          </name>
+          <article-title>Functional characterization of Arabidopsis NaCl-inducible WRKY25 and WRKY33 transcription factors in abiotic stresses</article-title>
+          <source>Plant Mol Biol</source>
+          <year>2009</year>
+          <volume>69</volume>
+          <issue>1&#x2013;2</issue>
+          <fpage>91</fpage>
+          <lpage>105</lpage>
+          <pub-id pub-id-type="pmid">18839316</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lim</surname>
+            <given-names>GH</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Chung</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <name>
+            <surname>Woo</surname>
+            <given-names>YM</given-names>
+          </name>
+          <name>
+            <surname>Cheong</surname>
+            <given-names>HS</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>CS</given-names>
+          </name>
+          <article-title>A putative novel transcription factor, AtSKIP, is involved in abscisic acid signalling and confers salt and osmotic tolerance in Arabidopsis</article-title>
+          <source>New Phytol</source>
+          <year>2010</year>
+          <volume>185</volume>
+          <issue>1</issue>
+          <fpage>103</fpage>
+          <lpage>113</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1469-8137.2009.03032.x</pub-id>
+          <pub-id pub-id-type="pmid">19765229</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Brader</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Kariola</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Palva</surname>
+            <given-names>ET</given-names>
+          </name>
+          <article-title>WRKY70 modulates the selection of signaling pathways in plant defense</article-title>
+          <source>Plant J</source>
+          <year>2006</year>
+          <volume>46</volume>
+          <issue>3</issue>
+          <fpage>477</fpage>
+          <lpage>491</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2006.02712.x</pub-id>
+          <pub-id pub-id-type="pmid">16623907</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Smith</surname>
+            <given-names>AP</given-names>
+          </name>
+          <name>
+            <surname>Jain</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Deal</surname>
+            <given-names>RB</given-names>
+          </name>
+          <name>
+            <surname>Nagarajan</surname>
+            <given-names>VK</given-names>
+          </name>
+          <name>
+            <surname>Poling</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Raghothama</surname>
+            <given-names>KG</given-names>
+          </name>
+          <name>
+            <surname>Meagher</surname>
+            <given-names>RB</given-names>
+          </name>
+          <article-title>Histone H2A.Z regulates the expression of several classes of phosphate starvation response genes but not as a transcriptional activator</article-title>
+          <source>Plant Physiol</source>
+          <year>2010</year>
+          <volume>152</volume>
+          <issue>1</issue>
+          <fpage>217</fpage>
+          <lpage>225</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.109.145532</pub-id>
+          <pub-id pub-id-type="pmid">19897606</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sarnowski</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <name>
+            <surname>Rios</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Jasik</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Swiezewski</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Kaczanowski</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Kwiatkowska</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Pawlikowska</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Kozbial</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kozbial</surname>
+            <given-names>P</given-names>
+          </name>
+          <etal/>
+          <article-title>SWI3 subunits of putative SWI/SNF chromatin-remodeling complexes play distinct roles during Arabidopsis development</article-title>
+          <source>Plant Cell</source>
+          <year>2005</year>
+          <volume>17</volume>
+          <issue>9</issue>
+          <fpage>2454</fpage>
+          <lpage>2472</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.105.031203</pub-id>
+          <pub-id pub-id-type="pmid">16055636</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Santisteban</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Kalashnikova</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Kalashnikova</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>MM</given-names>
+          </name>
+          <article-title>Histone H2A.Z regulates transcription and is partially redundant with nucleosome remodeling complexes</article-title>
+          <source>Cell</source>
+          <year>2000</year>
+          <volume>103</volume>
+          <issue>3</issue>
+          <fpage>411</fpage>
+          <lpage>422</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0092-8674(00)00133-1</pub-id>
+          <pub-id pub-id-type="pmid">11081628</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sudarsanam</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Winston</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>The Swi/Snf family nucleosome-remodeling complexes and transcriptional control</article-title>
+          <source>Trends Genet</source>
+          <year>2000</year>
+          <volume>16</volume>
+          <issue>8</issue>
+          <fpage>345</fpage>
+          <lpage>351</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0168-9525(00)02060-6</pub-id>
+          <pub-id pub-id-type="pmid">10904263</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Barbaric</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Luckenbach</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Schmid</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Blaschke</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Horz</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Korber</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Redundancy of chromatin remodeling pathways for the induction of the yeast PHO5 promoter in vivo</article-title>
+          <source>J Biol Chem</source>
+          <year>2007</year>
+          <volume>282</volume>
+          <issue>38</issue>
+          <fpage>27610</fpage>
+          <lpage>27621</lpage>
+          <pub-id pub-id-type="doi">10.1074/jbc.M700623200</pub-id>
+          <pub-id pub-id-type="pmid">17631505</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wippo</surname>
+            <given-names>CJ</given-names>
+          </name>
+          <name>
+            <surname>Krstulovic</surname>
+            <given-names>BS</given-names>
+          </name>
+          <name>
+            <surname>Ertel</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Musladin</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Blaschke</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Sturzl</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Yuan</surname>
+            <given-names>GC</given-names>
+          </name>
+          <name>
+            <surname>Horz</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Korber</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Barbaric</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Differential cofactor requirements for histone eviction from two nucleosomes at the yeast PHO84 promoter are determined by intrinsic nucleosome stability</article-title>
+          <source>Mol Cell Biol</source>
+          <year>2009</year>
+          <volume>29</volume>
+          <issue>11</issue>
+          <fpage>2960</fpage>
+          <lpage>2981</lpage>
+          <pub-id pub-id-type="doi">10.1128/MCB.01054-08</pub-id>
+          <pub-id pub-id-type="pmid">19307305</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B53">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Duff</surname>
+            <given-names>SM</given-names>
+          </name>
+          <name>
+            <surname>Moorhead</surname>
+            <given-names>GB</given-names>
+          </name>
+          <name>
+            <surname>Lefebvre</surname>
+            <given-names>DD</given-names>
+          </name>
+          <name>
+            <surname>Plaxton</surname>
+            <given-names>WC</given-names>
+          </name>
+          <article-title>Phosphate Starvation Inducible; Bypasses&#x2019; of adenylate and phosphate dependent glycolytic enzymes in Brassica nigra suspension Cells</article-title>
+          <source>Plant Physiol</source>
+          <year>1989</year>
+          <volume>90</volume>
+          <issue>4</issue>
+          <fpage>1275</fpage>
+          <lpage>1278</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.90.4.1275</pub-id>
+          <pub-id pub-id-type="pmid">16666922</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B54">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Raines</surname>
+            <given-names>CA</given-names>
+          </name>
+          <article-title>The Calvin cycle revisited</article-title>
+          <source>Photosynth Res</source>
+          <year>2003</year>
+          <volume>75</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1023/A:1022421515027</pub-id>
+          <pub-id pub-id-type="pmid">16245089</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B55">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lefebvre</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Lawson</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Zakhleniuk</surname>
+            <given-names>OV</given-names>
+          </name>
+          <name>
+            <surname>Lloyd</surname>
+            <given-names>JC</given-names>
+          </name>
+          <name>
+            <surname>Raines</surname>
+            <given-names>CA</given-names>
+          </name>
+          <name>
+            <surname>Fryer</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Increased sedoheptulose-1,7-bisphosphatase activity in transgenic tobacco plants stimulates photosynthesis and growth from an early stage in development</article-title>
+          <source>Plant Physiol</source>
+          <year>2005</year>
+          <volume>138</volume>
+          <issue>1</issue>
+          <fpage>451</fpage>
+          <lpage>460</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.104.055046</pub-id>
+          <pub-id pub-id-type="pmid">15863701</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B56">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Yoshida</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Forno</surname>
+            <given-names>AD</given-names>
+          </name>
+          <name>
+            <surname>Cock</surname>
+            <given-names>HJ</given-names>
+          </name>
+          <name>
+            <surname>Gomez</surname>
+            <given-names>AK</given-names>
+          </name>
+          <source>Laboratory manual for physiological studies of rice</source>
+          <year>1976</year>
+          <edition>3rd</edition>
+          <publisher-name>Philippines: Manila</publisher-name>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://onlinelibrary.wiley.com/doi/10.1111/j.1439-0523.2007.01265.x/full">http://onlinelibrary.wiley.com/doi/10.1111/j.1439-0523.2007.01265.x/full</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B57">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zerbino</surname>
+            <given-names>DR</given-names>
+          </name>
+          <name>
+            <surname>Birney</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>Velvet: algorithms for de novo short read assembly using de Bruijn graphs</article-title>
+          <source>Genome Res</source>
+          <year>2008</year>
+          <volume>18</volume>
+          <issue>5</issue>
+          <fpage>821</fpage>
+          <lpage>829</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.074492.107</pub-id>
+          <pub-id pub-id-type="pmid">18349386</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B58">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Simpson</surname>
+            <given-names>JT</given-names>
+          </name>
+          <name>
+            <surname>Wong</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Jackman</surname>
+            <given-names>SD</given-names>
+          </name>
+          <name>
+            <surname>Schein</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Jones</surname>
+            <given-names>SJ</given-names>
+          </name>
+          <name>
+            <surname>Birol</surname>
+            <given-names>I</given-names>
+          </name>
+          <article-title>ABySS: a parallel assembler for short read sequence data</article-title>
+          <source>Genome Res</source>
+          <year>2009</year>
+          <volume>19</volume>
+          <issue>6</issue>
+          <fpage>1117</fpage>
+          <lpage>1123</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.089532.108</pub-id>
+          <pub-id pub-id-type="pmid">19251739</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B59">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhao</surname>
+            <given-names>QY</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Kong</surname>
+            <given-names>YM</given-names>
+          </name>
+          <name>
+            <surname>Luo</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Hao</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Optimizing de novo transcriptome assembly from short-read RNA-Seq data: a comparative study</article-title>
+          <source>BMC Bioinforma</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <issue>Suppl 14</issue>
+          <fpage>S2</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-12-S14-S2</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B60">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Godzik</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences</article-title>
+          <source>Bioinformatics</source>
+          <year>2006</year>
+          <volume>22</volume>
+          <issue>13</issue>
+          <fpage>1658</fpage>
+          <lpage>1659</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btl158</pub-id>
+          <pub-id pub-id-type="pmid">16731699</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B61">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mortazavi</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Williams</surname>
+            <given-names>BA</given-names>
+          </name>
+          <name>
+            <surname>Mccue</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Schaeffer</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Wold</surname>
+            <given-names>B</given-names>
+          </name>
+          <article-title>Mapping and quantifying mammalian transcriptomes by RNA-Seq</article-title>
+          <source>Nat Methods</source>
+          <year>2008</year>
+          <volume>5</volume>
+          <issue>7</issue>
+          <fpage>621</fpage>
+          <lpage>628</lpage>
+          <pub-id pub-id-type="doi">10.1038/nmeth.1226</pub-id>
+          <pub-id pub-id-type="pmid">18516045</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,1758 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.3 20070202//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.3?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Database (Oxford)</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Database (Oxford)</journal-id>
+      <journal-id journal-id-type="publisher-id">database</journal-id>
+      <journal-id journal-id-type="hwp">databa</journal-id>
+      <journal-title-group>
+        <journal-title>Database: The Journal of Biological Databases and Curation</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1758-0463</issn>
+      <publisher>
+        <publisher-name>Oxford University Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3649639</article-id>
+      <article-id pub-id-type="pmid">23660284</article-id>
+      <article-id pub-id-type="doi">10.1093/database/bat014</article-id>
+      <article-id pub-id-type="publisher-id">bat014</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Database Tool</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>dbWFA: a web-based database for functional annotation of <italic>Triticum aestivum</italic> transcripts</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Vincent</surname>
+            <given-names>Jonathan</given-names>
+          </name>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dai</surname>
+            <given-names>Zhanwu</given-names>
+          </name>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ravel</surname>
+            <given-names>Catherine</given-names>
+          </name>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Choulet</surname>
+            <given-names>Fr&#xE9;d&#xE9;ric</given-names>
+          </name>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mouzeyar</surname>
+            <given-names>Said</given-names>
+          </name>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bouzidi</surname>
+            <given-names>M. Fouad</given-names>
+          </name>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Agier</surname>
+            <given-names>Marie</given-names>
+          </name>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Martre</surname>
+            <given-names>Pierre</given-names>
+          </name>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="bat014-AFF1">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="bat014-COR1">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="bat014-AFF1"><sup>1</sup>INRA, UMR1095 Genetics, Diversity and Ecophysiology of Cereals, 5 Chemin de Beaulieu, Clermont-Ferrand, F-63 039 Cedex 2, France, <sup>2</sup>Blaise Pascal University, UMR1095 Genetics, Diversity and Ecophysiology of Cereals, Aubi&#xE8;re F-63 177, France and <sup>3</sup>Blaise Pascal University, UMR6158 CNRS LIMOS Laboratoire d'Informatique, de Mod&#xE9;lisation et d'Optimisation des Syst&#xE8;mes, Aubi&#xE8;re F-63 173, France</aff>
+      <author-notes>
+        <fn id="bat014-FN1">
+          <p>Present address: Zhanwu Dai, INRA, ISVV, UMR1287 &#xC9;cophysiologie et G&#xE9;nomique Fonctionnelle de la Vigne (EGFV), F-33 882 Villenave d&#x2019;Ornon, France</p>
+        </fn>
+        <corresp id="bat014-COR1">*<bold>Corresponding author:</bold> Tel: <phone>+33 473 624 351</phone>; Fax: <fax>+33 473 624 457</fax>; Email: <email>pierre.martre@clermont.inra.fr</email></corresp>
+        <fn>
+          <p><bold>Citation details:</bold> Vincent,J., Dai,Z.W., Ravel,C. <italic>et al.</italic> dbWFA: a web-based database for functional annotation of <italic>Triticum aestivum</italic> transcripts. <italic>Database</italic> (2013) Vol. 2013: article ID bat014; doi:10.1093/database/bat014</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>9</day>
+        <month>5</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>9</day>
+        <month>5</month>
+        <year>2013</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on the							<pub-date pub-type="epub"/>. -->
+      <volume>2013</volume>
+      <elocation-id>bat014</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>11</day>
+          <month>7</month>
+          <year>2012</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>19</day>
+          <month>2</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>20</day>
+          <month>2</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; The Author(s) 2013. Published by Oxford University Press.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">
+          <license-p><!--CREATIVE COMMONS-->This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">http://creativecommons.org/licenses/by-nc/3.0/</ext-link>), which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>The functional annotation of genes based on sequence homology with genes from model species genomes is time-consuming because it is necessary to mine several unrelated databases. The aim of the present work was to develop a functional annotation database for common wheat <italic>Triticum aestivum</italic> (L.). The database, named dbWFA, is based on the reference NCBI UniGene set, an expressed gene catalogue built by expressed sequence tag clustering, and on full-length coding sequences retrieved from the TriFLDB database. Information from good-quality heterogeneous sources, including annotations for model plant species <italic>Arabidopsis thaliana</italic> (L.) Heynh. and <italic>Oryza sativa</italic> L., was gathered and linked to <italic>T. aestivum</italic> sequences through BLAST-based homology searches. Even though the complexity of the transcriptome cannot yet be fully appreciated, we developed a tool to easily and promptly obtain information from multiple functional annotation systems (Gene Ontology, MapMan bin codes, MIPS Functional Categories, PlantCyc pathway reactions and TAIR gene families). The use of dbWFA is illustrated here with several query examples. We were able to assign a putative function to 45% of the UniGenes and 81% of the full-length coding sequences from TriFLDB. Moreover, comparison of the annotation of the whole <italic>T. aestivum</italic> UniGene set along with curated annotations of the two model species assessed the accuracy of the annotation provided by dbWFA. To further illustrate the use of dbWFA, genes specifically expressed during the early cell division or late storage polymer accumulation phases of <italic>T. aestivum</italic> grain development were identified using a clustering analysis and then annotated using dbWFA. The annotation of these two sets of genes was consistent with previous analyses of <italic>T. aestivum</italic> grain transcriptomes and proteomes.</p>
+        <p>
+          <bold>Database URL:</bold>
+          <ext-link ext-link-type="uri" xlink:href="urgi.versailles.inra.fr/dbWFA/">urgi.versailles.inra.fr/dbWFA/</ext-link>
+        </p>
+      </abstract>
+      <counts>
+        <page-count count="12"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Introduction</title>
+      <p><italic>Triticum aestivum</italic> (L.), common wheat or bread wheat, is one of the most important staple crops in the world. It is cultivated worldwide and provides &gt;20% of the calories and proteins in the human diet (<ext-link ext-link-type="uri" xlink:href="http://faostat.fao.org">http://faostat.fao.org</ext-link>). Although ongoing sequencing efforts have already produced important genomic resources (<xref ref-type="bibr" rid="bat014-B1 bat014-B2 bat014-B3 bat014-B4">1&#x2013;4</xref>), the complete sequencing and annotation of the hexaploid (2n = 6&#xD7; = 42, AABBDD) <italic>T. aestivum</italic> genome has yet to be achieved. A first version of the genome of the bread wheat cv. Chinese Spring has recently been published (<xref ref-type="bibr" rid="bat014-B4">4</xref>), providing the scientific community with highly valuable genomic and evolutionary information, which will facilitate genome-wide analysis of bread wheat. However, because of the low-coverage (5-fold) shotgun sequencing method used in this project, this resource does not represent a high-quality draft of the wheat genome in terms of sequence completion, quality and annotation. Genome-wide analysis of gene expression by means of expression microarrays or transcriptome sequencing (RNA-Seq) is now being adopted in <italic>T. aestivum</italic> (<xref ref-type="bibr" rid="bat014-B5">5</xref>, <xref ref-type="bibr" rid="bat014-B6">6</xref>), but analysing such large datasets requires extensive annotation efforts. Data fragmentation and technical and semantic heterogeneity can severely limit the efficient extraction and interpretation of biological data (<xref ref-type="bibr" rid="bat014-B7">7</xref>, <xref ref-type="bibr" rid="bat014-B8">8</xref>).</p>
+      <p>More and more genomic information is becoming available for <italic>T. aestivum</italic> research. Various resources and associated tools grant the user a structural overview of expressed sequence tag (EST) (ITEC, <ext-link ext-link-type="uri" xlink:href="http://avena.pw.usda.gov/genome/">http://avena.pw.usda.gov/genome/</ext-link>) (<xref ref-type="bibr" rid="bat014-B9">9</xref>, <xref ref-type="bibr" rid="bat014-B10">10</xref>) or bacterial artificial chromosome clone libraries (<xref ref-type="bibr" rid="bat014-B11">11</xref>, <xref ref-type="bibr" rid="bat014-B12">12</xref>) for instance (<xref ref-type="bibr" rid="bat014-B13 bat014-B14 bat014-B15">13&#x2013;15</xref>). Important initiatives are underway to facilitate the breeding of improved Triticeae varieties. The TriticeaeGenome project (<ext-link ext-link-type="uri" xlink:href="www.triticeaegenome.eu">www.triticeaegenome.eu</ext-link>) grants access to comprehensive information extracted from experimental data to provide a better understanding of Triticeae genomes (<xref ref-type="bibr" rid="bat014-B16">16</xref>). The global database GrainGenes (<ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/">http://wheat.pw.usda.gov/</ext-link>) provides a variety of services and bioinformatics tools for the Triticeae and <italic>Avena sativa</italic> research communities. The HarvEST database (<ext-link ext-link-type="uri" xlink:href="http://harvest.ucr.edu/">http://harvest.ucr.edu/</ext-link>) (<xref ref-type="bibr" rid="bat014-B17">17</xref>), dedicated to several crop species, including <italic>T. aestivum</italic> and <italic>Hordeum vulgare</italic>, provides access to curated EST assemblies, comparative analysis tools and links to orthologues in related model plant species. Together, these resources compile and cross-reference a great deal of information on physical and genetic mapping, markers, sequence variations and quantitative trait loci. To some extent, they also provide information leading indirectly to predicted gene product functions, but none of them is focused on functional gene annotation, and it is necessary to navigate through numerous unlinked resources to extract functional information.</p>
+      <p>Recently, pipelines for the automated annotation of genomic sequences of <italic>T. aestivum</italic> and related species have been developed (<xref ref-type="bibr" rid="bat014-B3">3</xref>, <xref ref-type="bibr" rid="bat014-B18">18</xref>). These pipelines are based on the prediction of gene models within genome sequences, so they are not able to functionally annotate sequences originating from transcriptome sequencing like ESTs. Because no reference genome sequence is yet available for <italic>T. aestivum</italic>, a massive sequencing effort has produced more than a million ESTs (<ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/genome/">http://wheat.pw.usda.gov/genome/</ext-link>). To deal with the high level of redundancy of this resource, these sequences were clustered (i.e. overlapping and partial polyA-tailed expressed sequences are grouped) to provide a reference set of unique expressed genes, NCBI UniGenes (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/UniGene">http://www.ncbi.nlm.nih.gov/UniGene</ext-link>). The assembly conditions used to build NCBI UniGenes make it the most comprehensive coding DNA (cDNA) assembly available to date, and UniGene assemblies have been used as a reference set of sequences for many species. An additional effort was made to construct full-length cDNA sequences that were included in the TriFLDB database (<xref ref-type="bibr" rid="bat014-B19">19</xref>). Full-length cDNA sequences are most commonly used in genome annotation as a resource for cross-species comparative analyses. Currently, TriFLDB is the most reliable source of full-length cDNA sequences in <italic>T. aestivum</italic>. TriFLDB includes annotations based on homologies found by searching protein databases, extensive Gene Ontology (GO) annotations and InterProScan results. Recently, a new collection of nearly 1 million ESTs, assembled into contigs and singlets, was annotated with GO terms (<xref ref-type="bibr" rid="bat014-B20">20</xref>), but meaningful prediction of gene function requires more than one system of annotation.</p>
+      <p>After the sequencing of the first plant genome, <italic>Arabidopsis thaliana</italic> in 2000 (<xref ref-type="bibr" rid="bat014-B21">21</xref>), several plant sequencing projects have been successful. The sequenced genomes most closely related to the <italic>T. aestivum</italic> genome are those of <italic>Oryza sativa</italic> ssp. <italic>indica</italic> (<xref ref-type="bibr" rid="bat014-B22">22</xref>), <italic>Oryza sativa</italic> ssp. <italic>japonica</italic> (<xref ref-type="bibr" rid="bat014-B23">23</xref>), <italic>Zea mays</italic> (<xref ref-type="bibr" rid="bat014-B24">24</xref>), <italic>Glycine max</italic> (<xref ref-type="bibr" rid="bat014-B25">25</xref>), <italic>Sorghum bicolor</italic> (<xref ref-type="bibr" rid="bat014-B26">26</xref>), <italic>Brachypodium distachyon</italic> (<xref ref-type="bibr" rid="bat014-B27">27</xref>) and <italic>Hordeum vulgare</italic> (<xref ref-type="bibr" rid="bat014-B28">28</xref>). Both structural and functional annotation resources for these species are developing steadily. One of the most effective methods to annotate a transcript is to find its orthologous counterparts in well-annotated closely related genomes (<xref ref-type="bibr" rid="bat014-B29">29</xref>, <xref ref-type="bibr" rid="bat014-B30">30</xref>). Although <italic>H</italic><italic>. vulgare</italic> (L.) would be expected to be the most useful reference because it is more closely related to <italic>T. aestivum</italic>, comprehensive and high-quality annotations of gene function are only available for <italic>O. sativa</italic> and <italic>A. thaliana</italic> (<xref ref-type="bibr" rid="bat014-B2">2</xref>), essentially owing to the lengthy and accurate annotation efforts undertaken.</p>
+      <p>To annotate ESTs or transcripts using sequence homology, it is necessary to navigate through unrelated databases. Some tools using this homology approach have been developed. For instance, Blast2GO (<xref ref-type="bibr" rid="bat014-B31">31</xref>) can be queried using <italic>T. aestivum</italic> sequences to give GO results. ONDEX (<xref ref-type="bibr" rid="bat014-B7">7</xref>), developed with the challenges of functional annotation of <italic>T. aestivum</italic> genome in mind, combines data integration from various sources and various mining methods, including graph-based analyses, to annotate wheat gene functions according to a wisely chosen set of annotation standards. However, ONDEX does not provide easy access to workable static results that are often required in research. To fill this gap, we developed dbWFA, an open-access database relating the <italic>T. aestivum</italic> UniGene set and the full-length cDNA sequences from TriFLDB to <italic>A. thaliana</italic> (TAIR10) (<xref ref-type="bibr" rid="bat014-B32">32</xref>) and <italic>O. sativa</italic> (pseudomolecules version 7.0) (<xref ref-type="bibr" rid="bat014-B33">33</xref>) annotation through BLAST (<xref ref-type="bibr" rid="bat014-B34">34</xref>) results. dbWFA also includes the inventory database of <italic>T. aestivum</italic> transcription factors (wDBTF) (<xref ref-type="bibr" rid="bat014-B35">35</xref>) and hand-curated gene families (<xref ref-type="bibr" rid="bat014-B36">36</xref>). As an all-in-one interface for the annotation of <italic>T. aestivum</italic> sequences, dbWFA will be useful to the researchers working on <italic>T. aestivum</italic> and more generally on cereals, particularly for comparative cereal genomics and functional genomics. The web implementation of dbWFA provides an easy-to-use interface to annotate transcript sequences from <italic>T. aestivum</italic>, with functional information from multiple pervasive annotation systems. Here, the use of dbWFA is illustrated with several query examples, and the quality of the annotation method is assessed by comparing the MapMan bin annotation of all the transcripts of the <italic>T. aestivum</italic> NimbleGen 40 k microarray (<xref ref-type="bibr" rid="bat014-B37">37</xref>) with that of <italic>A. thaliana</italic> and <italic>O. sativa</italic>. The use of dbWFA is further illustrated by analysing the annotation of 433 genes specifically expressed during either the early cell division or the late storage polymer accumulation (SPA) phases of grain development.</p>
+    </sec>
+    <sec>
+      <title>Data Content, Database Architecture and Web Interface</title>
+      <p>Five functional classification/annotation systems were integrated (<xref ref-type="fig" rid="bat014-F1">Figure 1</xref>) in dbWFA to offer a fast and efficient functional annotation tool for <italic>T. aestivum</italic> UniGenes:
+<list list-type="bullet"><list-item><p>GO (<ext-link ext-link-type="uri" xlink:href="http://www.geneontology.org">http://www.geneontology.org</ext-link>) (<xref ref-type="bibr" rid="bat014-B38">38</xref>), a non-redundant structured hierarchy of ontologies, which is the most widely used functional annotation system in bioinformatics. The GO project provides an efficient annotation standard that can be applied to numerous species. It is built on a controlled vocabulary of terms for describing gene function. dbWFA includes GO annotation data (OBO version 1.2) for <italic>A. thaliana</italic> and <italic>O. sativa.</italic></p></list-item><list-item><p>Plant Metabolic Network (PMN; <ext-link ext-link-type="uri" xlink:href="http://www.plantcyc.org">http://www.plantcyc.org</ext-link>) (<xref ref-type="bibr" rid="bat014-B39">39</xref>), which provides a broad network of curated databases on primary and secondary plant metabolism, including pathways, enzymes, genes, compounds and reactions from several plant species. dbWFA contains data from AraCyc (version 9.0) for <italic>A. thaliana</italic> and RiceCyc (version 3.2) for <italic>O. sativa</italic>.</p></list-item><list-item><p>MapMan (<ext-link ext-link-type="uri" xlink:href="http://mapman.gabipd.org">http://mapman.gabipd.org</ext-link>) (<xref ref-type="bibr" rid="bat014-B40">40</xref>), which is a user-driven tool for large datasets (e.g. gene expression data from microarrays) visualized in the context of diagrams of metabolic pathways or other processes. MapMan annotation data (bin tree version 1.1) for both <italic>A. thaliana</italic> and <italic>O. sativa</italic> are stored in dbWFA. The dbWFA database also provides a function to automatically generate MapMan <italic>T. aestivum</italic> mapping files.</p></list-item><list-item><p>Munich Information Center for Protein Sequences Functional Catalogue (MIPS FunCat; <ext-link ext-link-type="uri" xlink:href="http://www.helmholtz-muenchen.de/en/mips/projects/funcat">http://www.helmholtz-muenchen.de/en/mips/projects/funcat</ext-link>) (<xref ref-type="bibr" rid="bat014-B41">41</xref>), which provides a hierarchical scheme for the functional description of proteins of prokaryotic and eukaryotic origin. MIPS FunCat annotations for <italic>A. thaliana</italic> (MAtDB version 2.1) are stored in dbWFA.</p></list-item><list-item><p><italic>A. thaliana</italic> Gene Family Information (TAIR version 10; <ext-link ext-link-type="uri" xlink:href="http://www.arabidopsis.org/browse/genefamily">http://www.arabidopsis.org/browse/genefamily</ext-link>) (<xref ref-type="bibr" rid="bat014-B42">42</xref>), which provides gene family information for the plant model species <italic>A. thaliana</italic>.</p></list-item></list>
+</p>
+      <p>The 17 541 full-length cDNA sequences from the TriFLDB and other public databases and all the transcript sequences from the <italic>T. aestivum</italic> UniGene set (builds #55, #58, #59 and #60) were processed using the BLASTx algorithm against <italic>A. thaliana</italic> and <italic>O. sativa</italic> predicted cDNA sequences (<xref ref-type="fig" rid="bat014-F1">Figure 1</xref>). Build #55 (the one used to develop the <italic>T. aestivum</italic> NimbleGen 40 k microarray) (<xref ref-type="bibr" rid="bat014-B37">37</xref>) and the following major releases were retained, as users may have developed resources based on different builds of the UniGene even though NCBI only stores the most recent build. BLAST results with an e-value &gt;10<sup>&#x2212;</sup><sup>3</sup> were not stored in the database, as we considered this would be too poor a match for most research. No other filter was applied to the BLAST results before their insertion into the database. All the parameters from the BLAST tabular results were kept, and &gt;30 &#xD7; 10<sup>6</sup> BLAST results for the UniGenes and 95 &#xD7; 10<sup>6</sup> BLAST results for the ESTs shaping the UniGene clusters were stored, so they could be rapidly screened when querying the database.
+<fig id="bat014-F1" position="float"><label>Figure 1</label><caption><p>Simplified diagram of the data integration process.</p></caption><graphic xlink:href="bat014f1p"/></fig></p>
+      <p>The database also contains curated information on <italic>T. aestivum</italic> transcription factors (2891 transcripts), E3 ubiquitin ligases of the ubiquitin-proteasome system (876 transcripts), hormone-responsive genes (467 transcripts) and seed storage proteins (55 transcripts; <xref ref-type="fig" rid="bat014-F1">Figure 1</xref>). Transcription factor UniGenes were retrieved from the wDBTF database (<xref ref-type="bibr" rid="bat014-B34">34</xref>). E3 ligase and hormone-responsive UniGenes were recovered from the NCBI and TAIR databases using all <italic>A. thaliana</italic> and <italic>O. sativa</italic> E3 ligase and hormone-responsive sequences as the query in homology searches using the BLASTn, BLASTx and tBLASTx programs (<xref ref-type="bibr" rid="bat014-B36">36</xref>). The BLAST hits were filtered using an e-value threshold of 10<sup>&#x2212;</sup><sup>5</sup> and an alignment length exceeding 80 bp. All sequences were checked for consistency and for the presence of specific protein signatures using the InterProScan program (<ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/Tools/pfa/iprscan/">http://www.ebi.ac.uk/Tools/pfa/iprscan/</ext-link>). For seed storage protein UniGenes, homology searches were performed on the whole UniGene build #55, using BLASTx and <italic>T. aestivum</italic> seed storage protein sequences as reference. No preliminary filter was applied to BLASTx results. Instead, all the alignments were carefully examined, and similarity in known conserved critical regions of seed storage proteins was given priority over e-value and BLAST score alone. In dbWFA, curated UniGene annotations are assigned to <italic>T. aestivum</italic> transcripts without any intermediate BLAST result.</p>
+      <p>Following the recommendations of the International Wheat Genome Sequencing Consortium (IWGSC) for annotating <italic>T. aestivum</italic> genomic sequences (<xref ref-type="bibr" rid="bat014-B3">3</xref>), the percentages of coverage (with respect to the length of the orthologous proteins) and identity are used to assign functional annotations to a transcript. In dbWFA, users can define the value of these two parameters, but we strongly recommend using the cutoff values suggested by the IWGSC, where BLAST results with an identity &gt;45% and coverage &gt;50% are assigned a &#x2018;putative function&#x2019; and BLAST results with identity and coverage &gt;90% are assigned a &#x2018;known function&#x2019;.</p>
+      <p>All data are stored in a MySQL database. The integration of the database allows one to assign the functional annotation from any of the systems described above to the transcripts of interest and vice versa. The dbWFA database thus provides a very powerful resource for the annotation of <italic>T. aestivum</italic> UniGenes. To find the most commonly sought types of information from dbWFA, simple yet pertinent queries with their parameters can be sent through a web-based interface (<xref ref-type="fig" rid="bat014-F2">Figure 2</xref>). The results are delivered as html pages, and an export procedure is available to retrieve data in spreadsheet. The html result pages provide links redirecting the user to websites of the different annotation systems, allowing a global analysis of the annotation results. The web interface can also be used to automatically create MapMan mapping files for the search results. Although the dbWFA web interface only allows data mining of common queries, specific queries can be performed using the SQL database, which can be downloaded from the dbWFA website. The modularity of the database will facilitate the integration of new <italic>T. aestivum</italic> data as transcripts are sequenced and annotated through different pipelines.
+<fig id="bat014-F2" position="float"><label>Figure 2</label><caption><p>Screen capture of the web interface of the dbWFA database. <bold>(A)</bold> Page for querying PMN pathways. Similar pages can be used to query the MIPS Functional Category, TAIR gene families, GO and MapMan bins. A list of GO can be queried simultaneously. <bold>(B)</bold> Page for querying UniGene or Full-length cDNA sequences annotations. <bold>(C)</bold> Result page for annotated UniGenes.</p></caption><graphic xlink:href="bat014f2p"/></fig></p>
+    </sec>
+    <sec>
+      <title>Using dbWFA: Percentage of Annotated UniGenes, Comparison of <italic>T. aestivum</italic> UniGene and <italic>A. thaliana</italic> and <italic>O. sativa</italic> Whole-Genome Annotation and Query Examples</title>
+      <p>Thirty-four percent (13 713 transcript sequences), 40% (14 843), 35% (20 016) and 35% (20 034) of the transcript sequences of the UniGene builds #55, #58, #59 and #60, respectively, have a putative functional annotation in at least one of the annotation resources. Eighty-one percent of the 17 541 full-length cDNA sequences from TriFLDB have a putative functional annotation in at least one of the annotation resources. The number of transcripts and full-length cDNA sequences annotated in the different resources are given in <xref ref-type="table" rid="bat014-T1">Table 1</xref>. BLASTn analysis revealed that 12 478 full-length cDNA sequences matched a sequence in the UniGene set (build #60) with a coverage and identity threshold value &gt;50 and 90%, respectively. Among these 12 478 correspondences, 10 996 and 5 932 full-length cDNA sequences and UniGene sequences, respectively, have a putative functional annotation in at least one of the annotation resources. This result highlights the additional information brought by the full-length cDNA sequences.
+<table-wrap id="bat014-T1" position="float"><label>Table 1</label><caption><p>Number of T. aestivum transcripts from the NCBI UniGene set (build #60) and full-length cDNA (FL cDNA) sequences retrieved from the TriFLDB database, annotated with a putative function (coverage &gt;50%, identity &gt;45%) in at least one annotation system</p></caption><table frame="hsides" rules="groups"><thead align="left"><tr><th rowspan="3" colspan="1">Functional annotation systems</th><th colspan="6" rowspan="1">Number of annotated transcripts<hr/></th></tr><tr><th colspan="2" rowspan="1"><italic>O. sativa</italic><hr/></th><th colspan="2" rowspan="1"><italic>A. thaliana</italic><hr/></th><th colspan="2" rowspan="1">Total<xref ref-type="table-fn" rid="bat014-TF1"><sup>a</sup></xref><hr/></th></tr><tr><th rowspan="1" colspan="1">NCBI UniGene</th><th rowspan="1" colspan="1">FL cDNA</th><th rowspan="1" colspan="1">NCBI UniGene</th><th rowspan="1" colspan="1">FL cDNA</th><th rowspan="1" colspan="1">NCBI UniGene</th><th rowspan="1" colspan="1">FL cDNA</th></tr></thead><tbody align="left"><tr><td rowspan="1" colspan="1">MIPS functional classification</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">12 943</td><td rowspan="1" colspan="1">10 864</td><td rowspan="1" colspan="1">12 943</td><td rowspan="1" colspan="1">10 864</td></tr><tr><td rowspan="1" colspan="1">PlantCyc pathway reactions</td><td rowspan="1" colspan="1">2193</td><td rowspan="1" colspan="1">2106</td><td rowspan="1" colspan="1">2093</td><td rowspan="1" colspan="1">2208</td><td rowspan="1" colspan="1">3067</td><td rowspan="1" colspan="1">2911</td></tr><tr><td rowspan="1" colspan="1">GOs</td><td rowspan="1" colspan="1">13 142</td><td rowspan="1" colspan="1">8014</td><td rowspan="1" colspan="1">10 444</td><td rowspan="1" colspan="1">10 850</td><td rowspan="1" colspan="1">16 079</td><td rowspan="1" colspan="1">12 279</td></tr><tr><td rowspan="1" colspan="1">TAIR <italic>A. thaliana</italic> gene families</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">4498</td><td rowspan="1" colspan="1">3797</td><td rowspan="1" colspan="1">4498</td><td rowspan="1" colspan="1">3797</td></tr><tr><td rowspan="1" colspan="1">MapMan bins</td><td rowspan="1" colspan="1">19 248</td><td rowspan="1" colspan="1">14 032</td><td rowspan="1" colspan="1">13 202</td><td rowspan="1" colspan="1">10 897</td><td rowspan="1" colspan="1">20 033</td><td rowspan="1" colspan="1">14 224</td></tr><tr><td rowspan="1" colspan="1">Curated pathways or functions</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1">&#x2003;&#x2003;&#x2003;&#x2003;Hormone-responsive genes</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">467</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1">&#x2003;&#x2003;&#x2003;&#x2003;Ubiquitin-proteasome system</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">876</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1">&#x2003;&#x2003;&#x2003;&#x2003;Transcription factors</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">2891</td><td rowspan="1" colspan="1"/></tr></tbody></table><table-wrap-foot><fn id="bat014-TF1"><p><sup>a</sup>Number of transcripts and full-length cDNA sequences annotated with a putative function in at least one model species.</p></fn></table-wrap-foot></table-wrap></p>
+      <p>The quality of the annotation method is illustrated by comparing the MapMan bin annotation of all the transcripts of the <italic>T. aestivum</italic> NimbleGen 40 k microarray (developed with UniGene build #55) and the full-length cDNA sequences from TriFLDB with the annotation of <italic>A. thaliana</italic> and <italic>O. sativa</italic> imported from MapMan and recorded in the database. The MapMan bins were used here because this annotation system is available for the three species. Overall, there was no clear bias between the three species (<xref ref-type="fig" rid="bat014-F3">Figure 3</xref>), and the percentages of genes in the 26 categories for the three species were well correlated (<italic>T. aestivum</italic> versus <italic>A. thaliana</italic>: <italic>r</italic> = 0.96, <italic>P</italic> &lt; 0.001; <italic>T. aestivum</italic> versus <italic>O. sativa</italic>: <italic>r</italic> = 0.69, <italic>P</italic> &lt; 0.001), with no significant bias (<italic>P</italic> &lt; 0.001). The higher correlation found with <italic>A. thaliana</italic> compared with <italic>O. sativa</italic> is mainly because there are fewer annotated transcripts in the DNA bin for <italic>O. sativa</italic> than for <italic>A. thaliana</italic> and <italic>T. aestivum</italic> (<italic>r</italic> = 0.90 for <italic>T. aestivum</italic> versus <italic>O. sativa</italic> when this bin is not considered). For the full-length coding sequences retrieved from TriFLDB and other public databases, the correlations between <italic>T. aestivum</italic> and <italic>A. thaliana</italic> and between <italic>T. aestivum</italic> and <italic>O. sativa</italic> were the same (<italic>r</italic> = 0.90, <italic>P</italic> &lt; 0.001). The pairwise correlations between the four MapMan bin annotations presented were remarkably high, all &gt;0.9 when the DNA bin was omitted. Similar results were obtained for the PlantCyc pathway reactions and GO (data not shown).
+<fig id="bat014-F3" position="float"><label>Figure 3</label><caption><p>Radar plot (log scale) of the MapMan bin annotations for <italic>A. thaliana</italic>, <italic>O. sativa</italic> and <italic>T. aestivum</italic> UniGene (build #60) and full-length coding sequences. Data are percent of the total number of MapMan bin annotations (<xref ref-type="table" rid="bat014-T1">Table 1</xref>). Similar results were obtained with builds #55, #58 and #59 (data not shown). Some bins have been merged to make the figure clearer.</p></caption><graphic xlink:href="bat014f3p"/></fig></p>
+      <p>Unlike many annotation tools, dbWFA makes it possible to query multiple annotation systems simultaneously. To demonstrate various features of the dbWFA database, some query examples are presented in <xref ref-type="boxed-text" rid="bat014-BOX1">Box 1</xref>, using either the website or the database installed on a local machine.
+<boxed-text id="bat014-BOX1" position="float"><caption><title>Box 1. Query Examples</title></caption><p>To demonstrate the usefulness of dbWFA, several biologically relevant queries that can be performed using the current system are presented. In these examples, the UniGene build #55 was used, with coverage and identity thresholds of 50 and 45%, respectively, as recommended by the IWGSC to assign a putative function to a transcript.</p><table-wrap id="d35e1004" position="float"><label>Query 1</label><caption><p>Find all T. aestivum transcripts likely to have a phytoene synthase activity</p></caption><table frame="hsides" rules="groups"><thead align="left"><tr><th colspan="3" rowspan="1">UniGene<hr/></th><th colspan="2" rowspan="1">Matching sequences<hr/></th><th colspan="2" rowspan="1">Alignment parameters<hr/></th></tr><tr><th rowspan="1" colspan="1">Id number</th><th rowspan="1" colspan="1">Representing sequence</th><th rowspan="1" colspan="1">Description</th><th rowspan="1" colspan="1">Id number</th><th rowspan="1" colspan="1">Description</th><th rowspan="1" colspan="1">Coverage (%)</th><th rowspan="1" colspan="1">Identity (%)</th></tr></thead><tbody align="left"><tr><td rowspan="1" colspan="1">Ta.41960</td><td rowspan="1" colspan="1">Ta_S16057905</td><td rowspan="1" colspan="1"><italic>T. aestivum</italic> clone wr1.pk0139.g3:fis, full insert mRNA sequence</td><td rowspan="1" colspan="1">LOC_OS06G51290</td><td rowspan="1" colspan="1">Phytoene synthase, chloroplast precursor, putative, expressed</td><td rowspan="1" colspan="1">59.7</td><td rowspan="1" colspan="1">81.4</td></tr><tr><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">AT5G17230</td><td rowspan="1" colspan="1">Phytoene synthase</td><td rowspan="1" colspan="1">58.0</td><td rowspan="1" colspan="1">79.6</td></tr><tr><td colspan="7" rowspan="1"/></tr><tr><td rowspan="1" colspan="1">Ta.66029</td><td rowspan="1" colspan="1">Ta_S26027774</td><td rowspan="1" colspan="1">FGAS000498 <italic>T. aestivum</italic> FGAS: Library 2 Gate 3? <italic>T. aestivum</italic> cDNA, mRNA sequence</td><td rowspan="1" colspan="1">LOC_OS06G51290</td><td rowspan="1" colspan="1">phytoene synthase, chloroplast precursor, putative, expressed</td><td rowspan="1" colspan="1">55.3</td><td rowspan="1" colspan="1">48.9</td></tr><tr><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">AT5G17230</td><td rowspan="1" colspan="1">Phytoene synthase</td><td rowspan="1" colspan="1">59.7</td><td rowspan="1" colspan="1">47.08</td></tr></tbody></table></table-wrap><p>The first committed step in the biosynthesis of carotenoids is the condensation of two geranylgeranyl disphosphate molecules by phytoene synthase to produce phytoene, which catalyses a rate-controlling step in the plastid-localized carotenoid pathway (<xref ref-type="bibr" rid="bat014-B43">43</xref>). We could query the database for the PlantCyc pathway reaction 2.5.1.32 using its web interface. The result of this query is shown in the above table. Two <italic>T. aestivum</italic> transcripts were annotated with a putative phytoene synthase activity. In good agreement with this result, previous studies showed that Poaceae species possess a duplicated phytoene synthase gene (<xref ref-type="bibr" rid="bat014-B44">44</xref>). A thorough analysis of the two annotated UniGene sequences confirmed that they correspond to the duplicated phytoene synthase gene found in Poaceae. A third phytoene synthase has been isolated in <italic>Z. mays</italic> and <italic>T. aestivum</italic> (<xref ref-type="bibr" rid="bat014-B45">45</xref>, <xref ref-type="bibr" rid="bat014-B46">46</xref>). Although the three <italic>O. sativa</italic> phytoene synthase genes are present in the database, the <italic>T. aestivum</italic> UniGene of this phytoene synthase gene was not found in dbWFA.</p><p>The phytoene synthase activity also corresponds to GO:0016767 MapMan bin 16.1.4.1. Searching dbWFA for this GO or MapMan bin yields the same results as above. It is possible to combine several overlying systems (e.g. PlantCyc pathway reaction and GO) in a single MySQL query when the database is installed on a local machine. It is also possible to compare and make the union or intersection of queries using MySQL, depending on the intended outcome.</p><table-wrap id="d35e1134" position="float"><label>Query 2</label><caption><p>Find as much information as possible about a list of transcripts</p></caption><table frame="hsides" rules="groups"><thead align="left"><tr><th colspan="2" rowspan="1">UniGene<hr/></th><th rowspan="2" colspan="1">GO</th><th rowspan="2" colspan="1">TAIR</th><th rowspan="2" colspan="1">MIPS</th><th rowspan="2" colspan="1">PlantCyc</th><th rowspan="2" colspan="1">MapMan</th></tr><tr><th rowspan="1" colspan="1">Id number</th><th rowspan="1" colspan="1">Match</th></tr></thead><tbody align="left"><tr><td rowspan="4" colspan="1">Ta.41960</td><td rowspan="1" colspan="1"><bold>AT5G17230</bold></td><td rowspan="1" colspan="1">GO:0009507</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">01.06.06.13</td><td rowspan="1" colspan="1">2.5.1.32</td><td rowspan="1" colspan="1">16.1.4.1</td></tr><tr><td rowspan="3" colspan="1">&#x2003;Phytoene synthase</td><td rowspan="1" colspan="1">GO:0016117</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">70.26.03</td><td rowspan="1" colspan="1">2.5.1.32</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1">GO:0016767</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1">GO:0046905</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr></tbody></table></table-wrap><p>The efficiency of the database stems from its multiple systems of annotation. The cross-system annotation feature of dbWFA is integrated in the web interface in the &#x2018;Transcript(s) annotation&#x2019; search method. This type of query could be used to obtain information for a list of UniGenes of interest in the different annotation systems integrated in dbWFA. Querying the UniGene set for the first phytoene synthase transcript retrieved in Query 1 yields the annotation shown in the above table. On the web interface, the user can choose to display only the best hit (as in the above table) or the five best hits with percentages of coverage and identity greater than the thresholds set by the user. The user can also choose the systems of annotation to include in the query and the model species. The results redirect the user to the web pages of the different annotation systems, which allows more detailed information to be obtained on the annotation of the list of transcripts of interest.</p><table-wrap id="d35e1204" position="float"><label>Query 3</label><caption><p>Find all the transcripts putatively involved in the glycolytic pathway for a transcriptome analysis in MapMan</p></caption><table frame="hsides" rules="groups"><thead align="left"><tr><th rowspan="1" colspan="1">Bin code</th><th rowspan="1" colspan="1">Name</th><th rowspan="1" colspan="1">Identifier</th><th rowspan="1" colspan="1">Description</th><th rowspan="1" colspan="1">Type</th></tr></thead><tbody align="left"><tr><td rowspan="2" colspan="1">4.1</td><td rowspan="2" colspan="1">Glycolysis.cytosolic branch</td><td rowspan="2" colspan="1">Ta_S16058223</td><td rowspan="1" colspan="1">Similar to UTP&#x2013;glucose-1-phosphate uridylyltransferase, putative, expressed</td><td rowspan="2" colspan="1">T</td></tr><tr><td rowspan="1" colspan="1">Coverage: 99.5745%, identity: 92.75%</td></tr><tr><td rowspan="2" colspan="1">4.1.10</td><td rowspan="2" colspan="1">Glycolysis.cytosolic branch.non-phosphorylating glyceraldehyde 3-phosphate dehydrogenase (NPGAP-DH)</td><td rowspan="2" colspan="1">Ta_S13048872</td><td rowspan="1" colspan="1">Similar to aldehyde dehydrogenase</td><td rowspan="2" colspan="1">T</td></tr><tr><td rowspan="1" colspan="1">Coverage: 100%, identity: 87.1%</td></tr><tr><td rowspan="2" colspan="1">4.1.10</td><td rowspan="2" colspan="1">Glycolysis.cytosolic branch.non-phosphorylating glyceraldehyde 3-phosphate dehydrogenase (NPGAP-DH)</td><td rowspan="2" colspan="1">Ta_S13048873</td><td rowspan="1" colspan="1">Similar to aldehyde dehydrogenase</td><td rowspan="2" colspan="1">T</td></tr><tr><td rowspan="1" colspan="1">Coverage: 100%, identity: 79.23%</td></tr><tr><td rowspan="2" colspan="1">4.1.11</td><td rowspan="2" colspan="1">Glycolysis.cytosolic branch.aldolase</td><td rowspan="2" colspan="1">Ta_S15902802</td><td rowspan="1" colspan="1">Similar to aldolase superfamily protein</td><td rowspan="2" colspan="1">T</td></tr><tr><td rowspan="1" colspan="1">Coverage: 50.1873%, identity: 85.07%</td></tr><tr><td rowspan="2" colspan="1">4.1.11</td><td rowspan="2" colspan="1">Glycolysis.cytosolic branch.aldolase</td><td rowspan="2" colspan="1">Ta_S17888674</td><td rowspan="1" colspan="1">Similar to aldolase superfamily protein</td><td rowspan="2" colspan="1">T</td></tr><tr><td rowspan="1" colspan="1">Coverage: 88.5475%, identity: 48.91%</td></tr></tbody></table></table-wrap><p>In the search method &#x2018;MapMan mapping file generator&#x2019;, the user can select a metabolic pathway and automatically create a mapping file to visualise the results of transcriptomic experiences performed with the <italic>T. aestivum</italic> custom NimbleGen 40 k microarray using the -omic data viewing and analysing tool MapMan. The glycolytic pathway corresponds to the bin code 4. The first five lines of the table generated by dbWFA for this query are shown above. When the database is installed on a local machine, several pathways could be queried simultaneously to create a custom <italic>T. aestivum</italic> mapping file for MapMan.</p></boxed-text></p>
+    </sec>
+    <sec>
+      <title>Identification and Annotation of UniGenes Specifically Expressed During Either the Early or Late Stage of Grain Development</title>
+      <p>A total of 39 029 transcripts from the UniGene set (build #55) and 1613 transcription factors from the wDBTF database not present in the UniGene set are spotted on the custom <italic>T. aestivum</italic> NimbleGen 40 k microarray (<xref ref-type="bibr" rid="bat014-B36">36</xref>). Previous studies have shown that 18 140 (44.6%) of these transcripts are expressed during <italic>T. aestivum</italic> grain development (<xref ref-type="bibr" rid="bat014-B47">47</xref>). In dbWFA, 34&#x2013;40% (depending on the build) of these transcripts have a putative functional annotation.</p>
+      <p><italic>T. aestivum</italic> grain development comprises several distinct phases, starting with a syncytial then a cellularization phase (ca. 0&#x2013;100&#xB0;Cdays after anthesis), followed by a first differentiation phase of active endosperm cell division (ECD), expansion and differentiation (ca. 100&#x2013;250&#xB0;Cdays after anthesis), a second differentiation phase when storage polymers rapidly accumulate (ca. 250&#x2013;750&#xB0;Cdays after anthesis) and a maturation phase when grain rapidly desiccates (ca. 750&#x2013;900&#xB0;Cdays after anthesis) (<xref ref-type="bibr" rid="bat014-B48">48</xref>, <xref ref-type="bibr" rid="bat014-B49">49</xref>). The transitions between these phases are associated with major changes in the grain transcriptome (<xref ref-type="bibr" rid="bat014-B5">5</xref>, <xref ref-type="bibr" rid="bat014-B36">36</xref>, <xref ref-type="bibr" rid="bat014-B50">50</xref>, <xref ref-type="bibr" rid="bat014-B51">51</xref>) and proteome (<xref ref-type="bibr" rid="bat014-B52">52</xref>, <xref ref-type="bibr" rid="bat014-B53">53</xref>).</p>
+      <p>To validate the principle underpinning the database and provide another example of the usefulness of dbWFA, we analysed the functional annotation of the transcripts specifically expressed during either the ECD or SPA phase of grain development. We used transcriptome data obtained with the custom <italic>T. aestivum</italic> NimbleGen 40 k microarray for the <italic>T. aestivum</italic> cultivar Recital grown under standard conditions in a greenhouse and sampled every 34&#x2013;117&#xB0;Cdays between 132 and 686&#xB0;Cdays after anthesis (<xref ref-type="bibr" rid="bat014-B35">35</xref>). Transcripts with different patterns of expression were classified with J-Express 2012 software package (<xref ref-type="bibr" rid="bat014-B54">54</xref>) using Euclidean distance&#x2013;based k-means clustering. For this analysis, the number of clusters was empirically set at 25 because it allowed us to clearly discriminate between gene expression clusters specific to the ECD and SPA phases of grain development. One cluster of 238 genes contained genes expressed exclusively during ECD stages (<xref ref-type="fig" rid="bat014-F4">Figure 4</xref>A and B). Two other clusters contained genes expressed exclusively during SPA stages. The latter two clusters were merged to form a single SPA cluster of 195 genes. dbWFA was then used to retrieve the functional classification of the transcripts from both clusters. The MIPS Functional Classification was used, as it was the most informative and straightforward for comparisons with previous studies.
+<fig id="bat014-F4" position="float"><label>Figure 4</label><caption><p>Functional annotation of genes specifically expressed during either the early cell division or late SPA phases of <italic>T. aestivum</italic> grain development. <bold>(A)</bold> Heat map of expression for early- and late-development-specific genes. <bold>(B)</bold> Normalized expression of the early and late development specific gene clusters. Transcripts with normalized expression &lt;7 were not considered to be expressed (i.e. not different from the background noise). Data are medians &#xB1; 1 SD. <bold>(C)</bold> MIPS Functional Categories of genes from both UniGene clusters.</p></caption><graphic xlink:href="bat014f4p"/></fig></p>
+      <p>Using IWGSC-recommended coverage (50%) and identity (45%) percentages, 68 (29%) ECD-specific transcripts and 129 (66%) SPA-specific transcripts were assigned to an MIPS functional category, respectively (<xref ref-type="fig" rid="bat014-F4">Figure 4</xref>C). The annotation results were consistent with previous transcriptome (<xref ref-type="bibr" rid="bat014-B5">5</xref>, <xref ref-type="bibr" rid="bat014-B51">51</xref>) and proteome (<xref ref-type="bibr" rid="bat014-B52">52</xref>, <xref ref-type="bibr" rid="bat014-B53">53</xref>) studies of developing <italic>T. aestivum</italic> and <italic>H. vulgare</italic> (<xref ref-type="bibr" rid="bat014-B55">55</xref>) grain. The functional classifications of the gene clusters were different. Not surprisingly, 12 transcripts involved in cell fate and cell type, tissue differentiation and organ differentiation were specifically expressed during the ECD phase, whereas no SPA phase&#x2013;specific transcripts were annotated as being in these MIPS functional categories. Also in good agreement with our knowledge of grain development, 55 seed storage protein transcripts were specifically expressed during the SPA phase, while none was found among the annotated ECD-specific genes.</p>
+      <p>Quantitative differences in the annotation of these two clusters of transcripts were also observed. Several transcripts in the SPA-specific cluster were involved in cell rescue, defence and virulence and in the interaction with the environment. In particular, transcripts involved in plant hormonal regulation were overrepresented in the SPA-specific gene cluster. Transcripts coding for proteins involved in protein synthesis and proteins with metabolic functions were overrepresented in the ECD cluster. These results coincide with previous transcriptome (<xref ref-type="bibr" rid="bat014-B5">5</xref>, <xref ref-type="bibr" rid="bat014-B36">36</xref>, <xref ref-type="bibr" rid="bat014-B56">56</xref>) and proteome analyses (<xref ref-type="bibr" rid="bat014-B53">53</xref>). Finally, we note a substantial difference in the MIPS functional category &#x2018;protein with binding function or co-factor requirement&#x2019;, with more transcripts involved in DNA binding in the ECD cluster and more transcripts involved in RNA binding in the SPA cluster.</p>
+      <p>All these data show great similarity to published results for <italic>T. aestivum</italic> and <italic>H. vulgare</italic>, reflecting the accuracy of the automatic annotation provided by dbWFA. Unlike several other <italic>T. aestivum</italic> transcriptome analyses where a complex process had to be carried out to assign a functional annotation to selected transcripts and/or proteins (<xref ref-type="bibr" rid="bat014-B5">5</xref>, <xref ref-type="bibr" rid="bat014-B57">57</xref>), here only a single request was made to the dbWFA database to retrieve the functional classification of 45% of the transcripts of interest, and 40% of the 40 642 transcripts of the <italic>T. aestivum</italic> NimbleGen 40 k microarray. This percentage of annotated transcripts is similar to that previously reported (38%) for the <italic>T. aestivum</italic> Affymetrix GeneChip&#xAE; microarray (<xref ref-type="bibr" rid="bat014-B4">4</xref>).</p>
+    </sec>
+    <sec>
+      <title>Outlook</title>
+      <p>The dbWFA database was created by integrating numerous data sources. As a result, it is a practical source of heterogeneous data for functional annotation of <italic>T. aestivum</italic> transcripts. The website grants access to the most common queries that can be applied to the database, and the freely available MySQL database is a powerful tool for more specific requests. Although further analyses are required to confirm the dbWFA annotation results, the database provides an efficient and fast solution for acquiring a wide range of functional information. cDNA resources are useful to predict exonic regions from genomic sequences; thus, efforts to annotate the UniGene resources will significantly contribute to the analysis of sequence data produced by ongoing <italic>T. aestivum</italic> initiatives and other genome sequencing projects.</p>
+      <p>The version of dbWFA presented here is operational, but the aim is not to restrict the database to storing <italic>O. sativa</italic> and <italic>A. thaliana</italic> annotations but to expand it to include data from other plant species genomes as their functional annotation becomes more consistent. Integration of InterProScan (<xref ref-type="bibr" rid="bat014-B58">58</xref>) in the workflow could be a valuable way of augmenting the process. Also, the integration of AFAWE (<xref ref-type="bibr" rid="bat014-B59">59</xref>) would provide an annotation workflow with different function prediction tools. However, the current version of AFAWE cannot be used independently from its web interface and would thus have to be implemented using the tools called in its workflow, which are available as web services. Finally, the upcoming integration of a BLAST program in the workflow will allow users to annotate their own sequences and will also make dbWFA applicable to other species.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>The authors thank Dr Etienne Paux and Dr Catherine Feuillet (INRA, UMR1095 GDEC, Clermont-Ferrand, France) for useful discussions and advice, and Mr S&#xE9;bastien Reboux, Ms Claire Viseux and Mr Michael Alaux (INRA, URGI, Versailles, France) for installing and maintaining the database on the URGI server.</p>
+    </ack>
+    <sec>
+      <title>Funding</title>
+      <p>This work was supported by a PhD grant from the <funding-source>French Ministry for Higher Education and Research</funding-source> to J.V.</p>
+      <p><italic>Conflict of interest.</italic> None declared.</p>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="bat014-B1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Eversole</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Physical mapping of the wheat genome: a coordinated effort to lay the foundation for genome sequencing and develop tools for breeders</article-title>
+          <source>Isr. J. Plant Sci.</source>
+          <year>2007</year>
+          <volume>55</volume>
+          <fpage>307</fpage>
+          <lpage>313</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Leach</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Rogers</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Crop genome sequencing: lessons and rationales</article-title>
+          <source>Trends Plant Sci.</source>
+          <year>2011</year>
+          <volume>16</volume>
+          <fpage>77</fpage>
+          <lpage>88</lpage>
+          <pub-id pub-id-type="pmid">21081278</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leroy</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Guilhot</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Sakai</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>TriAnnot: a versatile and high performance pipeline for the automated annotation of plant genomes</article-title>
+          <source>Front. Plant Sci.</source>
+          <year>2012</year>
+          <volume>3</volume>
+          <fpage>1</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="pmid">22645563</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brenchley</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Spannagl</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pfeifer</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Analysis of the bread wheat genome using whole-genome shotgun sequencing</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>705</fpage>
+          <lpage>710</lpage>
+          <pub-id pub-id-type="pmid">23192148</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wan</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Poole</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Huttly</surname>
+              <given-names>AK</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Transcriptome analysis of grain development in hexaploid wheat</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>121</fpage>
+          <pub-id pub-id-type="pmid">18325108</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pellny</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Lovegrove</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Freeman</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cell walls of developing wheat starchy endosperm: comparison of composition and RNA-Seq transcriptome</article-title>
+          <source>Plant Physiol.</source>
+          <year>2012</year>
+          <volume>158</volume>
+          <fpage>612</fpage>
+          <lpage>627</lpage>
+          <pub-id pub-id-type="pmid">22123899</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>K&#xF6;hler</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Baumbach</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Taubert</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Graph-based analysis and visualization of experimental results with ONDEX</article-title>
+          <source>Bioinformatics</source>
+          <year>2006</year>
+          <volume>22</volume>
+          <fpage>1383</fpage>
+          <lpage>1390</lpage>
+          <pub-id pub-id-type="pmid">16533819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lysenko</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hindle</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Taubert</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Data integration for plant genomics&#x2013;exemplars from the integration of <italic>Arabidopsis thaliana</italic> databases</article-title>
+          <source>Briefings Bioinformatics</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>676</fpage>
+          <lpage>693</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lazo</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hummel</surname>
+              <given-names>DD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Development of an expressed sequence tag (EST) resource for wheat (<italic>Triticum aestivum</italic> L.): EST generation, unigene analysis, probe selection and bioinformatics for a 16,000-locus bin-delineated map</article-title>
+          <source>Genetics</source>
+          <year>2004</year>
+          <volume>168</volume>
+          <fpage>585</fpage>
+          <lpage>593</lpage>
+          <pub-id pub-id-type="pmid">15514037</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Sreenivasulu</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Weschke</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Large-scale analysis of the barley transcriptome based on expressed sequence tags</article-title>
+          <source>Plant J.</source>
+          <year>2004</year>
+          <volume>40</volume>
+          <fpage>276</fpage>
+          <lpage>290</lpage>
+          <pub-id pub-id-type="pmid">15447653</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Allouis.</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Moore.</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bellec.</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Construction and characterisation of a hexaploid wheat (<italic>Triticum aestivum</italic> L.) BAC library from the reference germplasm &#x2018;Chinese Spring'</article-title>
+          <source>Cereal Res. Commun.</source>
+          <year>2003</year>
+          <volume>31</volume>
+          <fpage>331</fpage>
+          <lpage>338</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saf&#xE1;r</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bartos</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Janda</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dissecting large and complex genomes: flow sorting and BAC cloning of individual chromosomes from bread wheat</article-title>
+          <source>Plant J.</source>
+          <year>2004</year>
+          <volume>39</volume>
+          <fpage>960</fpage>
+          <lpage>968</lpage>
+          <pub-id pub-id-type="pmid">15341637</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilkinson</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Winfield</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GLA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>CerealsDB 2.0: an integrated resource for plant breeders and scientists</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>219</fpage>
+          <pub-id pub-id-type="pmid">22943283</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lai</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Berkman</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Lorenc</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>WheatGenome.info: an integrated database and portal for wheat genome information</article-title>
+          <source>Plant Cell Physiol.</source>
+          <year>2012</year>
+          <volume>53</volume>
+          <fpage>e2</fpage>
+          <pub-id pub-id-type="pmid">22009731</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dong</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Schlueter</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Brendel</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>PlantGDB, plant genome database and analysis tools</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2004</year>
+          <volume>32</volume>
+          <issue>Database issue</issue>
+          <fpage>D354</fpage>
+          <lpage>D359</lpage>
+          <pub-id pub-id-type="pmid">14681433</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Rossini</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Integrating cereal genomics to support innovation in the Triticeae</article-title>
+          <source>Funct. Integr. Genomics</source>
+          <year>2012</year>
+          <volume>12</volume>
+          <fpage>573</fpage>
+          <lpage>583</lpage>
+          <pub-id pub-id-type="pmid">23161406</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Close</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Wanamaker</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Roose</surname>
+              <given-names>ML</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>HarvEST</article-title>
+          <source>Methods Mol Biol.</source>
+          <year>2007</year>
+          <volume>406</volume>
+          <fpage>161</fpage>
+          <lpage>177</lpage>
+          <pub-id pub-id-type="pmid">18287692</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Estill</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Bennetzen</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>The DAWGPAWS pipeline for the annotation of genes and transposable elements in plant genomes</article-title>
+          <source>Plant Methods</source>
+          <year>2009</year>
+          <volume>5</volume>
+          <fpage>8</fpage>
+          <pub-id pub-id-type="pmid">19545381</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mochida</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sakurai</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>TriFLDB: a database of clustered full-length coding sequences from triticeae with applications to comparative grass genomics</article-title>
+          <source>Plant Physiol.</source>
+          <year>2009</year>
+          <volume>150</volume>
+          <fpage>1135</fpage>
+          <lpage>1146</lpage>
+          <pub-id pub-id-type="pmid">19448038</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Manickavelu</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kawaura</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Oishi</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Comprehensive functional analyses of expressed sequence tags in common wheat (<italic>Triticum aestivum</italic>)</article-title>
+          <source>DNA Res.</source>
+          <year>2012</year>
+          <volume>19</volume>
+          <fpage>165</fpage>
+          <lpage>177</lpage>
+          <pub-id pub-id-type="pmid">22334568</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <collab>The Arabidopsis Genome Initiative</collab>
+          <article-title>Analysis of the genome sequence of the flowering plant <italic>Arabidopsis thaliana</italic></article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>408</volume>
+          <fpage>796</fpage>
+          <lpage>815</lpage>
+          <pub-id pub-id-type="pmid">11130711</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A draft sequence of the rice genome (<italic>Oryza sativa</italic> L. ssp. indica)</article-title>
+          <source>Science</source>
+          <year>2002</year>
+          <volume>296</volume>
+          <fpage>79</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="pmid">11935017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <collab>The International Rice Genome Sequencing Project</collab>
+          <article-title>The map-based sequence of the rice genome</article-title>
+          <source>Nature</source>
+          <year>2005</year>
+          <volume>436</volume>
+          <fpage>793</fpage>
+          <lpage>800</lpage>
+          <pub-id pub-id-type="pmid">16100779</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schnable</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Ware</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Fulton</surname>
+              <given-names>RS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The B73 maize genome: complexity, diversity, and dynamics</article-title>
+          <source>Science</source>
+          <year>2009</year>
+          <volume>326</volume>
+          <fpage>1112</fpage>
+          <lpage>1115</lpage>
+          <pub-id pub-id-type="pmid">19965430</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmutz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cannon</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Schlueter</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome sequence of the palaeopolyploid soybean</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <fpage>178</fpage>
+          <lpage>183</lpage>
+          <pub-id pub-id-type="pmid">20075913</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paterson</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>Bowers</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Bruggmann</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Sorghum bicolor genome and the diversification of grasses</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <fpage>551</fpage>
+          <lpage>556</lpage>
+          <pub-id pub-id-type="pmid">19189423</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <collab>The International Brachypodium Initiative</collab>
+          <article-title>Genome sequencing and analysis of the model grass Brachypodium distachyon</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <fpage>763</fpage>
+          <lpage>768</lpage>
+          <pub-id pub-id-type="pmid">20148030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayer</surname>
+              <given-names>KFX</given-names>
+            </name>
+            <name>
+              <surname>Waugh</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Langridge</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A physical, genetic and functional sequence assembly of the barley genome</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>711</fpage>
+          <lpage>716</lpage>
+          <pub-id pub-id-type="pmid">23075845</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Bel</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Proost</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wischnitzki</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dissecting plant genomes with the PLAZA comparative genomics platform</article-title>
+          <source>Plant Physiol.</source>
+          <year>2012</year>
+          <volume>158</volume>
+          <fpage>590</fpage>
+          <lpage>600</lpage>
+          <pub-id pub-id-type="pmid">22198273</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dassanayake</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Oh</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Haas</surname>
+              <given-names>JS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The genome of the extremophile crucifer Thellungiella parvula</article-title>
+          <source>Nat. Genet.</source>
+          <year>2011</year>
+          <volume>43</volume>
+          <fpage>913</fpage>
+          <lpage>918</lpage>
+          <pub-id pub-id-type="pmid">21822265</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Conesa</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>G&#xF6;tz</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Garcia-Gomez</surname>
+              <given-names>JM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Blast2GO: a universal tool for annotation, visualization and analysis in functional genomics research</article-title>
+          <source>Bioinformatics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <fpage>3674</fpage>
+          <lpage>3676</lpage>
+          <pub-id pub-id-type="pmid">16081474</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lamesch</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Berardini</surname>
+              <given-names>TZ</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Arabidopsis Information Resource (TAIR): improved gene annotation and new tools</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2011</year>
+          <volume>40</volume>
+          <fpage>D1202</fpage>
+          <lpage>D1210</lpage>
+          <pub-id pub-id-type="pmid">22140109</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ouyang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Hamilton</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The TIGR rice genome annotation resource: improvements and new features</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2007</year>
+          <volume>35</volume>
+          <fpage>D883</fpage>
+          <lpage>D887</lpage>
+          <pub-id pub-id-type="pmid">17145706</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altschul</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Madden</surname>
+              <given-names>TL</given-names>
+            </name>
+            <name>
+              <surname>Sch&#xE4;ffer</surname>
+              <given-names>AA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gapped BLAST and PSI-BLAST: a new generation of protein database search programs</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>1997</year>
+          <volume>25</volume>
+          <fpage>3389</fpage>
+          <lpage>3402</lpage>
+          <pub-id pub-id-type="pmid">9254694</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Romeuf</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Tessier</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Dardevet</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>wDBTF: an integrated database resource for studying wheat transcription factor families</article-title>
+          <source>BMC Genomics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>185</fpage>
+          <pub-id pub-id-type="pmid">20298594</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Capron</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Mouzeyar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Boulaflous</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Transcriptional profile analysis of E3 ligase and hormone-related genes expressed during wheat grain development</article-title>
+          <source>BMC Plant Biol.</source>
+          <year>2012</year>
+          <volume>12</volume>
+          <fpage>35</fpage>
+          <pub-id pub-id-type="pmid">22416807</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B37">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rustenholz</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Choulet</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Laugier</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A 3,000-loci transcription map of chromosome 3B unravels the structural and functional features of gene islands in hexaploid wheat</article-title>
+          <source>Plant Physiol.</source>
+          <year>2011</year>
+          <volume>157</volume>
+          <fpage>1596</fpage>
+          <lpage>1608</lpage>
+          <pub-id pub-id-type="pmid">22034626</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B38">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ashburner</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ball</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Blake</surname>
+              <given-names>JA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gene Ontology: tool for the unification of biology</article-title>
+          <source>Nat. Genet.</source>
+          <year>2011</year>
+          <volume>25</volume>
+          <fpage>25</fpage>
+          <lpage>29</lpage>
+          <pub-id pub-id-type="pmid">10802651</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B39">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Dreher</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Karthikeyan</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Creation of a genome-wide metabolic pathway database for <italic>Populus trichocarpa</italic> using a new approach for reconstruction and curation of metabolic pathways for plants</article-title>
+          <source>Plant Physiol.</source>
+          <year>2010</year>
+          <volume>153</volume>
+          <fpage>1479</fpage>
+          <lpage>1491</lpage>
+          <pub-id pub-id-type="pmid">20522724</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B40">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thimm</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Bl&#xE4;sing</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Gibon</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mapman: a user-driven tool to display genomics data sets onto diagrams of metabolic pathways and other biological processes</article-title>
+          <source>Plant J.</source>
+          <year>2004</year>
+          <volume>37</volume>
+          <fpage>914</fpage>
+          <lpage>939</lpage>
+          <pub-id pub-id-type="pmid">14996223</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B41">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruepp</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zollner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Maier</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The FunCat, a functional annotation scheme for systematic classification of proteins from whole genomes</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2004</year>
+          <volume>32</volume>
+          <fpage>5539</fpage>
+          <lpage>5545</lpage>
+          <pub-id pub-id-type="pmid">15486203</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B42">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rhee</surname>
+              <given-names>SY</given-names>
+            </name>
+            <name>
+              <surname>Beavis</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Berardini</surname>
+              <given-names>TZ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Arabidopsis Information Resource (TAIR): a model organism database providing a centralized, curated gateway to Arabidopsis biology, research materials and community</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2003</year>
+          <volume>31</volume>
+          <fpage>224</fpage>
+          <lpage>228</lpage>
+          <pub-id pub-id-type="pmid">12519987</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B43">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cunningham</surname>
+              <given-names>FX</given-names>
+            </name>
+            <name>
+              <surname>Gantt</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Genes and enzymes of carotenoids biosynthesis in plants</article-title>
+          <source>Annu. Rev. Plant Physiol. Plant Mol. Biol.</source>
+          <year>1998</year>
+          <volume>49</volume>
+          <fpage>557</fpage>
+          <lpage>583</lpage>
+          <pub-id pub-id-type="pmid">15012246</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B44">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gallagher</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Matthews</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gene duplication in the carotenoid biosynthetic pathway preceded evolution of the grasses</article-title>
+          <source>Plant Physiol.</source>
+          <year>2004</year>
+          <volume>135</volume>
+          <fpage>1776</fpage>
+          <lpage>1783</lpage>
+          <pub-id pub-id-type="pmid">15247400</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B45">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Vallabhaneni</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Wurtzel</surname>
+              <given-names>ET</given-names>
+            </name>
+          </person-group>
+          <article-title>PSY3, a new member of the phytoene synthase gene family conserved in the poaceae and regulator of abiotic stress-induced root carotenogenesis</article-title>
+          <source>Plant Physiol.</source>
+          <year>2008</year>
+          <volume>146</volume>
+          <fpage>1333</fpage>
+          <lpage>1345</lpage>
+          <pub-id pub-id-type="pmid">18162592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B46">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dibari</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Murat</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Chosson</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Deciphering the genomic structure, function and evolution of carotenogenesis related phytoene synthases in grasses</article-title>
+          <source>BMC Genomics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>221</fpage>
+          <pub-id pub-id-type="pmid">22672222</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B47">
+        <label>47</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Romeuf</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification <italic>in silico</italic> des facteurs de transcription du bl&#xE9; tendre (<italic>Triticum aestivum</italic>) et mise en &#xE9;vidence des facteurs de transcription impliqu&#xE9;s dans la synth&#xE8;se des prot&#xE9;ines de r&#xE9;serve</article-title>
+          <year>2010</year>
+          <comment><italic>Ph.D. Thesis</italic>. Universit&#xE9; Clermont-Ferrand II, Blaise Pascal, Clermont-Ferrand, France, pp. 223</comment>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B48">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bennett</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Rao</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>JB</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cell development in the anther, the ovule, and the young seed of <italic>Triticum aestivum</italic> L. Var. chinese spring</article-title>
+          <source>Philos. T. R. Soc. B</source>
+          <year>1975</year>
+          <volume>266</volume>
+          <fpage>6</fpage>
+          <lpage>81</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B49">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Evers</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Millar</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Cereal grain structure and development: some implications for quality</article-title>
+          <source>J. Cereal Sci.</source>
+          <year>2002</year>
+          <volume>36</volume>
+          <fpage>261</fpage>
+          <lpage>284</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B50">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Drea</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Leader</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Arnold</surname>
+              <given-names>BC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Systematic spatial analysis of gene expression during wheat Caryopsis</article-title>
+          <source>Plant Cell.</source>
+          <year>2005</year>
+          <volume>17</volume>
+          <fpage>2172</fpage>
+          <lpage>2185</lpage>
+          <pub-id pub-id-type="pmid">16006577</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B51">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laudencia-Chingcuanco</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Stamova</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>FM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Transcriptional profiling of wheat caryopsis development using cDNA microarrays</article-title>
+          <source>Plant Mol. Biol.</source>
+          <year>2007</year>
+          <volume>63</volume>
+          <fpage>651</fpage>
+          <lpage>668</lpage>
+          <pub-id pub-id-type="pmid">17211515</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B52">
+        <label>52</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nadaud</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Girousse</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Debiton</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Proteomic and morphological analysis of early stages of wheat grain development</article-title>
+          <source>Proteomics</source>
+          <year>2010</year>
+          <volume>10</volume>
+          <fpage>2901</fpage>
+          <lpage>2910</lpage>
+          <pub-id pub-id-type="pmid">20641138</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B53">
+        <label>53</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tasleem-Tahir</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Nadaud</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Chambon</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Expression profiling of starchy endosperm metabolic proteins at 21 stages of wheat grain development</article-title>
+          <source>J. Proteome Res.</source>
+          <year>2012</year>
+          <volume>11</volume>
+          <fpage>2754</fpage>
+          <lpage>2773</lpage>
+          <pub-id pub-id-type="pmid">22394196</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B54">
+        <label>54</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dysvik</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Jonassen</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>J-Express: exploring gene expression data using Java</article-title>
+          <source>Bioinformatics</source>
+          <year>2001</year>
+          <volume>17</volume>
+          <fpage>369</fpage>
+          <lpage>370</lpage>
+          <pub-id pub-id-type="pmid">11301307</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B55">
+        <label>55</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sreenivasulu</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Radchuk</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Strickert</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gene expression patterns reveal tissue-specific signaling networks controlling programmed cell death and ABA- regulated maturation in developing barley seeds</article-title>
+          <source>Plant J.</source>
+          <year>2006</year>
+          <volume>47</volume>
+          <fpage>310</fpage>
+          <lpage>327</lpage>
+          <pub-id pub-id-type="pmid">16771774</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B56">
+        <label>56</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clarke</surname>
+              <given-names>BC</given-names>
+            </name>
+            <name>
+              <surname>Hobbs</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Skylas</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genes active in developing wheat endosperm</article-title>
+          <source>Funct. Integr. Genomics</source>
+          <year>2000</year>
+          <volume>1</volume>
+          <fpage>44</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="pmid">11793221</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B57">
+        <label>57</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Szucs</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>J&#xE4;ger</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Jurca</surname>
+              <given-names>ME</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Histological and microarray analysis of the direct effect of water shortage alone or combined with heat on early grain development in wheat (<italic>Triticum aestivum</italic>)</article-title>
+          <source>Physiol Plant.</source>
+          <year>2010</year>
+          <volume>140</volume>
+          <fpage>174</fpage>
+          <lpage>188</lpage>
+          <pub-id pub-id-type="pmid">20573045</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B58">
+        <label>58</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goujon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>McWilliam</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A new bioinformatics analysis tools framework at EMBL&#x2013;EBI</article-title>
+          <source>Nucleic Acids Res.</source>
+          <year>2010</year>
+          <volume>38</volume>
+          <fpage>W695</fpage>
+          <lpage>W699</lpage>
+          <pub-id pub-id-type="pmid">20439314</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bat014-B59">
+        <label>59</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>J&#xF6;cker</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hoffmann</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Groscurth</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Protein function prediction and annotation in an integrated environment powered by web services (AFAWE)</article-title>
+          <source>Bioinformatics</source>
+          <year>2008</year>
+          <volume>24</volume>
+          <fpage>2393</fpage>
+          <lpage>2394</lpage>
+          <pub-id pub-id-type="pmid">18697771</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

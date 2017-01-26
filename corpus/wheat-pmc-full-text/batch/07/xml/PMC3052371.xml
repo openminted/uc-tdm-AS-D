@@ -1,0 +1,2392 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.0 20040830//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3052371</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-10-06558</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0017900</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Analysis Tools</subject>
+                <subj-group>
+                  <subject>Transcriptomes</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Developmental Biology</subject>
+            <subj-group>
+              <subject>Plant Growth and Development</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Gene Expression</subject>
+              <subj-group>
+                <subject>DNA transcription</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome Analysis Tools</subject>
+              <subj-group>
+                <subject>Transcriptomes</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Plant Science</subject>
+            <subj-group>
+              <subject>Plant Growth and Development</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Transcriptome Analysis of the Vernalization Response in Barley (<italic>Hordeum vulgare</italic>) Seedlings</article-title>
+        <alt-title alt-title-type="running-head">Vernalization Responsive Genes in Barley Seedlings</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Greenup</surname>
+            <given-names>Aaron G.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sasani</surname>
+            <given-names>Sharyar</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Oliver</surname>
+            <given-names>Sandra N.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Walford</surname>
+            <given-names>Sally A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Millar</surname>
+            <given-names>Anthony A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Trevaskis</surname>
+            <given-names>Ben</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Division of Plant Industry, CSIRO, Canberra, Australian Capital Territory, Australia</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Research School of Biology, Australian National University, Canberra, Australian Capital Territory, Australia</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Cereals Research, Seed and Plant Improvement Institute, Karaj, Tehran, Iran</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Hazen</surname>
+            <given-names>Samuel</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">University of Massachusetts Amherst, United States of America</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>Ben.Trevaskis@csiro.au</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: AGG SS SNO BT. Performed the experiments: AGG SS SNO BT. Analyzed the data: AGG SNO SAW BT. Contributed reagents/materials/analysis tools: AGG SAW BT. Wrote the paper: AGG SAW AAM BT.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>9</day>
+        <month>3</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>6</volume>
+      <issue>3</issue>
+      <elocation-id>e17900</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>12</day>
+          <month>12</month>
+          <year>2010</year>
+        </date>
+        <date date-type="accepted">
+          <day>14</day>
+          <month>2</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Greenup et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+      </permissions>
+      <abstract>
+        <p>Temperate cereals, such as wheat (<italic>Triticum spp.</italic>) and barley (<italic>Hordeum vulgare</italic>), respond to prolonged cold by becoming more tolerant of freezing (cold acclimation) and by becoming competent to flower (vernalization). These responses occur concomitantly during winter, but vernalization continues to influence development during spring. Previous studies identified <italic>VERNALIZATION1</italic> (<italic>VRN1</italic>) as a master regulator of the vernalization response in cereals. The extent to which other genes contribute to this process is unclear. In this study the Barley1 Affymetrix chip was used to assay gene expression in barley seedlings during short or prolonged cold treatment. Gene expression was also assayed in the leaves of plants after prolonged cold treatment, in order to identify genes that show lasting responses to prolonged cold, which might contribute to vernalization-induced flowering. Many genes showed altered expression in response to short or prolonged cold treatment, but these responses differed markedly. A limited number of genes showed lasting responses to prolonged cold treatment. These include genes known to be regulated by vernalization, such as <italic>VRN1</italic> and <italic>ODDSOC2</italic>, and also contigs encoding a calcium binding protein, 23-KD jasmonate induced proteins, an RNase S-like protein, a PR17d secretory protein and a serine acetyltransferase. Some contigs that were up-regulated by short term cold also showed lasting changes in expression after prolonged cold treatment. These include <italic>COLD REGULATED 14B</italic> (<italic>COR14B</italic>) and the barley homologue of <italic>WHEAT COLD SPECIFIC 19</italic> (<italic>WSC19</italic>), which were expressed at elevated levels after prolonged cold. Conversely, two <italic>C-REPEAT BINDING FACTOR</italic> (<italic>CBF</italic>) genes showed reduced expression after prolonged cold. Overall, these data show that a limited number of barley genes exhibit lasting changes in expression after prolonged cold treatment, highlighting the central role of <italic>VRN1</italic> in the vernalization response in cereals.</p>
+      </abstract>
+      <counts>
+        <page-count count="11"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>In temperate regions, wheat (<italic>Triticum spp.</italic>) and barley (<italic>Hordeum vulgare</italic>) can be sown in autumn to grow vegetatively through winter before flowering in spring. Autumn sowing can enhance yield relative to later sowing times, but can also expose plants to freezing winter conditions <xref ref-type="bibr" rid="pone.0017900-Entz1">[1]</xref>. Consequently, the capacity to survive winter frosts is an important trait for autumn-sown wheat and barley varieties grown in regions that experience cold winters <xref ref-type="bibr" rid="pone.0017900-King1">[2]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Koemel1">[4]</xref>.</p>
+      <p>Tolerance to winter frosts is established through cold acclimation, the process where freezing tolerance increases as temperatures decrease during autumn <xref ref-type="bibr" rid="pone.0017900-Thomashow1">[5]</xref>. Molecular analyses have identified low-temperature responsive genes that are induced during cold acclimation, such as ice crystallisation inhibitors and dehydrins, which protect against freezing damage <xref ref-type="bibr" rid="pone.0017900-Thomashow1">[5]</xref>. <italic>C-REPEAT BINDING FACTOR</italic> (<italic>CBF</italic>) genes encode transcription factors that play a critical role in the cold acclimation process <xref ref-type="bibr" rid="pone.0017900-Thomashow1">[5]</xref>. <italic>CBF</italic> genes are rapidly induced by low temperatures to activate genes that contribute to increased freezing tolerance <xref ref-type="bibr" rid="pone.0017900-Thomashow1">[5]</xref>. The <italic>FROST RESISTANCE 2</italic> (<italic>FR2</italic>) locus on chromosome 5A of wheat and barley (5H), which is associated with variation in frost tolerance <xref ref-type="bibr" rid="pone.0017900-Roberts1">[6]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Fowler1">[8]</xref>, has been mapped to a cluster of <italic>CBF</italic> genes <xref ref-type="bibr" rid="pone.0017900-Francia1">[9]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Knox1">[12]</xref>, reviewed in <xref ref-type="bibr" rid="pone.0017900-Galiba1">[13]</xref>. An increased number of <italic>CBF</italic> genes at the <italic>FR2</italic> locus might enhance cold acclimation in frost tolerant varieties <xref ref-type="bibr" rid="pone.0017900-Knox2">[14]</xref>.</p>
+      <p>Another feature of many autumn-sown wheats and barleys is the vernalization requirement; the requirement for prolonged exposure to cold to make plants competent to flower. The requirement for vernalization delays reproductive growth and stem elongation before winter, minimising the risk of frost damage to cold-sensitive reproductive organs. Furthermore, since the capacity for cold acclimation decreases during reproductive growth, the requirement for vernalization allows more time for cold acclimation by lengthening the vegetative growth phase <xref ref-type="bibr" rid="pone.0017900-Limin2">[15]</xref>. Consistent with this hypothesis, varieties sown in autumn in regions that experience cold winters typically have a strong requirement for vernalization and can acclimate to cold over an extended period. In comparison, varieties that flower without vernalization have a shorter vegetative growth phase and less time for cold acclimation, and are consequently less frost tolerant <xref ref-type="bibr" rid="pone.0017900-Limin1">[3]</xref>, <xref ref-type="bibr" rid="pone.0017900-Koemel1">[4]</xref>, <xref ref-type="bibr" rid="pone.0017900-Limin2">[15]</xref>.</p>
+      <p>During winter, low temperatures overcome the vernalization requirement and trigger a quantitative flowering response, so that longer exposure to cold causes more rapid flowering until the vernalization response is saturated after several weeks at low-temperatures <xref ref-type="bibr" rid="pone.0017900-Gassner1">[16]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Chouard1">[19]</xref>. The initial response to prolonged cold can be separated from the flowering response; for example, when sprouting seeds are vernalized, inflorescence development (flowering) does not begin until plants are shifted to normal growth temperatures <xref ref-type="bibr" rid="pone.0017900-Purvis1">[17]</xref>, <xref ref-type="bibr" rid="pone.0017900-Sasani1">[20]</xref>. This implies a memory of cold that mediates a quantitative change in the rate of development after vernalization.</p>
+      <p>In cereals, vernalization-induced flowering is mediated by the activation of <italic>VERNALIZATION1</italic> (<italic>VRN1</italic>), a gene that promotes flowering (reviewed in <xref ref-type="bibr" rid="pone.0017900-Trevaskis1">[21]</xref>, <xref ref-type="bibr" rid="pone.0017900-Distelfeld1">[22]</xref>). <italic>VRN1</italic> transcript levels show a quantitative response to cold, with longer durations of cold activating <italic>VRN1</italic> expression to greater extents, and expression of <italic>VRN1</italic> is maintained when vernalized plants are shifted to normal growth temperatures <xref ref-type="bibr" rid="pone.0017900-Trevaskis2">[23]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Yan1">[27]</xref>. This long term activation of <italic>VRN1</italic> might be mediated through vernalization-induced changes in the state of chromatin at the <italic>VRN1</italic> locus <xref ref-type="bibr" rid="pone.0017900-Oliver1">[28]</xref>.</p>
+      <p>Following vernalization, <italic>VRN1</italic> accelerates flowering by promoting the transition to reproductive development at the shoot apex and by making the leaves competent to respond to increasing daylength during spring, which accelerates inflorescence development and stem elongation <xref ref-type="bibr" rid="pone.0017900-Purvis1">[17]</xref>, <xref ref-type="bibr" rid="pone.0017900-Sasani1">[20]</xref>, <xref ref-type="bibr" rid="pone.0017900-Hemming1">[29]</xref>. Many varieties of wheat and barley carry alleles of <italic>VRN1</italic> that are expressed at elevated levels without prior cold treatment <xref ref-type="bibr" rid="pone.0017900-Trevaskis2">[23]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Yan1">[27]</xref>, <xref ref-type="bibr" rid="pone.0017900-Takahashi1">[23]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Hemming2">[27]</xref>. These varieties flower without vernalization and can be grown in warm climates, where winter temperatures are not cold enough for vernalization, or sown in spring.</p>
+      <p>By accelerating the transition to reproductive growth, when cold acclimation is inhibited, active alleles of <italic>VRN1</italic> are likely to limit the potential for cold acclimation and reduce frost tolerance <xref ref-type="bibr" rid="pone.0017900-Limin2">[15]</xref>. Consistent with this hypothesis, <italic>VRN1</italic> is linked to the <italic>FR1</italic> locus, which influences the activity of cold acclimation pathways and frost tolerance <xref ref-type="bibr" rid="pone.0017900-Roberts1">[6]</xref>, <xref ref-type="bibr" rid="pone.0017900-Hayes1">[7]</xref>, <xref ref-type="bibr" rid="pone.0017900-Francia1">[9]</xref>, <xref ref-type="bibr" rid="pone.0017900-Sutka1">[23]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Stockinger1">[27]</xref>. Furthermore, deletion of the <italic>VRN1</italic> region increases the activity of cold acclimation pathways, and frost tolerance, in the <italic>maintained vegetative phase mutant</italic> (<italic>mvp</italic>) of <italic>Triticum monococcum</italic> <xref ref-type="bibr" rid="pone.0017900-Dhillon1">[37]</xref>, which grows vegetatively indefinitely <xref ref-type="bibr" rid="pone.0017900-Shitsukawa1">[38]</xref>. These observations suggest that <italic>VRN1</italic> and <italic>FR1</italic> are likely the same gene <xref ref-type="bibr" rid="pone.0017900-Dhillon1">[37]</xref>. The impact of the <italic>VRN1</italic> deletion or active <italic>VRN1</italic> alleles on frost tolerance is greatest in long-days, where floral development occurs rapidly <xref ref-type="bibr" rid="pone.0017900-Limin2">[15]</xref>, <xref ref-type="bibr" rid="pone.0017900-Dhillon1">[37]</xref>.</p>
+      <p>Cold acclimation and vernalization occur concomitantly when autumn-sown plants experience low-temperatures during winter, but vernalization continues to influence development when plants return to warm temperatures. In this study we use microarrays to compare and contrast gene expression in seedlings of a vernalization-responsive barley (cv Sonja) exposed to short or prolonged cold treatments. Additionally, we compare gene expression in the leaves of vernalized versus non-vernalized plants. By comparing the effects of short and prolonged cold on the transcriptome we identify genes that show distinct low temperature responses. We were also able to identify genes that show lasting responses to prolonged cold treatment, an expression pattern that defines vernalization-responsive genes. Possible roles for these genes in the vernalization response of cereals are discussed.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <p>The Affymetrix 22K Barley1 chip <xref ref-type="bibr" rid="pone.0017900-Close1">[39]</xref> was used to examine the effects of short or prolonged cold on the transcriptome of barley seedlings (see <xref ref-type="sec" rid="s4">materials and methods</xref>, <xref ref-type="fig" rid="pone-0017900-g001">Figure 1A</xref>). Pair wise comparisons of the different treatments were used to identify contigs that have altered expression in the short term, prolonged or post-cold treatments (<xref ref-type="supplementary-material" rid="pone.0017900.s002">Tables S1</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s003">S2</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s004">S3</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s005">S4</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s006">S5</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s007">S6</xref>). Large numbers of contigs show altered expression (&gt; two fold change relative to the non-treated control, p&lt;0.01) in short (613 contigs, <xref ref-type="supplementary-material" rid="pone.0017900.s002">Table S1</xref>) or prolonged (786 contigs, <xref ref-type="supplementary-material" rid="pone.0017900.s003">Table S2</xref>) cold treatment (<xref ref-type="fig" rid="pone-0017900-g002">Figure 2</xref>). The contigs that showed altered expression after short term cold were predominantly up-regulated, whereas many contigs were down-regulated in the prolonged cold treatment (<xref ref-type="fig" rid="pone-0017900-g002">Figure 2</xref>). Fewer contigs showed altered expression in the post cold treatment relative to the non-treated control (150 contigs, <xref ref-type="supplementary-material" rid="pone.0017900.s004">Table S3</xref>). A limited number of contigs showed a lasting response to prolonged cold; i.e. significantly changed in both the prolonged cold and 1 day after prolonged cold samples, but not the short term cold sample (60 contigs) (<xref ref-type="fig" rid="pone-0017900-g003">Figure 3</xref>). Expression levels were verified for a subset of contigs with contrasting expression patterns, using quantitative RT-PCR (<xref ref-type="supplementary-material" rid="pone.0017900.s001">Figure S1</xref>).</p>
+      <fig id="pone-0017900-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0017900.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Overview of sampling methods for microarray analysis.</title>
+          <p>A) Barley seeds (cv. Sonja) were germinated and grown in darkness at either 20&#xB0;C over 5 days (control) or 4&#xB0;C over 49 days (prolonged cold). Seedlings were then shifted from the control treatment to 4&#xB0;C for 24 hours (short term cold) or shifted from the prolonged cold treatment to 20&#xB0;C for 24 hours (post cold). In all treatments the shoot apex remained at an early stage of vegetative development, but plants grown from seedlings that experienced prolonged cold flower rapidly when shifted to normal growth conditions, unlike control seedlings germinated at 20&#xB0;C <xref ref-type="bibr" rid="pone.0017900-Sasani1">[20]</xref>. B) To identify contigs that show a sustained response to prolonged cold, barley seeds were germinated in the dark at 4&#xB0;C for 49 days and then transferred to growth in glasshouse conditions until they reached the three leaf stage (10 days after the end of cold treatment). Non-vernalized control plants were grown simultaneously under the same conditions and were sampled at the equivalent developmental leaf stage (14 days). Grey shading indicates low-temperature.</p>
+        </caption>
+        <graphic xlink:href="pone.0017900.g001"/>
+      </fig>
+      <fig id="pone-0017900-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0017900.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Changes in gene expression in seedlings after different low-temperature treatments.</title>
+          <p>A) The total numbers of contigs showing differential expression (&gt;2 fold change, p&lt;0.01) in the short term cold versus control (ST-C), the prolonged cold versus control (PLC-C) or the post cold versus control (POC-C) samples. B) The total numbers of genes up-regulated in the same comparisons. C) Genes down-regulated in the same comparisons. D) The total number of contigs up or down-regulated in the prolonged versus short term cold treatments. E) The number of contigs up or down-regulated in the post versus prolonged cold treatments. Dark shading indicates 8 fold change of greater, intermediate shading indicates 4&#x2013;8 fold, light shading indicates 2&#x2013;4 fold change.</p>
+        </caption>
+        <graphic xlink:href="pone.0017900.g002"/>
+      </fig>
+      <fig id="pone-0017900-g003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0017900.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Venn diagram showing the differentially expressed contigs across the different treatments.</title>
+          <p>A summary of the contigs that showed a two fold or greater change in transcript levels across the different treatments when compared to the control treatment (p&lt;0.1). Shaded area indicates contigs that were significantly changed in the samples treated with prolonged cold and one day after prolonged cold treatment, relative to the control.</p>
+        </caption>
+        <graphic xlink:href="pone.0017900.g003"/>
+      </fig>
+      <p>Principal component analysis (PCA) <xref ref-type="bibr" rid="pone.0017900-Wit1">[40]</xref> was used to visualise the overall changes in gene expression in the different treatments (<xref ref-type="fig" rid="pone-0017900-g004">Figure 4</xref>). The first two principal components, which explained 97% of the total variance (95% 1<sup>st</sup> component, 1.8% second component), show that the short term and prolonged cold treatments were dissimilar to each other and to the control treatment (<xref ref-type="fig" rid="pone-0017900-g004">Figure 4</xref>). In comparison the post cold treatment was more similar to the control treatment than to either the short or prolonged cold treatments. Replicates showed a high degree of similarity for all four treatments (<xref ref-type="fig" rid="pone-0017900-g004">Figure 4</xref>). The results of PCA analysis are consistent with the number of contigs that show altered expression in each treatment, relative to the control (<xref ref-type="fig" rid="pone-0017900-g002">Figures 2</xref>, <xref ref-type="fig" rid="pone-0017900-g003">3</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s002">Table S1</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s003">S2</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s004">S3</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s005">S4</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s006">S5</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s007">S6</xref>). Taken together, these observations indicate that prolonged cold treatment has a strong influence on the transcriptome of barley, distinct to that of short term cold treatment, but the majority of cold-induced alterations to the transcriptome are not maintained when plants are shifted to warm conditions after prolonged cold treatment.</p>
+      <fig id="pone-0017900-g004" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0017900.g004</object-id>
+        <label>Figure 4</label>
+        <caption>
+          <title>Principle component analysis of microarray data.</title>
+          <p>Principal component analysis was applied to differentially expressed contigs identified in the different seedling treatments (see <xref ref-type="sec" rid="s4">methods</xref>). Closed triangles (&#x25B4;) indicate samples from the no cold control treatment. Open triangles (<bold>&#x394;</bold>) represent the 1 day after prolonged cold treatment. Closed squares (&#x25AA;) represent the short term cold treatment. Open squares (&#x25A1;) represent the prolonged cold treatment.</p>
+        </caption>
+        <graphic xlink:href="pone.0017900.g004"/>
+      </fig>
+      <sec id="s2a">
+        <title>K-means cluster analysis</title>
+        <p>Cluster analysis was used to analyse the expression patterns of contigs that showed significant changes in expression (p&lt;0.01) in any of the two way comparisons between seedling treatments. Ten primary clusters were identified; each showing distinctive expression patterns (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>, ).</p>
+        <fig id="pone-0017900-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0017900.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>K-means cluster analysis of differentially expressed contigs.</title>
+            <p>The mean for each cluster is shown as black dots and lines and the gray lines represent the expression pattern of individual contigs. The three replicates for each treatment data are shown.</p>
+          </caption>
+          <graphic xlink:href="pone.0017900.g005"/>
+        </fig>
+        <p>A cluster of 114 contigs showed elevated expression at low-temperature, irrespective of the duration (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>, cluster 1). Contigs belonging to this cluster correspond to cold acclimation genes, such as <italic>DEHYDRIN5</italic> (<italic>DHN5</italic>) (contig1717_s_at), <italic>DELTA1-PYRROLINE-5-CARBOXYLATE SYNTHASE 1</italic> (<italic>P5CS1</italic>) (contig3814_at) and <italic>GALACTINOL SYNTHASE</italic> (contig3810_at and contig3811_at) (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>; contig sequences are available at <ext-link ext-link-type="uri" xlink:href="http://www.plexdb.org">www.plexdb.org</ext-link>, see Barley Annotation <xref ref-type="bibr" rid="pone.0017900-Wise1">[41]</xref>). A second cluster of 98 contigs (cluster 2) showed an inverse expression pattern, and is made up of contigs that are down-regulated by low-temperatures (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>, cluster 2). This cluster includes contigs corresponding to heat-shock genes (contig2006_s_at and contig5597_s_at) and a <italic>PROLINE OXIDASE</italic> (contig68_at) (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>).</p>
+        <p>A group of 85 contigs showed increased expression only in the short term cold treatment (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>, cluster 3). This cluster includes several contigs annotated as transcription factors, examples include: basic leucine zipper domain, zinc finger domain, WRKY and NAC domain transcription factors. There were also several contigs annotated as <italic>GLUTATHIONE-S-TRANSFERASE</italic> genes (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>). Another cluster showed the inverse pattern and was made up of 122 contigs (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>, cluster 4). This cluster includes contigs annotated as core histone domain containing proteins (contig175_at and contig175_x_at) and basic helix-loop-helix transcription factors (contig4559_s_at, contig4560_at, contig4560_x_at and contig26382_at) (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>). Clusters 3 and 4 define contigs that respond to short term cold exposure or &#x201C;cold shock&#x201D;.</p>
+        <p>A group of 47 contigs showed elevated expression in the short term cold treatment, the prolonged cold treatment and the post cold sample (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>, cluster 5). Contigs belonging to this cluster include several contigs corresponding to cold acclimation genes (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>). Twenty three contigs showed elevated expression only in the post cold samples (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>, cluster 6). This cluster includes heat-shock genes (contig2004_s_at and contig2007_s_at) and auxin or jasmonate responsive genes (contig17690_at and contig2906_at, HVSMEg0005M23r2_at respectively) (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>).</p>
+        <p>Contigs that showed elevated expression only in the prolonged cold treatment were grouped in cluster 7 (138 contigs) (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>). This cluster includes contigs corresponding to <italic>FLOWERING LOCUS T-like2</italic> (HVSMEl0003G02r2_at) and an <italic>APETALA2-like</italic> gene (contig18652_at) (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>). Conversely, contigs that had decreased expression in prolonged cold treatment were grouped into cluster 8 (217 contigs) (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>). Examples from this cluster include contigs described as zinc finger transcription factors (contig4486_at and contig8233_s_at) and cysteine proteases (HB26O11r_at, HVSMEl0003G02r2_at and contig11505_at) (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>).</p>
+        <p>Of most interest to the aims of this study were contigs that showed a lasting response to prolonged cold. A cluster of 46 contigs showed increased expression in the prolonged cold and post cold samples (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>, cluster 9). This cluster includes <italic>VRN1</italic> (rbaal14f06_s_at), contigs corresponding to <italic>23kd JASMONATE INDUCED</italic> genes (rbags15p13_s_at and contig1679_s_at), a putative glucan synthase (contig19065_at) and a calcium binding EF-hand protein (AJ250283_at) (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>). Another cluster of 73 contigs showed the inverse pattern, with decreased expression in the prolonged cold and post cold samples (<xref ref-type="fig" rid="pone-0017900-g005">Figure 5</xref>, cluster 10). This group includes contigs corresponding to <italic>ODDSOC2</italic> (<italic>HvOS2</italic>) (contig12031_at), rubisco activase (contig1019_at) and RNase S-like proteins (contig5059_s_at and contig5058_x_at) (<xref ref-type="supplementary-material" rid="pone.0017900.s008">Table S7</xref>).</p>
+      </sec>
+      <sec id="s2b">
+        <title>Vernalization-responsive genes</title>
+        <p>Gene expression was assayed in the fully expanded second leaf of vernalized or non-vernalized plants using the Affymetrix 22K Barley1 chip <xref ref-type="bibr" rid="pone.0017900-Close1">[39]</xref> (see <xref ref-type="sec" rid="s4">materials and methods</xref>, <xref ref-type="fig" rid="pone-0017900-g001">Figure 1B</xref>). This allowed comparisons between vernalized and non-vernalized plants to be made using developmentally equivalent tissues, which cannot be made if apex tissue is included (vegetative in non-vernalized versus reproductive in vernalized plants at this growth stage, <xref ref-type="bibr" rid="pone.0017900-Sasani1">[20]</xref>). A total of 60 contigs showed greater than two fold change in expression level (p&lt;0.01) in vernalized versus non-vernalized leaves. A less stringent criteria identified 244 contigs that showed greater than 1.5 fold changes in expression level (p&lt;0.05) (<xref ref-type="supplementary-material" rid="pone.0017900.s009">Table S8</xref>). Of these, 120 were up-regulated after vernalization, including contigs corresponding to <italic>VRN1</italic> (rbaal14f06_s_at), <italic>COR14b</italic> (HVSMEa0015E13r2_s_at) and a <italic>JUMONJI</italic> transcription factor (contig24321_at). A total of 128 contigs showed lower expression levels after vernalization, including contigs corresponding to <italic>XYLOGLUCAN ENDOTRANSGLYCOSYLASE</italic> (<italic>XET</italic>) (HVSMEb0004L16r2_at, contig2673_at and contig2670_x_at), <italic>HvOS2</italic> (contig12031_at) and <italic>CBF9</italic> (HVSMEn0019L21f_at).</p>
+        <p>The prolonged cold treatment sample (see above) corresponds to the end of the vernalization treatment (49 days at 4&#xB0;C). Of the contigs that showed altered expression in the leaves of plants after vernalization, 14 showed altered expression in both the prolonged cold and 1 day after prolonged cold seedling treatments (clusters 9 and 10) (end of vernalization treatment): six were up-regulated including <italic>VRN1</italic> (rbaal14f06_s_at) and a calcium binding protein (AJ250283_at) (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6A, B</xref>, <xref ref-type="table" rid="pone-0017900-t001">Table 1</xref>). In addition, eight were down-regulated including contigs for <italic>HvOS2</italic> (contig12031_at), RNAse-S-like protein (contig5059_s_at) and a PR17d secretory protein (HW03O22u_s_at) (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6C&#x2013;E</xref>, <xref ref-type="table" rid="pone-0017900-t001">Table 1</xref>).</p>
+        <fig id="pone-0017900-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0017900.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Examples of temperature responsive contigs.</title>
+            <p>The normalized expression levels for individual contigs (A&#x2013;L), as assayed by Affymetrix Barley1 Chip (RMA normalization) for control seedlings, short term or prolonged cold treatment, and one day after prolonged cold (a). Also shown are expression levels for contigs in the fully expanded second leaf of plants after vernalization (10 days post-vernalization), versus the equivalent leaves from non-vernalized control plants (b).</p>
+          </caption>
+          <graphic xlink:href="pone.0017900.g006"/>
+        </fig>
+        <table-wrap id="pone-0017900-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0017900.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Contigs that show a lasting response to cold in the leaves of vernalized plants.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0017900-t001-1" xlink:href="pone.0017900.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Probe Set</td>
+                  <td align="left" rowspan="1" colspan="1">Best Match</td>
+                  <td align="left" rowspan="1" colspan="1">Fold Change</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>P</italic> Value</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Cluster 9</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AJ250283_at</td>
+                  <td align="left" rowspan="1" colspan="1">Calcium binding EF-hand protein</td>
+                  <td align="left" rowspan="1" colspan="1">11.39</td>
+                  <td align="left" rowspan="1" colspan="1">5.90E-04</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">rbaal14f06_s_at</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>VRN1</italic> (MADS box gene)</td>
+                  <td align="left" rowspan="1" colspan="1">6.12</td>
+                  <td align="left" rowspan="1" colspan="1">2.63E-09</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">rbags15p13_s_at</td>
+                  <td align="left" rowspan="1" colspan="1">Jasmonate induced protein</td>
+                  <td align="left" rowspan="1" colspan="1">5.43</td>
+                  <td align="left" rowspan="1" colspan="1">1.47E-03</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Contig1679_s_at</td>
+                  <td align="left" rowspan="1" colspan="1">Jasmonate-induced protein</td>
+                  <td align="left" rowspan="1" colspan="1">1.81</td>
+                  <td align="left" rowspan="1" colspan="1">1.33E-04</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Contig372_s_at</td>
+                  <td align="left" rowspan="1" colspan="1">Unknown</td>
+                  <td align="left" rowspan="1" colspan="1">1.70</td>
+                  <td align="left" rowspan="1" colspan="1">1.69E-04</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Contig19065_at</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>Glucan synthase-like 3</italic> (<italic>Hordeum vulgare</italic>)</td>
+                  <td align="left" rowspan="1" colspan="1">1.60</td>
+                  <td align="left" rowspan="1" colspan="1">7.59E-04</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Cluster 10</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Contig12031_at</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>ODDSOC2</italic> (MADS box gene)</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;1.52</td>
+                  <td align="left" rowspan="1" colspan="1">3.19E-03</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Contig23272_at</td>
+                  <td align="left" rowspan="1" colspan="1">Serine acetyltransferase protein, putative</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;1.55</td>
+                  <td align="left" rowspan="1" colspan="1">1.07E-04</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">HS07I12u_s_at</td>
+                  <td align="left" rowspan="1" colspan="1">FAD binding domain, monooxygenase</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;1.58</td>
+                  <td align="left" rowspan="1" colspan="1">3.72E-03</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">HE01O15u_at</td>
+                  <td align="left" rowspan="1" colspan="1">extracellular dermal glycoprotein-like</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;1.67</td>
+                  <td align="left" rowspan="1" colspan="1">3.60E-04</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">HVSMEf0015C12f_at</td>
+                  <td align="left" rowspan="1" colspan="1">unknown</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;1.68</td>
+                  <td align="left" rowspan="1" colspan="1">1.13E-03</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Contig5059_s_at</td>
+                  <td align="left" rowspan="1" colspan="1">RNase S-like protein</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;1.73</td>
+                  <td align="left" rowspan="1" colspan="1">5.94E-04</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">HW03O22u_s_at</td>
+                  <td align="left" rowspan="1" colspan="1">PR17d/secretory protein</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;1.75</td>
+                  <td align="left" rowspan="1" colspan="1">3.07E-03</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Contig9743_at</td>
+                  <td align="left" rowspan="1" colspan="1">Unknown</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;1.79</td>
+                  <td align="left" rowspan="1" colspan="1">1.61E-03</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>Some contigs that respond to short term cold also had altered expression in the leaves of vernalized plants. These include <italic>COR14b</italic> (HVSMEa0015E13r2_s_at) (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6F</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s010">Table S9</xref>), a cold acclimation protein WCS19 (baakp18_s_at) (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6G</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s010">Table S9</xref>) and a LEA-like protein (contig10150_at) (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6H</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s010">Table S9</xref>). Others did not show consistent expression patterns when the seedling treatments were compared to the leaf samples. <italic>CBF9</italic> (HVSMEn0019L21f_at) showed elevated expression after short term and prolonged cold but was down-regulated in the leaves of plants after vernalization (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6I</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s010">Table S9</xref>). The expression pattern of these contigs is distinct to other contigs that are cold regulated. For example, contigs corresponding to <italic>DHN5</italic> (contig1717_s_at and HVSMEa0006I22r2_s_at) are also induced by cold but show no change in expression in the leaves of vernalized plants (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6J</xref>). A full list of the contigs with altered expression in seedlings and leaves is provided in <xref ref-type="supplementary-material" rid="pone.0017900.s010">Table S9</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>Previous studies investigated the effects of low-temperature on the transcriptome of wheat or barley by examining short to medium term cold responses (1 day&#x2013;2 weeks) <xref ref-type="bibr" rid="pone.0017900-Svensson1">[42]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Winfield1">[45]</xref>. In this study, transcriptional responses to short or prolonged cold were assayed and compared (<xref ref-type="fig" rid="pone-0017900-g001">Figure 1</xref>). The data presented show that transcriptional responses to short or prolonged cold differ markedly. This is evident from the lists of contigs with significantly changed expression for each treatment relative to the control (<xref ref-type="fig" rid="pone-0017900-g002">Figure 2</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s002">Tables S1</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s003">S2</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s004">S3</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s005">S4</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s006">S5</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s007">S6</xref>) and is further highlighted by PCA (<xref ref-type="fig" rid="pone-0017900-g004">Figure 4</xref>). Comparing and contrasting the effects of different lengths of cold treatment identified contigs potentially involved in different low-temperature responses. Contigs that respond to short term cold treatment are likely to function during cold &#x201C;shock&#x201D;, to adjust homeostasis to rapid decreases in temperature, whereas contigs that show altered expression after prolonged cold are likely to be important for long term growth at low temperatures. Comparison of this dataset with previous microarray analyses of low-temperature responses in barley identified 55 contigs that showed a significant response to cold in all experiments (8 down and 47 up) (<xref ref-type="supplementary-material" rid="pone.0017900.s011">Table S10</xref>) (Plexdb accession no. BB65 and BB81; <xref ref-type="bibr" rid="pone.0017900-Svensson1">[42]</xref>). These contigs define a core set of low-temperature responsive genes from barley, including genes previously identified as cold responsive, such <italic>DHN5</italic> <xref ref-type="bibr" rid="pone.0017900-Tommasini1">[43]</xref>, that are likely to play critical roles in cold acclimation (HVSMEa0006I22r2_s_at and contig1717_s_at) (<xref ref-type="supplementary-material" rid="pone.0017900.s011">Table S10</xref>).</p>
+      <p>A limited number of contigs show a sustained response to prolonged cold after plants were shifted to warm conditions (<xref ref-type="fig" rid="pone-0017900-g002">Figures 2</xref>, <xref ref-type="fig" rid="pone-0017900-g003">3</xref>, <xref ref-type="fig" rid="pone-0017900-g005">5</xref>). Moreover, few of the contigs that showed altered expression in the prolonged cold treatment showed altered expression in the leaves of vernalized plants at the third leaf stage (10 days after the end of a prolonged cold treatment) (<xref ref-type="table" rid="pone-0017900-t001">Table 1</xref>). This observation is important with regards to the phenomenon of vernalization-induced flowering, since contigs that show a lasting response to prolonged cold potentially contribute to the acceleration of reproductive development that occurs in vernalized plants (see <xref ref-type="bibr" rid="pone.0017900-Sasani1">[20]</xref>). Indeed, the list of contigs identified as showing a sustained response to prolonged cold includes <italic>VRN1</italic>, a central regulator of the vernalization response in cereals <xref ref-type="bibr" rid="pone.0017900-Trevaskis2">[23]</xref>.</p>
+      <p><italic>HvOS2</italic> was identified amongst contigs that are down-regulated by vernalization (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6C</xref>, <xref ref-type="table" rid="pone-0017900-t001">Table 1</xref>). This is consistent with previous studies, which showed that <italic>HvOS2</italic>, and two closely related wheat genes, <italic>Triticum aestivum AGAMOUS-like 33</italic> and <italic>42</italic> (<italic>TaAGL33</italic>, <italic>TaAGL42</italic>), show reduced transcript levels during and after vernalization <xref ref-type="bibr" rid="pone.0017900-Trevaskis3">[26]</xref>, <xref ref-type="bibr" rid="pone.0017900-Winfield2">[46]</xref>, <xref ref-type="bibr" rid="pone.0017900-Greenup1">[47]</xref>. Down-regulation of <italic>HvOS2</italic> in vernalized plants is likely to contribute to accelerated flowering <xref ref-type="bibr" rid="pone.0017900-Greenup1">[47]</xref>, and although <italic>HvOS2</italic> is down-regulated by cold independently of <italic>VRN1</italic>, maintained repression of <italic>HvOS2</italic> after vernalization requires <italic>VRN1</italic> <xref ref-type="bibr" rid="pone.0017900-Greenup1">[47]</xref>. Thus, down-regulation of <italic>HvOS2</italic> in the leaves of vernalized plants can be considered a consequence of <italic>VRN1</italic> expression. An <italic>RNase S-like</italic> gene (contig5059_s_at), which is up-regulated by <italic>HvOS2</italic> <xref ref-type="bibr" rid="pone.0017900-Greenup1">[47]</xref>, was down-regulated in the leaves of vernalized plants (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6D</xref>, <xref ref-type="table" rid="pone-0017900-t001">Table 1</xref>). Although the function of this gene is not known, this expression pattern is consistent with the hypothesis that transcription of this gene is activated by <italic>HvOS2</italic>.</p>
+      <p>A number of other vernalization-responsive contigs were identified. These include a contig predicted to encode a calcium binding EF-hand protein (AJ250283_at), which showed increased expression after vernalization (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6B</xref>, <xref ref-type="table" rid="pone-0017900-t001">Table 1</xref>). EF hand proteins act as calcium sensors and likely contribute to diverse biological processes, including hormone metabolism, cell signalling and gene expression (reviewed in <xref ref-type="bibr" rid="pone.0017900-DeFalco1">[48]</xref>). Calcium signalling might play a role during short term cold responses and cold acclimation <xref ref-type="bibr" rid="pone.0017900-Winfield1">[45]</xref>, <xref ref-type="bibr" rid="pone.0017900-Knight1">[49]</xref>, <xref ref-type="bibr" rid="pone.0017900-Doherty1">[50]</xref>. The identification of a vernalization-responsive gene encoding an EF-hand protein (contig AJ250283_at) suggests that altered calcium signalling might also play a role during post-vernalization development in cereals.</p>
+      <p>Contigs corresponding to two 23kd jasmonate induced proteins (rbags15p13_s_at and contig1679_s_at), which might regulate cell wall polysaccharide synthesis <xref ref-type="bibr" rid="pone.0017900-Oikawa1">[51]</xref>, were induced by vernalization, as was a contig corresponding to a glucan synthase (contig19065_at) (<xref ref-type="table" rid="pone-0017900-t001">Table 1</xref>). Conversely, a contig corresponding to a FAD binding domain containing protein (HS07I12u_s_at) was down-regulated (<xref ref-type="table" rid="pone-0017900-t001">Table 1</xref>). Altered transcript levels for these contigs might reflect adjustment of metabolism in vernalized plants to facilitate the transition to reproductive growth. Alternatively, metabolism might adjust to compensate for changes in metabolite pools that occur during prolonged growth at low-temperatures, which would not occur in control seedlings germinated at 20&#xB0;C.</p>
+      <p>A previous microarray study investigating seasonal flowering responses in wheat showed that transcript levels for key enzymes in the gibberellin biosynthesis pathway, ent-kaurene synthase and ent-kaurene oxidase, increase during step wise decreases in both temperature and photoperiod <xref ref-type="bibr" rid="pone.0017900-Winfield2">[46]</xref>. We found no evidence that these enzymes play a role in the vernalization response of barley seedlings; expression levels of <italic>ENT-KAURENE SYNTHASE</italic> (contig11470_at) and <italic>ENT-KAURENE OXIDASE</italic> (contig15315_at) remained at similar levels during and after vernalization (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6K, L</xref>). The different findings of this study versus that of Winfield et al <xref ref-type="bibr" rid="pone.0017900-Winfield2">[46]</xref> might be due to the conditions used in each study; decreasing daylength versus darkness, or the age of plants examined (plants versus seedlings). Regardless, changes in transcript levels for these gibberellin biosynthetic enzymes are probably not required for the early stages of the vernalization response in barley seedlings. This does not rule out important roles for these genes in regulating responses to different temperature and daylength combinations, as suggested by Winfield et al <xref ref-type="bibr" rid="pone.0017900-Winfield2">[46]</xref>, but highlights the advantage of using seedling vernalization as an experimental system; the effects of low-temperature can be separated from the effects of development or daylength. This is important because <italic>sensu stricto</italic> vernalization is a response to cold <xref ref-type="bibr" rid="pone.0017900-Gassner1">[16]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0017900-Chouard1">[19]</xref>. Furthermore, separating the effects of different seasonal flowering cues allows better prediction of physiological responses in complex environments.</p>
+      <p>Some contigs that show a rapid response to cold also show altered expression following prolonged cold treatment. For example, <italic>COR14b</italic> (HVSMEa0015E13r2_s_at) and <italic>WCS19</italic> (baak1p18_s_at) were induced by short term cold, similar to previous studies <xref ref-type="bibr" rid="pone.0017900-Vgjfalvi1">[34]</xref>, <xref ref-type="bibr" rid="pone.0017900-Stockinger1">[36]</xref>, <xref ref-type="bibr" rid="pone.0017900-Tommasini1">[43]</xref>. These genes were also activated by prolonged cold treatment and expression remained high in seedlings a day after prolonged cold treatment and in the leaves of vernalized plants (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6G</xref>). This contrasts with the behaviour of most other cold responsive genes; <italic>DHN5</italic> for example, returns to expression levels similar to the control treatment when plants are shifted to warm temperatures after prolonged cold (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6J</xref>). The COR14b and WCS19 proteins localise to the chloroplast, possibly to reduce photo-oxidative stress <xref ref-type="bibr" rid="pone.0017900-Gray1">[52]</xref>, <xref ref-type="bibr" rid="pone.0017900-Crosatti1">[53]</xref>, but it is unclear why expression of these contigs is maintained after cold treatment. The lasting change in expression of these contigs following prolonged exposure to cold could be mediated by changes in chromatin state. Cold induced histone modifications are maintained at the promoters of some cold responsive genes in <italic>Arabidopsis thaliana</italic>, although expression of these genes is not maintained <xref ref-type="bibr" rid="pone.0017900-Kwon1">[54]</xref>.</p>
+      <p>Two contigs corresponding to <italic>CBF</italic> genes were expressed at lower levels in the leaves of vernalized plants; <italic>CBF2</italic> (AF442489_at) and <italic>CBF9</italic> (HVSMEn0019L21f_at) (<xref ref-type="fig" rid="pone-0017900-g006">Figure 6I</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s010">Table S9</xref>). Reduced expression of these contigs in the leaves of vernalized plants, which are beginning reproductive growth at the time point sampled <xref ref-type="bibr" rid="pone.0017900-Sasani1">[20]</xref>, might contribute to the reduced capacity for cold acclimation that is associated with reproductive growth in cereals <xref ref-type="bibr" rid="pone.0017900-Limin1">[3]</xref>. The equivalent <italic>CBF</italic> genes show elevated expression during cold acclimation in the <italic>T. monococcum VRN1</italic> deletion mutant (<italic>mvp</italic>), which is unable to initiate reproductive growth, consistent with this hypothesis <xref ref-type="bibr" rid="pone.0017900-Dhillon1">[37]</xref>. It might be possible to increase frost tolerance during flowering if expression of these genes could be maintained during reproductive growth, through constitutive expression in transgenic plants for example. Increased frost tolerance during flowering would be a valuable trait in areas where sudden spring frosts occur at the time of flowering, causing reduced yield.</p>
+      <p>In conclusion, we have identified barley genes that respond to prolonged cold and show lasting changes in transcriptional activity when plants are shifted to normal growth conditions. The observation that only a limited number of contigs show lasting responses to prolonged cold, at least within the detection limits of microarray analysis, highlights the importance of <italic>VRN1</italic> in the vernalization response of temperate cereals. A key question for further research is how does prolonged cold lead to increased <italic>VRN1</italic> expression? By identifying genes that are differentially expressed during short and prolonged cold we have begun to address this question.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s4">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Plant Growth</title>
+        <p>To compare the effects of short and prolonged cold on transcription in barley seeds (cv. Sonja; a well characterised vernalization-responsive barley <xref ref-type="bibr" rid="pone.0017900-Sasani1">[20]</xref> with the genotype: <italic>HvVRN1</italic>, <italic>HvVRN2</italic>, <italic>PPD-H1</italic>, <italic>ppd-H2</italic>) were germinated and grown in darkness to an average coleoptile length of 4 cm at either 20&#xB0;C over 5 days (control) or 4&#xB0;C over 49 days (prolonged cold). Seedlings were then shifted from the control treatment to 4&#xB0;C for 24 hours (short term cold) or shifted from the prolonged cold treatment to 20&#xB0;C for 24 hours (post cold) (<xref ref-type="fig" rid="pone-0017900-g001">Figure 1A</xref>). In all treatments the shoot apex remained at an early stage of vegetative development, but plants grown from seedlings that experienced prolonged cold flower rapidly when shifted to normal growth temperatures, unlike control seedlings germinated at 20&#xB0;C <xref ref-type="bibr" rid="pone.0017900-Sasani1">[20]</xref>. Seedlings were harvested from each treatment for RNA extraction.</p>
+        <p>To examine gene expression after prolonged cold, barley plants (<italic>Hordeum vulgare</italic>) (cv. Sonja) were grown in pots covered in foil at 4&#xB0;C for 49 days. The foil was then removed and plants were grown in a glasshouse (18&#xB1;2&#xB0;C) in long days (16-h light/8-h dark), with supplementary light when natural levels dropped below 200 &#xB5;E until they reached the three leaf stage (10 days) (<xref ref-type="fig" rid="pone-0017900-g001">Figure 1B</xref>). Non-treatment control plants were grown at the same time under the same conditions and were sampled at the equivalent stage of development (<xref ref-type="fig" rid="pone-0017900-g001">Figure 1B</xref>).</p>
+      </sec>
+      <sec id="s4b">
+        <title>Microarray analysis</title>
+        <p>RNA was extracted using the method of Chang et al. <xref ref-type="bibr" rid="pone.0017900-Chang1">[55]</xref> and then further purified using RNeasy columns (Qiagen). Sample labelling and hybridisation to the Barley1 Gene chip <xref ref-type="bibr" rid="pone.0017900-Close1">[39]</xref> were conducted at the Australian Genome Research Facilities (AGRF; Melbourne, VIC, Australia), following the manufacturer's recommendations (Affymetrix, Santa Clara, CA). Microarray analyses were performed on 3 biological replicates of each sample. The resulting dataset was analysed in R v2.7.1 and analysed using packages from Bioconductor <xref ref-type="bibr" rid="pone.0017900-Gentleman1">[56]</xref> (<ext-link ext-link-type="uri" xlink:href="http://www.bioconductor.org/">http://www.bioconductor.org/</ext-link>), with default settings. Normalisation was carried out by Robust Multichip Analysis (RMA) and differentially expressed contigs were identified across the normalised microarray datasets for biological replicates using linear modelling in limma in R v2.7.1 (Linear Models for Microarray Data) <xref ref-type="bibr" rid="pone.0017900-Smyth1">[57]</xref>. Each experimental sample was compared with the control sample (e.g. Short Cold vs Control), or to each other, and multiple testing was corrected for by controlling the FDR <xref ref-type="bibr" rid="pone.0017900-Benjamini1">[58]</xref>. For PCA clustering, genes that were differentially expressed in any of the three seedling treatments relative to the control (empirical Bayes test, no minimum fold change cut off applied; 11057 contigs) were grouped based on condition using the 'cluster.samples' function in smida (R v.2.7.1). The method chosen was &#x2018;pca&#x2019; and &#x2018;euclidean&#x2019; was selected as the distance measured. The clusters were plotted using the first two principal components from the PCA analysis. Comparisons between lists of contigs with significantly changed expression in the different treatments and the generation of preliminary Venn diagrams was performed using the FiRe macro in Excel&#xAE; <xref ref-type="bibr" rid="pone.0017900-Garcion1">[59]</xref>. Raw microarray data has been deposited in the Plant Expression Database (<ext-link ext-link-type="uri" xlink:href="http://www.plexdb.org">www.plexdb.org</ext-link>), a MIAME/Plant Compliant Gene Expression Resources for Plants and Plant Pathogens (Experiments BB94 and BB95).</p>
+      </sec>
+      <sec id="s4c">
+        <title>K-means Clustering</title>
+        <p>K-means cluster analysis was performed contigs that showed a two fold or greater change in transcript levels (p&lt;0.01,) in any of the two-way comparisons between the different seedling treatments (1800 in total, <xref ref-type="supplementary-material" rid="pone.0017900.s002">Table S1</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s003">S2</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s004">S3</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s005">S4</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s006">S5</xref>, <xref ref-type="supplementary-material" rid="pone.0017900.s007">S6</xref>). Cluster analysis was performed using the MeV software from the TM4 microarray software suite using the default settings (Euclidean distance, and a maximum of 50 iterations), using the RMA normalized expression values from all 12 samples (3 replicates for each of the four treatments) <xref ref-type="bibr" rid="pone.0017900-Saeed1">[60]</xref>. Contigs that did not group with the primary clusters or that showed high variability between replicates were manually omitted from the final clusters (<xref ref-type="supplementary-material" rid="pone.0017900.s012">Table S11</xref>).</p>
+      </sec>
+      <sec id="s4d">
+        <title>Gene Expression Analysis</title>
+        <p>Total RNA was extracted using the method of Chang et al., <xref ref-type="bibr" rid="pone.0017900-Chang1">[55]</xref> or the Qiagen RNeasy Plant Miniprep kit (Qiagen). cDNA was synthesised using an oligo(T) primer (T18[G/C/A]) to prime first-strand complementary DNA (cDNA) synthesis from 1-5 &#xB5;g of total RNA with SuperScript III reverse transcriptase enzyme (Invitrogen). qRT-PCR was performed on a Rotor-Gene 3000 real-time cycler (Corbett Research). The primers used for <italic>HvACTIN</italic>, <italic>HvVRN1 and HvOS2</italic> have been described previously <xref ref-type="bibr" rid="pone.0017900-Greenup1">[47]</xref>, <xref ref-type="bibr" rid="pone.0017900-Trevaskis4">[61]</xref>. The sequence of primers used for contig6358_at were as follows; forward 5&#x2032; <named-content content-type="gene">TCCTCGTGTGATTTTGCAG</named-content> 3&#x2032; and reverse 5&#x2032; <named-content content-type="gene">TTGAGTTCAGCGATGCTACG</named-content> 3&#x2032; and for HU14M19u_at; forward 5&#x2032; <named-content content-type="gene">TCAAAAAGGATGCCCAAAAG</named-content> 3&#x2032; and reverse 5&#x2032; <named-content content-type="gene">AACAAGCTTGGCAAAACACA</named-content> 3&#x2032;. qRT-PCR was performed using Platinum Taq DNA polymerase (Invitrogen) with SYBR green. Cycling conditions were 4 minutes at 94&#xB0;C, 40 cycles of 10 s at 95&#xB0;C, 15 s at 60&#xB0;C, and 20 s at 72&#xB0;C, followed by a melting-curve program (72&#xB0;C&#x2013;95&#xB0;C with a 5-s hold at each temperature). Fluorescence data were acquired at the 72&#xB0;C step and during the melting-curve program. Expression levels of genes of interest were calculated relative to <italic>ACTIN</italic> using the comparative quantification analysis method (Rotogene-5; Corbett Research), which takes into account the amplification efficiency of each primer set. Data presented are the average of a minimum of three biological replicates (unless stated otherwise) and the error bars show standard error.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0017900.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p>Quantitative RT-PCR assay versus array analysis of gene expression for selected contigs. A. Expression values as assayed by Affymetrix Barley1 chip, RMA normalisation, for four contigs with contrasting expression patterns and different activity levels. <italic>HvVRN1</italic> (rbaal14f06_s_at), a gene encoding a ribosomal protein (HU14M19u_at), a zinc finger transcription factor gene (contig6538_at), and <italic>HvOS2</italic> (contig12031_at). B. Quantitative RT-PCR assay of expression levels for the same contigs. Expression is shown relative to <italic>ACTIN</italic>. Error bars show standard error.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s001.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s002">
+        <label>Table S1</label>
+        <caption>
+          <p>Contigs with altered expression in the short cold treatment relative to no treatment control.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s002.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s003">
+        <label>Table S2</label>
+        <caption>
+          <p>Contigs with altered expression in the prolonged cold treatment relative to the no treatment control.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s003.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s004">
+        <label>Table S3</label>
+        <caption>
+          <p>Contigs with altered expression 1 day after prolonged cold treatment relative to the no treatment control.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s004.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s005">
+        <label>Table S4</label>
+        <caption>
+          <p>Contigs with altered expression in the prolonged cold treatment relative to the short cold treatment</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s005.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s006">
+        <label>Table S5</label>
+        <caption>
+          <p>Contigs with altered expression after one day after prolonged cold relative to short cold treatment.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s006.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s007">
+        <label>Table S6</label>
+        <caption>
+          <p>Contigs with altered expression in the prolonged cold treatment relative to one day after prolonged cold treatment.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s007.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s008">
+        <label>Table S7</label>
+        <caption>
+          <p>Numbers and descriptions of contigs clustered together according to expression behaviour.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s008.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s009">
+        <label>Table S8</label>
+        <caption>
+          <p>Contigs with altered expression in the leaves of barley plants after vernalization.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s009.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s010">
+        <label>Table S9</label>
+        <caption>
+          <p>Contigs represented in primary cluster analysis with altered expression in the leaves of barley plants after vernalization.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s010.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s011">
+        <label>Table S10</label>
+        <caption>
+          <p>A core set of low-temperature responsive contigs in barley.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s011.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0017900.s012">
+        <label>Table S11</label>
+        <caption>
+          <p>Contigs omitted from top the ten main clusters.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0017900.s012.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Jen Taylor for assistance with cluster analysis.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>This research was supported by the Commonwealth Scientific and Industrial Research Organization (CSIRO) Division of Plant Industry and the CSIRO Office of the Chief Executive (OCE). Aaron Greenup was supported by a scholarship from the Australian National University College of Science. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0017900-Entz1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Entz</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Fowler</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <article-title>Agronomic performance of winter versus spring wheat.</article-title>
+          <source>Agronomy Journal</source>
+          <volume>83</volume>
+          <fpage>527</fpage>
+          <lpage>532</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-King1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>King</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Heide</surname>
+              <given-names>OM</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Seasonal flowering and evolution: the heritage from Charles Darwin.</article-title>
+          <source>Functional Plant Biology</source>
+          <volume>36</volume>
+          <fpage>1027</fpage>
+          <lpage>1036</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Limin1">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Limin</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Fowler</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Low-temperature tolerance and genetic potential in wheat (<italic>Triticum aestivum L</italic>.): response to photoperiod, vernalization and plant development.</article-title>
+          <source>Planta</source>
+          <volume>224</volume>
+          <fpage>360</fpage>
+          <lpage>366</lpage>
+          <pub-id pub-id-type="pmid">16440213</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Koemel1">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koemel</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Guenzi</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>EL</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Cold hardiness of wheat near-isogenic lines differing in vernalization alleles.</article-title>
+          <source>Theoretical and Applied Genetics</source>
+          <volume>109</volume>
+          <fpage>839</fpage>
+          <lpage>846</lpage>
+          <pub-id pub-id-type="pmid">15168023</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Thomashow1">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thomashow</surname>
+              <given-names>MF</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Plant cold acclimation: freezing tolerance genes and regulatory mechanisms.</article-title>
+          <source>Annual Review of Plant Physiology and Plant Molecular Biology</source>
+          <volume>50</volume>
+          <fpage>571</fpage>
+          <lpage>599</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Roberts1">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roberts</surname>
+              <given-names>DWA</given-names>
+            </name>
+          </person-group>
+          <year>1990</year>
+          <article-title>Identification of loci on chromosome 5A of wheat involved in control of cold hardiness, vernalization, leaf length, rosette growth habit and height of hardened plants.</article-title>
+          <source>Genome</source>
+          <volume>33</volume>
+          <fpage>247</fpage>
+          <lpage>259</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Hayes1">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hayes</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Blake</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>THH</given-names>
+            </name>
+            <name>
+              <surname>Tragoonrung</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1993</year>
+          <article-title>Quantitative trait loci on barley (<italic>Hordeum vulgare L</italic>) chromosome 7 associated with components of winter hardiness.</article-title>
+          <source>Genome</source>
+          <volume>36</volume>
+          <fpage>66</fpage>
+          <lpage>71</lpage>
+          <pub-id pub-id-type="pmid">18469970</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Fowler1">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fowler</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Chauvin</surname>
+              <given-names>LP</given-names>
+            </name>
+            <name>
+              <surname>Limin</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Sarhan</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>The regulatory role of vernalization in the expression of low-temperature-induced genes in wheat and rye.</article-title>
+          <source>Theoretical and Applied Genetics</source>
+          <volume>93</volume>
+          <fpage>554</fpage>
+          <lpage>559</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Francia1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Francia</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Rizza</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Cattivelli</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Stanca</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Galiba</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Two loci on chromosome 5H determine low-temperature tolerance in a &#x2018;Nure&#x2019; (winter) x &#x2018;Tremois&#x2019; (spring) barley map.</article-title>
+          <source>Theoretical and Applied Genetics</source>
+          <volume>108</volume>
+          <fpage>670</fpage>
+          <lpage>680</lpage>
+          <pub-id pub-id-type="pmid">14576984</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Miller1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miller</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Galiba</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>A cluster of 11 CBF transcription factors is located at the frost tolerance locus <italic>Fr-A<sup>m</sup>2</italic> in <italic>Triticum monococcum</italic>.</article-title>
+          <source>Molecular Genetics and Genomics</source>
+          <volume>275</volume>
+          <fpage>193</fpage>
+          <lpage>203</lpage>
+          <pub-id pub-id-type="pmid">16362370</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Skinner1">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Skinner</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Szucs</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>von Zitzewitz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Marquez-Cedillo</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Filichkin</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Mapping of barley homologs to genes that regulate low temperature tolerance in Arabidopsis.</article-title>
+          <source>Theoretical and Applied Genetics</source>
+          <volume>112</volume>
+          <fpage>832</fpage>
+          <lpage>842</lpage>
+          <pub-id pub-id-type="pmid">16365758</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Knox1">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Knox</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>CX</given-names>
+            </name>
+            <name>
+              <surname>Vagujfalvi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Galilba</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Stockinger</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Identification of candidate <italic>CBF</italic> genes for the frost tolerance locus <italic>Fr-A</italic>(<italic>m</italic>)<italic>2</italic> in <italic>Triticum monococcum</italic>.</article-title>
+          <source>Plant Molecular Biology</source>
+          <volume>67</volume>
+          <fpage>257</fpage>
+          <lpage>270</lpage>
+          <pub-id pub-id-type="pmid">18317935</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Galiba1">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Galiba</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Vagujfalvi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>CX</given-names>
+            </name>
+            <name>
+              <surname>Soltesz</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Regulatory genes involved in the determination of frost tolerance in temperate cereals.</article-title>
+          <source>Plant Science</source>
+          <volume>176</volume>
+          <fpage>12</fpage>
+          <lpage>19</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Knox2">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Knox</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Dhillon</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Tondelli</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Pecchioni</surname>
+              <given-names>N</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>CBF gene copy number variation at Frost Resistance-2 is associated with levels of freezing tolerance in temperate-climate cereals.</article-title>
+          <source>Theoretical and Applied Genetics</source>
+          <volume>121</volume>
+          <fpage>21</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="pmid">20213518</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Limin2">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Limin</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Fowler</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Developmental traits affecting low-temperature tolerance response in near-isogenic lines for the vernalization locus <italic>Vrn-A1</italic> in wheat (<italic>Triticum aestivum L. em Thell</italic>).</article-title>
+          <source>Annals of Botany</source>
+          <volume>89</volume>
+          <fpage>579</fpage>
+          <lpage>585</lpage>
+          <pub-id pub-id-type="pmid">12099532</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Gassner1">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gassner</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>1918</year>
+          <article-title>Beitraege zur physiologischen Charakteristik sommer- und winterannueller Gewaechse in besondere der Getreidepflanzen.</article-title>
+          <source>Zeitschrift fuer botanik</source>
+          <volume>10</volume>
+          <fpage>27</fpage>
+          <lpage>476</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Purvis1">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Purvis</surname>
+              <given-names>ON</given-names>
+            </name>
+          </person-group>
+          <year>1934</year>
+          <article-title>An analysis of the influence of temperature during germination on the subsequent development of certain winter cereals and its relation to the effect of length of day.</article-title>
+          <source>Annals of Botany</source>
+          <volume>48</volume>
+          <fpage>919</fpage>
+          <lpage>955</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Gott1">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gott</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Gregory</surname>
+              <given-names>FG</given-names>
+            </name>
+            <name>
+              <surname>Purvis</surname>
+              <given-names>ON</given-names>
+            </name>
+          </person-group>
+          <year>1955</year>
+          <article-title>Studies in vernalization of cereals VIII. Photoperiodic control of stage in flowering between initiation and ear formation in vernalised and unvernalised petkus winter rye.</article-title>
+          <source>Annals of Botany</source>
+          <volume>21</volume>
+          <fpage>87</fpage>
+          <lpage>126</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Chouard1">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chouard</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>1960</year>
+          <article-title>Vernalization and its relations to dormancy.</article-title>
+          <source>Annual Review of Plant Physiology</source>
+          <volume>11</volume>
+          <fpage>191</fpage>
+          <lpage>238</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Sasani1">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sasani</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hemming</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Oliver</surname>
+              <given-names>SN</given-names>
+            </name>
+            <name>
+              <surname>Greenup</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tavakkol-Afshari</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>The influence of vernalization and daylength on expression of flowering-time genes in the shoot apex and leaves of barley (Hordeum vulgare).</article-title>
+          <source>Journal of Experimental Botany</source>
+          <volume>60</volume>
+          <fpage>2169</fpage>
+          <lpage>2178</lpage>
+          <pub-id pub-id-type="pmid">19357429</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Trevaskis1">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trevaskis</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Hemming</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Dennis</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name>
+              <surname>Peacock</surname>
+              <given-names>WJ</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>The molecular basis of vernalization-induced flowering in cereals.</article-title>
+          <source>Trends in Plant Science</source>
+          <volume>12</volume>
+          <fpage>352</fpage>
+          <lpage>357</lpage>
+          <pub-id pub-id-type="pmid">17629542</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Distelfeld1">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Distelfeld</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Regulation of flowering in temperate cereals.</article-title>
+          <source>Current Opinion in Plant Biology</source>
+          <volume>12</volume>
+          <fpage>178</fpage>
+          <lpage>184</lpage>
+          <pub-id pub-id-type="pmid">19195924</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Trevaskis2">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trevaskis</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>The central role of the <italic>VERNALIZATION1</italic> gene in the vernalization response of cereals.</article-title>
+          <source>Functional Plant Biology</source>
+          <volume>37</volume>
+          <fpage>479</fpage>
+          <lpage>487</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Danyluk1">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Danyluk</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kane</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Breton</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Limin</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Fowler</surname>
+              <given-names>DB</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title><italic>TaVRT-1</italic>, a putative transcription factor associated with vegetative to reproductive transition in cereals.</article-title>
+          <source>Plant Physiology</source>
+          <volume>132</volume>
+          <fpage>1849</fpage>
+          <lpage>1860</lpage>
+          <pub-id pub-id-type="pmid">12913142</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Murai1">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murai</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Miyamae</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kato</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Takumi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ogihara</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title><italic>WAP1</italic>, a wheat <italic>APETALA1</italic> homolog, plays a central role in the phase transition from vegetative to reproductive growth.</article-title>
+          <source>Plant Cell Physiology</source>
+          <volume>44</volume>
+          <fpage>1255</fpage>
+          <lpage>1265</lpage>
+          <pub-id pub-id-type="pmid">14701921</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Trevaskis3">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trevaskis</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Bagnall</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Ellis</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Peacock</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Dennis</surname>
+              <given-names>ES</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>MADS box genes control vernalization-induced flowering in cereals.</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <volume>100</volume>
+          <fpage>13099</fpage>
+          <lpage>13104</lpage>
+          <pub-id pub-id-type="pmid">14557548</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Yan1">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Loukoianov</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tranquilli</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Helguera</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Fahima</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>Positional cloning of the wheat vernalization gene <italic>VRN1</italic>.</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <volume>100</volume>
+          <fpage>6263</fpage>
+          <lpage>6268</lpage>
+          <pub-id pub-id-type="pmid">12730378</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Oliver1">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oliver</surname>
+              <given-names>SN</given-names>
+            </name>
+            <name>
+              <surname>Finnegan</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Dennis</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name>
+              <surname>Peacock</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Trevaskis</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Vernalization-induced flowering in cereals is associated with changes in histone methylation at the <italic>VERNALIZATION1</italic> gene.</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <volume>106</volume>
+          <fpage>8386</fpage>
+          <lpage>8391</lpage>
+          <pub-id pub-id-type="pmid">19416817</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Hemming1">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hemming</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Peacock</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Dennis</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name>
+              <surname>Trevaskis</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Low-temperature and daylength cues are integrated to regulate <italic>FLOWERING LOCUS T</italic> in barley.</article-title>
+          <source>Plant Physiology</source>
+          <volume>147</volume>
+          <fpage>355</fpage>
+          <lpage>366</lpage>
+          <pub-id pub-id-type="pmid">18359843</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Takahashi1">
+        <label>30</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takahashi</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Yasuda</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1971</year>
+          <article-title>Genetics of earliness and growth habit in barley.</article-title>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Nilan</surname>
+              <given-names>RA</given-names>
+            </name>
+          </person-group>
+          <source>Barley Genetics II (Proceedings of the Second International Barley Genetics Symposium):</source>
+          <publisher-name>Washington State University Press</publisher-name>
+          <fpage>388</fpage>
+          <lpage>408</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-vonZitzewitz1">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>von Zitzewitz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Szucs</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Francia</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Molecular and structural characterization of barley vernalization genes.</article-title>
+          <source>Plant Molecular Biology</source>
+          <volume>59</volume>
+          <fpage>449</fpage>
+          <lpage>467</lpage>
+          <pub-id pub-id-type="pmid">16235110</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Hemming2">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hemming</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Fieg</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Peacock</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Dennis</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name>
+              <surname>Trevaskis</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Regions associated with repression of the barley (<italic>Hordeum vulgare</italic>) <italic>VERNALIZATION1</italic> gene are not required for cold induction.</article-title>
+          <source>Molecular Genetics and Genomics</source>
+          <volume>289</volume>
+          <fpage>107</fpage>
+          <lpage>117</lpage>
+          <pub-id pub-id-type="pmid">19404679</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Sutka1">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sutka</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Snape</surname>
+              <given-names>JW</given-names>
+            </name>
+          </person-group>
+          <year>1989</year>
+          <article-title>Location of a gene for frost resistance on chromosome 5A of wheat.</article-title>
+          <source>Euphytica</source>
+          <volume>42</volume>
+          <fpage>41</fpage>
+          <lpage>44</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Vgjfalvi1">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>V&#xE1;g&#xFA;jfalvi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Crosatti</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Galiba</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cattivelli</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Two loci on wheat chromosome 5A regulate the differential cold-dependent expression of the <italic>cor14b</italic> gene in frost-tolerant and frost-sensitive genotypes.</article-title>
+          <source>Molecular Genetics and Genomics</source>
+          <volume>263</volume>
+          <fpage>194</fpage>
+          <lpage>200</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Kobayashi1">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Takumi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kume</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ishibashi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ohno</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Regulation by <italic>Vrn-1/Fr-1</italic> chromosomal intervals of CBF-mediated <italic>Cor/Lea</italic> gene expression and freezing tolerance in common wheat.</article-title>
+          <source>Journal of Experimental Botany</source>
+          <volume>413</volume>
+          <fpage>887</fpage>
+          <lpage>895</lpage>
+          <pub-id pub-id-type="pmid">15668223</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Stockinger1">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stockinger</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Skinner</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Gardner</surname>
+              <given-names>KG</given-names>
+            </name>
+            <name>
+              <surname>Francia</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Pecchioni</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Expression levels of barley <italic>CBF</italic> genes at the <italic>Frost resistance-H2</italic> locus are dependent upon alleles at <italic>Fr-H1</italic> and <italic>Fr-H2</italic>.</article-title>
+          <source>Plant Journal</source>
+          <volume>51</volume>
+          <fpage>308</fpage>
+          <lpage>321</lpage>
+          <pub-id pub-id-type="pmid">17559507</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Dhillon1">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dhillon</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Pearce</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Stockinger</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Distelfeld</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>CX</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Regulation of Freezing Tolerance and Flowering in Temperate Cereals: The <italic>VRN-1</italic> Connection.</article-title>
+          <source>Plant Physiology</source>
+          <volume>153</volume>
+          <fpage>1846</fpage>
+          <lpage>1858</lpage>
+          <pub-id pub-id-type="pmid">20571115</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Shitsukawa1">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shitsukawa</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Ikari</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Shimada</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kitagawa</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Sakamoto</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>The einkorn wheat (<italic>Triticum monococcum</italic>) mutant, <italic>maintained vegetative phase</italic>, is caused by a deletion in the <italic>VRN1</italic> gene.</article-title>
+          <source>Genes and Genetic Systems</source>
+          <volume>82</volume>
+          <fpage>167</fpage>
+          <lpage>170</lpage>
+          <pub-id pub-id-type="pmid">17507783</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Close1">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Close</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Wanamaker</surname>
+              <given-names>SI</given-names>
+            </name>
+            <name>
+              <surname>Caldo</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Ashlock</surname>
+              <given-names>DA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>A New Resource for Cereal Genomics: 22K Barley GeneChip Comes of Age.</article-title>
+          <source>Plant Physiol</source>
+          <volume>134</volume>
+          <fpage>960</fpage>
+          <lpage>968</lpage>
+          <pub-id pub-id-type="pmid">15020760</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Wit1">
+        <label>40</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wit</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>McClure</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Statistics for Microarrays: Design, Analysis and Inference.</article-title>
+          <publisher-loc>Chichester</publisher-loc>
+          <publisher-name>Wiley</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Wise1">
+        <label>41</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wise</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Caldo</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Cannon</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>BarleyBase/PLEXdb.</article-title>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Edwards</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <source>Plant Bioinformatics</source>
+          <publisher-loc>Totowa, NJ.</publisher-loc>
+          <publisher-name>Humana Press</publisher-name>
+          <fpage>347</fpage>
+          <lpage>363</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Svensson1">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Svensson</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Crosatti</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Campoli</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bassi</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Stanca</surname>
+              <given-names>AM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Transcriptome analysis of cold acclimation in barley Albina and Xantha mutants.</article-title>
+          <source>Plant Physiology</source>
+          <volume>141</volume>
+          <fpage>257</fpage>
+          <lpage>270</lpage>
+          <pub-id pub-id-type="pmid">16603669</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Tommasini1">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tommasini</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Svensson</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Rodriguez</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Wahid</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Malatrasi</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title><italic>Dehydrin</italic> gene expression provides an indicator of low temperature and drought stress: transcriptome-based analysis of barley (<italic>Hordeum vulgare</italic> L.).</article-title>
+          <source>Functional and Integrative Genomics</source>
+          <volume>8</volume>
+          <fpage>387</fpage>
+          <lpage>405</lpage>
+          <pub-id pub-id-type="pmid">18512091</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Monroy1">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Monroy</surname>
+              <given-names>AF</given-names>
+            </name>
+            <name>
+              <surname>Dryanova</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Malette</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Oren</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Farajalla</surname>
+              <given-names>MR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>Regulatory gene candidates and gene expression analysis of cold acclimation in winter and spring wheat.</article-title>
+          <source>Plant Molecular Biology</source>
+          <volume>64</volume>
+          <fpage>409</fpage>
+          <lpage>423</lpage>
+          <pub-id pub-id-type="pmid">17437064</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Winfield1">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Winfield</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>ID</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Plant responses to cold: transcriptome analysis of wheat.</article-title>
+          <source>Plant Biotechnology Journal</source>
+          <volume>8</volume>
+          <fpage>749</fpage>
+          <lpage>771</lpage>
+          <pub-id pub-id-type="pmid">20561247</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Winfield2">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Winfield</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Cold- and light-induced changes in the transcriptome of wheat leading to phase transition from vegetative to reproductive growth.</article-title>
+          <source>BMC Plant Biology</source>
+          <volume>9</volume>
+          <fpage>55</fpage>
+          <pub-id pub-id-type="pmid">19432994</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Greenup1">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Greenup</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name>
+              <surname>Sasani</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Oliver</surname>
+              <given-names>SN</given-names>
+            </name>
+            <name>
+              <surname>Talbot</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Dennis</surname>
+              <given-names>ES</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title><italic>ODDSOC2</italic> is a MADS Box floral repressor that is down-regulated by vernalization in temperate cereals.</article-title>
+          <source>Plant Physiology</source>
+          <volume>153</volume>
+          <fpage>1062</fpage>
+          <lpage>1073</lpage>
+          <pub-id pub-id-type="pmid">20431086</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-DeFalco1">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DeFalco</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Bender</surname>
+              <given-names>KW</given-names>
+            </name>
+            <name>
+              <surname>Snedden</surname>
+              <given-names>WA</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Breaking the code: Ca2+ sensors in plant signalling.</article-title>
+          <source>Biochemical Journal</source>
+          <volume>425</volume>
+          <fpage>27</fpage>
+          <lpage>40</lpage>
+          <pub-id pub-id-type="pmid">20001960</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Knight1">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Knight</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Trewavas</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Knight</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Cold Calcium Signaling in Arabidopsis Involves Two Cellular Pools and a Change in Calcium Signature after Acclimation.</article-title>
+          <source>Plant Cell</source>
+          <volume>8</volume>
+          <fpage>489</fpage>
+          <lpage>503</lpage>
+          <pub-id pub-id-type="pmid">8721751</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Doherty1">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doherty</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Van Buskirk</surname>
+              <given-names>HA</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Thomashow</surname>
+              <given-names>MF</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Roles for arabidopsis camta transcription factors in cold-regulated gene expression and freezing tolerance.</article-title>
+          <source>Plant Cell</source>
+          <volume>21</volume>
+          <fpage>972</fpage>
+          <lpage>984</lpage>
+          <pub-id pub-id-type="pmid">19270186</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Oikawa1">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oikawa</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Nagai</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kato</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kidou</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Gene silencing of barley <italic>P23k</italic> involved in secondary wall formation causes abnormal tiller formation and intercalary elongation.</article-title>
+          <source>Breeding Science</source>
+          <volume>59</volume>
+          <fpage>664</fpage>
+          <lpage>670</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Gray1">
+        <label>52</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gray</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Chauvin</surname>
+              <given-names>LP</given-names>
+            </name>
+            <name>
+              <surname>Sarhan</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Huner</surname>
+              <given-names>NPA</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Cold acclimation and freezing tolerance - A complex interaction of light and temperature.</article-title>
+          <source>Plant Physiology</source>
+          <volume>114</volume>
+          <fpage>467</fpage>
+          <lpage>474</lpage>
+          <pub-id pub-id-type="pmid">12223720</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Crosatti1">
+        <label>53</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crosatti</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>de Laureto</surname>
+              <given-names>PP</given-names>
+            </name>
+            <name>
+              <surname>Bassi</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Cattivelli</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>The interaction between cold and light controls the expression of the cold-regulated barley gene <italic>cor14b</italic> and the accumulation of the corresponding protein.</article-title>
+          <source>Plant Physiology</source>
+          <volume>119</volume>
+          <fpage>671</fpage>
+          <lpage>680</lpage>
+          <pub-id pub-id-type="pmid">9952464</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Kwon1">
+        <label>54</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kwon</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Histone occupancy-dependent and -independent removal of H3K27 trimethylation at cold-responsive genes in Arabidopsis.</article-title>
+          <source>Plant Journal</source>
+          <volume>60</volume>
+          <fpage>112</fpage>
+          <lpage>121</lpage>
+          <pub-id pub-id-type="pmid">19500304</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Chang1">
+        <label>55</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Puryear</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cairney</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>1993</year>
+          <article-title>A simple and efficient method for isolating RNA from pine trees.</article-title>
+          <source>Plant Molecular Biology Reporter</source>
+          <volume>11</volume>
+          <fpage>113</fpage>
+          <lpage>116</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Gentleman1">
+        <label>56</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gentleman</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Carey</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Bates</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bolstad</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Dettling</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Bioconductor: open software development for computational biology and bioinformatics.</article-title>
+          <source>Genome Biology</source>
+          <volume>5</volume>
+          <fpage>R80</fpage>
+          <pub-id pub-id-type="pmid">15461798</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Smyth1">
+        <label>57</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smyth</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>limma: Linear Models for Microarray Data. Bioinformatics and Computational Biology Solutions Using R and Bioconductor.</article-title>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Springer</publisher-name>
+          <fpage>397</fpage>
+          <lpage>420</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Benjamini1">
+        <label>58</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benjamini</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hochberg</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Controlling the False Discovery Rate - A practical and powerful approach to multiple testing.</article-title>
+          <source>Journal of the Royal Statistical Society Series B-Methodological</source>
+          <volume>57</volume>
+          <fpage>289</fpage>
+          <lpage>300</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Garcion1">
+        <label>59</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garcion</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>ApplimathFri</surname>
+            </name>
+            <name>
+              <surname>M&#xE9;traux</surname>
+              <given-names>J-P</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>FiRe and microarrays: a fast answer to burning questions.</article-title>
+          <source>Trends in Plant Science</source>
+          <volume>11</volume>
+          <fpage>320</fpage>
+          <lpage>322</lpage>
+          <pub-id pub-id-type="pmid">16807061</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Saeed1">
+        <label>60</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saeed</surname>
+              <given-names>AI</given-names>
+            </name>
+            <name>
+              <surname>Bhagabati</surname>
+              <given-names>NK</given-names>
+            </name>
+            <name>
+              <surname>Braisted</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Sharov</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>[9] TM4 Microarray Software Suite. Methods in Enzymology</article-title>
+          <publisher-name>Academic Press</publisher-name>
+          <fpage>134</fpage>
+          <lpage>193</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0017900-Trevaskis4">
+        <label>61</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trevaskis</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Hemming</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Peacock</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Dennis</surname>
+              <given-names>ES</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title><italic>HvVRN2</italic> responds to daylength, whereas <italic>HvVRN1</italic> is regulated by vernalization and developmental status.</article-title>
+          <source>Plant Physiology</source>
+          <volume>140</volume>
+          <fpage>1397</fpage>
+          <lpage>1405</lpage>
+          <pub-id pub-id-type="pmid">16500994</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

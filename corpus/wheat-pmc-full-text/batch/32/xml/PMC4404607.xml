@@ -1,0 +1,1524 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4404607</article-id>
+      <article-id pub-id-type="pmid">25881124</article-id>
+      <article-id pub-id-type="publisher-id">1412</article-id>
+      <article-id pub-id-type="doi">10.1186/s12864-015-1412-9</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Methodology Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Whole-genome analysis of <italic>Fusarium graminearum</italic> insertional mutants identifies virulence associated genes and unmasks untagged chromosomal deletions</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Urban</surname>
+            <given-names>Martin</given-names>
+          </name>
+          <address>
+            <email>martin.urban@rothamsted.ac.uk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>King</surname>
+            <given-names>Robert</given-names>
+          </name>
+          <address>
+            <email>robert.king@rothamsted.ac.uk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hassani-Pak</surname>
+            <given-names>Keywan</given-names>
+          </name>
+          <address>
+            <email>keywan.hassani-pak@rothamsted.ac.uk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Hammond-Kosack</surname>
+            <given-names>Kim E</given-names>
+          </name>
+          <address>
+            <email>Kim.Hammond-Kosack@rothamsted.ac.uk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <aff id="Aff1"><label/>Department of Plant Biology and Crop Science, Rothamsted Research, Harpenden, Herts AL5 2JQ UK </aff>
+        <aff id="Aff2"><label/>Department of Computational and Systems Biology, Rothamsted Research, Harpenden, Herts AL5 2JQ UK </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>3</day>
+        <month>4</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>3</day>
+        <month>4</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>16</volume>
+      <issue>1</issue>
+      <elocation-id>261</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>4</day>
+          <month>9</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>27</day>
+          <month>2</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; Urban et al.; licensee BioMed Central. 2015</copyright-statement>
+        <license license-type="open-access">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0">http://creativecommons.org/licenses/by/4.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>Identifying pathogen virulence genes required to cause disease is crucial to understand the mechanisms underlying the pathogenic process. Plasmid insertion mutagenesis of fungal protoplasts is frequently used for this purpose in filamentous ascomycetes. Post transformation, the mutant population is screened for loss of virulence to a specific plant or animal host. Identifying the insertion event has previously met with varying degrees of success, from a cleanly disrupted gene with minimal deletion of nucleotides at the insertion point to multiple-copy insertion events and large deletions of chromosomal regions. Currently, extensive mutant collections exist in laboratories globally where it was hitherto impossible to identify all the affected genes.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We used a whole-genome sequencing (WGS) approach using Illumina HiSeq 2000 technology to investigate DNA tag insertion points and chromosomal deletion events in mutagenised, reduced virulence <italic>F. graminearum</italic> isolates identified in disease tests on wheat (<italic>Triticum aestivum</italic>). We developed the FindInsertSeq workflow to localise the DNA tag insertions to the nucleotide level. The workflow was tested using four mutants showing evidence of single and multi-copy insertions in DNA blot analysis. FindInsertSeq was able to identify both single and multi-copy concatenation insertion sites. By comparing sequencing coverage, unexpected molecular recombination events such as large tagged and untagged chromosomal deletions, and DNA amplification were observed in three of the analysed mutants. A random data sampling approach revealed the minimum genome coverage required to survey the <italic>F. graminearum</italic> genome for alterations.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>This study demonstrates that whole-genome re-sequencing to 22x fold genome coverage is an efficient tool to characterise single and multi-copy insertion mutants in the filamentous ascomycete <italic>Fusarium graminearum.</italic> In some cases insertion events are accompanied with large untagged chromosomal deletions while in other cases a straight-forward insertion event could be confirmed. The FindInsertSeq analysis workflow presented in this study enables researchers to efficiently characterise insertion and deletion mutants.</p>
+        </sec>
+        <sec>
+          <title>Electronic supplementary material</title>
+          <p>The online version of this article (doi:10.1186/s12864-015-1412-9) contains supplementary material, which is available to authorized users.</p>
+        </sec>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Virulence mutant analysis</kwd>
+        <kwd>
+          <italic>Gibberella zeae</italic>
+        </kwd>
+        <kwd>Forward genetics</kwd>
+        <kwd>Next generation sequencing</kwd>
+        <kwd>Filamentous plant pathogen</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2015</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="introduction">
+      <title>Background</title>
+      <p>Insertional mutagenesis is a widely used and powerful technique to discover and study the function of genes in most organisms. In pathogenic microbial organisms mutagenesis has played a pivotal role in early gene discovery and is still used alongside more targeted gene deletion approaches for gene function analysis.</p>
+      <p>In pathogenic fungi the methods applied include random marker gene insertion using plasmids [<xref ref-type="bibr" rid="CR1">1</xref>], <italic>Agrobacterium tumefaciens</italic> transformation (ATMT) [<xref ref-type="bibr" rid="CR2">2</xref>] and transposon mutagenesis [<xref ref-type="bibr" rid="CR3">3</xref>]. These forward genetic methods aim to be relatively unbiased, but hotspots of insertion events are sometimes reported [<xref ref-type="bibr" rid="CR3">3</xref>]. Mutants are generated and tagged by nucleotide changes or by the integration of a transgenic marker gene into critical promoter regions or into protein encoding sequences. The affected genes frequently show altered gene expression and/or the generation of truncated proteins. In mutant screens, typically hundreds or thousands of mutants are generated and screened for a desired alteration in a specific phenotype. For filamentous haploid plant pathogens with moderate sized genomes typically the loss of pathogenicity is tested in glasshouse or controlled environment based screens using the most suitable host plant and bioassay. Once relevant mutants are identified, tagged gene(s) are isolated using a variety of methods. These methods include the use of genetic maps and genome walking [<xref ref-type="bibr" rid="CR4">4</xref>], polymerase chain reaction (PCR) based approaches [<xref ref-type="bibr" rid="CR2">2</xref>] or plasmid rescue [<xref ref-type="bibr" rid="CR1">1</xref>].</p>
+      <p>More recently the introduction of affordable high-throughput sequencing techniques has facilitated the analysis of whole genomes [<xref ref-type="bibr" rid="CR5">5</xref>]. These methods include the currently widely used Illumina sequencing-by-synthesis approach with fluorescently labelled reversible-terminator nucleotides [<xref ref-type="bibr" rid="CR6">6</xref>]. The availability of reference genomic information for many species allows the characterisation of mutants using whole-genome sequencing (WGS). Such an approach was earlier reported for bacterial and protozoa species of small genome sizes up to 23&#xA0;MB to identify transposon insertion mutations [<xref ref-type="bibr" rid="CR7">7</xref>,<xref ref-type="bibr" rid="CR8">8</xref>]. Also for two saprophytic ascomycete model fungi of 40&#xA0;Mb genome size, WGS was shown to be suitable for the identification of developmental genes and narrowing down of candidate mutations induced by chemical, UV and &#x3B3;-radiation [<xref ref-type="bibr" rid="CR9">9</xref>-<xref ref-type="bibr" rid="CR11">11</xref>]. However for pathogenic filamentous fungi this technology is not successfully established. Previous WGS approaches have been hindered by a combination of factors. These factors include, poorly designed methodologies, suboptimal sequence read length, the library size used during sequencing and the presence of high amounts of repetitive DNA in a range of microbial pathogens such as <italic>Magnaporthe oryzae</italic> (10%).</p>
+      <p><italic>Fusarium graminearum</italic> (teleomorph <italic>Gibberella zeae</italic>) is a globally important pathogen of wheat, maize and barley. The pathogen belongs to the filamentous ascomycetes and has a genome of 37&#xA0;Mb in length, distributed over predominantly four chromosomes. A high quality genome assembly exists and this is aligned to a genetic map [<xref ref-type="bibr" rid="CR12">12</xref>,<xref ref-type="bibr" rid="CR13">13</xref>]. <italic>F. graminearum</italic> is a haploid organism and effective transformation techniques are established [<xref ref-type="bibr" rid="CR14">14</xref>]. A natural gene silencing mechanism called Repeat induced point (RIP) mutation exists in <italic>F. graminearum</italic> which mutates duplicated sequences [<xref ref-type="bibr" rid="CR12">12</xref>]. Hence inspection of the genomic DNA sequence revealed the presence of only a minimal amount of repetitive DNA. <italic>F. graminearum</italic> therefore appears to be ideally suited to test a whole-genome sequencing approach for insertion mutant characterisation.</p>
+      <p>In this study we explored a whole-genome sequencing approach using the Illumina HiSeq 2000 platform to identify insertion points and possible genomic rearrangements in four selected plasmid insertion mutants with reduced virulence to wheat<italic>.</italic> The analysed mutants included low, medium and high-complexity insertion events, pre-screened using Southern (DNA gel blot) analysis. We set up a <italic>de novo</italic> bioinformatics workflow called FindInsertSeq. The FindInsertSeq bioinformatic pipeline successfully identified DNA tag insertion sites with a precision to the nucleotide level for the four mutants analysed. Subsequent sequenced read coverage inter-comparisons of the mutant genomes revealed additional recombination events including larger tagged and untagged chromosome deletions, and DNA amplification events. Using a random data sampling approach, the minimal genome coverage required for the FindInsertSeq workflow to provide reliable results was determined to be 22&#xD7; fold. We propose that WGS and the FindInsertSeq approach is an effective method to characterise insertional mutants and transgenic strains expressing constructs of interest in filamentous fungi.</p>
+    </sec>
+    <sec id="Sec2" sec-type="results">
+      <title>Results</title>
+      <sec id="Sec3">
+        <title>Isolation of reduced virulence <italic>F. graminearum</italic> mutants with insertion events of different complexities</title>
+        <p>An insertional mutagenesis screen of the <italic>F. graminearum</italic> wild-type strain PH-1 was completed using a linearised plasmid vector containing the hygromycin phosphotransferase gene under control of the <italic>trpC</italic> promoter. In total, 650 stable transformants were generated and screened on wheat ears of the cultivar Bobwhite for reduced virulence using previously described methods [<xref ref-type="bibr" rid="CR15">15</xref>]. Eight mutants that showed highly reduced virulence were identified (full details on their phenotype characterisation will be published elsewhere). Insertion events were characterised using Southern blot analysis and three of the Disease Attenuated Fusarium mutants, called DAF139, DAF140 and DAF141 were chosen for analysis in this study (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). A fragment of the <italic>hph</italic> phophotransferase resistance gene was used as a probe. The mutagenesis plasmid pHYG1.4 has single restriction sites for <italic>EcoRI</italic> and <italic>XhoI</italic> (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S1). For DAF140, genomic DNA was cut with both enzymes to produce single hybridisation bands indicating a single insertion event. For DAF141 the <italic>XhoI</italic> digest revealed two fragments at 0.8 and 5&#xA0;kb consistent with the insertion of more than one possibly rearranged plasmid. For DAF139 the presence of multiple hybridisation fragments of different sizes indicated a highly complex insertion event. The fourth mutant explored as a control in this study was the previously characterised non-virulent <italic>F. graminearum</italic> strain TP11.1. This strain was previously demonstrated in a targeted PCR based analysis to harbour a single insertion event in the <italic>TOP1</italic> gene (FGSG_06874) and was generated using the same plasmid [<xref ref-type="bibr" rid="CR15">15</xref>].<fig id="Fig1"><label>Figure 1</label><caption><p><bold>DNA blot analysis of three mutants showing low, medium and complex insertion events.</bold> DAF mutant genomic DNA was digested with two restriction enzymes and probed with a radioactive labelled <italic>hph</italic> gene. Lanes 1 to 3: <italic>EcoRI</italic> digested DNA of DAF139, DAF140 and DAF141. Lanes 4 to 6: <italic>XhoI</italic> digested DNA of DAF139, DAF140, DAF141.</p></caption><graphic xlink:href="12864_2015_1412_Fig1_HTML" id="MO1"/></fig></p>
+      </sec>
+      <sec id="Sec4">
+        <title>Sequencing and FindInsertSeq bioinformatics approach to identify insertion tags and transformation-induced mutations</title>
+        <p>Illumina sequencing was used to obtain high whole-genome coverage for the three DAF mutants and the control strain TP11.1. Genome coverage of 96 to 110 times was achieved by 100-bp paired-end reads from inserts with a mean library fragment size of 430&#xA0;bp on an Illumina HiSeq 2000 system (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S1).</p>
+        <p>To detect the plasmid insertion sites an analysis pipeline, called FindInsertSeq, was devised (Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>). The 5&#x2032;- and 3&#x2032;-mate sequences of the paired-end reads were mapped to the plasmid reference sequence. The pairs where both mates did not map to the plasmid were discarded. The pairs where one mate mapped to the plasmid and the other mate did not map to it, were presumed to be located at the border of the plasmid and the fusarium genomic DNA. From these desirable sequences, the latter of the pair was extracted. In these pairs the unmapped mate represented either the forward or reverse sequences that corresponded to either side of the inserted plasmid sequence (hereafter termed the flanks). These extracted unmapped mate reads were then mapped to the <italic>F. graminearum</italic> reference genome, already available for the strain PH-1, resulting in two stacks of reads for each plasmid sequence insertion. For the <italic>F. graminearum</italic> strain TP11.1 with a single plasmid insertion site in chromosome 4, sequence read stacks for the two plasmid flanks are displayed (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). The identification of loci marked by the two read stacks was achieved by sorting the mapped reads by base pair position in the sequence alignment map (SAM) file. Then a Python script using a sliding window of 300&#xA0;bp to count mapped reads was used to identify where the read coverage peaked. The peak identified represents both the forward and reverse stacks and is reported by the start and stop base pair positions of the 300-bp window and the chromosome number (1&#x2013;4). For mutants of interest, confirmation of the flanking regions reported by the pipeline and any deletion of reference sequence via the gap in coverage between these flanks was verified using a genome browser software such as Tablet [<xref ref-type="bibr" rid="CR16">16</xref>]. This was used in combination with a binary alignment map (BAM) file generated by mapping the unmapped mates from the plasmid to the PH-1 reference. However, in genome regions where no reference sequence was available, or where no read stacks were found suggesting that the genomic reference was incomplete another approach was required. The extracted reads were <italic>de novo</italic> assembled to compile the genomic sequences flanking the inserted plasmid. This later approach was required to resolve the insertions sites of mutants DAF139 and DAF140 (see below).<fig id="Fig2"><label>Figure 2</label><caption><p><bold>FindInsertSeq: Sequencing workflow to identify DNA tag insertion sites and corresponding flanking genomic sequences.</bold> Step 1, paired-end reads are mapped to the plasmid reference sequence, Step 2, extract unmapped mate reads from the paired partners that should contain sequences either side of the inserted plasmid sequence. Map the extracted mate reads to the <italic>F. graminearum</italic> reference genome which should form two stacks for each plasmid sequence insertion with one in the forward (F) orientation which are mated with the reads that originally mapped to the plasmid at the 5&#x2032;-end and a stack with reverse (R) orientated matching reads originally mapped to the plasmid at the 3&#x2032; end. Step 3 a) the availability of reference genome is a prerequisite for this workflow. b) * if no reference genome is available <italic>de novo</italic> assembly of reads to identify flanking regions could be considered followed by BLAST and PCR analysis to characterise the insertion site. Step 4, to locate the stack chromosome(s) and bp positions, the mapped reads are sorted, positioned and printed to the command line. Additionally the results are printed to an individual sample text file. Open Tablet software [<xref ref-type="bibr" rid="CR16">16</xref>] with the mapped genomic reference BAM file and proceed to the chromosome(s) and position(s) that were identified in Step 4 to visualise the insert flanking sequences and any deletion of reference sequence via the gap in coverage between the two stacks. When a reference genome assembly is either not available or both flanking sequences have not been detected due to the local incompleteness of the reference genome, then <italic>de novo</italic> assembly of the extracted unmapped mate reads can be used to reconstruct the sequences replacing steps 3 a through 5 with step 3 b.</p></caption><graphic xlink:href="12864_2015_1412_Fig2_HTML" id="MO2"/></fig><fig id="Fig3"><label>Figure 3</label><caption><p><bold>Visualisation of a single insertion site in</bold><bold><italic>F. graminearum</italic></bold><bold>strain TP11.1.</bold> Sequence reads are visualised in a screenshot using Tablet software [<xref ref-type="bibr" rid="CR16">16</xref>]. <bold>(A)</bold> Sequence reads mapped to this region of the genome, <bold>(B)</bold> coloured lines represent the genomic sequence of the visualised region and frame translations, <bold>(C)</bold> sequence coverage histogram, and <bold>(D)</bold> mapped reads for both flanking regions and the narrow gap between the two read stacks which marks the position of the plasmid insertion. Forward green stacks and reverse purple stacks are shown.</p></caption><graphic xlink:href="12864_2015_1412_Fig3_HTML" id="MO3"/></fig></p>
+      </sec>
+      <sec id="Sec5">
+        <title>Mapping the insertions</title>
+        <p>FindInsertSeq localised the insertions in chromosome 1 for strain DAF139 and DAF140 and chromosome 4 for DAF141 and TP11.1 (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). For DAF140, the tag insertion into chromosome 1 was accompanied with a small 12-bp deletion. For TP11.1, our WGS analysis confirmed the result obtained by Baldwin et al. [<xref ref-type="bibr" rid="CR15">15</xref>] that the plasmid insertion into chromosome 4 caused a 4-bp deletion. Tag insertion in DAF139 and DAF141 were accompanied with more extensive deletions next to the insertion sites (described below). For DAF139, the insertion occurred downstream of a telomeric sequence repeat (TAACCC) [<xref ref-type="bibr" rid="CR17">17</xref>].<table-wrap id="Tab1"><label>Table 1</label><caption><p><bold>Location of insertion tags and deletion events at the insertion site</bold></p></caption><table frame="hsides" rules="groups"><thead><tr valign="top"><th><bold>Isolate</bold></th><th><bold>Chromosome location</bold></th><th><bold>Sequence at the 5&#x2032; end of the insertion</bold></th><th><bold>Supercontig sequence deletion*</bold></th><th><bold>Sequence at the 3&#x2032; end of the insertion</bold></th><th><bold>Plasmid insertion site (bp)</bold></th></tr></thead><tbody><tr valign="top"><td>DAF139</td><td>1</td><td><italic>TAACCC</italic><sup><italic>&#x2020;</italic></sup><italic>TAACCC TAACCC TAACCC</italic> A</td><td>1 - 503,655</td><td>GTCCAT GATACG ATGACC TTTAAC T</td><td>503,656</td></tr><tr valign="top"><td>DAF140</td><td>1</td><td>CACATT ATAGA CTGCTA ACCTGC C</td><td>CAGGTACTGTAT</td><td>GCAGTT ACGTAG ACTGCT GAACTA A</td><td>9,177,055 - 9,177,068</td></tr><tr valign="top"><td>DAF141</td><td>4</td><td><italic>Not identified</italic></td><td>1 - 182,475</td><td>CTTGGG GAAAGG ATCAGA GCGTGA G</td><td>182,476</td></tr><tr valign="top"><td>TP11.1</td><td>4</td><td>TTCTTC TGGCGT TTGGCC TACAAC A</td><td>TCAT</td><td>GGTCAG CATAAG CTGGCC CCACAG C</td><td>1,519,105 -1,519,110</td></tr></tbody></table><table-wrap-foot><p><sup>*</sup>where the deletion is large, bp positions are given.</p><p><sup>&#x2020;</sup>telomere sequence TAACCC given in italics.</p><p>For three of the strains the plasmid insert positions were established by mapping to the plasmid and subsequent mapping of mate reads to the reference genome. Whereas for DAF139 <italic>de novo</italic> assembly was necessary to identify the sequence at the 5&#x2032; end of the insertion due to an incomplete reference sequence in this part of the <italic>F. graminearum</italic> genome. The 5&#x2032;-flanking insertion sequence was not identified for DAF141 using either approach.</p></table-wrap-foot></table-wrap></p>
+      </sec>
+      <sec id="Sec6">
+        <title>Identification of chromosome deletions and amplifications</title>
+        <p>The sequencing of the mutant genomes permits further qualitative analysis which may be missed using molecular biology methodologies resulting in falsely linking a retrieved gene sequence to a phenotype. For each of the DAF mutants, the obtained genomic reads were mapped to the <italic>F. graminearum</italic> reference genome (Figure&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>). This analysis detected additional deletion and/or copy number variations of genomic sequence associated with the plasmid insertion process. Other formal possibilities by which variation could have been introduced are cellular stress responses induced by the transformation method, growth and storage conditions. In the TP11.1 mutant no detectable amplifications or deletions other than at the plasmid insertion site were detected. For DAF140, the DNA gel blot analysis had predicted a single plasmid insertion event into the genomic DNA (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). However, this further sequence analysis revealed that besides the insertion in chromosome 1, an additional untagged chromosomal deletion had occurred. This untagged deletion event had resulted in the loss of 415,100&#xA0;bp at the 3&#x2032;-end of chromosome 2 predicted to contain 177 genes (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S2). For DAF141, the DNA gel blot analysis suggested the presence of potentially two copies of the plasmid (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). The WGS analysis revealed that the single insertion site was accompanied with a 182.4-kb deletion close to the 5&#x2032;-end of chromosome 4 resulting in the loss of 72 genes upstream. However, further inspection of the DAF141 WGS data also identified a twofold amplification of 1.25&#xA0;Mb immediately downstream of the deletion event (Figure&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>). For DAF139, the DNA gel blot analysis had suggested a highly complex insertion event. The plasmid insert in DAF139 resulted in the loss of 503.6&#xA0;kb at the 5&#x2032;-end of chromosome 1 but had left the telomere intact. The deleted genomic region in DAF139 is predicted to contain 207 genes (Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref> and Additional file <xref rid="MOESM2" ref-type="media">2</xref>).<fig id="Fig4"><label>Figure 4</label><caption><p><bold>Schematic overview of chromosomal recombination and deletion events for the three DAF mutants and verification by diagnostic PCR. (A)</bold> DAF139 partial chromosomal deletion and insertion event. For comparison the chromosomal deletion for mutant DAF10 published earlier by Baldwin et al. [<xref ref-type="bibr" rid="CR15">15</xref>] is indicated. <bold>(B)</bold> PCR analysis of chromosomal regions predicted to have either been lost or retained on chromosome 1 in strain DAF139. The wild type and DAF139 genomic DNA was amplified with oligonucleotide pairs in lanes: (1) U516/U517, (2) U518/519, (3) U550/U551, (4) U549/U521, (5) U606/U521, (6) U520/U51 and (7) U522/U523. The approximate location of the amplified PCR fragments is indicated in the schematic overview from left to right corresponding to PCR products in lane 1 to 7. <bold>(C)</bold> DAF140 shows a single-copy insertion in chromosome 1 and a large untagged deletion on chromosome 2. <bold>(D)</bold> Diagnostic PCR in lanes: (1) U533/U534, (2) U553/U602, (3) U603/U554, (4) U535/U536. Approximate location of fragments is indicated in the schematic from left (1) to right (4). <bold>(E)</bold> Diagnostic PCR of wild type and DAF140 chromosome 2 in lanes: (1) U540/U541, (2) U541/U502 and (3) U556/U557. Approximate location of fragments is indicated in the DAF140 schematic from left (1) to right (3). <bold>(F)</bold> In DAF141 three multimerised plasmids are inserted at position 182,476 bp in chromosome 4. <bold>(G)</bold> Diagnostic PCR of wild type and DAF141 chromosome 4 in lanes: (1) U600/U601, (2) U558/U559, (3) U545/U552, (4) U545/U546, (5) U604/U605 and (6) U547/U548. Approximate location of fragments is indicated in the schematic from left (1) to right (6). Large black lines indicate the chromosomes (not drawn to scale). Chromosomal deletions (dotted lines), plasmid insertion point (inverted open triangle). Diagnostic PCR fragments (small black lines). DNA ladder <italic>BstE</italic>II (M).</p></caption><graphic xlink:href="12864_2015_1412_Fig4_HTML" id="MO4"/></fig><fig id="Fig5"><label>Figure 5</label><caption><p><bold>Sequence coverage line graphs of characteristic differences at the genome level for the three DAF mutants compared to the control strain PH-1</bold><bold><italic>top-1</italic></bold><bold>(TP11.1).</bold> Average numbers of sequence reads per 100 bp interval were mapped to the wild type reference genome. Top panel, DAF139 partial chromosome 1 deletion event. Middle panel, DAF140 partial chromosome two deletion event (open triangle). Bottom panel, DAF141 partial chromosome four deletion event and twofold amplification of a 1.25 MB region (A) downstream of the deletion event. The open triangle (&#x2206;) in each DAF mutant plot indicates the position of the loss in genomic sequence. For each mutant, the corresponding chromosome in the PH-1 <italic>top1</italic> mutant (TP11.1) is depicted as a control.</p></caption><graphic xlink:href="12864_2015_1412_Fig5_HTML" id="MO5"/></fig><table-wrap id="Tab2"><label>Table 2</label><caption><p><bold>Deletion of gene regions in the four mutants and numbers of genes lost</bold></p></caption><table frame="hsides" rules="groups"><thead><tr valign="top"><th><bold>Strain</bold></th><th><bold>Chromosome</bold></th><th><bold>Position of sequence loss (bp)</bold></th><th><bold>Number of genes contained within the lost regions</bold></th></tr></thead><tbody><tr valign="top"><td>DAF139</td><td>1</td><td>1 - 503,655</td><td>207</td></tr><tr valign="top"><td>DAF140*</td><td>2</td><td>8,496,503 - 8,911,601</td><td>177</td></tr><tr valign="top"><td>DAF141</td><td>4</td><td>1 - 182,475</td><td>72</td></tr><tr valign="top"><td>TP11.1</td><td>None</td><td>None</td><td>None</td></tr></tbody></table><table-wrap-foot><p>*For DAF140, the plasmid vector insertion occurred in chromosome 1 (see Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). Chromosome 2 was affected by an untagged gene deletion event.</p></table-wrap-foot></table-wrap></p>
+      </sec>
+      <sec id="Sec7">
+        <title>Estimation of plasmid copy number</title>
+        <p>For two of the DAF mutants, DAF 141 and DAF139, the plasmid copy number inferred from the DNA gel blot analysis and the number of insertion sites detected within the <italic>F. graminearum</italic> genome by WGS analysis did not precisely match. Therefore an estimation of plasmid copy number by WGS was attempted for all four mutants. To achieve this, the coverage histograms of TP11.1 and the three DAF mutants were plotted across the whole plasmid sequence of the vector pHYG1.4 (Figure&#xA0;<xref rid="Fig6" ref-type="fig">6</xref>) to identify whether there had been recombination of the plasmid resulting in incomplete plasmid sequence insertion. Average calculated genome wide coverage for the TP11.1 strain was 86.6 vs. the experimental observed value of 117 for the mapped reads to the plasmid sequence. This suggested an approximate 1.35&#xD7; plasmid length insertion in TP11.1, however only 1&#xD7; plasmid length insertion was detected from the <italic>de novo</italic> assembly. This result suggests that this WGS&#x2013;plasmid alignment approach for the estimation of plasmid copy number is fairly accurate.<fig id="Fig6"><label>Figure 6</label><caption><p><bold>Coverage histogram of reads mapped to the inserted plasmid in the four mutants.</bold> Rows are: (1) TP11.1 (2) DAF139 (3) DAF140 and (4) DAF141. The experimentally obtained plasmid average read coverage <inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ \left(\overline{\mathrm{X}}\right) $$\end{document}</tex-math><mml:math id="M2"><mml:mfenced close=")" open="("><mml:mover accent="true"><mml:mi mathvariant="normal">X</mml:mi><mml:mo stretchy="true">&#xAF;</mml:mo></mml:mover></mml:mfenced></mml:math><inline-graphic xlink:href="12864_2015_1412_Article_IEq1.gif"/></alternatives></inline-formula> for each mutant is given on the far right. The reference genome read coverage for TP11.1 is 86.6. Row 5 depicts the genetic elements of the insertion plasmid. <bold>(A)</bold>
+<italic>trpC</italic> promoter, <bold>(B)</bold> hygromycin-phosphotransferase, <bold>(C)</bold> F1 origin of replication, <bold>(D)</bold> ampicillin and <bold>(E)</bold>
+<italic>E. coli oriC</italic>.</p></caption><graphic xlink:href="12864_2015_1412_Fig6_HTML" id="MO6"/></fig></p>
+        <p>Coverage of the three DAF strains across the plasmid sequence was found to be variable with either some segments absent and/or other segments with increased read density indicating multiple copies of plasmid sequence at the insertion site. In DAF139 the plasmid had an average observed coverage of 3800 suggesting an insertion sequence length of approximately 36 plasmids based upon a calculated read-coverage of 104. However some segments of the sequence were over represented. A similar case was found for sample DAF141 with an average coverage of 360 but a calculated coverage of 114 suggesting a length of three plasmids inserted into the genome. PCR amplification of the concatenated plasmid is hindered by the large size of the concatemer and due to the fact that it consists of repeated elements. Similarly, <italic>de novo</italic> assembly is hampered due to the repetitive nature of the concatemer that had formed.</p>
+        <p>The data obtained for DAF140 suggests a single plasmid insertion of 50% of the length of the sequence with an observed coverage of 120 in the regions where coverage was evident vs. a calculated coverage of 119. Both <italic>TP11.1</italic> and DAF140 insertion sequences were validated using <italic>de novo</italic> assembly and support the reported findings. Interestingly, the plasmid gene cassettes noticeably amplified in DAF 139, DAF140 and DAF141 include the resistance marker hygromycin-phosphotransferase and the bacterial ampicillin resistance gene while the <italic>E. coli oriC</italic> replication sequences of the plasmid vector were found to be less frequently amplified. Collectively, these data indicate that multiple plasmid concatenations at a single insertion site had occurred in both the DAF139 and DAF141 mutants.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>Experimental verification of insertions and chromosomal deletions by PCR</title>
+        <p>To demonstrate that the computationally predicted plasmid insertion sites can be verified in the laboratory, insertions and chromosomal deletions were confirmed using a PCR based approach. This test also excluded the possibility of translocations of affected chromosomal regions into other chromosomes. Primers were designed to detect the presence or absence of ~0.7-kb diagnostic fragments across the modified chromosomes. Plasmid insertion sites were verified by designing oligomer pairs where one primer site lies within the inserted plasmid and the corresponding primer site lies within the adjacent chromosomal neighbourhood. For DAF139, four diagnostic fragments located in the region of chromosome 1 predicted to be deleted, could not be amplified while amplification of wild type (WT) DNA produced the expected fragments (Figure&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>). Two further diagnostic fragments upstream of deleted chromosomal region were amplified from both DAF139 and WT DNA. A diagnostic fragment originating from a primer site located in the inserted plasmid and from the adjacent chromosomal neighbourhood was only amplified in DAF139 but not in WT DNA. The results verified the computationally predicted chromosome modifications. For DAF140 a similar approach confirmed the plasmid insertion site in chromosome 1. In this mutant whole-genome analysis had also revealed an untagged chromosomal deletion in chromosome 2. The deletion and its extent were confirmed using three diagnostic fragments. For DAF141 plasmid insertion and a chromosomal deletion was confirmed for chromosome 4. The exact plasmid insertion sites were further confirmed by sequencing the diagnostic fragments obtained using the plasmid specific oligomers. These data independently confirm the insertion and chromosomal deletion results predicted using our whole-genome sequencing and bioinformatics data analysis pipeline described in this study.</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Virulence genes identified close to the insertion points or in chromosomal deletions</title>
+        <p>The adjacent gene(s) close to the plasmid insertion points and genes contained in the chromosomal regions deleted in mutants DAF139, DAF140 and DAF141 were analysed by BLAST analysis against the Pathogen-Host Interactions (PHI) database (<ext-link ext-link-type="uri" xlink:href="http://www.phi-base.org">http://www.phi-base.org</ext-link>) composed of experimentally verified, virulence and effector proteins from bacteria, fungi and oomycete pathogens that infect a wide range of hosts [<xref ref-type="bibr" rid="CR18">18</xref>]. PHI-base associates gene and protein information with published fungal mutant phenotypes. These phenotypes include altered virulence phenotypes (increased and reduced virulence, loss of pathogenicity), unaffected pathogenicity, and lethal (essential gene). In the deleted regions of DAF139, DAF140, DAF141 the BLAST analysis revealed the presence of 44, 27 and 13 PHI-base homologs with the phenotype &#x201C;altered virulence&#x201D; at E&#x2009;&#x2264;&#x2009;0.0001 (Additional file <xref rid="MOESM2" ref-type="media">2</xref>). We conclude that the absence of these functional homologs of virulence-associated genes is responsible for the pathogenicity defect of the three mutants on wheat. The BLAST analysis also revealed that in the three mutants a total of five putative transcription factor genes had been deleted that were previously implicated to be essential genes in <italic>F. graminearum</italic>. In a genome-wide single gene deletion study of transcription factors no successful reverse genetics mutants could be obtained [<xref ref-type="bibr" rid="CR19">19</xref>]. These genes are in DAF139, FGSG_00144 (GzZC306), in DAF140, FGSG_16054 (GzZC062), FGSG_16056 (GzZC089) and in DAF141, FGSG_06448 (GzZC029), FGSG_17682 (GzZC129). The absence of these transcription factor genes was confirmed by PCR amplification using the wild-type strain PH-1 as the positive control (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S3). We conclude that the five transcription factor genes are not required for growth in the characterised <italic>F. graminearum</italic> insertion mutants generated in the strain PH-1.</p>
+      </sec>
+      <sec id="Sec10">
+        <title>Random sampling</title>
+        <p>Subsampling of the Illumina sequence read dataset was computationally performed for the TP11.1 mutant strain using three different seed values. The original data set had an approximate coverage of 86. The seqtk program was used to produce three technical replicates for 10% (3,205,728 reads), 25% (8,014,318), and 50% (16,028,636 reads) of the total reads. The average genome coverage for each data set is 10, 24, and 48, respectively. Visual inspection of the datasets (Figure&#xA0;<xref rid="Fig7" ref-type="fig">7</xref>) identifies that the insertion tag can unambiguously be identified in all three replicates for the 25% and 50% subsamples but not for the 10% subsample. We conclude that a 22&#xD7; coverage obtained by the Illumina HighSeq 2000 sequencing platform is sufficient for <italic>F. graminearum</italic> to identify insertion tags.<fig id="Fig7"><label>Figure 7</label><caption><p><bold>Random data sampling to determine the minimal genome coverage required for insertion point characterisation in</bold><bold><italic>F. graminearum</italic></bold><bold>strain TP11</bold><bold><italic>.</italic></bold><bold>1.</bold> (Aa-Ac) Sampling 1 with three reduced data replicates of 10% each. The deletion sequence between 5&#x2032; and 3&#x2032; read stacks is represented with an arrow in Aa. (Ba-Bc) Sampling 2 replicates with 25% of data. (Ca-Cc) Sampling 3 replicates with 50% of data. The average coverage for each data set in A, B and C at the insertion region is 10, 24, and 48 respectively. The original data set had an approximate coverage of 86.</p></caption><graphic xlink:href="12864_2015_1412_Fig7_HTML" id="MO7"/></fig></p>
+      </sec>
+    </sec>
+    <sec id="Sec11" sec-type="discussion">
+      <title>Discussion</title>
+      <p>In this study we setup and describe a bioinformatics workflow called FindInsertSeq (Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>) to efficiently characterise forward genetics mutants created by plasmid insertion in the filamentous plant pathogen <italic>Fusarium graminearum</italic> using Illumina whole-genome sequencing approach with paired-end reads. The four mutants selected showed a reduced virulence phenotype on their host wheat. The mutants were selected to include low and complex insertion events visualised by DNA blot analysis. Using the FindInsertSeq pipeline we were able to rapidly identify DNA tag insertion points to the nucleotide level for the control strain TP11.1 and three novel disease attenuated Fusarium (DAF) mutants generated for this study.</p>
+      <p>The principle of the WGS-FindInsertSeq analysis approach is to map sequence reads to an insertion vector and use the mate that aligns to the genomic reads to identify the insertion point in the genome. FindInsertSeq can also be used to discriminate between single insertion and complex tandem insertion events in a mutant where a reference sequence is available for the species or could be adapted where a reference genome is lacking (see Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>, step 3 b). Thirdly, when <italic>de novo</italic> mapped read coverage comparisons of mutant and wildtype DNA were included in the method, this revealed the existence of further unexpected recombination events, such as chromosomal deletions and amplifications. To our knowledge this study, for the first time, demonstrates the analyses of complex insertion events on the whole-genome level in a pathogenic filamentous fungus of medium 37-Mb-genome size. The predictions made using the FindInsertSeq pipeline were independently confirmed through diagnostic PCR analysis.</p>
+      <p>Current laboratory-based methods to determine insertion points such as TAIL-PCR [<xref ref-type="bibr" rid="CR20">20</xref>] and plasmid rescue [<xref ref-type="bibr" rid="CR1">1</xref>] can, in most cases, only successfully be used to identify the insertion event where a single copy of the insertion tag has occurred. Many research groups over the past 20&#xA0;years have created mutant libraries of which only a small number of single-copy insertion mutants were successfully analysed [<xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR22">22</xref>]. Such insertion mutant collections are now amenable for further analysis using WGS analysis and the FindInsertSeq pipeline.</p>
+      <p>For sequencing we used the Illumina HiSeq2000 platform, which is currently the standard high-throughput sequencing method [<xref ref-type="bibr" rid="CR6">6</xref>,<xref ref-type="bibr" rid="CR23">23</xref>]. Sequencing of an 800-bp fragment library using 100-bp paired-end reads generated ~100&#xD7; fold <italic>F. graminearum</italic> genome coverage when four samples were pooled across one sequencing lane. The size of the fragment library is an important factor. If the fragment size exceeds the insertion vector length, an offset of the insertion point will occur. This offset can be calculated as mean library fragment length minus insertion vector length.</p>
+      <p>The choice of mapping software can influence the success of the workflow. A comparison of Novoalign [<xref ref-type="bibr" rid="CR24">24</xref>], Bowtie2 [<xref ref-type="bibr" rid="CR25">25</xref>] and BWA [<xref ref-type="bibr" rid="CR26">26</xref>] mappers using the default settings showed that only the first two successfully mapped the insert (RK, data not shown). However, the BWA aligner did not map the reads to the correct position in three of the four strains analysed. This result was attributed to the loss of direction of the paired reads because both stacks of the unmapped mate reads were represented in the forward orientation.</p>
+      <p>An alternative strategy was considered via <italic>de novo</italic> genome assembly followed by applying BLAST to identify the insertion site of the plasmid. However such an assembly-based approach was not implemented due to the higher computational resources required to assemble each mutant compared to mapping first to a short plasmid sequence, followed by aligning a small subset of reads to the reference genome. For species with larger genomes i.e. plants, plant-infecting insects or pathogenic protists <italic>de novo</italic> assembly is challenging and often dependent on many non-intuitive parameters such as k-mer value selection. In addition the output from the mapping approach (see Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>) provides three visually compelling features that the insertion site has been correctly identified. The characteristic features are: two flanks with a similar number of aligned reads separated by a clear gap where the plasmid inserted and deleted a variable number of nucleotides.</p>
+      <p>The FindInsertSeq workflow currently advises visual inspection using the Tablet software [<xref ref-type="bibr" rid="CR16">16</xref>] as an optional step for mutants of further interest, to inspect forward and reverse sequence stacks either side of the insertion point (Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref> step 5) and identify the deletion and flank sequence to 1&#xA0;bp. Currently only an approximate location of the insertion is given for screening purposes of the first and last base of the highest read coverage peak using a set window size (default 300&#xA0;bp). This location is written to output (step 4) but surmises the region of the genome in which the insertion took place. This approach permits the biologist to experimentally confirm the insertion point using a PCR-based analysis.</p>
+      <p>Randomly down-sizing the sampled genomic read coverage for the control mutant strain TP11.1 revealed that only 22 x genomic coverage is required to identify the insertion site with a cost incurred per sample of approximately $200 including all associated cost such as DNA preparation and library construction. Sequencing methods are evolving rapidly and as a consequence associated costs are expected to drop even further.</p>
+      <p>Many fungal genomes are of similar size to <italic>F. graminearum</italic> and have a similar GC content. A WGS-FindInsertSeq approach can identify multiple locations of plasmid insertions. However, this may prove more difficult to apply in fungal eukaryotes such as <italic>Magnaporthe oryzae</italic> for which 10 % repetitive DNA is reported [<xref ref-type="bibr" rid="CR27">27</xref>]. If the insertion event flanking sequence contains repeat sequences, mapping will be ambiguous.</p>
+      <p>Transformation events may result in reshuffling and partial amplification of the insertion tag [<xref ref-type="bibr" rid="CR22">22</xref>]. We found this strikingly to be the case for the mutant strain DAF140. The coverage histogram (Figure&#xA0;<xref rid="Fig6" ref-type="fig">6</xref>) revealed that the resistance marker gene encoding hygromycin-phosphotransferase (<italic>hph</italic>) was highly amplified during vector plasmid integration as well as the ampicillin gene cassette. These events could be favoured by DNA structural elements in the vector influencing the outcome of recombination events. The amplification of the <italic>hph</italic> gene is likely to be selected for when growing the transformants on hygromycin-containing medium.</p>
+      <p>In addition to the pipeline described in Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref> we investigated situations where only a single flanking sequence was identified. This outcome suggested further genomic alterations might have occurred. In these cases all genomic reads from the mutant were mapped back to the reference. This approach successfully revealed additional tagged and untagged chromosomal deletions and amplifications events in the mutants (Figure&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>). The extent of the chromosomal deletions is surprising and suggests that larger parts of the <italic>F. graminearum</italic> genome are not required for growth <italic>in vitro</italic> and / or during the protoplast transformation and regeneration procedure used in this study. Similar results were found for two <italic>F. graminearum</italic> mutants, called Z43R606 and DAF10, where the occurrence of large chromosomal deletion events was reported earlier [<xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR28">28</xref>]. In both studies a combination of plasmid-rescue and Sanger single-read sequencing was used to characterise the mutants. In Z43R606 a genomic region of 220&#xA0;kb containing at least 92 genes was deleted, whilst in DAF10 a genomic region of 350&#xA0;kb containing 150 genes was deleted.</p>
+      <p>The molecular analysis of Z43R606 revealed a deletion of a genomic region at the vector insertion site, including the gene clusters required for the biosynthesis of aurofusarin and zearalenone. The authors deliberately recreated the deletion event using a reverse genetics approach to demonstrate that a large region of genomic DNA can be efficiently deleted in <italic>F. graminearum</italic> by double homologous recombination [<xref ref-type="bibr" rid="CR28">28</xref>]. In the DAF10 study, the unintentional deletion of a large region of genomic DNA permitted the authors to report that the loss of the <italic>TRI1</italic> gene involved in mycotoxin biosynthesis was responsible for the virulence defect on its host. Interestingly, the mutant DAF139 recreated the DAF10 mutant and extended the deleted region by an additional 57 genes (153&#xA0;kb). Taken together, these findings show that large chromosomal regions can systematically be deleted in <italic>F. graminearum</italic> to understand genes sets and genome organisation. In <italic>S. cerevisiae,</italic> such an approach is currently being used to build a minimalist yeast genome within the Sc2.0 project [<xref ref-type="bibr" rid="CR29">29</xref>].</p>
+      <p>The deleted chromosomal regions in the analysed mutants identified a total of 456 genes that when deleted from the <italic>F. graminearum</italic> genome are not required for life and are thus unlikely to make good fungicide targets. Within this gene set were five putative transcription factors that were earlier proposed to be essential for life in <italic>F. graminearum</italic> [<xref ref-type="bibr" rid="CR19">19</xref>]. Son and colleagues [<xref ref-type="bibr" rid="CR19">19</xref>] tested in a genome-wide gene deletion study 657 putative transcription factors, but no gene deletion mutants could be obtained for these five genes. While it is possible that the absence of these proteins is compensated by the absence of additional proteins within the deleted chromosomal regions, further experiments are needed to elucidate their function.</p>
+    </sec>
+    <sec id="Sec12" sec-type="conclusion">
+      <title>Conclusions</title>
+      <p>This study demonstrates that whole-genome sequence analysis is an efficient tool to characterise forward genetics mutants in the filamentous pathogenic species <italic>F. graminearum</italic>. Surprisingly in some cases the DNA tag insertion events are accompanied with large untagged chromosomal deletions while in other cases a straight-forward insertion event could be confirmed. This fact suggests that the FindInsertSeq method identifies DNA tag insertion points and other genomic recombination events such as chromosomal deletions and DNA amplifications. Large scale chromosomal deletions can quickly identify the non-essential gene set or host-specificity genes not essential for pathogenic life. The minimal sequencing coverage required in <italic>F. graminearum</italic> to survey accurately the genome to a single base level for recombination events was determined to be 22&#xD7; fold. FindInsertSeq will also allow full characterisation of recombinant filamentous fungal isolates overexpressing heterologous proteins for research and/or industrial scale commercial applications.</p>
+    </sec>
+    <sec id="Sec13" sec-type="materials|methods">
+      <title>Methods</title>
+      <sec id="Sec14">
+        <title>Fungal growth, mutagenesis, DNA preparation, sequencing and PCR analyses</title>
+        <p>Fungal strains were routinely cultured as described [<xref ref-type="bibr" rid="CR30">30</xref>]. <italic>F. graminearum</italic> strain PH-1 was used to generate insertional mutants using the plasmid pHYG1.4 (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S1) and tested for virulence on the susceptible spring wheat cultivar Bobwhite using established methods [<xref ref-type="bibr" rid="CR15">15</xref>]. Genomic fungal DNA for sequencing was extracted using the CTAB protocol [<xref ref-type="bibr" rid="CR31">31</xref>] and purified using a Qiagen Kit (Qiagen Ltd, Crawley, West Sussex, UK). High-quality genomic DNA was then submitted to the TGAC (Norwich, UK) for generation of a 0.8-kb fragment library. The Illumina HiSeq 2000 sequencing platform (San Diego, CA) was used to produce 100-bp paired-end reads [<xref ref-type="bibr" rid="CR6">6</xref>]. Primer design, PCR conditions and single-read sequencing of PCR products followed the protocols described by Baldwin et al. [<xref ref-type="bibr" rid="CR21">21</xref>]. Primer sequences used for gene detection and experimental verification of chromosomal deletions are listed in Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S3 and S4. The DNA ladder <italic>BstE</italic>II used for the diagnostic PCR was obtained from New England Biolabs, Hitchin, UK.</p>
+      </sec>
+      <sec id="Sec15">
+        <title>Mapping and assembly</title>
+        <p>Raw reads were not pre-processed. Seqtk [<xref ref-type="bibr" rid="CR32">32</xref>] was used to subsample randomly reads to three technical replicates of 10%, 25% and 50%.</p>
+        <p>For the plasmid mapping approach, the software Novoalign3 [<xref ref-type="bibr" rid="CR24">24</xref>], Bowtie2 [<xref ref-type="bibr" rid="CR25">25</xref>] and BWA [<xref ref-type="bibr" rid="CR26">26</xref>] were used to align the sequencing reads to the plasmid sequence (pHYG1.4) using default parameters, followed by the removal of unmapped reads that were the paired partners of mapped reads using SAMtools [<xref ref-type="bibr" rid="CR33">33</xref>]. The extracted forward read set and reverse read set correspond to sequences either side of the inserted plasmid. Each set was then mapped to the <italic>F. graminearum</italic> reference sequence (MIPS version FG3.2, <ext-link ext-link-type="uri" xlink:href="ftp://ftpmips.gsf.de/fungi/FGDB/v32/">ftp://ftpmips.gsf.de/fungi/FGDB/v32/</ext-link>) [<xref ref-type="bibr" rid="CR34">34</xref>]. Alignments were converted from the sequence alignment map (SAM) to binary alignment map (BAM) format. BAM files were then sorted and indexed using SAMtools [<xref ref-type="bibr" rid="CR33">33</xref>]. Visualisations were done using the Tablet software [<xref ref-type="bibr" rid="CR16">16</xref>] and the Integrative Genomics Viewer (IGV) [<xref ref-type="bibr" rid="CR35">35</xref>]. Coverage of mapped raw reads to the <italic>F. graminearum</italic> reference were calculated using DELLY [<xref ref-type="bibr" rid="CR36">36</xref>] and R [<xref ref-type="bibr" rid="CR37">37</xref>] was used to plot the resulting coverage comparisons. Detailed instructions on running the FindInsertSeq workflow are available at <ext-link ext-link-type="uri" xlink:href="https://github.com/Rothamsted/AppliedBioinformatics/tree/master/FindInsertSeq">https://github.com/Rothamsted/AppliedBioinformatics/tree/master/FindInsertSeq</ext-link>.</p>
+        <p>Each DAF mutant genome was assembled with SOAPdenovo2 [<xref ref-type="bibr" rid="CR38">38</xref>]. For mutants with single insertions a k-mer value of 61 was used to identify the integrity of the plasmid insertion event and the flanking sequences. For mutants with multiple insertions, a range of k-mer values were tested, i.e. k-mer 61, 63, 65, 67, 69, 71, 81, 91. By this approach only small flanking sequences were assembled to the plasmid sequence. These small flanking sequences were sufficient to verify the insertion position obtained by the standard pipeline. The resulting assemblies were used to confirm the orientation, bp deletion, and plasmid insertion copy number where applicable (not successful for multiple copy plasmid insertions) by alignment to the reference sequence <italic>Fusarium graminearum</italic> PH-1 genome and the plasmid sequence within Geneious version 7.1.6 created by Biomatters (available from <ext-link ext-link-type="uri" xlink:href="http://www.geneious.com/">http://www.geneious.com/</ext-link>) using LASTZ [<xref ref-type="bibr" rid="CR39">39</xref>].</p>
+      </sec>
+      <sec id="Sec16">
+        <title>Analysis of the gene types lost through genomic deletion</title>
+        <p>The <italic>F. graminearum</italic> reference sequence (MIPS version FG3.2, <ext-link ext-link-type="uri" xlink:href="ftp://ftpmips.gsf.de/fungi/FGDB/v32/">ftp://ftpmips.gsf.de/fungi/FGDB/v32/</ext-link>) was downloaded. Gene IDs within the deleted chromosomal regions of the insertion mutants were extracted using Geneious version 7.1.5 created by Biomatters available from <ext-link ext-link-type="uri" xlink:href="http://www.geneious.com">http://www.geneious.com</ext-link>. The PHI-base database version 3.6 (May 2014 release) was downloaded from <ext-link ext-link-type="uri" xlink:href="http://www.phi-base.org/">http://www.phi-base.org/</ext-link> as a FASTA file [<xref ref-type="bibr" rid="CR18">18</xref>]. A custom BLAST database was setup and implemented on a TimeLogic&#xAE; Tera-BLAST&#x2122; DeCypher system (Active Motif Inc., Carlsbad, CA). For each gene the top BLAST hit (E-value of &#x2264;10E-4) with annotation including the experimentally tested phenotypes was extracted (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S5 and Additional file <xref rid="MOESM2" ref-type="media">2</xref>).</p>
+      </sec>
+      <sec id="Sec17">
+        <title>Data access</title>
+        <p>The reference genome information for <italic>F. graminearum</italic> strain PH-1 (NRRL 31084) is available at GenBank under accession AACM00000000 [<xref ref-type="bibr" rid="CR12">12</xref>]. Whole-genome sequencing information for the strains described in this study is available at the Sequence Read Archive (SRA). The accession numbers are: ERS430784 (DAF139), ERS430785 (DAF140), ERS430786 (DAF141) and ERS430787 (TP11.1).</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="App1">
+        <sec id="Sec18">
+          <title>Additional files</title>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1412_MOESM1_ESM.docx" id="MOESM1">
+              <label>Additional file 1: Figure S1.</label>
+              <caption>
+                <p>Map of plasmid pHYG1.4 and oligos used for <italic>hph</italic> probe generation. <bold>Figure S2.</bold> Deletions overview in mutants reported in the literature and in this study. <bold>Figure S3.</bold> Absence and presence of five putative transcription factors in fusarium insertion mutants and WT strain PH-1. <bold>Table S1.</bold> Obtained sequence coverage of mutants. <bold>Table S2.</bold> Deleted genes in the three DAF mutants not essential for life. <bold>Table S3.</bold> PCR fragment sizes. <bold>Table S4.</bold> Primer sequences. <bold>Table S5.</bold> Five transcription factors which do not have an essential gene function.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1412_MOESM2_ESM.xlsx" id="MOESM2">
+              <label>Additional file 2:</label>
+              <caption>
+                <p>
+                  <bold>List of genes deleted in mutants DAF139, DAF140, DAF141, DAF10, Z43R606, and respective PHI-base BLAST results.</bold>
+                </p>
+              </caption>
+            </media>
+          </p>
+        </sec>
+      </app>
+    </app-group>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>BAM</term>
+          <def>
+            <p>Binary alignment map</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DAF mutant</term>
+          <def>
+            <p>Disease-attenuated Fusarium mutant</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>
+            <italic>Hph</italic>
+          </term>
+          <def>
+            <p>Hygromycin-phosphotransferase</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PCR</term>
+          <def>
+            <p>Polymerase chain reaction</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SAM</term>
+          <def>
+            <p>Sequence alignment map</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>WGA</term>
+          <def>
+            <p>Whole-genome analysis</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>WGS</term>
+          <def>
+            <p>Whole genome sequencing</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>WT</term>
+          <def>
+            <p>Wildtype</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Competing interests</bold>
+        </p>
+        <p>The authors declare that they have no competing interests.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Authors&#x2019; contributions</bold>
+        </p>
+        <p>MU performed the biological experiments. RK, KHP, MU performed bioinformatics data analysis. KHK, MU, RK and KHP contributed to experimental design, data evaluation, writing of the manuscript and approved the final manuscript.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>We thank the staff at The Genome Analysis Centre (TGAC), Norwich, UK, for their excellent technical assistance. The work was supported by the Biotechnology and Biological Sciences Research Council of the UK (BBSRC) through the Institute Strategic Programme Grant 20:20 Wheat&#xAE; (BB/J/00426X/1). The PHI-base project is supported by the BBSRC PhytoPath grant (BB/K020056/1) and the National Capability grant (BB/J/004383/1). All experiments involving <italic>F. graminearum</italic> WT and transgenic isolates were conducted in biological containment facilities under FERA licence number 101948/11982851/2.</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mullins</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Transformation: a tool for studying fungal pathogens of plants</article-title>
+          <source>Cell Mol Life Sci</source>
+          <year>2001</year>
+          <volume>58</volume>
+          <issue>14</issue>
+          <fpage>2043</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="doi">10.1007/PL00000835</pub-id>
+          <?supplied-pmid 11814055?>
+          <pub-id pub-id-type="pmid">11814055</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>XL</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>YL</given-names>
+            </name>
+          </person-group>
+          <article-title>Large-scale insertional mutagenesis in <italic>Magnaporthe oryzae</italic> by <italic>Agrobacterium tumefaciens</italic>-mediated transformation</article-title>
+          <source>Methods Mol Biol</source>
+          <year>2011</year>
+          <volume>722</volume>
+          <fpage>213</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-1-61779-040-9_16</pub-id>
+          <?supplied-pmid 21590424?>
+          <pub-id pub-id-type="pmid">21590424</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dufresne</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>van der Lee</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ben M&#x2019;barek</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Transposon-tagging identifies novel pathogenicity genes in <italic>Fusarium graminearum</italic></article-title>
+          <source>Fungal Genet Biol</source>
+          <year>2008</year>
+          <volume>45</volume>
+          <issue>12</issue>
+          <fpage>1552</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.fgb.2008.09.004</pub-id>
+          <?supplied-pmid 18926918?>
+          <pub-id pub-id-type="pmid">18926918</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Farman</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Leong</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <article-title>Chromosome walking to the <italic>AVR1-CO39</italic> avirulence gene of <italic>Magnaporthe grisea</italic>: Discrepancy between the physical and genetic maps</article-title>
+          <source>Genetics</source>
+          <year>1998</year>
+          <volume>150</volume>
+          <issue>3</issue>
+          <fpage>1049</fpage>
+          <lpage>58</lpage>
+          <?supplied-pmid 9799257?>
+          <pub-id pub-id-type="pmid">9799257</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shendure</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ji</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Next-generation DNA sequencing</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2008</year>
+          <volume>26</volume>
+          <issue>10</issue>
+          <fpage>1135</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="doi">10.1038/nbt1486</pub-id>
+          <?supplied-pmid 18846087?>
+          <pub-id pub-id-type="pmid">18846087</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bentley</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Balasubramanian</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Swerdlow</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Milton</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>CG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Accurate whole human genome sequencing using reversible terminator chemistry</article-title>
+          <source>Nature</source>
+          <year>2008</year>
+          <volume>456</volume>
+          <issue>7218</issue>
+          <fpage>53</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature07517</pub-id>
+          <?supplied-pmid 18987734?>
+          <pub-id pub-id-type="pmid">18987734</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>HE</given-names>
+            </name>
+          </person-group>
+          <article-title>Identifying insertion mutations by whole-genome sequencing</article-title>
+          <source>BioTechniques</source>
+          <year>2011</year>
+          <volume>50</volume>
+          <issue>2</issue>
+          <fpage>96</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.2144/000113600</pub-id>
+          <?supplied-pmid 21486250?>
+          <pub-id pub-id-type="pmid">21486250</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Rui</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Wellems</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Identification of <italic>piggyBac</italic>-mediated insertions in <italic>Plasmodium berghei</italic> by next generation sequencing</article-title>
+          <source>Malar J</source>
+          <year>2013</year>
+          <volume>12</volume>
+          <issue>1</issue>
+          <fpage>287</fpage>
+          <pub-id pub-id-type="doi">10.1186/1475-2875-12-287</pub-id>
+          <?supplied-pmid 23961915?>
+          <pub-id pub-id-type="pmid">23961915</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McCluskey</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Wiest</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Grigoriev</surname>
+              <given-names>IV</given-names>
+            </name>
+            <name>
+              <surname>Lipzen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Schackwitz</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Rediscovery by whole genome sequencing: classical mutations and genome polymorphisms in <italic>Neurospora crassa</italic></article-title>
+          <source>G3: Genes|Genomes|Genetics</source>
+          <year>2011</year>
+          <volume>1</volume>
+          <issue>4</issue>
+          <fpage>303</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="doi">10.1534/g3.111.000307</pub-id>
+          <?supplied-pmid 22384341?>
+          <pub-id pub-id-type="pmid">22384341</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pomraning</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Freitag</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Bulk segregant analysis followed by high-throughput sequencing reveals the Neurospora cell cycle gene, <italic>ndc-1</italic>, to be allelic with the gene for ornithine decarboxylase, <italic>spe-1</italic></article-title>
+          <source>Eukaryot Cell</source>
+          <year>2011</year>
+          <volume>10</volume>
+          <issue>6</issue>
+          <fpage>724</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="doi">10.1128/EC.00016-11</pub-id>
+          <?supplied-pmid 21515825?>
+          <pub-id pub-id-type="pmid">21515825</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nowrousian</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Teichert</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Masloff</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>K&#xFC;ck</surname>
+              <given-names>U</given-names>
+            </name>
+          </person-group>
+          <article-title>Whole-genome sequencing of <italic>Sordaria macrospora</italic> mutants identifies developmental genes</article-title>
+          <source>G3: Genes|Genomes|Genetics</source>
+          <year>2012</year>
+          <volume>2</volume>
+          <issue>2</issue>
+          <fpage>261</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="doi">10.1534/g3.111.001479</pub-id>
+          <?supplied-pmid 22384404?>
+          <pub-id pub-id-type="pmid">22384404</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cuomo</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Guldener</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Trail</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Turgeon</surname>
+              <given-names>BG</given-names>
+            </name>
+            <name>
+              <surname>Di Pietro</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The <italic>Fusarium graminearum</italic> genome reveals a link between localized polymorphism and pathogen specialization</article-title>
+          <source>Science</source>
+          <year>2007</year>
+          <volume>317</volume>
+          <issue>5843</issue>
+          <fpage>1400</fpage>
+          <lpage>2</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1143708</pub-id>
+          <?supplied-pmid 17823352?>
+          <pub-id pub-id-type="pmid">17823352</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gale</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name>
+              <surname>Bryant</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Calvo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Giese</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Katan</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>O&#x2019;Donnell</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Chromosome complement of the fungal plant pathogen <italic>Fusarium graminearum</italic> based on genetic and physical mapping and cytological observations</article-title>
+          <source>Genetics</source>
+          <year>2005</year>
+          <volume>171</volume>
+          <issue>3</issue>
+          <fpage>985</fpage>
+          <lpage>1001</lpage>
+          <pub-id pub-id-type="doi">10.1534/genetics.105.044842</pub-id>
+          <?supplied-pmid 16079234?>
+          <pub-id pub-id-type="pmid">16079234</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <mixed-citation publication-type="other">Kazan K, Gardiner DM, Manners JM. On the trail of a cereal killer: recent advances in <italic>Fusarium graminearum</italic> pathogenomics and host resistance. Mol Plant Pathol. 2012;13(4):399&#x2013;413.</mixed-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baldwin</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Urban</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Hammond-Kosack</surname>
+              <given-names>KE</given-names>
+            </name>
+          </person-group>
+          <article-title>A role for topoisomerase I in <italic>Fusarium graminearum</italic> and <italic>F. culmorum</italic> pathogenesis and sporulation</article-title>
+          <source>Mol Plant-Microbe Interact</source>
+          <year>2010</year>
+          <volume>23</volume>
+          <issue>5</issue>
+          <fpage>566</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="doi">10.1094/MPMI-23-5-0566</pub-id>
+          <?supplied-pmid 20367465?>
+          <pub-id pub-id-type="pmid">20367465</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Milne</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Bayer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cardle</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Shaw</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Stephen</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Wright</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Tablet&#x2013;next generation sequence assembly visualization</article-title>
+          <source>Bioinformatics</source>
+          <year>2010</year>
+          <volume>26</volume>
+          <issue>3</issue>
+          <fpage>401</fpage>
+          <lpage>2</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btp666</pub-id>
+          <?supplied-pmid 19965881?>
+          <pub-id pub-id-type="pmid">19965881</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meyne</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ratliff</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Moyzis</surname>
+              <given-names>RK</given-names>
+            </name>
+          </person-group>
+          <article-title>Conservation of the human telomere sequence (TTAGGG)N among vertebrates</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1989</year>
+          <volume>86</volume>
+          <issue>18</issue>
+          <fpage>7049</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.86.18.7049</pub-id>
+          <?supplied-pmid 2780561?>
+          <pub-id pub-id-type="pmid">2780561</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <mixed-citation publication-type="other">Urban M, Pant R, Raghunath A, Irvine A, Pedro H, Hammond-Kosack KE. The Pathogen-Host Interactions database (PHI-base): Additions and future developments. Nucleic Acids Res. 2015;43(D1):D645-D655.</mixed-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Son</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Seo</surname>
+              <given-names>YS</given-names>
+            </name>
+            <name>
+              <surname>Min</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>JM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A phenome-based functional analysis of transcription factors in the cereal head blight fungus, <italic>Fusarium graminearum</italic></article-title>
+          <source>PLoS Pathog</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <issue>10</issue>
+          <fpage>e1002310</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.ppat.1002310</pub-id>
+          <?supplied-pmid 22028654?>
+          <pub-id pub-id-type="pmid">22028654</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Singer</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Burke</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>High-throughput TAIL-PCR as a tool to identify DNA flanking insertions</article-title>
+          <source>Methods Mol Biol</source>
+          <year>2003</year>
+          <volume>236</volume>
+          <fpage>241</fpage>
+          <lpage>72</lpage>
+          <?supplied-pmid 14501069?>
+          <pub-id pub-id-type="pmid">14501069</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baldwin</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Gaffoor</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Antoniw</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Andries</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Guenther</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Urban</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A partial chromosomal deletion caused by random plasmid integration resulted in a reduced virulence phenotype in <italic>Fusarium graminearum</italic></article-title>
+          <source>Mol Plant-Microbe Interact</source>
+          <year>2010</year>
+          <volume>23</volume>
+          <issue>8</issue>
+          <fpage>1083</fpage>
+          <lpage>96</lpage>
+          <pub-id pub-id-type="doi">10.1094/MPMI-23-8-1083</pub-id>
+          <?supplied-pmid 20615118?>
+          <pub-id pub-id-type="pmid">20615118</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seong</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hou</surname>
+              <given-names>ZM</given-names>
+            </name>
+            <name>
+              <surname>Tracy</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kistler</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>JR</given-names>
+            </name>
+          </person-group>
+          <article-title>Random insertional mutagenesis identifies genes associated with virulence in the wheat scab fungus <italic>Fusarium graminearum</italic></article-title>
+          <source>Phytopathology</source>
+          <year>2005</year>
+          <volume>95</volume>
+          <issue>7</issue>
+          <fpage>744</fpage>
+          <lpage>50</lpage>
+          <pub-id pub-id-type="doi">10.1094/PHYTO-95-0744</pub-id>
+          <?supplied-pmid 18943005?>
+          <pub-id pub-id-type="pmid">18943005</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Quail</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Coupland</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Otto</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Connor</surname>
+              <given-names>TR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A tale of three next generation sequencing platforms: comparison of Ion Torrent, Pacific Biosciences and Illumina MiSeq sequencers</article-title>
+          <source>BMC Genomics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>341</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-13-341</pub-id>
+          <?supplied-pmid 22827831?>
+          <pub-id pub-id-type="pmid">22827831</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <mixed-citation publication-type="other">Novoalign3. [<ext-link ext-link-type="uri" xlink:href="http://www.novocraft.com/">http://www.novocraft.com/</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Langmead</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Salzberg</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>Fast gapped-read alignment with Bowtie 2</article-title>
+          <source>Nat Methods</source>
+          <year>2012</year>
+          <volume>9</volume>
+          <issue>4</issue>
+          <fpage>357</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1038/nmeth.1923</pub-id>
+          <?supplied-pmid 22388286?>
+          <pub-id pub-id-type="pmid">22388286</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Durbin</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Fast and accurate short read alignment with Burrows-Wheeler transform</article-title>
+          <source>Bioinformatics</source>
+          <year>2009</year>
+          <volume>25</volume>
+          <issue>14</issue>
+          <fpage>1754</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btp324</pub-id>
+          <?supplied-pmid 19451168?>
+          <pub-id pub-id-type="pmid">19451168</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dean</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Talbot</surname>
+              <given-names>NJ</given-names>
+            </name>
+            <name>
+              <surname>Ebbole</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Farman</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Mitchell</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Orbach</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The genome sequence of the rice blast fungus <italic>Magnaporthe grisea</italic></article-title>
+          <source>Nature</source>
+          <year>2005</year>
+          <volume>434</volume>
+          <issue>7036</issue>
+          <fpage>980</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature03449</pub-id>
+          <?supplied-pmid 15846337?>
+          <pub-id pub-id-type="pmid">15846337</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>SY</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>YW</given-names>
+            </name>
+            <name>
+              <surname>Yun</surname>
+              <given-names>SH</given-names>
+            </name>
+          </person-group>
+          <article-title>A large genomic deletion in <italic>Gibberella zeae</italic> causes a defect in the production of two polyketides but not in sexual development or virulence</article-title>
+          <source>Plant Pathology J</source>
+          <year>2006</year>
+          <volume>22</volume>
+          <issue>3</issue>
+          <fpage>215</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="doi">10.5423/PPJ.2006.22.3.215</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Annaluru</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Muller</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Mitchell</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Ramalingam</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Stracquadanio</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Richardson</surname>
+              <given-names>SM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Total synthesis of a functional designer eukaryotic chromosome</article-title>
+          <source>Science</source>
+          <year>2014</year>
+          <volume>344</volume>
+          <issue>6179</issue>
+          <fpage>55</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1249252</pub-id>
+          <?supplied-pmid 24674868?>
+          <pub-id pub-id-type="pmid">24674868</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Urban</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mott</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Farley</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hammond-Kosack</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>The <italic>Fusarium graminearum MAP1</italic> gene is essential for pathogenicity and development of perithecia</article-title>
+          <source>Mol Plant Pathol</source>
+          <year>2003</year>
+          <volume>4</volume>
+          <issue>5</issue>
+          <fpage>347</fpage>
+          <lpage>59</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1364-3703.2003.00183.x</pub-id>
+          <?supplied-pmid 20569395?>
+          <pub-id pub-id-type="pmid">20569395</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doyle</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Doyle</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>A rapid DNA isolation procedure for small quantities of fresh leaf tissue</article-title>
+          <source>Phytochem Bull</source>
+          <year>1987</year>
+          <volume>19</volume>
+          <fpage>11</fpage>
+          <lpage>5</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <mixed-citation publication-type="other">Toolkit for processing sequences in FASTA/Q formats. [<ext-link ext-link-type="uri" xlink:href="https://github.com/lh3/seqtk">https://github.com/lh3/seqtk</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Handsaker</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Wysoker</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fennell</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ruan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Homer</surname>
+              <given-names>N</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome project data processing S: the sequence alignment/Map format and SAMtools</article-title>
+          <source>Bioinformatics</source>
+          <year>2009</year>
+          <volume>25</volume>
+          <issue>16</issue>
+          <fpage>2078</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btp352</pub-id>
+          <?supplied-pmid 19505943?>
+          <pub-id pub-id-type="pmid">19505943</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wong</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Mannhaupt</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Munsterkotter</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mewes</surname>
+              <given-names>HW</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>FGDB: revisiting the genome annotation of the plant pathogen <italic>Fusarium graminearum</italic></article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <issue>Database issue</issue>
+          <fpage>D637</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkq1016</pub-id>
+          <?supplied-pmid 21051345?>
+          <pub-id pub-id-type="pmid">21051345</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thorvaldsdottir</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Mesirov</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <article-title>Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration</article-title>
+          <source>Brief Bioinform</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <issue>2</issue>
+          <fpage>178</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="doi">10.1093/bib/bbs017</pub-id>
+          <?supplied-pmid 22517427?>
+          <pub-id pub-id-type="pmid">22517427</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rausch</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Zichner</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Schlattl</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Stutz</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Benes</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Korbel</surname>
+              <given-names>JO</given-names>
+            </name>
+          </person-group>
+          <article-title>DELLY: structural variant discovery by integrated paired-end and split-read analysis</article-title>
+          <source>Bioinformatics</source>
+          <year>2012</year>
+          <volume>28</volume>
+          <issue>18</issue>
+          <fpage>i333</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/bts378</pub-id>
+          <?supplied-pmid 22962449?>
+          <pub-id pub-id-type="pmid">22962449</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>R Development Core Team</collab>
+          </person-group>
+          <source>R: A language and enviornment for statistical computing</source>
+          <year>2010</year>
+          <publisher-loc>Vienna, Austria</publisher-loc>
+          <publisher-name>R Foundation for Statistical Computing</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Luo</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Xie</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Yuan</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>SOAPdenovo2: an empirically improved memory-efficient short-read de novo assembler</article-title>
+          <source>GigaScience</source>
+          <year>2012</year>
+          <volume>1</volume>
+          <issue>1</issue>
+          <fpage>18</fpage>
+          <pub-id pub-id-type="doi">10.1186/2047-217X-1-18</pub-id>
+          <?supplied-pmid 23587118?>
+          <pub-id pub-id-type="pmid">23587118</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <mixed-citation publication-type="other">Harris RS. Improved pairwise alignment of genomic DNA. PhD thesis. The Pennsylvania State University; 2007.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

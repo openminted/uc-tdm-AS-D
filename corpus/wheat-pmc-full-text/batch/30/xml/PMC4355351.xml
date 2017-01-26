@@ -1,0 +1,3617 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Genome Biol</journal-id>
+      <journal-title-group>
+        <journal-title>Genome Biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1465-6906</issn>
+      <issn pub-type="epub">1465-6914</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4355351</article-id>
+      <article-id pub-id-type="publisher-id">601</article-id>
+      <article-id pub-id-type="doi">10.1186/s13059-015-0601-9</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Deep transcriptome sequencing provides new insights into the structural and functional organization of the wheat genome</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pingault</surname>
+            <given-names>Lise</given-names>
+          </name>
+          <address>
+            <email>lise.pingault@clermont.inra.fr</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Choulet</surname>
+            <given-names>Fr&#xE9;d&#xE9;ric</given-names>
+          </name>
+          <address>
+            <email>frederic.choulet@clermont.inra.fr</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Alberti</surname>
+            <given-names>Adriana</given-names>
+          </name>
+          <address>
+            <email>aalberti@genoscope.cns.fr</email>
+          </address>
+          <xref ref-type="aff" rid="Aff3"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Glover</surname>
+            <given-names>Natasha</given-names>
+          </name>
+          <address>
+            <email>nattyglove@gmail.com</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+          <xref ref-type="aff" rid="Aff6"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wincker</surname>
+            <given-names>Patrick</given-names>
+          </name>
+          <address>
+            <email>pwincker@genoscope.cns.fr</email>
+          </address>
+          <xref ref-type="aff" rid="Aff3"/>
+          <xref ref-type="aff" rid="Aff4"/>
+          <xref ref-type="aff" rid="Aff5"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Feuillet</surname>
+            <given-names>Catherine</given-names>
+          </name>
+          <address>
+            <email>catherine.feuillet@bayer.com</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+          <xref ref-type="aff" rid="Aff7"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Paux</surname>
+            <given-names>Etienne</given-names>
+          </name>
+          <address>
+            <email>etienne.paux@clermont.inra.fr</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <aff id="Aff1"><label/>INRA UMR1095 Genetics, Diversity and Ecophysiology of Cereals, 5 chemin de Beaulieu, 63039 Clermont-Ferrand, France </aff>
+        <aff id="Aff2"><label/>University Blaise Pascal UMR1095 Genetics, Diversity and Ecophysiology of Cereals, 5 chemin de Beaulieu, 63039 Clermont-Ferrand, France </aff>
+        <aff id="Aff3"><label/>CEA/DSV/IG/Genoscope, 2 rue Gaston Cremieux, 91000 Evry, France </aff>
+        <aff id="Aff4"><label/>CNRS UMR 8030, 2 rue Gaston Cr&#xE9;mieux, 91000 Evry, France </aff>
+        <aff id="Aff5"><label/>Universit&#xE9; d&#x2019;Evry, CP5706 Evry, France </aff>
+        <aff id="Aff6"><label/>Current address: Bayer CropScience, Technologiepark 38, Zwijnaarde, 9052 Gent Belgium </aff>
+        <aff id="Aff7"><label/>Current address: Bayer CropScience, 3500 Paramount Parkway, Morrisville, NC 27560 USA </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>10</day>
+        <month>2</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>10</day>
+        <month>2</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <year>2015</year>
+      </pub-date>
+      <volume>16</volume>
+      <issue>1</issue>
+      <elocation-id>29</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>24</day>
+          <month>9</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>28</day>
+          <month>1</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; Pingault et al.; licensee BioMed Central. 2015</copyright-statement>
+        <license license-type="open-access">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0">http://creativecommons.org/licenses/by/4.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>Because of its size, allohexaploid nature, and high repeat content, the bread wheat genome is a good model to study the impact of the genome structure on gene organization, function, and regulation. However, because of the lack of a reference genome sequence, such studies have long been hampered and our knowledge of the wheat gene space is still limited. The access to the reference sequence of the wheat chromosome 3B provided us with an opportunity to study the wheat transcriptome and its relationships to genome and gene structure at a level that has never been reached before.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>By combining this sequence with RNA-seq data, we construct a fine transcriptome map of the chromosome 3B. More than 8,800 transcription sites are identified, that are distributed throughout the entire chromosome. Expression level, expression breadth, alternative splicing as well as several structural features of genes, including transcript length, number of exons, and cumulative intron length are investigated. Our analysis reveals a non-monotonic relationship between gene expression and structure and leads to the hypothesis that gene structure is determined by its function, whereas gene expression is subject to energetic cost. Moreover, we observe a recombination-based partitioning at the gene structure and function level.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Our analysis provides new insights into the relationships between gene and genome structure and function. It reveals mechanisms conserved with other plant species as well as superimposed evolutionary forces that shaped the wheat gene space, likely participating in wheat adaptation.</p>
+        </sec>
+        <sec>
+          <title>Electronic supplementary material</title>
+          <p>The online version of this article (doi:10.1186/s13059-015-0601-9) contains supplementary material, which is available to authorized users.</p>
+        </sec>
+      </abstract>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2015</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="introduction">
+      <title>Background</title>
+      <p>In angiosperms, genome size is extremely variable, ranging from 63&#xA0;Mb in <italic>Genlisea margaretae</italic> to 148,900&#xA0;Mb in <italic>Paris japonica</italic>, that is, a 2,400-fold difference [<xref ref-type="bibr" rid="CR1">1</xref>]. By contrast, the gene content seems relatively constant, with an average number of 30,000 and a two- to three-fold difference per diploid genome [<xref ref-type="bibr" rid="CR2">2</xref>,<xref ref-type="bibr" rid="CR3">3</xref>]. As a consequence, the gene space organization differs strikingly from one genome to another. For example, plants with small genomes such as <italic>Arabidopsis thaliana</italic> (125&#xA0;Mb) and <italic>Brachypodium distachyon</italic> (272&#xA0;Mb) exhibit an even distribution of their genes along their chromosomes [<xref ref-type="bibr" rid="CR4">4</xref>] whereas for plants with intermediate size genomes such as <italic>Populus trichocarpa</italic> (485&#xA0;Mb) and <italic>Vitis vinifera</italic> (487&#xA0;Mb), alternation between high gene density regions and low gene density regions is observed [<xref ref-type="bibr" rid="CR5">5</xref>,<xref ref-type="bibr" rid="CR6">6</xref>]. This tendency is even stronger in plants with large genomes such as <italic>Glycine max</italic> (1,115&#xA0;Mb) and <italic>Zea mays</italic> (2,300&#xA0;Mb) in which a positive gradient of gene density from the centromere to the telomeres has been observed [<xref ref-type="bibr" rid="CR7">7</xref>,<xref ref-type="bibr" rid="CR8">8</xref>]. Beside the overall organization of genes, several studies revealed a non-random distribution of genes along chromosomes, resulting in clusters of genes sharing the same expression profile, the same function or involved in the same metabolic pathway [<xref ref-type="bibr" rid="CR9">9</xref>-<xref ref-type="bibr" rid="CR15">15</xref>]. In addition, relationships between gene structure and expression were reported in various organisms [<xref ref-type="bibr" rid="CR16">16</xref>-<xref ref-type="bibr" rid="CR18">18</xref>]. Altogether, these studies suggest a high degree of organization in gene space and interplay between genome and gene structure, function, and regulation.</p>
+      <p>With 220 million hectares, bread wheat (<italic>Triticum aestivum</italic> L.) is the most widely grown and consumed crop worldwide providing staple food for 30% of the world population. Beside its socioeconomic importance, bread wheat is also a good model for studying complex genome species. Indeed, with its large 17-Gb, allohexaploid (6x&#x2009;=&#x2009;2<italic>n</italic>&#x2009;=&#x2009;42, AABBDD) and highly repetitive (&gt;80% transposable elements) genome, wheat is one of the most complex crop species. Other species share some of these features, but none of them, at least among cultivated species, combine the three. For example, the loblolly pine genome is the largest genome sequenced so far (22 Gb) but it is diploid [<xref ref-type="bibr" rid="CR19">19</xref>]. Cotton is a polyploid species but has a smaller genome (2.5 Gb) [<xref ref-type="bibr" rid="CR20">20</xref>] and so far only wild diploid relatives were sequenced [<xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR22">22</xref>]. The maize and sorghum genomes are highly repetitive but are diploid and smaller in size [<xref ref-type="bibr" rid="CR7">7</xref>,<xref ref-type="bibr" rid="CR8">8</xref>].</p>
+      <p>The wheat gene space organization and expression have been extensively investigated in the past decades. Many expression analyses have been conducted using either microarrays or RNA-seq but most of them were aiming at deciphering specific processes, such as grain development or response to stresses (for examples, see [<xref ref-type="bibr" rid="CR23">23</xref>-<xref ref-type="bibr" rid="CR27">27</xref>]). Other studies aimed at studying the gene space organization and reported on the existence of a gene gradient along the centromere-telomere axis as well as an organization of genes in small gene islands and co-expression/co-function clusters (for examples, see [<xref ref-type="bibr" rid="CR28">28</xref>-<xref ref-type="bibr" rid="CR30">30</xref>] and references therein). However, very few of these studies really investigated the relationships between genome and gene structure and function, mainly because of the lack of a reference genome sequence. The access to physical maps of wheat chromosomes provided the first opportunities to study gene regulation with respect to their physical position [<xref ref-type="bibr" rid="CR29">29</xref>] although there were still limited to efficiently address this question. Recently, several initiatives aimed at generating draft genome sequences of hexaploid wheat or its diploid progenitors [<xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR22">22</xref>,<xref ref-type="bibr" rid="CR31">31</xref>,<xref ref-type="bibr" rid="CR32">32</xref>]. While they provided a quite comprehensive catalogue of wheat genes as well as novel data on gene evolution and expression, the highly fragmented nature of the sequence assemblies limits our ability to decipher the relationships between genome organization and gene regulation.</p>
+      <p>Recently, we have produced a 774-Mb reference sequence of the hexaploid wheat chromosome 3B [<xref ref-type="bibr" rid="CR33">33</xref>]. Sequence annotation predicted 7,264 genes that were distributed along the chromosome with a gradient of density from centromere to telomeres. The distribution of structural and functional features along the chromosome revealed partitioning correlated with meiotic recombination. Three main regions were identified: two distal regions of 68&#xA0;Mb (region R1; from 1 to 68&#xA0;Mb) and 59&#xA0;Mb (region R3; from 715 to 774&#xA0;Mb) on the short and long arms, respectively, and a large proximal region of 648&#xA0;Mb (region R2; from 68 to 715&#xA0;Mb) spanning the centromere. In addition, we delineated a 122-Mb central region (from 265 to 387&#xA0;Mb), enriched in centromere-specific transposable elements, as the centromeric-pericentromeric region of chromosome 3B.</p>
+      <p>Here, we report a detailed analysis of the chromosome 3B transcriptional landscape. By combining deep transcriptome sequencing data covering the whole plant development with the reference sequence of the chromosome, we identified transcriptionally active regions distributed throughout the entire chromosome. Relationships between genome and gene structure and function revealed different mechanisms governing the gene space organization, regulation, and evolution.</p>
+    </sec>
+    <sec id="Sec2" sec-type="results">
+      <title>Results and discussion</title>
+      <sec id="Sec3">
+        <title>Chromosome 3B contains more than 8,800 transcriptionally active regions</title>
+        <p>To study the expression profiles of hexaploid wheat chromosome 3B genes during the life cycle of a wheat plant and establish a transcriptome atlas for this chromosome, deep transcriptome sequencing was conducted in duplicates in 15 wheat samples corresponding to five different organs (leaf, shoot, root, spike, and grain) at three developmental stages each [<xref ref-type="bibr" rid="CR28">28</xref>]. Strand-non-specific and strand-specific libraries were used to produce 2.52 billion paired-end reads (232 Gb) and 615.3 single-end reads (62 Gb), respectively. The reads were then mapped to the chromosome 3B reference sequence [<xref ref-type="bibr" rid="CR33">33</xref>], without allowing for any mismatches in order to discriminate chromosome 3B expressed genes from homoeologous and paralogous copies. Eventually, 3.66% of reads mapped onto chromosome 3B of which 98% were mapped uniquely. Ninety-five percent of the reads matched sequences annotated as genic regions whereas the remaining 5% mapped to regions where no protein-coding gene was predicted by the annotation [<xref ref-type="bibr" rid="CR33">33</xref>].</p>
+        <p>Within the 774.4&#xA0;Mb comprising the pseudomolecule of chromosome 3B, 8,877 transcriptionally active regions (TARs) were identified, corresponding to an average density of one TAR every 87&#xA0;kb (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). Among these, 5,185 corresponded to predicted gene models, including pseudogenes and gene fragments [<xref ref-type="bibr" rid="CR33">33</xref>]. This represents 71.4% of the 7,264 predicted gene models. The genes contained on average 4.6 exons, ranging from one to 53, which is similar to what was found in <italic>B. distachyon</italic> (5.2), rice (3.8), maize (4.1), sorghum (4.3), and <italic>Triticum urartu</italic> (4.7) [<xref ref-type="bibr" rid="CR8">8</xref>,<xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR34">34</xref>-<xref ref-type="bibr" rid="CR36">36</xref>]. The percentage of expressed genes is slightly lower than the ones reported in other plant species. Indeed, a microarray analysis of the rice transcriptome performed in seedling shoots, tillering-stage shoots and roots, heading, filling-stage panicles, and suspension-cultured cells detected expression for 86% of the 41,754 known and predicted gene models present on the microarray [<xref ref-type="bibr" rid="CR37">37</xref>]. More recently, Lu <italic>et al.</italic> [<xref ref-type="bibr" rid="CR38">38</xref>] conducted an RNA-seq analysis on seeds from three rice cultivated subspecies and found that 83.1% of the 46,472 annotated gene models were expressed. Similarly, in maize, microarray-based transcript profiling in 60 distinct tissues representing 11 major organ systems revealed that 91.4% of the genes were expressed in at least one tissue [<xref ref-type="bibr" rid="CR39">39</xref>]. More recently, Sekhon and colleagues [<xref ref-type="bibr" rid="CR40">40</xref>] performed RNA-seq experiments on a subset of 18 selected tissues representing five organs and showed that 74.7% of the 39,429 genes from the filtered gene set were transcribed. In soybean RNA-seq analysis revealed that 80.4% of 69,145 putative genes are expressed in a least one of the 14 tissues analyzed [<xref ref-type="bibr" rid="CR41">41</xref>]. The lower percentage of genes expressed in wheat might suggest a small impact of polyploidization on gene silencing. This is consistent with previous studies conducted in newly synthesized polyploid wheat and rapeseed where 7.7% and 4.1% of the sequences showed alteration in gene expression [<xref ref-type="bibr" rid="CR42">42</xref>,<xref ref-type="bibr" rid="CR43">43</xref>]. To estimate the exact extent of gene silencing in hexaploid wheat, a comparison with diploid and tetraploid progenitors would be required. However, when considering only genes likely to be functional (hereafter referred to as &#x2018;full genes&#x2019;), the percentage of expressed genes rose to 77.5% (4,125/5,236), which is similar to the percentages found in maize and soybean using a similar number of conditions [<xref ref-type="bibr" rid="CR40">40</xref>,<xref ref-type="bibr" rid="CR41">41</xref>]. Beside full genes, 54.7% (1,060/1,938) regions annotated as pseudogenes or gene fragments in the pseudomolecule were found to be expressed in at least one condition. In other species such as <italic>A. thaliana</italic> and rice, EST analyses revealed expression for 2% to 5% and 2% to 3% pseudogenes, respectively [<xref ref-type="bibr" rid="CR44">44</xref>]. Another study conducted on 1,439 rice pseudogenes using Massively Parallel Signature Sequencing tags suggested that up to 12% are expressed in at least one of the 22 samples studied [<xref ref-type="bibr" rid="CR45">45</xref>]. These proportions strongly differ from our results. One cannot exclude that the percentage of pseudogenes expressed on chromosome 3B could be overestimated as a result of the RNA-seq technology that cannot completely discriminate pseudogene expression from close functional copies that might be present elsewhere in the genome. In an attempt to assess this overestimation, we searched the recently released draft assembly of the wheat genome [<xref ref-type="bibr" rid="CR31">31</xref>] for additional copies of pseudogenes in the genome. Overall, 511 out of 1,060 (48.2%) had at least one other copy, whereas 51.8% were found to be present in one single copy located on chromosome 3B. Assuming that for the 48.2% &#x2018;multicopy&#x2019; pseudogenes, transcripts were not produced by the 3B loci, our results suggest that 28% of the chromosome 3B pseudogenes are still expressed, which is much higher than what has been observed in other organisms so far. Transposable elements (TEs) have been shown to be able to generate sense or antisense transcripts of adjacent genes [<xref ref-type="bibr" rid="CR46">46</xref>]. Given the high proportion (&gt;85%) of the wheat genome covered by TEs, one can hypothesize that some TEs provide a promoter for transcription of adjacent pseudogenes. In addition, while they have long been considered as non-functional units, several studies suggest that pseudogenes might play a role in regulation through antisense regulation of their parental gene, competition for miRNA, generation of small-interfering RNA, or production of short proteins or peptides [<xref ref-type="bibr" rid="CR47">47</xref>,<xref ref-type="bibr" rid="CR48">48</xref>]. The high percentage of expressed pseudogenes found in wheat compared to other species might therefore be due to their role in the regulation of homoeologous or paralogous gene expression.<table-wrap id="Tab1"><label>Table 1</label><caption><p><bold>General features of the chromosome 3B pseudomolecule transcriptionally active region</bold></p></caption><table frame="hsides" rules="groups"><thead><tr valign="top"><th colspan="2"><bold>Transcriptionally active regions</bold></th><th><bold>Predicted</bold><sup><bold>a</bold></sup></th><th><bold>Expressed</bold></th></tr></thead><tbody><tr valign="top"><td colspan="4">Protein-coding genes</td></tr><tr valign="top"><td/><td>Total</td><td>7,264</td><td>5,185</td></tr><tr valign="top"><td/><td>Full genes</td><td>5,326</td><td>4,125</td></tr><tr valign="top"><td/><td>Pseudogenes and fragments</td><td>1,938</td><td>1,060</td></tr><tr valign="top"><td colspan="4">Novel transcribed regions</td></tr><tr valign="top"><td/><td>Total</td><td>-</td><td>3,692</td></tr><tr valign="top"><td/><td>Putative lincRNAs</td><td>-</td><td>1,922</td></tr><tr valign="top"><td colspan="2"><italic>cis-</italic>NATs</td><td/><td>635</td></tr></tbody></table><table-wrap-foot><p><sup>a</sup>According to [<xref ref-type="bibr" rid="CR33">33</xref>].</p></table-wrap-foot></table-wrap></p>
+        <p>For 28.6% of the predicted gene models (2,079), we failed to detect any expression. This result probably reflects the fact that these genes might be expressed in specific conditions that have not been studied in the present work. Indeed, a Gene Ontology term analysis of these non-expressed genes revealed enrichment in biological processes such as &#x2018;gametophyte development&#x2019;, &#x2018;response to temperature stimulus&#x2019;, or &#x2018;response to water; (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S1). In addition, 57.5% of the non-expressed genes are non-syntenic with <italic>B. distachyon</italic>, rice, and sorghum, suggesting that some of these genes might have been duplicated and translocated without their regulatory sequences, leading to their transcriptional inactivity. Finally, it is worth noting that the proportion of non-expressed pseudogenes is twice as high as the proportion of non-expressed functional genes (45.3% <italic>vs.</italic> 22.6%). As a result, the distribution pattern of non-expressed genes along the chromosome was found to be highly correlated with that of pseudogenes (r<sub><italic>S</italic></sub>&#x2009;=&#x2009;0.81, <italic>P</italic> &lt;2.2e10<sup>&#x2212;16</sup>), and even more with that of single copy pseudogenes (r<sub>S</sub>&#x2009;=&#x2009;0.86, <italic>P</italic> &lt;2.2e10<sup>&#x2212;16</sup>).</p>
+        <p>In addition to the predicted gene models, expression was detected for 3,692 loci in unannotated regions. These so-called novel transcribed regions (NTRs) represented on average 22% of all TARs. Twenty-eight percent (1,033/3,692) of these NTR-translated sequences shared weak similarity with plant proteins, mainly TE-encoded proteins or hypothetical proteins and might therefore be protein-coding genes (or pseudogenes). Out of the 2,659 with no similarity with plant proteins, 596 were longer than 200&#xA0;nt and did not carry ORFs longer than 300 AA. These NTRs might therefore correspond to long intergenic non-coding RNAs (lincRNAs) as defined by Liu and colleagues [<xref ref-type="bibr" rid="CR49">49</xref>]. Based on this number, one could speculate that roughly 10,000 lincRNAs should be expressed in the whole wheat genome, or 3,300 per diploid genome. This number is comparable to that of expressed lincRNAs reported <italic>A. thaliana</italic> [<xref ref-type="bibr" rid="CR49">49</xref>] and poplar [<xref ref-type="bibr" rid="CR50">50</xref>] (2,708 and 2,542, respectively). Out of these 596 putative lincRNAs, 91.1% and 93% were found in the <italic>Triticum urartu</italic> and <italic>Aegilops tauschii</italic> genomes, respectively. The percentage decreases to 69.3% when looking at the barley genome. An even more drastic drop was observed when moving out of the Triticeae tribe, with only 14.8%, 7%, and 6.2% of the putative lincRNAs conserved in the <italic>B. distachyon</italic>, rice, and sorghum genomes, respectively. These findings suggest that most of these putative lincRNAs are functional elements that have been acquired by the wheat and more largely the Triticeae genomes in the time course of their evolution.</p>
+        <p>Beside lincRNAs that are located in intergenic regions and therefore do not overlap with protein-coding genes, <italic>cis-</italic>natural antisense transcripts (NATs) are another form of long non-coding RNAs [<xref ref-type="bibr" rid="CR51">51</xref>-<xref ref-type="bibr" rid="CR53">53</xref>]. To estimate the extent of <italic>cis</italic>-NATs in wheat, oriented RNA-seq libraries from the five organs were constructed and reads were mapped on chromosome 3B without allowing mismatches. Out of the 5,185 expressed genes, 635 (12.2%) were found to be transcribed on the reverse strand as well, therefore producing a <italic>cis</italic>-NAT. It is worth noting that <italic>cis</italic>-NATs originate preferentially from syntenic genes (72.4%) and the vast majority (84.9%) concerned full genes. A previous study conducted in wheat using microarray identified 110 NATs at the whole genome level [<xref ref-type="bibr" rid="CR54">54</xref>]. Conversely, Serial Analysis of Gene Expression showed that up to 25.7% of wheat was represented by reverse tags [<xref ref-type="bibr" rid="CR55">55</xref>]. Such widespread occurrence of antisense transcription has already been reported in other plant species such as <italic>A. thaliana</italic>, rice or maize where 2.8% to 9.7% of genes produce antisense transcripts [<xref ref-type="bibr" rid="CR53">53</xref>,<xref ref-type="bibr" rid="CR56">56</xref>,<xref ref-type="bibr" rid="CR57">57</xref>]. <italic>Cis</italic>-NATs can regulate gene expression at the transcriptional or post-transcriptional level through various mechanisms [<xref ref-type="bibr" rid="CR51">51</xref>,<xref ref-type="bibr" rid="CR58">58</xref>]. In a polyploid species, one can hypothesize that they play a role in the regulation of homoeologous copies.</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Transcription sites are distributed throughout the entire chromosome 3B</title>
+        <p>The distribution of predicted protein-coding genes, non-expressed genes, expressed genes, NTRs, and cis-NATs density was analyzed along chromosome 3B (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>A). Recently, Choulet <italic>et al.</italic> [<xref ref-type="bibr" rid="CR33">33</xref>] reported on the structural and functional partitioning of chromosome 3B based on recombination pattern. While the R1 and R3 regions tended to be quite homogeneous, the R2 region appeared to be highly heterogeneous in terms of transposable element and gene content, expression breath as well as linkage disequilibrium. This is especially true in the so-called centromeric-pericentrometic region. Thus to refine our analysis of chromosome 3B, we divided the chromosome in five regions: R1 (1 to 68&#xA0;Mb), R2a (68 to 265&#xA0;Mb), C (265 to 387&#xA0;Mb), R2b (387 to 715&#xA0;Mb), and R3 (715 to 774&#xA0;Mb) (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>B). The densities of predicted protein-coding genes, non-expressed genes, expressed genes, NTRs, and <italic>cis</italic>-NATs were then computed in each of these regions. The density of expressed genes was highly correlated with the distance to the centromere (r<sub><italic>s</italic></sub>&#x2009;=&#x2009;0.77, <italic>P</italic> &lt;2.2e-16) and was found to follow that of predicted protein-coding genes (&#x3C7;<sup>2</sup> test&#x2009;=&#x2009;415.84, df =&#x2009;762). The overall average density was 6.5&#x2009;&#xB1;&#x2009;3.3 genes/Mb, ranging from 1.0 in the centromeric region up to 18.2 at the most telomeric end of the short arm. With an average density of 4.8&#x2009;&#xB1;&#x2009;4.1 per Mb, NTRs were slightly less abundant than expressed protein-coding genes but followed the overall gene distribution. However, their proportion was found to be much higher in the pericentromeric C region. Since this region corresponds to the part of the chromosome where the TE density is the highest, this suggests that some of these NTRs might actually be transcribed from adjacent TE promoters. Whether these RNAs are &#x2018;transcriptional&#x2019; noise or have a biological function remains to be investigated. The distribution of <italic>cis</italic>-NATs is slightly more even along the chromosome, suggesting that proximal genes are more prone to antisense transcription than distal ones. Once again, this might be due to the high abundance of TEs in these regions that would provide promoters for the transcription of adjacent genes.<fig id="Fig1"><label>Figure 1</label><caption><p><bold>Distribution of the functional regions on the chromosome 3B. (A)</bold> Z-score of the feature density of in a 10-Mb sliding window (step 1&#xA0;Mb) along chromosome 3B. Positive values are in blue, negative values in red. Features include (a) predicted genes, (b) non-expressed predicted genes, (c) expressed predicted genes, (d) NTRs, (e) <italic>cis</italic>-NATs. The five main regions of the chromosome 3B are depicted at the bottom of the graph: R1 in red; R2a and R2b in blue; C in orange; R3 in green. The borders of these regions are indicated in Mb. <bold>(B)</bold> Boxplots of the feature density in the five main regions of the chromosome 3B (R1 and R3 in blue; R2a and R2b in yellow; C in red). Features include (a) predicted genes, (b) non-expressed predicted genes, (c) expressed predicted genes, (d) NTRs, (e) <italic>cis</italic>-NATs.</p></caption><graphic xlink:href="13059_2015_601_Fig1_HTML" id="MO1"/></fig></p>
+        <p>Taken together, these results clearly demonstrate that transcription occurs all along chromosome 3B and is not restricted to distal regions. This is in complete agreement with our previous analyses using microarray hybridizations of BAC pools and mRNA samples [<xref ref-type="bibr" rid="CR29">29</xref>] and with observations from Abranches <italic>et al.</italic> [<xref ref-type="bibr" rid="CR59">59</xref>] who demonstrated that active transcription sites are distributed throughout the wheat genome and do not show any preferential localization in the nuclei. More recently, Baker <italic>et al.</italic> [<xref ref-type="bibr" rid="CR60">60</xref>] provided evidences that genes located in the low recombining pericentromeric regions were expressed at a level that was similar to that of genes in high recombining distal regions in barley. Thus, while gene density follows an increasing gradient along the centromere-telomere axis that correlates with recombination, this distribution does not seem to relate to the overall transcription capacities of wheat genes.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Expression level, expression breadth, and alternative splicing are correlated</title>
+        <p>The number of expressed genes was found to be comparable across the 15 conditions, with on average 3,734&#x2009;&#xB1;&#x2009;228 genes expressed per condition. A similar trend was observed in other species such as maize [<xref ref-type="bibr" rid="CR39">39</xref>], soybean [<xref ref-type="bibr" rid="CR41">41</xref>], or peach [<xref ref-type="bibr" rid="CR61">61</xref>]. The average expression breadth (that is, the number of conditions in which a gene is expressed) for the 5,185 expressed gene models was 10.8, with 46.2% (2,396) of the genes expressed in all conditions and 7.6% (396) exhibiting a condition-specific expression profile. At the organ level, the number of organ-specific genes ranged from 77 in leaf to 243 in spike. These proportions of condition-specific genes are not similar for all types of genes (Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>). For example, pseudogenes and gene fragments were found to be more specific than full genes with only 36.9% of them being expressed in 15 conditions and 10.7% in one single condition (<italic>vs.</italic> 48.6% and 6.9% for full genes, respectively). A similar trend was observed when comparing syntenic and non-syntenic genes that were identified by comparative analysis along the 3B sequence [<xref ref-type="bibr" rid="CR33">33</xref>]. Indeed, 29.6% of the non-syntenic genes were expressed in 15 conditions and 12.5% in one single condition, whereas 55.5% and 4.9% of syntenic genes were found to be expressed in 15 and one condition, respectively. By contrast, 73.7% of genes showing anti-sense transcription were expressed in 15 conditions while only very few of them (0.5%) were specific to one single condition. This reinforces the idea that <italic>cis</italic>-NATs serve as post-transcriptional regulators of gene expression [<xref ref-type="bibr" rid="CR62">62</xref>-<xref ref-type="bibr" rid="CR64">64</xref>].<fig id="Fig2"><label>Figure 2</label><caption><p><bold>Distribution of the percentage of transcriptionally active regions expressed in the different number of experimental conditions.</bold> Regions were classified according to their expression breadth, that is, the number of conditions in which they were expressed, from 1 to 15. Dark blue: predicted protein-coding genes; red: predicted full genes; green: predicted pseudogenes/gene fragments; purple: syntenic genes; cyan: non-syntenic genes; orange: <italic>cis</italic>-NATs; light blue: alternative transcripts.</p></caption><graphic xlink:href="13059_2015_601_Fig2_HTML" id="MO2"/></fig></p>
+        <p>Expression breadth was found to be correlated with expression level. This correlation is not unexpected since genes that are widely expressed such as house-keeping genes tend to show a higher expression level than condition-specific genes [<xref ref-type="bibr" rid="CR17">17</xref>,<xref ref-type="bibr" rid="CR65">65</xref>,<xref ref-type="bibr" rid="CR66">66</xref>]. However, to some extent, one cannot exclude that this relationship between expression level and expression breadth reflects the fact that expression is not detected in some conditions and that some condition-specific genes might just be low expression genes.</p>
+        <p>Our analysis revealed 30,232 transcripts originating from the 5,185 chromosome 3B expressed genes. Thirty-nine percent of the genes were transcribed in one single mRNA in our conditions whereas splicing variants were detected for 61.4%, with an average of 5.8 alternative transcripts per gene. When considering multiexonic genes only, the percentage of alternatively spliced genes raised to 75.4%. While alternative splicing (AS) is a general phenomenon in plants, the overall AS level differs strikingly between species. Indeed, previous studies reported that 61% and 48% of <italic>A. thaliana</italic> and rice genes undergo AS, respectively [<xref ref-type="bibr" rid="CR38">38</xref>,<xref ref-type="bibr" rid="CR67">67</xref>], whereas only 6.3% and 15.9% of expressed genes are under the potential influence of AS in <italic>B. distachyon</italic> and soybean, respectively [<xref ref-type="bibr" rid="CR68">68</xref>,<xref ref-type="bibr" rid="CR69">69</xref>]. In barley, 55% of high confidence genes and 73% of intron-containing high confidence genes have evidence of AS [<xref ref-type="bibr" rid="CR70">70</xref>]. This high similarity between barley and wheat, as well as differences with that of rice and <italic>B. distachyon</italic> suggests that the AS level might have evolved differently in grasses. Conversely, considering that the level of AS observed in wheat was similar to that of <italic>A. thaliana</italic>, it is very unlikely that these differences between species are linked to genome size and complexity. However, one cannot exclude that differences originate from experimental design. In <italic>A. thaliana</italic>, the predicted AS level increased from 1.2% to 61% between 2003 and 2012, mainly as a result of the advent of high-throughput technologies [<xref ref-type="bibr" rid="CR71">71</xref>]. In addition, alternative transcripts have been hypothesized to be tissue- or condition-specific [<xref ref-type="bibr" rid="CR72">72</xref>]. As our results are based on the study of plants grown in normal conditions we cannot exclude that the percentage of AS genes is underestimated and might increase with the inclusion of other samples such as plants grown under stress conditions.</p>
+        <p>Beside the differences observed in the overall AS level between species, we found differences in the relative abundance of the main types of AS, namely exon skipping (ES), alternative splice sites (A3SS and A5SS), intron retention (IR), and mutually exclusive exons (MXE) [<xref ref-type="bibr" rid="CR73">73</xref>]. In wheat, IR was found to be the predominant type, with 35% of all events, followed by A3SS (27%), ES (21%), A5SS (16%), and MXE (0.9%). In <italic>A. thaliana</italic>, rice, and <italic>B. distachyon</italic>, IR accounts for more than 50% [<xref ref-type="bibr" rid="CR68">68</xref>,<xref ref-type="bibr" rid="CR74">74</xref>] whereas the predominant type was found to be ES in the peach genome, with 43% of all observed events [<xref ref-type="bibr" rid="CR61">61</xref>]. Such differences strongly reinforce the idea that, despite the fact that AS is a common phenomenon shared by most if not all plant species, specificities have been acquired by the different plant species during the course of their evolution.</p>
+        <p>While 46.2% of the 5,185 genes were expressed in 15 conditions, only 18.6% of 30,232 transcripts appeared to be present in all conditions, which is very similar to what has been observed in barley [<xref ref-type="bibr" rid="CR70">70</xref>]. In addition, 95% of the AS transcripts originating from the same gene exhibited different expression profiles, as revealed by a hierarchical clustering of the 30,232 transcripts (data not shown). As a consequence, the number of alternative transcripts was found to be positively correlated with the expression breadth. These findings strongly suggest that AS variants have complementary functions across organs or developmental stages.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>A non-monotonic relationship between gene expression and gene structure</title>
+        <p>A negative correlation was observed between the transcript size and the expression breadth, with shorter transcripts being expressed in more conditions. This is consistent with previous studies indicating that house-keeping genes which are expressed in more conditions are generally more compact than genes expressed in specific conditions [<xref ref-type="bibr" rid="CR17">17</xref>,<xref ref-type="bibr" rid="CR65">65</xref>,<xref ref-type="bibr" rid="CR66">66</xref>,<xref ref-type="bibr" rid="CR75">75</xref>]. Such findings could be explained by the &#x2018;selection for economy&#x2019; model [<xref ref-type="bibr" rid="CR17">17</xref>,<xref ref-type="bibr" rid="CR76">76</xref>]. In this model transcription and translation are both time- and energy-consuming and, as a consequence, widely and highly expressed genes tend to be more compact to reduce the energetic cost [<xref ref-type="bibr" rid="CR77">77</xref>,<xref ref-type="bibr" rid="CR78">78</xref>].</p>
+        <p>We then investigated the correlation between expression level and gene structure, in terms of transcript size, number of exons, cumulative intron length, mean exon and intron length, and number of alternative transcripts. To this aim, genes were grouped in 30 classes of similar size based on their average expression level (that is, the average FPKM value in a number of conditions where the gene is expressed), as done by Carmel and Koonin [<xref ref-type="bibr" rid="CR16">16</xref>]. Then, the average values of different variables in each of the 30 expression level classes were computed across the genes (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>).<fig id="Fig3"><label>Figure 3</label><caption><p><bold>Relationships between gene expression and gene structural and functional features.</bold> Expression levels are binned into 30 categories. Each dot is the mean value for genes in the given expression category, and the error bar indicates the standard deviation of the mean.</p></caption><graphic xlink:href="13059_2015_601_Fig3_HTML" id="MO3"/></fig></p>
+        <p>For the transcript size, the number of exons, the cumulative intron length, and the number of alternative transcripts, non-monotonic relationships were found with the expression level, resulting in an approximate bell-shaped dependence (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). For all features, the area of the inflexion point was comprised between classes 20 and 25 which is also the area where expression breadth reaches a plateau. Following criteria defined by Hansey <italic>et al</italic>. [<xref ref-type="bibr" rid="CR79">79</xref>], genes in categories 1 to 4 correspond to low expression genes (mean expression level &lt;5 FPKM), those in categories 5 to 21 to medium expression genes (5&#x2009;&#x2264;&#x2009;mean expression level &lt;200 FPKM) and those in categories 22 to 30, to high expression genes (mean expression level &#x2265;200 FPKM). Interestingly the inflexion point also corresponded to the threshold between medium and high expression genes. For medium expression genes, the expression level was positively correlated with the structural features whereas for high expression genes, we found a negative correlation. For low expression genes, the observed relationship might be an artifact resulting from the detection threshold of low abundance transcripts. Indeed some of these genes might have been considered as expressed when actually they were not. Therefore, these four classes (1 to 4) might not be reliable as they might contain a mix of expressed and non-expressed genes leading to average structural feature values that are not representative of expressed genes. For the mean exon and intron length, no clear relationship was observed even though the mean exon length tends to decrease as the expression level increases. Such a non-monotonic relationship has already been observed in other organisms, including human, <italic>Caenorhabditis elegans</italic>, <italic>Drosophila melanogaster</italic>, <italic>A. thaliana</italic>, and soybean [<xref ref-type="bibr" rid="CR16">16</xref>,<xref ref-type="bibr" rid="CR18">18</xref>]. If the &#x2018;selection for economy&#x2019; fits for highly expressed genes, it cannot apply to low to medium expression genes. The &#x2018;genome design&#x2019; model has been proposed to explain this relationship [<xref ref-type="bibr" rid="CR17">17</xref>,<xref ref-type="bibr" rid="CR66">66</xref>,<xref ref-type="bibr" rid="CR75">75</xref>,<xref ref-type="bibr" rid="CR76">76</xref>]. It suggests that the structural features of a gene are mostly determined by its functional load. Highly and widely expressed genes would not require a fine regulation and therefore less regulatory sequences. By contrast, for low/medium expression, condition-specific genes, longer intragenic non-coding sequences would allow for a more complex regulation. Since the number of alternative transcripts follows the same distribution, one can hypothesize that the greater number of exons and the larger intronic sequences might allow for a greater transcriptional complexity leading to a greater specificity in gene expression. A detailed analysis of transcript size based on the 30,232 isoforms showed a negative correlation with expression level, regardless of the expression class (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figure S1). This finding reinforces the hypothesis that gene structure would be determined by its function (&#x2018;genome design&#x2019; model) whereas the expression of the different transcripts from a given gene would be subject to the energetic cost (&#x2018;selection for economy&#x2019; model).</p>
+      </sec>
+      <sec id="Sec7">
+        <title>Gene structural and functional features are partitioned on chromosome 3B</title>
+        <p>To investigate their relationship with chromosome partitioning, the expression breadth, expression level, transcript size, number of exons, cumulative intron length, mean exon and intron length, and the number of alternative transcripts were computed in the five regions of chromosome 3B, namely R1, R2a, C, R2b, and R3 (Figure&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>A). For all features but mean exon and intron length, the regions can be classified in three contrasting groups. The first one includes regions R1 and R3, the second one, R2a and R2b, and the third one, C. All of the features decrease along the centromere-telomere axis. Thus, on average, genes in distal regions are expressed at a lower level, more specifically and have fewer isoforms than those in the proximal regions. In addition, they are shorter, with fewer exons and shorter intronic sequences. Genes located in region C tend to have shorter exons, while for the mean intron length, no significant differences were observed between the five regions. A segmentation analysis of these properties suggests a partitioning of the chromosome rather than a regular gradient from centromere to telomeres (Figure&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>B). Interestingly, the boundaries of the distal segments fit almost perfectly with the R1 and R3 regions defined by Choulet <italic>et al.</italic> [<xref ref-type="bibr" rid="CR33">33</xref>] based on recombination. It is worth noting that the analysis of chromosomes 3A and 3D based on their draft assembly [<xref ref-type="bibr" rid="CR31">31</xref>] also revealed a strong partitioning of expression breadth, suggesting that the features observed on chromosome 3B should be conserved at the whole wheat genome level (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S2).<fig id="Fig4"><label>Figure 4</label><caption><p><bold>Distribution and functional partitioning of wheat chromosome 3B. (A)</bold> Boxplots of structural and functional gene features in the five main regions of the chromosome 3B (R1 in red; R2a and R2b in blue; C in orange; R3 in green). (a) Gene expression in FPKM; (b) expression breadth in number of conditions; (c) number of alternative transcripts per gene; (d) transcript length; (e) exon number; (f) mean exon length; (g) cumulative intron length; (h) mean intron length. <bold>(B)</bold> Distribution and segmentation analysis of (a) gene expression in FPKM, (b) expression breadth in number of conditions, (c) number of alternative transcripts per gene, (d) transcript length, (e) exon number, (f) mean exon length, (g) cumulative intron length, (h) mean intron length. Sliding window size: 10&#xA0;Mb, step: 1&#xA0;Mb. The five main regions of the chromosome 3B are depicted at the bottom of the graph: R1 in red; R2a and R2b in blue; C in orange; R3 in green.</p></caption><graphic xlink:href="13059_2015_601_Fig4_HTML" id="MO4"/></fig></p>
+        <p>To see to what extent the non-monotonic relationship between expression level and gene structural features observed at the whole chromosome level is conserved at the region level, we applied the same analysis to regions R1/R3 and R2a/R2b. Region C was not included due to the limited number of genes present in this region. Interestingly, the chromosomal pattern remained the same in each region (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figures S3 and S4). Even though the average expression level was lower in R1/R3 regions, the mean expression level value of the inflexion point was conserved in the two regions, around 200 FPKM, the approximate threshold between medium and high expression genes. This finding clearly shows that the &#x2018;selection for economy&#x2019; and &#x2018;genome design&#x2019; models apply all along the chromosome independently of other features and strongly suggests that the evolutionary forces that have led to the chromosome partitioning are distinct from the molecular mechanisms governing gene expression.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>Chromosome conformation may play a role in gene regulation</title>
+        <p>A hierarchical clustering of the 5,185 expressed protein-coding gene primary transcripts was performed based on their expression profiles in the 15 conditions. Genes were aggregated into 55 distinct clusters according to their expression profiles. Based on the median value of intergenic distances of 30&#xA0;kb, Choulet <italic>et al.</italic> [<xref ref-type="bibr" rid="CR33">33</xref>] estimated that 73% of genes were organized in small islands or &#x2018;<italic>insulae</italic>&#x2019;. Using the same criteria, 3,465 out of the 5,185 expressed genes (67%) were found to be organized in 1,199 <italic>insulae</italic>, comprising 2.9 genes on average. Out of these 3,465 genes, 1,218 (35.2%) belong to the same expression cluster as their direct neighbor, defining 718 co-expressed gene pairs. This proportion is higher than the previously reported value of 11% [<xref ref-type="bibr" rid="CR29">29</xref>] most probably because of the higher resolution achieved with a reference sequence compared to a partial gene dataset. Such enrichment has already been reported in other organisms such as human, mouse, <italic>A. thaliana</italic>, rice, and fruit fly where the percentage of adjacent co-expressed genes is in the range of 2% to 20% [<xref ref-type="bibr" rid="CR11">11</xref>,<xref ref-type="bibr" rid="CR12">12</xref>,<xref ref-type="bibr" rid="CR15">15</xref>,<xref ref-type="bibr" rid="CR80">80</xref>,<xref ref-type="bibr" rid="CR81">81</xref>]. However, these percentages are relatively low compared to that of wheat. One can hypothesize that the higher proportion of co-expressed genes found in wheat might result from the high rate of tandem duplication in this genome [<xref ref-type="bibr" rid="CR33">33</xref>]. However, of the 718 co-expressed gene pairs, only 46 (6.4%) correspond to duplicated genes. This clearly shows that duplicate genes alone do not explain the observed levels of co-expression, as already reported in other organisms [<xref ref-type="bibr" rid="CR9">9</xref>,<xref ref-type="bibr" rid="CR13">13</xref>,<xref ref-type="bibr" rid="CR15">15</xref>,<xref ref-type="bibr" rid="CR82">82</xref>]. Several other mechanisms have been proposed to explain the co-expression of neighboring genes, including shared promoters and chromatin remodeling. In <italic>A. thaliana</italic>, Chen <italic>et al.</italic> [<xref ref-type="bibr" rid="CR82">82</xref>] showed that co-expression was strongly enhanced for divergently transcribed genes within a 400-bp gene distance, probably as a result of shared promoters. For longer intergenic distances, co-expression is likely mediated by shared chromatin environments. On chromosome 3B, the average intergenic distance between co-expressed neighbor genes is 6.3&#xA0;kb and only 133 out of the 718 gene pairs are transcribed divergently. This suggests that shared promoters are not the main mechanism controlling the co-expression of neighbor genes and that other mechanisms such as chromatin conformation might be involved. This hypothesis is reinforced by the significant differences observed for 23 out of the 55 expression clusters between the five regions (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S2). For example, the vast majority (63%) of the genes present in the region C belong to cluster I that correspond to genes expressed in all conditions whereas this cluster represents only 23% to 24% of region R1 and R3 genes (Figure&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>). Region R1 is enriched in genes preferentially expressed in leaf compared to other regions. Region R3 displays a higher proportion of spike- and grain-specific genes. In addition, expression clusters oscillated along chromosome, forming chromosomal domains. These findings are consistent with the Gene Ontology term enrichment analysis that revealed that distal regions were enriched in genes involved in adaptive processes such as response to abiotic stimuli or stress [<xref ref-type="bibr" rid="CR33">33</xref>].<fig id="Fig5"><label>Figure 5</label><caption><p><bold>Distribution of the percentage of genes from three different expression clusters.</bold> Z-score of the percentage of expressed genes for a given cluster in a 10-Mb sliding window (step 1&#xA0;Mb) along chromosome 3B. Positive values are in blue, negative values in red. <bold>(a)</bold> Constitutively expressed genes; <bold>(b)</bold> spike- and grain-specific genes; <bold>(c)</bold> genes preferentially expressed in leaf. The five main regions of the chromosome 3B are depicted at the bottom of the graph: R1 in red; R2a and R2b in blue; C in orange; R3 in green.</p></caption><graphic xlink:href="13059_2015_601_Fig5_HTML" id="MO5"/></fig></p>
+        <p>Even though transcription sites are distributed throughout the entire chromosome when looking at the plant development at a whole, our results show that 3B is organized in chromosomal domains, suggesting that gene position influences the spatio-temporal regulation of their expression. Such domains have recently been reported for genes expressed in wheat endosperm [<xref ref-type="bibr" rid="CR23">23</xref>]. While no overall subgenome dominance has been observed in wheat, abundant transcriptional dominance of subgenome segments as well as asymmetrical expression of neighboring genes were observed [<xref ref-type="bibr" rid="CR23">23</xref>,<xref ref-type="bibr" rid="CR31">31</xref>]. This strongly differs from other polyploid or paleopolyploid species such as cotton, <italic>Brassica rapa</italic> or maize in which a clear subgenome dominance was observed [<xref ref-type="bibr" rid="CR83">83</xref>-<xref ref-type="bibr" rid="CR85">85</xref>]. This specific pattern of the wheat genome suggests that, in this species, polyploidization might have impacted gene expression through the formation of dominant chromosome domains rather than overall subgenome dominance. In addition, it has been shown that the spatial organization of genomes in the interphase cell nucleus is tissue-specific [<xref ref-type="bibr" rid="CR86">86</xref>]. This positioning of chromosomes is non-random and is likely to play a role in gene regulation [<xref ref-type="bibr" rid="CR87">87</xref>,<xref ref-type="bibr" rid="CR88">88</xref>]. In wheat, the interphase chromosomes are not fully decondensed but adopt a regular Rabl configuration, a highly polarized pattern with the two chromosome arms lying next to each other and the centromeres and telomeres located at opposite poles of the nuclei [<xref ref-type="bibr" rid="CR89">89</xref>-<xref ref-type="bibr" rid="CR91">91</xref>]. The presence of this organization is also known to vary greatly among tissues or developmental stages of an organism [<xref ref-type="bibr" rid="CR90">90</xref>]. Then, one can hypothesize that this configuration might play a role in gene regulation through the partial decondensation of given chromosomal regions in specific tissues and at specific developmental stages, leading to the observed spatial partitioning of genes displaying similar expression profiles. This hypothesis is well supported by our previous results [<xref ref-type="bibr" rid="CR33">33</xref>]. Indeed, a similar recombination- and expression breadth-based partitioning was found in barley in which the Rabl configuration is also observed, but not in maize which displays neither entirely Rabl nor entirely random chromosome organization [<xref ref-type="bibr" rid="CR89">89</xref>,<xref ref-type="bibr" rid="CR90">90</xref>].</p>
+      </sec>
+    </sec>
+    <sec id="Sec9" sec-type="conclusion">
+      <title>Conclusions</title>
+      <p>By combining the first reference sequence of a wheat chromosome with deep transcriptome sequencing data covering the whole plant development, we constructed a high density transcription map of the wheat chromosome 3B, comprising more than 8,800 transcriptionally active regions distributed throughout the entire chromosome. By studying the relationships between genome and gene structure and expression, we unraveled two interconnected mechanisms. The first one is a universal mechanism that relates to the &#x2018;selection for economy&#x2019; and &#x2018;genome design&#x2019; models and links gene structure and function, regardless of the gene position. The second one is an evolutionary force that links gene structure and function to gene position, leading to a strong partitioning of the wheat chromosome 3B. Since this partitioning is also observed in barley but not in other grasses, one can hypothesize that it has evolved with genome organization and is related to Triticeae-specific adaptation.</p>
+    </sec>
+    <sec id="Sec10" sec-type="materials|methods">
+      <title>Material and methods</title>
+      <sec id="Sec11">
+        <title>Sample preparation and sequencing</title>
+        <p>Total RNAs were extracted in duplicates from five organs (root, leaf, stem, spike, and grain) at three developmental stages each from hexaploid wheat <italic>cv.</italic> Chinese Spring [<xref ref-type="bibr" rid="CR28">28</xref>] (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S3). RNA quality was assessed using an RNA nano Chip on the Agilent 2100 Bioanalyzer (Agilent Technologies, Santa Clara, CA, USA) and the RNA integrity number (RIN) was calculated for each sample. Only sample with a RIN greater than 7 were used for the library construction.</p>
+        <p>The 30 strand-non-specific RNA-seq libraries (representing the 15 conditions in duplicates) were constructed from 4&#xA0;&#x3BC;g of total RNA using the Illumina TruSeq&#x2122; RNA sample preparation Kit (Illumina, San Diego, CA, USA) according to the manufacturer&#x2019;s protocol, with a library insert size of 300&#xA0;bp (fragmentation time of 12&#xA0;min). Library profiles were evaluated using an Agilent 2100 Bioanalyzer. Illumina indexes were used to pool two samples per lane. Libraries were sequenced on an Illumina HiSeq2000 with 2&#x2009;&#xD7;&#x2009;100-bp paired-end reads.</p>
+        <p>For strand-specific RNA-seq libraries, 12&#xA0;&#x3BC;g of total RNAs from the same organ were pooled (4&#xA0;&#x3BC;g per developmental stage) and polyA+ enriched RNAs were purified using the Ambion MicropolyA Purist Kit (Life Technologies, Carlsbad, CA, USA). Fifty nanograms of purified poly A+ RNAs were used to construct the oriented RNA-seq libraries with the ScriptSeq v2 RNA-seq Library Preparation kit (Epicentre, Madison, WI, USA) following the manufacturer&#x2019;s instructions. After cDNA synthesis, 15&#xA0;cycles PCR were performed to amplify the fragments. Libraries were purified by Ampure beads (Beckmann Coulter, Indianapolis, IN, USA) and then quantified using a Qubit Fluorometer (Life Technologies). Library profiles were evaluated using an Agilent 2100 Bioanalyzer. Each library was sequenced using 101 base-length read chemistry on one lane of a single-end (SE) flow cell on the Illumina HiSeq2000. Read quality was checked with the FastQC v0.10.0 software [<xref ref-type="bibr" rid="CR92">92</xref>]. RNA-Seq data have been deposited under accession number ERP004714.</p>
+      </sec>
+      <sec id="Sec12">
+        <title>Read alignment and expression analysis</title>
+        <p>Illumina reads were mapped on the chromosome 3B scaffolds using Tophat2 v2.0.8 [<xref ref-type="bibr" rid="CR93">93</xref>,<xref ref-type="bibr" rid="CR94">94</xref>] and bowtie2 [<xref ref-type="bibr" rid="CR95">95</xref>] with the default parameters except: 0 mismatch, 0 splice-mismatch. PCR duplicates were removed with Samtools [<xref ref-type="bibr" rid="CR96">96</xref>] rmdup option and an annotation-guided read alignment was performed with Cufflinks v2.1.1 [<xref ref-type="bibr" rid="CR93">93</xref>,<xref ref-type="bibr" rid="CR97">97</xref>] to reconstruct transcripts and estimate transcript abundance in units of fragments per kb of exon per million mapped reads (FPKM) [<xref ref-type="bibr" rid="CR98">98</xref>]. Regions with FPKM values higher than zero were considered as expressed. TriAnnot-predicted regions were distinguished from unannotated regions (novel transcribed regions, NTRs) using the -g option. NTRs were reconstructed and ORFs were detected using transcripts_to_best_scoring_ORFs.pl (Trinity) [<xref ref-type="bibr" rid="CR99">99</xref>] and blasted against the Magnoliophyta database (BLASTX, e-value 10e-5). Based on the FPKM scale defined in by Hansey and collaborators [<xref ref-type="bibr" rid="CR79">79</xref>] expressed genes can be divided in three classes: genes with a FPKM value below 5 are low expressed, genes with a FPKM value greater or equal to 5 and less than or equal to 200 are medium expressed, and genes with a FPKM value greater than 200 are high expressed (semi-quantitative organization).</p>
+        <p>Sequences and annotations of the reference pseudomolecule and unassigned scaffolds have been deposited in ENA (project PRJEB4376) under accession numbers HG670306 and CBUC010000001 to CBUC010001450, respectively.</p>
+      </sec>
+      <sec id="Sec13">
+        <title>Segmentation/change-point analysis</title>
+        <p>Segmentation analyses were performed using the R package changepoint v1.0.6 [<xref ref-type="bibr" rid="CR100">100</xref>] with Binary Segmentation method and BIC penalty on the mean change. The different features that were subjected to this analysis were: recombination rate, transposable element density, predicted gene density, number of condition in which a gene is expressed. All these features were calculated in sliding windows of 10&#xA0;Mb with a step of 1&#xA0;Mb.</p>
+      </sec>
+      <sec id="Sec14">
+        <title>Statistical analysis</title>
+        <p>All statistical analyses were performed with the R software [<xref ref-type="bibr" rid="CR101">101</xref>]. Shapiro-Wilk test was used to test for normality of distribution. Correlation analyses were performed with Spearman rank correlation method. Outlier detection was performed using the formula: (Quantile 3 - Quantile 1)&#x2009;&#xD7;&#x2009;3 / Quantile 3, based on FPKM value and transcripts length of each gene. Genes were classified according to their average expression level and divided in 30 classes, with the same number of genes per class. R package ggplot2 was used to draw plot. Average comparison was performed using Welsh t.test to test for statistical significance between the five regions.</p>
+      </sec>
+      <sec id="Sec15">
+        <title>Hierarchical clustering</title>
+        <p>Hierarchical clustering was performed using the Hierarchical Clustering Explorer 3.5 software [<xref ref-type="bibr" rid="CR102">102</xref>] with the complete linkage method and the Pearson correlation coefficient. The minimal similarity to establish the clusters was set to 0.641 which is the Pearson correlation significant at the <italic>P</italic> value threshold of 0.01.</p>
+      </sec>
+      <sec id="Sec16">
+        <title>Gene ontology enrichment analysis</title>
+        <p>GOBU (Gene Ontology Browsing Utility [<xref ref-type="bibr" rid="CR103">103</xref>]) was used for enrichment calculations. The full set of 3B gene products annotated on the pseudomolecule [<xref ref-type="bibr" rid="CR33">33</xref>] was used as the reference comparison set for the enrichment analysis of non-expressed genes. <italic>P</italic> values were calculated under GOBU with the Multiview Plugin and Fisher&#x2019;s exact test.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="App1">
+        <sec id="Sec17">
+          <title>Additional files</title>
+          <p>
+            <media position="anchor" xlink:href="13059_2015_601_MOESM1_ESM.xlsx" id="MOESM1">
+              <label>Additional file 1: Table S1.</label>
+              <caption>
+                <p>GO term enrichment analysis of non-expressed genes. <bold>Table S2.</bold> Distribution of the 5,185 expressed protein coding genes according to their expression cluster and their chromosomal region. <bold>Table S3.</bold> Wheat RNA samples used for RNA-seq experiments.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="13059_2015_601_MOESM2_ESM.docx" id="MOESM2">
+              <label>Additional file 2: Figure S1.</label>
+              <caption>
+                <p>Alternative transcript length as a function of expression level category. <bold>Figure S2.</bold> Expression breadth-based segmentation analysis of homoeologous chromosomes 3A and 3D. <bold>Figure S3.</bold> Relationships between gene expression and gene structural and functional features in the R1 / R3 regions. <bold>Figure S4.</bold> Relationships between gene expression and gene structural and functional features in the R2a / R2b regions.</p>
+              </caption>
+            </media>
+          </p>
+        </sec>
+      </app>
+    </app-group>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-list>
+          <def-item>
+            <term>A3SS</term>
+            <def>
+              <p>Alternative 3&#x2032; splice site</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>A5SS</term>
+            <def>
+              <p>Alternative 5&#x2032; splice site</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>AS</term>
+            <def>
+              <p>Alternative splicing</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>BLAST</term>
+            <def>
+              <p>Basic Local Alignment Search Tool</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>bp</term>
+            <def>
+              <p>Base pairs</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term><italic>cis</italic>-NAT</term>
+            <def>
+              <p><italic>cis</italic>-natural antisense transcript</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>DNA</term>
+            <def>
+              <p>Deoxyribonucleic acid</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>FPKM</term>
+            <def>
+              <p>Fragments per kb of exon per million mapped reads</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>IR</term>
+            <def>
+              <p>Intron retention</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>kb</term>
+            <def>
+              <p>Kilobase pairs</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>lincRNA</term>
+            <def>
+              <p>Long intergenic non-coding ribonucleic acid</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>Mb</term>
+            <def>
+              <p>Megabase pairs</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>miRNA</term>
+            <def>
+              <p>Micro ribonucleic acid</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>mRNA</term>
+            <def>
+              <p>Messenger ribonucleic acid</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>MXE</term>
+            <def>
+              <p>Mutually exclusive exon</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>NAT</term>
+            <def>
+              <p>Natural antisense transcript</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>ncRNA</term>
+            <def>
+              <p>Noncoding ribonucleic acid</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>nt</term>
+            <def>
+              <p>Nucleotide</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>NTR</term>
+            <def>
+              <p>Novel transcribed region</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>ORF</term>
+            <def>
+              <p>Open reading frame</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>RNA</term>
+            <def>
+              <p>Ribonucleic acid</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>RNA-seq</term>
+            <def>
+              <p>Sequencing of RNA</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>TAR</term>
+            <def>
+              <p>Transcriptionally active region</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>TE</term>
+            <def>
+              <p>Transposable element</p>
+            </def>
+          </def-item>
+        </def-list>
+      </def-list>
+    </glossary>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Competing interests</bold>
+        </p>
+        <p>The authors declare that they have no competing interests.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Authors&#x2019; contributions</bold>
+        </p>
+        <p>LP constructed RNA-seq libraries, carried out RNA-seq data analyses, and drafted the manuscript. FC participated in RNA-seq data analyses and interpretation. AA and PW produced RNA-seq data. NG performed paralogous and syntenic/non-syntenic gene analyses. CF acquired the funding and corrected the manuscript. EP designed research, supervised all the analyses and drafted the manuscript. All authors read and approved the final manuscript.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>The authors would like to thank H&#xE9;l&#xE8;ne Rimbert for assistance in bioinformatics analysis. They also thank the International Wheat Genome Sequencing Consortium (IWGSC) for pre-publication access to the chromosome-based draft sequence of the wheat genome. This work was supported by grants from the French National Research Agency (ANR-09-GENM-025 3BSEQ) and France Agrimer. LP was funded by a grant from R&#xE9;gion Auvergne.</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bennett</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Leitch</surname>
+              <given-names>IJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Nuclear DNA amounts in angiosperms: targets, trends and tomorrow</article-title>
+          <source>Ann Bot</source>
+          <year>2011</year>
+          <volume>107</volume>
+          <fpage>467</fpage>
+          <lpage>590</lpage>
+          <pub-id pub-id-type="doi">10.1093/aob/mcq258</pub-id>
+          <?supplied-pmid 21257716?>
+          <pub-id pub-id-type="pmid">21257716</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ming</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Hou</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Dionne-Laporte</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Saw</surname>
+              <given-names>JH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The draft genome of the transgenic tropical fruit tree papaya (Carica papaya Linnaeus)</article-title>
+          <source>Nature</source>
+          <year>2008</year>
+          <volume>452</volume>
+          <fpage>991</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature06856</pub-id>
+          <?supplied-pmid 18432245?>
+          <pub-id pub-id-type="pmid">18432245</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <mixed-citation publication-type="other">CoGePedia. [<ext-link ext-link-type="uri" xlink:href="http://genomevolution.org/wiki/index.php/Main_Page">http://genomevolution.org/wiki/index.php/Main_Page</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>The International Brachypodium Initiative</collab>
+          </person-group>
+          <article-title>Genome sequencing and analysis of the model grass Brachypodium distachyon</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <fpage>763</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature08747</pub-id>
+          <pub-id pub-id-type="pmid">20148030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jaillon</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Aury</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Noel</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Policriti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Clepet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Casagrande</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The grapevine genome sequence suggests ancestral hexaploidization in major angiosperm phyla</article-title>
+          <source>Nature</source>
+          <year>2007</year>
+          <volume>449</volume>
+          <fpage>463</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature06148</pub-id>
+          <?supplied-pmid 17721507?>
+          <pub-id pub-id-type="pmid">17721507</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tuskan</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Difazio</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Jansson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bohlmann</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Grigoriev</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Hellsten</surname>
+              <given-names>U</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The genome of black cottonwood, Populus trichocarpa (Torr. &amp; Gray)</article-title>
+          <source>Science</source>
+          <year>2006</year>
+          <volume>313</volume>
+          <fpage>1596</fpage>
+          <lpage>604</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1128691</pub-id>
+          <?supplied-pmid 16973872?>
+          <pub-id pub-id-type="pmid">16973872</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmutz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cannon</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Schlueter</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Mitros</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome sequence of the palaeopolyploid soybean</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <fpage>178</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature08670</pub-id>
+          <?supplied-pmid 20075913?>
+          <pub-id pub-id-type="pmid">20075913</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schnable</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Ware</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Fulton</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Pasternak</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The B73 maize genome: complexity, diversity, and dynamics</article-title>
+          <source>Science</source>
+          <year>2009</year>
+          <volume>326</volume>
+          <fpage>1112</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1178534</pub-id>
+          <?supplied-pmid 19965430?>
+          <pub-id pub-id-type="pmid">19965430</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Sonnhammer</surname>
+              <given-names>EL</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic gene clustering analysis of pathways in eukaryotes</article-title>
+          <source>Genome Res</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>875</fpage>
+          <lpage>82</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.737703</pub-id>
+          <?supplied-pmid 12695325?>
+          <pub-id pub-id-type="pmid">12695325</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolutionary conservation of neighbouring gene pairs in plants</article-title>
+          <source>Gene</source>
+          <year>2009</year>
+          <volume>437</volume>
+          <fpage>71</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.gene.2009.02.012</pub-id>
+          <?supplied-pmid 19264115?>
+          <pub-id pub-id-type="pmid">19264115</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ren</surname>
+              <given-names>XY</given-names>
+            </name>
+            <name>
+              <surname>Fiers</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Stiekema</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Nap</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <article-title>Local coexpression domains of two to four genes in the genome of Arabidopsis</article-title>
+          <source>Plant Physiol</source>
+          <year>2005</year>
+          <volume>138</volume>
+          <fpage>923</fpage>
+          <lpage>34</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.104.055673</pub-id>
+          <?supplied-pmid 15923337?>
+          <pub-id pub-id-type="pmid">15923337</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ren</surname>
+              <given-names>XY</given-names>
+            </name>
+            <name>
+              <surname>Stiekema</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Nap</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <article-title>Local coexpression domains in the genome of rice show no microsynteny with Arabidopsis domains</article-title>
+          <source>Plant Mol Biol</source>
+          <year>2007</year>
+          <volume>65</volume>
+          <fpage>205</fpage>
+          <lpage>17</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11103-007-9209-0</pub-id>
+          <?supplied-pmid 17641976?>
+          <pub-id pub-id-type="pmid">17641976</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Williams</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Bowles</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Coexpression of neighboring genes in the genome of Arabidopsis thaliana</article-title>
+          <source>Genome Res</source>
+          <year>2004</year>
+          <volume>14</volume>
+          <fpage>1060</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.2131104</pub-id>
+          <?supplied-pmid 15173112?>
+          <pub-id pub-id-type="pmid">15173112</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Kohel</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Cho</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Alabady</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gene-rich islands for fiber development in the cotton genome</article-title>
+          <source>Genomics</source>
+          <year>2008</year>
+          <volume>92</volume>
+          <fpage>173</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ygeno.2008.05.010</pub-id>
+          <?supplied-pmid 18619771?>
+          <pub-id pub-id-type="pmid">18619771</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Horrocks</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lukens</surname>
+              <given-names>LN</given-names>
+            </name>
+          </person-group>
+          <article-title>Islands of co-expressed neighbouring genes in Arabidopsis thaliana suggest higher-order chromosome domains</article-title>
+          <source>Plant J</source>
+          <year>2006</year>
+          <volume>45</volume>
+          <fpage>347</fpage>
+          <lpage>57</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2005.02619.x</pub-id>
+          <?supplied-pmid 16412082?>
+          <pub-id pub-id-type="pmid">16412082</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carmel</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Koonin</surname>
+              <given-names>EV</given-names>
+            </name>
+          </person-group>
+          <article-title>A universal nonmonotonic relationship between gene compactness and expression levels in multicellular eukaryotes</article-title>
+          <source>Genome Biol Evol</source>
+          <year>2009</year>
+          <volume>1</volume>
+          <fpage>382</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.1093/gbe/evp038</pub-id>
+          <?supplied-pmid 20333206?>
+          <pub-id pub-id-type="pmid">20333206</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vinogradov</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>&#x2018;Genome design&#x2019; model and multicellular complexity: golden middle</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2006</year>
+          <volume>34</volume>
+          <fpage>5906</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkl773</pub-id>
+          <?supplied-pmid 17062620?>
+          <pub-id pub-id-type="pmid">17062620</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Woody</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Severin</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Bolon</surname>
+              <given-names>Y-T</given-names>
+            </name>
+            <name>
+              <surname>Joseph</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Diers</surname>
+              <given-names>BW</given-names>
+            </name>
+            <name>
+              <surname>Farmer</surname>
+              <given-names>AD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gene expression patterns are correlated with genomic and genic structure in soybean</article-title>
+          <source>Genome</source>
+          <year>2011</year>
+          <volume>54</volume>
+          <fpage>10</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1139/G10-090</pub-id>
+          <?supplied-pmid 21217801?>
+          <pub-id pub-id-type="pmid">21217801</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neale</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wegrzyn</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Stevens</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Zimin</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Puiu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Crepeau</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Decoding the massive genome of loblolly pine using haploid DNA and novel assembly strategies</article-title>
+          <source>Genome Biol</source>
+          <year>2014</year>
+          <volume>15</volume>
+          <fpage>R59</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2014-15-3-r59</pub-id>
+          <?supplied-pmid 24647006?>
+          <pub-id pub-id-type="pmid">24647006</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>ZJ</given-names>
+            </name>
+            <name>
+              <surname>Scheffler</surname>
+              <given-names>BE</given-names>
+            </name>
+            <name>
+              <surname>Dennis</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Triplett</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Toward sequencing cotton (Gossypium) genomes</article-title>
+          <source>Plant Physiol</source>
+          <year>2007</year>
+          <volume>145</volume>
+          <fpage>1303</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.107.107672</pub-id>
+          <?supplied-pmid 18056866?>
+          <pub-id pub-id-type="pmid">18056866</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ling</surname>
+              <given-names>HQ</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Draft genome of the wheat A-genome progenitor Triticum urartu</article-title>
+          <source>Nature</source>
+          <year>2013</year>
+          <volume>496</volume>
+          <fpage>87</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature11997</pub-id>
+          <?supplied-pmid 23535596?>
+          <pub-id pub-id-type="pmid">23535596</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jia</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Aegilops tauschii draft genome sequence reveals a gene repertoire for wheat adaptation</article-title>
+          <source>Nature</source>
+          <year>2013</year>
+          <volume>496</volume>
+          <fpage>91</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature12028</pub-id>
+          <?supplied-pmid 23535592?>
+          <pub-id pub-id-type="pmid">23535592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pfeifer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kugler</surname>
+              <given-names>KG</given-names>
+            </name>
+            <name>
+              <surname>Sandve</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Zhan</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Rudi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hvidsten</surname>
+              <given-names>TR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome interplay in the grain transcriptome of hexaploid bread wheat</article-title>
+          <source>Science</source>
+          <year>2014</year>
+          <volume>345</volume>
+          <fpage>1250091</fpage>
+          <pub-id pub-id-type="doi">10.1126/science.1250091</pub-id>
+          <?supplied-pmid 25035498?>
+          <pub-id pub-id-type="pmid">25035498</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gillies</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Futardo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Henry</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Gene expression in the developing aleurone and starchy endosperm of wheat</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2012</year>
+          <volume>10</volume>
+          <fpage>668</fpage>
+          <lpage>79</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1467-7652.2012.00705.x</pub-id>
+          <?supplied-pmid 22672716?>
+          <pub-id pub-id-type="pmid">22672716</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pellny</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Lovegrove</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Freeman</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tosi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Love</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name>
+              <surname>Knox</surname>
+              <given-names>JP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cell walls of developing wheat starchy endosperm: comparison of composition and RNA-Seq transcriptome</article-title>
+          <source>Plant Physiol</source>
+          <year>2012</year>
+          <volume>158</volume>
+          <fpage>612</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.111.189191</pub-id>
+          <?supplied-pmid 22123899?>
+          <pub-id pub-id-type="pmid">22123899</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barto&#x161;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Kofler</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Havr&#xE1;nkov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kopeck&#xFD;</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Such&#xE1;nkov&#xE1;</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A first survey of the rye (<italic>Secale cereale</italic>) genome composition through BAC end sequencing of the short arm of chromosome 1R</article-title>
+          <source>BMC Plant Biol</source>
+          <year>2008</year>
+          <volume>8</volume>
+          <fpage>95</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2229-8-95</pub-id>
+          <?supplied-pmid 18803819?>
+          <pub-id pub-id-type="pmid">18803819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ergen</surname>
+              <given-names>NZ</given-names>
+            </name>
+            <name>
+              <surname>Thimmapuram</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bohnert</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Budak</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcriptome pathways unique to dehydration tolerant relatives of modern wheat</article-title>
+          <source>Funct Integr Genomics</source>
+          <year>2009</year>
+          <volume>9</volume>
+          <fpage>377</fpage>
+          <lpage>96</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10142-009-0123-1</pub-id>
+          <?supplied-pmid 19330365?>
+          <pub-id pub-id-type="pmid">19330365</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Choulet</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Wicker</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Rustenholz</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Salse</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Leroy</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Megabase level sequencing reveals contrasted organization and evolution patterns of the wheat gene and transposable element spaces</article-title>
+          <source>Plant Cell</source>
+          <year>2010</year>
+          <volume>22</volume>
+          <fpage>1686</fpage>
+          <lpage>701</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.110.074187</pub-id>
+          <?supplied-pmid 20581307?>
+          <pub-id pub-id-type="pmid">20581307</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rustenholz</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Choulet</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Laugier</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Saf&#xE1;r</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Simkov&#xE1;</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Dolezel</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A 3,000-loci transcription map of chromosome 3B unravels the structural and functional features of gene islands in hexaploid wheat</article-title>
+          <source>Plant Physiol</source>
+          <year>2011</year>
+          <volume>157</volume>
+          <fpage>1596</fpage>
+          <lpage>608</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.111.183921</pub-id>
+          <?supplied-pmid 22034626?>
+          <pub-id pub-id-type="pmid">22034626</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raats</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Frenkel</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Krugman</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Dodek</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Sela</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Simkova</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The physical map of wheat chromosome 1BS provides insights into its gene space organization and evolution</article-title>
+          <source>Genome Biol</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>R138</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2013-14-12-r138</pub-id>
+          <?supplied-pmid 24359668?>
+          <pub-id pub-id-type="pmid">24359668</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>The International Wheat Genome Sequencing Consortium</collab>
+          </person-group>
+          <article-title>A chromosome-based draft sequence of the hexaploid bread wheat genome</article-title>
+          <source>Science</source>
+          <year>2014</year>
+          <volume>345</volume>
+          <fpage>1251788</fpage>
+          <pub-id pub-id-type="doi">10.1126/science.1251788</pub-id>
+          <pub-id pub-id-type="pmid">25035500</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brenchley</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Spannagl</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pfeifer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GL</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;Amore</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>AM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Analysis of the bread wheat genome using whole-genome shotgun sequencing</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>705</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature11650</pub-id>
+          <?supplied-pmid 23192148?>
+          <pub-id pub-id-type="pmid">23192148</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Choulet</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Alberti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Theil</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Glover</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Barbe</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Daron</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Structural and functional partitioning of bread wheat chromosome 3B</article-title>
+          <source>Science</source>
+          <year>2014</year>
+          <volume>345</volume>
+          <fpage>1249721</fpage>
+          <pub-id pub-id-type="doi">10.1126/science.1249721</pub-id>
+          <?supplied-pmid 25035497?>
+          <pub-id pub-id-type="pmid">25035497</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>International Rice Genome Sequencing Project</collab>
+          </person-group>
+          <article-title>The map-based sequence of the rice genome</article-title>
+          <source>Nature</source>
+          <year>2005</year>
+          <volume>436</volume>
+          <fpage>793</fpage>
+          <lpage>800</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature03895</pub-id>
+          <pub-id pub-id-type="pmid">16100779</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paterson</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>Bowers</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Bruggmann</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Dubchak</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Grimwood</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gundlach</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Sorghum bicolor genome and the diversification of grasses</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <fpage>551</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature07723</pub-id>
+          <?supplied-pmid 19189423?>
+          <pub-id pub-id-type="pmid">19189423</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vogel</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Garvin</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Mockler</surname>
+              <given-names>TC</given-names>
+            </name>
+            <name>
+              <surname>Schmutz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rokhsar</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bevan</surname>
+              <given-names>MW</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome sequencing and analysis of the model grass Brachypodium distachyon</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <fpage>763</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature08747</pub-id>
+          <pub-id pub-id-type="pmid">20148030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ma</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Jiao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Su</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A microarray analysis of the rice transcriptome and its comparison to Arabidopsis</article-title>
+          <source>Genome Res</source>
+          <year>2005</year>
+          <volume>15</volume>
+          <fpage>1274</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.3657405</pub-id>
+          <?supplied-pmid 16140994?>
+          <pub-id pub-id-type="pmid">16140994</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Q</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Function annotation of the rice transcriptome at single-nucleotide resolution by RNA-seq</article-title>
+          <source>Genome Res</source>
+          <year>2010</year>
+          <volume>20</volume>
+          <fpage>1238</fpage>
+          <lpage>49</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.106120.110</pub-id>
+          <?supplied-pmid 20627892?>
+          <pub-id pub-id-type="pmid">20627892</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sekhon</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Childs</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Hansey</surname>
+              <given-names>CN</given-names>
+            </name>
+            <name>
+              <surname>Buell</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>de Leon</surname>
+              <given-names>N</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide atlas of transcription during maize development</article-title>
+          <source>Plant J</source>
+          <year>2011</year>
+          <volume>66</volume>
+          <fpage>553</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2011.04527.x</pub-id>
+          <?supplied-pmid 21299659?>
+          <pub-id pub-id-type="pmid">21299659</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sekhon</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Briskine</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>CN</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Springer</surname>
+              <given-names>NM</given-names>
+            </name>
+            <name>
+              <surname>Buell</surname>
+              <given-names>CR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Maize gene atlas developed by RNA sequencing and comparative evaluation of transcriptomes based on RNA sequencing and microarrays</article-title>
+          <source>PLoS One</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <fpage>e61005</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0061005</pub-id>
+          <?supplied-pmid 23637782?>
+          <pub-id pub-id-type="pmid">23637782</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Libault</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Farmer</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Joshi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takahashi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Langley</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Franklin</surname>
+              <given-names>LD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>An integrated transcriptome atlas of the crop model Glycine max, and its use in comparative analyses in plants</article-title>
+          <source>Plant J</source>
+          <year>2010</year>
+          <volume>63</volume>
+          <fpage>86</fpage>
+          <lpage>99</lpage>
+          <?supplied-pmid 20408999?>
+          <pub-id pub-id-type="pmid">20408999</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>He</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Friebe</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>J-M</given-names>
+            </name>
+          </person-group>
+          <article-title>Allopolyploidy alters gene expression in the highly stable hexaploid wheat</article-title>
+          <source>Plant Mol Biol</source>
+          <year>2003</year>
+          <volume>52</volume>
+          <fpage>401</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="doi">10.1023/A:1023965400532</pub-id>
+          <?supplied-pmid 12856945?>
+          <pub-id pub-id-type="pmid">12856945</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhong</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Rapid alterations of gene expression and cytosine methylation in newly synthesized Brassica napus allopolyploids</article-title>
+          <source>Planta</source>
+          <year>2009</year>
+          <volume>229</volume>
+          <fpage>471</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00425-008-0844-8</pub-id>
+          <?supplied-pmid 18998158?>
+          <pub-id pub-id-type="pmid">18998158</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zou</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Lehti-Shiu</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Thibaud-Nissen</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Prakash</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Buell</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Shiu</surname>
+              <given-names>S-H</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolutionary and expression signatures of pseudogenes in arabidopsis and rice</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>151</volume>
+          <fpage>3</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.109.140632</pub-id>
+          <?supplied-pmid 19641029?>
+          <pub-id pub-id-type="pmid">19641029</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thibaud-Nissen</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Ouyang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Buell</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification and characterization of pseudogenes in the rice gene complement</article-title>
+          <source>BMC Genomics</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>317</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-10-317</pub-id>
+          <?supplied-pmid 19607679?>
+          <pub-id pub-id-type="pmid">19607679</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vicient</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcriptional activity of transposable elements in maize</article-title>
+          <source>BMC Genomics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>601</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-11-601</pub-id>
+          <?supplied-pmid 20973992?>
+          <pub-id pub-id-type="pmid">20973992</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X-J</given-names>
+            </name>
+          </person-group>
+          <article-title>Pseudogenes: pseudo or real functional elements?</article-title>
+          <source>J Genet Genomics</source>
+          <year>2013</year>
+          <volume>40</volume>
+          <fpage>171</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jgg.2013.03.003</pub-id>
+          <?supplied-pmid 23618400?>
+          <pub-id pub-id-type="pmid">23618400</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wen</surname>
+              <given-names>Y-Z</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>L-L</given-names>
+            </name>
+            <name>
+              <surname>Qu</surname>
+              <given-names>L-H</given-names>
+            </name>
+            <name>
+              <surname>Ayala</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Lun</surname>
+              <given-names>Z-R</given-names>
+            </name>
+          </person-group>
+          <article-title>Pseudogenes are not pseudo any more</article-title>
+          <source>RNA Biol</source>
+          <year>2012</year>
+          <volume>9</volume>
+          <fpage>27</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="doi">10.4161/rna.9.1.18277</pub-id>
+          <?supplied-pmid 22258143?>
+          <pub-id pub-id-type="pmid">22258143</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jung</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Deng</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bernad</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide analysis uncovers regulation of long intergenic noncoding RNAs in arabidopsis</article-title>
+          <source>Plant Cell</source>
+          <year>2012</year>
+          <volume>24</volume>
+          <fpage>4333</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.112.102855</pub-id>
+          <?supplied-pmid 23136377?>
+          <pub-id pub-id-type="pmid">23136377</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50.</label>
+        <mixed-citation publication-type="other">Shuai P, Liang D, Tang S, Zhang Z, Ye C-Y, Su Y et al. Genome-wide identification and functional prediction of novel and drought-responsive lincRNAs in Populus trichocarpa. J Exp Bot. 2014; doi:10.1093/jxb/eru256.</mixed-citation>
+      </ref>
+      <ref id="CR51">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Britto-Kido</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Ferreira Neto</surname>
+              <given-names>JRC</given-names>
+            </name>
+            <name>
+              <surname>Pandolfi</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Marcelino-Guimar&#xE3;es</surname>
+              <given-names>FC</given-names>
+            </name>
+            <name>
+              <surname>Nepomuceno</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Vilela Abdelnoor</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Natural antisense transcripts in plants: a review and identification in soybean infected with Phakopsora pachyrhizi SuperSAGE Library</article-title>
+          <source>Sci World J</source>
+          <year>2013</year>
+          <volume>2013</volume>
+          <fpage>14</fpage>
+          <pub-id pub-id-type="doi">10.1155/2013/219798</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR52">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y-C</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y-Q</given-names>
+            </name>
+          </person-group>
+          <article-title>Long noncoding RNAs: new regulators in plant development</article-title>
+          <source>Biochem Biophysical Res Commun</source>
+          <year>2013</year>
+          <volume>436</volume>
+          <fpage>111</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.bbrc.2013.05.086</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR53">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>XJ</given-names>
+            </name>
+            <name>
+              <surname>Gaasterland</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Chua</surname>
+              <given-names>NH</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide prediction and identification of cis-natural antisense transcripts in Arabidopsis thaliana</article-title>
+          <source>Genome Biol</source>
+          <year>2005</year>
+          <volume>6</volume>
+          <fpage>R30</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2005-6-4-r30</pub-id>
+          <?supplied-pmid 15833117?>
+          <pub-id pub-id-type="pmid">15833117</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR54">
+        <label>54.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Coram</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Settles</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>X</given-names>
+            </name>
+          </person-group>
+          <article-title>Large-scale analysis of antisense transcription in wheat using the Affymetrix GeneChip Wheat Genome Array</article-title>
+          <source>BMC Genomics</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>253</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-10-253</pub-id>
+          <?supplied-pmid 19480707?>
+          <pub-id pub-id-type="pmid">19480707</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR55">
+        <label>55.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poole</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>GLA</given-names>
+            </name>
+            <name>
+              <surname>Werner</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Biggi</surname>
+              <given-names>GF</given-names>
+            </name>
+            <name>
+              <surname>Coghill</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gibbings</surname>
+              <given-names>JG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Analysis of wheat sage tags reveals evidence for widespread antisense transcription</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>475</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-9-475</pub-id>
+          <?supplied-pmid 18847483?>
+          <pub-id pub-id-type="pmid">18847483</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR56">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Osato</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yamada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Satoh</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ooka</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Antisense transcripts with rice full-length cDNAs</article-title>
+          <source>Genome Biol</source>
+          <year>2003</year>
+          <volume>5</volume>
+          <fpage>R5</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2003-5-1-r5</pub-id>
+          <?supplied-pmid 14709177?>
+          <pub-id pub-id-type="pmid">14709177</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR57">
+        <label>57.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Strand-specific RNA-seq reveals widespread occurrence of novel cis-natural antisense transcripts in rice</article-title>
+          <source>BMC Genomics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>721</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-13-721</pub-id>
+          <?supplied-pmid 23259405?>
+          <pub-id pub-id-type="pmid">23259405</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR58">
+        <label>58.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Lii</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Polishko</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Chinnusamy</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mechanisms of small RNA generation from cis-NATs in response to environmental and developmental cues</article-title>
+          <source>Mol Plant</source>
+          <year>2013</year>
+          <volume>6</volume>
+          <fpage>704</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="doi">10.1093/mp/sst051</pub-id>
+          <?supplied-pmid 23505223?>
+          <pub-id pub-id-type="pmid">23505223</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR59">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abranches</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Beven</surname>
+              <given-names>AF</given-names>
+            </name>
+            <name>
+              <surname>Aragon-Alcaide</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Shaw</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcription sites are not correlated with chromosome territories in wheat nuclei</article-title>
+          <source>J Cell Biol</source>
+          <year>1998</year>
+          <volume>143</volume>
+          <fpage>5</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="doi">10.1083/jcb.143.1.5</pub-id>
+          <?supplied-pmid 9763416?>
+          <pub-id pub-id-type="pmid">9763416</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR60">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baker</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Bayer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cook</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Drei&#xDF;ig</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Dhillon</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Russell</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The low recombining pericentromeric region of barley restricts gene diversity and evolution but not gene expression</article-title>
+          <source>Plant J</source>
+          <year>2014</year>
+          <volume>79</volume>
+          <fpage>981</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="doi">10.1111/tpj.12600</pub-id>
+          <?supplied-pmid 24947331?>
+          <pub-id pub-id-type="pmid">24947331</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR61">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Deep RNA-Seq uncovers the peach transcriptome landscape</article-title>
+          <source>Plant Mol Biol</source>
+          <year>2013</year>
+          <volume>83</volume>
+          <fpage>365</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11103-013-0093-5</pub-id>
+          <?supplied-pmid 23783411?>
+          <pub-id pub-id-type="pmid">23783411</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR62">
+        <label>62.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Werner</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Biological functions of natural antisense transcripts</article-title>
+          <source>BMC Biol</source>
+          <year>2013</year>
+          <volume>11</volume>
+          <fpage>31</fpage>
+          <pub-id pub-id-type="doi">10.1186/1741-7007-11-31</pub-id>
+          <?supplied-pmid 23577602?>
+          <pub-id pub-id-type="pmid">23577602</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR63">
+        <label>63.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nishizawa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Okumura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ikeya</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kimura</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulation of inducible gene expression by natural antisense transcripts</article-title>
+          <source>Front Biosci</source>
+          <year>2012</year>
+          <volume>17</volume>
+          <fpage>938</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="doi">10.2741/3965</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR64">
+        <label>64.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Faghihi</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Wahlestedt</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulatory roles of natural antisense transcripts</article-title>
+          <source>Nat Rev Mol Cell Biol</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>637</fpage>
+          <lpage>43</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrm2738</pub-id>
+          <?supplied-pmid 19638999?>
+          <pub-id pub-id-type="pmid">19638999</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR65">
+        <label>65.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Niu</surname>
+              <given-names>DK</given-names>
+            </name>
+          </person-group>
+          <article-title>Selection for the miniaturization of highly expressed genes</article-title>
+          <source>Biochem Biophys Res Commun</source>
+          <year>2007</year>
+          <volume>360</volume>
+          <fpage>586</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.bbrc.2007.06.085</pub-id>
+          <?supplied-pmid 17610841?>
+          <pub-id pub-id-type="pmid">17610841</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR66">
+        <label>66.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vinogradov</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Compactness of human housekeeping genes: selection for economy or genomic design?</article-title>
+          <source>Trends Genet</source>
+          <year>2004</year>
+          <volume>20</volume>
+          <fpage>248</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tig.2004.03.006</pub-id>
+          <?supplied-pmid 15109779?>
+          <pub-id pub-id-type="pmid">15109779</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR67">
+        <label>67.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marquez</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Simpson</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Barta</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kalyna</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcriptome survey reveals increased complexity of the alternative splicing landscape in Arabidopsis</article-title>
+          <source>Genome Res</source>
+          <year>2012</year>
+          <volume>22</volume>
+          <fpage>1184</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.134106.111</pub-id>
+          <?supplied-pmid 22391557?>
+          <pub-id pub-id-type="pmid">22391557</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR68">
+        <label>68.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Walters</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Lum</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Sablok</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Min</surname>
+              <given-names>XJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide landscape of alternative splicing events in Brachypodium distachyon</article-title>
+          <source>DNA Res</source>
+          <year>2013</year>
+          <volume>20</volume>
+          <fpage>163</fpage>
+          <lpage>71</lpage>
+          <pub-id pub-id-type="doi">10.1093/dnares/dss041</pub-id>
+          <?supplied-pmid 23297300?>
+          <pub-id pub-id-type="pmid">23297300</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR69">
+        <label>69.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Zeng</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>RNA-seq analyses of multiple meristems of soybean: novel and alternative transcripts, evolutionary and functional implications</article-title>
+          <source>BMC Plant Biol</source>
+          <year>2014</year>
+          <volume>14</volume>
+          <fpage>169</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2229-14-169</pub-id>
+          <?supplied-pmid 24939556?>
+          <pub-id pub-id-type="pmid">24939556</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR70">
+        <label>70.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayer</surname>
+              <given-names>KF</given-names>
+            </name>
+            <name>
+              <surname>Waugh</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Schulman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Langridge</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Platzer</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A physical, genetic and functional sequence assembly of the barley genome</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>711</fpage>
+          <lpage>6</lpage>
+          <?supplied-pmid 23075845?>
+          <pub-id pub-id-type="pmid">23075845</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR71">
+        <label>71.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Syed</surname>
+              <given-names>NH</given-names>
+            </name>
+            <name>
+              <surname>Kalyna</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Marquez</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Barta</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>JW</given-names>
+            </name>
+          </person-group>
+          <article-title>Alternative splicing in plants&#x2013;coming of age</article-title>
+          <source>Trends Plant Sci</source>
+          <year>2012</year>
+          <volume>17</volume>
+          <fpage>616</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tplants.2012.06.001</pub-id>
+          <?supplied-pmid 22743067?>
+          <pub-id pub-id-type="pmid">22743067</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR72">
+        <label>72.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barbazuk</surname>
+              <given-names>WB</given-names>
+            </name>
+            <name>
+              <surname>Fu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>McGinnis</surname>
+              <given-names>KM</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide analyses of alternative splicing in plants: opportunities and challenges</article-title>
+          <source>Genome Res</source>
+          <year>2008</year>
+          <volume>18</volume>
+          <fpage>1381</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.053678.106</pub-id>
+          <?supplied-pmid 18669480?>
+          <pub-id pub-id-type="pmid">18669480</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR73">
+        <label>73.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Keren</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Lev-Maor</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ast</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Alternative splicing and evolution: diversification, exon definition and function</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>345</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg2776</pub-id>
+          <?supplied-pmid 20376054?>
+          <pub-id pub-id-type="pmid">20376054</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR74">
+        <label>74.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>BB</given-names>
+            </name>
+            <name>
+              <surname>Brendel</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomewide comparative analysis of alternative splicing in plants</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2006</year>
+          <volume>103</volume>
+          <fpage>7175</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0602039103</pub-id>
+          <?supplied-pmid 16632598?>
+          <pub-id pub-id-type="pmid">16632598</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR75">
+        <label>75.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eisenberg</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Levanon</surname>
+              <given-names>EY</given-names>
+            </name>
+          </person-group>
+          <article-title>Human housekeeping genes are compact</article-title>
+          <source>Trends Genet</source>
+          <year>2003</year>
+          <volume>19</volume>
+          <fpage>362</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0168-9525(03)00140-9</pub-id>
+          <?supplied-pmid 12850439?>
+          <pub-id pub-id-type="pmid">12850439</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR76">
+        <label>76.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Woody</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Shoemaker</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>Gene expression: sizing it all up</article-title>
+          <source>Front Genet</source>
+          <year>2011</year>
+          <volume>2</volume>
+          <fpage>70</fpage>
+          <pub-id pub-id-type="doi">10.3389/fgene.2011.00070</pub-id>
+          <?supplied-pmid 22303365?>
+          <pub-id pub-id-type="pmid">22303365</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR77">
+        <label>77.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Urrutia</surname>
+              <given-names>AO</given-names>
+            </name>
+            <name>
+              <surname>Hurst</surname>
+              <given-names>LD</given-names>
+            </name>
+          </person-group>
+          <article-title>The signature of selection mediated by expression on human genes</article-title>
+          <source>Genome Res</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>2260</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.641103</pub-id>
+          <?supplied-pmid 12975314?>
+          <pub-id pub-id-type="pmid">12975314</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR78">
+        <label>78.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seoighe</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gehring</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Hurst</surname>
+              <given-names>LD</given-names>
+            </name>
+          </person-group>
+          <article-title>Gametophytic selection in Arabidopsis thaliana supports the selective model of intron length reduction</article-title>
+          <source>PLoS Genet</source>
+          <year>2005</year>
+          <volume>1</volume>
+          <fpage>e13</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pgen.0010013</pub-id>
+          <?supplied-pmid 16110339?>
+          <pub-id pub-id-type="pmid">16110339</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR79">
+        <label>79.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hansey</surname>
+              <given-names>CN</given-names>
+            </name>
+            <name>
+              <surname>Vaillancourt</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Sekhon</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>de Leon</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kaeppler</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Buell</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <article-title>Maize (Zea mays L) genome diversity as revealed by RNA-sequencing</article-title>
+          <source>PLoS One</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>e33071</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0033071</pub-id>
+          <?supplied-pmid 22438891?>
+          <pub-id pub-id-type="pmid">22438891</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR80">
+        <label>80.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>S&#xE9;mon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Duret</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolutionary origin and maintenance of coexpressed gene clusters in mammals</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2006</year>
+          <volume>23</volume>
+          <fpage>1715</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="doi">10.1093/molbev/msl034</pub-id>
+          <?supplied-pmid 16757654?>
+          <pub-id pub-id-type="pmid">16757654</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR81">
+        <label>81.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Spellman</surname>
+              <given-names>PT</given-names>
+            </name>
+            <name>
+              <surname>Rubin</surname>
+              <given-names>GM</given-names>
+            </name>
+          </person-group>
+          <article-title>Evidence for large domains of similarly expressed genes in the Drosophila genome</article-title>
+          <source>J Biol</source>
+          <year>2002</year>
+          <volume>1</volume>
+          <fpage>5</fpage>
+          <pub-id pub-id-type="doi">10.1186/1475-4924-1-5</pub-id>
+          <?supplied-pmid 12144710?>
+          <pub-id pub-id-type="pmid">12144710</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR82">
+        <label>82.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>de Meaux</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lercher</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Co-expression of neighbouring genes in Arabidopsis: separating chromatin effects from direct interactions</article-title>
+          <source>BMC Genomics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>178</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-11-178</pub-id>
+          <?supplied-pmid 20233415?>
+          <pub-id pub-id-type="pmid">20233415</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR83">
+        <label>83.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schnable</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Springer</surname>
+              <given-names>NM</given-names>
+            </name>
+            <name>
+              <surname>Freeling</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Differentiation of the maize subgenomes by genome dominance and both ancient and ongoing gene loss</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2011</year>
+          <volume>108</volume>
+          <fpage>4069</fpage>
+          <lpage>74</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1101368108</pub-id>
+          <?supplied-pmid 21368132?>
+          <pub-id pub-id-type="pmid">21368132</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR84">
+        <label>84.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yoo</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Szadkowski</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wendel</surname>
+              <given-names>JF</given-names>
+            </name>
+          </person-group>
+          <article-title>Homoeolog expression bias and expression level dominance in allopolyploid cotton</article-title>
+          <source>Heredity (Edinb)</source>
+          <year>2013</year>
+          <volume>110</volume>
+          <fpage>171</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="doi">10.1038/hdy.2012.94</pub-id>
+          <pub-id pub-id-type="pmid">23169565</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR85">
+        <label>85.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cheng</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Biased gene fractionation and dominant gene expression among the subgenomes of Brassica rapa</article-title>
+          <source>PLoS One</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>e36442</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0036442</pub-id>
+          <?supplied-pmid 22567157?>
+          <pub-id pub-id-type="pmid">22567157</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR86">
+        <label>86.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Parada</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>McQueen</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Misteli</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Tissue-specific spatial organization of genomes</article-title>
+          <source>Genome Biol</source>
+          <year>2004</year>
+          <volume>5</volume>
+          <fpage>R44</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2004-5-7-r44</pub-id>
+          <?supplied-pmid 15239829?>
+          <pub-id pub-id-type="pmid">15239829</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR87">
+        <label>87.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Branco</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Pombo</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Chromosome organization: new facts, new models</article-title>
+          <source>Trends Cell Biol</source>
+          <year>2007</year>
+          <volume>17</volume>
+          <fpage>127</fpage>
+          <lpage>34</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tcb.2006.12.006</pub-id>
+          <?supplied-pmid 17197184?>
+          <pub-id pub-id-type="pmid">17197184</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR88">
+        <label>88.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Elcock</surname>
+              <given-names>LS</given-names>
+            </name>
+            <name>
+              <surname>Bridger</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Exploring the relationship between interphase gene positioning, transcriptional regulation and the nuclear matrix</article-title>
+          <source>Biochem Soc Trans</source>
+          <year>2010</year>
+          <volume>38</volume>
+          <fpage>263</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1042/BST0380263</pub-id>
+          <?supplied-pmid 20074071?>
+          <pub-id pub-id-type="pmid">20074071</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR89">
+        <label>89.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dong</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Non-Rabl patterns of centromere and telomere distribution in the interphase nuclei of plant cells</article-title>
+          <source>Chromosome Res</source>
+          <year>1998</year>
+          <volume>6</volume>
+          <fpage>551</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1023/A:1009280425125</pub-id>
+          <?supplied-pmid 9886774?>
+          <pub-id pub-id-type="pmid">9886774</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR90">
+        <label>90.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cowan</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Carlton</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Cande</surname>
+              <given-names>WZ</given-names>
+            </name>
+          </person-group>
+          <article-title>The polar arrangement of telomeres in interphase and meiosis. Rabl Organization and the Bouquet</article-title>
+          <source>Plant Physiol</source>
+          <year>2001</year>
+          <volume>125</volume>
+          <fpage>532</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.125.2.532</pub-id>
+          <?supplied-pmid 11161011?>
+          <pub-id pub-id-type="pmid">11161011</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR91">
+        <label>91.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Santos</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Abranches</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Stoger</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Beven</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Viegas</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Shaw</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <article-title>The architecture of interphase chromosomes and gene positioning are altered by changes in DNA methylation and histone acetylation</article-title>
+          <source>J Cell Sci</source>
+          <year>2002</year>
+          <volume>115</volume>
+          <fpage>4597</fpage>
+          <lpage>605</lpage>
+          <pub-id pub-id-type="doi">10.1242/jcs.00160</pub-id>
+          <?supplied-pmid 12415004?>
+          <pub-id pub-id-type="pmid">12415004</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR92">
+        <label>92.</label>
+        <mixed-citation publication-type="other">FastQC. [<ext-link ext-link-type="uri" xlink:href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc">http://www.bioinformatics.babraham.ac.uk/projects/fastqc</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR93">
+        <label>93.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trapnell</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Pertea</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Mortazavi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kwan</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>van Baren</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2010</year>
+          <volume>28</volume>
+          <fpage>511</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="doi">10.1038/nbt.1621</pub-id>
+          <?supplied-pmid 20436464?>
+          <pub-id pub-id-type="pmid">20436464</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR94">
+        <label>94.</label>
+        <mixed-citation publication-type="other">TopHat. [<ext-link ext-link-type="uri" xlink:href="http://ccb.jhu.edu/software/tophat/index.shtml">http://ccb.jhu.edu/software/tophat/index.shtml</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR95">
+        <label>95.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Langmead</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Trapnell</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Pop</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Salzberg</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>Ultrafast and memory-efficient alignment of short DNA sequences to the human genome</article-title>
+          <source>Genome Biol</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>R25</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2009-10-3-r25</pub-id>
+          <?supplied-pmid 19261174?>
+          <pub-id pub-id-type="pmid">19261174</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR96">
+        <label>96.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Handsaker</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Wysoker</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fennell</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ruan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Homer</surname>
+              <given-names>N</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The sequence alignment/Map format and SAMtools</article-title>
+          <source>Bioinformatics</source>
+          <year>2009</year>
+          <volume>25</volume>
+          <fpage>2078</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btp352</pub-id>
+          <?supplied-pmid 19505943?>
+          <pub-id pub-id-type="pmid">19505943</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR97">
+        <label>97.</label>
+        <mixed-citation publication-type="other">Cufflinks. [<ext-link ext-link-type="uri" xlink:href="http://cole-trapnell-lab.github.io/cufflinks/">http://cole-trapnell-lab.github.io/cufflinks/</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR98">
+        <label>98.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>GK</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A draft sequence of the rice genome (<italic>Oryza sativa</italic> L. ssp. <italic>indica</italic>)</article-title>
+          <source>Science</source>
+          <year>2002</year>
+          <volume>296</volume>
+          <fpage>79</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1068037</pub-id>
+          <?supplied-pmid 11935017?>
+          <pub-id pub-id-type="pmid">11935017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR99">
+        <label>99.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haas</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Papanicolaou</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Yassour</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Grabherr</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Blood</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Bowden</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>De novo transcript sequence reconstruction from RNA-seq using the Trinity platform for reference generation and analysis</article-title>
+          <source>Nat Protoc</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <fpage>1494</fpage>
+          <lpage>512</lpage>
+          <pub-id pub-id-type="doi">10.1038/nprot.2013.084</pub-id>
+          <?supplied-pmid 23845962?>
+          <pub-id pub-id-type="pmid">23845962</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR100">
+        <label>100.</label>
+        <mixed-citation publication-type="other">Changepoint-package. [<ext-link ext-link-type="uri" xlink:href="http://www.inside-r.org/packages/cran/changepoint/docs/changepoint">http://www.inside-r.org/packages/cran/changepoint/docs/changepoint</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR101">
+        <label>101.</label>
+        <mixed-citation publication-type="other">R software. [<ext-link ext-link-type="uri" xlink:href="http://www.r-project.org">www.r-project.org</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR102">
+        <label>102.</label>
+        <mixed-citation publication-type="other">Hierarchical clustering explorer software. [<ext-link ext-link-type="uri" xlink:href="http://www.cs.umd.edu/hcil/hce/">http://www.cs.umd.edu/hcil/hce/</ext-link>]</mixed-citation>
+      </ref>
+      <ref id="CR103">
+        <label>103.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lin</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ho</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hsiao</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>GOBU: toward an integration interface for biological object</article-title>
+          <source>J Information Sci Eng</source>
+          <year>2006</year>
+          <volume>22</volume>
+          <fpage>19</fpage>
+          <lpage>30</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,1242 @@
+<?xml version="1.0"?>
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v3.0 20080202//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing3.dtd?>
+  <?SourceDTD.Version 3.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4156366</article-id>
+      <article-id pub-id-type="pmid">25191999</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-14-14726</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0106524</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Computer and Information Sciences</subject>
+          <subj-group>
+            <subject>Graph Theory</subject>
+            <subj-group>
+              <subject>Directed Graphs</subject>
+              <subj-group>
+                <subject>Directed Acyclic Graphs</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Network Analysis</subject>
+            <subj-group>
+              <subject>Regulatory Networks</subject>
+              <subject>Scale-Free Networks</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Discovering Study-Specific Gene Regulatory Networks</article-title>
+        <alt-title alt-title-type="running-head">Discovering Study-Specific Gene Regulatory Networks</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bo</surname>
+            <given-names>Valeria</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Curtis</surname>
+            <given-names>Tanya</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lysenko</surname>
+            <given-names>Artem</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Saqi</surname>
+            <given-names>Mansoor</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Swift</surname>
+            <given-names>Stephen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tucker</surname>
+            <given-names>Allan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Information System and Computing, Brunel University, London, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Rothamsted Research, Harpenden, United Kingdom</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>de la Fuente</surname>
+            <given-names>Alberto</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Leibniz-Institute for Farm Animal Biology (FBN), Germany</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>Valeria.Bo@brunel.ac.uk</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: VB AT MS. Performed the experiments: VB. Analyzed the data: VB TC AL. Contributed reagents/materials/analysis tools: VB TC AL MS SS AT. Wrote the paper: VB TC.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>5</day>
+        <month>9</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>9</volume>
+      <issue>9</issue>
+      <elocation-id>e106524</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>5</day>
+          <month>4</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>1</day>
+          <month>8</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2014</copyright-year>
+        <copyright-holder>Bo et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Microarrays are commonly used in biology because of their ability to simultaneously measure thousands of genes under different conditions. Due to their structure, typically containing a high amount of variables but far fewer samples, scalable network analysis techniques are often employed. In particular, consensus approaches have been recently used that combine multiple microarray studies in order to find networks that are more robust. The purpose of this paper, however, is to combine multiple microarray studies to automatically identify subnetworks that are distinctive to specific experimental conditions rather than common to them all. To better understand key regulatory mechanisms and how they change under different conditions, we derive <italic>unique networks</italic> from multiple independent networks built using <italic>glasso</italic> which goes beyond standard correlations. This involves calculating cluster prediction accuracies to detect the most predictive genes for a specific set of conditions. We differentiate between accuracies calculated using cross-validation within a selected cluster of studies (the intra prediction accuracy) and those calculated on a set of independent studies belonging to different study clusters (inter prediction accuracy). Finally, we compare our method's results to related state-of-the art techniques. We explore how the proposed pipeline performs on both synthetic data and real data (wheat and Fusarium). Our results show that subnetworks can be identified reliably that are specific to subsets of studies and that these networks reflect key mechanisms that are fundamental to the experimental conditions in each of those subsets.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>The authors have no funding or support to report.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="16"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta id="data-availability">
+          <meta-name>Data Availability</meta-name>
+          <meta-value>The authors confirm that all data underlying the findings are fully available without restriction. All files for wheat are available at: <ext-link ext-link-type="uri" xlink:href="https://www.ebi.ac.uk/arrayexpress/">https://www.ebi.ac.uk/arrayexpress/</ext-link>. Here is the list of the accession numbers for wheat (available in <xref ref-type="table" rid="pone-0106524-t002">table 2</xref>): E-MEXP-971, E-MEXP-1415, E-MEXP-1193, E-MEXP-1694, E-MEXP-1523, E-MEXP-1669, E-GEOD-4929, E-GEOD-4935, E-GEOD-6027, E-GEOD-9767, E-GEOD-12508, E-GEOD-12936, E-GEOD-11774, E-GEOD-5937, E-GEOD-5939, E-GEOD-5942. All files for Fusarium are available at: <ext-link ext-link-type="uri" xlink:href="http://www.plexdb.org/">http://www.plexdb.org/</ext-link>. Here is the list of the accession numbers for Fusarium (available in <xref ref-type="table" rid="pone-0106524-t004">table 4</xref>): FG11-CEL, FG13-CEL, FG14-CEL, FG2-CEL, FG3-CEL, FG1-CEL, FG12-CEL, FG6-CEL, FG10-CEL, FG7-CEL, FG16-CEL, FG4-CEL, FG5-CEL.</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <title>Data Availability</title>
+      <p>The authors confirm that all data underlying the findings are fully available without restriction. All files for wheat are available at: <ext-link ext-link-type="uri" xlink:href="https://www.ebi.ac.uk/arrayexpress/">https://www.ebi.ac.uk/arrayexpress/</ext-link>. Here is the list of the accession numbers for wheat (available in <xref ref-type="table" rid="pone-0106524-t002">table 2</xref>): E-MEXP-971, E-MEXP-1415, E-MEXP-1193, E-MEXP-1694, E-MEXP-1523, E-MEXP-1669, E-GEOD-4929, E-GEOD-4935, E-GEOD-6027, E-GEOD-9767, E-GEOD-12508, E-GEOD-12936, E-GEOD-11774, E-GEOD-5937, E-GEOD-5939, E-GEOD-5942. All files for Fusarium are available at: <ext-link ext-link-type="uri" xlink:href="http://www.plexdb.org/">http://www.plexdb.org/</ext-link>. Here is the list of the accession numbers for Fusarium (available in <xref ref-type="table" rid="pone-0106524-t004">table 4</xref>): FG11-CEL, FG13-CEL, FG14-CEL, FG2-CEL, FG3-CEL, FG1-CEL, FG12-CEL, FG6-CEL, FG10-CEL, FG7-CEL, FG16-CEL, FG4-CEL, FG5-CEL.</p>
+    </notes>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>All organisms have many mechanisms, necessary for their survival, that carry on mostly unchanged under all conditions that the organism is subjected to (e.g. cell metabolism). Other mechanisms, however, occur only when some event external or internal to the organism (environmental changes, stress, cancer, etc.) happens and triggers them. Some conditions might trigger similar mechanisms (more or less based on how similar the conditions are) that researchers identify using consensus networks analysis that identifies links in common over a number of studies <xref rid="pone.0106524-Swift1" ref-type="bibr">[1]</xref>. Highlighting the similarities, though, can overshadow or even hide what is unique and typical to one specific condition. Biologists are clearly interested in what these similarities are but they are also interested in identifying the condition-specific mechanisms/gene-paths of which knowledge will help in their detailed understanding. The novelty of our approach is the ability to semi-automatically identify subnetworks that are unique to a number of independent studies (unique networks). Identification of unique networks could lead to a better understanding of those mechanisms.</p>
+      <p>In this paper we extend the work presented in <xref rid="pone.0106524-Bo1" ref-type="bibr">[2]</xref> by formally deriving a <italic>unique network</italic>, exploring the results on different simulated datasets to gain a better understanding of the performances of our pipeline in worst/best case scenarios. We also compare <italic>glasso</italic> with Weighted Gene Correlation Network Analysis (WGCNA) for the identification of the unique networks. The approach is also applied to another real microarray dataset (<italic>Fusarium</italic>) and we further explore the biological validation of the wheat results. We choose to focus on wheat because knowledge of it is still very sparse and understanding its gene regulation is challenging due to the size and complexity of its genome.</p>
+      <p>Microarray data measure the simultaneous expression of thousands of genes allowing the modelling of the underlying mechanisms of gene regulation through Gene Regulatory Networks (GRNs). Because of the structure of microarrays (thousands of genes vs tens of samples) the integration of these data, collected from different studies, is an ongoing problem with some reported successes <xref rid="pone.0106524-Choi1" ref-type="bibr">[3]</xref>. In <xref rid="pone.0106524-Kirk1" ref-type="bibr">[4]</xref> the authors present a method for the unsupervised integrative modelling of multiple datasets which models each dataset using a multinomial Dirichlet allocation mixture model and captures the underlying structural similarities between them. In <xref rid="pone.0106524-Anvar1" ref-type="bibr">[5]</xref> more robust models are built from multiple datasets by ordering them based on the level of noise and informativeness and using different Bayesian classifiers to select the informative genes. Steele et al. <xref rid="pone.0106524-Steele1" ref-type="bibr">[6]</xref> combine various microarray datasets using post-learning aggregation to build robust regulatory networks. We adopt a similar approach in this study, but rather than generating the <italic>consensus</italic> of all datasets we identify mechanisms that are <italic>specific</italic> to a subset of studies. <xref rid="pone.0106524-Swift1" ref-type="bibr">[1]</xref> also explore consensus approaches but use a clustering technique coupled with a statistically based gene functional analysis for the identification of novel genes. Often the sheer number of genes makes the understanding of GRNs difficult and sometimes modules are created by grouping genes that perform some similar function <xref rid="pone.0106524-Segal1" ref-type="bibr">[7]</xref>. Networks of these modules can then be discovered to identify mechanisms at a more general level. Clustering helps to preserve all information but might increase bias. In <xref rid="pone.0106524-Zhang1" ref-type="bibr">[8]</xref> two cancer datasets are compared (case and control). For each dataset, pairwise correlation of gene expression profile is computed and then used to build a frequency table. The values in the table are then used to build a weighted gene co-expression frequency network. After this they identify sub-networks with similar members and iteratively merge them together to generate the final network for both cancer and healthy tissue. Alaakwaa et al. <xref rid="pone.0106524-Alakwaa1" ref-type="bibr">[9]</xref> instead explore the biclustering technique <xref rid="pone.0106524-Cheng1" ref-type="bibr">[10]</xref> which aims to cluster both genes and samples simultaneously. They apply six different biclustering methods and use the resulting biclusters to build Bayesian Networks for each and finally merge the results in one single network which captures the overall mechanism.</p>
+      <p>In this paper, rather than focusing on consensus networks, we develop a method to identify, given a set of different studies (clusters of studies), the differences between each other and particularly what makes each study unique compared with the others in the input set. Therefore, we explore a method to 'home in' on the differences of GRNs generated from different studies by using a combination of clustering, network discovery and graph theory. We go beyond the simple pairwise correlations between genes which is common in many studies e.g. <xref rid="pone.0106524-Zhang1" ref-type="bibr">[8]</xref> by building independent networks for each study using <italic>glasso</italic> which identifies the inverse covariance matrix using the lasso penalty to make it as sparse as possible. Then, we cluster the studies with similar regulatory behaviour (similar network structure) using an adaptation of the sensitivity formula as a graph similarity measure. In order to avoid any confusion from now on, we refer to each cluster of studies as a &#x2018;<italic>study-cluster</italic>&#x2019;. At this point we detect the edges that are unique/specific for each <italic>study cluster</italic>. Furthermore, we use these results to build Bayesian Networks for each study-cluster to identify the most predictive group of genes and further refine our unique networks.</p>
+      <p>As a validation of our pipeline we compare the <italic>glasso</italic> technique with Weighted Gene Correlation Network Analysis (WGCNA).</p>
+      <p>We also exploit, as a further comparison to our entire method, a popular state-of-the-art technique known as Biclustering, which aims to simultaneously cluster genes and samples, but not at the network level.</p>
+      <p>To investigate different organisms and demonstrate the generalization of the approach to different microarray data, we explore the performances of the pipeline, first, using a simulated dataset as input and then using wheat and <italic>Fusarium</italic> datasets.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <p>The pipeline described here, which we call UNIP (Unique Network Identification Pipeline) aims to discover what genes and the relationships between them are specific to the study or group of studies under consideration. To achieve this goal, we, first, identify the variables/genes that uniquely appear in the GRN of one study or one group of studies, and then derive study-specific gene regulatory networks (<italic>unique networks</italic>). <italic>Unique networks</italic> can be seen as the sub-GRNs specific to the group of studies. This helps biologists to identify what are the typical mechanisms that characterize one study rather than another.</p>
+      <p>To achieve this we need to sequentially go through a list of steps, each with a specific purpose. <xref ref-type="fig" rid="pone-0106524-g001">Figure 1</xref> represents the flowchart of the steps involved, each explained in the following sections.</p>
+      <fig id="pone-0106524-g001" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Flowchart of the steps for the pipeline.</title>
+          <p>The figure shows the main steps that constitute the pipeline. Each step is properly described in this section.</p>
+        </caption>
+        <graphic xlink:href="pone.0106524.g001"/>
+      </fig>
+      <sec id="s2a">
+        <title>0.1 Selection of Informative Genes</title>
+        <p>A key characteristic of microarrays is the simultaneous measurement of a large number of genes in the order of thousands and a less numerous amount of samples (in the order of tens or hundreds). This allows biologists and bioinformaticians to have a general view of the behaviour of the organism. Although it is not our focus, for computational and practical reasons we need, first, to reduce the number of the variables involved. To prevent noise and bias we choose to avoid clustering and simply discard all non-informative genes. Firstly, we discard those genes that are currently not in the Gene Ontology (GO) <xref rid="pone.0106524-Ashburner1" ref-type="bibr">[11]</xref> database, meaning we can focus on genes that we can validate biologically. We then consider the expression profiles' standard deviation of the genes within the single studies and reject those with a standard deviation lower than a threshold set to 2. At this point to further improve the overall information quality, as we are integrating data across studies, we select only those genes that survived in at least 25% of the studies.</p>
+      </sec>
+      <sec id="s2b">
+        <title>0.2 Glasso</title>
+        <p>Each organism has underlying mechanisms which apply under normal conditions. When the same organism is subjected to different conditions (stress, environmental changes, etc.) then it will need to respond to the change resulting in new paths of genes being highlighted. This results in new underlying mechanisms and/or changes in already active mechanisms. So, different experimental conditions can show different Gene Regulatory Networks (GRNs).</p>
+        <p>Once we have selected the most informative genes, we need to build a (GRN) for each condition/study in the dataset.</p>
+        <p>GRNs have two main components: nodes which represent the variables/genes and edges that encode the joint probability distribution by representing conditional independences between variables. As we want to identify networks that go beyond simple pairwise relationships, our procedure uses <italic>glasso</italic>, an algorithm that scales well for a large number of variables/genes.</p>
+        <p>The problem of identifying the structure of the network can be solved by estimating the relationships between variables. In the case of undirected graphs it is the same as learning the structure of the conditional independence graph (CIG), which in the case of Gaussian random variables, means to identify the zeros of the inverse covariance matrix (also called a precision or concentration matrix). Given a <italic>p</italic>-dimensional normally distributed random variable <italic>X</italic>, assuming that the covariance matrix is non-singular, the conditional independence structure of the distribution can be represented by the graphical model G&#x200A;=&#x200A;(N, E) where N&#x200A;=&#x200A;(1,..,<italic>p</italic>) is the set of nodes and E is the set of edges in N<inline-formula><inline-graphic xlink:href="pone.0106524.e001.jpg"/></inline-formula>N. If a pair of variables is not in the set E it means that the two variables are conditionally independent given the other variables. This corresponds to a zero in the inverse covariance matrix. Therefore it imposes an <inline-formula><inline-graphic xlink:href="pone.0106524.e002.jpg"/></inline-formula> penalty in the estimation of the inverse covariance matrix in order to increase its sparsity <xref rid="pone.0106524-Friedman1" ref-type="bibr">[12]</xref>, <xref rid="pone.0106524-Meinshausen1" ref-type="bibr">[13]</xref>.</p>
+        <p>The <italic>glasso</italic> package in R estimates a sparse inverse covariance matrix using a lasso (<inline-formula><inline-graphic xlink:href="pone.0106524.e003.jpg"/></inline-formula>) penalty. Suppose, we have N multivariate normal observations of dimension p, with mean <inline-formula><inline-graphic xlink:href="pone.0106524.e004.jpg"/></inline-formula> and covariance <inline-formula><inline-graphic xlink:href="pone.0106524.e005.jpg"/></inline-formula>. The problem is to maximize the penalized log likelihood <inline-formula><inline-graphic xlink:href="pone.0106524.e006.jpg"/></inline-formula> where <inline-formula><inline-graphic xlink:href="pone.0106524.e007.jpg"/></inline-formula>, <italic>S</italic> is the empirical covariance matrix and <inline-formula><inline-graphic xlink:href="pone.0106524.e008.jpg"/></inline-formula>is the <inline-formula><inline-graphic xlink:href="pone.0106524.e009.jpg"/></inline-formula> norm the sum of the absolute values of the elements of <inline-formula><inline-graphic xlink:href="pone.0106524.e010.jpg"/></inline-formula>and <inline-formula><inline-graphic xlink:href="pone.0106524.e011.jpg"/></inline-formula> is the regularization parameter. The parameter <inline-formula><inline-graphic xlink:href="pone.0106524.e012.jpg"/></inline-formula> can be a scalar (typical situation) or a p<inline-formula><inline-graphic xlink:href="pone.0106524.e013.jpg"/></inline-formula>p matrix. If <inline-formula><inline-graphic xlink:href="pone.0106524.e014.jpg"/></inline-formula> means no regularization <xref rid="pone.0106524-Friedman1" ref-type="bibr">[12]</xref>. In this paper we apply the <italic>glasso</italic> package, with <inline-formula><inline-graphic xlink:href="pone.0106524.e015.jpg"/></inline-formula>, to build one network for every study in the microarray dataset.</p>
+      </sec>
+      <sec id="s2c">
+        <title>0.3 Graph Similarity</title>
+        <p>We integrate several microarray datasets in order to compare different studies. Some studies will still have some network paths in common (if the genes are regulating one another under those conditions). For example, heat stress and drought stress will have gene pathways in common with other stress-related studies. So, at this point of our pipeline the objective is to automatically detect mechanisms common to similar studies and cluster them using an adaptation of the sensitivity metric to obtain a restricted number of <italic>study-clusters</italic>. Given two networks, network 1 (N1) and network 2 (N2), the connections that two networks have in common are the true positives, those that are in N1 but not in N2 are the false positives and those not in N1 but in N2 are the false negatives. Therefore, we analyse the connections in common between two study-networks and build a contingency table. To verify the reliability of the clusters we compare the results with the description of the studies available when downloaded from public databases such as ArrayExpress <xref rid="pone.0106524-Parkinson1" ref-type="bibr">[14]</xref>. We explored a number of clustering techniques but found that k-means (R function based on <xref rid="pone.0106524-Hartigan1" ref-type="bibr">[15]</xref>) generated the most convincing study-clusters. In the process of identifying unique networks we first build the consensus network (which identifies the network pathways that are common to a certain groups of networks) <xref rid="pone.0106524-Steele1" ref-type="bibr">[6]</xref> for each study-cluster as a representative of the general mechanism for that group of studies. We select only those edges that exist in the consensus-study network in consideration, but not in the other consensus-studies networks. The resulting list of nodes involved in the unique connections are used to build the unique Bayesian networks as explained in detail in the next section.</p>
+      </sec>
+      <sec id="s2d">
+        <title>0.4 Unique Bayesian Networks and Prediction</title>
+        <p>In the step described above we cluster the studies to group them, if possible, in k (k-means parameter which allows us to establish the number of clusters needed) generic conditions. For each study-cluster a consensus network is constructed, that represents the underlying gene regulatory mechanism(s) in common for that group of studies. This will allow us to build more robust GRNs for each study-cluster. As explored in the Introduction, consensus networks as consensus clustering is a popular approach but in <xref rid="pone.0106524-Bo1" ref-type="bibr">[2]</xref> we introduced and now we explore further what we call <italic>unique networks</italic>.</p>
+        <p>Given a generic graph <inline-formula><inline-graphic xlink:href="pone.0106524.e016.jpg"/></inline-formula>. We have <italic>m</italic> fixed graphs <inline-formula><inline-graphic xlink:href="pone.0106524.e017.jpg"/></inline-formula> such that <inline-formula><inline-graphic xlink:href="pone.0106524.e018.jpg"/></inline-formula>, where <inline-formula><inline-graphic xlink:href="pone.0106524.e019.jpg"/></inline-formula> is the set of vertices(nodes) of the graph and <inline-formula><inline-graphic xlink:href="pone.0106524.e020.jpg"/></inline-formula>, <inline-formula><inline-graphic xlink:href="pone.0106524.e021.jpg"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0106524.e022.jpg"/></inline-formula> We define the unique function as <inline-formula><inline-graphic xlink:href="pone.0106524.e023.jpg"/></inline-formula>, where, given <inline-formula><inline-graphic xlink:href="pone.0106524.e024.jpg"/></inline-formula></p>
+        <p><bold>Definition 1</bold>: We define a function <inline-formula><inline-graphic xlink:href="pone.0106524.e025.jpg"/></inline-formula> such that <inline-formula><inline-graphic xlink:href="pone.0106524.e026.jpg"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0106524.e027.jpg"/></inline-formula></p>
+        <p>The unique function returns what we call a unique network. It consists of the same set of edges in the consensus network in consideration except those that also exist in the remaining consensus networks.</p>
+        <p>We choose to validate the networks through prediction using Bayesian Networks (BNs) which naturally perform this using inference, given the graphical structure obtained using the gene in the unique networks provided by <italic>glasso</italic>. BNs <xref rid="pone.0106524-Heckerman1" ref-type="bibr">[16]</xref>, <xref rid="pone.0106524-Friedman2" ref-type="bibr">[17]</xref> are a class of graphical models that represent the probabilistic dependencies between a given set of random variables. A Bayesian network has a set of variables called nodes and a set of directed edges between variables called arcs. The nodes and arcs together form a <italic>directed acyclic graph (DAG) G&#x200A;=&#x200A;(V,A)</italic>. Each variable in the network has attached a conditional probability table of itself given the parents. Having reduced the number of variables and samples by identifying the unique networks, we build one BN for each of the study-clusters previously identified based on the genes with unique edges in the <italic>glasso</italic>-derived networks. To do this we used the R package <italic>bnlearn</italic><xref rid="pone.0106524-Scutari1" ref-type="bibr">[18]</xref>, <xref rid="pone.0106524-Scutari2" ref-type="bibr">[19]</xref>. After this we are interested in finding the most predictive (how well it predicts other expression level values) and predictable (how well its expression level values are predicted) genes within (intra) and outside (inter) the study-clusters using the leave one out cross validation technique. The idea is that genes that are predictive or predicted better within the selected study-cluster than on other studies are more likely to be relevant to the unique network. Given the <italic>m</italic> studies and <italic>n</italic> genes within each studies-cluster we use <italic>m</italic>-1 studies as a training set and the remaining one as test set. Then we employ the R package <italic>gRain</italic>
+<xref rid="pone.0106524-Hjsgaard1" ref-type="bibr">[20]</xref> which, given the <italic>n</italic>-1 genes, predicts the expression value of the one left out. We compare the predicted value of the left out gene with its real value, return 1 if they correspond and zero otherwise. We do this within all the study-clusters and for all possible combinations of training and test sets of studies and genes. Finally, we average the amount of correctly-predicted values among the total predictions to obtain the <italic>correct-prediction</italic> for each gene.</p>
+      </sec>
+      <sec id="s2e">
+        <title>0.5 Biological Support</title>
+        <p>Having identified the study-clusters and, in turn, the study-specific mechanisms within the <italic>unique-networks</italic>, we explore the biological meaning behind them. To do this, we exploit two pieces of software:</p>
+        <p>1. <italic>Mapman</italic>
+<xref rid="pone.0106524-Thimm1" ref-type="bibr">[21]</xref> which explores gene-by-gene the functions related to it and returns a list of functions and a graph of connections</p>
+        <p>2. The AIC-MICA method <xref rid="pone.0106524-Lysenko1" ref-type="bibr">[22]</xref>. The method identifies functions in the biological process aspects of the Gene Ontology that best characterise particular groups of genes. It uses both the structure of the ontology and a term specificity measure (information content, IC) to find terms that are both biologically specific (e.g. not too high-level) and applicable to the largest possible subset of each group. Therefore, unlike the over-representation measures, it gives a general idea about the role of the cluster as a whole and a level of ontology at which such commonality could be found (e.g. average IC of the found terms).</p>
+        <p>The combination of these tools allows us to identify gene functions that are characteristic of the study-cluster in consideration, adding credence to our findings.</p>
+        <p>Finally, in the case of the wheat dataset, to prove that the results are robust and consistent, we conduct a search in the literature for every gene involved in the <italic>unique-networks</italic> and its connections. The results of this research are explained in the <xref ref-type="sec" rid="s4">Discussion</xref> session.</p>
+        <p>An overview of the pipeline is shown in <xref ref-type="fig" rid="pone-0106524-g002">Figure 2</xref>.</p>
+        <fig id="pone-0106524-g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Pipeline overview.</title>
+            <p>A schematic overview of the sequence of steps forming the pipeline.</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g002"/>
+        </fig>
+      </sec>
+      <sec id="s2f">
+        <title>0.6 WGCNA</title>
+        <p>One of the main goals of this paper is to explore techniques that go beyond simple pairwise correlations. Thus, we first explored the <italic>glasso</italic> algorithm described above and then we compare the results using a co-expression network analysis technique known as Weighted Gene Correlation Network Analysis <italic>WGCNA</italic>
+<xref rid="pone.0106524-Langfelder1" ref-type="bibr">[23]</xref>&#x2013;<xref rid="pone.0106524-Langfelder2" ref-type="bibr">[25]</xref>. WGCNA uses a thresholding procedure raising the co-expression similarity to a power:<inline-formula><inline-graphic xlink:href="pone.0106524.e028.jpg"/></inline-formula> with <inline-formula><inline-graphic xlink:href="pone.0106524.e029.jpg"/></inline-formula> to transform the co-expression similarity matrix into the adjacency matrix. To pick the right value of beta WGCNA uses a biologically motivated criterion referred to as the scale-free topology criterion <xref rid="pone.0106524-Barabsi1" ref-type="bibr">[26]</xref>, <xref rid="pone.0106524-Zhang2" ref-type="bibr">[27]</xref>, as opposed to the random graph model <xref rid="pone.0106524-Erds1" ref-type="bibr">[28]</xref>.</p>
+      </sec>
+      <sec id="s2g">
+        <title>0.7 Biclustering</title>
+        <p>One of our pipeline's purposes is to identify groups of genes that are important for a specific set of conditions. Therefore, we compare our results (the discovered clusters and their associated networks) with <italic>Biclustering</italic> techniques which aim to cluster samples and genes simultaneously <xref rid="pone.0106524-Cheng1" ref-type="bibr">[10]</xref>. It is important to highlight that biclustering works on each sample and not on the studies. There are various implementation variants in the literature for biclustering <xref rid="pone.0106524-Madeira1" ref-type="bibr">[29]</xref> but for this work we specifically chose a method called Questmotif which is based on the framework described in <xref rid="pone.0106524-Murali1" ref-type="bibr">[30]</xref>, for the simulated (categorical) datasets and the BCS method for the real datasets of wheat and <italic>Fusarium</italic>. BCS is a state-of-the-art method that normalizes the data matrix and looks for checkerboard structures using the well-known technique of singular value decomposition in eigenvectors applied to both rows and columns <xref rid="pone.0106524-Kluger1" ref-type="bibr">[31]</xref>. Both BCS and Questmotif are implemented in the R package <italic>biclust</italic>
+<xref rid="pone.0106524-Kaiser1" ref-type="bibr">[32]</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>We first apply our pipeline to a well-known and easily modifiable dataset in order to measure and test the performance of our method. Once we verified its applicability we explore wheat and Fusarium microarray dataset. A schematic flowchart of the steps applied to all three datasets is shown in <xref ref-type="fig" rid="pone-0106524-g001">Figure 1</xref>. This involves firstly selecting the variables by applying a standard deviation threshold, followed by the generation of single study networks using <italic>glasso</italic> and clustering of the studies using a graph similarity analysis that returns the <italic>unique networks</italic>. Finally a further filtering of the genes based on their prediction value and the validation of the results with biological feedback.</p>
+      <sec id="s3a">
+        <title>Results on simulated data</title>
+        <p>First of all we evaluate our pipeline's performance using simulated data whose characteristics are well defined. <xref rid="pone.0106524-Bayesian1" ref-type="bibr">[33]</xref> is a synthetic Bayesian networks repository database from which we select three networks. We select the networks: Alarm <xref rid="pone.0106524-Beinlich1" ref-type="bibr">[34]</xref>, Insurance <xref rid="pone.0106524-Binder1" ref-type="bibr">[35]</xref> and Child <xref rid="pone.0106524-Spiegelhalter1" ref-type="bibr">[36]</xref> with 37, 27 and 20 nodes respectively. For each network we download the structure and the associated dataset and take 200 samples. At this point we have three datasets of sizes: <inline-formula><inline-graphic xlink:href="pone.0106524.e030.jpg"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0106524.e031.jpg"/></inline-formula>. Each dataset is representative of a different underlying structure (much like a gene network under different experimental conditions).</p>
+        <p>In this dataset we assume that the 84 total variables are already the results of the variable selection described in Section 0.1 since this is not the main focus of our work.</p>
+        <p>To test our pipeline, we mix the datasets adding noise and create what we will call from now on <italic>big matrix</italic>. <italic>Big matrix</italic> is composed of 9 smaller matrices. Three matrices are the datasets sampled from the networks while the remaining six are randomly created based on the values of the original variables/nodes. If we consider the <italic>big matrix</italic> as a 3&#xD7;3 block matrix composed of nine blocks, each row of the <italic>big matrix</italic> has one sampled dataset and two random ones. <xref ref-type="fig" rid="pone-0106524-g003">Figure 3</xref> shows a representation of the <italic>big matrix</italic> where the capital letters A, I, and C indicate the datasets of Alarm, Insurance and Child respectively while R represents random values (noise).</p>
+        <fig id="pone-0106524-g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title><italic>Big matrix</italic> constructed from the datasets generated from the three networks and six randomly generated datasets which represent the noise.</title>
+            <p>The shaded regions indicate the non-noisy datasets generated from Alarm, Insurance and Child networks (respectively A, I and C in the figure).</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g003"/>
+        </fig>
+        <p>We gather the 600 samples in 15 studies of 40 samples each so that each column-block of <italic>big matrix</italic> contains exactly 5 studies of 40 samples each and 84 variables/nodes (37+27+20). In <xref ref-type="table" rid="pone-0106524-t001">Table 1</xref> we show the correspondence of studies and original networks.</p>
+        <table-wrap id="pone-0106524-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Simulation studies generated independently from the three networks in consideration.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0106524-t001-1" xlink:href="pone.0106524.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">Simulation Studies</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Studies</td>
+                  <td align="left" rowspan="1" colspan="1">Network</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1,2,3,4,5</td>
+                  <td align="left" rowspan="1" colspan="1">Alarm</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">6,7,8,9,10</td>
+                  <td align="left" rowspan="1" colspan="1">Insurance</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">11,12,13,14,15</td>
+                  <td align="left" rowspan="1" colspan="1">Child</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>In order to test the robustness of our pipeline we gradually introduce noise by swapping actual samples with random values. We first analyse the <italic>big matrix</italic> with no noise (0%). Then, we gradually introduce an increasing percentage of random samples of the total (noise) and decide to focus on what we find to be the most revealing noise-levels: 10%, 50% and 90%.</p>
+        <p>Once we have selected the relevant variables (see <xref ref-type="sec" rid="s2">Methods and Materials</xref>) we create one network for each of the 15 studies. Due to the categorical nature of the data, we decided to use bayesian networks rather than <italic>glasso</italic> with a simple hill climbing approach <xref rid="pone.0106524-Russell1" ref-type="bibr">[37]</xref>. Ideally, we want the pipeline to cluster the studies as they belong to the original networks and to detect for each study-cluster the variables that are truly involved. We use a simple k-means <xref rid="pone.0106524-Hartigan1" ref-type="bibr">[15]</xref> approach to cluster the networks based upon a graph similarity metric (see <xref ref-type="sec" rid="s2">Materials and Methods</xref> section). <xref ref-type="fig" rid="pone-0106524-g004">Figure 4</xref> shows the clusters' arrangement for the original data and for the data with an increasing amount of noise (from 10% till 90%). While at 10% of the noise the study-groups detected by our pipeline reflect the real studies arrangement, an increase to 50% disrupts the process and shuffles the studies. As expected, the noisier the input is, the more mixed the study-groups are. We want to see how robust our unique network pipeline is to this level of noise.</p>
+        <fig id="pone-0106524-g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Study-clusters for the original data (0% of noise), 10%, 50% and 90% of noise.</title>
+            <p>The studies' number highlighted with the same colour belong to the same cluster.</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g004"/>
+        </fig>
+        <p>The next step in the pipeline is to compare each original network with the others based upon their cluster assignment. For each cluster of networks we build both consensus (where links in the network must exist in all networks for that cluster) and unique networks (where links must only occur in that cluster): steps 1 to 4 of our pipeline (see <xref ref-type="fig" rid="pone-0106524-g001">Figure 1</xref>). <italic>Big matrix</italic> contains all 84 variables from all the three networks, which leads to the fact that all the unique study-cluster networks will most probably include variables and connections that do not belong to the original structure.</p>
+        <p><xref ref-type="fig" rid="pone-0106524-g005">Figure 5</xref> shows these first intermediate results for detecting the true positive (TP) nodes and connections between nodes as noise increases. TPs are the number of connections/nodes in the simulated network that are also in the original network. This corresponds to the step <italic>0.4 Unique study-networks</italic> in the pipeline flowchart, before non-predictive variables are filtered out. The number of both TPs and FPs nodes for all the clusters only slightly increase along with noise. This is due to the fact that at zero noise the pipeline manages to already select the majority of the correct nodes.</p>
+        <fig id="pone-0106524-g005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>TPs and FPs vs noise before calculating the correct-prediction.</title>
+            <p>The figures show the evolution of TPs and FPs vs noise in terms of nodes (variables involved in the discovered subnetworks) and connections between nodes. These are the partial results, prior to the filtering of the informative nodes based on the intra cluster correct-prediction accuracy (which are shown in <xref ref-type="fig" rid="pone-0106524-g006">Figure 6</xref>).</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g005"/>
+        </fig>
+        <p>The connections, on the other hand, behave differently. For lower percentages of noise in (Alarm and Insurance) FPs tend to increase very slightly. When the data becomes almost completely random, the algorithm recognizes the faulty information and massively decreases the number of connections detected to zero. One way to decrease the number of FPs, especially for the nodes, would be to increase the number of samples per study in the input dataset. Some tests proved that samples need to be more than 200 which is not possible for microarray datasets.</p>
+        <p>To summarize, at this stage of the pipeline we discovered that for low levels of noise our pipeline can robustly identify unique networks and it is also resilient to moderate noise. High levels of noise, however, appear to affect the TPs and FPs of the connection identification more than the node identification.</p>
+        <p>Finally, we calculate the <inline-formula><inline-graphic xlink:href="pone.0106524.e032.jpg"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0106524.e033.jpg"/></inline-formula> clusters prediction to validate the predictive power of the subnetworks for datasets that are clustered together and to filter out any nodes that do not appear to be uniquely predictive to their study-group.</p>
+        <p>The possible states of the variables vary from 2 to 6. As a result, the chance to correctly predict them varies from 0.5 to 0.2. The variables in the alarm networks are categorical with a maximum of 4 possible states. Out of 37 variables, 13 have only two possible states, 17 have 3 possible states and only 7 have 4 possible states. So, to be able to say that one variable is predicting better than chance, its average correct-prediction across training and test sets has to be higher than its <italic>accuracy by chance</italic>. The graphs in <xref ref-type="fig" rid="pone-0106524-g006">Figure 6</xref> represent (in the case of 0% noise) the boxplot of the average <italic>correct-prediction</italic> across training and test within each of the three study-groups, including all the variables involved in the unique network for that group. The study-clusters are listed in the titles and we can refer to <xref ref-type="table" rid="pone-0106524-t001">table 1</xref> to identify the networks they belong to. The variables involved in the unique networks for each group of studies are listed in the x axis. We clearly see groups of variables that stand out. The variables that truly belong to the corresponding real networks result in having an average accuracy above 0.6 which is significantly higher than their <italic>accuracy by chance</italic>. The circled variables are the ones with the highest correct-prediction and are likely to be the ones that are involved in the original networks.</p>
+        <fig id="pone-0106524-g006" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Intra cluster correct-prediction for simulated data.</title>
+            <p>The figure shows the boxplots of the intra cluster correct-prediction (calculated within the same cluster using cross-validation) for the simulated dataset in the case of 0% of noise.</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g006"/>
+        </fig>
+        <p>Similarly, <xref ref-type="fig" rid="pone-0106524-g007">Figure 7</xref> shows the distribution of the node's intra cluster correct-prediction when the noise is increased to 10, 50 and 90%. As we increase the noise, a number of things come to our attention. For lower percentages of noise, the variables' accuracy histogram shows one major peak at high correct-prediction values and, in the first and third graph of <xref ref-type="fig" rid="pone-0106524-g007">Figure 7</xref>, another smaller peak at low correct-prediction values creating bimodal distribution. While the higher peak indicates the TPs, the lower one identifies the amount of FPs. An increase of noise, however, gives a more uniform distribution. Even for the highest level of noise there are still a good number of nodes with relatively high intra cluster (within the same <italic>study-cluster</italic>) correct-prediction levels. This gives us confidence that even for the noisiest datasets, the pipeline is still capable of identifying key variables. Following the flowchart, we now select the variables that truly are involved in the network mechanism setting a threshold for the accuracy (<italic>0.4 Predictive genes</italic>). Different thresholds return a different number of TPs and FPs. Results show that for a threshold accuracy of <bold>0.6</bold> we obtain the best combination of TPs act while the number of TPs is very high, the number of FPs is reduced to zero. Which means that calculating the intra cluster correct-prediction allows to discard all the variables that are not involved in the original network. <xref ref-type="fig" rid="pone-0106524-g008">Figure 8</xref> shows the behaviour of FPs and TPs as the noise increases.</p>
+        <fig id="pone-0106524-g007" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title>Intra cluster correct-prediction distribution for 10, 50 and 90% perturbation.</title>
+            <p>The figures show the histograms of the intra cluster correct-prediction (calculated within the same cluster using cross-validation) for the simulated dataset for different levels of noise.</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g007"/>
+        </fig>
+        <fig id="pone-0106524-g008" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g008</object-id>
+          <label>Figure 8</label>
+          <caption>
+            <title>TPs and FPs vs noise after calculating correct-prediction.</title>
+            <p>The graphs show the number of TPs and FPs nodes and connections detected at different levels of noise. Threshold set to 0.6. The dotted lines at the top of the graphs indicates the number of nodes in the relative original network.</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g008"/>
+        </fig>
+        <p>As expected, when we increase the noise TPs' trend decreases while FPs slightly increases. The noisier the data are, the more difficult it is to set a threshold for the variables. The reasons for this are twofold: because the trend of FPs is higher and because both trends reach zero very quickly. Even if the number of TPs detected by the pipeline decreases when the noise level exceed 0.5, the number of FPs remains close to zero for all level of noise. This shows that even for extremely noisy and biased input data, the pipeline is still able to detect variables that are highly important.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Biclustering</title>
+        <p>We now compare our pipeline with a biclustering method called Questmotif which is based on the framework described in <xref rid="pone.0106524-Murali1" ref-type="bibr">[30]</xref>. Biclustering identifies both genes and samples simultaneously so whilst subnetworks are not discovered (which our approach focusses on), it should at least identify variables that are clustered for specific studies. We apply biclustering to the same <italic>big matrix</italic> dataset of 600 samples and 84 variables, and exploit the results. Questmotif detects 9 biclusters. Cluster 1 groups 124 samples out of which 122 belongs to network alarm, and 8 variables all involved in the alarm mechanism. Cluster two groups 261 samples of which 190 belongs to network insurance and only two genes both belonging to the insurance network. Cluster 3 groups 93 samples, 88 of which belong to the child network along with 4 variables from the child network. Bicluster 4 groups 20 samples and 10 variables from the alarm network. Bicluster 5 still groups a majority of samples belonging to alarm. The remaining clusters groups have mixed samples and mixed variables in a very low number. Overall, bicluster does not perform as well as our pipeline. It manages to identify a respectable number of correct samples, but fails at detecting as many corresponding true variables as our pipeline (and no connections are discovered as it is not a network-based approach).</p>
+        <p>In conclusion, the simulated data study indicates that our pipeline works extremely well for clean data and is reasonably resilient to noise until 50% of the data is affected. Both the network clustering process and the detection of variables that truly belong to the original networks seem robust and only fail at higher level of noise. In the following section we will use our method with two sets of real microarray data studies: Wheat and <italic>Fusarium</italic>. Based on the results, wheat datasets behave similarly to the case of zero or very low noise, while <italic>Fusarium</italic> appears to be associated with noisier data as a result of more clearly defined conditions for wheat.</p>
+      </sec>
+      <sec id="s3c">
+        <title>Wheat microarray data</title>
+        <p>We now focus on the analysis of various wheat transcriptome datasets derived from multiple experiments of plants subjected to a range of treatments: stress, development, etc. Unprocessed wheat microarray expression data for this work was downloaded from ArrayExpress database <xref rid="pone.0106524-Parkinson1" ref-type="bibr">[14]</xref>. Only studies using GeneChip Affymetrix Wheat Genome Array technology that profiled wheat species were included. The combined dataset was pre-processed using Robust Multichip Average method <xref rid="pone.0106524-Irizarry1" ref-type="bibr">[38]</xref> and redundancy-adjusted Pearson correlation coefficient was calculated according to the method described in <xref rid="pone.0106524-Obayashi1" ref-type="bibr">[39]</xref>. We analyse a microarray dataset of 61290 genes common to 523 samples, grouped in 16 studies. Each study represents a different treatment the plant has been subjected to, as shown in <xref ref-type="table" rid="pone-0106524-t002">Table 2</xref>. Each study contains samples derived both from treated and non-treated samples. Studies 1&#x2013;6, 12, and 13 are considered stress-enriched, and the remaining as non-stressed treatments. Labels are taken from <xref rid="pone.0106524-ArrayExpress1" ref-type="bibr">[40]</xref>.</p>
+        <table-wrap id="pone-0106524-t002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Study numbers, labels, number of samples and descriptions of the wheat microarray dataset.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0106524-t002-2" xlink:href="pone.0106524.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td colspan="4" align="left" rowspan="1">Wheat Studies</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Study</td>
+                  <td align="left" rowspan="1" colspan="1">Label</td>
+                  <td align="left" rowspan="1" colspan="1">Number samples</td>
+                  <td align="left" rowspan="1" colspan="1">Description</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">E-MEXP-971</td>
+                  <td align="left" rowspan="1" colspan="1">60</td>
+                  <td align="left" rowspan="1" colspan="1">Salt stress</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">E-MEXP-1415</td>
+                  <td align="left" rowspan="1" colspan="1">36</td>
+                  <td align="left" rowspan="1" colspan="1">S and N deficient conditions</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">E-MEXP-1193</td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                  <td align="left" rowspan="1" colspan="1">Heat and Drought Stress</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">E-MEXP-1694</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">Re-supply of sulfate</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">E-MEXP-1523</td>
+                  <td align="left" rowspan="1" colspan="1">30</td>
+                  <td align="left" rowspan="1" colspan="1">Heat stress</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">E-MEXP-1669</td>
+                  <td align="left" rowspan="1" colspan="1">72</td>
+                  <td align="left" rowspan="1" colspan="1">Different nitrogen fertiliser levels</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-4929</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">Study parental genotypes 2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">8</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-4935</td>
+                  <td align="left" rowspan="1" colspan="1">78</td>
+                  <td align="left" rowspan="1" colspan="1">Study 39 genotypes 2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-6027</td>
+                  <td align="left" rowspan="1" colspan="1">21</td>
+                  <td align="left" rowspan="1" colspan="1">Meiosis and microsporogenesis in hexaploid bread wheat</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-9767</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">Genotypic differences in water soluble carbohydrate metabolism</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-12508</td>
+                  <td align="left" rowspan="1" colspan="1">39</td>
+                  <td align="left" rowspan="1" colspan="1">Wheat development</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-12936</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">Effect of silicon</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-11774</td>
+                  <td align="left" rowspan="1" colspan="1">42</td>
+                  <td align="left" rowspan="1" colspan="1">Cold treatment</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-5937</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">Parental genotypes 2 biological replicates from SB location</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">15</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-5939</td>
+                  <td align="left" rowspan="1" colspan="1">72</td>
+                  <td align="left" rowspan="1" colspan="1">36 genotypes 2 biological replicates from SB location</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">E-GEOD-5942</td>
+                  <td align="left" rowspan="1" colspan="1">76</td>
+                  <td align="left" rowspan="1" colspan="1">Parental and progenies from SB location</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>Once the relevant genes are selected, following the original step of our pipeline, we apply <italic>glasso</italic> to build a network for each study. We then calculate the sensitivity measure in order to cluster the studies based on graphical similarities. As for the simulated data, we explored k-means which generated the most convincing study-clusters. We explored different values of k but found that 3 clusters were the most revealing. <xref ref-type="table" rid="pone-0106524-t002">Table 2</xref> demonstrates that the studies can be grouped in two: stress-enriched and non-stress conditions. The resulting clusters are: <inline-formula><inline-graphic xlink:href="pone.0106524.e034.jpg"/></inline-formula>, <inline-formula><inline-graphic xlink:href="pone.0106524.e035.jpg"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0106524.e036.jpg"/></inline-formula> based upon the studies numbering from <xref ref-type="table" rid="pone-0106524-t002">Table 2</xref>. While the third cluster clearly groups together all the non-stress studies, the other two reflect studies that are stress enriched. In the figures below we show the unique-networks, learnt with <italic>bnlearn</italic>, for wheat in the two study-clusters of stress-enriched conditions (<xref ref-type="fig" rid="pone-0106524-g009">Figures 9</xref> and <xref ref-type="fig" rid="pone-0106524-g010">10</xref>) and the unique network for the non-stress conditions cluster (<xref ref-type="fig" rid="pone-0106524-g011">Figure 11</xref>). The numbers identify the genes and the black circles represent in both the highly predictive genes that are involved in biotic (caused by living organisms) and abiotic (caused by non-alive factors) stress response. In both networks we clearly see specific paths and groups of genes that are highly connected. Using Mapman <xref rid="pone.0106524-Thimm1" ref-type="bibr">[21]</xref> we were able to associate a function to each gene.</p>
+        <fig id="pone-0106524-g009" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g009</object-id>
+          <label>Figure 9</label>
+          <caption>
+            <title>Network 1.</title>
+            <p>Unique-Network for wheat under stress-enriched conditions in cluster 1. Grey nodes indicate highly predictive (average correct-prediction level higher or equal to 0.6) genes. Black nodes highlight highly predictive and stress related genes.</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g009"/>
+        </fig>
+        <fig id="pone-0106524-g010" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g010</object-id>
+          <label>Figure 10</label>
+          <caption>
+            <title>Network 2.</title>
+            <p>Unique-Network for wheat under stress-enriched conditions in cluster 2. Grey nodes indicate highly predictive (average correct-prediction level higher or equal to 0.6) genes. Black nodes highlight highly predictive and stress related genes.</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g010"/>
+        </fig>
+        <fig id="pone-0106524-g011" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g011</object-id>
+          <label>Figure 11</label>
+          <caption>
+            <title>Network 3.</title>
+            <p>Unique-Network for wheat under non-stress conditions in cluster 3.Grey nodes indicate highly predictive (average correct-prediction level higher or equal to 0.6) genes. Black nodes highlight highly predictive and stress related genes.</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g011"/>
+        </fig>
+        <p>Focusing on the stress-enriched conditions network, the procedure has managed to identify a relatively small number (58) of well-connected nodes which form a distinctive path. We see that genes involved in both kinds of stress response (biotic and abiotic stress) are involved in the network. Specifically the first four genes that start the network pathway in <xref ref-type="fig" rid="pone-0106524-g009">Figure 9</xref> (29 &#x2013; 47 &#x2013; 17 &#x2013; 30) are all involved in biotic stress. The remaining highlighted genes instead are mostly involved in heat stress. A good number of photosynthesis related genes are also involved, in particular (18 &#x2013; 27 &#x2013; 21 &#x2013; 28 &#x2013; 6 &#x2013; 22 ). On the non-stress related network in <xref ref-type="fig" rid="pone-0106524-g011">Figure 11</xref>, we have again identified a reasonable number of genes though these are less connected. However, one very well defined pathway exists that consists mainly of photosynthesis-related genes (not highlighted).</p>
+        <p>In the same network in <xref ref-type="fig" rid="pone-0106524-g011">Figure 11</xref>, less genes are found that are related to stress response and those that do appear are much less connected, except for the path formed by (46&#x2013;57&#x2013;26&#x2013;50) nodes. The software described in <xref rid="pone.0106524-Lysenko1" ref-type="bibr">[22]</xref> returns the following (see <xref ref-type="table" rid="pone-0106524-t003">Table 3</xref>) highlighted biological functions which go to reinforce the results from Mapman. Higher values of Information Content (IC) are associated with more informative terms. Values greater than 3 are generally considered to be biologically informative. In the <xref ref-type="fig" rid="pone-0106524-g012">Figure 12</xref> we show the predictive accuracy for each gene. What we expect is a better correct-prediction within the study-clusters and a weaker one outside the clusters. Each boxplot represents the percentage of how many times the gene has been predicted correctly among all the different given samples.</p>
+        <fig id="pone-0106524-g012" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g012</object-id>
+          <label>Figure 12</label>
+          <caption>
+            <title>Boxplot intra vs inter clusters correct-prediction.</title>
+          </caption>
+          <graphic xlink:href="pone.0106524.g012"/>
+        </fig>
+        <table-wrap id="pone-0106524-t003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>Wheat Unique-Networks(U-N) biological process functions from Gene Ontology as described in <xref rid="pone.0106524-Lysenko1" ref-type="bibr">[22]</xref>.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0106524-t003-3" xlink:href="pone.0106524.t003"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">U-N</td>
+                  <td align="left" rowspan="1" colspan="1">GO Id</td>
+                  <td align="left" rowspan="1" colspan="1">GO Name</td>
+                  <td align="left" rowspan="1" colspan="1">IC</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0019538</td>
+                  <td align="left" rowspan="1" colspan="1">protein metabolic process</td>
+                  <td align="left" rowspan="1" colspan="1">3.19</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0006950</td>
+                  <td align="left" rowspan="1" colspan="1">response to stress</td>
+                  <td align="left" rowspan="1" colspan="1">3.96</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0071840</td>
+                  <td align="left" rowspan="1" colspan="1">cellular component organization or biogenesis</td>
+                  <td align="left" rowspan="1" colspan="1">3.98</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0006950</td>
+                  <td align="left" rowspan="1" colspan="1">response to stress</td>
+                  <td align="left" rowspan="1" colspan="1">3.96</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0071840</td>
+                  <td align="left" rowspan="1" colspan="1">cellular component organization or biogenesis</td>
+                  <td align="left" rowspan="1" colspan="1">3.98</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0019684</td>
+                  <td align="left" rowspan="1" colspan="1">photosynthesis, light reaction</td>
+                  <td align="left" rowspan="1" colspan="1">8.32</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0044267</td>
+                  <td align="left" rowspan="1" colspan="1">cellular protein metabolic process</td>
+                  <td align="left" rowspan="1" colspan="1">3.45</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0006950</td>
+                  <td align="left" rowspan="1" colspan="1">response to stress</td>
+                  <td align="left" rowspan="1" colspan="1">3.96</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0015979</td>
+                  <td align="left" rowspan="1" colspan="1">photosynthesis</td>
+                  <td align="left" rowspan="1" colspan="1">7.13</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0071840</td>
+                  <td align="left" rowspan="1" colspan="1">cellular component organization or biogenesis</td>
+                  <td align="left" rowspan="1" colspan="1">3.98</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0009628</td>
+                  <td align="left" rowspan="1" colspan="1">response to abiotic stimulus</td>
+                  <td align="left" rowspan="1" colspan="1">4.97</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0042221</td>
+                  <td align="left" rowspan="1" colspan="1">response to chemical stimulus</td>
+                  <td align="left" rowspan="1" colspan="1">4.12</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0006091</td>
+                  <td align="left" rowspan="1" colspan="1">generation of precursor metabolites and energy</td>
+                  <td align="left" rowspan="1" colspan="1">5.14</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">GO:0044267</td>
+                  <td align="left" rowspan="1" colspan="1">cellular protein metabolic process</td>
+                  <td align="left" rowspan="1" colspan="1">3.45</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>The chance of correctly predicting the genes randomly is one in three (there are three possible states for each gene: <italic>under-regulated</italic>, <italic>normal</italic>, <italic>over-regulated</italic>). Values above this can be considered better than random. In the figures we clearly see that the <italic>intra cluster correct-predictions</italic> (correct predictions made by cross validating within a study-cluster) are quite high for most of the genes with little variations. For the <italic>inter clusters correct-predictions</italic> (correct predictions on data outside of the study-cluster), however, the mean correct-prediction values are mostly not better than chance as one would expect, and the standard deviations are very high making them not reliable. In the majority of the cases, in fact, when a gene has an extremely high intra cluster correct-prediction it also shows a very low or a wide standard deviation in the inter clusters correct-prediction graph. This implies that the identified subnetworks are indeed specific to their study cluster, making them easier to characterise.</p>
+        <sec id="s3c1">
+          <title>Comparison with Bicluster</title>
+          <p>Finally, we compare the results obtained with our algorithm in wheat with the one obtained using the Spectral Bicluster algorithm <xref rid="pone.0106524-Kluger1" ref-type="bibr">[31]</xref> in the R package <italic>biclust</italic>
+<xref rid="pone.0106524-Kaiser1" ref-type="bibr">[32]</xref>. The method, after appropriately tuning the parameters, identifies 17 biclusters. On the wheat data each resulting bicluster highlights a different set of samples but the same set of six genes, 5 of which are related to abiotic heat stress. The genes highlighted by biclustering are also in the list of genes detected by the algorithm described in this paper, specifically we can see five of these genes also highlighted in <xref ref-type="fig" rid="pone-0106524-g009">Figure 9</xref> (23 &#x2013; 25 &#x2013; 41 &#x2013; 46 &#x2013; 53). This discovery points out the importance of these 5 stress-related and 1 protein-degradation-related genes but unfortunately biclustering fails at identifying other equally important stress-related genes identified by our algorithm. In addition the six genes that are identified do not seem to be associated with a specific subset of samples. Rather each of them have been detected in all of the biclusters. Regarding the samples, about half of the biclusters manage to group together samples of stress-enriched studies but split samples from the same study. Unfortunately, none of the biclusters group the non-stress studies accurately enough to identify specific non-stress clusters. Furthermore, considering that each study consists of both actual treatment samples and a small number of controls it might be that biclustering merges together the control samples of the stress-conditions with non-stress samples but this union occurs too often and with too many samples for this to be considered the case. In conclusion, we have found that the resulting biclusters do not properly cluster the samples together, even ones belonging to the same study. Every bicluster highlights the same group of genes preventing any discovery of differences between treatments. It still discovers some important genes but much less than the ones we are able to find with the method proposed in this paper.</p>
+        </sec>
+        <sec id="s3c2">
+          <title>Comparison with WGCNA</title>
+          <p>As previously pointed out the <italic>glasso</italic> technique goes beyond simple pairwise relationships estimating a sparse inverse covariance matrix using the lasso (<inline-formula><inline-graphic xlink:href="pone.0106524.e037.jpg"/></inline-formula>) penalty. We compare it with the WGCNA (Weighted Gene Co-expression Network Analysis) technique as explained in section 0.6 of <xref ref-type="sec" rid="s2">Materials and Methods</xref>. We applied both the scale free criterion for each study obtaining an array of different values of beta and then with only one value of beta set to 6 which is suggested to be the most appropriate value <xref rid="pone.0106524-Horvath1" ref-type="bibr">[41]</xref>. In both cases the results are extremely similar. Of the three clusters obtained with k-means only one of the stress clusters is quite reliable while the other two are quite mixed or meaningless (only two elements). Furthermore the unique networks reveals very small size graphs with much less nodes (less than 10) involved and very few connections. The small number of nodes detected in WGCNA have also been previously detected in <italic>glasso</italic>. As expected, the intra cluster correct-prediction is extremely good for the genes involved in each study-cluster, but, in this case, the number is so little that these results leave some strong doubts on the WGCNA algorithm usability on this dataset. Next, we show another case of real data analysis with Fusarium microarray data.</p>
+        </sec>
+      </sec>
+      <sec id="s3d">
+        <title>Fusarium microarray Data</title>
+        <p>Together with wheat, we also analyse a <italic>Fusarium</italic> graminearum dataset. The microarrays related to this organism (downloaded from <xref rid="pone.0106524-Dash1" ref-type="bibr">[42]</xref>) include 18069 genes and 158 samples gathered in 13 treatments as shown in <xref ref-type="table" rid="pone-0106524-t004">Table 4</xref>. We apply the variable selection, as described in Section 0.1 of <xref ref-type="sec" rid="s2">Materials and Methods</xref>/pipeline, and we reduce the number of variables from 18069 to 98. Unlike in the wheat dataset, <italic>Fusarium</italic> studies are not easy to group at a first sight. What we decided to do then is to apply the <italic>glasso</italic> algorithm and calculate the sensitivity measure as it has been done before and then we apply k-means with different values of k and verify if there is any constant pattern. We repeatedly change the value of k in a range from 2 to 10 and we find that two groups of studies (of 5 and 2 studies respectively) always group together. This allows us to identify two study groups: cluster 1: 8,11 and cluster 2: 2,5,6,7,13. These studies do not belong to any stress condition, but they are recognized to have a similar underlying mechanism through the sensitivity measure. After the cluster detection we build the bayesian unique networks for these two groups. Because of their similarity here we show only the unique network for the second group in <xref ref-type="fig" rid="pone-0106524-g013">Figure 13</xref>. All 98 variables selected looks to be involved in both study-groups unique networks (except number 45 in the unique for cluster 1). This is because there are no major theoretical differences between the two study-group which means that the underlying mechanism might have only slight differences. The intra cluster correct-prediction shows for both clusters a very good correct-prediction accuracy. For the first cluster, because of its size (only 2 studies) we need to consider only genes with a very high accuracy average and a limited standard deviation range. Only few genes respect these criteria in both clusters. But a very limited number of genes results being very predictive in cluster one and not in cluster two and viceversa. The intra cluster correct-prediction for both groups is shown in <xref ref-type="fig" rid="pone-0106524-g014">Figure 14</xref>.</p>
+        <fig id="pone-0106524-g013" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g013</object-id>
+          <label>Figure 13</label>
+          <caption>
+            <title>Unique-Network for <italic>Fusarium</italic> cluster 2,5,6,7,13.</title>
+            <p>In this figure grey background indicates highly predictive genes (average correct-prediction equal or higher than 0.6). Despite the lack of different conditions in the dataset, as explained in the text, still about a 1/3 of the genes selected are highly predictive.</p>
+          </caption>
+          <graphic xlink:href="pone.0106524.g013"/>
+        </fig>
+        <fig id="pone-0106524-g014" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.g014</object-id>
+          <label>Figure 14</label>
+          <caption>
+            <title>Intra vs inter clusters prediction for <italic>Fusarium</italic>.</title>
+          </caption>
+          <graphic xlink:href="pone.0106524.g014"/>
+        </fig>
+        <table-wrap id="pone-0106524-t004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>Study numbers, labels, number of samples and descriptions of the <italic>Fusarium</italic> microarray dataset.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0106524-t004-4" xlink:href="pone.0106524.t004"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td colspan="4" align="left" rowspan="1">Fusarium Studies</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Study</td>
+                  <td align="left" rowspan="1" colspan="1">Label</td>
+                  <td align="left" rowspan="1" colspan="1">Number samples</td>
+                  <td align="left" rowspan="1" colspan="1">Description</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">FG11-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">Gene Regulation by Fusarium TFs Tri6 and Tri10</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">FG13-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">18</td>
+                  <td align="left" rowspan="1" colspan="1">The TF FgStuAp influences spore development,</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">pathogenicity and secondary metabolism in Fusarium graminearum</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">FG14-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">8</td>
+                  <td align="left" rowspan="1" colspan="1">DON induction media</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">FG2-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">Expression Profiles in Carbon and Nitrogen Starvation Conditions</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">FG3-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">Cross-species hybridization</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">FG1-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">18</td>
+                  <td align="left" rowspan="1" colspan="1">Fusarium transcript detection on Morex barley spikes</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">FG12-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">15</td>
+                  <td align="left" rowspan="1" colspan="1">Fusarium graminearum gene expression during crown rot of wheat</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">8</td>
+                  <td align="left" rowspan="1" colspan="1">FG6-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">Transcript detection during in vitro sexual development of Fusarium</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Cch1 calcium channel deletion mutant</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">FG10-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">Response to trichodiene treatment in Fusarium graminearum</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                  <td align="left" rowspan="1" colspan="1">FG7-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">Fusarium gene expression profiles during conidia germination stages</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                  <td align="left" rowspan="1" colspan="1">FG16-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">Fusarium graminearum gene expression in wheat stems during infection</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">FG4-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">Fusarium/Barley RNA dilution</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">FG5-CEL</td>
+                  <td align="left" rowspan="1" colspan="1">23</td>
+                  <td align="left" rowspan="1" colspan="1">Fusarium transcript detection during in vitro sexual development</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>We now apply the algorithm in <xref rid="pone.0106524-Lysenko1" ref-type="bibr">[22]</xref>. Since both networks involve the same genes they both have the same main functions. In <xref ref-type="table" rid="pone-0106524-t005">Table 5</xref> we show the main functions. Mapman was not applicable because it does not contain <italic>Fusarium</italic> data.</p>
+        <table-wrap id="pone-0106524-t005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0106524.t005</object-id>
+          <label>Table 5</label>
+          <caption>
+            <title><italic>Fusarium</italic> unique networks biological process functions from Gene Ontology as described in <xref rid="pone.0106524-Lysenko1" ref-type="bibr">[22]</xref>.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0106524-t005-5" xlink:href="pone.0106524.t005"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO Id</td>
+                  <td align="left" rowspan="1" colspan="1">GO Name</td>
+                  <td align="left" rowspan="1" colspan="1">IC Term</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO:0004175</td>
+                  <td align="left" rowspan="1" colspan="1">endopeptidase activity</td>
+                  <td align="left" rowspan="1" colspan="1">6,93</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO:0015179</td>
+                  <td align="left" rowspan="1" colspan="1">L-amino acid transmembrane transporter activity</td>
+                  <td align="left" rowspan="1" colspan="1">6,90</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO:0004497</td>
+                  <td align="left" rowspan="1" colspan="1">monooxygenase activity</td>
+                  <td align="left" rowspan="1" colspan="1">6,23</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO:0008324</td>
+                  <td align="left" rowspan="1" colspan="1">cation transmembrane transporter activity</td>
+                  <td align="left" rowspan="1" colspan="1">6,16</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO:0005506</td>
+                  <td align="left" rowspan="1" colspan="1">iron ion binding</td>
+                  <td align="left" rowspan="1" colspan="1">6,12</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO:0022804</td>
+                  <td align="left" rowspan="1" colspan="1">active transmembrane transporter activity</td>
+                  <td align="left" rowspan="1" colspan="1">5,29</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO:0022891</td>
+                  <td align="left" rowspan="1" colspan="1">substrate-specific transmembrane transporter activity</td>
+                  <td align="left" rowspan="1" colspan="1">3,78</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO:0046872</td>
+                  <td align="left" rowspan="1" colspan="1">metal ion binding</td>
+                  <td align="left" rowspan="1" colspan="1">3,50</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GO:0016491</td>
+                  <td align="left" rowspan="1" colspan="1">oxidoreductase activity</td>
+                  <td align="left" rowspan="1" colspan="1">3,15</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>These results show us that even if the clusters have a similar underlying mechanism we still can identify few genes that are highly predictive and therefore characteristic of the clusters. These results can be compared to the one found for the simulated data with a higher level of noise.</p>
+        <sec id="s3d1">
+          <title>Comparison with WGCNA</title>
+          <p>At this point we explore the WGCNA technique and compare it with <italic>glasso</italic>. As explained in <xref ref-type="sec" rid="s2"><italic>Materials and Methods</italic></xref> we first calculate the co-expression similarity matrix and convert it into the adjacency matrix using the scale-free topology criterion. Here again the clusters are organized differently and are not as significant as the ones obtained with <italic>glasso</italic>. The unique networks include far fewer genes and the internal correct-prediction also shows less highly predictive genes compared to the ones we found using <italic>glasso</italic>.</p>
+          <p>Based on the poor results previously obtained from applying biclustering, we decide not to apply this technique on this dataset.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>A key focus of this paper is the exploration of wheat of which there is still much uncertainty. We now explore in some detail the biological feedback based on the discovered unique networks. The three networks in <xref ref-type="fig" rid="pone-0106524-g008">Figures 8</xref>&#x2013;<xref ref-type="fig" rid="pone-0106524-g010">10</xref> are indicative for different sample sets e.g different stress conditions. They represent increase in the gene transcription for certain genes and the links between them. Eighty percent of Networks 1, 2 and 3 are consistent with the literature. The remaining twenty percent did not present direct correlation though there is evidence for some correlation in database sources such as <xref rid="pone.0106524-The1" ref-type="bibr">[43]</xref>&#x2013;<xref rid="pone.0106524-Plant1" ref-type="bibr">[45]</xref>. First, the main genes correlated to biotic stress were basic chitinase. Basic chitinases are antimicrobial proteins that are capable of degrading fungal cell wall chitin. They are two classes either basic or acidic isoelectric points <xref rid="pone.0106524-Samac1" ref-type="bibr">[46]</xref>. Gene 19 (PR3 (Basic chitinase)) in network 2 (NW2) in <xref ref-type="fig" rid="pone-0106524-g010">Figure 10</xref> (30 in NW1, <xref ref-type="fig" rid="pone-0106524-g009">Figure 9</xref>; 15 in NW3, <xref ref-type="fig" rid="pone-0106524-g011">Figure 11</xref>) is correlated to gene 30 (allergen V5/Tpx-1-related family protein) in NW2, followed by 35 (BMY1, (BETA-AMYLASE)) in NW2 and 31 (PR3, (Basic chitinase)) in NW2. Basic chitinase (19 in NW2) also affects 49 (CK215257 Dirigent-like superfamily) via gene 4 (cysteine proteinase, putative). Allergen V5, pathogenesis related 4 and basic chitinase (29, 47, 17 in NW1; 30, 19 and 50 in NW2, respectively) are represented in both networks with different links between the gene expressions. Differently in network three (NW3) begins with gene 20 (PR3, (Basic chitinase)) followed by 51 (HEL, PR-4, (Pathogenesis-related 4)) and 36 (BMY1, (Beta-amylase)), where allergen V5 is completely missing. Therefore we conclude that gene expression of allergen V5 may be only visible under certain stress conditions.</p>
+      <p>Glycine decarboxylase complex H (gene 39, NW1) was correlated to transcription of Rubisco gene (56, NW1) that regulated genome uncouples 5 (GUN5). GUN5 is a plastid derived signal that plays an important role in the coordinated expression of both nuclear and chloroplast localised genes that encode photosynthetic-related proteins <xref rid="pone.0106524-Mochizuki1" ref-type="bibr">[47]</xref>. It regulated genes 21 (LHCA1), 28 (PSAK (Photosystem subunit K)), 6 (LHCB5 (Light harvesting complex of photosystem II 5), 22 (PSAD-1 (photosystem I subunit D-1)) and 4 (cysteine proteinase, putative) and gene 18 (LHCB1.5, Photosystem II light harvesting complex gene 1.5). Followed by gene 27 (LHCB3*1, Light-harvesting chlorophyll binding protein 3) and 5 (RNS1 (Ribonuclease 1); endoribonuclease) confirming its functional properties. In NW2 the relationship between Rubisco (gene 58, NW2) and glycine decarboxylase complex H (44, NW2) seems to be in the opposite direction. The previously published data suggest that the expression of both genes is light dependent and tissue specific, which is due to 259-bp upstream region of the promoter region <xref rid="pone.0106524-Srinivasan1" ref-type="bibr">[48]</xref>. In both NWs ferredoxin gene (59, NW2) and (57, NW1)) was linked to Rubisco and glycine decarboxilase complex. Due to physiological importance of these genes in both networks the two relationships could be correct. In NW3 the photosynthetic reaction is regulated by MYB like transcription factor (19, NW3) and glycine decarboxylase complex (44, NW3) while the transcription of Rubisco gene is below the level of significance <xref rid="pone.0106524-Kwon1" ref-type="bibr">[49]</xref>.</p>
+      <p>Photosystem I was represented by genes 22 and 28 in NW1; 24, 29 and 22 in NW2; and 24, 31 34 in NW3. The photosystem I composed of four complex (Lhc (light harvest complex) proteins and a1-Lhca4 belonging to the light harvesting protein family <xref rid="pone.0106524-Wientjes1" ref-type="bibr">[50]</xref>. Also the light harvesting complex II (LHCII) is implicated by the regulation of excitation energy distribution between Photosystem I (PSI) (21, NW 1) and Photosystem II (PSII) (6, NW 1) during the state transition and also light-harvesting complex II binds to several small subunits of photosystem I <xref rid="pone.0106524-Zhang3" ref-type="bibr">[51]</xref>. PSI-K subunit of photosystem I (28, NW1; 29, NW2 and 31, NW3), is involved in the interaction between light harvesting complex I and the photosystem reaction centre core <xref rid="pone.0106524-Ihalainen1" ref-type="bibr">[52]</xref>, <xref rid="pone.0106524-Jensen1" ref-type="bibr">[53]</xref>.</p>
+      <p>The main trimeric light-harvesting complex of higher plants (LHCII) consists of three different Lhcb proteins (Lhcb 1-3) in Arabidopsis thaliana. In NW1 these genes are 27 (LHCB3*1, (Light-harvesting chlorophyll binding protein 3) and gene 18 (LHCB1.5, (Photosystem II light harvesting complex gene 1.5)) <xref rid="pone.0106524-Damkjr1" ref-type="bibr">[54]</xref>. Gene 6 or LHCB5, (Light harvesting complex of photosystem II 5), this gene is significant because is affected by different light regimes in rye plants. It may be also indicative for wheat function due to the high similarity in the gene sequences between wheat and rye. In NW2, the genes 7, 8 were the same as in the NW1. Also gene 33 (PSAN (photosystem I reaction centre subunit PSI-N); calmodulin binding), 42 (APX4 (Ascorbate peroxidase 4); peroxidase) are related due to their function in photosynthesis <xref rid="pone.0106524-Bang1" ref-type="bibr">[55]</xref>.</p>
+      <p>Other fundametal parts of the network are the group of heat shock proteins. The major groups are HSP100, HSP90, HSP70 and they are also confirmed in wheat <xref rid="pone.0106524-Grigorova1" ref-type="bibr">[56]</xref>. The novel finding in NW1 is that the genes indicated by 41 (HSP70), 23 (HSP101 (Heat Shock Protein 101)), 53 (HSP70), 25 (HSP21) and 46 (ATHP22.0) are related to a protein degradation gene 54 (CLPP_wheat.gb/CA607537) which is 98% similar to AB042240 Triticum aestivum chloroplast (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/nucleotide/13928184">http://www.ncbi.nlm.nih.gov/nucleotide/13928184</ext-link>). This finding provides new insights into relationships between heat shock proteins and this particular chloroplast gene that seems to have a regulatory function over the sequence in <xref ref-type="fig" rid="pone-0106524-g009">Figure 9</xref>. In NW2 transcripts for heat shock proteins were not present.</p>
+      <p>In NW2 the main effects were indicated with the gens MLP-like protein (39, NW2 and 35, NW1), beta amylase (35 in NW2 and 33 in NW1) and rare-cold inducible (RCI) 54, NW2 and 51, NW1). The MLP-like protein is related to beta amylase but there was no explanation exactly how <xref rid="pone.0106524-Ando1" ref-type="bibr">[57]</xref>. The link with rare-cold inducible protein and one helix protein seems impossible because rare cold inducible protein is expressed in the roots and is mainly restricted to endodermis <xref rid="pone.0106524-Llorente1" ref-type="bibr">[58]</xref>, one helix protein belong to one of the light-harvesting chlorophyll a/b-binding (Lhc) proteins <xref rid="pone.0106524-Andersson1" ref-type="bibr">[59]</xref>. More research would be required to prove or disprove the relationship between them. Transcript for MLP-like protein in NW3 was not detected to be involved in the network (<xref ref-type="fig" rid="pone-0106524-g011">Figure 11</xref>; NW3).</p>
+      <p>ATPRX Q; antioxidant gene (42, NW1 and 46, NW2 and 47, NW3) is central for NW1 and NW2 but peripheral for NW3. It is highly expressed in leaves and low expressed in the stem. Its expression patterns indicated that is induced by ultraviolet irradiation, low temperature and salt stress. The induction of Prx in response to abiotic stimuli may suggest that Prx may protect the host against environmental stresses <xref rid="pone.0106524-Kim1" ref-type="bibr">[60]</xref>. It looks like gene 42 affects gene 41 (HSP70T-2; ATP binding) and gene 7 (PSBS, (Nonphotochemical quenching), 16 (lipase, putative) and 38 (APX4 (Ascorbate peroxidase 4); peroxidase) and it is itself affected by 39 (GDCH (Glycine decarboxylase complex H)).</p>
+      <p>The transcript of the chloroplast glyceraldehyde-3-phopshate dehydrogenase (phosphorylating, E.C 1.2.1.14) (GADPH) (38 (GAPA-2&#x2013;GAPA-2) was only found in NW2. In higher plants exists as heterotetrameter that catalyses the reductive step of the Calvin cycle <xref rid="pone.0106524-Baalmann1" ref-type="bibr">[61]</xref>. GAPA-A subunit was also identified chloroplast localized proteins <xref rid="pone.0106524-Infanger1" ref-type="bibr">[62]</xref>. GAPDH is a classical glycolytic enzyme that is involved in cellular energy production and has suppressed heat shock-induced peroxide production and cell death <xref rid="pone.0106524-Baek1" ref-type="bibr">[63]</xref>. It is also involved in spontaneous assembly of photosynthetic supramolecular complex with CP12 protein that contributes to Calvin cycle regulation and phosphoribulokinase (PRK) in photosynthetic organisms <xref rid="pone.0106524-Marri1" ref-type="bibr">[64]</xref>. It is surprising that the tree proteins GAPDH, CP12 and PRK are not expressed together <xref rid="pone.0106524-Marri2" ref-type="bibr">[65]</xref>. The importance of this gene is its involvement in photosynthesis and Calvin cycle regulation at the same time. Its strategic place in our NW2 points that this gene could be a potential target for further investigation to establish the relationships and regulatory function in both processes.</p>
+      <p>Based on these biological findings we can conclude that our pipeline is a robust and reliable method to analyse large sets of transcriptomic data. It easily detects the main complex relationships between transcriptional expression of genes specific for different conditions and also highlights structures and nodes that could be potential targets for further research.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Dimah Habash for help using MAPMAN on the wheat data.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0106524-Swift1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Swift</surname><given-names>S</given-names></name>, <name><surname>Tucker</surname><given-names>A</given-names></name>, <name><surname>Vinciotti</surname><given-names>V</given-names></name>, <name><surname>Martin</surname><given-names>N</given-names></name>, <name><surname>Orengo</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title>Consensus clustering and functional interpretation of gene-expression data</article-title>. <source>Genome biology</source>
+<volume>5</volume>: <fpage>R94</fpage>.<pub-id pub-id-type="pmid">15535870</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Bo1">
+        <label>2</label>
+        <mixed-citation publication-type="other">Bo V, Lysenko A, Saqi M, Habash D, Tucker A (2013) Integrating multiple studies of wheat microarray data to identify treatment-specific regulatory networks. In: Advances in Intelligent Data Analysis XII, Springer. pp. 104&#x2013;115.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Choi1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Choi</surname><given-names>J</given-names></name>, <name><surname>Yu</surname><given-names>U</given-names></name>, <name><surname>Kim</surname><given-names>S</given-names></name>, <name><surname>Yoo</surname><given-names>O</given-names></name> (<year>2003</year>) <article-title>Combining multiple microarray studies and modeling interstudy variation</article-title>. <source>Bioinformatics</source>
+<volume>19</volume>: <fpage>i84</fpage>&#x2013;<lpage>i90</lpage>.<pub-id pub-id-type="pmid">12855442</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Kirk1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Kirk</surname><given-names>P</given-names></name>, <name><surname>Griffin</surname><given-names>JE</given-names></name>, <name><surname>Savage</surname><given-names>RS</given-names></name>, <name><surname>Ghahramani</surname><given-names>Z</given-names></name>, <name><surname>Wild</surname><given-names>DL</given-names></name> (<year>2012</year>) <article-title>Bayesian correlated clustering to integrate multiple datasets</article-title>. <source>Bioinformatics</source>
+<volume>28</volume>: <fpage>3290</fpage>&#x2013;<lpage>3297</lpage>.<pub-id pub-id-type="pmid">23047558</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Anvar1">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Anvar</surname><given-names>S</given-names></name>, <name><surname>Tucker</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>The identification of informative genes from multiple datasets with increasing complexity</article-title>. <source>BMC bioinformatics</source>
+<volume>11</volume>: <fpage>32</fpage>.<pub-id pub-id-type="pmid">20078860</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Steele1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Steele</surname><given-names>E</given-names></name>, <name><surname>Tucker</surname><given-names>A</given-names></name> (<year>2008</year>) <article-title>Consensus and meta-analysis regulatory networks for combining multiple microarray gene expression datasets</article-title>. <source>Journal of biomedical informatics</source>
+<volume>41</volume>: <fpage>914</fpage>&#x2013;<lpage>926</lpage>.<pub-id pub-id-type="pmid">18337190</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Segal1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Segal</surname><given-names>E</given-names></name>, <name><surname>Shapira</surname><given-names>M</given-names></name>, <name><surname>Regev</surname><given-names>A</given-names></name>, <name><surname>Pe'er</surname><given-names>D</given-names></name>, <name><surname>Botstein</surname><given-names>D</given-names></name>, <etal>et al</etal> (<year>2003</year>) <article-title>Module networks: identifying regulatory modules and their condition-specific regulators from gene expression data</article-title>. <source>Nature genetics</source>
+<volume>34</volume>: <fpage>166</fpage>&#x2013;<lpage>176</lpage>.<pub-id pub-id-type="pmid">12740579</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Zhang1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhang</surname><given-names>J</given-names></name>, <name><surname>Lu</surname><given-names>K</given-names></name>, <name><surname>Xiang</surname><given-names>Y</given-names></name>, <name><surname>Islam</surname><given-names>M</given-names></name>, <name><surname>Kotian</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Weighted frequent gene co-expression network mining to identify genes involved in genome stability</article-title>. <source>PLoS Computational Biology</source>
+<volume>8</volume>: <fpage>e1002656</fpage>.<pub-id pub-id-type="pmid">22956898</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Alakwaa1">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Alakwaa</surname><given-names>F</given-names></name>, <name><surname>Solouma</surname><given-names>N</given-names></name>, <name><surname>Kadah</surname><given-names>Y</given-names></name> (<year>2011</year>) <article-title>Construction of gene regulatory networks using biclustering and bayesian networks</article-title>. <source>Theoretical Biology and Medical Modelling</source>
+<volume>8</volume>: <fpage>39</fpage>.<pub-id pub-id-type="pmid">22018164</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Cheng1">
+        <label>10</label>
+        <mixed-citation publication-type="other">Cheng Y, Church G (2000) Biclustering of expression data. In: Proceedings of the eighth international conference on intelligent systems for molecular biology. volume 8, pp. 93&#x2013;103.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Ashburner1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Ashburner</surname><given-names>M</given-names></name>, <name><surname>Ball</surname><given-names>CA</given-names></name>, <name><surname>Blake</surname><given-names>J</given-names></name>, <name><surname>Botstein</surname><given-names>D</given-names></name>, <name><surname>Butler</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>Gene ontology: tool for the unification of biology</article-title>. <source>Nature genetics</source>
+<volume>25</volume>: <fpage>25</fpage>&#x2013;<lpage>29</lpage>.<pub-id pub-id-type="pmid">10802651</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Friedman1">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Friedman</surname><given-names>J</given-names></name>, <name><surname>Hastie</surname><given-names>T</given-names></name>, <name><surname>Tibshirani</surname><given-names>R</given-names></name> (<year>2008</year>) <article-title>Sparse inverse covariance estimation with the graphical lasso</article-title>. <source>Biostatistics</source>
+<volume>9</volume>: <fpage>432</fpage>&#x2013;<lpage>441</lpage>.<pub-id pub-id-type="pmid">18079126</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Meinshausen1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Meinshausen</surname><given-names>N</given-names></name>, <name><surname>B&#xFC;hlmann</surname><given-names>P</given-names></name> (<year>2006</year>) <article-title>High-dimensional graphs and variable selection with the lasso</article-title>. <source>The Annals of Statistics</source>
+<volume>34</volume>: <fpage>1436</fpage>&#x2013;<lpage>1462</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Parkinson1">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Parkinson</surname><given-names>H</given-names></name>, <name><surname>Kapushesky</surname><given-names>M</given-names></name>, <name><surname>Shojatalab</surname><given-names>M</given-names></name>, <name><surname>Abeygunawardena</surname><given-names>N</given-names></name>, <name><surname>Coulson</surname><given-names>R</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>Arrayexpressa public database of microarray experiments and gene expression profiles</article-title>. <source>Nucleic acids research</source>
+<volume>35</volume>: <fpage>D747</fpage>&#x2013;<lpage>D750</lpage>.<pub-id pub-id-type="pmid">17132828</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Hartigan1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Hartigan</surname><given-names>J</given-names></name>, <name><surname>Wong</surname><given-names>M</given-names></name> (<year>1979</year>) <article-title>Algorithm as 136: A k-means clustering algorithm</article-title>. <source>Journal of the Royal Statistical Society Series C (Applied Statistics)</source>
+<volume>28</volume>: <fpage>100</fpage>&#x2013;<lpage>108</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Heckerman1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Heckerman</surname><given-names>D</given-names></name>, <name><surname>Geiger</surname><given-names>D</given-names></name>, <name><surname>Chickering</surname><given-names>D</given-names></name> (<year>1995</year>) <article-title>Learning bayesian networks: The combination of knowledge and statistical data</article-title>. <source>Machine learning</source>
+<volume>20</volume>: <fpage>197</fpage>&#x2013;<lpage>243</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Friedman2">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Friedman</surname><given-names>N</given-names></name>, <name><surname>Linial</surname><given-names>M</given-names></name>, <name><surname>Nachman</surname><given-names>I</given-names></name>, <name><surname>Pe'er</surname><given-names>D</given-names></name> (<year>2000</year>) <article-title>Using bayesian networks to analyze expression data</article-title>. <source>Journal of computational biology</source>
+<volume>7</volume>: <fpage>601</fpage>&#x2013;<lpage>620</lpage>.<pub-id pub-id-type="pmid">11108481</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Scutari1">
+        <label>18</label>
+        <mixed-citation publication-type="other">Scutari M (2009) Learning bayesian networks with the bnlearn r package. arXiv preprint arXiv:09083817.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Scutari2">
+        <label>19</label>
+        <mixed-citation publication-type="other">Scutari M, Scutari MM (2012) Package bnlearn.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Hjsgaard1">
+        <label>20</label>
+        <mixed-citation publication-type="other">H&#xF8;jsgaard S (2012). Graphical independence networks with the grain package for r.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Thimm1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Thimm</surname><given-names>O</given-names></name>, <name><surname>Bl&#xE4;sing</surname><given-names>O</given-names></name>, <name><surname>Gibon</surname><given-names>Y</given-names></name>, <name><surname>Nagel</surname><given-names>A</given-names></name>, <name><surname>Meyer</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title>mapman: a user-driven tool to display genomics data sets onto diagrams of metabolic pathways and other biological processes</article-title>. <source>The Plant Journal</source>
+<volume>37</volume>: <fpage>914</fpage>&#x2013;<lpage>939</lpage>.<pub-id pub-id-type="pmid">14996223</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Lysenko1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Lysenko</surname><given-names>A</given-names></name>, <name><surname>Defoin-Platel</surname><given-names>M</given-names></name>, <name><surname>Hassani-Pak</surname><given-names>K</given-names></name>, <name><surname>Taubert</surname><given-names>J</given-names></name>, <name><surname>Hodgman</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Assessing the functional coherence of modules found in multiple-evidence networks from arabidopsis</article-title>. <source>BMC bioinformatics</source>
+<volume>12</volume>: <fpage>203</fpage>.<pub-id pub-id-type="pmid">21612636</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Langfelder1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Langfelder</surname><given-names>P</given-names></name>, <name><surname>Horvath</surname><given-names>S</given-names></name> (<year>2008</year>) <article-title>Wgcna: an r package for weighted correlation network analysis</article-title>. <source>BMC bioinformatics</source>
+<volume>9</volume>: <fpage>559</fpage>.<pub-id pub-id-type="pmid">19114008</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Sengupta1">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Sengupta</surname><given-names>U</given-names></name>, <name><surname>Ukil</surname><given-names>S</given-names></name>, <name><surname>Dimitrova</surname><given-names>N</given-names></name>, <name><surname>Agrawal</surname><given-names>S</given-names></name> (<year>2009</year>) <article-title>Expression-based network biology identifies alteration in key regulatory pathways of type 2 diabetes and associated risk/complications</article-title>. <source>PloS one</source>
+<volume>4</volume>: <fpage>e8100</fpage>.<pub-id pub-id-type="pmid">19997558</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Langfelder2">
+        <label>25</label>
+        <mixed-citation publication-type="journal">Langfelder P, Horvath S (2012) Fast r functions for robust correlations and hierarchical clustering. Journal of statistical software <volume>46</volume>..</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Barabsi1">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Barab&#xE1;si</surname><given-names>AL</given-names></name>, <name><surname>Albert</surname><given-names>R</given-names></name> (<year>1999</year>) <article-title>Emergence of scaling in random networks</article-title>. <source>science</source>
+<volume>286</volume>: <fpage>509</fpage>&#x2013;<lpage>512</lpage>.<pub-id pub-id-type="pmid">10521342</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Zhang2">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhang</surname><given-names>B</given-names></name>, <name><surname>Horvath</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>A general framework for weighted gene co-expression network analysis</article-title>. <source>Statistical applications in genetics and molecular biology</source>
+<volume>4</volume>: <fpage>1128</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Erds1">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Erd&#x151;s</surname><given-names>P</given-names></name>, <name><surname>R&#xE9;nyi</surname><given-names>A</given-names></name> (<year>1959</year>) <article-title>On random graphs i</article-title>. <source>Publ Math Debrecen</source>
+<volume>6</volume>: <fpage>290</fpage>&#x2013;<lpage>297</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Madeira1">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Madeira</surname><given-names>S</given-names></name>, <name><surname>Oliveira</surname><given-names>A</given-names></name> (<year>2004</year>) <article-title>Biclustering algorithms for biological data analysis: a survey</article-title>. <source>Computational Biology and Bioinformatics, IEEE/ACM Transactions on</source>
+<volume>1</volume>: <fpage>24</fpage>&#x2013;<lpage>45</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Murali1">
+        <label>30</label>
+        <mixed-citation publication-type="other">Murali T, Kasif S (2003) Extracting conserved gene expression motifs from gene expression data. In: Pacific Symposium on Biocomputing. volume 8, pp. 77&#x2013;88.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Kluger1">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Kluger</surname><given-names>Y</given-names></name>, <name><surname>Basri</surname><given-names>R</given-names></name>, <name><surname>Chang</surname><given-names>J</given-names></name>, <name><surname>Gerstein</surname><given-names>M</given-names></name> (<year>2003</year>) <article-title>Spectral biclustering of microarray data: coclustering genes and conditions</article-title>. <source>Genome research</source>
+<volume>13</volume>: <fpage>703</fpage>&#x2013;<lpage>716</lpage>.<pub-id pub-id-type="pmid">12671006</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Kaiser1">
+        <label>32</label>
+        <mixed-citation publication-type="other">Kaiser S, Santamaria R, Theron R, Quintales L, Leisch F (2009) biclust: Bicluster algorithms. R package version 07 2.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Bayesian1">
+        <label>33</label>
+        <mixed-citation publication-type="other">Bayesian Network Repository. <ext-link ext-link-type="uri" xlink:href="http://www.bnlearn.com/bnrepository/">www.bnlearn.com/bnrepository/</ext-link>. [Online; accessed 10-02-2014].</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Beinlich1">
+        <label>34</label>
+        <mixed-citation publication-type="other">Beinlich IA, Suermondt HJ, Chavez RM, Cooper GF (1989) The ALARM monitoring system: A case study with two probabilistic inference techniques for belief networks. Springer.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Binder1">
+        <label>35</label>
+        <mixed-citation publication-type="other">&#x201C;Binder J, Koller D, Russell S, Kanazawa K (1997) &#x201D;adaptive probabilistic networks with hidden variables&#x201D;. Machine Learning &#x201C;29&#x201D;.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Spiegelhalter1">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Spiegelhalter</surname><given-names>DJ</given-names></name>, <name><surname>Cowell</surname><given-names>RG</given-names></name> (<year>1992</year>) <article-title>Learning in probabilistic expert systems</article-title>. <source>Bayesian statistics</source>
+<volume>4</volume>: <fpage>447</fpage>&#x2013;<lpage>465</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Russell1">
+        <label>37</label>
+        <mixed-citation publication-type="other">Russell S (2003) Artificial intelligence: A modern approach, 2/E. Pearson Education India.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Irizarry1">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Irizarry</surname><given-names>RA</given-names></name>, <name><surname>Bolstad</surname><given-names>BM</given-names></name>, <name><surname>Collin</surname><given-names>F</given-names></name>, <name><surname>Cope</surname><given-names>LM</given-names></name>, <name><surname>Hobbs</surname><given-names>B</given-names></name>, <etal>et al</etal> (<year>2003</year>) <article-title>Summaries of affymetrix genechip probe level data</article-title>. <source>Nucleic acids research</source>
+<volume>31</volume>: <fpage>e15</fpage>&#x2013;<lpage>e15</lpage>.<pub-id pub-id-type="pmid">12582260</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Obayashi1">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Obayashi</surname><given-names>T</given-names></name>, <name><surname>Nishida</surname><given-names>K</given-names></name>, <name><surname>Kasahara</surname><given-names>K</given-names></name>, <name><surname>Kinoshita</surname><given-names>K</given-names></name> (<year>2011</year>) <article-title>Atted-ii updates: condition-specific gene coexpression to extend coexpression analyses and applications to a broad range of flowering plants</article-title>. <source>Plant and cell physiology</source>
+<volume>52</volume>: <fpage>213</fpage>&#x2013;<lpage>219</lpage>.<pub-id pub-id-type="pmid">21217125</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-ArrayExpress1">
+        <label>40</label>
+        <mixed-citation publication-type="other">ArrayExpress - functional genomics data. <ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/arrayexpress/">www.ebi.ac.uk/arrayexpress/</ext-link>. [Online; accessed 10- 02-2014].</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Horvath1">
+        <label>41</label>
+        <mixed-citation publication-type="other">Horvath Presentation. <ext-link ext-link-type="uri" xlink:href="http://www.genetics.ucla.edu/courses/hg236b/Horvath">www.genetics.ucla.edu/courses/hg236b/Horvath</ext-link> Presentation_GN.pdf. [Online; accessed 10-02-2014].</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Dash1">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Dash</surname><given-names>S</given-names></name>, <name><surname>Van Hemert</surname><given-names>J</given-names></name>, <name><surname>Hong</surname><given-names>L</given-names></name>, <name><surname>Wise</surname><given-names>RP</given-names></name>, <name><surname>Dickerson</surname><given-names>JA</given-names></name> (<year>2012</year>) <article-title>Plexdb: gene expression resources for plants and plant pathogens</article-title>. <source>Nucleic acids research</source>
+<volume>40</volume>: <fpage>D1194</fpage>&#x2013;<lpage>D1201</lpage>.<pub-id pub-id-type="pmid">22084198</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-The1">
+        <label>43</label>
+        <mixed-citation publication-type="other">The Arabidopsis Information Resource. <ext-link ext-link-type="uri" xlink:href="http://www.arabidopsis.org/">www.arabidopsis.org/</ext-link>. [Online; accessed 10-02-2014].</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-National1">
+        <label>44</label>
+        <mixed-citation publication-type="other">National Center for Biotechnology Information. <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/">www.ncbi.nlm.nih.gov/</ext-link>. [Online; accessed 10-02-2014].</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Plant1">
+        <label>45</label>
+        <mixed-citation publication-type="other">Plant Transcription Factor Database. plntfdb.bio.uni-potsdam.de/v3.0/. [Online; accessed 10-02-2014].</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Samac1">
+        <label>46</label>
+        <mixed-citation publication-type="journal"><name><surname>Samac</surname><given-names>DA</given-names></name>, <name><surname>Hironaka</surname><given-names>CM</given-names></name>, <name><surname>Yallaly</surname><given-names>PE</given-names></name>, <name><surname>Shah</surname><given-names>DM</given-names></name> (<year>1990</year>) <article-title>Isolation and characterization of the genes encoding basic and acidic chitinase in arabidopsis thaliana</article-title>. <source>Plant Physiology</source>
+<volume>93</volume>: <fpage>907</fpage>&#x2013;<lpage>914</lpage>.<pub-id pub-id-type="pmid">16667600</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Mochizuki1">
+        <label>47</label>
+        <mixed-citation publication-type="journal"><name><surname>Mochizuki</surname><given-names>N</given-names></name>, <name><surname>Brusslan</surname><given-names>JA</given-names></name>, <name><surname>Larkin</surname><given-names>R</given-names></name>, <name><surname>Nagatani</surname><given-names>A</given-names></name>, <name><surname>Chory</surname><given-names>J</given-names></name> (<year>2001</year>) <article-title>Arabidopsis genomes uncoupled 5 (gun5) mutant reveals the involvement of mg-chelatase h subunit in plastid-to-nucleus signal transduction</article-title>. <source>Proceedings of the National Academy of sciences</source>
+<volume>98</volume>: <fpage>2053</fpage>&#x2013;<lpage>2058</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Srinivasan1">
+        <label>48</label>
+        <mixed-citation publication-type="journal"><name><surname>Srinivasan</surname><given-names>R</given-names></name>, <name><surname>Oliver</surname><given-names>DJ</given-names></name> (<year>1995</year>) <article-title>Light-dependent and tissue-specific expression of the h-protein of the glycine decarboxylase complex</article-title>. <source>Plant physiology</source>
+<volume>109</volume>: <fpage>161</fpage>&#x2013;<lpage>168</lpage>.<pub-id pub-id-type="pmid">7480320</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Kwon1">
+        <label>49</label>
+        <mixed-citation publication-type="journal"><name><surname>Kwon</surname><given-names>Y</given-names></name>, <name><surname>Kim</surname><given-names>JH</given-names></name>, <name><surname>Nguyen</surname><given-names>HN</given-names></name>, <name><surname>Jikumaru</surname><given-names>Y</given-names></name>, <name><surname>Kamiya</surname><given-names>Y</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>A novel arabidopsis myblike transcription factor, mybh, regulates hypocotyl elongation by enhancing auxin accumulation</article-title>. <source>Journal of experimental botany</source>
+<volume>64</volume>: <fpage>3911</fpage>&#x2013;<lpage>3922</lpage>.<pub-id pub-id-type="pmid">23888064</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Wientjes1">
+        <label>50</label>
+        <mixed-citation publication-type="journal"><name><surname>Wientjes</surname><given-names>E</given-names></name>, <name><surname>Croce</surname><given-names>R</given-names></name> (<year>2011</year>) <article-title>The light-harvesting complexes of higher-plant photosystem i: Lhca1/4 and lhca2/3 form two red-emitting heterodimers</article-title>. <source>Biochem J</source>
+<volume>433</volume>: <fpage>477</fpage>&#x2013;<lpage>485</lpage>.<pub-id pub-id-type="pmid">21083539</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Zhang3">
+        <label>51</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhang</surname><given-names>S</given-names></name>, <name><surname>Scheller</surname><given-names>HV</given-names></name> (<year>2004</year>) <article-title>Light-harvesting complex ii binds to several small subunits of photosystem i</article-title>. <source>Journal of Biological Chemistry</source>
+<volume>279</volume>: <fpage>3180</fpage>&#x2013;<lpage>3187</lpage>.<pub-id pub-id-type="pmid">14617624</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Ihalainen1">
+        <label>52</label>
+        <mixed-citation publication-type="journal"><name><surname>Ihalainen</surname><given-names>JA</given-names></name>, <name><surname>Jensen</surname><given-names>PE</given-names></name>, <name><surname>Haldrup</surname><given-names>A</given-names></name>, <name><surname>van Stokkum</surname><given-names>IH</given-names></name>, <name><surname>van Grondelle</surname><given-names>R</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>Pigment organization and energy transfer dynamics in isolated photosystem i (psi) complexes from Arabidopsis thaliana depleted of the psi-g, psi-k, psi-l, or psi-n subunit</article-title>. <source>Biophysical journal</source>
+<volume>83</volume>: <fpage>2190</fpage>&#x2013;<lpage>2201</lpage>.<pub-id pub-id-type="pmid">12324436</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Jensen1">
+        <label>53</label>
+        <mixed-citation publication-type="journal"><name><surname>Jensen</surname><given-names>PE</given-names></name>, <name><surname>Gilpin</surname><given-names>M</given-names></name>, <name><surname>Knoetzel</surname><given-names>J</given-names></name>, <name><surname>Scheller</surname><given-names>HV</given-names></name> (<year>2000</year>) <article-title>The psi-k subunit of photosystem i is involved in the interaction between light-harvesting complex i and the photosystem i reaction center core</article-title>. <source>Journal of Biological Chemistry</source>
+<volume>275</volume>: <fpage>24701</fpage>&#x2013;<lpage>24708</lpage>.<pub-id pub-id-type="pmid">10818090</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Damkjr1">
+        <label>54</label>
+        <mixed-citation publication-type="journal"><name><surname>Damkj&#xE6;r</surname><given-names>JT</given-names></name>, <name><surname>Kere&#xEF;che</surname><given-names>S</given-names></name>, <name><surname>Johnson</surname><given-names>MP</given-names></name>, <name><surname>Kovacs</surname><given-names>L</given-names></name>, <name><surname>Kiss</surname><given-names>AZ</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>The photosystem ii light-harvesting protein lhcb3 affects the macrostructure of photosystem ii and the rate of state transitions in arabidopsis</article-title>. <source>The Plant Cell Online</source>
+<volume>21</volume>: <fpage>3245</fpage>&#x2013;<lpage>3256</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Bang1">
+        <label>55</label>
+        <mixed-citation publication-type="journal"><name><surname>Bang</surname><given-names>WY</given-names></name>, <name><surname>Jeong</surname><given-names>IS</given-names></name>, <name><surname>Kim</surname><given-names>DW</given-names></name>, <name><surname>Im</surname><given-names>CH</given-names></name>, <name><surname>Ji</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Role of arabidopsis chl27 protein for photosynthesis, chloroplast development and gene expression profiling</article-title>. <source>Plant and cell physiology</source>
+<volume>49</volume>: <fpage>1350</fpage>&#x2013;<lpage>1363</lpage>.<pub-id pub-id-type="pmid">18682427</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Grigorova1">
+        <label>56</label>
+        <mixed-citation publication-type="journal"><name><surname>Grigorova</surname><given-names>B</given-names></name>, <name><surname>Vaseva</surname><given-names>II</given-names></name>, <name><surname>Demirevska</surname><given-names>K</given-names></name>, <name><surname>Feller</surname><given-names>U</given-names></name> (<year>2011</year>) <article-title>Expression of selected heat shock proteins after individually applied and combined drought and heat stress</article-title>. <source>Acta Physiologiae Plantarum</source>
+<volume>33</volume>: <fpage>2041</fpage>&#x2013;<lpage>2049</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Ando1">
+        <label>57</label>
+        <mixed-citation publication-type="journal"><name><surname>Ando</surname><given-names>K</given-names></name>, <name><surname>Grumet</surname><given-names>R</given-names></name> (<year>2010</year>) <article-title>Transcriptional profiling of rapidly growing cucumber fruit by 454-pyrosequencing analysis</article-title>. <source>Journal of the American Society for Horticultural Science</source>
+<volume>135</volume>: <fpage>291</fpage>&#x2013;<lpage>302</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Llorente1">
+        <label>58</label>
+        <mixed-citation publication-type="journal"><name><surname>Llorente</surname><given-names>F</given-names></name>, <name><surname>L&#xF3;pez-Cobollo</surname><given-names>RM</given-names></name>, <name><surname>Catal&#xE1;</surname><given-names>R</given-names></name>, <name><surname>Mart&#xED;nez-Zapater</surname><given-names>JM</given-names></name>, <name><surname>Salinas</surname><given-names>J</given-names></name> (<year>2002</year>) <article-title>A novel coldinducible gene from arabidopsis, rci3, encodes a peroxidase that constitutes a component for stress tolerance</article-title>. <source>The Plant Journal</source>
+<volume>32</volume>: <fpage>13</fpage>&#x2013;<lpage>24</lpage>.<pub-id pub-id-type="pmid">12366797</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Andersson1">
+        <label>59</label>
+        <mixed-citation publication-type="journal"><name><surname>Andersson</surname><given-names>U</given-names></name>, <name><surname>Heddad</surname><given-names>M</given-names></name>, <name><surname>Adamska</surname><given-names>I</given-names></name> (<year>2003</year>) <article-title>Light stress-induced one-helix protein of the chlorophyll a/b-binding family associated with photosystem i</article-title>. <source>Plant physiology</source>
+<volume>132</volume>: <fpage>811</fpage>&#x2013;<lpage>820</lpage>.<pub-id pub-id-type="pmid">12805611</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Kim1">
+        <label>60</label>
+        <mixed-citation publication-type="journal"><name><surname>Kim</surname><given-names>YJ</given-names></name>, <name><surname>Lee</surname><given-names>JH</given-names></name>, <name><surname>Lee</surname><given-names>OR</given-names></name>, <name><surname>Shim</surname><given-names>JS</given-names></name>, <name><surname>Jung</surname><given-names>SK</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Isolation and characterization of a type ii peroxiredoxin gene from panax ginseng ca meyer</article-title>. <source>J Ginseng Res</source>
+<volume>34</volume>: <fpage>296</fpage>&#x2013;<lpage>303</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Baalmann1">
+        <label>61</label>
+        <mixed-citation publication-type="journal"><name><surname>Baalmann</surname><given-names>E</given-names></name>, <name><surname>Scheibe</surname><given-names>R</given-names></name>, <name><surname>Cerff</surname><given-names>R</given-names></name> (<year>1996</year>) <collab>MartinW</collab> (<year>1996</year>) <article-title>Functional studies of chloroplast glyceraldehyde-3-phosphate dehydrogenase subunits a and b expressed in escherichia coli: formation of highly active a4 and b4 homotetramers and evidence that aggregation of the b4 complex is mediated by the b subunit carboxy terminus</article-title>. <source>Plant molecular biology</source>
+<volume>32</volume>: <fpage>505</fpage>&#x2013;<lpage>513</lpage>.<pub-id pub-id-type="pmid">8980499</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Infanger1">
+        <label>62</label>
+        <mixed-citation publication-type="journal"><name><surname>Infanger</surname><given-names>S</given-names></name>, <name><surname>Bischof</surname><given-names>S</given-names></name>, <name><surname>Hiltbrunner</surname><given-names>A</given-names></name>, <name><surname>Agne</surname><given-names>B</given-names></name>, <name><surname>Baginsky</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>The chloroplast import receptor toc90 partially restores the accumulation of toc159 client proteins in the arabidopsis thaliana ppi2 mutant</article-title>. <source>Molecular plant</source>
+<volume>4</volume>: <fpage>252</fpage>&#x2013;<lpage>263</lpage>.<pub-id pub-id-type="pmid">21220583</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Baek1">
+        <label>63</label>
+        <mixed-citation publication-type="journal"><name><surname>Baek</surname><given-names>D</given-names></name>, <name><surname>Jin</surname><given-names>Y</given-names></name>, <name><surname>Jeong</surname><given-names>JC</given-names></name>, <name><surname>Lee</surname><given-names>HJ</given-names></name>, <name><surname>Moon</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Suppression of reactive oxygen species by glyceraldehyde-3-phosphate dehydrogenase</article-title>. <source>Phytochemistry</source>
+<volume>69</volume>: <fpage>333</fpage>&#x2013;<lpage>338</lpage>.<pub-id pub-id-type="pmid">17854848</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Marri1">
+        <label>64</label>
+        <mixed-citation publication-type="journal"><name><surname>Marri</surname><given-names>L</given-names></name>, <name><surname>Trost</surname><given-names>P</given-names></name>, <name><surname>Trivelli</surname><given-names>X</given-names></name>, <name><surname>Gonnelli</surname><given-names>L</given-names></name>, <name><surname>Pupillo</surname><given-names>P</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Spontaneous assembly of photosynthetic supramolecular complexes as mediated by the intrinsically unstructured protein cp12</article-title>. <source>Journal of biological chemistry</source>
+<volume>283</volume>: <fpage>1831</fpage>&#x2013;<lpage>1838</lpage>.<pub-id pub-id-type="pmid">17947231</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0106524-Marri2">
+        <label>65</label>
+        <mixed-citation publication-type="journal"><name><surname>Marri</surname><given-names>L</given-names></name>, <name><surname>Sparla</surname><given-names>F</given-names></name>, <name><surname>Pupillo</surname><given-names>P</given-names></name>, <name><surname>Trost</surname><given-names>P</given-names></name> (<year>2005</year>) <article-title>Co-ordinated gene expression of photosynthetic glyceraldehyde-3-phosphate dehydrogenase, phosphoribulokinase, and cp12 in arabidopsis thaliana</article-title>. <source>Journal of experimental botany</source>
+<volume>56</volume>: <fpage>73</fpage>&#x2013;<lpage>80</lpage>.<pub-id pub-id-type="pmid">15533878</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

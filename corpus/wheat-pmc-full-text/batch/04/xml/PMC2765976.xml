@@ -1,0 +1,1676 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="product-review">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlm.xsl?>
+  <?ConverterInfo.Version 1?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Bioinformatics</journal-id>
+      <journal-title>BMC Bioinformatics</journal-title>
+      <issn pub-type="epub">1471-2105</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">2765976</article-id>
+      <article-id pub-id-type="publisher-id">1471-2105-10-331</article-id>
+      <article-id pub-id-type="pmid">19825183</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2105-10-331</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Software</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>ConservedPrimers 2.0: A high-throughput pipeline for comparative genome referenced intron-flanking PCR primer design and its application in wheat SNP discovery</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib id="A1" corresp="yes" contrib-type="author">
+          <name>
+            <surname>You</surname>
+            <given-names>Frank M</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>frank.you@ars.usda.gov</email>
+        </contrib>
+        <contrib id="A2" contrib-type="author">
+          <name>
+            <surname>Huo</surname>
+            <given-names>Naxin</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>naxin.huo@ars.usda.gov</email>
+        </contrib>
+        <contrib id="A3" contrib-type="author">
+          <name>
+            <surname>Gu</surname>
+            <given-names>Yong Q</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>yong.gu@ars.usda.gov</email>
+        </contrib>
+        <contrib id="A4" contrib-type="author">
+          <name>
+            <surname>Lazo</surname>
+            <given-names>Gerard R</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>gerard.lazo@ars.usda.gov</email>
+        </contrib>
+        <contrib id="A5" contrib-type="author">
+          <name>
+            <surname>Dvorak</surname>
+            <given-names>Jan</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>jdvorak@ucdavis.edu</email>
+        </contrib>
+        <contrib id="A6" corresp="yes" contrib-type="author">
+          <name>
+            <surname>Anderson</surname>
+            <given-names>Olin D</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>olin.anderson@ars.usda.gov</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Department of Plant Sciences, University of California, Davis, CA 95616, USA</aff>
+      <aff id="I2"><label>2</label>Genomics and Gene Discovery Research Unit, USDA-ARS, Western Regional Research Center, Albany, CA 94710, USA</aff>
+      <pub-date pub-type="collection">
+        <year>2009</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>10</month>
+        <year>2009</year>
+      </pub-date>
+      <volume>10</volume>
+      <fpage>331</fpage>
+      <lpage>331</lpage>
+      <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1471-2105/10/331"/>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>5</month>
+          <year>2009</year>
+        </date>
+        <date date-type="accepted">
+          <day>13</day>
+          <month>10</month>
+          <year>2009</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2009 You et al; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2009</copyright-year>
+        <copyright-holder>You et al; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0"/>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</p>
+          <!--<rdf xmlns="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1" xmlns:dcterms="http://purl.org/dc/terms"><Work xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:about=""><license rdf:resource="http://creativecommons.org/licenses/by/2.0"/><dc:type rdf:resource="http://purl.org/dc/dcmitype/Text"/><dc:author>               You
+               M
+               Frank
+               
+               
+               frank.you@ars.usda.gov
+            </dc:author><dc:title>
+            ConservedPrimers 2.0: A high-throughput pipeline for comparative genome referenced intron-flanking PCR primer design and its application in wheat SNP discovery
+         </dc:title><dc:date>2009</dc:date><dcterms:bibliographicCitation>BMC Bioinformatics 10(1): 331-. (2009)</dcterms:bibliographicCitation><dc:identifier type="sici">1471-2105(2009)10:1&#x0003c;331&#x0003e;</dc:identifier><dcterms:isPartOf>urn:ISSN:1471-2105</dcterms:isPartOf><License rdf:about="http://creativecommons.org/licenses/by/2.0"><permits rdf:resource="http://web.resource.org/cc/Reproduction" xmlns=""/><permits rdf:resource="http://web.resource.org/cc/Distribution" xmlns=""/><requires rdf:resource="http://web.resource.org/cc/Notice" xmlns=""/><requires rdf:resource="http://web.resource.org/cc/Attribution" xmlns=""/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" xmlns=""/></License></Work></rdf>-->
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>In some genomic applications it is necessary to design large numbers of PCR primers in exons flanking one or several introns on the basis of orthologous gene sequences in related species. The primer pairs designed by this target gene approach are called "intron-flanking primers" or because they are located in exonic sequences which are usually conserved between related species, "conserved primers". They are useful for large-scale single nucleotide polymorphism (SNP) discovery and marker development, especially in species, such as wheat, for which a large number of ESTs are available but for which genome sequences and intron/exon boundaries are not available. To date, no suitable high-throughput tool is available for this purpose.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We have developed, the ConservedPrimers 2.0 pipeline, for designing intron-flanking primers for large-scale SNP discovery and marker development, and demonstrated its utility in wheat. This tool uses non-redundant wheat EST sequences, such as wheat contigs and singleton ESTs, and related genomic sequences, such as those of rice, as inputs. It aligns the ESTs to the genomic sequences to identify unique colinear exon blocks and predicts intron lengths. Intron-flanking primers are then designed based on the intron/exon information using the Primer3 core program or BatchPrimer3. Finally, a tab-delimited file containing intron-flanking primer pair sequences and their primer properties is generated for primer ordering and their PCR applications. Using this tool, 1,922 bin-mapped wheat ESTs (31.8% of the 6,045 in total) were found to have unique colinear exon blocks suitable for primer design and 1,821 primer pairs were designed from these single- or low-copy genes for PCR amplification and SNP discovery. With these primers and subsequently designed genome-specific primers, a total of 1,527 loci were found to contain one or more genome-specific SNPs.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>The ConservedPrimers 2.0 pipeline for designing intron-flanking primers was developed and its utility demonstrated. The tool can be used for SNP discovery, genetic variation assays and marker development for any target genome that has abundant ESTs and a related reference genome that has been fully sequenced. The ConservedPrimers 2.0 pipeline has been implemented as a command-line tool as well as a web application. Both versions are freely available at <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/demos/ConservedPrimers/"/>.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Single nucleotide polymorphisms (SNPs) are a valuable marker system with many genetic and genomic applications. For large scale SNP discovery, several strategies have been developed: (1) comparing sequences of multiple genotypes in the public databases to identify putative polymorphic sites [<xref ref-type="bibr" rid="B1">1</xref>], (2) sequencing random DNA fragments [<xref ref-type="bibr" rid="B2">2</xref>-<xref ref-type="bibr" rid="B4">4</xref>], (3) re-sequencing [<xref ref-type="bibr" rid="B5">5</xref>], and (4) using a target gene approach [<xref ref-type="bibr" rid="B6">6</xref>]. With the target gene approach, primer pairs are designed on the basis of comparisons of conserved regions (exons) of orthologous genes in related species [<xref ref-type="bibr" rid="B7">7</xref>]. These primers are used to amplify sequences flanking less conserved regions (such as introns) in a targeted genome. Such gene-specific PCR primer pairs can help to identify unique loci in virtually any genome. For comparative gene mapping, such loci are equivalent to sequence tagged sites (STS) or expressed sequence tags (EST). Therefore, they have been termed comparative anchor tagged sequences (CATS) [<xref ref-type="bibr" rid="B8">8</xref>]. Since primer pairs spanning introns are picked from two conserved exon regions of a gene, they are also called conserved primers [<xref ref-type="bibr" rid="B9">9</xref>], intron-flanking primers [<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B10">10</xref>], or exon-priming-intron-crossing (EPIC) primers [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B11">11</xref>]. In this paper, the terms intron-flanking primers and conserved primers are used interchangeably. The general strategy of intron-flanking primer design is to align EST sequences of a targeted species with the genomic sequence of a related species for prediction of intron/exon junctions (splice sites) and estimation of intron lengths from the reference genome. The information obtained is used to design intron-flanking primer pairs for PCR amplification and sequencing from different exons through intervening introns and other exons.</p>
+      <p>The target gene approach for SNP discovery and marker development is based on three basic assumptions or findings. First, most exons or gene regions are conserved among related species [<xref ref-type="bibr" rid="B12">12</xref>]. Second, intron positions and approximate intron lengths of a gene are conserved features, even over long evolutionary distance [<xref ref-type="bibr" rid="B12">12</xref>-<xref ref-type="bibr" rid="B15">15</xref>]. Thus, the size of an intron between two consecutive exons can be approximately predicted from genomic sequences of related species. Third, non-coding regions (introns) of a gene evolve faster than the coding regions (exons), and are more diverse and polymorphic than the exons [<xref ref-type="bibr" rid="B16">16</xref>-<xref ref-type="bibr" rid="B18">18</xref>]. Therefore, marker development using a gene sequence with intron information is more effective. A prerequisite for this approach, satisfied now for many species, is the availability of public databases of a large number of EST sequences. By the end of 2008, a total of 59,586,036 EST entries for 1,654 species had been generated [<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B20">20</xref>]. Most of the economically important species have large numbers of EST sequences available but lack information about their genomic sequences and intron/exon boundaries. Many of these species have a large and complex genome that cannot be sequenced efficiently and accurately with the current sequencing techniques. The target gene approach will be particularly useful for marker development in those species.</p>
+      <p>To date, the target gene approach has been used to discover SNPs and assay genetic variations in several species, such as <italic>Rhododendron catawbiense </italic>[<xref ref-type="bibr" rid="B10">10</xref>] and <italic>Medicago truncatula </italic>[<xref ref-type="bibr" rid="B21">21</xref>] using <italic>Arabidopsis </italic>as the reference species, and non-human vertebrates [<xref ref-type="bibr" rid="B6">6</xref>,<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B22">22</xref>] referenced to the human or mouse genomes. However, these applications were on a small scale. No suitable high-throughput tool is available for large-scale conserved primer design. Expeditor [<xref ref-type="bibr" rid="B23">23</xref>] is a web-based program for designing conserved primers using human gene structure and livestock animal EST information. The major limitations of this program are its input format of reference sequences, which must be specifically formatted for the Ensembl ExonView, and limited primer design throughput due to its web implementation. GeMprospector [<xref ref-type="bibr" rid="B24">24</xref>,<xref ref-type="bibr" rid="B25">25</xref>] is another web-based pipeline tool for designing cross-species intron-flanking primers in the legume and grass families. However, this program requires ESTs of several related species in order to find conserved regions. For example, the ESTs of rice, sorghum and barley were used in an application in the grass family. Because the target sequence has to be conserved among the three species, a limited number of conserved primers can be designed. Clearly, this tool may not be suitable for the high-throughput design of conserved primers on the basis of only two related species. UniPrime2 [<xref ref-type="bibr" rid="B26">26</xref>,<xref ref-type="bibr" rid="B27">27</xref>] is the most recently released web tool for cross-species universal primer design. This tool automatically retrieves and aligns homologous sequences from GenBank, identifies conserved regions from the alignments, and generates suitable primers. However, intron regions are not taken into consideration.</p>
+      <p>For a wheat SNP project [<xref ref-type="bibr" rid="B28">28</xref>], the target gene approach was adopted to discover genome-specific SNPs. Wheat (<italic>Triticum aestivum </italic>L., 2n = 6x = 42) is an allohexaploid with the A, B and D genomes. It was formed through hybridization of three diploid species, <italic>Triticum urartu </italic>(AA), <italic>Aegilops tauschii </italic>(DD), and a wild diploid species thought to be extinct and closely related to <italic>Aegilops speltoides </italic>(SS) [<xref ref-type="bibr" rid="B29">29</xref>]. The first step in the SNP discovery pipeline was to design conserved primers, which was followed by the PCR amplification of gene targets from wheat diploid and tetraploid ancestors and sequencing of the amplicons. Genome-specific primers were then designed on the basis of amplicon sequences and verification with appropriate aneuploid genetic stocks [<xref ref-type="bibr" rid="B30">30</xref>]. In the second step, DNA was amplified with genome-specific primers and SNPs were discovered in amplicons [<xref ref-type="bibr" rid="B7">7</xref>].</p>
+      <p>To effectively design a large number of conserved primers, we developed a high-throughput pipeline software tool, named ConservedPrimers 1.0, in 2003. This tool has been further improved for general use and used in several projects for SNP discovery and genetic variation studies. In this paper, we describe the development and characteristics of ConservedPrimers 2.0 as a generalized pipeline and illustrate its utility in wheat SNP discovery.</p>
+    </sec>
+    <sec>
+      <title>Intron-flanking Primer Design Pipeline and its Implementation</title>
+      <sec>
+        <title>The pipeline and its command-line tool</title>
+        <p>The pipeline (Figure <xref ref-type="fig" rid="F1">1</xref>) consists of three steps:</p>
+        <fig position="float" id="F1">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Schematic presentation of the intron-flanking primer design pipeline, ConservedPrimers 2.0: primer design workflow (A) and command-line pipeline programs (B)</bold>.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-10-331-1"/>
+        </fig>
+        <sec>
+          <title>Step 1: sequence alignment and intron/exon junction analysis</title>
+          <p>At this step, non-redundant ESTs of a target genome are aligned to a genomic sequence of a related species (reference genome), such as rice, <italic>Arabidopsis</italic>, <italic>Brachypodium</italic>, or human. Hereafter the term "EST" represents a singleton EST as well as an assembled EST contig which is a gene transcript assembled from a set of ESTs that appear to come from the same or closely related orthologous and paralogous genes. The use of non-redundant ESTs is strongly recommended for two reasons; i.e., to avoid duplicate primer pairs being designed for the same locus, and to facilitate identification of primers that would recognize paralogous genes. The unique EST contig sequences of a large number of species can be downloaded from the NCBI UniGene database [<xref ref-type="bibr" rid="B31">31</xref>] and the TIGR plant transcript assemblies database [<xref ref-type="bibr" rid="B32">32</xref>]. Alignments are performed with the BLASTN program (NCBI Blast 2.0) [<xref ref-type="bibr" rid="B33">33</xref>] to determine the existence of a colinear "exon block" between an EST and the reference genome. A colinear exon block is an intragenic linear alignment of exons along a reference genome that has at least two consecutive exon matches in the reference genome (Figure <xref ref-type="fig" rid="F2">2A</xref>). Each block must start and end with an exon and have one or more introns of less than 1.5 Kb in length. We restrict the intron length to no more than 1.5 Kb to make PCR amplification and sequencing more efficient. If an intron is longer than 1.5 Kb, the alignment should be split into two smaller colinear exon blocks if possible (Figure <xref ref-type="fig" rid="F2">2B</xref>). A single candidate primer pair should be generated from each colinear exon block, and only a single primer pair should be chosen for each gene locus. If the same region of an EST sequence has two or more colinear exon blocks detected in more than one location in the reference genome, these colinear exon blocks are considered to be non-unique (Figure <xref ref-type="fig" rid="F2">2C</xref>) and will be eliminated from further consideration. The non-unique colinear exon blocks are probably due to paralogous genes within gene families (paralogs). Paralogs originate by gene duplications either prior to speciation (outparalogs) or after speciation (inparalogs) [<xref ref-type="bibr" rid="B34">34</xref>]. The purpose of this step is to find a unique colinear exon block for each EST.</p>
+          <fig position="float" id="F2">
+            <label>Figure 2</label>
+            <caption>
+              <p><bold>A colinear exon block between an EST and a reference genome</bold>. (A) A colinear exon block is found if there are two or more consecutive exon matches (i.e., one or more splice sites) within a gene and if the intron length between two consecutive exons is less than 1.5 Kb. (B) If the intron length between two consecutive exons is larger than 1.5 Kb, the alignment may be split into two smaller colinear exon blocks if possible. (C) A non-unique colinear exon block is found if the same region of an EST sequence has two or more colinear exon blocks found in different locations of the reference genome. The ESTs with non-unique colinear exon blocks are excluded from conserved primer design to avoid amplifying paralogous genes.</p>
+            </caption>
+            <graphic xlink:href="1471-2105-10-331-2"/>
+          </fig>
+          <p>In order to identify colinear exon blocks and predict intron lengths from alignments of each EST sequence, BLASTN reports are further parsed and analyzed. First, one should thoroughly search for matches (alignment of an exon in an EST with the reference genome sequence) with expect values &#x2264; a user specified cutoff (e.g. 1e<sup>-10</sup>) and then identify colinear exon blocks. ESTs with non-unique colinear exon blocks are eliminated to avoid paralogous genes. ESTs with a single exon match from the BLASTN alignments will also be excluded. The length of each exon and intron will be calculated, and their coordinates determined. Finally, a new sequence string will be recorded for each EST that has a unique colinear exon block. In the sequence string, the intron sequences from the reference genome are inserted between two consecutive exons with intron sequences replaced by "Ns" (e.g., "....GATCGGTTTAC<bold><italic>N....N</italic></bold>GGTTCAATT....") - these N-marked sequences will be used to design conserved primers.</p>
+          <p>Using the N-marked sequences instead of the original EST sequences has several advantages. First, primer pairs can be more easily designed from the exons. In addition, the size of a PCR product and the number and length of introns and exons in the amplified PCR product can be estimated. Finally, in the primer analysis step (Step 3), one can check whether the designed primer pairs come from different exons or from the same exon. This process has been implemented in a Java program named "IntronExonAnalysis.jar". The entire process has been implemented in a Perl script "est_alignment.pl". This script takes two files as inputs: a FASTA file of ESTs (e.g. wheat) and a FASTA file of reference genome sequences (e.g. rice). The script first calls the formatdb program to make a BLAST database for the reference genome and then calls the blastall program (NCBI blast 2.0) [<xref ref-type="bibr" rid="B33">33</xref>] to perform alignments (BLASTN searches). The Java program "IntronExonAnalysis.jar" is used to parse and annotate the alignment results. This script generates two files: an intron-marked sequence file for primer design and an alignment summary file for primer analysis.</p>
+          <p>Among all of the parameters that are set in the BLASTN search, the most important parameter is the expect value (or E-value). The selection of E-value relies on the evolutionary distance between the target species and genomic reference species. For closely related species, a more stringent (smaller) value may be required. The pipeline uses 1e<sup>-10 </sup>as the default.</p>
+        </sec>
+        <sec>
+          <title>Step 2: Batch primer design</title>
+          <p>Within this step, primers will be batch-designed using a Perl script (pick_primers.pl). This script takes the intron-marked sequence file exported from Step 2 as input and calls the Primer3 core program [<xref ref-type="bibr" rid="B35">35</xref>]. Alternatively, the BatchPrimer3 web software [<xref ref-type="bibr" rid="B9">9</xref>] can be used to design primers. However, some of the primer-designing parameters need to be set before running the software. The default primer-designing parameters used in the pipeline are as follows: primer length of 18 to 25 bases with the optimum 20 bases, T<sub>m </sub>of 55 to 65&#xB0;C with the optimum 60&#xB0;C, GC content of 20% to 80%, and an 800-base optimum product size with a range from 400 to 1,500 bases. Usually only one primer pair is picked for each EST. Two or more primer pair candidates may be obtained if multiple unique colinear exon blocks are found in an EST. A tab-delimited primer table file is subsequently generated from this script or from the BatchPrimer3 web software [<xref ref-type="bibr" rid="B9">9</xref>].</p>
+        </sec>
+        <sec>
+          <title>Step 3: Primer analysis</title>
+          <p>To increase the success rate in PCR amplification with the primers and polymorphism discovery rate, the designed primers should be unique and span at least one intron. A Perl script (primer_analysis.pl) has been implemented to analyze the designed primer pairs. This script takes several files exported from Step 1 and Step 2 and performs two major tasks. First, all designed primers are compared with all of non-redundant ESTs or other user-specified non-redundant EST databases with the BLASTN program to exclude the primer pairs with more than one hit. This step reduces failed PCR amplifications and avoids amplifying duplicate genes. The primer pairs picked from the same exon regions are also removed, since no intron can be amplified if a primer pair comes from the same exon region. Such primer pairs are removed since exon sequences are expected to have fewer polymorphisms. Information about the alignments and PCR primers from Step 1 and Step 2, such as the number of matched exons, coordinates of the exons in sequences, match scores of each exon, the numbers and lengths of introns and exons included in the amplified product, is combined in a final table of primers for primer selection and ordering.</p>
+          <p>These three steps can be done separately. However, for ease of use we have integrated them into a simple, automatic pipeline program (primer_design_pipeline.pl) that only takes two sequence files as inputs (Figure <xref ref-type="fig" rid="F1">1B</xref>). All executables and source code of the pipeline and a user's guide are available for public use [<xref ref-type="bibr" rid="B36">36</xref>] [see Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>].</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Web implementation of the pipeline</title>
+        <p>To assist users who need to design a small number of primers at a time, the web version of ConservedPrimers 2.0 pipeline has been implemented. A similar interface and implementations with BatchPrimer3 [<xref ref-type="bibr" rid="B9">9</xref>] were applied to provide users with target EST sequence input, reference sequence selection, and flexible parameter settings for BLAST search and primer design (Figure <xref ref-type="fig" rid="F3">3</xref>). Genome sequences of eight plant species, <italic>Arabidopsis thaliana </italic>[<xref ref-type="bibr" rid="B37">37</xref>], <italic>Oryza sativa </italic>(rice) [<xref ref-type="bibr" rid="B38">38</xref>], <italic>Sorghum bicolor </italic>(sorghum) [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B39">39</xref>], <italic>Brachypodium distachyon </italic>[<xref ref-type="bibr" rid="B40">40</xref>], <italic>Glycine max </italic>(soybean) [<xref ref-type="bibr" rid="B41">41</xref>], <italic>Medicago truncatula </italic>[<xref ref-type="bibr" rid="B42">42</xref>], <italic>Vitis vinifera </italic>(grapevine) [<xref ref-type="bibr" rid="B43">43</xref>] and <italic>Populus trichocarpa </italic>(poplar) [<xref ref-type="bibr" rid="B44">44</xref>], are currently available as reference sequences. More reference genome sequences can be easily embedded into the web application if needed. As in BatchPrimer3 [<xref ref-type="bibr" rid="B9">9</xref>], target gene (or EST) sequences can be input by either a copy-and-paste to the sequence text box (Figure <xref ref-type="fig" rid="F3">3</xref>) or uploading a sequence file. The sequences must be in FASTA format. Unlike BatchPrimer3, sequences masking with "{}", "&lt;&gt;" or "[]" pairs to represent including, excluding or target regions are not allowed in the sequence input. All unrecognized characters in the sequences are automatically removed. In order to balance the workload on the server, a limit of 200 sequences is set on the web application. For a larger number of EST sequences, the command-line based pipeline is recommended.</p>
+        <fig position="float" id="F3">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Screenshot of the web implementation of the ConservedPrimers 2.0 pipeline</bold>.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-10-331-3"/>
+        </fig>
+        <p>The ConservedPrimers 2.0 web application is configured to run on the Apache HTTP server [<xref ref-type="bibr" rid="B45">45</xref>]. It generates output in three parts: (1) a main HTML page containing the primer design summary of all input sequences, (2) an HTML table page and a tab-delimited text file listing all designed primers and primer properties, and (3) a detailed primer view page for each sequence with successfully designed primers. The primer list can be directly saved as a text file or an Excel file for further editing or primer ordering. All primer design results and intermediate files can be downloaded as a "zip" compressed file. This ConservedPrimers 2.0 web application provides a convenient and user-friendly interface and is accessible at <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/demos/ConservedPrimers/"/>[<xref ref-type="bibr" rid="B36">36</xref>].</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Results</title>
+      <sec>
+        <title>Intragenic colinear exon blocks between wheat ESTs and the rice genome</title>
+        <p>The command-line based pipeline was used to analyze wheat EST data. A total of 6,045 wheat ESTs (including contigs and singletons) [<xref ref-type="bibr" rid="B46">46</xref>] that had been mapped in wheat deletion bins were compared using the BLASTN program (NCBI blast 2.0) against the rice genome (IRGSP pseudomolecules Build04 [<xref ref-type="bibr" rid="B38">38</xref>]) at the expect value &lt; 1e<sup>-10</sup>. A total of 4,003 ESTs (66.2%) were matched to the rice genome. Out of the 4,003 ESTs, 1,922 (58.0%) had unique colinear exon blocks, 794 (19.8%) had non-unique colinear exon blocks, and 1,287 (32.2%) had only one exon matched. The ESTs with unique colinear exon blocks were included in the pipeline for designing conserved primers.</p>
+        <p>The alignment identities (percentages of identical matches over alignment lengths) over all unique colinear exon blocks were normally distributed with a mean of 88.8 &#xB1; 3.7% (Figure <xref ref-type="fig" rid="F4">4A</xref>). The alignment length or the exon length and the predicted intron length had a skewed distribution with averages of 137.2 &#xB1; 96.2 bp and 354.7 &#xB1; 341.9 bp, respectively (Figure <xref ref-type="fig" rid="F4">4B</xref> and <xref ref-type="fig" rid="F4">4C</xref>). The average number of introns in unique colinear exon blocks was 2.5 &#xB1; 2.1 (ranging from 1 to 15).</p>
+        <fig position="float" id="F4">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>Histograms of alignment identity (a percentage of identical matches over alignment length) (A), alignment length (B), predicted intron length (C) and number of predicted introns (D) in alignments of 1,922 wheat bin-mapped ESTs showing unique colinear exon blocks with the rice genome</bold>. Histograms were drawn using the JMP 7.0 software (SAS Institute Inc.).</p>
+          </caption>
+          <graphic xlink:href="1471-2105-10-331-4"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Intron-flanking primer design, PCR amplification and SNP discovery</title>
+        <p>After removing the ESTs that had no colinear exon blocks or had non-unique colinear exon blocks, a total of 1,922 ESTs which yielded 1,975 N-marked sequences were carried forward in the pipeline for primer design. From 1,870 EST loci, 1,946 conserved primer pairs were generated with a 97% success rate for primer design. The failure in primer design for some ESTs was primarily because their N-marked sequences were too short to meet the minimum PCR product size requirement. Since the intron length was restricted to 1.5 Kb, longer colinear exon alignments were split into two or more shorter colinear exon blocks, and one N-marked sequence for each of the shorter blocks was generated for primer design. Fifty-two wheat ESTs were found to have multiple colinear exon blocks. The primers were manually screened to determine how many were derived from single- or low-copy genes in wheat. A total of 1,821 such primer pairs were used for PCR amplification and amplicon sequencing of six wheat diploid ancestors and one tetraploid wheat in a cooperative effort from seven different laboratories [<xref ref-type="bibr" rid="B47">47</xref>]. For example, of the 155 conserved primer pairs used for SNP discovery in wheat chromosome 1A, 1B and 1D, 145 (93.5%) produced amplicons that resulted in successful sequencing of wheat diploid ancestors and discovery of polymorphisms in at least one of the three wheat genomes.</p>
+        <p>Wheat intron lengths were correlated significantly (r<sup>2 </sup>= 0.45, p &lt; 0.0001) with the predicted intron lengths from the rice genome (Figure <xref ref-type="fig" rid="F5">5B</xref>). The same linear correlation was also observed between the actual PCR product sizes and their predicted sizes (r<sup>2 </sup>= 0.33, p &lt; 0.0001) (Figure <xref ref-type="fig" rid="F5">5A</xref>). Despite a larger genome size, the average wheat gene intron lengths were smaller (259.8 bp) than those of rice (354.7 bp) (Figure <xref ref-type="fig" rid="F4">4B</xref>). Similar results were also observed between <italic>Gossypium</italic>, <italic>Arabidopsis</italic>, and rice [<xref ref-type="bibr" rid="B14">14</xref>]. <italic>Gossypium </italic>has a genome larger than <italic>Arabidopsis </italic>and rice, but the <italic>Gossypium </italic>introns are generally smaller (149.5 bp). The difference in intron lengths between wheat and rice was small enough to allow using rice to predict wheat intron lengths in the 200 to 1,500 bp range.</p>
+        <fig position="float" id="F5">
+          <label>Figure 5</label>
+          <caption>
+            <p><bold>Comparison between the total amplicon sequence sizes (bp) in wheat and the predicted PCR product sizes on the basis of rice genome sequence (A), and comparison between the amplicon intron length (bp) and the predicted intron length (bp) (B) based on alignments of wheat ESTs to the rice genome</bold>. A total of 888 data points from 145 homologous group 1 primer pairs and their amplicons and genomic sequences were used to draw scatter plots and histograms using the JMP 7.0 software (SAS Institute Inc.). A significant regression line was fit between the total amplicon sequence sizes in wheat and the predicted PCR product sizes (A) as well as between the amplicon intron lengths and the predicted intron lengths (B). The amplified intron lengths were determined using BLAST searches of amplified genomic sequences against their corresponding ESTs.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-10-331-5"/>
+        </fig>
+        <p>Sequences of amplicons produced with the 1,821 conserved primers were used to design genome-specific primers for amplifying and sequencing the target DNA sequences from a single genome of hexaploid wheat. A total of 1,527 loci containing one or more genome-specific SNPs were discovered. In the previously mentioned 145 loci that had been mapped to wheat chromosomes 1A, 1B and 1D, a total of 114 loci (78.6%) were found to have at least one genome-specific SNP. Among them, 73 loci were located in the A genome, 64 loci in the B genome and 82 loci in the D genome.</p>
+      </sec>
+      <sec>
+        <title>Running time of the ConservedPrimers pipeline</title>
+        <p>The three-step pipeline sequentially uses three separate command-line Perl scripts together with one Java program for intron/exon junction analysis, the NCBI Blast 2.0 software [<xref ref-type="bibr" rid="B33">33</xref>] for alignments, the Primer3 core program [<xref ref-type="bibr" rid="B35">35</xref>] or BatchPrimer3 [<xref ref-type="bibr" rid="B9">9</xref>], and three Perl packages for primer design (Figure <xref ref-type="fig" rid="F1">1B</xref>). A user can run scripts step by step, or run the single pipeline program, primer_design_pipeline.pl, which integrates all of the three steps into one script. The performance is primarily related to genome size of reference species, the number of ESTs, and the speed of the computer. For instance, 6,045 wheat ESTs and the rice genome were used for conserved primer design. The size of the rice genome (IRGSP pseudomolecules Build04) is 382 Mb. It took a desktop computer (Asus P6T, Intel core i7 920, 12 GB of RAM, and a Ubuntu Linux 9.04 64 bit operating system) a total of 9.10 minutes for running the entire pipeline and 8.46, 0.47 and 0.17 minutes for Step 1, 2 and 3, respectively. A majority of running time (93%) was taken by Step 1 to perform BLASTN searches and intron/exon analysis. The web version of the ConservedPrimers pipeline will take more time than the command-based pipeline since the sequences are loaded to the server before processing. Client internet speed will also affect sequence loading. Therefore performance of the web application may vary among different users. A random sample of 200 sequences chosen from 6,045 wheat ESTs were used for testing the web application through intranet set-up. A total of 25 seconds were needed to finish the entire pipeline.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Discussion</title>
+      <sec>
+        <title>Intragenic colinear exon blocks and intron-flanking primer design</title>
+        <p>A basic prerequisite has to be satisfied for designing intron-flanking primers: both the positions and the lengths of the exon and the intron must be relatively conserved between the target genome and the reference genome, i.e., a colinear exon block must be identified in an EST locus. Extensive colinear exon blocks within genes were observed between wheat and rice. Since wheat and barley are more closely related to <italic>Brachypodium </italic>than to rice [<xref ref-type="bibr" rid="B48">48</xref>,<xref ref-type="bibr" rid="B49">49</xref>], <italic>Brachypodium </italic>may be a better reference species for comparative genomic researches than rice.</p>
+        <p>Intron length variation has been investigated in animals, plants (including rice, sorghum and maize) and fungi [<xref ref-type="bibr" rid="B12">12</xref>-<xref ref-type="bibr" rid="B15">15</xref>,<xref ref-type="bibr" rid="B50">50</xref>]. Although intron lengths in orthologous genes vary among species, the positions and approximate lengths of introns tend to be conserved [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B15">15</xref>,<xref ref-type="bibr" rid="B50">50</xref>]. Since intron lengths were significantly correlated between rice and wheat, the wheat intron lengths can be approximately predicted from the rice introns for the purpose of designing intron-flanking primers.</p>
+      </sec>
+      <sec>
+        <title>ConservedPrimers 2.0 pipeline</title>
+        <p>The ConservedPrimers 2.0 pipeline is a high throughput software tool for designing intron-flanking primers, and is usable with two evolutionarily related species. The primary requirement is the availability of abundant unique ESTs for the target species and an evolutionarily related model or reference species with a fully sequenced genome. Depending on their evolutionary distance, a different E-value cutoff should be used in a BLASTN search of colinear exon blocks. For two closely related species, such as wheat, barley, sorghum, maize or sugarcane referenced to rice or <italic>Brachypodium</italic>, a more stringent E-value cutoff, such as 1e<sup>-10</sup>, should be used. Otherwise, a less stringent E-value cutoff would be more suitable. For example, <italic>Rhododendron </italic>is phylogenetically distant from <italic>Arabidopsis</italic>, and 1e<sup>-4 </sup>was used in the BLAST search against <italic>Arabidopsis </italic>genomic sequences [<xref ref-type="bibr" rid="B10">10</xref>]. The more stringent the E-value cutoff, the fewer colinear exon blocks are identified. This results in fewer, but higher-quality, intron-flanking primer pairs being selected. Besides the E-value, all parameters for primer design also can be easily changed within the Perl script, pick_primers.pl.</p>
+        <p>The ConservedPrimer 2.0 pipeline has been implemented as a command-line tool as well as a web application. The command line style makes it possible to design intron-flanking primer pairs or marker candidates for polymorphism discovery in a high-throughput manner and to use any genome size of the model species and any number of the ESTs as inputs without memory and speed restrictions. The web-based pipeline serves as a convenient and easy-to-use tool for primer design of a small number of ESTs. Compared to the web-based system, a novice user may need some basic computer skills for initial set-up and running the command line programs.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Conclusion</title>
+      <p>The ConservedPrimers 2.0 pipeline for designing intron-flanking primers was developed and its utility demonstrated. The tool can be used for SNP discovery, genetic variation assays and marker development for any target genome that has abundant ESTs and an evolutionarily related reference genome that has been fully sequenced. The ConservedPrimers 2.0 pipeline has been implemented as a command-line tool as well as a web application. Both versions are freely available at <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/demos/ConservedPrimers/"/>[<xref ref-type="bibr" rid="B36">36</xref>].</p>
+    </sec>
+    <sec>
+      <title>Availability and requirements</title>
+      <p><bold>Project name: </bold>ConservedPrimers pipeline software.</p>
+      <p>
+        <bold>Project home page: </bold>
+        <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/demos/ConservedPrimers/"/>
+      </p>
+      <p><bold>Operating systems: </bold>The command-line pipeline and the web server were tested in Linux systems, but should work in an operating system which can run Perl and Java programs.</p>
+      <p><bold>Programming language: </bold>Perl and Java</p>
+      <p><bold>Other requirements: </bold>Perl interpreter program, Java J2SE 1.4 or above, Primer3 core program <ext-link ext-link-type="uri" xlink:href="http://primer3.wiki.sourceforge.net/"/> or BatchPrimer3 <ext-link ext-link-type="uri" xlink:href="http://probes.pw.usda.gov/batchprimer3/"/>.</p>
+      <p><bold>License: </bold>GNU PGL</p>
+      <p><bold>Any restrictions to use by non-academics: </bold>None</p>
+    </sec>
+    <sec>
+      <title>Authors' contributions</title>
+      <p>FMY designed and implemented the pipeline software, designed wheat conserved primers and drafted the manuscript. YQG and NH validated wheat conserved primers. JD, ODA and GRL helped to design the pipeline and to draft the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>Conserved Primers 2.0 command-line pipeline package</bold>. The file has been collected with "tar" and compressed by "gzip", and includes ConservedPrimers 2.0 command-line pipeline programs with source code, and a user's guide for installation.</p>
+        </caption>
+        <media xlink:href="1471-2105-10-331-S1.GZ" mimetype="text" mime-subtype="plain">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <sec>
+        <title>Acknowledgements</title>
+        <p>The authors thank Dr. Yang Yen and Dr. Ming-Cheng Luo for critical reading of the manuscript. This work is supported by the U.S. National Science Foundation Grant BDI-0321757.</p>
+      </sec>
+    </ack>
+    <ref-list>
+      <ref id="B1">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buetow</surname>
+              <given-names>KH</given-names>
+            </name>
+            <name>
+              <surname>Edmonson</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Cassidy</surname>
+              <given-names>AB</given-names>
+            </name>
+          </person-group>
+          <article-title>Reliable identification of large numbers of candidate SNPs from public EST data</article-title>
+          <source>Nat Genet</source>
+          <year>1999</year>
+          <volume>21</volume>
+          <fpage>323</fpage>
+          <lpage>325</lpage>
+          <pub-id pub-id-type="pmid">10080189</pub-id>
+          <pub-id pub-id-type="doi">10.1038/6851</pub-id>
+        </citation>
+      </ref>
+      <ref id="B2">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bensch</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Akesson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Irwin</surname>
+              <given-names>DE</given-names>
+            </name>
+          </person-group>
+          <article-title>The use of AFLP to find an informative SNP: genetic differences across a migratory divide in willow warblers</article-title>
+          <source>Mol Ecol</source>
+          <year>2002</year>
+          <volume>11</volume>
+          <fpage>2359</fpage>
+          <lpage>2366</lpage>
+          <pub-id pub-id-type="pmid">12406246</pub-id>
+          <pub-id pub-id-type="doi">10.1046/j.1365-294X.2002.01629.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B3">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nicod</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Largiader</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <article-title>SNPs by AFLP (SBA): a rapid SNP isolation strategy for non-model organisms</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2003</year>
+          <volume>31</volume>
+          <fpage>e19</fpage>
+          <pub-id pub-id-type="pmid">12595568</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/gng019</pub-id>
+        </citation>
+      </ref>
+      <ref id="B4">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Primmer</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Borge</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Lindell</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Saetre</surname>
+              <given-names>GP</given-names>
+            </name>
+          </person-group>
+          <article-title>Single-nucleotide polymorphism characterization in species with limited available sequence information: high nucleotide diversity revealed in the avian genome</article-title>
+          <source>Mol Ecol</source>
+          <year>2002</year>
+          <volume>11</volume>
+          <fpage>603</fpage>
+          <lpage>612</lpage>
+          <pub-id pub-id-type="pmid">11918793</pub-id>
+          <pub-id pub-id-type="doi">10.1046/j.0962-1083.2001.01452.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B5">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rostoks</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Mudie</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cardle</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Russell</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ramsay</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Booth</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Svensson</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Wanamaker</surname>
+              <given-names>SI</given-names>
+            </name>
+            <name>
+              <surname>Walia</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Rodriguez</surname>
+              <given-names>EM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide SNP discovery and linkage analysis in barley based on genes responsive to abiotic stress</article-title>
+          <source>Mol Genet Genomics</source>
+          <year>2005</year>
+          <volume>274</volume>
+          <fpage>515</fpage>
+          <lpage>527</lpage>
+          <pub-id pub-id-type="pmid">16244872</pub-id>
+          <pub-id pub-id-type="doi">10.1007/s00438-005-0046-z</pub-id>
+        </citation>
+      </ref>
+      <ref id="B6">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aitken</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Schwarz</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Morin</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title>Single nucleotide polymorphism (SNP) discovery in mammals: a targeted-gene approach</article-title>
+          <source>Mol Ecol</source>
+          <year>2004</year>
+          <volume>13</volume>
+          <fpage>1423</fpage>
+          <lpage>1431</lpage>
+          <pub-id pub-id-type="pmid">15140087</pub-id>
+          <pub-id pub-id-type="doi">10.1111/j.1365-294X.2004.02159.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B7">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blake</surname>
+              <given-names>NK</given-names>
+            </name>
+            <name>
+              <surname>Sherman</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Talbert</surname>
+              <given-names>LE</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-specific primer sets for starch biosynthesis genes in wheat</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2004</year>
+          <volume>109</volume>
+          <fpage>1295</fpage>
+          <lpage>1302</lpage>
+          <pub-id pub-id-type="pmid">15340684</pub-id>
+          <pub-id pub-id-type="doi">10.1007/s00122-004-1743-4</pub-id>
+        </citation>
+      </ref>
+      <ref id="B8">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lyons</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Laughlin</surname>
+              <given-names>TF</given-names>
+            </name>
+            <name>
+              <surname>Copeland</surname>
+              <given-names>NG</given-names>
+            </name>
+            <name>
+              <surname>Jenkins</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Womack</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>O'Brien</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparative anchor tagged sequences (CATS) for integrative mapping of mammalian genomes</article-title>
+          <source>Nat Genet</source>
+          <year>1997</year>
+          <volume>15</volume>
+          <fpage>47</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="pmid">8988168</pub-id>
+          <pub-id pub-id-type="doi">10.1038/ng0197-47</pub-id>
+        </citation>
+      </ref>
+      <ref id="B9">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>You</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Huo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>YQ</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hane</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Lazo</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>OD</given-names>
+            </name>
+          </person-group>
+          <article-title>BatchPrimer3: a high throughput web application for PCR and sequencing primer design</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>253</fpage>
+          <pub-id pub-id-type="pmid">18510760</pub-id>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-9-253</pub-id>
+        </citation>
+      </ref>
+      <ref id="B10">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wei</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Fu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Arora</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Intron-flanking EST-PCR markers: from genetic marker development to gene structure analysis in Rhododendron</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2005</year>
+          <volume>111</volume>
+          <fpage>1347</fpage>
+          <lpage>1356</lpage>
+          <pub-id pub-id-type="pmid">16167139</pub-id>
+          <pub-id pub-id-type="doi">10.1007/s00122-005-0064-6</pub-id>
+        </citation>
+      </ref>
+      <ref id="B11">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Palumbi</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Baker</surname>
+              <given-names>CS</given-names>
+            </name>
+          </person-group>
+          <article-title>Contrasting population structure from nuclear intron sequences and mtDNA of humpback whales</article-title>
+          <source>Mol Biol Evol</source>
+          <year>1994</year>
+          <volume>11</volume>
+          <fpage>426</fpage>
+          <lpage>435</lpage>
+          <pub-id pub-id-type="pmid">7912407</pub-id>
+        </citation>
+      </ref>
+      <ref id="B12">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paterson</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>Bowers</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Bruggmann</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Dubchak</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Grimwood</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gundlach</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Haberer</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hellsten</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Mitros</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Poliakov</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Sorghum bicolor genome and the diversification of grasses</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <fpage>551</fpage>
+          <lpage>556</lpage>
+          <pub-id pub-id-type="pmid">19189423</pub-id>
+          <pub-id pub-id-type="doi">10.1038/nature07723</pub-id>
+        </citation>
+      </ref>
+      <ref id="B13">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fedorov</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Merican</surname>
+              <given-names>AF</given-names>
+            </name>
+            <name>
+              <surname>Gilbert</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Large-scale comparison of intron positions among animal, plant, and fungal genes</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2002</year>
+          <volume>99</volume>
+          <fpage>16128</fpage>
+          <lpage>16133</lpage>
+          <pub-id pub-id-type="pmid">12444254</pub-id>
+          <pub-id pub-id-type="doi">10.1073/pnas.242624899</pub-id>
+        </citation>
+      </ref>
+      <ref id="B14">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wendel</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Cronn</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Alvarez</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Small</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Senchina</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <article-title>Intron size and genome size in plants</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2002</year>
+          <volume>19</volume>
+          <fpage>2346</fpage>
+          <lpage>2352</lpage>
+          <pub-id pub-id-type="pmid">12446829</pub-id>
+        </citation>
+      </ref>
+      <ref id="B15">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haberer</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Young</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bharti</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Gundlach</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Raymond</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Fuks</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Butler</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wing</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Rounsley</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Birren</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Structure and architecture of the maize genome</article-title>
+          <source>Plant Physiol</source>
+          <year>2005</year>
+          <volume>139</volume>
+          <fpage>1612</fpage>
+          <lpage>1624</lpage>
+          <pub-id pub-id-type="pmid">16339807</pub-id>
+          <pub-id pub-id-type="doi">10.1104/pp.105.068718</pub-id>
+        </citation>
+      </ref>
+      <ref id="B16">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Guo</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Keightley</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Patterns of selective constraints in noncoding DNA of rice</article-title>
+          <source>BMC Evol Biol</source>
+          <year>2007</year>
+          <volume>7</volume>
+          <fpage>208</fpage>
+          <pub-id pub-id-type="pmid">17976238</pub-id>
+          <pub-id pub-id-type="doi">10.1186/1471-2148-7-208</pub-id>
+        </citation>
+      </ref>
+      <ref id="B17">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Keightley</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Gaffney</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional constraints and frequency of deleterious mutations in noncoding DNA of rodents</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2003</year>
+          <volume>100</volume>
+          <fpage>13402</fpage>
+          <lpage>13406</lpage>
+          <pub-id pub-id-type="pmid">14597721</pub-id>
+          <pub-id pub-id-type="doi">10.1073/pnas.2233252100</pub-id>
+        </citation>
+      </ref>
+      <ref id="B18">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kang</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>KO</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>BD</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <article-title>FESD: a Functional Element SNPs Database in human</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2005</year>
+          <fpage>D518</fpage>
+          <lpage>522</lpage>
+          <pub-id pub-id-type="pmid">15608252</pub-id>
+        </citation>
+      </ref>
+      <ref id="B19">
+        <citation citation-type="other">
+          <article-title>dbEST</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/dbEST/"/>
+        </citation>
+      </ref>
+      <ref id="B20">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boguski</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Lowe</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Tolstoshev</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <article-title>dbEST--database for "expressed sequence tags"</article-title>
+          <source>Nat Genet</source>
+          <year>1993</year>
+          <volume>4</volume>
+          <fpage>332</fpage>
+          <lpage>333</lpage>
+          <pub-id pub-id-type="pmid">8401577</pub-id>
+          <pub-id pub-id-type="doi">10.1038/ng0893-332</pub-id>
+        </citation>
+      </ref>
+      <ref id="B21">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Choi</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Uhm</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Limpens</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Lim</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Mun</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Kalo</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Penmetsa</surname>
+              <given-names>RV</given-names>
+            </name>
+            <name>
+              <surname>Seres</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kulikova</surname>
+              <given-names>O</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A sequence-based genetic map of Medicago truncatula and comparison of marker colinearity with M. sativa</article-title>
+          <source>Genetics</source>
+          <year>2004</year>
+          <volume>166</volume>
+          <fpage>1463</fpage>
+          <lpage>1502</lpage>
+          <pub-id pub-id-type="pmid">15082563</pub-id>
+          <pub-id pub-id-type="doi">10.1534/genetics.166.3.1463</pub-id>
+        </citation>
+      </ref>
+      <ref id="B22">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hassen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lemaire</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Fauvelot</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bonhomme</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Seventeen new exon-primed intron-crossing polymerase chain reaction amplifiable introns in fish</article-title>
+          <source>Molecular Ecology Notes</source>
+          <year>2002</year>
+          <volume>2</volume>
+          <fpage>334</fpage>
+          <lpage>340</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1471-8286.2002.00236.x</pub-id>
+        </citation>
+      </ref>
+      <ref id="B23">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hu</surname>
+              <given-names>ZL</given-names>
+            </name>
+            <name>
+              <surname>Glenn</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ramos</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Otieno</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Reecy</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Rothschild</surname>
+              <given-names>MF</given-names>
+            </name>
+          </person-group>
+          <article-title>Expeditor: a pipeline for designing primers using human gene structure and livestock animal EST information</article-title>
+          <source>J Hered</source>
+          <year>2005</year>
+          <volume>96</volume>
+          <fpage>80</fpage>
+          <lpage>82</lpage>
+          <pub-id pub-id-type="pmid">15598711</pub-id>
+          <pub-id pub-id-type="doi">10.1093/jhered/esi015</pub-id>
+        </citation>
+      </ref>
+      <ref id="B24">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fredslund</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Madsen</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Hougaard</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Nielsen</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Bertioli</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Sandal</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Stougaard</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Schauser</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>A general pipeline for the development of anchor markers for comparative genomics in plants</article-title>
+          <source>BMC Genomics</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <fpage>207</fpage>
+          <pub-id pub-id-type="pmid">16907970</pub-id>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-7-207</pub-id>
+        </citation>
+      </ref>
+      <ref id="B25">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fredslund</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Madsen</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Hougaard</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Sandal</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Stougaard</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bertioli</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Schauser</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>GeMprospector--online design of cross-species genetic marker candidates in legumes and grasses</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2006</year>
+          <fpage>W670</fpage>
+          <lpage>675</lpage>
+          <pub-id pub-id-type="pmid">16845095</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/gkl201</pub-id>
+        </citation>
+      </ref>
+      <ref id="B26">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bekaert</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Teeling</surname>
+              <given-names>EC</given-names>
+            </name>
+          </person-group>
+          <article-title>UniPrime: a workflow-based platform for improved universal primer design</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <fpage>e56</fpage>
+          <pub-id pub-id-type="pmid">18424794</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/gkn191</pub-id>
+        </citation>
+      </ref>
+      <ref id="B27">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boutros</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Stokes</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Bekaert</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Teeling</surname>
+              <given-names>EC</given-names>
+            </name>
+          </person-group>
+          <article-title>UniPrime2: a web service providing easier Universal Primer design</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2009</year>
+          <fpage>W209</fpage>
+          <lpage>213</lpage>
+          <pub-id pub-id-type="pmid">19401435</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/gkp269</pub-id>
+        </citation>
+      </ref>
+      <ref id="B28">
+        <citation citation-type="other">
+          <article-title>US wheat SNP project</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/SNP/new/index.shtml"/>
+        </citation>
+      </ref>
+      <ref id="B29">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>ZL</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>MC</given-names>
+            </name>
+          </person-group>
+          <article-title>Deletion polymorphism in wheat chromosome regions with contrasting recombination rates</article-title>
+          <source>Genetics</source>
+          <year>2004</year>
+          <volume>168</volume>
+          <fpage>1665</fpage>
+          <lpage>1675</lpage>
+          <pub-id pub-id-type="pmid">15579715</pub-id>
+          <pub-id pub-id-type="doi">10.1534/genetics.103.024927</pub-id>
+        </citation>
+      </ref>
+      <ref id="B30">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sears</surname>
+              <given-names>ER</given-names>
+            </name>
+          </person-group>
+          <article-title>The aneuploids of common wheat</article-title>
+          <source>Mo Agri Exp Stn Res Bull</source>
+          <year>1954</year>
+          <volume>572</volume>
+          <fpage>1</fpage>
+          <lpage>58</lpage>
+        </citation>
+      </ref>
+      <ref id="B31">
+        <citation citation-type="other">
+          <article-title>NCBI UniGene</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/unigene"/>
+        </citation>
+      </ref>
+      <ref id="B32">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Childs</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Hamilton</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Ly</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Cheung</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Rabinowicz</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Town</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Buell</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>AP</given-names>
+            </name>
+          </person-group>
+          <article-title>The TIGR Plant Transcript Assemblies database</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2007</year>
+          <fpage>D846</fpage>
+          <lpage>851</lpage>
+          <pub-id pub-id-type="pmid">17088284</pub-id>
+          <pub-id pub-id-type="doi">10.1093/nar/gkl785</pub-id>
+        </citation>
+      </ref>
+      <ref id="B33">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altschul</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Gish</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Lipman</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>J Mol Biol</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <fpage>403</fpage>
+          <lpage>410</lpage>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </citation>
+      </ref>
+      <ref id="B34">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koonin</surname>
+              <given-names>EV</given-names>
+            </name>
+          </person-group>
+          <article-title>Orthologs, paralogs, and evolutionary genomics</article-title>
+          <source>Annu Rev Genet</source>
+          <year>2005</year>
+          <volume>39</volume>
+          <fpage>309</fpage>
+          <lpage>338</lpage>
+          <pub-id pub-id-type="pmid">16285863</pub-id>
+          <pub-id pub-id-type="doi">10.1146/annurev.genet.39.073003.114725</pub-id>
+        </citation>
+      </ref>
+      <ref id="B35">
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rozen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Skaletsky</surname>
+              <given-names>HJ</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Krawet S, Misener S</surname>
+            </name>
+          </person-group>
+          <article-title>Primer3 on the WWW for general users and for biologist programmers</article-title>
+          <source>Bioinformatics Methods and Protocols: Methods in Molecular Biology</source>
+          <year>2000</year>
+          <publisher-name>Totowa NJ: Humana Press</publisher-name>
+          <fpage>365</fpage>
+          <lpage>386</lpage>
+        </citation>
+      </ref>
+      <ref id="B36">
+        <citation citation-type="other">
+          <article-title>ConservedPrimers pipline software</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/demos/ConservedPrimers/"/>
+        </citation>
+      </ref>
+      <ref id="B37">
+        <citation citation-type="other">
+          <article-title>The <italic>Arabidopsis thaliana </italic>genome</article-title>
+          <ext-link ext-link-type="uri" xlink:href="ftp://ftp.arabidopsis.org/home/tair/Sequences/whole_chromosomes/"/>
+        </citation>
+      </ref>
+      <ref id="B38">
+        <citation citation-type="other">
+          <article-title>IRGSP Releases Build 4.0 Pseudomolecules of the Rice Genome</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://rgp.dna.affrc.go.jp/IRGSP/Build4/build4.html"/>
+        </citation>
+      </ref>
+      <ref id="B39">
+        <citation citation-type="other">
+          <article-title>The <italic>Sorghum bicolor </italic>genome</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://genome.jgi-psf.org/Sorbi1/Sorbi1.download.ftp.html"/>
+        </citation>
+      </ref>
+      <ref id="B40">
+        <citation citation-type="other">
+          <article-title>The <italic>Brachypodium distachyon </italic>genome</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.brachypodium.org/"/>
+        </citation>
+      </ref>
+      <ref id="B41">
+        <citation citation-type="other">
+          <article-title>The <italic>Glycine max </italic>genome</article-title>
+          <ext-link ext-link-type="uri" xlink:href="ftp://ftp.jgi-psf.org/pub/JGI_data/Glycine_max/Glyma1/"/>
+        </citation>
+      </ref>
+      <ref id="B42">
+        <citation citation-type="other">
+          <article-title>The <italic>Medicago truncatula </italic>genome</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.medicago.org/genome/downloads.php"/>
+        </citation>
+      </ref>
+      <ref id="B43">
+        <citation citation-type="other">
+          <article-title>Grape genome browser</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.cns.fr/externe/GenomeBrowser/Vitis/"/>
+        </citation>
+      </ref>
+      <ref id="B44">
+        <citation citation-type="other">
+          <article-title>The <italic>Populus trichocarpa </italic>genome</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://genome.jgi-psf.org/Poptr1_1/Poptr1_1.download.ftp.html"/>
+        </citation>
+      </ref>
+      <ref id="B45">
+        <citation citation-type="other">
+          <article-title>The Apache HTTP Server</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://httpd.apache.org/"/>
+        </citation>
+      </ref>
+      <ref id="B46">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Qi</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Echalier</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lazo</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Butler</surname>
+              <given-names>GE</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>OD</given-names>
+            </name>
+            <name>
+              <surname>Akhunov</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Linkiewicz</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Ratnasiri</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A chromosome bin map of 16,000 expressed sequence tag loci and distribution of genes among the three genomes of polyploid wheat</article-title>
+          <source>Genetics</source>
+          <year>2004</year>
+          <volume>168</volume>
+          <fpage>701</fpage>
+          <lpage>712</lpage>
+          <pub-id pub-id-type="pmid">15514046</pub-id>
+          <pub-id pub-id-type="doi">10.1534/genetics.104.034868</pub-id>
+        </citation>
+      </ref>
+      <ref id="B47">
+        <citation citation-type="other">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Akhunov</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Akhunova</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>OD</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Blake</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Clegg</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Coleman-Derr</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Conley</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Crossman</surname>
+              <given-names>CC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Wheat SNP markers: development, mapping and deployment</article-title>
+          <source>Plant &amp; Animal Genomes XIV San Diego</source>
+          <year>2007</year>
+        </citation>
+      </ref>
+      <ref id="B48">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Lazo</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Vogel</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hayden</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Coleman-Derr</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Hill</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>OD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The nuclear genome of Brachypodium distachyon: analysis of BAC end sequences</article-title>
+          <source>Funct Integr Genomics</source>
+          <year>2008</year>
+          <volume>8</volume>
+          <fpage>135</fpage>
+          <lpage>147</lpage>
+          <pub-id pub-id-type="pmid">17985162</pub-id>
+          <pub-id pub-id-type="doi">10.1007/s10142-007-0062-7</pub-id>
+        </citation>
+      </ref>
+      <ref id="B49">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vogel</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>YQ</given-names>
+            </name>
+            <name>
+              <surname>Twigg</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lazo</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Laudencia-Chingcuanco</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Hayden</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Donze</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Vivian</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Stamova</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Coleman-Derr</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>EST sequencing and phylogenetic analysis of the model grass Brachypodium distachyon</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2006</year>
+          <volume>113</volume>
+          <fpage>186</fpage>
+          <lpage>195</lpage>
+          <pub-id pub-id-type="pmid">16791686</pub-id>
+          <pub-id pub-id-type="doi">10.1007/s00122-006-0285-3</pub-id>
+        </citation>
+      </ref>
+      <ref id="B50">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roy</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name>
+              <surname>Fedorov</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gilbert</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Large-scale comparison of intron positions in mammalian genes shows intron loss but no gain</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2003</year>
+          <volume>100</volume>
+          <fpage>7158</fpage>
+          <lpage>7162</lpage>
+          <pub-id pub-id-type="pmid">12777620</pub-id>
+          <pub-id pub-id-type="doi">10.1073/pnas.1232297100</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

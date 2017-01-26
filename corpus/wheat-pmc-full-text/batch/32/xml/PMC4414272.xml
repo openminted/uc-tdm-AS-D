@@ -1,0 +1,925 @@
+<?xml version="1.0"?>
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v3.0 20080202//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing3.dtd?>
+  <?SourceDTD.Version 3.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, CA USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4414272</article-id>
+      <article-id pub-id-type="pmid">25923686</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0125099</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-14-56351</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The <italic>Xenopus laevis</italic> Atg4B Protease: Insights into Substrate Recognition and Application for Tag Removal from Proteins Expressed in Pro- and Eukaryotic Hosts</article-title>
+        <alt-title alt-title-type="running-head">Substrate Recognition and Tag Removal by the <italic>Xenopus</italic> Atg4B Protease</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Frey</surname>
+            <given-names>Steffen</given-names>
+          </name>
+          <xref rid="cor001" ref-type="corresp">*</xref>
+          <xref ref-type="aff" rid="aff001"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>G&#xF6;rlich</surname>
+            <given-names>Dirk</given-names>
+          </name>
+          <xref rid="cor001" ref-type="corresp">*</xref>
+          <xref ref-type="aff" rid="aff001"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff001">
+        <addr-line>Abteilung Zellul&#xE4;re Logistik, Max-Planck-Institut f&#xFC;r Biophysikalische Chemie, G&#xF6;ttingen, Germany</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Permyakov</surname>
+            <given-names>Eugene A.</given-names>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Russian Academy of Sciences, Institute for Biological Instrumentation, RUSSIAN FEDERATION</addr-line>
+      </aff>
+      <author-notes>
+        <fn fn-type="conflict" id="coi001">
+          <p><bold>Competing Interests: </bold>The authors have read the journal's policy on competing interests and declare the following: the authors have a pending patent application directly related to the topics of the current manuscript (European Patent Application 14 192 557.8; Title: Tag Removal from Proteins Expressed in Pro- and Eukaryotic Hosts; Applicant: Max-Planck-Gesellschaft zur F&#xF6;rderung der Wissenschaften e.V.; Inventors: Steffen Frey and Dirk G&#xF6;rlich). A further pending patent application is more distantly related to the topic (International Patent Application PCT/EP2014/070918; Title: An orthogonal set of tag-cleaving proteases for purification of proteins and stoichiometric protein complexes; Applicant: Max-Planck-Gesellschaft zur F&#xF6;rderung der Wissenschaften e.V.; Inventors: Steffen Frey and Dirk G&#xF6;rlich). Both patent applications do not influence the authors&#x2019; adherence to all PLoS ONE policies on sharing data and materials.</p>
+        </fn>
+        <fn fn-type="con" id="contrib001">
+          <p>Conceived and designed the experiments: SF DG. Performed the experiments: SF. Analyzed the data: SF DG. Contributed reagents/materials/analysis tools: SF. Wrote the paper: SF DG.</p>
+        </fn>
+        <corresp id="cor001">* E-mail: <email>sfrey@mpibpc.mpg.de</email> (SF); <email>goerlich@mpibpc.mpg.de</email> (DG)</corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>29</day>
+        <month>4</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>10</volume>
+      <issue>4</issue>
+      <elocation-id>e0125099</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>16</day>
+          <month>12</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>20</day>
+          <month>3</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2015</copyright-year>
+        <copyright-holder>Frey, G&#xF6;rlich</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:type="simple" xlink:href="pone.0125099.pdf"/>
+      <abstract>
+        <p>During autophagy, members of the ubiquitin-like Atg8 protein family get conjugated to phosphatidylethanolamine and act as protein-recruiting scaffolds on the autophagosomal membrane. The Atg4 protease produces mature Atg8 from C-terminally extended precursors and deconjugates lipid-bound Atg8. We now found that <italic>Xenopus laevis</italic> Atg4B (xAtg4B) is ideally suited for proteolytic removal of N-terminal tags from recombinant proteins. To implement this strategy, an Atg8 cleavage module is inserted in between tag and target protein. An optimized xAtg4B protease fragment includes the so far uncharacterized C-terminus, which crucially contributes to recognition of the <italic>Xenopus</italic> Atg8 homologs xLC3B and xGATE16. xAtg4B-mediated tag cleavage is very robust in solution or on-column, efficient at 4&#xB0;C and orthogonal to TEV protease and the recently introduced proteases bdSENP1, bdNEDP1 and xUsp2. Importantly, xLC3B fusions are stable in wheat germ extract or when expressed in <italic>Saccharomyces cerevisiae</italic>, but cleavable by xAtg4B during or following purification. We also found that fusions to the bdNEDP1 substrate bdNEDD8 are stable in <italic>S</italic>. <italic>cerevisiae</italic>. In combination, or findings now provide a system, where proteins and complexes fused to xLC3B or bdNEDD8 can be expressed in a eukaryotic host and purified by successive affinity capture and proteolytic release steps.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was funded by the Max-Planck-Geselleschaft (<ext-link ext-link-type="uri" xlink:href="http://www.mpg.de">www.mpg.de</ext-link>) and the Deutsche Forschungsgemeinschaft (SFB860). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="10"/>
+        <table-count count="0"/>
+        <page-count count="25"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta id="data-availability">
+          <meta-name>Data Availability</meta-name>
+          <meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <title>Data Availability</title>
+      <p>All relevant data are within the paper and its Supporting Information files.</p>
+    </notes>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec001">
+      <title>Introduction</title>
+      <p>Macroautophagic self-degradation (hereafter autophagy) is a common response of eukaryotic cells to stress stimuli like starvation or pathogen infection [<xref rid="pone.0125099.ref001" ref-type="bibr">1</xref>,<xref rid="pone.0125099.ref002" ref-type="bibr">2</xref>]. Generally, bulk cytoplasm is non-selectively enclosed in autophagosomes, which are double membrane vesicles that fuse with lysosomes or the vacuole for degradation or recycling of the engulfed components. However, also specific targets can be degraded via receptors and adaptor proteins [<xref rid="pone.0125099.ref003" ref-type="bibr">3</xref>&#x2013;<xref rid="pone.0125099.ref005" ref-type="bibr">5</xref>]. During autophagosome formation, small ubiquitin-like proteins (UBLs) of the Atg8 family are covalently attached via their C-terminal Gly residue to phosphatidylethanolamine (PE) lipids on the autophagosomal membrane [<xref rid="pone.0125099.ref006" ref-type="bibr">6</xref>]. Although it is clear that Atg8 lipidation and tethering to the autophagosomal membrane is essential for autophagosome biogenesis, the precise mechanism of Atg8 function so far remains elusive [<xref rid="pone.0125099.ref002" ref-type="bibr">2</xref>,<xref rid="pone.0125099.ref007" ref-type="bibr">7</xref>,<xref rid="pone.0125099.ref008" ref-type="bibr">8</xref>].</p>
+      <p>Unlike <italic>S</italic>. <italic>cerevisiae</italic>, which only has one Atg8 paralog, mammals encode two subfamilies of Atg8-like proteins (GABARAP/GATE16 and LC3). These subfamilies often comprise several members and act in distinct steps of autophagosome formation [<xref rid="pone.0125099.ref009" ref-type="bibr">9</xref>&#x2013;<xref rid="pone.0125099.ref014" ref-type="bibr">14</xref>]. All Atg8 family members are structurally similar. Their structured core domain consists of an ubiquitin-like &#x3B2;-grasp fold preceded by two additional N-terminal &#x3B1;-helices [<xref rid="pone.0125099.ref015" ref-type="bibr">15</xref>&#x2013;<xref rid="pone.0125099.ref019" ref-type="bibr">19</xref>]. This domain represents a versatile protein interaction surface, which is essential for recruitment of the autophagy machinery to the autophagosomal membrane [<xref rid="pone.0125099.ref002" ref-type="bibr">2</xref>]. The characteristic and flexible C-terminus of all Atg8 family members ends with Phe-Gly (FG) or Tyr-Gly (YG). It is generated by Atg4 proteases that cleave C-terminally extended precursors [<xref rid="pone.0125099.ref020" ref-type="bibr">20</xref>&#x2013;<xref rid="pone.0125099.ref025" ref-type="bibr">25</xref>]. This group of highly specific proteases is also responsible for deconjugating Atg8 proteins from PE [<xref rid="pone.0125099.ref023" ref-type="bibr">23</xref>], a process that is required at a late stage of autophagosome formation [<xref rid="pone.0125099.ref012" ref-type="bibr">12</xref>,<xref rid="pone.0125099.ref026" ref-type="bibr">26</xref>].</p>
+      <p>As for Atg8, several paralogous Atg4-like proteases exist in higher eukaryotes, which might have different specificities for individual Atg8 paralogs [<xref rid="pone.0125099.ref027" ref-type="bibr">27</xref>,<xref rid="pone.0125099.ref028" ref-type="bibr">28</xref>]. Amongst the four human Atg4 paralogs (Atg4A-D [<xref rid="pone.0125099.ref020" ref-type="bibr">20</xref>,<xref rid="pone.0125099.ref022" ref-type="bibr">22</xref>,<xref rid="pone.0125099.ref024" ref-type="bibr">24</xref>,<xref rid="pone.0125099.ref025" ref-type="bibr">25</xref>]), Atg4B is the most versatile and active protease on recombinant fusion proteins. It can process the human Atg8 paralogs LC3B, GATE16, GABARAP and Atg8L with similar efficiencies [<xref rid="pone.0125099.ref027" ref-type="bibr">27</xref>]. The other three Atg4 enzymes are catalytically much less active.</p>
+      <p>Atg8-like proteins represent only one class of UBLs. This group of small protein modifiers also includes the founding member ubiquitin, SUMO and NEDD8, which all act as regulators of various intracellular processes (reviewed in references [<xref rid="pone.0125099.ref029" ref-type="bibr">29</xref>,<xref rid="pone.0125099.ref030" ref-type="bibr">30</xref>]). In contrast to Atg8-like proteins, however, other UBLs generally possess a C-terminal Gly-Gly (GG) motif and are conjugated to proteins via isopeptide bonds formed between their C-terminal carboxyl and group primary amine groups on the surface of target proteins. Importantly, all mentioned UBLs are initially processed and often deconjugated by dedicated proteases [<xref rid="pone.0125099.ref029" ref-type="bibr">29</xref>]. In most cases, these proteases are highly specific and efficient, and are therefore ideally suited for biochemical applications.</p>
+      <p>The yeast SUMO specific protease Ulp1p (scUlp1; [<xref rid="pone.0125099.ref031" ref-type="bibr">31</xref>]), for example, is used for the <italic>in vitro</italic> tag-removal from recombinant proteins [<xref rid="pone.0125099.ref032" ref-type="bibr">32</xref>]. Recently, we characterized additional UBL-specific proteases and found that the <italic>Brachypodium distachyon</italic> (bd) SUMO- and NEDD8-specific proteases bdSENP1 and bdNEDP1 remove tags even more robustly than scUlp1 and up to 1000 times more efficiently than TEV protease. Both enzymes can thus be used for the highly efficient purification of recombinant proteins by on-column or post-column cleavage [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>,<xref rid="pone.0125099.ref034" ref-type="bibr">34</xref>]. Importantly, bdSENP1 and bdNEDP1 display mutually exclusive (i.e. orthogonal) substrate specificity, which can be exploited for purification of protein complexes with a defined subunit stoichiometry by cycles of tag-mediated affinity capture and subsequent proteolytic release [<xref rid="pone.0125099.ref034" ref-type="bibr">34</xref>].</p>
+      <p>While this method is straightforward when purifying proteins or protein complexes expressed in prokaryotic hosts, UBL fusions are typically cleaved in eukaryotic hosts by endogenous UBL-processing enzymes. Recently, the SUMO variant SUMOstar has been introduced, which allows purification of recombinant fusion proteins also from eukaryotic hosts [<xref rid="pone.0125099.ref035" ref-type="bibr">35</xref>,<xref rid="pone.0125099.ref036" ref-type="bibr">36</xref>]. Further UBL-like protease substrates, which are stable in eukaryotic hosts but readily cleavable by dedicated proteases, might become valuable tools for the purification of protein complexes expressed in eukaryotes. In other applications, such substrate/protease pairs may be used for specific <italic>in-vivo</italic> manipulations of recombinant fusion proteins: If UBL fusions can be stably expressed in a given host cell, cleavage can be induced upon co-expression of the respective protease. Such systems can, e.g., be applied to control the stability or localization of a protein of interest [<xref rid="pone.0125099.ref037" ref-type="bibr">37</xref>&#x2013;<xref rid="pone.0125099.ref039" ref-type="bibr">39</xref>].</p>
+      <p>Recently we also described the application of the <italic>S</italic>. <italic>cerevisiae</italic> (sc) Atg4 protease for tag removal [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>]. scAtg4 is highly active <italic>in vitro</italic> and displays mutually exclusive cleavage specificity to SUMO, NEDD8 and ubiquitin-processing enzymes. Yet, neither this protease nor scAtg8 fusion proteins perform well in terms of solubility and/or expression level.</p>
+      <p>We now identified a seemingly optimal alternative, namely the Atg4B protease from <italic>Xenopus laevis</italic> (xAtg4B), along with its substrates xLC3B and xGATE16. N-terminal xLC3B- or xGATE16-containing tags allow for high yield and soluble expression of target proteins. Likewise, the production of recombinant xAtg4B protease is straightforward. We found compelling evidence that the so far uncharacterized C-terminal extension of xAtg4B contributes to the recognition of substrates containing xLC3B or xGATE16. The optimal enzyme fragment xAtg4B<sup>14-384</sup> is extraordinary robust: It cleaves its substrates also at low temperatures, in the presence of high salt or in problematic sequence contexts. At 0&#xB0;C, xAtg4B has a turnover rate similar to bdNEDP1 and is thus &#x2248;30 to 50 times more active than TEV protease [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>]. Additionally, it has orthogonal specificity to the recently introduced bdSENP1 and bdNEDP1 proteases. Importantly, we also show that xLC3B fusions are stable in <italic>S</italic>. <italic>cerevisiae</italic> and in wheat germ extract. Likewise, we found bdNEDD8 fusions to be resistant towards endogenous <italic>S</italic>. <italic>cerevisiae</italic> proteases. Thus, the bdNEDD8 and xLC3B cleavage modules allow purifying recombinant target proteins by the affinity capture and proteolytic release strategy also from selected eukaryotic hosts.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="sec002">
+      <title>Methods</title>
+      <sec id="sec003">
+        <title>Protein sequence alignments</title>
+        <p>Sequence alignments were performed using the ClustalW algorithm implemented in MegAlign version 11.2.1. (DNAStar, Inc.).</p>
+      </sec>
+      <sec id="sec004">
+        <title>Protein expression and purification</title>
+        <p><italic>Substrate proteins and proteases</italic> were over-expressed in <italic>E</italic>. <italic>coli</italic> from appropriate expression vectors (<xref rid="pone.0125099.s012" ref-type="supplementary-material">S1 Table</xref>) and purified as described before [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>].</p>
+      </sec>
+      <sec id="sec005">
+        <title>Cleavage assays</title>
+        <p><italic>Cleavage assays in solution and on column</italic> were performed as described before [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>,<xref rid="pone.0125099.ref034" ref-type="bibr">34</xref>]. If not stated otherwise, all assays were performed in LS-S buffer (250 mM NaCl, 40 mM Tris/HCl pH 7.5, 2 mM MgCl<sub>2</sub>, 250 mM sucrose, 2 mM DTT). On-column cleavage assays were done on silica- or Sepharose-based Ni<sup>2+</sup> chelate resins with high porosity.</p>
+      </sec>
+      <sec id="sec006">
+        <title>Estimation of apparent cleavage rates</title>
+        <p>For a more quantitative comparison of cleavage conditions and protease variants, we wanted to compare cleavage rates. The cleavage reactions should not follow a simple Michaelis-Menten kinetics. Instead, they are complicated by the fact that one of the end products, namely the cut off xLC3B or xGATE16 module, binds strongly to the protease and thus exhibits product inhibition. Given, however, that this product and the substrate have a very large and essentially identical interaction interface with the protease, it is reasonable to assume that the two bind with approximately the same affinities. As detailed below, such assumption simplifies the time course of the cleavage reaction such that it can be approximated by a single exponential and that a single time point becomes sufficient to derive a cleavage rate.</p>
+        <p>For a simple cleavage reaction [<italic>S</italic>]&#x2192;[<italic>P</italic>]+[<italic>P</italic>'] with only product [<italic>P</italic>] competing with the substrate [<italic>S</italic>] for the enzyme [<italic>E</italic>], we can extend the Michaelis-Menten equation [<xref rid="pone.0125099.ref040" ref-type="bibr">40</xref>] as<disp-formula id="pone.0125099.e001"><alternatives><graphic xlink:href="pone.0125099.e001.jpg" id="pone.0125099.e001g" position="anchor" mimetype="image" orientation="portrait"/><mml:math id="M1"><mml:mrow><mml:mi>v</mml:mi><mml:mo>=</mml:mo><mml:mo>&#x2212;</mml:mo><mml:mfrac><mml:mrow><mml:mi>d</mml:mi><mml:mo stretchy="false">[</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>k</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>&#x22C5;</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:msub><mml:mi>E</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo stretchy="false">]</mml:mo><mml:mo>&#x22C5;</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi>M</mml:mi></mml:msub><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mfrac><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:mi>P</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi>P</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mo>+</mml:mo><mml:mfrac><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi>M</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mfrac></mml:mrow></mml:math></alternatives><label>(eq 1)</label></disp-formula>
+where [<italic>E</italic><sub><italic>0</italic></sub>] is the total enzyme concentration, <italic>K</italic><sub><italic>M</italic></sub> is the Michaelis-Menten constant and <italic>K</italic><sub><italic>P</italic></sub> is the end product inhibition constant. We assume that substrate and product have similar affinity for the enzyme (i.e. <italic>K</italic><sub><italic>M</italic></sub> = <italic>K</italic><sub><italic>P</italic></sub>). We can thus simplify <xref rid="pone.0125099.e001" ref-type="disp-formula">eq 1</xref> to
+<disp-formula id="pone.0125099.e002"><alternatives><graphic xlink:href="pone.0125099.e002.jpg" id="pone.0125099.e002g" position="anchor" mimetype="image" orientation="portrait"/><mml:math id="M2"><mml:mrow><mml:mi>v</mml:mi><mml:mo>=</mml:mo><mml:mo>&#x2212;</mml:mo><mml:mfrac><mml:mrow><mml:mi>d</mml:mi><mml:mo stretchy="false">[</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>k</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>&#x22C5;</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:msub><mml:mi>E</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo stretchy="false">]</mml:mo><mml:mo>&#x22C5;</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi>M</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:mi>P</mml:mi><mml:mo stretchy="false">]</mml:mo><mml:mo>+</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:mfrac></mml:mrow></mml:math></alternatives><label>(eq 2)</label></disp-formula>
+Because during the cleavage reaction one molecule of product is formed per substrate molecule, we can further substitute [<italic>P</italic>] = [<italic>S</italic><sub><italic>0</italic></sub>]-[<italic>S</italic>], with S<sub><italic>0</italic></sub> being the initial substrate concentration:
+<disp-formula id="pone.0125099.e003"><alternatives><graphic xlink:href="pone.0125099.e003.jpg" id="pone.0125099.e003g" position="anchor" mimetype="image" orientation="portrait"/><mml:math id="M3"><mml:mrow><mml:mi>v</mml:mi><mml:mo>=</mml:mo><mml:mo>&#x2212;</mml:mo><mml:mfrac><mml:mrow><mml:mi>d</mml:mi><mml:mo stretchy="false">[</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>k</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>&#x22C5;</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:msub><mml:mi>E</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi>M</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:msub><mml:mi>S</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:mfrac><mml:mo>&#x22C5;</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:math></alternatives><label>(eq 3)</label></disp-formula>
+With
+<disp-formula id="pone.0125099.e004"><alternatives><graphic xlink:href="pone.0125099.e004.jpg" id="pone.0125099.e004g" position="anchor" mimetype="image" orientation="portrait"/><mml:math id="M4"><mml:mrow><mml:msub><mml:mi>k</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mi>p</mml:mi><mml:mi>p</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>k</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>&#x22C5;</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:msub><mml:mi>E</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi>M</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mo stretchy="false">[</mml:mo><mml:msub><mml:mi>S</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:mfrac></mml:mrow></mml:math></alternatives><label>(eq 4)</label></disp-formula>
+we can derive the following single exponential
+<disp-formula id="pone.0125099.e005"><alternatives><graphic xlink:href="pone.0125099.e005.jpg" id="pone.0125099.e005g" position="anchor" mimetype="image" orientation="portrait"/><mml:math id="M5"><mml:mrow><mml:mfrac><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:msub><mml:mi>S</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>&#x2212;</mml:mo><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>k</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mi>p</mml:mi><mml:mi>p</mml:mi></mml:mrow></mml:msub><mml:mo>&#x22C5;</mml:mo><mml:mi>t</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:math></alternatives><label>(eq 5)</label></disp-formula>
+For a comparison of cleavage rates from single time points, we compare the apparent cleavage rates <italic>k</italic><sub><italic>app</italic></sub> without explicitly determining <italic>K</italic><sub><italic>M</italic></sub> and <italic>k</italic><sub><italic>cat</italic></sub>.</p>
+      </sec>
+      <sec id="sec007">
+        <title>Dynamic light scattering (DLS)</title>
+        <p>Proteases diluted to 10 &#x3BC;M in LS-S buffer were ultracentrifuged (200.000 g, 30 min) and assayed in a closed cuvette using a DynaPro NanoStar DLS instrument (Wyatt Technology). To acquire heat denaturation curves, the temperature was automatically raised by 1&#xB0;C every 10 min. DLS signals were acquired just before each temperature step.</p>
+      </sec>
+      <sec id="sec008">
+        <title><italic>In vitro</italic> binding assays</title>
+        <p>A Ni<sup>2+</sup> chelate resin was loaded with 40 &#x3BC;M His<sub>14</sub>-Spacer-xLC3B-GFP or His<sub>14</sub>-Spacer-xGATE16-GFP. An empty resin served as a control. 20 &#x3BC;l aliquots were incubated with 100 &#x3BC;l of an equimolar mixture of full-length protease and a protease fragment (10 &#x3BC;M each) for 1 h at 25&#xB0;C in LS-S buffer. After washing (3x 30 sec), bound proteins were eluted with SDS sample buffer containing 500 mM imidazole and analyzed by SDS-PAGE and Coomassie staining.</p>
+      </sec>
+      <sec id="sec009">
+        <title>Example purifications from <italic>E</italic>. <italic>coli</italic></title>
+        <p>Relevant fusion proteins were over-expressed from appropriate expression vectors in <italic>E</italic>. <italic>coli</italic> (<xref rid="pone.0125099.s012" ref-type="supplementary-material">S1 Table</xref>). Cleared lysates in LS buffer (280 mM NaCl, 45 mM Tris/HCl pH 7.5, 4.5 mM MgCl<sub>2</sub>, 10 mM DTT) + 15 mM imidazole were incubated with a Ni<sup>2+</sup> chelate resin. After washing, the target proteins were eluted with 500 nM xAtg4B<sup>14-384</sup> in LS buffer at 4&#xB0;C. After 1 h, proteins remaining on the resin were eluted with 0.5 M imidazole in LS buffer. Relevant fractions were analyzed by SDS-PAGE. Samples taken during elution were additionally quantified by measuring the OD<sub>280</sub>.</p>
+      </sec>
+      <sec id="sec010">
+        <title>Substrate stability in eukaryotic extracts</title>
+        <p>1 &#x3BC;M of protease substrates containing MBP as a target protein were incubated with 10 &#x3BC;l of indicated lysates in the presence or absence of a protease mix containing scUlp1, SUMOstar protease [<xref rid="pone.0125099.ref035" ref-type="bibr">35</xref>,<xref rid="pone.0125099.ref036" ref-type="bibr">36</xref>], xAtg4B<sup>14-384</sup> and trAtg4B (0.1 &#x3BC;M each) for 2 h at 25&#xB0;C in 12.5 &#x3BC;l total volume. Reaction products were analyzed by Western blot with an antibody recognizing <italic>E</italic>. <italic>coli</italic> MBP (Sigma-Aldrich #M1321; 1:5000 dilution) and a goat anti-mouse secondary antibody coupled to IRDye800CW (LI-COR #926&#x2013;32210; 1:5000 dilution). Blots were scanned with an Odyssey infrared imaging system (LI-COR).</p>
+      </sec>
+      <sec id="sec011">
+        <title>Yeast expression</title>
+        <p><italic>S</italic>. <italic>cerevisiae</italic> strain SFY122 (S288C, Mat<italic>&#x3B1;</italic>, H2B-CFP::TRP1, <italic>his3&#x394;200</italic>, <italic>leu2&#x394;0</italic>, <italic>lys2&#x394;0</italic>, <italic>met15&#x394;0</italic>, <italic>ura3&#x394;0</italic>) was transformed with 2<italic>&#x3BC;</italic> expression plasmids encoding N-terminally ZZ-UBL-tagged Citrine [<xref rid="pone.0125099.ref041" ref-type="bibr">41</xref>,<xref rid="pone.0125099.ref042" ref-type="bibr">42</xref>] under control of the <italic>GAL1</italic> promoter (see <xref rid="pone.0125099.s013" ref-type="supplementary-material">S2 Table</xref>). Single colonies were grown over night in CSM-Ura containing 2% glucose and 2% raffinose. Cells were washed in CSM-Ura + 2% raffinose, diluted to OD<sub>600</sub> = 0.2 and shaken over night at 30&#xB0;C. Protein expression was induced by adding 2% galactose for 5 h. Total lysates were prepared by the NaOH/TCA method (modified from [<xref rid="pone.0125099.ref043" ref-type="bibr">43</xref>]) and analyzed by Western blot. First, the ZZ-tag was directly detected using a fluorescently labeled rabbit IgG (anti-mouse) coupled to IRDye680 (LI-COR #926&#x2013;32220; 1:2500 dilution). After blocking with 0.1 mg/ml human IgG, the membrane was probed with a polyclonal rabbit anti-GFP primary antibody recognizing Citrine and CFP (0.7 &#x3BC;g/ml final concentration) followed by a goat anti-rabbit secondary antibody coupled to IRDye800CW (LI-COR #926&#x2013;32211; 1:5000 dilution). Blots were scanned with an Odyssey infrared imaging system (LI-COR).</p>
+        <p>For protein purifications from yeast, cells extracts were prepared by glass bead lysis (modified from [<xref rid="pone.0125099.ref044" ref-type="bibr">44</xref>]) in LS-S buffer containing protease inhibitors (100 &#x3BC;g/ml E-64, 5 mM EDTA, 100 &#x3BC;g/ml chymostatin, 100 &#x3BC;M leupeptin, 10 &#x3BC;M pepstatin A). Cleared lysates were incubated with an anti-ZZ affinity resin. After washing off unbound material, target proteins were eluted with the appropriate protease within 1 h at 4&#xB0;C. Material remaining on the resin was analyzed after elution with SDS sample buffer.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec012">
+      <title>Results</title>
+      <p>Recently, we found that the <italic>S</italic>. <italic>cerevisiae</italic> Atg4 protease (scAtg4) can efficiently cut off N-terminal tags from recombinant scAtg8 fusion proteins. Thereby, scAtg4 displays orthogonal specificity to the excellent tag-cleaving proteases bdSENP1 and bdNEDP1 [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>]. Yet, the system suffered from low solubility of the scAtg4 protease following bacterial expression, limited salt tolerance of the cleavage reaction as well as from low expression levels of scAtg8 fusions. We therefore aimed at overcoming these shortcomings while preserving the excellent specificity profile of the scAtg8/scAtg4 system and its good cleavage efficiency at low temperature. To this end, we searched for Atg4 and Atg8 orthologs in eukaryotes with low temperature optimum. Based on these criteria, we decided to further characterize the Atg4B protease from <italic>Xenopus laevis</italic> (xAtg4B) and its Atg8 substrates xLC3B and xGATE16 (sequence alignments with the respective human orthologs are shown in <xref rid="pone.0125099.s001" ref-type="supplementary-material">S1 Fig</xref>).</p>
+      <sec id="sec013">
+        <title>Effect of xLC3B on the expression level and solubility of target proteins</title>
+        <p>It is established that certain N-terminal tags can enhance expression levels and solubility of recombinant proteins (for review see e.g. [<xref rid="pone.0125099.ref045" ref-type="bibr">45</xref>,<xref rid="pone.0125099.ref046" ref-type="bibr">46</xref>]). To elucidate how an xLC3B tagging module would perform in this respect, we fused various PolyHis-UBL modules to the N-terminus of GFP and compared the expression of the resulting fusions in <italic>E</italic>. <italic>coli</italic> (<xref rid="pone.0125099.s002" ref-type="supplementary-material">S2 Fig</xref>). xLC3B-GFP could indeed be highly over-expressed and yielded nearly 3-times more soluble GFP than the corresponding scAtg8 fusion. The highest expression levels were obtained when fusing the recently described bdNEDD8 [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>] to GFP. With regard to expression levels, both xLC3B and bdNEDD8 clearly outperformed scSUMO, which is already well known for its expression- and solubility-enhancing effects [<xref rid="pone.0125099.ref047" ref-type="bibr">47</xref>,<xref rid="pone.0125099.ref048" ref-type="bibr">48</xref>].</p>
+      </sec>
+      <sec id="sec014">
+        <title>Design, expression and purification of xAtg4B fragments</title>
+        <p>The structures of the free human Atg4B [<xref rid="pone.0125099.ref049" ref-type="bibr">49</xref>,<xref rid="pone.0125099.ref050" ref-type="bibr">50</xref>] and LC3B-bound Atg4B [<xref rid="pone.0125099.ref051" ref-type="bibr">51</xref>] revealed that this cysteine protease combines a papain-like domain with another unique domain that contributes to substrate recognition. Additional contacts are formed within a groove on the protease surface, which accommodates the flexible C-terminus of Atg8-like substrates and thus directs the substrate's C-terminal Gly residue to the active site. The protease's flexible N-terminus may fold back onto the substrate-binding groove and has been implicated in a negative regulation of substrate interactions [<xref rid="pone.0125099.ref051" ref-type="bibr">51</xref>]. Human Atg4B contains also a C-terminal extension, which had to be deleted before substrate-bound Atg4B would crystallize [<xref rid="pone.0125099.ref051" ref-type="bibr">51</xref>]. In the so far available substrate-free structures [<xref rid="pone.0125099.ref049" ref-type="bibr">49</xref>,<xref rid="pone.0125099.ref050" ref-type="bibr">50</xref>], this C-terminal extension was poorly resolved and folded back on the substrate interaction surface, which might suggest that it interferes with substrate binding. Thus, it was tempting to assume that the N- and C-terminal extensions would have an auto-inhibitory effect and that their deletions could boost the proteolytic activity.</p>
+        <p>We therefore cloned and expressed not only a full-length version of xAtg4B (residues 1&#x2013;384), but also five shorter xAtg4B fragments with truncated N- and/or C-termini (<xref rid="pone.0125099.g001" ref-type="fig">Fig 1</xref>). All proteases variants could be highly over-expressed in <italic>E</italic>. <italic>coli</italic>. After an initial Ni<sup>2+</sup>-chelate chromatography step, their N-terminal His-TEV tags were cut off by His-tagged TEV protease. The resulting mixture was subjected to gel filtration, after which highly pure tag-free proteases were recovered as non-bound fractions in a reverse Ni<sup>2+</sup> chelate step. The overall yield was typically &gt;120 mg per liter culture, which is 10&#x2013;20 times more than obtained for the yeast ortholog scAtg4 (typically 5&#x2013;10 mg).</p>
+        <fig id="pone.0125099.g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g001</object-id>
+          <label>Fig 1</label>
+          <caption>
+            <title>Bacterial expression and purification of xAtg4B protease fragments.</title>
+            <p><bold>A</bold>, Schematic illustration of expression constructs used for (<bold>B</bold>) and (<bold>C</bold>). <bold>B</bold>, Exemplary purification of xAtg4B<sup>14-384</sup>. His<sub>14</sub>-TEV-xAtg4B<sup>14-384</sup> was over-expressed in <italic>E</italic>. <italic>coli</italic> strain NEB Express. After cell lysis and centrifugation, the soluble material was applied to a Ni<sup>2+</sup> chelate resin. Bound proteins were eluted with imidazole and treated with polyHis-tagged TEV protease over night at 4&#xB0;C before loading on a Superdex 200 gel filtration column. The pooled peak fractions mainly containing cleaved xAtg4B<sup>14-384</sup> and TEV protease were subjected to a reverse Ni<sup>2+</sup> chromatography step (rev. Ni<sup>2+</sup>). Here, the polyHis-tagged TEV protease bound to the resin while pure xAtg4B<sup>14-384</sup> was found in the unbound fraction. Purification of other xAtg4B fragments was done identically. Minor amounts of degradation bands (*) originate from cleavage within the flexible C-terminus. <bold>C</bold>, Purity of xAtg4B protease fragments. 40 pmol (&#x2248;1.6 &#x3BC;g) of purified protease fragments were separated by SDS-PAGE and stained with Coomassie G250.</p>
+          </caption>
+          <graphic xlink:href="pone.0125099.g001"/>
+        </fig>
+      </sec>
+      <sec id="sec015">
+        <title>Activity of xAtg4B fragments on xLC3B and xGATE16 fusion proteins</title>
+        <p>The full-length xAtg4B protease and the five fragments were then analyzed by <italic>in vitro</italic> cleavage assays [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>] using two analogous substrate proteins with different protease recognition sites, namely xLC3B or xGATE16, respectively (<xref rid="pone.0125099.g002" ref-type="fig">Fig 2A</xref>). For a direct comparison, all reactions of a given experimental setup were performed in parallel for all analyzed protease variants and substrates (see <xref rid="sec031" ref-type="sec">Supporting information</xref> for the full set of experiments). For quantification, we used a series of standards, in which non-digested and fully digested substrate had been pre-mixed at defined ratios (<xref rid="pone.0125099.s003" ref-type="supplementary-material">S3 Fig</xref>).</p>
+        <fig id="pone.0125099.g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g002</object-id>
+          <label>Fig 2</label>
+          <caption>
+            <title><italic>In-vitro</italic> substrate cleavage by xAtg4B fragments.</title>
+            <p><bold>A</bold>, Schematic representation of the protease substrates xLC3B-MBP (top) and xGATE16-MBP (bottom). Both fusion proteins contain an N-terminal polyHis-tag, a protease recognition site (xLC3B or xGATE16) and MBP (<italic>E</italic>. <italic>coli</italic> maltose-binding protein, MBP) as a model target protein. To ensure a comparable accessibility, the scissile bond is followed by the identical tri-peptide (AGT; Ala-Gly-Thr) in both substrate proteins. For simplicity, substrate names do not contain the polyHis-tag. <bold>B</bold>, <italic>In-vitro</italic> cleavage assay. 100 &#x3BC;M substrate (xLC3B-MBP (left) or xGATE16-MBP (right)) was incubated for 20 h at 37&#xB0;C with defined concentrations of the indicated xAtg4B protease fragments. Cleavage products were separated by SDS-PAGE and stained with Coomassie G250. Shown are full-length substrate proteins (fl) and the C-terminal cleavage products (ccp). To estimate the completeness of cleavage, the band intensities were compared to a cleavage standard (see <xref rid="pone.0125099.s003" ref-type="supplementary-material">S3 Fig</xref>). <bold>C</bold>, Activity of xAtg4B fragments at 0&#xB0;C. Indicated concentrations of xAtg4B protease fragments were incubated for 1 h at 0&#xB0;C with 100 &#x3BC;M of the substrates sketched in <bold>A.</bold> For a similar comparison of xAtg4B fragments at 25&#xB0;C see <xref rid="pone.0125099.s004" ref-type="supplementary-material">S4 Fig</xref> For examples of complete gels see <xref rid="pone.0125099.s005" ref-type="supplementary-material">S5 Fig</xref>.</p>
+          </caption>
+          <graphic xlink:href="pone.0125099.g002"/>
+        </fig>
+        <p>In a first set of experiments, we incubated 100 &#x3BC;M substrate for 20 hours at 37&#xB0;C with a concentration series of each protease version. As seen from <xref rid="pone.0125099.g002" ref-type="fig">Fig 2B</xref>, 1 nM of the full length protease was sufficient for a near complete cleavage of the xLC3 substrate, which implies that each protease molecule cleaved, on average, &#x2248;100 000 substrate molecules during the incubation. The deletion of the first 13 residues in the xAtg4B<sup>14-384</sup> variant resulted in a small (&#x2248;20%), but reproducible, increase in product formation. This small increase was lost when the deletion was extended to the first 24 residues (xAtg4B<sup>25-384</sup> variant). Unexpectedly, the deletion of the C-terminal extension had a deleterious effect and decreased the rate of product formation by a factor of &#x2248; 4. Using the xGATE16 substrate gave similar results, differences being that it was cleaved &#x2248;2-fold faster by the protease version with intact C-terminus and that the deletion of the C-terminal extension caused an even &#x2265;10-fold drop in activity.</p>
+        <p>To best preserve the activity of target proteins, an ideal tag-cleaving protease should be able to cleave substrates quickly and at low temperatures (0&#x2013;4&#xB0;C). We therefore also compared the concentrations of selected xAtg4B fragments protease required for complete substrate cleavage in cleavage reactions performed for 1 h on ice (<xref rid="pone.0125099.g002" ref-type="fig">Fig 2C</xref>). Also in this assay, xAtg4B<sup>14-384</sup> performed best. Less than 1 &#x3BC;M xAtg4B<sup>14-384</sup> was needed for near complete cleavage of 100 &#x3BC;M xLC3B-MBP within one hour at 0&#xB0;C. In the case of the xGATE16-MBP even less protease (0.3 &#x3BC;M) was sufficient. Thus, even on ice, xAtg4B<sup>14-384</sup> can process a several hundred-fold excess of substrate per hour. Strikingly, at 0&#xB0;C the C-terminal protease deletion did not significantly affect cleavage of xLC3B-MBP while xGATE16-MBP processing was strongly impaired.</p>
+      </sec>
+      <sec id="sec016">
+        <title>Impact of N- and C-terminal xAtg4B truncations on substrate interaction</title>
+        <p>At this point, it was unclear how the deletion of the protease's C-terminus slowed down the substrate turnover. We therefore addressed the impact of the N- and C-terminal protease extensions on the most likely parameters (i.e. substrate binding, substrate processing and protease stability) separately. First, we directly compared binding of N- and/or C-terminally shortened protease fragments with the full-length enzyme by competitive pull-down assays using equimolar binary protease mixtures as a prey (<xref rid="pone.0125099.g003" ref-type="fig">Fig 3</xref>). In this setup, even small differences in affinity should affect the relative protease stoichiometries between the input and the bound fractions. Immobilized xLC3B pulled down full-length xAtg4B and the N-terminally shortened fragments with the same efficiency. The N-terminal protease truncations hence did not influence binding. In contrast, the interaction of all protease fragments lacking the C-terminal extension was reduced to background levels in the presence of competing full-length protease. Interestingly, also degradation products of the protease lacking less than 39 residues from the C-terminus (unintentionally present in the enzyme preparations) bound xLC3B far less efficiently than the respective enzymes with full-length C-termini, showing that even the extreme C-terminus significantly contributes to substrate binding. Similar results were obtained when using xGATE16 as a bait. The interaction of all proteases with xGATE16 was, however, significantly weaker than with xLC3B.</p>
+        <fig id="pone.0125099.g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g003</object-id>
+          <label>Fig 3</label>
+          <caption>
+            <title>Competitive binding of xAtg4B fragments to immobilized xLC3B and xGATE16.</title>
+            <p>An equimolar mixture of full-length xAtg4B and indicated fragments (10 &#x3BC;M each) was incubated with immobilized xLC3B or xGATE16. A resin without bait protein (right panel) served as a specificity control. Bound proteins were analyzed by SDS-PAGE. xAtg4B degradation products lacking parts of the C-terminal extension are marked with an asterisk (*) in the input fractions. Note that binding is markedly reduced for protease fragments harboring C-terminal deletions. The pull-down efficiency is generally higher when using xLC3B instead of xGATE16 as bait. For complete SDS-PAGE gels see <xref rid="pone.0125099.s006" ref-type="supplementary-material">S6 Fig</xref>.</p>
+          </caption>
+          <graphic xlink:href="pone.0125099.g003"/>
+        </fig>
+        <p>Thus, xAtg4B's C-terminal extension substantially contributes to recognition of both xLC3B and xGATE16 and is therefore required for robust substrate cleavage. In contrast, the first N-terminal residues of the protease do not affect substrate binding.</p>
+      </sec>
+      <sec id="sec017">
+        <title>Concentration dependence of substrate processing</title>
+        <p>The concentration of protease needed for complete substrate processing will not only depend on the temperature and incubation time, but also on the concentration of the substrate and the eventually formed (inhibitory) end-product. To address this issue, we analyzed substrate cleavage at a constant protease/substrate ratio, while varying the concentrations of both, substrate and protease, proportionally.</p>
+        <p>At a saturating (300 &#x3BC;M) concentration of xLC3B substrate, all analyzed protease variants were similarly active, clearly showing that the C-terminus of xAtg4B is dispensable for the actual catalytic step (<xref rid="pone.0125099.g004" ref-type="fig">Fig 4</xref>, left). At higher dilutions, however, clear differences became apparent: While full-length xAtg4B and both N-terminally shortened fragments cleaved the xLC3B substrate rather efficiently even at substrate concentrations as low as 3 &#x3BC;M, the C-terminally truncated protease showed significantly reduced cleavage already at 30&#x2013;100 &#x3BC;M substrate concentration (<xref rid="pone.0125099.g004" ref-type="fig">Fig 4</xref>, left lower panel).</p>
+        <fig id="pone.0125099.g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g004</object-id>
+          <label>Fig 4</label>
+          <caption>
+            <title>Cleavage efficiency at limiting substrate concentrations.</title>
+            <p>The concentration of indicated protease fragments and the substrates xLC3B-MBP (left) or xGATE16-MBP (right) was titrated at constant protease/substrate ratio (1:1000 or 1:2000, respectively). After cleavage (1 h at 0&#xB0;C), a fraction of each reaction corresponding to 1.2 &#x3BC;g (&#x2248;20 pmol) of substrate protein was analyzed by SDS-PAGE. Due to the different substrate concentrations, the absolute volume of the cleavage reaction analyzed by SDS-PAGE had to be adjusted accordingly.</p>
+          </caption>
+          <graphic xlink:href="pone.0125099.g004"/>
+        </fig>
+        <p>The processing of the xGATE16 substrate was, in this experimental setup, more sensitive to dilution than the xLC3 substrate (<xref rid="pone.0125099.g004" ref-type="fig">Fig 4</xref>, right). This is consistent with its weaker binding to the protease (<xref rid="pone.0125099.g003" ref-type="fig">Fig 3</xref>). At substrate saturation, however, the xGATE16 fusion required less protease for efficient processing. Such faster cleavage cycles can be explained by a faster release of (the more weakly binding) xGATE16 cleaving products from the enzyme. The deletion of the protease's C-terminus impaired xGATE16 processing so strongly that not even the increase of the substrate concentration to 300 &#x3BC;M could compensate for the weakened interaction (<xref rid="pone.0125099.g004" ref-type="fig">Fig 4</xref>, right lower panel).</p>
+      </sec>
+      <sec id="sec018">
+        <title>Thermal stability of xAtg4B protease fragments</title>
+        <p>We also wanted to explore in how far the above described protease variants differ in respect of their thermal stability. To this end, we pre-incubated each of xAtg4B variants for 16 h at 25, 30, 37, 42, or 50&#xB0;C before analyzing their remaining activity in a standard xLC3B cleavage assay at 0&#xB0;C (<xref rid="pone.0125099.g005" ref-type="fig">Fig 5A</xref>, left). In this assay, the full-length enzyme retained full activity after over-night incubation at 37&#xB0;C, but lost activity at higher temperatures. xAtg4B<sup>14-384</sup> turned out to be the most thermostable variant; it survived at least 42&#xB0;C for 16 h. A drastic loss in activity was, however, observed already at 37&#xB0;C for enzyme fragments lacking the N-terminal 24 residues. Identical effects were obtained when using the xGATE16 cleavage assay as a readout (<xref rid="pone.0125099.g005" ref-type="fig">Fig 5A</xref>, right).</p>
+        <fig id="pone.0125099.g005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g005</object-id>
+          <label>Fig 5</label>
+          <caption>
+            <title>Thermal stability of xAtg4B fragments.</title>
+            <p><bold>A,</bold> Long-term thermal stability. Indicated xAtg4B fragments were pre-incubated for 16 h at indicated temperatures in the presence of 20 mM DTT under argon to protect the active site cysteines from oxidation. The remaining activity was then assayed by treating 100 &#x3BC;M of xLC3B-MBP or xGATE16-MBP substrate with each protease fragment for 1 h at 0&#xB0;C. <bold>B,</bold> Dynamic light scattering (DLS) analysis. xAtg4B fragments were diluted to a final concentration of 10 &#x3BC;M and assayed by DLS. The temperature was automatically raised by 1&#xB0;C every 10 min. DLS signals were acquired just before each temperature step.</p>
+          </caption>
+          <graphic xlink:href="pone.0125099.g005"/>
+        </fig>
+        <p>In a second assay, we used dynamic light scattering (DLS) to analyze the thermal denaturation of our xAtg4B fragments (<xref rid="pone.0125099.g005" ref-type="fig">Fig 5B</xref>). The full-length enzyme started to unfold at 47&#x2013;48&#xB0;C. Fragments lacking the N-terminal 13 residues were slightly stabilized (by 1&#x2013;2&#xB0;C) while an N-terminal deletion of 24 residues reduced the temperature stability by 7&#x2013;8&#xB0;C. All tested enzymes with an intact C-terminus showed biphasic denaturation curves, pointing to distinct steps of initial unfolding and subsequent aggregation. A deletion of the C-terminal extension did not significantly change the onset of denaturation (<xref rid="pone.0125099.g005" ref-type="fig">Fig 5B</xref>, compare solid with dashed lines), but promoted subsequent aggregate formation. The strongly negatively charged C-terminus might thus act as a solubility enhancer preventing immediate aggregation.</p>
+        <p>Interestingly, the temperatures required to observe an initial decline of enzymatic activity (<xref rid="pone.0125099.g005" ref-type="fig">Fig 5A</xref>) were generally &#x2248;5&#xB0;C lower than the onset of thermal denaturation observed by DLS (<xref rid="pone.0125099.g005" ref-type="fig">Fig 5B</xref>). This discrepancy could be resolved by a long-term DLS experiment with xAtg4B<sup>25-384</sup> at 37&#xB0;C (<xref rid="pone.0125099.s007" ref-type="supplementary-material">S7 Fig</xref>): Here, during the initial two hours of incubation, the protease appeared rather stable. At longer incubation, however, xAtg4B<sup>25-384</sup> started to unfold and aggregate. The discrepancy between the activity assay (after 16 h of thermal denaturation) and the DLS experiment (temperature increase 1&#xB0;C per 10 min) can thus most likely be explained by the different experimental time-scales.</p>
+      </sec>
+      <sec id="sec019">
+        <title>Characterization of the optimal xAtg4B<sup>14-384</sup> fragment</title>
+        <p>The described assays so far show that xAtg4B<sup>14-384</sup> combines optimal stability and substrate processing. We therefore focused on this optimal fragment to analyze its application for removal of tags from recombinant proteins.</p>
+        <sec id="sec020">
+          <title>Time course</title>
+          <p>We first performed a time course at 0&#xB0;C with 0.5 &#x3BC;M protease and 100 &#x3BC;M substrate to determine the minimal time required for substrate cleavage (<xref rid="pone.0125099.g006" ref-type="fig">Fig 6A</xref>). Fully consistent with earlier results (<xref rid="pone.0125099.g002" ref-type="fig">Fig 2C</xref>), near complete cleavage of the xLC3B substrate occurred within 60 minutes. Cleavage of the xGATE16 substrate was even &#x2248;4-fold faster, indicating that complete substrate cleavage is possible within a very short time frame using low protease concentrations and mild cleavage conditions.</p>
+          <fig id="pone.0125099.g006" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g006</object-id>
+            <label>Fig 6</label>
+            <caption>
+              <title><italic>In-vitro</italic> cleavage characteristics of xAtg4B<sup>14-384</sup>.</title>
+              <p><bold>A,</bold> Time course. Substrates (100 &#x3BC;M) were incubated at 0&#xB0;C with 500 nM of xAtg4B<sup>14-384</sup>. At indicated time points, aliquots were withdrawn. Cleavage products were separated by SDS-PAGE and stained with Coomassie G250. Shown are full-length substrate proteins (fl) and the C-terminal cleavage products (ccp). For a side-by side comparison of selected protease fragments see <xref rid="pone.0125099.s004" ref-type="supplementary-material">S4 Fig</xref>. <bold>B</bold>, Temperature dependence of substrate cleavage. 100 &#x3BC;M of xLC3B-MBP (left) or xGATE16-MBP (right) were incubated with xAtg4B<sup>14-384</sup> for 1 h at defined temperatures. Note that in comparison to the xGATE16-MBP substrate, twice as much protease was used for cleavage of the xLC3B-MBP substrate. For a comparison of selected protease fragments see <xref rid="pone.0125099.s008" ref-type="supplementary-material">S8 Fig</xref>. <bold>C,</bold> Salt sensitivity. 100&#x3BC;M of each substrate was incubated for one hour at 0&#xB0;C with 500 nM xAtg4B<sup>14-384</sup> at NaCl concentrations ranging from 0.2 to 1.5 M. For a comparison of selected protease fragments see <xref rid="pone.0125099.s008" ref-type="supplementary-material">S8 Fig</xref>. <bold>D,</bold> P<sub>1</sub>' preference. Protease substrates used to analyze the P<sub>1</sub>' preference of xAtg4B<sup>14-384</sup> followed the general outline shown in <xref rid="pone.0125099.g002" ref-type="fig">Fig 2A</xref>. Here, however, the P<sub>1</sub>' position of the P<sub>1</sub>-P<sub>1</sub>' scissile bond had been mutated to the potentially non-preferred residues methionine (Met), tyrosine (Tyr), arginine (Arg), glutamic acid (Glu), or proline (Pro). Solution cleavage assays were performed with indicated concentrations of xAtg4B<sup>14-384</sup> for 1 h at 0&#xB0;C. Bands marked with an asterisk (*) refer to the protease.</p>
+            </caption>
+            <graphic xlink:href="pone.0125099.g006"/>
+          </fig>
+        </sec>
+        <sec id="sec021">
+          <title>Temperature dependence</title>
+          <p>Next, we analyzed the temperature dependence of substrate processing by the optimal xAtg4B<sup>14-384</sup> protease fragment (<xref rid="pone.0125099.g006" ref-type="fig">Fig 6B</xref>). We observed a remarkable activity boost when the incubation temperature was increased from 0&#xB0;C to 16&#xB0;C or 25&#xB0;C. At 25&#xB0;C for example, the enzyme was able to process within one hour a &#x2248;7000-fold excess of the xGATE16 substrate to completion. Such higher incubation temperature is certainly an option when the target protein is not particularly sensitive to denaturation.</p>
+        </sec>
+        <sec id="sec022">
+          <title>Salt sensitivity</title>
+          <p>When purifying proteins, one should ideally have the freedom to choose the composition of used buffers such that stability and functionality of the target proteins are best preserved. The activity profile of a used tag-cleaving protease should then impose as little as possible constraints. Systematic tests (<xref rid="pone.0125099.g006" ref-type="fig">Fig 6C</xref>) now revealed that the xAtg4B protease fragment is highly active not only at moderate salt (200 mM NaCl), but also at very high salt concentrations such as 1 M or 1.5 M NaCl. This contrasts the yeast homolog scAtg4, which showed a considerable activity loss already at 1 M NaCl [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>].</p>
+        </sec>
+        <sec id="sec023">
+          <title>P1' sensitivity of xAtg4B14-384</title>
+          <p>If target proteins with a defined (e.g. the authentic) N-terminus are to be produced, the enzyme's sensitivity to the residue in the P<sub>1</sub>' position (i.e. the residue following the scissile bond; <xref rid="pone.0125099.g006" ref-type="fig">Fig 6D</xref>) becomes an important parameter. An optimal enzyme will offer maximum freedom to choose any desired residue in the P<sub>1</sub>' position. We therefore analyzed the protease concentration required for cleavage of several analogous substrates with altered residues in the P<sub>1</sub>' position (<xref rid="pone.0125099.g006" ref-type="fig">Fig 6D</xref>). Surprisingly, the enzyme showed remarkable promiscuity and required only slightly more protease for efficient cleavage of substrates harboring Met, Tyr, Arg or Glu in the P<sub>1</sub>' position as compared to the original P<sub>1</sub>'<sub>Ala</sub> substrate. The enzyme, however, was unable to process a P<sub>1</sub>'<sub>Pro</sub> substrate.</p>
+        </sec>
+      </sec>
+      <sec id="sec024">
+        <title>One-step protein purification of target proteins expressed in <italic>E</italic>. <italic>coli</italic> by on-column cleavage using xAtg4B<sup>14-384</sup></title>
+        <p>An important application of tag-cleaving proteases is on-column cleavage of recombinant proteins. We directly addressed the suitability of xAtg4B<sup>14-384</sup> for this purpose using polyHis-tagged substrate proteins bound to a silica-based Ni<sup>2+</sup> chelate resin of high porosity (<xref rid="pone.0125099.g007" ref-type="fig">Fig 7</xref>). More specifically, &#x2248;100 &#x3BC;M of His<sub>14</sub>-IF2d1-xLC3B-GFP or His<sub>14</sub>-IF2d1-xGATE16-GFP were immobilized on the respective matrices along with the control protein His<sub>14</sub>-bdNEDD8-mCherry (<xref rid="pone.0125099.g007" ref-type="fig">Fig 7A</xref>) before incubation with defined concentrations of xAtg4B<sup>14-384</sup> or the bdNEDD8-specific protease bdNEDP1 for 1 h at 4&#xB0;C. Under these conditions, 250&#x2013;500 nM of xAtg4B<sup>14-384</sup> was sufficient for near-quantitative elution of GFP from the silica-based resin (Figs <xref rid="pone.0125099.g007" ref-type="fig">7B</xref> and <xref rid="pone.0125099.g007" ref-type="fig">7C</xref>). The cleavage was exceedingly specific as even at much higher concentrations of xAtg4B<sup>14-384</sup> no elution of the bdNEDD8-tagged mCherry control protein could be detected. Vice versa, after treatment with a high concentration of bdNEDP1, only mCherry but no GFP could be detected in the eluates. When using a Sepharose-based resin with high porosity, only slightly higher protease concentrations were required for efficient elution (not shown). The elution efficiency was, however, significantly reduced when matrices with low porosity or substrate proteins without flexible linker between the polyHis tag and the protease recognition site were used (data not shown).</p>
+        <fig id="pone.0125099.g007" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g007</object-id>
+          <label>Fig 7</label>
+          <caption>
+            <title>On-column cleavage using xAtg4B<sup>14-384</sup>.</title>
+            <p><bold>A</bold>, Schematic representation of substrate proteins used in (<bold>B</bold>)&#x2014;(<bold>E</bold>). The N-terminal domain of <italic>E</italic>. <italic>coli</italic> IF2 (IF2d1 [<xref rid="pone.0125099.ref065" ref-type="bibr">65</xref>,<xref rid="pone.0125099.ref066" ref-type="bibr">66</xref>]) serves as a spacer. <bold>B and C</bold>, A silica-based Ni<sup>2+</sup> chelate resin was pre-loaded with similar amounts of His<sub>14</sub>-bdNEDD8-mCherry and either His<sub>14</sub>-IF2d1-xLC3B-GFP (<bold>B</bold>) or His<sub>14</sub>-IF2d1-xGATE16-GFP (<bold>C</bold>). 50 &#x3BC;l aliquots were treated with indicated concentrations xAtg4B<sup>14-384</sup> for 1 h at 4&#xB0;C. Control incubations were performed with 4 &#x3BC;M bdNEDP1 or with buffer containing 400 mM imidazole. Resins and eluates were photographed while illuminated at 366 nm. GFP and mCherry in the eluate fractions were quantified via their specific absorptions. Quantification results are given below the respective eluate fractions. <bold>D and E</bold>, Protein purification using on-column cleavage by xAtg4B<sup>14-384</sup>. Indicated substrates were over-expressed in <italic>E</italic>. <italic>coli</italic>. After lysis and ultracentrifugation, the soluble material was incubated with a Ni<sup>2+</sup> chelate resin. The resin was washed and treated with 500 nM xAtg4B<sup>14-384</sup> at 4&#xB0;C. At indicated time points, the concentration and purity of the released MBP was determined using the calculated absorption coefficient at 280 nm (OD<sub>280</sub>) and SDS-PAGE, respectively. Proteins remaining on the resin after 60 min were eluted by 500 mM imidazole. The time course of elution is shown in (<bold>D</bold>), the OD<sub>280</sub> reading at 60 min elution time was set to 100%. Relevant steps of the purifications are shown in (<bold>E</bold>).</p>
+          </caption>
+          <graphic xlink:href="pone.0125099.g007"/>
+        </fig>
+        <p>We exploited the xAtg4B/xLC3B protease/substrate pair to purify the model target protein maltose-binding protein (MBP) by on-column cleavage of either His<sub>14</sub>-IF2d1-xLC3B-MBP or His<sub>14</sub>-IF2d1-xGATE16-MBP (Figs <xref rid="pone.0125099.g007" ref-type="fig">7D</xref> and <xref rid="pone.0125099.g007" ref-type="fig">7E</xref>). Even at moderate induction both proteins were highly over-expressed in <italic>E</italic>. <italic>coli</italic> and displayed excellent solubility (<xref rid="pone.0125099.g007" ref-type="fig">Fig 7E</xref>). Stronger induction led to massive over-expression of fusion proteins without compromising their solubility (not shown). About 160&#x2013;200 &#x3BC;M of each fusion protein was immobilized on a Ni<sup>2+</sup> chelate resin and treated with 500 nM xAtg4B<sup>14-384</sup> at 4&#xB0;C. Strikingly, the initial cleavage rate was very high when using the xGATE16 fusion protein (<xref rid="pone.0125099.g007" ref-type="fig">Fig 7D</xref>). Here, &gt;80% and &gt;90% of the MBP target protein was released already after 15 min and 30 min, respectively. At the corresponding points in time, the xLC3B fusion protein was processed to only &#x2248;50% and 75%. In both cases, however, efficient release of highly pure MBP was reached within one hour (Figs <xref rid="pone.0125099.g007" ref-type="fig">7D</xref> and <xref rid="pone.0125099.g007" ref-type="fig">7E</xref>).</p>
+      </sec>
+      <sec id="sec025">
+        <title>Cross-reactivity with other tag-cleaving proteases</title>
+        <p>A crucial parameter for the practical application of tag-cleaving proteases is their substrate specificity. This parameter is especially important when mutually exclusive specificity ("orthogonality") to other proteases is strictly required, e.g. for purification of protein complexes with controlled subunit stoichiometry [<xref rid="pone.0125099.ref034" ref-type="bibr">34</xref>]. Also, it is important to know which host proteases could potentially cleave a given protease recognition site during expression. For practical applications, we were especially interested in the cross-reactivity of xAtg4B with the well-established TEV protease [<xref rid="pone.0125099.ref052" ref-type="bibr">52</xref>,<xref rid="pone.0125099.ref053" ref-type="bibr">53</xref>], scUlp1 [<xref rid="pone.0125099.ref032" ref-type="bibr">32</xref>], SUMOstar protease [<xref rid="pone.0125099.ref035" ref-type="bibr">35</xref>,<xref rid="pone.0125099.ref036" ref-type="bibr">36</xref>] and the recently described proteases bdSENP1, bdNEDP1, and xUsp2 [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>,<xref rid="pone.0125099.ref034" ref-type="bibr">34</xref>]. In addition, we also included the wheat (<italic>Triticum</italic>) Atg4 ortholog (trAtg4). In order to analyze the specificity profiles of these proteases, we incubated a high concentration (20 &#x3BC;M) of each protease with 100 &#x3BC;M of each substrate protein (see <xref rid="pone.0125099.g008" ref-type="fig">Fig 8A</xref>) in all possible combinations for 3 h at 25&#xB0;C (<xref rid="pone.0125099.g008" ref-type="fig">Fig 8B</xref>). For all proteases except TEV protease, these conditions correspond to a significant (&gt;200- to 30 000-fold) over-digestion. Under these conditions, both xAtg4B<sup>14-384</sup> and trAtg4 only cleaved substrates containing Atg8-like UBLs (xLC3B, xGATE16 or trAtg8), but none of the substrates dedicated to other proteases. Vice versa, substrates containing Atg8-like UBLs were exclusively cleaved by Atg4 proteases. Atg4 proteases and Atg8-type substrate proteins are therefore truly orthogonal to all other protease/substrate pairs analyzed. Within the Atg8-type substrates, interesting differences became apparent: While xLC3B was nearly exclusively recognized by xAtg4B<sup>14-384</sup>, both xGATE16 and trAtg8-containing substrates were in addition also cleaved by trAtg4.</p>
+        <fig id="pone.0125099.g008" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g008</object-id>
+          <label>Fig 8</label>
+          <caption>
+            <title><italic>In-vitro</italic> cross-reactivity with other tag-cleaving proteases.</title>
+            <p><bold>A</bold>, Schematic representation of substrates used for (B) and (C). The TEV protease substrate contains an N-terminal His<sub>10</sub>-ZZ tag preceding the TEV protease recognition site. All other substrates follow the scheme described in <xref rid="pone.0125099.g002" ref-type="fig">Fig 2A</xref>, the protease recognition site, however, is replaced by the respective ubiquitin-like protein (UBL). <bold>B</bold>, Cross-reactivity between recombinant tag-cleaving proteases. bd, Brachypodium distachyon; tr, <italic>Triticum aestivum</italic> (summer wheat); xUb, <italic>Xenopus</italic> ubiquitin. Bands marked with an asterisk (*) originate from the respective protease. For complete gels see <xref rid="pone.0125099.s006" ref-type="supplementary-material">S6 Fig</xref>. <bold>C</bold>, Detailed titration analysis of cross-reactivity between <italic>Xenopus laevis</italic> (x), <italic>S</italic>. <italic>cerevisiae</italic> (sc) and wheat (tr) Atg4 homologs.</p>
+          </caption>
+          <graphic xlink:href="pone.0125099.g008"/>
+        </fig>
+        <p>We further analyzed these inter- and intra-species substrate preferences of Atg4-like enzymes using detailed protease titration assays (<xref rid="pone.0125099.g008" ref-type="fig">Fig 8C</xref>). Here, we also included the <italic>S</italic>. <italic>cerevisiae</italic> Atg4 ortholog (scAtg4) along with its cognate substrate scAtg8 that were described recently [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>]. In this assay, xAtg4B showed the broadest substrate promiscuity and cleaved a 1000-fold excess of all four substrate proteins containing xLC3B, xGATE16, trAtg8 or scAtg8 within 1 h at 25&#xB0;C (<xref rid="pone.0125099.g008" ref-type="fig">Fig 8C</xref>, left column). The yeast scAtg4 protease efficiently processed xGATE16, trAtg8 and scAtg8, but was completely unable to cleave the xLC3B substrate (<xref rid="pone.0125099.g008" ref-type="fig">Fig 8C</xref>, middle column). The <italic>Triticum</italic> protease trAtg4 cleaved only its cognate substrate trAtg8 and the yeast substrate with decent efficiency (<xref rid="pone.0125099.g008" ref-type="fig">Fig 8C</xref>, right column). In comparison, the <italic>Xenopus</italic> xGATE16 substrate required drastically (&gt;100-fold) higher trAtg4 concentrations for significant cleavage; xLC3B cleavage by trAtg4 was only barely detectable.</p>
+      </sec>
+      <sec id="sec026">
+        <title>Stability of xLC3B and xGATE16 fusion proteins in eukaryotic systems</title>
+        <p>The unexpectedly high resistance of xLC3B towards cleavage by Atg4-like proteases originating from other species encouraged us to address the stability of xLC3B and xGATE16 fusions in various eukaryotic cell extracts (Figs <xref rid="pone.0125099.g009" ref-type="fig">9A</xref> and <xref rid="pone.0125099.g009" ref-type="fig">9B</xref>). For control purposes, we also included analogous fusions to trAtg8, scSUMO and the cleavage-resistant scSUMO variant SUMOstar [<xref rid="pone.0125099.ref035" ref-type="bibr">35</xref>,<xref rid="pone.0125099.ref036" ref-type="bibr">36</xref>]. As expected, in wheat germ extract 1 &#x3BC;M of xLC3B- or xGATE16-containing substrate proteins were not significantly processed within 2 h at 25&#xB0;C, while the corresponding trAtg8 fusion was completely cleaved. In comparison, all substrate proteins harboring Atg8 homologs were completely cleaved both in <italic>Xenopus</italic> egg extract and rabbit reticulocyte lysate. Interestingly, the scSUMO fusion was only partially cleaved in wheat germ extract and remained stable in rabbit reticulocyte lysate. Control incubations containing a protease mix (0.1 &#x3BC;M each of scUlp1, SUMOstar protease, xAtg4B<sup>14-384</sup> and trAtg4) confirmed that the extracts did not contain any substances inhibiting specific proteolytic substrate processing.</p>
+        <fig id="pone.0125099.g009" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g009</object-id>
+          <label>Fig 9</label>
+          <caption>
+            <title>Stability of UBL fusions in eukaryotic lysates and in <italic>S</italic>. <italic>cerevisiae</italic>.</title>
+            <p><bold>A</bold>, Schematic representation of substrates used for (<bold>B</bold>). <bold>B</bold>, Stability of protease substrates in cell extracts. Note that in wheat germ extract no proteolytic fragments originating from SUMOstar-, xLC3B- or xGATE16-containing substrates can be detected. For complete blots and stained membranes see <xref rid="pone.0125099.s010" ref-type="supplementary-material">S10 Fig</xref>. <bold>C</bold>, Schematic representation of substrates used for expression in <italic>S</italic>. <italic>cerevisiae</italic> (<bold>D</bold>) harboring an N-terminal ZZ-tag, an ubiquitin-like protein (UBL) and a C-terminal Citrine. <bold>D</bold>, <italic>In-vivo</italic> stability of protease substrates in <italic>S</italic>. <italic>cerevisiae</italic>. Indicated protease substrates were over-expressed in a <italic>S</italic>. <italic>cerevisiae</italic> strain constitutively expressing H2B-CFP. Total cell lysates were analyzed by Western blot with antibodies recognizing the ZZ-tag (upper panel) or Citrine and CFP (middle panel). Equal loading was confirmed by staining the membrane after blotting (lower panel). Bands marked with an asterisk (*) originate from ZZ-tagged proteins cross-reacting with the anti-Citrine/CFP antibody. For complete original blots and stained membranes see <xref rid="pone.0125099.s011" ref-type="supplementary-material">S11 Fig</xref>. <bold>E</bold>, Cleavage of UBL substrates in extracts and in <italic>S</italic>. <italic>cerevisiae</italic>. ++, highly efficient cleavage; +, cleavage;&#x2013;, traces cleaved;&#x2013;&#x2013;, no cleavage; n.d.: not determined; <sup>1</sup>, data not shown.</p>
+          </caption>
+          <graphic xlink:href="pone.0125099.g009"/>
+        </fig>
+        <p>Next, we wanted to find out if some of the analyzed UBL-like protease recognition sites are also compatible with production of intact full-length recombinant fusion proteins in a living eukaryotic host. We therefore over-expressed various ZZ-UBL-Citrine fusion proteins (<xref rid="pone.0125099.g009" ref-type="fig">Fig 9C</xref>) in <italic>S</italic>. <italic>cerevisiae</italic> under the control of the <italic>GAL1</italic> promoter. In line with the <italic>in-vitro</italic> cleavage experiments presented before (<xref rid="pone.0125099.g008" ref-type="fig">Fig 8C</xref>), even after 5 h of induction, the xLC3B fusion remained completely intact. In contrast, the scSUMO-, xGATE16-, trAtg8- and bdSUMO-fusions were largely cleaved by endogenous yeast proteases. Much to our surprise, also the "cleavage-resistant" SUMOstar variant [<xref rid="pone.0125099.ref035" ref-type="bibr">35</xref>,<xref rid="pone.0125099.ref036" ref-type="bibr">36</xref>] was not completely inert <italic>in vivo</italic> as both, N-terminal and C-terminal cleavage products could be detected using specific antibodies (<xref rid="pone.0125099.g009" ref-type="fig">Fig 9D</xref>). Unexpectedly we found that a fusion protein containing bdNEDD8 was even more resistant towards <italic>in vivo</italic> cleavage than the SUMOstar substrate. These findings suggest that xLC3B and the previously introduced bdNEDD8 [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>] could potentially be used as protease recognition sites for the recombinant expression of intact full-length fusion proteins in <italic>S</italic>. <italic>cerevisiae</italic>.</p>
+      </sec>
+      <sec id="sec027">
+        <title>One-step purification of proteins expressed in <italic>S</italic>. <italic>cerevisiae</italic></title>
+        <p>In order to show that the xLC3B/xAtg4B and bdNEDD8/bdNEDP1 systems are indeed suited for purification of recombinant proteins from a eukaryotic host, we purified recombinant Citrine as a model target protein from <italic>S</italic>. <italic>cerevisiae</italic>. To this end, the ZZ-UBL-Citrine fusions were over-expressed in yeast for 5 h as before. After cell lysis in a native buffer, the full-length fusion protein was found in the soluble fraction from which highly pure recombinant Citrine could be obtained by an efficient one-step affinity capture and on-column cleavage procedure (<xref rid="pone.0125099.g010" ref-type="fig">Fig 10</xref>).</p>
+        <fig id="pone.0125099.g010" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125099.g010</object-id>
+          <label>Fig 10</label>
+          <caption>
+            <title>One-step protein purification from <italic>S</italic>. <italic>cerevisiae</italic>.</title>
+            <p>ZZ-UBL-Citrine fusions sketched in (<bold>A</bold>) were over-expressed in <italic>S</italic>. <italic>cerevisiae</italic>. Cells were lysed and the soluble material was incubated with an anti-ZZ affinity resin. After washing off unbound material, highly pure Citrine was eluted by treatment with 0.1 &#x3BC;M SUMOstar protease (<bold>B</bold>), 1 &#x3BC;M xAtg4B<sup>14-384</sup> (<bold>C</bold>) or 1 &#x3BC;M bdNEDD8 (<bold>D</bold>) for 1 h at 4&#xB0;C. Material remaining on the resin was analyzed after elution with SDS sample buffer. The asterisk (*) denotes the full-length xLC3B fusion protein. The filled circle (&#x2022;) marks band partially corresponding to low levels of free Citrine originating from <italic>in-vivo</italic> cleavage of the respective SUMOstar and bdNEDD8 fusion proteins.</p>
+          </caption>
+          <graphic xlink:href="pone.0125099.g010"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="sec028">
+      <title>Discussion</title>
+      <p>Tag-removing proteases are powerful tools in protein biochemistry. Although several proteases are routinely used for this purpose [<xref rid="pone.0125099.ref031" ref-type="bibr">31</xref>,<xref rid="pone.0125099.ref032" ref-type="bibr">32</xref>,<xref rid="pone.0125099.ref045" ref-type="bibr">45</xref>&#x2013;<xref rid="pone.0125099.ref047" ref-type="bibr">47</xref>,<xref rid="pone.0125099.ref054" ref-type="bibr">54</xref>], most of them have severe drawbacks including low specific activity, limited specificity or strict constraints concerning temperature, buffer requirements or sequence context. Recent work from our lab has introduced bdSENP1 and bdNEDP1, two new proteases that are largely devoid of these limitations [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>]. More elaborate applications, however, may require multiple proteases with optimal features at the same time [<xref rid="pone.0125099.ref034" ref-type="bibr">34</xref>]. We thus aimed at finding new proteases that could potentially be used for tag removal. To this end, we characterized the <italic>Xenopus laevis</italic> xAtg4B protease along with two of its substrates, xLC3B and xGATE16. More specifically, we were interested in finding well-behaved and stable protease fragments with optimal proteolytic activity.</p>
+      <sec id="sec029">
+        <title>Significance of N- and C-terminal xAtg4B extensions</title>
+        <p>Based on the known structure of the human Atg4B ortholog (hsAtg4B) [<xref rid="pone.0125099.ref049" ref-type="bibr">49</xref>&#x2013;<xref rid="pone.0125099.ref051" ref-type="bibr">51</xref>], we designed a series of xAtg4B fragments with N-terminal and C-terminal truncations. At low temperature, the analyzed N-terminally truncated xAtg4B fragments (xAtg4B<sup>14-384</sup> and xAtg4B<sup>25-384</sup>) showed a catalytic activity comparable to the full-length enzyme. While these results seem to be in contrast to earlier studies on the human Atg4B ortholog that suggested an auto-inhibitory function of the N-terminal extension [<xref rid="pone.0125099.ref027" ref-type="bibr">27</xref>,<xref rid="pone.0125099.ref051" ref-type="bibr">51</xref>], we observed that at temperatures &#x2265;16&#xB0;C, the two shorter fragments were indeed slightly more active than the full-length enzyme (see <xref rid="pone.0125099.s008" ref-type="supplementary-material">S8 Fig</xref>). This temperature effect could potentially be a result of several hydrophobic interactions that are observed between the N-terminal extension of the human enzyme and the protease surface near the catalytic center [<xref rid="pone.0125099.ref050" ref-type="bibr">50</xref>]. Importantly, deletion of only 13 N-terminal residues was sufficient to overcome this effect. In addition, this deletion created an enzyme fragment (xAtg4B<sup>14-384</sup>) with superior temperature stability compared to xAtg4B<sup>25-384</sup>. It should, however, be noted that&#x2014;at least for xAtg4B from <italic>Xenopus laevis</italic>&#x2014;the effects seen upon shortening its N-terminal extension are rather subtle and thus insufficient to justify its denomination as an "auto-inhibitory domain".</p>
+        <p>We also analyzed the contribution of the flexible C-terminal protease extension (residues 346&#x2013;384) to substrate recognition and processing. While the significance of this region so far had not been directly addressed, we now found compelling evidence that it contributes to an efficient interaction with two dedicated xAtg4B substrate proteins, xLC3B and xGATE16. This finding was surprising for two reasons. First, the available structures of the substrate-free human Atg4B (hsAtg4B) suggest that the protease's C-terminus partially occupies the substrate-binding site [<xref rid="pone.0125099.ref049" ref-type="bibr">49</xref>,<xref rid="pone.0125099.ref050" ref-type="bibr">50</xref>]. It therefore has to be displaced before substrate binding can occur, which may thus hamper formation of the protease&#x2022;substrate complex. Second, crystals of LC3B-bound hsAtg4B could be obtained only after removal of the C-terminal extension [<xref rid="pone.0125099.ref051" ref-type="bibr">51</xref>], which (i) shows that the C-terminus of xAtg4B is not strictly required for substrate interaction and (ii) could indeed suggest an inhibitory effect on complex formation. In contrast, our results clearly show that the C-terminal extension is an integral part of the protease's substrate interaction surface.</p>
+        <p>In this respect, it is a noticeable coincidence that the C-terminus of xAtg4B is rich in hydrophobic amino acids with &#x3A6;-x-x-&#x3A6; clusters (where &#x3A6; stands for hydrophobic, x for any amino acid) similar to the well-established ARM/LIR motifs (sequence typically Trp-x-x-Leu/Ile) that are characteristic for a variety of Atg8-interacting proteins [<xref rid="pone.0125099.ref055" ref-type="bibr">55</xref>&#x2013;<xref rid="pone.0125099.ref058" ref-type="bibr">58</xref>]. Although elucidation of the structural details of the interaction between the Atg4B C-terminus and its substrates has to await further investigations that are beyond the scope of this study, it is tempting to speculate that the protease's flexible C-terminus might interact with LC3B and GATE16 in an ARM/LIR-like manner. Such an interaction might in addition be favored by the charge complementarity between the highly acidic C-terminus of Atg4B and a conserved basic surface on LC3B and GATE16. Hydrophobic residues within such ARM/LIR-like motifs could well explain how the protease's C-terminus confers an increased salt tolerance.</p>
+        <p>The strikingly different affinities of xLC3B and xGATE16 for xAtg4B point towards a model in which xGATE16 processing is largely limited by its binding to the protease, while cleavage of xLC3B substrates is more limited by the rate of the actual catalytic step and/or the product release (at least when substrate concentrations &#x2265;3&#x3BC;M are considered.) As a consequence, the effect of C-terminal protease truncations is only visible when the rate-limiting step is affected: While the C-terminal protease truncation affects processing of xLC3B mainly under stringent conditions (high salt, elevated temperature or low substrate concentration), the effect is pronounced already at standard conditions (0&#xB0;C, 250 mM NaCl, 100 &#x3BC;M initial substrate concentration) when using the xGATE16 substrate.</p>
+        <p>In combination, the folded core and the C-terminal extension of xAtg4B mediate a strong interaction with the xLC3B substrate, which is beneficial for efficient substrate processing at high dilution and complete processing of substrates.</p>
+      </sec>
+      <sec id="sec030">
+        <title>Applications of xAtg4B<sup>14-384</sup> for protein purification from pro- and eukaryotic hosts</title>
+        <p>Our best performing xAtg4B fragment, xAtg4B<sup>14-384</sup>, has great potential as a new tag-cleaving protease. This protease fragment is highly active and routinely cleaves a 100- to 200-fold substrate excess within 1 h at 0&#xB0;C. For comparison, TEV protease, which is probably still the most common tag-cleaving protease, requires 30&#x2013;50 times higher protease concentrations under these conditions [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>]. In addition, xAtg4B<sup>14-384</sup> shows good temperature stability (&#x2265;42&#xB0;C for 16 h) and can therefore also be used at higher temperatures. At 25&#xB0;C, e.g., xAtg4B<sup>14-384</sup> can cleave a 2000-fold substrate excess within one hour; at 37&#xB0;C even less protease is required for efficient cleavage. When used for <italic>in-vitro</italic> tag removal from recombinant proteins, this high specific activity reduces contamination of the final protein preparation by the protease. Compared to other tag-cleaving proteases like scUlp1 [<xref rid="pone.0125099.ref032" ref-type="bibr">32</xref>,<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>] or its derivative SUMOstar protease [<xref rid="pone.0125099.ref035" ref-type="bibr">35</xref>], xAtg4B displays a superior salt tolerance (tested up to 1.5 M NaCl) and a broad P<sub>1</sub>' promiscuity, parameters that are important for robust cleavage of recombinant substrate proteins in various buffer conditions and sequence contexts.</p>
+        <p>When analyzing cross-reactivity with other tag-cleaving proteases, we found out that xAtg4B is fully orthogonal to the recently introduced bdNEDP1 protease as well as to all SUMO-specific proteases (bdSENP1, scUlp1 or its derivative SUMOstar protease). Thus, these three groups of highly efficient proteases ideally complement each other and can be combined to purify protein complexes with controlled subunit stoichiometry by successive affinity capture and proteolytic release steps [<xref rid="pone.0125099.ref034" ref-type="bibr">34</xref>].</p>
+        <p>Importantly, both analyzed xAtg4B substrates, xLC3B and xGATE16, promote solubility and high-level expression of the respective fusion proteins in <italic>E</italic>. <italic>coli</italic> (see <xref rid="pone.0125099.s002" ref-type="supplementary-material">S2 Fig</xref> and <xref rid="pone.0125099.g007" ref-type="fig">Fig 7E</xref>). This is in striking contrast to their yeast homolog scAtg8, which in direct comparisons consistently produces significantly lower levels of soluble fusion proteins (<xref rid="pone.0125099.s002" ref-type="supplementary-material">S2 Fig</xref>). All in all, both xAtg4B substrates are promising fusion partners for expression of recombinant target proteins in <italic>E</italic>. <italic>coli</italic> and may at the same time serve as recognition sites for xAtg4B. The best choice between the two possible protease recognition sites might depend on the specific application. While xGATE16 is cleaved more rapidly under standard conditions, xLC3B cleavage is slightly slower but extraordinarily robust.</p>
+        <p>In addition, xLC3B features remarkable advantages: We found that xLC3B fusions are stable in wheat germ extract and only marginally processed by wheat Atg4 (trAtg4) even under drastic <italic>in vitro</italic> conditions. This suggests that stable xLC3B fusion proteins can also be produced in plants. Furthermore, as demonstrated for the human LC3B ortholog before [<xref rid="pone.0125099.ref022" ref-type="bibr">22</xref>], xLC3B is not recognized by the <italic>S</italic>. <italic>cerevisiae</italic> Atg4 protease either. Stable xLC3B fusions can thus be expressed in a fungal host and purified by a simple one-step capture and proteolytic release strategy. Such eukaryotic expression might be exploited for the production of proteins that rely on the eukaryotic folding machinery or have to be modified by posttranslational modifications. Fully unexpectedly, we found that also bdNEDD8 fusion proteins are only marginally processed in yeast. With xLC3B, bdNEDD8 [<xref rid="pone.0125099.ref033" ref-type="bibr">33</xref>] and SUMOstar [<xref rid="pone.0125099.ref035" ref-type="bibr">35</xref>,<xref rid="pone.0125099.ref036" ref-type="bibr">36</xref>], we thus have three orthogonal UBL-derived protease recognition sites that in principle allow for the production of stable but cleavable fusion proteins in <italic>S</italic>. <italic>cerevisiae</italic> (Figs <xref rid="pone.0125099.g009" ref-type="fig">9E</xref> and <xref rid="pone.0125099.g010" ref-type="fig">10</xref>). Strikingly, amongst these UBLs xLC3B is the only one that is strictly stable <italic>in vivo</italic> while traces of cleavage products originating from the bdNEDD8 substrate and low amounts of cleaved SUMOstar fusions were clearly detected (Figs <xref rid="pone.0125099.g009" ref-type="fig">9D</xref> and <xref rid="pone.0125099.g010" ref-type="fig">10B</xref>). In combination, these UBLs should allow for <italic>in-vivo</italic> co-expression and purification of three-subunit complexes with defined subunit stoichiometry also using yeast as an expression host [<xref rid="pone.0125099.ref034" ref-type="bibr">34</xref>].</p>
+        <p>It is important to note that xLC3B, xGATE16 or other UBLs including brNEDD8 or brSUMO not only can be used in combination with an N-terminal polyHis-tag. Also, the mentioned UBLs can be combined with virtually any affinity tag [<xref rid="pone.0125099.ref045" ref-type="bibr">45</xref>,<xref rid="pone.0125099.ref046" ref-type="bibr">46</xref>,<xref rid="pone.0125099.ref054" ref-type="bibr">54</xref>,<xref rid="pone.0125099.ref059" ref-type="bibr">59</xref>&#x2013;<xref rid="pone.0125099.ref063" ref-type="bibr">63</xref>] including, e.g., protein-tags like MBP, GST or the ZZ-tag, peptide tags like the HA-, myc- or FLAG-tags, or an biotinylated Avi-tag. In fact, also fusions to N-terminal non-affinity-tag fusion partners might be advantageous, e.g., for enhancing expression levels or solubility of target proteins, or their detection. Other possible applications include regulated degradation (TIPI system [<xref rid="pone.0125099.ref037" ref-type="bibr">37</xref>,<xref rid="pone.0125099.ref039" ref-type="bibr">39</xref>]) or targeted localization [<xref rid="pone.0125099.ref038" ref-type="bibr">38</xref>]. These techniques have so far mostly been performed using TEV protease. For the TIPI system, however, it has been shown that the poor proteolytic activity and pronounced P<sub>1</sub>' sensitivity of TEV protease is limiting for the proteolytic activation of the degradation signal [<xref rid="pone.0125099.ref064" ref-type="bibr">64</xref>]. Here, xAtg4B with its high activity and pronounced P<sub>1</sub>' promiscuity could potentially have clear advantages over TEV protease.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="sec031">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0125099.s001">
+        <label>S1 Fig</label>
+        <caption>
+          <title>Alignment of human and <italic>Xenopus laevis</italic> Atg4, LC3 and GATE16 orthologs.</title>
+          <p><bold>A</bold>, Phylogenetic tree of human (hs) and <italic>Xenopus laevis</italic> (x) Atg4 orthologs. The alignment is based on the ClustalW algorithm. Note that isoforms A to D can be clearly separated in both organisms. <bold>B</bold>, Sequence alignment of human and <italic>Xenopus laevis</italic> Atg4B orthologs. Exchanges with regard to hsAtg4B are highlighted in yellow. Dark pink areas correspond to N- and C-terminal extensions based on the solved structures of human Atg4B. <bold>C</bold>, Phylogenetic tree of human and <italic>Xenopus laevis</italic> LC3 and GATE16 orthologs. Note that GATE16 forms a separate branch and can be clearly separated from the LC3 isoforms. <bold>D and E</bold>, Sequence alignment of human and <italic>Xenopus laevis</italic> LC3B and GATE16 orthologs, respectively. Exchanges with regard to the human proteins are highlighted in yellow. Mature human and <italic>Xenopus laevis</italic> GATE16 proteins share identical primary sequences.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s001.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s002">
+        <label>S2 Fig</label>
+        <caption>
+          <title>Expression level and solubility of His<sub>14</sub>-UBL-tagged GFP.</title>
+          <p>Proteins sketched in (<bold>A</bold>) were over-expressed in <italic>E</italic>. <italic>coli</italic> for 16 h at 18&#xB0;C. Equal amounts of resuspended cells, total lysate and soluble material were analyzed by SDS-PAGE (<bold>B</bold>). GFP present in the soluble fraction was quantified via its absorbance at 488 nm. Note that scAtg8 promotes significantly lower expression levels than the other UBLs.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s002.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s003">
+        <label>S3 Fig</label>
+        <caption>
+          <title>Cleavage standard.</title>
+          <p><bold>A</bold>, Schematic illustration of substrates xLC3B-MBP and xGATE16-MBP. <bold>B</bold>, Substrates xLC3B-MBP and xGATE16-MBP (200 &#x3BC;M) were individually incubated with 4 &#x3BC;M xAtg4B<sup>14-384</sup> for 90 min at 30&#xB0;C to achieve complete cleavage. Identical incubations were performed in the absence of the protease. Reactions were stopped by 20-fold dilution in SDS sample buffer followed by 5 min incubation at 95&#xB0;C. Defined volumes of cleaved and uncleaved samples were mixed and resolved by SDS-PAGE and Coomassie staining. Small sketches on the right side indicate positions of the full-length substrates (fl) as well as the C- and N-terminal cleavage products (ccp and ncp, respectively). A faint band corresponding to the protease is indicated by an asterisk (*).</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s003.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s004">
+        <label>S4 Fig</label>
+        <caption>
+          <title><italic>In-vitro</italic> assay for xAtg4B activity.</title>
+          <p>Related to Figs <xref rid="pone.0125099.g002" ref-type="fig">2C</xref> and <xref rid="pone.0125099.g006" ref-type="fig">6A</xref>; side-by-side comparison of selected protease fragments. <bold>A and B</bold>, Protease titration at 0&#xB0;C and 25&#xB0;C, respectively. The substrates xLC3B-MBP or xGATE16-MBP (100 &#x3BC;M) were incubated for 1 h at 0&#xB0;C (<bold>A</bold>) or 25&#xB0;C (<bold>B</bold>) in the presence of defined concentrations of indicated proteases. Cleavage products were separated by SDS-PAGE and stained with Coomassie G250. Shown are full-length substrate proteins (fl) and the C-terminal cleavage products (ccp). For examples of complete gels see <xref rid="pone.0125099.s005" ref-type="supplementary-material">S5 Fig</xref>. <bold>C</bold>, Time course. 100 &#x3BC;M of xLC3B-MBP was incubated at 0&#xB0;C with 500 nM of indicated protease fragments. At indicated time points, aliquots were withdrawn and analyzed as described before.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s004.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s005">
+        <label>S5 Fig</label>
+        <caption>
+          <title><italic>In-vitro</italic> assay for xAtg4B activity.</title>
+          <p>Related to <xref rid="pone.0125099.g002" ref-type="fig">Fig 2C</xref> and <xref rid="pone.0125099.s004" ref-type="supplementary-material">S4 Fig</xref>; complete SDS-PAGE gels. <bold>A and B</bold>, Protease titration. The substrate xLC3B-MBP (100 &#x3BC;M) was incubated for 1 h at 0&#xB0;C (<bold>A</bold>) or 25&#xB0;C (<bold>B</bold>) in the presence of a defined concentrations of indicated proteases. Cleavage products were separated by SDS-PAGE and stained with Coomassie G250. Shown are full-length substrate proteins (fl) as well as C-terminal and N-terminal cleavage products (ccp and ncp, respectively). Bands marked with asterisk (*) correspond to the protease fragment. xAtg4B<sup>25-384</sup> co-migrates with the C-terminal substrate cleavage product.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s005.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s006">
+        <label>S6 Fig</label>
+        <caption>
+          <title>Binding of xAtg4B fragments to immobilized xLC3B and xGATE16.</title>
+          <p>Related to <xref rid="pone.0125099.g003" ref-type="fig">Fig 3</xref>; complete SDS-PAGE gels. An equimolar mixture of full-length xAtg4B and indicated fragments (10 &#x3BC;M each) was incubated with immobilized xLC3B or xGATE16. A resin without bait protein (right panel) served as a specificity control. Bound proteins were analyzed by SDS-PAGE. xAtg4B degradation products lacking parts of the C-terminal extension are marked with an asterisk (*) in the input fractions. Note that binding is markedly reduced for protease fragments harboring C-terminal deletions. The pull-down efficiency is generally higher when using xLC3B instead of xGATE16 as a bait.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s006.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s007">
+        <label>S7 Fig</label>
+        <caption>
+          <title>Long-term DLS measurement of xAtg4B<sup>25-384</sup>.</title>
+          <p>DLS signals were acquired for &#x2248;20 h while incubating xAtg4B<sup>25-384</sup> at 37&#xB0;C with protection from oxidation. Note that at this temperature the protease appears rather stable for &#x2248;2 h. At longer incubation, a gradual increase in average particle size is observed, indicating slow denaturation and aggregate formation.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s007.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s008">
+        <label>S8 Fig</label>
+        <caption>
+          <title>Temperature dependence and salt sensitivity of xAtg4B fragments.</title>
+          <p>Related to Figs <xref rid="pone.0125099.g006" ref-type="fig">6B</xref> and <xref rid="pone.0125099.g006" ref-type="fig">6C</xref>; side-by-side comparison of selected protease fragments. <bold>A</bold>, Temperature dependence. Indicated xAtg4B fragments were incubated with 100 &#x3BC;M of xLC3B-MBP (left) or xGATE16-MBP (right) for 1 h at defined temperatures. Note that in comparison to the xGATE16-MBP substrate, twice as much protease was used for cleavage of the xLC3B-MBP substrate. <bold>B</bold>, Salt sensitivity. 100 &#x3BC;M of xLC3B-MBP (left) or xGATE16-MBP (right) were incubated for one hour at 0&#xB0;C with 500 nM protease fragments at NaCl concentrations ranging from 0.2 to 1.5 M.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s008.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s009">
+        <label>S9 Fig</label>
+        <caption>
+          <title>Cross-reactivity between recombinant tag-cleaving proteases.</title>
+          <p>Related to <xref rid="pone.0125099.g008" ref-type="fig">Fig 8B</xref>; complete SDS-PAGE gels. 100 &#x3BC;M of substrate proteins were incubated with 20 &#x3BC;M of each protease for 3 h at 25&#xB0;C. Cleavage products were separated by SDS-PAGE. Bands marked with an asterisk (*) originate from the added protease. For schematic representations of substrates see <xref rid="pone.0125099.g008" ref-type="fig">Fig 8A</xref>. Abbreviations: bd, <italic>Brachypodium distachyon</italic>; tr, <italic>Triticum aestivum</italic> (summer wheat).</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s009.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s010">
+        <label>S10 Fig</label>
+        <caption>
+          <title>Stability of UBL fusions in eukaryotic lysates.</title>
+          <p>Related to <xref rid="pone.0125099.g009" ref-type="fig">Fig 9B</xref>; complete membrane stains and Western blots. <bold>A</bold>, Schematic representation of substrates used for (B). <bold>B and C</bold>, Stability of protease substrates in cell extracts. For experimental details see main text and Methods.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s010.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s011">
+        <label>S11 Fig</label>
+        <caption>
+          <title>Stability of UBL fusions in <italic>S</italic>. <italic>cerevisiae</italic>.</title>
+          <p>Related to <xref rid="pone.0125099.g009" ref-type="fig">Fig 9D</xref>; complete membrane stains and Western blots. <bold>A</bold>, Schematic representation of substrates used for expression in <italic>S</italic>. <italic>cerevisiae</italic> (B) harboring an N-terminal ZZ-tag, an ubiquitin-like protein (UBL) and a C-terminal Citrine. <bold>B</bold>, <italic>In-vivo</italic> stability of protease substrates in <italic>S</italic>. <italic>cerevisiae</italic>. Indicated protease substrates were over-expressed in a <italic>S</italic>. <italic>cerevisiae</italic> strain constitutively expressing H2B-CFP (see <xref rid="sec002" ref-type="sec">Methods</xref>). Total cell lysates were analyzed by Western blot with antibodies recognizing the ZZ-tag (middle panel) or Citrine and CFP (right panel). Equal loading was confirmed by staining the membrane after blotting (left panel).</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s011.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s012">
+        <label>S1 Table</label>
+        <caption>
+          <title><italic>E</italic>. <italic>coli</italic> expression vectors.</title>
+          <p>All <italic>E</italic>. <italic>coli</italic> expression vectors are low copy vectors (<italic>ColE1</italic> origin) conferring Kanamycin resistance.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s012.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125099.s013">
+        <label>S2 Table</label>
+        <caption>
+          <title><italic>S</italic>. <italic>cerevisiae</italic> expression vectors.</title>
+          <p>All yeast expression vectors (<italic>2&#x3BC;</italic>, <italic>URA3</italic>) encode the respective protein under the control of the <italic>GAL1</italic> promoter.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125099.s013.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We wish to thank all members of the G&#xF6;rlich lab for sharing reagents, Bastian H&#xFC;lsmann for critical comments on the manuscript and Cornelia Paz for proofreading.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0125099.ref001">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>He</surname><given-names>C</given-names></name>, <name><surname>Klionsky</surname><given-names>DJ</given-names></name> (<year>2009</year>) <article-title>Regulation mechanisms and signaling pathways of autophagy</article-title>. <source>Annu Rev Genet</source>
+<volume>43</volume>: <fpage>67</fpage>&#x2013;<lpage>93</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev-genet-102808-114910">10.1146/annurev-genet-102808-114910</ext-link></comment>
+<?supplied-pmid 19653858?><pub-id pub-id-type="pmid">19653858</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref002">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Klionsky</surname><given-names>DJ</given-names></name>, <name><surname>Schulman</surname><given-names>BA</given-names></name> (<year>2014</year>) <article-title>Dynamic regulation of macroautophagy by distinctive ubiquitin-like proteins</article-title>. <source>Nat Struct Mol Biol</source>
+<volume>21</volume>: <fpage>336</fpage>&#x2013;<lpage>345</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nsmb.2787">10.1038/nsmb.2787</ext-link></comment>
+<?supplied-pmid 24699082?><pub-id pub-id-type="pmid">24699082</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref003">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Mijaljica</surname><given-names>D</given-names></name>, <name><surname>Nazarko</surname><given-names>TY</given-names></name>, <name><surname>Brumell</surname><given-names>JH</given-names></name>, <name><surname>Huang</surname><given-names>WP</given-names></name>, <name><surname>Komatsu</surname><given-names>M</given-names></name>, <name><surname>Prescott</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Receptor protein complexes are in control of autophagy</article-title>. <source>Autophagy</source>
+<volume>8</volume>: <fpage>1701</fpage>&#x2013;<lpage>1705</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4161/auto.21332">10.4161/auto.21332</ext-link></comment>
+<?supplied-pmid 22874568?><pub-id pub-id-type="pmid">22874568</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref004">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Pimentel-Muinos</surname><given-names>FX</given-names></name>, <name><surname>Boada-Romero</surname><given-names>E</given-names></name> (<year>2014</year>) <article-title>Selective autophagy against membranous compartments: Canonical and unconventional purposes and mechanisms</article-title>. <source>Autophagy</source>
+<volume>10</volume>: <fpage>397</fpage>&#x2013;<lpage>407</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4161/auto.27244">10.4161/auto.27244</ext-link></comment>
+<?supplied-pmid 24419294?><pub-id pub-id-type="pmid">24419294</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref005">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Rogov</surname><given-names>V</given-names></name>, <name><surname>Dotsch</surname><given-names>V</given-names></name>, <name><surname>Johansen</surname><given-names>T</given-names></name>, <name><surname>Kirkin</surname><given-names>V</given-names></name> (<year>2014</year>) <article-title>Interactions between autophagy receptors and ubiquitin-like proteins form the molecular basis for selective autophagy</article-title>. <source>Mol Cell</source>
+<volume>53</volume>: <fpage>167</fpage>&#x2013;<lpage>178</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.molcel.2013.12.014">10.1016/j.molcel.2013.12.014</ext-link></comment>
+<?supplied-pmid 24462201?><pub-id pub-id-type="pmid">24462201</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref006">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Ichimura</surname><given-names>Y</given-names></name>, <name><surname>Kirisako</surname><given-names>T</given-names></name>, <name><surname>Takao</surname><given-names>T</given-names></name>, <name><surname>Satomi</surname><given-names>Y</given-names></name>, <name><surname>Shimonishi</surname><given-names>Y</given-names></name>, <name><surname>Ishihara</surname><given-names>N</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>A ubiquitin-like system mediates protein lipidation</article-title>. <source>Nature</source>
+<volume>408</volume>: <fpage>488</fpage>&#x2013;<lpage>492</lpage>. <?supplied-pmid 11100732?><pub-id pub-id-type="pmid">11100732</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref007">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Nair</surname><given-names>U</given-names></name>, <name><surname>Jotwani</surname><given-names>A</given-names></name>, <name><surname>Geng</surname><given-names>J</given-names></name>, <name><surname>Gammoh</surname><given-names>N</given-names></name>, <name><surname>Richerson</surname><given-names>D</given-names></name>, <name><surname>Yen</surname><given-names>WL</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>SNARE proteins are required for macroautophagy</article-title>. <source>Cell</source>
+<volume>146</volume>: <fpage>290</fpage>&#x2013;<lpage>302</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cell.2011.06.022">10.1016/j.cell.2011.06.022</ext-link></comment>
+<?supplied-pmid 21784249?><pub-id pub-id-type="pmid">21784249</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref008">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Nakatogawa</surname><given-names>H</given-names></name>, <name><surname>Ichimura</surname><given-names>Y</given-names></name>, <name><surname>Ohsumi</surname><given-names>Y</given-names></name> (<year>2007</year>) <article-title>Atg8, a ubiquitin-like protein required for autophagosome formation, mediates membrane tethering and hemifusion</article-title>. <source>Cell</source>
+<volume>130</volume>: <fpage>165</fpage>&#x2013;<lpage>178</lpage>. <?supplied-pmid 17632063?><pub-id pub-id-type="pmid">17632063</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref009">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Alemu</surname><given-names>EA</given-names></name>, <name><surname>Lamark</surname><given-names>T</given-names></name>, <name><surname>Torgersen</surname><given-names>KM</given-names></name>, <name><surname>Birgisdottir</surname><given-names>AB</given-names></name>, <name><surname>Larsen</surname><given-names>KB</given-names></name>, <name><surname>Jain</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>ATG8 family proteins act as scaffolds for assembly of the ULK complex: sequence requirements for LC3-interacting region (LIR) motifs</article-title>. <source>J Biol Chem</source>
+<volume>287</volume>: <fpage>39275</fpage>&#x2013;<lpage>39290</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1074/jbc.M112.378109">10.1074/jbc.M112.378109</ext-link></comment>
+<?supplied-pmid 23043107?><pub-id pub-id-type="pmid">23043107</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref010">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Colecchia</surname><given-names>D</given-names></name>, <name><surname>Strambi</surname><given-names>A</given-names></name>, <name><surname>Sanzone</surname><given-names>S</given-names></name>, <name><surname>Iavarone</surname><given-names>C</given-names></name>, <name><surname>Rossi</surname><given-names>M</given-names></name>, <name><surname>Dall&#x2019;Armi</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>MAPK15/ERK8 stimulates autophagy by interacting with LC3 and GABARAP proteins</article-title>. <source>Autophagy</source>
+<volume>8</volume>: <fpage>1724</fpage>&#x2013;<lpage>1740</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4161/auto.21857">10.4161/auto.21857</ext-link></comment>
+<?supplied-pmid 22948227?><pub-id pub-id-type="pmid">22948227</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref011">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Kraft</surname><given-names>C</given-names></name>, <name><surname>Kijanska</surname><given-names>M</given-names></name>, <name><surname>Kalie</surname><given-names>E</given-names></name>, <name><surname>Siergiejuk</surname><given-names>E</given-names></name>, <name><surname>Lee</surname><given-names>SS</given-names></name>, <name><surname>Semplicio</surname><given-names>G</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Binding of the Atg1/ULK1 kinase to the ubiquitin-like protein Atg8 regulates autophagy</article-title>. <source>EMBO J</source>
+<volume>31</volume>: <fpage>3691</fpage>&#x2013;<lpage>3703</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/emboj.2012.225">10.1038/emboj.2012.225</ext-link></comment>
+<?supplied-pmid 22885598?><pub-id pub-id-type="pmid">22885598</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref012">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Nakatogawa</surname><given-names>H</given-names></name>, <name><surname>Ohbayashi</surname><given-names>S</given-names></name>, <name><surname>Sakoh-Nakatogawa</surname><given-names>M</given-names></name>, <name><surname>Kakuta</surname><given-names>S</given-names></name>, <name><surname>Suzuki</surname><given-names>SW</given-names></name>, <name><surname>Kirisako</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>The autophagy-related protein kinase Atg1 interacts with the ubiquitin-like protein Atg8 via the Atg8 family interacting motif to facilitate autophagosome formation</article-title>. <source>J Biol Chem</source>
+<volume>287</volume>: <fpage>28503</fpage>&#x2013;<lpage>28507</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1074/jbc.C112.387514">10.1074/jbc.C112.387514</ext-link></comment>
+<?supplied-pmid 22778255?><pub-id pub-id-type="pmid">22778255</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref013">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Popovic</surname><given-names>D</given-names></name>, <name><surname>Akutsu</surname><given-names>M</given-names></name>, <name><surname>Novak</surname><given-names>I</given-names></name>, <name><surname>Harper</surname><given-names>JW</given-names></name>, <name><surname>Behrends</surname><given-names>C</given-names></name>, <name><surname>Dikic</surname><given-names>I</given-names></name> (<year>2012</year>) <article-title>Rab GTPase-activating proteins in autophagy: regulation of endocytic and autophagy pathways by direct binding to human ATG8 modifiers</article-title>. <source>Mol Cell Biol</source>
+<volume>32</volume>: <fpage>1733</fpage>&#x2013;<lpage>1744</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1128/MCB.06717-11">10.1128/MCB.06717-11</ext-link></comment>
+<?supplied-pmid 22354992?><pub-id pub-id-type="pmid">22354992</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref014">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Weidberg</surname><given-names>H</given-names></name>, <name><surname>Shvets</surname><given-names>E</given-names></name>, <name><surname>Shpilka</surname><given-names>T</given-names></name>, <name><surname>Shimron</surname><given-names>F</given-names></name>, <name><surname>Shinder</surname><given-names>V</given-names></name>, <name><surname>Elazar</surname><given-names>Z</given-names></name> (<year>2010</year>) <article-title>LC3 and GATE-16/GABARAP subfamilies are both essential yet act differently in autophagosome biogenesis</article-title>. <source>EMBO J</source>
+<volume>29</volume>: <fpage>1792</fpage>&#x2013;<lpage>1802</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/emboj.2010.74">10.1038/emboj.2010.74</ext-link></comment>
+<?supplied-pmid 20418806?><pub-id pub-id-type="pmid">20418806</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref015">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Bavro</surname><given-names>VN</given-names></name>, <name><surname>Sola</surname><given-names>M</given-names></name>, <name><surname>Bracher</surname><given-names>A</given-names></name>, <name><surname>Kneussel</surname><given-names>M</given-names></name>, <name><surname>Betz</surname><given-names>H</given-names></name>, <name><surname>Weissenhorn</surname><given-names>W</given-names></name> (<year>2002</year>) <article-title>Crystal structure of the GABA(A)-receptor-associated protein, GABARAP</article-title>. <source>EMBO Rep</source>
+<volume>3</volume>: <fpage>183</fpage>&#x2013;<lpage>189</lpage>. <?supplied-pmid 11818336?><pub-id pub-id-type="pmid">11818336</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref016">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Knight</surname><given-names>D</given-names></name>, <name><surname>Harris</surname><given-names>R</given-names></name>, <name><surname>McAlister</surname><given-names>MS</given-names></name>, <name><surname>Phelan</surname><given-names>JP</given-names></name>, <name><surname>Geddes</surname><given-names>S</given-names></name>, <name><surname>Moss</surname><given-names>SJ</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>The X-ray crystal structure and putative ligand-derived peptide binding properties of gamma-aminobutyric acid receptor type A receptor-associated protein</article-title>. <source>J Biol Chem</source>
+<volume>277</volume>: <fpage>5556</fpage>&#x2013;<lpage>5561</lpage>. <?supplied-pmid 11729197?><pub-id pub-id-type="pmid">11729197</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref017">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Kouno</surname><given-names>T</given-names></name>, <name><surname>Mizuguchi</surname><given-names>M</given-names></name>, <name><surname>Tanida</surname><given-names>I</given-names></name>, <name><surname>Ueno</surname><given-names>T</given-names></name>, <name><surname>Kanematsu</surname><given-names>T</given-names></name>, <name><surname>Mori</surname><given-names>Y</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>Solution structure of microtubule-associated protein light chain 3 and identification of its functional subdomains</article-title>. <source>J Biol Chem</source>
+<volume>280</volume>: <fpage>24610</fpage>&#x2013;<lpage>24617</lpage>. <?supplied-pmid 15857831?><pub-id pub-id-type="pmid">15857831</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref018">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Paz</surname><given-names>Y</given-names></name>, <name><surname>Elazar</surname><given-names>Z</given-names></name>, <name><surname>Fass</surname><given-names>D</given-names></name> (<year>2000</year>) <article-title>Structure of GATE-16, membrane transport modulator and mammalian ortholog of autophagocytosis factor Aut7p</article-title>. <source>J Biol Chem</source>
+<volume>275</volume>: <fpage>25445</fpage>&#x2013;<lpage>25450</lpage>. <?supplied-pmid 10856287?><pub-id pub-id-type="pmid">10856287</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref019">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Sugawara</surname><given-names>K</given-names></name>, <name><surname>Suzuki</surname><given-names>NN</given-names></name>, <name><surname>Fujioka</surname><given-names>Y</given-names></name>, <name><surname>Mizushima</surname><given-names>N</given-names></name>, <name><surname>Ohsumi</surname><given-names>Y</given-names></name>, <name><surname>Inagaki</surname><given-names>F</given-names></name> (<year>2004</year>) <article-title>The crystal structure of microtubule-associated protein light chain 3, a mammalian homologue of Saccharomyces cerevisiae Atg8</article-title>. <source>Genes Cells</source>
+<volume>9</volume>: <fpage>611</fpage>&#x2013;<lpage>618</lpage>. <?supplied-pmid 15265004?><pub-id pub-id-type="pmid">15265004</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref020">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Hemelaar</surname><given-names>J</given-names></name>, <name><surname>Lelyveld</surname><given-names>VS</given-names></name>, <name><surname>Kessler</surname><given-names>BM</given-names></name>, <name><surname>Ploegh</surname><given-names>HL</given-names></name> (<year>2003</year>) <article-title>A single protease, Apg4B, is specific for the autophagy-related ubiquitin-like proteins GATE-16, MAP1-LC3, GABARAP, and Apg8L</article-title>. <source>J Biol Chem</source>
+<volume>278</volume>: <fpage>51841</fpage>&#x2013;<lpage>51850</lpage>. <?supplied-pmid 14530254?><pub-id pub-id-type="pmid">14530254</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref021">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Kabeya</surname><given-names>Y</given-names></name>, <name><surname>Mizushima</surname><given-names>N</given-names></name>, <name><surname>Ueno</surname><given-names>T</given-names></name>, <name><surname>Yamamoto</surname><given-names>A</given-names></name>, <name><surname>Kirisako</surname><given-names>T</given-names></name>, <name><surname>Noda</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>LC3, a mammalian homologue of yeast Apg8p, is localized in autophagosome membranes after processing</article-title>. <source>EMBO J</source>
+<volume>19</volume>: <fpage>5720</fpage>&#x2013;<lpage>5728</lpage>. <?supplied-pmid 11060023?><pub-id pub-id-type="pmid">11060023</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref022">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Kabeya</surname><given-names>Y</given-names></name>, <name><surname>Mizushima</surname><given-names>N</given-names></name>, <name><surname>Yamamoto</surname><given-names>A</given-names></name>, <name><surname>Oshitani-Okamoto</surname><given-names>S</given-names></name>, <name><surname>Ohsumi</surname><given-names>Y</given-names></name>, <name><surname>Yoshimori</surname><given-names>T</given-names></name> (<year>2004</year>) <article-title>LC3, GABARAP and GATE16 localize to autophagosomal membrane depending on form-II formation</article-title>. <source>J Cell Sci</source>
+<volume>117</volume>: <fpage>2805</fpage>&#x2013;<lpage>2812</lpage>. <?supplied-pmid 15169837?><pub-id pub-id-type="pmid">15169837</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref023">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Kirisako</surname><given-names>T</given-names></name>, <name><surname>Ichimura</surname><given-names>Y</given-names></name>, <name><surname>Okada</surname><given-names>H</given-names></name>, <name><surname>Kabeya</surname><given-names>Y</given-names></name>, <name><surname>Mizushima</surname><given-names>N</given-names></name>, <name><surname>Yoshimori</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>The reversible modification regulates the membrane-binding state of Apg8/Aut7 essential for autophagy and the cytoplasm to vacuole targeting pathway</article-title>. <source>J Cell Biol</source>
+<volume>151</volume>: <fpage>263</fpage>&#x2013;<lpage>276</lpage>. <?supplied-pmid 11038174?><pub-id pub-id-type="pmid">11038174</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref024">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Marino</surname><given-names>G</given-names></name>, <name><surname>Uria</surname><given-names>JA</given-names></name>, <name><surname>Puente</surname><given-names>XS</given-names></name>, <name><surname>Quesada</surname><given-names>V</given-names></name>, <name><surname>Bordallo</surname><given-names>J</given-names></name>, <name><surname>Lopez-Otin</surname><given-names>C</given-names></name> (<year>2003</year>) <article-title>Human autophagins, a family of cysteine proteinases potentially implicated in cell degradation by autophagy</article-title>. <source>J Biol Chem</source>
+<volume>278</volume>: <fpage>3671</fpage>&#x2013;<lpage>3678</lpage>. <?supplied-pmid 12446702?><pub-id pub-id-type="pmid">12446702</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref025">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Tanida</surname><given-names>I</given-names></name>, <name><surname>Sou</surname><given-names>YS</given-names></name>, <name><surname>Ezaki</surname><given-names>J</given-names></name>, <name><surname>Minematsu-Ikeguchi</surname><given-names>N</given-names></name>, <name><surname>Ueno</surname><given-names>T</given-names></name>, <name><surname>Kominami</surname><given-names>E</given-names></name> (<year>2004</year>) <article-title>HsAtg4B/HsApg4B/autophagin-1 cleaves the carboxyl termini of three human Atg8 homologues and delipidates microtubule-associated protein light chain 3- and GABAA receptor-associated protein-phospholipid conjugates</article-title>. <source>J Biol Chem</source>
+<volume>279</volume>: <fpage>36268</fpage>&#x2013;<lpage>36276</lpage>. <?supplied-pmid 15187094?><pub-id pub-id-type="pmid">15187094</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref026">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Nair</surname><given-names>U</given-names></name>, <name><surname>Yen</surname><given-names>WL</given-names></name>, <name><surname>Mari</surname><given-names>M</given-names></name>, <name><surname>Cao</surname><given-names>Y</given-names></name>, <name><surname>Xie</surname><given-names>Z</given-names></name>, <name><surname>Baba</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>A role for Atg8-PE deconjugation in autophagosome biogenesis</article-title>. <source>Autophagy</source>
+<volume>8</volume>: <fpage>780</fpage>&#x2013;<lpage>793</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4161/auto.19385">10.4161/auto.19385</ext-link></comment>
+<?supplied-pmid 22622160?><pub-id pub-id-type="pmid">22622160</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref027">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>M</given-names></name>, <name><surname>Hou</surname><given-names>Y</given-names></name>, <name><surname>Wang</surname><given-names>J</given-names></name>, <name><surname>Chen</surname><given-names>X</given-names></name>, <name><surname>Shao</surname><given-names>ZM</given-names></name>, <name><surname>Yin</surname><given-names>XM</given-names></name> (<year>2011</year>) <article-title>Kinetics comparisons of mammalian Atg4 homologues indicate selective preferences toward diverse Atg8 substrates</article-title>. <source>J Biol Chem</source>
+<volume>286</volume>: <fpage>7327</fpage>&#x2013;<lpage>7338</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1074/jbc.M110.199059">10.1074/jbc.M110.199059</ext-link></comment>
+<?supplied-pmid 21177865?><pub-id pub-id-type="pmid">21177865</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref028">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Woo</surname><given-names>J</given-names></name>, <name><surname>Park</surname><given-names>E</given-names></name>, <name><surname>Dinesh-Kumar</surname><given-names>SP</given-names></name> (<year>2014</year>) <article-title>Differential processing of Arabidopsis ubiquitin-like Atg8 autophagy proteins by Atg4 cysteine proteases</article-title>. <source>Proc Natl Acad Sci U S A</source>
+<volume>111</volume>: <fpage>863</fpage>&#x2013;<lpage>868</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1318207111">10.1073/pnas.1318207111</ext-link></comment>
+<?supplied-pmid 24379391?><pub-id pub-id-type="pmid">24379391</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref029">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>van der Veen</surname><given-names>AG</given-names></name>, <name><surname>Ploegh</surname><given-names>HL</given-names></name> (<year>2012</year>) <article-title>Ubiquitin-like proteins</article-title>. <source>Annu Rev Biochem</source>
+<volume>81</volume>: <fpage>323</fpage>&#x2013;<lpage>357</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev-biochem-093010-153308">10.1146/annurev-biochem-093010-153308</ext-link></comment>
+<?supplied-pmid 22404627?><pub-id pub-id-type="pmid">22404627</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref030">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Yeh</surname><given-names>ET</given-names></name>, <name><surname>Gong</surname><given-names>L</given-names></name>, <name><surname>Kamitani</surname><given-names>T</given-names></name> (<year>2000</year>) <article-title>Ubiquitin-like proteins: new wines in new bottles</article-title>. <source>Gene</source>
+<volume>248</volume>: <fpage>1</fpage>&#x2013;<lpage>14</lpage>. <?supplied-pmid 10806345?><pub-id pub-id-type="pmid">10806345</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref031">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>SJ</given-names></name>, <name><surname>Hochstrasser</surname><given-names>M</given-names></name> (<year>1999</year>) <article-title>A new protease required for cell-cycle progression in yeast</article-title>. <source>Nature</source>
+<volume>398</volume>: <fpage>246</fpage>&#x2013;<lpage>251</lpage>. <?supplied-pmid 10094048?><pub-id pub-id-type="pmid">10094048</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref032">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Malakhov</surname><given-names>MP</given-names></name>, <name><surname>Mattern</surname><given-names>MR</given-names></name>, <name><surname>Malakhova</surname><given-names>OA</given-names></name>, <name><surname>Drinker</surname><given-names>M</given-names></name>, <name><surname>Weeks</surname><given-names>SD</given-names></name>, <name><surname>Butt</surname><given-names>TR</given-names></name> (<year>2004</year>) <article-title>SUMO fusions and SUMO-specific protease for efficient expression and purification of proteins</article-title>. <source>J Struct Funct Genomics</source>
+<volume>5</volume>: <fpage>75</fpage>&#x2013;<lpage>86</lpage>. <?supplied-pmid 15263846?><pub-id pub-id-type="pmid">15263846</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref033">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Frey</surname><given-names>S</given-names></name>, <name><surname>G&#xF6;rlich</surname><given-names>D</given-names></name> (<year>2014</year>) <article-title>A new set of highly efficient, tag-cleaving proteases for purifying recombinant proteins</article-title>. <source>J Chromatogr A</source>
+<volume>1337</volume>: <fpage>95</fpage>&#x2013;<lpage>105</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.chroma.2014.02.029">10.1016/j.chroma.2014.02.029</ext-link></comment>
+<?supplied-pmid 24636565?><pub-id pub-id-type="pmid">24636565</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref034">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Frey</surname><given-names>S</given-names></name>, <name><surname>G&#xF6;rlich</surname><given-names>D</given-names></name> (<year>2014</year>) <article-title>Purification of protein complexes of defined subunit stoichiometry using a set of orthogonal, tag-cleaving proteases</article-title>. <source>J Chromatogr A</source>
+<volume>1337</volume>: <fpage>106</fpage>&#x2013;<lpage>115</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.chroma.2014.02.030">10.1016/j.chroma.2014.02.030</ext-link></comment>
+<?supplied-pmid 24636567?><pub-id pub-id-type="pmid">24636567</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref035">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>L</given-names></name>, <name><surname>Spurrier</surname><given-names>J</given-names></name>, <name><surname>Butt</surname><given-names>TR</given-names></name>, <name><surname>Strickler</surname><given-names>JE</given-names></name> (<year>2008</year>) <article-title>Enhanced protein expression in the baculovirus/insect cell system using engineered SUMO fusions</article-title>. <source>Protein Expr Purif</source>
+<volume>62</volume>: <fpage>21</fpage>&#x2013;<lpage>28</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.pep.2008.07.010">10.1016/j.pep.2008.07.010</ext-link></comment>
+<?supplied-pmid 18713650?><pub-id pub-id-type="pmid">18713650</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref036">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Peroutka</surname><given-names>RJ</given-names></name>, <name><surname>Elshourbagy</surname><given-names>N</given-names></name>, <name><surname>Piech</surname><given-names>T</given-names></name>, <name><surname>Butt</surname><given-names>TR</given-names></name> (<year>2008</year>) <article-title>Enhanced protein expression in mammalian cells using engineered SUMO fusions: secreted phospholipase A2</article-title>. <source>Protein Sci</source>
+<volume>17</volume>: <fpage>1586</fpage>&#x2013;<lpage>1595</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1110/ps.035576.108">10.1110/ps.035576.108</ext-link></comment>
+<?supplied-pmid 18539905?><pub-id pub-id-type="pmid">18539905</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref037">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Taxis</surname><given-names>C</given-names></name>, <name><surname>Knop</surname><given-names>M</given-names></name> (<year>2012</year>) <article-title>TIPI: TEV protease-mediated induction of protein instability</article-title>. <source>Methods Mol Biol</source>
+<volume>832</volume>: <fpage>611</fpage>&#x2013;<lpage>626</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-1-61779-474-2_43">10.1007/978-1-61779-474-2_43</ext-link></comment>
+<?supplied-pmid 22350916?><pub-id pub-id-type="pmid">22350916</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref038">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Urabe</surname><given-names>M</given-names></name>, <name><surname>Kume</surname><given-names>A</given-names></name>, <name><surname>Takahashi</surname><given-names>T</given-names></name>, <name><surname>Serizawa</surname><given-names>N</given-names></name>, <name><surname>Tobita</surname><given-names>K</given-names></name>, <name><surname>Ozawa</surname><given-names>K</given-names></name> (<year>1999</year>) <article-title>A switching system regulating subcellular localization of nuclear proteins using a viral protease</article-title>. <source>Biochem Biophys Res Commun</source>
+<volume>266</volume>: <fpage>92</fpage>&#x2013;<lpage>96</lpage>. <?supplied-pmid 10581171?><pub-id pub-id-type="pmid">10581171</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref039">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Taxis</surname><given-names>C</given-names></name>, <name><surname>Stier</surname><given-names>G</given-names></name>, <name><surname>Spadaccini</surname><given-names>R</given-names></name>, <name><surname>Knop</surname><given-names>M</given-names></name> (<year>2009</year>) <article-title>Efficient protein depletion by genetically controlled deprotection of a dormant N-degron</article-title>. <source>Mol Syst Biol</source>
+<volume>5</volume>: <fpage>267</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/msb.2009.25">10.1038/msb.2009.25</ext-link></comment>
+<?supplied-pmid 19401679?><pub-id pub-id-type="pmid">19401679</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref040">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Michaelis</surname><given-names>L</given-names></name>, <name><surname>Menten</surname><given-names>ML</given-names></name> (<year>1913</year>) <article-title>Die Kinetik der Invertinwirkung</article-title>. <source>Biochemische Zeitschrift</source>
+<volume>49</volume>: <fpage>333</fpage>&#x2013;<lpage>369</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref041">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Griesbeck</surname><given-names>O</given-names></name>, <name><surname>Baird</surname><given-names>GS</given-names></name>, <name><surname>Campbell</surname><given-names>RE</given-names></name>, <name><surname>Zacharias</surname><given-names>DA</given-names></name>, <name><surname>Tsien</surname><given-names>RY</given-names></name> (<year>2001</year>) <article-title>Reducing the environmental sensitivity of yellow fluorescent protein. Mechanism and applications</article-title>. <source>J Biol Chem</source>
+<volume>276</volume>: <fpage>29188</fpage>&#x2013;<lpage>29194</lpage>. <?supplied-pmid 11387331?><pub-id pub-id-type="pmid">11387331</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref042">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Heikal</surname><given-names>AA</given-names></name>, <name><surname>Hess</surname><given-names>ST</given-names></name>, <name><surname>Baird</surname><given-names>GS</given-names></name>, <name><surname>Tsien</surname><given-names>RY</given-names></name>, <name><surname>Webb</surname><given-names>WW</given-names></name> (<year>2000</year>) <article-title>Molecular spectroscopy and dynamics of intrinsically fluorescent proteins: coral red (dsRed) and yellow (Citrine)</article-title>. <source>Proc Natl Acad Sci U S A</source>
+<volume>97</volume>: <fpage>11996</fpage>&#x2013;<lpage>12001</lpage>. <?supplied-pmid 11050231?><pub-id pub-id-type="pmid">11050231</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref043">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>Riezman</surname><given-names>H</given-names></name>, <name><surname>Hase</surname><given-names>T</given-names></name>, <name><surname>van Loon</surname><given-names>AP</given-names></name>, <name><surname>Grivell</surname><given-names>LA</given-names></name>, <name><surname>Suda</surname><given-names>K</given-names></name>, <name><surname>Schatz</surname><given-names>G</given-names></name> (<year>1983</year>) <article-title>Import of proteins into mitochondria: a 70 kilodalton outer membrane protein with a large carboxy-terminal deletion is still transported to the outer membrane</article-title>. <source>EMBO J</source>
+<volume>2</volume>: <fpage>2161</fpage>&#x2013;<lpage>2168</lpage>. <?supplied-pmid 6321150?><pub-id pub-id-type="pmid">6321150</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref044">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Conzelmann</surname><given-names>A</given-names></name>, <name><surname>Riezman</surname><given-names>H</given-names></name>, <name><surname>Desponds</surname><given-names>C</given-names></name>, <name><surname>Bron</surname><given-names>C</given-names></name> (<year>1988</year>) <article-title>A major 125-kd membrane glycoprotein of Saccharomyces cerevisiae is attached to the lipid bilayer through an inositol-containing phospholipid</article-title>. <source>EMBO J</source>
+<volume>7</volume>: <fpage>2233</fpage>&#x2013;<lpage>2240</lpage>. <?supplied-pmid 3046936?><pub-id pub-id-type="pmid">3046936</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref045">
+        <label>45</label>
+        <mixed-citation publication-type="journal"><name><surname>Arnau</surname><given-names>J</given-names></name>, <name><surname>Lauritzen</surname><given-names>C</given-names></name>, <name><surname>Petersen</surname><given-names>GE</given-names></name>, <name><surname>Pedersen</surname><given-names>J</given-names></name> (<year>2006</year>) <article-title>Current strategies for the use of affinity tags and tag removal for the purification of recombinant proteins</article-title>. <source>Protein Expr Purif</source>
+<volume>48</volume>: <fpage>1</fpage>&#x2013;<lpage>13</lpage>. <?supplied-pmid 16427311?><pub-id pub-id-type="pmid">16427311</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref046">
+        <label>46</label>
+        <mixed-citation publication-type="journal"><name><surname>Young</surname><given-names>CL</given-names></name>, <name><surname>Britton</surname><given-names>ZT</given-names></name>, <name><surname>Robinson</surname><given-names>AS</given-names></name> (<year>2012</year>) <article-title>Recombinant protein expression and purification: a comprehensive review of affinity tags and microbial applications</article-title>. <source>Biotechnol J</source>
+<volume>7</volume>: <fpage>620</fpage>&#x2013;<lpage>634</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/biot.201100155">10.1002/biot.201100155</ext-link></comment>
+<?supplied-pmid 22442034?><pub-id pub-id-type="pmid">22442034</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref047">
+        <label>47</label>
+        <mixed-citation publication-type="journal"><name><surname>Butt</surname><given-names>TR</given-names></name>, <name><surname>Edavettal</surname><given-names>SC</given-names></name>, <name><surname>Hall</surname><given-names>JP</given-names></name>, <name><surname>Mattern</surname><given-names>MR</given-names></name> (<year>2005</year>) <article-title>SUMO fusion technology for difficult-to-express proteins</article-title>. <source>Protein Expr Purif</source>
+<volume>43</volume>: <fpage>1</fpage>&#x2013;<lpage>9</lpage>. <?supplied-pmid 16084395?><pub-id pub-id-type="pmid">16084395</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref048">
+        <label>48</label>
+        <mixed-citation publication-type="journal"><name><surname>Marblestone</surname><given-names>JG</given-names></name>, <name><surname>Edavettal</surname><given-names>SC</given-names></name>, <name><surname>Lim</surname><given-names>Y</given-names></name>, <name><surname>Lim</surname><given-names>P</given-names></name>, <name><surname>Zuo</surname><given-names>X</given-names></name>, <name><surname>Butt</surname><given-names>TR</given-names></name> (<year>2006</year>) <article-title>Comparison of SUMO fusion technology with traditional gene fusion systems: enhanced expression and solubility with SUMO</article-title>. <source>Protein Sci</source>
+<volume>15</volume>: <fpage>182</fpage>&#x2013;<lpage>189</lpage>. <?supplied-pmid 16322573?><pub-id pub-id-type="pmid">16322573</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref049">
+        <label>49</label>
+        <mixed-citation publication-type="journal"><name><surname>Kumanomidou</surname><given-names>T</given-names></name>, <name><surname>Mizushima</surname><given-names>T</given-names></name>, <name><surname>Komatsu</surname><given-names>M</given-names></name>, <name><surname>Suzuki</surname><given-names>A</given-names></name>, <name><surname>Tanida</surname><given-names>I</given-names></name>, <name><surname>Sou</surname><given-names>YS</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>The crystal structure of human Atg4b, a processing and de-conjugating enzyme for autophagosome-forming modifiers</article-title>. <source>J Mol Biol</source>
+<volume>355</volume>: <fpage>612</fpage>&#x2013;<lpage>618</lpage>. <?supplied-pmid 16325851?><pub-id pub-id-type="pmid">16325851</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref050">
+        <label>50</label>
+        <mixed-citation publication-type="journal"><name><surname>Sugawara</surname><given-names>K</given-names></name>, <name><surname>Suzuki</surname><given-names>NN</given-names></name>, <name><surname>Fujioka</surname><given-names>Y</given-names></name>, <name><surname>Mizushima</surname><given-names>N</given-names></name>, <name><surname>Ohsumi</surname><given-names>Y</given-names></name>, <name><surname>Inagaki</surname><given-names>F</given-names></name> (<year>2005</year>) <article-title>Structural basis for the specificity and catalysis of human Atg4B responsible for mammalian autophagy</article-title>. <source>J Biol Chem</source>
+<volume>280</volume>: <fpage>40058</fpage>&#x2013;<lpage>40065</lpage>. <?supplied-pmid 16183633?><pub-id pub-id-type="pmid">16183633</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref051">
+        <label>51</label>
+        <mixed-citation publication-type="journal"><name><surname>Satoo</surname><given-names>K</given-names></name>, <name><surname>Noda</surname><given-names>NN</given-names></name>, <name><surname>Kumeta</surname><given-names>H</given-names></name>, <name><surname>Fujioka</surname><given-names>Y</given-names></name>, <name><surname>Mizushima</surname><given-names>N</given-names></name>, <name><surname>Ohsumi</surname><given-names>Y</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>The structure of Atg4B-LC3 complex reveals the mechanism of LC3 processing and delipidation during autophagy</article-title>. <source>EMBO J</source>
+<volume>28</volume>: <fpage>1341</fpage>&#x2013;<lpage>1350</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/emboj.2009.80">10.1038/emboj.2009.80</ext-link></comment>
+<?supplied-pmid 19322194?><pub-id pub-id-type="pmid">19322194</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref052">
+        <label>52</label>
+        <mixed-citation publication-type="journal"><name><surname>Kapust</surname><given-names>RB</given-names></name>, <name><surname>Tozser</surname><given-names>J</given-names></name>, <name><surname>Fox</surname><given-names>JD</given-names></name>, <name><surname>Anderson</surname><given-names>DE</given-names></name>, <name><surname>Cherry</surname><given-names>S</given-names></name>, <name><surname>Copeland</surname><given-names>TD</given-names></name>, <etal>et al</etal> (<year>2001</year>) <article-title>Tobacco etch virus protease: mechanism of autolysis and rational design of stable mutants with wild-type catalytic proficiency</article-title>. <source>Protein Eng</source>
+<volume>14</volume>: <fpage>993</fpage>&#x2013;<lpage>1000</lpage>. <?supplied-pmid 11809930?><pub-id pub-id-type="pmid">11809930</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref053">
+        <label>53</label>
+        <mixed-citation publication-type="journal"><name><surname>van den Berg</surname><given-names>S</given-names></name>, <name><surname>Lofdahl</surname><given-names>PA</given-names></name>, <name><surname>Hard</surname><given-names>T</given-names></name>, <name><surname>Berglund</surname><given-names>H</given-names></name> (<year>2006</year>) <article-title>Improved solubility of TEV protease by directed evolution</article-title>. <source>J Biotechnol</source>
+<volume>121</volume>: <fpage>291</fpage>&#x2013;<lpage>298</lpage>. <?supplied-pmid 16150509?><pub-id pub-id-type="pmid">16150509</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref054">
+        <label>54</label>
+        <mixed-citation publication-type="journal"><name><surname>Nilsson</surname><given-names>J</given-names></name>, <name><surname>Stahl</surname><given-names>S</given-names></name>, <name><surname>Lundeberg</surname><given-names>J</given-names></name>, <name><surname>Uhlen</surname><given-names>M</given-names></name>, <name><surname>Nygren</surname><given-names>PA</given-names></name> (<year>1997</year>) <article-title>Affinity fusion strategies for detection, purification, and immobilization of recombinant proteins</article-title>. <source>Protein Expr Purif</source>
+<volume>11</volume>: <fpage>1</fpage>&#x2013;<lpage>16</lpage>. <?supplied-pmid 9325133?><pub-id pub-id-type="pmid">9325133</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref055">
+        <label>55</label>
+        <mixed-citation publication-type="journal"><name><surname>Ichimura</surname><given-names>Y</given-names></name>, <name><surname>Kumanomidou</surname><given-names>T</given-names></name>, <name><surname>Sou</surname><given-names>YS</given-names></name>, <name><surname>Mizushima</surname><given-names>T</given-names></name>, <name><surname>Ezaki</surname><given-names>J</given-names></name>, <name><surname>Ueno</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Structural basis for sorting mechanism of p62 in selective autophagy</article-title>. <source>J Biol Chem</source>
+<volume>283</volume>: <fpage>22847</fpage>&#x2013;<lpage>22857</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1074/jbc.M802182200">10.1074/jbc.M802182200</ext-link></comment>
+<?supplied-pmid 18524774?><pub-id pub-id-type="pmid">18524774</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref056">
+        <label>56</label>
+        <mixed-citation publication-type="journal"><name><surname>Noda</surname><given-names>NN</given-names></name>, <name><surname>Kumeta</surname><given-names>H</given-names></name>, <name><surname>Nakatogawa</surname><given-names>H</given-names></name>, <name><surname>Satoo</surname><given-names>K</given-names></name>, <name><surname>Adachi</surname><given-names>W</given-names></name>, <name><surname>Ishii</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Structural basis of target recognition by Atg8/LC3 during selective autophagy</article-title>. <source>Genes Cells</source>
+<volume>13</volume>: <fpage>1211</fpage>&#x2013;<lpage>1218</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2443.2008.01238.x">10.1111/j.1365-2443.2008.01238.x</ext-link></comment>
+<?supplied-pmid 19021777?><pub-id pub-id-type="pmid">19021777</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref057">
+        <label>57</label>
+        <mixed-citation publication-type="journal"><name><surname>Pankiv</surname><given-names>S</given-names></name>, <name><surname>Clausen</surname><given-names>TH</given-names></name>, <name><surname>Lamark</surname><given-names>T</given-names></name>, <name><surname>Brech</surname><given-names>A</given-names></name>, <name><surname>Bruun</surname><given-names>JA</given-names></name>, <name><surname>Outzen</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>p62/SQSTM1 binds directly to Atg8/LC3 to facilitate degradation of ubiquitinated protein aggregates by autophagy</article-title>. <source>J Biol Chem</source>
+<volume>282</volume>: <fpage>24131</fpage>&#x2013;<lpage>24145</lpage>. <?supplied-pmid 17580304?><pub-id pub-id-type="pmid">17580304</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref058">
+        <label>58</label>
+        <mixed-citation publication-type="journal"><name><surname>Rozenknop</surname><given-names>A</given-names></name>, <name><surname>Rogov</surname><given-names>VV</given-names></name>, <name><surname>Rogova</surname><given-names>NY</given-names></name>, <name><surname>Lohr</surname><given-names>F</given-names></name>, <name><surname>Guntert</surname><given-names>P</given-names></name>, <name><surname>Dikic</surname><given-names>I</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Characterization of the interaction of GABARAPL-1 with the LIR motif of NBR1</article-title>. <source>J Mol Biol</source>
+<volume>410</volume>: <fpage>477</fpage>&#x2013;<lpage>487</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jmb.2011.05.003">10.1016/j.jmb.2011.05.003</ext-link></comment>
+<?supplied-pmid 21620860?><pub-id pub-id-type="pmid">21620860</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref059">
+        <label>59</label>
+        <mixed-citation publication-type="journal"><name><surname>Wood</surname><given-names>DW</given-names></name> (<year>2014</year>) <article-title>New trends and affinity tag designs for recombinant protein purification</article-title>. <source>Curr Opin Struct Biol</source>
+<volume>26C</volume>: <fpage>54</fpage>&#x2013;<lpage>61</lpage>.<pub-id pub-id-type="pmid">24859434</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref060">
+        <label>60</label>
+        <mixed-citation publication-type="journal"><name><surname>Waugh</surname><given-names>DS</given-names></name> (<year>2005</year>) <article-title>Making the most of affinity tags</article-title>. <source>Trends Biotechnol</source>
+<volume>23</volume>: <fpage>316</fpage>&#x2013;<lpage>320</lpage>. <?supplied-pmid 15922084?><pub-id pub-id-type="pmid">15922084</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref061">
+        <label>61</label>
+        <mixed-citation publication-type="journal"><name><surname>Beckett</surname><given-names>D</given-names></name>, <name><surname>Kovaleva</surname><given-names>E</given-names></name>, <name><surname>Schatz</surname><given-names>PJ</given-names></name> (<year>1999</year>) <article-title>A minimal peptide substrate in biotin holoenzyme synthetase-catalyzed biotinylation</article-title>. <source>Protein Sci</source>
+<volume>8</volume>: <fpage>921</fpage>&#x2013;<lpage>929</lpage>. <?supplied-pmid 10211839?><pub-id pub-id-type="pmid">10211839</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref062">
+        <label>62</label>
+        <mixed-citation publication-type="journal"><name><surname>Cull</surname><given-names>MG</given-names></name>, <name><surname>Schatz</surname><given-names>PJ</given-names></name> (<year>2000</year>) <article-title>Biotinylation of proteins in vivo and in vitro using small peptide tags</article-title>. <source>Methods Enzymol</source>
+<volume>326</volume>: <fpage>430</fpage>&#x2013;<lpage>440</lpage>. <?supplied-pmid 11036656?><pub-id pub-id-type="pmid">11036656</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref063">
+        <label>63</label>
+        <mixed-citation publication-type="journal"><name><surname>Schatz</surname><given-names>PJ</given-names></name> (<year>1993</year>) <article-title>Use of peptide libraries to map the substrate specificity of a peptide-modifying enzyme: a 13 residue consensus peptide specifies biotinylation in Escherichia coli</article-title>. <source>Biotechnology (N Y)</source>
+<volume>11</volume>: <fpage>1138</fpage>&#x2013;<lpage>1143</lpage>. <?supplied-pmid 7764094?><pub-id pub-id-type="pmid">7764094</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref064">
+        <label>64</label>
+        <mixed-citation publication-type="journal"><name><surname>Renicke</surname><given-names>C</given-names></name>, <name><surname>Spadaccini</surname><given-names>R</given-names></name>, <name><surname>Taxis</surname><given-names>C</given-names></name> (<year>2013</year>) <article-title>A tobacco etch virus protease with increased substrate tolerance at the P1&#x2019; position</article-title>. <source>PLoS One</source>
+<volume>8</volume>: <fpage>e67915</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0067915">10.1371/journal.pone.0067915</ext-link></comment>
+<?supplied-pmid 23826349?><pub-id pub-id-type="pmid">23826349</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref065">
+        <label>65</label>
+        <mixed-citation publication-type="journal"><name><surname>Sorensen</surname><given-names>HP</given-names></name>, <name><surname>Sperling-Petersen</surname><given-names>HU</given-names></name>, <name><surname>Mortensen</surname><given-names>KK</given-names></name> (<year>2003</year>) <article-title>A favorable solubility partner for the recombinant expression of streptavidin</article-title>. <source>Protein Expr Purif</source>
+<volume>32</volume>: <fpage>252</fpage>&#x2013;<lpage>259</lpage>. <?supplied-pmid 14965771?><pub-id pub-id-type="pmid">14965771</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125099.ref066">
+        <label>66</label>
+        <mixed-citation publication-type="journal"><name><surname>Yang</surname><given-names>WC</given-names></name>, <name><surname>Welsh</surname><given-names>JP</given-names></name>, <name><surname>Lee</surname><given-names>J</given-names></name>, <name><surname>Cooke</surname><given-names>JP</given-names></name>, <name><surname>Swartz</surname><given-names>JR</given-names></name> (<year>2011</year>) <article-title>Solubility partner IF2 Domain I enables high yield synthesis of transducible transcription factors in Escherichia coli</article-title>. <source>Protein Expr Purif</source>
+<volume>80</volume>: <fpage>145</fpage>&#x2013;<lpage>151</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.pep.2011.06.017">10.1016/j.pep.2011.06.017</ext-link></comment>
+<?supplied-pmid 21757009?><pub-id pub-id-type="pmid">21757009</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

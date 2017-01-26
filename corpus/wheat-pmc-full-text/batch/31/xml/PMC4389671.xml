@@ -1,0 +1,2952 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4389671</article-id>
+      <article-id pub-id-type="publisher-id">1447</article-id>
+      <article-id pub-id-type="doi">10.1186/s12864-015-1447-y</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Comparative transcriptome analysis within the Lolium/Festuca species complex reveals high sequence conservation</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Czaban</surname>
+            <given-names>Adrian</given-names>
+          </name>
+          <address>
+            <email>Adrian.Czaban@mbg.au.dk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sharma</surname>
+            <given-names>Sapna</given-names>
+          </name>
+          <address>
+            <email>sapna.sharma@helmholtz-muenchen.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Byrne</surname>
+            <given-names>Stephen L</given-names>
+          </name>
+          <address>
+            <email>Stephen.Byrne@mbg.au.dk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Spannagl</surname>
+            <given-names>Manuel</given-names>
+          </name>
+          <address>
+            <email>manuel.spannagl@helmholtz-muenchen.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mayer</surname>
+            <given-names>Klaus FX</given-names>
+          </name>
+          <address>
+            <email>k.mayer@helmholtz-muenchen.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Asp</surname>
+            <given-names>Torben</given-names>
+          </name>
+          <address>
+            <email>Torben.Asp@mbg.au.dk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <aff id="Aff1"><label/>Department of Molecular Biology and Genetics, Aarhus University, Fors&#xF8;gsvej 1, Slagelse, 4200 Denmark </aff>
+        <aff id="Aff2"><label/>Plant Genome and Systems Biology, Helmholtz Zentrum M&#xFC;nchen, German Research Center for Environmental Health, Ingolst&#xE4;dter Landstrasse 1, Neuherberg, 85764 Germany </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>28</day>
+        <month>3</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>28</day>
+        <month>3</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>16</volume>
+      <issue>1</issue>
+      <elocation-id>249</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>2</day>
+          <month>12</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>6</day>
+          <month>3</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; Czaban et al.; licensee BioMed Central. 2015</copyright-statement>
+        <license license-type="open-access">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0">http://creativecommons.org/licenses/by/4.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>The <italic>Lolium-Festuca</italic> complex incorporates species from the <italic>Lolium</italic> genera and the broad leaf fescues, both belonging to the subfamily <italic>Pooideae</italic>. This subfamily also includes wheat, barley, oat and rye, making it extremely important to world agriculture. Species within the <italic>Lolium-Festuca</italic> complex show very diverse phenotypes, and many of them are related to agronomically important traits. Analysis of sequenced transcriptomes of these non-model species may shed light on the molecular mechanisms underlying this phenotypic diversity.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We have generated <italic>de novo</italic> transcriptome assemblies for four species from the <italic>Lolium-Festuca</italic> complex, ranging from 52,166 to 72,133 transcripts per assembly. We have also predicted a set of proteins and validated it with a high-confidence protein database from three closely related species (<italic>H. vulgare, B. distachyon</italic> and <italic>O. sativa</italic>). We have obtained gene family clusters for the four species using OrthoMCL and analyzed their inferred phylogenetic relationships. Our results indicate that VRN2 is a candidate gene for differentiating vernalization and non-vernalization types in the <italic>Lolium-Festuca</italic> complex. Grouping of the gene families based on their BLAST identity enabled us to divide ortholog groups into those that are very conserved and those that are more evolutionarily relaxed. The ratio of the non-synonumous to synonymous substitutions enabled us to pinpoint protein sequences evolving in response to positive selection. These proteins may explain some of the differences between the more stress tolerant <italic>Festuca</italic>, and the less stress tolerant <italic>Lolium</italic> species.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Our data presents a comprehensive transcriptome sequence comparison between species from the <italic>Lolium-Festuca</italic> complex, with the identification of potential candidate genes underlying some important phenotypical differences within the complex (such as VRN2). The orthologous genes between the species have a very high %id (91,61%) and the majority of gene families were shared for all of them. It is likely that the knowledge of the genomes will be largely transferable between species within the complex.</p>
+        </sec>
+        <sec>
+          <title>Electronic supplementary material</title>
+          <p>The online version of this article (doi:10.1186/s12864-015-1447-y) contains supplementary material, which is available to authorized users.</p>
+        </sec>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd><italic>Lolium-Festuca</italic> complex</kwd>
+        <kwd>RNAseq</kwd>
+        <kwd>Comparative transcriptomics</kwd>
+        <kwd>Gene families</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2015</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1">
+      <title>Background</title>
+      <p>Next Generation Sequencing is a valuable tool for the analysis and study of transcriptomes of non model species [<xref ref-type="bibr" rid="CR1">1</xref>], especially when resources are limited and a complete re-sequencing of the genome is not practical. Transcriptome sequencing allows us to overcome some of the challenges associated with sequencing complex, highly repetitive and large plant genomes.</p>
+      <p>The <italic>Lolium-Festuca</italic> complex is a common name for the grasses belonging to both the <italic>Lolium</italic> genus and broad leaved fescues from the <italic>Schedonorus</italic> subgenus of <italic>Festuca</italic>. Both genus are part of the <italic>Poaceae</italic> family [<xref ref-type="bibr" rid="CR2">2</xref>], but their exact taxonomic relationship is unclear, with reports of a shared common ancestor [<xref ref-type="bibr" rid="CR3">3</xref>,<xref ref-type="bibr" rid="CR4">4</xref>] or the <italic>Lolium</italic> diverging from <italic>Festuca</italic> around 2 million years ago [<xref ref-type="bibr" rid="CR5">5</xref>]. The <italic>Poaceae</italic> family also includes species such as wheat, barley, bamboo, rice, sorghum and sugarcane making it one of the most important plant families from an agricultural, economic and ecological point of view [<xref ref-type="bibr" rid="CR6">6</xref>]. The <italic>Lolium</italic> genus contains ten species [<xref ref-type="bibr" rid="CR7">7</xref>] all of which are exclusively diploid in nature [<xref ref-type="bibr" rid="CR8">8</xref>], whereas the <italic>Festuca</italic> genus comprises 600 species and the ploidy numbers range from diploid up to dodecaploid [<xref ref-type="bibr" rid="CR9">9</xref>]. The species belonging to the <italic>Lolium-Festuca</italic> complex are thought to be closely related and interspecific crosses between some of them occur naturally in the wild. In fact, Festuloliums, which are a cross between Loliums and Fescues are very well established as agriculturally important plants [<xref ref-type="bibr" rid="CR10">10</xref>-<xref ref-type="bibr" rid="CR12">12</xref>]. This has led to many discussions as to the exact taxonomy of the complex, as one can find over 500 names for the few <italic>Lolium</italic> species [<xref ref-type="bibr" rid="CR13">13</xref>]. However, despite such a close relationship and being universally distributed around the globe, the plants within the complex exhibit significant diversity for agriculturally important traits [<xref ref-type="bibr" rid="CR14">14</xref>] such as growth speed, root length, forage quality, resistance to biotic and abiotic stresses, annuality and perenniality. The <italic>Lolium</italic> species generally have a good nutrient content and are highly palatable [<xref ref-type="bibr" rid="CR15">15</xref>]. <italic>L.perenne</italic> can withstand heavy grazing, and <italic>L. multiflorum</italic> is characterized by rapid establishment [<xref ref-type="bibr" rid="CR16">16</xref>]. All these traits make them a very good choice for animal fodder. On the other hand, <italic>F. pratensis</italic> exhibits higher persistence, with a better developed root system allowing it to grow on lower quality soils. It also exhibits resistance to extreme abiotic conditions, such as drought and cold stress, being found as far north as within the Arctic Circle. Introgression of specific traits within the complex are possible and natural hydrids can be found in north-western Europe [<xref ref-type="bibr" rid="CR17">17</xref>].</p>
+      <p>Numerous studies have succesfully introduced important traits from <italic>F. pratensis</italic> into <italic>Loliums</italic>, including crown rust resistance in <italic>L. perenne</italic> [<xref ref-type="bibr" rid="CR18">18</xref>] and <italic>L. multiflorum</italic> [<xref ref-type="bibr" rid="CR19">19</xref>-<xref ref-type="bibr" rid="CR21">21</xref>], freezing tolerance [<xref ref-type="bibr" rid="CR22">22</xref>] and drought tolerance in <italic>L. multiflorum</italic> [<xref ref-type="bibr" rid="CR23">23</xref>]. Species from the <italic>Lolium-Festuca</italic> complex provide a large pool of genetic variation, both within single species, as well as within the complex. This makes it possible to breed forage and turf vartieties suited for use under a range of environments. Not suprisingly, <italic>Poacea</italic>, to which both <italic>Festuca</italic> and <italic>Lolium</italic> belong has been proposed as a model clade for comparative genomics [<xref ref-type="bibr" rid="CR24">24</xref>]. Currently well-annotated genomes for this clade are <italic>Brachypodium distachyon</italic> [<xref ref-type="bibr" rid="CR25">25</xref>], and <italic>Oryza sativa</italic> [<xref ref-type="bibr" rid="CR26">26</xref>] with ongoing research into <italic>Hordeum vulgare</italic> [<xref ref-type="bibr" rid="CR27">27</xref>].</p>
+      <p>The aims of the study were to; (1) reconstruct the transcriptomes of four species within the <italic>Lolium-Festuca</italic> complex: <italic>F. pratensis, L. multiforum, L. m. westerwoldicum</italic> and <italic>L. temulentum</italic>. This would complement the already published <italic>Lolium perenne</italic> transcriptome [<xref ref-type="bibr" rid="CR28">28</xref>,<xref ref-type="bibr" rid="CR29">29</xref>], (2) establish the phylogeny of the species based on orthologous protein sequences, (3) identify and compare gene families across the analyzed transcriptomes, and (4) identify genes under positive selection between the very resistant to biotic and abiotic stresses <italic>F. pratensis</italic>, and more susceptible <italic>Lolium</italic> species.</p>
+    </sec>
+    <sec id="Sec2">
+      <title>Results and discussion</title>
+      <sec id="Sec3">
+        <title><italic>De-novo</italic> assembly of transcriptomes from the <italic>Lolium-Festuca</italic> complex</title>
+        <p>We focused on generating transcriptome assemblies for four species within the <italic>Lolium-Festuca</italic> complex. Reads were error-corrected using ALLPATHS-LG tool [<xref ref-type="bibr" rid="CR30">30</xref>], and assembled using Trinity software [<xref ref-type="bibr" rid="CR31">31</xref>] to produce transcriptome assemblies that varied in transcript number between 52,166 and 72,133 after quality filtering for low-read support transcripts (Table <xref rid="Tab1" ref-type="table">1</xref>). The distribution of transcript length is very similar between the four species (Figure <xref rid="Fig1" ref-type="fig">1</xref>), and in all cases a large portion of the assembly is contained within transcripts that are over 1000 bp in length. We have taken several approaches to evaluate the quality of each assembly and determine how comparable the four assemblies are. First, we identified which transcripts from three closely related species (<italic>B.distachyon</italic>, <italic>O. sativa</italic> and <italic>T. aestivum</italic>) share the greatest sequence similiarity with transcripts from the four <italic>Lolium-Festuca</italic> complex species. We then determined how much overlap there was between the transcript from our de-novo assemblies and the transcript from the related species. A high proportion of the transcripts can be aligned fully (100%) or almost fully (80%) to the transcripts from the related species (Table <xref rid="Tab2" ref-type="table">2</xref>). The highest number of hits were found to the wheat gene set, the closest relative in this comparison. Secondly, we used the CEGMA pipeline [<xref ref-type="bibr" rid="CR32">32</xref>] to evaluate the completeness of our assemblies. This is a tool that assesses the presence and coverage of a set of 248 extremely conserved core eukaryotic genes (CEGs). The tool is routinely used for evaluating genomic assemblies, however, it has also been used for evaluating transcriptome assemblies [<xref ref-type="bibr" rid="CR33">33</xref>,<xref ref-type="bibr" rid="CR34">34</xref>]. The percentage of complete CEGs ranged from 88.71 to 95.56, and the percentage of partially complete CEGs ranged from 94.76 to 97.58 (Table <xref rid="Tab3" ref-type="table">3</xref>). The average number of orthologs per CEG and the % of detected CEGs that had more than 1 ortholog were similar across the four species. Our results point to transcriptome assemblies that reflect a representative portion of the transcriptome complexity, and are comparable between the four species.<table-wrap id="Tab1"><label>Table 1</label><caption><p><bold>Statistics of the filtered</bold><bold><italic>de-novo</italic></bold><bold> assemblies</bold></p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"><bold>Species</bold></th><th align="left"><bold>Number of sequences</bold></th><th align="left"><bold>Total nucleotide count</bold></th><th align="left"><bold>Max. transcript length</bold></th><th align="left"><bold>Average transcript length</bold></th><th align="left"><bold>N50</bold></th></tr></thead><tbody><tr><td align="left"><italic>F. pratensis</italic></td><td align="center">72,133</td><td align="center">81,313,606</td><td align="center">15,432</td><td align="center">1,127</td><td align="center">1,791</td></tr><tr><td align="left"><italic>L. multiflorum</italic></td><td align="center">55,570</td><td align="center">58,246,475</td><td align="center">15,160</td><td align="center">1,048</td><td align="center">1,646</td></tr><tr><td align="left"><italic>L. m. westerwoldicum</italic></td><td align="center">52,166</td><td align="center">55,142,140</td><td align="center">15,224</td><td align="center">1,057</td><td align="center">1,651</td></tr><tr><td align="left"><italic>L. temulentum</italic></td><td align="center">59,309</td><td align="center">67,863,492</td><td align="center">15,295</td><td align="center">1,144</td><td align="center">1,802</td></tr></tbody></table></table-wrap><fig id="Fig1"><label>Figure 1</label><caption><p><bold>Length distribution graph.</bold> A vertical bar chart of length distribution of transcriptome assembly fragments across analyzed species. The X-axis represents the length range bins, the Y-axis is the amount of transcripts present in each bin.</p></caption><graphic xlink:href="12864_2015_1447_Fig1_HTML" id="MO1"/></fig><table-wrap id="Tab2"><label>Table 2</label><caption><p><bold>Full length transcripts analysis</bold></p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"><bold>Species</bold></th><th align="left"><bold>Template protein dataset</bold></th><th align="left"><bold>100% coverage</bold></th><th align="left"><bold>&gt; 80% coverage</bold></th><th align="left"><bold>&gt; 20% coverage</bold></th></tr></thead><tbody><tr><td align="left"/><td align="center">Wheat</td><td align="center">9,356</td><td align="center">13,681</td><td align="center">21,918</td></tr><tr><td align="left"><italic>F.pratensis</italic></td><td align="center">Brachypodium</td><td align="center">7,488</td><td align="center">10,430</td><td align="center">15,350</td></tr><tr><td align="left"/><td align="center">Rice</td><td align="center">6,355</td><td align="center">9,391</td><td align="center">13,360</td></tr><tr><td align="left"/><td align="center">Wheat</td><td align="center">8,320</td><td align="center">12,016</td><td align="center">19,749</td></tr><tr><td align="left"><italic>L.multiflorum</italic></td><td align="center">Brachypodium</td><td align="center">6,966</td><td align="center">9,646</td><td align="center">14,250</td></tr><tr><td align="left"/><td align="center">Rice</td><td align="center">5,895</td><td align="center">8,657</td><td align="center">12,518</td></tr><tr><td align="left"/><td align="center">Wheat</td><td align="center">8,352</td><td align="center">12,088</td><td align="center">19,615</td></tr><tr><td align="left"><italic>L.m. westerwoldicum</italic></td><td align="center">Brachypodium</td><td align="center">7,028</td><td align="center">9,695</td><td align="center">14,276</td></tr><tr><td align="left"/><td align="center">Rice</td><td align="center">5,905</td><td align="center">8,720</td><td align="center">12,495</td></tr><tr><td align="left"/><td align="center">Wheat</td><td align="center">9,063</td><td align="center">13,103</td><td align="center">20,642</td></tr><tr><td align="left"><italic>L. temulentum</italic></td><td align="center">Brachypodium</td><td align="center">7,543</td><td align="center">10,481</td><td align="center">15,118</td></tr><tr><td align="left"/><td align="center">Rice</td><td align="center">6,328</td><td align="center">9,368</td><td align="center">13,154</td></tr></tbody></table></table-wrap><table-wrap id="Tab3"><label>Table 3</label><caption><p><bold>Results of CEGMA analysis</bold></p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"><bold>Out of 248</bold></th><th align="left"><bold><italic>F. pratensis</italic></bold></th><th align="left"><bold><italic>L. multiflorum</italic></bold></th><th align="left"><bold><italic>L.m. westerwoldicum</italic></bold></th><th align="left"><bold><italic>L. temulentum</italic></bold></th></tr></thead><tbody><tr><td align="left">% of fully represented</td><td align="center">95.56</td><td align="center">91.53</td><td align="center">88.71</td><td align="center">92.74</td></tr><tr><td align="left">% of at least partially represented</td><td align="center">97.58</td><td align="center">95.56</td><td align="center">94.76</td><td align="center">97.58</td></tr><tr><td align="left">average number of orthologs per CEG</td><td align="center">2.56</td><td align="center">2.56</td><td align="center">2.37</td><td align="center">2.4</td></tr><tr><td align="left">% of detected CEGs with more than 1 ortholog</td><td align="center">65.82</td><td align="center">70.48</td><td align="center">67.27</td><td align="center">65.22</td></tr></tbody></table></table-wrap></p>
+        <p>We predicted protein coding sequences from our transcriptome assemblies using Transdecoder [<xref ref-type="bibr" rid="CR31">31</xref>], and the numbers of predicted proteins ranged between 30,182 and 39,981. We then looked at the percentage of proteins predicted from complete transcripts, that is having both the 3&#x2019; and 5&#x2019; UTRs present - their numbers ranged from 10,680 to 16,850. Pfam domains have been assigned for between 54.82 and 60.23% of the proteins for each species. Around 4% of the proteins were predicted to have signal peptides and around 15% to have transmembrane helices. The number of transcripts with GO terms assignment was between 54.8&#x2013;60.8% (Table <xref rid="Tab4" ref-type="table">4</xref>). A functional annotation report for each species is provided in Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S1, Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S2, Additional file <xref rid="MOESM3" ref-type="media">3</xref>: Table S3 and Additional file <xref rid="MOESM4" ref-type="media">4</xref>: Table S4.<table-wrap id="Tab4"><label>Table 4</label><caption><p><bold>Overview of functional annotation output of the four species transcriptomes</bold></p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"><bold>Species</bold></th><th align="left"><bold>Proteins predicted</bold></th><th align="left"><bold>Pfam</bold></th><th align="left"><bold>sprot</bold></th><th align="left"><bold>signalp</bold></th><th align="left"><bold>tmHMM</bold></th><th align="left"><bold>GO</bold></th></tr></thead><tbody><tr><td align="left"><italic>F. pratensis</italic></td><td align="center">39,981</td><td align="center">21,921</td><td align="center">21,653</td><td align="center">1,622</td><td align="center">5,630</td><td align="center">21,928</td></tr><tr><td align="left"><italic>L. multiflorum</italic></td><td align="center">30,940</td><td align="center">18,464</td><td align="center">18,386</td><td align="center">1,400</td><td align="center">4,609</td><td align="center">18,569</td></tr><tr><td align="left"><italic>L. m. westerwoldicum</italic></td><td align="center">30,182</td><td align="center">18,179</td><td align="center">18,170</td><td align="center">1,339</td><td align="center">4,703</td><td align="center">18,349</td></tr><tr><td align="left"><italic>L. temulentum</italic></td><td align="center">35,005</td><td align="center">19,507</td><td align="center">19,248</td><td align="center">1,524</td><td align="center">5,104</td><td align="center">19,488</td></tr></tbody></table></table-wrap></p>
+      </sec>
+      <sec id="Sec4">
+        <title>Comparative gene family analysis</title>
+        <p>One way of understanding differences between related species on a genome-wide scale is to compare and find contrasts in the entire gene complement of each species. Best reciprocal BLAST hits between genes within a single species suggests the genes are paralogs. Best reciprocal BLAST hits between genes from different species suggests the genes are orthologs, and this strategy is widely used to generate orthologous pairs [<xref ref-type="bibr" rid="CR35">35</xref>]. We used OrthoMCL [<xref ref-type="bibr" rid="CR36">36</xref>] in order to compute orthologous clusters for all of our predicted proteins from the four species. We filtered proteins for the longest peptide predicted from a single representative transcript per locus, in order to avoid bias in the creation of the orthologous groups. We generated 15,930 clusters, assigning 57,822 (76,59%) to clusters of sizes from 2 to 176 proteins. The number of proteins contained in all clusters for each species varied between 14,161 and 14,835.</p>
+        <p>Most of the proteins are found in clusters containing genes from at least two species, with 8,644 gene families shared between all four species (Figure <xref rid="Fig2" ref-type="fig">2</xref>). The number of unique (species-specific) clusters is relatively low, which is not surprising considering that the analyzed species are seperated by very small evolutionary distances. <italic>L. multiflorum</italic> and <italic>L. m. westerwoldicum</italic> have the smallest number of species - specific proteins, and many protein sequences that are shared only between these two. Again, this is not surprising because <italic>L. m. westerwoldicum</italic> is a &#x2018;species&#x2019; derived from <italic>L. multiflorum</italic> through selective breeding for annuality [<xref ref-type="bibr" rid="CR37">37</xref>]. Out of the gene families identified as unique, two predicted proteins from <italic>F. pratensis</italic> are showing high sequence identity with a ZCCT2-A2 VRN2 homologue from <italic>T. urartu</italic> [B8X8J1]. VRN2 has an important role in the vernalization/flowering pathway, by preventing the flowering of the plant unless it has experienced a period of cold temperatures and/or short days [<xref ref-type="bibr" rid="CR38">38</xref>]. If there is a cold period, VRN2 becomes downregulated and allows the expression of the FT1 gene, which promotes flowering [<xref ref-type="bibr" rid="CR39">39</xref>,<xref ref-type="bibr" rid="CR40">40</xref>]. <italic>F. pratensis</italic> is a perennial species with predominantly a strong vernalization requirement [<xref ref-type="bibr" rid="CR41">41</xref>]. All of the other species analyzed are of bi-annual or annual type and have a facultative (<italic>L. multiflorum</italic>) or no vernalization requirement (<italic>L. m. westerwoldicum</italic> and <italic>L. temulentum</italic> [<xref ref-type="bibr" rid="CR42">42</xref>]). Samples for RNA-seq were taken from non vernalised plants, and it is therefore not surprising that VRN2 has been identified in the transcrtipome assembly of <italic>F. pratensis</italic>. The <italic>Lolium</italic> species without a vernalisation requirement do not have the VRN2 transcript present in their assemblies. A blastp alignment of the identified <italic>Festuca</italic> protein against the other transcriptomes revealed no significant hits. None of the original reads from the other species align back to the predicted VRN2 transcript, confiming that the VRN2 transcript is not present in the RNA-seq data sets of non-perennial species. We know from other studies that VRN2 is expressed in a <italic>L. perenne</italic> which does have a strong vernalization requirement [<xref ref-type="bibr" rid="CR43">43</xref>]. The absence of VRN2 expression has been proven to enable FT induction and flowering in the closely related cereals [<xref ref-type="bibr" rid="CR44">44</xref>,<xref ref-type="bibr" rid="CR45">45</xref>]. Loss of function of VRN2 in wheat results in plants that do not require vernalization to flower, and it is the genetic locus responsible for distinguishing spring and winter wheat types [<xref ref-type="bibr" rid="CR46">46</xref>]. Our results suggest that VRN2 is a key gene for differentiating vernalisation and non-vernalisation requiring species withinin the <italic>Lolium-Festuca</italic> complex. Other proteins identified as being species-unique included disease resistance proteins for <italic>F. pratensis</italic>, ABC transporter C for <italic>L. multiflorum</italic>, part of a ubiquitin ligase complex for <italic>L. m. westerwoldicum</italic> and ubiquin for <italic>L. temulentum</italic> (Table <xref rid="Tab5" ref-type="table">5</xref>).<fig id="Fig2"><label>Figure 2</label><caption><p><bold>Orthologous groups distribution.</bold> The Venn diagram shows the distribution of shared and divergent orthologous groups from an OrthoMCL analysis of <italic>Lolium-Festuca</italic> complex proteomes, based on non-redundant dataset. The numbers in each division show the amount of groups for each combination.</p></caption><graphic xlink:href="12864_2015_1447_Fig2_HTML" id="MO2"/></fig><table-wrap id="Tab5"><label>Table 5</label><caption><p><bold>Annotation of the species-unique proteins identified</bold></p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"><bold>Species</bold></th><th align="left"><bold>Selected protein homologs</bold></th></tr></thead><tbody><tr><td align="left"/><td align="center">ZCCT2-A2 VRN2 homologue [<italic>T. urartu</italic>]</td></tr><tr><td align="left"/><td align="center">Serine/threonine-protein kinase SMG1 [<italic>A. tauschii</italic>]</td></tr><tr><td align="left"/><td align="center">serine/threonine-protein kinase GSO1 [<italic>A. tauschii</italic>]</td></tr><tr><td align="left"/><td align="center">Hydroxyisourate hydrolase [<italic>A. tauschii</italic>]</td></tr><tr><td align="left"/><td align="center">Disease resistance protein RPM1 [<italic>T. urartu</italic>]</td></tr><tr><td align="left"/><td align="center">Putative disease resistance protein RGA4 [<italic>T. urartu</italic>]</td></tr><tr><td align="left"/><td align="center">ABC transporter G family member 37 [<italic>T. urartu</italic>]</td></tr><tr><td align="left"><italic>F. pratensis</italic></td><td align="center">60S ribosomal protein L28-1 [<italic>A. tauschii</italic>]</td></tr><tr><td align="left"/><td align="center">Ribosomal L1 domain-containing protein 1 [<italic>T. urartu</italic>]</td></tr><tr><td align="left"><italic>L. multiflorum</italic></td><td align="center">ABC transporter C family member 3 [<italic>T. urartu</italic>]</td></tr><tr><td align="left"/><td align="center">Coatomer subunit beta&#x2019;-2 [T. urartu]</td></tr><tr><td align="left"/><td align="center">Kinesin-like protein KIF15 [<italic>T. urartu</italic>]</td></tr><tr><td align="left"/><td align="center">Kinesin-like protein KIF15 [<italic>A. tauschii</italic>]</td></tr><tr><td align="left"/><td align="center">GRF zinc finger family protein [<italic>O. sativa</italic> Japonica Group]</td></tr><tr><td align="left"/><td align="center">DNA mismatch repair protein mutS [<italic>A. tauschii</italic>]</td></tr><tr><td align="left"><italic>L.m. westerwoldicum</italic></td><td align="center">Splicing factor 3A subunit 3 [<italic>T. urartu</italic>]</td></tr><tr><td align="left"/><td align="center">DNA mismatch repair protein Mlh1 [<italic>A. tauschii</italic>]</td></tr><tr><td align="left"/><td align="center">ubiquitin [<italic>S. aucuparia</italic>]</td></tr><tr><td align="left"/><td align="center">calcineurin B-like protein 4 [<italic>T. aestivum</italic>]</td></tr><tr><td align="left"/><td align="center">fasciclin-like protein FLA14 [<italic>T aestivum</italic>]</td></tr><tr><td align="left"/><td align="center">anthranilate N-benzoyltransferase protein 1 [<italic>A. tauschii</italic>]</td></tr><tr><td align="left"/><td align="center">calcineurin B-like protein 4 [<italic>T. aestivum</italic>]</td></tr><tr><td align="left"/><td align="center">cyclopropane-fatty-acyl-phospholipid synthase [<italic>T. urartu</italic>]</td></tr><tr><td align="left"><italic>L. temulentum</italic></td><td align="center">B3 domain-containing protein [<italic>A tauschii</italic>]</td></tr></tbody></table></table-wrap></p>
+        <sec id="Sec5">
+          <title>Analysis of clusters with high and low sequence similarity</title>
+          <p>The average identity of sequences in the OrthoMCL groups indicates the level of similarity among proteins belonging to that group. The combined average sequence identity (referred to as %id) of all protein families was 91.61%. 747 families contained highly conserved proteins, and their %id was equal to 100. 2,056 families have a %id below 80%, constituting less conserved groups. Using the DAVID database [<xref ref-type="bibr" rid="CR47">47</xref>] we have analyzed which functional annotation terms are overrepresented in the groups with different levels of percent sequence identity. GO Biological Process, INTERPROSCAN, and KEGG Pathway terms have been used for the annotation. Out of the proteins from groups having 100% identity 513 sequences could be matched in the DAVID database. They have been grouped into 45 clusters enriched for GO Biological Process terms. The most abundant classes of enriched terms include response to abiotic stress, ubiquitination, phosphorus metabolism, electron transport chain, protein localization, response to organic and hormone stimulus, positive regulation of transcription, carbohydrate metabolism, cell cycle, and meiotic cell cycle. Enriched KEGG pathway terms included purine and pirimidyne metabolism, pyruvate metabolism, glycolisis/gluconeogenesis, carbon fixation, biosynthesis of plant hormones, terpenoids, steroids and alkaloids, and citrate cycle. Enriched INTERPRO domains were related to ubiquitin, protein kinases, GTPases, ATPases, EF hands, and DNA/RNA helicases. Genes responsible for terms like basic metabolic processes related to biosynthesis and degradation, transcriptional and translational activity, protein synthesis and destination and signal transduction are amongst the most conserved in plants [<xref ref-type="bibr" rid="CR48">48</xref>]. The same is true for genes involved in basic cell cycle machinery [<xref ref-type="bibr" rid="CR49">49</xref>].</p>
+          <p>The families with a low %id represent proteins with less restrained sequence conservation, with possible multiple copies allowing for more relaxed selection. For the families having below 80%id we have identified 1,548 IDs using DAVID, which group into 90 clusters enriched for GO Biological Process terms. Clusters with the highest enrichment scores consisted of proteins related to phosphorylation, enzyme linked receptor protein signalling pathway, response to radiation, light and abiotic stimulus, protein ubiquitination, proteolysys and protein catabolic processes, response to organic and hormone stimuli, ion transport, root development, nucleotide metabolic processes and response to hormone stimulus. Three clusters were identified for enriched KEGG pathways, related to metabolism of methane, cyanoamino acid and glycine, serine and threonine, phenylopropandoid biosynthesis, and gluconeogenesis, biosynthesis of alkaloids and terpenoids. 64 clusters have been enriched for INTERPRO domains, with ten highest containing protein kinases, ABC transporters, ubiquitin, ATPases, zinc fingers, sulfphate ion transporters, DNA/RNA helicases, EF-hands, EGF-like domains, and PAS domains. Full overview of the GO Biological Process annotation is available in Additional file <xref rid="MOESM5" ref-type="media">5</xref>: Table S5 and Additional file <xref rid="MOESM6" ref-type="media">6</xref>: Table S6.</p>
+        </sec>
+      </sec>
+      <sec id="Sec6">
+        <title>Phylogenetic analysis based on orthologous gene families</title>
+        <p>The exact taxonomy of the <italic>Lolium-Festuca</italic> complex species is complicated and historically not completely agreed upon, with questions raised about the relationship between different <italic>Loliums</italic> as well as the origin of the species. The genus <italic>Festuca</italic> is considered to be ancestral to the genus <italic>Lolium</italic>, as it incorporates far more species and contains natural polyploids [<xref ref-type="bibr" rid="CR4">4</xref>,<xref ref-type="bibr" rid="CR13">13</xref>,<xref ref-type="bibr" rid="CR50">50</xref>]. Evidence exists for both (i) the evolution of <italic>Loliums</italic> from a perennial <italic>Festuca</italic> subgenus <italic>Schedonorus</italic> ancestor [<xref ref-type="bibr" rid="CR51">51</xref>], and (ii) a common ancestral form for both <italic>Lolium</italic> and <italic>Festuca</italic> [<xref ref-type="bibr" rid="CR3">3</xref>,<xref ref-type="bibr" rid="CR4">4</xref>]. Some reports are in favor of classifying the genus <italic>Lolium</italic> as part of the <italic>Schedonorus</italic> [<xref ref-type="bibr" rid="CR52">52</xref>,<xref ref-type="bibr" rid="CR53">53</xref>]. In general, the <italic>Lolium</italic> genus can be separated based on self-pollinating or out-pollinating behaviour. The most recent and complete analyses of the <italic>Lolium-Festuca</italic> complex reports the crown age of the <italic>Lolium - Festuca</italic> complex to be 8.97 +- 1.5 Ma. It also reports the <italic>F. pratensis</italic> to have originated in the Southwest Asia around 2 million years ago, and the <italic>Loliums</italic> to have first diversified in the eastern Mediterranean region around 4.1 Ma [<xref ref-type="bibr" rid="CR54">54</xref>].</p>
+        <p>In our study we performed the phylogenetic analysis using the orthologous groups identified by OrthoMCL. The clustering output was further filtered for conserved orthologous genes as a representative from each species - that is, having exactly one representative in the cluster for each of the species. 4022 groups fulfilled this criteria. Using these groups we inferred gene trees (using PAML tool) which were then clustered using the Phylip tool to infer a consensus tree (Figure <xref rid="Fig3" ref-type="fig">3</xref>). It is important to note that gene trees were calculated based solely on the gene-coding regions obtained from assembled transcriptome sequences only. The numbers on the branches indicate the number of times the species are partitioned into the two sets (out of 4022 groups). This means, that the branch topology has the highest support, or has been represented most commonly in the input trees. However, we find that a high proportion of the original trees have a different topology. This points to a different phylogenetic relationship depending on the group of orthologous proteins analyzed. These findings make sense in light of the fact that some of the species in the complex are interfertile. The fact that introgression of genes is possible within the complex has been utilized in breeding efforts as well as in research [<xref ref-type="bibr" rid="CR55">55</xref>-<xref ref-type="bibr" rid="CR57">57</xref>]. The genomes of modern grass species are a result of more complex evolutionary mechanisms, and reticulate evolution in the complex has been previously proposed [<xref ref-type="bibr" rid="CR58">58</xref>]. The consensus tree (phylogeny) strongly corresponds to the possible phylogeny of the <italic>Poaceae</italic> family reported in [<xref ref-type="bibr" rid="CR54">54</xref>].<fig id="Fig3"><label>Figure 3</label><caption><p><bold>Extended majority rule consensus tree.</bold> A consensus phylogenetic tree, created from 4022 individual trees originating from OrthoMCL groups with one representative per specie. The numbers on the branches indicate the number of times the species have been partitioned into two sets.</p></caption><graphic xlink:href="12864_2015_1447_Fig3_HTML" id="MO3"/></fig></p>
+      </sec>
+      <sec id="Sec7">
+        <title>Genes under positive selection pressure in <italic>Lolium</italic> species compared to <italic>F. pratensis</italic></title>
+        <p>We can identify two types of changes in the coding sequences - non synonymous (dN) substitutions, leading to change in the amino acid sequence, and synonymous (dS) substitutions, which are neutral for the amino acid sequence. The ratio of non-synonymous substitution rate (Ka) and synonymous substitution rate (Ks) is a parameter widely used to assess whether there is any directional selection acting on a protein coding gene. A ratio &lt; 1 indicates that the protein is under purifying selection, whereas a ratio of &gt; 1 is a good indication of positive selection pressure [<xref ref-type="bibr" rid="CR59">59</xref>,<xref ref-type="bibr" rid="CR60">60</xref>]. In such a closely related clade, only a small amount of genes can be expected to be responsible for phenotypical differences [<xref ref-type="bibr" rid="CR61">61</xref>]. We undertook pairwise comparison of transcriptome datasets. Putative orthologous genes have been then classified according to the best bi-directional blast criteria (see <xref rid="Sec9" ref-type="sec">Methods</xref>), and for every comparison we selected transcript pairs with a Ka/Ks ratio above 1. We have focused on comparing the <italic>F. pratensis</italic> with the other analyzed species, as it has various features that are important from an agricultural perspective, which include superior biotic and abiotic stress tolerance, good persistency and perenniality. The sequence identity distribution is very uniform among the pairwise comparison, with it&#x2019;s peak around 95% (Figure <xref rid="Fig4" ref-type="fig">4</xref>). We focused our analysis towards genes involved in stress resistance, cell cycle and development related proteins, with the most relevant ones identified listed for every comparison. The overall distribution of Ka/Ks ratio of all pairwise comparisons is very similar, with almost every pair of proteins showing signs of purifying selection (Figure <xref rid="Fig5" ref-type="fig">5</xref>). The median ratio was very consistent, between 0.1741 for <italic>L. multiflorum</italic> and 0.1883 for <italic>L. perenne</italic>.<fig id="Fig4"><label>Figure 4</label><caption><p><bold>Sequence identity distribution of pairwise comparisons.</bold> The graph presents a distribution of protein identity between <italic>F. pratensis</italic> and the other <italic>Lolium-Festuca</italic> complex species used in pairwise BLAST comparisons. The kernel density plots are used here to view the distribution of a sequence identity. The X axis represents sequence identity (SqId) and the Y axis shows kernel density.</p></caption><graphic xlink:href="12864_2015_1447_Fig4_HTML" id="MO4"/></fig><fig id="Fig5"><label>Figure 5</label><caption><p><bold>Ka/Ks distribution.</bold> The figure presents comparison of <italic>F. pratensis</italic> against <italic>L. temulentum, L.m. westerwoldicum, L. multiflorum</italic> and <italic>L. perenne</italic>. The frequency distributions of Ka/Ks rates (x-axis) shown here are based on protein and nucleotide alignments of orthologous genes.</p></caption><graphic xlink:href="12864_2015_1447_Fig5_HTML" id="MO5"/></fig></p>
+        <p>The number of orthologous pairs for which Ka and Ks could be calculated and was above 1 was equal to: 210 for <italic>F. pratensis</italic> and <italic>L. multiflorum</italic> (Additional file <xref rid="MOESM7" ref-type="media">7</xref>: Table S7), 177 for <italic>F. pratensis</italic> and <italic>L. m. westerwoldicum</italic> (Additional file <xref rid="MOESM8" ref-type="media">8</xref>: Table S8), 203 for <italic>F. pratensis</italic> and <italic>L. temulentum</italic> (Additional file <xref rid="MOESM9" ref-type="media">9</xref>: Table S9), 124 for <italic>F. pratensis</italic> and <italic>L. perenne</italic> (Additional file <xref rid="MOESM10" ref-type="media">10</xref>: Table S10). All of the pairs have been linked to their functional annotations. We have then categorized the transcript pairs that are under positive pressure in multiple comparisons, by checking how many <italic>Festuca</italic> identifiers are being shared between the pairwise comparisons (Figure <xref rid="Fig6" ref-type="fig">6</xref>). The majority of pairs have shown Ka/Ks values over 1 in only a single pair-wise comparison. However, there were three pairs shared in every analyzed comparison, and thus differentiating the <italic>Festuca</italic> from the <italic>Lolium</italic> species. The first was a homologue of <italic>A. thaliana</italic> ribosomal protein L4, one of the primary rRNA binding proteins [<xref ref-type="bibr" rid="CR62">62</xref>], and the second was a UNC93-like protein 2, which is an integral component of the cell membrane [<xref ref-type="bibr" rid="CR63">63</xref>]. In addition, in every pairwise comparison we detected a homologue of disease resistance protein RPM1, involved in plant defense against <italic>P. syringae</italic> in <italic>A. thaliana</italic> [<xref ref-type="bibr" rid="CR64">64</xref>]. A homologue to disease resistance protein RPP13 conferring resistance to <italic>Peronospora parasitica</italic> in <italic>A. thaliana</italic> [<xref ref-type="bibr" rid="CR65">65</xref>] has been identified in <italic>L. perenne</italic>, <italic>L. multiflorum</italic> and <italic>L. temulentum</italic> comparisons. Other proteins involved in plant-pathogen interaction, RPP8 and RPH8A, have been found in the <italic>L. multiflorum</italic> comparison. Different types of F-box proteins, which are mediating protein-protein interactions, were also abundant in every pairwise comparison.<fig id="Fig6"><label>Figure 6</label><caption><p><bold>Organisation of proteins under positive selection in</bold><bold><italic>Festuca</italic></bold><bold> to</bold><bold><italic>Loliums</italic></bold><bold> comparison.</bold> The diagram show the number of proteins under positive selection between <italic>Festuca</italic> and analyzed <italic>Lolium</italic> species.</p></caption><graphic xlink:href="12864_2015_1447_Fig6_HTML" id="MO6"/></fig></p>
+        <p>Because <italic>F. pratenesis</italic> and <italic>L. perenne</italic> are perennial plants, and <italic>L. multiflorum</italic>, <italic>L. m. westerwoldicum</italic> and <italic>L. temulentum</italic> have a bi-annual or annual growth cycle, protein types present in every type of comparison except for <italic>F. pratensis - L.perenne</italic> have been closely investigated. One example of such proteins are cyclins, family of conserved proteins responsible for the control of cell-cycle progression [<xref ref-type="bibr" rid="CR66">66</xref>]. Cyclin T1-1, has been identified in all comparisons except for the comparison with <italic>L.perenne</italic>. Other cyclins, T1-4 and T1-5, and Cyclin-dependent kinase F-4 have been identified in pairwise comparisons with <italic>L. temulentum</italic> E3 ubiquitin ligases have also been identified in every comparison apart from <italic>L.perenne</italic> - RNF128 in <italic>L. multiflorum</italic>, RFWD3 in <italic>L. m. westerwoldicum</italic> and RNF25 in <italic>L. temulentum</italic>. Additionally, multiple diverse transcription factors have been identified in non - <italic>L.perenne</italic> comparisons. These proteins constitute a group worth investigation of the perenniality/annuality trait genetic background.</p>
+        <p>When analyzing PFAM domains, the most abundant classes in every comparison were Leucine Rich Repeats, AAA domains and Tetratricopepdide repeats. All three of those protein domains can be found in proteins involved in diverse functions - such as protein-protein interactions, transcription factors, protein degradation and signal transduction. The full list of annotated proteins and PFAM domains is available in Additional file <xref rid="MOESM11" ref-type="media">11</xref>.</p>
+        <p>Apart from the pairwise comparisons of <italic>Festuca</italic> to <italic>Lolium</italic> species, we have also performed a comparison of <italic>L. multiflorum</italic> and <italic>L. m. westerwoldicum</italic>, assuming that a large amount of changes on the molecular level might have been caused by human influence [<xref ref-type="bibr" rid="CR37">37</xref>]. It is an interesting comparison as <italic>L. m. westerwoldicum</italic> was developed by selecting <italic>L. multiflorum</italic> plants for annuality. A very high number of positively selected orthologous pairs - 235 - has been identified for these two species (Additional file <xref rid="MOESM12" ref-type="media">12</xref>: Table S11). As the main difference between the species is the strictly annual habit of <italic>L. m. westerwoldicum</italic>, apart from the basic metabolism and disease resistance we were also interested in proteins related to development and perenniality-annuality cycle. Annotations extracted from the previously created annotation files (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S1, Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S2, Additional file <xref rid="MOESM3" ref-type="media">3</xref>: Table S3 and Additional file <xref rid="MOESM4" ref-type="media">4</xref>: Table S4) included multiple ubiquitin protein ligases as well as Cyclin-T1-1. Multiple disease resistance proteins have been identified: two RGA2 proteins, 1 RPM1 and one RPP13 protein. Among the pfam domain annotations we have found one that is related to seed dormancy control [PF14144.1], and two genes with a anaphase-promoting complex subunit [PF12861.2]. We have also identified multiple domains associated with sugar metabolism, such as fructose-1-6-bisphosphatase [PF00316.15], sugar efflux transporter for intercellular exchange [PF03083.11], MFS/sugar transport protein [PF13347.1] and sugar transporter [PF00083.19]. Another interesting category of domains included drought induced 19 protein (Di19) [PF05605.7] and Arabidopsis broad-spectrum mildew resistance protein [PF05659.6]. In spite of the extremely close phylogenetic distance, the amount and diversity of proteins under putative positive selection between those two species is very high, likely reflecting the intense selection pressure applied during the breeding of <italic>L. m. westerwoldicum</italic> from <italic>L. multiflorum</italic>.</p>
+        <p>Many of the enriched terms identified as being positively selected in this study share functions comparable to the ones in similar analyses [<xref ref-type="bibr" rid="CR61">61</xref>,<xref ref-type="bibr" rid="CR67">67</xref>,<xref ref-type="bibr" rid="CR68">68</xref>]. Terms associated with protein kinases, protein phospthatases, transcription regulation and glycotransferases are linked to disease resistance [<xref ref-type="bibr" rid="CR67">67</xref>], which are one of the fastest evolving and critical proteins in plant evolution. Terms related to stress response were present in almost every comparison, which is not suprising given the phenotypic background of the plants. The VRN2 gene has been identified as being important for determining spring or winter wheat varieties [<xref ref-type="bibr" rid="CR46">46</xref>]. We have often observed terms related to reproductive structure development. Seeds and fruit size are one of the most distinct differences between wild and domesticated plants. <italic>L. temulentum</italic> is considered to be a mimic weed of wheat, and as such it has been involuntarily domesticated alongside that species [<xref ref-type="bibr" rid="CR69">69</xref>]. Breeding of perennial grasses has a much shorter history, with the earliest records of it starting around 90 years ago [<xref ref-type="bibr" rid="CR70">70</xref>]. However, given the intensity of modern breeding programs and the fact that <italic>F. pratensis, L. multiflorum and L. m. westerwoldicum</italic> plants used in our study are a result of a directed breeding effort, it might be worth investigating if some of the observed variation could be related to domestication like processes.</p>
+      </sec>
+    </sec>
+    <sec id="Sec8" sec-type="conclusion">
+      <title>Conclusions</title>
+      <p>This study presents the first de-novo transcriptome assemblies for four species from the <italic>Lolium-Festuca</italic> complex, and uses them to perform comparative transcritpomics. The orthologous genes between the species have a very high sequence similarities (91,61%), and the majority of gene families were shared for all of them. A consensus phylogenetic tree based on our large set of one-to-one orthologous genes is in agreement with the most recent study that was based on nuclear ribosomal intergenic spacer and plastid trnT-L and trnL-F regions. It is likely that the knowledge of the genomes will be largely transferable between species within the complex.</p>
+    </sec>
+    <sec id="Sec9" sec-type="methods">
+      <title>Methods</title>
+      <sec id="Sec10">
+        <title>Sample collection</title>
+        <p>In order to capture a broad sequence diversity, we have chosen four <italic>Lolium-Festuca</italic> species that differ highly between each other with regard to phenotypic traits. The seeds were obtained from the breeding company DLF-Trifolium, and three of the species were commercial breeding varieties; <italic>F. pratensis</italic> - &#x201C;Laura&#x201D;, <italic>L.multiflorum</italic> &#x201C;Lemtal&#x201D;, <italic>L. m. westerwoldicum</italic> &#x201C;Nerissa&#x201D;. <italic>L. temulentum</italic> was a wild type. The seeds have been germinated and grown in the greenhouse under standard conditions. The RNA has been isolated on the 16th of April 2013 from mature leaf samples from single genotype of each of the four species using the RNeasy plant mini kit from Qiagen according to the manufacturers protocol.</p>
+      </sec>
+      <sec id="Sec11">
+        <title>cDNA preparation and sequencing</title>
+        <p>cDNA library preparation has been done using the TruSeq kit, generating paired-end libraries with insert size of 300 bp. Sequencing has been carried out by the Beijing Genomics Institute, using Illumina Hi-Seq platform (91 bp paired-end sequencing), as well as the Ion Proton platform for a subset (25,5 milion reads) of <italic>L. temulentum</italic> sequences (91 bp single-end sequencing). The adapters were removed and reads were quality trimmed by BGI.</p>
+      </sec>
+      <sec id="Sec12">
+        <title>Error correction</title>
+        <p>The original reads have been corrected for sequencing errors using the Allpaths-LG software (version 44837) built-in error correction tool [<xref ref-type="bibr" rid="CR71">71</xref>], with default parameters. The tool is based on an algorithm eliminating exceptions from an overwhelming consensus read stack [<xref ref-type="bibr" rid="CR30">30</xref>]. This process has reduced the total amount of paired-end reads by between 92.4 and 94.8%.</p>
+      </sec>
+      <sec id="Sec13">
+        <title>Assembly</title>
+        <p>The samples from Illimuna and Ion Proton platforms have been merged and used together in the assembly. Trinity software [<xref ref-type="bibr" rid="CR31">31</xref>] (version r2013_08_14) has been used for the generation of independent <italic>de-novo</italic> transcriptome assemblies, using the following parameters: &#x2013;JM 20G &#x2013;min_contig_ 200 &#x2013;full_cleanup &#x2013;min_kmer_cov 2. This has resulted a total number of 96,710 assembled transcripts for <italic>F. pratensis</italic>, 69,651 for <italic>L.multiflorum</italic>, 63,112 for <italic>L. m. westerwoldicum</italic> and 76,751 for <italic>L. temulentum</italic>. The reads have been mapped back to their assembly using RSEM (version 2013-02-16) [<xref ref-type="bibr" rid="CR72">72</xref>] in order to filter out transcripts with low support.</p>
+      </sec>
+      <sec id="Sec14">
+        <title>Protein prediction</title>
+        <p>Transdecoder (version r2013_08_14) [<xref ref-type="bibr" rid="CR31">31</xref>] has been used to <italic>de novo</italic> predict putative coding regions and protein sequences using filtered transcripts as input. 39,981 proteins were predicted for <italic>F. pratensis</italic>, 30,940 for <italic>L. multiflorum</italic>, 30,182 for <italic>L. m. westerwoldicum</italic> and 35,005 for <italic>L. temulentum.</italic> CEGMA [<xref ref-type="bibr" rid="CR73">73</xref>] pipeline was used to assess the completion of the transcriptome assemblies.</p>
+      </sec>
+      <sec id="Sec15">
+        <title>Annotation</title>
+        <p>The trinotate (release 2014.07.08) [<xref ref-type="bibr" rid="CR31">31</xref>] pipeline was used for the annotation of the protein dataset. Both transcripts and proteins have been aligned using blast software [<xref ref-type="bibr" rid="CR74">74</xref>] (version 2.2.28+), blastx and blastp respectively, using swissprot protein database (release 09_07_2014) as the target. HMMER [<xref ref-type="bibr" rid="CR75">75</xref>] (version 3.1b1) with Pfam-A database [<xref ref-type="bibr" rid="CR76">76</xref>] (version 27.0) has been used to identify protein domains, signalP [<xref ref-type="bibr" rid="CR77">77</xref>] (version 4.1) was used to predict signal peptides and tmHMM [<xref ref-type="bibr" rid="CR78">78</xref>] (version 2.0c) was used to predict transmembrane helices. The resulting information has been loaded into SQLite database and wrapped up by the Trinotate report script, creating a comprehensive annotation.</p>
+      </sec>
+      <sec id="Sec16">
+        <title>Validation of assembly completion by CEGMA</title>
+        <p>CEGMA software [<xref ref-type="bibr" rid="CR73">73</xref>] (version 2.4.010312) has been used to assess the completion of the transcript dataset. The software was run with default parameters with the included reference dataset.</p>
+      </sec>
+      <sec id="Sec17">
+        <title>Full-length transcript analysis</title>
+        <p>We have used high confidence protein datasets from <italic>T. aestivum</italic>, <italic>B. distachyon</italic> and <italic>O. sativa</italic>, downloaded from MIPS PlantsDB database (30.07.2014) [<xref ref-type="bibr" rid="CR79">79</xref>]. NCBI blastx was used (-evalue 1e-20 -max_target_seqs 1 -outfmt 6) to align each of our four filtered transcriptome assemblies to each of the protein databases separately. Afterwards we have used the analyze_blastPlus_topHit_coverage.pl script from the Trinity package to identify unique top matching proteins that align across certain length thresholds of the template sequence.</p>
+      </sec>
+      <sec id="Sec18">
+        <title>Orthologous group assignment</title>
+        <p>Predicted protein sequences have been clustered into orthologous groups using the OrthoMCL software [<xref ref-type="bibr" rid="CR36">36</xref>]. The input protein dataset predicted by transdecoder has been filtered to contain only the proteins predicted from the longest, unique transcript splice variants, giving 19,863, 17,718, 18,095, and 19,817 proteins, respectively. A custom perl script was used in order to get information about the number of clusters shared. A set of custom python scripts has been used to get information about groups with over- and underrepresented sequences and assesing a group wide pfam domain classification. Sequences from the species-unique groups have been aligned online with the NCBI protein database for manual functional annotation. Sequences having %id hits below 40 have been discarded. Sequences having hits to putative or predicted proteins without any assigned function have not been considered for further analysis.</p>
+      </sec>
+      <sec id="Sec19">
+        <title>Identification of putative orthologs</title>
+        <p>For the identification of putative orthologs between two species, we applied bi-directional blastp [<xref ref-type="bibr" rid="CR80">80</xref>] where two sequences are considered as orthologous if they satisfy a sequence identity cut-off over the length of amino acids &gt; 30 [<xref ref-type="bibr" rid="CR81">81</xref>]. We have used the <italic>F. pratensis</italic> protein dataset predicted earlier for the identification of proteins under positive selection.</p>
+      </sec>
+      <sec id="Sec20">
+        <title>Estimation of synonymous and non-synonymous substitution rate</title>
+        <p>Orthologous gene pairs were aligned using CLUSTALW [<xref ref-type="bibr" rid="CR82">82</xref>]. The maximum likelihood estimation of synonymous (Ks) and non-synonymous (Ka) substitution rate was estimated using the yn00 module of the PAML4 suite [<xref ref-type="bibr" rid="CR83">83</xref>].</p>
+      </sec>
+      <sec id="Sec21">
+        <title>Analysis of evolutionary conserved and relaxed groups</title>
+        <p>For every sequence pair showing a Ka/Ks ratio higher than 1 and below 10, a representative sequence was chosen. It was belonging to the <italic>F. pratensis</italic> for all but one case. <italic>L. multiflorum</italic> representative was chosen for the <italic>L. multiflorum</italic> and <italic>L. m. westerwoldicum</italic> pair. The choice of one of the two representatives did not change the final outcome of the analysis. Matching uniprot identifiers have been identified by aligning the representative sequences with <italic>A. thaliana</italic> uniprot sequences (accessed 16.09.2014). The results have been filtered to contain only hits to plant species. The uniprot identifiers have then been used af input for DAVID. Clustering was done using the default parameters, with the KEGG pathway, INTERPRO domain and Biological Process GO terms used for annotation and <italic>A. thaliana</italic> sequences as a background for enrichment study.</p>
+      </sec>
+      <sec id="Sec22">
+        <title>Phylogenetic analysis</title>
+        <p>OrthoMCL clusters have been filtered in search of clusters containing a single representative from each species. 4022 groups have been selected and used to infer gene trees using PAML4 suite [<xref ref-type="bibr" rid="CR83">83</xref>]. The resulting trees have been which were then clustered using the consensus tree program, version 3.69 of the Phylip package [<xref ref-type="bibr" rid="CR84">84</xref>] to infer a consensus tree.</p>
+      </sec>
+      <sec id="Sec23">
+        <title>Availability of supporting data</title>
+        <p>The error corrected transcriptome reads have been deposited in the SRA database under the following accession numbers: SRR1648382 (<italic>F.pratensis</italic>), SRR1648406 (<italic>L. multiflorum</italic>), SRR1648407 (<italic>L.m. westerwoldicum</italic>), SRR1648408, SRR1648409 and SRR1648494 (<italic>L. temulentum</italic>). The Transcriptome Shotgun Assembly project has been deposited at DDBJ/EMBL/GenBank under the accession numbers GBXZ00000000 (<italic>F.pratensis</italic>), GBXX00000000 (<italic>L. multiflorum</italic>), GBXY00000000 (<italic>L.m. westerwoldicum</italic>), and GBXW00000000 (<italic>L. temulentum</italic>). The versions described in this paper are the first versions, GBXZ01000000, GBXX01000000, GBXY01000000, and GBXW01000000 respectively.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="App1">
+        <sec id="Sec24">
+          <title>Additional files</title>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM1_ESM.xlsx" id="MOESM1">
+              <label>Additional file 1</label>
+              <caption>
+                <p><bold>Table S1.</bold> Trinotate annotation report for <italic>F. pratensis</italic>.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM2_ESM.xlsx" id="MOESM2">
+              <label>Additional file 2</label>
+              <caption>
+                <p><bold>Table S2.</bold> Trinotate annotation report for <italic>L. multiflorum</italic>.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM3_ESM.xlsx" id="MOESM3">
+              <label>Additional file 3</label>
+              <caption>
+                <p><bold>Table S3.</bold> Trinotate annotation report for <italic>L.m. westerwoldicum</italic>.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM4_ESM.xlsx" id="MOESM4">
+              <label>Additional file 4</label>
+              <caption>
+                <p><bold>Table S4.</bold> Trinotate annotation report for <italic>L. temulentum</italic>.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM5_ESM.xlsx" id="MOESM5">
+              <label>Additional file 5</label>
+              <caption>
+                <p><bold>Table S5.</bold> Biological Process Annotation of 100% id groups.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM6_ESM.xlsx" id="MOESM6">
+              <label>Additional file 6</label>
+              <caption>
+                <p><bold>Table S6.</bold> GO Biological Process Annotation of &gt;80% id groups.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM7_ESM.xlsx" id="MOESM7">
+              <label>Additional file 7</label>
+              <caption>
+                <p><bold>Table S7.</bold> Annotations of proteins under putative positive selection in pairwise comparisons: <italic>F. pratensis - L. multiflorum</italic>.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM8_ESM.xlsx" id="MOESM8">
+              <label>Additional file 8</label>
+              <caption>
+                <p><bold>Table S8.</bold> Annotations of proteins under putative positive selection in pairwise comparisons: <italic>F. pratensis - L.m. westerwoldicum</italic>.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM9_ESM.xlsx" id="MOESM9">
+              <label>Additional file 9</label>
+              <caption>
+                <p><bold>Table S9.</bold> Annotations of proteins under putative positive selection in pairwise comparisons: <italic>F. pratensis - L.temulentum</italic>.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM10_ESM.xlsx" id="MOESM10">
+              <label>Additional file 10</label>
+              <caption>
+                <p><bold>Table S10.</bold> Annotations of proteins under putative positive selection in pairwise comparisons: <italic>F. pratensis - L.perenne</italic>.</p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM11_ESM.docx" id="MOESM11">
+              <label>Additional file 11</label>
+              <caption>
+                <p>
+                  <bold>Number of orthologous protein pairs identified in</bold>
+                  <bold>
+                    <italic>H.vulgare</italic>
+                  </bold>
+                  <bold> vs</bold>
+                  <bold>
+                    <italic>Lolium-Festuca</italic>
+                  </bold>
+                  <bold> complex species using a range of %identity thresholds.</bold>
+                </p>
+              </caption>
+            </media>
+          </p>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1447_MOESM12_ESM.xlsx" id="MOESM12">
+              <label>Additional file 12</label>
+              <caption>
+                <p><bold>Table S11.</bold> Annotations of proteins under putative positive selection in pairwise comparisons: <italic>L. multiflorum - L.m. westerwoldicum</italic>.</p>
+              </caption>
+            </media>
+          </p>
+        </sec>
+      </app>
+    </app-group>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Competing interests</bold>
+        </p>
+        <p>The authors declare that they have no competing interests.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Authors&#x2019; contributions</bold>
+        </p>
+        <p>AC, SB, and TA concieved the study and participated in its design and coordination. AC performed the data analysis with contributions from SS, SB, MS, KFXM, and TA. AC wrote the final manuscript with contributions from SS, SB, MS, KFXM, and TA. All authors read and approved the final manuscript.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>We would like to thank Mr. Stephan Hentrup for his excellent technical support. This project was financed by the GUDP (Gr&#xF8;nt Udviklings- og Demonstrationsprogram - Green Development and Demonstration Program) (3405-11-0241).</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Strickler</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Bombarely</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mueller</surname>
+              <given-names>LA</given-names>
+            </name>
+          </person-group>
+          <article-title>Designing a transcriptome next-generation sequencing project for a nonmodel plant species</article-title>
+          <source>Am J Bot</source>
+          <year>2012</year>
+          <volume>99</volume>
+          <issue>2</issue>
+          <fpage>257</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="doi">10.3732/ajb.1100292</pub-id>
+          <?supplied-pmid 22268224?>
+          <pub-id pub-id-type="pmid">22268224</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thomas</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>MO</given-names>
+            </name>
+          </person-group>
+          <article-title>Progress and potential of interspecific hybrids of lolium and festuca</article-title>
+          <source>J Agr Sci</source>
+          <year>1991</year>
+          <volume>117</volume>
+          <fpage>1</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0021859600078916</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>WW</given-names>
+            </name>
+            <name>
+              <surname>Sleper</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Detection of rflps in perennial ryegrass, using heterologous probes from tall fescue</article-title>
+          <source>Crop Sci.</source>
+          <year>1992</year>
+          <volume>32</volume>
+          <issue>6</issue>
+          <fpage>1366</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci1992.0011183X003200060012x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bulinska-Radomska</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Lester</surname>
+              <given-names>RN</given-names>
+            </name>
+          </person-group>
+          <article-title>Intergeneric relationships oflolium, festuca, andvulpia (poaceae) and their phylogeny</article-title>
+          <source>Plant Systemat Evol</source>
+          <year>1988</year>
+          <volume>159</volume>
+          <issue>3&#x2013;4</issue>
+          <fpage>217</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00935973</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Charmet</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ravel</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Balfourier</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Phylogenetic analysis in the festuca-lolium complex using molecular markers and its rdna</article-title>
+          <source>Theor Appl Genet</source>
+          <year>1997</year>
+          <volume>94</volume>
+          <issue>8</issue>
+          <fpage>1038</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="doi">10.1007/s001220050512</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6</label>
+        <mixed-citation publication-type="other">Club MB. Michigan botanist. Michigan Botanical Club. <ext-link ext-link-type="uri" xlink:href="http://hdl.handle.net/2027/spo.0497763.0038.101">http://hdl.handle.net/2027/spo.0497763.0038.101</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hand</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Cogan</surname>
+              <given-names>NO</given-names>
+            </name>
+            <name>
+              <surname>Stewart</surname>
+              <given-names>AV</given-names>
+            </name>
+            <name>
+              <surname>Forster</surname>
+              <given-names>JW</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolutionary history of tall fescue morphotypes inferred from molecular phylogenetics of the lolium-festuca species complex</article-title>
+          <source>BMC Evol Biol</source>
+          <year>2010</year>
+          <volume>10</volume>
+          <fpage>303</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2148-10-303</pub-id>
+          <?supplied-pmid 20937141?>
+          <pub-id pub-id-type="pmid">20937141</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Charmet</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Balfourier</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Isozyme variation and species relationships in the genus lolium l (ryegrasses, graminaceae)</article-title>
+          <source>Theor Appl Genet</source>
+          <year>1994</year>
+          <volume>87</volume>
+          <issue>6</issue>
+          <fpage>641</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00222888</pub-id>
+          <?supplied-pmid 24190406?>
+          <pub-id pub-id-type="pmid">24190406</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Loureiro</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kopecky</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Castro</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Santos</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Silveira</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Flow cytometric and cytogenetic analyses of iberian peninsula festuca spp.</article-title>
+          <source>Plant Systemat Evol</source>
+          <year>2007</year>
+          <volume>269</volume>
+          <issue>1&#x2013;2</issue>
+          <fpage>89</fpage>
+          <lpage>105</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00606-007-0564-8</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Improved drought resistance in introgression lines derived from lolium-multiflorum x festuca-arundinacea hybrids</article-title>
+          <source>Plant Breeding</source>
+          <year>1993</year>
+          <volume>111</volume>
+          <issue>2</issue>
+          <fpage>155</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1439-0523.1993.tb00622.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Akiyama</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kimura</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Yamada-Akiyama</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kubota</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Takahara</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ueyama</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic characteristics of a diploid f-4 festulolium hybrid (lolium multiflorum x festuca arundinacea)</article-title>
+          <source>Genome</source>
+          <year>2012</year>
+          <volume>55</volume>
+          <issue>8</issue>
+          <fpage>599</fpage>
+          <lpage>603</lpage>
+          <pub-id pub-id-type="doi">10.1139/g2012-048</pub-id>
+          <?supplied-pmid 22856536?>
+          <pub-id pub-id-type="pmid">22856536</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Forster</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Takamizo</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetics and molecular breeding in lolium/festuca grass species complex</article-title>
+          <source>Grassland Science</source>
+          <year>2005</year>
+          <volume>51</volume>
+          <issue>2</issue>
+          <fpage>89</fpage>
+          <lpage>106</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1744-697X.2005.00024.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Polok</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <source>Molecular evolution of the genus Lolium L</source>
+          <year>2007</year>
+          <publisher-loc>Olsztyn</publisher-loc>
+          <publisher-name>Studio Poligrafii Komputerowej &#x201C;SQL&#x201D;</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>MO</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic improvement of forage crops - past, present and future</article-title>
+          <source>J Agr Sci</source>
+          <year>2005</year>
+          <volume>143</volume>
+          <fpage>441</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0021859605005599</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breese</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Lewis</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>GM</given-names>
+            </name>
+          </person-group>
+          <article-title>Interspecies hybrids and polyploidy</article-title>
+          <source>Phil Trans Roy Soc Lond B Biol Sci</source>
+          <year>1981</year>
+          <volume>292</volume>
+          <issue>1062</issue>
+          <fpage>487</fpage>
+          <lpage>97</lpage>
+          <pub-id pub-id-type="doi">10.1098/rstb.1981.0043</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breese</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Lewis</surname>
+              <given-names>EJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Breeding versatile hybrid grasses</article-title>
+          <source>Span</source>
+          <year>1984</year>
+          <volume>27</volume>
+          <issue>1</issue>
+          <fpage>21</fpage>
+          <lpage>3</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name>
+              <surname>Harper</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Morgan</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>James</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>GhamariZare</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dissecting drought- and cold-tolerance traits in the lolium-festuca complex by introgression mapping</article-title>
+          <source>New Phytologist</source>
+          <year>1997</year>
+          <volume>137</volume>
+          <issue>1</issue>
+          <fpage>55</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1469-8137.1997.00832.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Adomako</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Thorogood</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Clifford</surname>
+              <given-names>BC</given-names>
+            </name>
+          </person-group>
+          <article-title>Plant reaction types to crown rust (<italic>Puccinia coronata</italic> corda) disease inoculations in meadow fescue (<italic>F. pratensis</italic>l.), perennial ryegrass (<italic>L. perenne</italic> l) and <italic>L. perenne</italic> l. introgression lines.</article-title>
+          <source>Int Turfgrass Res J</source>
+          <year>1997</year>
+          <volume>8</volume>
+          <fpage>823</fpage>
+          <lpage>31</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oertel</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Matzk</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Introgression of crown rust resistance from festuca spp. into lolium multiflorum</article-title>
+          <source>Plant Breeding</source>
+          <year>1999</year>
+          <volume>s118</volume>
+          <issue>6</issue>
+          <fpage>491</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1439-0523.1999.00415.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rines</surname>
+              <given-names>HW</given-names>
+            </name>
+            <name>
+              <surname>Porter</surname>
+              <given-names>HL</given-names>
+            </name>
+            <name>
+              <surname>Carson</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Ochocki</surname>
+              <given-names>GE</given-names>
+            </name>
+          </person-group>
+          <article-title>Introgression of crown rust resistance from diploid oat avena strigosa into hexaploid cultivated oat a sativa by two methods: direct crosses and through an initial 2x center dot 4x synthetic hexaploid</article-title>
+          <source>Euphytica</source>
+          <year>2007</year>
+          <volume>158</volume>
+          <issue>1&#x2013;2</issue>
+          <fpage>67</fpage>
+          <lpage>79</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10681-007-9426-2</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Armstead</surname>
+              <given-names>IP</given-names>
+            </name>
+            <name>
+              <surname>Harper</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>LB</given-names>
+            </name>
+            <name>
+              <surname>Skot</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>King</surname>
+              <given-names>IP</given-names>
+            </name>
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>MO</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Introgression of crown rust (puccinia coronata) resistance from meadow fescue (festuca pratensis) into italian ryegrass (lolium multiflorum): genetic mapping and identification of associated molecular markers</article-title>
+          <source>Plant Pathol</source>
+          <year>2006</year>
+          <volume>55</volume>
+          <issue>1</issue>
+          <fpage>62</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-3059.2005.01308.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kosmala</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zwierzykowski</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Gasior</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Rapacz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zwierzykowska</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>MW</given-names>
+            </name>
+          </person-group>
+          <article-title>Gish/fish mapping of genes for freezing tolerance transferred from festuca pratensis to lolium multiflorum</article-title>
+          <source>Heredity</source>
+          <year>2006</year>
+          <volume>96</volume>
+          <issue>3</issue>
+          <fpage>243</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="doi">10.1038/sj.hdy.6800787</pub-id>
+          <?supplied-pmid 16449983?>
+          <pub-id pub-id-type="pmid">16449983</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kosmala</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zwierzykowski</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zwierzykowska</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Rapacz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Joks</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Introgression mapping for genes of abiotic stress resistance in lolium multiflorum and festuca pratensis</article-title>
+          <source>Czech J Genet Plant Breed</source>
+          <year>2003</year>
+          <volume>39</volume>
+          <issue>Special issue</issue>
+          <fpage>342</fpage>
+          <lpage>4</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buell</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <article-title>Poaceae genomes: going from unattainable to becoming a model clade for comparative plant genomics</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>149</volume>
+          <issue>1</issue>
+          <fpage>111</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.108.128926</pub-id>
+          <?supplied-pmid 19005087?>
+          <pub-id pub-id-type="pmid">19005087</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vogel</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Garvin</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Mockler</surname>
+              <given-names>TC</given-names>
+            </name>
+            <name>
+              <surname>Schmutz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rokhsar</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bevan</surname>
+              <given-names>MW</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome sequencing and analysis of the model grass brachypodium distachyon</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>463</volume>
+          <issue>7282</issue>
+          <fpage>763</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature08747</pub-id>
+          <pub-id pub-id-type="pmid">20148030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <collab>Wong GK-S</collab>
+            <collab>Li S</collab>
+            <collab>Liu B</collab>
+            <etal/>
+          </person-group>
+          <article-title>A draft sequence of the rice genome (oryza sativa l. ssp indica)</article-title>
+          <source>Science</source>
+          <year>2002</year>
+          <volume>296</volume>
+          <issue>5565</issue>
+          <fpage>79</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1068037</pub-id>
+          <?supplied-pmid 11935017?>
+          <pub-id pub-id-type="pmid">11935017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayer</surname>
+              <given-names>KFX</given-names>
+            </name>
+            <name>
+              <surname>Waugh</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>JWS</given-names>
+            </name>
+            <name>
+              <surname>Schulman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Langridge</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Platzer</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A physical, genetic and functional sequence assembly of the barley genome</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <issue>7426</issue>
+          <fpage>711</fpage>
+          <?supplied-pmid 23075845?>
+          <pub-id pub-id-type="pmid">23075845</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Farrell</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Byrne</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Paina</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Asp</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>De novo assembly of the perennial ryegrass transcriptome using an rna-seq strategy</article-title>
+          <source>PLoS One</source>
+          <year>2014</year>
+          <volume>9</volume>
+          <issue>8</issue>
+          <fpage>e103567</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0103567</pub-id>
+          <?supplied-pmid 25126744?>
+          <pub-id pub-id-type="pmid">25126744</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruttink</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sterck</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Rohde</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bendixen</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Rouze</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Asp</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Orthology guided assembly in highly heterozygous crops: creating a reference transcriptome to uncover genetic diversity in lolium perenne</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2013</year>
+          <volume>11</volume>
+          <issue>5</issue>
+          <fpage>605</fpage>
+          <lpage>17</lpage>
+          <pub-id pub-id-type="doi">10.1111/pbi.12051</pub-id>
+          <?supplied-pmid 23433242?>
+          <pub-id pub-id-type="pmid">23433242</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gnerre</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>MacCallum</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Przybylski</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ribeiro</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Burton</surname>
+              <given-names>JN</given-names>
+            </name>
+            <name>
+              <surname>Walker</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>High-quality draft assemblies of mammalian genomes from massively parallel sequence data</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2011</year>
+          <volume>108</volume>
+          <issue>4</issue>
+          <fpage>1513</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1017351108</pub-id>
+          <?supplied-pmid 21187386?>
+          <pub-id pub-id-type="pmid">21187386</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grabherr</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Haas</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Yassour</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Levin</surname>
+              <given-names>JZ</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Amit</surname>
+              <given-names>I</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Full-length transcriptome assembly from rna-seq data without a reference genome</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2011</year>
+          <volume>29</volume>
+          <issue>7</issue>
+          <fpage>644</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="doi">10.1038/nbt.1883</pub-id>
+          <?supplied-pmid 21572440?>
+          <pub-id pub-id-type="pmid">21572440</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Parra</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bradnam</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ning</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Keane</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Korf</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Assessing the gene space in draft genomes</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2009</year>
+          <volume>37</volume>
+          <issue>1</issue>
+          <fpage>289</fpage>
+          <lpage>97</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkn916</pub-id>
+          <?supplied-pmid 19042974?>
+          <pub-id pub-id-type="pmid">19042974</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nakasugi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Crowhurst</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Bally</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wood</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Hellens</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Waterhouse</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <article-title>De novo transcriptome sequence assembly and analysis of rna silencing genes of nicotiana benthamiana</article-title>
+          <source>PLoS ONE</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <issue>3</issue>
+          <fpage>59534</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0059534</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Faino</surname>
+              <given-names>L</given-names>
+            </name>
+            <collab>de Jonge R</collab>
+            <name>
+              <surname>Thomma</surname>
+              <given-names>BP</given-names>
+            </name>
+          </person-group>
+          <article-title>The transcriptome of verticillium dahliae-infected nicotiana benthamiana determined by deep rna sequencing</article-title>
+          <source>Plant Signal Behav.</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <issue>9</issue>
+          <fpage>1065</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.4161/psb.21014</pub-id>
+          <?supplied-pmid 22899084?>
+          <pub-id pub-id-type="pmid">22899084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moreno-Hagelsieb</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Latimer</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Choosing blast options for better detection of orthologs as reciprocal best hits</article-title>
+          <source>Bioinformatics</source>
+          <year>2008</year>
+          <volume>24</volume>
+          <issue>3</issue>
+          <fpage>319</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btm585</pub-id>
+          <?supplied-pmid 18042555?>
+          <pub-id pub-id-type="pmid">18042555</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>L</given-names>
+            </name>
+            <collab>Stoeckert Jr. CJ</collab>
+            <name>
+              <surname>Roos</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <article-title>Orthomcl: identification of ortholog groups for eukaryotic genomes</article-title>
+          <source>Genome Res</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <issue>9</issue>
+          <fpage>2178</fpage>
+          <lpage>89</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.1224503</pub-id>
+          <?supplied-pmid 12952885?>
+          <pub-id pub-id-type="pmid">12952885</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haan</surname>
+              <given-names>HD</given-names>
+            </name>
+          </person-group>
+          <article-title>Origin of westerwolths ryegrass (lolium multiflorum westerwoldicum)</article-title>
+          <source>Euphytica</source>
+          <year>1955</year>
+          <volume>4</volume>
+          <issue>1</issue>
+          <fpage>206</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00037288</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Distelfeld</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tranquilli</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>CX</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic and molecular characterization of the vrn2 loci in tetraploid wheat</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>149</volume>
+          <issue>1</issue>
+          <fpage>245</fpage>
+          <lpage>57</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.108.129353</pub-id>
+          <?supplied-pmid 19005084?>
+          <pub-id pub-id-type="pmid">19005084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Andres</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Coupland</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>The genetic basis of flowering responses to seasonal cues</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <issue>9</issue>
+          <fpage>627</fpage>
+          <lpage>39</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg3291</pub-id>
+          <?supplied-pmid 22898651?>
+          <pub-id pub-id-type="pmid">22898651</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Higgins</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Bailey</surname>
+              <given-names>PC</given-names>
+            </name>
+            <name>
+              <surname>Laurie</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparative genomics of flowering time pathways using brachypodium distachyon as a model for the temperate grasses</article-title>
+          <source>Plos One</source>
+          <year>2010</year>
+          <volume>5</volume>
+          <issue>4</issue>
+          <fpage>e10065</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0010065</pub-id>
+          <?supplied-pmid 20419097?>
+          <pub-id pub-id-type="pmid">20419097</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ergon</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hamland</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Rognli</surname>
+              <given-names>OA</given-names>
+            </name>
+          </person-group>
+          <article-title>Differential expression of vrn1 and other mads-box genes in festuca pratensis selections with different vernalization requirements</article-title>
+          <source>Biologia Plantarum</source>
+          <year>2013</year>
+          <volume>57</volume>
+          <issue>2</issue>
+          <fpage>245</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10535-012-0283-z</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aamlid</surname>
+              <given-names>TS</given-names>
+            </name>
+            <name>
+              <surname>Heide</surname>
+              <given-names>OM</given-names>
+            </name>
+            <name>
+              <surname>Boelt</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Primary and secondary induction requirements for flowering of contrasting european varieties of lolium perenne</article-title>
+          <source>Ann Bot</source>
+          <year>2000</year>
+          <volume>86</volume>
+          <issue>6</issue>
+          <fpage>1087</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="doi">10.1006/anbo.2000.1275</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paina</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Byrne</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Domnisoru</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Asp</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Vernalization mediated changes in the lolium perenne transcriptome</article-title>
+          <source>PLoS One</source>
+          <year>2014</year>
+          <volume>9</volume>
+          <issue>9</issue>
+          <fpage>107365</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0107365</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dennis</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name>
+              <surname>Peacock</surname>
+              <given-names>WJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Vernalization in cereals</article-title>
+          <source>J Biol</source>
+          <year>2009</year>
+          <volume>8</volume>
+          <issue>6</issue>
+          <fpage>57</fpage>
+          <pub-id pub-id-type="doi">10.1186/jbiol156</pub-id>
+          <?supplied-pmid 19591652?>
+          <pub-id pub-id-type="pmid">19591652</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45</label>
+        <mixed-citation publication-type="other">Chen A, Dubcovsky J. Wheat tilling mutants show that the vernalization gene vrn1 down-regulates the flowering repressor vrn2 in leaves but is not essential for flowering. Plos Genet. 2012; 8(12).</mixed-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yan</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Loukoianov</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Blechl</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tranquilli</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ramakrishna</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>SanMiguel</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The wheat vrn2 gene is a flowering repressor down-regulated by vernalization</article-title>
+          <source>Science</source>
+          <year>2004</year>
+          <volume>303</volume>
+          <issue>5664</issue>
+          <fpage>1640</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1094305</pub-id>
+          <?supplied-pmid 15016992?>
+          <pub-id pub-id-type="pmid">15016992</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Sherman</surname>
+              <given-names>BT</given-names>
+            </name>
+            <name>
+              <surname>Lempicki</surname>
+              <given-names>RA</given-names>
+            </name>
+          </person-group>
+          <article-title>Systematic and integrative analysis of large gene lists using david bioinformatics resources</article-title>
+          <source>Nat Protoc</source>
+          <year>2009</year>
+          <volume>4</volume>
+          <issue>1</issue>
+          <fpage>44</fpage>
+          <lpage>57</lpage>
+          <pub-id pub-id-type="doi">10.1038/nprot.2008.211</pub-id>
+          <pub-id pub-id-type="pmid">19131956</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fulton</surname>
+              <given-names>TM</given-names>
+            </name>
+            <collab>Van der Hoeven R</collab>
+            <name>
+              <surname>Eannetta</surname>
+              <given-names>NT</given-names>
+            </name>
+            <name>
+              <surname>Tanksley</surname>
+              <given-names>SD</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification, analysis, and utilization of conserved ortholog set markers for comparative genomics in higher plants</article-title>
+          <source>Plant Cell</source>
+          <year>2002</year>
+          <volume>14</volume>
+          <issue>7</issue>
+          <fpage>1457</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.010479</pub-id>
+          <?supplied-pmid 12119367?>
+          <pub-id pub-id-type="pmid">12119367</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>De Lichtenberg U</collab>
+            <name>
+              <surname>Jensen</surname>
+              <given-names>TS</given-names>
+            </name>
+            <name>
+              <surname>Brunak</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bork</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Jensen</surname>
+              <given-names>LJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolution of cell cycle control: Same molecular machines, different regulation</article-title>
+          <source>Cell Cycle</source>
+          <year>2007</year>
+          <volume>6</volume>
+          <issue>15</issue>
+          <fpage>1819</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="doi">10.4161/cc.6.15.4537</pub-id>
+          <?supplied-pmid 17671420?>
+          <pub-id pub-id-type="pmid">17671420</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pasakinskiene</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Anamthawat-Jonsson</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Paplauskiene</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>RN</given-names>
+            </name>
+          </person-group>
+          <article-title>New molecular evidence on genome relationships and chromosome identification in fescue (festuca) and ryegrass (lolium)</article-title>
+          <source>Heredity</source>
+          <year>1998</year>
+          <volume>81</volume>
+          <fpage>659</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1365-2540.1998.00446.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR51">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Catalan</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Torrecilla</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lopez Rodriguez</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Olmstead</surname>
+              <given-names>RG</given-names>
+            </name>
+          </person-group>
+          <article-title>Phylogeny of the festucoid grasses of subtribe loliinae and allies (poeae, pooideae) inferred from its and trnl-f sequences</article-title>
+          <source>Mol Phylogenet Evol</source>
+          <year>2004</year>
+          <volume>31</volume>
+          <issue>2</issue>
+          <fpage>517</fpage>
+          <lpage>41</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ympev.2003.08.025</pub-id>
+          <?supplied-pmid 15062792?>
+          <pub-id pub-id-type="pmid">15062792</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR52">
+        <label>52</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Darbyshire</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Realignment of festuca subgenus schedonorus with the genus lolium (poaceae)</article-title>
+          <source>Novon</source>
+          <year>1993</year>
+          <volume>3</volume>
+          <issue>3</issue>
+          <fpage>239</fpage>
+          <lpage>43</lpage>
+          <pub-id pub-id-type="doi">10.2307/3391460</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR53">
+        <label>53</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stammers</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Hayward</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Forster</surname>
+              <given-names>JW</given-names>
+            </name>
+          </person-group>
+          <article-title>Use of random pcr (rapd) technology to analyse phylogenetic relationships in the lolium/festuca complex</article-title>
+          <source>Heredity (Edinb)</source>
+          <year>1995</year>
+          <volume>74</volume>
+          <issue>Pt 1</issue>
+          <fpage>19</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="doi">10.1038/hdy.1995.3</pub-id>
+          <pub-id pub-id-type="pmid">7852097</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR54">
+        <label>54</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Inda</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Sanmart&#xED;n</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Buerki</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Catal&#xE1;n</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Mediterranean origin and Miocene-Holocene Old World diversification of meadow fescues and ryegrasses (Festuca subgenus Schedonorus and Lolium)</article-title>
+          <source>J Biogeogr</source>
+          <year>2014</year>
+          <volume>41</volume>
+          <fpage>600</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="doi">10.1111/jbi.12211</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR55">
+        <label>55</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Humphreys</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name>
+              <surname>Harper</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Morgan</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>James</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ghamari-Zare</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dissecting drought- and cold-tolerance traits in the Lolium-Festuca complex by introgression mapping</article-title>
+          <source>New Phytologist</source>
+          <year>1997</year>
+          <volume>137</volume>
+          <fpage>55</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1469-8137.1997.00832.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR56">
+        <label>56</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>King</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Armstead</surname>
+              <given-names>IP</given-names>
+            </name>
+            <name>
+              <surname>Donnison</surname>
+              <given-names>SI</given-names>
+            </name>
+            <name>
+              <surname>Roberts</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Harper</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Skot</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Comparative analyses between lolium/festuca introgression lines and rice reveal the major fraction of functionally annotated gene models is located in recombination-poor/very recombination-poor regions of the genome</article-title>
+          <source>Genetics</source>
+          <year>2007</year>
+          <volume>177</volume>
+          <issue>1</issue>
+          <fpage>597</fpage>
+          <lpage>606</lpage>
+          <pub-id pub-id-type="doi">10.1534/genetics.107.075515</pub-id>
+          <?supplied-pmid 17603095?>
+          <pub-id pub-id-type="pmid">17603095</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR57">
+        <label>57</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harper</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Armstead</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>James</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gasior</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bisaga</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Alien introgression in the grasses Lolium perenne (perennial ryegrass) and Festuca pratensis (meadow fescue): the development of seven monosomic substitution lines and their molecular and cytological characterization</article-title>
+          <source>Ann Bot</source>
+          <year>2011</year>
+          <volume>107</volume>
+          <issue>8</issue>
+          <fpage>1313</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="doi">10.1093/aob/mcr083</pub-id>
+          <?supplied-pmid 21486927?>
+          <pub-id pub-id-type="pmid">21486927</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR58">
+        <label>58</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gaut</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Tredway</surname>
+              <given-names>LP</given-names>
+            </name>
+            <name>
+              <surname>Kubik</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gaut</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Meyer</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Phylogenetic relationships and genetic diversity among members of the Festuca-Lolium complex (Poaceae) based on ITS sequence data</article-title>
+          <source>Plant Syst Evol</source>
+          <year>2000</year>
+          <volume>224</volume>
+          <issue>1-2</issue>
+          <fpage>33</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00985265</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR59">
+        <label>59</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>ZH</given-names>
+            </name>
+            <name>
+              <surname>Bielawski</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <article-title>Statistical methods for detecting molecular adaptation</article-title>
+          <source>Trends Ecol Evol</source>
+          <year>2000</year>
+          <volume>15</volume>
+          <issue>12</issue>
+          <fpage>496</fpage>
+          <lpage>503</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0169-5347(00)01994-7</pub-id>
+          <?supplied-pmid 11114436?>
+          <pub-id pub-id-type="pmid">11114436</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR60">
+        <label>60</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hurst</surname>
+              <given-names>LD</given-names>
+            </name>
+          </person-group>
+          <article-title>The ka/ks ratio: diagnosing the form of sequence evolution</article-title>
+          <source>Trends Genet</source>
+          <year>2002</year>
+          <volume>18</volume>
+          <issue>9</issue>
+          <fpage>486</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0168-9525(02)02722-1</pub-id>
+          <?supplied-pmid 12175810?>
+          <pub-id pub-id-type="pmid">12175810</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR61">
+        <label>61</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gross</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name>
+              <surname>Olsen</surname>
+              <given-names>KM</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic perspectives on crop domestication</article-title>
+          <source>Trends Plant Sci</source>
+          <year>2010</year>
+          <volume>15</volume>
+          <issue>9</issue>
+          <fpage>529</fpage>
+          <lpage>37</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tplants.2010.05.008</pub-id>
+          <?supplied-pmid 20541451?>
+          <pub-id pub-id-type="pmid">20541451</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR62">
+        <label>62</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trifa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Privat</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Gagnon</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Baeza</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lerbs-Mache</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>The nuclear rpl4 gene encodes a chloroplast protein that co-purifies with the t7-like transcription complex as well as plastid ribosomes</article-title>
+          <source>J Biol Chem</source>
+          <year>1998</year>
+          <volume>273</volume>
+          <issue>7</issue>
+          <fpage>3980</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="doi">10.1074/jbc.273.7.3980</pub-id>
+          <?supplied-pmid 9461586?>
+          <pub-id pub-id-type="pmid">9461586</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR63">
+        <label>63</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Theologis</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ecker</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Palm</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Federspiel</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Kaul</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>O</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Sequence and analysis of chromosome 1 of the plant arabidopsis thaliana</article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>408</volume>
+          <issue>6814</issue>
+          <fpage>816</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="doi">10.1038/35048500</pub-id>
+          <?supplied-pmid 11130712?>
+          <pub-id pub-id-type="pmid">11130712</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR64">
+        <label>64</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grant</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Godiard</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Straube</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ashfield</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Lewald</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Sattler</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Structure of the arabidopsis rpm1 gene enabling dual-specificity disease resistance</article-title>
+          <source>Science</source>
+          <year>1995</year>
+          <volume>269</volume>
+          <issue>5225</issue>
+          <fpage>843</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.7638602</pub-id>
+          <?supplied-pmid 7638602?>
+          <pub-id pub-id-type="pmid">7638602</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR65">
+        <label>65</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bittner-Eddy</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Crute</surname>
+              <given-names>IR</given-names>
+            </name>
+            <name>
+              <surname>Holub</surname>
+              <given-names>EB</given-names>
+            </name>
+            <name>
+              <surname>Beynon</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Rpp13 is a simple locus in arabidopsis thaliana for alleles that specify downy mildew resistance to different avirulence determinants in peronospora parasitica</article-title>
+          <source>Plant J</source>
+          <year>2000</year>
+          <volume>21</volume>
+          <issue>2</issue>
+          <fpage>177</fpage>
+          <lpage>188</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1365-313x.2000.00664.x</pub-id>
+          <?supplied-pmid 10743658?>
+          <pub-id pub-id-type="pmid">10743658</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR66">
+        <label>66</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>John</surname>
+              <given-names>PCL</given-names>
+            </name>
+            <name>
+              <surname>Mews</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Cyclin/cdk complexes: their involvement in cell cycle progression and mitotic division</article-title>
+          <source>Protoplasma</source>
+          <year>2001</year>
+          <volume>216</volume>
+          <issue>3&#x2013;4</issue>
+          <fpage>119</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF02673865</pub-id>
+          <?supplied-pmid 11732181?>
+          <pub-id pub-id-type="pmid">11732181</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR67">
+        <label>67</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buschiazzo</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ritland</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bohlmann</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ritland</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Slow but not low: genomic comparisons reveal slower evolutionary rate and higher dn/ds in conifers compared to angiosperms</article-title>
+          <source>BMC Evol Biol</source>
+          <year>2012</year>
+          <volume>12</volume>
+          <fpage>8</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2148-12-8</pub-id>
+          <?supplied-pmid 22264329?>
+          <pub-id pub-id-type="pmid">22264329</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR68">
+        <label>68</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roth</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Liberles</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <article-title>A systematic search for positive selection in higher plants (embryophytes)</article-title>
+          <source>BMC Plant Biol</source>
+          <year>2006</year>
+          <volume>6</volume>
+          <fpage>12</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2229-6-12</pub-id>
+          <?supplied-pmid 16784532?>
+          <pub-id pub-id-type="pmid">16784532</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR69">
+        <label>69</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Senda</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tominaga</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic diversity of darnel (lolium temulentum l.) in malo, ethiopia depends on traditional farming systems</article-title>
+          <source>Econ Bot</source>
+          <year>2004</year>
+          <volume>58</volume>
+          <issue>4</issue>
+          <fpage>568</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="doi">10.1663/0013-0001(2004)058[0568:GDODLT]2.0.CO;2</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR70">
+        <label>70</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilkins</surname>
+              <given-names>PW</given-names>
+            </name>
+          </person-group>
+          <article-title>Breeding perennial ryegrass for agriculture</article-title>
+          <source>Euphytica</source>
+          <year>1991</year>
+          <volume>52</volume>
+          <issue>3</issue>
+          <fpage>201</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00029397</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR71">
+        <label>71</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maccallum</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Przybylski</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Gnerre</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Burton</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Shlyakhter</surname>
+              <given-names>I</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Allpaths 2: small genomes assembled accurately and with high continuity from short paired reads</article-title>
+          <source>Genome Biol</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <issue>10</issue>
+          <fpage>103</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2009-10-10-r103</pub-id>
+          <pub-id pub-id-type="pmid">19344496</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR72">
+        <label>72</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Dewey</surname>
+              <given-names>CN</given-names>
+            </name>
+          </person-group>
+          <article-title>Rsem: accurate transcript quantification from rna-seq data with or without a reference genome</article-title>
+          <source>Bmc Bioinformatics</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <fpage>323</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-12-323</pub-id>
+          <?supplied-pmid 21816040?>
+          <pub-id pub-id-type="pmid">21816040</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR73">
+        <label>73</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Parra</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bradnam</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Korf</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Cegma: a pipeline to accurately annotate core genes in eukaryotic genornes</article-title>
+          <source>Bioinformatics</source>
+          <year>2007</year>
+          <volume>23</volume>
+          <issue>9</issue>
+          <fpage>1061</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btm071</pub-id>
+          <?supplied-pmid 17332020?>
+          <pub-id pub-id-type="pmid">17332020</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR74">
+        <label>74</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altschul</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Gish</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Lipman</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Basic local alignment search tool</article-title>
+          <source>J Mol Biol</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <issue>3</issue>
+          <fpage>403</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0022-2836(05)80360-2</pub-id>
+          <?supplied-pmid 2231712?>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR75">
+        <label>75</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Finn</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Clements</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Eddy</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>Hmmer web server: interactive sequence similarity searching</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <fpage>29</fpage>
+          <lpage>37</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkr367</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR76">
+        <label>76</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Finn</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Bateman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Clements</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Coggill</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Eberhardt</surname>
+              <given-names>RY</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pfam: the protein families database</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <issue>D1</issue>
+          <fpage>222</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkt1223</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR77">
+        <label>77</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Petersen</surname>
+              <given-names>TN</given-names>
+            </name>
+            <name>
+              <surname>Brunak</surname>
+              <given-names>S</given-names>
+            </name>
+            <collab>von Heijne G</collab>
+            <name>
+              <surname>Nielsen</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Signalp 4.0: discriminating signal peptides from transmembrane regions</article-title>
+          <source>Nat Methods</source>
+          <year>2011</year>
+          <volume>8</volume>
+          <issue>10</issue>
+          <fpage>785</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1038/nmeth.1701</pub-id>
+          <?supplied-pmid 21959131?>
+          <pub-id pub-id-type="pmid">21959131</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR78">
+        <label>78</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krogh</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Larsson</surname>
+              <given-names>B</given-names>
+            </name>
+            <collab>von Heijne G</collab>
+            <name>
+              <surname>Sonnhammer</surname>
+              <given-names>ELL</given-names>
+            </name>
+          </person-group>
+          <article-title>Predicting transmembrane protein topology with a hidden markov model: Application to complete genomes</article-title>
+          <source>J Mol Biol</source>
+          <year>2001</year>
+          <volume>305</volume>
+          <issue>3</issue>
+          <fpage>567</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="doi">10.1006/jmbi.2000.4315</pub-id>
+          <?supplied-pmid 11152613?>
+          <pub-id pub-id-type="pmid">11152613</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR79">
+        <label>79</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nussbaumer</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Martis</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Roessner</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Pfeifer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bader</surname>
+              <given-names>KC</given-names>
+            </name>
+            <name>
+              <surname>Sharma</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mips plantsdb: a database framework for comparative plant genome research</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2013</year>
+          <volume>41</volume>
+          <issue>D1</issue>
+          <fpage>1144</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gks1153</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR80">
+        <label>80</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altschul</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Madden</surname>
+              <given-names>TL</given-names>
+            </name>
+            <name>
+              <surname>Schaffer</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gapped blast and psi-blast: a new generation of protein database search programs</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>1997</year>
+          <volume>25</volume>
+          <issue>17</issue>
+          <fpage>3389</fpage>
+          <lpage>402</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/25.17.3389</pub-id>
+          <?supplied-pmid 9254694?>
+          <pub-id pub-id-type="pmid">9254694</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR81">
+        <label>81</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hu</surname>
+              <given-names>TT</given-names>
+            </name>
+            <name>
+              <surname>Pattyn</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bakker</surname>
+              <given-names>EG</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Clark</surname>
+              <given-names>RM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The arabidopsis lyrata genome sequence and the basis of rapid genome size change</article-title>
+          <source>Nature Genet</source>
+          <year>2011</year>
+          <volume>43</volume>
+          <issue>5</issue>
+          <fpage>476</fpage>
+          <pub-id pub-id-type="doi">10.1038/ng.807</pub-id>
+          <?supplied-pmid 21478890?>
+          <pub-id pub-id-type="pmid">21478890</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR82">
+        <label>82</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Larkin</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Blackshields</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Chenna</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>McGettigan</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>McWilliam</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>ClustalW and ClustalX version 2</article-title>
+          <source>Bioinformatics</source>
+          <year>2007</year>
+          <volume>23</volume>
+          <fpage>2947</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btm404</pub-id>
+          <?supplied-pmid 17846036?>
+          <pub-id pub-id-type="pmid">17846036</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR83">
+        <label>83</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>ZH</given-names>
+            </name>
+          </person-group>
+          <article-title>Paml 4: Phylogenetic analysis by maximum likelihood</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2007</year>
+          <volume>24</volume>
+          <issue>8</issue>
+          <fpage>1586</fpage>
+          <lpage>91</lpage>
+          <pub-id pub-id-type="doi">10.1093/molbev/msm088</pub-id>
+          <?supplied-pmid 17483113?>
+          <pub-id pub-id-type="pmid">17483113</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR84">
+        <label>84</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Felsenstein</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Phylip: phylogeny inference package (version 3.2)</article-title>
+          <source>Cladistics</source>
+          <year>1989</year>
+          <volume>5</volume>
+          <fpage>164</fpage>
+          <lpage>6</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

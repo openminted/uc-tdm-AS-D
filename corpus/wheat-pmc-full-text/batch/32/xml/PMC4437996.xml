@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v3.0 20080202//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing3.dtd?>
+  <?SourceDTD.Version 3.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, CA USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4437996</article-id>
+      <article-id pub-id-type="pmid">25993562</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0127127</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-14-17530</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>RulNet: A Web-Oriented Platform for Regulatory Network Inference, Application to Wheat &#x2013;Omics Data</article-title>
+        <alt-title alt-title-type="running-head">Network Inference Platform, Application to Wheat</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Vincent</surname>
+            <given-names>Jonathan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff002">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff003">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Martre</surname>
+            <given-names>Pierre</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff002">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff003">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="currentaff001">
+            <sup>&#xA4;a</sup>
+          </xref>
+          <xref rid="cor001" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gouriou</surname>
+            <given-names>Benjamin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ravel</surname>
+            <given-names>Catherine</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff002">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff003">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dai</surname>
+            <given-names>Zhanwu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff002">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff003">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="currentaff002">
+            <sup>&#xA4;b</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Petit</surname>
+            <given-names>Jean-Marc</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff004">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pailloux</surname>
+            <given-names>Marie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+          <xref rid="cor001" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff001">
+        <label>1</label>
+        <addr-line>Blaise Pascal University, UMR6158 CNRS LIMOS Laboratoire d'Informatique, de Mod&#xE9;lisation et d'Optimisation des Syst&#xE8;mes, Aubi&#xE8;re, F-63 173, France</addr-line>
+      </aff>
+      <aff id="aff002">
+        <label>2</label>
+        <addr-line>INRA, UMR1095 Genetics, Diversity and Ecophysiology of Cereals, Clermont-Ferrand, F-63 039, France</addr-line>
+      </aff>
+      <aff id="aff003">
+        <label>3</label>
+        <addr-line>Blaise Pascal University, UMR1095 Genetics, Diversity and Ecophysiology of Cereals, Aubi&#xE8;re, F-63 177, France</addr-line>
+      </aff>
+      <aff id="aff004">
+        <label>4</label>
+        <addr-line>INSA Lyon, UMR5205 CNRS LIRIS Laboratoire d&#x2019;Informatique en Images et Syst&#xE8;mes d&#x2019;Information, Villeurbanne, F-69 621, France</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Fernandez-Fuentes</surname>
+            <given-names>Narcis</given-names>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Aberystwyth University, UNITED KINGDOM</addr-line>
+      </aff>
+      <author-notes>
+        <fn fn-type="conflict" id="coi001">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con" id="contrib001">
+          <p>Conceived and designed the experiments: PM MP CR. Performed the experiments: JV ZD. Analyzed the data: JV PM MP. Contributed reagents/materials/analysis tools: JV BG ZD. Wrote the paper: JV PM MP. Developed the algorithm: MP JMP. Developed the platform: MP BG JV.</p>
+        </fn>
+        <fn fn-type="current-aff" id="currentaff001">
+          <label>&#xA4;a</label>
+          <p>Current address: INRA, UMR UMR759 Laboratoire d'Ecophysiologie des Plantes sous Stress Environnementaux, Place Viala, F-34060 Montpellier, France</p>
+        </fn>
+        <fn fn-type="current-aff" id="currentaff002">
+          <label>&#xA4;b</label>
+          <p>Current address: INRA, ISVV, UMR1287 Ecophysiologie et G&#xE9;nomique Fonctionnelle de la Vigne, F-33 882 Villenave d&#x2019;Ornon, France</p>
+        </fn>
+        <corresp id="cor001">* E-mail: <email>pailloux@isima.fr</email> (MP); <email>pierre.martre@supagro.inra.fr</email> (PM)</corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>19</day>
+        <month>5</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>10</volume>
+      <issue>5</issue>
+      <elocation-id>e0127127</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>4</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>20</day>
+          <month>1</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2015</copyright-year>
+        <copyright-holder>Vincent et al</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:type="simple" xlink:href="pone.0127127.pdf"/>
+      <abstract>
+        <p>With the increasing amount of &#x2013;omics data available, a particular effort has to be made to provide suitable analysis tools. A major challenge is that of unraveling the molecular regulatory networks from massive and heterogeneous datasets. Here we describe RulNet, a web-oriented platform dedicated to the inference and analysis of regulatory networks from qualitative and quantitative &#x2013;omics data by means of rule discovery. Queries for rule discovery can be written in an extended form of the RQL query language, which has a syntax similar to SQL. RulNet also offers users interactive features that progressively adjust and refine the inferred networks. In this paper, we present a functional characterization of RulNet and compare inferred networks with correlation-based approaches. The performance of RulNet has been evaluated using the three benchmark datasets used for the transcriptional network inference challenge DREAM5. Overall, RulNet performed as well as the best methods that participated in this challenge and it was shown to behave more consistently when compared across the three datasets. Finally, we assessed the suitability of RulNet to analyze experimental &#x2013;omics data and to infer regulatory networks involved in the response to nitrogen and sulfur supply in wheat (<italic>Triticum aestivum</italic> L.) grains. The results highlight putative actors governing the response to nitrogen and sulfur supply in wheat grains. We evaluate the main characteristics and features of RulNet as an all-in-one solution for RN inference, visualization and editing. Using simple yet powerful RulNet queries allowed RNs involved in the adaptation of wheat grain to N and S supply to be discovered. We demonstrate the effectiveness and suitability of RulNet as a platform for the analysis of RNs involving different types of &#x2013;omics data. The results are promising since they are consistent with what was previously established by the scientific community.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported in the context of a Ph.D. grant from the French Ministry for Higher Education and Research to JV and received funding from the French Government managed by the Research National Agency (ANR) in the framework of the Investments for the Future (ANR-10-BTBR-03), France AgriMer and the French Fund to support Plant Breeding (FSOV). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="7"/>
+        <table-count count="1"/>
+        <page-count count="20"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta id="data-availability">
+          <meta-name>Data Availability</meta-name>
+          <meta-value>RulNet is publicly available at <ext-link ext-link-type="uri" xlink:href="http://rulnet.isima.fr">http://rulnet.isima.fr</ext-link>. Users can also download and run the application on their own servers or computers. Source code can be found on GitHub at <ext-link ext-link-type="uri" xlink:href="https://github.com/RulNet/RulNet">https://github.com/RulNet/RulNet</ext-link>.</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <title>Data Availability</title>
+      <p>RulNet is publicly available at <ext-link ext-link-type="uri" xlink:href="http://rulnet.isima.fr">http://rulnet.isima.fr</ext-link>. Users can also download and run the application on their own servers or computers. Source code can be found on GitHub at <ext-link ext-link-type="uri" xlink:href="https://github.com/RulNet/RulNet">https://github.com/RulNet/RulNet</ext-link>.</p>
+    </notes>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec001">
+      <title>Introduction</title>
+      <p>Regulation of gene expression is defined as the spatiotemporal control of the amount of gene products. It governs cell differentiation and the adaptation of living organisms to their environment. Out of the diverse levels of regulation, transcriptional control is considered crucial and is often conserved in both eukaryotes and prokaryotes. Regulatory sequences upstream of genes together with proteins able to recognize and bind specifically to these sequences, called transcription factors (TFs), were substantiated in the late 1960&#x2019;s [<xref rid="pone.0127127.ref001" ref-type="bibr">1</xref>]. TFs are themselves encoded by genes and the complex interactions between genes and TFs put together are called Gene Regulatory Networks (GRNs). GRNs have been inferred efficiently in the past decade, leading to significant breakthroughs [<xref rid="pone.0127127.ref002" ref-type="bibr">2</xref>&#x2013;<xref rid="pone.0127127.ref005" ref-type="bibr">5</xref>]. However, GRNs are not always sufficient to explain the complex physiology of a living system. A wider range of regulatory relationships between genes, their products and their interactions with the various metabolites and signaling molecules present in a cell are generally considered necessary to explain this complexity. These are called Regulatory Networks (RNs).</p>
+      <p>Inference of RNs is therefore a promising approach to elucidating the complexity of molecular interactions. Existing RN inference approaches generally use machine learning methods and can be categorized according to the strategy employed [<xref rid="pone.0127127.ref006" ref-type="bibr">6</xref>] as supervised [<xref rid="pone.0127127.ref007" ref-type="bibr">7</xref>] or unsupervised [<xref rid="pone.0127127.ref008" ref-type="bibr">8</xref>] i.e. whether learning samples are necessary or not, and whether all (global) or only a portion (query-driven) of the hypothetic relationships are inferred. Query driven approaches allow prioritizing predictions likely to be valuable in the context of a research. These approaches can be further divided according to the data mining or statistical methods they rely on to infer interactions. The most widely used approaches are Boolean networks [<xref rid="pone.0127127.ref009" ref-type="bibr">9</xref>, <xref rid="pone.0127127.ref010" ref-type="bibr">10</xref>], Bayesian networks [<xref rid="pone.0127127.ref011" ref-type="bibr">11</xref>], Petri nets [<xref rid="pone.0127127.ref012" ref-type="bibr">12</xref>, <xref rid="pone.0127127.ref013" ref-type="bibr">13</xref>] and association rule discovery[<xref rid="pone.0127127.ref014" ref-type="bibr">14</xref>&#x2013;<xref rid="pone.0127127.ref016" ref-type="bibr">16</xref>].</p>
+      <p>Several tools based on association rule discovery have been developed. For instance, GenMiner [<xref rid="pone.0127127.ref016" ref-type="bibr">16</xref>] allows the simultaneous analysis of biological datasets such as gene expression or annotation, but quantitative data are preprocessed and discretized in the workflow. Georgi <italic>et al</italic>. [<xref rid="pone.0127127.ref015" ref-type="bibr">15</xref>] has presented an approach for association rule discovery that uses quantitative data and allows users to specify parameters to discover rules matching their personal interest. These systems do not, however, provide an integrated framework for the visualization and editing of inferred networks which would be of more use to most research biologists. A small number of web-oriented platforms are available to infer RNs and GENIES [<xref rid="pone.0127127.ref017" ref-type="bibr">17</xref>] for instance provides a supervised method to construct networks using partially known network information. It allows loading heterogeneous data but lacks visualization features for the resulting networks. Predictive Networks [<xref rid="pone.0127127.ref018" ref-type="bibr">18</xref>] is an all-in-one web-oriented platform with visualization and analysis tools. Its workflow consists of a data- and text-mining pipeline combined with a seeded Bayesian network inference method.</p>
+      <p>In this paper we present RulNet as a novel integrative, query driven approach using a relational data mining method extended from Agier <italic>et al</italic>. [<xref rid="pone.0127127.ref014" ref-type="bibr">14</xref>]. It is implemented as a web-oriented platform dedicated to the inference of RNs suitable for qualitative and quantitative&#x2014;omics data. It provides users with options to specify entities (genes, metabolites,&#x2026;) of interest to discover rules involving these entities. A special query language has been integrated into RulNet which allows users to perform custom queries. Each type of rule has its own biological interpretation, which provides flexibility in the type of networks that can be inferred. RulNet can therefore be used to infer very distinct networks e.g. between traits and genetic markers in association studies. This all-in-one platform allows experimental data to be uploaded or data already in a database management system (DBMS) can be interrogated. The RulNet platform has several functionalities such as validation or invalidation of interactions, network generation from one or two lists of components and parameterization of the number of intermediate components. The ultimate aim of RulNet is to provide biological researchers with more control over their search for interactions during the network inference process.</p>
+      <p>In order to assess the effectiveness and suitability of RulNet to infer RNs, we first benchmarked it using the standard datasets used for the transcriptional network inference challenge DREAM5 [<xref rid="pone.0127127.ref019" ref-type="bibr">19</xref>]. We then used RulNet to analyze the changes in gene expression, grain storage protein (GSP) composition, free amino acids and key metabolites concentrations in response to nitrogen (N) and sulfur (S) supply for developing wheat (<italic>Triticum aestivum</italic> L.) grain. Wheat GSPs accumulate during the effective filling phase of grain development and account for 60% to 80% of the total protein content of mature grains [<xref rid="pone.0127127.ref020" ref-type="bibr">20</xref>]. Increased N supply via the use of fertilizers increases grain yield and protein concentration [<xref rid="pone.0127127.ref021" ref-type="bibr">21</xref>], but also modifies the balance between GSP fractions, i.e. gliadins and glutenins, the most important single trait determining wheat end-use value [<xref rid="pone.0127127.ref022" ref-type="bibr">22</xref>, <xref rid="pone.0127127.ref023" ref-type="bibr">23</xref>]. Concurrently, S is essential for an efficient use of N and to maintain balanced GSP composition [<xref rid="pone.0127127.ref024" ref-type="bibr">24</xref>, <xref rid="pone.0127127.ref025" ref-type="bibr">25</xref>]. The RN inferred highlights genes responsive to N and S supply as well as their links with various GSP fractions and metabolites.</p>
+      <p>RulNet is publicly available at <ext-link ext-link-type="uri" xlink:href="http://rulnet.isima.fr">http://rulnet.isima.fr</ext-link>. Users can also download and run the application on their own servers or computers.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="sec002">
+      <title>Methods</title>
+      <sec id="sec003">
+        <title>Multipredicate rules and RQL language</title>
+        <p>The notion of rules or implications is widely used in the database, data mining and artificial intelligence communities. A rule reflects an observation on the data. Examples of rules are functional dependencies [<xref rid="pone.0127127.ref026" ref-type="bibr">26</xref>], implications [<xref rid="pone.0127127.ref027" ref-type="bibr">27</xref>] or association rules [<xref rid="pone.0127127.ref028" ref-type="bibr">28</xref>]. A rule is written <italic>X</italic>&#x2192;<italic>Y</italic> and is read <italic>X</italic> implies <italic>Y</italic>, where <italic>X</italic> and <italic>Y</italic> are two sets of attributes (i.e. entities). A rule expresses a new relation when a property (called a predicate) is observed on <italic>X</italic> (the left hand side or antecedent) then a property is observed on <italic>Y</italic> (the right hand side or consequent) in the data. The two predicates can be of the same type but not necessarily.</p>
+        <p>The principle of a rule-based learning approach is to indicate which type of rules (semantics) to discover then to apply algorithms to infer all the rules satisfying this semantics in the data. The biologist then needs to interpret the set of rules inferred and determine if they have a biological meaning. The intrinsic variability (from noise and error) of biological data means that learning approximate rules, i.e. rules that are not always satisfied in the data is also of interest.</p>
+        <p>A generic SQL-like language called RQL (Rule Query Language) has been recently developed to specify rule semantics in a simple way [<xref rid="pone.0127127.ref029" ref-type="bibr">29</xref>]. RQL allows association rules or functional dependencies on a relation to be defined but can also capture rules between attributes from different tables of a database, or conditional rules such as conditional functional dependencies [<xref rid="pone.0127127.ref030" ref-type="bibr">30</xref>, <xref rid="pone.0127127.ref031" ref-type="bibr">31</xref>]. As originally defined, RQL is however limited to rules with a single predicate (i.e. the same condition on all the attributes of the left hand side implies the same condition on all the attributes on the right hand side). As an example, for exact association rules from a binary relation, the predicate asserts that the attribute has to be equal to 1 (<italic>AB</italic>&#x2192;<italic>C</italic> if for all samples, when <italic>A</italic> = 1 and <italic>B</italic> = 1, then <italic>C</italic> = 1). For functional dependencies, the predicate asserts the equality between two values (<italic>AB</italic>&#x2192;<italic>C</italic> if for all couples of samples with a same value for <italic>A</italic> and a same value for <italic>B</italic>, then <italic>C</italic> has a same value).</p>
+        <p>This restriction to a single predicate does not allow all the behaviors captured by the data to be inferred, in particular from biological data. Moreover, if users want to work with different types of attributes (quantitative, categorical or binary) a single predicate may not be used for all attributes. Therefore, we have extended RQL so that multipredicate rules (MP-rules) can be defined and generated. Each predicate can have a different meaning corresponding to a specific objective for the application domain and the type of attributes. The advantage of MP-rules, is that we can capture different perspectives from the data. The advantage is also that we can address quantitative, categorical or binary attributes in the same inference process.</p>
+        <p>To illustrate the use of MP-rules, let us consider a dataset composed of three tables (<xref rid="pone.0127127.g001" ref-type="fig">Fig 1</xref>). In this dataset, each time <italic>A</italic>1 = 1 in table ann then <italic>M</italic>2 &gt; 0.5 in table met. This observation can be represented by the MP-rule <italic>A</italic>1<sub>1</sub>&#x2192;<italic>M</italic>2, which means that <italic>A</italic>1 = 1 guarantees <italic>M</italic>2 &gt; 0.5 (i.e. <italic>A</italic>1 = 1 is a sufficient condition to observe <italic>M</italic>2 &gt; 0.5). Another exact MP-rule in this dataset is <italic>G</italic>3&#x2192;<italic>A</italic>1<sub>0</sub> (i.e. if <italic>G</italic>3 &gt; 0.5 then <italic>A</italic>1 = 0). Here <italic>A</italic>1 = 0 is a necessary condition to observed <italic>G</italic>3 &gt; 0.5.</p>
+        <fig id="pone.0127127.g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0127127.g001</object-id>
+          <label>Fig 1</label>
+          <caption>
+            <title>Example of a database composed of three tables.</title>
+            <p>Table gen (gene expression), met (metabolites assay) and ann (sample annotation), containing heterogeneous data for six samples. These tables contain quantitative attributes (<italic>G</italic>1, <italic>G</italic>2, <italic>G</italic>3, <italic>G</italic>4, <italic>M</italic>1, <italic>M</italic>2, <italic>M</italic>3, <italic>A</italic>3), binary attributes (<italic>A</italic>1, <italic>A</italic>2) and categorical attributes (time).</p>
+          </caption>
+          <graphic xlink:href="pone.0127127.g001"/>
+        </fig>
+        <p>In RulNet, a query for MP-rules has the following template:</p>
+        <p specific-use="line">FINDRULES</p>
+        <p specific-use="line">&#x2003;SCOPE t1 IN (dataset1), t2 IN (dataset2), &#x2026;</p>
+        <p specific-use="line">&#x2003;WHERE condition(t1, t2, &#x2026;)</p>
+        <p specific-use="line">&#x2003;HAVING label1: predicate1(t1, t2, &#x2026;) OVER attributes1</p>
+        <p specific-use="line">&#x2003;AND label2: predicate2(t1, t2, &#x2026;) OVER attributes2</p>
+        <p specific-use="line">&#x2003;AND &#x2026;;</p>
+        <p>where the "SCOPE" line defines the tuples (rows) of the datasets on which the "HAVING" clause is tested. Datasets can be data files, database tables or SQL queries. The "HAVING" and "AND" lines define the predicates and the associated lists of attributes, respectively. The "WHERE" line is optional, it allows setting conditions on the tuples. For instance, in the dataset of <xref rid="pone.0127127.g001" ref-type="fig">Fig 1</xref>, the clause WHERE <italic>t</italic>2.time = <italic>t</italic>1.time + 1 means that all the couples of consecutive samples (tuples) will be tested. The theoretical basis for rules expressed in RQL and implemented in RulNet has been presented by Chardin <italic>et al</italic>. [<xref rid="pone.0127127.ref029" ref-type="bibr">29</xref>] but these theoretical aspects are beyond the scope of this paper.</p>
+      </sec>
+      <sec id="sec004">
+        <title>Rule generation and interest measures</title>
+        <p>In RulNet, users have the possibility to generate both exact and approximate 1&#x2013;1 MP-rules (e.g. <italic>G</italic>1&#x2192;<italic>G</italic>2). Users can also choose to infer a subset of n-1 MP-rules (e.g <italic>G</italic>1<italic>G</italic>2&#x2192;<italic>G</italic>3). In this case, considering the very large number of possible rules, only the exact MP-rules with the smaller left hand sides (in other words, the direct interactions) and the approximate MP-rules with the larger left hand sides are generated. This corresponds respectively to the canonical and the Gottlob and Libkin covers [<xref rid="pone.0127127.ref032" ref-type="bibr">32</xref>] generalized to MP-rules. The first step of the process consists of generating an intermediate set from which the rules will be deduced. This set is a generalization to MP-rules of a result given for functional dependencies [<xref rid="pone.0127127.ref033" ref-type="bibr">33</xref>] and for well-formed semantics [<xref rid="pone.0127127.ref014" ref-type="bibr">14</xref>]. In RulNet, the set generation can be accomplished with only a single SQL query and thus benefit from the optimization features available in relational DBMS [<xref rid="pone.0127127.ref029" ref-type="bibr">29</xref>, <xref rid="pone.0127127.ref034" ref-type="bibr">34</xref>]. The second step for the generation of n-1 MP-rules, consists of computing the two sets of exact and approximate MP-rules [<xref rid="pone.0127127.ref035" ref-type="bibr">35</xref>]. This is the most expensive step in terms of computation time. RulNet uses the algorithm and the code proposed by Murakami and Uno, which is recognized as the best solution for such problems [<xref rid="pone.0127127.ref036" ref-type="bibr">36</xref>]. Once generated, rules can be objectively evaluated by calculating quality measures. Support, confidence, lift and leverage are four commonly used measures of significance and interestingness for association rules [<xref rid="pone.0127127.ref037" ref-type="bibr">37</xref>, <xref rid="pone.0127127.ref038" ref-type="bibr">38</xref>]. In RulNet, these metrics were adapted for MP-rules and are defined as follows.</p>
+        <p>The support is a measure of significance (importance) of a rule and is given by:<disp-formula id="pone.0127127.e001"><alternatives><graphic xlink:href="pone.0127127.e001.jpg" id="pone.0127127.e001g" position="anchor" mimetype="image" orientation="portrait"/><mml:math id="M1"><mml:mi>S</mml:mi><mml:mi>u</mml:mi><mml:mi>p</mml:mi><mml:mi>p</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>t</mml:mi><mml:mo>(</mml:mo><mml:mi>X</mml:mi><mml:mo>&#x2192;</mml:mo><mml:mi>Y</mml:mi><mml:mo>)</mml:mo><mml:mspace width="1pt"/><mml:mo>=</mml:mo><mml:mspace width="1pt"/><mml:mfrac><mml:mrow><mml:mtext>count&#x2009;of&#x2009;</mml:mtext><mml:mo>(</mml:mo><mml:mi>X</mml:mi><mml:mo>&#x222A;</mml:mo><mml:mi>Y</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mi>N</mml:mi></mml:mrow></mml:mfrac></mml:math></alternatives><label>(1)</label></disp-formula>
+where N is the number of possible tuples in the dataset verifying the specified condition if it exists (the &#x201C;WHERE&#x201D; clause) if only one tuple variable (t1) is defined. If two or more tuple variables are specified, N is equal to the number of possible combinations of tuples in each dataset verifying the specified condition if it exists. The support is often used to reduce the search space (i.e. to retain only the rules with a support higher than a user defined threshold value). The confidence is a measure of the strength of a rule. It is defined as the probability of seeing the rule's consequent under the condition that the antecedent is satisfied. The confidence is directed and gives different values for the rules <italic>X</italic>&#x2192;<italic>Y</italic> and <italic>Y</italic>&#x2192;<italic>X</italic>. The confidence is given by:
+<disp-formula id="pone.0127127.e002"><alternatives><graphic xlink:href="pone.0127127.e002.jpg" id="pone.0127127.e002g" position="anchor" mimetype="image" orientation="portrait"/><mml:math id="M2"><mml:mi>C</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mi>f</mml:mi><mml:mi>i</mml:mi><mml:mi>d</mml:mi><mml:mi>e</mml:mi><mml:mi>n</mml:mi><mml:mi>c</mml:mi><mml:mi>e</mml:mi><mml:mo>(</mml:mo><mml:mi>X</mml:mi><mml:mo>&#x2192;</mml:mo><mml:mi>Y</mml:mi><mml:mo>)</mml:mo><mml:mspace width="1pt"/><mml:mo>=</mml:mo><mml:mspace width="1pt"/><mml:mfrac><mml:mrow><mml:mtext>count&#x2009;of&#x2009;</mml:mtext><mml:mo>(</mml:mo><mml:mi>X</mml:mi><mml:mo>&#x222A;</mml:mo><mml:mi>Y</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mtext>count&#x2009;of&#x2009;</mml:mtext><mml:mi>X</mml:mi></mml:mrow></mml:mfrac></mml:math></alternatives><label>(2)</label></disp-formula></p>
+        <p>The lift [<xref rid="pone.0127127.ref039" ref-type="bibr">39</xref>] and the leverage [<xref rid="pone.0127127.ref040" ref-type="bibr">40</xref>] compare the observed support of the rule and the expected support if X and Y are statistically independent. The lift compares how many times X and Y occur together with the number of times they would occur together it they were statistically independent:
+<disp-formula id="pone.0127127.e003"><alternatives><graphic xlink:href="pone.0127127.e003.jpg" id="pone.0127127.e003g" position="anchor" mimetype="image" orientation="portrait"/><mml:math id="M3"><mml:mi>L</mml:mi><mml:mi>i</mml:mi><mml:mi>f</mml:mi><mml:mi>t</mml:mi><mml:mo>(</mml:mo><mml:mi>X</mml:mi><mml:mo>&#x2192;</mml:mo><mml:mi>Y</mml:mi><mml:mo>)</mml:mo><mml:mspace width="1pt"/><mml:mo>=</mml:mo><mml:mspace width="1pt"/><mml:mfrac><mml:mrow><mml:mtext>count&#x2009;of&#x2009;</mml:mtext><mml:mo>(</mml:mo><mml:mi>X</mml:mi><mml:mo>&#x222A;</mml:mo><mml:mi>Y</mml:mi><mml:mo>)</mml:mo><mml:mspace width="1pt"/><mml:mo>&#xD7;</mml:mo><mml:mspace width="1pt"/><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mtext>count&#x2009;of&#x2009;</mml:mtext><mml:mi>X</mml:mi><mml:mspace width="1pt"/><mml:mo>&#xD7;</mml:mo><mml:mtext>&#x2009;count&#x2009;of&#x2009;</mml:mtext><mml:mi>Y</mml:mi></mml:mrow></mml:mfrac></mml:math></alternatives><label>(3)</label></disp-formula></p>
+        <p>The leverage measures the difference of X and Y appearing together in the dataset and what would be expected if X and Y were statistically dependent:
+<disp-formula id="pone.0127127.e004"><alternatives><graphic xlink:href="pone.0127127.e004.jpg" id="pone.0127127.e004g" position="anchor" mimetype="image" orientation="portrait"/><mml:math id="M4"><mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:mi>L</mml:mi><mml:mi>e</mml:mi><mml:mi>v</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mi>a</mml:mi><mml:mi>g</mml:mi><mml:mi>e</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>X</mml:mi><mml:mo>&#x2192;</mml:mo><mml:mi>Y</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mtext>count&#xA0;of&#xA0;</mml:mtext><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>X</mml:mi><mml:mo>&#x222A;</mml:mo><mml:mi>Y</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mi>N</mml:mi></mml:mfrac></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mspace width="8em"/><mml:mo>&#x2212;</mml:mo><mml:mfrac><mml:mrow><mml:mtext>count&#xA0;of&#xA0;</mml:mtext><mml:mi>X</mml:mi></mml:mrow><mml:mi>N</mml:mi></mml:mfrac><mml:mo>&#xD7;</mml:mo><mml:mfrac><mml:mrow><mml:mtext>count&#xA0;of&#xA0;</mml:mtext><mml:mi>Y</mml:mi></mml:mrow><mml:mi>N</mml:mi></mml:mfrac></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives><label>(4)</label></disp-formula></p>
+        <p>A lift equal to 1 and a leverage equal to 0 means that X and Y are statistically independent.</p>
+      </sec>
+      <sec id="sec005">
+        <title>Workflow</title>
+        <p>The steps leading to the establishment of a rule network are described in <xref rid="pone.0127127.g002" ref-type="fig">Fig 2</xref>. Users can upload their data via the web interface as tab-delimited text files that contain samples (rows) and attributes (columns). Each file is then parsed and turned into a table of a database. RQL is coupled with the standard SQL language; therefore, users can skip the file upload step by connecting directly to a database by specifying the corresponding parameters. The advantage is that the data can be queried directly from where they are stored without any complex preprocessing task. The second benefit is that it takes advantage of DBMS technologies for the optimization of query performance and hence computation time.</p>
+        <fig id="pone.0127127.g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0127127.g002</object-id>
+          <label>Fig 2</label>
+          <caption>
+            <title>Scheme of the workflow of the RulNet platform and leading to the discovery and visualization of rules.</title>
+            <p>The overall workflow from user&#x2019;s point of view consists of three steps that are data upload, query design and visualization and edition of inferred networks. These steps can be saved and reloaded afterwards when using a registered account.</p>
+          </caption>
+          <graphic xlink:href="pone.0127127.g002"/>
+        </fig>
+        <p>The second step consists of specifying queries that define the semantics of the rules to generate. A syntactic parsing step is implemented to verify that queries respect the defined Backus-Naur form standards [<xref rid="pone.0127127.ref041" ref-type="bibr">41</xref>] (<xref rid="pone.0127127.s012" ref-type="supplementary-material">S1 File</xref>) and a query builder is proposed to facilitate the understanding of the language. Two commonly used queries are predefined in the query builder. The first one (called Q1) is similar to association rules and discovers rules between entities if they show similar high or low values in the same samples. The second one (called Q2) generates rules between attributes showing similar profiles in the data. For each query, users can specify the parameters and the thresholds to use for the quality measures.</p>
+        <p>Networks of generated rules can be visualized with different layouts and the platform offers different features to manipulate these networks. For instance, rules obtained using different queries can be visualized on the same network. Registered users are given the possibility to save and reload the rules and networks inferred at different steps of the analysis. Generated rules can be exported as a Cytoscape 3.0 compliant tab-delimited file for further analysis or to enhance the display of the networks in Cytoscape, a popular software for visualization and analysis of biological networks [<xref rid="pone.0127127.ref042" ref-type="bibr">42</xref>, <xref rid="pone.0127127.ref043" ref-type="bibr">43</xref>].</p>
+      </sec>
+      <sec id="sec006">
+        <title>Characteristics and features</title>
+        <p>RulNet is available as a web-oriented platform (<ext-link ext-link-type="uri" xlink:href="http://rulnet.isima.fr">http://rulnet.isima.fr</ext-link>) installed on a Transtec 2300L Data Storage Server running Intel Xeon E5506 quad-core 2.13 GHz processors with 4 Mb of L2 cache and 8 Gb of RAM. The form parts are implemented using the framework Richfaces 3.3.2 from JBOSS that simplifies the using of AJAX with JSF 1.2 technology. The display layer is a Java applet, built with the JDK6 version. Users can also download the application to install it on their own server or local machine.</p>
+      </sec>
+      <sec id="sec007">
+        <title>Computational performance</title>
+        <p>In order to assess the computational performance of RulNet, the two predefined queries were run on the platform using datasets consisting of randomized numerical data. Computing times and the total number of rules discovered (exact and approximate rules) were recorded for datasets of 10 to 4,000 samples (with 100 attributes) and 10 to 4,000 attributes (with 100 samples; <xref rid="pone.0127127.g003" ref-type="fig">Fig 3</xref>). The number of rules given is only indicative as it could vary depending on the dataset used.</p>
+        <fig id="pone.0127127.g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0127127.g003</object-id>
+          <label>Fig 3</label>
+          <caption>
+            <title>Computing time and number of rules of networks inferred with the RulNet platform.</title>
+            <p>Computing time (dashed lines) and number of rules (solid lines) for query Q1 (A, B) and Q2 (C, D) for 1&#x2013;1 rules and for query Q1 for n-1 rules with n &#x2264; 3 (E, F) applied to a randomized dataset with 10 to 4,000 samples (A, C, E) and attributes (B, D, F).</p>
+          </caption>
+          <graphic xlink:href="pone.0127127.g003"/>
+        </fig>
+        <p>For Q1, computing time is low (&lt; 3 s) and does not increase significantly with the number of samples (<xref rid="pone.0127127.g003" ref-type="fig">Fig 3A</xref>). For Q2, computing time is substantially higher than for Q1 (<xref rid="pone.0127127.g003" ref-type="fig">Fig 3C</xref>), because two tuple variables are defined in Q2, which increases with the number of samples. The number of rules discovered increases with the number of samples and is maximum for 500 and 100 samples for Q1 and Q2, respectively. For Q1 and Q2, both computation time and the number of rules increase with the number of attributes (<xref rid="pone.0127127.g003" ref-type="fig">Fig 3B</xref>&#x2013;<xref rid="pone.0127127.g003" ref-type="fig">3D</xref>). The number of rules scales with the number of attributes, with a scaling exponent (&#x3B3;) equal to two.</p>
+        <p>With query Q1 the number of n-1 MP-rules (n &#x2264; 3) and associated computing time increase steadily with the number of samples (<xref rid="pone.0127127.g003" ref-type="fig">Fig 3E</xref>). Computing time increases steeply for 1,000 attributes and exceeds the session timeout of the web server and results are reported for up to 500 attributes only (<xref rid="pone.0127127.g003" ref-type="fig">Fig 3F</xref>). As for 1&#x2013;1 rules, the number of rules scales with the number of attributes, but the scaling exponent is 50% higher than for 1&#x2013;1 rules.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec008">
+      <title>Results</title>
+      <p>To illustrate the results that can be obtained with RulNet, the platform was used to mine the results of an experiment carried out to better understand wheat grain development adaptive responses to N and S supply (Z. Dai <italic>et al</italic>., in prep.).</p>
+      <p>Vernalized plants of the winter bread wheat cultivar R&#xE9;cital were grown in a growth chamber from growth stage 13 [<xref rid="pone.0127127.ref044" ref-type="bibr">44</xref>] to ripeness maturity in a modified Hoagland&#x2019;s nutrient solution [<xref rid="pone.0127127.ref045" ref-type="bibr">45</xref>] with different rates of N and S supply, either 3 mM N and 2 mM S (control treatment), 3 mM N and 0.02 mM S (low S treatment), or 15 mM N and 0.02 mM S (low S and supra-optimal N treatment). Three additional treatments were applied to each of the three main treatments, complementing the nutrient solution with N and/or S from 25 days after flowering (i.e. midway through the effective grain filling phase) to grain ripeness maturity. Grains were sampled every 3 to 5 days between 10 (i.e. two thirds through the lag phase of grain development) and 34 (i.e. physiological maturity) days after flowering for each of the three main treatments. Grains from the six treatments were also sampled at 0, 6, 9, 12, 18, 24, 48 and 72 h after the shift in N and S supply.</p>
+      <p>Three independent replicates were used and the following measurements were made for each sampling date. Gene expression was monitored using a custom 40k Nimblegen wheat microarray [<xref rid="pone.0127127.ref046" ref-type="bibr">46</xref>]. Transcriptomic data are available from ArrayExpress repository under the experiment names &#x201C;N and S regulation of wheat storage protein accumulation&#x201D; (accessions E-MTAB-1782) and &#x201C;short-term effect of N and S supply shifts on gene expression in wheat grain&#x201D; (accessions E-MTAB-1920). The main grain storage protein (GSP) fractions contributing to wheat bread making quality are glutenins and gliadins. High (HMW-GS) and low (LMW-GS) molecular weight-glutenin subunits and &#x3C9;1,2-, &#x3C9;5-, &#x3B3;- and &#x3B1;/&#x3B2;-gliadin proteins were separated and quantified by RP-HPLC [<xref rid="pone.0127127.ref047" ref-type="bibr">47</xref>]. The concentration of free amino acids was also assayed by RP-HPLC [<xref rid="pone.0127127.ref048" ref-type="bibr">48</xref>]. Metabolites, including organic acids (malate and citrate), soluble sugars (glucose, fructose, and sucrose), oxidized and reduced glutathione and starch were assayed as described by Gibon <italic>et al</italic>. [<xref rid="pone.0127127.ref049" ref-type="bibr">49</xref>].</p>
+      <p>In the context of this experiment, we defined two distinct objectives. Firstly we wished to compare the topology of networks obtained using RulNet with those obtained using two widely used RN inference methods; these being a straightforward Pearson&#x2019;s correlation- based approach (hereafter Pearson) and the Weighted Gene Co-Expression Network Analysis (WGCNA) [<xref rid="pone.0127127.ref050" ref-type="bibr">50</xref>, <xref rid="pone.0127127.ref051" ref-type="bibr">51</xref>]. Secondly, we wished to illustrate the use of RulNet as a biology-driven clustering method.</p>
+      <sec id="sec009">
+        <title>Topological comparison of correlation-based and RulNet regulatory networks</title>
+        <p>Using the Significant Analysis of Microarrays (SAM) dimension reduction technique [<xref rid="pone.0127127.ref052" ref-type="bibr">52</xref>] we identified a total of 984 transcripts associated with N and/or S supply out of the 40,642 transcripts spots on the microarray. Among these transcripts, 96 were associated with N supply, 237 with S supply, and 640 with both N and S supply. The expression data for these 984 transcripts were used to infer undirected RNs.</p>
+        <p>For the three RN inference methods performed here, the only preprocessing steps were that data were scaled and centered. Threshold parameters for the three methods were set using the scale-free criterion (<xref rid="pone.0127127.s010" ref-type="supplementary-material">S1 Fig</xref>). A common property of large non-random networks is that the distribution of their local connectivity is free of scale, following P(k) ~ k-&#x3B3;, where P(k) is the probability that an attribute in the network interacts with k other attributes [<xref rid="pone.0127127.ref053" ref-type="bibr">53</xref>]. Pearson RNs were generated using a distance matrix computed using Pearson&#x2019;s correlations with a cutoff threshold of 0.8. In RulNet, we used the Q1 query from the query builder with Confidence and Support thresholds of 0.90 and 0.10, respectively. WGCNA RNs were inferred using the R package WGCNA version 1.34 [<xref rid="pone.0127127.ref051" ref-type="bibr">51</xref>] with power adjacency set to 9.</p>
+        <p>The three methods show common features as well as topological differences (<xref rid="pone.0127127.g004" ref-type="fig">Fig 4</xref>, <xref rid="pone.0127127.t001" ref-type="table">Table 1</xref>). For the three methods, the scaling exponent of the power law distribution is lower than 2 (<xref rid="pone.0127127.t001" ref-type="table">Table 1</xref>), indicating a high importance of the hubs in the networks [<xref rid="pone.0127127.ref019" ref-type="bibr">19</xref>]. The number of nodes is similar for Pearson and RulNet but is 38% lower for WGCNA, while the number of edges is similar for RulNet and WGCNA but is 60% higher for Pearson. The network connectivity assessed by the average number of neighbors (i.e. the edge-to-node ratio) is preserved between Pearson and WGCNA, but is lower for RulNet (<xref rid="pone.0127127.t001" ref-type="table">Table 1</xref>). It results in a slightly higher number of connected components for the correlation-based methods than for RulNet. Both correlation-based methods have a higher tendency to create &#x201C;community structures&#x201D; than RulNet, resulting in higher network density and average clustering coefficient (which characterizes the overall tendency of nodes to form clusters). Although the network density is similar for both correlation-based methods, the network centralization is much greater for WGCNA than for the two other methods, giving a greater importance to hubs in the network. This topological property is apparent in the networks shown in <xref rid="pone.0127127.g004" ref-type="fig">Fig 4</xref>. Network heterogeneity represents the tendency of a network to contain hubs and is similar for all three methods. Finally, the characteristic path length, which represents the average over the shortest paths between all pairs of nodes and offers a measure of a network&#x2019;s overall navigability, is lower for WGCNA than for the two other methods.</p>
+        <fig id="pone.0127127.g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0127127.g004</object-id>
+          <label>Fig 4</label>
+          <caption>
+            <title>Undirected scale-free regulatory networks inferred with the RulNet platform.</title>
+            <p>(A) and the GCNA (B) and Pearson (C) methods and consensus network obtained using the intersection algorithm of Cytoscape (D). In A, B, and C node color indicate the conservation between the three methods: green, nodes specific to the network; blue, nodes common with one other network; and red nodes found with all three methods. In D, node color is dependent on node degree, from gray for less connected nodes to red for nodes showing the highest connectivity. To enhance the clarity of the figure, disconnected nodes and connected components involving two nodes or less are not shown.</p>
+          </caption>
+          <graphic xlink:href="pone.0127127.g004"/>
+        </fig>
+        <table-wrap id="pone.0127127.t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0127127.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Network topological properties of regulatory networks inferred using RulNet, WGCNA and Pearson methods.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone.0127127.t001g" xlink:href="pone.0127127.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th align="left" rowspan="1" colspan="1">Topological parameters</th>
+                  <th align="left" rowspan="1" colspan="1">RulNet</th>
+                  <th align="left" rowspan="1" colspan="1">WGCNA</th>
+                  <th align="left" rowspan="1" colspan="1">Pearson</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Scale-free <italic>r</italic><sup>2</sup></td>
+                  <td align="left" rowspan="1" colspan="1">0.82</td>
+                  <td align="left" rowspan="1" colspan="1">0.99</td>
+                  <td align="left" rowspan="1" colspan="1">0.81</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Absolute scaling exponent &#x3B3;</td>
+                  <td align="left" rowspan="1" colspan="1">1.21</td>
+                  <td align="left" rowspan="1" colspan="1">1.41</td>
+                  <td align="left" rowspan="1" colspan="1">1.08</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">no. of nodes</td>
+                  <td align="left" rowspan="1" colspan="1">397</td>
+                  <td align="left" rowspan="1" colspan="1">238</td>
+                  <td align="left" rowspan="1" colspan="1">375</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">no. of edges</td>
+                  <td align="left" rowspan="1" colspan="1">1,562</td>
+                  <td align="left" rowspan="1" colspan="1">1,564</td>
+                  <td align="left" rowspan="1" colspan="1">2,502</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Avg. no. of neighbours</td>
+                  <td align="left" rowspan="1" colspan="1">6.36</td>
+                  <td align="left" rowspan="1" colspan="1">13.14</td>
+                  <td align="left" rowspan="1" colspan="1">13.34</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Connected components</td>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Network density</td>
+                  <td align="left" rowspan="1" colspan="1">0.02</td>
+                  <td align="left" rowspan="1" colspan="1">0.05</td>
+                  <td align="left" rowspan="1" colspan="1">0.04</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Avg. clustering coefficient</td>
+                  <td align="left" rowspan="1" colspan="1">0.27</td>
+                  <td align="left" rowspan="1" colspan="1">0.71</td>
+                  <td align="left" rowspan="1" colspan="1">0.53</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Network centralization</td>
+                  <td align="left" rowspan="1" colspan="1">0.13</td>
+                  <td align="left" rowspan="1" colspan="1">0.29</td>
+                  <td align="left" rowspan="1" colspan="1">0.16</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Network heterogeneity</td>
+                  <td align="left" rowspan="1" colspan="1">1.17</td>
+                  <td align="left" rowspan="1" colspan="1">1.14</td>
+                  <td align="left" rowspan="1" colspan="1">1.10</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Characteristic path length</td>
+                  <td align="left" rowspan="1" colspan="1">3.52</td>
+                  <td align="left" rowspan="1" colspan="1">2.71</td>
+                  <td align="left" rowspan="1" colspan="1">3.71</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>Out of the total number of 486 nodes and 4,115 edges found with the three network inference methods, 40% of the nodes and only 7% of the edges are conserved in the three methods (Figs <xref rid="pone.0127127.g004" ref-type="fig">4D</xref> and <xref rid="pone.0127127.g005" ref-type="fig">5</xref>). Only 6 nodes are specific to WGCNA while 51 and 98 are specific to Pearson and RulNet, respectively. The conservation of edges between WGCNA and Pearson increases almost linearly with the connectivity of the nodes, from 13% for nodes with a connectivity degree of 1 to 5, to 66% for nodes with a connectivity degree of 81 to 85 (data not shown). The conservation of edges between RulNet and WGCNA and between RulNet and Pearson is independent of the connectivity of the nodes and is close to 10%. The greater conservation of edges between WGCNA and Pearson than between RulNet and the two other methods is not surprising as both WGCNA and Pearson are based on correlation coefficients. These results illustrate the complementarity of RN inference methods reported in previous studies [<xref rid="pone.0127127.ref054" ref-type="bibr">54</xref>].</p>
+        <fig id="pone.0127127.g005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0127127.g005</object-id>
+          <label>Fig 5</label>
+          <caption>
+            <title>Node and edges comparison between three inference methods.</title>
+            <p>Venn diagram showing node (A) and edge (B) homology between the RulNet platform, WGCNA and Pearson network inference methods.</p>
+          </caption>
+          <graphic xlink:href="pone.0127127.g005"/>
+        </fig>
+      </sec>
+      <sec id="sec010">
+        <title>Evaluation of RulNet using the DREAM5 network inference challenge datasets</title>
+        <p>The DREAM5 challenge was a community competition to evaluate network inference methods that predict genome-scale transcriptional regulatory networks from gene-expression microarray datasets. Three standard datasets were used for the comparison taken from a prokaryotic model organism (<italic>E</italic>. <italic>coli</italic>), a eukaryotic model organism (<italic>S</italic>. <italic>cerevisiae</italic>) and an <italic>in silico</italic> generated network [<xref rid="pone.0127127.ref019" ref-type="bibr">19</xref>]. Each of these three datasets comprises a wide range of experimental conditions: genetic perturbations (e.g. gene deletions), drug and environmental perturbations, some microarrays are part of time-series, others are not. Twenty nine teams participated to the DREAM5 challenge and thirty five methods were compared. For each method, participants were asked to provide a ranked list of 100 000 interactions per dataset which was used to assess the performance of the methods.</p>
+        <p>Two standard quality metrics from machine learning were calculated, the area under the precision-recall (AUPR) and receiver operating characteristic (AUROC) curves [<xref rid="pone.0127127.ref054" ref-type="bibr">54</xref>]. AUPR is a single measure that summarizes the tradeoff between the completeness (recall) and fidelity (precision) of the inferred network, while AUROC is a single measure that summarizes the tradeoff between the rate of true and false positive predicted edges in a gold standard network. Therefore these two metrics are complementary and provide a comprehensive characterization of the predicted networks. To summarize the performance of each individual method across the three networks overall scores were derived from the AUPR and the AUROC scores by calculating the geometric mean of the network specific scores [<xref rid="pone.0127127.ref019" ref-type="bibr">19</xref>, <xref rid="pone.0127127.ref054" ref-type="bibr">54</xref>]. Finally, an overall score was obtained as the mean of the overall AUPR and AUROC scores. These metrics were calculated using only the interactions for which experimentally supported interactions exists (gold standard interactions). Network predictions from individual teams were integrated to form community networks by rescoring interactions according to their average rank across all methods [<xref rid="pone.0127127.ref019" ref-type="bibr">19</xref>].</p>
+        <p>We benchmarked RulNet using the three datasets and methodology used in the DREAM5 challenge and compared our results with those from the 35 methods that participated in this challenge [<xref rid="pone.0127127.ref019" ref-type="bibr">19</xref>]. Two queries called QD1 and QD2 were written to take into account the diversity of the experimental conditions (<xref rid="pone.0127127.s014" ref-type="supplementary-material">S3 File</xref>). QD1 allows the discovery of rules between highly and weakly expressed genes, while QD2 allows the discovery of rules between knockout transcription factors and their putative target genes. QD2 is more reliable since it is based on TF deletion experiments, however it does not concern all transcription factors but only those for which such experiments are available.</p>
+        <p>For each of these two queries, interactions were ranked by descending leverage and confidence. The best rank obtained with QD1 and QD2 were kept for each interaction, which defines a third method named QD1+2. This new method makes the best out of the two queries QD1 and QD2 that respond to two different questions and will expectedly give better results than each query used alone. The ranked interactions for each dataset and each method are given in Supplementary <xref rid="pone.0127127.s001" ref-type="supplementary-material">S1 Dataset</xref> to <xref rid="pone.0127127.s009" ref-type="supplementary-material">S9 Dataset</xref>.</p>
+        <p><xref rid="pone.0127127.g006" ref-type="fig">Fig 6</xref> shows the values of the AUPR, AUROC and overall scores over the three networks for the three QD queries. Results for the three individual networks and each individual method of DREAM5 and RulNet are given in <xref rid="pone.0127127.s011" ref-type="supplementary-material">S2 Fig</xref> QD1 gives higher AUROC scores than QD2, while QD2 gives higher AUPR scores than QD1. This result is related to the biological meaning of the queries and to the fact that the AUROC reflects the quality of the results obtained throughout the full list of interactions while the AUPR is strongly affected by the performance at the top of the prediction list (i.e. by the most reliable interactions), giving a particular importance to the ranking criteria. Foreseeably, the scores obtained with QD1+2 are much higher than those obtained with either QD1 or QD2. The overall AUPR obtained with QD1+2 is close to that of the best individual method evaluated in the context of DREAM5 (<xref rid="pone.0127127.g006" ref-type="fig">Fig 6</xref>) and is second to only one of the 35 individual methods (<xref rid="pone.0127127.s011" ref-type="supplementary-material">S2 Fig</xref>). More importantly, while some methods provide uneven results depending on the dataset, RulNet performs well for each one of them (<xref rid="pone.0127127.s011" ref-type="supplementary-material">S2 Fig</xref>).</p>
+        <fig id="pone.0127127.g006" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0127127.g006</object-id>
+          <label>Fig 6</label>
+          <caption>
+            <title>Evaluation of RulNet performance using the DREAM5 network inference challenge datasets.</title>
+            <p>The overall (geometric mean across the three inferred networks) area under the precision-recall (AUPR) and receiver operating characteristic (AUROC) and overall score (mean of the overall AUPR and AUROC scores) obtained using RulNet with the QD1, QD2 and QD1+2 queries (<xref rid="pone.0127127.s014" ref-type="supplementary-material">S3 File</xref>) were compared to the 35 methods evaluated in the DREAM5 challenge. The horizontal continuous red lines indicate the scores of the integrated community predictions from DREAM5, the vertical dashed green lines indicate the scores of the best individual model from DREAM5 based on the overall score, and the horizontal dash-dot blue lines indicate the median score for 35 methods evaluated in the DREAM5 challenge.</p>
+          </caption>
+          <graphic xlink:href="pone.0127127.g006"/>
+        </fig>
+      </sec>
+      <sec id="sec011">
+        <title>Identification of transcription factors involved in the transcriptional reprogramming occurring during grain development and in response to N and S supply</title>
+        <p>The second objective of this study was to demonstrate how RulNet can be used as a biology-driven clustering method using the identification of transcription factors as an example. This demonstration exploits two features of RulNet. The first is a unique feature that enables central attributes to be defined for the rule discovery algorithm. When attributes are defined as central, only rules involving at least one of these attributes are discovered. Central attributes can be of any type. The second feature of RulNet that is exploited in this biology-driven example is the combined use of quantitative and qualitative data.</p>
+        <p>We demonstrate how RulNet can be used to find TFs involved in the transcriptomic shifts observed between the three major phases of wheat grain development and how they are involved in the adaptive response of wheat grain to N and S deficiency. A particular interest is in how TFs are potentially involved in the regulation of GSP synthesis in wheat. Two queries called QNS1 and QNS2 were written (<xref rid="pone.0127127.s013" ref-type="supplementary-material">S2 File</xref>) with Support and Confidence thresholds set at 0.15 and 0.90, respectively.</p>
+        <p>To illustrate this feature of RulNet, N and S deficiency (qualitative data) and the three phases of grain development (qualitative data) were defined as central attributes to discover TFs, GSPs and metabolites (quantitative data) associated with these attributes. Each sample was associated with a phase of development and a level of N and S supply (low or high). Phase 1 of grain development was assigned to samples taken at 10 and 14 days after flowering, phase 2 to samples taken at 18, 24, and 27 days after flowering, and phase 3 to samples taken at 30 and 34 days after flowering. The expression of all 2,891 TFs transcripts spotted on the microarray was used, as well as the quantity per grain of GSPs and metabolites.</p>
+        <p>This network can be considered as a biology-driven clustering visualization rather than as a standard interaction network (<xref rid="pone.0127127.g007" ref-type="fig">Fig 7</xref>). The edges between attributes imply a functional link between the central attributes and the other attributes rather than a direct interaction. Overall the network highlights TFs transcripts, metabolites and proteins whose relative abundance is linked to the nutrition (N and/or S) or to a particular phase of the grain development or a combination of both. It is also possible to infer interaction between non-central attributes in the same network.</p>
+        <fig id="pone.0127127.g007" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0127127.g007</object-id>
+          <label>Fig 7</label>
+          <caption>
+            <title>Nitrogen and Sulfur influenced regulatory network in wheat.</title>
+            <p>Directed network inferred using the RulNet platform and illustrating the use of central attributes. Linkages of transcription factors expression (hexagons), and the quantity per grain of storage proteins (squares) and metabolites (circles) with the phases of grain development and nitrogen and sulfur deficiencies defined as central attributes. The network was exported and enhanced in Cytoscape. Nodes were moved and edges were bundled and reorganized for better readability. Pink and light blue edges indicate rules discovered with the QNS1 and QNS2 queries, respectively. The storage proteins &#x3C9;1,2-, &#x3C9;5-, &#x3B3;- and &#x3B1;/&#x3B2;-gliadins (gli) and low (LMW-GS) and high (HMW-GS) molecular weight glutenin subunits were expressed in mg N per grain and the metabolites in &#x3BC;mol per grain. For metabolites and transcription factors, the correspondence between the node id and actual entity names is given in <xref rid="pone.0127127.s015" ref-type="supplementary-material">S1</xref> and <xref rid="pone.0127127.s016" ref-type="supplementary-material">S2</xref> Tables.</p>
+          </caption>
+          <graphic xlink:href="pone.0127127.g007"/>
+        </fig>
+        <p>All five GSPs show expected linkages with the early (Phase 1) and late (Phase 3) phases of grain development, being found in low abundance in the early phase and in high abundance during the late phase (<xref rid="pone.0127127.g007" ref-type="fig">Fig 7</xref>). Overall, the clustering network obtained through this approach reveals some well-known effects of N and S supply on GSP synthesis [<xref rid="pone.0127127.ref025" ref-type="bibr">25</xref>]. N deficiency implies a low abundance of the four classes of gliadin and HMW-GS while it implies a high abundance of LMW-GS. A S deficiency implies a low abundance of the S-rich &#x3B1;-gliadins.</p>
+        <p>Regarding the metabolites, many respond to N deficiency but only a few are regulated by S deficiency. For instance, S deficiency implies a high abundance of asparagine (ASN) and aspartate (ASP). It was previously reported that ASN could be increased up to 30-fold in conditions of S deficiency [<xref rid="pone.0127127.ref055" ref-type="bibr">55</xref>&#x2013;<xref rid="pone.0127127.ref057" ref-type="bibr">57</xref>]. Reduced glutathione (GSH) is also found in low abundance in conditions of S deficiency, while citrate (Cit) and malate (Mal) are found up-regulated, in good agreement with previous reports [<xref rid="pone.0127127.ref058" ref-type="bibr">58</xref>&#x2013;<xref rid="pone.0127127.ref060" ref-type="bibr">60</xref>].</p>
+        <p>Besides well know responses of GSPs or metabolites to N and S deficiency, this network reveals putative candidate TFs involved in the molecular response of wheat grains to N and S deficiency. In particular it identifies TFs whose expression is independent of grain development but are down- or up-regulated under conditions of N and/or S deficiency. Sixty-two and 71 TFs are associated with N and S deficiency, respectively, but not with grain development. Among these TFs, nine are associated with both N and S deficiency. Interestingly these TFs show opposite response to N and S, suggesting that they orchestrate the response to the N-to-S balance. For instance, R2R3-MYB_191 is orthologous to <italic>Arabidopsis thaliana</italic> AtMYB7, a TF expressed in seed and involved in hormone mediated signaling pathways (ethylene, abcisic acid, jasmonic acid, salicylic acid) and overall in the response to abiotic stress [<xref rid="pone.0127127.ref061" ref-type="bibr">61</xref>]. C2H2_132 (<italic>A</italic>. <italic>thaliana</italic> orthologue: STOP2) is notably involved in nitrate transport and in the response to intracellular nitrate concentration [<xref rid="pone.0127127.ref061" ref-type="bibr">61</xref>]. WRKY_181 (<italic>A</italic>. <italic>thaliana</italic> orthologue: WRKY30) is involved in the response to ozone and salicylic acid [<xref rid="pone.0127127.ref062" ref-type="bibr">62</xref>] while WRKY_195 (<italic>A</italic>. <italic>thaliana</italic> orthologue: WRKY40) is involved in many pathways including response to hormones, abiotic stress and pathogen defense [<xref rid="pone.0127127.ref061" ref-type="bibr">61</xref>, <xref rid="pone.0127127.ref063" ref-type="bibr">63</xref>]. All these observations make these TFs good candidates in the context of the study of N/S response in wheat grain. More complex queries could allow us to further elucidate complex regulatory circuitry involved in the adaptation of grain to N/S supply.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="sec012">
+      <title>Discussion</title>
+      <sec id="sec013">
+        <title>Scale-free topology</title>
+        <p>Most functional features of a cell are driven by groups of molecules which are not isolated but rather linked to each other or even functionally overlapping. This characteristic is reflected by a scale-free topology of the interaction networks at different levels of cell functional organization. If biological molecules were isolated independent entities the result would be random networks. It is therefore expected that a reliable network inference method would identify this scale-free topology when inferring biological networks. The main feature of scale-free networks is the presence of nodes of widely different connectivity, including weakly connected nodes representing molecules with restricted field of action and hubs (highly connected nodes) representing important regulators. Here we showed that RulNet infers scale-free networks.</p>
+      </sec>
+      <sec id="sec014">
+        <title>TFs interdependency</title>
+        <p>We have demonstrated the effectiveness of the RulNet RN inference and visualization platform using&#x2014;omics data including TF expression. It is well known that TFs are interdependent, i.e. they often work in combination with other TFs. RulNet allows allow discovering rules involving multiple attributes in the left hand side (n-1 MP-rules). Although this feature was not illustrated in the present work it could be used to study combinatorial interactions.</p>
+      </sec>
+      <sec id="sec015">
+        <title>Programming knowledge</title>
+        <p>RN inference is an effective tool to predict and analyze RNs using high throughput data. Powerful algorithms and tools have been made available to infer RNs. Unlike many similar tools, programming skills are not required by RulNet users to perform complete network inference, analysis and visualization. Writing simple queries is made easy using the inbuilt query builder, though prior knowledge of the SQL query language would make it easier for users to understand the RQL language for more advanced queries that would exploit all the features in RulNet.</p>
+      </sec>
+      <sec id="sec016">
+        <title>Dimensionality issue</title>
+        <p>An important consideration when analyzing data from genome-scale technologies is that technical and experimental limitations do not generally allow the number of observations commensurate with the number of variables (gene transcripts in gene expression studies). In statistical terms-omics studies are usually underpowered. In the general case, the robustness of the results obtained should increase proportionally to the number of observations. The complexity of the genomic-scale approach, however, together with the relatively restricted number of independent data points compared to the size of the search space can limit the robustness of the results. RN inference using&#x2014;omics data, however, allows researchers to model complex systems of regulation even though they do not reveal the full complexity of the system but only the observable components. Moreover, similar to most approaches to RN inference, users must be cognizant that the interaction inferred between two variables indicates only that their relative quantity are somehow linked; it does not necessarily imply a physical or functional relationship.</p>
+      </sec>
+      <sec id="sec017">
+        <title>Taking advantage of the complementarity</title>
+        <p>The main advantage of RulNet stems from its adaptability to different biological problems. This is achieved through its capability of performing different queries in the same software framework. In previous comparative analyses (e.g. DREAM5) it has been shown that most approaches used to infer RNs from the same datasets show relatively distinct results [<xref rid="pone.0127127.ref019" ref-type="bibr">19</xref>]. The differences observed between the inferred RNs does not necessarily demonstrate any poor performance from a particular approach but rather highlights their complementarity. The RulNet approach supported the development of multiple queries to discover rules defining RNs in a unifying framework. These rules were used to evaluate RulNet using the DREAM5 datasets. We showed that the evaluation of the different DREAM5 tests could be improved by exploring different queries. A combined query QD1+2 performed better than that of either QD1 or QD2. This is consistent with the main conclusion of the DREAM consortium, that integrated community networks tend to get closer to a representative network and that this is more likely to be biologically accurate. By supporting the development of combination queries, RulNet supports the inference of integrated networks composed using results from different sub-queries. Based on the quality metrics of the DREAM consortium, we observe that different queries produce different results. This highlights the importance of query design and evaluation prior to the inference process.</p>
+        <p>The web-oriented platform implemented in RulNet offers multiple features to visualize and edit a global RN by gathering the interactions inferred using different queries. A comparative analysis of RulNet inference method with two other commonly used inference methods, namely correlation network inference and WGCNA, showed that RulNet inference methods produced network topologies that were broadly consistent with other methods. Each method, however, had its own particular behavior reflecting differences in algorithms used. The general conclusion is that when considering the analysis of networks from eukaryotic organisms, it is essential to consider more than one type of interaction. The features in RulNet make this more easy than most of the other available tools. However, it remains the case that no single approach will reveal the absolute and complete truth of complex RNs; only exploiting the complementarity between approaches can narrow the gap between the hypothetical network and the actual complex network of interactions [<xref rid="pone.0127127.ref019" ref-type="bibr">19</xref>].</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="sec018">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0127127.s001">
+        <label>S1 Dataset</label>
+        <caption>
+          <title>Ranked interactions for the <italic>in silico</italic> dataset and the QD1 method.</title>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s001.txt">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s002">
+        <label>S2 Dataset</label>
+        <caption>
+          <title>Ranked interactions for the <italic>E</italic>. <italic>coli</italic> dataset and the QD1 method.</title>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s002.txt">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s003">
+        <label>S3 Dataset</label>
+        <caption>
+          <title>Ranked interactions for the <italic>S</italic>. <italic>cerevisiae</italic> dataset and the QD1 method.</title>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s003.txt">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s004">
+        <label>S4 Dataset</label>
+        <caption>
+          <title>Ranked interactions for the <italic>in silico</italic> dataset and the QD2 method.</title>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s004.txt">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s005">
+        <label>S5 Dataset</label>
+        <caption>
+          <title>Ranked interactions for the <italic>E</italic>. <italic>coli</italic> dataset and the QD2 method.</title>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s005.txt">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s006">
+        <label>S6 Dataset</label>
+        <caption>
+          <title>Ranked interactions for the <italic>S</italic>. <italic>cerevisiae</italic> dataset and the QD2 method.</title>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s006.txt">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s007">
+        <label>S7 Dataset</label>
+        <caption>
+          <title>Ranked interactions for the <italic>in silico</italic> dataset and the QD3 method.</title>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s007.txt">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s008">
+        <label>S8 Dataset</label>
+        <caption>
+          <title>Ranked interactions for the <italic>E</italic>. <italic>coli</italic> dataset and the QD3 method.</title>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s008.txt">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s009">
+        <label>S9 Dataset</label>
+        <caption>
+          <title>Ranked interactions for the <italic>S</italic>. <italic>cerevisiae</italic> dataset and the QD3 method.</title>
+          <p>(TXT)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s009.txt">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s010">
+        <label>S1 Fig</label>
+        <caption>
+          <title>Power law analysis of regulatory networks.</title>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s010.tif">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s011">
+        <label>S2 Fig</label>
+        <caption>
+          <title>Comparison of the performance of RulNet for the DREAM5 networks with that of the 35 network inference methods of DREAM5 challenge.</title>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s011.tif">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s012">
+        <label>S1 File</label>
+        <caption>
+          <title>Grammar specifications of the RQL language.</title>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s012.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s013">
+        <label>S2 File</label>
+        <caption>
+          <title>Semantics used to infer regulatory networks from wheat &#x2014;omics data.</title>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s013.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s014">
+        <label>S3 File</label>
+        <caption>
+          <title>Semantics used to infer regulatory networks from the DREAM5 datasets.</title>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s014.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s015">
+        <label>S1 Table</label>
+        <caption>
+          <title>Abbreviations of metabolites used in <xref rid="pone.0127127.g006" ref-type="fig">Fig 6</xref>.</title>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s015.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0127127.s016">
+        <label>S2 Table</label>
+        <caption>
+          <title>Correspondence of transcription factors identifiers and names used in <xref rid="pone.0127127.g006" ref-type="fig">Fig 6</xref>.</title>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0127127.s016.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors thank Jean-Baptiste Perez and Alexandre Baillif for their contribution to the development of the platform.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0127127.ref001">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Miller</surname><given-names>JH</given-names></name>, <name><surname>Beckwith</surname><given-names>J</given-names></name>, <name><surname>Muller-Hill</surname><given-names>B</given-names></name>. <article-title>Direction of transcription of a regulatory gene in <italic>E</italic>. <italic>coli</italic></article-title>. <source>Nature</source>. <year>1968</year>; <volume>220</volume>: <fpage>1287</fpage>&#x2013;<lpage>1290</lpage>. <?supplied-pmid 4882916?><pub-id pub-id-type="pmid">4882916</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref002">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Shen-Orr</surname><given-names>SS</given-names></name>, <name><surname>Milo</surname><given-names>R</given-names></name>, <name><surname>Mangan</surname><given-names>S</given-names></name>, <name><surname>Alon</surname><given-names>U</given-names></name>. <article-title>Network motifs in the transcriptional regulation network of <italic>Escherichia coli</italic></article-title>. <source>Nat Genet</source>. <year>2002</year>; <volume>31</volume>: <fpage>64</fpage>&#x2013;<lpage>68</lpage>. <?supplied-pmid 11967538?><pub-id pub-id-type="pmid">11967538</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref003">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Yoon</surname><given-names>H</given-names></name>, <name><surname>McDermott</surname><given-names>JE</given-names></name>, <name><surname>Porwollik</surname><given-names>S</given-names></name>, <name><surname>McClelland</surname><given-names>M</given-names></name>, <name><surname>Heffron</surname><given-names>F</given-names></name>. <article-title>Coordinated regulation of virulence during systemic infection of <italic>Salmonella enterica</italic> serovar Typhimurium</article-title>. <source>PLoS Pathog</source>. <year>2009</year>; <volume>5</volume>: <fpage>e1000306</fpage><comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000306">10.1371/journal.ppat.1000306</ext-link></comment><?supplied-pmid 19229334?><pub-id pub-id-type="pmid">19229334</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref004">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Belcastro</surname><given-names>V</given-names></name>, <name><surname>Siciliano</surname><given-names>V</given-names></name>, <name><surname>Gregoretti</surname><given-names>F</given-names></name>, <name><surname>Mithbaokar</surname><given-names>P</given-names></name>, <name><surname>Dharmalingam</surname><given-names>G</given-names></name>, <name><surname>Berlingieri</surname><given-names>S</given-names></name>, <etal>et al</etal><article-title>Transcriptional gene network inference from a massive dataset elucidates transcriptome organization and gene function</article-title>. <source>Nucleic Acids Res</source>. <year>2011</year>; <volume>39</volume>: <fpage>8677</fpage>&#x2013;<lpage>8688</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkr593">10.1093/nar/gkr593</ext-link></comment><?supplied-pmid 21785136?><pub-id pub-id-type="pmid">21785136</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref005">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Pan</surname><given-names>Y</given-names></name>, <name><surname>Bradley</surname><given-names>G</given-names></name>, <name><surname>Pyke</surname><given-names>K</given-names></name>, <name><surname>Ball</surname><given-names>G</given-names></name>, <name><surname>Lu</surname><given-names>C</given-names></name>, <name><surname>Fray</surname><given-names>R</given-names></name>, <etal>et al</etal><article-title>Network inference analysis identifies an APRR2-like gene linked to pigment accumulation in tomato and pepper fruits</article-title>. <source>Plant Physiol</source>. <year>2013</year>; <volume>161</volume>: <fpage>1476</fpage>&#x2013;<lpage>1485</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.112.212654">10.1104/pp.112.212654</ext-link></comment><?supplied-pmid 23292788?><pub-id pub-id-type="pmid">23292788</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref006">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>De Smet</surname><given-names>R</given-names></name>, <name><surname>Marchal</surname><given-names>K</given-names></name>. <article-title>Advantages and limitations of current network inference methods</article-title>. <source>Nat Rev Microbiol</source>. <year>2010</year>; <volume>8</volume>: <fpage>717</fpage>&#x2013;<lpage>729</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrmicro2419">10.1038/nrmicro2419</ext-link></comment><?supplied-pmid 20805835?><pub-id pub-id-type="pmid">20805835</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref007">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Mordelet</surname><given-names>F</given-names></name>, <name><surname>Vert</surname><given-names>J-P</given-names></name>. <article-title>SIRENE: supervised inference of regulatory networks</article-title>. <source>Bioinformatics</source>. <year>2008</year>; <volume>24</volume>: <fpage>i76</fpage>&#x2013;<lpage>82</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btn273">10.1093/bioinformatics/btn273</ext-link></comment><?supplied-pmid 18689844?><pub-id pub-id-type="pmid">18689844</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref008">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Margolin</surname><given-names>AA</given-names></name>, <name><surname>Nemenman</surname><given-names>I</given-names></name>, <name><surname>Basso</surname><given-names>K</given-names></name>, <name><surname>Wiggins</surname><given-names>C</given-names></name>, <name><surname>Stolovitzky</surname><given-names>G</given-names></name>, <name><surname>Favera</surname><given-names>RD</given-names></name>, <etal>et al</etal><article-title>ARACNE: an algorithm for the reconstruction of gene regulatory networks in a mammalian cellular context</article-title>. <source>BMC Bioinformatics</source>. <year>2006</year>; <volume>7</volume>(<issue>Suppl 1</issue>): <fpage>S7</fpage><?supplied-pmid 16723010?><pub-id pub-id-type="pmid">16723010</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref009">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Kauffman</surname><given-names>S</given-names></name>, <name><surname>Peterson</surname><given-names>C</given-names></name>, <name><surname>Samuelsson</surname><given-names>B</given-names></name>, <name><surname>Troein</surname><given-names>C</given-names></name>. <article-title>Random boolean network models and the yeast transcriptional network</article-title>. <source>Proc Natl Acad Sci USA</source>. <year>2003</year>; <volume>100</volume>: <fpage>14796</fpage>&#x2013;<lpage>14799</lpage>. <?supplied-pmid 14657375?><pub-id pub-id-type="pmid">14657375</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref010">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Liang</surname><given-names>J</given-names></name>, <name><surname>Han</surname><given-names>J</given-names></name>. <article-title>Stochastic boolean networks: an efficient approach to modeling gene regulatory networks</article-title>. <source>BMC Syst Biol</source>. <year>2012</year>; <volume>6</volume>: <fpage>113</fpage><comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1752-0509-6-113">10.1186/1752-0509-6-113</ext-link></comment><?supplied-pmid 22929591?><pub-id pub-id-type="pmid">22929591</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref011">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Friedman</surname><given-names>N</given-names></name>, <name><surname>Linial</surname><given-names>M</given-names></name>, <name><surname>Nachman</surname><given-names>I</given-names></name>, <name><surname>Pe&#x2019;er</surname><given-names>D</given-names></name>. <article-title>Using Bayesian networks to analyze expression data</article-title>. <source>J Comput Biol</source>. <year>2000</year>; <volume>7</volume>: <fpage>601</fpage>&#x2013;<lpage>620</lpage>. <?supplied-pmid 11108481?><pub-id pub-id-type="pmid">11108481</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref012">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>K&#xFC;ffner</surname><given-names>R</given-names></name>, <name><surname>Zimmer</surname><given-names>R</given-names></name>, <name><surname>Lengauer</surname><given-names>T</given-names></name>. <article-title>Pathway analysis in metabolic databases via differential metabolic display (DMD)</article-title>. <source>Bioinformatics</source>. <year>2000</year>; <volume>16</volume>: <fpage>825</fpage>&#x2013;<lpage>836</lpage>. <?supplied-pmid 11108705?><pub-id pub-id-type="pmid">11108705</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref013">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Durzinsky</surname><given-names>M</given-names></name>, <name><surname>Wagler</surname><given-names>A</given-names></name>, <name><surname>Marwan</surname><given-names>W</given-names></name>. <article-title>Reconstruction of extended Petri nets from time series data and its application to signal transduction and to gene regulatory networks</article-title>. <source>BMC Syst Biol</source>. <year>2011</year>; <volume>5</volume>: <fpage>113</fpage><comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1752-0509-5-113">10.1186/1752-0509-5-113</ext-link></comment><?supplied-pmid 21762503?><pub-id pub-id-type="pmid">21762503</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref014">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Agier</surname><given-names>M</given-names></name>, <name><surname>Petit</surname><given-names>J-M</given-names></name>, <name><surname>Suzuki</surname><given-names>E</given-names></name>. <article-title>Unifying framework for rule semantics: Application to gene expression data</article-title>. <source>Fundam Inf</source>. <year>2007</year>; <volume>78</volume>: <fpage>543</fpage>&#x2013;<lpage>559</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref015">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Georgii</surname><given-names>E</given-names></name>, <name><surname>Richter</surname><given-names>L</given-names></name>, <name><surname>R&#xFC;ckert</surname><given-names>U</given-names></name>, <name><surname>Kramer</surname><given-names>S</given-names></name>. <article-title>Analyzing microarray data using quantitative association rules</article-title>. <source>Bioinformatics</source>. <year>2005</year>; <volume>21</volume>(<issue>Suppl 2</issue>): <fpage>ii123</fpage>&#x2013;<lpage>129</lpage>. <?supplied-pmid 16204090?><pub-id pub-id-type="pmid">16204090</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref016">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Martinez</surname><given-names>R</given-names></name>, <name><surname>Pasquier</surname><given-names>N</given-names></name>, <name><surname>Pasquier</surname><given-names>C</given-names></name>. <article-title>GenMiner: mining non-redundant association rules from integrated gene expression data and annotations</article-title>. <source>Bioinformatics</source>. <year>2008</year>; <volume>24</volume>: <fpage>2643</fpage>&#x2013;<lpage>2644</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btn490">10.1093/bioinformatics/btn490</ext-link></comment><?supplied-pmid 18799482?><pub-id pub-id-type="pmid">18799482</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref017">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Kotera</surname><given-names>M</given-names></name>, <name><surname>Yamanishi</surname><given-names>Y</given-names></name>, <name><surname>Moriya</surname><given-names>Y</given-names></name>, <name><surname>Kanehisa</surname><given-names>M</given-names></name>, <name><surname>Goto</surname><given-names>S</given-names></name>. <article-title>GENIES: gene network inference engine based on supervised analysis</article-title>. <source>Nucleic Acids Res</source>. <year>2012</year>; <volume>40</volume>: <fpage>W162</fpage>&#x2013;<lpage>167</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gks459">10.1093/nar/gks459</ext-link></comment><?supplied-pmid 22610856?><pub-id pub-id-type="pmid">22610856</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref018">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Haibe-Kains</surname><given-names>B</given-names></name>, <name><surname>Olsen</surname><given-names>C</given-names></name>, <name><surname>Djebbari</surname><given-names>A</given-names></name>, <name><surname>Bontempi</surname><given-names>G</given-names></name>, <name><surname>Correll</surname><given-names>M</given-names></name>, <name><surname>Boulon</surname><given-names>C</given-names></name>, <etal>et al</etal><article-title>Predictive networks: a flexible, open source, web application for integration and analysis of human gene networks</article-title>. <source>Nucleic Acids Res</source>. <year>2012</year>; <volume>40</volume>: <fpage>D866</fpage>&#x2013;<lpage>75</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkr1050">10.1093/nar/gkr1050</ext-link></comment><?supplied-pmid 22096235?><pub-id pub-id-type="pmid">22096235</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref019">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Marbach</surname><given-names>D</given-names></name>, <name><surname>Costello</surname><given-names>JC</given-names></name>, <name><surname>Kuffner</surname><given-names>R</given-names></name>, <name><surname>Vega</surname><given-names>NM</given-names></name>, <name><surname>Prill</surname><given-names>RJ</given-names></name>, <name><surname>Camacho</surname><given-names>DM</given-names></name>, <etal>et al</etal><article-title>Wisdom of crowds for robust gene network inference</article-title>. <source>Nature Meth</source>. <year>2012</year>; <volume>9</volume>: <fpage>796</fpage>&#x2013;<lpage>804</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref020">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Gupta</surname><given-names>RB</given-names></name>, <name><surname>Masci</surname><given-names>S</given-names></name>, <name><surname>Lafiandra</surname><given-names>D</given-names></name>, <name><surname>Bariana</surname><given-names>HS</given-names></name>, <name><surname>MacRitchie</surname><given-names>F</given-names></name>. <article-title>Accumulation of protein subunits and their polymers in developing grains of hexaploid wheats</article-title>. <source>J Exp Bot</source>. <year>1996</year>; <volume>47</volume>: <fpage>1377</fpage>&#x2013;<lpage>1385</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref021">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Triboi</surname><given-names>E</given-names></name>, <name><surname>Abad</surname><given-names>A</given-names></name>, <name><surname>Michelena</surname><given-names>A</given-names></name>, <name><surname>Lloveras</surname><given-names>J</given-names></name>, <name><surname>Ollier</surname><given-names>JL</given-names></name>, <name><surname>Daniel</surname><given-names>C</given-names></name>. <article-title>Environmental effects on the quality of two wheat genotypes: 1. Quantitative and qualitative variation of storage proteins</article-title>. <source>Eur J Agron</source>. <year>2000</year>; <volume>13</volume>: <fpage>47</fpage>&#x2013;<lpage>64</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref022">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Gupta</surname><given-names>R</given-names></name>, <name><surname>Singh</surname><given-names>N</given-names></name>, <name><surname>Shepherd</surname><given-names>K</given-names></name>. <article-title>The cumulative effect of allelic variation in LMW and HMW glutenin subunits on dough properties in the progeny of two bread wheats</article-title>. <source>Theor Appl Genet</source><year>1989</year>; <volume>77</volume>: <fpage>57</fpage>&#x2013;<lpage>64</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/BF00292316">10.1007/BF00292316</ext-link></comment><?supplied-pmid 24232474?><pub-id pub-id-type="pmid">24232474</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref023">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Martre</surname><given-names>P</given-names></name>, <name><surname>Porter</surname><given-names>JR</given-names></name>, <name><surname>Jamieson</surname><given-names>PD</given-names></name>, <name><surname>Tribo&#xEF;</surname><given-names>E</given-names></name>. <article-title>Modeling grain nitrogen accumulation and protein composition to understand the sink/source regulations of nitrogen remobilization for wheat</article-title>. <source>Plant Physiology</source>. <year>2003</year>; <volume>133</volume>: <fpage>1959</fpage>&#x2013;<lpage>1967</lpage>. <?supplied-pmid 14630962?><pub-id pub-id-type="pmid">14630962</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref024">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Wrigley</surname><given-names>CW</given-names></name>, <name><surname>Du Cros</surname><given-names>DL</given-names></name>, <name><surname>Fullington</surname><given-names>JG</given-names></name>, <name><surname>Kasarda</surname><given-names>DD</given-names></name>. <article-title>Changes in polypeptide composition and grain quality due to sulfur deficiency in wheat</article-title>. <source>J Cereal Sci</source>. <year>1984</year>; <volume>2</volume>: <fpage>15</fpage>&#x2013;<lpage>24</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref025">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Shewry</surname><given-names>PR</given-names></name>, <name><surname>Tatham</surname><given-names>AS</given-names></name>, <name><surname>Halford</surname><given-names>NG</given-names></name>. <article-title>Nutritional control of storage protein synthesis in developing grain of wheat and barley</article-title>. <source>Plant Growth Regul</source>. <year>2001</year>; <volume>34</volume>: <fpage>105</fpage>&#x2013;<lpage>111</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref026">
+        <label>26</label>
+        <mixed-citation publication-type="book"><name><surname>Armstrong</surname><given-names>WW</given-names></name>. <chapter-title>Dependency structures of data base relationships</chapter-title><source>World Computer Congress&#x2014;IFIP</source>. <year>1974</year> pp. <fpage>580</fpage>&#x2013;<lpage>583</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref027">
+        <label>27</label>
+        <mixed-citation publication-type="book"><name><surname>Ganter</surname><given-names>B</given-names></name>, <name><surname>Wille</surname><given-names>R</given-names></name>. <source>Formal concept analysis: Mathematical foundations</source>. <edition>1st ed</edition><publisher-loc>Secaucus, NJ, USA</publisher-loc>: <publisher-name>Springer-Verlag New York</publisher-name><year>1997</year>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref028">
+        <label>28</label>
+        <mixed-citation publication-type="book"><name><surname>Agrawal</surname><given-names>R</given-names></name>, <name><surname>Imieli&#x144;ski</surname><given-names>T</given-names></name>, <name><surname>Swami</surname><given-names>A</given-names></name>. <chapter-title>Mining association rules between sets of items in large databases</chapter-title><source>Proceedings of the 1993 ACM SIGMOD International Conference on Management of Data</source>. <year>1993</year> pp. <fpage>207</fpage>&#x2013;<lpage>216</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref029">
+        <label>29</label>
+        <mixed-citation publication-type="book"><name><surname>Chardin</surname><given-names>B</given-names></name>, <name><surname>Coquery</surname><given-names>E</given-names></name>, <name><surname>Gouriou</surname><given-names>B</given-names></name>, <name><surname>Pailloux</surname><given-names>M</given-names></name>, <name><surname>Petit</surname><given-names>J-M</given-names></name>, <chapter-title>Query rewriting for rule mining in databases</chapter-title><source>Proceedings of the 1st International ECML/PKDD Workshop on Languages for Data Mining and Machine Learning (LML)</source>, <publisher-loc>Prague, Czech Republic</publisher-loc><year>2013</year> pp. <fpage>35</fpage>&#x2013;<lpage>49</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref030">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Bohannon</surname><given-names>P</given-names></name>, <name><surname>Fan</surname><given-names>W</given-names></name>, <name><surname>Geerts</surname><given-names>F</given-names></name>, <name><surname>Jia</surname><given-names>X</given-names></name>, <name><surname>Kementsietsidis</surname><given-names>A</given-names></name>. <article-title>Conditional functional dependencies for data cleaning</article-title>. <source>Proceedings of the 23<sup>rd</sup> IEEE/ICDE International Conference on Data Enginering</source>. <year>2007</year> pp. <fpage>746</fpage>&#x2013;<lpage>755</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref031">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Fan</surname><given-names>W</given-names></name>, <name><surname>Geerts</surname><given-names>F</given-names></name>, <name><surname>Jia</surname><given-names>X</given-names></name>, <name><surname>Kementsietsidis</surname><given-names>A</given-names></name>. <article-title>Conditional functional dependencies for capturing data inconsistencies</article-title>. <source>ACM Trans Database Syst</source>. <year>2008</year>; <volume>33</volume>: <fpage>1</fpage>&#x2013;<lpage>48</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref032">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Gottlob</surname><given-names>G</given-names></name>, <name><surname>Libkin</surname><given-names>L</given-names></name> (<year>1990</year>) <article-title>Investigations on armstrong relations, dependency inference and excluded functional dependencies</article-title>. <source>Acta Cybernetica</source>. 1990; <volume>9</volume>: <fpage>385</fpage>&#x2013;<lpage>402</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref033">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Beeri</surname><given-names>C</given-names></name>, <name><surname>Dowd</surname><given-names>M</given-names></name>, <name><surname>Fagin</surname><given-names>R</given-names></name>, <name><surname>Statman</surname><given-names>R</given-names></name>. <article-title>On the structure of armstrong relations for functional dependencies</article-title>. <source>J. Assoc. Comput. Mach</source>. <year>1984</year>; <volume>31</volume>: <fpage>30</fpage>&#x2013;<lpage>46</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref034">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Lopes</surname><given-names>S</given-names></name>, <name><surname>Petit</surname><given-names>J-M</given-names></name>, <name><surname>Lakhal</surname><given-names>L</given-names></name>. <article-title>Functional and approximate dependency mining: database and FCA points of view</article-title>. <source>J Exp Theor Artif Intell</source>. <year>2002</year>; <volume>14</volume>: <fpage>93</fpage>&#x2013;<lpage>114</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref035">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Eiter</surname><given-names>T</given-names></name>, <name><surname>Gottlob</surname><given-names>G</given-names></name>. <article-title>Identifying the minimal transversals of a hypergraph and related problems</article-title>. <source>SIAM J Comput</source>. <year>1995</year>; <volume>24</volume>: <fpage>1278</fpage>&#x2013;<lpage>1304</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref036">
+        <label>36</label>
+        <mixed-citation publication-type="book"><name><surname>Murakami</surname><given-names>K</given-names></name>, <name><surname>Uno</surname><given-names>T</given-names></name>. <chapter-title>Efficient algorithms for dualizing large-scale hypergraphs</chapter-title><source>ArXiv</source>. <year>2011</year>; e-prints: 1102.3813.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref037">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Tan</surname><given-names>P-N</given-names></name>, <name><surname>Kumar</surname><given-names>V</given-names></name>, <name><surname>Srivastava</surname><given-names>J</given-names></name>. <article-title>Selecting the right objective measure for association analysis</article-title>. <source>Inf Syst</source>. <year>2004</year>; <volume>29</volume>: <fpage>293</fpage>&#x2013;<lpage>313</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref038">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Geng</surname><given-names>L</given-names></name>, <name><surname>Hamilton</surname><given-names>HJ</given-names></name>. <article-title>Interestingness measures for data mining: A survey</article-title>. <source>ACM Comput Surv</source>. <year>2006</year>; <volume>38</volume>: <fpage>9</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref039">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Brin</surname><given-names>S</given-names></name>, <name><surname>Motwani</surname><given-names>R</given-names></name>, <name><surname>Ullman</surname><given-names>J</given-names></name>, <name><surname>Tsur</surname><given-names>S</given-names></name>. <article-title>Dynamic itemset counting and implication rules for market basket data</article-title>. <source>Proceedings of the 1997 ACM SIGMOD international conference on management of data</source>. <year>1997</year>; <volume>26</volume>: <fpage>255</fpage>&#x2013;<lpage>264</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref040">
+        <label>40</label>
+        <mixed-citation publication-type="book"><name><surname>Piatetsky-Shapiro</surname><given-names>G</given-names></name>. <chapter-title>Discovery, analysis and presentation of strong rules</chapter-title> In: <name><surname>Piatetsky-Shapiro</surname><given-names>G</given-names></name>, <name><surname>Frawley</surname><given-names>WJ</given-names></name>, editors. <source>Knowledge discovery in databases</source>. <publisher-name>AAAI Press</publisher-name>; <year>1991</year> pp. <fpage>229</fpage>&#x2013;<lpage>248</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref041">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Backus</surname><given-names>JW</given-names></name>, <name><surname>Bauer</surname><given-names>FL</given-names></name>, <name><surname>Green</surname><given-names>J</given-names></name>, <name><surname>Katz</surname><given-names>C</given-names></name>, <name><surname>McCarthy</surname><given-names>J</given-names></name>, <name><surname>Perlis</surname><given-names>AJ</given-names></name>, <etal>et al</etal><article-title>Report on the algorithmic language ALGOL 60</article-title>. <source>Commun ACM</source>. <year>1960</year>; <volume>3</volume>: <fpage>299</fpage>&#x2013;<lpage>314</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref042">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Shannon</surname><given-names>P</given-names></name>, <name><surname>Markiel</surname><given-names>A</given-names></name>, <name><surname>Ozier</surname><given-names>O</given-names></name>, <name><surname>Baliga</surname><given-names>NS</given-names></name>, <name><surname>Wang</surname><given-names>JT</given-names></name>, <name><surname>Ramage</surname><given-names>D</given-names></name>, <etal>et al</etal><article-title>Cytoscape&#x202F;: A software environment for integrated mof biomolecular interaction networks</article-title>. <source>Genome Res</source>. <year>2003</year>; <volume>13</volume>: <fpage>2498</fpage>&#x2013;<lpage>2504</lpage>. <?supplied-pmid 14597658?><pub-id pub-id-type="pmid">14597658</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref043">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>Smoot</surname><given-names>ME</given-names></name>, <name><surname>Ono</surname><given-names>K</given-names></name>, <name><surname>Ruscheinski</surname><given-names>J</given-names></name>, <name><surname>Wang</surname><given-names>P-L</given-names></name>, <name><surname>Ideker</surname><given-names>T</given-names></name>. <article-title>Cytoscape 2.8: new features for data integration and network visualization</article-title>. <source>Bioinformatics</source>. <year>2011</year>; <volume>27</volume>: <fpage>431</fpage>&#x2013;<lpage>432</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btq675">10.1093/bioinformatics/btq675</ext-link></comment><?supplied-pmid 21149340?><pub-id pub-id-type="pmid">21149340</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref044">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Zadoks</surname><given-names>JC</given-names></name>, <name><surname>Chang</surname><given-names>TT</given-names></name>, <name><surname>Konzak</surname><given-names>CF</given-names></name>. <article-title>A decimal code for the growth stages of cereals</article-title>. <source>Weed Res</source>. <year>1974</year>; <volume>14</volume>: <fpage>415</fpage>&#x2013;<lpage>421</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref045">
+        <label>45</label>
+        <mixed-citation publication-type="journal"><name><surname>Castle</surname><given-names>SL</given-names></name>, <name><surname>Randall</surname><given-names>PJ</given-names></name>. <article-title>Effects of sulfur deficiency on the synthesis and accumulation of proteins in the developing wheat seed</article-title>. <source>Aust J Plant Physiol</source>. <year>1987</year>; <volume>14</volume>: <fpage>503</fpage>&#x2013;<lpage>516</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref046">
+        <label>46</label>
+        <mixed-citation publication-type="journal"><name><surname>Rustenholz</surname><given-names>C</given-names></name>, <name><surname>Choulet</surname><given-names>F</given-names></name>, <name><surname>Laugier</surname><given-names>C</given-names></name>, <name><surname>Saf&#xE1;r</surname><given-names>J</given-names></name>, <name><surname>Simkov&#xE1;</surname><given-names>H</given-names></name>, <name><surname>Dolezel</surname><given-names>J</given-names></name>, <etal>et al</etal><article-title>A 3,000-loci transcription map of chromosome 3B unravels the structural and functional features of gene islands in hexaploid wheat</article-title>. <source>Plant Physiol</source>. <year>2011</year>; <volume>157</volume>: <fpage>1596</fpage>&#x2013;<lpage>1608</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.111.183921">10.1104/pp.111.183921</ext-link></comment><?supplied-pmid 22034626?><pub-id pub-id-type="pmid">22034626</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref047">
+        <label>47</label>
+        <mixed-citation publication-type="journal"><name><surname>Daniel</surname><given-names>C</given-names></name>, <name><surname>Tribo&#xEF;</surname><given-names>E</given-names></name>. <article-title>Effects of temperature and nitrogen nutrition on the accumulation of gliadins analysed by RP-HPLC</article-title>. <source>Funct Plant Biol</source>. <year>2001</year>; <volume>28</volume>: <fpage>1197</fpage>&#x2013;<lpage>1205</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref048">
+        <label>48</label>
+        <mixed-citation publication-type="journal"><name><surname>Cohen</surname><given-names>SA</given-names></name>, <name><surname>Michaud</surname><given-names>DP</given-names></name>. <article-title>Synthesis of a fluorescent derivatizing reagent, 6-aminoquinolyl-N-hydroxysuccinimidyl carbamate, and its application for the analysis of hydrolysate amino acids via high-performance liquid chromatography</article-title>. <source>Anal Biochem</source>. <year>1993</year>; <volume>211</volume>: <fpage>279</fpage>&#x2013;<lpage>287</lpage>. <?supplied-pmid 8317704?><pub-id pub-id-type="pmid">8317704</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref049">
+        <label>49</label>
+        <mixed-citation publication-type="journal"><name><surname>Gibon</surname><given-names>Y</given-names></name>, <name><surname>Pyl</surname><given-names>E-T</given-names></name>, <name><surname>Sulpice</surname><given-names>R</given-names></name>, <name><surname>Lunn</surname><given-names>JE</given-names></name>, <name><surname>H&#xF6;hne</surname><given-names>M</given-names></name>, <name><surname>G&#xFC;nther</surname><given-names>M</given-names></name>, <etal>et al</etal><article-title>Adjustment of growth, starch turnover, protein content and central metabolism to a decrease of the carbon supply when Arabidopsis is grown in very short photoperiods</article-title>. <source>Plant Cell Environ</source>. <year>2009</year>; <volume>32</volume>: <fpage>859</fpage>&#x2013;<lpage>874</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-3040.2009.01965.x">10.1111/j.1365-3040.2009.01965.x</ext-link></comment><?supplied-pmid 19236606?><pub-id pub-id-type="pmid">19236606</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref050">
+        <label>50</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhang</surname><given-names>B</given-names></name>, <name><surname>Horvath</surname><given-names>S</given-names></name>. <article-title>A general framework for weighted gene co-expression network analysis</article-title>. <source>Stat Appl Genet Mol Biol</source>. <year>2005</year>; <volume>4</volume>: <fpage>17</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref051">
+        <label>51</label>
+        <mixed-citation publication-type="journal"><name><surname>Langfelder</surname><given-names>P</given-names></name>, <name><surname>Horvath</surname><given-names>S</given-names></name>. <article-title>WGCNA: an R package for weighted correlation network analysis</article-title>. <source>BMC Bioinformatics</source>; <year>2008</year><volume>9</volume>: <fpage>559</fpage><comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2105-9-559">10.1186/1471-2105-9-559</ext-link></comment><?supplied-pmid 19114008?><pub-id pub-id-type="pmid">19114008</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref052">
+        <label>52</label>
+        <mixed-citation publication-type="journal"><name><surname>Tusher</surname><given-names>VG</given-names></name>, <name><surname>Tibshirani</surname><given-names>R</given-names></name>, <name><surname>Chu</surname><given-names>G</given-names></name>. <article-title>Significance analysis of microarrays applied to the ionizing radiation response</article-title>. <source>Proc Natl Acad Sci USA</source>. <year>2001</year>; <volume>98</volume>: <fpage>5116</fpage>&#x2013;<lpage>5121</lpage>. <?supplied-pmid 11309499?><pub-id pub-id-type="pmid">11309499</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref053">
+        <label>53</label>
+        <mixed-citation publication-type="journal"><name><surname>Barab&#xE1;si</surname><given-names>AL</given-names></name>, <name><surname>Albert</surname><given-names>R</given-names></name>. <article-title>Emergence of scaling in random networks</article-title>. <source>Science</source>. <year>1999</year>; <volume>286</volume>: <fpage>509</fpage>&#x2013;<lpage>512</lpage>. <?supplied-pmid 10521342?><pub-id pub-id-type="pmid">10521342</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref054">
+        <label>54</label>
+        <mixed-citation publication-type="journal"><name><surname>Prill</surname><given-names>RJ</given-names></name>, <name><surname>Marbach</surname><given-names>D</given-names></name>, <name><surname>Saez-Rodriguez</surname><given-names>J</given-names></name>, <name><surname>Sorger</surname><given-names>PK</given-names></name>, <name><surname>Alexopoulos</surname><given-names>LG</given-names></name>, <name><surname>Xue</surname><given-names>X</given-names></name>, <etal>et al</etal><article-title>Towards a rigorous assessment of systems biology models: the DREAM3 challenges</article-title>. <source>PLoS One</source>. <year>2010</year>; <volume>5</volume>: <fpage>e9202</fpage><comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0009202">10.1371/journal.pone.0009202</ext-link></comment><?supplied-pmid 20186320?><pub-id pub-id-type="pmid">20186320</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref055">
+        <label>55</label>
+        <mixed-citation publication-type="journal"><name><surname>Muttucumaru</surname><given-names>N</given-names></name>, <name><surname>Halford</surname><given-names>NG</given-names></name>, <name><surname>Elmore</surname><given-names>JS</given-names></name>, <name><surname>Dodson</surname><given-names>AT</given-names></name>, <name><surname>Parry</surname><given-names>M</given-names></name>, <name><surname>Shewry</surname><given-names>PR</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Formation of high levels of acrylamide during the processing of flour derived from sulfate-deprived wheat</article-title>. <source>J Agric Food Chem</source>
+<volume>54</volume>: <fpage>8951</fpage>&#x2013;<lpage>8955</lpage>. <?supplied-pmid 17090146?><pub-id pub-id-type="pmid">17090146</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref056">
+        <label>56</label>
+        <mixed-citation publication-type="journal"><name><surname>Granvogl</surname><given-names>M</given-names></name>, <name><surname>Wieser</surname><given-names>H</given-names></name>, <name><surname>Koehler</surname><given-names>P</given-names></name>, <article-title>Tucher S Von, Schieberle P. Influence of sulfur fertilization on the amounts of free amino acids in wheat. Correlation with baking properties as well as with 3-aminopropionamide and acrylamide generation during baking</article-title>. <source>J Agric Food Chem</source>. <year>2007</year>; <volume>55</volume>: <fpage>4271</fpage>&#x2013;<lpage>4277</lpage>. <?supplied-pmid 17455956?><pub-id pub-id-type="pmid">17455956</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref057">
+        <label>57</label>
+        <mixed-citation publication-type="journal"><name><surname>Albrecht Weber</surname><given-names>E</given-names></name>, <name><surname>Koller</surname><given-names>W-D</given-names></name>, <name><surname>Graeff</surname><given-names>S</given-names></name>, <name><surname>Hermann</surname><given-names>W</given-names></name>, <name><surname>Merkt</surname><given-names>N</given-names></name>, <name><surname>Claupein</surname><given-names>W</given-names></name>. <article-title>Impact of different nitrogen fertilizers and an additional sulfur supply on grain yield, quality, and the potential of acrylamide formation in winter wheat</article-title>. <source>J Plant Nutr Soil Sci</source>. <year>2008</year>; <volume>171</volume>: <fpage>643</fpage>&#x2013;<lpage>655</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref058">
+        <label>58</label>
+        <mixed-citation publication-type="journal"><name><surname>Tea</surname><given-names>I</given-names></name>, <name><surname>Genter</surname><given-names>T</given-names></name>, <name><surname>Violleau</surname><given-names>F</given-names></name>, <name><surname>Kleiber</surname><given-names>D</given-names></name>. <article-title>Changes in the glutathione thiol-disulfide status in wheat grain by foliar sulphur fertilization: consequences for the rheological properties of dough</article-title>. <source>J Cereal Sci</source>. <year>2005</year>; <volume>41</volume>: <fpage>305</fpage>&#x2013;<lpage>315</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref059">
+        <label>59</label>
+        <mixed-citation publication-type="journal"><name><surname>Reinbold</surname><given-names>J</given-names></name>, <name><surname>Rychlik</surname><given-names>M</given-names></name>, <name><surname>Asam</surname><given-names>S</given-names></name>, <name><surname>Wieser</surname><given-names>H</given-names></name>, <name><surname>Koehler</surname><given-names>P</given-names></name>. <article-title>Concentrations of total glutathione and cysteine in wheat flour as affected by sulfur deficiency and correlation to quality parameters</article-title>. <source>J Agric Food Chem</source>. <year>2008</year><volume>56</volume>: <fpage>6844</fpage>&#x2013;<lpage>6850</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/jf800880n">10.1021/jf800880n</ext-link></comment><?supplied-pmid 18656940?><pub-id pub-id-type="pmid">18656940</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref060">
+        <label>60</label>
+        <mixed-citation publication-type="journal"><name><surname>Z&#xF6;rb</surname><given-names>C</given-names></name>, <name><surname>Steinfurth</surname><given-names>D</given-names></name>, <name><surname>Seling</surname><given-names>S</given-names></name>, <name><surname>Langenk&#xE4;mper</surname><given-names>G</given-names></name>, <name><surname>Koehler</surname><given-names>P</given-names></name>, <name><surname>Wieser</surname><given-names>H</given-names></name>, <etal>et al</etal><article-title>Quantitative protein composition and baking quality of winter wheat as affected by late sulfur fertilization</article-title>. <source>J Agric Food Chem</source>. <year>2009</year>; <volume>57</volume>: <fpage>3877</fpage>&#x2013;<lpage>3885</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/jf8038988">10.1021/jf8038988</ext-link></comment><?supplied-pmid 19326868?><pub-id pub-id-type="pmid">19326868</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref061">
+        <label>61</label>
+        <mixed-citation publication-type="journal"><name><surname>Heyndrickx</surname><given-names>KS</given-names></name>, <name><surname>Vandepoele</surname><given-names>K</given-names></name>. <article-title>Systematic identification of functional plant modules through the integration of complementary data sources</article-title>. <source>Plant Physiol</source>. <year>2012</year>; <volume>159</volume>: <fpage>884</fpage>&#x2013;<lpage>901</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1104/pp.112.196725">10.1104/pp.112.196725</ext-link></comment><?supplied-pmid 22589469?><pub-id pub-id-type="pmid">22589469</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref062">
+        <label>62</label>
+        <mixed-citation publication-type="journal"><name><surname>Besseau</surname><given-names>S</given-names></name>, <name><surname>Li</surname><given-names>J</given-names></name>, <name><surname>Palva</surname><given-names>ET</given-names></name>. <article-title>WRKY54 and WRKY70 co-operate as negative regulators of leaf senescence in <italic>Arabidopsis thaliana</italic></article-title>. <source>J Exp Bot</source>. <year>2012</year>; <volume>63</volume>: <fpage>2667</fpage>&#x2013;<lpage>2679</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/jxb/err450">10.1093/jxb/err450</ext-link></comment><?supplied-pmid 22268143?><pub-id pub-id-type="pmid">22268143</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0127127.ref063">
+        <label>63</label>
+        <mixed-citation publication-type="journal"><name><surname>Yanhui</surname><given-names>C</given-names></name>, <name><surname>Xiaoyuan</surname><given-names>Y</given-names></name>, <name><surname>Kun</surname><given-names>H</given-names></name>, <name><surname>Meihua</surname><given-names>L</given-names></name>, <name><surname>Jigang</surname><given-names>L</given-names></name>, <name><surname>Zhaofeng</surname><given-names>G</given-names></name>, <etal>et al</etal><article-title>The MYB transcription factor superfamily of Arabidopsis: expression analysis and phylogenetic comparison with the rice MYB family</article-title>. <source>Plant Mol Biol</source>. <year>2006</year>; <volume>60</volume>: <fpage>107</fpage>&#x2013;<lpage>124</lpage>. <?supplied-pmid 16463103?><pub-id pub-id-type="pmid">16463103</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

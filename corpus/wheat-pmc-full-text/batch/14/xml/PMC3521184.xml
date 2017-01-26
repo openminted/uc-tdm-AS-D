@@ -1,0 +1,3003 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Syst Biol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Syst Biol</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Systems Biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1752-0509</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3521184</article-id>
+      <article-id pub-id-type="publisher-id">1752-0509-6-S2-S9</article-id>
+      <article-id pub-id-type="doi">10.1186/1752-0509-6-S2-S9</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Proceedings</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Systematic Comparison of C3 and C4 Plants Based on Metabolic Network Analysis</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="A1">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Chuanli</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>chuanli@sjtu.edu.cn</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Guo</surname>
+            <given-names>Longyun</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>guolongyun@sjtu.edu.cn</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A3">
+          <name>
+            <surname>Li</surname>
+            <given-names>Yixue</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>yxli@sibs.ac.cn</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A4">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Zhuo</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>zhuowang@sjtu.edu.cn</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Department of Bioinformatics and Biostatistics, Shanghai Jiao Tong University, 800 Dongchuan Road, Shanghai, 200240, China</aff>
+      <aff id="I2"><label>2</label>Key Laboratory of Systems Biology, Shanghai Institutes of Biological Sciences, Chinese Academy of Sciences, 320 Yueyang Road,Shanghai, 200031, China</aff>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>12</day>
+        <month>12</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>6</volume>
+      <issue>Suppl 2</issue>
+      <supplement>
+        <named-content content-type="supplement-title">Proceedings of the 23rd International Conference on Genome Informatics (GIW 2012)</named-content>
+        <named-content content-type="supplement-editor">Jung-Hsien Chiang, Tien-Hao Chang and Hung-Yu Kao</named-content>
+        <named-content content-type="supplement-sponsor">This supplement has not been supported by sponsorship or other external funding.</named-content>
+      </supplement>
+      <fpage>S9</fpage>
+      <lpage>S9</lpage>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2012 Wang et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Wang et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1752-0509/6/S2/S9"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The C4 photosynthetic cycle supercharges photosynthesis by concentrating CO<sub>2 </sub>around ribulose-1,5-bisphosphate carboxylase and significantly reduces the oxygenation reaction. Therefore engineering C4 feature into C3 plants has been suggested as a feasible way to increase photosynthesis and yield of C3 plants, such as rice, wheat, and potato. To identify the possible transition from C3 to C4 plants, the systematic comparison of C3 and C4 metabolism is necessary.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We compared C3 and C4 metabolic networks using the improved constraint-based models for Arabidopsis and maize. By graph theory, we found the C3 network exhibit more dense topology structure than C4. The simulation of enzyme knockouts demonstrated that both C3 and C4 networks are very robust, especially when optimizing CO<sub>2 </sub>fixation. Moreover, C4 plant has better robustness no matter the objective function is biomass synthesis or CO<sub>2 </sub>fixation. In addition, all the essential reactions in C3 network are also essential for C4, while there are some other reactions specifically essential for C4, which validated that the basic metabolism of C4 plant is similar to C3, but C4 is more complex. We also identified more correlated reaction sets in C4, and demonstrated C4 plants have better modularity with complex mechanism coordinates the reactions and pathways than that of C3 plants. We also found the increase of both biomass production and CO<sub>2 </sub>fixation with light intensity and CO<sub>2 </sub>concentration in C4 is faster than that in C3, which reflected more efficient use of light and CO<sub>2 </sub>in C4 plant. Finally, we explored the contribution of different C4 subtypes to biomass production by setting specific constraints.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>All results are consistent with the actual situation, which indicate that Flux Balance Analysis is a powerful method to study plant metabolism at systems level. We demonstrated that in contrast to C3, C4 plants have less dense topology, higher robustness, better modularity, and higher CO<sub>2 </sub>and radiation use efficiency. In addition, preliminary analysis indicated that the rate of CO2 fixation and biomass production in PCK subtype are superior to NADP-ME and NAD-ME subtypes under enough supply of water and nitrogen.</p>
+        </sec>
+      </abstract>
+      <conference>
+        <conf-date>12-14 December 2012</conf-date>
+        <conf-name>23rd International Conference on Genome Informatics (GIW 2012)</conf-name>
+        <conf-loc>Tainan, Taiwan</conf-loc>
+      </conference>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>C4 plants such as maize, sorghum, and sugarcane, approximately have 50% higher photosynthesis efficiency than those of C3 plants such as rice, wheat, and potato [<xref ref-type="bibr" rid="B1">1</xref>]. This is because the different mechanism of carbon fixation by the two types of photosynthesis, as illustrated in Figure <xref ref-type="fig" rid="F1">1</xref>. C3 photosynthesis only uses the Calvin cycle for fixing CO<sub>2 </sub>catalyzed by ribulose-1,5-bisphosphate carboxylase (Rubisco), which takes place inside of the chloroplast in mesophyll cell. For C4 plants such as maize (NADP-ME subtype), photosynthetic activities are partitioned between mesophyll and bundle sheath cells that are anatomically and biochemically distinct. The initial carbon fixation is catalyzed by phosphoenolpyruvate carboxylase (PEPC) forming oxaloacetate (OAA) from CO<sub>2 </sub>and phosphoenolpyruvate (PEP). OAA is metabolized into malate, and then diffuses into the BS cell where it is decarboxylated to provide increased concentration of CO<sub>2 </sub>around Rubisco. Finally, the initial substrate of the C4 cycle, PEP, is regenerated in mesophyll cell by pyruvate orthophosphate dikinase (PPDK) [<xref ref-type="bibr" rid="B1">1</xref>]. The CO<sub>2 </sub>concentration mechanism suppresses the oxygenation reaction by Rubisco and the subsequent energy-wasteful photorespiratory pathway, resulting in increased photosynthetic yield and more efficient use of water and nitrogen comparing to C3 plants [<xref ref-type="bibr" rid="B2">2</xref>]. Therefore genetic engineering of C4 features into C3 plants such as rice (Oryza sativa) has the potential to increase crop productivity [<xref ref-type="bibr" rid="B3">3</xref>-<xref ref-type="bibr" rid="B5">5</xref>]. However, attempts to use these tools to engineer plant metabolism have met with limited success due to the complexity of plant metabolism. Genetic manipulations rarely cause the predicted effects, and new rate-limiting steps prevent the accumulation of some desired compounds [<xref ref-type="bibr" rid="B6">6</xref>,<xref ref-type="bibr" rid="B7">7</xref>].</p>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p><bold>A schematic diagram of C3 and C4 photosynthesis</bold>.</p>
+        </caption>
+        <graphic xlink:href="1752-0509-6-S2-S9-1"/>
+      </fig>
+      <p>In a bid to improve our understanding of plant metabolism and thereby the success rate of plant metabolic engineering, a systems-based framework to study plant metabolism is needed [<xref ref-type="bibr" rid="B7">7</xref>,<xref ref-type="bibr" rid="B8">8</xref>]. Systems biology involves an iterative process of experimentation, data integration, modeling, and generation of hypotheses [<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B10">10</xref>]. With the recent advancement of genome sequencing, several plants have complete genomic sequence and annotation, including Arabidopsis (Arabidopsis thaliana) [<xref ref-type="bibr" rid="B11">11</xref>], rice (Oryza sativa), sorghum (Sorghum bicolor) [<xref ref-type="bibr" rid="B12">12</xref>], and maize (Zea mays), which make it possible to reconstruct the genome-scale metabolic network of plants. Constraint-based model, also called Flux Balance Analysis (FBA), is a useful method to analyze large-scale metabolic network without requiring detail kinetic parameters. In FBA, flux states are predicted which are optimal with regard to an assumed cellular objective such as maximizing biomass yield [<xref ref-type="bibr" rid="B13">13</xref>-<xref ref-type="bibr" rid="B16">16</xref>]. For microbial organisms, FBA has been successful in predicting <italic>in vivo </italic>maximal growth rate, substrate preference and the requirement for particular biochemical reactions for cellular growth [<xref ref-type="bibr" rid="B17">17</xref>]. For plants, highly compartmentalized stoichiometric models have been developed for barley seeds [<xref ref-type="bibr" rid="B18">18</xref>] and Chlamydomonas [<xref ref-type="bibr" rid="B14">14</xref>], especially several models have been reported for Arabidopsis [<xref ref-type="bibr" rid="B19">19</xref>-<xref ref-type="bibr" rid="B22">22</xref>]. In addition, the analysis of metabolic network for photosynthetic bacteria has also been conducted, such as Synechocystis [<xref ref-type="bibr" rid="B23">23</xref>] and purple nonsulfur bacteria [<xref ref-type="bibr" rid="B24">24</xref>].</p>
+      <p>The genome scale metabolism models of C3 plant Arabidopsis [<xref ref-type="bibr" rid="B19">19</xref>] and C4 plant [<xref ref-type="bibr" rid="B25">25</xref>] have been constructed, but no comparative analysis between them. In this study, we improved the two models, AraGEM and C4GEM, by setting ratio of carboxylation and oxygenation by Rubisco, and compared the differences of network structure and metabolic flux to elucidate the evolutionary significance. We explored the effects of enzyme knockouts on photosynthesis and biomass synthesis, and compared the contribution of different C4 subtypes to biomass production. In addition, we revealed the different response to environment conditions in C3 and C4 plants. The system flow of our analysis is shown in Figure <xref ref-type="fig" rid="F2">2</xref>. This study will shed light on the metabolism changes from C3 to C4 at systems level, which is important for feasible engineering of C3 to C4 plants.</p>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p><bold>System flow of the comparison between C3 and C4 metabolic networks</bold>.</p>
+        </caption>
+        <graphic xlink:href="1752-0509-6-S2-S9-2"/>
+      </fig>
+    </sec>
+    <sec>
+      <title>Results and Discussion</title>
+      <sec>
+        <title>Topological characteristics of C3 and C4 metabolic networks</title>
+        <p>The metabolism model of Arabidopsis AraGEM includes 1498 unique reactions, 1765 metabolites, 83 inter-organelle transporters, and 18 inter-cellular transporters [<xref ref-type="bibr" rid="B19">19</xref>]. For the metabolism model of C4 plants C4GEM, there are 2377 reactions, 2886 metabolites, 177 inter-organelle transporters, and 23 external transporters [<xref ref-type="bibr" rid="B25">25</xref>]. The topological properties of AraGEM and C4GEM models were analyzed using pajek [<xref ref-type="bibr" rid="B26">26</xref>], where reactions are represented as nodes and metabolites as edges. Some important topological parameters such as average degree, betweenness centrality, average clustering coefficient and distance were compared between these two models, as shown in Table <xref ref-type="table" rid="T1">1</xref>.The results demonstrated that the AraGEM has a more dense structure than C4GEM, because C3 plant is single-cell, while C4 plant consists of mesophyll cell and bundle sheath cell, the connections between two-cells are not as close as single-cell. Then we extracted the primary metabolism from C3 and C4 networks, including Calvin cycle, photorespiration, TCA cycle, nitrogen metabolism, sucrose and starch metabolism, and some major amino acid metabolism pathways. Using NET-SYNTHESIS [<xref ref-type="bibr" rid="B27">27</xref>], we calculated the redundancy of primary metabolic network of C3 and C4, which is 0.7175 and 0.7606 respectively. It means C4 network is more redundant so that C4 plant could be more robust to gene mutation or environment changes.</p>
+        <table-wrap id="T1" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>Topological properties of AraGEM and C4GEM</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="center">model</th>
+                <th align="center">Average Degree</th>
+                <th align="center">Degree Centralization</th>
+                <th align="center">Average Clustering Coefficient</th>
+                <th align="center">Betweenness Centralization</th>
+                <th align="center">Average distance</th>
+                <th align="center">Maximum distance</th>
+                <th align="center">Redundancy of primary network</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">C3</td>
+                <td align="center">91</td>
+                <td align="center">0.24016</td>
+                <td align="center">0.37978</td>
+                <td align="center">0.04336</td>
+                <td align="center">2.75825</td>
+                <td align="center">11</td>
+                <td align="center">0.7175</td>
+              </tr>
+              <tr>
+                <td align="center">C4</td>
+                <td align="center">56</td>
+                <td align="center">0.11384</td>
+                <td align="center">0.40274</td>
+                <td align="center">0.15158</td>
+                <td align="center">3.58215</td>
+                <td align="center">14</td>
+                <td align="center">0.7606</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Improved models by setting the ratio of carboxylation and oxygenation by Rubisco</title>
+        <p>Rubisco enzyme (EC: 4.1.1.39) catalyzed two different reactions with CO<sub>2 </sub>and O<sub>2 </sub>respectively in photosynthesis and photorespiration:</p>
+        <p>
+          <disp-formula id="bmcM1">
+            <label>(1)</label>
+            <mml:math id="M1" name="1752-0509-6-S2-S9-i1" overflow="scroll">
+              <mml:mrow>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">RuBP</mml:mtext>
+                </mml:mstyle>
+                <mml:mo class="MathClass-bin">+</mml:mo>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">C</mml:mtext>
+                </mml:mstyle>
+                <mml:msub>
+                  <mml:mrow>
+                    <mml:mstyle class="text">
+                      <mml:mtext class="textsf" mathvariant="sans-serif">O</mml:mtext>
+                    </mml:mstyle>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mstyle class="text">
+                      <mml:mtext class="textsf" mathvariant="sans-serif">2</mml:mtext>
+                    </mml:mstyle>
+                  </mml:mrow>
+                </mml:msub>
+                <mml:mo class="MathClass-bin">+</mml:mo>
+                <mml:msub>
+                  <mml:mrow>
+                    <mml:mstyle class="text">
+                      <mml:mtext class="textsf" mathvariant="sans-serif">H</mml:mtext>
+                    </mml:mstyle>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                  </mml:mrow>
+                </mml:msub>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">O&#xA0;</mml:mtext>
+                </mml:mstyle>
+                <mml:mo class="MathClass-bin">-</mml:mo>
+                <mml:mo class="MathClass-rel">&gt;</mml:mo>
+                <mml:mn>2</mml:mn>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">PGA</mml:mtext>
+                </mml:mstyle>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM2">
+            <label>(2)</label>
+            <mml:math id="M2" name="1752-0509-6-S2-S9-i2" overflow="scroll">
+              <mml:mrow>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">RuBP</mml:mtext>
+                </mml:mstyle>
+                <mml:mo class="MathClass-bin">+</mml:mo>
+                <mml:msub>
+                  <mml:mrow>
+                    <mml:mstyle class="text">
+                      <mml:mtext class="textsf" mathvariant="sans-serif">O</mml:mtext>
+                    </mml:mstyle>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mstyle class="text">
+                      <mml:mtext class="textsf" mathvariant="sans-serif">2</mml:mtext>
+                    </mml:mstyle>
+                  </mml:mrow>
+                </mml:msub>
+                <mml:mo class="MathClass-bin">-</mml:mo>
+                <mml:mo class="MathClass-rel">&gt;</mml:mo>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">PGA</mml:mtext>
+                </mml:mstyle>
+                <mml:mo class="MathClass-bin">+</mml:mo>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">PGCA</mml:mtext>
+                </mml:mstyle>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>There is constant ratio between rate of carboxylation and oxygenation under specific partial pressure of CO<sub>2 </sub>and O<sub>2 </sub>in environment [<xref ref-type="bibr" rid="B28">28</xref>]. Therefore, it is hard to accurately simulate the flux change under different CO<sub>2 </sub>concentration without constraints on rate of the two reactions by Rubisco, which is just the limitation of AraGEM and C4GEM. Here we improved the two models by combining the two reactions into one reaction:</p>
+        <p>
+          <disp-formula id="bmcM3">
+            <label>(3)</label>
+            <mml:math id="M3" name="1752-0509-6-S2-S9-i3" overflow="scroll">
+              <mml:mrow>
+                <mml:mrow>
+                  <mml:mo class="MathClass-open">(</mml:mo>
+                  <mml:mrow>
+                    <mml:mi>r</mml:mi>
+                    <mml:mo class="MathClass-bin">+</mml:mo>
+                    <mml:mn>1</mml:mn>
+                  </mml:mrow>
+                  <mml:mo class="MathClass-close">)</mml:mo>
+                </mml:mrow>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">RuBP</mml:mtext>
+                </mml:mstyle>
+                <mml:mo class="MathClass-bin">+</mml:mo>
+                <mml:mi>r</mml:mi>
+                <mml:mspace class="thinspace" width="0.3em"/>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">C</mml:mtext>
+                </mml:mstyle>
+                <mml:msub>
+                  <mml:mrow>
+                    <mml:mstyle class="text">
+                      <mml:mtext class="textsf" mathvariant="sans-serif">O</mml:mtext>
+                    </mml:mstyle>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                  </mml:mrow>
+                </mml:msub>
+                <mml:mo class="MathClass-bin">+</mml:mo>
+                <mml:mi>r</mml:mi>
+                <mml:mspace class="thinspace" width="0.3em"/>
+                <mml:msub>
+                  <mml:mrow>
+                    <mml:mstyle class="text">
+                      <mml:mtext class="textsf" mathvariant="sans-serif">H</mml:mtext>
+                    </mml:mstyle>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                  </mml:mrow>
+                </mml:msub>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">O</mml:mtext>
+                </mml:mstyle>
+                <mml:mo class="MathClass-bin">+</mml:mo>
+                <mml:msub>
+                  <mml:mrow>
+                    <mml:mstyle class="text">
+                      <mml:mtext class="textsf" mathvariant="sans-serif">O</mml:mtext>
+                    </mml:mstyle>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                  </mml:mrow>
+                </mml:msub>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">&#xA0;-&#xA0;&gt;&#xA0;</mml:mtext>
+                </mml:mstyle>
+                <mml:mrow>
+                  <mml:mo class="MathClass-open">(</mml:mo>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                    <mml:mi>r</mml:mi>
+                    <mml:mo class="MathClass-bin">+</mml:mo>
+                    <mml:mn>1</mml:mn>
+                  </mml:mrow>
+                  <mml:mo class="MathClass-close">)</mml:mo>
+                </mml:mrow>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">PGA</mml:mtext>
+                </mml:mstyle>
+                <mml:mo class="MathClass-bin">+</mml:mo>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">PGCA</mml:mtext>
+                </mml:mstyle>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>The ratio <italic>r </italic>between carboxylation and oxygenation under different CO<sub>2 </sub>concentration in C3 and C4 model is shown in Table <xref ref-type="table" rid="T2">2</xref>. The detail calculation of <italic>r </italic>is in the Methods section.</p>
+        <table-wrap id="T2" position="float">
+          <label>Table 2</label>
+          <caption>
+            <p>The ratio r between carboxylation and oxygenation under different CO<sub>2 </sub>concentration in C3 and C4 model</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="center">CO<sub>2 </sub>(&#x3BC;bar) in the air</th>
+                <th align="center"><italic>r </italic>in C3</th>
+                <th align="center"><italic>r </italic>in C4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">100</td>
+                <td align="center">1.139</td>
+                <td align="center">22.2282</td>
+              </tr>
+              <tr>
+                <td align="center">380</td>
+                <td align="center">4.33</td>
+                <td align="center">70.7281</td>
+              </tr>
+              <tr>
+                <td align="center">550</td>
+                <td align="center">6.26</td>
+                <td align="center">85.9654</td>
+              </tr>
+              <tr>
+                <td align="center">800</td>
+                <td align="center">9.11</td>
+                <td align="center">87.1062</td>
+              </tr>
+              <tr>
+                <td align="center">1000</td>
+                <td align="center">11.39</td>
+                <td align="center">88.0189</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>In addition, our motivation was to compare the differences between C3 and C4 photosynthesis mechanism and their responses under different environments, therefore we set the objective function as maximization of CO<sub>2 </sub>fixation and biomass synthesis. Since in previous AraGEM and C4GEM, the objective was to minimize the use of light energy while achieving a specified growth rate, we need to reset some flux constraints according to biochemistry knowledge. For example, the CO<sub>2 </sub>leakage was blocked from bundle sheath to mesophyll cell with zero flux in C4GEM, which was not consistent with actual situation; here we adjusted the upper bound of this reaction to permit the leakage of CO<sub>2</sub>. In addition, because starch is not synthesized in mesophyll cell of C4 plants, the biomass components of C4GEM were also reset. The lower and upper bounds of flux in TCA cycle were adjusted as -50 and 50, to restrict flux of respiration in mitochondria. The detail of modified constraints in our improved models can be got from the Additional File.</p>
+      </sec>
+      <sec>
+        <title>The effects of knock-out enzymes on metabolic flux</title>
+        <p>Based on the improved C3 and C4 metabolic networks, we compared the optimal flux of biomass synthesis and CO<sub>2 </sub>fixation using FBA. When biomass synthesis is the objective function, the maximal flux of biomass is 3.661 and 4.625 mmol&#xB7;gDW<sup>-1</sup>&#xB7;hr<sup>-1 </sup>respectively in C3 and C4 networks. Similarly, when optimizing CO<sub>2 </sub>fixation, the maximal flux is 200.95 mmol&#xB7;gDW<sup>-1</sup>&#xB7;hr<sup>-1 </sup>in C3 network and 387.619 mmol&#xB7;gDW<sup>-1</sup>&#xB7;hr<sup>-1 </sup>in C4 network. It demonstrated that C4 network exhibited both higher fluxes of biomass and CO<sub>2 </sub>fixation than C3 network, which was consistent with the actual tendency. We concluded that the two genome-scale metabolic networks could explain actual situations and be compared for understanding the similarities and differences of C3 and C4 plants.</p>
+        <p>Next, we evaluated the effects of enzyme knockouts on flux of CO<sub>2 </sub>fixation and biomass. When one enzyme was knockout, its corresponding reactions would be deleted, which resulted in changes of the optimal flux of biomass or CO<sub>2 </sub>fixation. The objective results from the simulation were classified as unchanged objective (ratio = 1), reduced objective (ratio &#x2208; (0, 1)) and no objective (ratio = 0). The effects of single reaction deletion on maximal flux of biomass in C3 and C4 network are shown in Table <xref ref-type="table" rid="T3">3</xref>. More than 85% reactions have no effects on the maximal biomass of C3 and C4 network when being knocked-out, so we concluded that the two networks have amazing robustness. Almost 10% of the reactions would result in zero biomass in C3 and C4 networks, which include some important transporters. The single deletion of important reactions or enzymes such as phosphoribulokinase (PRK, EC: 2.7.1.19) and light reactions can result in no biomass, which is consistent with the real characteristics of plants [<xref ref-type="bibr" rid="B29">29</xref>].</p>
+        <table-wrap id="T3" position="float">
+          <label>Table 3</label>
+          <caption>
+            <p>The effects of knockout reactions on maximal flux of biomass</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="center">Ratio of objective flux</th>
+                <th align="center" colspan="2">C3 reactions</th>
+                <th align="center" colspan="2">C4 reactions</th>
+              </tr>
+              <tr>
+                <th colspan="1"/>
+                <th colspan="4">
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th/>
+                <th align="center">Number</th>
+                <th align="center">Percentage</th>
+                <th align="center">Number</th>
+                <th align="center">Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">Ratio &#x2248;0</td>
+                <td align="center">169</td>
+                <td align="center">10.58%</td>
+                <td align="center">236</td>
+                <td align="center">9.16%</td>
+              </tr>
+              <tr>
+                <td align="center">0&lt;Ratio&lt;0.90</td>
+                <td align="center">14</td>
+                <td align="center">0.88%</td>
+                <td align="center">6</td>
+                <td align="center">0.23%</td>
+              </tr>
+              <tr>
+                <td align="center">0.90&lt;Ratio&lt;1</td>
+                <td align="center">37</td>
+                <td align="center">2.32%</td>
+                <td align="center">78</td>
+                <td align="center">3.03%</td>
+              </tr>
+              <tr>
+                <td align="center">Ratio = 1</td>
+                <td align="center">1378</td>
+                <td align="center">86.23%</td>
+                <td align="center">2256</td>
+                <td align="center">87.58%</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>The effects of single reaction deletion on C3 and C4 networks when objective function is CO<sub>2 </sub>fixation are shown in Table <xref ref-type="table" rid="T4">4</xref> which is similar with Table <xref ref-type="table" rid="T3">3</xref>. More than 96% reactions have no influence on the maximal flux of CO<sub>2 </sub>fixation when being deleted in C3 and C4 networks. We concluded that more reactions have no influence on the maximal flux of CO<sub>2 </sub>fixation than biomass. Since biomass synthesis includes many components which deal with more than one reaction, their deletion will affect the flux of biomass synthesis. In addition, it is obvious that C4 plants exhibit much better robustness than C3 plants, since higher percentage of enzyme knockouts result no change on the objective flux and lower percentage result in zero flux. Moreover, we found all the essential reactions in C3 network are also essential for C4, while there are some other reactions specifically essential for C4. This result proved that the basic metabolism of C4 plants was similar to C3, but C4 became more complex during long period of evolution.</p>
+        <table-wrap id="T4" position="float">
+          <label>Table 4</label>
+          <caption>
+            <p>The effects of knockout reactions on maximal flux of CO<sub>2 </sub>fixation</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="center">Ratio of objective flux</th>
+                <th align="center" colspan="2">C3 reactions</th>
+                <th align="center" colspan="2">TC4 reactions</th>
+              </tr>
+              <tr>
+                <th colspan="1"/>
+                <th colspan="4">
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th/>
+                <th align="center">Number</th>
+                <th align="center">Percentage</th>
+                <th align="center">Number</th>
+                <th align="center">Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">Ratio &#x2248;0</td>
+                <td align="center">16</td>
+                <td align="center">1.00%</td>
+                <td align="center">19</td>
+                <td align="center">0.74%</td>
+              </tr>
+              <tr>
+                <td align="center">0&lt;Ratio&lt;0.90</td>
+                <td align="center">26</td>
+                <td align="center">1.63%</td>
+                <td align="center">25</td>
+                <td align="center">0.97%</td>
+              </tr>
+              <tr>
+                <td align="center">0.90&lt;Ratio&lt;1</td>
+                <td align="center">18</td>
+                <td align="center">1.13%</td>
+                <td align="center">16</td>
+                <td align="center">0.62%</td>
+              </tr>
+              <tr>
+                <td align="center">Ratio = 1</td>
+                <td align="center">1538</td>
+                <td align="center">96.25%</td>
+                <td align="center">2516</td>
+                <td align="center">97.67%</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>We found there are some gaps in C4GEM when checking the xylose pathway in the two networks. In AraGEM, there are two pathways to produce xylose, so knockout of UDP-glucose 6-dehydrogenase (UDPGDH, EC:1.1.1.22) will not influence on the biomass synthesis. But in C4GEM, only UDPGDH was responsible for xylose production, the other alternative pathway does not work because of two missing enzymes, xylose isomerase (EC: 5.3.1.5) and xylulokinase (EC:2.7.1.17). We searched the GeneBank database [<xref ref-type="bibr" rid="B30">30</xref>] to find that genes (GeneID: 100194128, 100194385) encoding xylose isomerase and genes (GeneID:100282641, 100382670) encoding xylulokinase. So we complemented the xylose pathway in C4GEM, thus the biased results can be avoided.</p>
+        <p>Next we investigated the effects of particular key enzymes on photosynthesis and biomass synthesis in C3 and C4 plants. Table <xref ref-type="table" rid="T5">5</xref> illustrated these enzymes, their functions and the ratio of objective flux after deletion. '0' means the knocked-out enzyme resulting no flux of biomass or CO<sub>2 </sub>fixation, while '1' means there is no influence on maximal flux of biomass or CO<sub>2 </sub>fixation. Knockouts of enzymes in Calvin cycle have lethal effects on both C3 and C4 networks. For example, the central enzyme of Calvin cycle, Rubisco (EC: 4.1.1.39) catalyzes the fixation of both CO<sub>2 </sub>and O<sub>2</sub>. Its deletion results in zero flux of CO<sub>2 </sub>fixation and biomass, which accords with the fact that photosynthesis and plant growth is positively correlated with Rubisco activity [<xref ref-type="bibr" rid="B31">31</xref>,<xref ref-type="bibr" rid="B32">32</xref>]. When deleting transaldolase (TAL, EC: 2.2.1.2) in pentose phosphate pathway and glycolate oxidase (LOX, EC: 1.1.3.15) in glyoxylate and dicarboxylate metabolism pathway, the CO2 fixation and biomass will also reduce to zero flux in these two plants [<xref ref-type="bibr" rid="B33">33</xref>,<xref ref-type="bibr" rid="B34">34</xref>]. Aconitases (EC: 4.2.1.3) is an important enzyme in TCA cycle, its knockout reduced the flux of CO<sub>2 </sub>fixation, and completely no flux of biomass in both C3 and C4 networks [<xref ref-type="bibr" rid="B35">35</xref>].</p>
+        <table-wrap id="T5" position="float">
+          <label>Table 5</label>
+          <caption>
+            <p>The effects of key enzyme knockouts on optimal flux of biomass and CO2 fixation</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="left">Enzyme</th>
+                <th align="left">EC</th>
+                <th align="left">Pathway</th>
+                <th align="left" colspan="2">Ratio of biomass</th>
+                <th align="left" colspan="2">Ratio of CO<sub>2 </sub>fixation</th>
+              </tr>
+              <tr>
+                <th colspan="3"/>
+                <th colspan="4">
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th/>
+                <th/>
+                <th/>
+                <th align="center">C3</th>
+                <th align="center">C4</th>
+                <th align="center">C3</th>
+                <th align="center">C4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">Rubisco</td>
+                <td align="left">4.1.1.39</td>
+                <td align="left">Calvin cycle</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+              </tr>
+              <tr>
+                <td align="left">RPI</td>
+                <td align="left">5.3.1.6</td>
+                <td align="left">Calvin cycle</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+              </tr>
+              <tr>
+                <td align="left">Prk</td>
+                <td align="left">2.7.1.19</td>
+                <td align="left">Calvin cycle</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+              </tr>
+              <tr>
+                <td align="left">RPE</td>
+                <td align="left">5.1.3.1</td>
+                <td align="left">Calvin cycle</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+              </tr>
+              <tr>
+                <td align="left">TKT</td>
+                <td align="left">2.2.1.1</td>
+                <td align="left">Calvin cycle</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+              </tr>
+              <tr>
+                <td align="left">TAL</td>
+                <td align="left">2.2.1.2</td>
+                <td align="left">Pentose phosphate pathway</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+              </tr>
+              <tr>
+                <td align="left">LOX</td>
+                <td align="left">1.1.3.15</td>
+                <td align="left">Glyoxylate and dicarboxylate metabolism</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+              </tr>
+              <tr>
+                <td align="left">Aconitases</td>
+                <td align="left">4.2.1.3</td>
+                <td align="left">TCA cycle</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">0.89</td>
+                <td align="center">0.82</td>
+              </tr>
+              <tr>
+                <td align="left">PGLP</td>
+                <td align="left">3.1.3.18</td>
+                <td align="left">Photorespiratory</td>
+                <td align="center">1</td>
+                <td align="center">1</td>
+                <td align="center">1</td>
+                <td align="center">1</td>
+              </tr>
+              <tr>
+                <td align="left">SPP</td>
+                <td align="left">3.1.3.24</td>
+                <td align="left">Sucrose biosynthesis</td>
+                <td align="center">1</td>
+                <td align="center">1</td>
+                <td align="center">1</td>
+                <td align="center">1</td>
+              </tr>
+              <tr>
+                <td align="left">Amylase isomerase</td>
+                <td align="left">2.4.1.18</td>
+                <td align="left">Transitory starch biosynthesis</td>
+                <td align="center">0</td>
+                <td align="center">0</td>
+                <td align="center">1</td>
+                <td align="center">1</td>
+              </tr>
+              <tr>
+                <td align="left">PEPC</td>
+                <td align="left">4.1.1.31</td>
+                <td align="left">C4 photosynthesis</td>
+                <td align="center">1</td>
+                <td align="center">0</td>
+                <td align="center">1</td>
+                <td align="center">1</td>
+              </tr>
+              <tr>
+                <td align="left">PPDK</td>
+                <td align="left">2.7.9.1</td>
+                <td align="left">C4 photosynthesis</td>
+                <td align="center">1</td>
+                <td align="center">0.96</td>
+                <td align="center">1</td>
+                <td align="center">0.98</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>The knockout of hosphoglycolate phosphatase (PGLP, EC: 3.1.3.18) has no effect on the CO<sub>2 </sub>fixation and biomass synthesis, because it catalyzes the first reaction of the photorespiratory C2 cycle [<xref ref-type="bibr" rid="B36">36</xref>]. Sucrose-6(F)-phosphate phosphohydrolase (SPP, EC: 3.1.3.24) catalyzes the final step in the pathway of sucrose biosynthesis [<xref ref-type="bibr" rid="B37">37</xref>]. Its deletion has no influence, because sucrose synthesis locates in cytosol and has no direct connection with photosynthesis. Amylase isomerase (EC: 2.4.1.18) is responsible for the synthesis of transitory starch in chloroplast, which is the critical reaction for the normal biosynthesis of storage starch, so its deletion has lethal effect on biomass flux for both C3 and C4 plants [<xref ref-type="bibr" rid="B38">38</xref>].</p>
+        <p>In C4 plants, Phosphoenolpyruvate carboxylase (PEPC, EC: 4.1.1.31) notably performs the initial fixation of atmospheric CO<sub>2 </sub>in photosynthesis, which catalyzes the carboxylation of phosphoenolpyruvate (PEP) in a reaction that yields oxaloacetate and inorganic phosphate [<xref ref-type="bibr" rid="B39">39</xref>]. Therefore, knockout of PEPC resulted in zero flux of biomass, which validates its crucial role in C4 photosynthesis. Pyruvate phosphate dikinase (PPDK, EC: 2.7.9.1) catalyzes the conversion of the 3-carbon compound pyruvate into phosphoenolpyruvate. Its deletion reduced the flux of CO<sub>2 </sub>fixation and biomass, which is consistent with experiment results that inhibition of PPDK significantly hinders C4 plant growth [<xref ref-type="bibr" rid="B40">40</xref>]. In comparison, these two enzymes have no effect on CO<sub>2 </sub>fixation and biomass in C3 network.</p>
+      </sec>
+      <sec>
+        <title>Correlated reaction sets identified by Sampling</title>
+        <p>There are some reactions co-utilized in precise stoichiometric ratios and exhibit correlated flux in the metabolic network, which called correlated reaction sets. We used the uniform random sampling method to determine dependencies between reactions which can be further used to define modules of reactions [See Methods section]. The simplified model of the C3 network has 494 reactions, 483 metabolites and narrow range on constraints, which can be separated into 65 modules and the largest module consists of 92 reactions. The simplified model of the C4 network has 826 reactions, 806 metabolites and narrow range on constraints, which can be separated into 113 modules and the largest module consists of 169 reactions. There are more correlated reaction sets in C4 than C3 network.</p>
+        <p>The fluxes of reactions in the same module exhibit linear correlation. We found the reactions in Calvin cycle are correlated in both C3 and C4 network, as illustrated in Figure <xref ref-type="fig" rid="F3">3</xref> and <xref ref-type="fig" rid="F4">4</xref> respectively. However, there are some reactions from different pathways also exhibit linear correlation in C4 network, but they are not correlated in C3 model. For example, the reactions from Sugar metabolism, Stibene, counarine and lignin biosynthesis, and Coumarine and phenylpropanoid biosynthesis pathways are significantly correlated in C4 (shown in Figure <xref ref-type="fig" rid="F5">5</xref>), but no correlation among them in C3 (shown in Figure <xref ref-type="fig" rid="F6">6</xref>). It demonstrated that C4 plants have better modularity with complex mechanism coordinates the reactions and pathways than that of C3 plants.</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Correlated reaction sets of Calvin cycle in C3 network</bold>.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-S2-S9-3"/>
+        </fig>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>Correlated reaction sets of Calvin cycle in C4 network</bold>.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-S2-S9-4"/>
+        </fig>
+        <fig id="F5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p><bold>The reactions from several pathways are correlated in C4 network</bold>.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-S2-S9-5"/>
+        </fig>
+        <fig id="F6" position="float">
+          <label>Figure 6</label>
+          <caption>
+            <p><bold>The reactions from several pathways same with C4 are not correlated in C3 network</bold>.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-S2-S9-6"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Comparison of response to different environment conditions</title>
+        <p>The biomass and CO<sub>2 </sub>fixation of C3 and C4 models were simulated under different light intensity, as shown in Figure <xref ref-type="fig" rid="F7">7</xref> and <xref ref-type="fig" rid="F8">8</xref>. The C3 model (red in Figure <xref ref-type="fig" rid="F7">7</xref>) and C4 model (blue in Figure <xref ref-type="fig" rid="F7">7</xref>) presented linear relationship between biomass and light intensity when light intensity is less than 1500. Then with the light intensity increasing, the biomass would be unchanged in C4 model and still increased in C3 model. The C3 model (red in Figure <xref ref-type="fig" rid="F8">8</xref>) and C4 model (blue in Figure <xref ref-type="fig" rid="F8">8</xref>) also presented linear relationship between CO<sub>2 </sub>fixation and light intensity when light intensity is less than 1600. Then the CO<sub>2 </sub>fixation was almost keeping unchanged. The increase of both biomass and CO<sub>2 </sub>fixation with light intensity in C4 are faster than that in C3, which reflect more efficient use of solar energy in C4 plants [<xref ref-type="bibr" rid="B41">41</xref>]. In addition, we simulated the flux of biomass synthesis and CO<sub>2 </sub>fixation under different CO<sub>2 </sub>concentration, as shown in Figure <xref ref-type="fig" rid="F9">9</xref> and <xref ref-type="fig" rid="F10">10</xref>. The more CO<sub>2 </sub>concentration increases, the more flux of biomass and CO<sub>2 </sub>fixation, and the increase gradually change slowly until to steady state. The simulated curve was consistent with experiment <italic>A-Ci </italic>curve [<xref ref-type="bibr" rid="B42">42</xref>]. We found that the increase of both biomass and CO<sub>2 </sub>fixation with CO<sub>2 </sub>concentration in C4 are faster than that in C3, which reflect more efficient use of CO<sub>2 </sub>in C4 plants.</p>
+        <fig id="F7" position="float">
+          <label>Figure 7</label>
+          <caption>
+            <p><bold>The effect of light intensity on biomass synthesis in C3 and C4 model</bold>.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-S2-S9-7"/>
+        </fig>
+        <fig id="F8" position="float">
+          <label>Figure 8</label>
+          <caption>
+            <p><bold>The effect of light intensity on CO<sub>2 </sub>fixation in C3 and C4 model</bold>.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-S2-S9-8"/>
+        </fig>
+        <fig id="F9" position="float">
+          <label>Figure 9</label>
+          <caption>
+            <p><bold>The effect of CO<sub>2 </sub>concentration on biomass synthesis in C3 and C4 model</bold>.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-S2-S9-9"/>
+        </fig>
+        <fig id="F10" position="float">
+          <label>Figure 10</label>
+          <caption>
+            <p><bold>The effect of CO<sub>2 </sub>concentration on CO<sub>2 </sub>fixation in C3 and C4 model</bold>.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-6-S2-S9-10"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Contribution of different C4 subtypes to biomass production</title>
+        <p>C4 plants can be classified to three subtypes according to decarboxylation modes: NADP-malic enzyme (NADP-ME), NAD-malic enzyme (NAD-ME) and PEP carboxykinase (PCK). We explored the influence of each subtype on biomass synthesis and CO2 fixation, by blocking the flux of other two enzymes and giving enough supply of water and nitrogen. As shown in Table <xref ref-type="table" rid="T6">6</xref>, for each specific subtype, only the corresponding enzyme has flux and the other two enzymes have zero flux. There are little differences on biomass in the three subtypes. In comparison, the flux of biomass and CO<sub>2 </sub>fixation are maximal in PCK subtype. Moreover, when all the three subtypes are assumed to be active in one metabolism system, the PCK subtype is superior to be used for CO2 decarboxylation. These results are consistent with Fravolini's experiments that photosynthetic performance and above-ground biomass production of B.curtipendula, (PCK subtype) are greater than NADP-ME and NAD-ME types [<xref ref-type="bibr" rid="B43">43</xref>]. However, the photosynthesis and biomass of different subtypes also depend on environment conditions, including water and nitrogen supply [<xref ref-type="bibr" rid="B44">44</xref>,<xref ref-type="bibr" rid="B45">45</xref>]. For example, some species of NADP-ME type show higher rates of photosynthetic and biomass production under low nitrogen availability [<xref ref-type="bibr" rid="B46">46</xref>]. Therefore, to clearly elucidate the superiority of C4 subtypes, further design and analysis under multi-factorial combination of environment conditions are required.</p>
+        <table-wrap id="T6" position="float">
+          <label>Table 6</label>
+          <caption>
+            <p>The influences of different C4 subtypes on flux of biomass synthesis and CO<sub>2 </sub>fixation</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="left">C4 subtypes</th>
+                <th align="left">NADP-ME</th>
+                <th align="left">NAD-ME</th>
+                <th align="left">PCK</th>
+                <th align="left">Three Subtypes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">
+                  <bold>Flux of reactions (mmol&#xB7;gDW<sup>-1</sup>&#xB7;hr<sup>-1</sup>)</bold>
+                </td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td align="left">Biomass synthesis</td>
+                <td align="left">4.52</td>
+                <td align="left">4.49</td>
+                <td align="left">4.75</td>
+                <td align="left">4.90</td>
+              </tr>
+              <tr>
+                <td align="left">CO2 fixation</td>
+                <td align="left">92.20</td>
+                <td align="left">91.59</td>
+                <td align="left">96.94</td>
+                <td align="left">100.01</td>
+              </tr>
+              <tr>
+                <td align="left">R00216 (NADP-ME)</td>
+                <td align="left">79.63</td>
+                <td align="left">0.00</td>
+                <td align="left">0.00</td>
+                <td align="left">0.00</td>
+              </tr>
+              <tr>
+                <td align="left">R00214(NAD-ME)</td>
+                <td align="left">0.00</td>
+                <td align="left">79.07</td>
+                <td align="left">0.00</td>
+                <td align="left">0.00</td>
+              </tr>
+              <tr>
+                <td align="left">R00341 (PCK)</td>
+                <td align="left">0.00</td>
+                <td align="left">0.00</td>
+                <td align="left">83.98</td>
+                <td align="left">86.79</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>There is possibility to engineer C4 photosynthesis into C3 plants, because all C4 key enzymes are also present in C3 plants, although the expression levels are much lower than that in C4 species [<xref ref-type="bibr" rid="B1">1</xref>]. However it is an enormous challenge. To realize the transition from C3 to C4, systems biology will play a critical role in many aspects, including identification of key regulatory elements controlling development of C4 features and viable routine towards C4 using constraint-based modeling approach [<xref ref-type="bibr" rid="B47">47</xref>]. In this study, we improved the current metabolism models AraGEM and C4GEM by setting the ratio of carboxylation and oxygenation by Rubisco, and then systematically compared the constraint-based metabolic networks of C3 and C4 plants for the first time. We found C4 plants have less dense topology, higher robustness, better modularity, and higher CO<sub>2 </sub>and radiation use efficiency, which provide important basis for engineering C4 photosynthesis into C3 plants. In addition, preliminary analysis indicated that the rate of CO2 fixation and biomass production in PCK subtype are superior to NADP-ME and NAD-ME subtypes under enough supply of water and nitrogen. All results are consistent with the actual situation, which indicate that Flux Balance Analysis is a useful method to analyze and compare large-scale metabolism systems of plants.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Determination of the ratio between carboxylation and oxygenation</title>
+        <p>We improved AraGEM and C4GEM by setting the ratio ofcarboxylation and oxygenation by Rubsico, which has not been conducted in any plant metabolic system. For C3 plants, the ratio <italic>r </italic>between carboxylation and oxygenation under specific CO<sub>2 </sub>and O<sub>2 </sub>concentration can be calculated by the following (4-6).</p>
+        <p>
+          <disp-formula id="bmcM4">
+            <label>(4)</label>
+            <mml:math id="M4" name="1752-0509-6-S2-S9-i4" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>V</mml:mi>
+                <mml:mi>c</mml:mi>
+                <mml:msub>
+                  <mml:mrow>
+                    <mml:mi>o</mml:mi>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                  </mml:mrow>
+                </mml:msub>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mi>c</mml:mi>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>o</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mn>2</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>c</mml:mi>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>o</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mn>2</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mo class="MathClass-bin">+</mml:mo>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>K</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>c</mml:mi>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mrow>
+                      <mml:mo class="MathClass-open">(</mml:mo>
+                      <mml:mrow>
+                        <mml:mn>1</mml:mn>
+                        <mml:mo class="MathClass-bin">+</mml:mo>
+                        <mml:mfrac>
+                          <mml:mrow>
+                            <mml:msub>
+                              <mml:mrow>
+                                <mml:mi>O</mml:mi>
+                              </mml:mrow>
+                              <mml:mrow>
+                                <mml:mn>2</mml:mn>
+                              </mml:mrow>
+                            </mml:msub>
+                          </mml:mrow>
+                          <mml:mrow>
+                            <mml:msub>
+                              <mml:mrow>
+                                <mml:mi>K</mml:mi>
+                              </mml:mrow>
+                              <mml:mrow>
+                                <mml:mi>o</mml:mi>
+                              </mml:mrow>
+                            </mml:msub>
+                          </mml:mrow>
+                        </mml:mfrac>
+                      </mml:mrow>
+                      <mml:mo class="MathClass-close">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mrow>
+                </mml:mfrac>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM5">
+            <label>(5)</label>
+            <mml:math id="M5" name="1752-0509-6-S2-S9-i5" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>V</mml:mi>
+                <mml:msub>
+                  <mml:mrow>
+                    <mml:mi>o</mml:mi>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                  </mml:mrow>
+                </mml:msub>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>O</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mn>2</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>O</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mn>2</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mo class="MathClass-bin">+</mml:mo>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>K</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>o</mml:mi>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mrow>
+                      <mml:mo class="MathClass-open">(</mml:mo>
+                      <mml:mrow>
+                        <mml:mn>1</mml:mn>
+                        <mml:mo class="MathClass-bin">+</mml:mo>
+                        <mml:mfrac>
+                          <mml:mrow>
+                            <mml:mi>c</mml:mi>
+                            <mml:msub>
+                              <mml:mrow>
+                                <mml:mi>o</mml:mi>
+                              </mml:mrow>
+                              <mml:mrow>
+                                <mml:mn>2</mml:mn>
+                              </mml:mrow>
+                            </mml:msub>
+                          </mml:mrow>
+                          <mml:mrow>
+                            <mml:msub>
+                              <mml:mrow>
+                                <mml:mi>K</mml:mi>
+                              </mml:mrow>
+                              <mml:mrow>
+                                <mml:mi>c</mml:mi>
+                              </mml:mrow>
+                            </mml:msub>
+                          </mml:mrow>
+                        </mml:mfrac>
+                      </mml:mrow>
+                      <mml:mo class="MathClass-close">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mrow>
+                </mml:mfrac>
+                <mml:mo class="MathClass-bin">*</mml:mo>
+                <mml:mn>0</mml:mn>
+                <mml:mi>.</mml:mi>
+                <mml:mn>21</mml:mn>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM6">
+            <label>(6)</label>
+            <mml:math id="M6" name="1752-0509-6-S2-S9-i6" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>r</mml:mi>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mi>V</mml:mi>
+                    <mml:mi>c</mml:mi>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>o</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mn>2</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>V</mml:mi>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>o</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mn>2</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                  </mml:mrow>
+                </mml:mfrac>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>Equation (5) and (6) include mechaelis constants for CO<sub>2 </sub>with <italic>K<sub>c </sub></italic>= 460&#x3BC;bar and O<sub>2 </sub>with <italic>K<sub>o </sub></italic>= 330mbar [<xref ref-type="bibr" rid="B28">28</xref>]. The O<sub>2 </sub>concentration is 210 mbar and the intercellular CO<sub>2 </sub>concentration is about 70 percent of CO<sub>2 </sub>in air, which is 380&#x3BC;bar under standard condition.</p>
+        <p>Unlike C3 plants, C4 photosynthesis requires the coordinated functioning of mesophyll and bundle sheath cells by CO<sub>2 </sub>concentrating mechanism. The ratio <italic>r </italic>of carboxylation to oxygenation can be expressed as equation (7-15) [<xref ref-type="bibr" rid="B48">48</xref>]:</p>
+        <p>
+          <disp-formula id="bmcM7">
+            <label>(7)</label>
+            <mml:math id="M7" name="1752-0509-6-S2-S9-i7" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>V</mml:mi>
+                <mml:mi>p</mml:mi>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mtext>min</mml:mtext>
+                <mml:mfenced close="}" open="{">
+                  <mml:mrow>
+                    <mml:mfrac>
+                      <mml:mrow>
+                        <mml:mi>C</mml:mi>
+                        <mml:mi>m</mml:mi>
+                        <mml:mo class="MathClass-bin">*</mml:mo>
+                        <mml:mi>V</mml:mi>
+                        <mml:mi>p</mml:mi>
+                        <mml:mtext>max</mml:mtext>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>C</mml:mi>
+                        <mml:mi>m</mml:mi>
+                        <mml:mo class="MathClass-bin">+</mml:mo>
+                        <mml:mi>K</mml:mi>
+                        <mml:mi>p</mml:mi>
+                      </mml:mrow>
+                    </mml:mfrac>
+                    <mml:mo class="MathClass-punc">,</mml:mo>
+                    <mml:mi>V</mml:mi>
+                    <mml:mi>p</mml:mi>
+                    <mml:mi>r</mml:mi>
+                  </mml:mrow>
+                </mml:mfenced>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM8">
+            <label>(8)</label>
+            <mml:math id="M8" name="1752-0509-6-S2-S9-i8" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>A</mml:mi>
+                <mml:mi>c</mml:mi>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mtext>min</mml:mtext>
+                <mml:mrow>
+                  <mml:mo class="MathClass-open">{</mml:mo>
+                  <mml:mrow>
+                    <mml:mrow>
+                      <mml:mo class="MathClass-open">(</mml:mo>
+                      <mml:mrow>
+                        <mml:mi>V</mml:mi>
+                        <mml:mi>p</mml:mi>
+                        <mml:mo class="MathClass-bin">+</mml:mo>
+                        <mml:mi>g</mml:mi>
+                        <mml:mi>s</mml:mi>
+                        <mml:mo class="MathClass-bin">*</mml:mo>
+                        <mml:mi>C</mml:mi>
+                        <mml:mi>m</mml:mi>
+                        <mml:mo class="MathClass-bin">-</mml:mo>
+                        <mml:mi>R</mml:mi>
+                        <mml:mi>m</mml:mi>
+                      </mml:mrow>
+                      <mml:mo class="MathClass-close">)</mml:mo>
+                    </mml:mrow>
+                    <mml:mo class="MathClass-punc">,</mml:mo>
+                    <mml:mrow>
+                      <mml:mo class="MathClass-open">(</mml:mo>
+                      <mml:mrow>
+                        <mml:mi>V</mml:mi>
+                        <mml:mi>c</mml:mi>
+                        <mml:mtext>max</mml:mtext>
+                        <mml:mo class="MathClass-bin">-</mml:mo>
+                        <mml:mi>R</mml:mi>
+                        <mml:mi>d</mml:mi>
+                      </mml:mrow>
+                      <mml:mo class="MathClass-close">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mrow>
+                  <mml:mo class="MathClass-close">}</mml:mo>
+                </mml:mrow>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM9">
+            <label>(9)</label>
+            <mml:math id="M9" name="1752-0509-6-S2-S9-i9" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>A</mml:mi>
+                <mml:mi>j</mml:mi>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mrow>
+                      <mml:mo class="MathClass-open">(</mml:mo>
+                      <mml:mrow>
+                        <mml:mn>1</mml:mn>
+                        <mml:mo class="MathClass-bin">-</mml:mo>
+                        <mml:mi>x</mml:mi>
+                      </mml:mrow>
+                      <mml:mo class="MathClass-close">)</mml:mo>
+                    </mml:mrow>
+                    <mml:mi>J</mml:mi>
+                    <mml:mi>t</mml:mi>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>3</mml:mn>
+                  </mml:mrow>
+                </mml:mfrac>
+                <mml:mo class="MathClass-bin">-</mml:mo>
+                <mml:mi>R</mml:mi>
+                <mml:mi>d</mml:mi>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM10">
+            <label>(10)</label>
+            <mml:math id="M10" name="1752-0509-6-S2-S9-i10" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>A</mml:mi>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mtext>min</mml:mtext>
+                <mml:mrow>
+                  <mml:mo class="MathClass-open">{</mml:mo>
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>A</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>c</mml:mi>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mo class="MathClass-punc">,</mml:mo>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>A</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>j</mml:mi>
+                      </mml:mrow>
+                    </mml:msub>
+                  </mml:mrow>
+                  <mml:mo class="MathClass-close">}</mml:mo>
+                </mml:mrow>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM11">
+            <label>(11)</label>
+            <mml:math id="M11" name="1752-0509-6-S2-S9-i11" overflow="scroll">
+              <mml:mstyle class="text">
+                <mml:mtext class="textsf" mathvariant="sans-serif">if&#xA0;</mml:mtext>
+              </mml:mstyle>
+              <mml:mi>A</mml:mi>
+              <mml:mi>c</mml:mi>
+              <mml:mo class="MathClass-rel">=</mml:mo>
+              <mml:mi>V</mml:mi>
+              <mml:mi>p</mml:mi>
+              <mml:mo class="MathClass-bin">+</mml:mo>
+              <mml:mi>g</mml:mi>
+              <mml:mi>s</mml:mi>
+              <mml:mo class="MathClass-bin">*</mml:mo>
+              <mml:mi>C</mml:mi>
+              <mml:mi>m</mml:mi>
+              <mml:mo class="MathClass-bin">-</mml:mo>
+              <mml:mi>R</mml:mi>
+              <mml:mi>m</mml:mi>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM12">
+            <label>(12)</label>
+            <mml:math id="M12" name="1752-0509-6-S2-S9-i12" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>C</mml:mi>
+                <mml:mi>s</mml:mi>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mi>&#x3B3;</mml:mi>
+                    <mml:mo class="MathClass-bin">*</mml:mo>
+                    <mml:mi>O</mml:mi>
+                    <mml:mi>s</mml:mi>
+                    <mml:mo class="MathClass-bin">+</mml:mo>
+                    <mml:mi>K</mml:mi>
+                    <mml:mi>c</mml:mi>
+                    <mml:mrow>
+                      <mml:mo class="MathClass-open">(</mml:mo>
+                      <mml:mrow>
+                        <mml:mn>1</mml:mn>
+                        <mml:mo class="MathClass-bin">+</mml:mo>
+                        <mml:mi>O</mml:mi>
+                        <mml:mi>s</mml:mi>
+                        <mml:mo class="MathClass-bin">/</mml:mo>
+                        <mml:mi>K</mml:mi>
+                        <mml:mi>o</mml:mi>
+                      </mml:mrow>
+                      <mml:mo class="MathClass-close">)</mml:mo>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mo class="MathClass-open">(</mml:mo>
+                      <mml:mrow>
+                        <mml:mrow>
+                          <mml:mo class="MathClass-open">(</mml:mo>
+                          <mml:mrow>
+                            <mml:mi>A</mml:mi>
+                            <mml:mi>c</mml:mi>
+                            <mml:mo class="MathClass-bin">+</mml:mo>
+                            <mml:mi>R</mml:mi>
+                            <mml:mi>d</mml:mi>
+                          </mml:mrow>
+                          <mml:mo class="MathClass-close">)</mml:mo>
+                        </mml:mrow>
+                        <mml:mo class="MathClass-bin">/</mml:mo>
+                        <mml:mi>V</mml:mi>
+                        <mml:mi>c</mml:mi>
+                        <mml:mtext>max</mml:mtext>
+                      </mml:mrow>
+                      <mml:mo class="MathClass-close">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>1</mml:mn>
+                    <mml:mo class="MathClass-bin">-</mml:mo>
+                    <mml:mrow>
+                      <mml:mo class="MathClass-open">(</mml:mo>
+                      <mml:mrow>
+                        <mml:mi>A</mml:mi>
+                        <mml:mi>c</mml:mi>
+                        <mml:mo class="MathClass-bin">+</mml:mo>
+                        <mml:mi>R</mml:mi>
+                        <mml:mi>d</mml:mi>
+                      </mml:mrow>
+                      <mml:mo class="MathClass-close">)</mml:mo>
+                    </mml:mrow>
+                    <mml:mo class="MathClass-bin">/</mml:mo>
+                    <mml:mi>V</mml:mi>
+                    <mml:mi>c</mml:mi>
+                    <mml:mtext>max</mml:mtext>
+                  </mml:mrow>
+                </mml:mfrac>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM13">
+            <label>(13)</label>
+            <mml:math id="M13" name="1752-0509-6-S2-S9-i13" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>r</mml:mi>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mi>V</mml:mi>
+                    <mml:mi>c</mml:mi>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>V</mml:mi>
+                    <mml:mi>o</mml:mi>
+                  </mml:mrow>
+                </mml:mfrac>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mi>C</mml:mi>
+                    <mml:mi>s</mml:mi>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                    <mml:mi>&#x3B3;</mml:mi>
+                    <mml:mo class="MathClass-bin">*</mml:mo>
+                    <mml:mi>O</mml:mi>
+                    <mml:mi>s</mml:mi>
+                  </mml:mrow>
+                </mml:mfrac>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM14">
+            <label>(14)</label>
+            <mml:math id="M14" name="1752-0509-6-S2-S9-i14" overflow="scroll">
+              <mml:mrow>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">else&#xA0;</mml:mtext>
+                </mml:mstyle>
+                <mml:mspace class="quad" width="1em"/>
+                <mml:mi>A</mml:mi>
+                <mml:mi>c</mml:mi>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">&lt;</mml:mtext>
+                </mml:mstyle>
+                <mml:mi>V</mml:mi>
+                <mml:mi>p</mml:mi>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">&#xA0;+&#xA0;</mml:mtext>
+                </mml:mstyle>
+                <mml:mi>g</mml:mi>
+                <mml:mi>s</mml:mi>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">*</mml:mtext>
+                </mml:mstyle>
+                <mml:mi>C</mml:mi>
+                <mml:mi>m</mml:mi>
+                <mml:mo class="MathClass-bin">-</mml:mo>
+                <mml:mi>R</mml:mi>
+                <mml:mi>m</mml:mi>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">&#xA0;</mml:mtext>
+                </mml:mstyle>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula id="bmcM15">
+            <label>(15)</label>
+            <mml:math id="M15" name="1752-0509-6-S2-S9-i15" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>r</mml:mi>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mi>V</mml:mi>
+                    <mml:mi>c</mml:mi>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>V</mml:mi>
+                    <mml:mi>o</mml:mi>
+                  </mml:mrow>
+                </mml:mfrac>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mi>C</mml:mi>
+                    <mml:mi>s</mml:mi>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                    <mml:mi>&#x3B3;</mml:mi>
+                    <mml:mo class="MathClass-bin">*</mml:mo>
+                    <mml:mi>O</mml:mi>
+                    <mml:mi>s</mml:mi>
+                  </mml:mrow>
+                </mml:mfrac>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mi>C</mml:mi>
+                    <mml:mi>m</mml:mi>
+                    <mml:mo class="MathClass-bin">*</mml:mo>
+                    <mml:mi>g</mml:mi>
+                    <mml:mi>s</mml:mi>
+                    <mml:mo class="MathClass-bin">+</mml:mo>
+                    <mml:mi>V</mml:mi>
+                    <mml:mi>p</mml:mi>
+                    <mml:mo class="MathClass-bin">-</mml:mo>
+                    <mml:mi>A</mml:mi>
+                    <mml:mo class="MathClass-bin">-</mml:mo>
+                    <mml:mi>R</mml:mi>
+                    <mml:mi>m</mml:mi>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mn>2</mml:mn>
+                    <mml:mi>&#x3B3;</mml:mi>
+                    <mml:mo class="MathClass-bin">*</mml:mo>
+                    <mml:mrow>
+                      <mml:mo class="MathClass-open">(</mml:mo>
+                      <mml:mrow>
+                        <mml:mfrac>
+                          <mml:mrow>
+                            <mml:mi>&#x3B1;</mml:mi>
+                            <mml:mi>A</mml:mi>
+                          </mml:mrow>
+                          <mml:mrow>
+                            <mml:mn>0</mml:mn>
+                            <mml:mi>.</mml:mi>
+                            <mml:mn>047</mml:mn>
+                          </mml:mrow>
+                        </mml:mfrac>
+                        <mml:mo class="MathClass-bin">+</mml:mo>
+                        <mml:mi>O</mml:mi>
+                        <mml:mi>m</mml:mi>
+                        <mml:mo class="MathClass-bin">*</mml:mo>
+                        <mml:mi>g</mml:mi>
+                        <mml:mi>s</mml:mi>
+                      </mml:mrow>
+                      <mml:mo class="MathClass-close">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mrow>
+                </mml:mfrac>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>Where <italic>C<sub>s </sub></italic>and <italic>C<sub>m </sub></italic>are CO<sub>2 </sub>partial pressures respectively in bundle sheath and mesophyll cells; <italic>O<sub>s </sub></italic>and <italic>O<sub>m </sub></italic>are O<sub>2 </sub>partial pressures in the two cells; <italic>V<sub>p </sub></italic>is the rate of PEP carboxylation; <italic>V<sub>pmax </sub></italic>(120&#x3BC;mol&#xB7;m<sup>-2</sup>&#xB7;s<sup>-1</sup>) is the maximum PEP carboxylation rate; <italic>K<sub>p </sub></italic>(80&#x3BC;bar) is Michaelis constant of PEP carboxylase for CO<sub>2</sub>; <italic>V<sub>pr </sub></italic>(80&#x3BC;mol&#xB7;m<sup>-2</sup>&#xB7;s<sup>-1</sup>)is the constant rate of PEP regeneration; <italic>g<sub>s </sub></italic>(3mmol&#xB7;m<sup>-2</sup>&#xB7;s<sup>-1</sup>) is the physical conductance to CO<sub>2 </sub>leakage; <italic>A<sub>c </sub></italic>is Rubisco-limited rate of CO<sub>2 </sub>assimilation; <italic>A<sub>j </sub></italic>is electron-transport-limited rate; <italic>A </italic>is the CO<sub>2 </sub>assimilation rate; <italic>V<sub>cmax </sub></italic>(60&#x3BC;mol&#xB7;m<sup>-2</sup>&#xB7;s<sup>-1</sup>) is the maximum Rubisco activity; <italic>&#x3B3; </italic>(0.5/2590) is half the reciprocal of Rubisco specificity; <italic>R<sub>d </sub></italic>= 0.01<italic>V<sub>cmax </sub></italic>= 0.6&#x3BC;mol&#xB7;m<sup>-2</sup>&#xB7;s<sup>-1 </sup>is leaf mitochondrial respiration; <italic>R<sub>m </sub></italic>= 0.5 <italic>R<sub>d </sub></italic>= 0.3&#x3BC;mol&#xB7;m<sup>-2</sup>&#xB7;s<sup>-1 </sup>is mesophyll mitochondrial respiration; <italic>&#x3B1; </italic>(0&lt;<italic>&#x3B1;</italic>&lt;1, <italic>&#x3B1; </italic>were assumed to be zero in our results) is fraction of PSII activity in the bundle sheath; <italic>x </italic>(<italic>x </italic>= 0.4) is partitioning factor of electron transport rate. <italic>J<sub>max </sub></italic>(400&#x3BC;mol electron m<sup>-2</sup>&#xB7;s<sup>-1</sup>) is maximal electron transport rate; <italic>K<sub>c </sub></italic>(650&#x3BC;bar) for CO<sub>2 </sub>and <italic>K<sub>o </sub></italic>(450mbar) for O<sub>2 </sub>are mechaelis constants of Rubisco. In C4 plants, CO<sub>2 </sub>concentration in mesophyll cell is only 37 percent of CO<sub>2 </sub>in air [<xref ref-type="bibr" rid="B49">49</xref>] and the other parameters can be obtained in [<xref ref-type="bibr" rid="B48">48</xref>].</p>
+      </sec>
+      <sec>
+        <title>Topological parameters in metabolic network</title>
+        <p>The topological properties of metabolic network can be analyzed based on graph theory, which can reflect the structure and robustness of large-scale network. In this study, the reactions are represented as nodes, if the product of reaction A is the substrate of a reaction B, there will be an edge from A to B. We consider some important parameters including degree, clustering coefficient, betweenness centrality and distance (path length). The degree of a node is the number of edges connected with other reactions. Degree centralization of a network is the variation in the degrees of vertices divided by the maximum degree variation which is possible in a network of the same size. Clustering coefficient is used to compute different inherent tendency coefficients in undirected network. Betweenness centralization is the variation in the betweenness centrality of vertices divided by the maximum variation in betweenness centrality possible in a network of the same size. The distance between two nodes is the shortest path length from one to the other. The diameter of network is the maximal distance among all pairs of nodes. All the topology analysis was conducted using the visual software Pajek [<xref ref-type="bibr" rid="B26">26</xref>].</p>
+      </sec>
+      <sec>
+        <title>Flux Balance Analysis</title>
+        <p>The biochemical reactions can be represented mathematically in the form of a stoichiometric matrix <italic>S</italic>, the flux through all reactions in a network is represented by the vector <italic>v</italic>, so the system of mass balance equation at steady state is given as <italic>Sv = 0</italic>. In any realistic large-scale metabolic model, there are more reactions than compounds, so there is no unique solution to this system of equations. Flux Balance Analysis (FBA) can solve the flux distribution by setting a set of upper and lower bounds on <italic>v </italic>and optimizing some objective function with linear programming, as following:</p>
+        <p>
+          <disp-formula>
+            <mml:math id="M16" name="1752-0509-6-S2-S9-i16" overflow="scroll">
+              <mml:mrow>
+                <mml:mtable class="gathered">
+                  <mml:mtr>
+                    <mml:mtd>
+                      <mml:mstyle class="text">
+                        <mml:mtext class="textsf" mathvariant="sans-serif">Maximize&#xA0;or&#xA0;minimize</mml:mtext>
+                      </mml:mstyle>
+                      <mml:mspace class="quad" width="1em"/>
+                      <mml:mstyle class="text">
+                        <mml:mtext class="textsf" mathvariant="sans-serif">Z</mml:mtext>
+                      </mml:mstyle>
+                      <mml:mo class="MathClass-rel">=</mml:mo>
+                      <mml:msup>
+                        <mml:mrow>
+                          <mml:mstyle class="text">
+                            <mml:mtext class="textsf" mathvariant="sans-serif">c</mml:mtext>
+                          </mml:mstyle>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mstyle class="text">
+                            <mml:mtext class="textsf" mathvariant="sans-serif">T</mml:mtext>
+                          </mml:mstyle>
+                        </mml:mrow>
+                      </mml:msup>
+                      <mml:mstyle class="text">
+                        <mml:mtext class="textsf" mathvariant="sans-serif">v</mml:mtext>
+                      </mml:mstyle>
+                    </mml:mtd>
+                  </mml:mtr>
+                  <mml:mtr>
+                    <mml:mtd>
+                      <mml:mspace class="quad" width="1em"/>
+                      <mml:mspace class="quad" width="1em"/>
+                      <mml:mstyle class="text">
+                        <mml:mtext class="textsf" mathvariant="sans-serif">subjectto</mml:mtext>
+                      </mml:mstyle>
+                      <mml:mspace class="quad" width="1em"/>
+                      <mml:mstyle class="text">
+                        <mml:mtext class="textsf" mathvariant="sans-serif">Sv</mml:mtext>
+                      </mml:mstyle>
+                      <mml:mo class="MathClass-rel">=</mml:mo>
+                      <mml:mn>0</mml:mn>
+                    </mml:mtd>
+                  </mml:mtr>
+                  <mml:mtr>
+                    <mml:mtd>
+                      <mml:mspace class="quad" width="1em"/>
+                      <mml:mstyle class="text">
+                        <mml:mtext class="textsf" mathvariant="sans-serif">and</mml:mtext>
+                      </mml:mstyle>
+                      <mml:mspace class="quad" width="1em"/>
+                      <mml:msub>
+                        <mml:mrow>
+                          <mml:mstyle class="text">
+                            <mml:mtext class="textsf" mathvariant="sans-serif">v</mml:mtext>
+                          </mml:mstyle>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mstyle class="text">
+                            <mml:mtext class="textsf" mathvariant="sans-serif">m&#xA0;i&#xA0;n</mml:mtext>
+                          </mml:mstyle>
+                        </mml:mrow>
+                      </mml:msub>
+                      <mml:mo class="MathClass-rel">&#x2264;</mml:mo>
+                      <mml:mstyle class="text">
+                        <mml:mtext class="textsf" mathvariant="sans-serif">v</mml:mtext>
+                      </mml:mstyle>
+                      <mml:mo class="MathClass-rel">&#x2264;</mml:mo>
+                      <mml:msub>
+                        <mml:mrow>
+                          <mml:mstyle class="text">
+                            <mml:mtext class="textsf" mathvariant="sans-serif">v</mml:mtext>
+                          </mml:mstyle>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mstyle class="text">
+                            <mml:mtext class="textsf" mathvariant="sans-serif">m</mml:mtext>
+                          </mml:mstyle>
+                        </mml:mrow>
+                      </mml:msub>
+                    </mml:mtd>
+                  </mml:mtr>
+                  <mml:mtr>
+                    <mml:mtd/>
+                  </mml:mtr>
+                </mml:mtable>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>Where <italic>c </italic>is a vector of weights indicating how much each reaction contributes to the objective function. In this study, we choose CO<sub>2 </sub>fixation and biomass synthesis as two objective functions.</p>
+        <p>The COBRA toolbox is a free MATLAB toolbox for performing the simulation. The fluxes that are identified at various perturbations can be compared with each other and with experimental data.</p>
+      </sec>
+      <sec>
+        <title>Uniform random sampling</title>
+        <p>Uniform random sampling of the solution space in any environmental condition is a rapid and scalable way to characterize the structure of the allowed space of metabolic fluxes. Before the sampling was performed, the effective constraints for each reaction were calculated using the method of Flux Balance Analysis in COBRA toolbox [<xref ref-type="bibr" rid="B50">50</xref>]. Specifically in sampling, COBRA toolbox uses an implementation of the artificial centered hit-and-run (ACHR) sampler algorithm with slight modifications to generate such a set of flux distributions that uniformly sample the space of all feasible fluxes. Initially, a set of 5000 non-uniform pseudo-random points, called warm-up points, was generated. In a series of iterations, each point was randomly moved while keeping it within the feasible flux space. This was accomplished by choosing a random direction, computing the limits on how far a point could travel in that direction (positive or negative), and then choosing a new point randomly along that line. After numerous iterations, the set of points was mixed and approached a uniform sample of the solution space [<xref ref-type="bibr" rid="B51">51</xref>] and 2000 points was loaded for analysis. The sampling procedure can be achieved with the function 'sampleCbModel' and the correlated reaction sets can be identified by 'identifyCorrelSets' in the COBRA toolbox. Correlated reaction sets are mathematically defined as modules in biochemical reaction network which facilitate the study of biological processes by decomposing complex reaction networks into conceptually simple units. This sampling approach is used to fully determine the range of possible distributions of steady-state fluxes allowed in the network under defined physicochemical constraints and used to analyze the general properties of networks by testing their robustness to parameter variation [<xref ref-type="bibr" rid="B50">50</xref>].</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors' contributions</title>
+      <p>ZW designed the project and analysis methods. CLW conducted the analysis of metabolic network topology and flux distribution. LYG improved the model by setting the ratio between carboxylation and oxygenation by Rubisco. YXL managed the project. CLW and ZW wrote the manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p>The constraints in the improved models of C3 and C4 metabolic networks</p>
+        </caption>
+        <media xlink:href="1752-0509-6-S2-S9-S1.XLSX" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>We thank de Oliveira Dal'Molin for providing us the SBML file of C4GEM model which can be loaded into COBRA toolbox. The work was supported by State key basic research program (973) 2011CB910204, Research Program of CAS (KSCX2-EW-R-04), and the National Natural Science Foundation of China (30800199, 30900272). </p>
+      <p>This article has been published as part of <italic>BMC Systems Biology </italic>Volume 6 Supplement 2, 2012: Proceedings of the 23rd International Conference on Genome Informatics (GIW 2012). The full contents of the supplement are available online at <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/bmcsystbiol/supplements/6/S2">http://www.biomedcentral.com/bmcsystbiol/supplements/6/S2</ext-link>.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kajala</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Covshoff</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Karki</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Woodfield</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Tolley</surname>
+            <given-names>BJ</given-names>
+          </name>
+          <name>
+            <surname>Dionora</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <name>
+            <surname>Mogul</surname>
+            <given-names>RT</given-names>
+          </name>
+          <name>
+            <surname>Mabilangan</surname>
+            <given-names>AE</given-names>
+          </name>
+          <name>
+            <surname>Danila</surname>
+            <given-names>FR</given-names>
+          </name>
+          <name>
+            <surname>Hibberd</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Quick</surname>
+            <given-names>WP</given-names>
+          </name>
+          <article-title>Strategies for engineering a two-celled C4 photosynthetic pathway into rice</article-title>
+          <source>J Exp Bot</source>
+          <year>2011</year>
+          <volume>62</volume>
+          <fpage>3001</fpage>
+          <lpage>3010</lpage>
+          <pub-id pub-id-type="doi">10.1093/jxb/err022</pub-id>
+          <pub-id pub-id-type="pmid">21335436</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Majeran</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Friso</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Ponnala</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Connolly</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Reidel</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Asakura</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Bhuiyan</surname>
+            <given-names>NH</given-names>
+          </name>
+          <name>
+            <surname>Sun</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Turgeon</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>van Wijk</surname>
+            <given-names>KJ</given-names>
+          </name>
+          <article-title>Structural and metabolic transitions of C4 leaf development and differentiation defined by microscopy and quantitative proteomics in maize</article-title>
+          <source>Plant Cell</source>
+          <year>2010</year>
+          <volume>22</volume>
+          <fpage>3509</fpage>
+          <lpage>3542</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.110.079764</pub-id>
+          <pub-id pub-id-type="pmid">21081695</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hibberd</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Sheehy</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Langdale</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>Using C4 photosynthesis to increase the yield of rice-rationale and feasibility</article-title>
+          <source>CurrOpin Plant Biol</source>
+          <year>2008</year>
+          <volume>11</volume>
+          <fpage>228</fpage>
+          <lpage>231</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.pbi.2007.11.002</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Taniguchi</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Ohkawa</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Masumoto</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Fukuda</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Tamai</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Sudoh</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Tsuchida</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Sasaki</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Fukayama</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Miyao</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Overproduction of C4 photosynthetic enzymes in transgenic rice plants: an approach to introduce the C4-like photosynthetic pathway into rice</article-title>
+          <source>J Exp Bot</source>
+          <year>2008</year>
+          <volume>59</volume>
+          <fpage>1799</fpage>
+          <lpage>1809</lpage>
+          <pub-id pub-id-type="pmid">18316317</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Evans</surname>
+            <given-names>JR</given-names>
+          </name>
+          <article-title>Enhancing C3 photosynthesis</article-title>
+          <source>Plant Physiol</source>
+          <year>2010</year>
+          <volume>154</volume>
+          <fpage>589</fpage>
+          <lpage>592</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.110.160952</pub-id>
+          <pub-id pub-id-type="pmid">20921190</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sweetlove</surname>
+            <given-names>LJ</given-names>
+          </name>
+          <name>
+            <surname>Last</surname>
+            <given-names>RL</given-names>
+          </name>
+          <name>
+            <surname>Fernie</surname>
+            <given-names>AR</given-names>
+          </name>
+          <article-title>Predictive metabolic engineering: a goal for systems biology</article-title>
+          <source>Plant Physiol</source>
+          <year>2003</year>
+          <volume>132</volume>
+          <fpage>420</fpage>
+          <lpage>425</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.103.022004</pub-id>
+          <pub-id pub-id-type="pmid">12805573</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gutierrez</surname>
+            <given-names>RA</given-names>
+          </name>
+          <name>
+            <surname>Shasha</surname>
+            <given-names>DE</given-names>
+          </name>
+          <name>
+            <surname>Coruzzi</surname>
+            <given-names>GM</given-names>
+          </name>
+          <article-title>Systems biology for the virtual plant</article-title>
+          <source>Plant Physiol</source>
+          <year>2005</year>
+          <volume>138</volume>
+          <fpage>550</fpage>
+          <lpage>554</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.104.900150</pub-id>
+          <pub-id pub-id-type="pmid">15955912</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>DellaPenna</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Plant metabolic engineering</article-title>
+          <source>Plant Physiol</source>
+          <year>2001</year>
+          <volume>125</volume>
+          <fpage>160</fpage>
+          <lpage>163</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.125.1.160</pub-id>
+          <pub-id pub-id-type="pmid">11154323</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kitano</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Standards for modeling</article-title>
+          <source>Nat Biotechnol</source>
+          <year>2002</year>
+          <volume>20</volume>
+          <fpage>337</fpage>
+          <pub-id pub-id-type="pmid">11923830</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kitano</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Systems biology: a brief overview</article-title>
+          <source>Science</source>
+          <year>2002</year>
+          <volume>295</volume>
+          <fpage>1662</fpage>
+          <lpage>1664</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1069492</pub-id>
+          <pub-id pub-id-type="pmid">11872829</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dennis</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Surridge</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Arabidopsis thaliana genome. Introduction</article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>408</volume>
+          <fpage>791</fpage>
+          <pub-id pub-id-type="pmid">11130708</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Paterson</surname>
+            <given-names>AH</given-names>
+          </name>
+          <name>
+            <surname>Bowers</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Bruggmann</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Dubchak</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Grimwood</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Gundlach</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Haberer</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Hellsten</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Mitros</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Poliakov</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Schmutz</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Spannagl</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Tang</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Wicker</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Bharti</surname>
+            <given-names>AK</given-names>
+          </name>
+          <name>
+            <surname>Chapman</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Feltus</surname>
+            <given-names>FA</given-names>
+          </name>
+          <name>
+            <surname>Gowik</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Grigoriev</surname>
+            <given-names>IV</given-names>
+          </name>
+          <name>
+            <surname>Lyons</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Maher</surname>
+            <given-names>CA</given-names>
+          </name>
+          <name>
+            <surname>Martis</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Narechania</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Otillar</surname>
+            <given-names>RP</given-names>
+          </name>
+          <name>
+            <surname>Penning</surname>
+            <given-names>BW</given-names>
+          </name>
+          <name>
+            <surname>Salamov</surname>
+            <given-names>AA</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Carpita</surname>
+            <given-names>NC</given-names>
+          </name>
+          <etal/>
+          <article-title>The Sorghum bicolor genome and the diversification of grasses</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <fpage>551</fpage>
+          <lpage>556</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature07723</pub-id>
+          <pub-id pub-id-type="pmid">19189423</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Becker</surname>
+            <given-names>SA</given-names>
+          </name>
+          <name>
+            <surname>Feist</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Mo</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Hannum</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>B&#xD8;</given-names>
+          </name>
+          <name>
+            <surname>Herrgard</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <article-title>Quantitative prediction of cellular metabolism with constraint-based models: the COBRA Toolbox</article-title>
+          <source>Nature Protocols</source>
+          <year>2007</year>
+          <volume>2</volume>
+          <fpage>727</fpage>
+          <lpage>738</lpage>
+          <pub-id pub-id-type="doi">10.1038/nprot.2007.99</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Boyle</surname>
+            <given-names>NR</given-names>
+          </name>
+          <name>
+            <surname>Morgan</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>Flux balance analysis of primary metabolism in Chlamydomonasreinhardtii</article-title>
+          <source>BMC SystBiol</source>
+          <year>2009</year>
+          <volume>3</volume>
+          <fpage>4</fpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Pramanik</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Keasling</surname>
+            <given-names>JD</given-names>
+          </name>
+          <article-title>Stoichiometric model of Escherichia coli metabolism: incorporation of growth-rate dependent biomass composition and mechanistic energy requirements</article-title>
+          <source>BiotechnolBioeng</source>
+          <year>1997</year>
+          <volume>56</volume>
+          <fpage>398</fpage>
+          <lpage>421</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Varma</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>Stoichiometric flux balance models quantitatively predict growth and metabolic by-product secretion in wild-type Escherichia coli W3110</article-title>
+          <source>Appl Environ Microbiol</source>
+          <year>1994</year>
+          <volume>60</volume>
+          <fpage>3724</fpage>
+          <lpage>3731</lpage>
+          <pub-id pub-id-type="pmid">7986045</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Price</surname>
+            <given-names>ND</given-names>
+          </name>
+          <name>
+            <surname>Papin</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Schilling</surname>
+            <given-names>CH</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>Genome-scale microbial in silico models: the constraints-based approach</article-title>
+          <source>Trends Biotechnol</source>
+          <year>2003</year>
+          <volume>21</volume>
+          <fpage>162</fpage>
+          <lpage>169</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0167-7799(03)00030-1</pub-id>
+          <pub-id pub-id-type="pmid">12679064</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Grafahrend-Belau</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Schreiber</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Koschutzki</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Junker</surname>
+            <given-names>BH</given-names>
+          </name>
+          <article-title>Flux balance analysis of barley seeds: a computational approach to study systemic properties of central metabolism</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>149</volume>
+          <fpage>585</fpage>
+          <lpage>598</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.108.129635</pub-id>
+          <pub-id pub-id-type="pmid">18987214</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>de Oliveira Dal'Molin</surname>
+            <given-names>CG</given-names>
+          </name>
+          <name>
+            <surname>Quek</surname>
+            <given-names>LE</given-names>
+          </name>
+          <name>
+            <surname>Palfreyman</surname>
+            <given-names>RW</given-names>
+          </name>
+          <name>
+            <surname>Brumbley</surname>
+            <given-names>SM</given-names>
+          </name>
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>LK</given-names>
+          </name>
+          <article-title>AraGEM, a Genome-Scale Reconstruction of the Primary Metabolic Network in Arabidopsis</article-title>
+          <source>Plant Physiology</source>
+          <year>2009</year>
+          <volume>152</volume>
+          <fpage>579</fpage>
+          <lpage>589</lpage>
+          <pub-id pub-id-type="pmid">20044452</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Poolman</surname>
+            <given-names>MG</given-names>
+          </name>
+          <name>
+            <surname>Miguet</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Sweetlove</surname>
+            <given-names>LJ</given-names>
+          </name>
+          <name>
+            <surname>Fell</surname>
+            <given-names>DA</given-names>
+          </name>
+          <article-title>A genome-scale metabolic model of Arabidopsis and some of its properties</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>151</volume>
+          <fpage>1570</fpage>
+          <lpage>1581</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.109.141267</pub-id>
+          <pub-id pub-id-type="pmid">19755544</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Radrich</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Tsuruoka</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Dobson</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Gevorgyan</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Swainston</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Baart</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Schwartz</surname>
+            <given-names>JM</given-names>
+          </name>
+          <article-title>Integration of metabolic databases for the reconstruction of genome-scale metabolic networks</article-title>
+          <source>BMC SystBiol</source>
+          <year>2010</year>
+          <volume>4</volume>
+          <fpage>114</fpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Williams</surname>
+            <given-names>TC</given-names>
+          </name>
+          <name>
+            <surname>Poolman</surname>
+            <given-names>MG</given-names>
+          </name>
+          <name>
+            <surname>Howden</surname>
+            <given-names>AJ</given-names>
+          </name>
+          <name>
+            <surname>Schwarzlander</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Fell</surname>
+            <given-names>DA</given-names>
+          </name>
+          <name>
+            <surname>Ratcliffe</surname>
+            <given-names>RG</given-names>
+          </name>
+          <name>
+            <surname>Sweetlove</surname>
+            <given-names>LJ</given-names>
+          </name>
+          <article-title>A genome-scale metabolic model accurately predicts fluxes in central carbon metabolism under stress conditions</article-title>
+          <source>Plant Physiol</source>
+          <year>2010</year>
+          <volume>154</volume>
+          <fpage>311</fpage>
+          <lpage>323</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.110.158535</pub-id>
+          <pub-id pub-id-type="pmid">20605915</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Knoop</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Zilliges</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Lockau</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Steuer</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>The metabolic network of Synechocystis sp. PCC 6803: systemic properties of autotrophic growth</article-title>
+          <source>Plant Physiol</source>
+          <year>2010</year>
+          <volume>154</volume>
+          <fpage>410</fpage>
+          <lpage>422</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.110.157198</pub-id>
+          <pub-id pub-id-type="pmid">20616194</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Golomysova</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Gomelsky</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ivanov</surname>
+            <given-names>PS</given-names>
+          </name>
+          <article-title>Flux balance analysis of photoheterotrophic growth of purple nonsulfur bacteria relevant to biohydrogen production</article-title>
+          <source>International Journal of Hydrogen Energy</source>
+          <year>2010</year>
+          <volume>35</volume>
+          <fpage>12751</fpage>
+          <lpage>12760</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijhydene.2010.08.133</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>de Oliveira Dal'Molin</surname>
+            <given-names>CG</given-names>
+          </name>
+          <name>
+            <surname>Quek</surname>
+            <given-names>LE</given-names>
+          </name>
+          <name>
+            <surname>Palfreyman</surname>
+            <given-names>RW</given-names>
+          </name>
+          <name>
+            <surname>Brumbley</surname>
+            <given-names>SM</given-names>
+          </name>
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>LK</given-names>
+          </name>
+          <article-title>C4GEM, a Genome-Scale Metabolic Model to Study C4 Plant Metabolism</article-title>
+          <source>Plant Physiology</source>
+          <year>2010</year>
+          <volume>154</volume>
+          <fpage>1871</fpage>
+          <lpage>1885</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.110.166488</pub-id>
+          <pub-id pub-id-type="pmid">20974891</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Mrvar</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Batagelj</surname>
+            <given-names>V</given-names>
+          </name>
+          <source>Exploratory network analysis with pajek</source>
+          <year>2005</year>
+          <publisher-name>Mark Granovetter: Cambridge University Press</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Albert</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>DasGupta</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Hegde</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Sivanathan</surname>
+            <given-names>GS</given-names>
+          </name>
+          <name>
+            <surname>Gitter</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>G&#xFC;rsoy</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Paul</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Sontag</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>A new computationally efficient measure of topological redundancy of biological and social networks</article-title>
+          <source>Physical Review E</source>
+          <year>2011</year>
+          <volume>84</volume>
+          <fpage>036117</fpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Farquhar</surname>
+            <given-names>GD</given-names>
+          </name>
+          <name>
+            <surname>Berry</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>A Biochemical Model of Photosynthetic CO2 Assimilation in Leaves of C3 Species</article-title>
+          <source>Planta</source>
+          <year>1980</year>
+          <volume>149</volume>
+          <fpage>78</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00386231</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Marri</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Sparla</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Pupillo</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Trost</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Co-ordinated gene expression of photosynthetic glyceraldehyde-3-phosphate dehydrogenase, phosphoribulokinase, and CP12 in Arabidopsis thaliana</article-title>
+          <source>J Exp Bot</source>
+          <year>2005</year>
+          <volume>56</volume>
+          <fpage>73</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="pmid">15533878</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="other">
+          <article-title>GeneBank Database</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/gene/">http://www.ncbi.nlm.nih.gov/gene/</ext-link>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Quick</surname>
+            <given-names>WP</given-names>
+          </name>
+          <name>
+            <surname>Schurr</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Fichtner</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Schulze</surname>
+            <given-names>E-D</given-names>
+          </name>
+          <name>
+            <surname>Rodermel</surname>
+            <given-names>SR</given-names>
+          </name>
+          <name>
+            <surname>Bogorad</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Stitt</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>The impact of decreased Rubisco on photosynthesis, growth, allocation and storage in tobacco plants which have been transformed with antisense <italic>rbcS</italic></article-title>
+          <source>The Plant Journal</source>
+          <year>1991</year>
+          <volume>1</volume>
+          <fpage>51</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.1991.00051.x</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sicher</surname>
+            <given-names>RC</given-names>
+          </name>
+          <name>
+            <surname>Bunce</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>Relationship of photosynthetic acclimation to changes of Rubisco activity in field-grown winter wheat and barley during growth in elevated carbon dioxide</article-title>
+          <source>PHOTOSYNTHESIS RESEARCH</source>
+          <year>1997</year>
+          <volume>52</volume>
+          <fpage>27</fpage>
+          <lpage>38</lpage>
+          <pub-id pub-id-type="doi">10.1023/A:1005874932233</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Debnam</surname>
+            <given-names>PM</given-names>
+          </name>
+          <name>
+            <surname>Emes</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <article-title>Subcellular distribution of enzymes of the oxidative pentose phosphate pathway in root and leaf tissues</article-title>
+          <source>Journal of Experimental Botany</source>
+          <year>1999</year>
+          <volume>50</volume>
+          <fpage>1653</fpage>
+          <lpage>1661</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zelitch</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Schultes</surname>
+            <given-names>NP</given-names>
+          </name>
+          <name>
+            <surname>Peterson</surname>
+            <given-names>RB</given-names>
+          </name>
+          <name>
+            <surname>Brown</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Brutnell</surname>
+            <given-names>TP</given-names>
+          </name>
+          <article-title>High glycolate oxidase activity is required for survival of maize in normal air</article-title>
+          <source>Plant Physiol</source>
+          <year>2009</year>
+          <volume>149</volume>
+          <fpage>195</fpage>
+          <lpage>204</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.108.128439</pub-id>
+          <pub-id pub-id-type="pmid">18805949</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>CLORE SMD</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>TINNIRELLO</surname>
+            <given-names>SMN</given-names>
+          </name>
+          <article-title>Increased levels of reactive oxygen species and expression of a cytoplasmic aconitase/iron regulatory protein 1 homolog during the early response of maize pulvini to gravistimulation</article-title>
+          <source>Plant, Cell &amp; Environment</source>
+          <year>2008</year>
+          <volume>31</volume>
+          <fpage>144</fpage>
+          <lpage>158</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schwarte</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Bauwe</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Identification of the photorespiratory 2-phosphoglycolate phosphatase, PGLP1, in Arabidopsis</article-title>
+          <source>Plant Physiol</source>
+          <year>2007</year>
+          <volume>144</volume>
+          <fpage>1580</fpage>
+          <lpage>1586</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.107.099192</pub-id>
+          <pub-id pub-id-type="pmid">17478634</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lunn</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Ashton</surname>
+            <given-names>AR</given-names>
+          </name>
+          <name>
+            <surname>Hatch</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Heldt</surname>
+            <given-names>HW</given-names>
+          </name>
+          <article-title>Purification, molecular cloning, and sequence analysis of sucrose-6F-phosphate phosphohydrolase from plants</article-title>
+          <source>PNAS</source>
+          <year>2000</year>
+          <volume>97</volume>
+          <fpage>12914</fpage>
+          <lpage>12919</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.230430197</pub-id>
+          <pub-id pub-id-type="pmid">11050182</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hern&#xE1;ndez</surname>
+            <given-names>JMGM</given-names>
+          </name>
+          <name>
+            <surname>Castignolles</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Gidley</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <name>
+            <surname>Myers</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Gilbert</surname>
+            <given-names>RG</given-names>
+          </name>
+          <article-title>Mechanistic investigation of a starch-branching enzyme using hydrodynamic volume SEC analysis</article-title>
+          <source>Biomacromolecules</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>954</fpage>
+          <lpage>965</lpage>
+          <pub-id pub-id-type="doi">10.1021/bm701213p</pub-id>
+          <pub-id pub-id-type="pmid">18293900</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Monreal</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>McLoughlin</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Echevarria</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Garcia-Maurino</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Testerink</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Phosphoenolpyruvate carboxylase from C4 leaves is selectively targeted for inhibition by anionic phospholipids</article-title>
+          <source>Plant Physiol</source>
+          <year>2010</year>
+          <volume>152</volume>
+          <fpage>634</fpage>
+          <lpage>638</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.109.150326</pub-id>
+          <pub-id pub-id-type="pmid">20007442</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mechin</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Thevenot</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Le Guilloux</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Prioul</surname>
+            <given-names>JL</given-names>
+          </name>
+          <name>
+            <surname>Damerval</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Developmental analysis of maize endosperm proteome suggests a pivotal role for pyruvate orthophosphate dikinase</article-title>
+          <source>Plant Physiol</source>
+          <year>2007</year>
+          <volume>143</volume>
+          <fpage>1203</fpage>
+          <lpage>1219</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.106.092148</pub-id>
+          <pub-id pub-id-type="pmid">17237188</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Oberhuber</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Dai</surname>
+            <given-names>Z-Y</given-names>
+          </name>
+          <name>
+            <surname>Edwards</surname>
+            <given-names>GE</given-names>
+          </name>
+          <article-title>Light dependence of quantum yields of Photosystem II and CO2 fixation in C3 and C4 plant</article-title>
+          <source>Photosythesis research</source>
+          <year>1993</year>
+          <volume>35</volume>
+          <fpage>265</fpage>
+          <lpage>274</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00016557</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Kanai</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Edwards</surname>
+            <given-names>GE</given-names>
+          </name>
+          <article-title>The biochemistry of C4 photosynthesis. Chapter 3 in C4 Plant Biology. </article-title>
+          <year>1999</year>
+        </mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Fravolini</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Williams</surname>
+            <given-names>DG</given-names>
+          </name>
+          <name>
+            <surname>Thompson</surname>
+            <given-names>TL</given-names>
+          </name>
+          <article-title>Carbon isotope discrimination and bundle sheath leakiness in three C4 subtypes grown under variable nitrogen, water and atmospheric CO2 supply</article-title>
+          <source>Journal of Experimental Botany</source>
+          <year>2002</year>
+          <volume>53</volume>
+          <fpage>2261</fpage>
+          <lpage>2269</lpage>
+          <pub-id pub-id-type="doi">10.1093/jxb/erf084</pub-id>
+          <pub-id pub-id-type="pmid">12379793</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bowman</surname>
+            <given-names>WD</given-names>
+          </name>
+          <article-title>Inputs and Storage of Nitrogen in Winter Snowpack in an Alpine Ecosystem</article-title>
+          <source>Arctic and Alpine Research</source>
+          <year>1992</year>
+          <volume>24</volume>
+          <fpage>211</fpage>
+          <lpage>215</lpage>
+          <pub-id pub-id-type="doi">10.2307/1551659</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Buchman</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Brooks</surname>
+            <given-names>JR</given-names>
+          </name>
+          <name>
+            <surname>Rapp</surname>
+            <given-names>KD</given-names>
+          </name>
+          <name>
+            <surname>Ehleringer</surname>
+            <given-names>JR</given-names>
+          </name>
+          <article-title>Carbon isotope composition of C4 grasses is influenced by light and water supply</article-title>
+          <source>Plant, Cell &amp; Environment</source>
+          <year>1996</year>
+          <volume>19</volume>
+          <fpage>392</fpage>
+          <lpage>402</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-3040.1996.tb00331.x</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Taub</surname>
+            <given-names>DR</given-names>
+          </name>
+          <name>
+            <surname>Lerdau</surname>
+            <given-names>MT</given-names>
+          </name>
+          <article-title>Relationship between leaf nitrogen and photosynthetic rate for three NAD-ME and three NADP-ME C4 grasses</article-title>
+          <source>Am J Bot</source>
+          <year>2000</year>
+          <volume>87</volume>
+          <fpage>412</fpage>
+          <lpage>417</lpage>
+          <pub-id pub-id-type="doi">10.2307/2656637</pub-id>
+          <pub-id pub-id-type="pmid">10719002</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>XG</given-names>
+          </name>
+          <name>
+            <surname>Shan</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Quick</surname>
+            <given-names>WP</given-names>
+          </name>
+          <article-title>C4 rice - an ideal arena for systems biology research</article-title>
+          <source>J Integr Plant Biol</source>
+          <year>2010</year>
+          <volume>52</volume>
+          <fpage>762</fpage>
+          <lpage>770</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1744-7909.2010.00983.x</pub-id>
+          <pub-id pub-id-type="pmid">20666931</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Caemmerer</surname>
+            <given-names>SV</given-names>
+          </name>
+          <article-title>Modeling C4 photosynthesis</article-title>
+          <source>In Biochemical models of leaf photosynthesis</source>
+          <year>2000</year>
+          <fpage>91</fpage>
+          <lpage>122</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ziska</surname>
+            <given-names>LH</given-names>
+          </name>
+          <name>
+            <surname>Bunce</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>Influence of increasing carbon dioxide concentration on the photosynthetic and growth stimulation of selected C4 crops and weeds</article-title>
+          <source>Photosynthesis Research</source>
+          <year>1997</year>
+          <volume>54</volume>
+          <fpage>199</fpage>
+          <lpage>208</lpage>
+          <pub-id pub-id-type="doi">10.1023/A:1005947802161</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Price</surname>
+            <given-names>ND</given-names>
+          </name>
+          <name>
+            <surname>Schellenberger</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>Uniform sampling of steady-state flux spaces: means to design experiments and to interpret enzymopathies</article-title>
+          <source>Biophys J</source>
+          <year>2004</year>
+          <volume>87</volume>
+          <fpage>2172</fpage>
+          <lpage>2186</lpage>
+          <pub-id pub-id-type="doi">10.1529/biophysj.104.043000</pub-id>
+          <pub-id pub-id-type="pmid">15454420</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schellenberger</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Lewis</surname>
+            <given-names>NE</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>Elimination of thermodynamically infeasible loops in steady-state metabolic models</article-title>
+          <source>Biophys J</source>
+          <year>2011</year>
+          <volume>100</volume>
+          <fpage>544</fpage>
+          <lpage>553</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.bpj.2010.12.3707</pub-id>
+          <pub-id pub-id-type="pmid">21281568</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

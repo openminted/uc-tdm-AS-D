@@ -1,0 +1,2966 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.0 20040830//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.0?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3196578</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-09961</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0026421</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Agriculture</subject>
+          <subj-group>
+            <subject>Crops</subject>
+            <subj-group>
+              <subject>Cereals</subject>
+              <subj-group>
+                <subject>Wheat</subject>
+                <subject>Wheats</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Plant Genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome Sequencing</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Molecular Cell Biology</subject>
+            <subj-group>
+              <subject>Cytometry</subject>
+              <subj-group>
+                <subject>Flow Cytometry</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Plant Science</subject>
+            <subj-group>
+              <subject>Plant Biotechnology</subject>
+              <subj-group>
+                <subject>Plant Genomics</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Plant Genetics</subject>
+              <subject>Plant Genomics</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>First Survey of the Wheat Chromosome 5A Composition through a Next Generation Sequencing Approach</article-title>
+        <alt-title alt-title-type="running-head">Low Coverage Sequence of Wheat Chromosome 5A</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Vitulo</surname>
+            <given-names>Nicola</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Albiero</surname>
+            <given-names>Alessandro</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Forcato</surname>
+            <given-names>Claudio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Campagna</surname>
+            <given-names>Davide</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dal Pero</surname>
+            <given-names>Francesca</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bagnaresi</surname>
+            <given-names>Paolo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Colaiacovo</surname>
+            <given-names>Moreno</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Faccioli</surname>
+            <given-names>Primetta</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lamontanara</surname>
+            <given-names>Antonella</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>&#x160;imkov&#xE1;</surname>
+            <given-names>Hana</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kubal&#xE1;kov&#xE1;</surname>
+            <given-names>Marie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Perrotta</surname>
+            <given-names>Gaetano</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Facella</surname>
+            <given-names>Paolo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lopez</surname>
+            <given-names>Loredana</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pietrella</surname>
+            <given-names>Marco</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gianese</surname>
+            <given-names>Giulio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dole&#x17E;el</surname>
+            <given-names>Jaroslav</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Giuliano</surname>
+            <given-names>Giovanni</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cattivelli</surname>
+            <given-names>Luigi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Valle</surname>
+            <given-names>Giorgio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Stanca</surname>
+            <given-names>A. Michele</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>CRIBI Biotechnology Center, University of Padova, Padova, Italy</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Bmr-genomics srl, Padova, Italy</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>CRA Genomics Research Centre, Fiorenzuola d'Arda, Italy</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Centre of the Region Han&#xE1; for Biotechnological and Agricultural Research, Institute of Experimental Botany, Olomouc, Czech Republic</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>ENEA, TRISAIA Research Center, Rotondella, Italy</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>ENEA, CASACCIA Research Center, Rome, Italy</addr-line>
+      </aff>
+      <aff id="aff7">
+        <label>7</label>
+        <addr-line>Ylichron Srl, Rome, Italy</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Newbigin</surname>
+            <given-names>Edward</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">University of Melbourne, Australia</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>luigi.cattivelli@entecra.it</email></corresp>
+        <fn fn-type="con">
+          <p>Performed the experiments: HS MK CF DC FDP GP P. Facella LL. Analyzed the data: NV AA MC P. Faccioli PB AL MP G. Gianese. Wrote the paper: NV LC G. Giuliano GV JD. Conceived, designed and coordinated the work: LC G. Giuliano GV AMS.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>18</day>
+        <month>10</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>6</volume>
+      <issue>10</issue>
+      <elocation-id>e26421</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>6</day>
+          <month>6</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>26</day>
+          <month>9</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Vitulo et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2011</copyright-year>
+      </permissions>
+      <abstract>
+        <p>Wheat is one of the world's most important crops and is characterized by a large polyploid genome. One way to reduce genome complexity is to isolate single chromosomes using flow cytometry. Low coverage DNA sequencing can provide a snapshot of individual chromosomes, allowing a fast characterization of their main features and comparison with other genomes. We used massively parallel 454 pyrosequencing to obtain a 2x coverage of wheat chromosome 5A. The resulting sequence assembly was used to identify TEs, genes and miRNAs, as well as to infer a virtual gene order based on the synteny with other grass genomes. Repetitive elements account for more than 75% of the genome. Gene content was estimated considering non-redundant reads showing at least one match to ESTs or proteins. The results indicate that the coding fraction represents 1.08% and 1.3% of the short and long arm respectively, projecting the number of genes of the whole chromosome to approximately 5,000. 195 candidate miRNA precursors belonging to 16 miRNA families were identified. The 5A genes were used to search for syntenic relationships between grass genomes. The short arm is closely related to <italic>Brachypodium</italic> chromosome 4, sorghum chromosome 8 and rice chromosome 12; the long arm to regions of <italic>Brachypodium</italic> chromosomes 4 and 1, sorghum chromosomes 1 and 2 and rice chromosomes 9 and 3. From these similarities it was possible to infer the virtual gene order of 392 (5AS) and 1,480 (5AL) genes of chromosome 5A, which was compared to, and found to be largely congruent with the available physical map of this chromosome.</p>
+      </abstract>
+      <counts>
+        <page-count count="14"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Wheat is one of the world's most important crops, but despite its economic importance progress in wheat genomics has been slow due to its large and complex genome. The gene number of wheat is expected to be about 90,000, i.e. approximately three times that of rice, (<ext-link ext-link-type="uri" xlink:href="http://rapdb.dna.affrc.go.jp">http://rapdb.dna.affrc.go.jp</ext-link>), while the size of the wheat genome is very large (16,937 Mb/1C, <xref ref-type="bibr" rid="pone.0026421-af1">[1]</xref>), more than 40 times that of the rice genome. Several studies, coordinated by the International Wheat Genome Sequencing Consortium (<ext-link ext-link-type="uri" xlink:href="http://www.wheatgenome.org">http://www.wheatgenome.org</ext-link>) are in progress with the aim of obtaining and characterizing the wheat genome.</p>
+      <p>One way to reduce the genome complexity and simplify its analysis is to purify single chromosomes using flow cytometry and to perform the analysis at the sub-genomic level <xref ref-type="bibr" rid="pone.0026421-Doleel1">[2]</xref>, <xref ref-type="bibr" rid="pone.0026421-Doleel2">[3]</xref>. For example, Paux et al. <xref ref-type="bibr" rid="pone.0026421-Paux1">[4]</xref> and Barto&#x161; et al. <xref ref-type="bibr" rid="pone.0026421-Barto1">[5]</xref> studied the molecular structure of the wheat chromosome 3B and the rye chromosome arm 1RS, respectively, after sequencing ends of BAC clones from chromosome-specific libraries. When flow-sorted chromosomes are subjected to low-coverage massively parallel DNA sequencing, a snapshot of single chromosomes can be produced even in species with a large genome. In the first study of this type, Mayer et al. <xref ref-type="bibr" rid="pone.0026421-Mayer1">[6]</xref> characterized repetitive elements and genes in the barley chromosome 1H, identified syntenic regions with genomes already sequenced and produced a linearly ordered high-resolution gene inventory of the chromosome.</p>
+      <p>The repetitive landscape of large plant genomes has proven to be a major bottleneck for whole genome sequencing. Understanding the role and dynamics of Transposable Elements (TEs) may shed light on key aspects such as genome restructuring and speciation, stress resistance and epigenetics <xref ref-type="bibr" rid="pone.0026421-Naito1">[7]</xref>, <xref ref-type="bibr" rid="pone.0026421-Slotkin1">[8]</xref>, <xref ref-type="bibr" rid="pone.0026421-Capy1">[9]</xref>. Gaining an early insight with respect to TE composition may also prove useful to counteract technical issues arising during genome assembly and finishing. Recently, several studies have started to elucidate the structure and complexity of graminae (<italic>Poaceae</italic>) mobile elements, showing that their abundance appears to contribute significantly to genome sizes. According to a recent genome draft <xref ref-type="bibr" rid="pone.0026421-Schnable1">[10]</xref>, nearly 85% of the 2.3-gigabase maize genome is composed of TEs, while its close relative <italic>Sorghum bicolor</italic>, with a smaller genome size (750Mb), has only 61% of TEs. Also, the small genome of the model grass <italic>Brachypodium distachyon</italic> (355Mb), contains only 28% TEs <xref ref-type="bibr" rid="pone.0026421-Vogel1">[11]</xref>. The closest wheat relative for which estimates on repeat content have been obtained is barley (5.1Gb genome size), with proportions ranging from 70% to 74.5% <xref ref-type="bibr" rid="pone.0026421-Mayer1">[6]</xref>, <xref ref-type="bibr" rid="pone.0026421-Wicker1">[12]</xref>. Early estimates based on limited datasets suggested about 80% of repeated elements in the wheat genome <xref ref-type="bibr" rid="pone.0026421-Charles1">[13]</xref>.</p>
+      <p>The close syntenic relationships among <italic>Poaceae</italic> are well known <xref ref-type="bibr" rid="pone.0026421-Moore1">[14]</xref>. However, knowledge on the gene content of single chromosomes will allow detailed inferences on syntenic relations between wheat and other <italic>Triticeae</italic> with sequenced genomes (rice, <italic>Brachypodium</italic>, sorghum). For instance, the integration of low-coverage shotgun sequencing information of barley chromosome 1H with the collinear gene order of orthologous rice and sorghum genes has allowed Mayer et al. <xref ref-type="bibr" rid="pone.0026421-Mayer1">[6]</xref> to propose a virtual sequence-based gene order map of an entire <italic>Triticeae</italic> chromosome.</p>
+      <p>MicroRNAs (miRNAs) are short non-protein-coding RNAs produced by Dicer or Dicer-like enzymes which catalyze excision from longer precursors. They are present in both animals and plants, although in these taxa substantial differences are present with respect to their biogenesis and mechanism of action <xref ref-type="bibr" rid="pone.0026421-JonesRhoades1">[15]</xref>. Besides acting as regulators of development and morphogenesis, plant miRNAs have been recently associated with biotic and abiotic stress responses <xref ref-type="bibr" rid="pone.0026421-JonesRhoades1">[15]</xref>, <xref ref-type="bibr" rid="pone.0026421-Mallory1">[16]</xref>, <xref ref-type="bibr" rid="pone.0026421-Shukla1">[17]</xref>. Based on sequence similarity, miRNAs have been classified in families whose members can show a high level of conservation across many plant species (conserved miRNAs). Thanks to this fact, bioinformatics can be used in a straightforward way to discover homologs of known miRNAs, while the search for novel and species-specific miRNAs is mainly accomplished by lab-based methods <xref ref-type="bibr" rid="pone.0026421-JonesRhoades1">[15]</xref>. In the <italic>miRBase</italic> <xref ref-type="bibr" rid="pone.0026421-GriffithsJones1">[18]</xref> release 16 (September 2010) only 42 wheat microRNAs are included <xref ref-type="bibr" rid="pone.0026421-Yao1">[19]</xref>, although other candidate miRNAs have been proposed <xref ref-type="bibr" rid="pone.0026421-Wei1">[20]</xref>, <xref ref-type="bibr" rid="pone.0026421-Han1">[21]</xref>. Little is known about the specific chromosome locations of all these miRNAs and no information is available on the content of miRNAs in wheat chromosome 5A.</p>
+      <p>In this work, we provide a first sequencing survey of the molecular landscape of wheat chromosome 5A. With a size of 827Mb, the chromosome harbors 4.9% of the wheat genome <xref ref-type="bibr" rid="pone.0026421-af1">[1]</xref> and carries genes controlling important traits such as vernalization requirement (<italic>TaVRT-1</italic> <xref ref-type="bibr" rid="pone.0026421-Daniluk1">[22]</xref>), cold tolerance and abiotic stress tolerance <xref ref-type="bibr" rid="pone.0026421-Badawi1">[23]</xref>, <xref ref-type="bibr" rid="pone.0026421-Cattivelli1">[24]</xref>, disease resistance (e.g. Fusarium head blight <xref ref-type="bibr" rid="pone.0026421-Somers1">[25]</xref>) and domestication traits (e.g. free threshing Q gene <xref ref-type="bibr" rid="pone.0026421-Simons1">[26]</xref>). Massively parallel 454 pyrosequencing was used to obtain a 2x coverage of the chromosome and the resulting sequence assembly allowed us to characterize for the first time genes, miRNAs and overall TE content and to infer a virtual gene order and synteny of chromosome 5A with other grass genomes.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results and Discussion</title>
+      <sec id="s2a">
+        <title>Chromosome arm sorting and amplification of chromosomal DNA</title>
+        <p>Flow cytometry was used to isolate the short and long arms of wheat chromosome 5A. The arms were sorted as telocentric chromosomes 5AS and 5AL from a double ditelosomic line (dDt5A). The use of telosomic stocks enables the dissection of the huge wheat genome into small parts which facilitates its analysis and mapping <xref ref-type="bibr" rid="pone.0026421-Doleel2">[3]</xref>. Flow karyotypes obtained after the analysis of liquid suspensions of DAPI-stained mitotic chromosomes had three composite peaks (I, II and III) representing groups of chromosomes, a small peak of chromosome 3B, and two peaks representing the 5AS and 5AL arms (<xref ref-type="supplementary-material" rid="pone.0026421.s001">Figure S1</xref>). The arms were sorted into five (5AS) and two (5AL) replicates on microscopic slides and FISH analysis indicated 5&#x2013;15% contamination by other chromosomes. The samples were contaminated by chromatid fragments and chromosomes without a prevalence of a particular chromosome type. One sample of 5AS with 5.3% contamination and one sample of 5AL with 14.4% contamination were selected for sequencing. Approximately 10 ng DNA were obtained after proteinase treatment and column purification from each chromosome arm fraction. Purified DNA was used as a template for multiple-displacement amplification, which yielded 3&#x2013;6 &#xB5;g of DNA.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Sequence assembly</title>
+        <p>Complete assembly of the chromosome 5A is beyond the scope of the current work, since the low sequence coverage and the high proportion of repetitive elements prevents successful assembly. Nevertheless, a preliminary assembly of sequencing data can provide useful information on chromosome structure. <xref ref-type="table" rid="pone-0026421-t001">Table 1</xref> reports the main metrics of the 454 sequencing reactions and of the assemblies. Two independent assemblies were performed with the reads obtained from the single arm reactions and then an additional assembly was run on the whole 5A chromosome data set. The results show a low percentage of aligned reads and a large number of short contigs, an expected finding considering the low sequencing coverage. The preliminary chromosome assembly allowed to estimate a coverage of 2.3x and a chromosome size of 857.8Mb, very close to the predicted chromosome size of 827Mb <xref ref-type="bibr" rid="pone.0026421-af1">[1]</xref>. The total length of the assembled contigs was only 173.2Mb. This small size can be attributed to three main reasons: i) a high number of sequence reads are classified as singletons and therefore do not contribute to the 173.2 Mb; ii) the high number of repeated regions assemble in collapsed contigs <xref ref-type="bibr" rid="pone.0026421-Paux1">[4]</xref>, as confirmed by the high coverage of a large number of contigs (<xref ref-type="fig" rid="pone-0026421-g001">Figure 1</xref>); iii) according to the Poisson distribution, with a 2.3x coverage more than 10% of the genome is expected to be not covered. Finally, the whole 5A genome assembly was used to verify the overlap between the two arms in terms of sequence similarity; 40% of the contigs are composed exclusively of reads from the long arm, 20.7% of reads from the short arm, while 39% of the contigs contain reads from both arms. This overlap is most probably due to repeated regions present on both arms. However, we cannot exclude the possibility that the 5A telosomes were not telocentric but acrocentric, carrying small segments of pericentromeric chromatin from opposite arms.</p>
+        <fig id="pone-0026421-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Assembly contig coverage distribution of the whole chromosome.</title>
+            <p>The majority of the contigs show a coverage higher than 10x (the highest covered contig was 733x). These data agree with the high repetitive DNA content. All contigs with coverage higher than 10x are presented in the same class. The real peak of the distribution is between 2x and 3x coverage. This peak confirms the theoretical sequence coverage (theoretical coverage is 2.4x, estimated coverage is 2.3x).</p>
+          </caption>
+          <graphic xlink:href="pone.0026421.g001"/>
+        </fig>
+        <table-wrap id="pone-0026421-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Metrics of 454 sequencing reactions and of the three independent assemblies.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0026421-t001-1" xlink:href="pone.0026421.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Metrics</td>
+                  <td align="left" rowspan="1" colspan="1">Short-arm</td>
+                  <td align="left" rowspan="1" colspan="1">Long-arm</td>
+                  <td align="left" rowspan="1" colspan="1">Whole chromosome</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># 454 Titanium runs</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># of reads</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2,407,891</td>
+                  <td align="left" rowspan="1" colspan="1">3,324,512</td>
+                  <td align="left" rowspan="1" colspan="1">5,732,403</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># of bases</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">720,256,529</td>
+                  <td align="left" rowspan="1" colspan="1">1,257,463,363</td>
+                  <td align="left" rowspan="1" colspan="1">1,977,719,892</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>AVG sequence length</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">299</td>
+                  <td align="left" rowspan="1" colspan="1">378</td>
+                  <td align="left" rowspan="1" colspan="1">345</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Theoretical coverage</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2.44X</td>
+                  <td align="left" rowspan="1" colspan="1">2.35X</td>
+                  <td align="left" rowspan="1" colspan="1">2.40X</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># assembled reads</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">933,540</td>
+                  <td align="left" rowspan="1" colspan="1">1,154,599</td>
+                  <td align="left" rowspan="1" colspan="1">1,999,592</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># singleton</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">428,594</td>
+                  <td align="left" rowspan="1" colspan="1">809,056</td>
+                  <td align="left" rowspan="1" colspan="1">1,228,334</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># large contigs (&gt;500 bp)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">37,173</td>
+                  <td align="left" rowspan="1" colspan="1">79,117</td>
+                  <td align="left" rowspan="1" colspan="1">114,518</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># bases of large contigs</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">30,504,362</td>
+                  <td align="left" rowspan="1" colspan="1">64,117,733</td>
+                  <td align="left" rowspan="1" colspan="1">92,685,645</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>AVG large contig size (bp)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">820</td>
+                  <td align="left" rowspan="1" colspan="1">810</td>
+                  <td align="left" rowspan="1" colspan="1">809</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>N50 large contigs (bp)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">803</td>
+                  <td align="left" rowspan="1" colspan="1">798</td>
+                  <td align="left" rowspan="1" colspan="1">795</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Largest Contig (bp)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">11,639</td>
+                  <td align="left" rowspan="1" colspan="1">9,725</td>
+                  <td align="left" rowspan="1" colspan="1">9,606</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># all contigs</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">159,243</td>
+                  <td align="left" rowspan="1" colspan="1">276,221</td>
+                  <td align="left" rowspan="1" colspan="1">424,407</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># bases all contigs (bp)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">60,984,419</td>
+                  <td align="left" rowspan="1" colspan="1">116,223,592</td>
+                  <td align="left" rowspan="1" colspan="1">173,242,208</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Estimated Genome Size (MB)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">182.2</td>
+                  <td align="left" rowspan="1" colspan="1">546.4</td>
+                  <td align="left" rowspan="1" colspan="1">857.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Estimated Coverage</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3.9</td>
+                  <td align="left" rowspan="1" colspan="1">2.3</td>
+                  <td align="left" rowspan="1" colspan="1">2.3 X</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s2c">
+        <title>The repetitive landscape of wheat chromosome 5A</title>
+        <p>A total of 2,407,891 and 3,324,512 reads obtained from 5AS and 5AL, respectively, were subjected to independent analyses to identify sequences corresponding to repeat elements. The reads were subjected to local BlastN against <italic>Triticeae</italic> genomic repeat sequences (TREP complete database, BlastN; Expect value &lt;10e<sup>&#x2212;6</sup>). Matching reads were assigned to the &#x201C;Known Transposable Elements&#x201D; (Known TEs) group according to the procedure of Wicker et al. <xref ref-type="bibr" rid="pone.0026421-Wicker1">[12]</xref>. This class accounted for 72.67% (1,749,853 reads) and 71.14% (2,365,036 reads) for 5AS and 5AL, respectively (<xref ref-type="table" rid="pone-0026421-t002">Table 2</xref>). These reads were further assigned to TE families (or subfamilies) according to the nomenclature of Wicker et al. <xref ref-type="bibr" rid="pone.0026421-Wicker2">[27]</xref>. The number of identified known TE families (or subfamilies) was 276 and 288 for 5AS and 5AL, respectively (see <xref ref-type="supplementary-material" rid="pone.0026421.s002">Table S1</xref> for the complete listing of TE families).</p>
+        <table-wrap id="pone-0026421-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Summary of 454 wheat chromosome 5A long and short arm reads, classified according to major repeat classes.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0026421-t002-2" xlink:href="pone.0026421.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Groups of repeat elements</td>
+                  <td align="left" rowspan="1" colspan="1">Short arm reads</td>
+                  <td align="left" rowspan="1" colspan="1">% short arm</td>
+                  <td align="left" rowspan="1" colspan="1">Long arm reads</td>
+                  <td align="left" rowspan="1" colspan="1">% long arm</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"><bold>Known TE</bold> (TREP complete database hits)</td>
+                  <td align="left" rowspan="1" colspan="1">1,749,853</td>
+                  <td align="left" rowspan="1" colspan="1">72.67</td>
+                  <td align="left" rowspan="1" colspan="1">2,365,036</td>
+                  <td align="left" rowspan="1" colspan="1">71.14</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"><bold>Novel TE</bold> (PTREP database hits)</td>
+                  <td align="left" rowspan="1" colspan="1">59,832</td>
+                  <td align="left" rowspan="1" colspan="1">2.48</td>
+                  <td align="left" rowspan="1" colspan="1">86,459</td>
+                  <td align="left" rowspan="1" colspan="1">2.60</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Repeats (unknown)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">23,419</td>
+                  <td align="left" rowspan="1" colspan="1">0.97</td>
+                  <td align="left" rowspan="1" colspan="1">282,130</td>
+                  <td align="left" rowspan="1" colspan="1">8,49</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Known TE + Novel TE + Repeats</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1,833,104</td>
+                  <td align="left" rowspan="1" colspan="1">76.13</td>
+                  <td align="left" rowspan="1" colspan="1">2,733,625</td>
+                  <td align="left" rowspan="1" colspan="1">82.23</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Genes</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">24,721</td>
+                  <td align="left" rowspan="1" colspan="1">1.03</td>
+                  <td align="left" rowspan="1" colspan="1">41,645</td>
+                  <td align="left" rowspan="1" colspan="1">1.25</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Other</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">550,066</td>
+                  <td align="left" rowspan="1" colspan="1">22.84</td>
+                  <td align="left" rowspan="1" colspan="1">549,242</td>
+                  <td align="left" rowspan="1" colspan="1">16.52</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Total reads</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2,407,891</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">3,324,512</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>The long and short arm reads were grouped in: known TE families (match at DNA level as indicated by BlastN hits on TREP complete database; Expect value &lt;10e<sup>&#x2212;6</sup>), Novel TE families (match at protein level indicated by BLASTX hits on protein TREP database; Expect value &lt;10e<sup>&#x2212;6</sup>), Repeats (uncharacterized repeats belonging to high-coverage contigs not related to genes or other known TE fraction), and Other (leftover reads escaping the previous groups).</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Although it has been reported that chromosome DNA amplification does not introduce a significant bias against particular genomic loci <xref ref-type="bibr" rid="pone.0026421-Mayer1">[6]</xref>, <xref ref-type="bibr" rid="pone.0026421-imkov1">[28]</xref>, some data indicate that chromosome amplification, as conducted in the present study, may result in artificial enrichment in discrete groups of abundant TEs <xref ref-type="bibr" rid="pone.0026421-Choulet1">[29]</xref>, <xref ref-type="bibr" rid="pone.0026421-Pinard1">[30]</xref>. When comparing data from non-amplified <xref ref-type="bibr" rid="pone.0026421-Wicker3">[31]</xref> vs. amplified DNA from barley, it was shown that a bias is present with respect to very abundant TE families (Wicker T. and Stein N., personal communication). A survey of the frequency of the main TE families in the non-amplified Chinese Spring whole-genome 5x sequences (<ext-link ext-link-type="uri" xlink:href="http://www.cerealsdb.uk.net/search_reads.htm">http://www.cerealsdb.uk.net/search_reads.htm</ext-link>) indicated a bias for few major TE species present in the 5A dataset. For instance, based on Blast analysis (E-value &lt;&#x200A;=&#x200A;10e<sup>&#x2212;5</sup>) <italic>Sabrina</italic> and <italic>Wham</italic> appeared to be two-fold overestimated the 5A dataset, while the opposite was found for <italic>Angela</italic> and <italic>Wis</italic>. No substantial bias could be detected for other, less abundant, species.</p>
+        <p>Novel TEs, while bearing scarce similarity at the DNA level to known TEs, may nonetheless exhibit substantial similarity to known TEs in the protein-coding regions <xref ref-type="bibr" rid="pone.0026421-Wicker3">[31]</xref>. Therefore, the reads that did not produce any BlastN match were locally aligned with BlastX (Expect value &lt;10e<sup>&#x2212;6</sup>) against PTREP. The resulting hits were grouped in the Novel TEs fraction, accounting for 2.48% and 2.60%, short and long arm respectively (<xref ref-type="table" rid="pone-0026421-t002">Table 2</xref>). Again, the non-matching reads were saved for downstream analyses. To estimate additional uncharacterized repeated sequences, a class of &#x201C;Repeats&#x201D; was created consisting of reads participating to contigs with high coverage. In fact, given the approximate 2-fold coverage of the snapshot, any coverage higher than 5 is likely to include repeated sequences. This class of repeats was 0.97% and 8.49% for the long and short arm, respectively (<xref ref-type="table" rid="pone-0026421-t002">Table 2</xref>). Overall, wheat 5A repetitive elements, when summing up known TEs, novel TEs and Repeats groups, account for 76.13% (short arm) and 82.23% (long arm) of the snapshot.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Gene content estimation on wheat chromosome 5A</title>
+        <p>All sequence reads with no similarity to known putative or new repetitive elements were used to characterize the genes and to estimate the gene content of chromosome 5A. The Gene Ontology (GO) annotations obtained by BlastX matches of 454 reads against monocot proteins are shown in <xref ref-type="fig" rid="pone-0026421-g002">Figure 2</xref>. The analysis allowed the association of 75,834 reads with 87 terms: 37 Biological Process, 25 Molecular Function and 25 Cellular Component. Biological Process terms were associated to 22,816 reads, Molecular Function categories annotated 44,196 reads, most of which (34%) as &#x201C;binding&#x201D; and &#x201C;DNA binding&#x201D; function; Cellular Component categories annotated 8,822 terms, 37% of them as &#x201C;Membrane&#x201D;.</p>
+        <fig id="pone-0026421-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Percentage distribution of the GO entries associated wheat 454 reads for chromosome 5A.</title>
+            <p>The most represented entries within the three ontologies (Molecular function, Biological process and Cellular component) are indicated.</p>
+          </caption>
+          <graphic xlink:href="pone.0026421.g002"/>
+        </fig>
+        <p>A similarity search was performed against a subset of UniProt containing only monocotyledon proteins and UniGenes containing all the available Liliopsida ESTs (<italic>Hordeum vulgare, Oryza sativa, Panicum virgatum, Saccharum officinarum, Sorghum bicolor, Triticum aestivum and Zea mays</italic>). The search on the short arm produced 20,108 reads with protein matches and 23,310 reads with EST matches. The same analysis performed on the long arm produced 37,758 reads matching to Uniprot entries and 35,198 reads having similarity to ESTs. The reads matching either to ESTs or proteins were 24,721 for the short arm and 41,645 for the long arm, corresponding to a total length of 7,779,334bp and 16,431,167bp, respectively. Considering the predicted chromosome arm lengths of 295Mb and 532Mb for 5AS and 5AL <xref ref-type="bibr" rid="pone.0026421-af1">[1]</xref>, the coding fraction can be estimated as 1.08% and 1.30% in the short and the long arm, respectively. Considering an average coding sequence length of 2,000 bp <xref ref-type="bibr" rid="pone.0026421-Paux1">[4]</xref>, the number of genes were estimated at about 1,593 genes on the short arm and 3,495 genes on the long arm, for a total of 5,088 genes for the whole chromosome. This preliminary estimate agrees with the gene content of about 6,000 (1.2%) in the 1Gb chromosome 3B, calculated by BAC end sequencing <xref ref-type="bibr" rid="pone.0026421-Paux1">[4]</xref>. However, these estimates should be interpreted with caution as the results depend on partial data sets. For example, Choulet et al. <xref ref-type="bibr" rid="pone.0026421-Choulet1">[29]</xref> estimated a gene content of about 8,400 in chromosome 3B after sequencing a total of 13Mb BAC contigs.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Wheat chromosome 5A gene distribution compared to Brachypodium, rice and sorghum genomes</title>
+        <p>The availability of a 2x sequence coverage of wheat chromosome 5A allows the evaluation of possible syntenic regions shared with the <italic>Brachypodium</italic>, rice and sorghum reference genomes. The analysis was performed at the protein level on the proteomes of the three grass species, using BlastX to search wheat homologous proteins, filtered for transposable elements. The Venn diagram in <xref ref-type="fig" rid="pone-0026421-g003">Figure 3</xref> shows the distribution of the wheat reads with a significant similarity among grass proteins. As expected, the majority of wheat coding sequences found a homologous protein in all three species, reflecting their close phylogenetic relationship <xref ref-type="bibr" rid="pone.0026421-Vogel1">[11]</xref>. However, 6,495 wheat reads found a homologous protein only in <italic>Brachypodium</italic>, 3,483 in sorghum and 2,302 in rice. The proteins that showed a significant similarity to wheat reads were plotted along their position on the chromosomes of their respective species, highlighting regions containing a high proportion of putative homologous sequences. The average syntenic content was calculated as the number of wheat matching proteins in a window of 1Mb with steps of 20kb. The regions showing synteny to the short and long arms of wheat chromosome 5A are shown in <xref ref-type="fig" rid="pone-0026421-g004">Figure 4</xref> and <xref ref-type="fig" rid="pone-0026421-g005">Figure 5</xref>.</p>
+        <fig id="pone-0026421-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Venn diagram showing wheat read distribution with a significant similarity to <italic>Brachypodium</italic>, rice and sorghum.</title>
+          </caption>
+          <graphic xlink:href="pone.0026421.g003"/>
+        </fig>
+        <fig id="pone-0026421-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Wheat 5A sequence reads mapped on the genome of <italic>Brachypodium</italic>, rice and sorghum.</title>
+            <p>The genes of <italic>Brachypodium</italic>, rice and sorghum with a significant similarity at the amino acid level with the wheat 5A reads obtained in this work were plotted along their position on the chromosomes of their respective organism. To highlight regions containing a high proportion of putative homologous genes, the average syntenic content was calculated as the number of wheat matching proteins in a window of 1Mb with shift of 20Kb. Note that color scale is specific for each arm and genome, therefore a direct comparison of the gene density between the different genomes is not possible.</p>
+          </caption>
+          <graphic xlink:href="pone.0026421.g004"/>
+        </fig>
+        <fig id="pone-0026421-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Synteny among <italic>Brachypodium</italic>, rice and sorghum highlighted by wheat 5A read matches.</title>
+            <p>The genes of <italic>Brachypodium</italic>, rice and sorghum showing similarities at the amino acid level with the wheat 5A reads obtained in this work were used to link the chromosomes to highlight the syntenic relationships. Yellow lines refer to the reads from short-arm (5AS), while black lines refer to the reads from long-arm (5AL). Only the genes falling on a region with a gene density higher or equal than 50 genes / Mb were considered (see also <xref ref-type="fig" rid="pone-0026421-g004">Figure 4</xref>).</p>
+          </caption>
+          <graphic xlink:href="pone.0026421.g005"/>
+        </fig>
+        <p>Regions of synteny to chromosome 5A, particularly to the long arm, are distributed over many grass chromosomes, suggesting a relatively low conservation of gene order, as reported earlier <xref ref-type="bibr" rid="pone.0026421-Sorrells1">[32]</xref>. The analysis highlights regions of low syntenic gene density towards the end of many chromosomes (green regions in <xref ref-type="fig" rid="pone-0026421-g004">Figure 4</xref>). These regions probably result from either genes that really have moved from their original positions or false positive matches due to the alignment between paralogous genes.</p>
+        <p>Nevertheless, some regions of synteny were identified. The wheat chromosome 5A short arm is closely related to the <italic>Brachypodium</italic> chromosome 4, the sorghum chromosome 8 and the rice chromosome 12. The 5A long arm found syntenic regions on the <italic>Brachypodium</italic> chromosomes 4 and 1, the sorghum chromosomes 1 and 2 and the rice chromosome 9 and 3. These results are in agreement with other comparative studies among grasses, based mainly on RFLP mapping of closely related species <xref ref-type="bibr" rid="pone.0026421-Sorrells1">[32]</xref>, <xref ref-type="bibr" rid="pone.0026421-Salse1">[33]</xref>, <xref ref-type="bibr" rid="pone.0026421-Huo1">[34]</xref>, <xref ref-type="bibr" rid="pone.0026421-Sarma1">[35]</xref>, <xref ref-type="bibr" rid="pone.0026421-Linkiewicz1">[36]</xref>.</p>
+        <p>A recent evolution model for cereal genomes proposes a grass ancestor genome with five chromosomes that underwent a whole genome duplication followed by two interchromosomal translocation and fusions that led to an intermediate ancestor with 12 chromosomes <xref ref-type="bibr" rid="pone.0026421-Salse1">[33]</xref>. Our results find regions of high synteny between wheat chromosome 5A and rice chromosomes 9 (derived from ancestral chromosome 8) and 12 (derived from ancestral chromosome 11), thus supporting that model.</p>
+        <p>We used the genomic regions of conserved homologies identified in <italic>Brachypodium</italic>, rice and sorghum, to generate a &#x201C;genome zipper&#x201D; <xref ref-type="bibr" rid="pone.0026421-Mayer1">[6]</xref> for both the short and long arms of the wheat chromosome 5A. The genome zipper method is based on the idea that the virtual gene order in a species can be reconstructed on the basis of the syntenic relationships with closely related species. To build the genome zippers, the <italic>Brachypodium</italic> gene order was used as a reference, considering only the genes of <italic>Brachypodium</italic> having a homologue in at least one of the two other species considered (sorghum and rice). The final 5AS zipper (<xref ref-type="supplementary-material" rid="pone.0026421.s003">Table S2</xref>) contains 645 genes from the <italic>Brachypodium</italic> chromosome 4 short arm, while the 5AL zipper contains 2,280 genes from both the chromosome 1 and the long arm of chromosome 4.</p>
+        <p>Each gene of the zipper was associated with an estimate of the reliability of the syntenic region. The resulting vector indicates if the homologous genes from <italic>Brachypodium</italic>, rice and sorghum are located on the expected chromosome and if they can be considered as true orthologous genes as verified by the reciprocal best hit method (see <xref ref-type="sec" rid="s3">Materials and Methods</xref> for details). The 5AS zipper contains 54% of genes located on the syntenic chromosomes, with 81% of them being true orthologs. Similar numbers are found in the 5AL zipper, with 56% of genes located on the right positions and 82% of true orthologs. These values reflect the accuracy of the zipper prediction.</p>
+        <p>The two reference zippers were used to search for the wheat putative syntenic genes allowing the creation of a virtual gene order for the wheat 5A chromosome. A similarity search of wheat sequences at the nucleotide level identified 392 and 1,480 genes on the 5AS and 5AL zippers, respectively. 55% and the 61% of the 5AS and 5AL wheat sequence matches occur with true orthologous zipper genes located on syntenic chromosomes.</p>
+        <p>The wheat virtual gene order based on the syntenic regions of <italic>Brachypodium</italic>, rice and sorghum was integrated with the EST markers from and a deletion line-based physical map of chromosome 5A available at the GrainGenes database (<ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/GG2/index.shtml">http://wheat.pw.usda.gov/GG2/index.shtml</ext-link>). A similarity search of the whole wheat chromosome 5A sequence dataset against the EST markers identified 2,737 and 4,176 reads respectively for 5AS and 5AL arms. 80% and 90% of the reads from the 5AS and 5AL arms, respectively, find a match with an EST marker anchored on the correct arm, while the rest maps on the opposite arm. This phenomenon could be due to presence of a small portion of the opposite arm pericentromeric region, or to errors in marker anchoring. The integration of the genome zipper with the physical map is shown in <xref ref-type="fig" rid="pone-0026421-g006">Figure 6</xref>. 47 ESTs map on the 5AS zipper and 139 ESTs on the 5AL zipper. The complete list of zipper genes, for both the short and long arms, is available as supporting information (<xref ref-type="supplementary-material" rid="pone.0026421.s003">Table S2</xref>).</p>
+        <fig id="pone-0026421-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Integration between wheat chromosome 5A virtual gene order and its physical map.</title>
+            <p>The integration was achieved by anchoring the wheat genes positioned along the genome zipper with the EST markers. The figure shows the <italic>Brachypodium</italic> syntenic regions. The white numbers on the wheat chromosome represent the number of EST markers anchored to the corresponding bin (on the right) showing homology with the zipper genes. In case of overlapping bins the numbers were summed. The black numbers between parentheses beside each bin name indicate how many ESTs are anchored on that specific bin. Red numbers indicate genes anchored on the wrong arm with respect to the origin of the reads.</p>
+          </caption>
+          <graphic xlink:href="pone.0026421.g006"/>
+        </fig>
+        <p>To evaluate the quality of the genome zipper, the consistency between the virtual gene order and the distribution of the EST markers was verified. The analysis was performed considering only non-overlapping bins with high numbers of mapped ESTs, as described in <xref ref-type="sec" rid="s3">Materials and Methods</xref>. Short arm bins contained 30 mapped ESTs, and long arm bins 112 mapped ESTs. The results (<xref ref-type="fig" rid="pone-0026421-g007">Figure 7</xref>) show that the order of 5AS and 5AL zipper genes from <italic>Brachypodium</italic> chromosome 4 is coherent with the physical map, as the genes and bin positions follow a very similar order. Indeed only 3 EST markers from 5AS and 6 from 5AL are positioned on non contiguous positions. In contrast, genes from 5AL located on <italic>Brachypodium</italic> chromosome 1 show a less conserved distribution suggesting a probable inversion in wheat (<xref ref-type="fig" rid="pone-0026421-g007">Figure 7</xref>) compared to <italic>Brachypodium</italic>.</p>
+        <fig id="pone-0026421-g007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title>Consistency between virtual gene order and marker distribution.</title>
+            <p>The figure integrates the genome zipper and the deletion bin map (from <xref ref-type="fig" rid="pone-0026421-g006">Figure 6</xref>) in order to verify their collinearity. Each gene shared by the two maps is represented by a bar and it is positioned according to the bin (seven levels on the vertical axis, indicated on the left) and to the zipper (horizontal axis). If the two maps are fully consistent then the zipper genes would fill one bin at a time from the top to the bottom of the figure. Although, as expected, the correspondence of the two maps is not perfect, genes within a bin tend to be contiguous within the zipper. The darker area on the 5AL arm represents the portion of the zipper syntenic with <italic>Brachypodium</italic> chromosome 1, while the rest corresponds to <italic>Brachypodium</italic> chromosome 4. The apparent lack of collinearity at the end of the long arm may be explained by an inversion (bracketed by red arrowheads) occurred between wheat and <italic>Brachypodium</italic>. Some relevant zipper genes are indicated at the top and bottom of the figure.</p>
+          </caption>
+          <graphic xlink:href="pone.0026421.g007"/>
+        </fig>
+      </sec>
+      <sec id="s2f">
+        <title>Identification of candidate conserved microRNAs</title>
+        <p>The pipeline described in <xref ref-type="sec" rid="s3">Materials and Methods</xref> allowed the identification of 195 candidate miRNA precursors, 92 and 103 for the short and long arm, respectively. Problems related to the computational identification of false positive miRNA are well known and several strategies have been developed to deal with that. Moreover, because of its polyploid genome, wheat has potentially a lot of different genomic locations coding for miRNAs of the same family, although many of them could be silenced or expressed only in specific conditions. However, among the identified miRNA precursors, 54 were found to be highly similar to precursors already known in plants, while the others can be either false positives or novel precursors. After searching in the Uniprot database, no similarities were found with known proteins for any of the identified sequences. Sixteen miRNA families were shown to be putatively present on chromosome 5A: two of them (miR164 and miR167) were found only in the short arm, three families (miR156, miR399 and miR2118) were found only in the long arm, while the remaining eleven families were found in both arms (<xref ref-type="table" rid="pone-0026421-t003">Table 3</xref>).</p>
+        <table-wrap id="pone-0026421-t003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>Putative miRNA families identified in the 454 reads of the short and long arms of chromosome 5A.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0026421-t003-3" xlink:href="pone.0026421.t003"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">miRNA family</td>
+                  <td align="left" rowspan="1" colspan="1">Homologous miRNAs</td>
+                  <td align="left" rowspan="1" colspan="1">Number of precursors</td>
+                  <td align="left" rowspan="1" colspan="1">Precursor length</td>
+                  <td align="left" rowspan="1" colspan="1">Mature position</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="5" align="left" rowspan="1">
+                    <bold>5A short arm</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">164</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>O.sativa, S.bicolor</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">254</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">167</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>B.napus</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">101</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">437</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>O.sativa, S.bicolor</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">199</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">441</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">97&#x2013;280</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032; - 5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">818</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>O.sativa</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">87&#x2013;109</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1117</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">122&#x2013;124</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1118</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">251&#x2013;281</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1120</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">20</td>
+                  <td align="left" rowspan="1" colspan="1">68&#x2013;99</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1122</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum, B.distachyon</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">40</td>
+                  <td align="left" rowspan="1" colspan="1">75&#x2013;160</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032; - 5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1125</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">137</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1130</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">96&#x2013;104</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1131</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">81</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1847</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>O.sativa</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">83</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td colspan="5" align="left" rowspan="1">
+                    <bold>5A long arm</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">156</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>O.sativa, S.bicolor, S.officinarum, Z.mays</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">138</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">399</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>O.sativa, A.thaliana, M.truncatula, P.vulgaris, S.bicolor, V.vinifera, Z.mays</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">93&#x2013;116</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">437</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>O.sativa, S.bicolor, B.distachyon</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">194&#x2013;201</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">441</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">112&#x2013;286</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032; - 5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">818</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>O.sativa</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">93&#x2013;184</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1117</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">8</td>
+                  <td align="left" rowspan="1" colspan="1">81&#x2013;124</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032; - 5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1118</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">256&#x2013;259</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1120</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">22</td>
+                  <td align="left" rowspan="1" colspan="1">69&#x2013;249</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1122</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum, B.distachyon</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">39</td>
+                  <td align="left" rowspan="1" colspan="1">77&#x2013;161</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032; - 5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1125</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">137&#x2013;138</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1130</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">101</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1131</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T.aestivum</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">81</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1847</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>O.sativa</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">84</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2118</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Z.mays</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">457</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>For each family, the table reports the plant species to which the homologous mature microRNAs belong, the number of candidate precursors, their length and the position of the mature sequence in the hairpin.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>It is well known that the size of hairpin precursors is more variable in plants than in animals and secondary structures appear to be more complex in the former <xref ref-type="bibr" rid="pone.0026421-Bonnet1">[37]</xref>. Referring to the short arm of 5A, miRNA putative precursors showed an average length of 114.13 nt, with a minimum of 68 nt and a maximum of 281 nt; the average minimum free energy index (MFEI) was 1.47, while the average GC content was 38.19%. In the long arm, miRNA precursors showed an average length of 113.32 nt, with a minimum of 69 and a maximum of 457 (although this value is related to one case that is exceptional compared to the other precursors). The average MFEI was 1.47, while the average GC content was 38.63%. The percentage of mature sequences with U in the first position was 59% in the short arm and 54% in the long arm. These values are in good agreement with those published in previous reports <xref ref-type="bibr" rid="pone.0026421-Han1">[21]</xref>. Moreover, most precursors have the mature sequence in the 3&#x2032; end of the hairpin (68% in the short arm, 63% in the long arm). This characteristic feature of wheat miRNAs has already been highlighted by Han et al. <xref ref-type="bibr" rid="pone.0026421-Han1">[21]</xref>.</p>
+        <p>Since the wheat genome is rich in repetitive sequences, the number of candidate precursors containing repeats was calculated. In the short arm, Repeat Masker identified 35 miRNA precursors with at least one known repetitive element (38% of the total number of precursors), while 28 precursors were found in the long arm (27%). The repetitive sequences were all classified as originating from transposable elements. This evidence supports the model proposed by Piriyapongsa and Jordan <xref ref-type="bibr" rid="pone.0026421-Piriyapongsa1">[38]</xref> on how miRNAs could have evolved from TE encoding siRNA.</p>
+        <p>Some of the miRNA families found on chromosome 5A were associated with a set of predicted or experimentally confirmed targets, involved in developmental or metabolic processes and in stress response.</p>
+      </sec>
+      <sec id="s2g">
+        <title>Wheat unigenes represented in the 5A snapshot contigs and their use for scaffolding</title>
+        <p>Wheat unigenes from NCBI (<italic>Triticum aestivum</italic> unigenes v55, containing 40,349 unigenes) were blasted against the contigs (identity &#x2265;97%, L &#x2265;50 bp). The use of the contigs (regions covered by more than one read) and the high stringency applied, should avoid scaffolding genes from homeologous chromosomes present as contaminants in the chromosomal preparation. The following parameters were measured: the number of unigenes matching the contigs, percent coverage of each of these unigenes and the number of contigs matching each unigene. The contigs were matched by 2,772 unigenes, i.e. 6.9% of the total. 634 unigenes matched only 5AS, 1,962 only 5AL and 176 both arms (<xref ref-type="table" rid="pone-0026421-t004">Table 4</xref>). The latter may represent genes located in pericentrometric regions, which, as discussed above, could be present in both flow-sorted chromosome arm fractions if the 5AS and 5AL telosomes were not telocentric but actually acrocentric. The fraction of unigenes mapped compares well with the portion of the wheat genome covered by the chromosome 5A (approx. 4.9% <xref ref-type="bibr" rid="pone.0026421-af1">[1]</xref>) and is different from the 5,088 genes estimated in the previous sections. The discrepancy is most likely due to the exclusion of the singletons in the present analysis and to the fact that the 40,349 unigenes present in the NCBI unigene build are clearly an underestimate with respect to the projected number of wheat genes, since many homeologous transcripts have been collapsed into a single unigene during construction of the build. The majority of the unigenes recognized only 1&#x2013;4 contigs, thus representing non-repetitive transcripts. Twelve unigenes contained highly repetitive sequences, judged by the fact that the same region of each unigene was present on &gt;10 distinct contigs with high identity (&gt;97%). Sixteen unigenes showed high sequence similarity to other unigenes in the collection, and recognized the same contigs with different identities; these were assumed to represent homeologs, and only the unigene showing highest sequence similarity with the contigs was retained for scaffolding (see below). In one case, a single unigene (gnl|UG|Ta#S15879726) recognized 25 different contigs, some of them overlapping, that covered its whole sequence multiple times; BlastX analysis showed partial homology with a gag polyprotein, indicating that this unigene derived from a presumed retrotransposon. The detailed list of unigenes mapped is reported in <xref ref-type="supplementary-material" rid="pone.0026421.s004">Table S3</xref>.</p>
+        <table-wrap id="pone-0026421-t004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>Unigenes mapped on 5A chromosome arms.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0026421-t004-4" xlink:href="pone.0026421.t004"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>N</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>%</italic>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Total unigenes</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">40,349</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Unigenes matching 5A</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2,772</td>
+                  <td align="left" rowspan="1" colspan="1">6.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>5A 1 hit</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1,765</td>
+                  <td align="left" rowspan="1" colspan="1">4.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>5A &gt;1 hit</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1,007</td>
+                  <td align="left" rowspan="1" colspan="1">2.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Only 5AS</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">634</td>
+                  <td align="left" rowspan="1" colspan="1">1.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Only 5AL</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1,962</td>
+                  <td align="left" rowspan="1" colspan="1">4.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Both arms</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">176</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>The unigenes matching the contigs showed sequence coverage close to 40% (<xref ref-type="fig" rid="pone-0026421-g008">Figure 8</xref>). Such low coverage is due to the use of contigs (regions covered by more than one read). A number of unigenes recognized multiple contigs, and each separate contig recognized a different portion of the unigene. These unigenes were used for scaffolding of the contigs with the limitation that the gap length between two joined contigs could not always be determined, due to the presence of introns of unknown length. We were able to produce 207 scaffolds on the short arm, derived from 510 contigs, and 579 scaffolds on the long arm, derived from 1,424 contigs. The average bases increased from approx. 400bp in the contigs, to approx. 2Kb in scaffolds, excluding Ns introduced during the scaffolding procedure (<xref ref-type="table" rid="pone-0026421-t005">Table 5</xref>). These numbers were similar for the short and long arms. Several contigs could be scaffolded to cover a complete unigene (<xref ref-type="fig" rid="pone-0026421-g009">Figure 9</xref>).</p>
+        <fig id="pone-0026421-g008" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.g008</object-id>
+          <label>Figure 8</label>
+          <caption>
+            <title>Unigene representation on chromosome 5A assembly.</title>
+            <p><bold>A</bold>: number of contigs per unigene; <bold>B</bold>: percentage of sequence coverage by unigenes.</p>
+          </caption>
+          <graphic xlink:href="pone.0026421.g008"/>
+        </fig>
+        <fig id="pone-0026421-g009" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.g009</object-id>
+          <label>Figure 9</label>
+          <caption>
+            <title>Representative examples of contig scaffolding.</title>
+            <p><bold>A</bold>: examples of unigenes from 5AS; <bold>B</bold>: examples of unigenes from 5AL; <bold>C</bold>: scaffolding and coverage for gene <italic>TaVRT-1</italic>. Red bars: exon sequences, blue bars: introns or other sequences not present in the mRNA.</p>
+          </caption>
+          <graphic xlink:href="pone.0026421.g009"/>
+        </fig>
+        <table-wrap id="pone-0026421-t005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026421.t005</object-id>
+          <label>Table 5</label>
+          <caption>
+            <title>Scaffolding statistics. Bases per scaffold are reported, omitting the Ns added to join the contigs.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0026421-t005-5" xlink:href="pone.0026421.t005"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">5AS</td>
+                  <td align="left" rowspan="1" colspan="1">5AL</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>N contigs</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">159,243</td>
+                  <td align="left" rowspan="1" colspan="1">276,222</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>N bases per contig</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">383</td>
+                  <td align="left" rowspan="1" colspan="1">421</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>N contigs in unigenes</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">510</td>
+                  <td align="left" rowspan="1" colspan="1">1,424</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>N exons per contig</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1.3</td>
+                  <td align="left" rowspan="1" colspan="1">1.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>N scaffolds</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">207</td>
+                  <td align="left" rowspan="1" colspan="1">579</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>N contigs per scaffold</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2.5</td>
+                  <td align="left" rowspan="1" colspan="1">2.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>N bases per scaffold</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1,988.4</td>
+                  <td align="left" rowspan="1" colspan="1">1,782.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>N exons per scaffold</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3.2</td>
+                  <td align="left" rowspan="1" colspan="1">3.1</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>To evaluate the degree of completeness of the assembly for the non-repetitive gene fraction, the presence of genes already reported to map on chromosome 5A was checked. The following sequences were considered: the vernalization locus <italic>TaVRT-1</italic> <xref ref-type="bibr" rid="pone.0026421-Daniluk1">[22]</xref>, the free threshing locus <italic>Q</italic> <xref ref-type="bibr" rid="pone.0026421-Simons1">[26]</xref> and the frost tolerance locus <italic>Cbf</italic> comprising of at least 5 genes mapped on 5AL <xref ref-type="bibr" rid="pone.0026421-Badawi1">[23]</xref>. Of these, portions of <italic>TaVRT-1</italic> (<xref ref-type="fig" rid="pone-0026421-g009">Figure 9</xref>) and <italic>Cbf3d</italic>-<italic>A15</italic> matched contigs, whereas other <italic>Cbf</italic> and <italic>Q</italic> genes, with the exception of <italic>Cbf4b-A20</italic>, were only identified in the non-assembled reads (<xref ref-type="supplementary-material" rid="pone.0026421.s005">Table S4</xref>). All genes mapped on the long arm of 5A, in accordance with previous reports. <italic>Cbf</italic> is a large gene family of transcription factors containing approximately 50 members spread on at least 4&#x2013;5 different chromosomes <xref ref-type="bibr" rid="pone.0026421-Badawi1">[23]</xref>; of these, 5 have been mapped on chromosome 5AL, but it is conceivable that the number is higher. A blast-based search conducted using more relaxed parameters (identity &#x2265;80%, L &#x2265;50 bp) identified a number of contigs and singletons, possibly representing other members of the same family.</p>
+      </sec>
+      <sec id="s2h">
+        <title>Conclusions</title>
+        <p>The low coverage sequence of wheat chromosome 5A has provided for the first time a description of the main sequence features of this chromosome and new information on transposable elements and their significant contribution to genome size. The information on expressed genes acquired with the low coverage sequencing was used to produce a virtual gene order of chromosome 5A based on its synteny with other phylogenetically-related species. Gaining an early insight on the 5A sequence provides relevant information for finishing the genome assembly and for the isolation of 5A genes controlling important agronomic traits (e.g. Fusarium head blight <xref ref-type="bibr" rid="pone.0026421-Somers1">[25]</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="materials|methods" id="s3">
+      <title>Materials and Methods</title>
+      <sec id="s3a">
+        <title>Flow cytometric chromosome sorting and amplification of chromosomal DNA</title>
+        <p>The seeds of double ditelosomic line 5A of <italic>Triticum aesticum</italic> cv. Chinese Spring (20&#x2033;+t&#x2033;5AS+t&#x2033;5AL) were provided by Prof. Bikram S. Gill (Kansas State University Manhattan, USA). The dDt5A line was originally developed by Sears <xref ref-type="bibr" rid="pone.0026421-Sears1">[39]</xref>. Liquid suspensions of intact mitotic chromosomes were prepared from synchronized root tip meristems of young seedlings according to Vr&#xE1;na et al. <xref ref-type="bibr" rid="pone.0026421-Vrna1">[40]</xref> and Kubal&#xE1;kov&#xE1; et al. <xref ref-type="bibr" rid="pone.0026421-Kubalkov1">[41]</xref>. The suspensions were stained with 2 &#xB5;g/ml DAPI (4&#x2032;,6-diamino-2-phenylindole) and 33,000 and 19,000 copies of telocentric chromosomes 5AS and 5AL, respectively, were sorted using a FACSVantage SE flow cytometer (Becton Dickinson, San Jos&#xE9;, USA) into 0.5ml microtubes containing 40 &#xB5;l sterile deionized water. Five independent samples were prepared from 5AS and two samples were prepared from 5AL. The identity of sorted chromosomes and presence of contaminating chromosomes was done using fluorescence <italic>in situ</italic> hybridization (FISH) according to Kubal&#xE1;kov&#xE1; et al. <xref ref-type="bibr" rid="pone.0026421-Kubalkov2">[42]</xref> using probes for telomeric repeat for both arms, pSc119.2 repeat <xref ref-type="bibr" rid="pone.0026421-Bedbrook1">[43]</xref> for 5AS and GAA microsatellite and/or Afa-repeat <xref ref-type="bibr" rid="pone.0026421-Nagaki1">[44]</xref> for 5AL (<xref ref-type="supplementary-material" rid="pone.0026421.s001">Figure S1</xref>). DNA of flow-sorted telocentrics was amplified as described in &#x160;imkov&#xE1; et al. <xref ref-type="bibr" rid="pone.0026421-Wicker2">[27]</xref>. Briefly, the chromosomes were treated with proteinase K and after its removal, chromosomal DNA was amplified by the illustra GenomiPhi V2 DNA Amplification Kit (GE Healthcare Bio-Sciences Corp., Piscataway, USA) in a 20-&#xB5;l reaction volume. The concentration of the amplification product was estimated fluorometrically using a Modulus Single Tube Multimode Reader (Turner Biosystems, Sunnyvale, USA).</p>
+      </sec>
+      <sec id="s3b">
+        <title>454 sequencing and assembly</title>
+        <p>454 GS-FLX Titanium sequencing was used to generate fragment reads from short and long wheat chromosome 5A arms. Both libraries have been prepared and sequenced independently. Long-arm 5A chromosome DNA 454 libraries were amplified by Large Volume emulsion PCR, using 7 molecules of DNA per bead, following the supplier's instructions (<ext-link ext-link-type="uri" xlink:href="http://www.roche.com">http://www.roche.com</ext-link>). After the amplification step, the emulsion was broken chemically and the beads carrying the amplified DNA library were recovered and washed; DNA bead-immobilized templates were then denatured and the sequencing primer was annealed (GS FLX Titanium emPCR Method Manual). The DNA samples, clonally amplified and bead-immobilized, were sequenced by the 454 GS FLX Titanium sequencer, using 70x75 picotiter plates, as described in the GS FLX Titanium Sequencing Method Manual (Roche).</p>
+        <p>Assembly was performed with Newbler v 2.3 (ROCHE) using the &#x201C;large genome&#x201D; option, useful for complex genomes rich in repeated regions and to speed up computational time.</p>
+        <p>The 454 reads obtained in this work were deposited in the NCBI-Sequence Read Archive database (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/sra">http://www.ncbi.nlm.nih.gov/sra</ext-link>) under the accession numbers SRX031791 (5A short arm) and SRX031790 (5A long arm); while the assembled contigs were deposited in the NCBI-Whole Genome Shotgun database (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/genomeprj">http://www.ncbi.nlm.nih.gov/genomeprj</ext-link>) under the ProjectID 15528 that represents an umbrella project for the whole International Wheat Genome Sequencing Consortium's project, the subproject for 5A chromosome has the accession n. 61773.</p>
+      </sec>
+      <sec id="s3c">
+        <title>Characterization of repeat fraction</title>
+        <p>Blast analyses for repeat characterization were conducted locally on 454 reads using a cutoff Expect value of 10e<sup>&#x2212;6</sup> <xref ref-type="bibr" rid="pone.0026421-Wicker3">[31]</xref>. The reference databases used were downloaded from Triticeae database (TREP complete and PTREP databases, <ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/ITMI/Repeats">http://wheat.pw.usda.gov/ITMI/Repeats</ext-link>). Blast analyses were driven by custom Python scripts allowing recovery of non-matching reads and immediate parsing of the BLAST output to limit file size. Various related functions as ID-based retrieval of complete fasta records from 454-raw output fasta files where implemented with memory-efficient BioPython-based modules <xref ref-type="bibr" rid="pone.0026421-Cock1">[45]</xref> by in-house Python scripts.</p>
+        <p>In order to identify as many repetitive elements as possible, two additional filtering steps were performed. First, a similarity search against virus proteins downloaded from NCBI (<ext-link ext-link-type="ftp" xlink:href="ftp://ftp.ncbi.nih.gov/genomes/Viruses/">ftp://ftp.ncbi.nih.gov/genomes/Viruses/</ext-link>) was run. The 454 reads were aligned against this dataset using BlastX and the reads were classified as &#x201C;viral proteins&#x201D; when the following parameters were satisfied: E-value &#x2265;0,001; Identity &#x2265;30; Similarity &#x2265;50; Reads coverage &#x2265;50%; protein coverage &#x2265;1%. In a second filtering step, all reads matching against assembled contigs with a coverage &#x2265;5x were excluded. This threshold was set taking into consideration that the average sequencing coverage was estimated in 2.3x.</p>
+        <p>The &#x201C;Repeats&#x201D; class was defined as containing reads escaping previous TE and gene classes. High coverage contigs were estimated as those above a cutoff of 5 according to the following formula: (nr)/c, where n represents the number of reads participating to a contig, r is the average read length and c is the length of the contig consensus sequence. Due to the low-coverage snapshot, high coverage contigs are very likely to represent <italic>sensu stricto</italic> repeats <xref ref-type="bibr" rid="pone.0026421-Wicker1">[12]</xref>.</p>
+      </sec>
+      <sec id="s3d">
+        <title>Gene Content analysis</title>
+        <p>The 454 reads filtered by TEs and repetitive regions were used to perform a similarity search both at the protein and nucleotide level against the following databases:</p>
+        <p><italic>a) Monocots Uniprot</italic> (Swissprot and TREMBL release 2010_05 - <ext-link ext-link-type="uri" xlink:href="http://www.uniprot.org/">http://www.uniprot.org/</ext-link>): all Uniprot entries belonging to monocotyledon species according to NCBI Taxonomy were selected and the similarity search was run by BlastX considering as positive matches the hits with E-value &#x2264;e<sup>&#x2212;6</sup>, Identity &#x2265;30%; Similarity &#x2265;50%; Read coverage &#x2265;50%; Database entry coverage &#x2265;1%.</p>
+        <p><italic>b) Liliopsida clustered Unigene</italic> (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/unigene">http://www.ncbi.nlm.nih.gov/unigene</ext-link>): this unigene dataset contains sequences from <italic>Hordeum vulgare</italic>, <italic>Oryza sativa</italic>, <italic>Panicum virgatum</italic>, <italic>Saccharum officinarum</italic>, <italic>Sorghum bicolor</italic>, <italic>Triticum aesitvum</italic> and <italic>Zea mays</italic> species. A similarity search was performed using BlastN and significant matches were assessed using the same parameters as in Uniprot analysis, with the exception of E-value cut-off that was set to 10e<sup>&#x2212;30</sup>.</p>
+        <p>Despite the filters used to identify repetitive elements, some reads matching with proteins annotated by PFAM as transposon, retrotransposon and integrase were found. For these reasons all sequences matching with proteins with the following Pfam code were excluded: PF00078, PF03732, PF05380, PF07727, PF07999,PF08284, PF12382, PF00098, PF02992, PF03004, PF03017, PF04827, PF10536, PF10551, PF12620, PF01021, PF04195, PF01480, PF04094, PF05754, PF00665.</p>
+      </sec>
+      <sec id="s3e">
+        <title>Syntenic regions analysis</title>
+        <p>The <italic>Brachypodium</italic> proteome was downloaded from <ext-link ext-link-type="uri" xlink:href="http://www.brachypodium.org">http://www.brachypodium.org</ext-link>, rice proteome from <ext-link ext-link-type="ftp" xlink:href="ftp://ftp.ncbi.nih.gov/genomes/Oryza_sativa/">ftp://ftp.ncbi.nih.gov/genomes/Oryza_sativa/</ext-link> and sorghum proteome from <ext-link ext-link-type="uri" xlink:href="http://www.phytozome.net">http://www.phytozome.net</ext-link>. The 454 reads filtered by TEs and repetitive regions were used to perform a BlastX similarity search considering as positive only the best hits with E-value &#x2264;e<sup>&#x2212;6</sup>, Identity &#x2265;30%; Similarity &#x2265;50%; Read coverage &#x2265;50%. Taking into consideration the parameters used and the low coverage of the genomic sequence, we cannot exclude the presence of false positive matches due to pseudogenes, paralogue genes or other ambiguous gene fragments that would produce background noise genes. We try to minimize this problem considering only the best hit.</p>
+      </sec>
+      <sec id="s3f">
+        <title>Chromosome zipper</title>
+        <p>To create the zippers only the <italic>Brachypodium</italic> genes showing homology at DNA level with either rice or sorghum or both and with a similarity E-value lower that 10e<sup>&#x2212;10</sup> were used. The chromosome zipper was produced as described by Mayer at al. <xref ref-type="bibr" rid="pone.0026421-Mayer1">[6]</xref>, then, the orthologous relationships among the genes were verified using the &#x201C;best reciprocal hit&#x201D; method. Each gene of the zipper was described with a code which gives an indication of the robustness of the predicted syntenic region. The code has the following syntax OxSx(hyz), where O and S means <italic>Oryza</italic> and <italic>Sorghum</italic> respectively, while x, h, y and z can take the binary value of 1 or 0. The first part of the code, OxSx, indicates if the homologous genes from rice and sorghum are located on the syntenic regions, setting the value of &#x201C;x&#x201D; to 1 if the condition is true, to 0 otherwise. The second part of the code, (hyz), is set to 1 if the genes are true orthologous as verified using the best reciprocal hit, otherwise to 0. The three digits refer to the relationship between <italic>Brachypodium</italic>-rice (h), <italic>Brachypodium</italic>-sorghum (y) and rice-sorghum (z).</p>
+        <p>The regions syntenic to wheat chromosome 5A are located on the <italic>Brachypodium</italic> chromosome 4 and chromosome 1. The chromosome 5AS corresponds to a region on chromosome 4 between the genes Bradi4g00210 and Bradi4g08150, while the 5AL syntenic region corresponds to <italic>Brachypodium</italic> chromosome 4 between the genes Bradi4g26960 and Bradi4g39000. The end of chromosome 5AL is syntenic to <italic>Brachypodium</italic> chromosome 1 between the genes Bradi1g00200 and Bradi1g09130 and between Bradi1g74380 and Bradi1g78830. The EST markers were downloaded from GrainGenes web site (<ext-link ext-link-type="uri" xlink:href="http://wheat.pw.usda.gov/GG2/index.shtml">http://wheat.pw.usda.gov/GG2/index.shtml</ext-link>). Wheat 454 reads showing a similarity with an ESTs with an E-value lower than 10e<sup>&#x2212;10</sup> were anchored to the corresponding bin.</p>
+        <p>Comparison analysis between ESTs and zipper genes distribution has been performed considering only those non overlapping been with the higher number og mapped est. We selected short arm bin 5AS3-0.75&#x2013;0.98, 5AS1-0.40&#x2013;0.75 and C-5AS1&#x2013;0.40 and long arm bin 5AL12-0.35&#x2013;0.57 and C-5AL10-0.57, 5AL10-0.57&#x2013;0.78, 5AL17-0.78&#x2013;0.87, 5AL23-0.87&#x2013;1.00.</p>
+      </sec>
+      <sec id="s3g">
+        <title>microRNA identification and analysis</title>
+        <p>Candidate miRNA related sequences were identified in the 454 sequences of wheat chromosome 5A, according to the following pipeline: i) BlastN search of known miRNA mature sequences, ii) Data filtering, iii) Precursor extraction and iv), Prediction of secondary structure.</p>
+        <list list-type="roman-lower">
+          <list-item>
+            <p>All the known plant mature miRNAs stored in the miRBase (release 14) were used as query sequences to perform a BlastN search against the contigs and the singletons of both arms of the chromosome 5A. Due to the huge quantity of data, slightly more stringent parameters were used compared to those published previously <xref ref-type="bibr" rid="pone.0026421-Zhang1">[46]</xref>: e-value 10, maximum number of hits 10 and word size 7.</p>
+          </list-item>
+          <list-item>
+            <p>All the Blast hits were split into two groups: direct hits and reverse complement hits; direct hits with more than 3 mismatches with the known sequence were discarded <xref ref-type="bibr" rid="pone.0026421-Sunkar1">[47]</xref>, while all the reverse complement hits were retained. Only the singletons and the contigs with both a direct and a reverse complement hit were retained for further analysis since true miRNA precursor should have both a mature sequence on one arm of the hairpin and a paired passenger sequence (called miRNA*) on the opposite arm; moreover, while the mature sequence is known to be highly conserved, the passenger sequence could be more variable. This strategy was useful to exclude sequences which are less likely to fold with a hairpin structure.</p>
+          </list-item>
+          <list-item>
+            <p>miRNA precursors were extracted from the sequences by cutting 13 nt before the 5&#x2032; hit and 13 nt after the 3&#x2032; hit, since this region (from end of miRNA to end of precursor - pri-extension region of the hairpin) was recently shown to have this average length in plants <xref ref-type="bibr" rid="pone.0026421-Kadri1">[48]</xref>.</p>
+          </list-item>
+          <list-item>
+            <p>The secondary structure of the precursors was predicted with the software mFold 3.2 <xref ref-type="bibr" rid="pone.0026421-Zuker1">[49]</xref>. The minimal folding free energy index (MFEI) was calculated for each structure by the equation:</p>
+          </list-item>
+        </list>
+        <p>
+          <disp-formula>
+            <graphic xlink:href="pone.0026421.e001"/>
+          </disp-formula>
+        </p>
+        <p>where AMFE (Adjusted MFE) is the minimal free energy of 100 nucleotides. All the sequences with a MFEI greater than 0.85 were considered potential miRNA precursors <xref ref-type="bibr" rid="pone.0026421-Zhang2">[50]</xref>; besides, only 4 mismatches were allowed between the mature sequence and the passenger sequence, and only few and small asymmetric bulges were accepted <xref ref-type="bibr" rid="pone.0026421-Meyers1">[51]</xref>. All the precursors were then blasted against the Uniprot database filtered for monocot proteins to exclude those that belonged to protein-coding sequences; the thresholds used were E-value &lt;0.001, Identity &gt;30%, Similarity &gt;50%, read coverage &gt;50%, Protein coverage &gt;1%. The candidate precursors were blasted against known plant microRNAs (miRBase 16), and were considered similar to a known precursor if they had an identity percent greater than 70. Lastly, the identified miRNAs were analyzed for the presence of repetitive sequences by using the Repeat Masker Web Server (<ext-link ext-link-type="uri" xlink:href="http://www.repeatmasker.org">http://www.repeatmasker.org</ext-link>) with default settings.</p>
+      </sec>
+      <sec id="s3h">
+        <title>Verification of unigene coverage by the assembly and Unigene-based scaffolding</title>
+        <p>The wheat unigenes were downloaded from GenBank (<italic>Triticum aestivum</italic> unigenes, v55, updated Feb 2009, <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/UniGene/UGOrg.cgi?TAXID=4565">http://www.ncbi.nlm.nih.gov/UniGene/UGOrg.cgi?TAXID=4565</ext-link>) without further modifications and were used to assess the coverage provided by the 5AS and 5AL assemblies. Additionally, they were checked against the Triticeae Repeat Sequence Database (TREP, updated July 2008) for repetitive sequences that may lead to unspecific mapping.</p>
+        <p>Sequence similarity analyses were assessed by BlastN; a positive score was assigned to those sequences matching the databases with an identity &#x2265;97%. The coverage length threshold could not be quantitatively determined since RNA-derived sequences were used, 50bp windows were considered as minimum overlap. The coverage of the unigenes by the contigs of the assemblies was calculated with a script developed in-house based on Blast-derived data.</p>
+        <p>The Unigenes uniquely and univocally matching more than one contig were used to perform scaffolding of the contigs generated by the Newbler assembler; this was done to decrease the number of contigs and to obtain scaffolds representing actively transcribed genomic sequences. The analyses were performed by implementing a program in C language, based on the data obtained by the sequence similarity analyses from above. Since the effective span between contigs connected by this scaffolding method could not be assessed, they were arbitrarily joined with a row of 100 Ns.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s4">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0026421.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p>Flow karyotype of double ditelosomic line Chinese Spring dDt5A. The karyotype consists of three composite peaks (I &#x2013; III) representing groups of chromosomes, a peak representing chromosome 3B, and peaks representing chromosome arms 5AS and 5AL. X axis: relative DAPI fluorescence intensity; Y axis: number of events. The inserts show examples of flow-sorted chromosomes 5AS and 5AL after FISH with DNA probes. Chromosome 5AS was identified with probes for telomeric repeat (green signals) and pSc119.2 (red signals). Chromosome 5AL was identified with probes for telomeric repeat (red signals) GAA microsatellite (green signals). The chromosomes were counterstained with DAPI (blue color).</p>
+          <p>(DOC)</p>
+        </caption>
+        <media xlink:href="pone.0026421.s001.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0026421.s002">
+        <label>Table S1</label>
+        <caption>
+          <p>Complete list of wheat 5A Transposon Element families abundance.</p>
+          <p>(DOC)</p>
+        </caption>
+        <media xlink:href="pone.0026421.s002.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0026421.s003">
+        <label>Table S2</label>
+        <caption>
+          <p>Complete list of <italic>Brachypodium</italic> genes homologous to the wheat 5A sequences ordered according to the position in the <italic>Brachypodium</italic> genome.</p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0026421.s003.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0026421.s004">
+        <label>Table S3</label>
+        <caption>
+          <p>Complete list Unigenes mapped on 5A.</p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0026421.s004.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0026421.s005">
+        <label>Table S4</label>
+        <caption>
+          <p>Known genes of chromosome 5A mapped on the assembly.</p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0026421.s005.xlsx" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Dr. Jarmila &#x10C;&#xED;hal&#xED;kov&#xE1;, Romana Nov&#xE1;kov&#xE1;, Bc., and Zdenka Dubsk&#xE1; for assistance with chromosome sorting and DNA amplification. We are grateful to Dr. Thomas Wicker for helping us in the preparation of the 5A virtual gene order and Prof. Bikram S. Gill for providing seeds of double ditelosomic line 5A of cv. Chinese Spring.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>This work was supported by the Italian Ministry of Agriculture &#x201C;Progetto MAPPA 5A&#x201D; and by the Ministry of Education, Youth and Sports of the Czech Republic and the European Regional Development Fund (Operational Programme Research and Development for Innovations No. CZ.1.05/2.1.00/01.0007). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0026421-af1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>&#x160;af&#xE1;&#x159;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>&#x160;imkov&#xE1;</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>&#x10C;&#xED;hal&#xED;kov&#xE1;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Such&#xE1;nkov&#xE1;</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Development of Chromosome-Specific BAC Resources for Genomics of Bread Wheat.</article-title>
+          <source>Cytogenet Genome Res</source>
+          <volume>129</volume>
+          <fpage>211</fpage>
+          <lpage>223</lpage>
+          <pub-id pub-id-type="pmid">20501977</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Doleel1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dole&#x17E;el</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Barto&#x161;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Macas</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Flow cytogenetics and plant genome mapping.</article-title>
+          <source>Chromosome Res</source>
+          <volume>12</volume>
+          <fpage>77</fpage>
+          <lpage>91</lpage>
+          <pub-id pub-id-type="pmid">14984104</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Doleel2">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dole&#x17E;el</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Barto&#x161;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Chromosome-based genomics in cereals.</article-title>
+          <source>Chromosome Res</source>
+          <volume>15</volume>
+          <fpage>51</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="pmid">17295126</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Paux1">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Roger</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Badaeva</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Gay</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bernard</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Characterizing the composition and evolution of homoeologous genomes in hexaploid wheat through BAC-end sequencing on chromosome 3B.</article-title>
+          <source>Plant J</source>
+          <volume>48</volume>
+          <fpage>463</fpage>
+          <lpage>474</lpage>
+          <pub-id pub-id-type="pmid">17010109</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Barto1">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barto&#x161;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Kofler</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Havr&#xE1;nkov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kopeck&#xFD;</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>A first survey of the rye (<italic>Secale cereale</italic>) genome composition through BAC end sequencing of the short arm of chromosome 1R.</article-title>
+          <source>BMC Plant Biol</source>
+          <volume>8</volume>
+          <fpage>95</fpage>
+          <pub-id pub-id-type="pmid">18803819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Mayer1">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayer</surname>
+              <given-names>KF</given-names>
+            </name>
+            <name>
+              <surname>Taudien</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Martis</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Simkova</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Suchankova</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Gene content and virtual gene order of barley chromosome 1H.</article-title>
+          <source>Plant Physiol</source>
+          <volume>151</volume>
+          <fpage>496</fpage>
+          <lpage>505</lpage>
+          <pub-id pub-id-type="pmid">19692534</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Naito1">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Naito</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Tsukiyama</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Saito</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hancock</surname>
+              <given-names>CN</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Unexpected consequences of a sudden and massive transposon amplification on rice gene expression.</article-title>
+          <source>Nature</source>
+          <volume>461</volume>
+          <fpage>1130-U1232</fpage>
+          <pub-id pub-id-type="pmid">19847266</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Slotkin1">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Slotkin</surname>
+              <given-names>RK</given-names>
+            </name>
+            <name>
+              <surname>Martienssen</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Transposable elements and the epigenetic regulation of the genome.</article-title>
+          <source>Nat Rev Genet</source>
+          <volume>8</volume>
+          <fpage>272</fpage>
+          <lpage>285</lpage>
+          <pub-id pub-id-type="pmid">17363976</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Capy1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Capy</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Gasperi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Biemont</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bazin</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Stress and transposable elements: co-evolution or useful parasites?</article-title>
+          <source>Heredity</source>
+          <volume>85</volume>
+          <fpage>101</fpage>
+          <lpage>106</lpage>
+          <pub-id pub-id-type="pmid">11012710</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Schnable1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schnable</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Ware</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Fulton</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>The B73 maize genome: complexity, diversity, and dynamics.</article-title>
+          <source>Science</source>
+          <volume>326</volume>
+          <fpage>1112</fpage>
+          <lpage>1115</lpage>
+          <pub-id pub-id-type="pmid">19965430</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Vogel1">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vogel</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Garvin</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Mockler</surname>
+              <given-names>TC</given-names>
+            </name>
+            <name>
+              <surname>Schmutz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rokhsar</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Genome sequencing and analysis of the model grass <italic>Brachypodium distachyon</italic>.</article-title>
+          <source>Nature</source>
+          <volume>463</volume>
+          <fpage>763</fpage>
+          <lpage>768</lpage>
+          <pub-id pub-id-type="pmid">20148030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Wicker1">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wicker</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Taudien</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Houben</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Keller</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Graner</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>A whole-genome snapshot of 454 sequences exposes the composition of the barley genome and provides evidence for parallel evolution of genome size in wheat and barley.</article-title>
+          <source>Plant J</source>
+          <volume>59</volume>
+          <fpage>712</fpage>
+          <lpage>722</lpage>
+          <pub-id pub-id-type="pmid">19453446</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Charles1">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Charles</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Belcram</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Just</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Huneau</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Viollet</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Dynamics and differential proliferation of transposable elements during the evolution of the B and A genomes of wheat.</article-title>
+          <source>Genetics</source>
+          <volume>180</volume>
+          <fpage>1071</fpage>
+          <lpage>1086</lpage>
+          <pub-id pub-id-type="pmid">18780739</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Moore1">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moore</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Devos</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Gale</surname>
+              <given-names>MD</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Cereal genome evolution: grasses, line up and form a circle.</article-title>
+          <source>Curr Biol</source>
+          <volume>5</volume>
+          <fpage>737</fpage>
+          <lpage>739</lpage>
+          <pub-id pub-id-type="pmid">7583118</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-JonesRhoades1">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jones-Rhoades</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Bartel</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Bartel</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>MicroRNAs and their regulatory roles in plants.</article-title>
+          <source>Ann Rev Plant Biol</source>
+          <volume>57</volume>
+          <fpage>19</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="pmid">16669754</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Mallory1">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mallory</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Vaucheret</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Functions of microRNAs and related small RNAs in plants.</article-title>
+          <source>Nature Genet</source>
+          <volume>38</volume>
+          <fpage>S31</fpage>
+          <lpage>S36</lpage>
+          <pub-id pub-id-type="pmid">16736022</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Shukla1">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shukla</surname>
+              <given-names>LI</given-names>
+            </name>
+            <name>
+              <surname>Chinnusamy</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Sunkar</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>The role of microRNAs and other endogenous small RNAs in plant stress responses.</article-title>
+          <source>Biochim Biophys Acta</source>
+          <volume>1779</volume>
+          <fpage>743</fpage>
+          <lpage>748</lpage>
+          <pub-id pub-id-type="pmid">18457682</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-GriffithsJones1">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Griffiths-Jones</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Saini</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>van Dongen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Enright</surname>
+              <given-names>AJ</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>miRBase: tools for microRNA genomics.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>36</volume>
+          <fpage>D154</fpage>
+          <lpage>D158</lpage>
+          <pub-id pub-id-type="pmid">17991681</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Yao1">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ni</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Sunkar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Du</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>Cloning and characterization of microRNAs from wheat (<italic>Triticum aestivum</italic> L.).</article-title>
+          <source>Genome Biol</source>
+          <volume>8</volume>
+          <fpage>R96</fpage>
+          <pub-id pub-id-type="pmid">17543110</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Wei1">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wei</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Cai</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Huo</surname>
+              <given-names>N</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Novel microRNAs uncovered by deep sequencing of small RNA transcriptomes in bread wheat (<italic>Triticum aestivum</italic> L.) and <italic>Brachypodium distachyon</italic> (L.) Beauv.</article-title>
+          <source>Funct Integr Genomics</source>
+          <volume>9</volume>
+          <fpage>499</fpage>
+          <lpage>511</lpage>
+          <pub-id pub-id-type="pmid">19499258</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Han1">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Han</surname>
+              <given-names>YS</given-names>
+            </name>
+            <name>
+              <surname>Luan</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>HL</given-names>
+            </name>
+            <name>
+              <surname>Shao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Computational identification of microRNAs and their targets in wheat (<italic>Triticum aestivum</italic> L.).</article-title>
+          <source>Sci China Ser C</source>
+          <volume>52</volume>
+          <fpage>1091</fpage>
+          <lpage>1100</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Daniluk1">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Daniluk</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kane</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Breton</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Limin</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Fowler</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Sarhan</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title><italic>TaVRT-1</italic>, a putative transcription factor associated with vegetative to reproductive transition in cereals.</article-title>
+          <source>Plant Physiol</source>
+          <volume>132</volume>
+          <fpage>1849</fpage>
+          <lpage>1860</lpage>
+          <pub-id pub-id-type="pmid">12913142</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Badawi1">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Badawi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Danyluk</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>&#xB7;Boucho</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>&#xB7;Houde</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>&#xB7;Sarhan</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>The <italic>CBF</italic> gene family in hexaploid wheat and its relationship to the phylogenetic complexity of cereal <italic>CBFs</italic>.</article-title>
+          <source>Mol Genet Genomics</source>
+          <volume>277</volume>
+          <fpage>533</fpage>
+          <lpage>554</lpage>
+          <pub-id pub-id-type="pmid">17285309</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Cattivelli1">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cattivelli</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Baldi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Crosatti</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Di Fonzo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Faccioli</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2002</year>
+          <article-title>Chromosome regions and stress-related sequences involved in resistance to abiotic stress in <italic>Triticeae</italic>.</article-title>
+          <source>Plant Mol Biol</source>
+          <volume>48</volume>
+          <fpage>649</fpage>
+          <lpage>665</lpage>
+          <pub-id pub-id-type="pmid">11999841</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Somers1">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Somers</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Fedak</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Savard</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Molecular mapping of novel genes controlling fusarium head blight resistance and deoxynivalenol accumulation in spring wheat.</article-title>
+          <source>Genome</source>
+          <volume>46</volume>
+          <fpage>555</fpage>
+          <lpage>564</lpage>
+          <pub-id pub-id-type="pmid">12897863</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Simons1">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Simons</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Fellers</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Trick</surname>
+              <given-names>HN</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Tai</surname>
+              <given-names>YS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Molecular characterization of the major wheat domestication gene Q. Genetics</article-title>
+          <volume>172</volume>
+          <fpage>547</fpage>
+          <lpage>555</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Wicker2">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wicker</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sabot</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Hua-Van</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bennetzen</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Capy</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>A unified classification system for eukaryotic transposable elements.</article-title>
+          <source>Nat Rev Genet</source>
+          <volume>8</volume>
+          <fpage>973</fpage>
+          <lpage>982</lpage>
+          <pub-id pub-id-type="pmid">17984973</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-imkov1">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>&#x160;imkov&#xE1;</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Svensson</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Condamine</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>H&#x159;ibov&#xE1;</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Such&#xE1;nkov&#xE1;</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Coupling amplified DNA from flow-sorted chromosomes to high-density SNP mapping in barley.</article-title>
+          <source>BMC Genomics</source>
+          <volume>9</volume>
+          <fpage>294</fpage>
+          <pub-id pub-id-type="pmid">18565235</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Choulet1">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Choulet</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Wicker</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Rustenholz</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Paux</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Salse</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2010</year>
+          <article-title>Megabase level sequencing reveals contrasted organization and evolution patterns of the wheat gene and transposable element spaces.</article-title>
+          <source>Plant Cell</source>
+          <volume>22</volume>
+          <fpage>1686</fpage>
+          <lpage>1701</lpage>
+          <pub-id pub-id-type="pmid">20581307</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Pinard1">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pinard</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>de Winter</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sarkis</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Gerstein</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Tartaro</surname>
+              <given-names>KR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Assessment of whole genome amplification-induced bias through high-throughput, massively parallel whole genome sequencing.</article-title>
+          <source>BMC Genomics</source>
+          <volume>7</volume>
+          <fpage>216</fpage>
+          <pub-id pub-id-type="pmid">16928277</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Wicker3">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wicker</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Krattinger</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Lagudah</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name>
+              <surname>Komatsuda</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Pourkheirandish</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Analysis of intraspecies diversity in wheat and barley genomes identifies breakpoints of ancient haplotypes and provides insight into the structure of diploid and hexaploid <italic>Triticeae</italic> gene pools.</article-title>
+          <source>Plant Physiol</source>
+          <volume>149</volume>
+          <fpage>258</fpage>
+          <lpage>270</lpage>
+          <pub-id pub-id-type="pmid">19011002</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Sorrells1">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sorrells</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>La Rota</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bermudez-Kandianis</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Greene</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Kantety</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>Comparative DNA sequence analysis of wheat and rice genomes.</article-title>
+          <source>Genome Res</source>
+          <volume>13</volume>
+          <fpage>1818</fpage>
+          <lpage>1827</lpage>
+          <pub-id pub-id-type="pmid">12902377</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Salse1">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Salse</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bolot</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Throude</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jouffe</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Piegu</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Identification and characterization of shared duplications between rice and wheat provide new insight into grass genome evolution.</article-title>
+          <source>Plant Cell</source>
+          <volume>20</volume>
+          <fpage>11</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="pmid">18178768</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Huo1">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huo</surname>
+              <given-names>NX</given-names>
+            </name>
+            <name>
+              <surname>Vogel</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Lazo</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>YQ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Structural characterization of <italic>Brachypodium</italic> genome and its syntenic relationship with rice and wheat.</article-title>
+          <source>Plant Mol Biol</source>
+          <volume>70</volume>
+          <fpage>47</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="pmid">19184460</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Sarma1">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sarma</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Fish</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Snape</surname>
+              <given-names>JW</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Physical characterization of the homoeologous Group 5 chromosomes of wheat in terms of rice linkage blocks, and physical mapping of some important genes.</article-title>
+          <source>Genome</source>
+          <volume>43</volume>
+          <fpage>191</fpage>
+          <lpage>198</lpage>
+          <pub-id pub-id-type="pmid">10701130</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Linkiewicz1">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Linkiewicz</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Qi</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Ratnasiri</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Echalier</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>A 2500-locus bin map of wheat homoeologous group 5 provides insights on gene distribution and colinearity with rice.</article-title>
+          <source>Genetics</source>
+          <volume>168</volume>
+          <fpage>665</fpage>
+          <lpage>676</lpage>
+          <pub-id pub-id-type="pmid">15514043</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Bonnet1">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bonnet</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wuyts</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rouz&#xE8;</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Van de Peer</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Detection of 91 potential conserved plant microRNAs in <italic>Arabidopsis thaliana</italic> and <italic>Oryza sativa</italic> identifies important target genes.</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <volume>101</volume>
+          <fpage>11511</fpage>
+          <lpage>11516</lpage>
+          <pub-id pub-id-type="pmid">15272084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Piriyapongsa1">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Piriyapongsa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jordan</surname>
+              <given-names>IK</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Dual coding of siRNAs and miRNAs by plant transposable elements.</article-title>
+          <source>RNA</source>
+          <volume>14</volume>
+          <fpage>814</fpage>
+          <lpage>821</lpage>
+          <pub-id pub-id-type="pmid">18367716</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Sears1">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sears</surname>
+              <given-names>ER</given-names>
+            </name>
+          </person-group>
+          <year>1954</year>
+          <article-title>The aneuploids of common wheat.</article-title>
+          <source>Missouri Agric Exp Stn Res Bull</source>
+          <volume>572</volume>
+          <fpage>1</fpage>
+          <lpage>58</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Vrna1">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vr&#xE1;na</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>&#x160;imkov&#xE1;</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>&#x10C;&#xED;hal&#xED;kov&#xE1;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lys&#xE1;k</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Dole&#x17E;el</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Flow-sorting of mitotic chromosomes in common wheat (<italic>Triticum aestivum</italic> L.).</article-title>
+          <source>Genetics</source>
+          <volume>156</volume>
+          <fpage>2033</fpage>
+          <lpage>2041</lpage>
+          <pub-id pub-id-type="pmid">11102393</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Kubalkov1">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vr&#xE1;na</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>&#x10C;&#xED;hal&#xED;kov&#xE1;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>&#x160;imkov&#xE1;</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Dole&#x17E;el</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Flow karyotyping and chromosome sorting in bread wheat (<italic>Triticum aestivum</italic> L.).</article-title>
+          <source>Theor Appl Genet</source>
+          <volume>104</volume>
+          <fpage>1362</fpage>
+          <lpage>1372</lpage>
+          <pub-id pub-id-type="pmid">12582592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Kubalkov2">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kubal&#xE1;kov&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Val&#xE1;rik</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Barto&#x161;</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vr&#xE1;na</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>&#x10C;&#xED;hal&#xED;kov&#xE1;</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>Analysis and sorting of rye (<italic>Secale cereale</italic> L.) chromosomes using flow cytometry.</article-title>
+          <source>Genome</source>
+          <volume>46</volume>
+          <fpage>893</fpage>
+          <lpage>905</lpage>
+          <pub-id pub-id-type="pmid">14608406</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Bedbrook1">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bedbrook</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>&#xD2;Dell</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Flavell</surname>
+              <given-names>RB</given-names>
+            </name>
+          </person-group>
+          <year>1980</year>
+          <article-title>A molecular description of telomeric heterochromatin in <italic>Secale</italic> species.</article-title>
+          <source>Cell</source>
+          <volume>19</volume>
+          <fpage>545</fpage>
+          <lpage>560</lpage>
+          <pub-id pub-id-type="pmid">6244112</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Nagaki1">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nagaki</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Tsujimoto</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Isono</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Sasakuma</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Molecular characterization of a tandem repeat, Afa family, and its distribution among <italic>Triticeae</italic>.</article-title>
+          <source>Genome</source>
+          <volume>38</volume>
+          <fpage>479</fpage>
+          <lpage>486</lpage>
+          <pub-id pub-id-type="pmid">7557360</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Cock1">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cock</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Antao</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Chapman</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Biopython: freely available Python tools for computational molecular biology and bioinformatics.</article-title>
+          <source>Bioinformatics,</source>
+          <volume>25</volume>
+          <fpage>1422</fpage>
+          <lpage>1423</lpage>
+          <pub-id pub-id-type="pmid">19304878</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Zhang1">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>BH</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>XP</given-names>
+            </name>
+            <name>
+              <surname>Cannon</surname>
+              <given-names>CH</given-names>
+            </name>
+            <name>
+              <surname>Cobb</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>TA</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Conservation and divergence of plant microRNA genes.</article-title>
+          <source>Plant J</source>
+          <volume>46</volume>
+          <fpage>243</fpage>
+          <lpage>259</lpage>
+          <pub-id pub-id-type="pmid">16623887</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Sunkar1">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sunkar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Jagadeeswaran</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title><italic>In silico</italic> identification of conserved microRNAs in large number of diverse plant species.</article-title>
+          <source>BMC Plant Biol</source>
+          <volume>8</volume>
+          <fpage>37</fpage>
+          <pub-id pub-id-type="pmid">18416839</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Kadri1">
+        <label>48</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kadri</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hinman</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Benos</surname>
+              <given-names>PV</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>HHMMiR: efficient de novo prediction of microRNAs using hierarchical hidden Markov models.</article-title>
+          <publisher-name>Bioinformatics 10(Suppl I)</publisher-name>
+          <size units="page"/>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Zuker1">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zuker</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Mfold web server for nucleic acid folding and hybridization prediction.</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>31</volume>
+          <fpage>3406</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="pmid">12824337</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Zhang2">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>BH</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>XP</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Cobb</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>TA</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Evidence that miRNAs are different from other RNAs.</article-title>
+          <source>Cell Mol Life Sci</source>
+          <volume>63</volume>
+          <fpage>246</fpage>
+          <lpage>254</lpage>
+          <pub-id pub-id-type="pmid">16395542</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="pone.0026421-Meyers1">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meyers</surname>
+              <given-names>BC</given-names>
+            </name>
+            <name>
+              <surname>Axtell</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Bartel</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Bartel</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Baulcombe</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Criteria for annotation of plant microRNAs.</article-title>
+          <source>Plant Cell</source>
+          <volume>20</volume>
+          <fpage>3186</fpage>
+          <lpage>3190</lpage>
+          <pub-id pub-id-type="pmid">19074682</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

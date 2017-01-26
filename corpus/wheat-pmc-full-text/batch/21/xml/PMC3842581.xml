@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.1 20050630//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName journalpublishing.dtd?>
+  <?SourceDTD.Version 2.1?>
+  <?ConverterInfo.XSLTName jp2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Bioinformation</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Bioinformation</journal-id>
+      <journal-id journal-id-type="publisher-id">Bioinformation</journal-id>
+      <journal-title-group>
+        <journal-title>Bioinformation</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0973-8894</issn>
+      <issn pub-type="epub">0973-2063</issn>
+      <publisher>
+        <publisher-name>Biomedical Informatics</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3842581</article-id>
+      <article-id pub-id-type="publisher-id">97320630009937</article-id>
+      <article-id pub-id-type="doi">10.6026/97320630009937</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Software</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>DPPrimer &#x2013; A Degenerate PCR Primer Design Tool</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gahoi</surname>
+            <given-names>Shachi</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Arya</surname>
+            <given-names>L</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Anil</surname>
+            <given-names>Rai</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Marla</surname>
+            <given-names>ss</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="corresp" rid="COR1">*</xref>
+        </contrib>
+        <aff id="A1"><label>1</label>National Bureau of Plant Genetic Resources, Pusa campus, New Delhi-12</aff>
+        <aff id="A2"><label>2</label>Indian Agricultural Statistics Research Institute, New Delhi-12</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="COR1"><label>*</label>Marla SS: <email>soma.marla@nbpgr.ernet.in</email></corresp>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>11</day>
+        <month>11</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>9</volume>
+      <issue>18</issue>
+      <fpage>937</fpage>
+      <lpage>940</lpage>
+      <history>
+        <date date-type="received">
+          <day>03</day>
+          <month>3</month>
+          <year>2013</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>02</day>
+          <month>10</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>19</day>
+          <month>10</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2013 Biomedical Informatics</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <license license-type="open-access">
+          <license-p>This is an open-access article, which permits unrestricted use, distribution, and reproduction in any medium,for non-commercial purposes, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Designed degenerate primers unlike conventional primers are superior in matching and amplification of large number of genes,
+from related gene families. DPPrimer tool was designed to predict primers for PCR amplification of homologous gene from related
+or diverse plant species. The key features of this tool include platform independence and user friendliness in primer design.
+Embedded features such as search for functional domains, similarity score selection and phylogebetic tree further enhance the user
+friendliness of DPPrimer tool. Performance of DPPrimer tool was evaluated by successful PCR amplification of ADP-glucose
+phosphorylase genes from wheat, barley and rice.</p>
+        <sec id="sb1e">
+          <title>Availability</title>
+          <p>DPPrimer is freely accessible at <ext-link ext-link-type="uri" xlink:href="http://202.141.12.147/DGEN_tool/index.html">http://202.141.12.147/DGEN_tool/index.html</ext-link></p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Degeneracy</kwd>
+        <kwd>PCR</kwd>
+        <kwd>Primer design</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Background</title>
+      <p>Polymerase Chan Reaction (PCR) is a fundamental technique
+widely employed in current molecular biology for amplification
+of a given DNA sequence to exponential copies. In course of
+gene flow and subsequent species formation, evolution dictates
+that coded amino acid sequences unlike nucleic acids are
+conserved. While a particular amino acid of a protein can be
+conserved between two species, the corresponding codons may
+differ and have all the alternatives (to choose from four
+nucleotide bases) and is called degeneracy [<xref ref-type="bibr" rid="R01">1</xref>]. Thus by having
+nucleotides in a primer set at alternative positions it becomes
+possible to identify all those closely related homologous genes
+and amplify them in a PCR reaction. By designing primers
+using degenerate positions all the possible variants of the target
+sequence can be amplified.</p>
+    </sec>
+    <sec id="s2">
+      <title>Implementation</title>
+      <p>Degeneracy is a critical factor in defining sensitivity in PCR
+since a highly degenerate primer will have a few matches that
+precisely match the template. In the initial cycles of PCR more
+homologous primers are likely be included in the amplicon. The
+efficiency with which amplification proceeds in next cycles
+depends on similarity of the remaining primers in the selected
+pool. Also primers with least number of degenerate positions
+always have high success rate. Given a set of DNA sequences,
+our goal is to design a pair of degenerate primers, so that the
+primers match and amplify as many of the sequences as
+possible [<xref ref-type="bibr" rid="R02">2</xref>]. To design right primers that match and amplify
+large number of genes, we need to use highly degenerate
+primers. At the same time, to cut short the chances of
+amplifying non-related sequences, the degeneracy should be
+defined and limited. The goal of primer design strategy is to
+achieve a balance between the coverage of the variant
+sequences with the negative effects of degeneracy. This tradeoff
+can be resolved by defining and optimization of various primer
+properties and thermodynamic parameters essential for a
+successful PCR. Hence we consider degenerate primer
+designing a problem involving optimization of various
+parameters i.e. degeneracy at most P and length l of the
+designed primer K, that define the suitability of primers and
+amplification success of desired DNA fragment.</p>
+    </sec>
+    <sec id="s3">
+      <title>DPPrimer designing includes three major steps</title>
+      <p>Collection of related input sequence set from sequence
+alignment, defining, scoring, filtering and selection of a primer
+set with desired functions.</p>
+      <sec id="s3a">
+        <title><italic>Collection of related input sequence set</italic>:</title>
+        <p>Firstly a candidate protein sequence was submitted to
+InterProScan [<xref ref-type="bibr" rid="R03">3</xref>] to check presence of desired functional
+domains. The sequence was subsequently searched against
+blastp [<xref ref-type="bibr" rid="R02">2</xref>] and the resulting output containing homologous
+sequences obtained using 60 percent similarity threshold.
+Choice of user defined similarity scores in blastp search helps in
+limiting the number of related sequences especially from distant
+homologues. A phylogenic tree was constructed to visualize the
+evolutionary relationships existing among these homologous
+sequences. Collected homologous protein sequences were also
+subjected to multiple sequence alignment [<xref ref-type="bibr" rid="R04">4</xref>] at 90 percent
+sequence similarity level and consensus sequence was
+generated. Features such as functional domain presence, choice
+of similarity score selection and illustration of a phylogenetic
+tree further enhance the user friendliness of DPPrimer tool.</p>
+      </sec>
+      <sec id="s3b">
+        <title><italic>Scoring &amp; filtering</italic>:</title>
+        <p>The obtained consensus sequence was reverse translated and
+evaluated for primer properties such as degeneracy, Tm, GC
+content and potential amplicon size. Obtained primer sets with
+above properties (at a specified parameter threshold level) were
+searched and filtered. Computationally the obtained sets
+represent the desired primer quality and potentially assure
+coverage of sequences by the template primer. The next step
+involves determination of a minimal set of primers required to
+amplify all potential sequences in the aligned set (after
+filtration) thus avoiding all other unrelated homologues.
+Greedy set approximation algorithm described by Slavik 
+[<xref ref-type="bibr" rid="R05">5</xref>] is
+employed to obtain a minimal set of primers and to select a
+primer pair that satisfies the chosen ideal parameters to cover
+all the sequences. For alignment of Mi,&#x2026;i+j with its matching
+primers B*= [B1,B2,&#x2026;Bn] and the set S B* that minimizes &#x3A3; Ki
+(where Ki is a cost function) and matches all sub sequences in
+Mi&#x2026;i+j.</p>
+        <p>Primer count is taken as the primary cost function for primer
+number minimization. The cost function reflects approximation
+quality and a best primer is optimized, parameter threshold
+values are used to correct deviations. This permits to select one
+of the two primers that can potentially cover all sequences. This
+gives an answer yielding minimum set of primers for
+amplification of all given sequences in the alignment set of Mi&#x2026;i+j.</p>
+        <p>Selection of minimum number of flanking primers: Both
+forward and reverse primers are selected by optimization of
+Tm, product length and cross reactivity. For a successful PCR it
+is required that the distance between the 5' &#x2013; and 3' &#x2013; primer
+match site is large (so that biologically valid region is
+amplified). Primer length can be extended as long as its
+degeneracy falls in the user pre-defined limits.</p>
+        <p>Performance of DPPrimer was tested using the degenerate
+primer pair with PCR amplification ADP-glucose
+phosphorylase genes [<xref ref-type="bibr" rid="R06">6</xref>] from wheat and barley. Primer pair
+used for PCR amplification was designed using ADP glucose
+phosphorylase amino acid sequence from oryza sativa (NCBI
+accession: ABL74524.1). Designed primer set: Forward primer &#x2013;
+GGNTAYTGGGARGAYATH (degeneracy of 96), Reverse
+primer &#x2013; ATGGGNGCNGAYAAYTAY (degeneracy of 128). The
+size of amplified DNA fragments was found to be identical in
+both wheat and barley (<xref ref-type="fig" rid="F1">Figure 1</xref>) demonstrating robustness of
+DPPrimer in degenerate primer design and successful
+amplification of members of orthologous genes from various
+species.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Software requirements</title>
+      <p>DPPrimer works best with Mozilla Firefox and Chrome
+browsers. The standalone version requires perl and Bioperl
+insalled in the unix enviornment.</p>
+    </sec>
+    <sec id="s5">
+      <title>Input options</title>
+      <p>DPPrimer accepts a protein NCBI accession number or amino
+acid sequence either in raw or fasta format.</p>
+    </sec>
+    <sec id="s6">
+      <title>Output options</title>
+      <p>Output comprises chosen parameter information, pair of
+primers (forward and reverse), InperProScan output depicting
+presence of desired functional domain, homologous sequences
+to input sequence and a Phylogenetic tree.</p>
+    </sec>
+    <sec id="s7">
+      <title>Conclusion</title>
+      <p>DPPrimer is more selective in defining degeneracy of input
+sequences from both distant and related gene families as
+compared to other primer designing tools. A popular tool
+Hyden [<xref ref-type="bibr" rid="R01">1</xref>] and CODEHOP 
+[<xref ref-type="bibr" rid="R07">7</xref>] employed widely for designing
+degenerate primers for example does not offer the user choice
+to know the presence of desired functional domain in input
+query sequence. Besides all other degenerate primer design
+tools unlike DPPrimer do not let the user to set the required
+level of similarity score while analyzing homologous sequences
+using blastp and display of phylogenetic tree.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary material</title>
+      <supplementary-material content-type="loca-data" id="SD1">
+        <caption>
+          <title>Data 1</title>
+        </caption>
+        <media mimetype="application" mime-subtype="pdf" xlink:href="97320630009937S1.pdf" xlink:type="simple" id="d35e236" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We wish to thank National Agricultural Bioinformatics Grid of
+Indian Council for Agricultural Research for gracious support
+for conducting the experiments and payment of salaries to SG.
+Authors are thankful to Ajit Mishra for making DPPrimer
+available on World Wide Web.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1" fn-type="other">
+        <p><bold>Citation:</bold>Gahoi <italic>et al</italic>, Bioinformation 9(18): 937-940 (2013)</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R01">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Linhart</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <source>Methods Mol Biol</source>
+          <year>2007</year>
+          <volume>402</volume>
+          <fpage>221</fpage>
+          <?supplied-pmid 17951798?>
+          <pub-id pub-id-type="pmid">17951798</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R02">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altschul</surname>
+              <given-names>SF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <source>J Mol Biol</source>
+          <year>1990</year>
+          <volume>215</volume>
+          <fpage>403</fpage>
+          <?supplied-pmid 2231712?>
+          <pub-id pub-id-type="pmid">2231712</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R03">
+        <label>3</label>
+        <element-citation publication-type="webpage">
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/Tools/pfa/iprscan/">http://www.ebi.ac.uk/Tools/pfa/iprscan/</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="R04">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Notredame</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <source>J Mol Biol</source>
+          <year>2002</year>
+          <volume>302</volume>
+          <fpage>205</fpage>
+          <?supplied-pmid 10964570?>
+          <pub-id pub-id-type="pmid">10964570</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R05">
+        <label>5</label>
+        <element-citation publication-type="webpage">
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.31.4068">
+http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.31.4068</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="R06">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rober</surname>
+              <given-names>BM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <source>The EMBO Journal</source>
+          <year>1992</year>
+          <volume>11</volume>
+          <fpage>1229</fpage>
+          <?supplied-pmid 1373373?>
+          <pub-id pub-id-type="pmid">1373373</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R07">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Staheli</surname>
+              <given-names>JP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <source>Methods Mol Biol</source>
+          <year>2011</year>
+          <volume>687</volume>
+          <fpage>57</fpage>
+          <?supplied-pmid 20967601?>
+          <pub-id pub-id-type="pmid">20967601</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p>PCR amplification in Wheat and Barely using
+degenerated primer for ADP-glucose phosphorylase [1:C 306
+(<italic>Triticum aestivum</italic>), 2:HD 2307 (<italic>Triticum aestivum</italic>), 3: A-9-30-1
+(<italic>Triticum durum</italic>), 4: WH912 (<italic>Tritticum durums</italic>), 5: DDK 1001
+(<italic>Triticum dicoccum</italic>), 6: DDk 1009 (<italic>Triticum dicoccum</italic>), 7: Dolma
+(<italic>Hordeum vulgare, Hullles</italic>), 8: BH331 (<italic>Hordeum vulgare, Hulled</italic>),
+M-50bp molecular weight marker (MBI Ferments)].</p>
+      </caption>
+      <graphic xlink:href="97320630009937F1"/>
+    </fig>
+  </floats-group>
+</article>

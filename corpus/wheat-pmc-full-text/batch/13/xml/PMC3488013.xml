@@ -1,0 +1,2759 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?DTDIdentifier.IdentifierValue article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Investig Genet</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Investig Genet</journal-id>
+      <journal-title-group>
+        <journal-title>Investigative Genetics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2041-2223</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3488013</article-id>
+      <article-id pub-id-type="publisher-id">2041-2223-3-10</article-id>
+      <article-id pub-id-type="doi">10.1186/2041-2223-3-10</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Methodology</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Method: a single nucleotide polymorphism genotyping method for <italic>Wheat streak mosaic virus</italic></article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" id="A1">
+          <name>
+            <surname>Rogers</surname>
+            <given-names>Stephanie M</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>stephanie.shryock@okstate.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Payton</surname>
+            <given-names>Mark</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>mark.payton@okstate.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Allen</surname>
+            <given-names>Robert W</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>robert.w.allen@okstate.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Melcher</surname>
+            <given-names>Ulrich</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>Ulrich.melcher@okstate.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Carver</surname>
+            <given-names>Jesse</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>Jesse.D.Carver@gmail.com</email>
+        </contrib>
+        <contrib contrib-type="author" id="A6">
+          <name>
+            <surname>Fletcher</surname>
+            <given-names>Jacqueline</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>Jacqueline.fletcher@okstate.edu</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Department of Entomology and Plant Pathology, Oklahoma State University, Stillwater, OK 74078, USA</aff>
+      <aff id="I2"><label>2</label>Department of Statistics, Oklahoma State University, Stillwater, OK, 74078, USA</aff>
+      <aff id="I3"><label>3</label>Department of Forensic Sciences, Oklahoma State University Center for Health Sciences, Tulsa, OK, 74107, USA</aff>
+      <aff id="I4"><label>4</label>Department of Biochemistry and Molecular Biology, Oklahoma State University, Stillwater, OK, 74078, USA</aff>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>17</day>
+        <month>5</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>3</volume>
+      <fpage>10</fpage>
+      <lpage>10</lpage>
+      <history>
+        <date date-type="received">
+          <day>8</day>
+          <month>1</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>17</day>
+          <month>5</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2012 Rogers et al.; licensee BioMed Central Ltd</copyright-statement>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Rogers et al.; licensee BioMed Central Ltd</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.investigativegenetics.com/content/3/1/10"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The September 11, 2001 attacks on the World Trade Center and the Pentagon increased the concern about the potential for terrorist attacks on many vulnerable sectors of the US, including agriculture. The concentrated nature of crops, easily obtainable biological agents, and highly detrimental impacts make agroterrorism a potential threat. Although procedures for an effective criminal investigation and attribution following such an attack are available, important enhancements are still needed, one of which is the capability for fine discrimination among pathogen strains. The purpose of this study was to develop a molecular typing assay for use in a forensic investigation, using <italic>Wheat streak mosaic virus</italic> (WSMV) as a model plant virus.</p>
+        </sec>
+        <sec>
+          <title>Method</title>
+          <p>This genotyping technique utilizes single base primer extension to generate a genetic fingerprint. Fifteen single nucleotide polymorphisms (SNPs) within the coat protein and helper component-protease genes were selected as the genetic markers for this assay. Assay optimization and sensitivity testing was conducted using synthetic targets. WSMV strains and field isolates were collected from regions around the world and used to evaluate the assay for discrimination. The assay specificity was tested against a panel of near-neighbors consisting of genetic and environmental near-neighbors.</p>
+        </sec>
+        <sec>
+          <title>Result</title>
+          <p>Each WSMV strain or field isolate tested produced a unique SNP fingerprint, with the exception of three isolates collected within the same geographic location that produced indistinguishable fingerprints. The results were consistent among replicates, demonstrating the reproducibility of the assay. No SNP fingerprints were generated from organisms included in the near-neighbor panel, suggesting the assay is specific for WSMV. Using synthetic targets, a complete profile could be generated from as low as 7.15 fmoles of cDNA.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>The molecular typing method presented is one tool that could be incorporated into the forensic science tool box after a thorough validation study. This method incorporates molecular biology techniques that are already well established in research and diagnostic laboratories, allowing for an easy introduction of this method into existing laboratories. Keywords: single nucleotide polymorphisms, genotyping, plant pathology, viruses, microbial forensics, Single base primer extension, SNaPshot Multiplex Kit</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>The September 11, 2001 attacks on the World Trade Center and the Pentagon increased concern about terrorist attacks on many vulnerable sectors of the United States (US), including agriculture [<xref ref-type="bibr" rid="B1">1</xref>]. The planting density of crops and the facts that biological agents are easily obtainable and can have highly detrimental impacts make agroterrorism a potential threat.</p>
+      <p>A developing area of forensic science is microbial forensics, &#x2018;a scientific discipline dedicated to analyzing evidence from a bioterrorism act, biocrime, or inadvertent microorganism/toxin release for attribution purposes&#x2019; [<xref ref-type="bibr" rid="B2">2</xref>]. As the threat of the use of microorganisms as weapons has become more apparent, there is a national effort to increase capability in this new field [<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B3">3</xref>]. Enhancements of the investigative process are still being developed to close gaps that remain in key areas, such as sample collection, packaging, shipping and storage, as well as pathogen identification and discrimination [<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B4">4</xref>].</p>
+      <p>In addition to identifying the perpetrator of a biological crime, it is also important to identify the source of the pathogen and when and how it was introduced [<xref ref-type="bibr" rid="B4">4</xref>]. The stringent demands of a criminal investigation and the pressures of the courtroom require that existing methods of plant pathogen detection and disease diagnosis [<xref ref-type="bibr" rid="B5">5</xref>,<xref ref-type="bibr" rid="B6">6</xref>] be revised and validated for forensic use [<xref ref-type="bibr" rid="B4">4</xref>].</p>
+      <p>Molecular comparisons using single nucleotide polymorphisms (SNPs) are often used for evolutionary, ecological and forensic studies [<xref ref-type="bibr" rid="B7">7</xref>-<xref ref-type="bibr" rid="B15">15</xref>], and can be especially helpful in typing organisms having high mutation rates, such as RNA viruses, in which mutations are caused primarily by an error-prone RNA-dependent RNA polymerase [<xref ref-type="bibr" rid="B16">16</xref>]. Specific regions within the genome can be targeted based on the level of conservation of the nucleic acid sequence. For example, the coat protein (CP) gene of <italic>Wheat streak mosaic virus</italic> (WSMV) is the most variable region of the genome, with several conserved regions corresponding to the functionally important residues [<xref ref-type="bibr" rid="B17">17</xref>]. Other genes with highly variable regions include helper-component protease (HC-Pro) protein 1 (P1), and protein 3 (P3) [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B18">18</xref>]. The high mutation rate characteristic of RNA viruses contributes to the evolution of this virus and to the presence of multiple genetic variants in a single population. Analyzing the SNPs of these variants can facilitate discrimination among populations, making this procedure a powerful tool that provides benefits that techniques such as sequencing, which focus on identifying the consensus of the population, do not offer.</p>
+      <p>WSMV, an important pathogen of wheat in the US, was selected as the model pathogen for the development of a molecular typing method. WSMV belongs to the genus <italic>Tritimovirus</italic> within the family <italic>Potyviridae</italic>[<xref ref-type="bibr" rid="B19">19</xref>]. The 9,384 nucleotide (nt), positive sense, single-stranded RNA virus genome [<xref ref-type="bibr" rid="B20">20</xref>] is translated into a single polyprotein that is then processed by three viral proteinases [<xref ref-type="bibr" rid="B19">19</xref>]. Because most plant viruses possess an RNA genome, the method described here can be applied almost universally, with only minor modifications, to most plant viruses. Wheat streak mosaic (WSM), the disease caused by WSMV, is found in most of the wheat growing regions of the US nearly every year. Therefore, the high prevalence of WSMV facilitates collection of field isolates from across the nation, as well as internationally. Previous studies have focused on WSMV&#x2019;s genetic diversity and evolution, including mutation rates, phylogenetic positions and polymorphic sites [<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B21">21</xref>-<xref ref-type="bibr" rid="B24">24</xref>]. Excellent PCR detection methods have been developed and provide a basis for generating the cDNA that is subjected to the SNP typing method described here [<xref ref-type="bibr" rid="B25">25</xref>-<xref ref-type="bibr" rid="B27">27</xref>]. Extensive knowledge of the viral genome and the availability of robust detection assays facilitate the development of a more stringent, discriminatory assay for variant characterization.</p>
+      <p>Even though viruses do not represent the majority of plant pathogens, the small size and simplicity of their genomes make them great laboratory models. Bacteria and fungi, the most predominant plant pathogens, present their own unique challenges for genetic analysis, such as genome size, multiple life stages, diploid genomes, and presence of plasmids [<xref ref-type="bibr" rid="B28">28</xref>]. However, a method like the one presented here could be adapted for such organisms by applying what is known about the organism&#x2019;s lifecycle, genomic features, and mutation rates to the selection of genetic markers and reaction conditions.</p>
+      <p>In this work, a SNP method for molecular typing of WSMV was developed by adapting protocols designed originally to test human DNA in forensic applications [<xref ref-type="bibr" rid="B7">7</xref>,<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B29">29</xref>]. Fifteen SNPs, located in the CP and HC-Pro genes, were included to generate a genetic fingerprint using the ABI PRISM&#xAE; SNaPshot&#x2122; Multiplex Kit. This procedure provides a mechanism of SNP identification by utilizing only fluorescently labeled dideoxynucleotides (ddNTPs) during the elongation of template-specific primers during thermocycling. The chemical composition of ddNTPs prevents any further elongation, resulting in a product that is one nucleotide longer than the primer itself. This nucleotide represents the SNP element and can be detected by fluorescence scanning of a capillary electrophoretic separation of products. We evaluated the method by determining the assay sensitivity, specificity and reproducibility, as well as its ability to discriminate among known strains and several field isolates of WSMV.</p>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <sec>
+        <title>Generation of SNP-specific primers</title>
+        <p>One hundred and twenty-two SNPs within the CP of WSMV were previously identified [<xref ref-type="bibr" rid="B19">19</xref>]. Ten of these SNPs were selected for inclusion in this assay because of their high variability among strains and the presence of a semi-conserved region adjacent to the SNP, providing a suitable template for primer binding. The remaining CP SNPs for this assay were identified by multiple sequence alignment of 85 different WSMV sequences obtained from the National Center for Biotechnology Information (NCBI), including the strains Sidney 81, Type, and El Batan 3 using the same criteria. The SNPs in the HC-Pro region of the genome were identified by performing a multiple sequence alignment of 13 WSMV HC-Pro sequences obtained from the NCBI database. The same criteria were used for selection of the SNPs. Due to the limited number of SNPs having an adjacent template sufficient for primer binding, both the positive and negative sense strands of the viral template were used, an approach previously used [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B31">31</xref>].</p>
+        <p>A 20 to 25 nt hybridizing region was designed for each SNP with the addition of a [GACT]<sub>n</sub> tail to the 5&#x2032;-end to provide a unique length for each primer, ranging from 30 to 65 nt. Using Oligocalc software [<xref ref-type="bibr" rid="B32">32</xref>], the thermodynamics and folding structures were checked for each primer. Each primer was checked for specificity to WSMV using the Basic Local Alignment Search Tool for nucleotides (BLASTn) with the available NCBI database. Any primer that was not specific to WSMV or possessed folding structures with a &#x2206;G greater than 3.0 kcal/mol was eliminated from the study.</p>
+        <p>The remaining SNP-specific primers were screened for inclusion in the assay by performing monoplex and multiplex <italic>in vitro</italic> tests using synthetic targets that were specific to each primer. Primers generating a single fluorescent peak in the SNaPshot electropherogram and no peaks in the negative control were selected for inclusion in the WSMV SNaPshot assay (Figure <xref ref-type="fig" rid="F1">1</xref>). These final fifteen primers are listed in Table <xref ref-type="table" rid="T1">1</xref>.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>WSMV CP multiplex electropherogram.</bold> The height of each peak indicates the concentration of fluorescent units and the location of the peaks along the x-axis indicates the size of the fragment in nucleotides; left to right showing smallest to largest. A) Amplification of synthetic targets using eight SNP-specific primers for the WSMV CP, showing a single amplified target for each primer. B) Negative control (using sterile nanopure water instead of the synthetic templates) for the CP amplification demonstrating the absence of non-target amplification. The peaks present (labeled according to fragment size) are size standards to help with the assignment of the fragment sizes. CP, coat protein; SNP, single nucleotide polymorphism; WSMV, <italic>Wheat streak mosaic virus</italic>.</p>
+          </caption>
+          <graphic xlink:href="2041-2223-3-10-1"/>
+        </fig>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>SNaPshot primers designed for WSMV</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Name</bold>
+                  <sup>
+                    <bold>a</bold>
+                  </sup>
+                </th>
+                <th align="left">
+                  <bold>Length (nt)</bold>
+                </th>
+                <th align="left">
+                  <bold>Sequence (5&#x2032;-3&#x2032;)</bold>
+                  <sup>
+                    <bold>b</bold>
+                  </sup>
+                </th>
+                <th align="left">
+                  <bold>T</bold>
+                  <sub>
+                    <bold>M</bold>
+                  </sub>
+                </th>
+                <th align="left">
+                  <bold>Strand</bold>
+                  <sup>
+                    <bold>c</bold>
+                  </sup>
+                </th>
+                <th align="left">
+                  <bold>Final Conc. (&#x3BC;M)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">30 C<hr/></td>
+                <td align="left" valign="bottom">30<hr/></td>
+                <td align="left" valign="bottom">GACTG<underline>GCGTGTTCTCCCTCACATCATCTGC</underline><hr/></td>
+                <td align="left" valign="bottom">65.1<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0.1<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">35 C<hr/></td>
+                <td align="left" valign="bottom">35<hr/></td>
+                <td align="left" valign="bottom">GACTGACTG<underline>ACAACTGAACAACTCAACACCTGGAT</underline><hr/></td>
+                <td align="left" valign="bottom">63.5<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">0.2<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">40 C<hr/></td>
+                <td align="left" valign="bottom">40<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTG<underline>GCATATCTGTTGTCGATAAGTTC</underline><hr/></td>
+                <td align="left" valign="bottom">63.5<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0.1<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">45 C<hr/></td>
+                <td align="left" valign="bottom">45<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTGAC<underline>TGTAGTTTCTACTGTGCTCACGCAAG</underline><hr/></td>
+                <td align="left" valign="bottom">66.5<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0.2<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">50 C<hr/></td>
+                <td align="left" valign="bottom">50<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTGACTGACT<underline>TTCGCAGCTTTGTACATCGGTTCAAT</underline><hr/></td>
+                <td align="left" valign="bottom">67.6<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0.4<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">55 C<hr/></td>
+                <td align="left" valign="bottom">55<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTGACTGACTGACTGA<underline>TCTCTGGGCACGTTGTGTTGATTAT</underline><hr/></td>
+                <td align="left" valign="bottom">72.05<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0.4<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">60 C<hr/></td>
+                <td align="left" valign="bottom">60<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTGACTGACTGACTGACTGA<underline>CCCCTTGGTATGATAGGTTTTCCAAT</underline><hr/></td>
+                <td align="left" valign="bottom">72.82<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0.4<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">65 C<hr/></td>
+                <td align="left" valign="bottom">65<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTGACTGACTGACTGACTGACTGA<underline>CTTGTTCTGTATTCCGCGTAGCCTGTT</underline><hr/></td>
+                <td align="left" valign="bottom">74.74<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0.4<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">30 H<hr/></td>
+                <td align="left" valign="bottom">30<hr/></td>
+                <td align="left" valign="bottom">GACTG<underline>CAAGTTGTCTTAGCACATCACCAAA</underline><hr/></td>
+                <td align="left" valign="bottom">60.8<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0.4<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">35 H<hr/></td>
+                <td align="left" valign="bottom">35<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTG<underline>CGCAAGTTACCTGGAAGC</underline><hr/></td>
+                <td align="left" valign="bottom">66.3<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">0.4<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">40 H<hr/></td>
+                <td align="left" valign="bottom">40<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTG<underline>CGTATCCAGACAGCGATGTAACA</underline><hr/></td>
+                <td align="left" valign="bottom">66.4<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">0.4<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">45 H<hr/></td>
+                <td align="left" valign="bottom">45<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTGACTGA<underline>ATTGTTCCATCTTCTAGCATCTT</underline><hr/></td>
+                <td align="left" valign="bottom">64.7<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0.1<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">50 H<hr/></td>
+                <td align="left" valign="bottom">50<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTGACTGACTGACT<underline>CGAATTTTAGGTTCGTTGATTT</underline><hr/></td>
+                <td align="left" valign="bottom">65.8<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">0.1<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">55 H<hr/></td>
+                <td align="left" valign="bottom">55<hr/></td>
+                <td align="left" valign="bottom">GACTGACTGACTGACTGACTGACTGACTGACT<underline>TTAGACTCGCCGTTAATTTCCAT</underline><hr/></td>
+                <td align="left" valign="bottom">71.31<hr/></td>
+                <td align="left" valign="bottom">F<hr/></td>
+                <td align="left" valign="bottom">0,4<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">60 H</td>
+                <td align="left">60</td>
+                <td align="left">GACTGACTGACTGACTGACTGACTGACTGACTGACTG<underline>ATTTGTCACTGGGAAGGAAATGT</underline></td>
+                <td align="left">72.82</td>
+                <td align="left">R</td>
+                <td align="left">0.2</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><sup>a</sup>The letter of the primer name indicates the target is either the coat protein (C) or the helper-component protease (H) segment of the genome.</p>
+            <p><sup>b</sup>Each primer contains a segment that anneals to the template (underlined) and a GACT tail to adjust the length of the primer.</p>
+            <p><sup>c</sup>The primer anneals to either the forward (F) or reverse (R) strand. nt, nucleotide; WSMV, <italic>Wheat streak mosaic virus.</italic></p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Sensitivity and limit of detection</title>
+        <p>The sensitivities of the CP and HC-Pro assays were determined using the plasmids containing the synthetic target regions. A 1:3 dilution series was created from a starting solution of 0.075 pmole/&#x3BC;l. The SNaPshot reaction was performed and the electropherogram generated by capillary electrophoresis. There was a linear relationship between the fluorescent units and the amount of DNA (pmoles) in each sample (Figure <xref ref-type="fig" rid="F2">2</xref>).</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>Sensitivity of SNaPshot assay for the (A) CP and the (B) HC-Pro primers.</bold> Both graphs demonstrate a linear relationship for each SNP (individual lines; see Figure <xref ref-type="fig" rid="F1">1</xref> for product names). The sensitivity of the assay was determined by identifying the pmoles that correspond to 800 FU using the linear equation of the SNP with the steepest slope (C55 and H45). Linear equations: y&#x2009;=&#x2009;336285x-475.19 and y&#x2009;=&#x2009;285041x-1239, CP and HC-Pro, respectively. CP, coat protein; FU, fluorescent units, HC-Pro, helper-component protease, SNP, single nucleotide polymorphism.</p>
+          </caption>
+          <graphic xlink:href="2041-2223-3-10-2"/>
+        </fig>
+        <p>The background noise in the electropherograms of the negative and positive controls appeared consistently between 300 and 750 fluorescent units (FUs) (data not shown). To reduce the possibilities of false positives from background peaks, the limit of detection was set at 800 FUs, which was subsequently subtracted from all fluorescent values. The sensitivity of detection was determined by calculating the number of pmoles that correspond to 800 FUs; 3.79 fmoles and 7.15 fmoles for CP and HC-Pro, respectively.</p>
+      </sec>
+      <sec>
+        <title>Specificity to WSMV</title>
+        <p>A panel of near-neighbors to WSMV was tested for SNaPshot assay detection using the same protocols as outlined for WSMV samples. This panel included the phylogenetic near neighbors <italic>Oat necrotic mottle virus</italic> (ONMV) and <italic>Wheat spindle streak mosaic virus</italic> (WSSMV), and the environmental near-neighbors <italic>Maize dwarf mosaic virus</italic> (MDMV), <italic>High plains virus</italic> (HPV)<italic>, Barley yellow dwarf virus</italic> PAV (BYDV-PAV) and <italic>Cereal yellow dwarf virus</italic> RPV (CYDV-RPV), as well as the healthy host <italic>Triticum aestivum</italic> cv. Chisholm. Gel electrophoresis results demonstrated the lack of the WSMV characteristic approximately 1,300 bp amplicon in the near-neighbor samples and the negative controls and the presence of this amplicon in the WSMV positive controls (Figure <xref ref-type="fig" rid="F3">3</xref>). Amplicons were present in three samples from the CP assay: HPV, CYDV-RPV, and BYDV-PAV. <italic>In silico</italic> analysis using NCBI BLASTn demonstrated that portions of the C1 and XC1 primers are complementary to regions within each of their genomes. However, the primer sequences are not 100% complementary to any of the three, which may explain the presence of the faint bands. When these three samples were subjected to the SNaPshot assay no fluorescent peaks were present in electropherograms, demonstrating that the SNaPshot assay is specific to WSMV.</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Gel electrophoresis of CP and HCPro amplification products from WSMV near-neighbors.</bold> Lanes 2&#x2013;8 and 11&#x2013;17 are ONMV, WSSMV, MDMV, HPV, CYDV-RPV, BYDV-PAV, and healthy wheat PCR products for CP and HC-Pro assays, respectively. Lanes 1 and 20 are a 100 bp DNA ladder. Lanes 9 and 18 are the positive control CP and HC-PRO WSMV plasmid, respectively. Lanes 10 and 19 are negative controls. Only the positive controls produced approximately 1,300 bp amplicons, corresponding to WSMV. BYDV-PAV, <italic>Barley yellow dwarf virus</italic> PAV; CP, coat protein; CYDV-RPV, <italic>Cereal yellow dwarf virus</italic> RPV; HC-Pro, helper-component; HPV, <italic>High plains virus</italic>; MDMV, <italic>Maize dwarf mosaic virus</italic>; ONMV, <italic>Oat necrotic mottle virus</italic>; PCR, polymerase chain reaction; WSMV, <italic>Wheat streak mosaic virus</italic>; WSSMV, <italic>Wheat spindle streak mosaic virus</italic>.</p>
+          </caption>
+          <graphic xlink:href="2041-2223-3-10-3"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Characterization of WSMV strains and field isolates</title>
+        <p>The discriminatory capability of the SNaPshot assay was tested using known strains of WSMV (Sidney 81, Type, OSU, Merredin 1, Merredin 2, and Ginnindera) and 16 field isolates. A PCR amplicon of the appropriate size for the CP and HC-Pro genes was obtained for each sample (Figure <xref ref-type="fig" rid="F3">3</xref>). Each strain and most field isolates produced a unique SNaPshot fingerprint representing the genetic variants within each sample (Table <xref ref-type="table" rid="T2">2</xref>). However, some field isolates collected from a common geographical region had nearly identical fingerprints, such as three samples from Montana (Conrad 1, Kalispell, and Huntley B).</p>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>
+              <bold>SNaPshot fingerprints of WSMV strains and field isolates using the IUB nucleotide code</bold>
+              <sup>
+                <bold>a</bold>
+              </sup>
+            </p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th rowspan="2" align="left">
+                  <bold>Sample</bold>
+                </th>
+                <th rowspan="2" align="left">
+                  <bold>Origin</bold>
+                </th>
+                <th colspan="15" align="center" valign="bottom">
+                  <bold>SNP Profile</bold>
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th colspan="7" align="center">
+                  <bold>HC-Pro</bold>
+                </th>
+                <th colspan="8" align="center">
+                  <bold>CP</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">Sidney 81<hr/></td>
+                <td align="left" valign="bottom">Nebraska<hr/></td>
+                <td align="left" valign="bottom">M<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Type<hr/></td>
+                <td align="left" valign="bottom">Kansas<hr/></td>
+                <td align="left" valign="bottom">K<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">M<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">OSU<hr/></td>
+                <td align="left" valign="bottom">Oklahoma<hr/></td>
+                <td align="left" valign="bottom">B<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">B<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Merredin 1<hr/></td>
+                <td align="left" valign="bottom">Australia<hr/></td>
+                <td align="left" valign="bottom">K<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+                <td align="left" valign="bottom">S<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Merredin 2<hr/></td>
+                <td align="left" valign="bottom">Australia<hr/></td>
+                <td align="left" valign="bottom">K<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">S<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Ginnindera<hr/></td>
+                <td align="left" valign="bottom">Australia<hr/></td>
+                <td align="left" valign="bottom">K<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">V<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Billings<hr/></td>
+                <td align="left" valign="bottom">Montana<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Conrad1<hr/></td>
+                <td align="left" valign="bottom">Montana<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Conrad2<hr/></td>
+                <td align="left" valign="bottom">Montana<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">M<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">M<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Conrad3<hr/></td>
+                <td align="left" valign="bottom">Montana<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Helena<hr/></td>
+                <td align="left" valign="bottom">Montana<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">M<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">HuntleyA<hr/></td>
+                <td align="left" valign="bottom">Montana<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">HuntleyB<hr/></td>
+                <td align="left" valign="bottom">Montana<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Kalispell<hr/></td>
+                <td align="left" valign="bottom">Montana<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Toole<hr/></td>
+                <td align="left" valign="bottom">Montana<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">-<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">OK-KF<hr/></td>
+                <td align="left" valign="bottom">Oklahoma<hr/></td>
+                <td align="left" valign="bottom">K<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">S<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">S<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">OK-CC<hr/></td>
+                <td align="left" valign="bottom">Oklahoma<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">OK-Lab<hr/></td>
+                <td align="left" valign="bottom">Oklahoma<hr/></td>
+                <td align="left" valign="bottom">B<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">M<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">B<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">OK-425<hr/></td>
+                <td align="left" valign="bottom">Oklahoma<hr/></td>
+                <td align="left" valign="bottom">K<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">V<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">H<hr/></td>
+                <td align="left" valign="bottom">S<hr/></td>
+                <td align="left" valign="bottom">B<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">CO-17<hr/></td>
+                <td align="left" valign="bottom">Colorado<hr/></td>
+                <td align="left" valign="bottom">K<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">M<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">H<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">NE-932<hr/></td>
+                <td align="left" valign="bottom">Nebraska<hr/></td>
+                <td align="left" valign="bottom">K<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">S<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">V<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">H<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">KS-117<hr/></td>
+                <td align="left" valign="bottom">Kansas<hr/></td>
+                <td align="left" valign="bottom">K<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">S<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">S<hr/></td>
+                <td align="left" valign="bottom">R<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">Y<hr/></td>
+                <td align="left" valign="bottom">W<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom"><sup>b</sup>El Batan 3<hr/></td>
+                <td align="left" valign="bottom">Mexico<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+              </tr>
+              <tr>
+                <td align="left"><sup>b</sup>Czech</td>
+                <td align="left">Czech</td>
+                <td align="left">T</td>
+                <td align="left">A</td>
+                <td align="left">T</td>
+                <td align="left">G</td>
+                <td align="left">A</td>
+                <td align="left">G</td>
+                <td align="left">T</td>
+                <td align="left">G</td>
+                <td align="left">C</td>
+                <td align="left">T</td>
+                <td align="left">C</td>
+                <td align="left">C</td>
+                <td align="left">G</td>
+                <td align="left">T</td>
+                <td align="left">C</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><sup>a</sup>IUB nucleotide code: R&#x2009;=&#x2009;AG, Y&#x2009;=&#x2009;TC, K&#x2009;=&#x2009;TG, M&#x2009;=&#x2009;AC, S&#x2009;=&#x2009;GC, W&#x2009;=&#x2009;AT, B&#x2009;=&#x2009;CGT, D&#x2009;=&#x2009;AGT, H&#x2009;=&#x2009;ACT, V&#x2009;=&#x2009;ACG, N&#x2009;=&#x2009;AGCT [<xref ref-type="bibr" rid="B33">33</xref>]. <sup>b</sup>indicates <italic>in silico</italic> results based on the sequence obtained from GenBank. WSMV, <italic>Wheat streak mosaic virus.</italic></p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The relationships among these samples were depicted using principal component analysis (PCA) with the inclusion of the <italic>in silico</italic> SNaPshot results of El Batan 3 and Czech WSMV strains (Figure <xref ref-type="fig" rid="F4">4</xref>). The strains Czech, El Batan 3, Sidney 81, and Type provide a dimension of diversity as these strains have been thoroughly tested in previous phylogenetic studies [<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>,<xref ref-type="bibr" rid="B34">34</xref>]. The genetic variability among these samples as depicted in the PCA is consistent with the current understanding of WSMV genetic diversity. The known strains and the field isolates show a high level of diversity with no apparent segregation of field isolates based on geographic location. The results indicate that these samples, even those obtained from Australia, are more closely related to Sidney 81 and Type than to El Batan 3 or Czech, a conclusion that is consistent with previous analyses of the US WSMV population [<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B24">24</xref>].</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>Principle component analysis of WSMV strains and field isolates.</bold> The majority of the samples form a weak cluster between the Sidney 81 and Type strains, with El Batan 3 and Czech strains appearing as outliers. *&#x2009;=&#x2009;profiles generated <italic>in silico</italic> using NCBI sequence. WSMV, <italic>Wheat streak mosaic virus</italic>.</p>
+          </caption>
+          <graphic xlink:href="2041-2223-3-10-4"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Reproducibility of assay</title>
+        <p>To test for reproducibility of the assay, each SNaPshot profile was generated three times from cDNA of the six WSMV strains. Each replicate produced identical SNaPshot fingerprints for each sample based on qualitative results (data not shown). To determine if the results (fluorescent units) were quantitatively reproducible, analysis of variance (ANOVA) was performed (see materials and methods for complete description of analysis). During the analysis, each nucleotide was compared to the respective nucleotide within each SNP position for each sample replicate. A subsequent analysis was performed using the individual <italic>P</italic>-values for each replicate group to calculate an overall <italic>P</italic>-value for each nucleotide. The level of variance for each nucleotide was determined based on these <italic>P</italic>-values. Based on the results of the peak height-absolute fluorescence dataset analysis, the fluorescence values for all four nucleotides were statistically significant (Table <xref ref-type="table" rid="T3">3</xref>). However, only the fluorescence values of nucleotides G and T were found to be statistically significant when the analysis was performed on the peak height-nucleotide percent dataset. The same results were found for both of the area under the curve datasets with the exception of nucleotide G in the area under the curve &#x2013; nucleotide percent data. The statistical significance indicates that the fluorescence values are different among each strain replicate; however, the difference is minimal when using the area under the curve dataset.</p>
+        <table-wrap position="float" id="T3">
+          <label>Table 3</label>
+          <caption>
+            <p>ANOVA results of WSMV strain replicates</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Dataset</bold>
+                </th>
+                <th align="left">
+                  <bold>Effect</bold>
+                </th>
+                <th align="left">
+                  <bold>Nucleotide</bold>
+                </th>
+                <th align="left"><bold>Num DF</bold>*</th>
+                <th align="left">
+                  <bold>Den DF</bold>
+                  <sup>+</sup>
+                </th>
+                <th align="left">
+                  <bold>F Value</bold>
+                </th>
+                <th align="left">
+                  <bold>Pr&#x2009;&gt;&#x2009;F</bold>
+                  <sup>&#xB1;</sup>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td colspan="7" align="left" valign="bottom">Peak height &#x2013; percent<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">0.35<hr/></td>
+                <td align="left" valign="bottom">0.7075<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">0.64<hr/></td>
+                <td align="left" valign="bottom">0.5266<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">4.88<hr/></td>
+                <td align="left" valign="bottom">0.0087<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">3.44<hr/></td>
+                <td align="left" valign="bottom">0.0343<hr/></td>
+              </tr>
+              <tr>
+                <td colspan="7" align="left" valign="bottom">Peak height &#x2013; absolute<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">13.22<hr/></td>
+                <td align="left" valign="bottom">&lt;0.0001<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">4.05<hr/></td>
+                <td align="left" valign="bottom">0.0190<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">17.73<hr/></td>
+                <td align="left" valign="bottom">&lt;0.0001<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">11.72<hr/></td>
+                <td align="left" valign="bottom">&lt;0.0001<hr/></td>
+              </tr>
+              <tr>
+                <td colspan="7" align="left" valign="bottom">Area under curve &#x2013; percent<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">0.96<hr/></td>
+                <td align="left" valign="bottom">0.3845<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">1.46<hr/></td>
+                <td align="left" valign="bottom">0.2342<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">0.75<hr/></td>
+                <td align="left" valign="bottom">0.4757<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">T<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">3.73<hr/></td>
+                <td align="left" valign="bottom">0.0259<hr/></td>
+              </tr>
+              <tr>
+                <td colspan="7" align="left" valign="bottom">Area under curve - absolute<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">A<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">7.57<hr/></td>
+                <td align="left" valign="bottom">0.0007<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">C<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">10.30<hr/></td>
+                <td align="left" valign="bottom">&lt;0.0001<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">Replicate<hr/></td>
+                <td align="left" valign="bottom">G<hr/></td>
+                <td align="left" valign="bottom">2<hr/></td>
+                <td align="left" valign="bottom">178<hr/></td>
+                <td align="left" valign="bottom">8.21<hr/></td>
+                <td align="left" valign="bottom">0.0004<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">&#xA0;</td>
+                <td align="left">Replicate</td>
+                <td align="left">T</td>
+                <td align="left">2</td>
+                <td align="left">178</td>
+                <td align="left">3.35</td>
+                <td align="left">0.0375</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>*Num DF&#x2009;=&#x2009;Numerator Degrees of Freedom; +Den DF&#x2009;=&#x2009;Denominator Degrees of Freedom;.</p>
+            <p>&#xB1;results are significant if Pr value is less than 0.05. WSMV, <italic>Wheat streak mosaic virus.</italic></p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>The ability to discriminate among viral isolates can be useful in evolutionary and ecological studies and for forensic investigations in which determining the origin of a biological agent is critical to criminal attribution. For example, identifying the source of the pathogen became a crucial aspect of the investigation of the anthrax letter attacks in 2001, but because appropriate scientific tools for strain discrimination were not available at that time it was not until seven years later that a suitable test was developed and validated, ultimately leading to attribution [<xref ref-type="bibr" rid="B35">35</xref>]. The development and validation of universal, robust, sensitive, and specific detection and discriminatory assays is important for a rapid and efficient response to biological attacks that may occur against our agricultural industry.</p>
+      <p>The method described here is one example of an assay that addresses this need. During a criminal investigation of a WSMV outbreak, this SNP typing method can be used to generate a genetic profile of the outbreak strain. This profile can then be compared to profiles generated from reference WSMV samples or samples found in a suspect&#x2019;s possession. The results of the comparison may provide guidance to investigators in determining a likely geographic location of the origin of the virus. The unique patterns in the profile that are known to exist in a specific WSMV strain could help pinpoint the location because certain strains are known to persist in specific areas of the world. Ultimately, the strength in this assay is in comparing one sample to another to determine suspect exclusion for the crime. Determining the threshold of exclusion in terms of number of similar SNPs needs to be determined after further validation testing has occurred.</p>
+      <p>The SNP assay described here is intended for use in a forensic investigation, but it can be useful also for other molecular studies in which viral variant discrimination may be necessary. Due to the inclusion of 15 SNPs in the assay, we were able to discriminate between multiple strains and isolates of WSMV. The relationship between SNP number and discrimination ability is comparable to that of human DNA typing, in which the use of as many as thirteen short tandem repeat (STR) loci results in an extremely low probability that a genetic fingerprint could be found in any other individual based on allele frequencies in the population [<xref ref-type="bibr" rid="B36">36</xref>]. Because none of the probes failed to reveal a variation, each SNP is informative and should be included in the assay. Although we did not test strain El Batan 3 or any of the European strains <italic>in vitro</italic>, their theoretical profiles were included in the data analysis to demonstrate the estimated discriminatory ability of the method. The fifteen SNPs we used for WSMV provide a high level of confidence that the fingerprint is unique to the variant population without testing a prohibitive number of SNPs.</p>
+      <p>In our laboratory, the SNP method discriminated among several known strains of the virus and also among field isolates collected throughout the US and in Australia. Several of the profiles are similar due to most of the strains and isolates belonging to the same phylogenetic clade of WSMV [<xref ref-type="bibr" rid="B19">19</xref>], but minor differences exist in the secondary peaks that appear for some of the SNPs. These secondary peaks are due to the presence of multiple variants in the population. The ability for this SNP typing assay to detect multiple variants in the population is a feature that adds a higher level of discrimination than can be achieved through consensus sequence analysis. However, to fully understand if all variants or just the dominant variants are represented in the SNP profile, further testing needs to be conducted. In our hands, the limit of detection for the CP assay and HC-Pro assay, respectively, were 3.79 fmoles and 7.15 fmoles of WSMV cDNA, both of which are lower than the detection limit of 10 fmoles reported in the SNaPshot Kit manual. The level of sensitivity of this assay is comparable to that of other SNP-based techniques, reverse-transcription PCR (RT-PCR), and real-time PCR [<xref ref-type="bibr" rid="B5">5</xref>].</p>
+      <p>Including an internal control is important for assay validation. One of the SNaPshot primers (C55) was initially included in the assay to serve as the internal control. This primer is an excerpt of the WSMV diagnostic primer used by National Plant Diagnostic Network laboratories [<xref ref-type="bibr" rid="B37">37</xref>-<xref ref-type="bibr" rid="B39">39</xref>]. Unfortunately, this SNaPshot primer did not appear to be universal for all WSMV isolates tested. Therefore, it was no longer considered the internal control. To validate this assay for forensic investigations, an alternative internal control would need to be identified and included in the assay. At that point, a thorough evaluation of error rate would also be conducted for the assay.</p>
+      <p>In applications of the SNaPshot assay to field samples it is important to consider that many organisms and viruses other than the target may be encountered, and that some of these, such as <italic>Triticum mosaic virus</italic> (TriMV) and HPV, which are commonly found together in the same infected tissue [<xref ref-type="bibr" rid="B40">40</xref>-<xref ref-type="bibr" rid="B42">42</xref>], may be genetically related to WSMV. We tested many of the viruses known to co-infect wheat with WSMV. However, since TriMV is almost always found with WSMV [<xref ref-type="bibr" rid="B43">43</xref>], we were unable to obtain TriMV infected wheat tissue that was not also infected with WSMV in the necessary time frame; therefore, TriMV was not included in the specificity study. However, the primers used in this assay were confirmed to be WSMV specific through <italic>in silico</italic> analyses. Our <italic>in vitro</italic> specificity testing demonstrated that the genetically similar viruses and ecologically similar organisms included in this study would neither interfere with the assay nor provide false positives. This conclusion was confirmed by the lack of fluorescent signal during capillary electrophoresis of the SNaPshot products for HPV, CYDV-RPV and BYDV-PAV.</p>
+      <p>Implementation of this assay in a forensic investigation requires that the SNP profile of a single sample be reproducible, and this requirement was fulfilled through qualitative comparisons in this study. The inability to apply this assay in a quantitative capacity does not hamper its utility in forensic investigations, as the presence/absence of SNPs in a profile should provide sufficient information. However, quantitative analyses may be beneficial for epidemiological or ecological studies in which the amount of genetic change may provide insight into organismal interactions or disease development.</p>
+      <p>Even though a wheat virus was used as the model for the development of this assay, SNP typing may prove to be a successful molecular comparison tool for other organisms as well. Ultimately, the strength and reliability of the assay relies on appropriate marker selection which is facilitated by understanding the biology of the organism, the pressures that result in genetic evolution, and the functionally important regions of the genome. SNP analysis may provide additional benefits that other genetic analysis techniques do not. Specifically, DNA does not need to be intact to perform SNP analysis, which would be beneficial for analysis of fungi where the large genomic DNA may be easily sheared during processing.</p>
+      <p>This study demonstrates a new method for viral isolate comparison that could potentially be utilized in a forensic investigation. Before this method can be incorporated into the forensic science toolbox, a more thorough and exhaustive validation procedure must be conducted. Due to resource constraints, we were unable to perform this level of validation, which would include larger inclusivity and exclusivity panels and standardization of procedures to understand fully the variant representation and error rates. However, this preliminary evaluation of the technology supports the utility of this assay in a forensic setting and suggests a successful validation could be achieved.</p>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>This specific, sensitive, and discriminatory SNaPshot assay has been developed using WSMV as a model system. Similar assays could be developed for application to many other plant, animal, or human pathogens by designing organism-specific primers, a task that is becoming ever more feasible with the increasing availability of microbial sequence data and primer designing software. This method already has been shown to be useful for other pathogens, such as <italic>Potato virus</italic> Y [<xref ref-type="bibr" rid="B15">15</xref>], and for genetic comparisons of humans and other organisms [<xref ref-type="bibr" rid="B7">7</xref>-<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B11">11</xref>-<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B44">44</xref>-<xref ref-type="bibr" rid="B47">47</xref>]. The assay uses molecular biology techniques that are well established already in many research and diagnostic laboratories, allowing for a seamless introduction of the technology into existing laboratories.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Selection of virus strains</title>
+        <p>WSMV strains were received from virus collections at Oklahoma State University in Stillwater, OK, the University of Nebraska in Lincoln, NE, and from AGWEST Plant Laboratories in South Perth, West Australia. Other infected wheat samples were collected in Oklahoma wheat fields and from the Great Plains Diagnostic Network (GPDN) wheat virus survey of 2008. Strains of ONMV<italic>,</italic> WSSMV<italic>,</italic> and MDMV strain A were received from a virus collection at Oklahoma State University. Strains of HPV<italic>,</italic> BYDV-PAV<italic>,</italic> and CYDV-RPV were received from the GPDN wheat virus survey. All samples were maintained as dry, frozen leaf material at &#x2212;80&#xB0;C, with the exception of the Australian WSMV isolate Ginnindera, which was stored at &#x2212;80&#xB0;C as an RNA pellet.</p>
+      </sec>
+      <sec>
+        <title>SNP identification</title>
+        <p>SNPs were identified by comparing the sequences of 85 different WSMV sequences obtained from the NCBI database, including the strains Sidney 81 [GenBank: AF057533], Type [GenBank: AF285169.1], and El Batan 3 [GenBank: AF285170.1]. The CP and HC-Pro segments of the genome were targeted for the SNP-typing method because of the high variability among strains [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B18">18</xref>]. The polymorphic sites selected contained high variability among the strains and were surrounded by semi-conserved regions that would provide a suitable template for primer binding.</p>
+      </sec>
+      <sec>
+        <title>Nucleic acid extraction</title>
+        <p>Total RNA was extracted from healthy or infected wheat (<italic>Triticum aestivum)</italic> leaves using the RNeasy Plant Mini Kit (Qiagen, Germantown, MD, USA) according to the manufacturer&#x2019;s instructions. A total of 100 mg of tissue was homogenized at full speed (3,450 oscillations/minute) for 90 seconds using a mini bead-beater (Biospec Products, Bartlesville, OK, USA) and 550 &#x3BC;l of the RLT lysis buffer. The RNA was eluted using 50 &#x3BC;l of RNase-free water supplied with the kit and the concentration determined using a Nanodrop v.2000 spectrophotometer (Thermo Scientific, Waltham, MA, USA).</p>
+      </sec>
+      <sec>
+        <title>Reaction controls</title>
+        <p>A synthetic plasmid carrying the target gene sequences derived from the cloning vector pUC57 was created and produced (GenScript, Piscataway, NJ, USA) for each of the target regions of WSMV to serve as a positive control. The CP synthetic plasmid contains nt 8061&#x2013;9428 (1,367 bp) and the HC-Pro synthetic plasmid contains nt 1081&#x2013;2507 (1,426 bp) (based on Sidney 81 genome [GenBank: AF057533]). The plasmids were used during the one-step RT-PCR at a concentration of 2 ng/&#x3BC;l and were processed in the same fashion as the samples.</p>
+        <p>In addition to the positive control, a negative control was included with each sample set in every process. The negative control consisted of all reaction reagents with sterile nanopure water instead of the viral sample. These controls were used to verify the performance of the assay and confirm the lack of contamination. Additionally, Sidney 81 derived synthetic plasmids confirm the generated profile remains authentic after the sample is subjected to PCR.</p>
+      </sec>
+      <sec>
+        <title>cDNA synthesis and amplification</title>
+        <p>cDNA was synthesized and amplified from total RNA in a single step using the SuperScript&#x2122; III One-Step RT-PCR kit with Platinum&#xA9; <italic>Taq</italic> (Invitrogen, Carlsbad, CA, USA)<italic>,</italic> following the protocol supplied by the manufacturer. Briefly, in the first part of the RT-PCR, primer C1 (5&#x2032;-TACTTGACTGGGACCCGAA-3&#x2032;; Sidney 81 nt 8117 to 8134) was used for the CP reverse-transcription and primer HCR (5&#x2032;- CATGCTTGTATACTGAGAACAGTCTCTTG-3&#x2032;; Sidney 81 nt 2373 to 2345) was used for the HC-Pro reverse-transcription, in separate reactions, to synthesize the DNA strand complementary to the RNA sequence [<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B48">48</xref>,<xref ref-type="bibr" rid="B49">49</xref>]. In the second part, the CP region of the cDNA was amplified using the forward primer C1 and the reverse primer XC1 (5&#x2032;-AACCCACACATAGCTACCAAG-3&#x2032;; Sidney 81 nt 9371 to 9351) [<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B29">29</xref>,<xref ref-type="bibr" rid="B48">48</xref>,<xref ref-type="bibr" rid="B49">49</xref>]. The HC-Pro region of the cDNA was amplified using the forward primer HCF (5&#x2032;- GAAATGCACACATGGACTTAGATGGTAT-3&#x2032;; Sidney 81 nt 1159 to 1186) and the reverse primer HCR [<xref ref-type="bibr" rid="B50">50</xref>]. These primers produced approximately 1.3 kb amplicons for both CP and HC-Pro which contained the gene and flanking regions (based on the Sidney 81 genome [GenBank: AF057533]).</p>
+        <p>Each RT-PCR reaction contained the following components: 25 &#x3BC;l 2X reaction mix (supplied with kit), 1 &#x3BC;g template RNA (6 ng of synthetic plasmid), 0.2 &#x3BC;M of each primer (C1 and XC1, or HCF and HCR), 2 mM MgSO<sub>4</sub>, 1 &#x3BC;l of RT/Platinum <italic>Taq</italic> mix (supplied with kit), and sterile nanopure water (17 &#x3A9;) up to 50 &#x3BC;l. The kit protocol consisted of cDNA synthesis (one cycle of 50&#xB0;C for 60 minutes and 94&#xB0;C for two minutes), amplification (35 cycles of 94&#xB0;C for 30 seconds, 55&#xB0;C for 30 seconds, and 68&#xB0;C for one minute) and elongation (68&#xB0;C for five minutes).</p>
+        <p>The amplification of the CP and HC-Pro genes was verified by electrophoresis using a 1.5% agarose gel in 1X TAE buffer containing SYBR&#xAE; Safe DNA gel stain (Invitrogen). The samples and a 100 bp DNA ladder (Invitrogen) were loaded with 1X loading dye containing bromophenol blue and xylene cyanol and were electrophoresed for 30 minutes at 100 mV. The gel was visualized with a UV-transilluminator and photographed using a camera. The RT-PCR amplification products were treated with a mixture containing one unit of shrimp alkaline phosphatase (SAP), two units of exonuclease 1 (Exo1) (Affymetrix, Inc., Cleveland, OH, USA), and sterile water up to 16 &#x3BC;l for 30 minutes at 37&#xB0;C followed by 75&#xB0;C for 15 minutes to inactivate the enzymes. Samples were used immediately in SNaPshot assays or stored at &#x2212;20&#xB0;C.</p>
+      </sec>
+      <sec>
+        <title>SNaPshot technology</title>
+        <p>The PRISM&#xAE; SNaPshot&#x2122; Multiplex Kit (Applied Biosystems, Foster City, CA, USA) was used to generate genetic fingerprints from each PCR product. The methods below briefly describe the manufacturer&#x2019;s process.</p>
+        <p>Specific WSMV primers were designed for each targeted SNP (Table <xref ref-type="table" rid="T1">1</xref>). Each primer was of a different length, ranging from 30 to 65 nt, to facilitate product recognition. The primers were complementary to the DNA template beginning one nucleotide 3&#x2032; of the polymorphic site. Controls that were supplied with the SNaPshot kit were included in each assay to verify the performance of the PCR components.</p>
+        <p>Each reaction contained 5 &#x3BC;l SNaPshot Multiplex Ready Reaction Mix (provided with kit), 3 &#x3BC;l purified PCR product, 1 &#x3BC;l of pooled SNaPshot primers (final concentration of each ranging from 0.1 to 0.4 &#x3BC;M each; see Table <xref ref-type="table" rid="T1">1</xref>), and 1 &#x3BC;l of sterile nanopure water (17 &#x3A9;). The products were amplified using the following two-step program: 25 cycles of 96&#xB0;C for 10 seconds and 60&#xB0;C for 35 seconds. The amplified products were treated with SAP to prevent further binding of ddNTPs. One &#x3BC;l (1 unit) of SAP, 2 &#x3BC;l of 10X SAP buffer, and 7 &#x3BC;l of nuclease-free water were added to each SNaPshot reaction. The mixtures were incubated for 30 minutes at 37&#xB0;C followed by 15 minutes incubation at 75&#xB0;C.</p>
+        <p>The SNaPshot products were separated by capillary electrophoresis on an ABI 3730 Genetic Analyzer (Applied Biosystems) after combining 0.5 &#x3BC;l purified SNaPshot product, 0.5 &#x3BC;l GeneScan 120-LIZ size standard, and 9 &#x3BC;l Hi-Di Formamide (Applied Biosystems). The parameters suggested in the SNaPshot protocol were used. The separated products were analyzed using Peak Scanner Software v1.1 (Applied Biosystems).</p>
+      </sec>
+      <sec>
+        <title>Data analysis</title>
+        <p>Multiple datasets were created from the SNP profiles for quantitative analyses, including data from each peak having a peak height greater than 800 FUs (this limit was set based on background noise, explained in results section). Of the first two datasets created using peak height values, one was composed of the absolute fluorescence values after normalization based on positive control values; the second was composed of percentages of each nucleotide at each SNP position. Two additional datasets were created similarly, but based on the area under the curve instead of peak height. Both peak height and area under the curve were included in the analyses to determine which set of fluorescence values was more reliable for profile comparisons, determined through statistical analyses. Each dataset was analyzed using ANOVA, assuming a randomized complete block model and a <italic>P</italic>-value &lt;0.05. The strain and the SNP position were the random blocking effects and the replicate was the factor of interest to assess reproducibility.</p>
+        <p>Using the percent nucleotide dataset from the area under the fluorescent peak values, a PCA was performed using Canoco software (Biometris-Plant Research International, Wageningen, The Netherlands) with square-root transformation [<xref ref-type="bibr" rid="B51">51</xref>]. The WSMV strains and field isolates were included in the analysis, in addition to the <italic>in silico</italic> SNP profile data for strains El Batan 3 and Czech to provide a known dimension of diversity.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>
+        <bold>Abbreviations</bold>
+      </title>
+      <p>ABI: Applied Biosystems Inc.; ANOVA: Analysis of variance; BLASTn: Basic local alignment search tool for nucleotides; bp: Base pair; BYDV-PAV: Barley yellow dwarf virus PAV; CP: Coat protein; CYDV-RPV: Cereal yellow dwarf virus RPV; ddNTPs: Dideoxynucleoside triphosphates; Exo1: Exonuclease 1; FUs: Fluorescent units; GPDN: Great Plains Diagnostic Network; HC-Pro: Helper component &#x2013; protease; HPV: High plains virus; MDMV: Maize dwarf mosaic virus; NCBI: National Center for Biotechnology Information; nt: Nucleotide; ONMV: Oat necrotic mottle virus; P1: Protein 1; P3: Protein 3; PCA: Principal component analysis; PCR: Polymerase chain reaction; RT-PCR: Reverse transcription polymerase chain reaction; SAP: Shrimp alkaline phosphatase; SNP: Single nucleotide polymorphism; STR: Short tandem repeat; TAE: Tris-acetate-EDTA; TriMV: Triticum mosaic virus; US: United States; UV: Ultra-violet; WSM: Wheat streak mosaic; WSMV: Wheat streak mosaic virus; WSSMV: Wheat spindle streak mosaic virus.</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>SMR participated in the design of the study and carried out the experimental design, genotyping, data analysis, and drafted the manuscript. MP participated in the design of the study and performed the statistical analysis. RWA conceived of the study and participated in the design of study and data analysis. UM participated in design of the study and data analysis. JC participated in the concept and design of the study and genotyping. JF participated in conception and design of study, data analysis, and drafting of manuscript. All authors read and reviewed the final manuscript.</p>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>The authors acknowledge Jacob Price from Texas AgriLife Research Center, Mary Burrows from the Montana State University, Roy French from USDA-ARS, Geoffrey Dwyer from AGWEST plant laboratories in South Perth, Australia, TeeCie Brown from Oklahoma State University, and Trenna Bladgen from Oklahoma State University for supplying virus samples; Mike Palmer from Oklahoma State University and Andrew Doust from Oklahoma State University for their assistance with data analysis; and Mohammed Arif and Peter Hoyt from Oklahoma State University for proof reading the article. This work was approved for publication by the Director of the Oklahoma Agricultural Experiment Station and supported in part under project OKL 2052, and in part by USDA NIFA.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cupp</surname>
+            <given-names>OS</given-names>
+          </name>
+          <name>
+            <surname>Walker</surname>
+            <given-names>DE</given-names>
+          </name>
+          <name>
+            <surname>Hillison</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Agroterrorism in the US: Key security challenge for the 21st century</article-title>
+          <source>Biosecur Bioterror</source>
+          <year>2004</year>
+          <volume>2</volume>
+          <fpage>97</fpage>
+          <lpage>105</lpage>
+          <pub-id pub-id-type="doi">10.1089/153871304323146397</pub-id>
+          <pub-id pub-id-type="pmid">15225403</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Budowle</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Schutzer</surname>
+            <given-names>SE</given-names>
+          </name>
+          <name>
+            <surname>Einseln</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Kelley</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Walsh</surname>
+            <given-names>AC</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Marrone</surname>
+            <given-names>BL</given-names>
+          </name>
+          <name>
+            <surname>Robertson</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Campos</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Public health: Building microbial forensics as a response to bioterrorism</article-title>
+          <source>Science</source>
+          <year>2003</year>
+          <volume>301</volume>
+          <fpage>1852</fpage>
+          <lpage>1853</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1090083</pub-id>
+          <pub-id pub-id-type="pmid">14512607</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Budowle</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Burans</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Breeze</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Wilson</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Chakraborty</surname>
+            <given-names>R</given-names>
+          </name>
+          <person-group person-group-type="editor">Breeze R, Budowle B, Schutzer SE</person-group>
+          <source>Microbial Forensics</source>
+          <year>2005</year>
+          <publisher-name>Elsevier Academic Press, San Diego, CA</publisher-name>
+          <fpage>1</fpage>
+          <lpage>26</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Fletcher</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Bender</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Budowle</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Cobb</surname>
+            <given-names>WT</given-names>
+          </name>
+          <name>
+            <surname>Gold</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ishimaru</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Luster</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Melcher</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Murch</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Scherm</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Seem</surname>
+            <given-names>RC</given-names>
+          </name>
+          <name>
+            <surname>Sherwood</surname>
+            <given-names>JL</given-names>
+          </name>
+          <name>
+            <surname>Sobral</surname>
+            <given-names>BW</given-names>
+          </name>
+          <name>
+            <surname>Tolin</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Plant pathogen forensics: capabilities, needs, and recommendations</article-title>
+          <source>Microbiol Mol Biol Rev</source>
+          <year>2006</year>
+          <volume>70</volume>
+          <fpage>450</fpage>
+          <lpage>471</lpage>
+          <pub-id pub-id-type="doi">10.1128/MMBR.00022-05</pub-id>
+          <pub-id pub-id-type="pmid">16760310</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Henson</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>The polymerase chain reaction and plant disease diagnosis</article-title>
+          <source>Ann Rev Phytopath</source>
+          <year>1993</year>
+          <volume>31</volume>
+          <fpage>81</fpage>
+          <lpage>109</lpage>
+          <pub-id pub-id-type="doi">10.1146/annurev.py.31.090193.000501</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Vincelli</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Tisserat</surname>
+            <given-names>N</given-names>
+          </name>
+          <article-title>Nucleic acid-based pathogen detection in applied plant pathology</article-title>
+          <source>Plant Dis</source>
+          <year>2008</year>
+          <volume>92</volume>
+          <fpage>660</fpage>
+          <lpage>669</lpage>
+          <pub-id pub-id-type="doi">10.1094/PDIS-92-5-0660</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bouakaze</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Keyser</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Amory</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Crubezy</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Ludes</surname>
+            <given-names>B</given-names>
+          </name>
+          <article-title>First successful assay of Y-SNP typing by SNaPshot minisequencing on ancient DNA</article-title>
+          <source>Int J Legal Med</source>
+          <year>2007</year>
+          <volume>121</volume>
+          <fpage>493</fpage>
+          <lpage>499</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00414-007-0177-3</pub-id>
+          <pub-id pub-id-type="pmid">17534642</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bujalkova</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Zavodna</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Krivulcik</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ilencikova</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Wolf</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Kovac</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Karner-Hanusch</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Heinimann</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Marra</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Jiricny</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Bartosova</surname>
+            <given-names>Z</given-names>
+          </name>
+          <article-title>Multiplex SNaPshot genotyping for detecting loss of heterozygosity in the mismatch-repair genesMLH1andMSH2in microsatellite-unstable tumors</article-title>
+          <source>Clin Chem</source>
+          <year>2008</year>
+          <volume>54</volume>
+          <fpage>1844</fpage>
+          <lpage>1854</lpage>
+          <pub-id pub-id-type="doi">10.1373/clinchem.2008.108902</pub-id>
+          <pub-id pub-id-type="pmid">18772310</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Grignani</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Peloso</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Achilli</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Turchi</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Tagliabracci</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Alu</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Beduschi</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Ricci</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Giunti</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Robino</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Gino</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Previdere</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Subtyping mtDNA haplogroup H by SNaPshot minisequencing and its application in forensic individual identification</article-title>
+          <source>Int J Legal Med</source>
+          <year>2006</year>
+          <volume>120</volume>
+          <fpage>151</fpage>
+          <lpage>156</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00414-005-0059-5</pub-id>
+          <pub-id pub-id-type="pmid">16333660</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jungerius</surname>
+            <given-names>BJ</given-names>
+          </name>
+          <name>
+            <surname>Veenendaal</surname>
+            <given-names>AT</given-names>
+          </name>
+          <name>
+            <surname>van Oost</surname>
+            <given-names>BA</given-names>
+          </name>
+          <name>
+            <surname>te Pas</surname>
+            <given-names>MF</given-names>
+          </name>
+          <name>
+            <surname>Groenen</surname>
+            <given-names>MA</given-names>
+          </name>
+          <article-title>Typing single-nucleotide polymorphisms using a gel-based sequencer</article-title>
+          <source>Mol Biotechnol</source>
+          <year>2003</year>
+          <volume>25</volume>
+          <fpage>283</fpage>
+          <lpage>287</lpage>
+          <pub-id pub-id-type="doi">10.1385/MB:25:3:283</pub-id>
+          <pub-id pub-id-type="pmid">14668541</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kawuki</surname>
+            <given-names>RS</given-names>
+          </name>
+          <name>
+            <surname>Ferguson</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Labuschagne</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Herselman</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <article-title>Identification, characterisation and application of single nucleotide polymorphisms for diversity assessment in cassava (Manihot esculentaCrantz)</article-title>
+          <source>Mol Breeding</source>
+          <year>2009</year>
+          <volume>23</volume>
+          <fpage>669</fpage>
+          <lpage>684</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11032-009-9264-0</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kohnemann</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Sibbing</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Pfeiffer</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Hohoff</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>A rapid mtDNA assay of 22 SNPs in one multiplex reaction increases the power of forensic testing in European Caucasians</article-title>
+          <source>Int J Legal Med</source>
+          <year>2008</year>
+          <volume>122</volume>
+          <fpage>517</fpage>
+          <lpage>523</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00414-008-0267-x</pub-id>
+          <pub-id pub-id-type="pmid">18712405</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Quintans</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Alvarez-Iglesias</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Salas</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Phillips</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Lareu</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Carracedo</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Typing of mitochondrial DNA coding region SNPs of forensic and anthropological interest using SNaPshot minisequencing</article-title>
+          <source>Forensic Sci Int</source>
+          <year>2004</year>
+          <volume>140</volume>
+          <fpage>251</fpage>
+          <lpage>257</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.forsciint.2003.12.005</pub-id>
+          <pub-id pub-id-type="pmid">15036446</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ranade</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Chang</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Ting</surname>
+            <given-names>CT</given-names>
+          </name>
+          <name>
+            <surname>Pei</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Hsiao</surname>
+            <given-names>CF</given-names>
+          </name>
+          <name>
+            <surname>Olivier</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Pesich</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Hebert</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>YDI</given-names>
+          </name>
+          <name>
+            <surname>Dzau</surname>
+            <given-names>VJ</given-names>
+          </name>
+          <name>
+            <surname>Curb</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Olshen</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Risch</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Cox</surname>
+            <given-names>DR</given-names>
+          </name>
+          <name>
+            <surname>Botstein</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>High-throughput genotyping with single nucleotide polymorphisms</article-title>
+          <source>Genome Res</source>
+          <year>2001</year>
+          <volume>11</volume>
+          <fpage>1262</fpage>
+          <lpage>1268</lpage>
+          <pub-id pub-id-type="pmid">11435409</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rolland</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Glais</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Kerlan</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Jacquot</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>A multiple single nucleotide polymorphisms interrogation assay for reliablePotato virusY group and variant characterization</article-title>
+          <source>J Virol Methods</source>
+          <year>2008</year>
+          <volume>147</volume>
+          <fpage>108</fpage>
+          <lpage>117</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jviromet.2007.08.022</pub-id>
+          <pub-id pub-id-type="pmid">17931711</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Stenger</surname>
+            <given-names>DC</given-names>
+          </name>
+          <article-title>Population structure within lineages ofWheat streak mosaic virusderived from a common founding event exhibits stachastic variation inconsistent with the deterministic quasi-species model</article-title>
+          <source>Virology</source>
+          <year>2005</year>
+          <volume>343</volume>
+          <fpage>179</fpage>
+          <lpage>189</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.virol.2005.08.037</pub-id>
+          <pub-id pub-id-type="pmid">16181653</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Shukla</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Frenkel</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ward</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Structure and function of the potyvirus genome with special reference to the coat protein coding region</article-title>
+          <source>Can J Plant Pathol</source>
+          <year>1991</year>
+          <volume>13</volume>
+          <fpage>178</fpage>
+          <lpage>191</lpage>
+          <pub-id pub-id-type="doi">10.1080/07060669109500953</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Choi</surname>
+            <given-names>IR</given-names>
+          </name>
+          <name>
+            <surname>Hall</surname>
+            <given-names>JS</given-names>
+          </name>
+          <name>
+            <surname>Henry</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Hein</surname>
+            <given-names>GL</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Stenger</surname>
+            <given-names>DC</given-names>
+          </name>
+          <article-title>Contributions of genetic drift and negative selection on the evolution of three strains ofWheat streak mosaic tritimovirus</article-title>
+          <source>Arch Virol</source>
+          <year>2001</year>
+          <volume>146</volume>
+          <fpage>619</fpage>
+          <lpage>628</lpage>
+          <pub-id pub-id-type="doi">10.1007/s007050170167</pub-id>
+          <pub-id pub-id-type="pmid">11338395</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Stenger</surname>
+            <given-names>DC</given-names>
+          </name>
+          <name>
+            <surname>Seifers</surname>
+            <given-names>DL</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Patterns of polymorphism inWheat streak mosaic virus: sequence space explored by a clade of closely related viral genotypes rivals that between the most divergent strains</article-title>
+          <source>Virology</source>
+          <year>2002</year>
+          <volume>302</volume>
+          <fpage>58</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="doi">10.1006/viro.2001.1569</pub-id>
+          <pub-id pub-id-type="pmid">12429516</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Niblett</surname>
+            <given-names>CL</given-names>
+          </name>
+          <name>
+            <surname>Zagula</surname>
+            <given-names>KR</given-names>
+          </name>
+          <name>
+            <surname>Calvert</surname>
+            <given-names>LA</given-names>
+          </name>
+          <name>
+            <surname>Kendall</surname>
+            <given-names>TL</given-names>
+          </name>
+          <name>
+            <surname>Stark</surname>
+            <given-names>DM</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>CE</given-names>
+          </name>
+          <name>
+            <surname>Beachy</surname>
+            <given-names>RN</given-names>
+          </name>
+          <name>
+            <surname>Lommel</surname>
+            <given-names>SA</given-names>
+          </name>
+          <article-title>cDNA cloning and nucleotide sequence of theWheat streak mosaic viruscapsid protein gene</article-title>
+          <source>J Gen Virol</source>
+          <year>1991</year>
+          <volume>72</volume>
+          <fpage>499</fpage>
+          <lpage>504</lpage>
+          <pub-id pub-id-type="doi">10.1099/0022-1317-72-3-499</pub-id>
+          <pub-id pub-id-type="pmid">2005429</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Stenger</surname>
+            <given-names>DC</given-names>
+          </name>
+          <article-title>Evolution ofWheat streak mosaic virus: Dynamics of population growth within plants may explain limited variation</article-title>
+          <source>Annu Rev Phytopathol</source>
+          <year>2003</year>
+          <volume>41</volume>
+          <fpage>199</fpage>
+          <lpage>214</lpage>
+          <pub-id pub-id-type="doi">10.1146/annurev.phyto.41.052002.095559</pub-id>
+          <pub-id pub-id-type="pmid">12730393</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hall</surname>
+            <given-names>JS</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Hein</surname>
+            <given-names>GL</given-names>
+          </name>
+          <name>
+            <surname>Morris</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <name>
+            <surname>Stenger</surname>
+            <given-names>DC</given-names>
+          </name>
+          <article-title>Three distinct mechanisms facilitate genetic isolation of sympatricWheat streak mosaic viruslineages</article-title>
+          <source>Virology</source>
+          <year>2001</year>
+          <volume>282</volume>
+          <fpage>230</fpage>
+          <lpage>236</lpage>
+          <pub-id pub-id-type="doi">10.1006/viro.2001.0841</pub-id>
+          <pub-id pub-id-type="pmid">11289805</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hall</surname>
+            <given-names>JS</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Morris</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <name>
+            <surname>Stenger</surname>
+            <given-names>DC</given-names>
+          </name>
+          <article-title>Structure and temporal dynamics of populations withinWheat streak mosaic virusisolates</article-title>
+          <source>J Virol</source>
+          <year>2001</year>
+          <volume>75</volume>
+          <fpage>10231</fpage>
+          <lpage>10243</lpage>
+          <pub-id pub-id-type="doi">10.1128/JVI.75.21.10231-10243.2001</pub-id>
+          <pub-id pub-id-type="pmid">11581391</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rabenstein</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Seifers</surname>
+            <given-names>DL</given-names>
+          </name>
+          <name>
+            <surname>Schubert</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Stenger</surname>
+            <given-names>DC</given-names>
+          </name>
+          <article-title>Phylogenetic relationships, strain diversity, and biogeography of tritimoviruses</article-title>
+          <source>J Gen Virol</source>
+          <year>2002</year>
+          <volume>83</volume>
+          <fpage>895</fpage>
+          <lpage>906</lpage>
+          <pub-id pub-id-type="pmid">11907340</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Berger</surname>
+            <given-names>PH</given-names>
+          </name>
+          <name>
+            <surname>Shiel</surname>
+            <given-names>PJ</given-names>
+          </name>
+          <article-title>Potyvirus isolation and RNA extraction</article-title>
+          <source>Method Mol Biol</source>
+          <year>1998</year>
+          <volume>81</volume>
+          <fpage>151</fpage>
+          <lpage>160</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Chen</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Adams</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>A universal PCR primer to detect members of thePotyviridaeand its use to examine the taxonomic status of several members of the family</article-title>
+          <source>Arch Virol</source>
+          <year>2001</year>
+          <volume>146</volume>
+          <fpage>757</fpage>
+          <lpage>766</lpage>
+          <pub-id pub-id-type="doi">10.1007/s007050170144</pub-id>
+          <pub-id pub-id-type="pmid">11402861</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Robertson</surname>
+            <given-names>NL</given-names>
+          </name>
+          <article-title>Simplified sample preparation for detection ofWheat streak mosaic virusandBarley yellow dwarf virusby PCR</article-title>
+          <source>J Virol Methods</source>
+          <year>1994</year>
+          <volume>49</volume>
+          <fpage>93</fpage>
+          <lpage>100</lpage>
+          <pub-id pub-id-type="doi">10.1016/0166-0934(94)90059-0</pub-id>
+          <pub-id pub-id-type="pmid">7829597</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Agrios</surname>
+            <given-names>GE</given-names>
+          </name>
+          <source>Plant pathology</source>
+          <year>2005</year>
+          <edition>5</edition>
+          <publisher-name>Elsevier Academic Press, Oxford</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Carver</surname>
+            <given-names>J</given-names>
+          </name>
+          <source>Molecular typing of Wheat streak mosaic virus for forensic applications. MS thesis</source>
+          <year>2007</year>
+          <publisher-name>Oklahoma State University-Center for Health Sciences, Department of Forensic Science, </publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Filippini</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Blanco</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Fern&#xE1;ndez-Marmiesse</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>&#xC0;lvarez-Iglesias</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Ru&#xCD;z-Ponte</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Carracedo</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Vega</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Multiplex SNaPshot for detection ofBRCA 1/2common mutations in Spanish and Spanish related breast/ovarian cancer families</article-title>
+          <source>BMC Med Genet</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>40</fpage>
+          <pub-id pub-id-type="pmid">17603881</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lurkin</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Stoehr</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Hurst</surname>
+            <given-names>CD</given-names>
+          </name>
+          <name>
+            <surname>van Tilborg</surname>
+            <given-names>AAG</given-names>
+          </name>
+          <name>
+            <surname>Knowles</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Hartmann</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Zwarthoff</surname>
+            <given-names>EC</given-names>
+          </name>
+          <article-title>Two multiplex assays that simultaneously identify 22 possible mutation sites in theKRAS, BRAF, NRASandPIK3CAgenes</article-title>
+          <source>PLoS One</source>
+          <year>2010</year>
+          <volume>5</volume>
+          <fpage>e8802</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0008802</pub-id>
+          <pub-id pub-id-type="pmid">20098682</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kibbe</surname>
+            <given-names>WA</given-names>
+          </name>
+          <article-title>OligoCalc: an online oligonucleotide properties calculator</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2007</year>
+          <volume>35</volume>
+          <fpage>W43</fpage>
+          <lpage>W46</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkm234</pub-id>
+          <pub-id pub-id-type="pmid">17452344</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <collab>Nomenclature Committee of the International Union of Biochemistry (NC-IUB)</collab>
+          <article-title>Nomenclature for incompletely specified bases in nucleic acid sequences: recommendations 1984</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1986</year>
+          <volume>83</volume>
+          <fpage>4</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.83.1.4</pub-id>
+          <pub-id pub-id-type="pmid">2417239</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Stenger</surname>
+            <given-names>DC</given-names>
+          </name>
+          <name>
+            <surname>Hall</surname>
+            <given-names>JS</given-names>
+          </name>
+          <name>
+            <surname>Choi</surname>
+            <given-names>IR</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Phylogenetic relationships within the familyPotyviridae:Wheat streak mosaic virusandBrome streak mosaic virusare not members of the genusRymovirus</article-title>
+          <source>Phytopathology</source>
+          <year>1998</year>
+          <volume>88</volume>
+          <fpage>782</fpage>
+          <lpage>787</lpage>
+          <pub-id pub-id-type="doi">10.1094/PHYTO.1998.88.8.782</pub-id>
+          <pub-id pub-id-type="pmid">18944883</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Budowle</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Johnson</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Fraser</surname>
+            <given-names>CM</given-names>
+          </name>
+          <name>
+            <surname>Leighton</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <name>
+            <surname>Murch</surname>
+            <given-names>RS</given-names>
+          </name>
+          <name>
+            <surname>Chakraborty</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Genetic analysis and attribution of microbial forensics evidence</article-title>
+          <source>Crit Rev Microbiol</source>
+          <year>2005</year>
+          <volume>31</volume>
+          <fpage>233</fpage>
+          <lpage>254</lpage>
+          <pub-id pub-id-type="doi">10.1080/10408410500304082</pub-id>
+          <pub-id pub-id-type="pmid">16417203</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Budowle</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Shea</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Niezgoda</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Chakraborty</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>CODIS STR loci data from 41 sample populations</article-title>
+          <source>J Forensic Sci</source>
+          <year>2001</year>
+          <volume>46</volume>
+          <fpage>453</fpage>
+          <lpage>489</lpage>
+          <pub-id pub-id-type="pmid">11372982</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Stack</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Hammerschmidt</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Hudler</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Luke</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Bostock</surname>
+            <given-names>R</given-names>
+          </name>
+          <source>National Plant Diagnostic Network: a record of accomplishment. CSREES five-year review</source>
+          <year>2007</year>
+          <comment>Retrieved from <ext-link ext-link-type="uri" xlink:href="http://www.npdn.org/webfm_send/2">http://www.npdn.org/webfm_send/2</ext-link></comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Stack</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Cardwell</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Hammerschmidt</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Byrne</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Loria</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Snover-Clift</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Baldwin</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Wisler</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Beck</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Bostock</surname>
+            <given-names>RM</given-names>
+          </name>
+          <name>
+            <surname>Thomas</surname>
+            <given-names>CS</given-names>
+          </name>
+          <name>
+            <surname>Luke</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>The National Plant Diagnostic Network</article-title>
+          <source>Plant Dis</source>
+          <year>2006</year>
+          <volume>90</volume>
+          <fpage>128</fpage>
+          <lpage>136</lpage>
+          <pub-id pub-id-type="doi">10.1094/PD-90-0128</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Myslik</surname>
+            <given-names>JT</given-names>
+          </name>
+          <name>
+            <surname>Nassuth</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Rapid detection of viruses, transgenes, and mRNAs in small plant leaf samples</article-title>
+          <source>Plant Mol Biol Reporter</source>
+          <year>2001</year>
+          <volume>19</volume>
+          <fpage>329</fpage>
+          <lpage>340</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF02772831</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Brakke</surname>
+            <given-names>M</given-names>
+          </name>
+          <person-group person-group-type="editor">Heyne E</person-group>
+          <article-title>Virus disease in wheat</article-title>
+          <source>Wheat and Wheat Improvement, second edition</source>
+          <year>1987</year>
+          <publisher-name>American Society of Agronomy, Crop Science Society of America, Soil Science Society of America, Madison, WI</publisher-name>
+          <fpage>585</fpage>
+          <lpage>603</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jensen</surname>
+            <given-names>SG</given-names>
+          </name>
+          <name>
+            <surname>Lane</surname>
+            <given-names>LC</given-names>
+          </name>
+          <name>
+            <surname>Seifers</surname>
+            <given-names>DL</given-names>
+          </name>
+          <article-title>A new disease of maize and wheat in the high plains</article-title>
+          <source>Plant Dis</source>
+          <year>1996</year>
+          <volume>80</volume>
+          <fpage>1387</fpage>
+          <lpage>1390</lpage>
+          <pub-id pub-id-type="doi">10.1094/PD-80-1387</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tatineni</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ziems</surname>
+            <given-names>AD</given-names>
+          </name>
+          <name>
+            <surname>Wegulo</surname>
+            <given-names>SN</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Triticum mosaic virus: A distinct member of the FamilyPotyviridaewith an unusually long leader sequence</article-title>
+          <source>Phytopathology</source>
+          <year>2009</year>
+          <volume>99</volume>
+          <fpage>943</fpage>
+          <lpage>950</lpage>
+          <pub-id pub-id-type="doi">10.1094/PHYTO-99-8-0943</pub-id>
+          <pub-id pub-id-type="pmid">19594313</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Burrows</surname>
+            <given-names>ME</given-names>
+          </name>
+          <name>
+            <surname>Franc</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Rush</surname>
+            <given-names>CM</given-names>
+          </name>
+          <name>
+            <surname>Blunt</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ito</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Olson</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kinzer</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>O&#x2019;Mara</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Price</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Tande</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Ziems</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Stack</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Occurence of viruses in wheat in the Great Plains region</article-title>
+          <source>Plant Health Progress</source>
+          <year>2009</year>
+          <comment>10:1094/PHP-1009-0706-01-RS</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ceriotti</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Chessa</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Bolla</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Budelli</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Bianchi</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Duranti</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Caroli</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Single nucleotide polymorphisms in the ovine casein genes detected by polymerase chain reaction-single stranded conformation polymorphism</article-title>
+          <source>J Dairy Sci</source>
+          <year>2004</year>
+          <volume>87</volume>
+          <fpage>2606</fpage>
+          <lpage>2613</lpage>
+          <pub-id pub-id-type="doi">10.3168/jds.S0022-0302(04)73386-X</pub-id>
+          <pub-id pub-id-type="pmid">15328285</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Civaova</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Knoll</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>SNaPshot minisequencing and a panel of candidate genes for complex routine testing of meat performance traits in pigs</article-title>
+          <source>Anim Biotechnol</source>
+          <year>2007</year>
+          <volume>18</volume>
+          <fpage>109</fpage>
+          <lpage>115</lpage>
+          <pub-id pub-id-type="doi">10.1080/10495390601088657</pub-id>
+          <pub-id pub-id-type="pmid">17453650</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Murphy</surname>
+            <given-names>SJ</given-names>
+          </name>
+          <name>
+            <surname>Hughes</surname>
+            <given-names>AE</given-names>
+          </name>
+          <name>
+            <surname>Patterson</surname>
+            <given-names>CC</given-names>
+          </name>
+          <name>
+            <surname>Anderson</surname>
+            <given-names>LA</given-names>
+          </name>
+          <name>
+            <surname>Watson</surname>
+            <given-names>RGP</given-names>
+          </name>
+          <name>
+            <surname>Johnston</surname>
+            <given-names>BT</given-names>
+          </name>
+          <name>
+            <surname>Comber</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>McGuigan</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Reynolds</surname>
+            <given-names>JV</given-names>
+          </name>
+          <name>
+            <surname>Murray</surname>
+            <given-names>LJ</given-names>
+          </name>
+          <article-title>A population-based association study of SNPs ofGSTP1, MnSOD, GPX2and Barrett&#x2019;s esophagus and esophageal adenocarcinoma</article-title>
+          <source>Carcinogenesis</source>
+          <year>2007</year>
+          <volume>28</volume>
+          <fpage>1323</fpage>
+          <lpage>1328</lpage>
+          <pub-id pub-id-type="doi">10.1093/carcin/bgm007</pub-id>
+          <pub-id pub-id-type="pmid">17277236</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ovesna</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Polakova</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Kucera</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Rulcova</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>SNP typing in cereals: comparison of SSCP and SNaPshot markers using BarleyMlolocus as a model</article-title>
+          <source>Czech J Genet Plant Breed</source>
+          <year>2003</year>
+          <volume>39</volume>
+          <fpage>109</fpage>
+          <lpage>112</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Chenault</surname>
+            <given-names>KD</given-names>
+          </name>
+          <name>
+            <surname>Hunger</surname>
+            <given-names>RM</given-names>
+          </name>
+          <name>
+            <surname>Sherwood</surname>
+            <given-names>JL</given-names>
+          </name>
+          <article-title>Comparison of the nucleotide sequences of the coat protein open reading frame of nine isolates ofWheat streak mosaic rymovirus</article-title>
+          <source>Virus Genes</source>
+          <year>1996</year>
+          <volume>13</volume>
+          <fpage>187</fpage>
+          <lpage>188</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00366978</pub-id>
+          <pub-id pub-id-type="pmid">9035362</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>McNeil</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Hein</surname>
+            <given-names>GL</given-names>
+          </name>
+          <name>
+            <surname>Baenziger</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Eskridge</surname>
+            <given-names>KM</given-names>
+          </name>
+          <article-title>Characterization of genetic variability among natural populations ofWheat streak mosaic virus</article-title>
+          <source>Phytopathology</source>
+          <year>1996</year>
+          <volume>86</volume>
+          <fpage>1222</fpage>
+          <lpage>1227</lpage>
+          <pub-id pub-id-type="doi">10.1094/Phyto-86-1222</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Stenger</surname>
+            <given-names>DC</given-names>
+          </name>
+          <name>
+            <surname>French</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Functional replacement ofWheat streak mosaic virusHC-Pro with the corresponding cistron from a diverse array of viruses in the family Potyviridae</article-title>
+          <source>Virology</source>
+          <year>2004</year>
+          <volume>323</volume>
+          <fpage>257</fpage>
+          <lpage>267</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.virol.2004.03.014</pub-id>
+          <pub-id pub-id-type="pmid">15193921</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Lep&#x161;</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>&#x160;milauer</surname>
+            <given-names>P</given-names>
+          </name>
+          <source>Multivariate Analysis of Ecological Data using Canoco</source>
+          <year>2003</year>
+          <publisher-name>Cambridge University Press, Cambridge, UK</publisher-name>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

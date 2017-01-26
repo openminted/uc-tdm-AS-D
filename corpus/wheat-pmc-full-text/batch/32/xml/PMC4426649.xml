@@ -1,0 +1,2401 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4426649</article-id>
+      <article-id pub-id-type="pmid">25887590</article-id>
+      <article-id pub-id-type="publisher-id">1496</article-id>
+      <article-id pub-id-type="doi">10.1186/s12864-015-1496-2</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Enrichment of <italic>Triticum aestivum</italic> gene annotations using ortholog cliques and gene ontologies in other plants</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Tulpan</surname>
+            <given-names>Dan</given-names>
+          </name>
+          <address>
+            <email>dan.tulpan@nrc-cnrc.gc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Leger</surname>
+            <given-names>Serge</given-names>
+          </name>
+          <address>
+            <email>serge.leger@nrc-cnrc.gc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tchagang</surname>
+            <given-names>Alain</given-names>
+          </name>
+          <address>
+            <email>alain.tchagang@nrc-cnrc.gc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pan</surname>
+            <given-names>Youlian</given-names>
+          </name>
+          <address>
+            <email>youlian.pan@nrc-cnrc.gc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <aff id="Aff1"><label/>Information and Communications Technologies, National Research Council Canada, Moncton, New Brunswick E1A 7R1 Canada </aff>
+        <aff id="Aff2"><label/>Information and Communications Technologies, National Research Council Canada, Ottawa, Ontario K1A 0R6 Canada </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>15</day>
+        <month>4</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>15</day>
+        <month>4</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>16</volume>
+      <issue>1</issue>
+      <elocation-id>299</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>30</day>
+          <month>10</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>27</day>
+          <month>3</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; Tulpan et al.; licensee BioMed Central. 2015</copyright-statement>
+        <license license-type="open-access">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0">http://creativecommons.org/licenses/by/4.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>While the gargantuan multi-nation effort of sequencing <italic>T. aestivum</italic> gets close to completion, the annotation process for the vast number of wheat genes and proteins is in its infancy. Previous experimental studies carried out on model plant organisms such as <italic>A. thaliana</italic> and <italic>O. sativa</italic> provide a plethora of gene annotations that can be used as potential starting points for wheat gene annotations, proven that solid cross-species gene-to-gene and protein-to-protein correspondences are provided.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>DNA and protein sequences and corresponding annotations for <italic>T. aestivum</italic> and 9 other plant species were collected from Ensembl Plants release 22 and curated. Cliques of predicted 1-to-1 orthologs were identified and an annotation enrichment model was defined based on existing gene-GO term associations and phylogenetic relationships among wheat and 9 other plant species. A total of 13 cliques of size 10 were identified, which represent putative functionally equivalent genes and proteins in the 10 plant species. Eighty-five new and more specific GO terms were associated with wheat genes in the 13 cliques of size 10, which represent a 65% increase compared with the previously 130 known GO terms. Similar expression patterns for 4 genes from Arabidopsis, barley, maize and rice in cliques of size 10 provide experimental evidence to support our model. Overall, based on clique size equal or larger than 3, our model enriched the existing gene-GO term associations for 7,838 (8%) wheat genes, of which 2,139 had no previous annotation.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Our novel comparative genomics approach enriches existing <italic>T. aestivum</italic> gene annotations based on cliques of predicted 1-to-1 orthologs, phylogenetic relationships and existing gene ontologies from 9 other plant species.</p>
+        </sec>
+        <sec>
+          <title>Electronic supplementary material</title>
+          <p>The online version of this article (doi:10.1186/s12864-015-1496-2) contains supplementary material, which is available to authorized users.</p>
+        </sec>
+      </abstract>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2015</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="introduction">
+      <title>Background</title>
+      <p>Gene orthology forms the backbone of comparative and evolutionary genomics and it represents a central piece in many computational methods for functional annotation of genes particularly relevant for newly sequenced plant species. Orthologs are genes that evolved from their last common ancestor after a speciation event [<xref ref-type="bibr" rid="CR1">1</xref>,<xref ref-type="bibr" rid="CR2">2</xref>] and are essentially considered to be the &#x2018;same&#x2019; gene in different species. In comparison, paralogs are genes which are derived via a gene duplication event and although evolutionarily related, they are not the &#x2018;same&#x2019; gene and are unlikely to have all the same function in different species. The precise identification of orthologs and paralogs is a quintessential step in comparative genomics and functional analysis of genes.</p>
+      <p>Existing orthology prediction methods can be broadly grouped into two categories [<xref ref-type="bibr" rid="CR3">3</xref>]: (i) graph-based methods that cluster pairs of genes based on (typically protein) sequence similarity (e.g. InParanoid [<xref ref-type="bibr" rid="CR4">4</xref>], RoundUp [<xref ref-type="bibr" rid="CR5">5</xref>], COG [<xref ref-type="bibr" rid="CR6">6</xref>], KOG [<xref ref-type="bibr" rid="CR7">7</xref>], eggNOG [<xref ref-type="bibr" rid="CR8">8</xref>], OrthoDB [<xref ref-type="bibr" rid="CR9">9</xref>], OrthoMCL [<xref ref-type="bibr" rid="CR10">10</xref>], OMA [<xref ref-type="bibr" rid="CR11">11</xref>]), and (ii) tree-based methods, which cluster genes and aim for the reconciliation of the protein and the species trees (e.g. TreeFam [<xref ref-type="bibr" rid="CR12">12</xref>], Ensembl Compara [<xref ref-type="bibr" rid="CR13">13</xref>], PhylomeDB [<xref ref-type="bibr" rid="CR14">14</xref>], LOFT [<xref ref-type="bibr" rid="CR15">15</xref>]). Systematic evaluations of these methods including advantages, disadvantages, challenges and validation are discussed in the literature [<xref ref-type="bibr" rid="CR16">16</xref>,<xref ref-type="bibr" rid="CR17">17</xref>].</p>
+      <p>A widely adopted approach for orthology prediction is the Reciprocal Best BLAST Hit (RBBH) method (also known as &#x2018;bidirectional best hit&#x2019;) [<xref ref-type="bibr" rid="CR6">6</xref>,<xref ref-type="bibr" rid="CR18">18</xref>], which identifies orthologous genes between two species that are more similar to each other than to any other gene in the same species. While the RBBH method was proven to provide a solid bidirectional bridge between orthology and bidirectional best hits inferred from sequence similarity [<xref ref-type="bibr" rid="CR19">19</xref>], it is by far not perfect given its limitations caused by evolutionary events such as gene loss and gene duplications or by incomplete genomic sequences. Such limitations lead to false positives representing incorrect labelling of paralogs as orthologs [<xref ref-type="bibr" rid="CR20">20</xref>]. Nevertheless, in particular circumstances where trusted orthologs are required, such as information enrichment in genome annotation [<xref ref-type="bibr" rid="CR19">19</xref>], the RBBH method generates high quality 1-to-1 orthologs, which can be further used to seed orthologous groups [<xref ref-type="bibr" rid="CR20">20</xref>].</p>
+      <p>While we acknowledge the potential positive contribution of paralogy relationships for gene annotation, in this work we follow a very conservative approach and thus, only 1-to-1 ortholog cliques detected in 10 plant species (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>) are used to enrich existing <italic>Triticum aestivum</italic> (bread wheat) gene annotations. Here a clique is defined as a set of genes (one in each species) that are pairwise 1-to-1 orthologs. Besides bread wheat, we selected gene annotations for 9 other plant species, which are either evolutionary close to bread wheat (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>) or well annotated model organisms such as: <italic>Aegilops tauschii</italic> (Tausch's goat grass), <italic>Arabidopsis thaliana</italic> (thale cress or mouse-ear cress), <italic>Brachypodium distachyon</italic> (purple false brome), <italic>Brassica rapa</italic> (white turnip), <italic>Hordeum vulgare</italic> (barley), <italic>Oryza sativa subsp. japonica</italic> (rice), <italic>Sorghum bicolor</italic> (sorghum, durra, jowari, or milo), <italic>Triticum urartu</italic> (wild wheat) and <italic>Zea mays</italic> (maize)<italic>.</italic><table-wrap id="Tab1"><label>Table 1</label><caption><p><bold>Information about ten plant species included in this study</bold></p></caption><table frame="hsides" rules="groups"><thead><tr valign="top"><th><bold>Species</bold></th><th><bold>NCBI Taxonomy ID</bold></th><th><bold>Number of chromosomes</bold></th><th><bold>Estimated genome size [Mb]</bold></th><th><bold>Number of selected DNA/proteins (Ensembl Plants)</bold></th></tr></thead><tbody><tr valign="top"><td><italic>Aegilops tauschii</italic></td><td>37682</td><td>2n&#x2009;=&#x2009;14 (DD)</td><td>4,360</td><td>33,849</td></tr><tr valign="top"><td><italic>Arabidopsis thaliana</italic></td><td>3702</td><td>2n&#x2009;=&#x2009;2x&#x2009;=&#x2009;10</td><td>135</td><td>27,416</td></tr><tr valign="top"><td><italic>Brachypodium distachyon</italic></td><td>15368</td><td>2n&#x2009;=&#x2009;2x&#x2009;=&#x2009;10</td><td>270</td><td>26,552</td></tr><tr valign="top"><td><italic>Brassica rapa</italic></td><td>51351</td><td>2n&#x2009;=&#x2009;2x&#x2009;=&#x2009;20</td><td>529</td><td>41,018</td></tr><tr valign="top"><td><italic>Hordeum vulgare</italic></td><td>112509</td><td>2n&#x2009;=&#x2009;2x&#x2009;=&#x2009;14</td><td>5,300</td><td>24,211</td></tr><tr valign="top"><td><italic>Oryza sativa</italic></td><td>39947</td><td>2n&#x2009;=&#x2009;2x&#x2009;=&#x2009;24</td><td>383</td><td>35,679</td></tr><tr valign="top"><td><italic>Sorghum bicolor</italic></td><td>4558</td><td>2n&#x2009;=&#x2009;2x&#x2009;=&#x2009;20</td><td>730</td><td>34,496</td></tr><tr valign="top"><td><italic>Triticum aestivum</italic></td><td>4565</td><td>2n&#x2009;=&#x2009;6x&#x2009;=&#x2009;42 (AABBDD)</td><td>17,000</td><td>98,779</td></tr><tr valign="top"><td><italic>Triticum urartu</italic></td><td>4572</td><td>2n&#x2009;=&#x2009;14 (AA)</td><td>4,940</td><td>33,424</td></tr><tr valign="top"><td><italic>Zea mays</italic></td><td>4577</td><td>2n&#x2009;=&#x2009;2x&#x2009;=&#x2009;20</td><td>2,300</td><td>38,741</td></tr></tbody></table></table-wrap><fig id="Fig1"><label>Figure 1</label><caption><p>Phylogenetic tree with 10 plant species obtained with iTOL v2 [<xref ref-type="bibr" rid="CR61">61</xref>].</p></caption><graphic xlink:href="12864_2015_1496_Fig1_HTML" id="MO1"/></fig></p>
+      <p>To enhance the confidence in our orthology prediction, we use two types of information as base input sequences for our RBBH prediction: DNA coding sequences and their corresponding proteins. We define as 1-to-1 orthologs those pairwise orthology relations commonly predicted by the RBBH method using as input the aforementioned information. In case of disagreement between the two predictions, the putative individual orthologs are dismissed, at the expense of losing potentially valid orthologs. For example, if the coding sequence representing gene TRAES_5BL_DAE1BD995 in <italic>Triticum aestivum</italic> is an RBBH of the corresponding DNA for gene TRIUR3_21564 in <italic>Triticum urartu</italic>, and if the corresponding protein sequences associated with the same genes are also RBBHs, then we accept the pair (TRAES_5BL_DAE1BD995, TRIUR3_21564) as 1-to-1 ortholog.</p>
+      <p>A related approach where cliques of OMA [<xref ref-type="bibr" rid="CR11">11</xref>] orthologs and paralogs were used to enhance functional annotation of prokaryotic genes was proposed by Skunca et al. (2013) [<xref ref-type="bibr" rid="CR21">21</xref>]. Their approach assigned novel GO terms to orthologous genes based on majority voting, i.e. if a certain GO term exists in 50% or more of the genes in a clique, then it is assigned to the remaining genes in the same clique. A more recent study [<xref ref-type="bibr" rid="CR22">22</xref>], proposes a computational framework (OrthoClust) that integrates single species co-association networks into data clusters across multiple species via orthology relationships. Their framework is applied on RNA-Seq expression profiles of <italic>C.elegans</italic> and <italic>D. melanogaster</italic> from the modENCODE consortium.</p>
+      <p>Here, we introduce a novel 3-step gene ontology enrichment model that relies on a set of cliques containing pairwise 1-to-1 predicted orthologs among multiple plant species, a set of known annotations for genes in each plant species and the phylogenetic relationship of those species. Once a target plant species such as <italic>T. aestivum</italic> is selected, the model calculates gene ontology scores based on the phylogenetic proximity between two species, the overall hierarchy of gene ontology and the predicted orthology relationships. Based on the calculated scores and further refinement using the augmented degree of novelty compared to existing annotations and a minimum score threshold, novel GO terms are assigned to the genes in the target species. Overall, based on clique sizes equal or larger than 3, our model contributed to the existing gene-GO term associations in <italic>T. aestivum</italic> by enriching 7,838 (8%) genes, of which 2,139 had no previous annotation.</p>
+    </sec>
+    <sec id="Sec2" sec-type="materials|methods">
+      <title>Methods</title>
+      <sec id="Sec3">
+        <title>Data sets</title>
+        <p>We downloaded DNA coding sequences, protein sequences and Gene Ontology (GO) vocabulary for functional annotation from the FTP site of Ensembl Plants version 22 [<xref ref-type="bibr" rid="CR23">23</xref>] for 10 plant species: <italic>Aegilops tauschii</italic>, <italic>Arabidopsis thaliana</italic>, <italic>Brachypodium distachyon</italic>, <italic>Brassica rapa</italic>, <italic>Hordeum vulgare</italic>, <italic>Oryza sativa</italic>, <italic>Sorghum bicolor</italic>, <italic>Triticum aestivum</italic>, <italic>Triticum urartu</italic> and <italic>Zea mays</italic>. Coding DNA and protein sequences were pre-processed and only those corresponding to longest transcripts were selected for pairwise BLAST runs. Annotations and physical map information was acquired programmatically from the Gramene MySQL database build 41. The physical mapping information for <italic>Aegilops tauschii</italic> and <italic>Triticum urartu</italic> was complemented with information extracted and processed from the original publications of the two species [<xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR25">25</xref>].</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Orthology prediction</title>
+        <p>We implemented a Reciprocal Best BLAST Hit (RBBH) approach for 1-to-1 orthology prediction inspired from previous work applied to human and mouse genomes [<xref ref-type="bibr" rid="CR26">26</xref>]. Two BLAST runs are executed for each pair of plant species and for each sequence type (DNA, protein) to identify reciprocal best hits (RBBHs). A 1-to-1 orthology relationship is assigned for those pairs of genes that are bidirectional hits within a confidence interval (e-value&#x2009;&#x2264;&#x2009;10<sup>&#x2212;5</sup>).</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Cliques of orthologs discovery in ten plant species</title>
+        <p>Cliquer version 1.21[<xref ref-type="bibr" rid="CR27">27</xref>] was used to identify cliques of orthologs in 10 plant species. Cliquer is a highly efficient graph-based algorithm for finding cliques in an arbitrary weighted graph. It uses an exact branch-and-bound algorithm developed by Patric &#xD6;sterg&#xE5;rd at Aalto University in Finland. Custom scripts were used to convert pairwise orthology data into DIMACS-formatted files required by Cliquer. Each gene represents a node in the graph and each edge represents an orthologous relationship. All edges in the graph were equally scored (score&#x2009;=&#x2009;1). Cliquer was executed using the following parameters: &#x2212;<italic>a</italic>, &#x2212;<italic>x</italic> and <italic>&#x2013;m</italic> 3. Cliquer generated all cliques with size between 3 and 10 using as input 45 files with unique pairs of orthologs between the 10 plant species in less than one hour (~44&#xA0;minutes) on a desktop computer running Linux Ubuntu (64-bit) kernel 3.8.0-35-generic, with 256&#xA0;GB of RAM (less than 2GB used) and two 16-core CPUs (no parallelism used).</p>
+        <p>Orthologs for each pair of species are considered as input. We introduce the notion of &#x201C;O<italic>rtholog Clique Level</italic>&#x201D; (OCL) for a given gene representing the size of the clique where it resides. The OCL also represents the number of species among which the gene has 1-to-1 orthologs including the host species. Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref> represents 10 genes in 10 plant species whose orthologs form a graph with 3 cliques with OCLs equal to 3, 7 and 8.<fig id="Fig2"><label>Figure 2</label><caption><p>Three cliques with OCLs equal to 3, 7 and 8.</p></caption><graphic xlink:href="12864_2015_1496_Fig2_HTML" id="MO2"/></fig></p>
+      </sec>
+      <sec id="Sec6">
+        <title>Orthologs clique validation using overlapping gene ontologies</title>
+        <p>We use the Gene Ontology (GO) vocabulary for functional annotation provided in Ensembl Plants for the 10 plant species to calculate the percentage of overlapping GO terms for all genes belonging to a clique of size <italic>k</italic>. An overlap score is calculated as follows:<disp-formula id="Equ1"><label>1</label><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ GO\  Set\  Overlap(C)=\frac{\left|{\cap}_{i\kern0.3em =\kern0.3em 1}^k{S}_i\right|}{{ \min}_{i=1:k}\left|{S}_i\right|}*100 $$\end{document}</tex-math><mml:math id="M2"><mml:mi mathvariant="italic">GO</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">Set</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">Overlap</mml:mi><mml:mfenced close=")" open="("><mml:mi>C</mml:mi></mml:mfenced><mml:mo>=</mml:mo><mml:mfrac><mml:mfenced close="|" open="|"><mml:mrow><mml:msubsup><mml:mo>&#x2229;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mspace width="0.3em"/><mml:mo>=</mml:mo><mml:mspace width="0.3em"/><mml:mn>1</mml:mn></mml:mrow><mml:mi>k</mml:mi></mml:msubsup><mml:msub><mml:mi>S</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfenced><mml:mrow><mml:msub><mml:mo>min</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>:</mml:mo><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mfenced close="|" open="|"><mml:msub><mml:mi>S</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mfenced></mml:mrow></mml:mfrac><mml:mo>*</mml:mo><mml:mn>100</mml:mn></mml:math><graphic xlink:href="12864_2015_1496_Article_Equ1.gif" position="anchor"/></alternatives></disp-formula>where <italic>C</italic> is a clique with OCL&#x2009;=&#x2009;<italic>k</italic> (here <italic>k</italic> is between 3 and 10), <italic>S</italic><sub><italic>i</italic></sub> is a set of unique GO terms associated with a gene <italic>i</italic> from clique <italic>C</italic>. The GO set overlap percentage is higher when large numbers of GO terms associated with each gene in a clique are common to all the genes. For example, assume a clique with OCL&#x2009;=&#x2009;3 contains the following genes with corresponding GO terms listed in parentheses: AT2G02170 (GO:0005886, GO:0008150), OS02G0116800 (GO:0005886,GO:0008150) and SB04G001240 (GO:0005886, GO:0008150, GO:0003677). The GO set overlap percentage is 100%, since two GO terms (GO:0005886, GO:0008150) occur in all three genes and the smallest set of GO terms associated to a gene has size 2 for the Arabidopsis and rice genes.</p>
+        <p>For comparison purposes, to distinguish between well predicted cliques of orthologs and randomly predicted ones, we generated a set of cliques with OCLs between 3 and 10 populated with genes selected uniformly at random from complete pools of genes for each of the 10 plant species. For each clique size (OCL), we generated as described above an equal number of cliques and we calculated the <italic>GO Set Overlap</italic> as described by Equation&#xA0;<xref rid="Equ1" ref-type="">1</xref>.</p>
+      </sec>
+      <sec id="Sec7">
+        <title>Gene ontology enrichment</title>
+        <p>We use the same Gene Ontology (GO) vocabulary for functional annotation provided in Ensembl Plants to seed and enrich the functional annotation of <italic>Triticum aestivum</italic> genes. We propose a scoring function for GO term assignment to wheat genes based on the knowledge of evolutionary proximity between <italic>Triticum aestivum</italic> and the other 9 plant species (Equation&#xA0;<xref rid="Equ2" ref-type="">2</xref>). Based on the phylogenetic representation of the 10 plant species (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>) we divide them into 6 groups and assign scores, <italic>G</italic><sub><italic>score</italic></sub> (<italic>i</italic>), from 1 to 6 to each species <italic>i</italic> (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). Then we calculate the score for each GO term <italic>go</italic> that belongs to a clique <italic>c</italic>, which contains a wheat gene as follows:<fig id="Fig3"><label>Figure 3</label><caption><p>Evolutionary proximity grouping of 10 plant species centered around bread wheat. Each group has a score ranging from 1 to 6, which is used for assignment of GO terms to bread wheat genes.</p></caption><graphic xlink:href="12864_2015_1496_Fig3_HTML" id="MO3"/></fig><disp-formula id="Equ2"><label>2</label><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ G{O}_{score}\left(\mathit{\mathsf{g}}o,c\right)=\kern0.5em {\sum}_{i=1}^{\left|c\right|}\delta \left(\mathit{\mathsf{g}}o,i\right)*\frac{1}{G_{score}(i)} $$\end{document}</tex-math><mml:math id="M4"><mml:mi>G</mml:mi><mml:msub><mml:mi>O</mml:mi><mml:mi mathvariant="italic">score</mml:mi></mml:msub><mml:mfenced close=")" open="("><mml:mrow><mml:mi mathvariant="sans-serif-italic">g</mml:mi><mml:mi>o</mml:mi><mml:mo>,</mml:mo><mml:mi>c</mml:mi></mml:mrow></mml:mfenced><mml:mo>=</mml:mo><mml:mspace width="0.5em"/><mml:msubsup><mml:mo stretchy="true">&#x2211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mfenced close="|" open="|"><mml:mi>c</mml:mi></mml:mfenced></mml:msubsup><mml:mrow><mml:mi>&#x3B4;</mml:mi></mml:mrow><mml:mfenced close=")" open="("><mml:mrow><mml:mi mathvariant="sans-serif-italic">g</mml:mi><mml:mi>o</mml:mi><mml:mo>,</mml:mo><mml:mi>i</mml:mi></mml:mrow></mml:mfenced><mml:mo>*</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:msub><mml:mi>G</mml:mi><mml:mi mathvariant="italic">score</mml:mi></mml:msub><mml:mfenced close=")" open="("><mml:mi>i</mml:mi></mml:mfenced></mml:mrow></mml:mfrac></mml:math><graphic xlink:href="12864_2015_1496_Article_Equ2.gif" position="anchor"/></alternatives></disp-formula>where <italic>|c|</italic> is the size of clique <italic>c</italic> (i.e. the number of orthologous genes in clique <italic>c</italic>),<disp-formula id="Equa"><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ \begin{array}{l}\delta \left( go,i\right)=\left\{\begin{array}{cc}\hfill 0\hfill &amp; \hfill \mathrm{if}\  go\ \mathrm{is}\ \mathrm{not}\ \mathrm{a}\ \mathrm{GO}\ \mathrm{t}\mathrm{erm}\ \mathrm{o}\mathrm{f}\ \mathrm{gene}\ \mathrm{corresponding}\ \mathrm{t}\mathrm{o}\ \mathrm{species}\ i\hfill \\ {}\hfill 1\hfill &amp; \hfill otherwise\hfill \end{array}\right.\\ {}\mathrm{a}\mathrm{nd}\ {G}_{score}(i)=\left\{\begin{array}{l}\begin{array}{l}\begin{array}{l}\begin{array}{lll}1\hfill &amp;, &amp; if\  species\ i\ \in \left\{T. aestivum,T. urartu\right\}\hfill \end{array}\hfill \\ {}\begin{array}{lll}2\hfill &amp;, &amp; if\  species\ i\ \in \left\{A. tauschii,H. vulgare\right\}\hfill \end{array}\hfill \end{array}\hfill \\ {}\begin{array}{lll}3\hfill &amp;, &amp; \hfill if\  species\ i\ \in \left\{B. distachyon\right\}\kern4em \hfill \end{array}\hfill \end{array}\hfill \\ {}\begin{array}{l}\begin{array}{ccc}4\hfill &amp;, &amp; if\  species\ i\ \in \left\{O. sativa\right\}\hfill \end{array}\hfill \\ {}\hfill \begin{array}{c}\hfill \begin{array}{lll}5\hfill &amp;, &amp; if\  species\ i\ \in \left\{S. bicolor,Z. mays\right\}\hfill \end{array}\hfill \\ {}\begin{array}{lll}6\hfill &amp;, &amp; if\  species\ i\ \in \left\{A. thaliana,B. rapa\right\}\hfill \end{array}\hfill \end{array}\hfill \end{array}\hfill \end{array}\right.\kern1em .\end{array} $$\end{document}</tex-math><mml:math id="M6"><mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:mi>&#x3B4;</mml:mi><mml:mfenced close=")" open="("><mml:mrow><mml:mi mathvariant="italic">go</mml:mi><mml:mo>,</mml:mo><mml:mi>i</mml:mi></mml:mrow></mml:mfenced><mml:mo>=</mml:mo><mml:mfenced close="" open="{"><mml:mtable columnalign="center"><mml:mtr columnalign="center"><mml:mtd columnalign="center"><mml:mn>0</mml:mn></mml:mtd><mml:mtd columnalign="center"><mml:mi mathvariant="normal">if</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">go</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">is</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">not</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">a</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">GO</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">term</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">of</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">gene</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">corresponding</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">t</mml:mi><mml:mi mathvariant="normal">o</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">species</mml:mi><mml:mspace width="0.25em"/><mml:mi>i</mml:mi></mml:mtd></mml:mtr><mml:mtr columnalign="center"><mml:mtd columnalign="center"><mml:mn>1</mml:mn></mml:mtd><mml:mtd columnalign="center"><mml:mi mathvariant="italic">otherwise</mml:mi></mml:mtd></mml:mtr></mml:mtable></mml:mfenced></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mi mathvariant="normal">and</mml:mi><mml:mspace width="0.25em"/><mml:msub><mml:mi>G</mml:mi><mml:mi mathvariant="italic">score</mml:mi></mml:msub><mml:mfenced close=")" open="("><mml:mi>i</mml:mi></mml:mfenced><mml:mo>=</mml:mo><mml:mfenced close="" open="{"><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mn>1</mml:mn></mml:mtd><mml:mtd><mml:mo>,</mml:mo></mml:mtd><mml:mtd columnalign="left"><mml:mi mathvariant="italic">if</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">species</mml:mi><mml:mspace width="0.25em"/><mml:mi>i</mml:mi><mml:mspace width="0.25em"/><mml:mo>&#x2208;</mml:mo><mml:mfenced close="}" open="{"><mml:mrow><mml:mi>T</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">aestivum</mml:mi><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">urartu</mml:mi></mml:mrow></mml:mfenced></mml:mtd></mml:mtr></mml:mtable></mml:mtd></mml:mtr><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mn>2</mml:mn></mml:mtd><mml:mtd><mml:mo>,</mml:mo></mml:mtd><mml:mtd columnalign="left"><mml:mi mathvariant="italic">if</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">species</mml:mi><mml:mspace width="0.25em"/><mml:mi>i</mml:mi><mml:mspace width="0.25em"/><mml:mo>&#x2208;</mml:mo><mml:mfenced close="}" open="{"><mml:mrow><mml:mi>A</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">tauschii</mml:mi><mml:mo>,</mml:mo><mml:mi>H</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">vulgare</mml:mi></mml:mrow></mml:mfenced></mml:mtd></mml:mtr></mml:mtable></mml:mtd></mml:mtr></mml:mtable></mml:mtd></mml:mtr><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mn>3</mml:mn></mml:mtd><mml:mtd><mml:mo>,</mml:mo></mml:mtd><mml:mtd columnalign="center"><mml:mi mathvariant="italic">if</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">species</mml:mi><mml:mspace width="0.25em"/><mml:mi>i</mml:mi><mml:mspace width="0.25em"/><mml:mo>&#x2208;</mml:mo><mml:mfenced close="}" open="{"><mml:mrow><mml:mi>B</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">distachyon</mml:mi></mml:mrow></mml:mfenced><mml:mspace width="4em"/></mml:mtd></mml:mtr></mml:mtable></mml:mtd></mml:mtr></mml:mtable></mml:mtd></mml:mtr><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mtable columnalign="center"><mml:mtr columnalign="center"><mml:mtd columnalign="left"><mml:mn>4</mml:mn></mml:mtd><mml:mtd><mml:mo>,</mml:mo></mml:mtd><mml:mtd columnalign="left"><mml:mi mathvariant="italic">if</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">species</mml:mi><mml:mspace width="0.25em"/><mml:mi>i</mml:mi><mml:mspace width="0.25em"/><mml:mo>&#x2208;</mml:mo><mml:mfenced close="}" open="{"><mml:mrow><mml:mi>O</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">sativa</mml:mi></mml:mrow></mml:mfenced></mml:mtd></mml:mtr></mml:mtable><mml:mspace width="6.5em"/></mml:mtd></mml:mtr><mml:mtr columnalign="center"><mml:mtd columnalign="center"><mml:mtable columnalign="center"><mml:mtr columnalign="center"><mml:mtd columnalign="center"><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mn>5</mml:mn></mml:mtd><mml:mtd><mml:mo>,</mml:mo></mml:mtd><mml:mtd columnalign="left"><mml:mi mathvariant="italic">if</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">species</mml:mi><mml:mspace width="0.25em"/><mml:mi>i</mml:mi><mml:mspace width="0.25em"/><mml:mo>&#x2208;</mml:mo><mml:mfenced close="}" open="{"><mml:mrow><mml:mi>S</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">bicolor</mml:mi><mml:mo>,</mml:mo><mml:mi>Z</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">mays</mml:mi></mml:mrow></mml:mfenced><mml:mspace width="1.75em"/></mml:mtd></mml:mtr></mml:mtable></mml:mtd></mml:mtr><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mn>6</mml:mn></mml:mtd><mml:mtd><mml:mo>,</mml:mo></mml:mtd><mml:mtd columnalign="left"><mml:mi mathvariant="italic">if</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">species</mml:mi><mml:mspace width="0.25em"/><mml:mi>i</mml:mi><mml:mspace width="0.25em"/><mml:mo>&#x2208;</mml:mo><mml:mfenced close="}" open="{"><mml:mrow><mml:mi>A</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">thaliana</mml:mi><mml:mo>,</mml:mo><mml:mi>B</mml:mi><mml:mo>.</mml:mo><mml:mi mathvariant="italic">rapa</mml:mi></mml:mrow></mml:mfenced></mml:mtd></mml:mtr></mml:mtable></mml:mtd></mml:mtr></mml:mtable></mml:mtd></mml:mtr></mml:mtable></mml:mtd></mml:mtr></mml:mtable></mml:mfenced><mml:mspace width="1em"/><mml:mtext>.</mml:mtext></mml:mtd></mml:mtr></mml:mtable></mml:math><graphic xlink:href="12864_2015_1496_Article_Equa.gif" position="anchor"/></alternatives></disp-formula></p>
+        <p>For the 10 plant species considered in this study, the maximum <italic>GO</italic><sub><italic>score</italic></sub> is 4.32, which corresponds to a GO term present in all genes in a clique of size 10 (1&#x2009;+&#x2009;1&#x2009;+&#x2009;&#xBD;&#x2009;+&#x2009;&#xBD;&#x2009;+&#x2009;1/3&#x2009;+&#x2009;&#xBC;&#x2009;+&#x2009;1/5&#x2009;+&#x2009;1/5&#x2009;+&#x2009;1/6&#x2009;+&#x2009;1/6&#x2009;=&#x2009;4.3166667&#x2009;&#x2248;&#x2009;4.32).</p>
+        <p>We use a score threshold of <italic>G</italic><sub><italic>T</italic></sub>&#x2009;=&#x2009;0.5 above which we assign GO terms to a wheat gene. The choice of 0.5 for the threshold value is rooted in the significant phylogenetic proximity of <italic>Triticum aestivum</italic> to other closely related cereals such as <italic>Triticum urartu</italic>, <italic>Aegilops tauschii</italic> and <italic>Hordeum vulgare</italic>, all being part of groups with scores equal to 1 and 2. A GO term assigned to a gene in a species with group score equal to 2, will contribute 1/2, i.e. 0.5 to the overall <italic>GO</italic><sub><italic>score</italic></sub>, thus being considered sufficiently significant to be assigned to the orthologous wheat gene.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>AgriGO analysis</title>
+        <p>The following parameter settings were used in the AgriGO [<xref ref-type="bibr" rid="CR28">28</xref>] analysis: (i) Fisher&#x2019;s exact test with Benjamini-Yekutieli (FDR under dependency) multiple comparison correction and (ii) significance level &#x3B1;&#x2009;=&#x2009;0.05.</p>
+      </sec>
+    </sec>
+    <sec id="Sec9" sec-type="results">
+      <title>Results and discussion</title>
+      <sec id="Sec10">
+        <title>1-to-1 ortholog cliques</title>
+        <p>For every pair of plant species we predicted 1-to-1 orthologs using the RBBH method. Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S1 provides details with respect to the total number of 1-to-1 orthologs predicted when DNA and protein sequences were used. Based on these results we considered the intersection of the DNA and protein orthology predictions for further exploration. We found cliques of 1-to-1 orthologs among the 10 plant species and grouped them based on the Ortholog Clique Level (OCL), which represents the clique size. Given the sparsity of gene ontologies in plants, we focused a large part of our analyses on ortholog cliques of size 10 while we provide additional information regarding different aspects of genes in cliques with OCLs between 3 and 10 [see Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figures S1 and Figure S2]. Each ortholog clique consists of genes connected to every other orthologous gene and thus they are expected to have similar functions.</p>
+        <p>Here we provide evidence that our cliques of orthologs are well defined and validated by looking at the overlap of GO terms already assigned to genes in the 10 plant species. Using the scoring formula proposed in Equation&#xA0;<xref rid="Equ1" ref-type="">1</xref>, the vast majority of genes in cliques with OCLs between 3 and 10 have a <italic>GO Set Overlap</italic> equal to 100%. This means that the GO terms assigned to the least annotated gene in a clique occur in all the other annotations of genes from the same clique (Figure&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>), which validate the pairwise orthology predictions for that clique. In contrast, if the orthology predictions would be invalid, then the sets of GO terms assigned to genes in the same clique will not overlap, thus leading to a <italic>GO Set Overlap</italic> equal to 0%. Figure&#xA0;<xref rid="Fig5" ref-type="fig">5</xref> depicts <italic>GO Set Overlap</italic> percentages for an equal number of cliques with OCLs between 3 and 10 populated with genes assigned uniformly at random from the complete set of genes in each of the 10 plant species. As expected, for randomly generated cliques of orthologs, the vast majority of GO Set Overlap percentages equals zero.<fig id="Fig4"><label>Figure 4</label><caption><p>Histograms representing the GO Set Overlap for cliques of size 3&#x2013;10. Frequencies of cliques with GO Set Overlap percentages within a given interval.</p></caption><graphic xlink:href="12864_2015_1496_Fig4_HTML" id="MO4"/></fig><fig id="Fig5"><label>Figure 5</label><caption><p>Histograms representing the GO Set Overlap for randomly generated cliques of size 3&#x2013;10. Frequencies of random cliques with GO Set Overlap percentages within a given interval.</p></caption><graphic xlink:href="12864_2015_1496_Fig5_HTML" id="MO5"/></fig></p>
+      </sec>
+      <sec id="Sec11">
+        <title>GO scores and OCLs</title>
+        <p>The GO score is tightly connected with OCLs via orthology relationships. Figure&#xA0;<xref rid="Fig6" ref-type="fig">6</xref> depicts the frequency of original and newly assigned GO terms for all GO scores corresponding to cliques with OCLs between 3 and 10. It can be observed that a GO score threshold of 0.5 provides a minimum significant cut-off above which the majority of GO terms can be considered significant for all OCLs. The GO scores for original GO terms are consistently higher than those assigned to novel terms. Since each original GO term is already part of the gene ontologies associated to wheat genes, their corresponding GO score given by Equation&#xA0;<xref rid="Equ2" ref-type="">2</xref> receives a +1 contribution factor due to wheat being a member of the evolutionary proximity group 1 (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>).<fig id="Fig6"><label>Figure 6</label><caption><p>Histograms representing the frequency of GO scores for cliques of size 3&#x2013;10. Frequencies of GO scores for new GO terms are represented with brown bars and those for original GO terms are displayed with bisque bars.</p></caption><graphic xlink:href="12864_2015_1496_Fig6_HTML" id="MO6"/></fig></p>
+      </sec>
+      <sec id="Sec12">
+        <title>Characterization of genes in cliques of size 10</title>
+        <p>Based on our analysis, we discovered 13 cliques of size 10 (Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref>), each consisting of a set of 10 genes (one from each species) that are pairwise 1-to-1 orthologs. To further validate the correctness of the 1-to-1 orthology predictions, we explored the annotation of genes in cliques of size 10 [see Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S2 ] using information from the following public databases: Ensembl Plants release 22/Gramene release 41[<xref ref-type="bibr" rid="CR23">23</xref>], Phytozome 9.1 [<xref ref-type="bibr" rid="CR29">29</xref>], NCBI, MIPS Barley Genome DB (IBSC) [<xref ref-type="bibr" rid="CR30">30</xref>], RAP-DB [<xref ref-type="bibr" rid="CR31">31</xref>] and AraMemnon [<xref ref-type="bibr" rid="CR32">32</xref>]. With the exception of <italic>T. aestivum</italic> genes, which are mostly un-annotated in all databases, the majority of the genes in the other 9 species have annotations available. <italic>B. distachyon</italic> is an exception where 5 genes (<italic>BRADI3G16010</italic>, <italic>BRADI3G16010</italic>, <italic>BRADI2G44260</italic>, <italic>BRADI4G15010</italic> and <italic>BRADI3G42580</italic>) are completely un-annotated in all databases. The available annotations are almost identical for 1-to-1 orthologous genes in each clique of size 10 [see Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S2 ].<table-wrap id="Tab2"><label>Table 2</label><caption><p><bold>13 cliques of size 10 with 1-to-1 orthologs in all 10 plant species</bold></p></caption><table frame="hsides" rules="groups"><thead><tr valign="top"><th><bold>Clique</bold></th><th><bold>ATA</bold></th><th><bold>ATH</bold></th><th><bold>BDI</bold></th><th><bold>BRA</bold></th><th><bold>HVU</bold></th><th><bold>OSA</bold></th><th><bold>SBI</bold></th><th><bold>TAE</bold></th><th><bold>TUR</bold></th><th><bold>ZMA</bold></th></tr></thead><tbody><tr valign="top"><td>1</td><td>F775_06552</td><td>AT3G44600</td><td>BRADI3G42750</td><td>BRA019430</td><td>MLOC_38535</td><td>OS08G0557500</td><td>SB07G024330</td><td>TRAES_7DS_8020BEEC2</td><td>TRIUR3_22015</td><td>GRMZM2G049525</td></tr><tr valign="top"><td>2</td><td>F775_11186</td><td>AT1G30010</td><td>BRADI1G39140</td><td>BRA032352</td><td>MLOC_55696</td><td>OS12G0407300</td><td>SB01G044780</td><td>TRAES_7DL_659883F3D</td><td>TRIUR3_27785</td><td>GRMZM2G023983</td></tr><tr valign="top"><td>3</td><td>F775_08951</td><td>AT2G47910</td><td>BRADI3G16010</td><td>BRA021447</td><td>MLOC_8265</td><td>OS08G0167500</td><td>SB02G024420</td><td>TRAES_6AS_87906149C</td><td>TRIUR3_09163</td><td>GRMZM2G106164</td></tr><tr valign="top"><td>4</td><td>F775_06961</td><td>AT3G13220</td><td>BRADI1G36410</td><td>BRA039378</td><td>MLOC_66857</td><td>OS06G0607700</td><td>SB10G023750</td><td>TRAES_7DL_439CC6EA0</td><td>TRIUR3_24106</td><td>GRMZM2G076526</td></tr><tr valign="top"><td>5</td><td>F775_11259</td><td>AT2G21070</td><td>BRADI3G01970</td><td>BRA030323</td><td>MLOC_14151</td><td>OS02G0121200</td><td>SB04G001730</td><td>TRAES_6AS_AD173C5A3</td><td>TRIUR3_05931</td><td>GRMZM2G090156</td></tr><tr valign="top"><td>6</td><td>F775_11739</td><td>AT2G40760</td><td>BRADI2G44260</td><td>BRA016973</td><td>MLOC_63819</td><td>OS05G0323100</td><td>SB09G011890</td><td>TRAES_6AS_FD8F6B539</td><td>TRIUR3_17179</td><td>GRMZM2G087671</td></tr><tr valign="top"><td>7</td><td>F775_31011</td><td>AT3G55360</td><td>BRADI2G03297</td><td>BRA007154</td><td>MLOC_59964</td><td>OS01G0150000</td><td>SB03G006070</td><td>TRAES_3B_90F2B79E9</td><td>TRIUR3_25686</td><td>GRMZM2G481843</td></tr><tr valign="top"><td>8</td><td>F775_27767</td><td>AT3G55760</td><td>BRADI4G15010</td><td>BRA023783</td><td>MLOC_9792</td><td>OS11G0586300</td><td>SB05G022830</td><td>TRAES_4BS_2159A428F</td><td>TRIUR3_31794</td><td>GRMZM2G069092</td></tr><tr valign="top"><td>9</td><td>F775_13173</td><td>AT5G06550</td><td>BRADI4G16020</td><td>BRA009205</td><td>MLOC_65909</td><td>OS11G0572800</td><td>SB05G022250</td><td>TRAES_7DL_96FFFB41E</td><td>TRIUR3_19243</td><td>GRMZM2G078198</td></tr><tr valign="top"><td>10</td><td>F775_13768</td><td>AT1G63660</td><td>BRADI3G20590</td><td>BRA027795</td><td>MLOC_34318</td><td>OS08G0326600</td><td>SB06G033930</td><td>TRAES_6AS_E6DEE586C</td><td>TRIUR3_04203</td><td>GRMZM2G136283</td></tr><tr valign="top"><td>11</td><td>F775_08440</td><td>AT4G35870</td><td>BRADI1G75920</td><td>BRA010507</td><td>MLOC_68300</td><td>OS03G0137400</td><td>SB01G047810</td><td>TRAES_4DL_11B05CF85</td><td>TRIUR3_30140</td><td>GRMZM2G059891</td></tr><tr valign="top"><td>12</td><td>F775_30997</td><td>AT4G35250</td><td>BRADI3G42580</td><td>BRA020809</td><td>MLOC_3618</td><td>OS08G0553800</td><td>SB07G024590</td><td>TRAES_7DS_E3B38CA36</td><td>TRIUR3_18085</td><td>GRMZM2G143917</td></tr><tr valign="top"><td>13</td><td>F775_08503</td><td>AT1G03190</td><td>BRADI2G36360</td><td>BRA030524</td><td>MLOC_66388</td><td>OS05G0144800</td><td>SB09G003450</td><td>TRAES_1AS_A25EED9EA</td><td>TRIUR3_25030</td><td>GRMZM2G097605</td></tr></tbody></table><table-wrap-foot><p>The 1-to-1 orthologs included in these cliques are RBBHs predicted using as input both DNA and protein sequences. <bold>ATA</bold>&#x2009;=&#x2009;<bold><italic>A</italic></bold>
+<italic>egilops</italic>
+<bold><italic>ta</italic></bold>
+<italic>uschii</italic>, <bold>ATH</bold>&#x2009;=&#x2009;<bold><italic>A</italic></bold>
+<italic>rabidopsis</italic>
+<bold><italic>th</italic></bold>
+<italic>aliana</italic>, <bold>BDI</bold>&#x2009;=&#x2009;<bold><italic>B</italic></bold>
+<italic>rachypodium</italic>
+<bold><italic>di</italic></bold>
+<italic>stachion</italic>, <bold>BRA</bold>&#x2009;=&#x2009;<bold><italic>B</italic></bold>
+<italic>rassica</italic>
+<bold><italic>ra</italic></bold>
+<italic>pa</italic>, <bold>HVU</bold>&#x2009;=&#x2009;<bold><italic>H</italic></bold>
+<italic>ordeum</italic>
+<bold><italic>vu</italic></bold>
+<italic>lgare</italic>, <bold>OSA</bold>&#x2009;=&#x2009;<bold><italic>O</italic></bold>
+<italic>ryza</italic>
+<bold><italic>sa</italic></bold>
+<italic>tiva</italic>, <bold>SBI</bold>&#x2009;=&#x2009;<bold><italic>S</italic></bold>
+<italic>orghum</italic>
+<bold><italic>bi</italic></bold>
+<italic>color</italic>, <bold>TAE</bold>&#x2009;=&#x2009;<bold><italic>T</italic></bold>
+<italic>riticum</italic>
+<bold><italic>ae</italic></bold>
+<italic>stivum</italic>, <bold>TUR</bold>&#x2009;=&#x2009;<bold><italic>T</italic></bold>
+<italic>riticum</italic>
+<bold><italic>ur</italic></bold>
+<italic>artu</italic>, <bold>ZMA</bold>&#x2009;=&#x2009;<bold><italic>Z</italic></bold>
+<italic>ea</italic>
+<bold><italic>ma</italic></bold>
+<italic>ys</italic>.</p></table-wrap-foot></table-wrap></p>
+        <p><bold>Clique 1</bold> consists of a set of 10 pairwise 1-to-1 orthologs in 10 plant species potentially representing <italic>cyclophilin71</italic>, a member of the immunophillin group of proteins known for their property of binding to the immune-suppressant drug cyclosporine A. This particular protein is unusual due to the presence of an additional WD domain (along the traditional PPIase domain) experimentally proven to exist in <italic>A. thaliana</italic> (<italic>AT3G44600 &#x2013; CYP71/AtCYP71</italic>) and <italic>O. sativa</italic> (<italic>OS08G0557500/LOC_Os08g44330</italic>) [<xref ref-type="bibr" rid="CR33">33</xref>]. Due to its ability to modulate the distribution of FAS1 and LHP1 on chromatin in plants, loss of this gene function causes drastic pleiotropic phenotypic defects [<xref ref-type="bibr" rid="CR34">34</xref>]. While less is known about cyclophylin A in wheat, some information is available about cyclophylin B [<xref ref-type="bibr" rid="CR35">35</xref>]. The wheat gene (TRAES_7DS_8020BEEC2) in this clique had 16 original GO terms and was enriched by our model with 35 new GO terms with an average GO score of 1.12. The highest scored new GO term assigned to this gene was <italic>protein peptidyl-prolyl isomerization</italic> (GO:0000413).</p>
+        <p><bold>Clique 2</bold> includes 10 genes potentially representing one (NMAT1) of the four nuclear maturase genes (NMAT1 to 4) encoding mitochondrial proteins in plants. In Arabidopsis, NMAT1 (AT1G30010) functions in the trans-splicing of <italic>nad1</italic> intron 1, and has a role in cis-splicing of <italic>nad2</italic> intron 1 and <italic>nad4</italic> intron 2 [<xref ref-type="bibr" rid="CR36">36</xref>]. While no NMAT1 gene was experimentally confirmed in wheat yet, recent studies in wheat mitochondria showed that <italic>nad2</italic> intron 1, <italic>nad1</italic> intron 2 and <italic>cox2</italic> shifted from a predominantly hydrolytic pathway at room temperature to alternative pathways in the cold [<xref ref-type="bibr" rid="CR37">37</xref>]. The wheat gene (TRAES_7DL_659883F3D) in this clique had 4 original GO terms and was enriched by our model with 5 new GO terms with an average GO score of 3.32. All 5 new GO terms were equally scored and represent <italic>mitochondrion</italic> (GO:0005739), <italic>seed germination</italic> (GO:0009845), <italic>seedling development</italic> (GO:0090351), <italic>Group III intron splicing</italic> (GO:0000374) and <italic>vegetative to reproductive phase transition of meristem</italic> (GO:0010228).</p>
+        <p>Genes in <bold>Clique 3</bold> show high DNA and protein sequence similarity with the <italic>A. thaliana</italic> &#x201C;<italic>chlororespiratory reduction 6</italic>&#x201D; (<italic>AT2G47910 &#x2013; CRR6</italic>) chloroplast thylakoid membrane protein. In Arabidopsis, this protein is required for the assembly of the NAD(P)H dehydrogenase complex of the photosynthetic electron transport chain. A suite of recent studies in wheat revealed how photosystem 1 and 2 activity is influenced by various stress factors such as heat [<xref ref-type="bibr" rid="CR38">38</xref>,<xref ref-type="bibr" rid="CR39">39</xref>] and draught [<xref ref-type="bibr" rid="CR40">40</xref>], nevertheless no genes were clearly identified as key factors in the corresponding pathways. The wheat gene (TRAES_6AS_87906149C) in this clique had 4 original GO terms and was enriched by our model with 2 new GO terms with an average GO score of 0.92. The two new GO terms are <italic>iron-sulfur cluster assembly</italic> (GO:0016226) and <italic>aromatic amino acid family</italic> (GO:0009073).</p>
+        <p>Genes in <bold>Clique 4</bold> are highly similar sequence-wise with <italic>A. thaliana</italic> &#x201C;<italic>ABC-2 type transporter family protein</italic>&#x201D; (AT3G13220) ATP-binding cassette transporter G26 (ABCG26) involved in tapetal cell and pollen development. This gene is required for male fertility and pollen exine formation. The predicted ortholog in rice (OS06G0607700) was identified in a 2013 study [<xref ref-type="bibr" rid="CR41">41</xref>] as one of the important components for sporopollenin synthesis and secretion, functioning as transporter of sporopollenin precursors, translocating its substrates from tapetal cells to the developmental microspores. This gene plays a major role in the anther development and male sterility in rice. While studies of pollen formation at the phenotype level in <italic>T. aestivum</italic> were reported as early as 1986 [<xref ref-type="bibr" rid="CR42">42</xref>], further work is needed to reveal the complex gene-based mechanisms that control the pollen development process in wheat. The wheat gene (TRAES_7DL_439CC6EA0) in this clique had 9 original GO terms and was enriched by our model with 1 new GO term with a GO score of 2.32. The new GO term turned out to be an obsolete one (ATP catabolic process - GO:0006200) currently replaced by ATPase activity (GO:0016887), which was already part of the original GO terms. Thus no real enrichment was obtained for this wheat gene.</p>
+        <p><bold>Clique 5</bold> contains genes with a high degree of similarity with <italic>A. thaliana</italic> &#x201C;<italic>methyltransferases</italic>&#x201D; FIO1/FIONA1 (AT2G21070) gene, which is a genetic regulator of period length in the plant&#x2019;s circadian clock. The gene is located in the nucleus and is involved in methyltransferase activity in flowering, circadian rhythm and photoperiodism. Other methyltransferase genes were isolated and characterized in monocots such as maize [<xref ref-type="bibr" rid="CR43">43</xref>] and rice [<xref ref-type="bibr" rid="CR44">44</xref>]. In wheat, five homologous cDNA sequences were connected with methyltransferase activity [<xref ref-type="bibr" rid="CR45">45</xref>] and their expression patterns were studied. The <italic>Cab-1</italic> gene was also identified as a circadian clock regulator in wheat in 1988 [<xref ref-type="bibr" rid="CR46">46</xref>]. The wheat gene (TRAES_6AS_AD173C5A3) in this clique had 1 original GO term and was enriched by our model with 4 new GO terms with an average GO score of 1.69. The new GO terms are <italic>methylation</italic> (GO:0032259), <italic>nucleus</italic> (GO:0005634), <italic>circadian rhythm</italic> (GO:0007623) and <italic>photoperiodism, flowering</italic> (GO:0048573).</p>
+        <p>Genes in <bold>Clique 6</bold> are related to <italic>A. thaliana</italic> &#x201C;<italic>Rhodanese/Cell cycle control phosphatase superfamily protein</italic>&#x201D; (AT2G40760) located in chloroplast and involved in aging. Genes with similar functionality were identified in other plants such as a predicted orthologous gene in maize (GRMZM2G087671), which was previously identified as a target gene of draught-responsive microRNAs [<xref ref-type="bibr" rid="CR47">47</xref>]. In wheat, a previous study [<xref ref-type="bibr" rid="CR48">48</xref>] reported the existence of a full-length cDNA sequence named TaTST (Triticum aestivum thiosulfate sulfurtransferase) with role in powdery mildew resistance mapped on the short arm of 6B chromosomes of wheat through Southern blot and GSP-PCR using Chinese Spring nullisomic/tetrasomic lines and ditelosomic lines. The wheat gene (TRAES_6AS_FD8F6B539) in this clique was not previously annotated and was enriched by our model with 1 new GO term with a GO score of 0.95. The new GO term is <italic>aging</italic> (GO:0007568).</p>
+        <p><bold>Clique 7</bold> includes genes related to <italic>A. thaliana</italic> &#x201C;<italic>3-oxo-5-alpha-steroid 4-dehydrogenase family protein</italic>&#x201D; (AT3G55360 &#x2013; CER10), which is located in the endoplasmic reticulum. This gene is an Enoyl-CoA reductase involved in all very long chain fatty acids (VLCFA) elongation reactions that are required for cuticular wax, storage lipid and sphingolipid metabolism. AT3G55360 apparently encodes the sole enoyl reductase activity associated with microsomal fatty acid elongation in Arabidopsis [<xref ref-type="bibr" rid="CR49">49</xref>]. The Affymetrix wheat probe set Ta.28682.2.S1_x_at is associated with the CER10 Arabidopsis gene. This Arabidopsis gene shows a high level of similarity with the orthologous wheat gene TRAES_3B_90F2B79E9 in Clique 7, which was experimentally assigned the putative function &#x201C;<italic>Enoyl-CoA reductase</italic>&#x201D; in a 2010 study focused on changes in properties of wheat leaf cuticle during interactions with Hessian fly [<xref ref-type="bibr" rid="CR50">50</xref>]. The wheat gene (TRAES_3B_90F2B79E9) in this clique had 4 original GO terms and was enriched by our model with 9 new GO terms with an average GO score of 1.54. The GO terms with the highest score (3.32) are <italic>fatty acid elongase activity</italic> (GO:0009922), <italic>trans-2-enoyl-CoA reductase (NADPH) activity</italic> (GO:0019166) and <italic>plasma membrane</italic> (GO:0005886).</p>
+        <p>Among the 13 cliques of size 10, <bold>Clique 8</bold> includes 1-to-1 orthologous genes with less specific annotation. The annotations corresponding to the <italic>A. thaliana</italic> gene AT3G55760 leads to an unknown protein located in the chloroplast stroma and expressed in 16 plant structures. The wheat gene (TRAES_4BS_2159A428F) in this clique had 2 original GO terms and was not enriched by our model.</p>
+        <p><bold>Clique 9</bold> includes genes with high sequence similarity with <italic>A. thaliana</italic> &#x201C;<italic>Jumonji domain-containing protein 22</italic>&#x201D; (AT5G06550). This gene encodes a hairless (HR) demethylase that acts as a positive regulator of seed germination in the PHYB-PIL5-SOM pathway. GramineaeTFDB lists the wheat <italic>tplb0016n18</italic> transcript factor as one of the 4 members of the Jumonji family proteins. This TF is homologous with the wheat Ensembl gene model TRAES_7DL_96FFFB41E (reciprocal best BLAST <italic>e-values</italic> equal with 1e-157 and 6e-163 for <italic>blastp</italic> and 0 for <italic>blastn</italic>) that we identified as being part of Clique 9 and is reported to have orthologous sequences in 6 plant species (<italic>A. thaliana</italic>, <italic>B. distachyon</italic>, <italic>H. vulgare</italic>, <italic>O. sativa</italic>, <italic>S. bicolor</italic> and <italic>Z. mays</italic>) &#x2013; all being 1-to-1 orthologs in Clique 9. The wheat gene (TRAES_7DL_96FFFB41E) in this clique had 5 original GO terms and was enriched by our model with 4 new GO terms with an average GO score of 1.08. The new GO terms are <italic>regulation of flower development</italic> (GO:0009909), <italic>protein targeting to mitochondrion</italic> (GO:0006626), <italic>cell surface receptor signalling pathway</italic> (GO:0007166) and <italic>regulation of transcription, DNA-templated</italic> (GO:0006355).</p>
+        <p><bold>Clique 10</bold> consists of genes similar to a putative <italic>A. thaliana</italic> &#x201C;<italic>GMP synthase (glutamine-hydrolyzing)/glutamine amidotransferase</italic>&#x201D; (AT1G63660). Based on the limited available annotation, this gene plays a role in asparagine synthase (glutamine-hydrolyzing) activity, catalytic activity, GMP synthase (glutamine-hydrolyzing) activity and ATP binding. Two sets of genes in rice and Arabidopsis (housekeeping and tissue specific) which have evolved under contrasting evolutionary constraints include the rice gene OS08G0326600 as an ortholog of AT1G63660 [<xref ref-type="bibr" rid="CR51">51</xref>]. The corresponding wheat Affymetrix probe set id (Ta.3136.1.S1_at) for the Ensembl wheat gene model TRAES_6AS_E6DEE586C is listed on the PlaNet [<xref ref-type="bibr" rid="CR52">52</xref>] website as being co-expressed with the aforementioned rice gene. This suggests that TRAES_6AS_E6DEE586C is a good candidate for a wheat GMP synthase gene. The wheat gene (TRAES_6AS_E6DEE586C) in this clique had 7 original GO terms and was enriched by our model with 4 new GO terms with an average GO score of 1.54. The new GO terms are <italic>cytosol</italic> (GO:0005829), <italic>RNA methylation</italic> (GO:0001510), <italic>protein import into nucleus</italic> (GO:0006606) and <italic>pyrimidine ribonucleotide biosynthetic process</italic> (GO:0009220).</p>
+        <p>Genes in <bold>Clique 11</bold> are 1-to-1 orthologs with <italic>A. thaliana</italic> gene AT4G35870, characterized in TAIR as an &#x201C;<italic>early-responsive to dehydration stress protein (ERD4)</italic>&#x201D;, which, interestingly, coincides with the description of another Arabidopsis gene, namely AT1G30360 and in UniProt as a &#x201C;<italic>CSC1-like protein</italic>&#x201D;, which is located in the cell membrane and is involved in protein targeting to vacuole. The corresponding AT4G35870 protein was experimentally determined to be involved in vacuolar sorting of storage proteins (AtGFS10) [<xref ref-type="bibr" rid="CR53">53</xref>]. The wheat gene (TRAES_4DL_11B05CF85) in this clique had 1 original GO term and was enriched by our model with 2 new GO terms with an average GO score of 2.33. The new GO terms are <italic>protein targeting to vacuole</italic> (GO:0006623) and <italic>integral component of membrane</italic> (GO:0016021).</p>
+        <p><bold>Clique 12</bold> consists of highly similar genes with <italic>A. thaliana</italic> &#x201C;<italic>NAD(P)-binding Rossmann-fold superfamily protein</italic>&#x201D; (AT4G35250 - HCF244), which is located in chloroplast and manifests a binding and catalytic activity. Interestingly, the Arabidopsis gene was identified as an ortholog of the Ycf39 (CyanoBase designation Slr0399), which was originally identified in a screen for suppressor mutants that restored the ability of a D2 mutant of Synechocystis 6803 to bind the bound plastoquinone, QA, and was suggested to be involved in delivering plastoquinone to Photosystem II during assembly [<xref ref-type="bibr" rid="CR54">54</xref>,<xref ref-type="bibr" rid="CR55">55</xref>]. The wheat gene (TRAES_7DS_E3B38CA36) in this clique was not previously annotated and was enriched by our model with 9 new GO terms with an average GO score of 2.09. The 3 GO terms with the highest score are <italic>chloroplast thylakoid</italic> (GO:0009534), <italic>translation initiation factor activity</italic> (GO:0003743) and <italic>photosystem II assembly</italic> (GO:0010207).</p>
+        <p>Genes in <bold>Clique 13</bold> are highly similar with <italic>A. thaliana</italic> &#x201C;<italic>RAD3-like DNA-binding helicase protein</italic>&#x201D; (AT1G03190 - UVH6/AtXPD). This gene acts as a negative regulator for plant response to UV damage and heat, which trigger tissue death and reduced chloroplast function. The gene functions in DNA repair and it is essential for plant growth [<xref ref-type="bibr" rid="CR56">56</xref>]. According to KEGG, the gene is involved in two pathways, namely the basal transcription factors pathway (<italic>ath03022</italic>) and the nucleotide excision repair pathway (<italic>ath03420</italic>). The wheat gene (TRAES_1AS_A25EED9EA) in this clique had 9 original GO terms and was enriched by our model with 9 new GO terms with an average GO score of 1.12. All new GO terms received the same scores and include <italic>heat acclimation</italic> (GO:0010286), <italic>response to high light intensity</italic> (GO:0009644), <italic>transcription from RNA polymerase II promoter</italic> (GO:0006366) and <italic>RNA splicing, via endonucleolytic cleavage and ligation</italic> (GO:0000394).</p>
+      </sec>
+      <sec id="Sec13">
+        <title>Co-expression and expression profile similarity for genes in cliques of size 10</title>
+        <p>We verified the similarity of expression profiles for genes in cliques of size 10 using the Expressolog Tree Viewer [<xref ref-type="bibr" rid="CR57">57</xref>] from the Bio-Analytic Resource (BAR) for Plant Biology available at University of Toronto [see Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S3 ]. Expression datasets available in GEO for 4 plant species were used, such as: <italic>A. thaliana</italic> (AtGenExpress data series of Schmid et al., 2005 [<xref ref-type="bibr" rid="CR58">58</xref>]), <italic>O. sativa</italic> (GEO accession numbers GSE7951 and GSE6893), <italic>H. vulgare</italic> (GEO accession number GSE16754) and <italic>Z. mays</italic> (PlexDB experiment number ZM37). Regrettably, wheat is not included yet in their database.</p>
+        <p>The Arabidopsis, rice and maize genes in all but one (clique 13) of the cliques of size 10 were identified as expressologs. The average expression profile similarity SCC scores (Spearman Correlation Coefficients) equal to 0.21 (std. dev. = 0.12) for Arabidopsis vs. rice and 0.37 (std. dev. = 0.24) for Arabidopsis vs. maize. For clique 13, only Arabidopsis and maize genes were identified as expressologs with SCC&#x2009;=&#x2009;0.15. In 9 of the 13 cliques of size 10 the barley genes were also identified as being expressologs with the corresponding Arabidopsis, rice and maize genes. In the remaining 4 cliques, no barley expressologs were identified. Overall, the similar expression profile evidence for genes in 4 out of 10 plant species suggests that our cliques of 1-to-1 orthologs are well defined.</p>
+        <p>To facilitate the connexion between the previous analysis and wheat genes, we investigated the co-expression of genes in cliques of size 10 using the &#x201C;<italic>Standard analysis</italic>&#x201D; NetworkComparer approach in PlaNet [<xref ref-type="bibr" rid="CR52">52</xref>]. PlaNet includes information from 7 plant species, of which 5 overlap with the ones used in our study: Arabidopsis, barley, brachypodium, rice and wheat. The &#x201C;<italic>Standard analysis</italic>&#x201D; NetworkComparer approach compares a gene of interest with other genes (represented by microarray probe sets) belonging to the PFAM family of the query. These probe sets are then used to generate an ancestral network, which depicts conserved co-expression relationships across selected probe sets and the identity of transcripts constituting conserved PFAMs are revealed. For 9 out of 13 cliques of size 10, wheat genes shared conserved Pfam domains with genes in up to 4 other plant species (Arabidopsis, barley, brachypodium and rice) from the PlaNet database [see Additional file <xref rid="MOESM3" ref-type="media">3</xref>]. In 4 of those cases, all 5 genes shared the same Pfam domains. Similar with our gene ontology analysis discussed above, no genes in Clique 8 were identified to share conserved Pfam domains. In addition, we used the Pfam2GO mappings of Reviewed Computational Analysis (RCA) annotations provided by the Gene Ontology Consortium to map 23 (22 original and 1 new) GO terms from a total of 147 original and new GO terms corresponding to the 13 wheat genes in cliques of size 10. The new GO term &#x201C;<italic>protein peptidyl-prolyl isomerization</italic>&#x201D; (GO:0000413) confirmed by this approach corresponded to the wheat gene <italic>TRAES_7DS_8020BEEC2</italic> in Clique 1, while the 22 original GO terms characterised wheat genes in cliques 1, 2, 4, 5, 7, 10, 11 and 13.</p>
+      </sec>
+      <sec id="Sec14">
+        <title>Gene ontology characterization</title>
+        <p>We provide in this section a generic view of the functional annotations available for the 10 plants species considered in this study. We use information extracted from Ensembl Plants release 22 and the Gene Ontology Consortium databases. The overall frequency of GO terms for the 10 plant species considered in this work is depicted in Figure&#xA0;<xref rid="Fig7" ref-type="fig">7</xref>. The GO terms with the highest occurrence in each of the three main sub-ontologies (biological process, cellular component, and molecular function) are highlighted in Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figures S3-S5.<fig id="Fig7"><label>Figure 7</label><caption><p>Distribution of GO terms in the 3 main categories for the 10 plant species considered in this work.</p></caption><graphic xlink:href="12864_2015_1496_Fig7_HTML" id="MO7"/></fig></p>
+        <p>Overall, for the 10 plant species, the top five high frequency GO terms in the &#x201C;<italic>molecular function</italic>&#x201D; group are: <italic>protein binding</italic> (GO:0005515), <italic>ATP binding</italic> (GO:0005524), <italic>metal ion binding</italic> (GO:0046872), <italic>DNA binding</italic> (GO:0003677) and <italic>nucleotide binding</italic> (GO:0000166). The top five in &#x201C;<italic>cellular component</italic>&#x201D; GO terms are: <italic>membrane</italic> (GO:0016020), <italic>nucleus</italic> (GO:0005634), <italic>integral to membrane</italic> (GO:0016021), <italic>plasma membrane</italic> (GO:0005886) and <italic>chloroplast</italic> (GO:0009507). Similarly, the five highly occurring &#x201C;<italic>biological process</italic>&#x201D; GO terms for the 10 plant species are: <italic>oxidation-reduction process</italic> (GO:0055114), <italic>protein phosphorylation</italic> (GO:0006468), <italic>metabolic process</italic> (GO:0008152), <italic>regulation of transcription - DNA-dependent</italic> (GO:0006355) and <italic>biological process</italic> (GO:0008150).</p>
+        <p>For cliques of size 10, &#x201C;cellular component&#x201D; GO terms [see Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figure S6] such as: <italic>nucleus</italic> (GO:0005634, 34 times), <italic>chloroplast</italic> (GO:0009507, 29 times), <italic>membrane</italic> (GO:0016020, 28 times) and <italic>chloroplast stroma</italic> (GO:0009570, 20 times) occur more frequently among the participant genes. &#x201C;Molecular function&#x201D; GO terms [see Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figure S7] have also significantly high occurrence, such as <italic>ATP binding</italic> (GO:0005524, 30 times), <italic>protein binding</italic> (GO:0005515, 21 times) and <italic>nucleotide binding</italic> (GO:0000166, 19 times), while &#x201C;biological process&#x201D; GO terms [see Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figure S8] have medium to lower occurrences, the most prevalent being <italic>regulation of flower development</italic> (GO:0009909, 14 times), <italic>protein folding</italic> (GO:0006457, 14 times), <italic>vegetative to reproductive phase transition of meristem</italic> (GO:0010228, 13 times) and <italic>seed germination</italic> (GO:0009845, 13 times).</p>
+      </sec>
+      <sec id="Sec15">
+        <title>Gene Ontology (GO) enrichment model</title>
+        <p>Based on the gene ontology acquired from Ensembl Plants we propose the following procedure for enriching the annotation of wheat genes using information extrapolated from 1-to-1 orthologs with 9 other plant species.</p>
+        <p>As first step, we assign to each gene in all 10 plant species the corresponding GO terms found in Ensembl Plants. Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref> provides information related to the number of genes in each species that has associated GO terms. Among all species <italic>A. thaliana</italic> has the highest percentage of annotated genes (93%), while <italic>O. sativa</italic>, <italic>T. aestivum</italic> and <italic>T. urartu</italic> have the lowest percentages (57%, 61% and 58%, respectively). For <italic>T. aestivum</italic>, 60,577 out of 98,779 putative genes are annotated, leaving 39% without any annotation. For cliques of size ten, 11 out of 13 wheat genes have existing annotation (associated GO terms) in Ensembl Plants release 22. The two un-annotated wheat genes are TRAES_6AS_FD8F6B539 in Clique 6 associated with the &#x201C;<italic>Rhodanese/Cell cycle control phosphatase superfamily protein</italic>&#x201D; and TRAES_7DS_E3B38CA36, respectively, in Clique 12 associated with the &#x201C;<italic>NAD(P)-binding Rossmann-fold superfamily protein</italic>&#x201D; in <italic>A. thaliana</italic>.<table-wrap id="Tab3"><label>Table 3</label><caption><p><bold>Status of currently known annotated genes (proteins) in 10 plant species</bold></p></caption><table frame="hsides" rules="groups"><thead><tr valign="top"><th><bold>Species</bold></th><th><bold>Total num. genes</bold></th><th><bold>Num. annotated genes</bold></th><th><bold>Num. unannotated genes (%)</bold></th></tr></thead><tbody><tr valign="top"><td><italic>Aegilops tauschii</italic></td><td>33,849</td><td>21,552</td><td>12,297 (36%)</td></tr><tr valign="top"><td><italic>Arabidopsis thaliana</italic></td><td>27,416</td><td>25,431</td><td>1,985 (7%)</td></tr><tr valign="top"><td><italic>Brachypodium distachyon</italic></td><td>26,552</td><td>18,618</td><td>7,934 (30%)</td></tr><tr valign="top"><td><italic>Brassica rapa</italic></td><td>41,018</td><td>28,015</td><td>13,003 (32%)</td></tr><tr valign="top"><td><italic>Hordeum vulgare</italic></td><td>24,211</td><td>16,858</td><td>7,353 (30%)</td></tr><tr valign="top"><td><italic>Oryza sativa</italic></td><td>35,679</td><td>20,492</td><td>15,187 (43%)</td></tr><tr valign="top"><td><italic>Sorghum bicolor</italic></td><td>34,496</td><td>22,797</td><td>11,699 (34%)</td></tr><tr valign="top"><td><italic>Triticum aestivum</italic></td><td>98,779</td><td>60,577</td><td>38,202 (39%)</td></tr><tr valign="top"><td><italic>Triticum urartu</italic></td><td>33,424</td><td>19,473</td><td>13,951 (42%)</td></tr><tr valign="top"><td><italic>Zea mays</italic></td><td>38,741</td><td>25,552</td><td>13,189 (34%)</td></tr></tbody></table><table-wrap-foot><p>Data was extracted from Ensembl Plants release 22.</p></table-wrap-foot></table-wrap></p>
+        <p>The second step consists of calculating the gene ontology scores (Equation&#xA0;<xref rid="Equ2" ref-type="">2</xref>) based on the phylogenetic proximity between genes in two species, the overall hierarchy of gene ontology and the predicted orthology relationships. For each wheat gene which belongs to a clique of size at least 3, we assign a new GO term if the GO score is above the 0.5 threshold. The genes in cliques of size at least 3 have a total of 107,997 GO terms associations. This step selects 80,067 new GO term assignments with scores equal to or higher than 0.5, leading to an overall cumulative improvement of 47% compared to the existing gene-GO term associations (171,488).</p>
+        <p>For cliques of size ten, 12 out of 13 wheat genes acquired a total of 150 new GO term associations (cumulative improvement of 115%) over the existing 130 GO terms.</p>
+        <p>The third step consists of a refinement for assignment of GO terms by keeping only those new terms that add more information (higher specificity) to the gene, i.e. we accept only those new GO terms that reside deeper (closer to a leaf node in the graph) or on a different path than the original annotations in the overall GO graph hierarchy. This will also ensure that no &#x201C;place holder&#x201D; root GO terms (molecular function, cellular component and biological process) will be selected for those genes where annotations already exist along the corresponding paths in the GO graph. Nevertheless, root GO terms will be accepted when no annotation is available for a given gene or if the available annotation follows a different path corresponding to a different root GO term in the GO term graph. Based on this approach, out of 80,067 new GO term assignments with scores equal to or higher than 0.5 assigned at step 2, only 25,607 new GO terms add more information to the existing annotations (only 152 root GO terms). For these, the GO term path length varies between 2 and 15 with a mean around 6.4 [see Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figures S9 and S10] and the GO scores span the [0.5, 3.3] interval with the mean around 1.1 [see Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figures S11 and S12]. This process leads to an overall GO term assignment increase of 15% compared to the original annotation (171,488 GO terms). A total of 7,838 wheat genes were annotated with newly assigned GO terms, leading to an overall increase of 8% with respect to the total number of wheat genes in Ensembl Plants release 22. Out of those 7,838 genes, 2,139 had no previous annotation [see Additional file <xref rid="MOESM4" ref-type="media">4</xref>] of which only 145 represent root GO terms (16 biological process - GO:0008150 and 129 molecular function - GO:0003674).</p>
+        <p>For cliques of size 10, only 85 out of 150 new GO terms are more specific and enrich the annotations based on their GO graph paths. This leads to an overall improvement of 65% compared to existing annotations (130 GO terms). Two wheat genes, namely <italic>TRAES_6AS_FD8F6B539</italic> and <italic>TRAES_7DS_E3B38CA36</italic> [see Additional file <xref rid="MOESM5" ref-type="media">5</xref>], out of 13 had no previous known annotations and were enriched with 1 (GO:0007568 - <italic>aging</italic>) and 9 (GO:0003743 - <italic>translation initiation factor activity</italic>, GO:0009507 - <italic>chloroplast</italic>, GO:0009534 - <italic>chloroplast thylakoid</italic>, GO:0016117 - <italic>carotenoid biosynthetic process</italic>, GO:0019288 - <italic>isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway</italic>, GO:0019684 - <italic>photosynthesis, light reaction</italic>, GO:0006364 - <italic>rRNA processing</italic>, GO:0010114 - <italic>response to red light</italic>, and GO:0010207 - <italic>photosystem II assembly</italic>) new GO terms, respectively.</p>
+        <p>While orthology relationships have been identified between genes in pairwise species, no functional relationship is expected to be found among sets of genes belonging to cliques of the same size. In other words, clique size does not determine functional similarities among genes. Thus we can only provide a descriptive analysis of the gene ontologies associated with those genes. We perform Singular Enrichment Analysis (SEA) [<xref ref-type="bibr" rid="CR59">59</xref>] in the absence of the traditional gene expression information (thus no <italic>p-value</italic> calculations apply in this case) using as input the GO terms for the 13 wheat genes in cliques of size 10 and the whole Ensembl Plants wheat GO set as reference. Using AgriGO [<xref ref-type="bibr" rid="CR28">28</xref>] analysis, a set of 23 enriched GO terms were identified (Figures&#xA0;<xref rid="Fig8" ref-type="fig">8</xref> and <xref rid="Fig9" ref-type="fig">9</xref>) for the genes in all 13 cliques of size 10. The ReviGO [<xref ref-type="bibr" rid="CR60">60</xref>] analysis also performed in the absence of additional gene expression information identifies semantically similar GO terms (using UniProt as reference database) displayed in a 2D scatter plot based on an eigenvalue decomposition of the terms' pairwise distance matrix followed by a stress minimization step, which iteratively improves the agreement between the GO terms' semantic similarities and their closeness (Figures&#xA0;<xref rid="Fig10" ref-type="fig">10</xref>, <xref rid="Fig11" ref-type="fig">11</xref> and <xref rid="Fig12" ref-type="fig">12</xref>). For cliques of size 10, five pairs of GO terms (4 biological process, 4 molecular function and 2 cellular component GO terms) were identified as having similar and thus redundant functions and were clustered together. For instance, the biological process GO terms characteristic to wheat gene TRAES_7DS_8020BEEC2 in clique 1, namely &#x201C;<italic>sepal formation</italic>&#x201D; (GO:0048453) and &#x201C;<italic>petal formation</italic>&#x201D; (GO:0048451), are similar (<italic>SimRel</italic>&#x2009;=&#x2009;0.65 for each) and thus they are merged in a cluster represented by the first term. Interestingly, the &#x201C;<italic>petal formation</italic>&#x201D; GO term was newly assigned to this wheat gene by our enrichment model. Similarly, for the same wheat gene, &#x201C;<italic>carpel development</italic>&#x201D; (GO:0048440) and &#x201C;<italic>stamen development</italic>&#x201D; (GO:0048443) were merged in a cluster represented by the former GO term, both terms being already part of the gene ontology information available in Ensembl Plants for this wheat gene.<fig id="Fig8"><label>Figure 8</label><caption><p>AgriGO display of statistically significant Biological Process GO terms for the cliques of size 10. Inside the box of the significant GO terms, the information includes: GO term, adjusted p-value, GO description, item number mapping the GO in the query list and background, and total number of query list and background.</p></caption><graphic xlink:href="12864_2015_1496_Fig8_HTML" id="MO8"/></fig><fig id="Fig9"><label>Figure 9</label><caption><p>AgriGO display of statistically significant Cellular Component GO terms for the cliques of size 10. Inside the box of the significant GO terms, the information includes: GO term, adjusted p-value, GO description, item number mapping the GO in the query list and background, and total number of query list and background.</p></caption><graphic xlink:href="12864_2015_1496_Fig9_HTML" id="MO9"/></fig><fig id="Fig10"><label>Figure 10</label><caption><p>ReviGO display of 96 Biological Process GO terms for the cliques of size 10. The GO terms with higher uniquenes are displayed in shades of red while the ones with lower uniqueness are displayed with shades of blue. The GO terms with higher semantic similarity are closer on the plot.</p></caption><graphic xlink:href="12864_2015_1496_Fig10_HTML" id="MO10"/></fig><fig id="Fig11"><label>Figure 11</label><caption><p>ReviGO display of 22 Cellular Component GO terms for the cliques of size 10.</p></caption><graphic xlink:href="12864_2015_1496_Fig11_HTML" id="MO11"/></fig><fig id="Fig12"><label>Figure 12</label><caption><p>ReviGO display of 29 Molecular Function GO terms for the cliques of size 10.</p></caption><graphic xlink:href="12864_2015_1496_Fig12_HTML" id="MO12"/></fig></p>
+      </sec>
+    </sec>
+    <sec id="Sec16" sec-type="conclusion">
+      <title>Conclusions</title>
+      <p>We propose a novel annotation model for wheat genes based on 1-to-1 cliques of orthologs, existing gene ontologies from 9 other plant species and their phylogenetic relationship. Our annotation model relies on the intersection of 1-to-1 orthologs predictions based on DNA and protein sequences encoded by the same gene. Large cliques of orthologs combined with an additive scoring scheme based on phylogenetic distances between plant species provide the mechanism for gene ontology knowledge transfer from orthologous genes in other well annotated plant species to wheat genes.</p>
+      <p>In addition, we provided experimental validation and analysis of genes with similar expression profiles in Arabidopsis, barley, maize and rice and evidence that our cliques of orthologs are valid. Our model demonstrated that wheat gene functional annotations can be enriched via cliques of 1-to-1 orthologs, gene ontology information and phylogenetic relationships among considered species.</p>
+      <p>To further bridge the gap between newly sequenced and completely characterized wheat genes and proteins, a large number of validated annotations is required from the experimental community. These extremely valuable manual annotations can be in turn integrated into automatic computational annotation pipelines and models such as the one presented here to further increase the quality, throughput and understanding of the deluge of information generated today.</p>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="App1">
+        <sec id="Sec17">
+          <title>Additional files</title>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1496_MOESM1_ESM.docx" id="MOESM1">
+              <label>Additional file 1:</label>
+              <caption>
+                <p><bold>Additional tables.</bold> Additional file <xref rid="MOESM1" ref-type="media">1</xref> includes 3 additional tables that provide additional support for our findings.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1496_MOESM2_ESM.docx" id="MOESM2">
+              <label>Additional file 2:</label>
+              <caption>
+                <p><bold>Additional figures.</bold> Additional file <xref rid="MOESM2" ref-type="media">2</xref> includes 12 additional figures that provide additional support for our findings.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1496_MOESM3_ESM.xls" id="MOESM3">
+              <label>Additional file 3:</label>
+              <caption>
+                <p><bold>PlaNet Analysis - Pfam domains shared by genes from 5 plant species.</bold> The Excel file contains 3 worksheets. First worksheet presents PFam domains shared by genes in 5 plant species (<italic>A. thaliana</italic>, <italic>B. distachyon</italic>, <italic>H. vulgare</italic>, <italic>O. sativa</italic> and <italic>T. aestivum</italic>) identified using PlaNet. The second worksheet includes GO terms associated to each PFam domain associated with the 13 wheat genes in the cliques of size 10. The third worksheet contains a list of SupFam supra-domains and corresponding GO terms for wheat genes in each clique of size 10 (highlighted with alternate colours). For each GO term, we provide the GO name, GO sub-ontologies, information content, annotation origin and the associated label (new, original or <bold>n</bold>ot <bold>f</bold>ound&#x2009;=&#x2009;<bold>n.f.</bold>).</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1496_MOESM4_ESM.xls" id="MOESM4">
+              <label>Additional file 4:</label>
+              <caption>
+                <p><bold>New GO term annotation for 2,139 previously un-annotated wheat genes.</bold> The Excel file contains one worksheet with 2 columns. First column represents the wheat Ensembl Gene ID without previous annotation and the second column contains the newly assigned GO terms.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1496_MOESM5_ESM.xls" id="MOESM5">
+              <label>Additional file 5:</label>
+              <caption>
+                <p><bold>GO term assignments for genes in the cliques of size 10.</bold> The Excel file contains 2 tables in separate worksheets. First table includes existing and new GO terms associated with wheat genes in 13 cliques of size 10. Second table provides detailed information such as GO graph depth, GO score, GO graph path and description for each GO term associated with the 13 wheat genes in cliques of size 10.</p>
+              </caption>
+            </media>
+          </p>
+        </sec>
+      </app>
+    </app-group>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Competing interests</bold>
+        </p>
+        <p>The authors declare that they have no competing interests.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Authors&#x2019; contributions</bold>
+        </p>
+        <p>DT conceived this study, carried out the GO term analysis, developed the GO enrichment model, assisted with programming and drafted the manuscript. SL participated in the design, development and integration of the programs for orthology prediction, clique discovery and data analysis. AT participated in drafting the manuscript. YP participated in the discussion leading to the design of the study and helped to draft the manuscript. All authors read and approved the final manuscript.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>This research was funded by the National Research Council Canada and the Canadian Wheat Alliance.</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fitch</surname>
+              <given-names>WM</given-names>
+            </name>
+          </person-group>
+          <article-title>Distinguishing Homologous from Analogous Proteins</article-title>
+          <source>Syst Zool</source>
+          <year>1970</year>
+          <volume>19</volume>
+          <fpage>99</fpage>
+          <pub-id pub-id-type="doi">10.2307/2412448</pub-id>
+          <?supplied-pmid 5449325?>
+          <pub-id pub-id-type="pmid">5449325</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koonin</surname>
+              <given-names>EV</given-names>
+            </name>
+          </person-group>
+          <article-title>Orthologs, paralogs, and evolutionary genomics</article-title>
+          <source>Annu Rev Genet</source>
+          <year>2005</year>
+          <volume>39</volume>
+          <fpage>309</fpage>
+          <lpage>38</lpage>
+          <pub-id pub-id-type="doi">10.1146/annurev.genet.39.073003.114725</pub-id>
+          <?supplied-pmid 16285863?>
+          <pub-id pub-id-type="pmid">16285863</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trachana</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Larsson</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Powell</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>W-H</given-names>
+            </name>
+            <name>
+              <surname>Doerks</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Muller</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Orthology prediction methods: a quality assessment using curated protein families</article-title>
+          <source>Bioessays</source>
+          <year>2011</year>
+          <volume>33</volume>
+          <fpage>769</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="doi">10.1002/bies.201100062</pub-id>
+          <?supplied-pmid 21853451?>
+          <pub-id pub-id-type="pmid">21853451</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ostlund</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Schmitt</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Forslund</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>K&#xF6;stler</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Messina</surname>
+              <given-names>DN</given-names>
+            </name>
+            <name>
+              <surname>Roopra</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>InParanoid 7: new algorithms and tools for eukaryotic orthology analysis</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2010</year>
+          <volume>38</volume>
+          <issue>Database issue</issue>
+          <fpage>D196</fpage>
+          <lpage>203</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkp931</pub-id>
+          <?supplied-pmid 19892828?>
+          <pub-id pub-id-type="pmid">19892828</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Deluca</surname>
+              <given-names>TF</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>I-H</given-names>
+            </name>
+            <name>
+              <surname>Pu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Monaghan</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Peshkin</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Roundup: a multi-genome repository of orthologs and evolutionary distances</article-title>
+          <source>Bioinformatics</source>
+          <year>2006</year>
+          <volume>22</volume>
+          <fpage>2044</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btl286</pub-id>
+          <?supplied-pmid 16777906?>
+          <pub-id pub-id-type="pmid">16777906</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tatusov</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Koonin</surname>
+              <given-names>EV</given-names>
+            </name>
+            <name>
+              <surname>Lipman</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>A genomic perspective on protein families</article-title>
+          <source>Science</source>
+          <year>1997</year>
+          <volume>278</volume>
+          <fpage>631</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.278.5338.631</pub-id>
+          <?supplied-pmid 9381173?>
+          <pub-id pub-id-type="pmid">9381173</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tatusov</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Fedorova</surname>
+              <given-names>ND</given-names>
+            </name>
+            <name>
+              <surname>Jackson</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Jacobs</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Kiryutin</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Koonin</surname>
+              <given-names>EV</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The COG database: an updated version includes eukaryotes</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2003</year>
+          <volume>4</volume>
+          <fpage>41</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-4-41</pub-id>
+          <?supplied-pmid 12969510?>
+          <pub-id pub-id-type="pmid">12969510</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Powell</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Forslund</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Szklarczyk</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Trachana</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Roth</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Huerta-Cepas</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>eggNOG v4.0: nested orthology inference across 3686 organisms</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <issue>Database issue</issue>
+          <fpage>D231</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkt1253</pub-id>
+          <?supplied-pmid 24297252?>
+          <pub-id pub-id-type="pmid">24297252</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Waterhouse</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Tegenfeldt</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zdobnov</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Kriventseva</surname>
+              <given-names>EV</given-names>
+            </name>
+          </person-group>
+          <article-title>OrthoDB: a hierarchical catalog of animal, fungal and bacterial orthologs</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2013</year>
+          <volume>41</volume>
+          <issue>Database issue</issue>
+          <fpage>D358</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gks1116</pub-id>
+          <?supplied-pmid 23180791?>
+          <pub-id pub-id-type="pmid">23180791</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Mackey</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Stoeckert</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Roos</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <article-title>OrthoMCL-DB: querying a comprehensive multi-species collection of ortholog groups</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2006</year>
+          <volume>34</volume>
+          <issue>Database issue</issue>
+          <fpage>D363</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkj123</pub-id>
+          <?supplied-pmid 16381887?>
+          <pub-id pub-id-type="pmid">16381887</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altenhoff</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gonnet</surname>
+              <given-names>GH</given-names>
+            </name>
+            <name>
+              <surname>Dessimoz</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>OMA 2011: orthology inference among 1000 complete genomes</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <issue>Database issue</issue>
+          <fpage>D289</fpage>
+          <lpage>94</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkq1238</pub-id>
+          <?supplied-pmid 21113020?>
+          <pub-id pub-id-type="pmid">21113020</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Coghlan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Coin</surname>
+              <given-names>LJM</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>TreeFam: 2008 Update</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2008</year>
+          <volume>36</volume>
+          <issue>Database issue</issue>
+          <fpage>D735</fpage>
+          <lpage>40</lpage>
+          <?supplied-pmid 18056084?>
+          <pub-id pub-id-type="pmid">18056084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flicek</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Amode</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Barrell</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Beal</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Billis</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Brent</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ensembl 2014</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <issue>Database issue</issue>
+          <fpage>D749</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkt1196</pub-id>
+          <?supplied-pmid 24316576?>
+          <pub-id pub-id-type="pmid">24316576</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huerta-Cepas</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Capella-Guti&#xE9;rrez</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pryszcz</surname>
+              <given-names>LP</given-names>
+            </name>
+            <name>
+              <surname>Marcet-Houben</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gabald&#xF3;n</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>PhylomeDB v4: zooming into the plurality of evolutionary histories of a genome</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <issue>Database issue</issue>
+          <fpage>D897</fpage>
+          <lpage>902</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkt1177</pub-id>
+          <?supplied-pmid 24275491?>
+          <pub-id pub-id-type="pmid">24275491</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van der Heijden</surname>
+              <given-names>RTJM</given-names>
+            </name>
+            <name>
+              <surname>Snel</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>van Noort</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Huynen</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <article-title>Orthology prediction at scalable resolution by phylogenetic tree analysis</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>83</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-8-83</pub-id>
+          <?supplied-pmid 17346331?>
+          <pub-id pub-id-type="pmid">17346331</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fang</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bhardwaj</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Robilotto</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Gerstein</surname>
+              <given-names>MB</given-names>
+            </name>
+          </person-group>
+          <article-title>Getting started in gene orthology and functional analysis</article-title>
+          <source>PLoS Comput Biol</source>
+          <year>2010</year>
+          <volume>6</volume>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1000703</pub-id>
+          <?supplied-pmid 20361041?>
+          <pub-id pub-id-type="pmid">20361041</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altenhoff</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Dessimoz</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Phylogenetic and functional assessment of orthologs inference projects and methods</article-title>
+          <source>PLoS Comput Biol</source>
+          <year>2009</year>
+          <volume>5</volume>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1000262</pub-id>
+          <?supplied-pmid 19148271?>
+          <pub-id pub-id-type="pmid">19148271</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Overbeek</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Fonstein</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;Souza</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pusch</surname>
+              <given-names>GD</given-names>
+            </name>
+            <name>
+              <surname>Maltsev</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>The use of gene clusters to infer functional coupling</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1999</year>
+          <volume>96</volume>
+          <fpage>2896</fpage>
+          <lpage>901</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.96.6.2896</pub-id>
+          <?supplied-pmid 10077608?>
+          <pub-id pub-id-type="pmid">10077608</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wolf</surname>
+              <given-names>YI</given-names>
+            </name>
+            <name>
+              <surname>Koonin</surname>
+              <given-names>EV</given-names>
+            </name>
+          </person-group>
+          <article-title>A tight link between orthologs and bidirectional best hits in bacterial and archaeal genomes</article-title>
+          <source>Genome Biol Evol</source>
+          <year>2012</year>
+          <volume>4</volume>
+          <fpage>1286</fpage>
+          <lpage>94</lpage>
+          <pub-id pub-id-type="doi">10.1093/gbe/evs100</pub-id>
+          <?supplied-pmid 23160176?>
+          <pub-id pub-id-type="pmid">23160176</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dalquen</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Dessimoz</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Bidirectional best hits miss many orthologs in duplication-rich clades such as plants and animals</article-title>
+          <source>Genome Biol Evol</source>
+          <year>2013</year>
+          <volume>5</volume>
+          <fpage>1800</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1093/gbe/evt132</pub-id>
+          <?supplied-pmid 24013106?>
+          <pub-id pub-id-type="pmid">24013106</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Skunca</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Bo&#x161;njak</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kri&#x161;ko</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Panov</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>D&#x17E;eroski</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Smuc</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Phyletic profiling with cliques of orthologs is enhanced by signatures of paralogy relationships</article-title>
+          <source>PLoS Comput Biol</source>
+          <year>2013</year>
+          <volume>9</volume>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1002852</pub-id>
+          <?supplied-pmid 23308060?>
+          <pub-id pub-id-type="pmid">23308060</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yan</surname>
+              <given-names>K-K</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Rozowsky</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gerstein</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>OrthoClust: an orthology-based network framework for clustering data across multiple species</article-title>
+          <source>Genome Biol</source>
+          <year>2014</year>
+          <volume>15</volume>
+          <fpage>R100</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2014-15-8-r100</pub-id>
+          <?supplied-pmid 25249401?>
+          <pub-id pub-id-type="pmid">25249401</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Monaco</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Naithani</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Dharmawardhana</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kumari</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gramene 2013: comparative plant genomics resources</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <issue>Database issue</issue>
+          <fpage>D1193</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkt1110</pub-id>
+          <?supplied-pmid 24217918?>
+          <pub-id pub-id-type="pmid">24217918</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jia</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Aegilops tauschii draft genome sequence reveals a gene repertoire for wheat adaptation</article-title>
+          <source>Nature</source>
+          <year>2013</year>
+          <volume>496</volume>
+          <fpage>91</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature12028</pub-id>
+          <?supplied-pmid 23535592?>
+          <pub-id pub-id-type="pmid">23535592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ling</surname>
+              <given-names>H-Q</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Draft genome of the wheat A-genome progenitor Triticum urartu</article-title>
+          <source>Nature</source>
+          <year>2013</year>
+          <volume>496</volume>
+          <fpage>87</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature11997</pub-id>
+          <?supplied-pmid 23535596?>
+          <pub-id pub-id-type="pmid">23535596</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lynn</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Winsor</surname>
+              <given-names>GL</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Richard</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Laird</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Barsky</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>InnateDB: facilitating systems-level analyses of the mammalian innate immune response</article-title>
+          <source>Mol Syst Biol</source>
+          <year>2008</year>
+          <volume>4</volume>
+          <fpage>218</fpage>
+          <pub-id pub-id-type="doi">10.1038/msb.2008.55</pub-id>
+          <?supplied-pmid 18766178?>
+          <pub-id pub-id-type="pmid">18766178</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <mixed-citation publication-type="other">Niskanen S, &#xD6;sterg&#xE5;rd PRJ. Cliquer User&#x2019;s Guide: Version 1.0. Communications Laboratory, Helsinki University of Technology, Espoo, Finland, Tech. Rep. T48, 2003.</mixed-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Du</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Ling</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Su</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>agriGO: a GO analysis toolkit for the agricultural community</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2010</year>
+          <volume>38</volume>
+          <fpage>W64</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkq310</pub-id>
+          <?supplied-pmid 20435677?>
+          <pub-id pub-id-type="pmid">20435677</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goodstein</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Shu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Howson</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Neupane</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Fazo</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Phytozome: a comparative platform for green plant genomics</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2012</year>
+          <volume>40</volume>
+          <issue>Database issue</issue>
+          <fpage>D1178</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkr944</pub-id>
+          <?supplied-pmid 22110026?>
+          <pub-id pub-id-type="pmid">22110026</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayer</surname>
+              <given-names>KFX</given-names>
+            </name>
+            <name>
+              <surname>Waugh</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>JWS</given-names>
+            </name>
+            <name>
+              <surname>Schulman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Langridge</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Platzer</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A physical, genetic and functional sequence assembly of the barley genome</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>491</volume>
+          <fpage>711</fpage>
+          <lpage>6</lpage>
+          <?supplied-pmid 23075845?>
+          <pub-id pub-id-type="pmid">23075845</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sakai</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Tanaka</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Numa</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kawahara</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Rice Annotation Project Database (RAP-DB): an integrative and interactive database for rice genomics</article-title>
+          <source>Plant Cell Physiol</source>
+          <year>2013</year>
+          <volume>54</volume>
+          <pub-id pub-id-type="doi">10.1093/pcp/pcs183</pub-id>
+          <?supplied-pmid 23299411?>
+          <pub-id pub-id-type="pmid">23299411</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schwacke</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>van der Graaff</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Fischer</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Catoni</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Desimone</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>ARAMEMNON, a novel database for Arabidopsis integral membrane proteins</article-title>
+          <source>Plant Physiol</source>
+          <year>2003</year>
+          <volume>131</volume>
+          <fpage>16</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.011577</pub-id>
+          <?supplied-pmid 12529511?>
+          <pub-id pub-id-type="pmid">12529511</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trivedi</surname>
+              <given-names>DK</given-names>
+            </name>
+            <name>
+              <surname>Yadav</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Vaid</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Tuteja</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome wide analysis of Cyclophilin gene family from rice and Arabidopsis and its comparison with yeast</article-title>
+          <source>Plant Signal Behav</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>1653</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="doi">10.4161/psb.22306</pub-id>
+          <?supplied-pmid 23073011?>
+          <pub-id pub-id-type="pmid">23073011</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Luan</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>The cyclophilin AtCYP71 interacts with CAF-1 and LHP1 and functions in multiple chromatin remodeling processes</article-title>
+          <source>Mol Plant</source>
+          <year>2011</year>
+          <volume>4</volume>
+          <fpage>748</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="doi">10.1093/mp/ssr036</pub-id>
+          <?supplied-pmid 21596687?>
+          <pub-id pub-id-type="pmid">21596687</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Wensley</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Bhave</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification and analysis of genes encoding a novel ER-localised Cyclophilin B in wheat potentially involved in storage protein folding</article-title>
+          <source>Plant Sci</source>
+          <year>2009</year>
+          <volume>176</volume>
+          <fpage>420</fpage>
+          <lpage>432</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.plantsci.2008.12.009</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Keren</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Tal</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>des Francs-Small</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Ara&#xFA;jo</surname>
+              <given-names>WL</given-names>
+            </name>
+            <name>
+              <surname>Shevtsov</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Shaya</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>nMAT1, a nuclear-encoded maturase involved in the trans-splicing of nad1 intron 1, is essential for mitochondrial complex I assembly and function</article-title>
+          <source>Plant J</source>
+          <year>2012</year>
+          <volume>71</volume>
+          <fpage>413</fpage>
+          <lpage>26</lpage>
+          <?supplied-pmid 22429648?>
+          <pub-id pub-id-type="pmid">22429648</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dalby</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Bonen</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Impact of low temperature on splicing of atypical group II introns in wheat mitochondria</article-title>
+          <source>Mitochondrion</source>
+          <year>2013</year>
+          <volume>13</volume>
+          <fpage>647</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.mito.2013.09.001</pub-id>
+          <?supplied-pmid 24056090?>
+          <pub-id pub-id-type="pmid">24056090</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dash</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Mohanty</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Response of seedlings to heat-stress in cultivars of wheat: Growth temperature-dependent differential modulation of photosystem 1 and 2 activity, and foliar antioxidant defense capacity</article-title>
+          <source>J Plant Physiol</source>
+          <year>2002</year>
+          <volume>159</volume>
+          <fpage>49</fpage>
+          <lpage>59</lpage>
+          <pub-id pub-id-type="doi">10.1078/0176-1617-00594</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brestic</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zivcak</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kalaji</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name>
+              <surname>Carpentier</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Allakhverdiev</surname>
+              <given-names>SI</given-names>
+            </name>
+          </person-group>
+          <article-title>Photosystem II thermostability in situ: environmentally induced acclimation and genotype-specific reactions in Triticum aestivum L</article-title>
+          <source>Plant Physiol Biochem</source>
+          <year>2012</year>
+          <volume>57</volume>
+          <fpage>93</fpage>
+          <lpage>105</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.plaphy.2012.05.012</pub-id>
+          <?supplied-pmid 22698752?>
+          <pub-id pub-id-type="pmid">22698752</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zivcak</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Brestic</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Balatova</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Drevenakova</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Olsovska</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kalaji</surname>
+              <given-names>HM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Photosynthetic electron transport and specific photoprotective responses in wheat leaves under drought stress</article-title>
+          <source>Photosynth Res</source>
+          <year>2013</year>
+          <volume>117</volume>
+          <fpage>529</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11120-013-9885-3</pub-id>
+          <?supplied-pmid 23860828?>
+          <pub-id pub-id-type="pmid">23860828</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Niu</surname>
+              <given-names>B-X</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>F-R</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ren</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>L-T</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y-G</given-names>
+            </name>
+          </person-group>
+          <article-title>The ATP-binding cassette transporter OsABCG15 is required for anther development and pollen fertility in rice</article-title>
+          <source>J Integr Plant Biol</source>
+          <year>2013</year>
+          <volume>55</volume>
+          <fpage>710</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="doi">10.1111/jipb.12053</pub-id>
+          <?supplied-pmid 23570336?>
+          <pub-id pub-id-type="pmid">23570336</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>El-Ghazaly</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Jensen</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Studies of the development of wheat (Triticum aestivum) pollen: formation of the pollen aperture</article-title>
+          <source>Can J Botany</source>
+          <year>1986</year>
+          <volume>64</volume>
+          <issue>12</issue>
+          <fpage>3141</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="doi">10.1139/b86-414</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Steward</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kusano</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sano</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Expression of ZmMET1, a gene encoding a DNA methyltransferase from maize, is associated not only with DNA replication in actively proliferating cells, but also with altered DNA methylation status in cold-stressed quiescent cells</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2000</year>
+          <volume>28</volume>
+          <fpage>3250</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/28.17.3250</pub-id>
+          <?supplied-pmid 10954592?>
+          <pub-id pub-id-type="pmid">10954592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Teerawanichpan</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Chandrasekharan</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Narangajavana</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>TC</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterization of two rice DNA methyltransferase genes and RNAi-mediated reactivation of a silenced transgene in rice callus</article-title>
+          <source>Planta</source>
+          <year>2004</year>
+          <volume>218</volume>
+          <fpage>337</fpage>
+          <lpage>49</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00425-003-1112-6</pub-id>
+          <?supplied-pmid 14513380?>
+          <pub-id pub-id-type="pmid">14513380</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dai</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ni</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Dai</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>Q</given-names>
+            </name>
+          </person-group>
+          <article-title>Isolation and expression analysis of genes encoding DNA methyltransferase in wheat (Triticum aestivum L.)</article-title>
+          <source>Biochim Biophys Acta</source>
+          <year>2005</year>
+          <volume>1729</volume>
+          <fpage>118</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.bbaexp.2005.04.001</pub-id>
+          <?supplied-pmid 15946751?>
+          <pub-id pub-id-type="pmid">15946751</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nagy</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Kay</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Chua</surname>
+              <given-names>N-H</given-names>
+            </name>
+          </person-group>
+          <article-title>A circadian clock regulates transcription of the wheat Cab-1 gene</article-title>
+          <source>Genes Dev</source>
+          <year>1988</year>
+          <volume>2</volume>
+          <fpage>376</fpage>
+          <lpage>382</lpage>
+          <pub-id pub-id-type="doi">10.1101/gad.2.4.376</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Fu</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>An</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>She</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Differential Expression of MicroRNAs in Response to Drought Stress in Maize</article-title>
+          <source>J Integr Agric</source>
+          <year>2013</year>
+          <volume>12</volume>
+          <fpage>1414</fpage>
+          <lpage>1422</lpage>
+          <pub-id pub-id-type="doi">10.1016/S2095-3119(13)60311-1</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Niu</surname>
+              <given-names>J-S</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>Z-Q</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>P-D</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>D-J</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular cloning, characterization and mapping of a rhodanese like gene in wheat</article-title>
+          <source>Yi Chuan Xue Bao</source>
+          <year>2002</year>
+          <volume>29</volume>
+          <fpage>266</fpage>
+          <lpage>72</lpage>
+          <?supplied-pmid 12182084?>
+          <pub-id pub-id-type="pmid">12182084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gable</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Garton</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Napier</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Dunn</surname>
+              <given-names>TM</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional characterization of the Arabidopsis thaliana orthologue of Tsc13p, the enoyl reductase of the yeast microsomal fatty acid elongating system</article-title>
+          <source>J Exp Bot</source>
+          <year>2004</year>
+          <volume>55</volume>
+          <fpage>543</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="doi">10.1093/jxb/erh061</pub-id>
+          <?supplied-pmid 14673020?>
+          <pub-id pub-id-type="pmid">14673020</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kosma</surname>
+              <given-names>DK</given-names>
+            </name>
+            <name>
+              <surname>Nemacheck</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Jenks</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>CE</given-names>
+            </name>
+          </person-group>
+          <article-title>Changes in properties of wheat leaf cuticle during interactions with Hessian fly</article-title>
+          <source>Plant J</source>
+          <year>2010</year>
+          <volume>63</volume>
+          <fpage>31</fpage>
+          <lpage>43</lpage>
+          <?supplied-pmid 20409001?>
+          <pub-id pub-id-type="pmid">20409001</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR51">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mukhopadhyay</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Basak</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ghosh</surname>
+              <given-names>TC</given-names>
+            </name>
+          </person-group>
+          <article-title>Differential selective constraints shaping codon usage pattern of housekeeping and tissue-specific homologous genes of rice and arabidopsis</article-title>
+          <source>DNA Res</source>
+          <year>2008</year>
+          <volume>15</volume>
+          <fpage>347</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="doi">10.1093/dnares/dsn023</pub-id>
+          <?supplied-pmid 18827062?>
+          <pub-id pub-id-type="pmid">18827062</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR52">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mutwil</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Klie</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tohge</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Giorgi</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Wilkins</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Campbell</surname>
+              <given-names>MM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>PlaNet: combined sequence and expression comparisons across plant networks derived from seven species</article-title>
+          <source>Plant Cell</source>
+          <year>2011</year>
+          <volume>23</volume>
+          <fpage>895</fpage>
+          <lpage>910</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.111.083667</pub-id>
+          <?supplied-pmid 21441431?>
+          <pub-id pub-id-type="pmid">21441431</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR53">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fuji</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Shimada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takahashi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Tamura</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Koumoto</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Utsumi</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Arabidopsis vacuolar sorting mutants (green fluorescent seed) can be identified efficiently by secretion of vacuole-targeted green fluorescent protein in their seeds</article-title>
+          <source>Plant Cell</source>
+          <year>2007</year>
+          <volume>19</volume>
+          <fpage>597</fpage>
+          <lpage>609</lpage>
+          <pub-id pub-id-type="doi">10.1105/tpc.106.045997</pub-id>
+          <?supplied-pmid 17293568?>
+          <pub-id pub-id-type="pmid">17293568</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR54">
+        <label>54.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ermakova-Gerdes</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Vermaas</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Inactivation of the open reading frame slr0399 in Synechocystis sp. PCC 6803 functionally complements mutations near the Q(A) niche of photosystem II. A possible role of Slr0399 as a chaperone for quinone binding</article-title>
+          <source>J Biol Chem</source>
+          <year>1999</year>
+          <volume>274</volume>
+          <fpage>30540</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1074/jbc.274.43.30540</pub-id>
+          <?supplied-pmid 10521436?>
+          <pub-id pub-id-type="pmid">10521436</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR55">
+        <label>55.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nixon</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Michoux</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Boehm</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Komenda</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Recent advances in understanding the assembly and repair of photosystem II</article-title>
+          <source>Ann Bot</source>
+          <year>2010</year>
+          <volume>106</volume>
+          <fpage>1</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="doi">10.1093/aob/mcq059</pub-id>
+          <?supplied-pmid 20338950?>
+          <pub-id pub-id-type="pmid">20338950</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR56">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>S-W</given-names>
+            </name>
+            <name>
+              <surname>Escobar</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vierling</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Mitchell</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Mount</surname>
+              <given-names>DW</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Arabidopsis UVH6, a homolog of human XPD and yeast RAD3 DNA repair genes, functions in DNA repair and is essential for plant growth</article-title>
+          <source>Plant Physiol</source>
+          <year>2003</year>
+          <volume>132</volume>
+          <fpage>1405</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="doi">10.1104/pp.103.021808</pub-id>
+          <?supplied-pmid 12857822?>
+          <pub-id pub-id-type="pmid">12857822</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR57">
+        <label>57.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Patel</surname>
+              <given-names>RV</given-names>
+            </name>
+            <name>
+              <surname>Nahal</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Breit</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Provart</surname>
+              <given-names>NJ</given-names>
+            </name>
+          </person-group>
+          <article-title>BAR expressolog identification: expression profile similarity ranking of homologous genes in plant species</article-title>
+          <source>Plant J</source>
+          <year>2012</year>
+          <volume>71</volume>
+          <fpage>1038</fpage>
+          <lpage>50</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2012.05055.x</pub-id>
+          <?supplied-pmid 22607031?>
+          <pub-id pub-id-type="pmid">22607031</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR58">
+        <label>58.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmid</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Davison</surname>
+              <given-names>TS</given-names>
+            </name>
+            <name>
+              <surname>Henz</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Pape</surname>
+              <given-names>UJ</given-names>
+            </name>
+            <name>
+              <surname>Demar</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vingron</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A gene expression map of Arabidopsis thaliana development</article-title>
+          <source>Nat Genet</source>
+          <year>2005</year>
+          <volume>37</volume>
+          <fpage>501</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng1543</pub-id>
+          <?supplied-pmid 15806101?>
+          <pub-id pub-id-type="pmid">15806101</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR59">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Sherman</surname>
+              <given-names>BT</given-names>
+            </name>
+            <name>
+              <surname>Lempicki</surname>
+              <given-names>RA</given-names>
+            </name>
+          </person-group>
+          <article-title>Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2009</year>
+          <volume>37</volume>
+          <fpage>1</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkn923</pub-id>
+          <pub-id pub-id-type="pmid">19033363</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR60">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Supek</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Bo&#x161;njak</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>&#x160;kunca</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>&#x160;muc</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>REVIGO summarizes and visualizes long lists of gene ontology terms</article-title>
+          <source>PLoS One</source>
+          <year>2011</year>
+          <volume>6</volume>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0021800</pub-id>
+          <?supplied-pmid 21789182?>
+          <pub-id pub-id-type="pmid">21789182</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR61">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Letunic</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Bork</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Interactive Tree Of Life v2: online annotation and display of phylogenetic trees made easy</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <fpage>W475</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkr201</pub-id>
+          <?supplied-pmid 21470960?>
+          <pub-id pub-id-type="pmid">21470960</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,2587 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <?DTDIdentifier.IdentifierValue -//Springer-Verlag//DTD A++ V2.4//EN?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName A++V2.4.dtd?>
+  <?SourceDTD.Version 2.4?>
+  <?ConverterInfo.XSLTName springer2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2164</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">4364688</article-id>
+      <article-id pub-id-type="publisher-id">1366</article-id>
+      <article-id pub-id-type="doi">10.1186/s12864-015-1366-y</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Prospects and limits of marker imputation in quantitative genetic studies in European elite wheat (<italic>Triticum aestivum</italic> L.)</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>He</surname>
+            <given-names>Sang</given-names>
+          </name>
+          <address>
+            <email>sang@ipk-gatersleben.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Yusheng</given-names>
+          </name>
+          <address>
+            <email>zhao@ipk-gatersleben.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mette</surname>
+            <given-names>M Florian</given-names>
+          </name>
+          <address>
+            <email>mette@ipk-gatersleben.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bothe</surname>
+            <given-names>Reiner</given-names>
+          </name>
+          <address>
+            <email>Reiner.Bothe@kws.com</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ebmeyer</surname>
+            <given-names>Erhard</given-names>
+          </name>
+          <address>
+            <email>ebmeyer@kws-lochow.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sharbel</surname>
+            <given-names>Timothy F</given-names>
+          </name>
+          <address>
+            <email>sharbel@ipk-gatersleben.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Reif</surname>
+            <given-names>Jochen C</given-names>
+          </name>
+          <address>
+            <email>reif@ipk-gatersleben.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jiang</surname>
+            <given-names>Yong</given-names>
+          </name>
+          <address>
+            <email>jiang@ipk-gatersleben.de</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <aff id="Aff1"><label/>Department of Breeding Research, Leibniz Institute of Plant Genetics and Crop Plant Research (IPK) Gatersleben, D-06466 Stadt Seeland, Germany </aff>
+        <aff id="Aff2"><label/>KWS LOCHOW GMBH, D-29296 Bergen, Germany </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>11</day>
+        <month>3</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>11</day>
+        <month>3</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>16</volume>
+      <issue>1</issue>
+      <elocation-id>168</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>5</day>
+          <month>11</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>20</day>
+          <month>2</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; He et al.; licensee BioMed Central. 2015</copyright-statement>
+        <license license-type="open-access">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0">http://creativecommons.org/licenses/by/4.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>The main goal of our study was to investigate the implementation, prospects, and limits of marker imputation for quantitative genetic studies contrasting map-independent and map-dependent algorithms. We used a diversity panel consisting of 372 European elite wheat (<italic>Triticum aestivum</italic> L.) varieties, which had been genotyped with SNP arrays, and performed intensive simulation studies.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Our results clearly showed that imputation accuracy was substantially higher for map-dependent compared to map-independent methods. The accuracy of marker imputation depended strongly on the linkage disequilibrium between the markers in the reference panel and the markers to be imputed. For the decay of linkage disequilibrium present in European wheat, we concluded that around 45,000 markers are needed for low cost, low-density marker profiling. This will facilitate high imputation accuracy, also for rare alleles. Genomic selection and diversity studies profited only marginally from imputing missing values. In contrast, the power of association mapping increased substantially when missing values were imputed.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Imputing missing values is especially of interest for an economic implementation of association mapping in breeding populations.</p>
+        </sec>
+        <sec>
+          <title>Electronic supplementary material</title>
+          <p>The online version of this article (doi:10.1186/s12864-015-1366-y) contains supplementary material, which is available to authorized users.</p>
+        </sec>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Elite wheat</kwd>
+        <kwd>Map-dependent imputation</kwd>
+        <kwd>Map-independent imputation</kwd>
+        <kwd>Intensive simulation</kwd>
+        <kwd>genomic selection</kwd>
+        <kwd>Association mapping</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2015</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="introduction">
+      <title>Background</title>
+      <p>Imputing missing values is crucial for molecular marker data sets generated by methods with inherent high levels of missing data, for example genotyping-by-sequencing (GBS) [<xref ref-type="bibr" rid="CR1">1</xref>]. This also holds for approaches aiming to reduce genotyping expenses by combining high-density marker profiling of a population subsample with medium-density marker profiling for the majority of population members. Accurate imputation is important for maximizing the power of detecting causal polymorphisms underlying complex traits [<xref ref-type="bibr" rid="CR2">2</xref>,<xref ref-type="bibr" rid="CR3">3</xref>].</p>
+      <p>Imputation algorithms can be classified into map-dependent and map-independent algorithms. Map-dependent methods impute missing values utilizing available linkage information [<xref ref-type="bibr" rid="CR2">2</xref>]. In contrast, map-independent algorithms do not use the linear order of markers [<xref ref-type="bibr" rid="CR1">1</xref>,<xref ref-type="bibr" rid="CR4">4</xref>]. The accuracy of missing value imputation is expected to be lower for map-independent algorithms in comparison to map-dependent ones which exploit additional information. The magnitude of such differences in accuracy, however, is not known. Despite their lower expected accuracy, map-independent algorithms are relevant for species for which dense and high-quality genetic or physical maps are absent.</p>
+      <p>Several factors can influence the accuracy of imputing missing values for particular markers [<xref ref-type="bibr" rid="CR5">5</xref>]. Increasing reference population size enhances imputation accuracy [<xref ref-type="bibr" rid="CR6">6</xref>-<xref ref-type="bibr" rid="CR8">8</xref>]. The accuracy of imputation benefits also if genotypic information is available for markers tightly linked to those being imputed [<xref ref-type="bibr" rid="CR5">5</xref>,<xref ref-type="bibr" rid="CR8">8</xref>]. In addition, allele frequency impacts the imputation of missing sites, with lower expected imputation accuracy for rare variants [<xref ref-type="bibr" rid="CR5">5</xref>,<xref ref-type="bibr" rid="CR8">8</xref>]. The interplay between population size, allele frequency, and linkage disequilibrium, however, has not yet been examined in detail despite the potential interactions of these factors.</p>
+      <p>Imputed molecular marker data are often used for population genetic and quantitative genetic studies [<xref ref-type="bibr" rid="CR1">1</xref>,<xref ref-type="bibr" rid="CR3">3</xref>,<xref ref-type="bibr" rid="CR4">4</xref>]. The impact of imputation accuracy on diversity analyses has been investigated by analyzing GBS data from rice, maize, and wheat with a map-independent algorithm [<xref ref-type="bibr" rid="CR4">4</xref>]. The findings revealed that estimating heterozygosity, inbreeding coefficients, and genetic differentiation were substantially biased when missing values were imputed. The effect of imputing missing values in GBS data for the purpose of genomic selection has been examined empirically in maize, wheat, and barley [<xref ref-type="bibr" rid="CR1">1</xref>]. The prediction accuracy of genomic selection increased if missing values were imputed in contrast to a scenario excluding the missing marker data. The power to detect quantitative trait loci (QTL) increased in genome-wide association mapping studies in human and animal populations if missing values were imputed [<xref ref-type="bibr" rid="CR9">9</xref>,<xref ref-type="bibr" rid="CR10">10</xref>]. Analyzing the linkage disequilibrium between true and imputed SNPs in barley additionally supported the idea that QTL detection may be improved by marker imputation in plant populations [<xref ref-type="bibr" rid="CR5">5</xref>]. Nevertheless, in-depth studies determining the impact of imputing missing values on the power of genome-wide association mapping in plants are still lacking.</p>
+      <p>Here, we draw upon published data derived from a diversity panel consisting of 372 European wheat varieties [<xref ref-type="bibr" rid="CR11">11</xref>]. All lines had been genotyped with 9&#xA0;k [<xref ref-type="bibr" rid="CR12">12</xref>] and 90&#xA0;k SNP arrays [<xref ref-type="bibr" rid="CR13">13</xref>], which allowed us to simulate low to high marker density and GBS-like imputation scenarios. The main goal of our study was to investigate the implementation, prospects, and limits of marker data imputation for quantitative genetic studies. In particular, we (1) contrasted the imputation accuracy of one map-independent and three map-dependent algorithms under varying reference population sizes, (2) studied the influence of linkage disequilibrium and minor allele frequency on imputation accuracy, and (3) investigated the effect of imputation on the precision of diversity studies, the accuracy of genomic selection, and on the power of QTL detection in genome-wide association mapping.</p>
+    </sec>
+    <sec id="Sec2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="Sec3">
+        <title>Datasets</title>
+        <p>We used genotypic information based on previously published 90&#xA0;k SNP array data from 372 European wheat varieties [<xref ref-type="bibr" rid="CR14">14</xref>]. In addition, we used information on marker positions of SNPs which were present on a previously published 9&#xA0;k SNP array [<xref ref-type="bibr" rid="CR14">14</xref>]. Two of the included lines did not differ with respect to their 9&#xA0;k SNP array profile. Hence, one of them, variety <italic>Exotic</italic> according to [<xref ref-type="bibr" rid="CR14">14</xref>] was excluded from analysis. After performing quality checks to exclude those markers that were monomorphic and for which genetic map information was unavailable [<xref ref-type="bibr" rid="CR15">15</xref>], 9,926 SNPs remained for the 90&#xA0;k SNP array and 1,573 SNPs remained for the 9&#xA0;k SNP array (from here on referred to as the original 90&#xA0;k SNP and original 9&#xA0;k SNP marker data sets, respectively).</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Imputation scenarios</title>
+        <p>We randomly divided the 371 individual lines into a reference and a test population in order to evaluate the effects of low to high marker density imputation. We assumed that the reference population was fingerprinted with the 90&#xA0;k SNP array and the test population only with the 9&#xA0;k SNP array (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S1). Marker data for the 8,353 SNPs present in the 90&#xA0;k but not in the 9&#xA0;k SNP marker data sets were treated as missing values for lines from the test population, and represented the targets for imputation. We assumed different reference population sizes of 50, 100, 200, and 300 out of 371 lines. The sampling for each reference population size was repeated 10 times in order to reduce random error [<xref ref-type="bibr" rid="CR1">1</xref>,<xref ref-type="bibr" rid="CR8">8</xref>]. Data sets generated in this way are referred to as low to high marker density data in the following.</p>
+        <p>We also implemented imputation on randomly excluded empirical data for mimicking GBS-derived marker data. For each line within the population of 371 lines, the 90&#xA0;k SNP array marker data were randomly masked with the four missing value levels of 72.8%, 61.5%, 38.8%, and 16.1%. These four levels correspond to the missing data rates for the four scales of low to high marker density imputation with 50, 100, 200, and 300 out of 371 lines in the reference population (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S1). The resulting randomly depleted data sets are here forth referred to as GBS-like marker data.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Imputation approaches</title>
+        <p>We used three map-dependent imputation algorithms which have been widely used in animal and plant genetics (Beagle v3.3.2 [<xref ref-type="bibr" rid="CR16">16</xref>], FImpute v2.2 [<xref ref-type="bibr" rid="CR17">17</xref>], and IMPUTE2 v2.3.0 [<xref ref-type="bibr" rid="CR18">18</xref>]). In addition, we applied one map-independent algorithm (Random Forest regression). Random Forest regression had performed best among 5 map-independent methods according to a recent study [<xref ref-type="bibr" rid="CR1">1</xref>].</p>
+        <p>The Beagle algorithm [<xref ref-type="bibr" rid="CR16">16</xref>] exploits hidden Markov models (HMM) to infer haplotypes of individual lines and to impute missing values. First, data completion is initialized by imputing the missing values based upon allele frequencies with random phasing of the haplotypes of the individual lines. The initial data set is then used to build localized haplotype-cluster models, which represent a special class of HMM. Each model proceeds along a chromosome and has the same number of levels as the number of markers. At each level, the hidden states are the clusters of haplotypes [<xref ref-type="bibr" rid="CR19">19</xref>]. The emitted symbols are the alleles. A forward-backward algorithm [<xref ref-type="bibr" rid="CR20">20</xref>] is applied to estimate the probabilities of each possible haplotype based on the genotype information. Then, new haplotypes for the individuals are sampled according to the conditional probabilities as input for the next iteration. The procedure is repeated until the final iteration, where the Viterbi algorithm [<xref ref-type="bibr" rid="CR20">20</xref>] is applied to infer the most-likely haplotypes for all individuals. Thus, the missing data points are imputed simultaneously in this step.</p>
+        <p>The FImpute population-based algorithm [<xref ref-type="bibr" rid="CR17">17</xref>] is based on a haplotype-matching process which assumes that all individuals in the population are related. Sliding windows are used to search for consistent haplotype segments assuming that each imputed individual has a recent common ancestor within the reference population. The initial window size is large and moves along each chromosome in steps with a certain overlap. Then, the window size is steadily reduced as the procedure is repeated. Finally, the most likely haplotype is determined for each individual line based on the frequency of haplotypes in the reference population. Moreover, the number of hits from the window analysis is computed and the missing data points are imputed.</p>
+        <p>The IMPUTE2 algorithm [<xref ref-type="bibr" rid="CR18">18</xref>] is an enhanced version of the IMPUTE1 algorithm [<xref ref-type="bibr" rid="CR21">21</xref>] and is based on HMM and Markov chain Monte Carlo (MCMC) iterations. It differs from Beagle mainly in two points. First, it separates the procedures of inferring haplotypes and imputing missing genotypes. Second, it divides the data into (1) markers with information present in both the reference and the test set (the T part), and (2) markers with information present only in the reference set (&#x201C;untyped&#x201D;, the U part). Beagle in contrast builds a joint model for all individual lines at all loci. The algorithm IMPUTE2 starts by guessing the haplotypes in the T part and then performs a number of MCMC iterations. The first step in each iteration involves the loci of the T part. For each individual line, new haplotype pairs are sampled based on the probability derived from the genotype and the currently estimated haplotypes of all other individual lines, in addition to a scale parameter. In the second step, missing alleles in the U part are then imputed based on the probability derived from the results of the calculation in the first step.</p>
+        <p>The Random Forest algorithm is an advanced machine learning approach [<xref ref-type="bibr" rid="CR22">22</xref>,<xref ref-type="bibr" rid="CR23">23</xref>]. Molecular markers are first sorted from the lowest to highest missing data levels. Then, the missing values are initialized through a simple imputation method (e.g. sampling based on allele frequencies) and the Random Forest regression model is fitted and iterated. For each marker vector y containing missing values, 100 regression trees are grown using the non-missing values <italic>via</italic> bootstrapping. At each node in each tree, a random sample of <inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ \sqrt{n-1} $$\end{document}</tex-math><mml:math id="M2"><mml:msqrt><mml:mrow><mml:mi>n</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msqrt></mml:math><inline-graphic xlink:href="12864_2015_1366_Article_IEq1.gif"/></alternatives></inline-formula> predictors, that is, other markers at the same row of the missing part of y, is used as splitting variables, where <italic>n</italic> refers to the number of markers. The terminal node of each tree gives a prediction of the missing part of y. Then, the means of predictions obtained in all regression trees are taken as the imputed values. The above steps are repeated until convergence or 10 times at maximum.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Imputation accuracy</title>
+        <p>We used the correlation (cor) between true and imputed marker profiles as the parameter to estimate imputation accuracy. This metric is recommended because it efficiently measures the imputation accuracy for rare variation [<xref ref-type="bibr" rid="CR8">8</xref>] and is related to the power of detection of genome-wide association scans [<xref ref-type="bibr" rid="CR24">24</xref>]. Missing data points in the original data set, which are not caused by masking, were excluded from the evaluation.</p>
+      </sec>
+      <sec id="Sec7">
+        <title>Factors affecting the imputation accuracy</title>
+        <p>We used the r<sup>2</sup> statistic [<xref ref-type="bibr" rid="CR25">25</xref>] as a measure of linkage disequilibrium (LD) and examined the association between imputation accuracy and maximum LD between the imputed and observed markers. The values of r<sup>2</sup> were estimated as r<sup>2</sup>&#x2009;=&#x2009;(p(AB)&#x2009;&#x2212;&#x2009;p(A)p(B))/(p(A)p(a)p(B)p(b)), where p(AB) is the frequency of haplotype AB and p(A),&#xA0;p(a),&#x2009;p(B),&#x2009;p(b) is the allele frequencies of two bi-allele loci. Furthermore, we studied the association between minor allele frequency (MAF) and imputation accuracy.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>Effect of imputation on the estimation of Rogers&#x2019; distance</title>
+        <p>We studied the effects of imputation on estimating Rogers&#x2019; distances among pairs of genotypes (RD, [<xref ref-type="bibr" rid="CR26">26</xref>,<xref ref-type="bibr" rid="CR27">27</xref>]). RD was used as genetic distance measure because it is linearly related to the coefficient of co-ancestry for homozygous lines [<xref ref-type="bibr" rid="CR28">28</xref>,<xref ref-type="bibr" rid="CR29">29</xref>] and was estimated as<disp-formula id="Equa"><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ RD=\frac{1}{m}{\displaystyle \sum_{i=1}^m}\sqrt{\frac{1}{2}{\displaystyle \sum_{j=1}^{n_i}}{\left({p}_{ij}-{q}_{ij}\right)}^2}, $$\end{document}</tex-math><mml:math id="M4"><mml:mi>R</mml:mi><mml:mi>D</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>m</mml:mi></mml:mfrac><mml:mstyle displaystyle="true"><mml:munderover><mml:mo stretchy="true">&#x2211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>m</mml:mi></mml:munderover></mml:mstyle><mml:msqrt><mml:mrow><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac><mml:mstyle displaystyle="true"><mml:munderover><mml:mo stretchy="true">&#x2211;</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:msub><mml:mi>n</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:munderover></mml:mstyle><mml:msup><mml:mfenced close=")" open="("><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>q</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mfenced><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:msqrt><mml:mtext>,</mml:mtext></mml:math><graphic xlink:href="12864_2015_1366_Article_Equa.gif" position="anchor"/></alternatives></disp-formula>where <italic>p</italic><sub><italic>ij</italic></sub> and <italic>q</italic><sub><italic>ij</italic></sub> are allele frequencies of the <italic>j</italic> th allele at the <italic>i</italic> th locus in the two individuals under consideration, <italic>n</italic><sub><italic>i</italic></sub> is the number of alleles at the <italic>i</italic> th locus, and <italic>m</italic> refers to the number of loci. For the low to high marker density imputation scenario, we first calculated the correlation between the RD matrices estimated by the original 90&#xA0;k and original 9&#xA0;k SNP marker data as a benchmark. We then estimated the correlations between RD matrices based on different imputed low to high density marker data sets and the original 90&#xA0;k SNP marker data. Here, the comparison was exclusively based on imputed markers in data for the lines from the test population in order to focus solely on the accuracy of imputed marker values. Significance of the correlations between RD matrices was tested according to a Mantel test [<xref ref-type="bibr" rid="CR30">30</xref>].</p>
+        <p>Since there exist no markers without missing values in the GBS-like marker data sets generated by random depletion, we instead first estimated RD matrices among pairs of genotypes based on the genotypic profiles by omitting for each pair of lines markers with missing values. We then calculated the correlation between non-imputed RD matrices and the RD matrices estimated using the original 90&#xA0;k SNP marker data. We subsequently estimated the correlations between RD matrices based on different imputed GBS-like marker data sets and the original 90&#xA0;k SNP marker data. Here, the comparison was based on individual lines from the total population comprising 371 genotypes.</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Effect of imputation on genomic selection</title>
+        <p>We performed simulations to study the effect of imputation on the prediction accuracy of genomic selection. Heritability was assumed to be 0.91. Every marker was set to contribute equally (i.e., <inline-formula id="IEq2"><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ \frac{1}{9926} $$\end{document}</tex-math><mml:math id="M6"><mml:mfrac><mml:mn>1</mml:mn><mml:mn>9926</mml:mn></mml:mfrac></mml:math><inline-graphic xlink:href="12864_2015_1366_Article_IEq2.gif"/></alternatives></inline-formula>) to the total genetic variance in order to mimic a genetic architecture typical for complex traits such as grain yield. To investigate the effects of imputation accuracy on genomic selection, we calculated accuracies of prediction using imputed low to high marker density data sets derived from the four different imputation algorithms, four different reference population scales, and ten technical replications. For low to high marker density imputation, the results were then compared with the accuracies of prediction by ridge regression best linear unbiased prediction (RR-BLUP) [<xref ref-type="bibr" rid="CR31">31</xref>] using the original 9&#xA0;k and original 90&#xA0;k SNP data sets. For the GBS-like scenario, we estimated the genomic relatedness matrix of the total population based on the randomly depleted 90&#xA0;k SNP data sets without imputation, and then used the genomic best linear unbiased prediction (GBLUP) model to predict genotypic values as outlined in detail elsewhere [<xref ref-type="bibr" rid="CR32">32</xref>]. The accuracies of prediction of GBLUP were compared to those calculated based on the different imputed marker data panels. It is important to note that GBLUP and RR-BLUP are equivalent [<xref ref-type="bibr" rid="CR33">33</xref>] but GBLUP facilitates a more proper handling of missing data for the GBS-like scenario.</p>
+      </sec>
+      <sec id="Sec10">
+        <title>Effect of imputation on genome-wide association scans</title>
+        <p>We further performed a simulation study to investigate the effect of imputation on genome-wide association mapping. Heritability was set again to 0.91. Simulation was performed assuming one QTL explaining 10% of the genetic variance for which a perfect marker was available in the 90&#xA0;k, but not in the 9&#xA0;k SNP array. The remaining 9,925 markers were assumed to contribute equally (i.e., <inline-formula id="IEq3"><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ \frac{1}{9925} $$\end{document}</tex-math><mml:math id="M8"><mml:mfrac><mml:mn>1</mml:mn><mml:mn>9925</mml:mn></mml:mfrac></mml:math><inline-graphic xlink:href="12864_2015_1366_Article_IEq3.gif"/></alternatives></inline-formula>) to the remaining genetic variance. The MAF of the QTL was chosen to be larger than 0.3.</p>
+        <p>For low to high marker density imputation, we selected SNPs with different levels of LD (around 0.1, 0.5 and 0.9) between the QTL and the most closely linked markers in the 9&#xA0;k SNP data set. We compared the detection frequencies of QTLs in the following 3 scenarios: (1) in the total population fingerprinted with the original 90&#xA0;k SNP marker data, (2) in the reference population fingerprinted with the original 90&#xA0;k SNP array, and (3) in the total panel of 371 lines for which non-available 90&#xA0;k SNP marker data had been imputed. In addition, the detection frequencies of the most closely linked SNP markers present in the 9&#xA0;k data set from the total population was included in the comparison.</p>
+        <p>For the GBS-like imputation scenario, also three levels of LD were considered. Here, LD was measured between the QTL and the most closely linked markers in the original 90&#xA0;k SNP data set. We compared the detection frequencies of the QTL in the following 3 scenarios: (1) in the total population fingerprinted with the original 90&#xA0;k SNP marker data set, (2) in the assumed available genotypic profiles of the total population of 371 lines irrespective of imputation, and (3) in the total panel for which non-available 90&#xA0;k SNP array data had been imputed by three imputation approaches.</p>
+        <p>Genome-wide association mapping was performed based on a linear mixed model approach [<xref ref-type="bibr" rid="CR34">34</xref>]. The model can be described as <italic>y</italic>&#x2009;=&#x2009;<italic>&#x3BC;</italic>&#x2009;+&#x2009;<italic>&#x3B1;m</italic>&#x2009;+&#x2009;<italic>Xg</italic>&#x2009;+&#x2009;<italic>e</italic>, where <italic>y</italic> is the vector of simulated trait values for each genotype, <italic>&#x3BC;</italic> is the vector of common intercept terms, <italic>m</italic> is the effect of the marker being tested, <italic>&#x3B1;</italic> denotes the vector of scores of the marker, <italic>g</italic> is the vector of genotype effects with the corresponding design matrix <italic>X</italic> and <italic>e</italic> is a residual term. The marker effect was assumed to be fixed, while all other effects were assumed to be random. Correction for population stratification was done by assuming <inline-formula id="IEq4"><alternatives><tex-math id="M9">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ g \sim N\left(0,2K{\sigma}_G^2\right) $$\end{document}</tex-math><mml:math id="M10"><mml:mi>g</mml:mi><mml:mspace width="0.25em"/><mml:mo>~</mml:mo><mml:mspace width="0.25em"/><mml:mi>N</mml:mi><mml:mfenced close=")" open="("><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mn>2</mml:mn><mml:mi>K</mml:mi><mml:msubsup><mml:mi>&#x3C3;</mml:mi><mml:mi>G</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mfenced></mml:math><inline-graphic xlink:href="12864_2015_1366_Article_IEq4.gif"/></alternatives></inline-formula>, where <italic>K</italic> is a kinship matrix estimated as 1 minus the RD and <italic>&#x3C3;</italic><sub><italic>G</italic></sub><sup>2</sup> is the genotypic variance estimated by a maximum likelihood (REML) approach. Significance of marker-trait associations was tested based on the Wald-F statistic.</p>
+      </sec>
+    </sec>
+    <sec id="Sec11" sec-type="results">
+      <title>Results</title>
+      <sec id="Sec12">
+        <title>Accuracy of imputing missing values with map-dependent and independent algorithms</title>
+        <p>The accuracy of imputing missing values was quantified for different algorithms by estimating the correlation between the original high density 90&#xA0;k SNP marker profiles and the imputed marker profiles (Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Figure S1). In this scenario, the markers for which missing values were imputed were the ones included in the 90&#xA0;k SNP but not in the 9&#xA0;k SNP array. The map-dependent methods Beagle, FImpute, and IMPUTE2 led to higher imputation accuracies than the map-independent method Random Forest (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). Imputation accuracy benefited from increasing the size of the reference population. Nevertheless, even for the smallest reference population size of 50 out of 371, the average correlation between true and imputed marker profiles amounted up to 0.74 for IMPUTE2.<table-wrap id="Tab1"><label>Table 1</label><caption><p><bold>Accuracies of imputing measured as average correlations (cor) between observed and estimated marker genotypes</bold></p></caption><table frame="hsides" rules="groups"><thead><tr valign="top"><th rowspan="2"><bold>Algorithm</bold></th><th><bold>Ref 50*</bold></th><th><bold>Ref 100*</bold></th><th><bold>Ref 200*</bold></th><th><bold>Ref 300*</bold></th></tr><tr valign="top"><th><bold>cor</bold></th><th><bold>cor</bold></th><th><bold>cor</bold></th><th><bold>cor</bold></th></tr></thead><tbody><tr valign="top"><td colspan="5">Low to high marker density</td></tr><tr valign="top"><td>Beagle</td><td>0.61</td><td>0.70</td><td>0.75</td><td>0.78</td></tr><tr valign="top"><td>FImpute</td><td>0.68</td><td>0.73</td><td>0.77</td><td>0.80</td></tr><tr valign="top"><td>IMPUTE2</td><td>0.74</td><td>0.77</td><td>0.81</td><td>0.84</td></tr><tr valign="top"><td>Random Forest</td><td>0.56</td><td>0.61</td><td>0.66</td><td>0.69</td></tr><tr valign="top"><td colspan="5">Genotyping-by-sequencing-like</td></tr><tr valign="top"><td>Beagle</td><td>0.76</td><td>0.85</td><td>0.92</td><td>0.95</td></tr><tr valign="top"><td>FImpute</td><td>0.59</td><td>0.79</td><td>0.91</td><td>0.95</td></tr><tr valign="top"><td>IMPUTE2</td><td>0.68</td><td>0.82</td><td>0.91</td><td>0.95</td></tr><tr valign="top"><td>Random Forest</td><td>0.54</td><td>0.64</td><td>0.75</td><td>0.83</td></tr></tbody></table><table-wrap-foot><p>Map- dependent (Beagle, FImpute, and IMPUTE2) and map-independent (Random Forest) algorithms were applied with reference population sizes of 50, 100, 200, and 300 lines out of 371, and imputing was performed for a low to high marker density and for a GBS-like data scenario.</p><p>*For GBS-like imputation scenarios, Ref 50, Ref 100, Ref 200, and Ref 300 refer to missing value rates 72.8%; 61.5%; 38.8%; 16.1% for all lines of the population, corresponding to scenarios with reference population sizes of 50, 100, 200, and 300, of the total of 371 lines.</p></table-wrap-foot></table-wrap></p>
+        <p>We contrasted the above scenario with a scenario mimicking imputation of missing values for genotyping by sequencing (GBS)-like data sets (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). Estimated values of correlations between true and imputed marker profiles for GBS-like data were consistently higher than for imputing from low to high density marker profiles. The only exceptions were results obtained with the algorithms FImpute, IMPUTE2 and Random Forest for the smallest reference population size of 50 out of 371. Interestingly, the accuracy of imputing missing values benefited from an increase in the reference population size more for the GBS-like than the low to high imputation scenario (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). Furthermore, we observed different rankings among algorithms comparing the two imputation scenarios.</p>
+      </sec>
+      <sec id="Sec13">
+        <title>Imputation accuracy is influenced by linkage disequilibrium and minor allele frequency</title>
+        <p>Average LD among adjacent loci in the total population amounted to 0.52 with a standard deviation of 0.39 (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figure S2). We analyzed the influence of LD and MAF on imputation accuracy with varying reference population sizes. Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref> summarizes the results for a reference population size of 50 out of 371 individuals for the low to high density scenario. Similar trends were observed for all other reference population sizes independent from the applied imputation scenario (data not shown).<fig id="Fig1"><label>Figure 1</label><caption><p><bold>Linkage disequilibrium influences the accuracy of imputing missing values.</bold> The relationship between linkage disequilibrium (as measured by r<sup>2</sup> between 90&#xA0;k SNPs and the respective most closely linked 9&#xA0;k SNPs) and the average correlation between observed and imputed genotypic data, as calculated using map-dependent (Beagle, FImpute, and IMPUTE2) and map-independent (Random Forest) imputation algorithms, for a reference population size of 50 out of 371 lines. Trends are shown as boxplot displays separately for three minor allele frequency (MAF) classes.</p></caption><graphic xlink:href="12864_2015_1366_Fig1_HTML" id="MO1"/></fig></p>
+        <p>The impact of LD on the accuracy of imputing missing values was examined separately for three different MAF classes (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). We focused on LD between SNPs from the 90&#xA0;k marker data set and those from the 9&#xA0;k marker data set that were most closely linked to them. The average MAF in the total population amounted to 0.13 with a standard deviation of 0.14. The imputation accuracy improved non-linearly with increasing LD between the 90&#xA0;k array SNPs and most closely linked 9&#xA0;k array SNP for all four applied imputation algorithms irrespective of the MAF class. The coefficient of variation for accuracy of imputing missing values decreased substantially with increasing LD for all map-dependent methods. This trend was less pronounced for the map-independent method Random Forest.</p>
+        <p>We further studied the influence of the MAF on the correlation between true and imputed marker profiles separately for four classes of LD (Additional file <xref rid="MOESM3" ref-type="media">3</xref>: Figure S3). Despite higher average correlations between true and imputed marker profiles for higher LD classes, we observed that the accuracy of imputing missing values increased with increasing frequencies of the minor allele irrespectively of the extent of LD. This trend was, however, by far less pronounced than the influence of LD on the accuracy of imputing missing values.</p>
+      </sec>
+      <sec id="Sec14">
+        <title>Effect of imputation accuracy on estimated landscape of relatedness</title>
+        <p>For the low to high density marker imputation scenario, we used the correlation of all pairwise Rogers&#x2019; distances (RD) based on the original 9&#xA0;k in comparison to the original 90&#xA0;k SNP array as benchmark. The correlation amounted to 0.95 (Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref>). This value was not reached by imputing missing values with the map-independent algorithm Random Forest. In contrast, the correlation of RD estimated based on imputed and observed marker data was 0.96 for the map-dependent algorithm IMPUTE2 even for the smallest reference population size 50 out of 371 (Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref>).<table-wrap id="Tab2"><label>Table 2</label><caption><p><bold>Correlations between Rogers&#x2019; distance matrices of the individual lines of the test population</bold></p></caption><table frame="hsides" rules="groups"><thead><tr valign="top"><th rowspan="2"><bold>Data set</bold></th><th><bold>Ref 50</bold></th><th><bold>Ref 100</bold></th><th><bold>Ref 200</bold></th><th><bold>Ref 300</bold></th></tr><tr valign="top"><th><bold>cor</bold></th><th><bold>cor</bold></th><th><bold>cor</bold></th><th><bold>cor</bold></th></tr></thead><tbody><tr valign="top"><td>9&#xA0;k panel</td><td>0.95</td><td>0.95</td><td>0.95</td><td>0.95</td></tr><tr valign="top"><td>Beagle</td><td>0.83</td><td>0.92</td><td>0.95</td><td>0.96</td></tr><tr valign="top"><td>FImpute</td><td>0.95</td><td>0.96</td><td>0.97</td><td>0.97</td></tr><tr valign="top"><td>IMPUTE2</td><td>0.96</td><td>0.97</td><td>0.98</td><td>0.98</td></tr><tr valign="top"><td>Random Forest</td><td>0.61</td><td>0.61</td><td>0.61</td><td>0.66</td></tr></tbody></table><table-wrap-foot><p>Estimates are based solely on imputed parts of data sets (90&#xA0;k SNP minus 9&#xA0;k SNP data) and the original 90&#xA0;k SNP data set, as well as the correlation between Rogers&#x2019; distance matrices of the original 9&#xA0;k and original 90&#xA0;k SNP data sets. Different imputed low to high marker density data sets were generated by map- dependent (Beagle, FImpute, and IMPUTE2) and map-independent (Random Forest) imputation algorithms for reference populations of 50, 100, 200, and 300 out of 371 lines. All correlations were significantly larger than zero (P&#x2009;&lt;&#x2009;0.01) according to a Mantel test.</p></table-wrap-foot></table-wrap></p>
+        <p>For the GBS-like imputation scenario, the correlation between RD matrices between randomly depleted 90&#xA0;k SNP marker data without imputation and the original 90&#xA0;k SNP data set was regarded as benchmark. For imputation with the map-independent method Random Forest, the benchmark was not reached with missing data rates of 72.8% or 61.5% (Additional file <xref rid="MOESM4" ref-type="media">4</xref>: Table S1). In contrast, with imputation by either of the three map-dependent methods Beagle, FImpute, and IMPUTE2, the correlation between RD estimates based on imputed and original 90 SNP data was higher than the respective benchmark for all missing data levels.</p>
+      </sec>
+      <sec id="Sec15">
+        <title>Effect of imputation on the accuracy of prediction of genomic selection</title>
+        <p>To examine the impact of imputing missing marker data on the accuracy of prediction of genomic selection, we simulated a scenario for a complex trait. We used the accuracy of prediction realized with the original 9&#xA0;k and the original 90&#xA0;k SNP data sets as points of reference for the low to high density marker scenario. The accuracy of prediction for the total population increased by only 7% (0.73 to 0.78) when using the full 90&#xA0;k instead of the 9&#xA0;k SNP marker profiles (Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>). The accuracy of prediction of genomic selection based on the original 9&#xA0;k SNP marker data was outperformed by imputing missing values with the map-independent algorithm Random Forest only when a reference population size of 300 out of 371 individual lines was used. In contrast, the accuracy of prediction of genomic selection based on the data sets imputed with the map-dependent algorithm IMPUTE2 outperformed the accuracy of prediction of genomic selection based on the original 9&#xA0;k SNP marker data even with a small reference population size of 50 out of 371 individual lines.<fig id="Fig2"><label>Figure 2</label><caption><p><bold>Imputing from low to high density has a limited effect on the accuracy of genomic selection.</bold> Correlation between results of genomic selection based on true and predicted genotypic values applying genomic selection for the original 90&#xA0;k (Total-90&#xA0;k) and 9&#xA0;k SNP data sets (Total-9&#xA0;k) for the total 371 lines, as well as for imputing low to high density marker data applying map-dependent (Beagle, FImpute, and IMPUTE2) and map-independent (Random Forest) imputation algorithms, for reference population sizes 50, 100, 200, and 300 out of 371 lines.</p></caption><graphic xlink:href="12864_2015_1366_Fig2_HTML" id="MO2"/></fig></p>
+        <p>As a benchmark to evaluate the accuracy of genomic selection based on imputed GBS-like data sets, we used the accuracy of prediction realized with a GBLUP approach based on a kinship matrix estimated with original 90&#xA0;k SNP marker data or the non-imputed marker data. The accuracy of the GBLUP approach based on the original 90&#xA0;k SNP marker data amounted to 0.78 (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). Prediction accuracies of GBS-like data sets profited slightly when missing marker data were imputed (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>). Applying map-dependent as well as map-independent algorithms led to higher accuracies of prediction as compared to the GBLUP across all examined scenarios with missing data rates of 72.8%, 61.5%, 38.8% and 16.1%.<fig id="Fig3"><label>Figure 3</label><caption><p><bold>Imputing improves accuracy of prediction of genomic selection based on GBS-like data sets.</bold> Correlation between true and predicted genotypic values applying genomic selection for the original 90&#xA0;k SNP data set (GBLUP, 0%), as well as for genotype-by-sequencing-like data sets where missing values were not imputed (GBLUP) or were imputed with map-dependent (Beagle, FImpute and IMPUTE2) and map-independent (Random Forest) algorithms for rates of missing values of 72.8%, 61.5%, 38.8% and 16.1% in the total population of 371 lines.</p></caption><graphic xlink:href="12864_2015_1366_Fig3_HTML" id="MO3"/></fig></p>
+      </sec>
+      <sec id="Sec16">
+        <title>Effect of imputation accuracy on power of association mapping</title>
+        <p>Finally, we approached the impact of missing data imputation on the power of association mapping in a simulation study. We assumed the presence of a QTL with a marker allele frequency above 0.3 which explained 10% of the genotypic variation. Such a QTL could be detected in more than 80% of the performed association mapping runs based on the original 90&#xA0;k SNP marker data for the whole population. Replacing the original 90&#xA0;k SNP marker data by imputed data starting from 9&#xA0;k SNP marker profiles led to reduced QTL detection power for almost all tested reference population sizes and LD values (Figure&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>). Nevertheless, imputation using the map-dependent methods increased the power of association mapping in comparison to QTL detection based on non-imputed marker profiles. This increase was more pronounced if a SNP with high LD to the QTL was covered within the 9&#xA0;k SNP marker data. In comparison, imputation using the map-independent Random Forest method increased the power of QTL detection only slightly, except that a marker within the 9&#xA0;k SNP data set was tightly linked to the QTL. Similar trends as for the low to high marker density imputation scenario were observed for the GBS-like scenario (Additional file <xref rid="MOESM5" ref-type="media">5</xref>: Figure S4).<fig id="Fig4"><label>Figure 4</label><caption><p><bold>Imputing from low to high marker density increases the power of association mapping.</bold> Detection frequency of a major QTL explaining 10% of the genotypic variance in the total population based on the 90&#xA0;k SNP data set (Total-90&#xA0;k) and the SNP present in the 9&#xA0;k data set most closely linked to the SNP in the 90&#xA0;k data set (Total-9&#xA0;k). Detection frequency of a major QTL in the reference population with sizes from 50 to 300 individuals fingerprinted with the 90&#xA0;k SNP array (Reference-90&#xA0;k). Detection frequency of major QTL with varying degrees of linkage disequilibrium (r<sup>2</sup>) between the QTL and closest linked 9&#xA0;k SNP marker estimated in the total panel for which depleted 90&#xA0;k SNP array data have been imputed for the test population with map- dependent (Beagle, FImpute, and IMPUTE2) and map-independent (Random Forest) algorithms for the reference population sizes of 50, 100, 200, and 300 out of 371 lines.</p></caption><graphic xlink:href="12864_2015_1366_Fig4_HTML" id="MO4"/></fig></p>
+      </sec>
+    </sec>
+    <sec id="Sec17" sec-type="discussion">
+      <title>Discussion</title>
+      <p>In crop improvement programs, molecular markers are employed for (1) studying the relationship among lines [<xref ref-type="bibr" rid="CR35">35</xref>], (2) QTL mapping in breeding populations [<xref ref-type="bibr" rid="CR36">36</xref>], (3) marker-assisted foreground- and background selection [<xref ref-type="bibr" rid="CR37">37</xref>], and (4) genomic selection [<xref ref-type="bibr" rid="CR38">38</xref>,<xref ref-type="bibr" rid="CR39">39</xref>]. In this context, the profitability of applying molecular markers strongly depends on the marker density required to achieve the intended purpose and the costs of fingerprinting at this marker density per genotype [<xref ref-type="bibr" rid="CR40">40</xref>]. One possible strategy to reduce the total costs of such studies encompasses fingerprinting of only a core panel of lines to full depth with a dense marker platform coupled with genotyping of the entire breeding population with less dense and low-cost marker techniques (Figure&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>). Low and high density fingerprints are then combined in a second step using imputation algorithms to generate marker data sets for further analysis [<xref ref-type="bibr" rid="CR2">2</xref>]. The main goal of our study was to investigate the implementation, prospects, and limits of marker imputation for quantitative genetic studies using experimental data collected from a representative sample of European wheat lines [<xref ref-type="bibr" rid="CR14">14</xref>].<fig id="Fig5"><label>Figure 5</label><caption><p><bold>Strategy for molecular breeding of wheat.</bold> We suggest combining high-density genotyping of a core set of wheat lines with low density and low cost fingerprinting of the entire breeding population followed by imputing of missing marker data for the subsequent quantitative genetic analyses.</p></caption><graphic xlink:href="12864_2015_1366_Fig5_HTML" id="MO5"/></fig></p>
+      <sec id="Sec18">
+        <title>Imputation accuracy benefits from high-quality physical and genetic maps in wheat</title>
+        <p>Comparing the performance of different imputation approaches, we observed substantially higher correlations between true and estimated marker profiles for map-dependent than for map-independent imputation methods (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). This can be explained by the use of haplotype information in the map-dependent approaches [<xref ref-type="bibr" rid="CR2">2</xref>]. Our findings thus clearly stress the importance of the availability of high-quality physical (Beagle algorithm) and genetic maps (IMPUTE2 and FImpute algorithms) for crops in order to implement imputation (Figure&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>) in plant breeding. In this light, an ordered draft sequence of the hexaploid bread wheat genome has recently been released [<xref ref-type="bibr" rid="CR41">41</xref>]. Moreover, considerable effort has been devoted to develop dense consensus maps for wheat [<xref ref-type="bibr" rid="CR12">12</xref>,<xref ref-type="bibr" rid="CR13">13</xref>]. Relevant physical and genetic map information is thus becoming available in order to support molecular wheat breeding strategies involving imputation. Hence, we focus our discussion on the results generated for map-dependent methods. For minor crops without detailed map information, map-independent imputation might still seem an option. However, its clear limitations require careful consideration. For instance, the genetic relatedness among genotypes will be biased when diversity is calculated based on genomic data compiled by map-independent imputation (Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref>, Additional file <xref rid="MOESM4" ref-type="media">4</xref>: Table S1, [<xref ref-type="bibr" rid="CR4">4</xref>]).</p>
+      </sec>
+      <sec id="Sec19">
+        <title>Implementation of imputation strategy in wheat</title>
+        <p>In accordance with previous findings [<xref ref-type="bibr" rid="CR5">5</xref>,<xref ref-type="bibr" rid="CR8">8</xref>], we observed that imputation accuracy strongly depended on LD between the markers in the reference panel and the markers to be imputed (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). In contrast, allele frequency impacted imputation accuracy only marginally if the low density panel contained markers that exhibited at least moderate levels of LD (r<sup>2</sup>&#x2009;&gt;&#x2009;0.5) with the imputed markers in the high density panel (Additional file <xref rid="MOESM3" ref-type="media">3</xref>: Figure S3). Average r<sup>2</sup> values of markers with distances of up to 0.5&#xA0;cM amounted to only 0.32 with a 25% quantile of 0.005 in our panel of European wheat lines (Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Figure S2). This fast LD decay in our European elite wheat panel is surprising as LD is expected to decrease substantially slower in wheat as a selfing species [<xref ref-type="bibr" rid="CR42">42</xref>-<xref ref-type="bibr" rid="CR45">45</xref>] in comparison to an outcrossing crop such as maize [<xref ref-type="bibr" rid="CR46">46</xref>-<xref ref-type="bibr" rid="CR48">48</xref>]. Taking the decay of LD and the length of the genetic map of wheat of around 4,500&#xA0;cM into account [<xref ref-type="bibr" rid="CR12">12</xref>], and focusing on the gene space only, one can estimate how many markers will be needed to be determined at minimum. For a scenario involving rare alleles, approximately 45,000 markers would be required in order to facilitate high imputation accuracy.</p>
+        <p>A previous study combining experimental data of a cattle population with computer simulations [<xref ref-type="bibr" rid="CR49">49</xref>] suggested that an optimal composition of the reference population could increase imputation accuracy. We examined this issue in our study by inspecting the association between the diversity of the reference population measured as the average RD and the imputation accuracy. For all sizes of the reference population, we observed moderate correlations with an average value of r&#x2009;=&#x2009;0.4. This indeed hints to the possibility to enhance the imputation accuracy via an optimal composition of the reference population. A more detailed analysis of this prospect in our current study, however, is hindered by the lack of deep genotyping information that would be required to optimize the composition of the reference population [<xref ref-type="bibr" rid="CR49">49</xref>].</p>
+      </sec>
+      <sec id="Sec20">
+        <title>Influence of missing site structure on imputation accuracy</title>
+        <p>The distribution of missing marker data points also impacted the accuracy of imputation (Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>). Random missing data, as applicable for our GBS-like data sets [<xref ref-type="bibr" rid="CR1">1</xref>], facilitated higher imputation accuracy compared to blocks of missing marker data. The relative advantages or disadvantages of the diverse marker platforms available, however, depend ultimately also on many other factors such as e.g. costs per marker data point, distribution of markers, as well as potential ascertainment bias [<xref ref-type="bibr" rid="CR50">50</xref>] that cannot be discussed in the framework of this study.</p>
+      </sec>
+      <sec id="Sec21">
+        <title>Association mapping profited most from imputation of missing values</title>
+        <p>Marker densities only marginally affect the accuracies of genomic selection for complex traits. Typically, a plateau of accuracy is reached with a few hundred markers for bi-parental populations [<xref ref-type="bibr" rid="CR39">39</xref>,<xref ref-type="bibr" rid="CR51">51</xref>,<xref ref-type="bibr" rid="CR52">52</xref>] and with a couple of thousand markers for diversity panels [<xref ref-type="bibr" rid="CR53">53</xref>,<xref ref-type="bibr" rid="CR54">54</xref>]. Even slightly lower numbers of markers have been recommended to reliably portray genetic relationships [<xref ref-type="bibr" rid="CR55">55</xref>]. In accordance with these findings, we observed that accuracies of prediction of genomic selection or relatedness estimation could profit only marginally from imputing missing marker data (Figures&#xA0;<xref rid="Fig2" ref-type="fig">2</xref> and <xref rid="Fig3" ref-type="fig">3</xref>; Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref>; Additional file <xref rid="MOESM4" ref-type="media">4</xref>: Table S1).</p>
+        <p>In contrast, association mapping is strongly influenced by the marker density [<xref ref-type="bibr" rid="CR56">56</xref>], as other than genome-wide prediction it focuses on one QTL at a time [<xref ref-type="bibr" rid="CR57">57</xref>]. Therefore, missing marker data at a particular locus cannot be compensated by other closely linked loci, which leads to a strong impact on the power of QTL detection [<xref ref-type="bibr" rid="CR58">58</xref>]. Consistent with this expectation, we observed that the power of association mapping strongly benefited from imputing missing marker data (Figure&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>; Additional file <xref rid="MOESM5" ref-type="media">5</xref>: Figure S4). Consequently, for association mapping in breeding populations, substantial added value can be generated by complementing routine genotyping performed on an economic marker platform with high density genotyping of a core set of lines for subsequent data imputation. The high density marker data could for instance be generated by re-sequencing, as has been implemented for soybean [<xref ref-type="bibr" rid="CR59">59</xref>] or maize [<xref ref-type="bibr" rid="CR60">60</xref>].</p>
+        <p>In wheat, several relevant agronomic traits such as flowering time [<xref ref-type="bibr" rid="CR61">61</xref>,<xref ref-type="bibr" rid="CR62">62</xref>], plant height [<xref ref-type="bibr" rid="CR63">63</xref>], abiotic stress tolerance [<xref ref-type="bibr" rid="CR64">64</xref>,<xref ref-type="bibr" rid="CR65">65</xref>], and disease resistances [<xref ref-type="bibr" rid="CR66">66</xref>] are expected to be controlled by large effect QTL. Such a genetic architecture with large effect QTLs enables efficient marker-assisted selection. Association mapping can be considered as a promising approach to identify further functional markers in breeding populations [<xref ref-type="bibr" rid="CR36">36</xref>]. The identified functional markers can be efficiently combined with genome-wide prediction approaches to bridge the gap between marker-assisted and genomic selection [<xref ref-type="bibr" rid="CR67">67</xref>].</p>
+      </sec>
+    </sec>
+    <sec id="Sec22" sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>From the examined quantitative genetic applications, association mapping profited most from imputing missing values. Association mapping is valuable for traits controlled by large effect QTLs, which is the case for a number of the economic important traits in wheat. Consequently, routine implementation of marker imputation provides a powerful tool for marker-assisted wheat improvement.</p>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="App1">
+        <sec id="Sec23">
+          <title>Additional files</title>
+          <p>
+            <media position="anchor" xlink:href="12864_2015_1366_MOESM1_ESM.eps" id="MOESM1">
+              <label>Additional file 1: Figure S1.</label>
+              <caption>
+                <p>Generation of simulated low to high marker density and GBS-like SNP marker data sets. For low to high marker density data simulation, the 371 lines were divided into a reference and a test population, for which availability of 90&#xA0;k or 9&#xA0;k SNP marker data sets, respectively, was assumed. Thus, data for SNPs present in the 90&#xA0;k but not in the 9&#xA0;k SNP marker data sets were the target for imputation. Sizes of the reference population were set to 50, 100, 200, and 300 out of 371 lines. Further, genotyping-by-sequencing-derived-mimicking data sets were generated by randomly depleting 72.8%, 61.5%, 38.8%, 16.1% of marker information from 90&#xA0;k data sets for individual lines, thus being comparable to the low to high marker density scenarios involving 50, 100, 200, and 300 reference lines.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1366_MOESM2_ESM.eps" id="MOESM2">
+              <label>Additional file 2: Figure S2.</label>
+              <caption>
+                <p>Rapid decay of linkage disequilibrium with genetic map distance. Distribution of linkage disequilibrium measured as r<sup>2</sup> over different genetic map distance classes between SNP marker pairs determined for 371 wheat lines. <italic>No. pairs</italic> represents the amount of SNP pairs within each distance class.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1366_MOESM3_ESM.eps" id="MOESM3">
+              <label>Additional file 3: Figure S3.</label>
+              <caption>
+                <p>Minor allele frequency impacts the accuracy of imputing missing values. The relationship between minor allele frequencies of 90&#xA0;k SNPs and average correlations between observed and imputed genotypic data, calculated using map-dependent (Beagle, FImpute, and IMPUTE2) and map-independent (Random Forest) algorithms for a reference population size of 50 individuals. Trends are shown as boxplots for four classes of linkage disequilibrium (LD) levels between 90&#xA0;k SNPs and the respective most closely linked 9&#xA0;k SNP.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1366_MOESM4_ESM.pdf" id="MOESM4">
+              <label>Additional file 4: Table S1.</label>
+              <caption>
+                <p>Correlation between Rogers&#x2019; distance matrices for imputation in a GBS-like scenario.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12864_2015_1366_MOESM5_ESM.eps" id="MOESM5">
+              <label>Additional file 5: Figure S4.</label>
+              <caption>
+                <p>Influence of imputing for GBS-like data sets on power of association mapping. Detection frequency of a major QTL explaining 10% of the genotypic variance in the total population fingerprinted with the 90&#xA0;k SNP array (Total-90&#xA0;k). Detection frequency of a major QTL in the available genotypic profiles of genotyping-by-sequencing like data sets with missing rates varying from 16.1% to 72.8% (Non-imputed 90&#xA0;k). Detection frequency of major QTL with varying degree of linkage disequilibrium (r<sup>2</sup>) between the QTL and closest linked SNP marker estimated in the total panel for which missing genotyping-by-sequencing like array data have been imputed with four algorithms (Beagle, FImpute, IMPUTE2 and Random Forest) based on four different missing rates (72.8%, 61.5%, 38.8%, and 16.1%).</p>
+              </caption>
+            </media>
+          </p>
+        </sec>
+      </app>
+    </app-group>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-list>
+          <def-item>
+            <term>GBS</term>
+            <def>
+              <p>Genotyping-by-sequencing</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>QTL</term>
+            <def>
+              <p>Quantitative trait locus</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>SNP</term>
+            <def>
+              <p>Single nucleotide polymorphism</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>HMM</term>
+            <def>
+              <p>Hidden Markov models</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>MCMC</term>
+            <def>
+              <p>Markov chain Monte Carlo</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>Cor</term>
+            <def>
+              <p>Correlation</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>LD</term>
+            <def>
+              <p>Linkage disequilibrium</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>MAF</term>
+            <def>
+              <p>Minor allele frequency</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>RD</term>
+            <def>
+              <p>Rogers&#x2019; distances</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>RR-BLUP</term>
+            <def>
+              <p>Ridge regression best linear unbiased prediction</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>GBLUP</term>
+            <def>
+              <p>Genomic best linear unbiased prediction</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>REML</term>
+            <def>
+              <p>Restricted maximum likelihood</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>cM</term>
+            <def>
+              <p>Centimorgan</p>
+            </def>
+          </def-item>
+        </def-list>
+      </def-list>
+    </glossary>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Competing interests</bold>
+        </p>
+        <p>The authors declare that they have no competing interests.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Authors&#x2019; contributions</bold>
+        </p>
+        <p>Conceived and designed the experiments: SH, YJ, YZ, and JCR. Analyzed the data: SH. Contributed reagents/ materials/analysis tools: RB, EE. Wrote the paper: SH, YJ, YZ, MFM, TFS, and JCR. All authors read and approved the final manuscript.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <p>The genotyping data were generated within the frames of the projects GABI-Wheat and VALID (project numbers 0315067 and 0315947, respectively) funded within the Plant Biotechnology program of the German Federal Ministry of Education and Research (BMBF). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rutkoski</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Poland</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jannink</surname>
+              <given-names>J-L</given-names>
+            </name>
+            <name>
+              <surname>Sorrells</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>Imputation of unordered markers and the impact on genomic selection accuracy</article-title>
+          <source>G3-GENES GENOM GENET</source>
+          <year>2013</year>
+          <volume>3</volume>
+          <fpage>427</fpage>
+          <lpage>39</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Willer</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sanna</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Abecasis</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Genotype imputation</article-title>
+          <source>Annu Rev Genomics Hum Genet</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>387</fpage>
+          <pub-id pub-id-type="doi">10.1146/annurev.genom.9.081307.164242</pub-id>
+          <?supplied-pmid 19715440?>
+          <pub-id pub-id-type="pmid">19715440</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marchini</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Howie</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Genotype imputation for genome-wide association studies</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>499</fpage>
+          <lpage>511</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg2796</pub-id>
+          <?supplied-pmid 20517342?>
+          <pub-id pub-id-type="pmid">20517342</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fu</surname>
+              <given-names>Y-B</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic Diversity Analysis of Highly Incomplete SNP Genotype Data with Imputations: An Empirical Assessment</article-title>
+          <source>G3-GENES GENOM GENET</source>
+          <year>2014</year>
+          <volume>4</volume>
+          <fpage>891</fpage>
+          <lpage>900</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Iwata</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Jannink</surname>
+              <given-names>J-L</given-names>
+            </name>
+          </person-group>
+          <article-title>Marker genotype imputation in a low-marker-density panel with a high-marker-density reference panel: accuracy evaluation in barley breeding lines</article-title>
+          <source>Crop Sci</source>
+          <year>2010</year>
+          <volume>50</volume>
+          <fpage>1269</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2009.08.0434</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boichard</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Dassonneville</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>David</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Eggen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fritz</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Design of a bovine low-density SNP array optimized for imputation</article-title>
+          <source>PLoS One</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>e34130</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0034130</pub-id>
+          <?supplied-pmid 22470530?>
+          <pub-id pub-id-type="pmid">22470530</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Segelke</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Reinhardt</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Thaller</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Reents</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Reliability of genomic prediction for German Holsteins using imputed genotypes from low-density chips</article-title>
+          <source>J Dairy Sci</source>
+          <year>2012</year>
+          <volume>95</volume>
+          <fpage>5403</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="doi">10.3168/jds.2012-5466</pub-id>
+          <?supplied-pmid 22916947?>
+          <pub-id pub-id-type="pmid">22916947</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hickey</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Babu</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>de los Campos</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Factors affecting the accuracy of genotype imputation in populations from several maize breeding programs</article-title>
+          <source>Crop Sci</source>
+          <year>2012</year>
+          <volume>52</volume>
+          <fpage>654</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2011.07.0358</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Willer</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Scheet</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Abecasis</surname>
+              <given-names>GR</given-names>
+            </name>
+          </person-group>
+          <article-title>MaCH: using sequence and genotype data to estimate haplotypes and unobserved genotypes</article-title>
+          <source>Genet Epidemiol</source>
+          <year>2010</year>
+          <volume>34</volume>
+          <fpage>816</fpage>
+          <lpage>34</lpage>
+          <pub-id pub-id-type="doi">10.1002/gepi.20533</pub-id>
+          <?supplied-pmid 21058334?>
+          <pub-id pub-id-type="pmid">21058334</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Santana</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Utsunomiya</surname>
+              <given-names>YT</given-names>
+            </name>
+            <name>
+              <surname>Neves</surname>
+              <given-names>HH</given-names>
+            </name>
+            <name>
+              <surname>Gomes</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Garcia</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Fukumasu</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide association analysis of feed intake and residual feed intake in Nellore cattle</article-title>
+          <source>BMC Genet</source>
+          <year>2014</year>
+          <volume>15</volume>
+          <fpage>21</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2156-15-21</pub-id>
+          <?supplied-pmid 24517472?>
+          <pub-id pub-id-type="pmid">24517472</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zanke</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Ling</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Plieske</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kollers</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ebmeyer</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Korzun</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genetic architecture of main effect QTL for heading date in European winter wheat</article-title>
+          <source>Front Plant Sci</source>
+          <year>2014</year>
+          <volume>5</volume>
+          <fpage>217</fpage>
+          <pub-id pub-id-type="doi">10.3389/fpls.2014.00217</pub-id>
+          <?supplied-pmid 24904613?>
+          <pub-id pub-id-type="pmid">24904613</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cavanagh</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>BE</given-names>
+            </name>
+            <name>
+              <surname>Stephen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kiani</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide comparative diversity uncovers multiple targets of selection for improvement in hexaploid wheat landraces and cultivars</article-title>
+          <source>Proc Natl Acad Sci</source>
+          <year>2013</year>
+          <volume>110</volume>
+          <fpage>8057</fpage>
+          <lpage>62</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1217133110</pub-id>
+          <?supplied-pmid 23630259?>
+          <pub-id pub-id-type="pmid">23630259</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Forrest</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Chao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>BE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Characterization of polyploid wheat genomic diversity using a high&#x2010;density 90 000 single nucleotide polymorphism array</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2014</year>
+          <volume>12</volume>
+          <fpage>787</fpage>
+          <lpage>96</lpage>
+          <pub-id pub-id-type="doi">10.1111/pbi.12183</pub-id>
+          <?supplied-pmid 24646323?>
+          <pub-id pub-id-type="pmid">24646323</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kollers</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Rodemann</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Ling</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Korzun</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ebmeyer</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Argillier</surname>
+              <given-names>O</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Whole genome association mapping of Fusarium head blight resistance in European winter wheat (Triticum aestivum L.)</article-title>
+          <source>PLoS One</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <fpage>e57500</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0057500</pub-id>
+          <?supplied-pmid 23451238?>
+          <pub-id pub-id-type="pmid">23451238</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Albrecht</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Auinger</surname>
+              <given-names>H-J</given-names>
+            </name>
+            <name>
+              <surname>Wimmer</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ogutu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Knaak</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Ouzunova</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-based prediction of maize hybrid performance across genetic groups, testers, locations, and years</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2014</year>
+          <volume>127</volume>
+          <fpage>1375</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-014-2305-z</pub-id>
+          <?supplied-pmid 24723140?>
+          <pub-id pub-id-type="pmid">24723140</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Browning</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Browning</surname>
+              <given-names>BL</given-names>
+            </name>
+          </person-group>
+          <article-title>Rapid and accurate haplotype phasing and missing-data inference for whole-genome association studies by use of localized haplotype clustering</article-title>
+          <source>Am J Hum Genet</source>
+          <year>2007</year>
+          <volume>81</volume>
+          <fpage>1084</fpage>
+          <pub-id pub-id-type="doi">10.1086/521987</pub-id>
+          <?supplied-pmid 17924348?>
+          <pub-id pub-id-type="pmid">17924348</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sargolzaei</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chesnais</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Schenkel</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>FImpute-An efficient imputation algorithm for dairy cattle populations</article-title>
+          <source>J Dairy Sci</source>
+          <year>2011</year>
+          <volume>94</volume>
+          <fpage>421</fpage>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Howie</surname>
+              <given-names>BN</given-names>
+            </name>
+            <name>
+              <surname>Donnelly</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Marchini</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>A flexible and accurate genotype imputation method for the next generation of genome-wide association studies</article-title>
+          <source>PLoS Genet</source>
+          <year>2009</year>
+          <volume>5</volume>
+          <fpage>e1000529</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pgen.1000529</pub-id>
+          <?supplied-pmid 19543373?>
+          <pub-id pub-id-type="pmid">19543373</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Browning</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>Multilocus association mapping using variable-length Markov chains</article-title>
+          <source>Am J Hum Genet</source>
+          <year>2006</year>
+          <volume>78</volume>
+          <fpage>903</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="doi">10.1086/503876</pub-id>
+          <?supplied-pmid 16685642?>
+          <pub-id pub-id-type="pmid">16685642</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rabiner</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>A tutorial on hidden Markov models and selected applications in speech recognition</article-title>
+          <source>Proc IEEE</source>
+          <year>1989</year>
+          <volume>77</volume>
+          <fpage>257</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="doi">10.1109/5.18626</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marchini</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Howie</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Myers</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>McVean</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Donnelly</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>A new multipoint method for genome-wide association studies by imputation of genotypes</article-title>
+          <source>Nat Genet</source>
+          <year>2007</year>
+          <volume>39</volume>
+          <fpage>906</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng2088</pub-id>
+          <?supplied-pmid 17572673?>
+          <pub-id pub-id-type="pmid">17572673</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breiman</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Random forests</article-title>
+          <source>Mach Learn</source>
+          <year>2001</year>
+          <volume>45</volume>
+          <fpage>5</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="doi">10.1023/A:1010933404324</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stekhoven</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>B&#xFC;hlmann</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>MissForest&#x2014;non-parametric missing value imputation for mixed-type data</article-title>
+          <source>Bioinformatics</source>
+          <year>2012</year>
+          <volume>28</volume>
+          <fpage>112</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btr597</pub-id>
+          <?supplied-pmid 22039212?>
+          <pub-id pub-id-type="pmid">22039212</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Browning</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name>
+              <surname>Browning</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>A unified approach to genotype imputation and haplotype-phase inference for large data sets of trios and unrelated individuals</article-title>
+          <source>Am J Hum Genet</source>
+          <year>2009</year>
+          <volume>84</volume>
+          <fpage>210</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ajhg.2009.01.005</pub-id>
+          <?supplied-pmid 19200528?>
+          <pub-id pub-id-type="pmid">19200528</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Nettleton</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Dekkers</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Evaluation of linkage disequilibrium measures between multi-allelic markers as predictors of linkage disequilibrium between single nucleotide polymorphisms</article-title>
+          <source>Genet Res</source>
+          <year>2007</year>
+          <volume>89</volume>
+          <fpage>1</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0016672307008634</pub-id>
+          <?supplied-pmid 17517154?>
+          <pub-id pub-id-type="pmid">17517154</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rogers</surname>
+              <given-names>JS</given-names>
+            </name>
+          </person-group>
+          <article-title>Measures of genetic similarity and genetic distance</article-title>
+          <source>Studies in Genetics</source>
+          <year>1972</year>
+          <volume>7</volume>
+          <fpage>145</fpage>
+          <lpage>53</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Reif</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Melchinger</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Frisch</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetical and mathematical properties of similarity and dissimilarity coefficients applied in plant breeding and seed bank management</article-title>
+          <source>Crop Sci</source>
+          <year>2005</year>
+          <volume>45</volume>
+          <fpage>1</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2005.0001</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <mixed-citation publication-type="other">Mal&#xE9;cot G: Mathematics of heredity. Les mathematiques de l'heredite 1948.</mixed-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Melchinger</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Messmer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Woodman</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Lamkey</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Diversity and relationships among US maize inbreds revealed by restriction fragment length polymorphisms</article-title>
+          <source>Crop Sci</source>
+          <year>1991</year>
+          <volume>31</volume>
+          <fpage>669</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci1991.0011183X003100030025x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mantel</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>The detection of disease clustering and a generalized regression approach</article-title>
+          <source>Cancer Res</source>
+          <year>1967</year>
+          <volume>27</volume>
+          <fpage>209</fpage>
+          <lpage>20</lpage>
+          <?supplied-pmid 6018555?>
+          <pub-id pub-id-type="pmid">6018555</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meuwissen</surname>
+              <given-names>THE</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Goddard</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>Prediction of Total Genetic Value Using Genome-Wide Dense Marker Maps</article-title>
+          <source>Genetics</source>
+          <year>2001</year>
+          <volume>157</volume>
+          <fpage>1819</fpage>
+          <lpage>29</lpage>
+          <?supplied-pmid 11290733?>
+          <pub-id pub-id-type="pmid">11290733</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>VanRaden</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Efficient methods to compute genomic predictions</article-title>
+          <source>J Dairy Sci</source>
+          <year>2008</year>
+          <volume>91</volume>
+          <fpage>4414</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="doi">10.3168/jds.2007-0980</pub-id>
+          <?supplied-pmid 18946147?>
+          <pub-id pub-id-type="pmid">18946147</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Habier</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Fernando</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Dekkers</surname>
+              <given-names>JCM</given-names>
+            </name>
+          </person-group>
+          <article-title>The Impact of Genetic Relationship Information on Genome-Assisted Breeding Values</article-title>
+          <source>Genetics</source>
+          <year>2007</year>
+          <volume>177</volume>
+          <fpage>2389</fpage>
+          <lpage>97</lpage>
+          <?supplied-pmid 18073436?>
+          <pub-id pub-id-type="pmid">18073436</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pressoir</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Briggs</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Bi</surname>
+              <given-names>IV</given-names>
+            </name>
+            <name>
+              <surname>Yamasaki</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Doebley</surname>
+              <given-names>JF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A unified mixed-model method for association mapping that accounts for multiple levels of relatedness</article-title>
+          <source>Nat Genet</source>
+          <year>2005</year>
+          <volume>38</volume>
+          <fpage>203</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng1702</pub-id>
+          <?supplied-pmid 16380716?>
+          <pub-id pub-id-type="pmid">16380716</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brummer</surname>
+              <given-names>EC</given-names>
+            </name>
+          </person-group>
+          <article-title>Capturing heterosis in forage crop cultivar development</article-title>
+          <source>Crop Sci</source>
+          <year>1999</year>
+          <volume>39</volume>
+          <fpage>943</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci1999.0011183X003900040001x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>W&#xFC;rschum</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Mapping QTL for agronomic traits in breeding populations</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2012</year>
+          <volume>125</volume>
+          <fpage>201</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-012-1887-6</pub-id>
+          <?supplied-pmid 22614179?>
+          <pub-id pub-id-type="pmid">22614179</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Frisch</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bohn</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Melchinger</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparison of selection strategies for marker-assisted backcrossing of a gene</article-title>
+          <source>Crop Sci</source>
+          <year>1999</year>
+          <volume>39</volume>
+          <fpage>1295</fpage>
+          <lpage>301</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci1999.3951295x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heffner</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Sorrells</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Jannink</surname>
+              <given-names>J-L</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic selection for crop improvement</article-title>
+          <source>Crop Sci</source>
+          <year>2009</year>
+          <volume>49</volume>
+          <fpage>1</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2008.08.0512</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zeng</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Fernando</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Reif</surname>
+              <given-names>JC</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic prediction of hybrid wheat performance</article-title>
+          <source>Crop Sci</source>
+          <year>2013</year>
+          <volume>53</volume>
+          <fpage>802</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2012.08.0463</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Riedelsheimer</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Melchinger</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Optimizing the allocation of resources for genomic selection in one breeding cycle</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2013</year>
+          <volume>126</volume>
+          <fpage>2835</fpage>
+          <lpage>48</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-013-2175-9</pub-id>
+          <?supplied-pmid 23982591?>
+          <pub-id pub-id-type="pmid">23982591</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayer</surname>
+              <given-names>KF</given-names>
+            </name>
+            <name>
+              <surname>Rogers</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dole&#x17E;el</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pozniak</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Eversole</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Feuillet</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A chromosome-based draft sequence of the hexaploid bread wheat (Triticum aestivum) genome</article-title>
+          <source>Science</source>
+          <year>2014</year>
+          <volume>345</volume>
+          <fpage>1251788</fpage>
+          <pub-id pub-id-type="doi">10.1126/science.1251788</pub-id>
+          <pub-id pub-id-type="pmid">25035500</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dvorak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>M-C</given-names>
+            </name>
+            <name>
+              <surname>Baenziger</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Matnyazov</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Population-and genome-specific patterns of linkage disequilibrium and SNP variation in spring and winter wheat (Triticum aestivum L.)</article-title>
+          <source>BMC Genomics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>727</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-11-727</pub-id>
+          <?supplied-pmid 21190581?>
+          <pub-id pub-id-type="pmid">21190581</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hao</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ge</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic diversity and linkage disequilibrium in Chinese bread wheat (Triticum aestivum L.) revealed by SSR markers</article-title>
+          <source>PLoS One</source>
+          <year>2011</year>
+          <volume>6</volume>
+          <fpage>e17279</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0017279</pub-id>
+          <?supplied-pmid 21365016?>
+          <pub-id pub-id-type="pmid">21365016</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Reif</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Maurer</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Korzun</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ebmeyer</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Miedaner</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>W&#xFC;rschum</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Mapping QTLs with main and epistatic effects underlying grain yield and heading time in soft winter wheat</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2011</year>
+          <volume>123</volume>
+          <fpage>283</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-011-1583-y</pub-id>
+          <?supplied-pmid 21476040?>
+          <pub-id pub-id-type="pmid">21476040</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>W&#xFC;rschum</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Langer</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Longin</surname>
+              <given-names>CFH</given-names>
+            </name>
+            <name>
+              <surname>Korzun</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Akhunov</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ebmeyer</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Population structure, genetic diversity and linkage disequilibrium in elite winter wheat assessed with SNP and SSR markers</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2013</year>
+          <volume>126</volume>
+          <fpage>1477</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-013-2065-1</pub-id>
+          <?supplied-pmid 23429904?>
+          <pub-id pub-id-type="pmid">23429904</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Remington</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Thornsberry</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Matsuoka</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Whitt</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Doebley</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Structure of linkage disequilibrium and phenotypic associations in the maize genome</article-title>
+          <source>Proc Natl Acad Sci</source>
+          <year>2001</year>
+          <volume>98</volume>
+          <fpage>11479</fpage>
+          <lpage>84</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.201394398</pub-id>
+          <?supplied-pmid 11562485?>
+          <pub-id pub-id-type="pmid">11562485</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flint-Garcia</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Thornsberry</surname>
+              <given-names>JMB</given-names>
+              <suffix>IV</suffix>
+            </name>
+          </person-group>
+          <article-title>Structure of Linkage Disequilibrium in Plants*</article-title>
+          <source>Annu Rev Plant Biol</source>
+          <year>2003</year>
+          <volume>54</volume>
+          <fpage>357</fpage>
+          <lpage>74</lpage>
+          <pub-id pub-id-type="doi">10.1146/annurev.arplant.54.031902.134907</pub-id>
+          <?supplied-pmid 14502995?>
+          <pub-id pub-id-type="pmid">14502995</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Inghelandt</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Reif</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Dhillon</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Flament</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Melchinger</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Extent and genome-wide distribution of linkage disequilibrium in commercial maize germplasm</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2011</year>
+          <volume>123</volume>
+          <fpage>11</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-011-1562-3</pub-id>
+          <?supplied-pmid 21404061?>
+          <pub-id pub-id-type="pmid">21404061</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Druet</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Macleod</surname>
+              <given-names>IM</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Toward genomic prediction from whole-genome sequence data: impact of sequencing design on genotype imputation and accuracy of predictions</article-title>
+          <source>Heredity</source>
+          <year>2014</year>
+          <volume>112</volume>
+          <fpage>39</fpage>
+          <lpage>47</lpage>
+          <pub-id pub-id-type="doi">10.1038/hdy.2013.13</pub-id>
+          <?supplied-pmid 23549338?>
+          <pub-id pub-id-type="pmid">23549338</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poland</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Sorrells</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Jannink</surname>
+              <given-names>J-L</given-names>
+            </name>
+          </person-group>
+          <article-title>Development of high-density genetic maps for barley and wheat using a novel two-enzyme genotyping-by-sequencing approach</article-title>
+          <source>PLoS One</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>e32253</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0032253</pub-id>
+          <?supplied-pmid 22389690?>
+          <pub-id pub-id-type="pmid">22389690</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR51">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lorenzana</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Bernardo</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Accuracy of genotypic value predictions for marker-based selection in biparental plant populations</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2009</year>
+          <volume>120</volume>
+          <fpage>151</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-009-1166-3</pub-id>
+          <?supplied-pmid 19841887?>
+          <pub-id pub-id-type="pmid">19841887</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR52">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Gowda</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>W&#xFC;rschum</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Maurer</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Longin</surname>
+              <given-names>FH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Accuracy of genomic selection in European maize elite breeding populations</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2012</year>
+          <volume>124</volume>
+          <fpage>769</fpage>
+          <lpage>76</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-011-1745-y</pub-id>
+          <?supplied-pmid 22075809?>
+          <pub-id pub-id-type="pmid">22075809</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR53">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Technow</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Riedelsheimer</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Schrag</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Melchinger</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic prediction of hybrid performance in maize with models incorporating dominance and population specific marker effects</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2012</year>
+          <volume>125</volume>
+          <fpage>1181</fpage>
+          <lpage>94</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-012-1905-8</pub-id>
+          <?supplied-pmid 22733443?>
+          <pub-id pub-id-type="pmid">22733443</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR54">
+        <label>54.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>P&#xE9;rez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Hickey</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Burgue&#xF1;o</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ornella</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Cer&#xF3;n-Rojas</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genomic prediction in CIMMYT maize and wheat breeding programs</article-title>
+          <source>Heredity</source>
+          <year>2014</year>
+          <volume>112</volume>
+          <fpage>48</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="doi">10.1038/hdy.2013.16</pub-id>
+          <?supplied-pmid 23572121?>
+          <pub-id pub-id-type="pmid">23572121</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR55">
+        <label>55.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Tabanao</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Pressoir</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Tuinstra</surname>
+              <given-names>MR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Simulation appraisal of the adequacy of number of background markers for relationship estimation in association mapping</article-title>
+          <source>The Plant Genome</source>
+          <year>2009</year>
+          <volume>2</volume>
+          <fpage>63</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="doi">10.3835/plantgenome2008.09.0009</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR56">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morris</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Ramu</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Deshpande</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Hash</surname>
+              <given-names>CT</given-names>
+            </name>
+            <name>
+              <surname>Shah</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Upadhyaya</surname>
+              <given-names>HD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Population genomic and genome-wide association studies of agroclimatic traits in sorghum</article-title>
+          <source>Proc Natl Acad Sci</source>
+          <year>2013</year>
+          <volume>110</volume>
+          <fpage>453</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1215985110</pub-id>
+          <?supplied-pmid 23267105?>
+          <pub-id pub-id-type="pmid">23267105</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR57">
+        <label>57.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bernardo</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Prospects for genomewide selection for quantitative traits in maize</article-title>
+          <source>Crop Sci</source>
+          <year>2007</year>
+          <volume>47</volume>
+          <fpage>1082</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.2135/cropsci2006.11.0690</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR58">
+        <label>58.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rincent</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Moreau</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Monod</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kuhn</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Melchinger</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Malvar</surname>
+              <given-names>RA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Recovering Power in Association Mapping Panels with Variable Levels of Linkage Disequilibrium</article-title>
+          <source>Genetics</source>
+          <year>2014</year>
+          <volume>197</volume>
+          <fpage>375</fpage>
+          <lpage>87</lpage>
+          <pub-id pub-id-type="doi">10.1534/genetics.113.159731</pub-id>
+          <?supplied-pmid 24532779?>
+          <pub-id pub-id-type="pmid">24532779</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR59">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Molecular footprints of domestication and improvement in soybean revealed by whole genome re-sequencing</article-title>
+          <source>BMC Genomics</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>579</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-14-579</pub-id>
+          <?supplied-pmid 23984715?>
+          <pub-id pub-id-type="pmid">23984715</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR60">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jiao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ren</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Zeng</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome-wide genetic changes during modern breeding of maize</article-title>
+          <source>Nat Genet</source>
+          <year>2012</year>
+          <volume>44</volume>
+          <fpage>812</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng.2312</pub-id>
+          <?supplied-pmid 22660547?>
+          <pub-id pub-id-type="pmid">22660547</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR61">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Distelfeld</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulation of flowering in temperate cereals</article-title>
+          <source>Curr Opin Plant Biol</source>
+          <year>2009</year>
+          <volume>12</volume>
+          <fpage>178</fpage>
+          <lpage>84</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.pbi.2008.12.010</pub-id>
+          <?supplied-pmid 19195924?>
+          <pub-id pub-id-type="pmid">19195924</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR62">
+        <label>62.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Griffiths</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Simmonds</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Leverington</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Fish</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Sayers</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Meta-QTL analysis of the genetic control of ear emergence in elite European winter wheat germplasm</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2009</year>
+          <volume>119</volume>
+          <fpage>383</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-009-1046-x</pub-id>
+          <?supplied-pmid 19430758?>
+          <pub-id pub-id-type="pmid">19430758</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR63">
+        <label>63.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Peng</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Richards</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Hartley</surname>
+              <given-names>NM</given-names>
+            </name>
+            <name>
+              <surname>Murphy</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Devos</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Flintham</surname>
+              <given-names>JE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>&#x2018;Green revolution&#x2019;genes encode mutant gibberellin response modulators</article-title>
+          <source>Nature</source>
+          <year>1999</year>
+          <volume>400</volume>
+          <fpage>256</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="doi">10.1038/22307</pub-id>
+          <?supplied-pmid 10421366?>
+          <pub-id pub-id-type="pmid">10421366</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR64">
+        <label>64.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pearce</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Burke</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>See</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Skinner</surname>
+              <given-names>DZ</given-names>
+            </name>
+            <name>
+              <surname>Dubcovsky</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Copy number and haplotype variation at the VRN-A1 and central FR-A2 loci are associated with frost tolerance in hexaploid wheat</article-title>
+          <source>Theor Appl Genet</source>
+          <year>2014</year>
+          <volume>127</volume>
+          <fpage>1183</fpage>
+          <lpage>97</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00122-014-2290-2</pub-id>
+          <?supplied-pmid 24626953?>
+          <pub-id pub-id-type="pmid">24626953</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR65">
+        <label>65.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Gowda</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>W&#xFC;rschum</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Longin</surname>
+              <given-names>CFH</given-names>
+            </name>
+            <name>
+              <surname>Korzun</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Kollers</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dissecting the genetic architecture of frost tolerance in Central European winter wheat</article-title>
+          <source>J Exp Bot</source>
+          <year>2013</year>
+          <volume>64</volume>
+          <fpage>4453</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="doi">10.1093/jxb/ert259</pub-id>
+          <?supplied-pmid 24006418?>
+          <pub-id pub-id-type="pmid">24006418</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR66">
+        <label>66.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saintenac</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Salcedo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rouse</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Trick</surname>
+              <given-names>HN</given-names>
+            </name>
+            <name>
+              <surname>Akhunov</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Identification of wheat gene Sr35 that confers resistance to Ug99 stem rust race group</article-title>
+          <source>Science</source>
+          <year>2013</year>
+          <volume>341</volume>
+          <fpage>783</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1239022</pub-id>
+          <?supplied-pmid 23811222?>
+          <pub-id pub-id-type="pmid">23811222</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR67">
+        <label>67.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Mette</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gowda</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Longin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Reif</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Bridging the gap between marker-assisted and genomic selection of heading time and plant height in hybrid wheat</article-title>
+          <source>Heredity</source>
+          <year>2014</year>
+          <volume>112</volume>
+          <fpage>638</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="doi">10.1038/hdy.2014.1</pub-id>
+          <?supplied-pmid 24518889?>
+          <pub-id pub-id-type="pmid">24518889</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

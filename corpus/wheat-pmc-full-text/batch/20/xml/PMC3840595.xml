@@ -1,0 +1,1959 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?DTDIdentifier.IdentifierValue http://www.biomedcentral.com/xml/article.dtd?>
+  <?DTDIdentifier.IdentifierType system?>
+  <?SourceDTD.DTDName article.dtd?>
+  <?SourceDTD.Version 1.0?>
+  <?ConverterInfo.XSLTName bmc2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Bioinformatics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Bioinformatics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Bioinformatics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2105</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmcid">3840595</article-id>
+      <article-id pub-id-type="publisher-id">1471-2105-14-325</article-id>
+      <article-id pub-id-type="pmid">24237905</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2105-14-325</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Methodology Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Identification of single nucleotide polymorphisms from the transcriptome of an organism with a whole genome duplication</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" id="A1">
+          <name>
+            <surname>Christensen</surname>
+            <given-names>Kris A</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>kris.christensen@email.wsu.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Brunelli</surname>
+            <given-names>Joseph P</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>brunelli@wsu.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Lambert</surname>
+            <given-names>Matthew J</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>matthew.lambert@wsu.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>DeKoning</surname>
+            <given-names>Jenefer</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>dekoning@vancouver.wsu.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Phillips</surname>
+            <given-names>Ruth B</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>phillipsr@vancouver.wsu.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A6">
+          <name>
+            <surname>Thorgaard</surname>
+            <given-names>Gary H</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>gary.thorgaard@wsu.edu</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>School of Molecular Biosciences, Washington State University, Pullman WA 99164-4660, USA</aff>
+      <aff id="I2"><label>2</label>School of Biological Sciences, Washington State University, Pullman WA 99164-4236, USA</aff>
+      <aff id="I3"><label>3</label>School of Biological Sciences, Washington State University, Vancouver, 14204 NE Salmon Creek Ave, Vancouver WA 98686-9600, USA</aff>
+      <aff id="I4"><label>4</label>Center for Reproductive Biology, Washington State University, Pullman WA 99164-7520, USA</aff>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>16</day>
+        <month>11</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>14</volume>
+      <fpage>325</fpage>
+      <lpage>325</lpage>
+      <history>
+        <date date-type="received">
+          <day>28</day>
+          <month>6</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>11</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2013 Christensen et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Christensen et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1471-2105/14/325"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The common ancestor of salmonid fishes, including rainbow trout (<italic>Oncorhynchus mykiss</italic>), experienced a whole genome duplication between 20 and 100 million years ago, and many of the duplicated genes have been retained in the trout genome. This retention complicates efforts to detect allelic variation in salmonid fishes. Specifically, single nucleotide polymorphism (SNP) detection is problematic because nucleotide variation can be found between the duplicate copies (paralogs) of a gene as well as between alleles.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We present a method of differentiating between allelic and paralogous (gene copy) sequence variants, allowing identification of SNPs in organisms with multiple copies of a gene or set of genes. The basic strategy is to: 1) identify windows of unique cDNA sequences with homology to each other, 2) compare these unique cDNAs if they are not shared between individuals (i.e. the cDNA is homozygous in one individual and homozygous for another cDNA in the other individual), and 3) give a &#x201C;SNP score&#x201D; value between zero and one to each candidate sequence variant based on six criteria. Using this strategy we were able to detect about seven thousand potential SNPs from the transcriptomes of several clonal lines of rainbow trout. When directly compared to a pre-validated set of SNPs in polyploid wheat, we were also able to estimate the false-positive rate of this strategy as 0 to 28% depending on parameters used.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>This strategy has an advantage over traditional techniques of SNP identification because another dimension of sequencing information is utilized. This method is especially well suited for identifying SNPs in polyploids, both outbred and inbred, but would tend to be conservative for diploid organisms.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>SNP</kwd>
+        <kwd>Polyploid</kwd>
+        <kwd>Rainbow trout</kwd>
+        <kwd>Genome duplication</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Whole genome duplications followed by differentiation of many gene duplicates in the ancestors of rainbow trout and other salmonid fishes [<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>] have created one of the most complex animal genomes [<xref ref-type="bibr" rid="B3">3</xref>-<xref ref-type="bibr" rid="B5">5</xref>]. Historical polyploid events have also been important in the ancestry of all vertebrates [<xref ref-type="bibr" rid="B6">6</xref>,<xref ref-type="bibr" rid="B7">7</xref>], and are of broad significance in plant evolution [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>]. Genome duplications increase the complexity of genomic studies [<xref ref-type="bibr" rid="B10">10</xref>] and result in a need to distinguish between paralogs [<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B12">12</xref>]. Population and quantitative genetics fundamentally rely on the accurate identification of the alleles of a gene or locus [<xref ref-type="bibr" rid="B13">13</xref>].</p>
+      <p>Identification of alleles is complicated when paralogous genes or sequences are easily mistaken for alleles [<xref ref-type="bibr" rid="B14">14</xref>]. Recent analytical methods have increasingly turned to single nucleotide polymorphisms (SNPs) as the preferred genetic marker to distinguish between alleles because they are ubiquitous and can be readily scored [<xref ref-type="bibr" rid="B15">15</xref>]. SNPs are easily mistaken for paralogous sequence variants because many paralogs are similar in sequence and may contain common variants that were present before genome duplication.</p>
+      <p>Traditional SNP calling programs use sequence alignments of cDNA or genomic sequence and identify any variant position as a possible SNP [<xref ref-type="bibr" rid="B16">16</xref>]. If a paralog is included in the alignment, traditional strategies will incorrectly identify paralogous sequence variants as possible SNPs (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>). Traditional approaches of transcriptome data analysis for SNP identification have been utilized for both diploid and polyploid organisms [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B18">18</xref>].</p>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p><bold>A comparison between traditional approaches and our strategy of SNP identification.</bold> Panel <bold>A</bold> shows two homeologs (duplicated chromosomes) and the sequence of both alleles from each chromosome. The fish are homozygous and only have one allele from each homeolog. This means that SNPs can only be found by comparing sequences between the two homozygous fish. Any variation found within a fish is a paralogous sequence variant (i.e. the first nucleotide in the gene sequence). Panel <bold>B</bold> illustrates the differences between traditional approaches and ours. The traditional approach would scan every nucleotide position and identify any variant as a possible SNP. This leads to a 50% error rate for the illustrated case (SNP1 is actually a paralogous sequence variant). Our approach uses windows of sequence to identify potential SNPs. Variant windows, in this case 9 nucleotides, are compared between individuals, with windows found in both individuals not considered for SNP identification.</p>
+        </caption>
+        <graphic xlink:href="1471-2105-14-325-1"/>
+      </fig>
+      <p>In the diploid carrot, 18% of the potential SNPs were found to be false-positives (excluding technical failures) using a traditional method of analyzing transcriptomic data [<xref ref-type="bibr" rid="B17">17</xref>], and in some fish species the false-positive rate was very high (e.g. catfish 41.4%) [<xref ref-type="bibr" rid="B18">18</xref>]. In fishes with polyploid ancestries, the false-positive rate was 19.4% for whitefish [<xref ref-type="bibr" rid="B19">19</xref>], and 15.9% for chum salmon [<xref ref-type="bibr" rid="B20">20</xref>].</p>
+      <p>Two main non-traditional approaches have been used to distinguish SNPs from paralogous sequence variants. The most common strategy has been to remove all polymorphisms associated with genes that have paralogs [<xref ref-type="bibr" rid="B21">21</xref>-<xref ref-type="bibr" rid="B25">25</xref>]. Such filtering drastically reduces the total number of genes in which polymorphisms can be detected in species with recent polyploidy ancestries and may still lead to a relatively high false-positive rate. A filtering strategy was used for a diploid coral transcriptomic dataset, which resulted in a 30% false-positive rate [<xref ref-type="bibr" rid="B26">26</xref>] and a 12% false-positive rate was found for ryegrass using a similar strategy [<xref ref-type="bibr" rid="B27">27</xref>]. In polyploid alfalfa, a window approach was used to eliminate SNPs if the potential alleles differed by 10% or more in the window surrounding the SNP [<xref ref-type="bibr" rid="B28">28</xref>]. This resulted in a false-positive rate of 37.5%, a very positive outcome considering that the alfalfa was both polyploid and had heterozygous genotypes. In salmonids, filtering resulted in a false-positive rate of 68.6% [<xref ref-type="bibr" rid="B29">29</xref>].</p>
+      <p>Other researchers have proposed strategies to detect polymorphisms without filtering paralogs [<xref ref-type="bibr" rid="B30">30</xref>-<xref ref-type="bibr" rid="B32">32</xref>]. These methods allow identification of differences between alleles in genes with paralogs, but alleles will still be indistinguishable from paralogs in future studies if the sequence is not reported with the SNP. Knowledge of a SNP at a given location is not fully informative as paralogs may share common sequence with an allele.</p>
+      <p>The SNP calling method described here involves the analysis of windows of sequence (similar to [<xref ref-type="bibr" rid="B28">28</xref>]) and only comparing homozygous alleles differing between individuals (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>). We utilized homozygous clonal lines of rainbow trout because they ensure homozygous alleles at every locus and any difference within an individual likely represents a paralogous sequence variant. This strategy may also be used for SNP identification in outbred organisms, but only SNPs from homozygous loci will be identified.</p>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <sec>
+        <title>cDNA output, SNP calling, and paralog counting</title>
+        <p>Embryo and head kidney cDNA were sequenced for five homozygous clonal lines of rainbow trout. The average number of reads per clonal line was 114,096 (SD&#x2009;=&#x2009;67&#xA0;k) for the embryo and 105,464 (SD&#x2009;=&#x2009;71&#xA0;k) for the head kidney (Table&#xA0;<xref ref-type="table" rid="T1">1</xref>). cDNA reads were aligned to the unique rainbow trout UniGene database (build #34) with Megablast version 2.2.21 [<xref ref-type="bibr" rid="B33">33</xref>] and with Novoalign version 3.00.05 [<xref ref-type="bibr" rid="B34">34</xref>] to compare these two alignment programs.</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Counts of cDNA reads from embryo and head kidney tissues from five rainbow trout lines</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">&#xA0;</th>
+                <th align="left">
+                  <bold>Embryo</bold>
+                </th>
+                <th align="left">
+                  <bold>Head kidney</bold>
+                </th>
+                <th align="left">
+                  <bold>Both</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">Arlee (YY)<hr/></td>
+                <td align="left" valign="bottom">96077<hr/></td>
+                <td align="left" valign="bottom">95196<hr/></td>
+                <td align="left" valign="bottom">191273<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Clearwater (YY)<hr/></td>
+                <td align="left" valign="bottom">231981<hr/></td>
+                <td align="left" valign="bottom">108170<hr/></td>
+                <td align="left" valign="bottom">340151<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Skamania (XX-male)<hr/></td>
+                <td align="left" valign="bottom">64002<hr/></td>
+                <td align="left" valign="bottom">126150<hr/></td>
+                <td align="left" valign="bottom">190152<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Swanson (YY)<hr/></td>
+                <td align="left" valign="bottom">90235<hr/></td>
+                <td align="left" valign="bottom">12<hr/></td>
+                <td align="left" valign="bottom">90247<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Whale Rock (XX)<hr/></td>
+                <td align="left" valign="bottom">88186<hr/></td>
+                <td align="left" valign="bottom">197793<hr/></td>
+                <td align="left" valign="bottom">285979<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">All</td>
+                <td align="left">570481</td>
+                <td align="left">527321</td>
+                <td align="left">1097802</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>For each UniGene sequence, the aligned cDNA reads were used to estimate the number of paralogs and identify potential SNPs for both tissues (Table&#xA0;<xref ref-type="table" rid="T2">2</xref>). Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref> shows the distribution of different categories of gene duplication for the different tissues and the combined result. SNPs were identified in 4,533 of the UniGene reference sequences and 7,412 (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>) total SNPs were found when both tissues and all the clonal lines were combined (SNP score&#x2009;&gt;&#x2009;0.25, indels not included, Megablast alignments). For Novoalign alignments, SNPs were found in 2,979 references, with 5,052 total SNPs identified. The number of SNPs detected between clonal lines of rainbow trout ranged from 792 to 3451 (Table&#xA0;<xref ref-type="table" rid="T3">3</xref>).</p>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>Gene duplication counts and SNPs for rainbow trout embryo and head kidney tissues</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">&#xA0;</th>
+                <th align="center">
+                  <bold>Single copy UniGenes</bold>
+                </th>
+                <th align="center">
+                  <bold>Multiple copy UniGenes</bold>
+                </th>
+                <th align="center">
+                  <bold>SNPs</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>Embryo</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">5170 (7923)<hr/></td>
+                <td align="center" valign="bottom">754 (3458)<hr/></td>
+                <td align="center" valign="bottom">3337 (5034)<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>Head kidney</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">2566 (5101)<hr/></td>
+                <td align="center" valign="bottom">399 (1906)<hr/></td>
+                <td align="center" valign="bottom">1376 (2284)<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">
+                  <bold>Both</bold>
+                </td>
+                <td align="center">7289 (11100)</td>
+                <td align="center">1234 (5113)</td>
+                <td align="center">5052 (7412)</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>The number of single and multiple copy UniGenes was estimated using the reads from all clones from the different tissues (The highest copy number from all individual clonal lines was used as the combined estimate for a UniGene). UniGenes without sufficient evidence of copy number are not represented. The SNP counts were found by comparing all clones against each other at the same time. These SNPs have a SNP score of 0.25 or greater, meaning that all of them have more than a single read representing each allele. The first set of numbers are from Novoalign alignments and the second set are from Megablast (in parentheses).</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>UniGene copy number distribution in rainbow trout embryo and head kidney tissues.</bold> The graph shows the percent of UniGenes that have evidence for specific copy numbers, from a single copy gene to ten or more copies. The alignment program used was Megablast with default settings.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-14-325-2"/>
+        </fig>
+        <table-wrap position="float" id="T3">
+          <label>Table 3</label>
+          <caption>
+            <p>A comparison of SNPs between clonal rainbow trout lines for the combined tissues</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">&#xA0;</th>
+                <th align="left">
+                  <bold>Arlee</bold>
+                </th>
+                <th align="left">
+                  <bold>Clearwater</bold>
+                </th>
+                <th align="left">
+                  <bold>Skamania</bold>
+                </th>
+                <th align="left">
+                  <bold>Swanson</bold>
+                </th>
+                <th align="left">
+                  <bold>Whale rock</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">Arlee<hr/></td>
+                <td align="left" valign="bottom">-<hr/></td>
+                <td align="left" valign="bottom">2292<hr/></td>
+                <td align="left" valign="bottom">1460<hr/></td>
+                <td align="left" valign="bottom">1180<hr/></td>
+                <td align="left" valign="bottom">1628<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Clearwater<hr/></td>
+                <td align="left" valign="bottom">(3300)<hr/></td>
+                <td align="left" valign="bottom">-<hr/></td>
+                <td align="left" valign="bottom">1425<hr/></td>
+                <td align="left" valign="bottom">1283<hr/></td>
+                <td align="left" valign="bottom">2412<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Skamania<hr/></td>
+                <td align="left" valign="bottom">(2109)<hr/></td>
+                <td align="left" valign="bottom">(2156)<hr/></td>
+                <td align="left" valign="bottom">-<hr/></td>
+                <td align="left" valign="bottom">792<hr/></td>
+                <td align="left" valign="bottom">1486<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Swanson<hr/></td>
+                <td align="left" valign="bottom">(1722)<hr/></td>
+                <td align="left" valign="bottom">(1846)<hr/></td>
+                <td align="left" valign="bottom">(1197)<hr/></td>
+                <td align="left" valign="bottom">-<hr/></td>
+                <td align="left" valign="bottom">1182<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">Whale Rock</td>
+                <td align="left">(2359)</td>
+                <td align="left">(3451)</td>
+                <td align="left">(2191)</td>
+                <td align="left">(1716)</td>
+                <td align="left">-</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>The number of SNPs with SNP scores of 0.25 or greater using sequences from both embryo and head kidney tissues between the clonal lines of rainbow trout. The alignments, used to identify these SNPs, were produced using Novoalign with default settings (top) and Megablast (bottom in parentheses).</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The number of SNPs between lines appears to be correlated with number of reads, with the lines having higher read counts also having more SNPs (Tables&#xA0;<xref ref-type="table" rid="T2">2</xref> and <xref ref-type="table" rid="T3">3</xref>). A value of 0.25 for the SNP score was used as a threshold for reporting based on Table&#xA0;<xref ref-type="table" rid="T4">4</xref> (discussed below), and because an allele only represented by one read would score below this value (discussed in Methods section). Removing these alleles should remove most sequencing errors. The embryo and head kidney tissues had the same gene counts for roughly half of the overlapping UniGenes (2326 of 4782) when using Megablast alignments and 72% (1340 of 1858) using Novoalign alignments.</p>
+        <table-wrap position="float" id="T4">
+          <label>Table 4</label>
+          <caption>
+            <p>SNP validation comparison using a transcriptome dataset from polyploid wheat</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th rowspan="2" align="left" valign="top">&#xA0;</th>
+                <th rowspan="2" align="center" valign="top">
+                  <bold>Original study</bold>
+                </th>
+                <th align="center" valign="bottom">
+                  <bold>Window 80,</bold>
+                  <hr/>
+                </th>
+                <th align="center" valign="bottom">
+                  <bold>Window 80,</bold>
+                  <hr/>
+                </th>
+                <th align="center" valign="bottom">
+                  <bold>Window 40,</bold>
+                  <hr/>
+                </th>
+                <th align="center" valign="bottom">
+                  <bold>Window 10,</bold>
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th align="center">
+                  <bold>SNP score&#x2009;&gt;&#x2009;0</bold>
+                </th>
+                <th align="center">
+                  <bold>SNP score&#x2009;&gt;&#x2009;0.25</bold>
+                </th>
+                <th align="center">
+                  <bold>SNP score&#x2009;&gt;&#x2009;0</bold>
+                </th>
+                <th align="center">
+                  <bold>SNP score&#x2009;&gt;&#x2009;0</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">Validated SNPs<hr/></td>
+                <td align="center" valign="bottom">64<hr/></td>
+                <td align="center" valign="bottom">40 (37)<hr/></td>
+                <td align="center" valign="bottom">28 (22)<hr/></td>
+                <td align="center" valign="bottom">35 (34)<hr/></td>
+                <td align="center" valign="bottom">18 (23)<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">False-positives<hr/></td>
+                <td align="center" valign="bottom">61<hr/></td>
+                <td align="center" valign="bottom">3 (6)<hr/></td>
+                <td align="center" valign="bottom">1 (0)<hr/></td>
+                <td align="center" valign="bottom">2 (1)<hr/></td>
+                <td align="center" valign="bottom">3 (8)<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">False-positive rate</td>
+                <td align="center">49%</td>
+                <td align="center">7% (14%)</td>
+                <td align="center">3% (0%)</td>
+                <td align="center">5% (3%)</td>
+                <td align="center">14% (26%)</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>The number of SNPs from the original study and from different settings using our strategy. There are multiple numbers per parameter explored. These reflect different alignment programs used under these settings. The first set of numbers were from Novoalign alignments, and the second were from Megablast (in parentheses).</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The different SNP numbers and percent gene duplication (~32% Megablast and ~14% Novoalign), identified while using different alignment programs resulted from how alignments were produced. Novoalign uses a global alignment algorithm and produced fewer alignments between diverged paralogs (Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>). The Novoalign program produces relatively few alignments with lower sequence identity compared to the Megablast program. The Megablast result is similar to an all-against-all EST comparison from Atlantic salmon with greater divergence between ancestral genomes in the rainbow trout [<xref ref-type="bibr" rid="B35">35</xref>].</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Alignment comparison.</bold> Panel <bold>A</bold> is a histogram of sequence similarity of alignments for the Clearwater clonal line. Alignments were produced by either Megablast or Novoalign and for every 80 nucleotide window the alignments were binned into their respective similarity category based on the number of mismatches in the window. The second peak of alignments around 92.5% with Megablast likely represents a set of genes duplicated during a whole genome duplication. Novoalign does not show this pattern because Novoalign uses a more stringent alignment algorithm. Panel <bold>B</bold> was produced in the same way, but it represents the combination of two polyploid wheat lines for 125 UniGenes used in SNP validation. The second peak for this panel is around 98.75% indicating a much more recent whole genome duplication. Both alignment programs have similar results with wheat because the paralogs have high sequence similarity.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-14-325-3"/>
+        </fig>
+        <p>In a general sense, having few low sequence identity alignments indicates that the Novoalign program is more accurate because diverged paralogs are not aligning to the reference sequences. However, our strategy requires the alignment of paralogs so we can distinguish between these sequences and identify SNPs in paralogs that are not represented in the reference sequences.</p>
+      </sec>
+      <sec>
+        <title>SNP validation</title>
+        <p>We downloaded cDNA and reference sequences used by another research group to identify SNPs in polyploid wheat [<xref ref-type="bibr" rid="B36">36</xref>]. We applied our strategy for SNP discovery to these previously validated UniGenes, allowing for direct comparison of validation rates (Table&#xA0;<xref ref-type="table" rid="T4">4</xref>). Variation in window size can produce differing results (Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref>). Larger window sizes produced fewer false-positives (Table&#xA0;<xref ref-type="table" rid="T4">4</xref>), and adopting a SNP score threshold of 0.25 eliminated all false-positives. The false-positive rate varied by alignment program, but in all instances the false-positive rate was lower using the strategy described here than was observed in the original study (Table&#xA0;<xref ref-type="table" rid="T4">4</xref>).</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>Effect of window size on distinguishing paralogs and the amount of useable data.</bold> Panel <bold>A</bold> shows two homeologs and the sequence of paralogs from a homozygous fish. Paralogous sequence variants are in bold text. Two windows are represented (1 and 16), only the 16 nucleotide window can differentiate between the paralogs. Panel <bold>B</bold> shows a multiple sequence alignment of the expressed cDNA reads aligned to the gene sequence from Chrom 1a. Depending on the alignment criteria and the sequence similarity, the two different paralogs will both align to the sequence from Chrom 1a. The number of useable sequences depends heavily on the window size. The larger the window size, the less likely that a read will span the window length, but the more likely the paralogs will be distinguishable.</p>
+          </caption>
+          <graphic xlink:href="1471-2105-14-325-4"/>
+        </fig>
+        <p>There was little variance in SNP validation when comparing different alignment programs. During SNP identification in rainbow trout, nearly twice as many SNPs were identified when Megablast was used. In wheat, SNP identification is virtually the same between alignment programs. It appears from the 125 gene dataset that the genome duplication event was much more recent in wheat than in rainbow trout. For this reason both alignment programs were able to align the highly similar paralogs with similar performance (Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>). It is believed that there was an allopolyploid event in tetraploid wheat less than 0.5 MYA [<xref ref-type="bibr" rid="B37">37</xref>], which corresponds to highly similar paralogous sequence seen in this dataset.</p>
+      </sec>
+      <sec>
+        <title>Sequencing validation</title>
+        <p>For SNP validation ten sets of primers were also created to amplify genomic DNA of the different trout lines of ten predicted SNPs in sequences downloaded from NCBI. Five of these pairs amplified well and were polymorphic at the predicted site when sequenced. The low amplification rate is attributed to the lack of information related to repetitive sequences and introns surrounding the window in which a SNP was predicted (technical errors). The five that amplified well had scores of: 0.35, 0.35, 0.41, 0.42, and 0.8. The others had scores of: 0.04, 0.37, 0.42, 0.57, and 0.76.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>Traditional methods of SNP identification are effective for standard diploid organisms, but are not appropriate for organisms that have had a genome duplication. Other methods have been employed to overcome traditional limitations [<xref ref-type="bibr" rid="B30">30</xref>-<xref ref-type="bibr" rid="B32">32</xref>], but they may be of limited use for future studies if they cannot effectively integrate the occurrence of paralogs into SNP identification. Our strategy incorporates such information during SNP calling and may be used for both inbred lines and outbred populations.</p>
+      <p>The importance of alignment program selection increases as paralogs diverge. Early after a genome duplication, it is likely that most alignment programs could effectively align paralogous sequences together. As mutations alter the paralog sequences, high stringency alignment programs will no longer align paralogs together. SNP discovery in diploids benefits from accurate alignments, but information about the paralogs is much more valuable in polyploids than highly precise alignments.</p>
+      <p>Dependence on a nucleotide window is both a weakness and strength of this strategy. While modifications may be made to increase or decrease the window size, doing so may also influence the results. For example, a decreased window size may limit the ability to distinguish similar paralogs (Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref>). Alternatively, an increased window size would allow the identification of all non-identical paralogs, but would decrease the likelihood that a cDNA sequence would span the window completely and would decrease the amount of usable data. Traditional strategies have an effective window size of one nucleotide and for this reason are unable to differentiate between paralogs.</p>
+      <p>One distinctive component of our strategy is the stringent use of only homozygous alleles in SNP identification. This eliminates many false-positive SNPs that are the result of paralogous sequence variants. At the same time, fewer SNPs will be found because heterozygous alleles are eliminated during SNP identification. To maximize SNP identification, it may be more appropriate to use a low stringency method and use allele frequency as a filter instead of the homozygous selection method described here.</p>
+      <p>A complementary application of this method might be in the identification of gene families or paralogs. Our method tries to identify paralogs from short cDNA sequences in order to score SNPs, but the estimation may be useful in other ways. For example, the described strategy may be used as an initial method for identifying genes that may be duplicated. Identification and enumeration of paralogs would benefit gene expression, phylogenetic, and gene ontology studies.</p>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>The SNP validation evidence suggests that our method offers an advantage over existing strategies of SNP identification for polyploid organisms. This strategy might also be used for analyzing data derived from diploid organisms, but would likely be overly conservative for SNP identification in those organisms, resulting in identification of fewer SNPs.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>mRNA isolation, cDNA synthesis, and 454 pyrosequencing</title>
+        <p>Total RNA was isolated from tissues of five different clonal lines of doubled haploid rainbow trout. Arlee, Clearwater, and Swanson are YY male lines [<xref ref-type="bibr" rid="B38">38</xref>], Skamania is apparently an XX male line with a female-to-male sex reversal mutation (Paul Wheeler, personal communitication), and the Whale Rock line is an XX female line [<xref ref-type="bibr" rid="B30">30</xref>]. RNA was extracted from approximately 30 eyed-stage embryos (~15&#xA0;days post fertilization at 11&#xB0;C) from each clonal line. The yolk sacs were removed from the embryos in a chilled 0.9% saline solution before RNA extraction. Head kidney RNA was also isolated from an&#x2009;~&#x2009;one-year-old fish for all five clonal lines.</p>
+        <p>Tissues were suspended in TRIzol (Invitrogen), flash frozen in liquid nitrogen, and stored at &#x2212;80&#xB0;C until RNA extraction. Tissue samples were homogenized using a glass Dounce tissue grinder as recommended in the TRIzol RNA extraction protocol [<xref ref-type="bibr" rid="B39">39</xref>]. After TRIzol phase separation, two additional rounds of RNA extraction were performed using a four to one ratio of acidic phenol (pH ~4.5):chloroform, followed by a final chloroform extraction. Total RNA was precipitated with isopropyl alcohol, washed with 70% ethanol, and suspended in water. cDNA was synthesized from each total RNA source using the SMARTer&#x2122; PCR cDNA synthesis protocol (Clontech) and was amplified with Advantage PCR according to the manufacturer&#x2019;s instructions. Amplified cDNAs were purified by phenol-chloroform extraction [<xref ref-type="bibr" rid="B40">40</xref>] and precipitated with an equal volume of isopropyl alcohol, washed with 70% ethanol, and suspended in water.</p>
+        <p>The samples were then sent to the Genomics Core at Washington State University where the cDNA quality was assessed using an Agilent DNA 1000 kit (Agilent Technologies). Nebulization of the cDNA followed, using the 454 Rapid DNA Library protocol (Roche). Each cDNA sample was then barcoded and each cDNA library was quantified using a PerkinElmer VICTOR<sup>tm</sup> X. Libraries were titrated by small volume emulsion PCR and then pooled into two libraries for large volume emulsion PCR. Finally, both libraries were sequenced using a Roche 454 FLX Titanium Genome Sequencer on a single picotiter plate.</p>
+      </sec>
+      <sec>
+        <title>Sequence alignment</title>
+        <p>Barcoded cDNA sequences were separated based on their clonal line of origin and tissue using Roche&#x2019;s SFF Tools [<xref ref-type="bibr" rid="B41">41</xref>] and modified to conform to standard FASTA using custom scripts. They were deposited to the NCBI&#x2019;s sequence read archive (study accession: SRP028233). The cDNA dataset for each clonal line and each tissue was then aligned to the rainbow trout unique UniGene database build #34 [<xref ref-type="bibr" rid="B42">42</xref>] using default settings of standalone Megablast (version 2.2.21). Novoalign (version 3.00.05) was used to create the same alignments with default settings.</p>
+        <p>The default setting for the number of database sequence alignments to report for Megablast is 250, and the number of high-scoring segment pairs (HSPs) to save per database sequence is unlimited. These settings may produce pseudo-homologous alignments, but hypothetically may be beneficial in SNP discovery because they help us identify regions of sequence where we have little confidence. Sequence regions with low complexity (if not filtered) or high genomic copy number will produce many false alignments, and these regions will appear to have many extra copies when compared to the full reference UniGene sequence. A method for handling these circumstances is described later.</p>
+        <p>Novoalign uses a global alignment algorithm, while Megablast uses a local alignment algorithm. These two types of alignment strategies were used to determine how much SNP discovery and gene copy estimation relied on the type of alignment program used. It was expected that global alignment algorithms would be better suited for aligning similar sequence, and as a result fewer gene copies would be estimated using this strategy because dissimilar paralogs would not align.</p>
+        <p>The unique rainbow trout UniGene database contains 142,505 sequences and was generated by clustering publicly available sequences of high similarity together [<xref ref-type="bibr" rid="B42">42</xref>]. From each cluster the longest sequence was taken as a representative for that cluster [<xref ref-type="bibr" rid="B42">42</xref>]. If copies of a gene are represented in the databases and are of sufficient similarity, they would be clustered together and only one representative would remain. This is important for estimating the number of genes that have been copied in the reference database. If there were genes with extra copies represented twice, then the estimate would be biased.</p>
+      </sec>
+      <sec>
+        <title>Paralog counting</title>
+        <p>Homozygous organisms are expected to have a single copy of every allele, if there is evidence for more than one allele, it likely indicates the presence of a paralog with similar sequence (Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref>). To estimate the number of copies a gene has, each UniGene reference sequence alignment was examined for unique cDNA types using custom Perl scripts (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>). Estimating gene copy number was done to improve SNP identification, as described below.</p>
+        <p>First, a reference sequence was split into overlapping windows, and for each of these windows all unique cDNA types with at least two copies were counted. The database sequence was split into windows because often cDNA sequence reads are short and in order to identify variant cDNA types, they need to cover the same distance. This means that only those portions of cDNA that completely span a window will be used in paralog counting (and in SNP calling later). A window size of 80 nucleotides was used for all rainbow trout analyses. cDNAs that have a sequence similarity of ~99% would on average have one polymorphism in each 80 nucleotide window. cDNA types were identified by looking for differences between the cDNA read and the reference sequence in the alignments. The differences were recorded relative to the reference sequence, making divergent cDNA types comparable. Each cDNA type had a unique pattern of differences from the reference sequence.</p>
+        <p>Next, multiple windows, representing at least half of the reference sequence, with the same copy number were used as a threshold to reduce the misleading effect of repetitive motifs on the paralog count estimation. If the highest count of cDNA types did not cover 50% of the database sequence (e.g. one window had 10 different cDNA types and all the other windows had 2 different cDNA types), then the count of cDNA types in those windows was reduced by one and the new number of cDNA types was checked for the threshold. This was done until the count was found in 50 percent of the windows or until the count reached zero.</p>
+        <p>Fifty percent was used instead of 100% because it is expected that even with perfect coverage, there will be some windows with fewer cDNA types than the true paralog number because paralogs may have complete sequence similarity in those windows.</p>
+      </sec>
+      <sec>
+        <title>SNP calling</title>
+        <p>For each of the UniGene sequence windows (described in the previous section), the cDNA types within those windows were compared if all the clonal lines were homozygous for either cDNA type (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>). cDNA types found within a homozygous individual are not alleles and were not compared. The comparisons were then given a SNP score based on several criteria: sequence similarity, number of nearly identical paralogs, number of cDNA types in a window compared to the full UniGene sequence, coverage, even representation of alleles, and the phred quality score at the SNP position. These scores are not probabilities; they reflect the level of confidence that a variant represents a SNP (and not a paralog or one of several classes of errors) based on the previously mentioned criteria. The SNP score representational formulation is: SNP Score&#x2009;=&#x2009;(sequence similarity<sup>10</sup>)<sup>Nearly identical paralogs</sup> * paralog information * sequencing error * unequal representation and coverage * sequencing quality score. Each of the elements from this equation are discussed below. The score will range from zero to one.</p>
+        <sec>
+          <title>Sequence similarity</title>
+          <p>The initial SNP score was determined by taking the sequence identity and raising it to the tenth power (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). For example, if two cDNA types had 0.99 sequence similarity, they would be given a score of 0.904. A variable threshold was then used to eliminate unlikely comparisons (e.g. &lt; ~0.99 similarity). The sequence similarity was raised to the tenth power because comparisons with modest sequence similarity (e.g. 0.95, score&#x2009;=&#x2009;0.599) are assumed to be much more likely due to paralog differences than to allelic differences. The window size will greatly affect this score (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>).</p>
+        </sec>
+        <sec>
+          <title>Nearly identical paralogs</title>
+          <p>If a cDNA type was compared to multiple cDNA types, all comparisons with that cDNA type had their scores lowered. Multiple comparisons may be expected if there is expression of a gene and its paralog in one of the individuals being compared, but only expression of the gene in the other individual. The SNP scores were raised to the power of (a&#x2009;+&#x2009;1)*10, where &#x201C;a&#x201D; is the number of comparisons with the cDNA type above 1 (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). This expression was chosen to effectively eliminate known paralog differences from further consideration if a SNP score of 0.25 was used as a threshold (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). It is possible that one of the comparisons would be between alleles, but identifying which would require more information.</p>
+        </sec>
+        <sec>
+          <title>Paralog information</title>
+          <p>To further distinguish between SNP and paralog differences, any window with a low or high paralog count relative to the rest of the UniGene reference sequence (estimate was found in the previous section), was scored lower (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). If a particular window had more cDNA types than the paralog count estimated over the whole sequence, then it may contain a repetitive motif and any SNPs identified in these windows may be less reliable because of the sheer number of comparisons being made. If there were fewer cDNA types in a window, it may mean there is less information or that it was a conserved sequence and any SNPs found in this window may be shared among paralogs (and thus are not the locus-specific SNPs we are seeking). The modification was different depending on the type of comparison, as explained below.</p>
+        </sec>
+        <sec>
+          <title>Insufficient data for a window</title>
+          <p>If the cDNA count for a window was estimated to be zero, then the SNP score was multiplied by the following expression: 1/c (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). The &#x2018;c&#x2019; was the estimated paralog count for the whole database sequence. We expect to see windows with estimated cDNA counts of zero when there is insufficient data and therefore we are less confident about any SNPs found in these windows. As the number of estimated paralogs increases, our confidence for which paralog is represented in the window, with insufficient data, decreases (e.g. 1/1, 1/2, 1/3 using the equation above).</p>
+        </sec>
+        <sec>
+          <title>Insufficient data for the entire database sequence</title>
+          <p>If there were few representations of cDNA types along half of the database sequence (i.e. the paralog count was zero), then the SNP scores were multiplied by (0.5/b)<sup>2</sup> (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). The &#x2018;b&#x2019; in the equation was the number of cDNA types for the window with the SNP. If the length of a database sequence has poor sequence coverage, but a single window contains ample evidence, we assumed that the window with strong evidence is likely a repetitive motif. The more cDNA types found in one of these windows, the less confidence we had for any SNPs in that window (e.g. 1 cDNA type =&#x2009;&gt;&#x2009;0.25, 2 =&#x2009;&gt;&#x2009;0.06, 3 =&#x2009;&gt;&#x2009;0.03 using the equation above).</p>
+        </sec>
+        <sec>
+          <title>Repetitive gene motifs</title>
+          <p>If a window had more cDNA types than that estimated for the whole sequence (and the paralog count was not zero), the score was multiplied by (c/b)^<sup>2</sup>, or (b/c)^<sup>2</sup> if the window had fewer cDNA types (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). If a window contains more cDNA types than the whole database sequence, then it may mean that this window contains repetitive motifs or conserved sequence. Both interpretations decrease the confidence that a SNP found in a window with high numbers of cDNA types is real (e.g. 2 copies in window: 1 copy for whole gene =&#x2009;&gt;&#x2009;0.7, 3:1 =&#x2009;&gt;&#x2009;0.6 using the equation above). Low coverage and increased sequence similarity between paralogs may cause windows to have fewer cDNA types than the rest of the database sequence. This decreases the likelihood that a SNP is real in windows with fewer cDNA types.</p>
+        </sec>
+        <sec>
+          <title>Sequencing error</title>
+          <p>To distinguish SNPs from sequencing errors, the score was reduced by 75 percent if there was only a single representation (i.e. one cDNA read) of an allele (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). If the scores were not reduced, the majority of the high scoring SNPs (&gt; 0.25) were those with a single representative (data not shown). While these SNPs may be valid, they lack enough evidence to be considered high-confidence.</p>
+        </sec>
+        <sec>
+          <title>Unequal representation and coverage</title>
+          <p>The SNP score was also lowered if there was an overabundance of one allele compared to the other. It is assumed that alleles will have roughly similar expression profiles, and many sequencing errors will be unequally represented. The SNP score was multiplied by (1&#x2009;+&#x2009;(x&#x2009;+&#x2009;y)/2)/2 * (4&#x2009;+&#x2009;x/y)/5, where &#x2018;x&#x2019; is the number of the low count allele and &#x2018;y&#x2019; is the number of the high count alleles (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). This equation was used because it incorporates coverage and even representation, with deviations from equal representation lowering the score. At a lower coverage, unequal representation causes a greater deviation than it would at higher coverage (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). We expect most sequencing errors to be at lower coverage.</p>
+        </sec>
+        <sec>
+          <title>Sequencing quality score</title>
+          <p>Every SNP score was modified by multiplying the score by the average of the sequencing quality scores (of all cDNA reads) assigned to the nucleotides at the SNP&#x2019;s location divided by the best score possible. If this score is near one, then it will not appreciably modify the SNP score, but if the sequencing quality scores are low, the SNP score will be proportionally lowered. If the sequencing score is low, then it is likely that the proposed SNP is actually a sequencing error and not real. Insertions and deletions were not considered candidate SNPs.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Alignment program comparison</title>
+        <p>Novoalign and Megablast use different alignment algorithms. To test how this affects how many alignments are produced for our dataset, we examined the combined tissues of the Clearwater clonal line. After the reference sequences were broken into windows as described above, we used custom Perl scripts to count the alignments in each window. Every alignment was binned into an appropriate sequence identity category based on the number of mismatches in that window. The same was done for the wheat dataset, except the data from the two wheat lines were combined after binning.</p>
+      </sec>
+      <sec>
+        <title>SNP validation</title>
+        <p>We downloaded cDNA sequences (NCBI sequence read archive files ERR045179 and ERR045180) and reference sequences (<italic>Triticum aestivum</italic> UniGene build #62 ) used by another research group to identify SNPs in polyploid wheat [<xref ref-type="bibr" rid="B36">36</xref>]. The strategy they used accounted for the polyploid nature of wheat, but they had an effective window size of one nucleotide. We then used custom Perl scripts to retrieve the sequences used in their SNP validation analysis (both the correctly identified SNPs and those that were monomorphic) from the downloaded UniGene database.</p>
+        <p>These 125 sequences were used as a reference set. The cDNA sequence sets were transformed into fastq files using the NCBI&#x2019;s sratoolkit version 2.1.9 [<xref ref-type="bibr" rid="B43">43</xref>] and paired-end reads were split into separate files at the same time. Fastq files were converted to fasta files with quality scores using custom Perl scripts for use with Megablast. Megablast and Novoalign were then used to align the cDNA sequences against the reference set.</p>
+        <p>Megablast uses a local alignment algorithm, Smith-Waterman, while Novoalign uses a global alignment algorithm, Needleman-Wunsch. Local alignment algorithms are generally used for dissimilar sequence alignment, while global alignment algorithms are more for similar sequence alignment. Default settings were used for Novoalign and Megablast. The different alignment program outputs were in SAM format or BLAST format. Custom scripts described above were used to identify potential SNPs. Perl scripts were used to compare the identified SNPs to the validated SNPs.</p>
+      </sec>
+      <sec>
+        <title>Sequencing validation</title>
+        <p>Ten primers were designed [<xref ref-type="bibr" rid="B44">44</xref>] surrounding ten proposed rainbow trout SNPs with a range of scores (0.04 - 0.8 using Megablast alignments) to see if the genomic sequence corresponded to cDNA sequence. These proposed SNPs were selected to minimize insertions/deletions in between any known paralogs because they could have interfered with sequencing. The primers were found in ten reference sequences downloaded from the NCBI (BT045031, BT045191, FR677582, AF042218, AB208024, AJ627208, AY029216, AY593999, AY370888, AY065837). The primers were checked against a preliminary draft of the rainbow trout genome to make sure they did not align to splice sites (obtained from Michael Miller, University of California, Davis).</p>
+      </sec>
+      <sec>
+        <title>Availability of supporting data</title>
+        <p>cDNA sequences were deposited in the sequence read archive of the NCBI (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/sra/?term=SRP028233">http://www.ncbi.nlm.nih.gov/sra/?term=SRP028233</ext-link>). Perl scripts and instructions on how they may be used are available in Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>KAC wrote the Perl scripts, conducted the bioinformatics analyses, and drafted the manuscript. JPB prepared cDNA from clonal lines and helped draft the manuscript. MJL and JD sequenced candidate SNPs. GHT and RBP conceived of and initiated the study and helped draft the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>SNPs Found Between Five Rainbow Trout Lines in Rainbow Trout.</bold> SNPs found between five rainbow trout clonal lines in UniGene build #34 reference sequences. This file contains the sequence and genotype information for the SNPs found using the Megablast alignment program. This file can be opened with a text editor or with a spreadsheet program, information is separated by tabs.</p>
+        </caption>
+        <media xlink:href="1471-2105-14-325-S1.null">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p><bold>Perl Scripts and Instructions.</bold> This file must be decompressed before it is opened. It contains a folder with the various Perl scripts used for SNP discovery and instructions on how they may be used. The instructions may be opened with a text editor (e.g. notepad ++).</p>
+        </caption>
+        <media xlink:href="1471-2105-14-325-S2.zip">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p><bold>SNP Score Generation.</bold> Panel A illustrates the initial SNP score based on sequence similarity for three different nucleotide window sizes. In all cases the initial SNP score decreases quickly as the number of mismatches increases. Panel B shows how three different initial scores are modified if evidence for a nearly identical paralog is found. In all cases the score is lowered below a SNP score of 0.25. Panel C represents SNP scores after paralog information is analyzed. The X axis represents the number of estimated paralogs for a given window, while the different categories represent different numbers of estimated paralogs for the entire reference sequence. Panel D characterizes how the SNP score is modified by coverage and differential representation of the alleles. The X axis represents the coverage of allele 1 and the different categories represent the coverage of allele 2.</p>
+        </caption>
+        <media xlink:href="1471-2105-14-325-S3.pptx">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>We thank Paul Wheeler for producing the clonal rainbow trout. Thanks to Mark Wildung for 454 sequencing and providing the methods used for 454 sequencing. This research was funded by a USDA special research grant titled &#x201C;Aquaculture, Idaho and Washington&#x201D; awarded to GHT and RBP and in part by Agriculture and Food Research Initiative Competitive Grants number 2009-35205-05067 and 2011-67015-30091 from the USDA National Institute of Food and Agriculture. Support for KAC came from the National Institute of General Medical Sciences, Award Number T32GM083864. Finally, we thank Bobbi Adams, Anna Heink, Stacy Hathcox, Jon Mallatt, and the anonymous reviewers for their comments on the manuscript.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Koop</surname>
+            <given-names>BF</given-names>
+          </name>
+          <name>
+            <surname>Davidson</surname>
+            <given-names>WS</given-names>
+          </name>
+          <person-group person-group-type="editor">Tsukamoto K, Kawamura T, Takeuchi T, Beard TD, Kaiser J, Kaiser MJ</person-group>
+          <article-title>Genomics and the genome duplication in salmonids</article-title>
+          <source>Fisheries for Global Welfare and Environment, 5th World Fisheries Congress 2008</source>
+          <year>2008</year>
+          <publisher-name>Tokyo: TERRAPUB</publisher-name>
+          <fpage>77</fpage>
+          <lpage>86</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Allendorf</surname>
+            <given-names>FW</given-names>
+          </name>
+          <name>
+            <surname>Thorgaard</surname>
+            <given-names>GH</given-names>
+          </name>
+          <person-group person-group-type="editor">Turner BJ</person-group>
+          <article-title>Tetraploidy and the evolution of salmonid fishes</article-title>
+          <source>Evolutionary Genetics of Fishes</source>
+          <year>1984</year>
+          <publisher-name>New York: Plenum Press</publisher-name>
+          <fpage>1</fpage>
+          <lpage>53</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Palti</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Genet</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Luo</surname>
+            <given-names>MC</given-names>
+          </name>
+          <name>
+            <surname>Charlet</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Gao</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Hu</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Casta&#xF1;o-S&#xE1;nchez</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Tabet-Canale</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Krieg</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Yao</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Vallejo</surname>
+            <given-names>RL</given-names>
+          </name>
+          <name>
+            <surname>Rexroad</surname>
+            <given-names>CE</given-names>
+            <suffix>III</suffix>
+          </name>
+          <article-title>A first generation integrated map of the rainbow trout genome</article-title>
+          <source>BMC Genomics</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <fpage>180</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-12-180</pub-id>
+          <?supplied-pmid 21473775?>
+          <pub-id pub-id-type="pmid">21473775</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Guyomard</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Boussaha</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Krieg</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Hervet</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Quillet</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>A synthetic rainbow trout linkage map provides new insights into the salmonid whole genome duplication and the conservation of synteny among teleosts</article-title>
+          <source>BMC Genet</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>15</fpage>
+          <?supplied-pmid 22424132?>
+          <pub-id pub-id-type="pmid">22424132</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Danzmann</surname>
+            <given-names>RG</given-names>
+          </name>
+          <name>
+            <surname>Davidson</surname>
+            <given-names>EA</given-names>
+          </name>
+          <name>
+            <surname>Ferguson</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>Gharbi</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Koop</surname>
+            <given-names>BF</given-names>
+          </name>
+          <name>
+            <surname>Hoyheim</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Lien</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Lubieniecki</surname>
+            <given-names>KP</given-names>
+          </name>
+          <name>
+            <surname>Moghadam</surname>
+            <given-names>HK</given-names>
+          </name>
+          <name>
+            <surname>Park</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Phillips</surname>
+            <given-names>RB</given-names>
+          </name>
+          <name>
+            <surname>Davidson</surname>
+            <given-names>WS</given-names>
+          </name>
+          <article-title>Distribution of ancestral proto-Actinopterygian chromosome arms within the genomes of 4R-derivative salmonid fishes (rainbow trout and Atlantic salmon)</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>557</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-9-557</pub-id>
+          <?supplied-pmid 19032764?>
+          <pub-id pub-id-type="pmid">19032764</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dehal</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Boore</surname>
+            <given-names>JL</given-names>
+          </name>
+          <article-title>Two rounds of whole genome duplication in the ancestral vertebrate</article-title>
+          <source>PLoS Biol</source>
+          <year>2005</year>
+          <volume>3</volume>
+          <issue>10</issue>
+          <fpage>e314</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pbio.0030314</pub-id>
+          <?supplied-pmid 16128622?>
+          <pub-id pub-id-type="pmid">16128622</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Otto</surname>
+            <given-names>SP</given-names>
+          </name>
+          <name>
+            <surname>Yong</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>The evolution of gene duplicates</article-title>
+          <source>Adv Genet</source>
+          <year>2002</year>
+          <volume>46</volume>
+          <fpage>451</fpage>
+          <lpage>483</lpage>
+          <?supplied-pmid 11931235?>
+          <pub-id pub-id-type="pmid">11931235</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Lewis</surname>
+            <given-names>WH</given-names>
+          </name>
+          <source>Polyploidy: Biological Relevance</source>
+          <year>1980</year>
+          <publisher-name>New York: Plenum</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hegarty</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <name>
+            <surname>Hiscock</surname>
+            <given-names>SJ</given-names>
+          </name>
+          <article-title>Genomic clues to the evolutionary success of polyploid plants</article-title>
+          <source>Curr Biol</source>
+          <year>2008</year>
+          <volume>18</volume>
+          <fpage>R435</fpage>
+          <lpage>R444</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cub.2008.03.043</pub-id>
+          <?supplied-pmid 18492478?>
+          <pub-id pub-id-type="pmid">18492478</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ilut</surname>
+            <given-names>DC</given-names>
+          </name>
+          <name>
+            <surname>Coate</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Luciano</surname>
+            <given-names>AK</given-names>
+          </name>
+          <name>
+            <surname>Owens</surname>
+            <given-names>TG</given-names>
+          </name>
+          <name>
+            <surname>May</surname>
+            <given-names>GD</given-names>
+          </name>
+          <name>
+            <surname>Farmer</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Doyle</surname>
+            <given-names>JJ</given-names>
+          </name>
+          <article-title>A comparative transcriptomic study of an allotetraploid and its diploid progenitors illustrates the unique advantages and challenges of RNA-seq in plant species</article-title>
+          <source>Am J Bot</source>
+          <year>2012</year>
+          <volume>99</volume>
+          <issue>2</issue>
+          <fpage>383</fpage>
+          <lpage>396</lpage>
+          <pub-id pub-id-type="doi">10.3732/ajb.1100312</pub-id>
+          <?supplied-pmid 22301896?>
+          <pub-id pub-id-type="pmid">22301896</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brieuc</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Naish</surname>
+            <given-names>KA</given-names>
+          </name>
+          <article-title>Detecting signatures of positive selection in partial sequences generated on a large scale: pitfalls, procedures and resources</article-title>
+          <source>Mol Ecol Resour</source>
+          <year>2011</year>
+          <volume>11</volume>
+          <issue>Suppl. 1</issue>
+          <fpage>172</fpage>
+          <lpage>183</lpage>
+          <?supplied-pmid 21429173?>
+          <pub-id pub-id-type="pmid">21429173</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Moghadam</surname>
+            <given-names>HK</given-names>
+          </name>
+          <name>
+            <surname>Ferguson</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>Danzmann</surname>
+            <given-names>RG</given-names>
+          </name>
+          <article-title>Whole genome duplication: challenges and considerations associated with sequence orthology assignment in Salmoninae</article-title>
+          <source>J Fish Biol</source>
+          <year>2011</year>
+          <volume>79</volume>
+          <fpage>561</fpage>
+          <lpage>574</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1095-8649.2011.03030.x</pub-id>
+          <?supplied-pmid 21884100?>
+          <pub-id pub-id-type="pmid">21884100</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Abad&#xED;a-Cardoso</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Clemento</surname>
+            <given-names>AJ</given-names>
+          </name>
+          <name>
+            <surname>Garza</surname>
+            <given-names>JC</given-names>
+          </name>
+          <article-title>Discovery and characterization of single-nucleotide polymorphisms in steelhead/rainbow trout. Oncorhynchus mykiss</article-title>
+          <source>Mol Ecol Resour</source>
+          <year>2011</year>
+          <volume>11</volume>
+          <issue>Suppl. 1</issue>
+          <fpage>31</fpage>
+          <lpage>49</lpage>
+          <?supplied-pmid 21429161?>
+          <pub-id pub-id-type="pmid">21429161</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Casta&#xF1;o-S&#xE1;nchez</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Palti</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Rexroad</surname>
+            <given-names>C</given-names>
+            <suffix>III</suffix>
+          </name>
+          <person-group person-group-type="editor">Liu ZJ</person-group>
+          <article-title>SNP analysis with duplicated fish genomes: differentiation of SNPs, paralogous sequence variants, and multi-site variants</article-title>
+          <source>Next Generation Sequencing and Whole Genome Selection in Aquaculture</source>
+          <year>2011</year>
+          <publisher-name>Malden, MA: Wiley-Blackwell</publisher-name>
+          <fpage>133</fpage>
+          <lpage>150</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Vignal</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Milan</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>SanCristobal</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Eggen</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>A review on SNP and other types of molecular markers and their use in animal genetics</article-title>
+          <source>Genet Sel Evolu</source>
+          <year>2002</year>
+          <volume>34</volume>
+          <fpage>275</fpage>
+          <lpage>305</lpage>
+          <pub-id pub-id-type="doi">10.1186/1297-9686-34-3-275</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Marth</surname>
+            <given-names>GT</given-names>
+          </name>
+          <person-group person-group-type="editor">Kwok P-Y</person-group>
+          <article-title>Computational SNP discovery in DNA sequence data</article-title>
+          <source>Methods in Molecular Biology, vol. 212: Single Nucleotide Polymorphisms Methods and Protocols</source>
+          <year>2003</year>
+          <publisher-name>New York: Springer</publisher-name>
+          <fpage>85</fpage>
+          <lpage>110</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Iorizzo</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Senalik</surname>
+            <given-names>DA</given-names>
+          </name>
+          <name>
+            <surname>Grzebelus</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Bowman</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Cavagnaro</surname>
+            <given-names>PF</given-names>
+          </name>
+          <name>
+            <surname>Matvienko</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ashrafi</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Deynze</surname>
+            <given-names>AV</given-names>
+          </name>
+          <name>
+            <surname>Simon</surname>
+            <given-names>PW</given-names>
+          </name>
+          <article-title>De novo assembly and characterization of the carrot transcriptome reveals novel genes, new markers, and genetic diversity</article-title>
+          <source>BMC Genomics</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <fpage>389</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-12-389</pub-id>
+          <?supplied-pmid 21810238?>
+          <pub-id pub-id-type="pmid">21810238</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Sha</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Sonstegard</surname>
+            <given-names>TS</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Xu</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Somridhivej</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Peatman</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Kucuktas</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>Z</given-names>
+          </name>
+          <article-title>Quality assessment parameters for EST-derived SNPs from catfish</article-title>
+          <source>BMC Genomics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>450</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-9-450</pub-id>
+          <?supplied-pmid 18826589?>
+          <pub-id pub-id-type="pmid">18826589</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Renaut</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Nolte</surname>
+            <given-names>AW</given-names>
+          </name>
+          <name>
+            <surname>Bernatchez</surname>
+            <given-names>L</given-names>
+          </name>
+          <article-title>Mining transcriptome sequences towards identifying adaptive single nucleotide polymorphisms in lake whitefish species pairs (Coregonus spp. Salmonidae)</article-title>
+          <source>Mol Ecol</source>
+          <year>2010</year>
+          <volume>19</volume>
+          <issue>Suppl. 1</issue>
+          <fpage>115</fpage>
+          <lpage>131</lpage>
+          <?supplied-pmid 20331775?>
+          <pub-id pub-id-type="pmid">20331775</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Seeb</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Pascal</surname>
+            <given-names>CE</given-names>
+          </name>
+          <name>
+            <surname>Grau</surname>
+            <given-names>ED</given-names>
+          </name>
+          <name>
+            <surname>Seeb</surname>
+            <given-names>LW</given-names>
+          </name>
+          <name>
+            <surname>Templin</surname>
+            <given-names>WD</given-names>
+          </name>
+          <name>
+            <surname>Harkins</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Roberts</surname>
+            <given-names>SB</given-names>
+          </name>
+          <article-title>Transcriptome sequencing and high-resolution melt analysis advance single nucleotide polymorphism discovery in duplicated salmonids</article-title>
+          <source>Mol Ecol Resour</source>
+          <year>2011</year>
+          <volume>11</volume>
+          <fpage>335</fpage>
+          <lpage>348</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1755-0998.2010.02936.x</pub-id>
+          <?supplied-pmid 21429141?>
+          <pub-id pub-id-type="pmid">21429141</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cirulli</surname>
+            <given-names>ET</given-names>
+          </name>
+          <name>
+            <surname>Singh</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Shianna</surname>
+            <given-names>KV</given-names>
+          </name>
+          <name>
+            <surname>Ge</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Maia</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Heinzen</surname>
+            <given-names>EL</given-names>
+          </name>
+          <name>
+            <surname>Goedert</surname>
+            <given-names>JJ</given-names>
+          </name>
+          <name>
+            <surname>Goldstein</surname>
+            <given-names>DB</given-names>
+          </name>
+          <article-title>CHAVI: Screening the human exome: a comparison of whole genome and whole transcriptome sequencing</article-title>
+          <source>Genome Biol</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>R57</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2010-11-5-r57</pub-id>
+          <?supplied-pmid 20598109?>
+          <pub-id pub-id-type="pmid">20598109</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Vosman</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Voorrips</surname>
+            <given-names>RE</given-names>
+          </name>
+          <name>
+            <surname>van der Linden</surname>
+            <given-names>CG</given-names>
+          </name>
+          <name>
+            <surname>Leunissen</surname>
+            <given-names>JAM</given-names>
+          </name>
+          <article-title>QualitySNP: a pipeline for detecting single nucleotide polymorphisms and insertions/deletions in EST data from diploid and polyploid species</article-title>
+          <source>BMC Bioinforma</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <fpage>438</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-7-438</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Altshuler</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Pollara</surname>
+            <given-names>VJ</given-names>
+          </name>
+          <name>
+            <surname>Cowles</surname>
+            <given-names>CR</given-names>
+          </name>
+          <name>
+            <surname>Van Etten</surname>
+            <given-names>WJ</given-names>
+          </name>
+          <name>
+            <surname>Baldwin</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Linton</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Lander</surname>
+            <given-names>ES</given-names>
+          </name>
+          <article-title>An SNP map of the human genome generated by reduced representation shotgun sequencing</article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>407</volume>
+          <fpage>513</fpage>
+          <lpage>516</lpage>
+          <pub-id pub-id-type="doi">10.1038/35035083</pub-id>
+          <?supplied-pmid 11029002?>
+          <pub-id pub-id-type="pmid">11029002</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Marth</surname>
+            <given-names>GT</given-names>
+          </name>
+          <name>
+            <surname>Korf</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Yandell</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>Yeh</surname>
+            <given-names>RT</given-names>
+          </name>
+          <name>
+            <surname>Gu</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Zakeri</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Stitziel</surname>
+            <given-names>NO</given-names>
+          </name>
+          <name>
+            <surname>Hillier</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Kwok</surname>
+            <given-names>PY</given-names>
+          </name>
+          <name>
+            <surname>Gish</surname>
+            <given-names>WR</given-names>
+          </name>
+          <article-title>A general approach to single-nucleotide polymorphism discovery</article-title>
+          <source>Nat Genet</source>
+          <year>1999</year>
+          <volume>23</volume>
+          <fpage>452</fpage>
+          <lpage>456</lpage>
+          <pub-id pub-id-type="doi">10.1038/70570</pub-id>
+          <?supplied-pmid 10581034?>
+          <pub-id pub-id-type="pmid">10581034</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Barbazuk</surname>
+            <given-names>WB</given-names>
+          </name>
+          <name>
+            <surname>Emrich</surname>
+            <given-names>SJ</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>HD</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Schnable</surname>
+            <given-names>PS</given-names>
+          </name>
+          <article-title>SNP discovery via 454 transcriptome sequencing</article-title>
+          <source>Plant J</source>
+          <year>2007</year>
+          <volume>51</volume>
+          <fpage>910</fpage>
+          <lpage>918</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-313X.2007.03193.x</pub-id>
+          <?supplied-pmid 17662031?>
+          <pub-id pub-id-type="pmid">17662031</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Meyer</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Aglyamova</surname>
+            <given-names>GV</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Buchanan-Carter</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Abrego</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Colbourne</surname>
+            <given-names>JK</given-names>
+          </name>
+          <name>
+            <surname>Willis</surname>
+            <given-names>BL</given-names>
+          </name>
+          <name>
+            <surname>Matz</surname>
+            <given-names>MV</given-names>
+          </name>
+          <article-title>Sequencing and de novo analysis of a coral larval transcriptome using 454 GSFlx</article-title>
+          <source>BMC Genomics</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>219</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-10-219</pub-id>
+          <?supplied-pmid 19435504?>
+          <pub-id pub-id-type="pmid">19435504</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Studer</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Byrne</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>RO</given-names>
+          </name>
+          <name>
+            <surname>Panitz</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Bendixen</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Islam</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Pfeifer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>L&#xFC;bberstedt</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Asp</surname>
+            <given-names>T</given-names>
+          </name>
+          <article-title>A transcriptome map of perennial ryegrass (Lolium perenne L.)</article-title>
+          <source>BMC Genomics</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>140</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-13-140</pub-id>
+          <?supplied-pmid 22513206?>
+          <pub-id pub-id-type="pmid">22513206</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Han</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Kang</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Torres-Jerez</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Cheung</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Town</surname>
+            <given-names>CD</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>PX</given-names>
+          </name>
+          <name>
+            <surname>Udvardi</surname>
+            <given-names>MK</given-names>
+          </name>
+          <name>
+            <surname>Monteros</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <article-title>Genome-wide SNP discovery in tetraploid alfalfa using 454 sequencing and high resolution melting analysis</article-title>
+          <source>BMC Genomics</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <fpage>350</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2164-12-350</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Everett</surname>
+            <given-names>MV</given-names>
+          </name>
+          <name>
+            <surname>Grau</surname>
+            <given-names>ED</given-names>
+          </name>
+          <name>
+            <surname>Seeb</surname>
+            <given-names>JE</given-names>
+          </name>
+          <article-title>Short reads and nonmodel species: exploring the complexities of next-generation sequence assembly and SNP discovery in the absence of a reference genome</article-title>
+          <source>Mol Ecol Resour</source>
+          <year>2011</year>
+          <volume>11</volume>
+          <issue>Suppl. 1</issue>
+          <fpage>93</fpage>
+          <lpage>108</lpage>
+          <?supplied-pmid 21429166?>
+          <pub-id pub-id-type="pmid">21429166</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Miller</surname>
+            <given-names>MR</given-names>
+          </name>
+          <name>
+            <surname>Brunelli</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Wheeler</surname>
+            <given-names>PA</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Rexroad</surname>
+            <given-names>CE</given-names>
+            <suffix>III</suffix>
+          </name>
+          <name>
+            <surname>Palti</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Doe</surname>
+            <given-names>CQ</given-names>
+          </name>
+          <name>
+            <surname>Thorgaard</surname>
+            <given-names>GH</given-names>
+          </name>
+          <article-title>A conserved haplotype controls parallel adaptation in geographically distant salmonid populations</article-title>
+          <source>Mol Ecol</source>
+          <year>2012</year>
+          <volume>21</volume>
+          <issue>2</issue>
+          <fpage>237</fpage>
+          <lpage>249</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-294X.2011.05305.x</pub-id>
+          <?supplied-pmid 21988725?>
+          <pub-id pub-id-type="pmid">21988725</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Trick</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Long</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Meng</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Bancroft</surname>
+            <given-names>I</given-names>
+          </name>
+          <article-title>Single nucleotide polymorphism (SNP) discovery in the polyploid Brassica napus using solexa transcriptome sequencing</article-title>
+          <source>Plant Biotechnol J</source>
+          <year>2009</year>
+          <volume>7</volume>
+          <fpage>334</fpage>
+          <lpage>346</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1467-7652.2008.00396.x</pub-id>
+          <?supplied-pmid 19207216?>
+          <pub-id pub-id-type="pmid">19207216</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Buetow</surname>
+            <given-names>KH</given-names>
+          </name>
+          <name>
+            <surname>Edmonson</surname>
+            <given-names>MN</given-names>
+          </name>
+          <name>
+            <surname>Cassidy</surname>
+            <given-names>AB</given-names>
+          </name>
+          <article-title>Reliable identification of large numbers of candidate SNPs from public EST data</article-title>
+          <source>Nat Genet</source>
+          <year>1999</year>
+          <volume>21</volume>
+          <fpage>323</fpage>
+          <lpage>325</lpage>
+          <pub-id pub-id-type="doi">10.1038/6851</pub-id>
+          <?supplied-pmid 10080189?>
+          <pub-id pub-id-type="pmid">10080189</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Schwartz</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Wagner</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Miller</surname>
+            <given-names>W</given-names>
+          </name>
+          <article-title>A greedy algorithm for aligning DNA sequences</article-title>
+          <source>J Comput Biol</source>
+          <year>2000</year>
+          <volume>7</volume>
+          <issue>1&#x2013;2</issue>
+          <fpage>203</fpage>
+          <lpage>214</lpage>
+          <?supplied-pmid 10890397?>
+          <pub-id pub-id-type="pmid">10890397</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="other">
+          <source>Novocraft Technologies</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.novocraft.com">http://www.novocraft.com</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Brown</surname>
+            <given-names>GD</given-names>
+          </name>
+          <source>An analysis of salmonid RNA sequences and implications for salmonid evolution</source>
+          <year>2008</year>
+          <publisher-name>University of Victoria, Department of Computer Science: PhD thesis</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Trick</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Adamski</surname>
+            <given-names>NM</given-names>
+          </name>
+          <name>
+            <surname>Mugford</surname>
+            <given-names>SG</given-names>
+          </name>
+          <name>
+            <surname>Jiang</surname>
+            <given-names>CC</given-names>
+          </name>
+          <name>
+            <surname>Febrer</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Uauy</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Combining SNP discovery from next-generation sequencing data with bulked segregant analysis (BSA) to fine-map genes in polyploid wheat</article-title>
+          <source>BMC Plant Biol</source>
+          <year>2012</year>
+          <volume>12</volume>
+          <fpage>14</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2229-12-14</pub-id>
+          <?supplied-pmid 22280551?>
+          <pub-id pub-id-type="pmid">22280551</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Huang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Sirikhachornkit</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Su</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Faris</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Gill</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Haselkorn</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Gornicki</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Genes encoding plastid acetyl-CoA carboxylase and 3-phosphoglycerate kinase of the Triticum/Aegilops complex and the evolutionary history of polyploid wheat</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2002</year>
+          <volume>99</volume>
+          <issue>12</issue>
+          <fpage>8133</fpage>
+          <lpage>8138</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.072223799</pub-id>
+          <?supplied-pmid 12060759?>
+          <pub-id pub-id-type="pmid">12060759</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Robison</surname>
+            <given-names>BD</given-names>
+          </name>
+          <name>
+            <surname>Wheeler</surname>
+            <given-names>PA</given-names>
+          </name>
+          <name>
+            <surname>Thorgaard</surname>
+            <given-names>GH</given-names>
+          </name>
+          <article-title>Variation in development rate among clonal lines of rainbow trout (Oncorhynchus mykiss)</article-title>
+          <source>Aquaculture</source>
+          <year>1999</year>
+          <volume>173</volume>
+          <fpage>131</fpage>
+          <lpage>141</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0044-8486(98)00481-5</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Simms</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Cizdziel</surname>
+            <given-names>PE</given-names>
+          </name>
+          <name>
+            <surname>Chomczynski</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>TRIzol<sup>tm</sup>: a new reagent for optimal single-step isolation of RNA</article-title>
+          <source>Focus</source>
+          <year>1993</year>
+          <volume>15</volume>
+          <fpage>99</fpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Sambrook</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Fritsch</surname>
+            <given-names>EF</given-names>
+          </name>
+          <name>
+            <surname>Maniatis</surname>
+            <given-names>T</given-names>
+          </name>
+          <source>Molecular cloning, a laboratory manual</source>
+          <year>1989</year>
+          <edition>2</edition>
+          <publisher-name>Cold Spring Harbor, NY: Cold Spring Harbor Laboratory Press</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="other">
+          <source>454 sequencing</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.454.com">http://www.454.com</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="other">
+          <source>UniGene</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/UniGene">http://www.ncbi.nlm.nih.gov/UniGene</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="other">
+          <source>The Sequence Read Archive (SRA)</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/sra">http://www.ncbi.nlm.nih.gov/sra</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ye</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Coulouris</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Zaretskaya</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Cutcutache</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Rozen</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Madden</surname>
+            <given-names>TL</given-names>
+          </name>
+          <article-title>Primer-BLAST: a tool to design target-specific primers for polymerase chain reaction</article-title>
+          <source>BMC Bioinforma</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>134</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2105-13-134</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
