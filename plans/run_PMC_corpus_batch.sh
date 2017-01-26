@@ -10,5 +10,5 @@ RAM=30g
 
 # run the pipeline
 batch=$(printf "%0.2d" $BATCH_NB)
-$ALVISDIR/bin/alvisnlp -J "-Xmx30g" -verbose -inputDir $CORPUSDIR/batch/$batch -inputDir $YATEACONFIG -inputDir $SOFTWAREDIR -outputDir $OUTPUTDIR/$batch -inputDir $OUTPUTDIR/$batch -entity ontology $ONTOLOGYNAME plans/tag_and_index_PMC.plan
+$ALVISDIR/bin/alvisnlp -J "-Xmx30g" -verbose -inputDir $CORPUSDIR/batch/$batch -inputDir $PLANDIR -inputDir $SOFTWAREDIR -outputDir $OUTPUTDIR/$batch -inputDir $OUTPUTDIR/$batch -entity ontology $ONTOLOGYNAME plans/tag_and_index_PMC.plan
 
