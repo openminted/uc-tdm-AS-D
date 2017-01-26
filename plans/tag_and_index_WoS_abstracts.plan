@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<alvisnlp-plan id="tag_and_index_WoS">
+
+<!-- Read abstracts -->
+<module id="read-wos-abstracts" class="WebOfKnowledgeReader">
+    <source>&inputfile;</source>
+</module>
+<module id="renametitle" class="Action">
+  <target>documents.sections:TI</target>
+  <action>set:feat:sectionname("title")</action>
+  <setFeatures/>
+</module>
+<module id="renameabstract" class="Action">
+  <target>documents.sections:AB</target>
+  <action>set:feat:sectionname("abstract")</action>
+  <setFeatures/>
+</module>
+
+<!-- Tag entities (wheat taxa, phenotypes, genes and markers) -->
+<import file="plans/extract_Wheat_entities.plan"/>
+
+<!-- Print tabular files for each entity type -->
+<module id="print-pheno" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"phenotypes.txt"</fileName>
+  <lines>documents.sections.layer:phenotypes</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>@concept-name</element>
+    <element>@concept-id</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<module id="print-genes" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"genes.txt"</fileName>
+  <lines>documents.sections.layer:genes</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<module id="print-markers" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"markers.txt"</fileName>
+  <lines>documents.sections.layer:markers</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<module id="print-species" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"species.txt"</fileName>
+  <lines>documents.sections.layer:taxa</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>@taxid</element>
+    <element>@canonical-name</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+  
+</module>
+
+<!-- HTML visualization -->
+	<module id="html" class="QuickHTML">
+		<outDir>html</outDir>
+		<classFeature>ne-type</classFeature>
+		<layers>phenotypes,taxa,genes,markers</layers>
+		<colors>#99cc00,#ffcc99,#ffd333,#ffd666</colors>
+	</module>
+
+<!-- Index for AlvisIR -->
+  <module id="index" class="AlvisIRIndexer">
+    <indexDir>index</indexDir>
+    <tokenPositionGap>128</tokenPositionGap>
+    <fieldNames>title,abstract,author,full-author,pmid,year,journal,mesh</fieldNames>
+    <propertyKeys/>
+    <documents>
+      <fields>
+  	<instances>sections[@sectionname=="title"] | sections[@sectionname=="abstract"]</instances>
+  	<field-name>@sectionname</field-name>
+  	<annotations>
+  	  <instances>layer:taxa</instances>
+  	  <text>"{taxon}" ^ @taxid ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:genes</instances>
+  	  <text>"{gene}" ^ @canonical-form ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:markers</instances>
+  	  <text>"{marker}" ^ @canonical-form ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:sentences</instances>
+  	  <text>"{SENT}"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:phenotypes</instances>
+  	  <text>"{phenotype}" ^ @concept-path ^ "/"</text>
+  	</annotations>
+      </fields>
+      <fields>
+  	<instances>sections:author</instances>
+      </fields>
+      <fields>
+  	<instances>sections:author</instances>
+  	<field-name>"full-author"</field-name>
+  	<keyword>contents</keyword>
+      </fields>
+      <fields>
+  	<instances>$</instances>
+  	<field-name>"pmid"</field-name>
+  	<keyword>@id</keyword>
+      </fields>
+      <fields>
+  	<instances>$[@PY]</instances>
+  	<field-name>"year"</field-name>
+  	<keyword>@PY</keyword>
+      </fields>
+      <fields>
+  	<instances>$[@journal]</instances>
+  	<field-name>"journal"</field-name>
+  	<keyword>@journal</keyword>
+      </fields>
+    </documents>
+  </module>
+
+</alvisnlp-plan>

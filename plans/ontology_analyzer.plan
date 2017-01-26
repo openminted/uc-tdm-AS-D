@@ -1,0 +1,139 @@
+<alvisnlp-plan id="tomap-train">
+  <module id="read-obo" class="OBOReader">
+    <oboFiles>&ontofile;</oboFiles>
+  </module>
+
+  <module id="words" class="WoSMig"/>
+  <module id="sentences" class="SeSMig"/>
+
+<!-- Add synonyms -->
+<module id="add-synonyms" class="Action">
+    <target>documents.sections.layer:sentences[@form =~ "resistance"]</target>
+    <action>document.new:section:syno(str:seds(target.@form,"resistance", "response")).set:feat:syno("true")|document.new:section:syno(str:seds(target.@form,"resistance", "susceptibility")).set:feat:syno("true")|document.new:section:syno(str:seds(target.@form,"resistance", "sensitivity")).set:feat:syno("true")</action>
+    <createSections/>
+    <setFeatures/>
+</module>
+
+<module id="add-synonyms-2" class="Action">
+    <target>documents.sections.layer:sentences[@form =~ "response"]</target>
+    <action>document.new:section:syno(str:seds(target.@form,"response", "resistance")).set:feat:syno("true")|document.new:section:syno(str:seds(target.@form,"response", "susceptibility")).set:feat:syno("true")|document.new:section:syno(str:seds(target.@form,"response", "sensitivity")).set:feat:syno("true")</action>
+    <createSections/>
+    <setFeatures/>
+</module>
+
+<module id="add-synonyms-3" class="Action">
+    <target>documents.sections.layer:sentences[@form =~ "susceptibility"]</target>
+    <action>document.new:section:syno(str:seds(target.@form,"susceptibility", "resistance")).set:feat:syno("true")|document.new:section:syno(str:seds(target.@form,"susceptibility", "response")).set:feat:syno("true")|document.new:section:syno(str:seds(target.@form,"susceptibility", "sensitivity")).set:feat:syno("true")</action>
+    <createSections/>
+    <setFeatures/>
+</module>
+
+<module id="add-synonyms-4" class="Action">
+    <target>documents.sections.layer:sentences[@form =~ "sensitivity"]</target>
+    <action>document.new:section:syno(str:seds(target.@form,"sensitivity", "resistance")).set:feat:syno("true")|document.new:section:syno(str:seds(target.@form,"sensitivity", "response")).set:feat:syno("true")|document.new:section:syno(str:seds(target.@form,"sensitivity", "susceptibility")).set:feat:syno("true")</action>
+    <createSections/>
+    <setFeatures/>
+</module>
+
+  <module id="words2" class="WoSMig">
+  <sectionFilter>@syno=="true"</sectionFilter>
+  </module>
+  <module id="sentences2" class="SeSMig">
+  <sectionFilter>@syno=="true"</sectionFilter>
+  </module>
+
+  <module id="tt" class="TreeTagger">
+    <treeTaggerExecutable>tree-tagger-3.2/bin/tree-tagger</treeTaggerExecutable>
+    <parFile>tree-tagger-3.2/lib/english.par</parFile>
+    <noUnknownLemma/>
+  </module>
+
+  <module id="POS-tag-correction-1" class="Action">
+    <target>documents.sections.layer:words[(@pos == "VVG" or @pos == "VVN" or @pos == "VVD") and before:words{-1}.@form == "-"]</target>
+    <action>set:feat:lemma(str:lower(@form))</action>
+    <setFeatures/>
+  </module>
+  <module id="POS-tag-correction" class="Action">
+    <target>documents.sections.layer:words[(@pos == "VVG" or @pos == "VVN" or @pos == "VVD") and before:words{-1}.@form == "-"]</target>
+    <action>set:feat:pos("JJ")</action>
+    <setFeatures/>
+  </module>
+
+  <module id="lemma-correction" class="Action">
+    <target>documents.sections.layer:words[(@pos == "NN" or @pos == "JJ") and @form =~ "ing$" ]</target>
+    <action>set:feat:lemma(str:lower(@form))</action>
+    <setFeatures/>
+  </module>
+  <module id="lemma-correction-2" class="Action">
+    <target>documents.sections.layer:words[@pos == "JJ" and @form =~ "ed$" ]</target>
+    <action>set:feat:lemma(str:lower(@form))</action>
+    <setFeatures/>
+  </module>
+
+  <module id="specific-POS-tag-correction" class="Action">
+    <target>documents.sections.layer:words[@form == "wrt"]</target>
+    <action>set:feat:pos("IN")</action>
+    <setFeatures/>
+  </module>
+
+  <module id="POS-tag-correction2-1" class="Action">
+    <target>documents.sections.layer:words[@pos == "VVN" or @pos == "VVD"]</target>
+    <action>set:feat:lemma(@form)</action>
+    <setFeatures/>
+  </module>
+  <module id="POS-tag-correction2" class="Action">
+    <target>documents.sections.layer:words[(@pos == "VVN" or @pos == "VVD") and (@form =~ "ed$" or not end == outside:sentences.end)]</target>
+    <action>set:feat:pos("JJ")</action>
+    <setFeatures/>
+  </module>
+  <module id="POS-tag-correction2-2" class="Action">
+    <target>documents.sections.layer:words[@pos == "VVN" or @pos == "VVD"]</target>
+    <action>set:feat:pos("NN")</action>
+    <setFeatures/>
+  </module>
+
+<module id="POS-tag-correction5-1" class="Action">
+    <target>documents.sections.layer:words[@pos == "VVG"]</target>
+    <action>set:feat:lemma(@form)</action>
+    <setFeatures/>
+  </module>
+
+  <module id="POS-tag-correction5-2" class="Action">
+    <target>documents.sections.layer:words[@pos == "VVG" and end == outside:sentences.end]</target>
+    <action>set:feat:pos("NN")</action>
+    <setFeatures/>
+  </module>
+
+  <module id="POS-tag-correction5-3" class="Action">
+    <target>documents.sections.layer:words[@pos == "VVG"]</target>
+    <action>set:feat:pos("JJ")</action>
+    <setFeatures/>
+  </module>
+
+  <module id="POS-tag-correction3-1" class="Action">
+    <target>documents.sections.layer:words[@pos == "VV" or @pos == "VVP"]</target>
+    <action>set:feat:lemma(@form)</action>
+    <setFeatures/>
+  </module>
+  <module id="POS-tag-correction3" class="Action">
+    <target>documents.sections.layer:words[@pos == "VV" or @pos == "VVP"]</target>
+    <action>set:feat:pos("NN")</action>
+    <setFeatures/>
+  </module>
+
+  <module id="POS-tag-correction4" class="Action">
+    <target>documents.sections.layer:words[@pos == "VVZ"]</target>
+    <action>set:feat:pos("NNS")</action>
+    <setFeatures/>
+  </module>
+
+<module id="analyze" class="TomapTrain">
+    <outFile>&outfile;</outFile>
+    <workingDir>yatea-train</workingDir>
+    <yateaExecutable>Lingua-YaTeA/bin/yatea</yateaExecutable>
+    <configDir>config</configDir>
+    <rcFile>yatea.rc</rcFile>
+    <conceptIdentifier>document.@id</conceptIdentifier>
+ </module>
+
+</alvisnlp-plan>

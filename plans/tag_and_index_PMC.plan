@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<alvisnlp-plan id="tag_and_index_PMC">
+
+<!-- Read PMC XML files-->
+<read class="XMLReader2">
+    <sourcePath filter="\.xml$">xml/</sourcePath>
+    <xslTransform>plans/pmc2alvisnlp.xslt</xslTransform>
+</read>
+
+<!-- Tag entities (wheat taxa, phenotypes, genes and markers) -->
+<import file="plans/extract_Wheat_entities.plan"/>
+
+<!-- Print tabular files for each entity type -->
+<module id="print-pheno" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"phenotypes.txt"</fileName>
+  <lines>documents.sections.layer:phenotypes</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>@concept-name</element>
+    <element>@concept-id</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+  
+</module>
+
+<module id="print-genes" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"genes.txt"</fileName>
+  <lines>documents.sections.layer:genes</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<module id="print-markers" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"markers.txt"</fileName>
+  <lines>documents.sections.layer:markers</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<module id="print-species" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"species.txt"</fileName>
+  <lines>documents.sections.layer:taxa</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>@taxid</element>
+    <element>@canonical-name</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+  
+</module>
+
+<!-- HTML visualization -->
+<module id="html" class="QuickHTML">
+  <sectionFilter>@name == "article-title" or @name == "article-meta" or @name == "abstract" or  @name == "body"</sectionFilter>
+  <outDir>html</outDir>
+  <classFeature>ne-type</classFeature>
+  <layers>phenotypes,taxa,genes,markers</layers>
+  <colors>#99cc00,#ffcc99,#ffd333,#ffd666</colors>
+</module>
+
+<!-- Index for AlvisIR -->
+
+  <!-- <module id="index" class="AlvisIRIndexer"> -->
+  <!--   <indexDir>&corpus-dir;/batch/&batch;/index</indexDir> -->
+  <!--   <tokenPositionGap>128</tokenPositionGap> -->
+  <!--   <fieldNames>article-title,article-meta,abstract,body,author,full-author,pmid,year,journal,mesh</fieldNames> -->
+  <!--   <propertyKeys/> -->
+  <!--   <documents> -->
+  <!--     <fields> -->
+  <!-- 	<instances>sections[@name=="abstract"] | sections[@name=="body"]|sections[@name=="article-title"]|sections[@name=="article-meta"]</instances> -->
+  <!-- 	<field-name>@name</field-name> -->
+  <!-- 	<annotations> -->
+  <!-- 	  <instances>layer:taxa</instances> -->
+  <!-- 	  <text>"{taxon}" ^ @taxid ^ "/"</text> -->
+  <!-- 	</annotations> -->
+  <!-- 	<annotations> -->
+  <!-- 	  <instances>layer:genes</instances> -->
+  <!-- 	  <text>"{gene}" ^ @canonical-form ^ "/"</text> -->
+  <!-- 	</annotations> -->
+  <!-- 	<annotations> -->
+  <!-- 	  <instances>layer:markers</instances> -->
+  <!-- 	  <text>"{marker}" ^ @canonical-form ^ "/"</text> -->
+  <!-- 	</annotations> -->
+  <!-- 	<annotations> -->
+  <!-- 	  <instances>layer:sentences</instances> -->
+  <!-- 	  <text>"{SENT}"</text> -->
+  <!-- 	</annotations> -->
+  <!-- 	<annotations> -->
+  <!-- 	  <instances>layer:phenotypes</instances> -->
+  <!-- 	  <text>"{phenotype}" ^ @concept-path ^ "/"</text> -->
+  <!-- 	</annotations> -->
+  <!--     </fields> -->
+  <!--     <fields> -->
+  <!-- 	<instances>sections:author</instances> -->
+  <!--     </fields> -->
+  <!--     <fields> -->
+  <!-- 	<instances>sections:author</instances> -->
+  <!-- 	<field-name>"full-author"</field-name> -->
+  <!-- 	<keyword>contents</keyword> -->
+  <!--     </fields> -->
+  <!--     <fields> -->
+  <!-- 	<instances>$</instances> -->
+  <!-- 	<field-name>"pmid"</field-name> -->
+  <!-- 	<keyword>@pmid</keyword> -->
+  <!--     </fields> -->
+  <!--     <fields> -->
+  <!-- 	<instances>$</instances> -->
+  <!-- 	<field-name>"year"</field-name> -->
+  <!-- 	<keyword>@year</keyword> -->
+  <!--     </fields> -->
+  <!--     <fields> -->
+  <!-- 	<instances>$</instances> -->
+  <!-- 	<field-name>"journal"</field-name> -->
+  <!-- 	<keyword>@journal</keyword> -->
+  <!--     </fields> -->
+  <!--   </documents> -->
+  <!-- </module> -->
+
+
+</alvisnlp-plan>
