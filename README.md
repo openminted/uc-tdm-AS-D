@@ -10,3 +10,9 @@ This repository contains all configuration files, AlvisNLP workflow plans, scrip
 - plans/ : AlvisNLP workflow plans and scripts used to create the application (annotate and index corpora, pre-process resources, etc.)
 - resources/ : resources used in the application (lexicons, ontology, etc.)
 
+## Prerequisites
+
+- AlvisNLP/ML processing pipeline (available at https://github.com/Bibliome/alvisnlp)
+- Java >= 7
+- TreeTagger tool (available at http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
+- YaTeA term extractor (available at http://search.cpan.org/~thhamon/Lingua-YaTeA/)
