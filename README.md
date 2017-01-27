@@ -1,4 +1,4 @@
-# Use Case AS-D: Linking Wheat Data With Litterature
+# Use Case AS-D: Linking Wheat Data With Literature
 
 
 The web application AlvisIR Search Engine for the AS-D use case is available at : http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search
