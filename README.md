@@ -1,9 +1,11 @@
 # Use Case AS-D: Linking Wheat Data With Literature
 
 
-The web application AlvisIR Search Engine for the AS-D use case is available at : http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search
+The web application Wheat Phenotype Search for the AS-D use case is available at : http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search
 
-This repository contains all configuration files, AlvisNLP workflow plans, scripts, corpora and resources used to create the AS-D search engine application.
+The documentation for the application is available in the AS-D_applicationDoc.adoc document.
+
+The uc-tdm-AS-D repository also contains all configuration files, AlvisNLP workflow plans, scripts, corpora and resources used to create the AS-D search engine application.
 
 - alvisIR/ : configuration files for the search engine
 - corpus/ : corpora used in the application
