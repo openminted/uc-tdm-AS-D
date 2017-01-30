@@ -7,13 +7,14 @@ This application offers access to highly relevant articles on wheat in the field
 == Application description
 This version of the application consists of the automatic recognition and normalization of phenotypes, genes, markers, and wheat-related taxa from scientific abstracts.
 
-The corpus is composed of 3,881 abstracts from 414 journals. XXX phenotypes, XXX genes, XXX markers and XXX taxa have been annotated by the TDM components. Taxa and markers are normalized according to identifiers from the URGI database. Phenotypes are normalized according to the Wheat Phenotype Ontology. Genes are normalized according to a in-house lexicon.
+The corpus is composed of 3,881 abstracts from 414 journals. 8,996 phenotypes, 10,537 genes, 2,749 markers and 13,015 taxa have been annotated and indexed by the TDM workflow. Taxa and markers are normalized according to identifiers from the URGI database. Phenotypes are normalized according to the Wheat Phenotype Ontology. Genes are normalized according to a in-house lexicon.
+
 The TDM components and the workflow application are deployed on Alvis platform at INRA MaIAGE lab. The end-user can use a semantic search engine to search the extracted information. The Alvis Semantic Information Retrieval engine is a web application, publicly available and usable with any web browser (available at http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search).
 
 = Wheat Phenotype Search
 
 == User profile
-The user of the wheat phenotype search engine is a breeder who wants to access the literature relating to genes possibly involved in a given trait of a specific subspecies of wheat. Conversely the breeder may be interested in any phenotypic-related information on a given gene.
+The targeted user of the wheat phenotype search engine is a breeder who wants to access the literature relating to genes that may be involved in a given trait of a specific wheat subspecies. Conversely, the breeder may be interested in any phenotypic-related information on a given gene.
 
 == Architecture of the application
 The relevant corpus has been fully pre-processed by the AlvisNLP pipeline and indexed for query through the AlvisIR engine available from any web browser.
@@ -21,7 +22,7 @@ The relevant corpus has been fully pre-processed by the AlvisNLP pipeline and in
 == User manual, How-to
 
 === Launching the application
-The URL to run AlvisIR search engine on Wheat Phenotypes is : 
+The URL to run the AlvisIR search engine on Wheat Phenotypes is : 
 http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search
 
 [[img-sunset]]
@@ -53,20 +54,20 @@ The results of the query are displayed in four frames:
 image::images/Screenshot-full.png[align="center"]
 
 === Query interpretation
-The query is interpreted according to the syntax of the query language. The terms of the query that designate taxa with respect to the NCBI taxonomy or phenotypes with respect to the Wheat Phenotype ontology are interpreted as concepts of these hierarchies. ~loc is interpreted as the "localization relation between the taxon term at left and the habitat term at right. 
-The query interpretation frame displays the interpretation of query terms as concepts, the list of their synonyms and subconcepts (more specific). The number of occurrences for each term is also displayed. All documents that are indexed by a synonym or a more specific term of the query term are retrieved if they respect the relationship constraint if ever. 
+The query is interpreted according to the syntax of the query language. The terms of the query that designate phenotypes with respect to the Wheat Phenotype ontology are interpreted as concepts of this hierarchy.
+
+The query interpretation frame displays the interpretation of query terms as concepts, the list of their synonyms and subconcepts (more specific). The number of occurrences for each term is also displayed. All documents that are indexed by a synonym or a more specific term of the query term are retrieved. 
 
 === Hits
-Each hit represent a document that verify the query constraints. It is composed of 
-* the title of the document, (clicking on the title displays the full reference on PubMed site.)
+Each hit represent a document that verify the query constraints. It is composed of:
+* the title of the document,
 * the publication date, 
-* (the name of the journal, )
 * the text of the abstract (whenever available), and 
-* the list of the indexes that is displayed by clicking on the >> symbol.
+* the list of the indexed entities (displayed by clicking on the >> symbol)
 The taxa, gene, marker, and phenotype names are highlighted. The colour for each entity type corresponds to the colour of the query interpretation frame. 
 
 === Facets
-There is one facet table per index type: Gene, Marker, Phenotype, Taxon, (Journal), and Year. They give information about the set of retrieved hits. Each table gives the list of values, the total frequency and the number of documents. 10 (by default), 20 or all of them can be displayed. Clicking on any line refines the query: it adds to the query the term in the facet that has been selected.
+There is one facet table per index type: Gene, Marker, Phenotype, Taxon, and Year. They give information about the set of retrieved hits. Each table gives the list of values, the total frequency and the number of documents. 10 (by default), 20 or all of them can be displayed. Clicking on any line refines the query: it adds to the query the term in the facet that has been selected.
 
 === Page number
 The number of hits displayed per page can be 10, 20, 30 or 50. 
@@ -108,7 +109,6 @@ image::images/Screenshot-onto3.png[align="center"]
 
 Clicking on Refine button adds the terms to the current query. Clicking on the Search button replaces the current query by the new one.
 
-=== Further information
 
 
 
