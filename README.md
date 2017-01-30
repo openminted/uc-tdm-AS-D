@@ -12,7 +12,7 @@ Besides the application documentation, the uc-tdm-AS-D repository also contains 
 - plans/ : AlvisNLP workflow plans and scripts used to create the application (annotate and index corpora, pre-process resources, etc.)
 - resources/ : resources used in the application (lexicons, ontology, etc.)
 
-## Prerequisites
+## Prerequisites for running the TDM pipeline
 
 - AlvisNLP/ML processing pipeline (available at https://github.com/Bibliome/alvisnlp)
 - Java >= 7
