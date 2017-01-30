@@ -1,1 +1,79 @@
-= Linking
+= Wheat Phenotypes
+
+== Application goal
+This application offers access to highly relevant articles on wheat in the field of phenomics, i.e. the study of physical and biological traits of organisms in their relation to genetic mutations and environmental change. The user can browse and search papers mentioning phenotypes, but also genes, markers, and taxa that have been identified and normalized beforehand by a text-mining workflow. Unlike classical bibliographic databases that provide information on the general scope of the article, the Wheat Phenotypes application states the presence of the very objects that the user is interested in. In addition, the semantic indexing relieves the user from language variation, providing results in a harmonized way based on common vocabularies and nomenclatures. 
+
+
+== Application description
+This version of the application consists of the automatic recognition and normalization XXX phenotypes, XXX genes, XXX markers, and XXX taxa. 
+The corpus is composed of XXX full text papers from XXX journals. The taxa are normalized according to NCBI taxonomy. The phenotypes are normalized according to the Wheat Phenotype Ontology. The genes and markers are normalized according to the XXX.
+The TDM components and the workflow application are deployed on Alvis platform at INRA MaIAGE lab. The end-user can use two front-end tools to search the extracted information a semantic search engine or a treemap builder. 
+Alvis Semantic Information Retrieval engine is web application, publicly available usable with any web browser.
+
+= Wheat Phenotype Search
+
+== User profile
+The user of the wheat phenotypes search engine is a breeder who wants to access the literature relating to genes possibly involved in a given trait of a specific subspecies of wheat. Conversely the breeder may be interested in any phenotypic-related information on a given gene.
+
+== Architecture of the application
+The relevant corpus has been fully pre-processed by AlvisNLP pipeline and indexed for query through AlvisIR engine available from any web browser.
+
+== User manual, How-to
+
+=== Launching the application
+The URL to run AlvisIR search engine on Wheat Phenotypes is : 
+http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search
+
+Clicking on the “i" at the left of the query field displays the query language.
+
+=== Query
+The query is typed in the query field.
+
+=== Results
+The results of the query are displayed in four frames:
+* the query interpretation (blue frame)
+* the list of hits (pink frame)
+* the facets (yellow frame)
+* the page number (green frame).
+
+=== Query interpretation
+The query is interpreted according to the syntax of the query language. The terms of the query that designate taxa with respect to the NCBI taxonomy or phenotypes with respect to the Wheat Phenotype ontology are interpreted as concepts of these hierarchies. ~loc is interpreted as the "localization relation between the taxon term at left and the habitat term at right. 
+The query interpretation frame displays the interpretation of query terms as concepts, the list of their synonyms and subconcepts (more specific). The number of occurrences for each term is also displayed. All documents that are indexed by a synonym or a more specific term of the query term are retrieved if they respect the relationship constraint if ever. 
+
+=== Hits
+Each hit represent a document that verify the query constraints. It is composed of 
+* the title of the document, (clicking on the title displays the full reference on PubMed site.)
+* the publication date, 
+* (the name of the journal, )
+* the text of the abstract (whenever available), and 
+* the list of the indexes that is displayed by clicking on the >> symbol.
+The taxa, gene, marker, and phenotype names are highlighted. The colour for each entity type corresponds to the colour of the query interpretation frame. 
+
+=== Facets
+There is one facet table per index type: Gene, Marker, Phenotype, Taxon, (Journal), and Year. They give information about the set of retrieved hits. Each table gives the list of values, the total frequency and the number of documents. 10 (by default), 20 or all of them can be displayed. Clicking on any line refines the query: it adds to the query the term in the facet that has been selected.
+
+=== Page number
+The number of hits displayed per page can be 10, 20, 30 or 50. 
+
+=== Phenotype selection in the ontology
+Clicking on the tree icon at the right of the Search button displays the Wheat Phenotype ontology that indexes the plant traits and a query composer.
+
+The ontology window is composed of two parts:
+* ontology navigation (pink frame)
+* the query composer (yellow frame)
+Clicking on the main window in the back closes the ontology window without query composition.
+
+=== Ontology navigation
+The levels of the ontology are displayed from the most general to the specific, from left to right. The triangle at the right of a concept name represents the size of the subtree it is the root of. The surface of the triangle is proportional to the depth and the branching factor. Clicking on the triangle opens the subtree.
+
+Zooming is done by using the sliding button on the top of the frame 
+
+=== Query composer
+Clicking on the name of the concept adds it to the query that is displayed as a term stack. The two operators Or or And are available.
+
+Clicking on Refine button adds the terms to the current query. Clicking on the Search button replaces the current query by the new one.
+
+=== Further information
+
+
+
