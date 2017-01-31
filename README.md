@@ -1,7 +1,7 @@
 # Use Case AS-D: Linking Wheat Data With Literature
 
 
-The web application **Wheat Phenotype Search** for the AS-D use case is available at : http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search
+The web application **Wheat Phenotype Search** (1st application release of the AS-D use case) is available at : http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search
 
 ## Wheat Phenotype application documentation
 
