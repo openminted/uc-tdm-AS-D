@@ -18,9 +18,11 @@
 
 1. update the config.sh script (provide full paths to required folders)
 2. run the pipeline (plans/run_WoS_abstracts_batch.sh) for each batch of abstracts (the corpus is divided into 4 batches, see the corpus/WoS-abstracts-2017 folder)
+
 ```
-  plans/run_WoS_abstracts_batch.sh BATCH-NUMBER plans/config.sh
+plans/run_WoS_abstracts_batch.sh BATCH-NUMBER plans/config.sh
   ```
+  
 3. once all batches of the corpus are annotated and indexed, create the final search engine index by running the create_alvisIR_index.sh script
 
 
