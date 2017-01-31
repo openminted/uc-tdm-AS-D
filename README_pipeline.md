@@ -14,7 +14,9 @@
 - TreeTagger tool (available at http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
 - YaTeA term extractor (available at http://search.cpan.org/~thhamon/Lingua-YaTeA/)
 
-## Annotating and indexing the corpus of Web of Science abstracts (located in corpus/WoS-abstracts-2017/)
+## Annotating and indexing the corpus of Web of Science abstracts
+
+The corpus of abstracts used in the Wheat Phenotype Search is provided in corpus/WoS-abstracts-2017/
 
 1. update the config.sh script (provide full paths to required folders)
 2. run the pipeline (plans/run_WoS_abstracts_batch.sh) for each batch of abstracts (the corpus is divided into 4 batches, see the corpus/WoS-abstracts-2017 folder)
