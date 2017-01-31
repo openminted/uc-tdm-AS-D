@@ -7,9 +7,38 @@
     <sourcePath filter="\.xml$">xml/</sourcePath>
     <xslTransform>plans/pmc2alvisnlp.xslt</xslTransform>
 </read>
+<module id="renametitle" class="Action">
+  <target>documents.sections:article-title</target>
+  <action>set:feat:sectionname("title")</action>
+  <setFeatures/>
+</module>
+<module id="renameabstract" class="Action">
+  <target>documents.sections:article-meta|documents.sections:abstract</target>
+  <action>set:feat:sectionname("abstract")</action>
+  <setFeatures/>
+</module>
+<module id="renamebody" class="Action">
+  <target>documents.sections:body</target>
+  <action>set:feat:sectionname("full-text")</action>
+  <setFeatures/>
+</module>
 
 <!-- Tag entities (wheat taxa, phenotypes, genes and markers) -->
 <import file="plans/extract_Wheat_entities.plan"/>
+
+<!-- Create 3-sentence groups for visualization in search engine -->
+<module id="SentencePattern" class="PatternMatcher">
+  <layerName>sentences</layerName>
+  <pattern>
+    [true]
+    [true]? 
+    [true]?       
+  </pattern>
+  <actions>
+    <createAnnotation layer="threesent"/>
+    <setFeatures ne-type="threesent"/>
+  </actions>
+</module>
 
 <!-- Print tabular files for each entity type -->
 <module id="print-pheno" class="TabularExport">
@@ -77,61 +106,65 @@
 
 <!-- Index for AlvisIR -->
 
-  <!-- <module id="index" class="AlvisIRIndexer"> -->
-  <!--   <indexDir>&corpus-dir;/batch/&batch;/index</indexDir> -->
-  <!--   <tokenPositionGap>128</tokenPositionGap> -->
-  <!--   <fieldNames>article-title,article-meta,abstract,body,author,full-author,pmid,year,journal,mesh</fieldNames> -->
-  <!--   <propertyKeys/> -->
-  <!--   <documents> -->
-  <!--     <fields> -->
-  <!-- 	<instances>sections[@name=="abstract"] | sections[@name=="body"]|sections[@name=="article-title"]|sections[@name=="article-meta"]</instances> -->
-  <!-- 	<field-name>@name</field-name> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:taxa</instances> -->
-  <!-- 	  <text>"{taxon}" ^ @taxid ^ "/"</text> -->
-  <!-- 	</annotations> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:genes</instances> -->
-  <!-- 	  <text>"{gene}" ^ @canonical-form ^ "/"</text> -->
-  <!-- 	</annotations> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:markers</instances> -->
-  <!-- 	  <text>"{marker}" ^ @canonical-form ^ "/"</text> -->
-  <!-- 	</annotations> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:sentences</instances> -->
-  <!-- 	  <text>"{SENT}"</text> -->
-  <!-- 	</annotations> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:phenotypes</instances> -->
-  <!-- 	  <text>"{phenotype}" ^ @concept-path ^ "/"</text> -->
-  <!-- 	</annotations> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>sections:author</instances> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>sections:author</instances> -->
-  <!-- 	<field-name>"full-author"</field-name> -->
-  <!-- 	<keyword>contents</keyword> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>$</instances> -->
-  <!-- 	<field-name>"pmid"</field-name> -->
-  <!-- 	<keyword>@pmid</keyword> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>$</instances> -->
-  <!-- 	<field-name>"year"</field-name> -->
-  <!-- 	<keyword>@year</keyword> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>$</instances> -->
-  <!-- 	<field-name>"journal"</field-name> -->
-  <!-- 	<keyword>@journal</keyword> -->
-  <!--     </fields> -->
-  <!--   </documents> -->
-  <!-- </module> -->
+  <module id="index" class="AlvisIRIndexer">
+    <indexDir>index</indexDir>
+    <tokenPositionGap>128</tokenPositionGap>
+    <fieldNames>title,abstract,full-text,author,full-author,pmid,year,journal,mesh</fieldNames>
+    <propertyKeys/>
+    <documents>
+      <fields>
+  	<instances>sections[@sectionname=="abstract"] | sections[@sectionname=="full-text"]|sections[@sectionname=="title"]</instances>
+  	<field-name>@sectionname</field-name>
+	<annotations>
+	  <instances>layer:threesent</instances>
+	  <text>"{threesent}"</text>
+	</annotations>
+  	<annotations>
+  	  <instances>layer:taxa</instances>
+  	  <text>"{taxon}" ^ @taxid ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:genes</instances>
+  	  <text>"{gene}" ^ @canonical-form ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:markers</instances>
+  	  <text>"{marker}" ^ @canonical-form ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:sentences</instances>
+  	  <text>"{SENT}"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:phenotypes</instances>
+  	  <text>"{phenotype}" ^ @concept-path ^ "/"</text>
+  	</annotations>
+      </fields>
+      <fields>
+  	<instances>sections:author</instances>
+      </fields>
+      <fields>
+  	<instances>sections:author</instances>
+  	<field-name>"full-author"</field-name>
+  	<keyword>contents</keyword>
+      </fields>
+      <fields>
+  	<instances>$</instances>
+  	<field-name>"pmid"</field-name>
+  	<keyword>@doi</keyword>
+      </fields>
+      <fields>
+  	<instances>$</instances>
+  	<field-name>"year"</field-name>
+  	<keyword>@year</keyword>
+      </fields>
+      <fields>
+  	<instances>$</instances>
+  	<field-name>"journal"</field-name>
+  	<keyword>@journal</keyword>
+      </fields>
+    </documents>
+  </module>
 
 
 </alvisnlp-plan>
