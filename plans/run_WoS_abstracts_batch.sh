@@ -10,5 +10,6 @@ RAM=30g
 . $CONFIG_FILE
 
 # run the pipeline
+echo "$ALVISDIR/bin/alvisnlp -verbose -entity inputfile $CORPUSDIR/$CORPUSNAME-part$batch -inputDir $PLANDIR -inputDir $SOFTWAREDIR -outputDir $OUTPUTDIR/part$batch -inputDir $OUTPUTDIR/part$batch -entity ontology $ONTOLOGY_NAME plans/tag_and_index_WoS_abstracts.plan"
 $ALVISDIR/bin/alvisnlp -J "-Xmx30g" -verbose -entity inputfile $CORPUSDIR/$CORPUSNAME-part$batch -inputDir $PLANDIR -inputDir $SOFTWAREDIR -outputDir $OUTPUTDIR/part$batch -inputDir $OUTPUTDIR/part$batch -entity ontology $ONTOLOGY_NAME plans/tag_and_index_WoS_abstracts.plan
 

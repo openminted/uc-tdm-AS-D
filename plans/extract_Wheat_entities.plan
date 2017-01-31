@@ -192,7 +192,8 @@
     </module>
 
     <!-- Segmentation -->
-    <import>res://org.bibliome.alvisnlp.resources/segmentation.plan</import>
+    <!-- <import>res://org.bibliome.alvisnlp.resources/segmentation.plan</import> -->
+    <import href="res://org.bibliome.alvisnlp.resources/segmentation.plan"/>
 
   </segmentation>
 
@@ -257,12 +258,12 @@
     <import file="plans/pos-tag-lemma-postprocessing.plan"/>
 
     <!-- Run Yatea term extractor -->
-    <!-- <module id="yatea" class="YateaExtractor"> -->
-    <!--   <workingDir>yatea</workingDir> -->
-    <!--   <configDir>config</configDir> -->
-    <!--   <yateaExecutable>Lingua-YaTeA/bin/yatea</yateaExecutable> -->
-    <!--   <rcFile>plans/yatea.rc</rcFile> -->
-    <!-- </module> -->
+    <module id="yatea" class="YateaExtractor">
+      <workingDir>yatea</workingDir>
+      <configDir>config</configDir>
+      <yateaExecutable>Lingua-YaTeA/bin/yatea</yateaExecutable>
+      <rcFile>plans/yatea.rc</rcFile>
+    </module>
 
     <!-- Run ToMap -->
     <import file="plans/tomap-wheat-phenotypes-OMTD.plan"/>
