@@ -7,7 +7,7 @@ This application offers access to highly relevant articles on wheat in the field
 == Application description
 This version of the application consists of the automatic recognition and normalization of phenotypes, genes, markers, and wheat-related taxa from scientific abstracts.
 
-The corpus is composed of 3,881 abstracts from 414 journals. 8,996 phenotypes, 10,537 genes, 2,749 markers and 13,015 taxa have been annotated and indexed by the TDM workflow. Taxa and markers are normalized according to identifiers from the URGI database. Phenotypes are normalized according to the Wheat Phenotype Ontology. Genes are normalized according to a in-house lexicon.
+The corpus is composed of 3,881 abstracts from 414 journals. 8,996 phenotypes, 10,537 genes, 2,749 markers and 13,015 taxa have been annotated and indexed by the TDM workflow. Taxa and markers are normalized according to identifiers from the URGI database. Phenotypes are normalized according to the Wheat Phenotype Ontology. Genes are normalized according to an in-house lexicon.
 
 The TDM components and the workflow application are deployed on Alvis platform at INRA MaIAGE lab. The end-user can use a semantic search engine to search the extracted information. The Alvis Semantic Information Retrieval engine is a web application, publicly available and usable with any web browser (available at http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search).
 
@@ -61,13 +61,14 @@ The query interpretation frame displays the interpretation of query terms as con
 === Hits
 Each hit represent a document that verify the query constraints. It is composed of:
 * the title of the document,
-* the publication date, 
+* the publication date,
+* the name of the journal,
 * the text of the abstract (whenever available), and 
 * the list of the indexed entities (displayed by clicking on the >> symbol)
 The taxa, gene, marker, and phenotype names are highlighted. The colour for each entity type corresponds to the colour of the query interpretation frame. 
 
 === Facets
-There is one facet table per index type: Gene, Marker, Phenotype, Taxon, and Year. They give information about the set of retrieved hits. Each table gives the list of values, the total frequency and the number of documents. 10 (by default), 20 or all of them can be displayed. Clicking on any line refines the query: it adds to the query the term in the facet that has been selected.
+There is one facet table per index type: Gene, Marker, Phenotype, Taxon, Journal and Year. They give information about the set of retrieved hits. Each table gives the list of values, the total frequency and the number of documents. 10 (by default), 20 or all of them can be displayed. Clicking on any line refines the query: it adds to the query the term in the facet that has been selected.
 
 === Page number
 The number of hits displayed per page can be 10, 20, 30 or 50. 
