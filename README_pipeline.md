@@ -1,4 +1,4 @@
-# Running the TDM pipeline for the AS-D Wheat Phenotype Search application
+# TDM pipeline for the AS-D Wheat Phenotype Search application
 
 ## Repository content
 
