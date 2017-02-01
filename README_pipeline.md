@@ -24,7 +24,6 @@ The corpus of abstracts used in the Wheat Phenotype Search is provided in corpus
      ```
   plans/run_WoS_abstracts_batch.sh BATCH-NUMBER plans/config.sh
     ```
-  
-3. once all batches of the corpus are annotated and indexed, create the final search engine index by running the create_alvisIR_index.sh script
+
 
 
