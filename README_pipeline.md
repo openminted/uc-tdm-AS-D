@@ -3,7 +3,6 @@
 ## Repository content
 
 - alvisIR/ : configuration files for the search engine
-- corpus/ : corpora used in the application
 - plans/ : AlvisNLP workflow plans and scripts used to create the application (annotate and index corpora, pre-process resources, etc.)
 - resources/ : resources used in the application (lexicons, ontology, etc.)
 
@@ -16,10 +15,8 @@
 
 ## Annotating and indexing the corpus of Web of Science abstracts
 
-The corpus of abstracts used in the Wheat Phenotype Search is provided in corpus/WoS-abstracts-2017/
-
 1. update the config.sh script (provide full paths to required folders)
-2. run the pipeline (plans/run_WoS_abstracts_batch.sh) for each batch of abstracts (the corpus is divided into 4 batches, see the corpus/WoS-abstracts-2017 folder)
+2. run the pipeline (plans/run_WoS_abstracts_batch.sh) for each batch of abstracts
 
      ```
   plans/run_WoS_abstracts_batch.sh BATCH-NUMBER plans/config.sh
