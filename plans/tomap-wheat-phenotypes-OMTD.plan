@@ -17,7 +17,7 @@
   
   <!-- ToMap on lemmas -->
   <module id="tomap" class="TomapProjector">
-    <yateaFile inhibitCheck="true">yatea/corpus/default/xml/candidates.xml</yateaFile>
+    <yateaFile inhibitCheck="true">&outdir;/yatea/corpus/default/xml/candidates.xml</yateaFile>
     <targetLayerName>phenotypes</targetLayerName>
     <conceptFeature>concept-id</conceptFeature>
     <explanationFeaturePrefix>explain_</explanationFeaturePrefix>
@@ -123,7 +123,7 @@
   <!-- Projet BioYatea results -->
   <module id="bioyatea-projection" class="YateaProjector">
     <targetLayerName>yateaTerms</targetLayerName>
-    <yateaFile inhibitCheck="yes">yatea/corpus/default/xml/candidates.xml</yateaFile> <!-- ??? -->
+    <yateaFile inhibitCheck="yes">&outdir;/yatea/corpus/default/xml/candidates.xml</yateaFile> <!-- ??? -->
     <subject layer="words"/>
   </module>
 
