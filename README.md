@@ -9,4 +9,4 @@ The web application **Wheat Phenotype Search** (1st application release of the A
 
 ## TDM pipeline documentation
 
-Besides the application documentation, the uc-tdm-AS-D repository also contains all configuration files, AlvisNLP workflow plans, scripts, corpora and resources used to create the AS-D search engine application. Documentation for running the pipeline to annotate and index the application corpus is provided in the [README_pipeline document](README_pipeline.md).
+Besides the application documentation, the uc-tdm-AS-D repository also contains all configuration files, AlvisNLP workflow plans, scripts, and resources used to create the AS-D search engine application. Documentation for running the pipeline to annotate and index the application corpus is provided in the [README_pipeline document](README_pipeline.md).
