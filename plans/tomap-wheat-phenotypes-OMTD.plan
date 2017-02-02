@@ -1,18 +1,5 @@
 <alvisnlp-plan id="tomap">
 
-  <!-- Remove final 's' and lower case words to take care of potential lemmatization errors -->
-  <module id="remove-plural" class="Action">
-    <target>documents.sections.layer:words[str:len(@form) > 1]</target>
-    <action>set:feat:lemma2(str:seds(str:lower(@lemma),"s$",""))</action>
-    <setFeatures/>
-  </module>
-  
-  <module id="remove-plural-2" class="Action">
-    <target>documents.sections.layer:words[@lemma2 == ""]</target>
-    <action>set:feat:lemma2(str:lower(@lemma))</action>
-    <setFeatures/>
-  </module>
-
   <!-- run ToMap (using previously obtained BioYatea results)-->
   
   <!-- ToMap on lemmas -->
@@ -271,13 +258,6 @@
   </sequence>
 
 <!-- Additional filtering -->
-
-  <!-- remove blacklisted terms -->
-  <!-- <module id="delete-blacklisted" class="Action"> -->
-  <!--   <target>documents.sections.layer:phenotypes[@selected == "true" and @lemma-string in "resources/blacklist_phenotypes.txt"]</target> -->
-  <!--   <action>delete</action> -->
-  <!--   <deleteElements/> -->
-  <!-- </module> -->
 
  <module id="flag-blacklisted-terms" class="PatternMatcher">
       <layerName>words</layerName>

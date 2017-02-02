@@ -192,7 +192,6 @@
     </module>
 
     <!-- Segmentation -->
-    <!-- <import>res://org.bibliome.alvisnlp.resources/segmentation.plan</import> -->
     <import href="res://org.bibliome.alvisnlp.resources/segmentation.plan"/>
 
   </segmentation>
@@ -256,6 +255,18 @@
 
     <!-- Modify some pos tags and lemma in order to maximize term extraction with YaTEA -->
     <import file="plans/pos-tag-lemma-postprocessing.plan"/>
+
+  <!-- Remove final 's' and lower case words to take care of potential lemmatization errors -->
+  <module id="remove-plural" class="Action">
+    <target>documents.sections.layer:words[str:len(@form) > 1]</target>
+    <action>set:feat:lemma2(str:seds(str:lower(@lemma),"s$",""))</action>
+    <setFeatures/>
+  </module>
+  <module id="remove-plural-2" class="Action">
+    <target>documents.sections.layer:words[@lemma2 == ""]</target>
+    <action>set:feat:lemma2(str:lower(@lemma))</action>
+    <setFeatures/>
+  </module>
 
     <!-- Run Yatea term extractor -->
     <module id="yatea" class="YateaExtractor">
