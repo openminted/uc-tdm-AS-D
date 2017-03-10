@@ -26,10 +26,6 @@
 			<name> bibliome repo </name>
 			<url>http://bibliome.jouy.inra.fr/maven-repository</url>
 		</repository>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
 	</repositories>
 
 	<pluginRepositories>
@@ -51,6 +47,12 @@
 		<url>https://github.com/openminted/uc-tdm-AS-D</url>
 	  <tag>HEAD</tag>
   	</scm>
+
+	<scm>
+		<connection>scm:git:git://github.com/Bibliome/alvisnlp.git</connection>
+		<developerConnection>scm:git:git@github.com:Bibliome/alvisnlp.git</developerConnection>
+		<url>https://github.com/Bibliome/alvisnlp</url>
+	</scm>
 
 	<distributionManagement>
 		<snapshotRepository>
@@ -132,10 +134,10 @@
 		</pluginManagement>
 	</build>
 	<dependencies>
-		<dependency>
-			<groupId>com.github.Bibliome</groupId>
-			<artifactId>alvisnlp</artifactId>
-			<version>0.5rc-SNAPSHOT</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.github.Bibliome</groupId> -->
+<!-- 			<artifactId>alvisnlp</artifactId> -->
+<!-- 			<version>0.5rc-SNAPSHOT</version> -->
+<!-- 		</dependency> -->
 	</dependencies>
 </project>
