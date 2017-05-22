@@ -85,6 +85,7 @@
     @id;
     str:normalizeSpace(@form);
     if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
+    @DI;
     str:join:' '(section.document.sections, str:normalizeSpace(contents))
   </columns>
   <headers>
@@ -92,6 +93,7 @@
     "ID_URGI",
     "DESCRIPTION",
     "CANONICAL-NAME",
+    "DOI"
     "FULL-TEXT"
   </headers>
 </module>
@@ -106,6 +108,7 @@
     @id;
     str:normalizeSpace(@form);
     if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
+    @DI;
     str:join:' '(section.document.sections, str:normalizeSpace(contents))
   </columns>
 </module>
@@ -120,6 +123,7 @@
     @id;
     str:normalizeSpace(@form);
     str:normalizeSpace(@form);
+    @DI;
     str:join:' '(section.document.sections, str:normalizeSpace(contents))
   </columns>
 </module>
@@ -134,6 +138,7 @@
     @taxid;
     str:normalizeSpace(@form);
     if @canonical-name != "" then @canonical-name else str:normalizeSpace(@form);
+    @DI;
     str:join:' '(section.document.sections, str:normalizeSpace(contents))
   </columns>
 </module>
