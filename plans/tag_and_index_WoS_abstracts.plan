@@ -74,6 +74,70 @@
   
 </module>
 
+<!-- Print CSV for URGI -->
+<module id="print-csv" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"text-mining-export.csv"</fileName>
+  <lines>documents.sections.layer:markers</lines>
+  <columns separator=";">
+    "Marker";
+    @id;
+    str:normalizeSpace(@form);
+    if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
+    str:join:' '(section.document.sections, str:normalizeSpace(contents))
+  </columns>
+  <headers>
+    "TYPE",
+    "ID_URGI",
+    "DESCRIPTION",
+    "CANONICAL-NAME",
+    "FULL-TEXT"
+  </headers>
+</module>
+<module id="print-csv-2" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"text-mining-export.csv"</fileName>
+  <lines>documents.sections.layer:genes</lines>
+  <append>true</append>
+  <columns separator=";">
+    "Gene";
+    @id;
+    str:normalizeSpace(@form);
+    if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
+    str:join:' '(section.document.sections, str:normalizeSpace(contents))
+  </columns>
+</module>
+<module id="print-csv-3" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"text-mining-export.csv"</fileName>
+  <lines>documents.sections.layer:phenotypes</lines>
+  <append>true</append>
+  <columns separator=";">
+    "Phenotype";
+    @id;
+    str:normalizeSpace(@form);
+    str:normalizeSpace(@form);
+    str:join:' '(section.document.sections, str:normalizeSpace(contents))
+  </columns>
+</module>
+<module id="print-csv-4" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"text-mining-export.csv"</fileName>
+  <lines>documents.sections.layer:taxa</lines>
+  <append>true</append>
+  <columns separator=";">
+    "Taxon";
+    @taxid;
+    str:normalizeSpace(@form);
+    if @canonical-name != "" then @canonical-name else str:normalizeSpace(@form);
+    str:join:' '(section.document.sections, str:normalizeSpace(contents))
+  </columns>
+</module>
+
 <!-- HTML visualization -->
 	<module id="html" class="QuickHTML">
 		<outDir>html</outDir>
