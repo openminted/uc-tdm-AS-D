@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<alvisnlp-plan id="tag_entities">
+
+  <!-- <module id="read" class="TextFileReader"> -->
+  <!--   <sourcePath filter=".txt$">&input;</sourcePath> -->
+  <!--   <baseNameId/> -->
+  <!-- </module> -->
+
+  <module id="read" class="BioNLPSTReader">
+    <a1Dir>&a1dir;</a1Dir>
+    <textDir>&txtdir;</textDir>
+    <textBoundAsAnnotations>true</textBoundAsAnnotations>
+  </module>
+
+  <module id="remove-equal" class="RemoveOverlaps">
+    <layerName>documents.sections.layer:Gene</layerName>
+    <removeIncluded>false</removeIncluded>
+    <removeOverlapping>false</removeOverlapping>
+  </module>
+
+  <module id="remove-equal2" class="RemoveOverlaps">
+    <layerName>documents.sections.layer:Marker</layerName>
+    <removeIncluded>false</removeIncluded>
+    <removeOverlapping>false</removeOverlapping>
+  </module>
+
+<!-- Tag entities (wheat taxa, phenotypes, genes and markers) -->
+<import file="plans/extract_Wheat_entities.plan"/>
+
+ <module id="remove-not-relevant-markers" class="Action">
+    <target>documents.sections.layer:markers[not outside:Relevant]</target>
+    <action>remove:markers</action>
+    <removeFromLayer/>
+  </module>
+
+ <module id="remove-not-relevant-genes" class="Action">
+    <target>documents.sections.layer:genes[not outside:Relevant]</target>
+    <action>remove:genes</action>
+    <removeFromLayer/>
+  </module>
+
+<module id="add-feat" class="Action">
+    <target>documents.sections.layer:genes</target>
+    <action>set:feat:ne-type("Gene")</action>
+    <setFeatures/>
+  </module>
+
+<module id="add-feat2" class="Action">
+    <target>documents.sections.layer:markers</target>
+    <action>set:feat:ne-type("Marker")</action>
+    <setFeatures/>
+  </module>
+
+<!-- Compare predictions to reference -->
+<module id="compareGene" class="LayerComparator">
+  <outFile>&outdir;/compare_genes.txt</outFile>
+  <param name="predictedLayerName" value="genes"/>
+  <param name="referenceLayerName" value="Gene"/>
+</module>
+
+<module id="compareMarker" class="LayerComparator">
+  <outFile>&outdir;/compare_markers.txt</outFile>
+  <param name="predictedLayerName" value="markers"/>
+  <param name="referenceLayerName" value="Marker"/>
+</module>
+
+ <!-- Enumerate entities -->
+  <module id="id-ent" class="Action">
+      <target>documents.sections</target>
+      <action>id:enumerate:tid(layer:genes|layer:markers)</action>
+    <setFeatures/>
+    </module>
+
+  <!-- BioNLP-ST format -->
+  <module id="ExportInFiles2" class="TabularExport">
+		<outDir>a1dir</outDir>
+		<files>documents</files>
+		<fileName>str:basename(@id) ^ ".a1"</fileName>
+			<lines>document.sections.layer:predicted-entities</lines>
+		<columns separator=";">
+			<element>"T" ^ @tid</element>
+			<element>@ne-type ^ " " ^ start ^ " " ^ end</element>
+			<element>str:seds(@form,"\\s+"," ")</element>
+		</columns>
+
+  </module>
+
+<!-- HTML visualization -->
+	<module id="html" class="QuickHTML">
+		<outDir>html</outDir>
+		<classFeature>ne-type</classFeature>
+		<layers>genes,markers</layers>
+		<colors>#99cc00,#ffcc99,#ffd333,#ffd666</colors>
+	</module>
+	<module id="html2" class="QuickHTML">
+		<outDir>html-ref</outDir>
+		<classFeature>type</classFeature>
+		<layers>Gene,Marker,Relevant</layers>
+		<colors>#99cc00,#ffcc99,#ffd333,#ffd666</colors>
+	</module>
+
+</alvisnlp-plan>
