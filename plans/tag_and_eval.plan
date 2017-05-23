@@ -77,7 +77,7 @@
 		<outDir>a1dir</outDir>
 		<files>documents</files>
 		<fileName>str:basename(@id) ^ ".a1"</fileName>
-			<lines>document.sections.layer:predicted-entities</lines>
+			<lines>document.sections.(layer:genes|layer:markers)</lines>
 		<columns separator=";">
 			<element>"T" ^ @tid</element>
 			<element>@ne-type ^ " " ^ start ^ " " ^ end</element>
