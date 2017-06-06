@@ -69,10 +69,11 @@
   <markers>
 
     <module id="dictionary" class="SimpleProjector2">
-      <dictFile>resources/Marker_Data_OpenMinTed.csv</dictFile>
+      <!-- <dictFile>resources/Marker_Data_OpenMinTed.csv</dictFile> -->
+      <dictFile>resources/marker_wheat_with_synonyms.csv</dictFile>
       <targetLayerName>markers</targetLayerName>
-      <keyIndex>1</keyIndex>
-      <valueFeatures>id,canonical-form</valueFeatures>
+      <keyIndex>1,2</keyIndex>
+      <valueFeatures>id,canonical-form,synonym</valueFeatures>
       <constantAnnotationFeatures>type=ne,ne-type=marker</constantAnnotationFeatures>
     </module>
 
@@ -120,10 +121,11 @@
     <!-- URGI lexicon -->
     <module id="dict" class="SimpleProjector2">
       <targetLayerName>taxa</targetLayerName>
-      <dictFile>resources/Taxon_Data_Wheat.txt</dictFile>
+      <!-- <dictFile>resources/Taxon_Data_Wheat.txt</dictFile> -->
+      <dictFile>resources/taxon_wheat_with_synonyms_tab.csv</dictFile>
       <matchStartCaseInsensitive/>
       <keyIndex>1,2</keyIndex>
-      <valueFeatures>taxid,canonical-name,syno</valueFeatures>
+      <valueFeatures>taxid,canonical-name,syno,synonyms</valueFeatures>
       <constantAnnotationFeatures>source=URGI,ne-type=taxon</constantAnnotationFeatures>
     </module>
 
@@ -153,8 +155,9 @@
     <mapping class="FileMapper2">
       <target>documents.sections.layer:NCBITaxa</target>
       <form>@ncbi-canonical-name</form>
-      <mappingFile>resources/Taxon_Data_Wheat.txt</mappingFile>
-      <targetFeatures>taxid,canonical-name,syno</targetFeatures>
+  <!--    <mappingFile>resources/Taxon_Data_Wheat.txt</mappingFile>-->
+      <mappingFile>resources/taxon_wheat_with_synonyms_tab.csv</mappingFile>
+      <targetFeatures>taxid,canonical-name,syno,synonyms</targetFeatures>
       <keyColumn>1</keyColumn>
     </mapping>
 

@@ -82,16 +82,14 @@
   <lines>documents.sections.layer:markers</lines>
   <columns separator=";">
     "Marker";
-    @id;
     str:normalizeSpace(@form);
     if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
     section.document.@DI;
-    str:join:' '(section.document.sections, str:normalizeSpace(contents))
+    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-form != "" and @canonical-form != str:normalizeSpace(@form)) then " " ^ @canonical-form else "") ^ (if (@synonym != "" and @synonym != str:normalizeSpace(@form)) then " " ^ @synonym else "")
   </columns>
   <headers>
     "TYPE",
-    "ID_URGI",
-    "DESCRIPTION",
+    "FORM",
     "CANONICAL-NAME",
     "DOI",
     "FULL-TEXT"
@@ -105,11 +103,10 @@
   <append>true</append>
   <columns separator=";">
     "Gene";
-    @id;
     str:normalizeSpace(@form);
     if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
     section.document.@DI;
-    str:join:' '(section.document.sections, str:normalizeSpace(contents))
+    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-form != "" and @canonical-form != str:normalizeSpace(@form)) then " " ^ @canonical-form else "")
   </columns>
 </module>
 <module id="print-csv-3" class="TabularExport">
@@ -120,7 +117,6 @@
   <append>true</append>
   <columns separator=";">
     "Phenotype";
-    @id;
     str:normalizeSpace(@form);
     str:normalizeSpace(@form);
     section.document.@DI;
@@ -135,11 +131,10 @@
   <append>true</append>
   <columns separator=";">
     "Taxon";
-    @taxid;
     str:normalizeSpace(@form);
     if @canonical-name != "" then @canonical-name else str:normalizeSpace(@form);
     section.document.@DI;
-    str:join:' '(section.document.sections, str:normalizeSpace(contents))
+    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-name != "" and @canonical-name != str:normalizeSpace(@form)) then " " ^ @canonical-name else "") ^ (if (@synonyms != "" and @synonyms != str:normalizeSpace(@form)) then " " ^ @synonyms else "")
   </columns>
 </module>
 
