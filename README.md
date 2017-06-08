@@ -5,7 +5,7 @@ The web application **Wheat Phenotype Search** (1st application release of the A
 
 ## Wheat Phenotype application documentation
 
-**The application is fully documented in the [AS-D_applicationDoc document](documentation/scr/main/asciidoc/web_app_doc.adoc).**
+**The application is fully documented in the [AS-D_applicationDoc document](documentation/src/main/asciidoc/web_app_doc.adoc).**
 
 ## TDM pipeline documentation
 
