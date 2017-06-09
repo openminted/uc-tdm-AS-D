@@ -74,15 +74,28 @@
   
 </module>
 
+<module id="print-accessions" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"accessions.txt"</fileName>
+  <lines>documents.sections.layer:accessions</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
 <!-- Print CSV for URGI -->
 <module id="print-csv" class="TabularExport">
   <outDir>.</outDir>
   <files>$</files>
   <fileName>"text-mining-export-v2.csv"</fileName>
-  <lines>documents</lines>
+  <lines>documents[sections.layer:genes != "" or sections.layer:markers  != "" or sections.layer:taxa != "" or sections.layer:phenotypes != "" or sections.layer:accessions != ""]</lines>
   <columns separator=";">
     @DI;
-    str:seds(str:seds(str:normalizeSpace(str:join:' , '(sort:nsval(document.sections.layer:genes,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
+    str:join:' '(document.sections, str:normalizeSpace(contents)) ^ " " ^
+    str:seds(str:seds(str:seds(str:normalizeSpace(str:join:' , '(sort:nsval(document.sections.layer:genes,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
     str:join:' , '(sort:nsval(document.sections.layer:genes,@canonical-form),if @canonical-form != str:normalizeSpace(@form) then @canonical-form else "") ^ " , " ^
     str:join:' , '(sort:nsval(document.sections.layer:markers,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
     str:join:' , '(sort:nsval(document.sections.layer:markers,@canonical-form),if @canonical-form != str:normalizeSpace(@form) then @canonical-form else "")  ^ " , " ^
@@ -91,7 +104,10 @@
     str:join:' , '(sort:nsval(document.sections.layer:taxa,@canonical-name),if @canonical-name != str:normalizeSpace(@form) then @canonical-name else "") ^ " , " ^
     str:join:' , '(sort:nsval(document.sections.layer:taxa,@synonyms),if (@synonyms != str:normalizeSpace(@form) and @synonyms != @canonical-name) then  @synonyms else "") ^ " , " ^
     str:join:' , '(sort:nsval(document.sections.layer:phenotypes,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
-    str:join:' '(document.sections, str:normalizeSpace(contents))),"(\\s+,)+"," ,"),"^(, )+","")
+    str:join:' , '(sort:nsval(document.sections.layer:accessions,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
+    str:join:' , '(sort:nsval(document.sections.layer:accessions,@accession-name),if @accession-name != str:normalizeSpace(@form) then @accession-name else "") ^ " , " ^
+    str:join:' , '(sort:nsval(document.sections.layer:accessions,@synonym1),if (@synonym1 != str:normalizeSpace(@form) and @synonym1 != @accession-name) then  @synonym1 else "") ^ " , " ^
+    str:join:' , '(sort:nsval(document.sections.layer:accessions,@synonym2),if (@synonym2 != str:normalizeSpace(@form) and @synonym2 != @accession-name) then  @synonym2 else "")),"(\\s+,)+"," ,"),"^(, )+","")," ,\\s*$","")
   <!--  str:join:' '(sort:nsval(document.sections.layer:genes,str:normalizeSpace(@form) | @canonical-form),str:normalizeSpace(@form) | @canonical-form) -->
   </columns>
   <headers>
