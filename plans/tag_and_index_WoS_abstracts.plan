@@ -87,7 +87,7 @@
 </module>
 
 <!-- Print CSV for URGI -->
-<module id="print-csv" class="TabularExport">
+<module id="print-csv-version2" class="TabularExport">
   <outDir>.</outDir>
   <files>$</files>
   <fileName>"text-mining-export-v2.csv"</fileName>
@@ -116,68 +116,82 @@
   </headers>
 </module>
 
-<!-- <module id="print-csv" class="TabularExport"> -->
-<!--   <outDir>.</outDir> -->
-<!--   <files>$</files> -->
-<!--   <fileName>"text-mining-export.csv"</fileName> -->
-<!--   <lines>documents.sections.layer:markers</lines> -->
-<!--   <columns separator=";"> -->
-<!--     "Marker"; -->
-<!--     str:normalizeSpace(@form); -->
-<!--     if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form); -->
-<!--     section.document.@DI; -->
-<!--     str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-form != "" and @canonical-form != str:normalizeSpace(@form)) then " " ^ @canonical-form else "") ^ (if (@synonym != "" and @synonym != str:normalizeSpace(@form)) then " " ^ @synonym else "") -->
-<!--   </columns> -->
-<!--   <headers> -->
-<!--     "TYPE", -->
-<!--     "FORM", -->
-<!--     "CANONICAL-NAME", -->
-<!--     "DOI", -->
-<!--     "FULL-TEXT" -->
-<!--   </headers> -->
-<!-- </module> -->
-<!-- <module id="print-csv-2" class="TabularExport"> -->
-<!--   <outDir>.</outDir> -->
-<!--   <files>$</files> -->
-<!--   <fileName>"text-mining-export.csv"</fileName> -->
-<!--   <lines>documents.sections.layer:genes</lines> -->
-<!--   <append>true</append> -->
-<!--   <columns separator=";"> -->
-<!--     "Gene"; -->
-<!--     str:normalizeSpace(@form); -->
-<!--     if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form); -->
-<!--     section.document.@DI; -->
-<!--     str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-form != "" and @canonical-form != str:normalizeSpace(@form)) then " " ^ @canonical-form else "") -->
-<!--   </columns> -->
-<!-- </module> -->
-<!-- <module id="print-csv-3" class="TabularExport"> -->
-<!--   <outDir>.</outDir> -->
-<!--   <files>$</files> -->
-<!--   <fileName>"text-mining-export.csv"</fileName> -->
-<!--   <lines>documents.sections.layer:phenotypes</lines> -->
-<!--   <append>true</append> -->
-<!--   <columns separator=";"> -->
-<!--     "Phenotype"; -->
-<!--     str:normalizeSpace(@form); -->
-<!--     str:normalizeSpace(@form); -->
-<!--     section.document.@DI; -->
-<!--     str:join:' '(section.document.sections, str:normalizeSpace(contents)) -->
-<!--   </columns> -->
-<!-- </module> -->
-<!-- <module id="print-csv-4" class="TabularExport"> -->
-<!--   <outDir>.</outDir> -->
-<!--   <files>$</files> -->
-<!--   <fileName>"text-mining-export.csv"</fileName> -->
-<!--   <lines>documents.sections.layer:taxa</lines> -->
-<!--   <append>true</append> -->
-<!--   <columns separator=";"> -->
-<!--     "Taxon"; -->
-<!--     str:normalizeSpace(@form); -->
-<!--     if @canonical-name != "" then @canonical-name else str:normalizeSpace(@form); -->
-<!--     section.document.@DI; -->
-<!--     str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-name != "" and @canonical-name != str:normalizeSpace(@form)) then " " ^ @canonical-name else "") ^ (if (@synonyms != "" and @synonyms != str:normalizeSpace(@form)) then " " ^ @synonyms else "") -->
-<!--   </columns> -->
-<!-- </module> -->
+<module id="print-csv" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"text-mining-export.csv"</fileName>
+  <lines>documents.sections.layer:markers</lines>
+  <columns separator=";">
+    "Marker";
+    str:normalizeSpace(@form);
+    if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
+    section.document.@DI;
+    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-form != "" and @canonical-form != str:normalizeSpace(@form)) then " " ^ @canonical-form else "") ^ (if (@synonym != "" and @synonym != str:normalizeSpace(@form)) then " " ^ @synonym else "")
+  </columns>
+  <headers>
+    "TYPE",
+    "FORM",
+    "CANONICAL-NAME",
+    "DOI",
+    "FULL-TEXT"
+  </headers>
+</module>
+<module id="print-csv-2" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"text-mining-export.csv"</fileName>
+  <lines>documents.sections.layer:genes</lines>
+  <append>true</append>
+  <columns separator=";">
+    "Gene";
+    str:normalizeSpace(@form);
+    if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
+    section.document.@DI;
+    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-form != "" and @canonical-form != str:normalizeSpace(@form)) then " " ^ @canonical-form else "")
+  </columns>
+</module>
+<module id="print-csv-3" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"text-mining-export.csv"</fileName>
+  <lines>documents.sections.layer:phenotypes</lines>
+  <append>true</append>
+  <columns separator=";">
+    "Phenotype";
+    str:normalizeSpace(@form);
+    str:normalizeSpace(@form);
+    section.document.@DI;
+    str:join:' '(section.document.sections, str:normalizeSpace(contents))
+  </columns>
+</module>
+<module id="print-csv-4" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"text-mining-export.csv"</fileName>
+  <lines>documents.sections.layer:taxa</lines>
+  <append>true</append>
+  <columns separator=";">
+    "Taxon";
+    str:normalizeSpace(@form);
+    if @canonical-name != "" then @canonical-name else str:normalizeSpace(@form);
+    section.document.@DI;
+    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-name != "" and @canonical-name != str:normalizeSpace(@form)) then " " ^ @canonical-name else "") ^ (if (@synonyms != "" and @synonyms != str:normalizeSpace(@form)) then " " ^ @synonyms else "")
+  </columns>
+</module>
+<module id="print-csv-5" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"text-mining-export.csv"</fileName>
+  <lines>documents.sections.layer:accessions</lines>
+  <append>true</append>
+  <columns separator=";">
+    "Accession";
+    str:normalizeSpace(@form);
+    if @accession-name != "" then @accession-name else str:normalizeSpace(@form);
+    section.document.@DI;
+    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@accession-name != "" and @accession-name != str:normalizeSpace(@form)) then " " ^ @accession-name else "") ^ (if (@synonym1 != "" and @synonym1 != str:normalizeSpace(@form)) then " " ^ @synonym1 else "") ^ (if (@synonym2 != "" and @synonym2 != str:normalizeSpace(@form)) then " " ^ @synonym2 else "")
+  </columns>
+</module>
 
 <!-- HTML visualization -->
 	<!-- <module id="html" class="QuickHTML"> -->
@@ -188,60 +202,60 @@
 	<!-- </module> -->
 
 <!-- Index for AlvisIR -->
-  <!-- <module id="index" class="AlvisIRIndexer"> -->
-  <!--   <indexDir>index</indexDir> -->
-  <!--   <tokenPositionGap>128</tokenPositionGap> -->
-  <!--   <fieldNames>title,abstract,author,full-author,pmid,year,journal,mesh</fieldNames> -->
-  <!--   <propertyKeys/> -->
-  <!--   <documents> -->
-  <!--     <fields> -->
-  <!-- 	<instances>sections[@sectionname=="title"] | sections[@sectionname=="abstract"]</instances> -->
-  <!-- 	<field-name>@sectionname</field-name> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:taxa</instances> -->
-  <!-- 	  <text>"{taxon}" ^ @taxid ^ "/"</text> -->
-  <!-- 	</annotations> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:genes</instances> -->
-  <!-- 	  <text>"{gene}" ^ @canonical-form ^ "/"</text> -->
-  <!-- 	</annotations> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:markers</instances> -->
-  <!-- 	  <text>"{marker}" ^ @canonical-form ^ "/"</text> -->
-  <!-- 	</annotations> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:sentences</instances> -->
-  <!-- 	  <text>"{SENT}"</text> -->
-  <!-- 	</annotations> -->
-  <!-- 	<annotations> -->
-  <!-- 	  <instances>layer:phenotypes</instances> -->
-  <!-- 	  <text>"{phenotype}" ^ @concept-path ^ "/"</text> -->
-  <!-- 	</annotations> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>sections:author</instances> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>sections:author</instances> -->
-  <!-- 	<field-name>"full-author"</field-name> -->
-  <!-- 	<keyword>contents</keyword> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>$[@DI]</instances> -->
-  <!-- 	<field-name>"pmid"</field-name> -->
-  <!-- 	<keyword>@DI</keyword> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>$[@PY]</instances> -->
-  <!-- 	<field-name>"year"</field-name> -->
-  <!-- 	<keyword>@PY</keyword> -->
-  <!--     </fields> -->
-  <!--     <fields> -->
-  <!-- 	<instances>$[@JI]</instances> -->
-  <!-- 	<field-name>"journal"</field-name> -->
-  <!-- 	<keyword>@JI</keyword> -->
-  <!--     </fields> -->
-  <!--   </documents> -->
-  <!-- </module> -->
+  <module id="index" class="AlvisIRIndexer">
+    <indexDir>index</indexDir>
+    <tokenPositionGap>128</tokenPositionGap>
+    <fieldNames>title,abstract,author,full-author,pmid,year,journal,mesh</fieldNames>
+    <propertyKeys/>
+    <documents>
+      <fields>
+  	<instances>sections[@sectionname=="title"] | sections[@sectionname=="abstract"]</instances>
+  	<field-name>@sectionname</field-name>
+  	<annotations>
+  	  <instances>layer:taxa</instances>
+  	  <text>"{taxon}" ^ @taxid ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:genes</instances>
+  	  <text>"{gene}" ^ @canonical-form ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:markers</instances>
+  	  <text>"{marker}" ^ @canonical-form ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:sentences</instances>
+  	  <text>"{SENT}"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:phenotypes</instances>
+  	  <text>"{phenotype}" ^ @concept-path ^ "/"</text>
+  	</annotations>
+      </fields>
+      <fields>
+  	<instances>sections:author</instances>
+      </fields>
+      <fields>
+  	<instances>sections:author</instances>
+  	<field-name>"full-author"</field-name>
+  	<keyword>contents</keyword>
+      </fields>
+      <fields>
+  	<instances>$[@DI]</instances>
+  	<field-name>"pmid"</field-name>
+  	<keyword>@DI</keyword>
+      </fields>
+      <fields>
+  	<instances>$[@PY]</instances>
+  	<field-name>"year"</field-name>
+  	<keyword>@PY</keyword>
+      </fields>
+      <fields>
+  	<instances>$[@JI]</instances>
+  	<field-name>"journal"</field-name>
+  	<keyword>@JI</keyword>
+      </fields>
+    </documents>
+  </module>
 
 </alvisnlp-plan>
