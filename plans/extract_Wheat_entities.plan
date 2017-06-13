@@ -317,16 +317,16 @@
   </module>
 
     <!-- Run Yatea term extractor -->
-    <!-- <module id="yatea" class="YateaExtractor"> -->
-    <!--   <workingDir>yatea</workingDir> -->
-    <!--   <configDir>config</configDir> -->
-    <!--   <localeDir>Lingua-YaTeA/share/YaTeA/locale</localeDir> -->
-    <!--   <yateaExecutable>Lingua-YaTeA/bin/yatea</yateaExecutable> -->
-    <!--   <rcFile>plans/yatea.rc</rcFile> -->
-    <!-- </module> -->
+    <module id="yatea" class="YateaExtractor">
+      <workingDir>yatea</workingDir>
+      <configDir>config</configDir>
+      <localeDir>Lingua-YaTeA/share/YaTeA/locale</localeDir>
+      <yateaExecutable>Lingua-YaTeA/bin/yatea</yateaExecutable>
+      <rcFile>plans/yatea.rc</rcFile>
+    </module>
 
     <!-- Run ToMap -->
-    <!-- <import file="plans/tomap-wheat-phenotypes-OMTD.plan"/> -->
+    <import file="plans/tomap-wheat-phenotypes-OMTD.plan"/>
 
     <module id="add-type-feature" class="Action">
     <target>documents.sections.layer:phenotypes</target>
