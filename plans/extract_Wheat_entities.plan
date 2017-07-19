@@ -236,10 +236,44 @@
   </segmentation>
 
 <!-- POS tagging -->
-  <module id="tt" class="TreeTagger">
-    <treeTaggerExecutable>tree-tagger-3.2/bin/tree-tagger</treeTaggerExecutable>
-    <parFile>tree-tagger-3.2/lib/english.par</parFile>
-    <noUnknownLemma/>
+
+  <genia class="GeniaTagger">
+    <geniaDir>geniatagger-3.0.2</geniaDir>
+    <pos>pos</pos>
+    <lemma>lemma</lemma>
+    <chunk>chunk</chunk>
+    <entity>entity</entity>
+  </genia>
+
+  <!-- Adapt Genia's POS tags to match Treetagger's -->
+  <module id="adapt-have-auxiliary" class="Action">
+    <target>documents.sections.layer:words[@pos =~ "^VB" and @lemma == "have"]</target>
+    <action>set:feat:pos(str:seds(@pos,"^VB","VH"))</action>
+    <setFeatures/>
+  </module>
+
+  <module id="adapt-regular-verbs" class="Action">
+    <target>documents.sections.layer:words[@pos =~ "^VB" and @lemma != "be"]</target>
+    <action>set:feat:pos(str:seds(@pos,"^VB","VV"))</action>
+    <setFeatures/>
+  </module>
+
+  <module id="adapt-proper-nouns" class="Action">
+    <target>documents.sections.layer:words[@pos =~ "^NNP"]</target>
+    <action>set:feat:pos(str:seds(@pos,"^NNP","NP"))</action>
+    <setFeatures/>
+  </module>
+
+  <module id="adapt-pronouns" class="Action">
+    <target>documents.sections.layer:words[@pos =~ "^PRP"]</target>
+    <action>set:feat:pos(str:seds(@pos,"^PRP","PP"))</action>
+    <setFeatures/>
+  </module>
+
+  <module id="add-end-of-sentences" class="Action">
+    <target>documents.sections.layer:words[@pos == "." and end == outside:sentences.end]</target>
+    <action>set:feat:pos("SENT")</action>
+    <setFeatures/>
   </module>
 
 <!-- Blacklist-accession -->
