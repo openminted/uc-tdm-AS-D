@@ -87,111 +87,32 @@
 </module>
 
 <!-- Print CSV for URGI -->
-<module id="print-csv-version2" class="TabularExport">
-  <outDir>.</outDir>
-  <files>$</files>
-  <fileName>"text-mining-export-v2.csv"</fileName>
-  <lines>documents[sections.layer:genes != "" or sections.layer:markers  != "" or sections.layer:taxa != "" or sections.layer:phenotypes != "" or sections.layer:accessions != ""]</lines>
-  <columns separator=";">
-    @DI;
-    str:join:' '(document.sections, str:normalizeSpace(contents)) ^ " " ^
-    str:seds(str:seds(str:seds(str:normalizeSpace(str:join:' , '(sort:nsval(document.sections.layer:genes,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:genes,@canonical-form),if @canonical-form != str:normalizeSpace(@form) then @canonical-form else "") ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:markers,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:markers,@canonical-form),if @canonical-form != str:normalizeSpace(@form) then @canonical-form else "")  ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:markers,@synonym),if (@synonym != str:normalizeSpace(@form) and @synonym != @canonical-form) then  @synonym else "") ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:taxa,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:taxa,@canonical-name),if @canonical-name != str:normalizeSpace(@form) then @canonical-name else "") ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:taxa,@synonyms),if (@synonyms != str:normalizeSpace(@form) and @synonyms != @canonical-name) then  @synonyms else "") ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:phenotypes,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:accessions,str:normalizeSpace(@form)),str:normalizeSpace(@form)) ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:accessions,@accession-name),if @accession-name != str:normalizeSpace(@form) then @accession-name else "") ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:accessions,@synonym1),if (@synonym1 != str:normalizeSpace(@form) and @synonym1 != @accession-name) then  @synonym1 else "") ^ " , " ^
-    str:join:' , '(sort:nsval(document.sections.layer:accessions,@synonym2),if (@synonym2 != str:normalizeSpace(@form) and @synonym2 != @accession-name) then  @synonym2 else "")),"(\\s+,)+"," ,"),"^(, )+","")," ,\\s*$","")
-  <!--  str:join:' '(sort:nsval(document.sections.layer:genes,str:normalizeSpace(@form) | @canonical-form),str:normalizeSpace(@form) | @canonical-form) -->
-  </columns>
-  <headers>
-    "DOI",
-    "FULL-TEXT"
-  </headers>
+<module id="add-list-of-entities-to-doc" class="Action">
+  <target>documents</target>
+  <action>set:feat:entities(str:seds(str:seds(str:seds(
+  str:join:' , '(sort:nsval(document.sections.layer:genes[@canonical-form != @form],@canonical-form),@canonical-form) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections.layer:markers[@canonical-form != @form],@canonical-form),@canonical-form) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections.layer:markers[@synonym != @form],@synonym),@synonym) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections.layer:taxa[@canonical-name != @form],@canonical-name),@canonical-name) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections.layer:taxa[@synonym],@synonym),@synonym) ^ " , " ^
+  str:join:' , '(sort:nsval(document.sections.layer:accessions[@accession-name != @form],@accession-name),@accession-name) ^ " , " ^
+  str:join:' , '(sort:nsval(document.sections.layer:accessions[@synonym1],@synonym1),@synonym1) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections.layer:accessions[@synonym2],@synonym2),@synonym2),
+  "(\\s+,)+"," ,"),
+  "^(\\s*, )+",""),
+  " ,\\s*$","")
+  )
+</action>
+  <setFeatures/>
 </module>
 
-<module id="print-csv" class="TabularExport">
+<write class="XMLWriter2">
   <outDir>.</outDir>
-  <files>$</files>
-  <fileName>"text-mining-export.csv"</fileName>
-  <lines>documents.sections.layer:markers</lines>
-  <columns separator=";">
-    "Marker";
-    str:normalizeSpace(@form);
-    if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
-    section.document.@DI;
-    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-form != "" and @canonical-form != str:normalizeSpace(@form)) then " " ^ @canonical-form else "") ^ (if (@synonym != "" and @synonym != str:normalizeSpace(@form)) then " " ^ @synonym else "")
-  </columns>
-  <headers>
-    "TYPE",
-    "FORM",
-    "CANONICAL-NAME",
-    "DOI",
-    "FULL-TEXT"
-  </headers>
-</module>
-<module id="print-csv-2" class="TabularExport">
-  <outDir>.</outDir>
-  <files>$</files>
-  <fileName>"text-mining-export.csv"</fileName>
-  <lines>documents.sections.layer:genes</lines>
-  <append>true</append>
-  <columns separator=";">
-    "Gene";
-    str:normalizeSpace(@form);
-    if @canonical-form != "" then @canonical-form else str:normalizeSpace(@form);
-    section.document.@DI;
-    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-form != "" and @canonical-form != str:normalizeSpace(@form)) then " " ^ @canonical-form else "")
-  </columns>
-</module>
-<module id="print-csv-3" class="TabularExport">
-  <outDir>.</outDir>
-  <files>$</files>
-  <fileName>"text-mining-export.csv"</fileName>
-  <lines>documents.sections.layer:phenotypes</lines>
-  <append>true</append>
-  <columns separator=";">
-    "Phenotype";
-    str:normalizeSpace(@form);
-    str:normalizeSpace(@form);
-    section.document.@DI;
-    str:join:' '(section.document.sections, str:normalizeSpace(contents))
-  </columns>
-</module>
-<module id="print-csv-4" class="TabularExport">
-  <outDir>.</outDir>
-  <files>$</files>
-  <fileName>"text-mining-export.csv"</fileName>
-  <lines>documents.sections.layer:taxa</lines>
-  <append>true</append>
-  <columns separator=";">
-    "Taxon";
-    str:normalizeSpace(@form);
-    if @canonical-name != "" then @canonical-name else str:normalizeSpace(@form);
-    section.document.@DI;
-    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@canonical-name != "" and @canonical-name != str:normalizeSpace(@form)) then " " ^ @canonical-name else "") ^ (if (@synonyms != "" and @synonyms != str:normalizeSpace(@form)) then " " ^ @synonyms else "")
-  </columns>
-</module>
-<module id="print-csv-5" class="TabularExport">
-  <outDir>.</outDir>
-  <files>$</files>
-  <fileName>"text-mining-export.csv"</fileName>
-  <lines>documents.sections.layer:accessions</lines>
-  <append>true</append>
-  <columns separator=";">
-    "Accession";
-    str:normalizeSpace(@form);
-    if @accession-name != "" then @accession-name else str:normalizeSpace(@form);
-    section.document.@DI;
-    str:join:' '(section.document.sections, str:normalizeSpace(contents)) ^ (if (@accession-name != "" and @accession-name != str:normalizeSpace(@form)) then " " ^ @accession-name else "") ^ (if (@synonym1 != "" and @synonym1 != str:normalizeSpace(@form)) then " " ^ @synonym1 else "") ^ (if (@synonym2 != "" and @synonym2 != str:normalizeSpace(@form)) then " " ^ @synonym2 else "")
-  </columns>
-</module>
+  <roots>$</roots>
+  <fileName>"tagged_abstracts.csv"</fileName>
+  <xslTransform>plans/urgiExport.xslt</xslTransform>
+  <indent>false</indent>
+</write>
 
 <!-- HTML visualization -->
 	<!-- <module id="html" class="QuickHTML"> -->

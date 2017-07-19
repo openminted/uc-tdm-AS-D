@@ -162,7 +162,7 @@
       <matchStartCaseInsensitive/>
       <keyIndex>1,2</keyIndex>
       <valueFeatures>taxid,canonical-name,syno,synonyms</valueFeatures>
-      <constantAnnotationFeatures>source=URGI,ne-type=taxon</constantAnnotationFeatures>
+      <constantAnnotationFeatures>source=URGI,type=ne,ne-type=taxon</constantAnnotationFeatures>
     </module>
 
     <module id="overlaps" class="RemoveOverlaps">
@@ -199,7 +199,7 @@
 
     <module id="add-mapped-NCBI-taxa" class="Action">
       <target>documents.sections.layer:NCBITaxa[@canonical-name != ""]</target>
-      <action>add:taxa|set:feat:ne-type("taxon")</action>
+      <action>add:taxa|set:feat:ne-type("taxon")|set:feat:type("ne")</action>
       <addToLayer/>
       <setFeatures/>
     </module>
@@ -331,7 +331,7 @@
 
     <module id="add-type-feature" class="Action">
     <target>documents.sections.layer:phenotypes</target>
-    <action>set:feat:ne-type("Phenotype")</action>
+    <action>set:feat:type("ne")|set:feat:ne-type("phenotype")</action>
     <setFeatures/>
     </module>
 
