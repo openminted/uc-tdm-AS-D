@@ -37,7 +37,7 @@
         <xsl:apply-templates select="child::node()|@*|node()"/>
     </xsl:copy>
 </xsl:template>
-x
+
 <!-- <xsl:template match="text()"> -->
     <!-- <xsl:value-of select="normalize-space(.)"/> -->
 <!-- </xsl:template> -->
