@@ -1,4 +1,19 @@
 
 = Application Design
 
-This data processing scenario is yet to be addressed in the current AS-D application.
+== Model alignement
+
+The models of the GnpIS/WheatIS databases align to the model of the text mining data. The model of the Solr index used by GnpIS/WheatIS differ from the one used by Alvis. Hence the transfer of data from the Alvis platform to GnpIS/WheatIS requires to destructure some data to a plain text field in order to make it searchable.
+
+== Data production
+
+Until now the execution of the text mining workflow is done on the Migale platform at INRA.
+
+The workflow is detailled in the <<production_processing.adoc#, production processing documentation>>
+
+== Data Updates
+
+The resulting text mining data is made available to the parent application maintainers as a downloadable file.
+
+They can be downloaded at http://genome.jouy.inra.fr/~jbbohuon/uc-d-linking-wheat-data-with-literature/wheat-corpus-annotation_latest.csv
+
