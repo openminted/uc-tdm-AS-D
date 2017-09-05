@@ -66,34 +66,29 @@
 <xsl:template match="b:element">
   <xsl:choose>
     <xsl:when test="@type='ne'">
-<xsl:text>&lt;span class='</xsl:text><xsl:value-of select="@ne-type"/><xsl:text>'</xsl:text>
+<xsl:text>&lt;span class='openminted_</xsl:text><xsl:value-of select="@ne-type"/><xsl:text>'</xsl:text>
       <!-- <xsl:element name="{@ne-type}"> -->
       <!-- <xsl:element name="span"> -->
       <!-- 	<xsl:attribute name="class"> -->
       <!-- 	  <xsl:value-of select="@ne-type"/> -->
       <!-- 	</xsl:attribute> -->
-      	<xsl:choose>
-      	  <xsl:when test="@ne-type='gene'">
-      	    <!-- <xsl:attribute name="style">background-color: blue</xsl:attribute> -->
-	    <xsl:text> style='background-color: #aac2ff'</xsl:text>
-      	  </xsl:when>
-      	  <xsl:when test="@ne-type='phenotype'">
-      	    <!-- <xsl:attribute name="style">background-color: green</xsl:attribute> -->
-	    <xsl:text> style='background-color: #91ffd4'</xsl:text>
-      	  </xsl:when>
-      	  <xsl:when test="@ne-type='marker'">
-      	    <!-- <xsl:attribute name="style">background-color: red</xsl:attribute> -->
-	    <xsl:text> style='background-color: #ff95a4'</xsl:text>
-      	  </xsl:when>
-      	  <xsl:when test="@ne-type='taxon'">
-      	    <!-- <xsl:attribute name="style">background-color: yellow</xsl:attribute> -->
-	    <xsl:text> style='background-color: #f8ffc5'</xsl:text>
-      	  </xsl:when>
-      	  <xsl:when test="@ne-type='accession'">
-      	    <!-- <xsl:attribute name="style">background-color: pink</xsl:attribute> -->
-	    <xsl:text> style='background-color: #ffc2e3'</xsl:text>
-      	  </xsl:when>
-      	</xsl:choose>
+      	<!-- <xsl:choose> -->
+      	<!--   <xsl:when test="@ne-type='gene'"> -->
+	<!--     <xsl:text> style='background-color: #aac2ff'</xsl:text> -->
+      	<!--   </xsl:when> -->
+      	<!--   <xsl:when test="@ne-type='phenotype'"> -->
+	<!--     <xsl:text> style='background-color: #91ffd4'</xsl:text> -->
+      	<!--   </xsl:when> -->
+      	<!--   <xsl:when test="@ne-type='marker'"> -->
+	<!--     <xsl:text> style='background-color: #ff95a4'</xsl:text> -->
+      	<!--   </xsl:when> -->
+      	<!--   <xsl:when test="@ne-type='taxon'"> -->
+	<!--     <xsl:text> style='background-color: #f8ffc5'</xsl:text> -->
+      	<!--   </xsl:when> -->
+      	<!--   <xsl:when test="@ne-type='accession'"> -->
+	<!--     <xsl:text> style='background-color: #ffc2e3'</xsl:text> -->
+      	<!--   </xsl:when> -->
+      	<!-- </xsl:choose> -->
 	<xsl:text>&gt;</xsl:text>
       	<xsl:apply-templates select="child::node()"/>
 	<xsl:text>&lt;/span&gt;</xsl:text>
