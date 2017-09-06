@@ -270,6 +270,12 @@
     <setFeatures/>
   </module>
 
+ <module id="adapt-hyphens" class="Action">
+    <target>documents.sections.layer:words[@pos == "HYPH"]</target>
+    <action>set:feat:pos(str:seds(@pos,"HYPH",":"))</action>
+    <setFeatures/>
+  </module>
+
   <module id="add-end-of-sentences" class="Action">
     <target>documents.sections.layer:words[@pos == "." and end == outside:sentences.end]</target>
     <action>set:feat:pos("SENT")</action>
