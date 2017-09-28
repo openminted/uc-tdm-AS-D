@@ -68,9 +68,14 @@ Each result entry correspond to a scientific publication, in which the queried n
 For each text-mining result entry, the columns of the table contain the following information:
 
 - ID: the DOI of the publication, which links to the original publication, using a DOI resolver that provides access to an Open Access versions of the publication first
-- Source: OpenMinTeD as the annotations have been made using the OpenMinTeD platform 
+- Source: OpenMinTeD as the annotations have been made using the OpenMinTeD platform. Clicking on the link will redirect to a visualization of the annotations in the text in a semantic search engine (see section below)
 - Type: the publication is of type Bibliography
 - Taxon: the taxon about which the publication is (as the corpus is focused on Triticum, this taxon is always Triticum)
 - Description: this field contains the full text of the publication plus some summary information
 
 
+=== Visualization of annotations in the AlvisIR semantic search engine
+
+An instance of AlvisIR, a semantic search engine developed in first stage of this use-case is available at the address http://bibliome.jouy.inra.fr/demo/wheat/alvisir/webapi/search
+
+All the abstracts of the corpus and annotations are indexed and can be retrieved by direct use (see <<web_application.adoc#|documentation>> or when redirected to it from the GnpIS/WheatIS web interface.
