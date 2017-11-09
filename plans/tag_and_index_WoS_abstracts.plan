@@ -17,6 +17,13 @@
   <setFeatures/>
 </module>
 
+<!-- <module id="get-authors" class="Action"> -->
+<!--   <target>documents</target> -->
+<!--   <action>set:feat:authors(str:join:' '(nav:features:AU,@value))</action> -->
+<!--   <setFeatures/> -->
+<!-- </module> -->
+
+
 <!-- Tag entities (wheat taxa, phenotypes, genes and markers) -->
 <import file="plans/extract_Wheat_entities.plan"/>
 
@@ -154,9 +161,9 @@
   	</annotations>
       </fields>
       <fields>
-	<instances>$[@AU]</instances>
+	<instances>document.nav:features:AU</instances>
   	<field-name>"author"</field-name>
-  	<keyword>@AU</keyword>
+  	<keyword>@value</keyword>
       </fields>
       <fields>
   	<instances>$[@DI]</instances>
