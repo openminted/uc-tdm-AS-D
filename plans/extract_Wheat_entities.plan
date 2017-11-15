@@ -151,6 +151,26 @@
   <removeFromLayer/>
 </module>
 
+<!-- Wheat varieties -->
+<varieties>
+  <module id="project-wheat-variety-lexicon" class="SimpleProjector2">
+    <dictFile>resources/triticum-aestivum-varieties.csv</dictFile>
+    <targetLayerName>varieties</targetLayerName>
+    <valueFeatures>string</valueFeatures>
+    <constantAnnotationFeatures>type=ne,ne-type=variety</constantAnnotationFeatures>
+  </module>
+
+  <module id="varieties-overlaps" class="RemoveOverlaps">
+    <layerName>varieties</layerName>
+  </module>
+
+  <module id="remove-varieties-overlap-with-stopwords" class="Action">
+    <target>documents.sections.layer:varieties[span:stopwords]</target>
+    <action>remove:varieties</action>
+    <removeFromLayer/>
+  </module>
+</varieties>
+
 <!-- Tag organisms : lexicon from URGI + NCBI -->
 
 <organisms>
@@ -378,7 +398,7 @@
 
   <extended-form>
     <module id="fragments" class="Action">
-      <target>documents.sections.(layer:phenotypes|layer:genes|layer:markers|layer:taxa|layer:accessions)</target>
+      <target>documents.sections.(layer:phenotypes|layer:genes|layer:markers|layer:taxa|layer:accessions|layer:varieties)</target>
       <action>
 	set:feat:context-before(user:context-before)
 	| set:feat:context-after(user:context-after)
@@ -387,7 +407,7 @@
     </module>
 
     <module id="tuples" class="Action">
-      <target>documents.sections.(layer:phenotypes|layer:genes|layer:markers|layer:taxa|layer:accessions)</target>
+      <target>documents.sections.(layer:phenotypes|layer:genes|layer:markers|layer:taxa|layer:accessions|layer:varieties)</target>
       <action>
 	set:feat:context-both(str:seds(@context-before, "\\n", " ") ^ "[" ^ str:seds(@form, "\\n", " ") ^ "]" ^ str:seds(@context-after, "\\n", " "))
       </action>
@@ -399,6 +419,12 @@
  <module id="remove-acc-overlap-persons" class="Action">
   <target>documents.sections.layer:accessions[(overlapping:stanford and not @context-both =~ "(cultivar|variety|varieties|cv\\.| x )") or span:blacklist or span:genes or inside:genes or outside:genes or span:urls or inside:urls or outside:urls]</target>
   <action>remove:accessions</action>
+  <removeFromLayer/>
+</module>
+
+ <module id="remove-variety-overlap-persons" class="Action">
+  <target>documents.sections.layer:varieties[(overlapping:stanford and not @context-both =~ "(cultivar|variety|varieties|cv\\.| x )") or span:blacklist or span:genes or inside:genes or outside:genes or span:urls or inside:urls or outside:urls]</target>
+  <action>remove:varieties</action>
   <removeFromLayer/>
 </module>
 

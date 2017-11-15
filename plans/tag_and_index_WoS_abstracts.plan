@@ -32,7 +32,7 @@
   <outDir>.</outDir>
   <files>$</files>
   <fileName>"phenotypes.txt"</fileName>
-  <lines>documents.sections.layer:phenotypes</lines>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes</lines>
   <columns separator=";">
     <element>section.document.@id</element>
     <element>str:seds(@form, "\\n", " ")</element>
@@ -46,7 +46,7 @@
   <outDir>.</outDir>
   <files>$</files>
   <fileName>"genes.txt"</fileName>
-  <lines>documents.sections.layer:genes</lines>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:genes</lines>
   <columns separator=";">
     <element>section.document.@id</element>
     <element>str:seds(@form, "\\n", " ")</element>
@@ -58,7 +58,7 @@
   <outDir>.</outDir>
   <files>$</files>
   <fileName>"markers.txt"</fileName>
-  <lines>documents.sections.layer:markers</lines>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:markers</lines>
   <columns separator=";">
     <element>section.document.@id</element>
     <element>str:seds(@form, "\\n", " ")</element>
@@ -70,7 +70,7 @@
   <outDir>.</outDir>
   <files>$</files>
   <fileName>"species.txt"</fileName>
-  <lines>documents.sections.layer:taxa</lines>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:taxa</lines>
   <columns separator=";">
     <element>section.document.@id</element>
     <element>str:seds(@form, "\\n", " ")</element>
@@ -85,7 +85,19 @@
   <outDir>.</outDir>
   <files>$</files>
   <fileName>"accessions.txt"</fileName>
-  <lines>documents.sections.layer:accessions</lines>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<module id="print-varieties" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"varieties.txt"</fileName>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:varieties</lines>
   <columns separator=";">
     <element>section.document.@id</element>
     <element>str:seds(@form, "\\n", " ")</element>
@@ -97,14 +109,14 @@
 <module id="add-list-of-entities-to-doc" class="Action">
   <target>documents</target>
   <action>set:feat:entities(str:seds(str:seds(str:seds(
-  str:join:' , '(sort:nsval(document.sections.layer:genes[@canonical-form != @form],@canonical-form),@canonical-form) ^ " , " ^ 
-  str:join:' , '(sort:nsval(document.sections.layer:markers[@canonical-form != @form],@canonical-form),@canonical-form) ^ " , " ^ 
-  str:join:' , '(sort:nsval(document.sections.layer:markers[@synonym != @form],@synonym),@synonym) ^ " , " ^ 
-  str:join:' , '(sort:nsval(document.sections.layer:taxa[@canonical-name != @form],@canonical-name),@canonical-name) ^ " , " ^ 
-  str:join:' , '(sort:nsval(document.sections.layer:taxa[@synonym],@synonym),@synonym) ^ " , " ^
-  str:join:' , '(sort:nsval(document.sections.layer:accessions[@accession-name != @form],@accession-name),@accession-name) ^ " , " ^
-  str:join:' , '(sort:nsval(document.sections.layer:accessions[@synonym1],@synonym1),@synonym1) ^ " , " ^ 
-  str:join:' , '(sort:nsval(document.sections.layer:accessions[@synonym2],@synonym2),@synonym2),
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:genes[@canonical-form != @form],@canonical-form),@canonical-form) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:markers[@canonical-form != @form],@canonical-form),@canonical-form) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:markers[@synonym != @form],@synonym),@synonym) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:taxa[@canonical-name != @form],@canonical-name),@canonical-name) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:taxa[@synonym],@synonym),@synonym) ^ " , " ^
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions[@accession-name != @form],@accession-name),@accession-name) ^ " , " ^
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions[@synonym1],@synonym1),@synonym1) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions[@synonym2],@synonym2),@synonym2),
   "(\\s+,)+"," ,"),
   "^(\\s*, )+",""),
   " ,\\s*$","")
@@ -150,6 +162,10 @@
   	<annotations>
   	  <instances>layer:markers</instances>
   	  <text>"{marker}" ^ @canonical-form ^ "/"</text>
+  	</annotations>
+	<annotations>
+  	  <instances>layer:varieties</instances>
+  	  <text>"{variety}" ^ @form ^ "/"</text>
   	</annotations>
   	<annotations>
   	  <instances>layer:sentences</instances>

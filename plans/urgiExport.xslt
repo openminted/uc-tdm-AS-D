@@ -1,7 +1,7 @@
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:a="xalan://org.bibliome.alvisnlp.modules.xml.XMLWriter2"
-                xmlns:b="http://bilbiome.jouy.inra.fr/alvisnlp/XMLReader2"
+                xmlns:b="http://bibliome.jouy.inra.fr/alvisnlp/XMLReader2"
                 xmlns:inline="http://bibliome.jouy.inra.fr/alvisnlp/bibliome-module-factory/inline"
 		extension-element-prefixes="a b inline"
 >
@@ -105,7 +105,7 @@
       <xsl:text>,</xsl:text>
       <xsl:text>1,&quot;</xsl:text>
       <xsl:for-each select="a:elements('sections:TI|sections:AB')">
-	<xsl:for-each select="a:inline('layer:genes|layer:markers|layer:taxa|layer:phenotypes|layer:accessions')">
+	<xsl:for-each select="a:inline('layer:genes|layer:markers|layer:taxa|layer:phenotypes|layer:accessions|layer:varieties')">
 	  <xsl:apply-templates select="child::node()"/>
 	</xsl:for-each>
 	<xsl:text> </xsl:text>
