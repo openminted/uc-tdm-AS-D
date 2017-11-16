@@ -1,7 +1,7 @@
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:a="xalan://org.bibliome.alvisnlp.modules.xml.XMLWriter2"
-                xmlns:b="http://bibliome.jouy.inra.fr/alvisnlp/XMLReader2"
+                xmlns:b="http://bilbiome.jouy.inra.fr/alvisnlp/XMLReader2"
                 xmlns:inline="http://bibliome.jouy.inra.fr/alvisnlp/bibliome-module-factory/inline"
 		extension-element-prefixes="a b inline"
 >
