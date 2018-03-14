@@ -251,7 +251,7 @@
     </module>
 
     <!-- Segmentation -->
-    <import href="res://org.bibliome.alvisnlp.resources/segmentation.plan"/>
+    <import href="res://segmentation.plan"/>
 
   </segmentation>
 
@@ -395,6 +395,13 @@
     <setFeatures/>
     </module>
 
+   <mapping class="FileMapper">
+      <target>documents.sections.layer:phenotypes</target>
+      <form>@concept-id</form>
+      <mappingFile>resources/wto-avec-et-sans-alignement-wipo--col=id--col=path-label.tsv</mappingFile>
+      <targetFeatures>,label-path</targetFeatures>
+      <keyColumn>0</keyColumn>
+    </mapping>
 
   <extended-form>
     <module id="fragments" class="Action">
