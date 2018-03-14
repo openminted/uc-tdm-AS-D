@@ -39,6 +39,7 @@
     <element>@concept-name</element>
     <element>@concept-id</element>
     <element>str:normalizeSpace(@context-both)</element>
+    <element>@label-path</element>
   </columns>
 </module>
 
@@ -125,6 +126,18 @@
   <setFeatures/>
 </module>
 
+<module id="add-list-of-paths-to-doc" class="Action">
+  <target>documents</target>
+  <action>set:feat:paths(str:seds(str:seds(str:seds(
+  str:join:' ; '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes,@label-path),str:seds(@label-path,";"," ; ")),
+  "(\\s+;)+"," ;"),
+  "^(\\s*; )+",""),
+  " ;\\s*$","")
+  )
+</action>
+  <setFeatures/>
+</module>
+
 <write class="XMLWriter2">
   <outDir>.</outDir>
   <roots>$</roots>
@@ -163,7 +176,7 @@
   	  <instances>layer:markers</instances>
   	  <text>"{marker}" ^ @canonical-form ^ "/"</text>
   	</annotations>
-	<annotations>
+  	<annotations>
   	  <instances>layer:varieties</instances>
   	  <text>"{variety}" ^ @form ^ "/"</text>
   	</annotations>
@@ -177,7 +190,7 @@
   	</annotations>
       </fields>
       <fields>
-	<instances>document.nav:features:AU</instances>
+  	<instances>document.nav:features:AU</instances>
   	<field-name>"author"</field-name>
   	<keyword>@value</keyword>
       </fields>
