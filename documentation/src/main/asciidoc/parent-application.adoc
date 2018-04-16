@@ -2,7 +2,7 @@
 
 == Application goal
 
-The WheatIS search tool is a search engine that indexes omics data from various sources, and enables a researcher focused on Wheat to cross-check results obtained from field mesures, lab experiments and scientific literature from several source databases, federated into the WheatIS index network. Scientists doing research on wheat obtain results from experiments or field collections and need to cross-check their observations with data from experiments at other scales (whole plant phenotype or genomic data) or from other taxa. Information about phenotypes is written in the literature but does not appear in observation databases. The lack of normalization results in a lack of cross-checking of heterogeneous data. The integration of text-mining annotations to data of heterogeneous types from various sources aims at giving access to the information usually stored in literature but absent from the experiment results databases.
+The WheatIS data discovery tool is a search engine that indexes omics data from various sources, and enables a researcher focused on Wheat to cross-check results obtained from field mesures, lab experiments and scientific literature from several source databases, federated into the WheatIS index network. Scientists doing research on wheat obtain results from experiments or field collections and need to cross-check their observations with data from experiments at other scales (whole plant phenotype or genomic data) or from other taxa. Information about phenotypes is written in the literature but does not appear in observation databases. The lack of normalization results in a lack of cross-checking of heterogeneous data. The integration of text-mining annotations to data of heterogeneous types from various sources aims at giving access to the information usually stored in literature but absent from the experiment results databases.
 
 The integration of a TDM (Text and Data Mining) module aims at improving the data discovery, and at assisting users in their bibliography research. The TDM module will provide normalization of unstructured entities and enhanced search capabilities. Here analysis means not only the extraction of the relevant spans of text, but also the normalization or categorization with reference resources (__e.g.__ https://urgi-git.versailles.inra.fr/urgi-is/ontologies/tree/develop/Wheat[WIPO — the Wheat INRA Phenotype Ontology]).
 
@@ -11,26 +11,26 @@ The integration of a TDM (Text and Data Mining) module aims at improving the dat
 
 This version of the application consists in the automatic recognition and normalization of phenotypes, genes, markers, wheat-related taxa and wheat varieties from scientific publication abstracts.
 
-The corpus is composed of 3,881 abstracts from 414 journals downloaded from the Web of Science website. 8,996 phenotypes, 10,537 genes, 2,749 markers and 13,015 taxa have been annotated and indexed by the TDM workflow. Taxa and markers are normalized according to identifiers from the URGI database. Phenotypes are normalized according to the WIPO. Genes are normalized according to an in-house lexicon.
+The corpus is composed of 3,881 abstracts from 414 journals downloaded from the Web of Science website (downloaded in January 2017). 8,996 phenotypes, 10,537 genes, 2,749 markers and 13,015 taxa have been annotated and indexed by the TDM workflow. Taxa and markers are normalized according to identifiers from GnpIS, the URGI database (https://doi.org/10.1093/database/bat058). Phenotypes are normalized according to the WIPO. Genes are normalized according to an in-house lexicon.
 
-The TDM components and the workflow application are deployed on Alvis platform at INRA MaIAGE lab. Results may be searched using the WheatIS search tool, developped by a consortium led by URGI (INRA, France). 
+The TDM components and the workflow application are deployed on Alvis platform at INRA MaIAGE lab. Results may be searched using the WheatIS data discovery tool, developped by the WheatIS expert working group of the Wheat Initiative led by URGI (INRA, France). 
 
 
 
-= WheatIS search tool
+= WheatIS data discovery tool
 
 == User profile
 
-The user profile of the WheatIS search tool is a biologist whose research is focused on wheat and wanting to cross-check information about wheat phenotypes from several databases.
+The user profile of the WheatIS data discovery tool is a biologist whose research is focused on wheat and wanting to cross-check information about wheat genomic, genetic of phenomic data from several databases.
 
 == Architecture of the application
 
-The relevant corpus has been fully pre-processed by an AlvisNLP pipeline and indexed in the WheatIS database. The text-mining annotations can be queried from the WheatIS search interface.
+The relevant corpus has been fully pre-processed by an AlvisNLP pipeline and indexed in the WheatIS database (Solr technology). The text-mining annotations can be queried from the WheatIS interface.
 
 == User manual, How-to
 === Launching the application
 
-The WheatIS search portal is available at https://urgi.versailles.inra.fr/wheatis[https://urgi.versailles.inra.fr/wheatis].
+The WheatIS data discovery tool interface is available at https://urgi.versailles.inra.fr/wheatis[https://urgi.versailles.inra.fr/wheatis].
 
 === Query
 
