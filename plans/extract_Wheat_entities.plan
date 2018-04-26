@@ -16,14 +16,14 @@
 </userFunctions>
 
 <!-- Stopwords -->
-    <module id="stopword-list" class="SimpleProjector2">
+    <module id="stopword-list" class="TabularProjector">
       <dictFile>resources/stopwords_EN.txt</dictFile>
       <targetLayerName>stopwords</targetLayerName>
       <valueFeatures>string</valueFeatures>
       <caseInsensitive/>
     </module>
 
-    <module id="blacklist" class="SimpleProjector2">
+    <module id="blacklist" class="TabularProjector">
       <dictFile>resources/blacklist_accessions.txt</dictFile>
       <targetLayerName>blacklist</targetLayerName>
       <valueFeatures>string</valueFeatures>
@@ -43,7 +43,7 @@
   <genes>
 
     <!-- TODO : use another list ?? -->
-    <module id="dictionary" class="SimpleProjector2">
+    <module id="dictionary" class="TabularProjector">
       <dictFile>resources/genes.txt</dictFile>
       <targetLayerName>genes</targetLayerName>
       <valueFeatures>,canonical-form</valueFeatures>
@@ -53,6 +53,14 @@
     <module id="geneRegExp" class="RegExp">
       <pattern>(\b(?:(B|D|m|R|V|W|H|Aadh|Aco|Acph|Adh|Adk|Alt|Amp|An|Ar|Ba|Bdv|Bg|Bls|Bo|Br|Bs|Bt|Cat|Cdu|Ch|Chr|Cmc|Cre|Cs|Dfq|Dip|Dn|Ep|Eps|Est|Fe|Fhs|Fr|Gai|Gb|Gc|Gli|Glo|Glu|Got|Gpt|Gw|Hg|Hk|Hl|Ibf|Igc|Iha|Isa|Iw|Kb|Kna|Kr|Lec|lg|Lpx|Lr|Mal|Mdh|ms|Ndh|Ne|Ner|Nor|Pan|Pc|Pch|Pde|Per|Pgd|Pgm|Ph|Pm|Pm|Pp|Ppd|Pur|Ra|Rf|Rfd|Rg|Rht|Rkn|Rlnn|Rmg|Sbe|Sd|Sgp|Si|Skdh|Sm|Snb|Sod|Sr|Stb|Su|Tg|Ti|Tin|Tpi|Tri|Tsn|Us|Ut|Vrn|Wsm|Wsp|Wx|Yr))-?([A-Z][a-z]*)?[0-9]{1,5}\b|\b(Aadh|Aco|Acph|Adh|Adk|Alt|Amp|An|Ar|Ba|Bdv|Bg|Bls|Bo|Br|Bs|Bt|Cat|Cdu|Ch|Chr|Cmc|Cre|Cs|Dfq|Dip|Dn|Ep|Eps|Est|Fe|Fhs|Fr|Gai|Gb|Gc|Gli|Glo|Glu|Got|Gpt|Gw|Hg|Hk|Hl|Ibf|Igc|Iha|Isa|Iw|Kb|Kna|Kr|Lec|lg|Lpx|Lr|Mal|Mdh|ms|Ndh|Ne|Ner|Nor|Pan|Pc|Pch|Pde|Per|Pgd|Pgm|Ph|Pm|Pm|Pp|Ppd|Pur|Ra|Rf|Rfd|Rg|Rht|Rkn|Rlnn|Rmg|Sbe|Sd|Sgp|Si|Skdh|Sm|Snb|Sod|Sr|Stb|Su|Tg|Ti|Tin|Tpi|Tri|Tsn|Us|Ut|Vrn|Wsm|Wsp|Wx|Yr)\b)</pattern>
       <targetLayerName>genes</targetLayerName>
+      <constantAnnotationFeatures>type=ne,ne-type=gene</constantAnnotationFeatures>
+    </module>
+
+    <module id="dictionary2" class="TabularProjector">
+      <dictFile>resources/GeneList.txt</dictFile>
+      <targetLayerName>genes</targetLayerName>
+      <valueFeatures>canonical-form,synonym</valueFeatures>
+      <keyIndex>0,1</keyIndex>
       <constantAnnotationFeatures>type=ne,ne-type=gene</constantAnnotationFeatures>
     </module>
 
@@ -66,13 +74,19 @@
       <removeFromLayer/>
     </module>
 
+    <module id="remove-single-characters" class="Action">
+      <target>documents.sections.layer:genes[@form =~ "^..?$"]</target>
+      <action>remove:genes</action>
+      <removeFromLayer/>
+    </module>
+
 
 </genes>
 
 <!-- Tag Marker Types : lexicon -->
   <sequence id="marker-types">
 
-    <module id="dictionary" class="SimpleProjector2">
+    <module id="dictionary" class="TabularProjector">
       <dictFile>resources/markertypes.txt</dictFile>
       <targetLayerName>marker-types</targetLayerName>
       <valueFeatures>,canonical-form</valueFeatures>
@@ -84,7 +98,7 @@
 <!-- Tag Markers : lexicon + regexp -->
   <markers>
 
-    <module id="dictionary" class="SimpleProjector2">
+    <module id="dictionary" class="TabularProjector">
       <!-- <dictFile>resources/Marker_Data_OpenMinTed.csv</dictFile> -->
       <dictFile>resources/marker_wheat_with_synonyms.csv</dictFile>
       <targetLayerName>markers</targetLayerName>
@@ -119,6 +133,15 @@
       </module>
     </marker-regexps>
 
+    <module id="dictionary2" class="TabularProjector">
+      <!-- <dictFile>resources/Marker_Data_OpenMinTed.csv</dictFile> -->
+      <dictFile>resources/MarkerList.txt</dictFile>
+      <targetLayerName>markers</targetLayerName>
+      <keyIndex>0,1</keyIndex>
+      <valueFeatures>canonical-form,synonym</valueFeatures>
+      <constantAnnotationFeatures>type=ne,ne-type=marker</constantAnnotationFeatures>
+    </module>
+
     <module id="overlaps" class="RemoveOverlaps">
       <layerName>markers</layerName>
     </module>
@@ -132,7 +155,7 @@
 </markers>
 
 <!-- Wheat accessions -->
-<module id="project-wheat-accessions" class="SimpleProjector2">
+<module id="project-wheat-accessions" class="TabularProjector">
   <dictFile>resources/wheat_accessions_and_synonyms_and_lot_and_synonyms.csv</dictFile>
   <targetLayerName>accessions</targetLayerName>
   <keyIndex>1</keyIndex>
@@ -153,7 +176,7 @@
 
 <!-- Wheat varieties -->
 <varieties>
-  <module id="project-wheat-variety-lexicon" class="SimpleProjector2">
+  <module id="project-wheat-variety-lexicon" class="TabularProjector">
     <dictFile>resources/triticum-aestivum-varieties.csv</dictFile>
     <targetLayerName>varieties</targetLayerName>
     <valueFeatures>string</valueFeatures>
@@ -175,7 +198,7 @@
 
 <organisms>
     <!-- URGI lexicon -->
-    <module id="dict" class="SimpleProjector2">
+    <module id="dict" class="TabularProjector">
       <targetLayerName>taxa</targetLayerName>
       <!-- <dictFile>resources/Taxon_Data_Wheat.txt</dictFile> -->
       <dictFile>resources/taxon_wheat_with_synonyms_tab.csv</dictFile>
@@ -190,7 +213,7 @@
     </module>
 
     <!-- NCBI lexicon -->
-    <module id="dict2" class="SimpleProjector2">
+    <module id="dict2" class="TabularProjector">
       <targetLayerName>NCBITaxa</targetLayerName>
       <dictFile>resources/taxa+id_full.txt</dictFile>
       <matchStartCaseInsensitive/>
@@ -208,7 +231,7 @@
       <removeFromLayer/>
     </module>
 
-    <mapping class="FileMapper2">
+    <mapping class="FileMapper">
       <target>documents.sections.layer:NCBITaxa</target>
       <form>@ncbi-canonical-name</form>
   <!--    <mappingFile>resources/Taxon_Data_Wheat.txt</mappingFile>-->
@@ -303,7 +326,7 @@
   </module>
 
 <!-- Blacklist-accession -->
-   <module id="blacklist-projection" class="SimpleProjector2">
+   <module id="blacklist-projection" class="TabularProjector">
       <dictFile>resources/blacklist_accessions.txt</dictFile>
       <targetLayerName>blacklist</targetLayerName>
       <keyIndex>0</keyIndex>
