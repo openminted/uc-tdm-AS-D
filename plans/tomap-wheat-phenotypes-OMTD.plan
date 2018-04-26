@@ -1,14 +1,14 @@
 <alvisnlp-plan id="tomap">
 
-  <!-- run ToMap (using previously obtained BioYatea results)-->
+  <!-- run ToMap -->
   
   <!-- ToMap on lemmas -->
   <module id="tomap" class="TomapProjector">
-    <yateaFile inhibitCheck="true">&outdir;/yatea/corpus/default/xml/candidates.xml</yateaFile>
+    <yateaFile output-feed="true">yatea/corpus/default/xml/candidates.xml</yateaFile>
     <targetLayerName>phenotypes</targetLayerName>
     <conceptFeature>concept-id</conceptFeature>
     <explanationFeaturePrefix>explain_</explanationFeaturePrefix>
-    <tomapClassifier graylist="resources/graylist_wheat.txt" whole-proxy-distance="false" empty-words="resources/stopwords_EN.ttg">resources/&ontology;.tomap</tomapClassifier>
+    <tomapClassifier graylist="resources/graylist_wheat.txt" whole-proxy-distance="false" empty-words="resources/stopwords_EN.ttg">resources/WheatPhenotypeOntology.tomap</tomapClassifier>
     <lemmaKeys/>
     <subject layer="words" feature="lemma"/>
     <scoreFeature>score</scoreFeature>
@@ -16,7 +16,7 @@
   </module>
 
   <module id="concept-names" class="OBOMapper">
-    <oboFiles>resources/&ontology;.obo</oboFiles>
+    <oboFiles>resources/WheatPhenotypeOntology.obo</oboFiles>
     <idKeys/>
     <target>documents.sections.layer:phenotypes</target>
     <form>@concept-id</form>
@@ -28,18 +28,18 @@
   <!-- <sequence id="tomap-on-alternative-lemmas"> -->
 
   <!--   <module id="tomap" class="TomapProjector"> -->
-  <!--     <yateaFile inhibitCheck="true">yatea/corpus/default/xml/candidates.xml</yateaFile> -->
+  <!--     <yateaFile output-feed="true">yatea/corpus/default/xml/candidates.xml</yateaFile> -->
   <!--     <targetLayerName>phenotypes2</targetLayerName> -->
   <!--     <conceptFeature>concept-id</conceptFeature> -->
   <!--     <explanationFeaturePrefix>explain_</explanationFeaturePrefix> -->
-  <!--     <tomapClassifier graylist="resources/graylist_wheat.txt" whole-proxy-distance="false">resources/&ontology;.tomap</tomapClassifier> -->
+  <!--     <tomapClassifier graylist="resources/graylist_wheat.txt" whole-proxy-distance="false">resources/WheatPhenotypeOntology.tomap</tomapClassifier> -->
   <!--     <lemmaKeys/> -->
   <!--     <subject layer="words" feature="lemma2"/> -->
   <!--     <scoreFeature>score</scoreFeature> -->
   <!--   </module> -->
 
   <!--   <module id="concept-names" class="OBOMapper"> -->
-  <!--     <oboFiles>resources/&ontology;.obo</oboFiles> -->
+  <!--     <oboFiles>resources/WheatPhenotypeOntology.obo</oboFiles> -->
   <!--     <idKeys/> -->
   <!--     <target>documents.sections.layer:phenotypes2</target> -->
   <!--     <form>@concept-id</form> -->
@@ -60,17 +60,17 @@
   <!-- <sequence id="tomap-no-lemmakeys"> -->
 
   <!--   <module id="tomap" class="TomapProjector"> -->
-  <!--     <yateaFile inhibitCheck="true">yatea/corpus/default/xml/candidates.xml</yateaFile> -->
+  <!--     <yateaFile output-feed="true">yatea/corpus/default/xml/candidates.xml</yateaFile> -->
   <!--     <targetLayerName>phenotypes3</targetLayerName> -->
   <!--     <conceptFeature>concept-id</conceptFeature> -->
   <!--     <explanationFeaturePrefix>explain_</explanationFeaturePrefix> -->
-  <!--     <tomapClassifier graylist="resources/graylist_wheat.txt" whole-proxy-distance="false">resources/&ontology;.tomap</tomapClassifier> -->
+  <!--     <tomapClassifier graylist="resources/graylist_wheat.txt" whole-proxy-distance="false">resources/WheatPhenotypeOntology.tomap</tomapClassifier> -->
   <!--     <subject layer="words" feature="lemma"/> -->
   <!--     <scoreFeature>score</scoreFeature> -->
   <!--   </module> -->
 
   <!--   <module id="concept-names" class="OBOMapper"> -->
-  <!--     <oboFiles>resources/&ontology;.obo</oboFiles> -->
+  <!--     <oboFiles>resources/WheatPhenotypeOntology.obo</oboFiles> -->
   <!--     <idKeys/> -->
   <!--     <target>documents.sections.layer:phenotypes3</target> -->
   <!--     <form>@concept-id</form> -->
@@ -108,10 +108,10 @@
 
 <!-- Postprocessing (required to filter and choose a candidate later on) -->
 
-  <!-- Projet BioYatea results -->
-  <module id="bioyatea-projection" class="YateaProjector">
+  <!-- Projet Yatea results -->
+  <module id="yatea-projection" class="YateaTermsProjector">
     <targetLayerName>yateaTerms</targetLayerName>
-    <yateaFile inhibitCheck="yes">&outdir;/yatea/corpus/default/xml/candidates.xml</yateaFile> <!-- ??? -->
+    <yateaFile output-feed="true">yatea/corpus/default/xml/candidates.xml</yateaFile> <!-- ??? -->
     <subject layer="words"/>
   </module>
 
@@ -302,7 +302,7 @@
 
 <!-- exact match -->
     <module id="exact-match" class="OBOProjector">
-      <oboFiles>resources/&ontology;.obo</oboFiles>
+      <oboFiles>resources/WheatPhenotypeOntology.obo</oboFiles>
       <targetLayerName>exact-pheno</targetLayerName>
       <nameFeature>concept-name</nameFeature>
       <pathFeature>concept-path</pathFeature>
