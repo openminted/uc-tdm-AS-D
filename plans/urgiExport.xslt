@@ -104,6 +104,14 @@
       <xsl:value-of select="@DI"/>
       <xsl:text>,</xsl:text>
       <xsl:text>1,&quot;</xsl:text>
+      <xsl:value-of select="@first-author"/>
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="@PY"/>
+      <xsl:text>). </xsl:text>
+      <xsl:value-of select="@title"/>
+      <xsl:text>. </xsl:text>
+      <xsl:value-of select="@JI"/>
+      <xsl:text>                                                  </xsl:text>
       <xsl:for-each select="a:elements('sections:TI|sections:AB')">
 	<xsl:for-each select="a:inline('layer:genes|layer:markers|layer:taxa|layer:phenotypes|layer:accessions|layer:varieties')">
 	  <xsl:apply-templates select="child::node()"/>
