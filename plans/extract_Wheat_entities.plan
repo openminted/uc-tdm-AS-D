@@ -31,8 +31,7 @@
     </module>
 
     <module id="stanford" class="StanfordNER">
-      <classifierFile>/bibdev/install/stanford-ner-3.4/classifiers/english.all.3class.distsim.crf.ser.gz</classifierFile>
-      <!-- <classifierFile>/bibdev/sources/stanford/stanford-ner-2016-10-31/classifiers/english.all.3class.distsim.crf.ser.gz</classifierFile> -->
+      <classifierFile>stanford-ner-3.4/classifiers/english.all.3class.distsim.crf.ser.gz</classifierFile>
       <labelFeatureName>stanford-label</labelFeatureName>
       <targetLayerName>stanford</targetLayerName>
       <searchInContents/>
@@ -403,7 +402,7 @@
     <!-- Run Yatea term extractor -->
     <module id="yatea" class="YateaExtractor">
       <workingDir>yatea</workingDir>
-      <configDir>config</configDir>
+      <configDir>plans/config</configDir>
       <localeDir>Lingua-YaTeA/share/YaTeA/locale</localeDir>
       <yateaExecutable>Lingua-YaTeA/bin/yatea</yateaExecutable>
       <rcFile>plans/yatea.rc</rcFile>
@@ -421,10 +420,18 @@
    <mapping class="FileMapper">
       <target>documents.sections.layer:phenotypes</target>
       <form>@concept-id</form>
-      <mappingFile>resources/wto-avec-et-sans-alignement-wipo--col=id--col=path-label.tsv</mappingFile>
-      <targetFeatures>,label-path</targetFeatures>
+      <mappingFile>resources/Alignement_WTO_WIPO-id_WTO-_id_WIPO-condition=0.csv</mappingFile>
+      <targetFeatures>,wipo-id-path,wipo-label-path,label-path</targetFeatures>
       <keyColumn>0</keyColumn>
     </mapping>
+
+    <mapping2 class="FileMapper">
+      <target>documents.sections.layer:phenotypes[not @label-path]</target>
+      <form>@concept-id</form>
+      <mappingFile>resources/wto-sans-alignement-wipo--col=id--col=path-label.tsv</mappingFile>
+      <targetFeatures>,label-path</targetFeatures>
+      <keyColumn>0</keyColumn>
+    </mapping2>
 
   <extended-form>
     <module id="fragments" class="Action">
@@ -457,6 +464,44 @@
   <action>remove:varieties</action>
   <removeFromLayer/>
 </module>
+
+<module id="add-list-of-entities-to-doc" class="Action">
+  <target>documents</target>
+  <action>set:feat:entities(str:seds(str:seds(str:seds(
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:genes[@canonical-form != @form],@canonical-form),@canonical-form) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:genes[@synonym and @synonym != @form],@synonym),@synonym) ^ " , " ^
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:markers[@canonical-form != @form],@canonical-form),@canonical-form) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:markers[@synonym != @form],@synonym),@synonym) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:taxa[@canonical-name != @form],@canonical-name),@canonical-name) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:taxa[@synonym],@synonym),@synonym) ^ " , " ^
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions[@accession-name != @form],@accession-name),@accession-name) ^ " , " ^
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions[@synonym1],@synonym1),@synonym1) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions[@synonym2],@synonym2),@synonym2) ^ " , " ^ 
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes[@concept-name != @form],@concept-name),@concept-name),
+  "(\\s+,)+"," ,"),
+  "^(\\s*, )+",""),
+  " ,\\s*$","")
+  )
+</action>
+  <setFeatures/>
+</module>
+
+<module id="add-list-of-paths-to-doc" class="Action">
+  <target>documents</target>
+  <action>set:feat:paths(str:seds(str:seds(str:seds(
+  str:join:' ; '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes,@wipo-id-path),str:seds(@wipo-id-path,";"," ; ")) ^ " ; " ^ 
+  str:join:' ; '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes,@wipo-label-path),str:seds(@wipo-label-path,";"," ; ")) ^ " ; " ^
+  str:join:' ; '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes,@concept-path),str:seds(@concept-path,";"," ; ")) ^ " ; " ^ 
+  str:join:' ; '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes,@label-path),str:seds(@label-path,";"," ; ")),
+  "(\\s+;)+"," ;"),
+  "^(\\s*; )+",""),
+  " ;\\s*$","")
+  )
+</action>
+  <setFeatures/>
+</module>
+
+
 
 
 </alvisnlp-plan>
