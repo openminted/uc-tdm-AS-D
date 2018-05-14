@@ -21,6 +21,23 @@
   <setFeatures/>
 </module>
 
+<!-- Remove duplicates -->
+<module id="temp-id" class="Action">
+  <target>$</target>
+  <action>id:enumerate:tempid(documents)</action>
+  <setFeatures/>
+</module>
+<module id="tag-uniques" class="Action">
+  <target>documents</target>
+  <action>set:feat:uniq(not corpus.documents[@DI == target.@DI and target.@tempid > @tempid])</action>
+  <setFeatures/>
+</module>
+<module id="remove-duplicates" class="Action">
+  <target>documents[@uniq == "false"]</target>
+  <action>delete</action>
+  <deleteElements/>
+</module>
+
 <!-- <module id="get-authors" class="Action"> -->
 <!--   <target>documents</target> -->
 <!--   <action>set:feat:authors(str:join:' '(nav:features:AU,@value))</action> -->
