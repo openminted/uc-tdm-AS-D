@@ -477,7 +477,8 @@
   str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions[@accession-name != @form],@accession-name),@accession-name) ^ " , " ^
   str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions[@synonym1],@synonym1),@synonym1) ^ " , " ^ 
   str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions[@synonym2],@synonym2),@synonym2) ^ " , " ^ 
-  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes[@concept-name != @form],@concept-name),@concept-name),
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes[@concept-name != @form],@concept-name),@concept-name) ^ " , " ^
+  str:join:' , '(sort:nsval(document.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes.nav:features:concept-syno,@value),@value),
   "(\\s+,)+"," ,"),
   "^(\\s*, )+",""),
   " ,\\s*$","")
