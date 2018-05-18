@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<alvisnlp-plan id="XMI">
+
+<param name="input">
+    <alias module="read-wos-abstracts" param="source"/>
+  </param>
+
+<!-- Read abstracts -->
+<module id="read-wos-abstracts" class="WebOfKnowledgeReader">
+    <source>/bibdev/travail/OpenMinted/UseCases/Wheat/uc-tdm-AS-D/corpus/WoS-ref_gene_marker_wheat-janv-17</source>
+</module>
+<module id="renametitle" class="Action">
+  <target>documents.sections:TI</target>
+  <action>set:feat:sectionname("title")</action>
+  <setFeatures/>
+</module>
+<module id="renameabstract" class="Action">
+  <target>documents.sections:AB</target>
+  <action>set:feat:sectionname("abstract")</action>
+  <setFeatures/>
+</module>
+<!-- Remove duplicates -->
+<module id="temp-id" class="Action">
+  <target>$</target>
+  <action>id:enumerate:tempid(documents)</action>
+  <setFeatures/>
+</module>
+<module id="tag-uniques" class="Action">
+  <target>documents</target>
+  <action>set:feat:uniq(not corpus.documents[@DI == target.@DI and target.@tempid > @tempid])</action>
+  <setFeatures/>
+</module>
+<module id="remove-duplicates" class="Action">
+  <target>documents[@uniq == "false"]</target>
+  <action>delete</action>
+  <deleteElements/>
+</module>
+<module id="get-first-author" class="Action">
+  <target>documents</target>
+  <action>set:feat:first-author(nav:features:AU{0}.@value ^ (if nav:features:AU{1}.@value then " et al." else ""))</action>
+  <setFeatures/>
+</module>
+
+<module id="set-title-feature" class="Action">
+  <target>documents</target>
+  <action>set:feat:title(str:seds(str:seds(str:normalizeSpace(sections:TI.contents),"\"","%22"),"\\.$",""))</action>
+  <setFeatures/>
+</module>
+
+
+
+<xmi class="XMIExport">
+    <outDir>fulltext</outDir>
+<!--    ​<typeSystemFile>typesystem.xml</typeSystemFile>-->
+</xmi>
+
+</alvisnlp-plan>
+
+
