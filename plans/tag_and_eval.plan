@@ -54,13 +54,13 @@
 
 <!-- Compare predictions to reference -->
 <module id="compareGene" class="LayerComparator">
-  <outFile>&outdir;/compare_genes.txt</outFile>
+  <outFile>compare_genes.txt</outFile>
   <param name="predictedLayerName" value="genes"/>
   <param name="referenceLayerName" value="Gene"/>
 </module>
 
 <module id="compareMarker" class="LayerComparator">
-  <outFile>&outdir;/compare_markers.txt</outFile>
+  <outFile>compare_markers.txt</outFile>
   <param name="predictedLayerName" value="markers"/>
   <param name="referenceLayerName" value="Marker"/>
 </module>
