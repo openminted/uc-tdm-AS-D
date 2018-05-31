@@ -163,7 +163,7 @@
    @DI;
    "1";
    "\"" ^ @first-author ^ " (" ^ @PY ^ "). " ^ @title ^ ". " ^ @JI ^ "                                                  " ^ 
-   str:seds(str:normalizeSpace(document.(sections:TI|sections:AB).contents),"\"","%22") ^ 
+   str:seds(str:normalizeSpace(str:join:' '(document.(sections:TI|sections:AB),contents)),"\"","%22") ^ 
    " " ^ @entities ^ " " ^ @paths ^ "\"";
    "http://oadoi.org/" ^ @DI;
    "Triticum" ^ ",,,,,,,,,,,,,,,,,"
