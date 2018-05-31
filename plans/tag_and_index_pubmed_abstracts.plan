@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<alvisnlp-plan id="tag_and_index_pubmed">
+
+  <param name="input">
+    <alias module="read-pubmed-abstracts" param="sourcePath"/>
+  </param>
+
+  <!-- Read abstracts -->
+  <module id="read-pubmed-abstracts" class="XMLReader">
+    <sourcePath>test.xml</sourcePath>
+    <xslTransform>plans/pubmed2alvisnlp.xslt</xslTransform>
+  </module>
+  <module id="renametitle" class="Action">
+    <target>documents.sections:title</target>
+    <action>set:feat:sectionname("title")</action>
+    <setFeatures/>
+  </module>
+  <module id="renameabstract" class="Action">
+    <target>documents.sections:abstract</target>
+    <action>set:feat:sectionname("abstract")</action>
+    <setFeatures/>
+  </module>
+
+  <!-- Get year -->
+  <module id="set-year" class="Action">
+    <target>documents[@year == "" and not @date == ""]</target>
+    <action>set:feat:year(str:seds(@date,"^(\\d+) .+$","$1"))</action>
+    <setFeatures/>
+  </module>
+
+  <module id="set-id" class="Action">
+    <target>documents</target>
+    <action>set:feat:DI(@id)</action>
+    <setFeatures/>
+  </module>
+
+  <!-- Remove duplicates -->
+  <module id="temp-id" class="Action">
+    <target>$</target>
+    <action>id:enumerate:tempid(documents)</action>
+    <setFeatures/>
+  </module>
+  <module id="tag-uniques" class="Action">
+    <target>documents</target>
+    <action>set:feat:uniq(not corpus.documents[@DI == target.@DI and target.@tempid > @tempid])</action>
+    <setFeatures/>
+  </module>
+  <module id="remove-duplicates" class="Action">
+    <target>documents[@uniq == "false"]</target>
+    <action>delete</action>
+    <deleteElements/>
+  </module>
+
+  <module id="get-first-author" class="Action">
+    <target>documents</target>
+    <action>set:feat:first-author(sections:author{0}.contents ^ (if sections:author{1}.contents then " et al." else ""))</action>
+    <setFeatures/>
+  </module>
+
+  <module id="set-title-feature" class="Action">
+    <target>documents</target>
+    <action>set:feat:title(str:seds(str:seds(str:normalizeSpace(sections:title.contents),"\"","%22"),"\\.$",""))</action>
+    <setFeatures/>
+  </module>
+
+<!-- Tag entities (wheat taxa, phenotypes, genes and markers) -->
+<import file="plans/extract_Wheat_entities.plan"/>
+
+<!-- Print tabular files for each entity type -->
+<module id="print-pheno" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"phenotypes.txt"</fileName>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:phenotypes</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>@concept-name</element>
+    <element>@concept-id</element>
+    <element>str:normalizeSpace(@context-both)</element>
+    <element>@label-path</element>
+  </columns>
+</module>
+
+<module id="print-genes" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"genes.txt"</fileName>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:genes</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<module id="print-markers" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"markers.txt"</fileName>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:markers</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<module id="print-species" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"species.txt"</fileName>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:taxa</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>@taxid</element>
+    <element>@canonical-name</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+  
+</module>
+
+<module id="print-accessions" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"accessions.txt"</fileName>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:accessions</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<module id="print-varieties" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"varieties.txt"</fileName>
+  <lines>documents.sections[@sectionname == "title" or @sectionname == "abstract"].layer:varieties</lines>
+  <columns separator=";">
+    <element>section.document.@id</element>
+    <element>str:seds(@form, "\\n", " ")</element>
+    <element>str:normalizeSpace(@context-both)</element>
+  </columns>
+</module>
+
+<!-- Print CSV for URGI -->
+
+<!--Version 1 (with xml tags)-->
+<write class="XMLWriter">
+  <outDir>.</outDir>
+  <roots>$</roots>
+  <fileName>"tagged_pubmed_abstracts_v1.csv"</fileName>
+  <xslTransform>plans/pubmed-urgiExport.xslt</xslTransform>
+  <indent>false</indent>
+</write>
+
+<!--Version 2 (no xml tags)-->
+<module id="print" class="TabularExport">
+  <outDir>.</outDir>
+  <files>$</files>
+  <fileName>"tagged_pubmed_abstracts.csv"</fileName>
+  <lines>documents[@DI]</lines>
+  <separator>,</separator>
+  <columns separator=";">
+   "Bibliography";
+   "OpenMinTeD";
+   @DI;
+   "1";
+   "\"" ^ @first-author ^ " (" ^ @year ^ "). " ^ @title ^ ". " ^ @journal ^ "                                                  " ^ 
+   str:seds(str:normalizeSpace(str:join:' '(document.(sections:title|sections:abstract),contents)),"\"","%22") ^ 
+   " " ^ @entities ^ " " ^ @paths ^ "\"";
+   "http://www.ncbi.nlm.nih.gov/pubmed/" ^ @DI;
+   "Triticum" ^ ",,,,,,,,,,,,,,,,,"
+  </columns>
+</module>
+
+<!-- HTML visualization -->
+	<!-- <module id="html" class="QuickHTML"> -->
+	<!-- 	<outDir>html</outDir> -->
+	<!-- 	<classFeature>ne-type</classFeature> -->
+	<!-- 	<layers>phenotypes,taxa,genes,markers</layers> -->
+	<!-- 	<colors>#99cc00,#ffcc99,#ffd333,#ffd666</colors> -->
+	<!-- </module> -->
+
+<!-- Index for AlvisIR -->
+  <module id="index" class="AlvisIRIndexer">
+    <indexDir>index</indexDir>
+    <tokenPositionGap>128</tokenPositionGap>
+    <fieldNames>title,abstract,author,full-author,pmid,year,journal,mesh</fieldNames>
+    <propertyKeys/>
+    <documents>
+      <fields>
+  	<instances>sections[@sectionname=="title"] | sections[@sectionname=="abstract"]</instances>
+  	<field-name>@sectionname</field-name>
+  	<annotations>
+  	  <instances>layer:taxa</instances>
+  	  <text>"{taxon}" ^ @taxid ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:genes</instances>
+  	  <text>"{gene}" ^ @canonical-form ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:markers</instances>
+  	  <text>"{marker}" ^ @canonical-form ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:varieties</instances>
+  	  <text>"{variety}" ^ @form ^ "/"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:sentences</instances>
+  	  <text>"{SENT}"</text>
+  	</annotations>
+  	<annotations>
+  	  <instances>layer:phenotypes</instances>
+  	  <text>"{phenotype}" ^ @concept-path ^ "/"</text>
+  	</annotations>
+      </fields>
+      <fields>
+  	<instances>sections:author</instances>
+  	<field-name>"author"</field-name>
+  	<keyword>contents</keyword>
+      </fields>
+      <fields>
+  	<instances>$[@DI]</instances>
+  	<field-name>"pmid"</field-name>
+  	<keyword>@DI</keyword>
+      </fields>
+      <fields>
+  	<instances>$[@year]</instances>
+  	<field-name>"year"</field-name>
+  	<keyword>@year</keyword>
+      </fields>
+      <fields>
+  	<instances>$[@journal]</instances>
+  	<field-name>"journal"</field-name>
+  	<keyword>@journal</keyword>
+      </fields>
+    </documents>
+  </module>
+
+</alvisnlp-plan>
